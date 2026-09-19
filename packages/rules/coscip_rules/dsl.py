@@ -37,17 +37,56 @@ class Source(_Strict):
     document: str
     edition: str
     item: str
+    page: int | None = None
+    # rules/1.1: termos que precisam constar no trecho do item ingerido (verificação REG-01).
+    quote: tuple[str, ...] = ()
+
+
+class TableSpec(_Strict):
+    key: str  # fato cujo valor escolhe a linha
+    values: dict[str, float]
+
+
+class RequiredSpec(_Strict):
+    """Valor exigido: literal, tabela por contexto ou divisão arredondada para cima.
+
+    Conjunto fechado; exatamente um campo preenchido.
+    """
+
+    value: float | None = None
+    table: TableSpec | None = None
+    ceil_div: CeilDiv | None = None
+
+    def facts(self) -> list[str]:
+        out: list[str] = []
+        if self.table:
+            out.append(self.table.key)
+        if self.ceil_div:
+            out.append(self.ceil_div.numerator)
+            out.extend(self.ceil_div.denominator.facts())
+        return out
+
+
+class CeilDiv(_Strict):
+    numerator: str
+    denominator: RequiredSpec
+
+
+RequiredSpec.model_rebuild()
 
 
 class Calculation(_Strict):
     operator: str
     measured: str
-    required: str
+    required: str | RequiredSpec
     unit: str
 
 
+Subject = Literal["DRAWING", "FLOOR", "SYMBOL", "ROOM"]
+
+
 class RuleDefinition(_Strict):
-    schema_version: Literal["rules/1.0"]
+    schema_version: Literal["rules/1.0", "rules/1.1"]
     id: str
     version: int = Field(ge=1)
     publication_state: Literal["DRAFT", "TEST_ONLY", "HOMOLOGATED", "PUBLISHED", "DEPRECATED"]
@@ -63,6 +102,13 @@ class RuleDefinition(_Strict):
     on_unknown_applicability: Literal["REVIEW_REQUIRED", "MISSING_DATA"]
     evidence_required: tuple[str, ...]
     depends_on: tuple[str, ...] = ()
+    # rules/1.1
+    title: str = ""
+    subject: Subject = "FLOOR"
+    measure: str | None = None  # sistema/medida (ex.: "Extintores") para agrupar o relatório
+    extra_sources: tuple[Source, ...] = ()
+    # Fatos obtidos por associação heurística (ex.: placa próxima) não sustentam FAIL.
+    fail_status: Literal["FAIL", "REVIEW_REQUIRED"] = "FAIL"
 
     @property
     def content_hash(self) -> str:
@@ -79,15 +125,34 @@ def _check(rule: RuleDefinition) -> None:
         raise RuleValidationError(
             f"{rule.id}: cálculo não permitido '{rule.calculation.operator}'"
         )
-    for ref in (rule.calculation.measured, rule.calculation.required):
+    req = rule.calculation.required
+    refs = [rule.calculation.measured, *([req] if isinstance(req, str) else req.facts())]
+    for ref in refs:
         if ref not in rule.required_inputs:
             raise RuleValidationError(f"{rule.id}: '{ref}' não declarado em required_inputs")
+    if not isinstance(req, str):
+        _check_required(rule.id, req)
+    if rule.schema_version == "rules/1.1":
+        for src in (rule.source, *rule.extra_sources):
+            if not src.quote and not src.document.startswith("EXEMPLO"):
+                raise RuleValidationError(
+                    f"{rule.id}: citação {src.item} sem termos de conferência")
     if rule.production_eligible and rule.publication_state in {"DRAFT", "TEST_ONLY"}:
         raise RuleValidationError(
             f"{rule.id}: regra {rule.publication_state} não pode ir à produção"
         )
     if rule.production_eligible and rule.source.document.startswith("EXEMPLO"):
         raise RuleValidationError(f"{rule.id}: fonte de exemplo não pode ir à produção")
+
+
+def _check_required(rule_id: str, spec: RequiredSpec) -> None:
+    filled = [n for n in ("value", "table", "ceil_div") if getattr(spec, n) is not None]
+    if len(filled) != 1:
+        raise RuleValidationError(f"{rule_id}: valor exigido precisa de exatamente um tipo")
+    if spec.table is not None and not spec.table.values:
+        raise RuleValidationError(f"{rule_id}: tabela de valores vazia")
+    if spec.ceil_div is not None:
+        _check_required(rule_id, spec.ceil_div.denominator)
 
 
 def parse_rule(data: dict[str, Any]) -> RuleDefinition:

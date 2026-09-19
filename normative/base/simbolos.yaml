@@ -1,0 +1,133 @@
+# Dicionário de símbolos para a análise automática da planta (symbols/1.0).
+#
+# Classes seguem os nomes da NT 1-03 (Símbolos gráficos). Os padrões de nome de bloco e de
+# layer foram levantados no corpus de 5 projetos reais (19/09/2026) e são INDÍCIOS: cada
+# símbolo reconhecido guarda o padrão que o reconheceu. Nome de bloco vale mais que layer;
+# layer só é usado quando o bloco é anônimo ou genérico e nenhum sub-bloco foi reconhecido.
+# O analista pode mapear blocos não reconhecidos no pedido de análise (symbol_overrides).
+schema_version: symbols/1.0
+id: SIMBOLOS-CBMERJ-CORPUS
+version: 1
+source:
+  document: NT 1-03
+  item: Anexo A
+  quote: ["EXTINTOR DE PÓ ABC", "HIDRANTE SIMPLES", "PONTO DE ILUMINAÇÃO DE EMERGÊNCIA", "ACIONADOR MANUAL", "DETECTOR DE FUMAÇA"]
+
+classes:
+  EXTINTOR:
+    label: Extintor de incêndio
+    system: extintores
+    # "EXT" sozinho é ambíguo (externo: KIT_PUXADOR_ESQ_EXT_E_INT no 9715); só com agente.
+    block: ['EXTINTOR', '^PSCIP-EX-', '(^|[^A-Z])(PQS|ABC|CO2)([^A-Z]|$)', '^EXT[ _-]*(ABC|PQS|CO2|AP|BC)']
+    layer: ['(^|[^A-Z])EXT(INT(OR(ES)?)?)?([^A-Z]|$)']
+    exclude: ['SETA', 'PICTO', 'PLACA', 'SINAL', '(^|[^A-Z])E-?5([^0-9]|$)']
+  HIDRANTE:
+    label: Hidrante / abrigo de mangueiras
+    system: hidrantes
+    block: ['HIDRANTE', '^PSCIP-HID-(SIMPLES|DUPLO)']
+    exclude: ['URBANO', 'RECALQUE', 'SETA', 'PICTO', 'PLACA', 'SINAL']
+  MANGOTINHO:
+    label: Mangotinho
+    system: hidrantes
+    block: ['MANGOTINHO']
+    exclude: ['SETA', 'PICTO', 'PLACA', 'SINAL']
+  HIDRANTE_URBANO:
+    label: Hidrante urbano
+    system: hidrantes
+    block: ['HIDRANTE[ _-]*URBANO', '^PSCIP-HID-URBANO']
+  REGISTRO_RECALQUE:
+    label: Registro / hidrante de recalque
+    system: hidrantes
+    block: ['RECALQUE']
+  BOMBA_INCENDIO:
+    label: Bomba de incêndio
+    system: hidrantes
+    block: ['BOMBA[ _-]*(DE[ _-]*)?INC', '^PSCIP-TUB-(BOMBA|JOCKEY)']
+    exclude: ['ACIONADOR']
+  ACIONADOR_BOMBA:
+    label: Acionador da bomba de incêndio
+    system: hidrantes
+    block: ['ACIONADOR[ _-]*(DE[ _-]*)?BOMBA']
+  RESERVA_TECNICA:
+    label: Reserva técnica de incêndio
+    system: hidrantes
+    block: ['RESERVA[ _-]*T[EÉ]CNICA']
+  SPRINKLER:
+    label: Bico de sprinkler
+    system: chuveiros automáticos
+    block: ['SPRINKLER', '(^|[^A-Z])SPK([^A-Z]|$)']
+    layer: ['SPRINK', '(^|[^A-Z])SPK([^A-Z]|$)']
+    exclude: ['CORTE', 'DETALHE', 'LEGENDA']
+  ILUMINACAO_EMERGENCIA:
+    label: Ponto de iluminação de emergência
+    system: iluminação de emergência
+    block: ['ILUMINA', 'LUMIN[AÁ]RIA', 'ACLARAMENTO', 'BALIZAMENTO', 'BLOCO[ _-]*AUT[OÔ]NOMO', '^PSCIP-ILU', '^LUMI([ _-]|$)']
+    layer: ['LUMIN[AÁ]RIA[ _-]*EMERG', 'ILUM[ _-]*EMERG']
+  DETECTOR:
+    label: Detector de incêndio
+    system: detecção e alarme
+    block: ['DETECTOR', 'DETEC[CÇ][AÃ]O[ _-]*(DE[ _-]*)?FUM']
+    exclude: ['BATERIA']
+  ACIONADOR_MANUAL:
+    label: Acionador manual de alarme
+    system: detecção e alarme
+    block: ['ACIONADOR[ _-]*MANUAL', '^PSCIP-ALM-ACIONADOR', 'BOTOEIRA', '^AMA$']
+  AVISADOR:
+    label: Avisador sonoro / audiovisual
+    system: detecção e alarme
+    block: ['AVISADOR', 'SIRENE', '^PSCIP-ALM-AVISADOR', '^AV$']
+  CENTRAL_ALARME:
+    label: Central de alarme
+    system: detecção e alarme
+    block: ['CENTRAL[ _-]*(DE[ _-]*)?(ALARME|DETEC)', '^PSCIP-ALM-CENTRAL']
+  CENTRAL_GLP:
+    label: Central de GLP
+    system: gás
+    block: ['CENTRAL[ _-]*(DE[ _-]*)?(GLP|G[AÁ]S)']
+    text: ['^CENTRAL DE (GLP|G[AÁ]S)']
+  SAIDA:
+    label: Saída de emergência (marcação)
+    system: saídas de emergência
+    block: ['ROTA[ _-]*(DE[ _-]*FUGA[ _-]*)?FINAL', '^PSCIP-ROTA-FINAL', '^SA[IÍ]DA([ _-]|$)']
+    text: ['^SA[IÍ]DA( DE)?( EMERG(\.|[EÊ]NCIA))?$']
+    # Placas S-12 e S-14 (NT 2-05, Tabela 5) indicam porta de saída.
+    sign_codes: ['S-12', 'S-14']
+  SINALIZACAO:
+    label: Placa de sinalização
+    system: sinalização
+    # Código sem hífen ("P60", "P80") é tipo de porta/esquadria: exige hífen ou PICTO_.
+    block: ['^PSCIP-PLA-', 'PLACA', 'SINALIZA', 'ROTA[ _-]*(DE[ _-]*)?FUGA', '^PSCIP-ROTA-', 'SETA[ _-]*DIRECIONAL', '^PICTO_[SEAPM]', '^[SEAPM]-[0-9]{1,2}([^0-9]|$)']
+    exclude: ['POSTE', 'TESTEIRA', 'SUPORTE', 'INCLINA', 'VAGA', 'PCD', 'IDOSO', 'PUBLICIDADE', 'FACHADA', 'ATM']
+    text: ['^[SEAPM]-?[0-9]{1,2}[A-Z]?(-[A-Z]{1,2})?$']
+
+# Atributos lidos do nome do bloco ou de textos a até ``attribute_radius_m`` do símbolo.
+attributes:
+  attribute_radius_m: 1.5
+  agent:
+    PQS_ABC: ['ABC', 'FOSFATO']
+    PQS_BC: ['(^|[^A])BC([^A-Z]|$)', 'P[OÓ][ _-]*QU[IÍ]M', '(^|[^A-Z])PQS([^A-Z]|$)', 'POQUIM']
+    CO2: ['CO2', 'CO₂', 'G[AÁ]S[ _-]*CARB']
+    AGUA: ['(^|[^A-Z])AP([^A-Z]|$)', '[AÁ]GUA']
+    ESPUMA: ['ESPUMA']
+    CLASSE_K: ['(^|[^A-Z])K([^A-Z]|$)', 'CLASSE[ _-]*K']
+    CLASSE_D: ['CLASSE[ _-]*D', 'P[OÓ][ _-]*D([^A-Z]|$)']
+  capacity: '([0-9]+(?:[.,][0-9]+)?)\s*(KG|L)\b'
+  rating: '([0-9]+-?A)?\s*:?\s*([0-9]+-?B)\s*:?\s*C'
+  state:
+    DEMOLIR: ['DEMOLIR', '_DEMO$', 'REMOVER', 'RETIRAR']
+    EXISTENTE: ['EXISTENTE', '_EXIS', '_EXI$']
+    NOVO: ['NOVO', 'NOVA', 'PROJETAD']
+    REALOCADO: ['REALOCAD', '_REALO']
+
+# Títulos que marcam legenda/quadro de simbologia.
+legend_titles: ['^(LEGENDA|SIMBOLOGIA|CONVEN[CÇ][OÕ]ES)\b', '^S[IÍ]MBOLO$', '^C[OÓ]DIGO$']
+
+# Camadas de obstáculo para o percurso (paredes, esquadrias fixas, pilares). Portas não entram.
+obstacle_layers: ['PAREDE', 'ALVENARIA', 'WALL', '(^|[^A-Z])PAR([^A-Z]|$)', '-TEPAR', '-LOPAR', 'DIVIS', 'DRYWALL', 'PILAR', 'COLUMN', 'ESTRUT', 'CONCRETO', 'JANELA', 'WINDOW', 'GLAZ', 'VIDRO', 'CAIXILHO', 'A-WALL', 'MURO', 'GUARDA[ _-]*CORPO', 'GRADIL']
+non_obstacle_layers: ['PORTA', 'DOOR', 'HATCH', 'TEXT', 'COTA', 'DIM', 'MOB', 'LAYOUT', 'PISO', 'FORRO', 'EIXO', 'PROJ', 'SIMB']
+
+# Ambientes que a NT 2-01 (6.4) trata como instalações especiais.
+special_rooms: ['CASA\s+DE\s+M[AÁ]QUINAS', 'CASA\s+(DE\s+)?MAQ', 'CASA\s+DE\s+BOMBAS', 'CASA\s+DE\s+FOR[CÇ]A', 'SUBESTA[CÇ][AÃ]O', 'TRANSFORMADOR', 'GERADOR', '(^|\s)GMG(\s|$)', 'INCINERADOR', 'SALA\s+EL[EÉ]TRICA', 'SITE\s+DE\s+TELEFONIA']
+
+# Títulos que dão nome a uma região da prancha (planta de pavimento).
+region_titles: ['PLANTA', 'PAVIMENTO', 'T[EÉ]RREO', 'SUBSOLO', 'MEZANINO', 'COBERTURA', 'PILOTIS', '[0-9]+\s*[ºo°]\s*PAV', 'ANDAR']

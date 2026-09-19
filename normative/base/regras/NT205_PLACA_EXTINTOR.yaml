@@ -1,0 +1,40 @@
+# RASCUNHO redigido pelo assistente a partir do texto ingerido da NT 2-05. Sem homologação.
+# A placa é associada ao extintor por proximidade (heurística): ausência vira revisão,
+# nunca pendência automática.
+schema_version: rules/1.1
+id: NT205_PLACA_EXTINTOR
+version: 1
+title: Placa E-5 indicada em planta junto ao extintor
+measure: Sinalização
+subject: SYMBOL
+fail_status: REVIEW_REQUIRED
+publication_state: DRAFT
+production_eligible: false
+jurisdiction: CBMERJ-RJ
+source:
+  document: NT 2-05
+  edition: 3ª edição - 2023
+  item: Tabela 6
+  quote: ["E-5", "Extintor de incêndio", "Indicação de localização dos extintores"]
+extra_sources:
+  - document: NT 2-05
+    edition: 3ª edição - 2023
+    item: 6.1.2
+    quote: ["Em planta baixa", "devem estar indicados por pictogramas"]
+applies_when:
+  all:
+    - {fact: symbol.class, operator: equals, value: EXTINTOR}
+required_inputs:
+  - symbol.e5_signs
+  - quality.region_confirmed
+quality_gates:
+  - {fact: quality.region_confirmed, operator: equals, value: true}
+calculation:
+  operator: minimum_with_uncertainty
+  measured: symbol.e5_signs
+  required: {value: 1}
+  unit: un
+on_missing: MISSING_DATA
+on_conflict: REVIEW_REQUIRED
+on_unknown_applicability: REVIEW_REQUIRED
+evidence_required: [source_instance, calculation_trace]

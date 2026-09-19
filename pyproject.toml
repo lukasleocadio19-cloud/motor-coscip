@@ -17,6 +17,7 @@ dependencies = [
   "ezdxf>=1.3",
   "shapely>=2.0",
   "numpy>=1.26",
+  "scipy>=1.13",
   "networkx>=3.3",
   "pyyaml>=6.0",
   "python-multipart>=0.0.9",
@@ -45,6 +46,8 @@ where = [
   "packages/storage",
   "packages/jobs",
   "packages/ai_gateway",
+  "packages/normative",
+  "packages/analysis",
 ]
 include = ["coscip_*"]
 
@@ -55,6 +58,7 @@ pythonpath = [
   ".", "apps/api", "workers/local", "packages/cbm_schema", "packages/cad",
   "packages/geometry", "packages/topology", "packages/semantics",
   "packages/rules", "packages/storage", "packages/jobs", "packages/ai_gateway",
+  "packages/normative", "packages/analysis",
 ]
 
 [tool.ruff]
@@ -69,8 +73,8 @@ select = ["E", "F", "I", "B", "UP"]
 known-first-party = [
   "coscip_api", "coscip_worker", "coscip_cbm", "coscip_cad", "coscip_geometry",
   "coscip_topology", "coscip_semantics", "coscip_rules", "coscip_storage", "coscip_jobs",
-  "coscip_ai", "tests",
+  "coscip_ai", "coscip_normative", "coscip_analysis", "tests",
 ]
 
 [tool.ruff.lint.flake8-bugbear]
-extend-immutable-calls = ["fastapi.Depends", "fastapi.Header", "fastapi.Query"]
+extend-immutable-calls = ["fastapi.Depends", "fastapi.Header", "fastapi.Query", "fastapi.File"]

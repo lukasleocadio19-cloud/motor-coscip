@@ -1,0 +1,38 @@
+# RASCUNHO redigido pelo assistente a partir do texto ingerido da NT 2-02. Sem homologação.
+# Percurso do hidrante até o ponto mais distante (linha de mangueira ≤ 30 m).
+schema_version: rules/1.1
+id: NT202_HID_MANGUEIRA
+version: 1
+title: Linha de mangueira alcança qualquer ponto em até 30 m de percurso
+measure: Hidrantes
+subject: FLOOR
+publication_state: DRAFT
+production_eligible: false
+jurisdiction: CBMERJ-RJ
+source:
+  document: NT 2-02
+  edition: 1ª edição - 2019; Portaria 1.317/2025
+  item: 5.6.1
+  quote: ["O comprimento das linhas de mangueiras não poderá ultrapassar 30 m", "distância de percurso"]
+applies_when:
+  any:
+    - {fact: context.requires_hydrants, operator: equals, value: true}
+    - {fact: floor.has_hydrants, operator: equals, value: true}
+required_inputs:
+  - floor.hydrant.max_travel_m
+  - quality.walls_detected
+  - quality.region_confirmed
+  - quality.hydrant.complete
+quality_gates:
+  - {fact: quality.walls_detected, operator: equals, value: true}
+  - {fact: quality.region_confirmed, operator: equals, value: true}
+  - {fact: quality.hydrant.complete, operator: equals, value: true}
+calculation:
+  operator: maximum_with_uncertainty
+  measured: floor.hydrant.max_travel_m
+  required: {value: 30}
+  unit: m
+on_missing: MISSING_DATA
+on_conflict: REVIEW_REQUIRED
+on_unknown_applicability: REVIEW_REQUIRED
+evidence_required: [source_instance, measured_geometry, calculation_trace]

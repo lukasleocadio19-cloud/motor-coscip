@@ -14,7 +14,7 @@ IDs e critérios de aceite vêm do documento 03 do plano.
 | POC-05 | Conferir medidas e transformações | **feito** | espelhamento, escala, unidades, blocos |
 | POC-06 | Viewer com seleção | **feito** | cena binária por camada, seleção → origem no DXF; testado com 1,28 mi de segmentos (9715) |
 | POC-07 | Tempo, memória e expansão | **feito** | `coscip_api.cli benchmark`; pior caso 20,6 s / 271 MB |
-| POC-08 | Gate de continuidade | **pré-aprovado** | 1.452/1.460 cotas conferem; faltam revisão humana das 5 confirmações e 1 medida real (ver `coscip-corpus/RELATORIO.md`) |
+| POC-08 | Gate de continuidade | **aprovado (usuário, 19/09)** | 1.452/1.460 cotas conferem; faltam revisão humana das 5 confirmações e 1 medida real (ver `coscip-corpus/RELATORIO.md`) |
 
 ## Fundação local
 
@@ -102,3 +102,18 @@ PILOT-01..06 e FUT-01..09 não iniciados — ver documento 03.
 - Testes novos: 9 passaram; lint, TypeScript e build alternativo passaram. Resultado da suíte
   completa e detalhes de ambiente em docs/proxima-sessao.md.
 - Gate A permanece pré-aprovado; nenhuma confirmação humana do corpus foi realizada nesta sessão.
+
+## Base normativa e análise automática da planta — 19/09/2026 (Claude)
+
+| ID | Estado | Onde |
+|---|---|---|
+| POC-08 | **aprovado** | usuário considerou o Gate A conferido por humano |
+| CAD-01 (fix) | **feito** | leitor ignora entidades `invisible` (estados ocultos de blocos dinâmicos; 11.190 no 9715) e grava ponto de inserção (`anchor`) |
+| REG-01 | **feito** | `coscip_normative`: ingestão de NTs em Markdown (front matter, páginas, itens, tabelas, anexos, SHA-256); `POST /v1/normative/sources` |
+| REG-02 | base | pacote `normative/base` (package/1.0): 9 regras RASCUNHO, dicionário de símbolos, matriz do que não é automatizado; toda citação conferida no texto (documento + item + termos) antes de importar |
+| REG-04 | **feito** | DSL `rules/1.1`: sujeito (FLOOR/SYMBOL/ROOM), exigido por valor/tabela de contexto/⌈divisão⌉, `fail_status`, porta de qualidade com veredito indicativo |
+| PREP-02 | base | reconhecimento automático de símbolos (bloco > layer > texto), legenda, estados NOVO/EXISTENTE/DEMOLIR, agente/carga, placas embutidas |
+| GEO-04 | base | percurso real: grade de 16 vizinhos, paredes como obstáculo, interior por fechamento morfológico; incerteza declarada |
+| GEO-05 | base | cobertura de extintor/hidrante/acionador/saída com área além do limite e área sem acesso |
+| REP-01 | base | relatório HTML imutável da análise (mapa SVG por pavimento, resultados com citação e página, cobertura normativa, hashes) |
+| UI da análise | — | tela para pedir a análise e ver resultado ainda não existe (API pronta) |

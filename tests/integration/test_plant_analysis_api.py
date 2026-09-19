@@ -1,0 +1,120 @@
+"""Base normativa + análise da planta pela API, com worker real e relatório (sintético)."""
+
+from __future__ import annotations
+
+import shutil
+import time
+from pathlib import Path
+
+import pytest
+import yaml
+
+from coscip_api import normative_base
+from coscip_cad.synthetic import make_fire_plan
+from tests.integration.test_drawings import JUST, Env
+from tests.unit.test_plant_analysis import BASE, NT_201
+
+NT201_RULES = ("NT201_EXT_DISTANCIA", "NT201_EXT_AREA", "NT201_EXT_MINIMO",
+               "NT201_EXT_INSTALACAO_ESPECIAL")
+
+
+@pytest.fixture
+def env(tmp_path):
+    e = Env(tmp_path / "data", "tok")
+    yield e
+    e.close()
+
+
+def _nt201_package(tmp: Path) -> Path:
+    """Pacote só com as regras da NT 2-01 (a única NT desta base de teste)."""
+    root = tmp / "pacote"
+    (root / "regras").mkdir(parents=True)
+    raw = yaml.safe_load((BASE / "pacote.yaml").read_text(encoding="utf-8"))
+    raw["rules"] = [f"regras/{r}.yaml" for r in NT201_RULES]
+    raw["coverage"] = [c for c in raw["coverage"] if c["document"] == "NT 2-01"
+                       and c["item"] in {"5.2.4", "6.4"}]
+    for r in NT201_RULES:
+        shutil.copy(BASE / "regras" / f"{r}.yaml", root / "regras")
+    sym = yaml.safe_load((BASE / "simbolos.yaml").read_text(encoding="utf-8"))
+    sym.pop("source")
+    (root / "simbolos.yaml").write_text(yaml.safe_dump(sym, allow_unicode=True), "utf-8")
+    (root / "pacote.yaml").write_text(yaml.safe_dump(raw, allow_unicode=True), "utf-8")
+    return root
+
+
+def _ingest(env: Env, text: str = NT_201):
+    return env.tc.post("/v1/normative/sources", headers=env.h,
+                       files=[("files", ("nt-2-01.md", text.encode("utf-8"), "text/markdown"))])
+
+
+def _wait(env: Env, execution_id: str) -> dict:
+    deadline = time.monotonic() + 120
+    while time.monotonic() < deadline:
+        ex = env.get(f"/v1/executions/{execution_id}").json()
+        if ex["state"] not in ("QUEUED", "RUNNING"):
+            return ex
+        time.sleep(0.3)
+    raise AssertionError("análise não terminou")
+
+
+def test_sources_are_ingested_once_and_bundled_package_needs_every_nt(env):
+    first = _ingest(env)
+    assert first.status_code == 201, first.text
+    assert first.json()["items"][0]["status"] == "INGESTED"
+    assert _ingest(env).json()["items"][0]["status"] == "ALREADY_PRESENT"
+    items = env.get("/v1/normative/sources").json()["items"]
+    assert [i["document"] for i in items] == ["NT 2-01"] and items[0]["current"]
+    r = env.post("/v1/rule-packages/import")
+    assert r.status_code == 422 and r.json()["code"] == "CITATIONS_NOT_VERIFIED"
+    assert any("NT 2-02" in f for f in r.json()["details"]["failures"])
+    bad = env.tc.post("/v1/normative/sources", headers=env.h,
+                      files=[("files", ("x.pdf", b"%PDF", "application/pdf"))])
+    assert bad.status_code == 422
+
+
+def test_plant_analysis_end_to_end(env, tmp_path, monkeypatch):
+    monkeypatch.setattr(normative_base, "BUNDLED_BASE", _nt201_package(tmp_path))
+    assert _ingest(env).status_code == 201
+    pkg = env.post("/v1/rule-packages/import")
+    assert pkg.status_code == 201, pkg.text
+    pkg_id = pkg.json()["id"]
+    assert env.post("/v1/rule-packages/import").json()["status"] == "ALREADY_PRESENT"
+
+    rev, states = env.import_revision([make_fire_plan(tmp_path / "ppci.dxf")])
+    d = env.get(f"/v1/revisions/{rev}/drawings").json()["items"][0]
+    body = {"rule_package_id": pkg_id, "context": {"risk_class": "PEQUENO"}}
+    blocked = env.post(f"/v1/drawings/{d['id']}/plant-analyses", body)
+    assert blocked.status_code == 409 and blocked.json()["code"] == "DRAWING_UNIT_UNCONFIRMED"
+
+    ok = env.post(f"/v1/drawings/{d['id']}/unit-confirmation", {
+        "unit": "m", "reference_a": {"x": 0, "y": 0}, "reference_b": {"x": 14, "y": 0},
+        "real_length_m": 14.0, "justification": JUST})
+    assert ok.status_code == 201, ok.text
+    assert env.post(f"/v1/drawings/{d['id']}/floors", {
+        "name": "Térreo", "clip": {"x0": -1, "y0": -1, "x1": 31, "y1": 13}}).status_code == 201
+    opts = env.get(f"/v1/drawings/{d['id']}/plant-analysis-options").json()
+    assert opts["packages"][0]["id"] == pkg_id and opts["floors"][0]["name"] == "Térreo"
+    assert any(lay["name"] == "PAREDE" and lay["suggested_obstacle"] for lay in opts["layers"])
+    wrong = env.post(f"/v1/drawings/{d['id']}/plant-analyses",
+                     {**body, "symbol_overrides": {"X": "NAO_EXISTE"}})
+    assert wrong.status_code == 422
+
+    started = env.post(f"/v1/drawings/{d['id']}/plant-analyses", body)
+    assert started.status_code == 202, started.text
+    assert _wait(env, started.json()["execution_id"])["state"] == "SUCCEEDED"
+    a = env.get(f"/v1/plant-analyses/{started.json()['analysis_id']}").json()
+    assert a["state"] == "SUCCEEDED" and a["summary"]["plan_regions"] == 1
+    results = env.get(f"/v1/analyses/{a['id']}/results").json()["items"]
+    by_rule = {r["values"]["rule_id"]: r["status"] for r in results
+               if r["values"]["subject_type"] != "SYMBOL"}
+    assert by_rule == {"NT201_EXT_DISTANCIA": "PASS", "NT201_EXT_AREA": "PASS",
+                       "NT201_EXT_MINIMO": "PASS", "NT201_EXT_INSTALACAO_ESPECIAL": "FAIL"}
+
+    report = env.get(a["reports"][0]["content_url"])
+    assert report.status_code == 200
+    assert report.headers["X-Content-SHA256"] == a["reports"][0]["sha256"]
+    html = report.text
+    assert "Análise automática da planta" in html and "CASA DE BOMBAS" in html
+    assert "sem valor normativo" in html and "<svg" in html and "<script" not in html
+    again = env.post(f"/v1/plant-analyses/{a['id']}/reports")
+    assert again.status_code == 201 and again.json()["id"] != a["reports"][0]["id"]

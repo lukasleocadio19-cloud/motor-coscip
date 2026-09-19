@@ -9,7 +9,7 @@ import json
 import sys
 from pathlib import Path
 
-from coscip_worker.stages import import_dxf
+from coscip_worker.stages import import_dxf, plant_analysis
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -20,7 +20,14 @@ def main(argv: list[str] | None = None) -> int:
     manifest_path = Path(args[0]).resolve()
     workdir = manifest_path.parent
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    result = import_dxf.run(manifest, workdir)
+    stage = manifest.get("stage", "IMPORT_DXF")
+    if stage == "PLANT_ANALYSIS":
+        result = plant_analysis.run(manifest, workdir)
+    elif stage == "IMPORT_DXF":
+        result = import_dxf.run(manifest, workdir)
+    else:
+        print(f"estágio desconhecido: {stage}", file=sys.stderr)
+        return 2
     tmp = workdir / manifest["output_dir"] / "result.json.tmp"
     tmp.write_text(result.model_dump_json(indent=2), encoding="utf-8")
     tmp.replace(tmp.with_suffix(""))

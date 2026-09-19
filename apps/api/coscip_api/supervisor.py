@@ -111,6 +111,9 @@ class Supervisor:
         self._set_exec(claim.payload["execution_id"], state=state, error_code=code)
 
     def _run(self, queue: JobQueue, claim: Claim) -> None:
+        if claim.kind == "PLANT_ANALYSIS":
+            self._run_plant(queue, claim)
+            return
         if claim.kind != "IMPORT_DXF":
             self._finish(queue, claim, "FAILED", "UNKNOWN_JOB_KIND")
             return
@@ -126,7 +129,12 @@ class Supervisor:
                     "input": "in/drawing.dxf", "input_sha256": p["file_sha256"],
                     "output_dir": "out", "max_expanded": self.settings.max_expanded_entities}
         (work / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+        if not self._spawn(queue, claim, work):
+            return
+        self._publish_import(queue, claim, work)
 
+    def _spawn(self, queue: JobQueue, claim: Claim, work: Path) -> bool:
+        """Executa o worker; devolve False se o job já foi encerrado (falha/cancelamento)."""
         proc = subprocess.Popen(
             [sys.executable, "-m", "coscip_worker.main", str(work / "manifest.json")],
             cwd=work, env=_worker_env(work),
@@ -138,12 +146,12 @@ class Supervisor:
                 proc.kill()
                 proc.wait()
                 self._finish(queue, claim, "CANCELLED", None)
-                return
+                return False
             if time.monotonic() > deadline:
                 proc.kill()
                 proc.wait()
                 self._finish(queue, claim, "FAILED", "WORKER_TIMEOUT")
-                return
+                return False
             queue.heartbeat(claim.job_id, claim.attempt_token)
             time.sleep(1.0)
 
@@ -151,8 +159,11 @@ class Supervisor:
             err = (proc.stderr.read() or b"")[-2000:].decode("utf-8", "replace")
             log.error("worker falhou (%s): %s", proc.returncode, err)
             self._finish(queue, claim, "FAILED", "WORKER_FAILED")
-            return
+            return False
+        return True
 
+    def _publish_import(self, queue: JobQueue, claim: Claim, work: Path) -> None:
+        p = claim.payload
         # Valida esquema, limites e checksums ANTES de publicar.
         try:
             result = ImportResult.model_validate_json(
@@ -207,6 +218,52 @@ class Supervisor:
         queue.complete(claim.job_id, claim.attempt_token, final, code)
         self._set_exec(p["execution_id"], state=final, error_code=code, completed_stages=2,
                        stage=None)
+        shutil.rmtree(work, ignore_errors=True)
+
+    # --- análise da planta ------------------------------------------------------------
+    def _run_plant(self, queue: JobQueue, claim: Claim) -> None:
+        from coscip_api import plant_service
+        from coscip_worker.contracts import PLANT_OUTPUT_FILES, PlantAnalysisResult
+
+        p = claim.payload
+        self._set_exec(p["execution_id"], state="RUNNING", stage="ANALYZE")
+        plant_service.set_analysis_state(self.factory, p["analysis_id"], "RUNNING")
+        work = self.layout.staging / claim.job_id / claim.attempt_token
+        (work / "in").mkdir(parents=True)
+        (work / "out").mkdir()
+        shutil.copy2(self.storage.resolve(p["file_key"]), work / "in" / "drawing.dxf")
+        manifest = plant_service.worker_manifest(self.factory, p)
+        manifest.update({"stage": "PLANT_ANALYSIS", "job_id": claim.job_id,
+                         "attempt_token": claim.attempt_token, "input": "in/drawing.dxf",
+                         "input_sha256": p["file_sha256"], "output_dir": "out",
+                         "max_expanded": self.settings.max_expanded_entities})
+        (work / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+        if not self._spawn(queue, claim, work):
+            plant_service.set_analysis_state(self.factory, p["analysis_id"], "FAILED")
+            return
+        out = work / "out"
+        try:
+            result = PlantAnalysisResult.model_validate_json(
+                (out / "result.json").read_text(encoding="utf-8"))
+        except (OSError, ValidationError):
+            result = None
+        if (result is None or result.input_sha256 != p["file_sha256"]
+                or result.attempt_token != claim.attempt_token
+                or any(_sha256(out / n) != result.outputs[n] for n in PLANT_OUTPUT_FILES)):
+            self._finish(queue, claim, "FAILED", "WORKER_OUTPUT_INVALID")
+            plant_service.set_analysis_state(self.factory, p["analysis_id"], "FAILED")
+            return
+        queue.heartbeat(claim.job_id, claim.attempt_token)
+        self._set_exec(p["execution_id"], stage="PUBLISH", completed_stages=1)
+        try:
+            plant_service.publish(self.factory, self.storage, self.tenant_id, p,
+                                  out / "analysis.json")
+        except Exception:
+            plant_service.set_analysis_state(self.factory, p["analysis_id"], "FAILED")
+            raise
+        queue.complete(claim.job_id, claim.attempt_token, "SUCCEEDED", None)
+        self._set_exec(p["execution_id"], state="SUCCEEDED", error_code=None,
+                       completed_stages=2, stage=None)
         shutil.rmtree(work, ignore_errors=True)
 
 

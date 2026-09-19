@@ -56,3 +56,28 @@ class ImportResult(BaseModel):
             if len(sha) != 64:
                 raise ValueError("hash inválido")
         return v
+
+
+# --- análise da planta -------------------------------------------------------------
+PLANT_OUTPUT_FILES = ("analysis.json",)
+
+
+class PlantAnalysisResult(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    schema_version: str = "worker-plant-analysis/1.0"
+    job_id: str
+    attempt_token: str
+    input_sha256: str = Field(pattern=r"^[0-9a-f]{64}$")
+    outputs: dict[str, str]  # nome → SHA-256
+    summary: dict
+    duration_s: float
+
+    @field_validator("outputs")
+    @classmethod
+    def _all_outputs(cls, v: dict[str, str]) -> dict[str, str]:
+        if set(v) != set(PLANT_OUTPUT_FILES):
+            raise ValueError(f"saídas esperadas: {PLANT_OUTPUT_FILES}")
+        if any(len(sha) != 64 for sha in v.values()):
+            raise ValueError("hash inválido")
+        return v

@@ -7,12 +7,12 @@ são tratados como estado operacional pelo chamador, nunca como PASS/NOT_APPLICA
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from decimal import Decimal
+from decimal import ROUND_CEILING, Decimal
 from typing import Any
 
 from coscip_cbm import Applicability, EvaluationStatus
 from coscip_geometry.tolerances import compare_maximum, compare_minimum
-from coscip_rules.dsl import Predicate, RuleDefinition
+from coscip_rules.dsl import Predicate, RequiredSpec, RuleDefinition
 
 _UNKNOWN = object()
 
@@ -93,6 +93,47 @@ def applicability(rule: RuleDefinition, ctx: EvaluationContext) -> Applicability
     return {True: Applicability.TRUE, False: Applicability.FALSE, None: Applicability.UNKNOWN}[res]
 
 
+class _MissingKey(Exception):
+    def __init__(self, fact: str, value: Any) -> None:
+        super().__init__(fact)
+        self.fact, self.value = fact, value
+
+
+def _num(ctx: EvaluationContext, name: str) -> Decimal:
+    return _dec(ctx.facts[name].value)
+
+
+def _dec(v: Any) -> Decimal:
+    """Número da regra sem ruído de float (20.0 → 20)."""
+    if isinstance(v, float) and v.is_integer():
+        return Decimal(int(v))
+    return Decimal(str(v))
+
+
+def resolve_required(spec: str | RequiredSpec, ctx: EvaluationContext,
+                     steps: list[str]) -> Decimal:
+    """Valor exigido a partir do conjunto fechado de formas (rules/1.1)."""
+    if isinstance(spec, str):
+        val = _num(ctx, spec)
+        steps.append(f"{spec} = {val}")
+        return val
+    if spec.value is not None:
+        return _dec(spec.value)
+    if spec.table is not None:
+        key = ctx.get(spec.table.key)
+        if key is _UNKNOWN or str(key) not in spec.table.values:
+            raise _MissingKey(spec.table.key, None if key is _UNKNOWN else key)
+        val = _dec(spec.table.values[str(key)])
+        steps.append(f"tabela[{spec.table.key}={key}] = {val}")
+        return val
+    assert spec.ceil_div is not None
+    num = _num(ctx, spec.ceil_div.numerator)
+    den = resolve_required(spec.ceil_div.denominator, ctx, steps)
+    val = (num / den).to_integral_value(rounding=ROUND_CEILING)
+    steps.append(f"⌈{spec.ceil_div.numerator} ({num}) ÷ {den}⌉ = {val}")
+    return val
+
+
 def evaluate(rule: RuleDefinition, ctx: EvaluationContext) -> Outcome:
     app = applicability(rule, ctx)
     if app is Applicability.FALSE:
@@ -112,14 +153,26 @@ def evaluate(rule: RuleDefinition, ctx: EvaluationContext) -> Outcome:
         return Outcome(app, EvaluationStatus.REVIEW_REQUIRED, "INPUT_CONFLICT",
                        {"conflicts": conflicts})
 
-    for gate in rule.quality_gates:
-        if _pred(gate, ctx) is not True:
-            return Outcome(app, EvaluationStatus.REVIEW_REQUIRED, "QUALITY_GATE_NOT_MET",
-                           {"gate": gate.fact})
+    failed_gate = next((g for g in rule.quality_gates if _pred(g, ctx) is not True), None)
+    if failed_gate is not None:
+        # O cálculo segue para o rastro (indicativo), mas o estado é revisão humana.
+        out = _calculate(rule, ctx, app)
+        trace = {**out.trace, "gate": failed_gate.fact, "indicative": out.status.value
+                 if out.status in (EvaluationStatus.PASS, EvaluationStatus.FAIL)
+                 else out.trace.get("indicative")}
+        return Outcome(app, EvaluationStatus.REVIEW_REQUIRED, "QUALITY_GATE_NOT_MET", trace)
+    return _calculate(rule, ctx, app)
 
+
+def _calculate(rule: RuleDefinition, ctx: EvaluationContext, app: Applicability) -> Outcome:
     calc = rule.calculation
     measured = ctx.facts[calc.measured]
-    required = Decimal(str(ctx.facts[calc.required].value))
+    steps: list[str] = []
+    try:
+        required = resolve_required(calc.required, ctx, steps)
+    except _MissingKey as exc:
+        return Outcome(app, EvaluationStatus.MISSING_DATA, "REQUIRED_TABLE_KEY_UNKNOWN",
+                       {"missing": [exc.fact], "value": exc.value})
     if measured.uncertainty_abs is None:
         return Outcome(app, EvaluationStatus.REVIEW_REQUIRED, "UNCERTAINTY_UNKNOWN")
 
@@ -132,6 +185,9 @@ def evaluate(rule: RuleDefinition, ctx: EvaluationContext) -> Outcome:
         "FAIL": "MEASURED_INTERVAL_VIOLATES",
         "REVIEW_REQUIRED": "UNCERTAINTY_CROSSES_LIMIT",
     }[verdict]
+    indicative = verdict
+    if verdict == "FAIL" and rule.fail_status == "REVIEW_REQUIRED":
+        verdict, reason = "REVIEW_REQUIRED", "HEURISTIC_EVIDENCE_VIOLATES"
     return Outcome(
         app,
         EvaluationStatus(verdict),
@@ -141,6 +197,9 @@ def evaluate(rule: RuleDefinition, ctx: EvaluationContext) -> Outcome:
             "measured": measured.value,
             "uncertainty_abs": measured.uncertainty_abs,
             "required": str(required),
+            "required_steps": steps,
+            "indicative": indicative,
             "unit": calc.unit,
+            "evidence_ids": list(measured.evidence_ids),
         },
     )

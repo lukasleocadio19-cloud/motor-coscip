@@ -17,8 +17,10 @@ class ApiError(Exception):
         *,
         resource_id: str | None = None,
         required_action: str | None = None,
+        extra: dict | None = None,
     ) -> None:
         super().__init__(title)
+        self.extra = extra
         self.status = status
         self.code = code
         self.title = title
@@ -41,4 +43,6 @@ async def api_error_handler(request: Request, exc: ApiError) -> JSONResponse:
         "resource_id": exc.resource_id,
         "required_action": exc.required_action,
     }
+    if exc.extra:
+        body["details"] = exc.extra
     return JSONResponse(body, status_code=exc.status, media_type="application/problem+json")

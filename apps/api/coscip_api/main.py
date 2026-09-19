@@ -23,6 +23,8 @@ from coscip_api.routers import (
     executions,
     geometry,
     local,
+    normative,
+    plant_analyses,
     preparation,
     preparation_reports,
     projects,
@@ -82,7 +84,8 @@ def create_app(settings: Settings | None = None, *, start_supervisor: bool = Tru
 
     for r in (local.router, projects.router, drawings.router, executions.router,
               analyses.router, backups.router, unit_reviews.router,
-              preparation.router, geometry.router, preparation_reports.router):
+              preparation.router, geometry.router, preparation_reports.router,
+              normative.router, plant_analyses.router):
         app.include_router(r, prefix="/v1")
 
     if STATIC_DIR.exists():

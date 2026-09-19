@@ -93,6 +93,8 @@ class ExtractedEntity:
     polylines: tuple[tuple[tuple[float, float], ...], ...] = ()
     max_sagitta: float = 0.0
     source_layer: str | None = None  # layer original quando herdado ("0" em bloco)
+    # Ponto de inserção no mundo (INSERT, TEXT, MTEXT, ATTRIB, CIRCLE, POINT).
+    anchor: tuple[float, float] | None = None
 
 
 class DxfReader:
@@ -100,6 +102,7 @@ class DxfReader:
 
     def __init__(self, max_expanded: int = DEFAULT_MAX_EXPANDED) -> None:
         self.max_expanded = max_expanded
+        self.invisible_skipped = 0
 
     def open(self, path: Path) -> Drawing:
         try:
@@ -157,6 +160,7 @@ class DxfReader:
         """
         space = doc.modelspace() if layout == "Model" else doc.paperspace(layout)
         budget = [self.max_expanded]
+        self.invisible_skipped = 0
         for e in space:
             yield from self._walk(e, layout, (), Matrix44(), None, 0, budget, None)
 
@@ -171,6 +175,12 @@ class DxfReader:
         budget: list[int],
         parent_layer: str | None,
     ) -> Iterator[ExtractedEntity]:
+        # Bloco dinâmico com estados de visibilidade: o AutoCAD grava TODOS os estados no
+        # bloco anônimo e marca os ocultos com ``invisible=1`` (visto no 9715: cada luminária
+        # vinha com NOVA/EXISTENTE/DEMOLIR/REALOCADA). Entidade invisível não é desenho.
+        if e.dxf.get("invisible", 0):
+            self.invisible_skipped += 1
+            return
         budget[0] -= 1
         if budget[0] < 0:
             raise DxfReadError("limite de entidades expandidas excedido")
@@ -241,8 +251,18 @@ class DxfReader:
         text = None
         polylines: tuple = ()
         sagitta = 0.0
+        anchor = None
         etype = e.dxftype()
         try:
+            if etype == "INSERT":
+                # ``m`` já é a matriz da inserção: a translação é o ponto de inserção no mundo.
+                v = m.transform((0, 0, 0))
+                anchor = (v.x, v.y)
+            elif etype in {"TEXT", "MTEXT", "ATTRIB", "CIRCLE", "POINT"}:
+                attr = "center" if etype == "CIRCLE" else (
+                    "location" if etype == "POINT" else "insert")
+                v = m.transform(e.dxf.get(attr, (0, 0, 0)))
+                anchor = (v.x, v.y)
             if etype == "LINE":
                 raw = [e.dxf.start, e.dxf.end]
                 pts = tuple((v.x, v.y) for v in m.transform_vertices(raw))
@@ -270,4 +290,5 @@ class DxfReader:
             polylines=polylines,
             max_sagitta=sagitta,
             source_layer=e.dxf.get("layer", "0"),
+            anchor=anchor,
         )

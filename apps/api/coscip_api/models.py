@@ -266,6 +266,11 @@ class NormativeSource(Base, _Ids):
     effective_from: Mapped[str | None] = mapped_column(String(10))
     effective_until: Mapped[str | None] = mapped_column(String(10))
     collected_at: Mapped[str | None] = mapped_column(String(10))
+    # Texto ingerido (Markdown da conversão integral); o índice de itens é derivado dele.
+    title: Mapped[str | None] = mapped_column(String(300))
+    text_sha256: Mapped[str | None] = mapped_column(String(64), unique=True, index=True)
+    artifact_id: Mapped[str | None] = mapped_column(ForeignKey("file_objects.id"))
+    meta: Mapped[dict | None] = mapped_column(JSON)
 
 
 class RuleVersion(Base, _Ids):
@@ -327,6 +332,8 @@ class Analysis(Base, _Tenant):
     runtime_manifest: Mapped[dict | None] = mapped_column(JSON)
     ai_enabled: Mapped[bool] = mapped_column(Boolean, default=False)
     state: Mapped[str] = mapped_column(String(20), default="QUEUED")
+    drawing_id: Mapped[str | None] = mapped_column(ForeignKey("drawings.id"), index=True)
+    execution_id: Mapped[str | None] = mapped_column(String(36))
 
 
 class RuleResultRow(Base, _Tenant):

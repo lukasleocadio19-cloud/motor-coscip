@@ -47,10 +47,14 @@ def run(manifest: dict, workdir: Path) -> ImportResult:
                 "source_layer": e.source_layer, "layout": e.layout,
                 "instance_path": list(e.instance_path), "block": e.block_name,
                 "transform": e.world_transform, "quality": e.quality.value,
-                "points": e.points, "text": e.text,
+                "points": e.points, "text": e.text, "anchor": e.anchor,
             }, ensure_ascii=False).encode("utf-8") + b"\n")
 
     scene_manifest = scene.write(out)
+    if reader.invisible_skipped:
+        inv.warnings.append(
+            f"{reader.invisible_skipped} entidade(s) invisível(is) ignorada(s) "
+            "(estados ocultos de blocos dinâmicos)")
     inventory = InventoryOut(
         dxf_version=inv.dxf_version, insunits=inv.insunits, insunits_name=inv.insunits_name,
         units_declared=inv.units_declared, layouts=inv.layouts, layers=inv.layers,

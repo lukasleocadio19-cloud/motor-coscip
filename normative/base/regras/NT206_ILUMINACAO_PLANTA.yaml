@@ -1,0 +1,34 @@
+# RASCUNHO redigido pelo assistente a partir do texto ingerido da NT 2-06. Sem homologação.
+# Só confere se há pontos indicados na planta; espaçamento e aclaramento dependem da
+# ABNT NBR 10898, que não está na base ingerida.
+schema_version: rules/1.1
+id: NT206_ILUMINACAO_PLANTA
+version: 1
+title: Pontos de iluminação de emergência indicados na planta de leiaute
+measure: Iluminação de emergência
+subject: FLOOR
+publication_state: DRAFT
+production_eligible: false
+jurisdiction: CBMERJ-RJ
+source:
+  document: NT 2-06
+  edition: 1ª edição - 2019; Portaria CBMERJ nº 1.125/2020
+  item: "6.2"
+  quote: ["plantas de leiaute", "localização dos dispositivos"]
+applies_when:
+  all:
+    - {fact: context.requires_lighting, operator: equals, value: true}
+required_inputs:
+  - floor.count.lighting
+  - quality.region_confirmed
+quality_gates:
+  - {fact: quality.region_confirmed, operator: equals, value: true}
+calculation:
+  operator: minimum_with_uncertainty
+  measured: floor.count.lighting
+  required: {value: 1}
+  unit: un
+on_missing: MISSING_DATA
+on_conflict: REVIEW_REQUIRED
+on_unknown_applicability: REVIEW_REQUIRED
+evidence_required: [source_instance, calculation_trace]

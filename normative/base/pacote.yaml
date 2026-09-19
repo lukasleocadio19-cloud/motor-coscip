@@ -1,0 +1,81 @@
+# Pacote normativo para a análise automática da planta (package/1.0).
+#
+# Estado RASCUNHO: regras redigidas pelo assistente a partir das NTs ingeridas, com cada
+# citação conferida contra o texto (documento, item e termos). NÃO homologado: o relatório
+# gerado com este pacote não tem valor normativo (REG-05/REG-06 pendentes).
+schema_version: package/1.0
+id: CBMERJ-PLANTA-G2
+name: CBMERJ — conferência automática de planta (Grupo 2) — rascunho
+version: 1
+jurisdiction: CBMERJ-RJ
+publication_state: DRAFT
+symbols: simbolos.yaml
+rules:
+  - regras/NT201_EXT_DISTANCIA.yaml
+  - regras/NT201_EXT_AREA.yaml
+  - regras/NT201_EXT_MINIMO.yaml
+  - regras/NT201_EXT_INSTALACAO_ESPECIAL.yaml
+  - regras/NT202_HID_MANGUEIRA.yaml
+  - regras/NT207_ACIONADOR_DISTANCIA.yaml
+  - regras/NT208_SAIDA_DISTANCIA.yaml
+  - regras/NT205_PLACA_EXTINTOR.yaml
+  - regras/NT206_ILUMINACAO_PLANTA.yaml
+
+# Itens da base que exigem conferência humana ou dado fora da planta. Cada item é conferido
+# contra o texto ingerido (existência + termos) e aparece no relatório como "não automatizado".
+coverage:
+  - document: NT 2-01
+    item: "5.2.1"
+    quote: ["1,60 m do piso acabado"]
+    topic: Altura de instalação do extintor
+    reason: Planta baixa não traz cota vertical; conferir em detalhe/corte ou vistoria.
+  - document: NT 2-01
+    item: Tabela 1
+    quote: ["Capacidades extintoras mínimas"]
+    topic: Capacidade extintora mínima por agente
+    reason: A capacidade só é lida quando escrita no bloco ou em texto junto ao símbolo; conferir memorial.
+  - document: NT 2-01
+    item: 5.2.2
+    quote: ["não fique instalado em escadas"]
+    topic: Posição do extintor (visível, junto ao acesso, fora de escadas)
+    reason: Critério qualitativo; revisar na planta.
+  - document: NT 2-01
+    item: "6.12"
+    quote: ["0,70 m x 0,70 m"]
+    topic: Pintura de piso sob o extintor em indústria/depósito
+    reason: Depende da ocupação e de detalhe gráfico; conferir na planta e no memorial.
+  - document: NT 2-02
+    item: 5.12.3
+    quote: ["não deverá ser inferior a 8 m"]
+    topic: Alcance do jato compacto
+    reason: Depende de cálculo hidráulico (memorial), não da planta.
+  - document: NT 2-02
+    item: 5.2.3
+    quote: ["15 m do alinhamento da via pública"]
+    topic: Hidrante de recalque até 15 m do alinhamento
+    reason: O alinhamento da via não é identificado automaticamente; medir com a ferramenta Medir.
+  - document: NT 2-05
+    item: "5.1"
+    quote: ["ABNT"]
+    topic: Distâncias e dimensões das placas
+    reason: Remete à ABNT NBR 16820, fora da base ingerida.
+  - document: NT 2-06
+    item: 5.1.1
+    quote: ["ABNT NBR 10898"]
+    topic: Espaçamento e aclaramento da iluminação de emergência
+    reason: Remete à ABNT NBR 10898, fora da base ingerida.
+  - document: NT 2-07
+    item: 5.5.2
+    quote: ["acionador manual"]
+    topic: Detectores (área de cobertura e espaçamento)
+    reason: Critérios de espaçamento na ABNT NBR 17240, fora da base ingerida.
+  - document: NT 2-08
+    item: Anexo C
+    quote: ["DISTÂNCIAS MÁXIMAS A SEREM PERCORRIDAS"]
+    topic: Limites de distância até a saída por ocupação
+    reason: Tabela do Anexo C está como imagem na base; o analista informa o limite aplicável.
+  - document: NT 2-08
+    item: 5.3.2.4
+    quote: ["número de saídas"]
+    topic: Número e largura das saídas (população)
+    reason: Exige população por ocupação e larguras das portas medidas; não automatizado nesta versão.

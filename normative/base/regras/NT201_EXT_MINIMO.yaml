@@ -1,0 +1,41 @@
+# RASCUNHO redigido pelo assistente a partir do texto ingerido da NT 2-01. Sem homologação.
+# Exceção do 5.2.4 (risco pequeno com área < 50 m²) tratada na aplicabilidade.
+schema_version: rules/1.1
+id: NT201_EXT_MINIMO
+version: 1
+title: No mínimo dois extintores na área de risco
+measure: Extintores
+subject: FLOOR
+publication_state: DRAFT
+production_eligible: false
+jurisdiction: CBMERJ-RJ
+source:
+  document: NT 2-01
+  edition: 2ª edição - 2020
+  item: 5.2.5
+  quote: ["no mínimo, 02 (dois) extintores"]
+extra_sources:
+  - document: NT 2-01
+    edition: 2ª edição - 2020
+    item: 5.2.4
+    quote: ["única unidade extintora", "área inferior a 50 m"]
+applies_when:
+  all:
+    - {fact: context.unifamiliar, operator: equals, value: false}
+  any:
+    - {fact: context.risk_class, operator: not_equals, value: PEQUENO}
+    - {fact: floor.area_m2, operator: gte, value: 50}
+required_inputs:
+  - floor.count.extinguishers
+  - quality.region_confirmed
+quality_gates:
+  - {fact: quality.region_confirmed, operator: equals, value: true}
+calculation:
+  operator: minimum_with_uncertainty
+  measured: floor.count.extinguishers
+  required: {value: 2}
+  unit: un
+on_missing: MISSING_DATA
+on_conflict: REVIEW_REQUIRED
+on_unknown_applicability: REVIEW_REQUIRED
+evidence_required: [source_instance, calculation_trace]
