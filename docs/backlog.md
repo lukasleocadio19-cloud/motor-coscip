@@ -139,7 +139,7 @@ PILOT-01..06 e FUT-01..09 não iniciados — ver documento 03.
 | Tela: enquadramento | **feito** | ocupação escolhida da tabela sugere a classe de risco; `context.risk_basis` gravado e mostrado no relatório |
 | REV-01 | **feito** | decisão append-only com veredito (`final_status`, migração 0004), validação CONFIRM/CONTEST × REQUEST_DATA, auditoria; `GET /v1/plant-analyses/{id}/reviews` |
 | REV-02 | **feito** | revisão na tela (por resultado, histórico, filtro "sem conclusão", aviso de relatório desatualizado); nova emissão traz coluna "Decisão humana", contagem após revisão e `review_snapshot` |
-| Decreto 42, Anexo III | — | sistemas exigidos por divisão/área/altura ainda informados à mão |
+| Decreto 42, Anexo III | — | sistemas exigidos ainda informados à mão; estrutura das tabelas 2–21 levantada no guia |
 
 ## Extintor presumido pela sinalização — 19/09/2026 (Claude, noite 3)
 

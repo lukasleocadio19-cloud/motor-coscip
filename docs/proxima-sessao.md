@@ -55,6 +55,14 @@ Enquadramento **proposto pelo assistente** a partir dos rótulos da planta — c
 2. Informar o limite da NT 2-08 (Anexo C, imagem) e os sistemas exigidos em cada processo.
 3. Sistemas exigidos a partir do **Decreto 42/2018, Anexo III** (tabelas por divisão, área e
    altura) — mesma técnica da NT 1-04 (tabela no pacote + verificação por linha + imagem).
+   Mapa já levantado (texto em `decreto-42-2018-coscip-compilado.md`, linhas ~997–2080; páginas
+   26–45 do PDF): **Tabela 2** = área ≤ 900 m² e até 2 pavimentos, colunas A/D/E/G, B, C, F1–F2,
+   F3/F4/F7/F8/F10, F5/F11, F6, F9, H1/H4, H2/H3, I/J/M3, L1; linhas Extintores, Sinalização,
+   Iluminação, Saídas, Plano de emergência, Materiais de acabamento, Controle de fumaça — **não
+   lista hidrantes nem alarme**; M-2 (GLP) não tem coluna (vai para NT 4-05). Tabelas 3–21: por
+   grupo acima de 900 m² ou de 2 pavimentos, com colunas por altura. A conversão tem cabeçalhos
+   de coluna quebrados em várias linhas: conferir nas imagens das páginas antes de codificar.
+   Aplicação imediata: 9715 (D-2, 396 m², térreo) → Tabela 2, coluna A/D/E/G.
 4. Mobiliário como obstáculo, portas fechadas, largura/número de saídas (NT 2-08 5.3).
 5. Homologação com responsável técnico (REG-05/06).
 
