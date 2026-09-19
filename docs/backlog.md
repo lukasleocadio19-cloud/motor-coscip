@@ -129,3 +129,14 @@ PILOT-01..06 e FUT-01..09 não iniciados — ver documento 03.
 | Tela Análise da planta | **feito** | `#/desenhos/:id/analise` (botão "Analisar planta" na planta): enquadramento, saídas, pavimentos, paredes (automático/manual), mapeamento de blocos; histórico; resultado por região com mapa, contagens, percursos, áreas declaradas, resultados com citação, blocos não reconhecidos → "mapear"; relatório e nova emissão |
 | CLI normativo | **feito** | `coscip_api.cli normative-import-sources <pasta>` e `normative-import-package [pasta]` |
 | REV-01/02 | — | revisão humana dos resultados na tela ainda não existe |
+
+## Recortes reais, enquadramento pela NT 1-04 e revisão humana — 19/09/2026 (Claude, noite 2)
+
+| ID | Estado | Onde |
+|---|---|---|
+| PREP-01 (real) | **feito** | 7 pavimentos recortados nas 5 plantas reais (assistente, conferido em vista SVG dos segmentos); ver guia |
+| REG-03 | base | `normative/base/enquadramento.yaml`: 60 divisões da NT 1-04 Anexo B → risco (24 por célula mesclada, conferidas nas imagens p. 11–12); verificação linha a linha (`verify_table_row`); mapa Médio 1/2 → coluna Médio da NT 2-01 Tabela 3; exceções 5.6–5.14 ficam com o analista |
+| Tela: enquadramento | **feito** | ocupação escolhida da tabela sugere a classe de risco; `context.risk_basis` gravado e mostrado no relatório |
+| REV-01 | **feito** | decisão append-only com veredito (`final_status`, migração 0004), validação CONFIRM/CONTEST × REQUEST_DATA, auditoria; `GET /v1/plant-analyses/{id}/reviews` |
+| REV-02 | **feito** | revisão na tela (por resultado, histórico, filtro "sem conclusão", aviso de relatório desatualizado); nova emissão traz coluna "Decisão humana", contagem após revisão e `review_snapshot` |
+| Decreto 42, Anexo III | — | sistemas exigidos por divisão/área/altura ainda informados à mão |

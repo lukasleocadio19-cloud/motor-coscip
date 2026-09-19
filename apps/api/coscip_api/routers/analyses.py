@@ -5,7 +5,7 @@ Rotas ainda não construídas respondem 501 com o ID do backlog correspondente.
 
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, Literal
 
 from fastapi import APIRouter, Depends, Header
 from fastapi.responses import StreamingResponse
@@ -18,6 +18,7 @@ from coscip_api.deps import AppState, db, state
 from coscip_api.errors import ApiError, not_implemented
 from coscip_api.models import (
     Analysis,
+    AuditEvent,
     FileObject,
     ModelSnapshot,
     ReviewDecisionRow,
@@ -166,7 +167,9 @@ def result_evidence(result_id: str):
 
 class ReviewIn(BaseModel):
     decision: ReviewDecision
-    justification: str = Field(min_length=3)
+    # Veredito do analista: obrigatório ao confirmar/contestar, ausente ao pedir dado.
+    final_status: Literal["PASS", "FAIL", "NOT_APPLICABLE"] | None = None
+    justification: str = Field(min_length=3, max_length=2000)
     extra_evidence_ids: list[str] = []
 
 
@@ -177,13 +180,21 @@ def add_review(result_id: str, body: ReviewIn, st: AppState = Depends(state)):
         r = s.get(RuleResultRow, result_id)
         if r is None or r.tenant_id != st.tenant_id:
             raise ApiError(404, "NOT_FOUND", "Resultado não encontrado")
+        needs_verdict = body.decision in (ReviewDecision.CONFIRM, ReviewDecision.CONTEST)
+        if needs_verdict != (body.final_status is not None):
+            raise ApiError(422, "INVALID_REVIEW",
+                           "Confirmar ou contestar exige o veredito; pedir dado não leva veredito")
         d = ReviewDecisionRow(tenant_id=st.tenant_id, result_id=result_id,
-                              decision=body.decision, justification=body.justification,
+                              decision=body.decision, final_status=body.final_status,
+                              justification=body.justification.strip(),
                               author_id=st.operator_id,
                               extra_evidence_ids=body.extra_evidence_ids)
         s.add(d)
         s.flush()
-        return {"id": d.id, "decision": d.decision}
+        s.add(AuditEvent(tenant_id=st.tenant_id, actor_id=st.operator_id,
+                         action="review.decision_added", resource=result_id,
+                         diff={"decision": d.decision, "final_status": d.final_status}))
+        return {"id": d.id, "decision": d.decision, "final_status": d.final_status}
 
 
 # --- relatórios, regras, consumo -----------------------------------------

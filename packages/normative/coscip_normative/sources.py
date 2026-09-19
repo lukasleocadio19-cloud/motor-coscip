@@ -208,6 +208,46 @@ def _excerpt(segment: str, terms: tuple[str, ...], size: int = 420) -> str:
     return ("…" if start else "") + out + ("…" if start + size < len(flat) else "")
 
 
+def _page_before(text: str, pos: int) -> int | None:
+    found = None
+    for m in _PAGE.finditer(text, 0, pos):
+        found = int(m.group(1))
+    return found
+
+
+def verify_table_row(sources: dict[str, NormativeText], document: str, item: str,
+                     cells: tuple[str, ...]) -> CitationCheck:
+    """Confere que todos os ``cells`` estão na MESMA linha de uma tabela dentro do item.
+
+    Mais forte que ``verify_citation``: evita casar a divisão de uma linha com o risco de
+    outra. O primeiro termo precisa ser uma célula inteira; os demais, trechos de célula.
+    """
+    item = str(item)
+    try:
+        doc_id = normalize_document_id(document)
+    except SourceError as exc:
+        return CitationCheck(document, item, False, problem=str(exc))
+    src = sources.get(doc_id)
+    if src is None:
+        return CitationCheck(doc_id, item, False, problem="documento ausente da base")
+    occurrences = src.items.get(item)
+    if not occurrences:
+        return CitationCheck(doc_id, item, False, problem="item não encontrado no texto",
+                             text_sha256=src.text_sha256)
+    wanted = [fold(c) for c in cells]
+    for it in occurrences:
+        pos = it.start
+        for line in src.text[it.start:it.end].splitlines(keepends=True):
+            cols = [fold(c) for c in line.strip().strip("|").split("|")]
+            if wanted and wanted[0] in cols and all(any(w in c for c in cols) for w in wanted):
+                flat = " ".join(line.replace("|", " ").split())
+                return CitationCheck(doc_id, item, True, _page_before(src.text, pos), flat[:300],
+                                     (), None, src.text_sha256)
+            pos += len(line)
+    return CitationCheck(doc_id, item, False, problem="linha da tabela não encontrada no item",
+                         missing_terms=tuple(cells), text_sha256=src.text_sha256)
+
+
 def verify_citation(sources: dict[str, NormativeText], document: str, item: str,
                     quote: tuple[str, ...] = ()) -> CitationCheck:
     item = str(item)

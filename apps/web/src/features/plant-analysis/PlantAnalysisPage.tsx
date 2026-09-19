@@ -6,7 +6,7 @@ import { Button, Card, EmptyState, ErrorState, ExecutionBadge, PageHeader } from
 
 import { AnalysisResult } from "./AnalysisResult";
 import {
-  type DrawingInfo, type PlantAnalysis, type PlantContext, type PlantOptions, type Risk,
+  type Division, type DrawingInfo, type PlantAnalysis, type PlantContext, type PlantOptions, type Risk,
   STATUS_ORDER, TERMINAL,
 } from "./types";
 
@@ -50,6 +50,7 @@ export function PlantAnalysisPage() {
   const [packageId, setPackageId] = useState("");
   const [risk, setRisk] = useState<Risk | "">("");
   const [occupancy, setOccupancy] = useState("");
+  const [riskBasis, setRiskBasis] = useState<string | null>(null);
   const [unifamiliar, setUnifamiliar] = useState(false);
   const [hydrants, setHydrants] = useState<Tri>("");
   const [alarm, setAlarm] = useState<Tri>("");
@@ -79,6 +80,7 @@ export function PlantAnalysisPage() {
     if (!last) return;
     setRisk(last.risk_class ?? "");
     setOccupancy(last.occupancy ?? "");
+    setRiskBasis(last.risk_basis ?? null);
     setUnifamiliar(last.unifamiliar);
     setHydrants(toTri(last.requires_hydrants));
     setAlarm(toTri(last.requires_alarm));
@@ -88,6 +90,23 @@ export function PlantAnalysisPage() {
   }, [history.data, prefilled]);
 
   const floors = drawing.data?.floors ?? opts?.floors ?? [];
+  const cls = opts?.classification ?? null;
+  const divisions = cls?.divisions ?? [];
+  const division = divisions.find((d) => d.id === occupancy);
+  const groups = useMemo(() => {
+    const m = new Map<string, Division[]>();
+    for (const d of divisions) m.set(d.group, [...(m.get(d.group) ?? []), d]);
+    return [...m.entries()];
+  }, [divisions]);
+  const pickDivision = (id: string) => {
+    setOccupancy(id);
+    const d = divisions.find((x) => x.id === id);
+    if (d && cls) {
+      setRisk(cls.risk_to_rules[d.risk]);
+      setRiskBasis(`NT 1-04, Anexo B (p. ${d.page}): ${d.id} ${d.description.slice(0, 60)} → ${d.risk}`
+        + (d.merged_from ? ` (célula mesclada com ${d.merged_from})` : ""));
+    }
+  };
   const chosenFloors = floorIds ?? new Set(floors.map((f) => f.id));
   const exitMaxNum = exitMax.trim() ? Number(exitMax.replace(",", ".")) : null;
   const exitInvalid = exitMaxNum !== null && !(exitMaxNum > 0 && exitMaxNum <= 300);
@@ -98,6 +117,7 @@ export function PlantAnalysisPage() {
         risk_class: risk || null,
         unifamiliar,
         occupancy: occupancy.trim() || null,
+        risk_basis: risk ? riskBasis ?? "informada pelo analista" : null,
         requires_hydrants: triValue(hydrants),
         requires_alarm: triValue(alarm),
         requires_lighting: triValue(lighting),
@@ -173,18 +193,46 @@ export function PlantAnalysisPage() {
               <div className="flex flex-wrap gap-3 text-sm">
                 {RISKS.map((r) => (
                   <label key={r.v} className="flex items-center gap-1">
-                    <input type="radio" name="risk" checked={risk === r.v} onChange={() => setRisk(r.v)} />
+                    <input type="radio" name="risk" checked={risk === r.v}
+                      onChange={() => { setRisk(r.v); setRiskBasis(null); }} />
                     {r.label}
                   </label>
                 ))}
               </div>
               {!risk && <p className="mt-1 text-xs text-amber-800">Sem a classe, distância e área por extintor ficam como “dado ausente”.</p>}
+              {risk && <p className="mt-1 text-xs text-slate-500">Origem: {riskBasis ?? "informada pelo analista"}</p>}
             </fieldset>
             <label className="mb-2 block text-sm">
               Ocupação / divisão (Decreto 42/2018, Anexo II)
-              <input value={occupancy} onChange={(e) => setOccupancy(e.target.value)} maxLength={20}
-                placeholder="ex.: C-2" className="mt-1 w-full rounded border border-slate-300 px-2 py-1" />
+              {divisions.length > 0 ? (
+                <select value={occupancy} onChange={(e) => pickDivision(e.target.value)}
+                  className="mt-1 w-full rounded border border-slate-300 px-2 py-1">
+                  <option value="">não informada</option>
+                  {groups.map(([g, ds]) => (
+                    <optgroup key={g} label={g}>
+                      {ds.map((d) => <option key={d.id} value={d.id}>{d.id} — {d.description.slice(0, 70)}</option>)}
+                    </optgroup>
+                  ))}
+                  {occupancy && !divisions.some((d) => d.id === occupancy) && <option value={occupancy}>{occupancy}</option>}
+                </select>
+              ) : (
+                <input value={occupancy} onChange={(e) => setOccupancy(e.target.value)} maxLength={20}
+                  placeholder="ex.: C-2" className="mt-1 w-full rounded border border-slate-300 px-2 py-1" />
+              )}
             </label>
+            {division && (
+              <p className="mb-2 rounded bg-teal-50 px-2 py-1 text-xs text-teal-900 ring-1 ring-teal-600/20">
+                NT 1-04, Anexo B (p. {division.page}): risco <strong>{division.risk}</strong>
+                {division.merged_from && <> (célula mesclada com {division.merged_from})</>} → coluna{" "}
+                <strong>{RISKS.find((r) => r.v === cls?.risk_to_rules[division.risk])?.label}</strong> da NT 2-01, Tabela 3.
+              </p>
+            )}
+            {cls && cls.notes.length > 1 && (
+              <details className="mb-2 text-xs text-slate-600">
+                <summary className="cursor-pointer">Exceções da NT 1-04 que o analista confere</summary>
+                <p className="mt-1">{cls.notes[1]}</p>
+              </details>
+            )}
             <label className="mb-3 flex items-center gap-2 text-sm">
               <input type="checkbox" checked={unifamiliar} onChange={(e) => setUnifamiliar(e.target.checked)} />
               Residência unifamiliar

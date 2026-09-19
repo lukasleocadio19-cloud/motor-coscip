@@ -222,3 +222,56 @@ def test_decree_and_articles_are_indexed():
     assert t.document == "Decreto 42/2018"
     assert {"Art. 4", "Art. 15", "Anexo III", "Tabela 6"} <= set(t.items)
     assert t.items["Anexo III"][0].page == 2
+
+
+NT_104 = """---
+documento: "NT-1-04"
+titulo: "NT 1-04 - Classificação quanto ao risco"
+---
+
+## Página 11
+
+ANEXO B - CLASSIFICAÇÃO DAS EDIFICAÇÕES
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Risco |
+| --- | --- | --- | --- | --- |
+| A | Residencial | A-2 | Residencial privativa multifamiliar | PEQUENO |
+| F | Local de Reunião de Público | F-1 | Local onde há objeto de valor inestimável | MÉDIO 1 |
+|  |  | F-8 | Local para refeição |  |
+| M | Especial | M-2 | Líquidos ou gases inflamáveis ou combustíveis | GRANDE |
+"""
+
+
+def _classification_table(**change):
+    rows = [
+        {"id": "A-2", "description": "Residencial privativa multifamiliar", "risk": "PEQUENO"},
+        {"id": "F-8", "description": "Local para refeição", "risk": "MÉDIO 1",
+         "merged_from": "F-1"},
+        {"id": "M-2", "description": "Líquidos ou gases inflamáveis", "risk": "GRANDE"},
+    ]
+    for row in rows:
+        row.update(change.get(row["id"], {}))
+    return {"source": {"document": "NT 1-04", "item": "Anexo B"},
+            "risks": ["PEQUENO", "MÉDIO 1", "MÉDIO 2", "GRANDE"],
+            "risk_to_rules": {"PEQUENO": "PEQUENO", "MÉDIO 1": "MEDIO", "MÉDIO 2": "MEDIO",
+                              "GRANDE": "GRANDE"},
+            "divisions": rows}
+
+
+def test_classification_rows_are_checked_on_the_same_table_line():
+    from coscip_normative import parse_markdown, verify_table_row
+    from coscip_normative.package import verify_classification
+
+    src = {"NT 1-04": parse_markdown(NT_104.encode(), "nt-1-04.md")}
+    ok: list[str] = []
+    out = verify_classification(_classification_table(), src, ok)
+    assert ok == [] and all(d["verified"] for d in out["divisions"])
+    assert out["divisions"][0]["page"] == 11
+    # risco de outra linha não vale: A-2 não é GRANDE, mesmo com GRANDE na tabela
+    assert not verify_table_row(src, "NT 1-04", "Anexo B", ("A-2", "GRANDE")).verified
+    for change in ({"A-2": {"risk": "GRANDE"}},              # risco adulterado
+                   {"F-8": {"merged_from": "M-2"}},          # origem errada da célula mesclada
+                   {"M-2": {"merged_from": "F-1", "risk": "MÉDIO 1"}}):  # linha tem risco próprio
+        failures: list[str] = []
+        verify_classification(_classification_table(**change), src, failures)
+        assert len(failures) == 1, change

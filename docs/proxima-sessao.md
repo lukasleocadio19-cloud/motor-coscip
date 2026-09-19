@@ -1,95 +1,96 @@
 # Guia para a próxima sessão — Motor CAD/COSCIP
 
-Atualizado em 19/09/2026, noite (sessão Claude: todas as NTs na base real + telas "Base normativa" e
-"Análise da planta").
+Atualizado em 19/09/2026, noite (sessão Claude, 2ª parte: recortes reais, enquadramento pela
+NT 1-04, revisão humana e relatório com decisões).
 **Este arquivo fica em `C:\Users\USER\Downloads\proxima-sessao.md` e deve ser atualizado aqui mesmo**,
 sem criar outro; `motor-coscip/docs/proxima-sessao.md` é uma cópia sincronizada.
 Plano: `motor-coscip/docs/plano/00-plano-completo.html` (v2.0). Status por ID: `motor-coscip/docs/backlog.md`.
 
 ## Onde estamos
 
-- **Gate A aprovado** (19/09).
-- O app real já tem **a base normativa completa** (52 NTs vigentes dos grupos 1–5 + Decreto 42/2018)
-  e o pacote de regras importado. A análise da planta **tem tela** e já rodou no app real (9715).
-- Nada tem valor normativo: as 9 regras são **RASCUNHO** (citações conferidas no texto, sem
-  homologação técnica). As demais NTs estão na base para **consulta e citação**, sem regra automática.
+- Gate A aprovado. Base real com **53 fontes** (52 NTs + Decreto 42/2018) e **pacote v2**
+  (9 regras + tabela de enquadramento da NT 1-04), tudo com citação conferida.
+- As 5 plantas reais têm **pavimentos recortados** e foram **analisadas com enquadramento**.
+- A **revisão humana** existe na tela e entra no relatório. **Nenhuma decisão foi registrada**:
+  cabe ao analista (as decisões são append-only e não se apagam).
+- Nada tem valor normativo (regras em RASCUNHO, sem homologação).
 
-## O que foi feito nesta sessão
+## Feito nesta sessão (commits `d1468e2` e o seguinte)
 
 | Parte | O que faz | Onde |
 |---|---|---|
-| Ambiente | `.venv` reinstalado em modo editável: os pacotes `coscip_normative`/`coscip_analysis` não eram importáveis pelo app real | `pip install -e . --no-deps` |
-| Base real | backup verificado (`C:\BackupsMotorCoscip\motor-coscip-backup-20260919T172112Z`), migração 0003 aplicada, **53 fontes** ingeridas, pacote importado (9 regras, 11 itens de conferência humana) | `%LOCALAPPDATA%\MotorCoscip` |
-| Leitor de fontes | aceita decreto (`DECRETO-42-2018` → `Decreto 42/2018`), indexa artigos (`Art. 15`) e anexos romanos (`Anexo III`) | `packages/normative/.../sources.py` |
-| API de consulta | índice de itens da fonte, texto de um item, busca (todos os termos no mesmo item; prefere item numerado a seção/anexo inteiro; ~40 ms após a 1ª) e `GET /v1/rule-packages` completo | `normative_base.py`, `routers/normative.py` |
-| CLI | `normative-import-sources <pasta>` e `normative-import-package [pasta]` | `coscip_api/cli.py` |
-| Tela Base normativa | `#/base-normativa` (menu): contadores, documentos por grupo com a cobertura de cada NT, busca, envio de .md, importação do pacote (lista falhas de citação); detalhe `#/base-normativa/:id` com identificação, regras/itens citados, índice de itens e texto do item (tabelas renderizadas) | `apps/web/src/features/normative/` |
-| Tela Análise da planta | `#/desenhos/:id/analise` (botão "Analisar planta" na planta): enquadramento, distância à saída, pavimentos, paredes (automático/manual), mapeamento de blocos; histórico; resultado por região com mapa, contagens, percursos, áreas declaradas, resultados com citação e página; blocos não reconhecidos → "mapear"; relatório e nova emissão | `apps/web/src/features/plant-analysis/` |
+| Recortes | 7 pavimentos nas 5 plantas, conferidos em vistas SVG dos segmentos | base real |
+| Enquadramento | `normative/base/enquadramento.yaml`: 60 divisões da NT 1-04 Anexo B → risco; 24 vêm de célula mesclada (conferidas nas imagens das p. 11–12); cada linha verificada na importação na **mesma linha da tabela** (`verify_table_row`); Médio 1/2 → coluna Médio da NT 2-01 Tabela 3 | `packages/normative`, `normative/base` |
+| Tela | ocupação escolhida na lista sugere o risco e grava a origem (`risk_basis`), mostrada no relatório | `plant-analysis/PlantAnalysisPage.tsx` |
+| Revisão (REV-01/02) | veredito por resultado (conforme / não conforme / não se aplica / pedir dado) com justificativa, histórico, filtro "sem conclusão"; migração **0004** (`final_status`); `GET /v1/plant-analyses/{id}/reviews`; nova emissão do relatório com coluna "Decisão humana", contagem após revisão e `review_snapshot` | `ReviewBox.tsx`, `routers/analyses.py`, `plant_service.py`, template |
+
+### Recortes (coordenadas do desenho, m) e enquadramento proposto
+
+Enquadramento **proposto pelo assistente** a partir dos rótulos da planta — confirmar com o processo.
+
+| Planta | Pavimento | Recorte x0–x1 / y0–y1 | Divisão → risco | Resultado |
+|---|---|---|---|---|
+| 9715 | Térreo | 2507–2558 / 1588,8–1612 | D-2 agência bancária → Médio 1 | 8 conformes, 7 revisão, 1 dado ausente. Extintor: 6 un., área e mínimo ok; pior percurso 20,6 ± 1,3 m > 15 m (indicativo não atende, em revisão por área sem acesso) |
+| 21471 | Térreo | 5561,8–5575,6 / 1641,5–1673 | M-2 depósito de GLP → Grande | 5 conformes, 5 revisão, 1 ausente. **Sem camada de parede** reconhecível; percurso até extintor 19,7 m > 10 m (indicativo) |
+| 41336 | Térreo (depósito de GLP) | 4579,5–4607,5 / 2071,2–2089,5 | M-2 → Grande | 1 pendência (mínimo 2 extintores) **provavelmente falsa**: extintores indicados só por placas E5 + E17 (5 posições), sem bloco; sem paredes. O quadro "F-8 Restaurante" na folha contradiz a planta |
+| 21778 e 21801 | Térreo | 441,3–460,4 / 293–310,8 | A-2 multifamiliar → Pequeno | extintores conformes (15,4 ± 1,2 m ≤ 20 m) |
+| 21778 e 21801 | Pavimento tipo (1º ao 3º) | 461,5–481 / 293–310,8 | idem | **pendência**: 1 extintor por andar (mínimo 2); conferir exceção 5.2.4 (só < 50 m²) |
+
+21778 e 21801 são o mesmo prédio (geometria idêntica nas plantas), em duas submissões.
 
 ### Verificações
-- **123 testes passaram** (121 + 2 novos: consulta/busca e decreto/artigos), `ruff` ok, `tsc` e
-  `npm run build` ok.
-- No app real, pelo navegador: busca "distância máxima percorrida" (35 itens em várias NTs),
-  NT 2-01 Tabela 3 com tabela legível, análise do 9715 pela tela: concluída em 27,6 s, 20 em revisão +
-  3 dado ausente (sem recorte, tudo em revisão), aba "PLANTA TÉRREO - PPCI" com 6 extintores,
-  4 hidrantes, 22 luminárias, 27 detectores; pior percurso a extintor 20,62 ± 1,32 m (exigido 15 m,
-  risco médio de teste → indicativo "não atende"). Relatório abre (HTML, 1 MB).
-
-### Limitações conhecidas
-- Mobiliário não é obstáculo; portas desenhadas fechadas isolam ambientes (→ revisão).
-- Nome de região automática às vezes pega o título errado; legenda erra em casos raros.
-- Busca é por termo exato sem acento ("percorrer" não acha "percorrida").
-- Anexo C da NT 2-08 é imagem: o limite até a saída é informado pelo analista.
-- Revisão humana dos resultados ainda não tem tela (a rota `/analises/:id/revisao` é esboço).
+- **124 testes passaram**, `ruff` ok, `alembic check` (0004) ok, `npm run build` ok.
+- Backups: `C:\BackupsMotorCoscip\motor-coscip-backup-20260919T172112Z` (antes da 0003) e
+  `...-20260919T180419Z` (antes da 0004).
+- Na tela: origem do risco aparece; formulário de revisão abre (não enviado); 0 decisões na base.
 
 ## Próximos passos, em ordem
 
-1. **Recortar os pavimentos** das 5 plantas reais na tela da planta (nenhuma tem recorte) e rodar
-   a análise pela tela nova, com o enquadramento real de cada processo (risco, ocupação, sistemas
-   exigidos, limite da NT 2-08). Mapear os blocos não reconhecidos (ex.: `HR HID`).
-2. Revisão humana dos resultados (REV-01/02) na tela da análise e nova emissão do relatório com as
-   decisões.
-3. Enquadramento a partir da base: sugerir classe de risco e sistemas exigidos pela NT 1-04 e pelo
-   Decreto 42/2018, Anexo III (os textos já estão na base e citáveis por artigo/anexo).
-4. Melhorias da análise: mobiliário como obstáculo opcional, portas fechadas, largura/número de
-   saídas (NT 2-08 5.3).
-5. Novas regras de outras NTs só com citação conferida (o import recusa se não conferir).
-6. Homologação das regras com responsável técnico (REG-05/06) — só então valor normativo.
+1. **Analista revisa** os resultados das 5 análises na tela (`#/desenhos/<id>/analise`) e faz a
+   nova emissão do relatório. Sugestões: 41336 "mínimo 2" (placas E5), 21471/41336 marcar
+   camadas de parede manualmente (item 4 do formulário) e reanalisar; confirmar as divisões.
+2. Informar o limite da NT 2-08 (Anexo C, imagem) e os sistemas exigidos em cada processo.
+3. Sistemas exigidos a partir do **Decreto 42/2018, Anexo III** (tabelas por divisão, área e
+   altura) — mesma técnica da NT 1-04 (tabela no pacote + verificação por linha + imagem).
+4. Reconhecer extintor indicado só por placa (E5 + E17) como símbolo presumido (heurística →
+   sempre revisão).
+5. Mobiliário como obstáculo, portas fechadas, largura/número de saídas (NT 2-08 5.3).
+6. Homologação com responsável técnico (REG-05/06).
 
 ## Estado do ambiente
 
-- Código: `C:\Users\USER\Downloads\motor-coscip`. Commits: `d53f65d`, `2aa8572`, `3187435`,
-  `ab0f50a`, `0ef4842`. **O trabalho desta sessão ainda não foi commitado.**
-- Dados do app: `%LOCALAPPDATA%\MotorCoscip` (base na 0003; 5 projetos "Corpus …"; 53 fontes;
-  1 pacote; 1 análise do 9715).
+- Código: `C:\Users\USER\Downloads\motor-coscip` (branch `master`, só local).
+- Dados: `%LOCALAPPDATA%\MotorCoscip` (base na **0004**; pacotes v1 e v2; análises recentes com
+  enquadramento: 9715 `f2c44ad2…`, 21471 `4722e788…`, 41336 `ca92c008…`, 21778 `e01b8890…`,
+  21801 `f830890d…`).
 - Textos das NTs: skills em `%APPDATA%\Claude\local-agent-mode-sessions\skills-plugin\...\skills\`
-  (`cbmerj-grupo-1..5-*\references\nt-*.md`, **nunca** a pasta `grupo-5-legado-nao-usar`) e
-  `orquestrar-analise-cbmerj\references\decreto-42-2018-coscip-compilado.md`.
-- Preview: `motor-coscip` (porta 8765) em `Downloads\.claude\launch.json`; o token de sessão está no
-  log "Abrir:". O app usa rotas com `#` (ex.: `http://127.0.0.1:8765/#/base-normativa`).
+  (`cbmerj-grupo-1..5-*`, **nunca** `grupo-5-legado-nao-usar`); imagens das páginas em
+  `references\media\nt-x-yy\pagina-NN.png` (úteis para conferir tabelas mescladas).
+- Preview: `motor-coscip` (8765; token no log "Abrir:"; rotas com `#`). `vistas-coscip` (8798)
+  serve SVGs gerados no scratchpad desta sessão (temporário).
 
 ## Cuidados que já custaram tempo
 
-- Pacote novo em `pyproject.toml` exige `pip install -e . --no-deps` no `.venv`, senão o app real
-  não importa (os testes passam porque o pytest usa `pythonpath`).
-- Glob `cbmerj-grupo-[1-5]-*` pega também `grupo-5-legado-nao-usar`: listar as pastas explicitamente.
-- Rotas da interface são com `#`; `/base-normativa` sem `#` dá 404 (normal).
+- Pacote novo no `pyproject.toml` exige `pip install -e . --no-deps` no `.venv`.
+- Glob `cbmerj-grupo-[1-5]-*` pega a pasta legado: listar as pastas explicitamente.
+- Tabela convertida do PDF perde **células mescladas** (risco vazio em F-2…F-11 etc.): conferir
+  na imagem da página e registrar `merged_from`.
+- Conferir célula por **linha inteira**, não por trecho de 300 caracteres (descrições longas).
+- Saída de Python no console sai em cp1252: arquivos intermediários → `encoding="utf-8"` ou
+  `PYTHONIOENCODING=utf-8`.
+- Painel do navegador não abre `file://`; usar um `http.server` pelo `launch.json`.
 - No Windows, `os.kill(pid, 0)` **encerra** o processo; usar `_pid_alive` do launcher.
-- Bloco dinâmico: estados ocultos vêm com `invisible=1` no bloco anônimo — nunca contar sem filtrar.
-- Ponto de inserção de bloco pode estar longe do desenho (21471): usar o centro da geometria.
-- "EXT" em nome de bloco pode ser "externo"; "P60/P80" são portas, não placas.
+- Bloco dinâmico: estados ocultos com `invisible=1` — nunca contar sem filtrar.
 - Item YAML `6.12` sem aspas vira número: sempre citar itens entre aspas.
 - Pytest: `-p no:cacheprovider --basetemp <pasta nova>`; nunca apontar para dados reais.
-- `alembic check` sem `COSCIP_DATA_DIR` olha a base real (agora na 0003).
-- Grid CSS com coluna `auto` cresce até o conteúdo (tabelas/pre): usar `minmax(0,1fr)` e `min-w-0`.
-- Mapa SVG da análise vai em `<img src="data:…">` (não executa script); navegadores bloqueiam abrir
-  `data:` em nova aba.
+- `alembic check` sem `COSCIP_DATA_DIR` olha a base real.
+- Grid CSS com coluna `auto` cresce até o conteúdo: usar `minmax(0,1fr)`/`min-w-0`.
 - Dados reais nunca entram no repositório; nuvem só com autorização.
 
 ## Comandos úteis
 
 ```powershell
-.venv\Scripts\python -m pytest -p no:cacheprovider --basetemp <pasta-nova>   # 123 testes (~2,7 min)
+.venv\Scripts\python -m pytest -p no:cacheprovider --basetemp <pasta-nova>   # 124 testes (~2,7 min)
 .venv\Scripts\ruff check . --no-cache
 npm run build
 .venv\Scripts\python -m coscip_api.cli backup
@@ -100,6 +101,6 @@ scripts\start\start.ps1
 
 ## Frase para abrir a próxima sessão
 
-> Leia `C:\Users\USER\Downloads\proxima-sessao.md` e retome pelos próximos passos (começando por
-> recortar os pavimentos das plantas reais e analisar pela tela nova). Ao terminar, atualize este
-> mesmo arquivo e a cópia em docs; não crie outro guia.
+> Leia `C:\Users\USER\Downloads\proxima-sessao.md` e retome pelos próximos passos (sistemas
+> exigidos pelo Decreto 42/2018, Anexo III, e extintor indicado por placa). Ao terminar, atualize
+> este mesmo arquivo e a cópia em docs; não crie outro guia.

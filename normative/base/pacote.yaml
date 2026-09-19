@@ -6,10 +6,11 @@
 schema_version: package/1.0
 id: CBMERJ-PLANTA-G2
 name: CBMERJ — conferência automática de planta (Grupo 2) — rascunho
-version: 1
+version: 2
 jurisdiction: CBMERJ-RJ
 publication_state: DRAFT
 symbols: simbolos.yaml
+classification: enquadramento.yaml
 rules:
   - regras/NT201_EXT_DISTANCIA.yaml
   - regras/NT201_EXT_AREA.yaml

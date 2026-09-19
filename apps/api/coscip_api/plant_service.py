@@ -31,6 +31,7 @@ from coscip_api.models import (
     Project,
     Report,
     ResultEvidence,
+    ReviewDecisionRow,
     RevisionFile,
     RulePackage,
     RuleResultRow,
@@ -52,6 +53,8 @@ class PlantContext(BaseModel):
     risk_class: Literal["PEQUENO", "MEDIO", "GRANDE"] | None = None
     unifamiliar: bool = False
     occupancy: str | None = Field(default=None, max_length=20)
+    # De onde veio a classe de risco (ex.: "NT 1-04, Anexo B: F-8 → MÉDIO 1"), ou vazio.
+    risk_basis: str | None = Field(default=None, max_length=300)
     requires_hydrants: bool | None = None
     requires_alarm: bool | None = None
     requires_lighting: bool | None = None
@@ -255,6 +258,34 @@ def _fmt(v: Any) -> str:
     return f"{f:.2f}".replace(".", ",")
 
 
+def result_key(rule_version_id: str, subject_id: str, region_id: str) -> str:
+    """Liga o resultado do analysis.json à linha em rule_results (mesmos cortes da gravação)."""
+    return f"{rule_version_id}|{subject_id[:36]}|{region_id[:100]}"
+
+
+DECISION_LABELS = {"CONFIRM": "confirmado", "CONTEST": "contestado",
+                   "REQUEST_DATA": "dado solicitado",
+                   "RESOLVED_BY_NEW_REVISION": "resolvido em nova revisão"}
+
+
+def review_state(s, analysis_id: str) -> dict[str, dict[str, Any]]:  # noqa: ANN001
+    """Por resultado: id da linha, estado automático e histórico de decisões (mais nova 1º)."""
+    rows = s.scalars(select(RuleResultRow).where(RuleResultRow.analysis_id == analysis_id)).all()
+    by_id = {r.id: r for r in rows}
+    decisions: dict[str, list[dict[str, Any]]] = {}
+    if by_id:
+        q = (select(ReviewDecisionRow).where(ReviewDecisionRow.result_id.in_(by_id))
+             .order_by(ReviewDecisionRow.created_at.desc()))
+        for d in s.scalars(q).all():
+            decisions.setdefault(d.result_id, []).append({
+                "id": d.id, "decision": d.decision, "final_status": d.final_status,
+                "justification": d.justification, "author_id": d.author_id,
+                "created_at": d.created_at.isoformat() if d.created_at else None})
+    return {result_key(r.rule_version_id, r.subject_id, r.evaluation_key): {
+        "result_id": r.id, "status": r.status, "decisions": decisions.get(r.id, [])}
+        for r in rows}
+
+
 def issue_report(factory, storage, tenant_id: str, analysis_id: str) -> dict[str, Any]:  # noqa: ANN001
     with factory() as s:
         a = s.get(Analysis, analysis_id)
@@ -280,6 +311,28 @@ def issue_report(factory, storage, tenant_id: str, analysis_id: str) -> dict[str
         env.filters["num"] = _fmt
         by_rule: dict[str, dict[str, Any]] = {r["rule_id"]: r for r in manifest.get("rules", [])}
         summary = data["summary"]["by_status"]
+        reviews = review_state(s, analysis_id)
+        latest: dict[str, dict[str, Any]] = {}
+        for res in data["results"]:
+            k = result_key(res["rule_version_id"], res["subject_id"], res["region_id"])
+            hist = (reviews.get(k) or {}).get("decisions") or []
+            if hist:
+                latest[k] = hist[0]
+            res["review_key"] = k
+        after = dict.fromkeys(STATUS_ORDER, 0)
+        after["PENDING"] = 0
+        for res in data["results"]:
+            dec = latest.get(res["review_key"])
+            if dec and dec["final_status"]:
+                after[dec["final_status"]] += 1
+            elif res["status"] in ("REVIEW_REQUIRED", "MISSING_DATA"):
+                after["PENDING"] += 1
+            else:
+                after[res["status"]] += 1
+        review_snapshot = {
+            "decisions": {k: {x: v[x] for x in ("id", "decision", "final_status", "created_at")}
+                          for k, v in latest.items()},
+            "reviewed": len(latest), "total": len(data["results"]), "after_review": after}
         html = env.get_template("plant-analysis-report.html").render(
             report_id=report_id, issued_at=issued_at, project=project, revision=rev,
             drawing_name=name, drawing_sha256=dfile.sha256, analysis=a, data=data,
@@ -287,7 +340,8 @@ def issue_report(factory, storage, tenant_id: str, analysis_id: str) -> dict[str
             summary=summary, status_order=STATUS_ORDER,
             labels={k.value: v for k, v in UI_LABELS.items()}, reasons=REASONS,
             gates=GATES, class_labels=CLASS_LABELS,
-            status_values=[e.value for e in EvaluationStatus])
+            status_values=[e.value for e in EvaluationStatus], reviews=latest,
+            review_snapshot=review_snapshot, decision_labels=DECISION_LABELS)
         key = f"projects/{project.id}/reports/{report_id}.html"
     obj = storage.write_stream(key, [html.encode("utf-8")])
     with write_tx(factory) as s:
@@ -299,13 +353,14 @@ def issue_report(factory, storage, tenant_id: str, analysis_id: str) -> dict[str
         s.flush()
         rep = Report(id=report_id, tenant_id=tenant_id, analysis_id=analysis_id,
                      template=REPORT_TEMPLATE, artifact_id=rfo.id, content_sha256=obj.sha256,
-                     state="SUCCEEDED")
+                     state="SUCCEEDED", review_snapshot=review_snapshot)
         s.add(rep)
         s.add(AuditEvent(tenant_id=tenant_id, action="report.plant_analysis_created",
                          resource=report_id,
                          diff={"analysis_id": analysis_id, "artifact_id": rfo.id,
                                "sha256": obj.sha256}))
         return {"id": report_id, "artifact_id": rfo.id, "sha256": obj.sha256,
+                "reviewed": review_snapshot["reviewed"],
                 "content_url": f"/v1/artifacts/{rfo.id}/content", "issued_at": issued_at}
 
 
@@ -325,6 +380,7 @@ def analysis_out(s, a: Analysis) -> dict[str, Any]:  # noqa: ANN001
         "analysis_artifact_url": (f"/v1/artifacts/{rm['analysis_artifact_id']}/content"
                                   if rm.get("analysis_artifact_id") else None),
         "reports": [{"id": r.id, "sha256": r.content_sha256, "created_at": r.created_at,
+                     "reviewed": (r.review_snapshot or {}).get("reviewed", 0),
                      "content_url": f"/v1/artifacts/{r.artifact_id}/content"}
                     for r in reports],
     }

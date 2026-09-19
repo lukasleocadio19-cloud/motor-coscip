@@ -14,7 +14,7 @@ from typing import Any
 
 import yaml
 
-from coscip_normative.sources import NormativeText, verify_citation
+from coscip_normative.sources import NormativeText, verify_citation, verify_table_row
 from coscip_rules.dsl import RuleDefinition, check_dependency_cycles, parse_rule
 
 PACKAGE_SCHEMA = "package/1.0"
@@ -35,6 +35,8 @@ class RulePackageDef:
     symbols: dict[str, Any]
     coverage: list[dict[str, Any]]
     raw: dict[str, Any] = field(repr=False, default_factory=dict)
+    # Tabela de enquadramento (ocupação → risco), opcional.
+    classification: dict[str, Any] | None = None
 
     @property
     def content_sha256(self) -> str:
@@ -42,6 +44,7 @@ class RulePackageDef:
             "package": {k: v for k, v in self.raw.items() if k not in {"rules", "symbols"}},
             "rules": sorted(r.content_hash for r in self.rules),
             "symbols": self.symbols,
+            "classification": self.classification,
         }, sort_keys=True, ensure_ascii=False)
         return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
 
@@ -68,11 +71,65 @@ def load_package(directory: str | Path) -> RulePackageDef:
     if raw.get("publication_state") in {"DRAFT", "TEST_ONLY"} and any(
             r.production_eligible for r in rules):
         raise PackageError("pacote em rascunho não pode conter regra de produção")
+    classification = None
+    if raw.get("classification"):
+        classification = yaml.safe_load(
+            (root / raw["classification"]).read_text(encoding="utf-8"))
+        divisions = [d["id"] for d in classification.get("divisions") or []]
+        if len(divisions) != len(set(divisions)):
+            raise PackageError("divisões duplicadas na tabela de enquadramento")
+        if set(classification.get("risk_to_rules") or {}) != set(
+                classification.get("risks") or []):
+            raise PackageError("risk_to_rules precisa mapear exatamente os riscos declarados")
     return RulePackageDef(
         id=raw["id"], name=raw["name"], version=int(raw["version"]),
         jurisdiction=raw["jurisdiction"], publication_state=raw["publication_state"],
         rules=rules, symbols=symbols, coverage=list(raw.get("coverage") or []), raw=raw,
+        classification=classification,
     )
+
+
+def verify_classification(table: dict[str, Any], sources: dict[str, NormativeText],
+                          failures: list[str]) -> dict[str, Any]:
+    """Cada divisão: divisão + começo da descrição + risco na mesma linha da tabela.
+
+    Célula mesclada (``merged_from``): a linha da divisão precisa existir sem risco próprio
+    e a linha da divisão de origem precisa trazer o risco (conferido também na imagem da
+    página, registrado em ``notes``).
+    """
+    doc, item = table["source"]["document"], table["source"]["item"]
+    risks = table["risks"]
+    out = []
+    for d in table["divisions"]:
+        key = (d["id"], d["description"][:40])
+        row = verify_table_row(sources, doc, item, key)
+        ok, problem, origin = row.verified, row.problem, None
+        if ok and not d.get("merged_from"):
+            ok = verify_table_row(sources, doc, item, (*key, d["risk"])).verified
+            problem = None if ok else f"risco {d['risk']} não está na linha"
+        elif ok:
+            if any(verify_table_row(sources, doc, item, (*key, r)).verified for r in risks):
+                ok, problem = False, "linha tem risco próprio; retire merged_from"
+            else:
+                origin = verify_table_row(sources, doc, item, (d["merged_from"], d["risk"]))
+                ok, problem = origin.verified, origin.problem
+        if not ok:
+            failures.append(f"enquadramento {d['id']}: {doc} {item} — {problem}")
+        out.append({**d, "verified": ok, "page": row.page, "excerpt": row.excerpt,
+                    "origin_excerpt": origin.excerpt if origin else None})
+    mapping = table.get("risk_to_rules_source")
+    mapping_check = None
+    if mapping:
+        c = verify_citation(sources, mapping["document"], mapping["item"],
+                            tuple(mapping.get("quote") or ()))
+        mapping_check = c.as_dict()
+        if not c.verified:
+            failures.append(f"enquadramento (mapa de risco): {c.document} {c.item} — "
+                            f"{c.problem}")
+    return {"source": table["source"], "risks": risks, "risk_to_rules": table["risk_to_rules"],
+            "risk_to_rules_citation": mapping_check, "notes": table.get("notes") or [],
+            "divisions": out,
+            "source_sha256": sources[doc].text_sha256 if doc in sources else None}
 
 
 def verify_package(pkg: RulePackageDef, sources: dict[str, NormativeText]) -> dict[str, Any]:
@@ -107,13 +164,19 @@ def verify_package(pkg: RulePackageDef, sources: dict[str, NormativeText]) -> di
         coverage_out.append({**item, "citation": c.as_dict()})
         if not c.verified:
             failures.append(f"cobertura: {c.document} {c.item} — {c.problem}")
-    used_docs = sorted({c["document"] for r in rules_out for c in r["citations"]})
+    classification_out = (verify_classification(pkg.classification, sources, failures)
+                          if pkg.classification else None)
+    used = {c["document"] for r in rules_out for c in r["citations"]}
+    if pkg.classification:
+        used.add(pkg.classification["source"]["document"])
+    used_docs = sorted(used)
     return {
         "package": {"id": pkg.id, "name": pkg.name, "version": pkg.version,
                     "jurisdiction": pkg.jurisdiction,
                     "publication_state": pkg.publication_state,
                     "content_sha256": pkg.content_sha256},
         "rules": rules_out, "symbols_citation": symbols_check, "coverage": coverage_out,
+        "classification": classification_out,
         "sources": [sources[d].summary() for d in used_docs if d in sources],
         "verified": not failures, "failures": failures,
     }

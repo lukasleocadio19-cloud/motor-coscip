@@ -53,6 +53,7 @@ def plant_analysis_options(drawing_id: str, st: AppState = Depends(state),
     packages = [p for p in list_packages(s) if p["verified"]]
     suggest = None
     classes: list[dict[str, str]] = []
+    classification = None
     if packages:
         from coscip_analysis import parse_dictionary
 
@@ -60,12 +61,20 @@ def plant_analysis_options(drawing_id: str, st: AppState = Depends(state),
         dic = parse_dictionary((pkg.manifest or {})["symbols"])
         suggest = dic.is_obstacle_layer
         classes = [{"id": c.id, "label": c.label} for c in dic.classes.values()]
+        cl = (pkg.manifest or {}).get("classification")
+        if cl:
+            classification = {
+                "source": cl["source"], "risk_to_rules": cl["risk_to_rules"],
+                "notes": cl["notes"],
+                "divisions": [{k: d.get(k) for k in ("id", "group", "description", "risk",
+                                                     "page", "merged_from")}
+                              for d in cl["divisions"] if d.get("verified")]}
     layers = [{"name": lay["name"], "segments": lay["count"],
                "suggested_obstacle": bool(suggest and suggest(lay["name"]))}
               for lay in (d.scene_manifest or {}).get("layers", [])]
     floors = s.scalars(select(Floor).where(Floor.drawing_id == d.id)
                        .order_by(Floor.created_at)).all()
-    return {"packages": packages, "classes": classes,
+    return {"packages": packages, "classes": classes, "classification": classification,
             "floors": [{"id": f.id, "name": f.name} for f in floors],
             "layers": sorted(layers, key=lambda x: (not x["suggested_obstacle"], x["name"]))}
 
@@ -77,6 +86,16 @@ def get_plant_analysis(analysis_id: str, st: AppState = Depends(state),
     if a is None or a.tenant_id != st.tenant_id or a.drawing_id is None:
         raise ApiError(404, "NOT_FOUND", "Análise não encontrada")
     return plant_service.analysis_out(s, a)
+
+
+@router.get("/plant-analyses/{analysis_id}/reviews")
+def get_reviews(analysis_id: str, st: AppState = Depends(state),
+                s: Session = Depends(db)) -> dict[str, Any]:
+    """Estado da revisão humana por resultado (chave: regra|sujeito|região do analysis.json)."""
+    a = s.get(Analysis, analysis_id)
+    if a is None or a.tenant_id != st.tenant_id or a.drawing_id is None:
+        raise ApiError(404, "NOT_FOUND", "Análise não encontrada")
+    return {"items": plant_service.review_state(s, analysis_id)}
 
 
 @router.post("/plant-analyses/{analysis_id}/reports", status_code=201)

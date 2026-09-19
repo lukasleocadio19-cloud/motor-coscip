@@ -3,9 +3,10 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@coscip/api-client";
 import { Button, Card, ErrorState, ExecutionBadge, StatusBadge } from "@coscip/ui";
 
+import { ReviewBox } from "./ReviewBox";
 import {
   type AnalysisJson, CLASS_LABELS, GATES, num, type PlantAnalysis, REASONS, type Region,
-  type RuleResult, STATUS_ORDER, TERMINAL,
+  type ReviewItem, reviewKey, type RuleResult, STATUS_ORDER, TERMINAL,
 } from "./types";
 
 const SUBJECT: Record<string, string> = { FLOOR: "Pavimento", SYMBOL: "Símbolo", ROOM: "Ambiente" };
@@ -34,13 +35,22 @@ export function AnalysisResult({ analysisId, classes, onMap }: {
     enabled: !!a?.analysis_artifact_url,
     staleTime: Infinity,
   });
+  const reviews = useQuery({
+    queryKey: ["plant-reviews", analysisId],
+    queryFn: () => api<{ items: Record<string, ReviewItem> }>(`/plant-analyses/${analysisId}/reviews`),
+    enabled: a?.state === "SUCCEEDED",
+  });
   const reissue = useMutation({
     mutationFn: () => api(`/plant-analyses/${analysisId}/reports`, { method: "POST" }),
-    onSuccess: () => void qc.invalidateQueries({ queryKey: ["plant-analysis", analysisId] }),
+    onSuccess: () => {
+      void qc.invalidateQueries({ queryKey: ["plant-analysis", analysisId] });
+      void qc.invalidateQueries({ queryKey: ["plant-analyses"] });
+    },
   });
 
   const [regionId, setRegionId] = useState<string | null>(null);
   const [statusFilter, setStatusFilter] = useState<string>("");
+  const [pendingOnly, setPendingOnly] = useState(false);
 
   const regions = useMemo(() => {
     const rs = data.data?.regions ?? [];
@@ -55,6 +65,12 @@ export function AnalysisResult({ analysisId, classes, onMap }: {
 
   const running = !TERMINAL.has(a.state);
   const report = a.reports[0];
+  const items = reviews.data?.items ?? {};
+  const all = data.data?.results ?? [];
+  const decided = all.filter((r) => items[reviewKey(r)]?.decisions.length).length;
+  const needing = all.filter((r) => (r.status === "REVIEW_REQUIRED" || r.status === "MISSING_DATA")
+    && !items[reviewKey(r)]?.decisions.some((d) => d.final_status)).length;
+  const reportStale = report && decided > 0 && (report.reviewed ?? 0) !== decided;
 
   return (
     <Card title="Resultado da análise">
@@ -102,6 +118,24 @@ export function AnalysisResult({ analysisId, classes, onMap }: {
         Regras em rascunho, sem homologação técnica: resultado indicativo, sem valor normativo.
       </p>
 
+      {data.data && reviews.data && (
+        <div className="mb-4 flex flex-wrap items-center gap-3 rounded border border-slate-200 px-3 py-2 text-sm">
+          <span>
+            Revisão humana: <strong>{decided}</strong> de {all.length} com decisão ·{" "}
+            <strong>{needing}</strong> ainda sem conclusão
+          </span>
+          <label className="flex items-center gap-1 text-xs">
+            <input type="checkbox" checked={pendingOnly} onChange={(e) => setPendingOnly(e.target.checked)} />
+            mostrar só os sem conclusão
+          </label>
+          {reportStale && (
+            <span className="text-xs text-amber-900">
+              O último relatório tem {report.reviewed ?? 0} decisão(ões): faça uma nova emissão para incluir as atuais.
+            </span>
+          )}
+        </div>
+      )}
+
       {a.warnings.length > 0 && (
         <ul className="mb-4 list-disc space-y-0.5 pl-5 text-sm text-slate-700">
           {a.warnings.map((w) => <li key={w}>{w}</li>)}
@@ -125,7 +159,12 @@ export function AnalysisResult({ analysisId, classes, onMap }: {
           {region && (
             <RegionView
               region={region}
-              results={data.data.results.filter((r) => r.region_id === region.id && (!statusFilter || r.status === statusFilter))}
+              analysisId={analysisId}
+              reviews={items}
+              results={data.data.results.filter((r) => r.region_id === region.id
+                && (!statusFilter || r.status === statusFilter)
+                && (!pendingOnly || ((r.status === "REVIEW_REQUIRED" || r.status === "MISSING_DATA")
+                  && !items[reviewKey(r)]?.decisions.some((d) => d.final_status))))}
             />
           )}
           <Unrecognized data={data.data} classes={classes} onMap={onMap} />
@@ -135,7 +174,9 @@ export function AnalysisResult({ analysisId, classes, onMap }: {
   );
 }
 
-function RegionView({ region, results }: { region: Region; results: RuleResult[] }) {
+function RegionView({ region, results, reviews, analysisId }: {
+  region: Region; results: RuleResult[]; reviews: Record<string, ReviewItem>; analysisId: string;
+}) {
   const svg = useMemo(
     () => (region.map_svg ? `data:image/svg+xml;charset=utf-8,${encodeURIComponent(region.map_svg)}` : null),
     [region.map_svg],
@@ -209,14 +250,18 @@ function RegionView({ region, results }: { region: Region; results: RuleResult[]
       <div>
         {sorted.length === 0 && <p className="text-sm text-slate-500">Nenhum resultado com este filtro.</p>}
         <ul className="space-y-2">
-          {sorted.map((r, i) => <ResultRow key={`${r.rule_id}-${r.subject_id}-${i}`} r={r} />)}
+          {sorted.map((r, i) => (
+            <ResultRow key={`${r.rule_id}-${r.subject_id}-${i}`} r={r}>
+              <ReviewBox result={r} item={reviews[reviewKey(r)]} analysisId={analysisId} />
+            </ResultRow>
+          ))}
         </ul>
       </div>
     </div>
   );
 }
 
-function ResultRow({ r }: { r: RuleResult }) {
+function ResultRow({ r, children }: { r: RuleResult; children?: React.ReactNode }) {
   const t = r.trace ?? {};
   const unit = t.unit ?? "";
   return (
@@ -247,6 +292,7 @@ function ResultRow({ r }: { r: RuleResult }) {
           {r.citations.map((c) => `${c.document} ${c.item}${c.page ? ` (p. ${c.page})` : ""}`).join("; ")}
         </p>
       )}
+      {children}
     </li>
   );
 }

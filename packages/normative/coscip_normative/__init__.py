@@ -9,6 +9,7 @@ from coscip_normative.sources import (
     normalize_document_id,
     parse_markdown,
     verify_citation,
+    verify_table_row,
 )
 
 __all__ = [
@@ -20,4 +21,5 @@ __all__ = [
     "normalize_document_id",
     "parse_markdown",
     "verify_citation",
+    "verify_table_row",
 ]

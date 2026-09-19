@@ -11,6 +11,16 @@ export interface PlantContext {
   requires_lighting: boolean | null;
   exit_max_distance_m: number | null;
   exits_confirmed: boolean;
+  risk_basis?: string | null;
+}
+
+export interface Division {
+  id: string;
+  group: string;
+  description: string;
+  risk: string;
+  page: number | null;
+  merged_from: string | null;
 }
 
 export interface PlantOptions {
@@ -18,6 +28,12 @@ export interface PlantOptions {
   classes: { id: string; label: string }[];
   floors: { id: string; name: string }[];
   layers: { name: string; segments: number; suggested_obstacle: boolean }[];
+  classification: {
+    source: { document: string; item: string };
+    risk_to_rules: Record<string, Risk>;
+    notes: string[];
+    divisions: Division[];
+  } | null;
 }
 
 export interface DrawingInfo {
@@ -40,7 +56,7 @@ export interface PlantAnalysis {
   duration_s: number | null;
   execution: { state: string; stage: string | null; error_code: string | null } | null;
   analysis_artifact_url: string | null;
-  reports: { id: string; sha256: string; created_at: string; content_url: string }[];
+  reports: { id: string; sha256: string; created_at: string; content_url: string; reviewed: number }[];
 }
 
 export interface Citation {
@@ -53,6 +69,7 @@ export interface Citation {
 
 export interface RuleResult {
   rule_id: string;
+  rule_version_id: string;
   title: string;
   measure: string;
   subject_type: "FLOOR" | "SYMBOL" | "ROOM";
@@ -101,6 +118,25 @@ export interface AnalysisJson {
   results: RuleResult[];
   warnings: string[];
   duration_s: number;
+}
+
+export interface ReviewDecision {
+  id: string;
+  decision: "CONFIRM" | "CONTEST" | "REQUEST_DATA" | "RESOLVED_BY_NEW_REVISION";
+  final_status: "PASS" | "FAIL" | "NOT_APPLICABLE" | null;
+  justification: string;
+  created_at: string | null;
+}
+
+export interface ReviewItem {
+  result_id: string;
+  status: string;
+  decisions: ReviewDecision[];
+}
+
+/** Mesma chave do servidor: regra|sujeito|região (cortes da gravação em rule_results). */
+export function reviewKey(r: RuleResult) {
+  return `${r.rule_version_id}|${r.subject_id.slice(0, 36)}|${r.region_id.slice(0, 100)}`;
 }
 
 export const TERMINAL = new Set(["SUCCEEDED", "FAILED", "CANCELLED", "PARTIAL"]);

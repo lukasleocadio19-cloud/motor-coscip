@@ -96,7 +96,8 @@ def get_rule_package(package_id: str, s: Session = Depends(db)) -> dict[str, Any
         raise ApiError(404, "NOT_FOUND", "Pacote não encontrado")
     m = p.manifest or {}
     return {"id": p.id, **_pkg_out(p), "manifest": {k: m.get(k) for k in (
-        "package", "rules", "coverage", "sources", "symbols_citation", "sources_sha256")}}
+        "package", "rules", "coverage", "sources", "symbols_citation", "sources_sha256",
+        "classification")}}
 
 
 def list_packages(s: Session) -> list[dict[str, Any]]:

@@ -31,6 +31,7 @@ def _nt201_package(tmp: Path) -> Path:
     (root / "regras").mkdir(parents=True)
     raw = yaml.safe_load((BASE / "pacote.yaml").read_text(encoding="utf-8"))
     raw["rules"] = [f"regras/{r}.yaml" for r in NT201_RULES]
+    raw.pop("classification", None)  # a tabela cita a NT 1-04, ausente desta base
     raw["coverage"] = [c for c in raw["coverage"] if c["document"] == "NT 2-01"
                        and c["item"] in {"5.2.4", "6.4"}]
     for r in NT201_RULES:
@@ -118,6 +119,26 @@ def test_plant_analysis_end_to_end(env, tmp_path, monkeypatch):
     assert "sem valor normativo" in html and "<svg" in html and "<script" not in html
     again = env.post(f"/v1/plant-analyses/{a['id']}/reports")
     assert again.status_code == 201 and again.json()["id"] != a["reports"][0]["id"]
+
+    # Revisão humana: append-only, com veredito, e refletida na nova emissão.
+    special = next(r for r in results if r["values"]["rule_id"] == "NT201_EXT_INSTALACAO_ESPECIAL")
+    bad = env.post(f"/v1/results/{special['id']}/reviews",
+                   {"decision": "CONTEST", "justification": "sem veredito"})
+    assert bad.status_code == 422 and bad.json()["code"] == "INVALID_REVIEW"
+    assert env.post(f"/v1/results/{special['id']}/reviews", {
+        "decision": "REQUEST_DATA", "justification": "pedir planta de detalhe"}).status_code == 201
+    assert env.post(f"/v1/results/{special['id']}/reviews", {
+        "decision": "CONTEST", "final_status": "PASS",
+        "justification": "extintor junto à porta da casa de bombas no detalhe"}).status_code == 201
+    state = env.get(f"/v1/plant-analyses/{a['id']}/reviews").json()["items"]
+    item = next(v for v in state.values() if v["result_id"] == special["id"])
+    assert [d["decision"] for d in item["decisions"]] == ["CONTEST", "REQUEST_DATA"]
+    assert item["status"] == "FAIL" and item["decisions"][0]["final_status"] == "PASS"
+    third = env.post(f"/v1/plant-analyses/{a['id']}/reports").json()
+    assert third["reviewed"] == 1
+    html = env.get(third["content_url"]).text
+    assert "extintor junto à porta da casa de bombas" in html and "contestado" in html
+    assert env.get(f"/v1/plant-analyses/{a['id']}").json()["reports"][0]["reviewed"] == 1
 
 
 def test_source_index_item_text_and_search(env):

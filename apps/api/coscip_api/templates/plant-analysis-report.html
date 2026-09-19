@@ -37,9 +37,16 @@ Nenhuma aprovação ou reprovação é emitida por este documento.</div>
 {% for rid, b in by_rule.items() %}{% set rows = data.results|selectattr('rule_id','equalto',rid)|list %}<tr><td>{{ b.measure }}</td><td>{{ b.title }}<br><small>{{ rid }} v{{ b.version }}</small></td>
 {% for st in status_order %}<td class="n">{{ rows|selectattr('status','equalto',st)|list|length or '' }}</td>{% endfor %}</tr>{% endfor %}</tbody></table>
 
+<h2>Revisão humana</h2>
+{% if review_snapshot.reviewed %}<p>{{ review_snapshot.reviewed }} de {{ review_snapshot.total }} verificações com decisão do analista. As decisões não alteram o cálculo automático: aparecem ao lado dele, com justificativa.</p>
+<div class="cards">{% for st in ['FAIL','PASS','NOT_APPLICABLE'] %}<div class="card"><b>{{ review_snapshot.after_review[st] }}</b><span class="st {{ st }}">{{ labels[st] }}</span></div>{% endfor %}
+<div class="card"><b>{{ review_snapshot.after_review.PENDING }}</b><span class="mut">ainda sem conclusão</span></div></div>
+<p class="mut">Contagem após a revisão: vale o veredito do analista quando houver; resultados automáticos conclusivos sem decisão seguem como calculados.</p>
+{% else %}<p class="mut">Nenhuma decisão do analista registrada nesta emissão.</p>{% endif %}
+
 <h2>Enquadramento informado</h2>
 <table><tbody>
-<tr><th>Classe de risco (NT 2-01, Tabela 3)</th><td>{{ data.context.risk_class or 'não informada' }}</td></tr>
+<tr><th>Classe de risco (NT 2-01, Tabela 3)</th><td>{{ data.context.risk_class or 'não informada' }}{% if data.context.risk_basis %}<br><small>{{ data.context.risk_basis }}</small>{% endif %}</td></tr>
 <tr><th>Ocupação</th><td>{{ data.context.occupancy or 'não informada' }}</td></tr>
 <tr><th>Residencial unifamiliar</th><td>{{ 'sim' if data.context.unifamiliar else 'não' }}</td></tr>
 <tr><th>Hidrantes / alarme / iluminação exigidos</th><td>{% for k in ['requires_hydrants','requires_alarm','requires_lighting'] %}{{ {True:'sim',False:'não',None:'não informado'}[data.context[k]] }}{% if not loop.last %} · {% endif %}{% endfor %}</td></tr>
@@ -65,15 +72,16 @@ Nenhuma aprovação ou reprovação é emitida por este documento.</div>
 {% for k, c in r.coverage.items() %}<tr><td>{{ c.label }}</td><td class="n">{{ c.sources }}</td><td class="n">{{ c.max_travel_m|num }}{% if c.max_travel_m is not none %} m{% endif %}</td><td class="n">{% if c.uncertainty_m is not none %}± {{ c.uncertainty_m|num }} m{% else %}—{% endif %}</td><td class="n">{{ c.unreachable_m2|num }} m²</td><td><small>{{ c.worst_point|map('num')|join(' ; ') if c.worst_point else '—' }}</small></td></tr>{% endfor %}</tbody></table>{% endif %}
 
 <h3>Verificações normativas</h3>
-<table><thead><tr><th>Estado</th><th>Verificação</th><th>Sujeito</th><th class="n">Medido</th><th class="n">Exigido</th><th>Motivo</th><th>Fonte</th></tr></thead><tbody>
+<table><thead><tr><th>Estado</th><th>Verificação</th><th>Sujeito</th><th class="n">Medido</th><th class="n">Exigido</th><th>Motivo</th><th>Fonte</th><th>Decisão humana</th></tr></thead><tbody>
 {% for res in data.results|selectattr('region_id','equalto',r.id)|sort(attribute='status') %}{% set t = res.trace %}<tr>
 <td><span class="st {{ res.status }}">{{ labels[res.status] }}</span>{% if t.indicative and res.status == 'REVIEW_REQUIRED' %}<br><small>indicativo: {{ labels.get(t.indicative, t.indicative) }}</small>{% endif %}</td>
 <td>{{ res.title }}<br><small>{{ res.rule_id }}</small></td><td><small>{{ res.subject_label }}</small></td>
 <td class="n">{% if t.measured is defined and t.measured is not none %}{{ t.measured|num }}{% if t.uncertainty_abs %} ± {{ t.uncertainty_abs|num }}{% endif %} {{ t.unit }}{% else %}—{% endif %}</td>
 <td class="n">{% if t.required %}{{ t.required|num }} {{ t.unit }}{% else %}—{% endif %}{% if t.required_steps and t.required_steps|length > 1 %}<br><small>{{ t.required_steps|join('; ') }}</small>{% endif %}</td>
 <td><small>{{ reasons.get(res.reason_code, res.reason_code) }}{% if t.gate %}: {{ gates.get(t.gate, t.gate) }}{% endif %}{% if t.missing %}: {{ t.missing|join(', ') }}{% endif %}</small></td>
-<td><small>{% for c in res.citations %}{{ c.document }} {{ c.item }}{% if c.page %}, p. {{ c.page }}{% endif %}{% if not loop.last %}; {% endif %}{% endfor %}</small></td></tr>
-{% else %}<tr><td colspan="7">Nenhuma verificação aplicável.</td></tr>{% endfor %}</tbody></table>
+<td><small>{% for c in res.citations %}{{ c.document }} {{ c.item }}{% if c.page %}, p. {{ c.page }}{% endif %}{% if not loop.last %}; {% endif %}{% endfor %}</small></td>
+<td>{% set dec = reviews.get(res.review_key) %}{% if dec %}{% if dec.final_status %}<span class="st {{ dec.final_status }}">{{ labels[dec.final_status] }}</span><br>{% endif %}<small>{{ decision_labels.get(dec.decision, dec.decision) }} — {{ dec.justification }}<br>{{ dec.created_at[:16]|replace('T', ' ') }}</small>{% else %}<small class="mut">—</small>{% endif %}</td></tr>
+{% else %}<tr><td colspan="8">Nenhuma verificação aplicável.</td></tr>{% endfor %}</tbody></table>
 
 {% set rooms = r.rooms|selectattr('kind','equalto','SPECIAL')|list %}{% if rooms %}<h3>Instalações especiais reconhecidas pelo rótulo</h3><ul>{% for rm in rooms %}<li>{{ rm.label }} <small>(texto {{ rm.text_handles|join(', ') }}{% if rm.polygon_handle %}; contorno {{ rm.polygon_handle }}{% else %}; sem contorno fechado{% endif %})</small></li>{% endfor %}</ul>{% endif %}
 

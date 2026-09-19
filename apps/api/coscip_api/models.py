@@ -380,6 +380,8 @@ class ReviewDecisionRow(Base, _Tenant):
     __tablename__ = "review_decisions"
     result_id: Mapped[str] = mapped_column(ForeignKey("rule_results.id"))
     decision: Mapped[str] = mapped_column(String(30))
+    # Veredito do analista (PASS/FAIL/NOT_APPLICABLE); vazio quando pede dado.
+    final_status: Mapped[str | None] = mapped_column(String(20))
     justification: Mapped[str] = mapped_column(Text)
     author_id: Mapped[str] = mapped_column(ForeignKey("users.id"))
     extra_evidence_ids: Mapped[list] = mapped_column(JSON, default=list)
