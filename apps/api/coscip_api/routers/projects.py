@@ -309,27 +309,37 @@ def start_import(revision_id: str, idempotency_key: str = Header(alias="Idempote
             raise ApiError(409, "REVISION_NOT_SEALED", "Selar a revisão antes de importar",
                            required_action="SEAL_REVISION")
         existing = s.scalars(select(Execution).where(
-            Execution.idempotency_key == idempotency_key)).first()
+            Execution.idempotency_key.like(f"{idempotency_key}:%"))).all()
         if existing:
-            if existing.payload.get("revision_id") != revision_id:
+            if any(e.payload.get("revision_id") != revision_id for e in existing):
                 raise ApiError(409, "IDEMPOTENCY_CONFLICT", "Chave reutilizada com outro corpo")
-            return _exec_out(existing)
-        dxf = s.execute(
+            return _import_out(existing)
+        dxfs = s.execute(
             select(RevisionFile, FileObject).join(FileObject, RevisionFile.file_id == FileObject.id)
             .where(RevisionFile.revision_id == revision_id, RevisionFile.role == "ANALYTIC_DXF")
-        ).first()
-        rf, fo = dxf
-        payload = {"revision_id": r.id, "project_id": r.project_id, "file_id": fo.id,
-                   "file_key": fo.key, "file_sha256": fo.sha256}
-        ex = Execution(tenant_id=st.tenant_id, kind="IMPORT_DXF", state="QUEUED",
-                       idempotency_key=idempotency_key, payload=payload, planned_stages=2)
-        s.add(ex)
-        s.flush()
-        # Intenção de job na MESMA transação dos metadados.
+            .order_by(FileObject.id)
+        ).all()
         raw = s.connection().connection.driver_connection
-        ex.job_id = JobQueue(raw).enqueue("IMPORT_DXF", {"execution_id": ex.id, **payload},
-                                          f"import:{idempotency_key}")
-        return _exec_out(ex)
+        created = []
+        # Uma execução por DXF analítico: cada desenho tem estado e confirmação próprios.
+        for _rf, fo in dxfs:
+            payload = {"revision_id": r.id, "project_id": r.project_id, "file_id": fo.id,
+                       "file_key": fo.key, "file_sha256": fo.sha256}
+            key = f"{idempotency_key}:{fo.id}"
+            ex = Execution(tenant_id=st.tenant_id, kind="IMPORT_DXF", state="QUEUED",
+                           idempotency_key=key, payload=payload, planned_stages=2)
+            s.add(ex)
+            s.flush()
+            # Intenção de job na MESMA transação dos metadados.
+            ex.job_id = JobQueue(raw).enqueue("IMPORT_DXF", {"execution_id": ex.id, **payload},
+                                              f"import:{key}")
+            created.append(ex)
+        return _import_out(created)
+
+
+def _import_out(executions: list[Execution]) -> dict[str, Any]:
+    first = _exec_out(executions[0])
+    return {**first, "executions": [_exec_out(e) for e in executions]}
 
 
 def _exec_out(ex: Execution) -> dict[str, Any]:

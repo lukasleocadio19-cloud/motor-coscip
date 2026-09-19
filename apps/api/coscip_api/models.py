@@ -131,11 +131,16 @@ class UploadSession(Base, _Tenant):
 # --- CAD -----------------------------------------------------------------
 class Drawing(Base, _Tenant):
     __tablename__ = "drawings"
+    revision_id: Mapped[str | None] = mapped_column(ForeignKey("submission_revisions.id"),
+                                                   index=True)
     file_id: Mapped[str] = mapped_column(ForeignKey("file_objects.id"))
     adapter: Mapped[str] = mapped_column(String(50))
     cad_version: Mapped[str | None] = mapped_column(String(20))
     diagnostics: Mapped[dict | None] = mapped_column(JSON)
     inventory_artifact_id: Mapped[str | None] = mapped_column(ForeignKey("file_objects.id"))
+    # nome da saída do worker → file_objects.id (entities.jsonl, scene.bin, …)
+    artifacts: Mapped[dict | None] = mapped_column(JSON)
+    scene_manifest: Mapped[dict | None] = mapped_column(JSON)
 
 
 class CoordinateFrame(Base, _Tenant):
@@ -162,6 +167,7 @@ class ModelSnapshot(Base, _Tenant):
 class Floor(Base, _Tenant):
     __tablename__ = "floors"
     snapshot_id: Mapped[str] = mapped_column(ForeignKey("model_snapshots.id"))
+    drawing_id: Mapped[str | None] = mapped_column(ForeignKey("drawings.id"), index=True)
     name: Mapped[str] = mapped_column(String(100))
     elevation_m: Mapped[str | None] = mapped_column(String(40))
     frame_id: Mapped[str | None] = mapped_column(ForeignKey("coordinate_frames.id"))

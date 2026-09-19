@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { api } from "@coscip/api-client";
 import { Card, EmptyState, ErrorState, PageHeader } from "@coscip/ui";
 
@@ -44,6 +44,10 @@ export function DiagnosticsPage() {
       <div className="grid gap-4">
         {q.data?.items.map((d) => (
           <Card key={d.drawing_id} title={`${d.file} · ${d.cad_version ?? ""}`}>
+            <Link to={`/desenhos/${d.drawing_id}`}
+              className="mb-3 inline-block rounded-md bg-teal-700 px-3 py-1.5 text-sm font-medium text-white hover:bg-teal-800">
+              Abrir planta
+            </Link>
             {d.diagnostics.warnings.map((w) => (
               <p key={w} role="alert" className="mb-2 rounded bg-amber-50 p-2 text-sm text-amber-900">⚠ {w}</p>
             ))}

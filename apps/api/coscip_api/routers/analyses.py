@@ -42,8 +42,11 @@ def get_model(model_id: str, st: AppState = Depends(state), s: Session = Depends
 
 
 @router.get("/models/{model_id}/floors")
-def model_floors(model_id: str):
-    raise not_implemented("PREP-01")
+def model_floors(model_id: str, st: AppState = Depends(state), s: Session = Depends(db)):
+    from coscip_api.routers.drawings import snapshot_for
+
+    m = snapshot_for(s, st, model_id)
+    return {"model_snapshot_id": m.id, "items": (m.config or {}).get("floors", [])}
 
 
 @router.get("/models/{model_id}/elements")
@@ -53,8 +56,16 @@ def model_elements(model_id: str, floor: str | None = None, bbox: str | None = N
 
 
 @router.get("/models/{model_id}/scene")
-def model_scene(model_id: str):
-    raise not_implemented("VIEW-01")
+def model_scene(model_id: str, st: AppState = Depends(state), s: Session = Depends(db)):
+    """Cenas dos desenhos do snapshot; cada uma é servida por /drawings/{id}/scene."""
+    from coscip_api.routers.drawings import snapshot_for
+
+    m = snapshot_for(s, st, model_id)
+    drawings = (m.config or {}).get("drawings", {})
+    return {"model_snapshot_id": m.id,
+            "items": [{"drawing_id": did, "scene_url": f"/v1/drawings/{did}/scene",
+                       "unit_confirmed": cfg.get("unit_confirmed")}
+                      for did, cfg in drawings.items()]}
 
 
 @router.get("/elements/{element_id}/sources")

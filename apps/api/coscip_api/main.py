@@ -16,7 +16,7 @@ from coscip_api.config import Settings, get_settings
 from coscip_api.db import make_engine, make_session_factory, migrate
 from coscip_api.deps import AppState, ensure_local_identity
 from coscip_api.errors import ApiError, api_error_handler
-from coscip_api.routers import analyses, backups, executions, local, projects
+from coscip_api.routers import analyses, backups, drawings, executions, local, projects
 from coscip_api.security import LocalBoundaryMiddleware, SessionStore, allowed_for
 from coscip_storage import DataLayout, LocalFileStorage
 
@@ -69,8 +69,8 @@ def create_app(settings: Settings | None = None, *, start_supervisor: bool = Tru
                        sessions=app.state.sessions)
     app.add_exception_handler(ApiError, api_error_handler)
 
-    for r in (local.router, projects.router, executions.router, analyses.router,
-              backups.router):
+    for r in (local.router, projects.router, drawings.router, executions.router,
+              analyses.router, backups.router):
         app.include_router(r, prefix="/v1")
 
     if STATIC_DIR.exists():

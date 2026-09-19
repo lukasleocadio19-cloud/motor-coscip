@@ -1,153 +1,75 @@
-# Guia para a próxima sessão
+# Guia para a próxima sessão — Motor CAD/COSCIP
 
-Atualizado em 19/09/2026. Plano de referência: [`docs/plano/00-plano-completo.html`](plano/00-plano-completo.html) (v2.0).
-Status detalhado por ID: [`docs/backlog.md`](backlog.md).
-
-## Conferência e encerramento desta sessão — 19/09/2026 (Codex)
-
-### Limite de consumo
-
-O usuário pediu continuidade do desenvolvimento e atualização deste guia quando restassem 15%.
-Na consulta inicial, a janela semanal já estava com **99% consumidos / 1% restante**;
-a janela de cinco horas estava com **1% consumido / 99% restante**. Portanto, o ponto de parada
-já havia sido ultrapassado no limite semanal. A sessão foi limitada à conferência e à preparação
-desta passagem de trabalho; nenhuma funcionalidade nova foi implementada.
-Na próxima sessão, consultar os limites novamente antes de iniciar. Considerar 15% **restantes**
-em qualquer uma das duas janelas como ponto de encerramento e reservar margem para atualizar este guia.
-Não usar o saldo de créditos como justificativa para ignorar o ponto de parada definido pelo usuário.
-
-### O que foi efetivamente conferido agora
-
-- Lidos este guia, `docs/backlog.md`, `CLAUDE.md`, configurações do projeto e arquivos centrais
-  da API, do diagnóstico e do viewer; consultados o estado e o histórico Git.
-- Confirmado: a branch `master` ainda não possui commits. Há arquivos preparados para commit,
-  arquivos preparados com alterações posteriores e arquivos novos não rastreados.
-- Confirmado: `coordinate_frames.unit_confirmed` existe, mas não foi encontrado o endpoint de
-  confirmação de unidade. O Diagnóstico mostra a sugestão, sem formulário de confirmação.
-- Confirmado: `GET /v1/models/{id}/scene` e a consulta de origem dos elementos existem como rotas,
-  mas ainda respondem como não implementadas (VIEW-01/02).
-- Confirmado: `GET /v1/artifacts/{id}/content` já possui implementação; reutilizá-la e verificar
-  seu funcionamento com os novos artefatos de cena, sem tratar esse endpoint como tarefa do zero.
-- Confirmado: `packages/viewer` já contém buffers por camada, pan, zoom e controle de visibilidade;
-  ainda falta integrar a cena real e implementar seleção com vínculo à origem.
-- Confirmado: a API de criação de análises verifica `model.quality.units_confirmed`. A confirmação
-  deverá manter coerência entre esse estado e o quadro de coordenadas; alterar apenas a coluna
-  `unit_confirmed` não completa o fluxo.
-- **Testes, lint e build não foram reexecutados nesta sessão.** Os 79 testes e os resultados
-  positivos citados abaixo são registros da sessão anterior, não uma validação nova.
-- Nenhum commit, mudança no código, validação normativa ou aprovação do Gate A foi realizado.
-
-### Retomada executável, quando houver limite disponível
-
-1. Consultar consumo, reler este guia e conferir alterações concorrentes no Git.
-2. Revisar o conteúdo do primeiro commit antes de gravá-lo: há `.claude-launch-tmp` e
-   `apps/web/tsconfig.tsbuildinfo` preparados, além de `ErrorReports/` não rastreado. Conferir
-   arquivos locais/gerados e informações privadas; preservar o trabalho existente e manter o
-   corpus fora do repositório. O pedido do usuário já autoriza executar as tarefas do guia,
-   inclusive o commit local, após essa revisão; não é necessária uma confirmação genérica extra.
-3. Implementar CAD-02 completo: contrato/API, validação da referência (pontos/entidades e medida
-   real positiva e finita), justificativa, persistência e confirmação explícita na interface.
-   Conferir o vínculo desenho/revisão/projeto, a proteção de acesso e a coerência entre quadro
-   de coordenadas, qualidade do modelo, snapshots e estado da execução. Em revisão com vários
-   desenhos, confirmar um deles não deve liberar os demais. Não apagar o histórico da importação.
-4. Verificar CAD-02 com testes que cubram referência inválida, acesso indevido, bloqueio antes da
-   confirmação, liberação após a confirmação e persistência depois de reabrir o app.
-5. Implementar VIEW-01/02: cena produzida pelo worker e publicada como artefato imutável com hash,
-   renderização no viewer existente, seleção vinculada à origem e controle de camadas. Registrar
-   o erro de discretização de curvas. Usar o corpus 9715 para verificar desempenho.
-6. Implementar PREP-01 com recorte de pavimento persistido em novo snapshot e limitar as medidas
-   ao recorte. Só então executar o Gate A com uma medida real informada pelo usuário.
-7. Rodar os testes do projeto, lint e build; atualizar `docs/backlog.md` e este guia com resultados
-   realmente observados. Registrar falhas e pendências sem declarar concluído o que não foi verificado.
-
-As medidas reais, a relação entre 21778/21801, o espaço correto do 21471, o dispositivo externo
-para backup e o responsável pela homologação continuam dependendo de informações ou recursos
-do usuário. Não inventar esses dados nem transformar sugestões de unidade em confirmação humana.
+Atualizado em 19/09/2026 (sessão da tarde, Claude). **Este arquivo fica em `C:\Users\USER\Downloads\proxima-sessao.md`
+e deve ser atualizado aqui mesmo**, sem criar outro; `motor-coscip/docs/proxima-sessao.md` é uma cópia sincronizada.
+Plano de referência: `motor-coscip/docs/plano/00-plano-completo.html` (v2.0). Status por ID: `motor-coscip/docs/backlog.md`.
 
 ## Onde estamos
 
-Fase de **viabilidade** (semanas 1–4 do plano). A fundação local está pronta; o **Gate A** ainda não
-foi passado: falta mostrar a planta na tela e conferir uma medida real de ponta a ponta.
+Fase de viabilidade, **Gate A pré-aprovado**. A planta real aparece na tela, o clique leva à origem no DXF, a unidade
+é confirmada com referência medida, a medição foi conferida contra 1.460 cotas dos 5 projetos e o recorte de
+pavimento funciona. Falta só o que depende de você (abaixo).
 
-### O que já funciona (registro anterior: 79 testes passando, lint e build ok)
+### Feito nesta sessão (verificado: 97 testes, lint, build, migração coerente)
 
-| Área | O que existe |
-|---|---|
-| App local | Launcher em `127.0.0.1` com porta livre, token de abertura de uso único, sessão por cookie, CSRF, Host/Origin validados |
-| Banco | SQLite (WAL, `synchronous=FULL`) com migração Alembic `0001` (~37 tabelas + fila) |
-| Projetos | Projeto → revisão → upload em partes com SHA-256 → selagem com manifesto imutável |
-| Importação DXF | Fila persistente + worker em processo separado (sem banco, sem chaves, sem pasta do usuário); só a tentativa vigente publica; retomada após queda |
-| Leitor DXF | Entidades com identidade de origem (arquivo + handle + caminho de instâncias), blocos aninhados/espelhados, matriz de suporte, contagem por prancha, aviso de proxies |
-| Unidade | Sugestão pelas cotas (`coscip_cad.unit_evidence`); **toda** importação termina em `WAITING_INPUT / DRAWING_UNIT_UNCONFIRMED` |
-| Geometria | Unidades, transformações 4×4, tolerâncias experimentais, comparação com incerteza, grafo de pavimento |
-| Regras | DSL fechada em YAML, cinco estados, regra artificial `DEMO_DOOR_WIDTH_MIN` (`TEST_ONLY`) |
-| IA | Interfaces e reserva de orçamento; **desligada**, sem chave cadastrada |
-| Backup | Cópia consistente + verificação por hash + restauração em pasta separada (testada) |
-| Interface | Início, Projetos, Revisões, Upload, Diagnóstico (mostra unidade sugerida e pranchas), Operação, Configurações; demais telas mostram o ID do backlog |
-| Benchmark | `python -m coscip_api.cli benchmark <pasta>` roda o worker real e mede tempo/memória |
+| Item | O que foi feito | Como foi verificado |
+|---|---|---|
+| Primeiro commit | `d53f65d` com 124 arquivos; sem dados reais; `ErrorReports/` e `*.tsbuildinfo` ignorados | revisão de nomes e conteúdo antes do commit |
+| Importador 2.0 | worker gera `entities.jsonl` + índice binário + cena (`scene.bin`, `scene_ids.bin`, `scene.json`); supervisor confere hash de cada saída | testes e 5 plantas reais |
+| Uma execução por DXF | cada desenho da revisão tem importação e confirmação próprias | teste com 2 desenhos na mesma revisão |
+| CAD-02 | `POST /v1/drawings/{id}/unit-confirmation`: unidade + 2 pontos + medida real (desvio ≤ 2 %) + justificativa; novo quadro de coordenadas, novo snapshot, correção e auditoria; só a importação daquele desenho sai de `WAITING_INPUT` | 9 testes (referência errada, pontos iguais, acesso sem sessão, conflito de versão, reabrir app) |
+| VIEW-01/02 | tela `/desenhos/:id`: camadas liga/desliga, zoom proporcional, clique → handle, caminho de instâncias, layer, bloco e hash do arquivo | navegador com a planta 9715 (1,28 mi de segmentos) |
+| Medição | `POST /v1/drawings/{id}/measure`; ajusta ao vértice exato da entidade; ponto livre recebe incerteza do tamanho do pixel; opção de registrar | testes + navegador |
+| PREP-01 | `POST /v1/drawings/{id}/floors` (retângulo) → novo snapshot; medida fora do recorte é recusada | testes |
+| Migração 0002 | colunas de revisão/artefatos/cena em `drawings` e desenho em `floors`; subida e descida testadas | `alembic check` sem diferenças |
+| Correções | backup não migra mais a base antes de copiar; leitor de números aceita ".91"; enquadramento não corta planta lateral; limite de upload 200 MB | testes |
 
-### Corpus real (fora do repositório)
+### Corpus e pré-Gate A (detalhes em `Downloads\coscip-corpus\RELATORIO.md` e `gate_a.json`)
 
-- Pasta: `C:\Users\USER\Downloads\coscip-corpus` — `dxf/`, `originais/`, `RELATORIO.md`, `manifesto.json`, `benchmark.json`.
-- 5 projetos autorizados: 21471, 21778, 21801, 41336 (DWG convertidos pelo AutoCAD 2027) e 9715 (DXF do projetista).
-- Conversão: `accoreconsole.exe` + `DXFOUT` 2018, precisão 16 — ver [`runbooks/dwg-para-dxf.md`](runbooks/dwg-para-dxf.md). **Nunca** usar o ODA File Converter (licença).
-- Medições: 7–21 s e 185–271 MB por arquivo no PC (i7-3770, 16 GB). Hardware suficiente.
+- As 5 plantas foram reimportadas no app com o importador 2.0 (projetos "Corpus …" no app).
+- **Unidade confirmada em metros nas 5**, usando uma cota do próprio projeto como referência. Quem confirmou foi
+  **o assistente, com sua autorização**; a justificativa gravada diz isso e pede revisão humana.
+- Medição conferida contra as cotas: **1.452 de 1.460 conferem** dentro do arredondamento de exibição.
+  As 8 divergências (todas no 41336) são do desenho: 2 cotas com texto diferente da geometria e 6 textos digitados
+  à mão (prováveis alturas de instalação).
+- **21778 × 21801**: mesmo empreendimento (mesmas ruas e cotas), ~45 % do conteúdo diferente → parecem dois
+  protocolos do mesmo empreendimento, não uma revisão simples.
+- **21471**: a planta está no Model; as pranchas PPCI têm notas, detalhes e 5 imagens OLE coladas (26,8 MB).
+  O Model tem pouca arquitetura vetorial: pode ser que a base tenha vindo como imagem → conferir no AutoCAD.
+- Backups: `C:\BackupsMotorCoscip` (antes da migração 0002 foi feito backup da base 0001). Mesmo SSD.
 
-### Achados que mudaram o motor
+## O que falta para fechar o Gate A (com você)
 
-1. `$INSUNITS` errado em **5 de 5** desenhos (todos em metros) → unidade sempre exige confirmação.
-2. 21471 tem geometria nas pranchas `PPCI 1/2`; a análise lê só o Model.
-3. Model space com várias plantas lado a lado → recorte do pavimento (PREP-01) é obrigatório antes de medir.
-4. 21778 e 21801 são quase idênticos → provavelmente revisões do mesmo projeto.
-5. Tamanho em MB não prediz custo; limitar por entidades expandidas.
+1. **Revisar as 5 confirmações de unidade** feitas pelo assistente: abrir cada planta no app e aceitar (ou reconfirmar).
+2. **Uma medida real independente** em pelo menos um projeto (medida de campo ou de documento fora do DXF),
+   conferida com a ferramenta Medir.
+3. Dizer se 21778 e 21801 são o mesmo processo (só importa para o teste de histórico).
+4. Abrir o 21471 no AutoCAD e dizer se a base arquitetônica é imagem.
+5. Pendrive/HD externo para backup; responsável pela validação da NT 2-01 (só na fase de regras).
 
-### Estado do ambiente
+## Próximos passos técnicos, em ordem
 
-- Código: `C:\Users\USER\Downloads\motor-coscip` — repositório git **sem nenhum commit** ainda.
-- Python: `.venv` do projeto (3.12). Frontend compilado em `apps/api/coscip_api/static`.
-- Dados do app: `%LOCALAPPDATA%\MotorCoscip` (projetos "Loja Centro - teste" e "Corpus 41336_655959").
-- Backup: `C:\BackupsMotorCoscip` — **mesmo SSD, provisório** (escolha do usuário; OneDrive recusado por ora).
-- Preview no navegador do Claude: entrada `motor-coscip` em `Downloads\.claude\launch.json` (porta 8765);
-  o token de abertura aparece no log na linha `Abrir:`.
+1. **Tela de revisão das confirmações** (lista de desenhos com unidade confirmada por quem/justificativa e botão
+   "aceitar") — facilita o item 1 acima.
+2. **PREP-02 — classificação assistida**: portas, saídas, extintores e ambientes a partir de layers/blocos
+   (`coscip_semantics.classify` já existe), com confirmação por propriedade e novo snapshot.
+3. **PREP-03 / GEO-02 / GEO-03**: contornos analíticos, áreas e largura livre de portas (vão × folha).
+4. **Recorte poligonal** (hoje só retângulo) e opção de recomputar o enquadramento das cenas antigas.
+5. **REG-02**: matriz de cobertura da NT 2-01 (extintores) — precisa do responsável técnico.
+6. **REP-01**: relatório HTML local com cobertura, evidências, hashes e pendências.
 
-## Próximos passos, em ordem
+Melhorias anotadas: texto (TEXT/MTEXT) ainda não é desenhado na cena; importação do 9715 levou 44 s (discretização
+de ~24 mil curvas); destaque da entidade selecionada percorre todos os segmentos (ok até 1,3 mi).
 
-### 1. Fazer o primeiro commit
-Nada foi commitado. Conferir `git status`, revisar arquivos locais/gerados e dados privados e fazer o primeiro commit local. O usuário autorizou executar as tarefas deste guia em 19/09/2026; preservar alterações existentes e não publicar em serviço remoto sem solicitação.
+## Estado do ambiente
 
-### 2. Confirmação de unidade (CAD-02)
-- Endpoint `POST /v1/drawings/{id}/unit-confirmation` com unidade escolhida + medida de referência
-  (duas entidades/pontos e o valor real) + justificativa; grava `coordinate_frames.unit_confirmed`.
-- Tela no Diagnóstico: mostrar a sugestão como pré-seleção, **exigir** a confirmação explícita.
-- Critério: sem confirmação, nenhuma medida/análise; com confirmação, a execução sai de `WAITING_INPUT`.
-
-### 3. Planta na tela com seleção → origem (VIEW-01/02, POC-06)
-- Gerar a cena no worker: segmentos por layer (LINE, LWPOLYLINE, ARC/CIRCLE discretizados com erro registrado),
-  relativos a uma origem local; gravar como artefato imutável com checksum.
-- Implementar `GET /v1/models/{id}/scene` e reutilizar `GET /v1/artifacts/{id}/content`, que já existe; o viewer (`packages/viewer`) já desenha por buffers.
-- Seleção: índice espacial → servidor devolve handle, caminho de instâncias, layer e bloco.
-- Camadas liga/desliga (sem excluir da análise). Testar com o 9715 (134 mil entidades expandidas).
-
-### 4. Recorte de um pavimento (PREP-01)
-Retângulo/polígono desenhado na planta; medidas só dentro do recorte; novo snapshot.
-
-### 5. Gate A (POC-08)
-Com o **usuário**: abrir um DXF do corpus, selecionar um elemento, medir e comparar com uma medida conhecida,
-reencontrar a origem após fechar e reabrir o app. Registrar o resultado no `RELATORIO.md` do corpus.
-
-### Depois do Gate A
-Contornos e portas assistidos (PREP-02/03, GEO-02/03), percursos em um pavimento (GEO-04), matriz de
-cobertura da NT 2-01 (REG-02) e relatório HTML/PDF (REP-01/02). IA só depois do núcleo funcionando.
-
-## Pendências do usuário
-
-| Item | Por quê |
-|---|---|
-| **Uma medida real conhecida por projeto** (ex.: "porta de entrada do 41336 = 0,90 m") | Conferir a medição no Gate A |
-| Dizer se 21778 e 21801 são revisões do mesmo projeto | Usar no teste de histórico |
-| Dizer qual espaço do 21471 tem a planta a analisar (Model ou pranchas PPCI) | Definir o recorte |
-| Pendrive/HD externo para backup | O backup atual está no mesmo SSD |
-| Responsável pela validação da NT 2-01 | Só necessário na fase de regras reais |
+- Código: `C:\Users\USER\Downloads\motor-coscip`. Commits: `d53f65d` (fundação) + o commit desta sessão.
+- Python: `.venv` do projeto (3.12). Interface compilada em `apps/api/coscip_api/static`.
+- Dados do app: `%LOCALAPPDATA%\MotorCoscip` (base na migração 0002; 5 projetos "Corpus …" com cena e unidade confirmada,
+  mais 2 projetos antigos de teste sem cena).
+- Preview no navegador do Claude: entrada `motor-coscip` em `Downloads\.claude\launch.json` (porta 8765); o token de
+  abertura aparece no log na linha `Abrir:` e é de uso único (um script que usa o token impede o navegador de usá-lo;
+  reinicie o servidor para obter outro).
 
 ## Cuidados que já custaram tempo
 
@@ -155,22 +77,23 @@ cobertura da NT 2-01 (REG-02) e relatório HTML/PDF (REP-01/02). IA só depois d
 - O `python.exe` do venv é um lançador: medir memória somando os processos filhos (`psutil`).
 - `accoreconsole` com `Start-Process -Wait` pode travar; invocar direto com `&`.
 - O estilo de cota padrão do ezdxf usa `DIMLFAC=100`; em testes, fixar o fator explicitamente.
-- Migração: o `PRAGMA` antes da transação do Alembic impedia gravar a versão (corrigido em `env.py`).
-- Dados reais nunca entram no repositório; nuvem para backup só com autorização do usuário.
+- Migração: `PRAGMA` antes da transação do Alembic impedia gravar a versão (corrigido); `job_queue` fica fora do ORM
+  (`include_object` em `env.py`); chaves estrangeiras em batch precisam de nome.
+- Backup antes de atualizar: `coscip_api.cli backup` não migra a base.
+- Cotas: texto digitado não é medida; números sem zero inicial (".91") são comuns.
+- Dados reais nunca entram no repositório; nuvem para backup só com autorização do usuário (OneDrive recusado por ora).
 
 ## Comandos úteis
 
 ```powershell
-.venv\Scripts\python -m pytest              # testes
-.venv\Scripts\ruff check .                  # lint
-npm run build                               # interface (tsc estrito + vite)
-scripts\start\start.ps1                     # abrir o app
+.venv\Scripts\python -m pytest              # 97 testes (~80 s)
+.venv\Scripts\ruff check .
+npm run build
+scripts\start\start.ps1
+.venv\Scripts\python -m coscip_api.cli backup
 .venv\Scripts\python -m coscip_api.cli benchmark C:\Users\USER\Downloads\coscip-corpus\dxf
-scripts\backup\backup.ps1                   # backup no destino cadastrado
 ```
 
 ## Frase para abrir a próxima sessão
 
-> Leia `docs/proxima-sessao.md` do motor-coscip e continue pelos próximos passos: confirmação de unidade
-> e planta na tela com seleção, até o Gate A.
-
+> Leia `C:\Users\USER\Downloads\proxima-sessao.md` e continue pelos próximos passos técnicos; atualize esse mesmo arquivo ao final.

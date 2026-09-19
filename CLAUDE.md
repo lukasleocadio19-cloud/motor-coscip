@@ -1,6 +1,6 @@
 # Motor CAD/COSCIP
 
-Antes de trabalhar, leia `docs/proxima-sessao.md` (estado atual e próximos passos) e
+Antes de trabalhar, leia `C:SERSSERDOWNLOADSPROXIMA-SESSAO.MD` (GUIA PRINCIPAL; `DOCS/PROXIMA-SESSAO.MD` é CóPIA SINCRONIZADA) (estado atual e próximos passos) e
 `docs/backlog.md` (status por ID do plano). O plano completo está em `docs/plano/`.
 
 - Python sempre pelo `.venv` do projeto (3.12). Rodar `pytest`, `ruff check .` e `npm run build` antes de concluir.

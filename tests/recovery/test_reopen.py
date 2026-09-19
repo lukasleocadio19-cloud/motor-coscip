@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import sqlite3
+from pathlib import Path
 
 from fastapi.testclient import TestClient
 
@@ -10,13 +11,16 @@ from coscip_api.config import Settings
 from coscip_api.db import migrate
 from coscip_api.main import create_app
 
+MIGRATIONS = Path(migrate.__code__.co_filename).parent / "migrations"
+
 
 def test_migrate_twice_records_version(tmp_path):
     url = f"sqlite:///{(tmp_path / 'app.db').as_posix()}"
     migrate(url)
     migrate(url)
     con = sqlite3.connect(tmp_path / "app.db")
-    assert con.execute("SELECT version_num FROM alembic_version").fetchall() == [("0001",)]
+    versions = sorted(f.name[:4] for f in (MIGRATIONS / "versions").glob("0*.py"))
+    assert con.execute("SELECT version_num FROM alembic_version").fetchall() == [(versions[-1],)]
     con.close()
 
 

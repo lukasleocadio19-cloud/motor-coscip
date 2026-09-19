@@ -21,10 +21,11 @@ from coscip_api.models import BackupRecord, LocalSetting
 from coscip_storage import DataLayout
 
 
-def _factory():
+def _factory(*, run_migrations: bool = True):
     s = get_settings()
     DataLayout(s.data_dir).ensure()
-    migrate(s.database_url)
+    if run_migrations:
+        migrate(s.database_url)
     return make_session_factory(make_engine(s.database_url))
 
 
@@ -50,7 +51,8 @@ def cmd_set_dest(args: argparse.Namespace) -> int:
 
 
 def cmd_backup(_: argparse.Namespace) -> int:
-    factory = _factory()
+    # Backup antes de atualizar: nunca migrar a base antes de copiá-la.
+    factory = _factory(run_migrations=False)
     with factory() as s:
         row = s.get(LocalSetting, "backup_destination_path")
         label_row = s.get(LocalSetting, "backup_destination_label")

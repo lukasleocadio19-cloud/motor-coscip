@@ -23,7 +23,9 @@ class Settings(BaseSettings):
     dev_origin: str | None = None  # ex.: http://localhost:5173 no desenvolvimento
 
     # Limites propostos (plano §2), a ajustar na POC.
-    max_upload_bytes: int = 50 * 1024 * 1024
+    # 200 MB: o corpus mostrou que MB não prediz custo (63 MB → 7 s). O limite efetivo
+    # de processamento é o de entidades expandidas.
+    max_upload_bytes: int = 200 * 1024 * 1024
     max_expanded_entities: int = 2_000_000
     worker_memory_mb: int = 4096
     worker_timeout_s: int = 30 * 60

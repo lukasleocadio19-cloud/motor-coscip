@@ -6,6 +6,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 import ezdxf
+from ezdxf import path as ezpath
 from ezdxf.document import Drawing
 from ezdxf.entities import DXFGraphic, Insert
 from ezdxf.math import Matrix44
@@ -41,6 +42,11 @@ SUPPORT: dict[str, ExtractionQuality] = {
 }
 
 MAX_BLOCK_DEPTH = 16
+# Entidades desenhadas na cena por caminho (curvas discretizadas com erro registrado).
+DRAWABLE = frozenset({"LINE", "LWPOLYLINE", "POLYLINE", "ARC", "CIRCLE", "ELLIPSE",
+                      "SPLINE", "SOLID", "TRACE"})
+# Flecha máxima relativa ao tamanho da entidade (visual; medidas usam os vértices exatos).
+CURVE_REL_SAGITTA = 1e-3
 DEFAULT_MAX_EXPANDED = 2_000_000
 
 
@@ -82,6 +88,11 @@ class ExtractedEntity:
     quality: ExtractionQuality
     points: tuple[tuple[float, float], ...] = ()
     text: str | None = None
+    # Polilinhas para a cena, no referencial do mundo. Curvas vêm discretizadas;
+    # ``max_sagitta`` é a maior flecha usada (erro máximo da aproximação).
+    polylines: tuple[tuple[tuple[float, float], ...], ...] = ()
+    max_sagitta: float = 0.0
+    source_layer: str | None = None  # layer original quando herdado ("0" em bloco)
 
 
 class DxfReader:
@@ -147,7 +158,7 @@ class DxfReader:
         space = doc.modelspace() if layout == "Model" else doc.paperspace(layout)
         budget = [self.max_expanded]
         for e in space:
-            yield from self._walk(e, layout, (), Matrix44(), None, 0, budget)
+            yield from self._walk(e, layout, (), Matrix44(), None, 0, budget, None)
 
     def _walk(
         self,
@@ -158,6 +169,7 @@ class DxfReader:
         block_name: str | None,
         depth: int,
         budget: list[int],
+        parent_layer: str | None,
     ) -> Iterator[ExtractedEntity]:
         budget[0] -= 1
         if budget[0] < 0:
@@ -172,10 +184,11 @@ class DxfReader:
                 raise DxfReadError(f"profundidade de blocos excedida em {handle}")
             ins_m = e.matrix44() @ m
             name = e.dxf.name
-            yield self._make(e, layout, here, ins_m, name, quality)
+            ins_layer = self._layer(e, parent_layer)
+            yield self._make(e, layout, here, ins_m, name, quality, parent_layer)
             for attrib in e.attribs:
                 yield self._make(attrib, layout, (*here, f"attrib:{attrib.dxf.handle}"),
-                                 m, name, ExtractionQuality.SUPPORTED)
+                                 m, name, ExtractionQuality.SUPPORTED, parent_layer)
             block = e.block()
             if block is None:
                 return
@@ -183,10 +196,36 @@ class DxfReader:
             for child in block:
                 if child.dxftype() == "ATTDEF":
                     continue
-                yield from self._walk(child, layout, child_path, ins_m, name, depth + 1, budget)
+                yield from self._walk(child, layout, child_path, ins_m, name, depth + 1,
+                                      budget, ins_layer)
             return
 
-        yield self._make(e, layout, here, m, block_name, quality)
+        yield self._make(e, layout, here, m, block_name, quality, parent_layer)
+
+    @staticmethod
+    def _layer(e: DXFGraphic, parent_layer: str | None) -> str:
+        """Entidade no layer "0" dentro de bloco herda o layer da inserção (regra do CAD)."""
+        own = e.dxf.get("layer", "0")
+        return parent_layer if own == "0" and parent_layer else own
+
+    @staticmethod
+    def _polylines(e: DXFGraphic, m: Matrix44):
+        etype = e.dxftype()
+        if etype not in DRAWABLE:
+            return (), 0.0
+        if etype == "POLYLINE" and not e.is_2d_polyline:
+            return (), 0.0
+        p = ezpath.make_path(e).transform(m)
+        if not p.has_curves:
+            vs = list(p.control_vertices())
+            if len(vs) < 2:
+                return (), 0.0
+            return (tuple((v.x, v.y) for v in vs),), 0.0
+        box = ezpath.bbox([p])
+        size = max(box.size.x, box.size.y) if box.has_data else 0.0
+        sagitta = max(size * CURVE_REL_SAGITTA, 1e-9)
+        vs = list(p.flattening(sagitta, segments=4))
+        return (tuple((v.x, v.y) for v in vs),), sagitta
 
     def _make(
         self,
@@ -196,9 +235,12 @@ class DxfReader:
         m: Matrix44,
         block_name: str | None,
         quality: ExtractionQuality,
+        parent_layer: str | None = None,
     ) -> ExtractedEntity:
         pts: tuple[tuple[float, float], ...] = ()
         text = None
+        polylines: tuple = ()
+        sagitta = 0.0
         etype = e.dxftype()
         try:
             if etype == "LINE":
@@ -211,12 +253,13 @@ class DxfReader:
                 text = e.dxf.text
             elif etype == "MTEXT":
                 text = e.plain_text()
-        except (AttributeError, ValueError):
+            polylines, sagitta = self._polylines(e, m)
+        except (AttributeError, ValueError, TypeError, ZeroDivisionError):
             quality = ExtractionQuality.INVENTORY_ONLY
         return ExtractedEntity(
             handle=e.dxf.handle or "?",
             entity_type=etype,
-            layer=e.dxf.get("layer", "0"),
+            layer=self._layer(e, parent_layer),
             layout=layout,
             instance_path=path,
             block_name=block_name,
@@ -224,4 +267,7 @@ class DxfReader:
             quality=quality,
             points=pts,
             text=text,
+            polylines=polylines,
+            max_sagitta=sagitta,
+            source_layer=e.dxf.get("layer", "0"),
         )

@@ -8,6 +8,12 @@ from coscip_api.models import Base
 config = context.config
 target_metadata = Base.metadata
 
+
+def include_object(obj, name, type_, reflected, compare_to):  # noqa: ANN001
+    # job_queue é gerida por coscip_jobs (SQL próprio), fora do ORM.
+    return not (type_ == "table" and name == "job_queue") and not (
+        type_ == "index" and name == "ix_job_queue_state")
+
 if not config.get_main_option("sqlalchemy.url"):
     # Linha de comando: usa a pasta de dados local (COSCIP_DATA_DIR).
     from coscip_api.config import get_settings
@@ -20,7 +26,7 @@ if not config.get_main_option("sqlalchemy.url"):
 def run_migrations_offline() -> None:
     context.configure(url=config.get_main_option("sqlalchemy.url"),
                       target_metadata=target_metadata, literal_binds=True,
-                      render_as_batch=True)
+                      render_as_batch=True, include_object=include_object)
     with context.begin_transaction():
         context.run_migrations()
 
@@ -33,7 +39,8 @@ def run_migrations_online() -> None:
         # Sem este commit, o autobegin do PRAGMA faz o Alembic não gravar alembic_version.
         connection.commit()
         context.configure(connection=connection, target_metadata=target_metadata,
-                          render_as_batch=True)  # SQLite exige batch para ALTER
+                          render_as_batch=True,  # SQLite exige batch para ALTER
+                          include_object=include_object)
         with context.begin_transaction():
             context.run_migrations()
 

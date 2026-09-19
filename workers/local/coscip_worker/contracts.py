@@ -2,7 +2,13 @@
 
 from __future__ import annotations
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, field_validator
+
+# Arquivos que o estágio de importação precisa produzir em ``out/``.
+OUTPUT_FILES = (
+    "inventory.json", "entities.jsonl", "entities.idx", "scene.json", "scene.bin",
+    "scene_ids.bin",
+)
 
 
 class InventoryOut(BaseModel):
@@ -30,12 +36,23 @@ class InventoryOut(BaseModel):
 class ImportResult(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
-    schema_version: str = "worker-import/1.0"
+    schema_version: str = "worker-import/2.0"
     job_id: str
     attempt_token: str
     input_sha256: str = Field(pattern=r"^[0-9a-f]{64}$")
     inventory: InventoryOut
-    entities_file: str
-    entities_sha256: str = Field(pattern=r"^[0-9a-f]{64}$")
+    outputs: dict[str, str]  # nome → SHA-256
+    scene_segment_count: int = Field(ge=0)
+    scene_max_sagitta: float = Field(ge=0)
     duration_s: float
     peak_memory_mb: float | None = None
+
+    @field_validator("outputs")
+    @classmethod
+    def _all_outputs(cls, v: dict[str, str]) -> dict[str, str]:
+        if set(v) != set(OUTPUT_FILES):
+            raise ValueError(f"saídas esperadas: {OUTPUT_FILES}")
+        for sha in v.values():
+            if len(sha) != 64:
+                raise ValueError("hash inválido")
+        return v

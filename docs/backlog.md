@@ -8,13 +8,13 @@ IDs e critérios de aceite vêm do documento 03 do plano.
 | ID | Entrega | Estado | Onde |
 |---|---|---|---|
 | POC-01 | Inventário de hardware e espaço | **feito** | 16 GB, i7-3770, RTX 3050, SSD único (relatório do corpus) |
-| POC-02 | 5–10 DXFs reais autorizados | base | 5 projetos em `Downloads/coscip-corpus` (fora do repo); faltam medidas de referência |
+| POC-02 | 5–10 DXFs reais autorizados | **feito** | 5 projetos em `Downloads/coscip-corpus`; referências = cotas do projeto; falta 1 medida real independente |
 | POC-03 | Procedimento DWG → DXF | **feito** | AutoCAD 2027 `accoreconsole` + `DXFOUT` 2018; `docs/runbooks/dwg-para-dxf.md` |
 | POC-04 | Extrair entidades, layers, textos, blocos | **feito** | `coscip_cad.dxf_reader`, `tests/unit/test_dxf_reader.py` |
 | POC-05 | Conferir medidas e transformações | **feito** | espelhamento, escala, unidades, blocos |
-| POC-06 | Viewer com seleção | base | `packages/viewer` (render/pan/zoom; seleção pendente) |
+| POC-06 | Viewer com seleção | **feito** | cena binária por camada, seleção → origem no DXF; testado com 1,28 mi de segmentos (9715) |
 | POC-07 | Tempo, memória e expansão | **feito** | `coscip_api.cli benchmark`; pior caso 20,6 s / 271 MB |
-| POC-08 | Gate de continuidade | — | |
+| POC-08 | Gate de continuidade | **pré-aprovado** | 1.452/1.460 cotas conferem; faltam revisão humana das 5 confirmações e 1 medida real (ver `coscip-corpus/RELATORIO.md`) |
 
 ## Fundação local
 
@@ -36,11 +36,15 @@ IDs e critérios de aceite vêm do documento 03 do plano.
 | ID | Estado | Observação |
 |---|---|---|
 | CAD-01 | **feito** | adaptador + diagnóstico publicado |
-| CAD-02 | base | sugestão pelas cotas (`unit_evidence`) no diagnóstico; tela de confirmação pendente |
+| CAD-02 | **feito** | `POST /drawings/{id}/unit-confirmation` com referência medida (desvio ≤ 2 %), novo quadro + snapshot + correção auditada; tela na planta |
 | CAD-03 | **feito** | instâncias sem colisão de identidade |
-| CAD-04 | — | separar original/modelo/cena em snapshots |
-| VIEW-01..04 | base | viewer por buffers; cena progressiva, seleção, overlays pendentes |
-| PREP-01..04 | — | telas-esqueleto em `features/model-preparation` |
+| CAD-04 | base | cena visual separada das entidades exatas; snapshots derivados por mudança; modelo CBM de elementos ainda não |
+| VIEW-01 | **feito** | cena `scene/1.0` (Float32 + ids), camadas, erro de discretização registrado |
+| VIEW-02 | **feito** | `GET /drawings/{id}/entities/{row}`: handle, caminho de instâncias, layer, bloco, hash do arquivo |
+| VIEW-03 | base | marcações e medidas sobrepostas; medida com ajuste ao vértice exato |
+| VIEW-04 | base | estados de carregamento/erro; lista textual de resultados ainda não |
+| PREP-01 | **feito** | recorte retangular → novo snapshot; medida fora do recorte recusada |
+| PREP-02..04 | — | classificação, contornos e dicionário |
 
 ## Geometria e regras
 

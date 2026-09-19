@@ -17,6 +17,10 @@ const AnalysisPage = lazy(() =>
   import("./features/analysis/AnalysisPage").then((m) => ({ default: m.AnalysisPage })),
 );
 
+const DrawingPage = lazy(() =>
+  import("./features/drawing/DrawingPage").then((m) => ({ default: m.DrawingPage })),
+);
+
 const NAV = [
   { to: "/", label: "Início" },
   { to: "/projetos", label: "Projetos" },
@@ -56,6 +60,10 @@ export function App() {
           <Route
             path="/analises/:analysisId"
             element={<Suspense fallback={<p>Carregando planta…</p>}><AnalysisPage /></Suspense>}
+          />
+          <Route
+            path="/desenhos/:drawingId"
+            element={<Suspense fallback={<p>Carregando planta…</p>}><DrawingPage /></Suspense>}
           />
           <Route path="/analises/:analysisId/revisao" element={<ReviewPage />} />
           <Route path="/projetos/:projectId/historico" element={<HistoryPage />} />

@@ -52,3 +52,16 @@ def test_declared_unit_still_warns(floor_dxf):
     r = DxfReader()
     inv = r.inventory(r.open(floor_dxf))
     assert any("só indício" in w for w in inv.warnings)
+
+
+def test_number_parsing_accepts_leading_separator():
+    from coscip_cad.unit_evidence import NUM
+
+    def parse(s):
+        return float(NUM.search(s).group(1).replace(",", "."))
+
+    assert parse(".91") == 0.91
+    assert parse("0,85m") == 0.85
+    assert parse(".90 A 1.10m") == 0.90
+    assert parse("90") == 90.0
+    assert parse("2.30") == 2.30

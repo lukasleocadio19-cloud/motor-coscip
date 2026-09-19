@@ -20,7 +20,8 @@ from dataclasses import dataclass, field
 
 from ezdxf.document import Drawing
 
-NUM = re.compile(r"(\d+(?:[.,]\d+)?)")
+# Aceita ".91" e "0,85": cotas sem zero inicial são comuns em projetos brasileiros.
+NUM = re.compile(r"(\d*[.,]\d+|\d+)")
 
 # Unidade dos números exibidos, pela mediana dos valores das cotas de planta.
 _DISPLAY_BANDS = ((50.0, "m", 1.0), (5_000.0, "cm", 0.01), (math.inf, "mm", 0.001))

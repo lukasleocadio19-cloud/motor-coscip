@@ -7,6 +7,7 @@ Separação de processo não é sandbox de segurança (ver SAFE-05).
 
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import os
@@ -22,12 +23,24 @@ from pydantic import ValidationError
 
 from coscip_api.config import Settings
 from coscip_api.db import write_tx
-from coscip_api.models import Drawing, Execution, FileObject
+from coscip_api.model_state import IDENTITY, derive_snapshot
+from coscip_api.models import CoordinateFrame, Drawing, Execution, FileObject
 from coscip_jobs import Claim, JobQueue, StaleAttemptError
 from coscip_storage import DataLayout, LocalFileStorage
-from coscip_worker.contracts import ImportResult
+from coscip_worker.contracts import OUTPUT_FILES, ImportResult
 
 log = logging.getLogger("coscip.supervisor")
+
+_MIME = {".json": "application/json", ".jsonl": "application/x-ndjson",
+         ".bin": "application/octet-stream", ".idx": "application/octet-stream"}
+
+
+def _sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as fh:
+        for chunk in iter(lambda: fh.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
 
 
 class Supervisor:
@@ -151,21 +164,43 @@ class Supervisor:
             self._finish(queue, claim, "FAILED", "WORKER_OUTPUT_MISMATCH")
             return
 
+        out = work / "out"
+        for name, sha in result.outputs.items():
+            if _sha256(out / name) != sha:
+                self._finish(queue, claim, "FAILED", "WORKER_OUTPUT_MISMATCH")
+                return
+
         queue.heartbeat(claim.job_id, claim.attempt_token)  # ainda é a tentativa vigente?
         self._set_exec(p["execution_id"], stage="PUBLISH", completed_stages=1)
-        inv_key = (f"projects/{p['project_id']}/normalized/{p['revision_id']}/"
-                   f"{claim.job_id}-inventory.json")
-        with open(work / "out" / "inventory.json", "rb") as fh:
-            inv_obj = self.storage.write_stream(inv_key, fh)
+        base = f"projects/{p['project_id']}/normalized/{p['revision_id']}/{claim.job_id}"
+        stored = {}
+        for name in OUTPUT_FILES:
+            with open(out / name, "rb") as fh:
+                stored[name] = self.storage.write_stream(f"{base}/{name}", fh)
+        scene_manifest = json.loads((out / "scene.json").read_text(encoding="utf-8"))
         with write_tx(self.factory) as s:
-            fo = FileObject(tenant_id=self.tenant_id, key=inv_key, sha256=inv_obj.sha256,
-                            size=inv_obj.size, mime="application/json")
-            s.add(fo)
+            ids = {}
+            for name, obj in stored.items():
+                fo = FileObject(tenant_id=self.tenant_id, key=obj.key, sha256=obj.sha256,
+                                size=obj.size, mime=_MIME.get(Path(name).suffix))
+                s.add(fo)
+                s.flush()
+                ids[name] = fo.id
+            drawing = Drawing(tenant_id=self.tenant_id, revision_id=p["revision_id"],
+                              file_id=p["file_id"], adapter="ezdxf",
+                              cad_version=result.inventory.dxf_version,
+                              diagnostics=result.inventory.model_dump(),
+                              inventory_artifact_id=ids["inventory.json"], artifacts=ids,
+                              scene_manifest=scene_manifest)
+            s.add(drawing)
             s.flush()
-            s.add(Drawing(tenant_id=self.tenant_id, file_id=p["file_id"], adapter="ezdxf",
-                          cad_version=result.inventory.dxf_version,
-                          diagnostics=result.inventory.model_dump(),
-                          inventory_artifact_id=fo.id))
+            # Quadro da importação: unidade declarada registrada, NÃO confirmada.
+            s.add(CoordinateFrame(tenant_id=self.tenant_id, drawing_id=drawing.id,
+                                  original_unit=result.inventory.insunits_name,
+                                  unit_confirmed=False, matrix=IDENTITY, inverse=IDENTITY,
+                                  local_origin=scene_manifest["local_origin"]))
+            s.flush()
+            derive_snapshot(s, self.tenant_id, p["revision_id"], reason="IMPORT")
         # A unidade SEMPRE exige confirmação humana: no corpus de 19/09, $INSUNITS estava
         # errado em 5 de 5 desenhos. O job termina aqui; nenhum worker fica reservado esperando.
         final, code = "WAITING_INPUT", "DRAWING_UNIT_UNCONFIRMED"
