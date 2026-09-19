@@ -6,6 +6,7 @@ import { ProjectPage } from "./features/projects/ProjectPage";
 import { UploadPage } from "./features/uploads/UploadPage";
 import { DiagnosticsPage } from "./features/uploads/DiagnosticsPage";
 import { PreparationPage } from "./features/model-preparation/PreparationPage";
+import { UnitReviewPage } from "./features/reviews/UnitReviewPage";
 import { ReviewPage } from "./features/reviews/ReviewPage";
 import { HistoryPage } from "./features/reviews/HistoryPage";
 import { ReportPage } from "./features/reports/ReportPage";
@@ -24,6 +25,7 @@ const DrawingPage = lazy(() =>
 const NAV = [
   { to: "/", label: "Início" },
   { to: "/projetos", label: "Projetos" },
+  { to: "/unidades", label: "Revisar unidades" },
   { to: "/operacao", label: "Operação" },
   { to: "/configuracoes", label: "Configurações" },
 ];
@@ -53,6 +55,7 @@ export function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projetos" element={<ProjectsPage />} />
+          <Route path="/unidades" element={<UnitReviewPage />} />
           <Route path="/projetos/:projectId" element={<ProjectPage />} />
           <Route path="/revisoes/:revisionId/arquivos" element={<UploadPage />} />
           <Route path="/revisoes/:revisionId/diagnostico" element={<DiagnosticsPage />} />
@@ -75,3 +78,4 @@ export function App() {
     </div>
   );
 }
+

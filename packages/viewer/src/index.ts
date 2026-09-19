@@ -108,6 +108,24 @@ export class PlanViewer {
     this.fit();
   }
 
+  /** Refaz apenas a vista a partir dos buffers; não altera o artefato nem medidas. */
+  recomputeFit(): void {
+    if (!this.segments?.length || !this.manifest) return;
+    const n = this.segments.length / 2;
+    const xs = new Float64Array(n);
+    const ys = new Float64Array(n);
+    const [ox, oy] = this.manifest.local_origin;
+    for (let i = 0; i < n; i++) {
+      xs[i] = this.segments[i * 2] + ox;
+      ys[i] = this.segments[i * 2 + 1] + oy;
+    }
+    xs.sort(); ys.sort();
+    const lo = Math.floor((n - 1) * .01), hi = Math.ceil((n - 1) * .99);
+    const sx = Math.max(xs[hi] - xs[lo], 1e-9), sy = Math.max(ys[hi] - ys[lo], 1e-9);
+    this.fit([Math.max(xs[0], xs[lo] - sx / 2), Math.max(ys[0], ys[lo] - sy / 2),
+      Math.min(xs[n - 1], xs[hi] + sx / 2), Math.min(ys[n - 1], ys[hi] + sy / 2)]);
+  }
+
   isLayerVisible(name: string): boolean {
     return this.layerObjects.get(name)?.visible ?? false;
   }

@@ -29,7 +29,8 @@ LAYER_HINTS: tuple[tuple[re.Pattern[str], str], ...] = (
     (re.compile(r"EXT(INT|_)|EXTINTOR", re.I), "EXTINGUISHER"),
     (re.compile(r"PORTA|DOOR", re.I), "DOOR"),
     (re.compile(r"PAREDE|WALL", re.I), "WALL"),
-    (re.compile(r"SAIDA|EXIT", re.I), "EXIT"),
+    (re.compile(r"SA[IÍ]DA|EXIT", re.I), "EXIT"),
+    (re.compile(r"AMBIENTE|ROOM|SPACE|SALA", re.I), "SPACE"),
     (re.compile(r"ESCADA|STAIR", re.I), "STAIR"),
 )
 

@@ -16,7 +16,7 @@ import struct
 from typing import Any, Literal
 
 from fastapi import APIRouter, Depends
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, FiniteFloat
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -149,10 +149,10 @@ def entity_origin(drawing_id: str, row: int, st: AppState = Depends(state),
 
 # --- pontos e medição ------------------------------------------------------
 class PointIn(BaseModel):
-    x: float
-    y: float
+    x: FiniteFloat
+    y: FiniteFloat
     entity_row: int | None = Field(default=None, ge=0)
-    pick_tolerance: float = Field(default=0.0, ge=0)  # unidades do desenho (tamanho do pixel)
+    pick_tolerance: FiniteFloat = Field(default=0.0, ge=0)  # unidades do desenho (tamanho do pixel)
 
 
 def _resolve_point(st: AppState, d: Drawing, p: PointIn) -> tuple[float, float, float, bool]:
@@ -175,12 +175,20 @@ def _check_floor(s: Session, d: Drawing, floor_id: str | None,
     f = s.get(Floor, floor_id)
     if f is None or f.drawing_id != d.id:
         raise ApiError(404, "NOT_FOUND", "Pavimento não encontrado neste desenho")
-    c = f.clip or {}
+    from shapely.geometry import LineString, Point
+
+    from coscip_api.preparation_geometry import clip_geometry
+
+    region = clip_geometry(f.clip)
     for x, y in pts:
-        if not (c["x0"] <= x <= c["x1"] and c["y0"] <= y <= c["y1"]):
+        if not region.covers(Point(x, y)):
             raise ApiError(422, "POINT_OUTSIDE_FLOOR_CLIP",
                            "Ponto fora do recorte do pavimento: não entra na medida",
                            resource_id=floor_id)
+    if len(pts) > 1 and not region.covers(LineString(pts)):
+        raise ApiError(422, "MEASUREMENT_OUTSIDE_FLOOR_CLIP",
+                       "O segmento atravessa uma região fora do pavimento",
+                       resource_id=floor_id)
 
 
 class MeasureIn(BaseModel):
@@ -334,25 +342,39 @@ def drawing_scene(drawing_id: str, st: AppState = Depends(state),
 
 # --- pavimentos (PREP-01) -----------------------------------------------------
 class ClipIn(BaseModel):
-    x0: float
-    y0: float
-    x1: float
-    y1: float
+    x0: FiniteFloat
+    y0: FiniteFloat
+    x1: FiniteFloat
+    y1: FiniteFloat
+
+
+class PolygonClipIn(BaseModel):
+    type: Literal["POLYGON"]
+    points: list[tuple[FiniteFloat, FiniteFloat]] = Field(min_length=3, max_length=256)
 
 
 class FloorIn(BaseModel):
     name: str = Field(min_length=1, max_length=100)
-    clip: ClipIn
-    elevation_m: float | None = None
+    clip: ClipIn | PolygonClipIn
+    elevation_m: FiniteFloat | None = None
 
 
 @router.post("/drawings/{drawing_id}/floors", status_code=201)
 def create_floor(drawing_id: str, body: FloorIn,
                  st: AppState = Depends(state)) -> dict[str, Any]:
     c = body.clip
-    vals = (c.x0, c.y0, c.x1, c.y1)
-    if not all(math.isfinite(v) for v in vals) or c.x1 <= c.x0 or c.y1 <= c.y0:
-        raise ApiError(422, "INVALID_CLIP", "Recorte deve ser um retângulo válido e não vazio")
+    from shapely.geometry import Polygon
+
+    if isinstance(c, PolygonClipIn):
+        poly = Polygon(c.points)
+        if not poly.is_valid or poly.is_empty or poly.area <= 0:
+            raise ApiError(422, "INVALID_CLIP", "Recorte deve ser um polígono simples e não vazio")
+        x0, y0, x1, y1 = poly.bounds
+        clip = {**c.model_dump(), "x0": x0, "y0": y0, "x1": x1, "y1": y1}
+    else:
+        if c.x1 <= c.x0 or c.y1 <= c.y0:
+            raise ApiError(422, "INVALID_CLIP", "Recorte deve ser um retângulo válido e não vazio")
+        clip = {"type": "RECT", **c.model_dump()}
     with write_tx(st.session_factory) as s:
         d = _drawing(s, st, drawing_id)
         if d.revision_id is None:
@@ -360,7 +382,6 @@ def create_floor(drawing_id: str, body: FloorIn,
                            "Desenho de versão antiga do importador: reimportar a revisão")
         frame = current_frame(s, d.id)
         fid = new_id()
-        clip = {"type": "RECT", **c.model_dump()}
         snap = derive_snapshot(s, st.tenant_id, d.revision_id, reason="FLOOR_CLIP",
                                extra_floor={"id": fid, "name": body.name, "drawing_id": d.id,
                                             "clip": clip, "frame_id": frame.id if frame else None})

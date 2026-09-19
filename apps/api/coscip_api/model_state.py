@@ -11,6 +11,7 @@ Invariantes (contratos §1):
 
 from __future__ import annotations
 
+import copy
 import hashlib
 import json
 import math
@@ -57,7 +58,8 @@ def scale_of(frame: CoordinateFrame | None) -> float | None:
 
 
 def derive_snapshot(s: Session, tenant_id: str, revision_id: str, reason: str,
-                    extra_floor: dict[str, Any] | None = None) -> ModelSnapshot:
+                    extra_floor: dict[str, Any] | None = None,
+                    extra_config: dict[str, Any] | None = None) -> ModelSnapshot:
     """Cria um novo snapshot refletindo o estado atual da revisão."""
     analytic_files = s.scalars(select(RevisionFile.file_id).where(
         RevisionFile.revision_id == revision_id, RevisionFile.role == "ANALYTIC_DXF")).all()
@@ -92,14 +94,32 @@ def derive_snapshot(s: Session, tenant_id: str, revision_id: str, reason: str,
     if extra_floor:
         floors.append(extra_floor)
 
-    config = {"reason": reason, "drawings": drawings_cfg, "floors": floors}
+    parent = latest_snapshot(s, revision_id)
+    config = copy.deepcopy(parent.config or {}) if parent else {}
+    config.update({"reason": reason, "drawings": drawings_cfg, "floors": floors})
+    if extra_config:
+        config.update(extra_config)
+    # Uma nova unidade exige rever fatos dependentes do referencial anterior.
+    for item in config.get("semantic_elements", {}).values():
+        current = drawings_cfg.get(item["drawing_id"], {}).get("frame_id")
+        for prop in item["properties"].values():
+            if prop.get("frame_id") != current:
+                prop["status"] = "REVIEW_REQUIRED"
+                issue = f"SEMANTICS_STALE:{item['id']}"
+                if issue not in blocking:
+                    blocking.append(issue)
+    for bucket in ("analytical_contours", "door_widths"):
+        for item in config.get(bucket, {}).values():
+            current = drawings_cfg.get(item["drawing_id"], {}).get("frame_id")
+            if item.get("frame_id") != current:
+                item["status"] = "REVIEW_REQUIRED"
+                blocking.append(f"GEOMETRY_STALE:{item['id']}")
     quality = {
         "units_confirmed": bool(drawings_cfg) and not any(
             b.startswith(("UNIT_UNCONFIRMED", "IMPORT_PENDING")) for b in blocking),
         "blocking_issue_ids": blocking,
         "floor_count": len(floors),
     }
-    parent = latest_snapshot(s, revision_id)
     snap = ModelSnapshot(
         tenant_id=tenant_id, revision_id=revision_id,
         parent_id=parent.id if parent else None, config=config, quality=quality,

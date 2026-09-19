@@ -86,3 +86,19 @@ IDs e critérios de aceite vêm do documento 03 do plano.
 ## Piloto e futuro
 
 PILOT-01..06 e FUT-01..09 não iniciados — ver documento 03.
+
+## Continuação Codex — 19/09/2026
+
+- Revisão de unidades: implementada e testada, aceitação vinculada à confirmação vigente.
+- PREP-01: ampliado para polígono; segmentos não podem cruzar o exterior do recorte.
+- PREP-02: fluxo assistido por entidade, classe/nome por propriedade, origem e snapshot; registros
+  em config JSON, integração relacional CAD-04 e classificação em lote ainda pendentes.
+- PREP-03 / GEO-02: base funcional de contornos redesenháveis, área/perímetro/incerteza e histórico;
+  falta associação explícita a ambiente semântico e revisão visual completa do fluxo.
+- GEO-03: base funcional de vão/folha/largura livre independentes em porta classificada; revisar
+  invalidação quando a classe da porta muda e conferir o fluxo visualmente.
+- REP-01: base de relatório HTML imutável de preparação com evidências e hashes; não é relatório
+  de análise normativa. PDF e execução normativa continuam pendentes.
+- Testes novos: 9 passaram; lint, TypeScript e build alternativo passaram. Resultado da suíte
+  completa e detalhes de ambiente em docs/proxima-sessao.md.
+- Gate A permanece pré-aprovado; nenhuma confirmação humana do corpus foi realizada nesta sessão.

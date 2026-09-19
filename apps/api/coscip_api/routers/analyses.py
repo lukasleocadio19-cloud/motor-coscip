@@ -51,8 +51,23 @@ def model_floors(model_id: str, st: AppState = Depends(state), s: Session = Depe
 
 @router.get("/models/{model_id}/elements")
 def model_elements(model_id: str, floor: str | None = None, bbox: str | None = None,
-                   cls: str | None = None, cursor: str | None = None):
-    raise not_implemented("CAD-04")
+                   cls: str | None = None, cursor: int = 0,
+                   st: AppState = Depends(state), s: Session = Depends(db)):
+    from coscip_api.routers.drawings import snapshot_for
+
+    m = snapshot_for(s, st, model_id)
+    if bbox is not None:
+        raise ApiError(422, "UNSUPPORTED_FILTER", "Use o filtro de pavimento")
+    if cursor < 0:
+        raise ApiError(422, "INVALID_CURSOR", "Página inválida")
+    items = list((m.config or {}).get("semantic_elements", {}).values())
+    if floor:
+        items = [e for e in items if e["floor_id"] == floor]
+    if cls:
+        items = [e for e in items
+                 if e["properties"].get("element_class", {}).get("value") == cls]
+    return {"model_snapshot_id": m.id, "items": items[cursor:cursor + 100],
+            "next_cursor": cursor + 100 if len(items) > cursor + 100 else None}
 
 
 @router.get("/models/{model_id}/scene")

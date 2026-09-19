@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Preparação da planta — {{ project.name }}</title>
+<style>
+body{font:15px/1.6 system-ui,sans-serif;color:#20343a;max-width:1100px;margin:40px auto;padding:0 24px}h1{font-size:28px}h2{margin-top:32px;font-size:21px}table{width:100%;border-collapse:collapse;margin:16px 0}th,td{padding:10px;text-align:left;vertical-align:top;border-bottom:1px solid #ddd}th{background:#eef5f4}.notice{padding:18px;background:#fff5d9;border-left:4px solid #9b701a}code,pre{font-size:12px;overflow-wrap:anywhere;white-space:pre-wrap}small{color:#526269}@media print{body{margin:0;font-size:11px}tr{break-inside:avoid}h2{break-after:avoid}}
+</style></head><body>
+<p>Motor CAD/COSCIP · relatório local</p><h1>Preparação da planta</h1>
+<p><strong>{{ project.name }}</strong> · Revisão {{ revision.number }}<br>Emissão {{ issued_at }} · ID {{ report_id }}</p>
+<div class="notice"><strong>Sem avaliação normativa.</strong> Este documento registra a preparação geométrica e suas evidências. Nenhuma conclusão de conformidade com a NT 2-01 ou aprovação do Gate A é emitida. A revisão humana das unidades e a medida independente continuam necessárias.</div>
+<h2>Identificação e integridade</h2>
+<p>Modelo: <code>{{ model.id }}</code><br>SHA-256 do modelo: <code>{{ model.content_sha256 }}</code><br>Manifesto da revisão: <code>{{ revision.manifest_sha256 }}</code></p>
+<p>Esta emissão é imutável. Uma nova emissão recebe outro ID. O SHA-256 deste arquivo está disponível na tela de emissão e no cabeçalho do download.</p>
+<h2>Desenhos e unidades</h2>
+{% for d in drawings %}<h3>{{ d.name }}</h3><p>SHA-256: <code>{{ d.sha256 }}</code><br>Unidade {{ 'confirmada' if d.unit_confirmed else 'pendente' }} · escala {{ d.scale_to_m or 'ausente' }} m/unidade</p>
+{% if d.confirmation %}<p>Justificativa original: {{ d.confirmation.justification }}<br>Referência: <code>{{ d.confirmation.new_value.reference }}</code></p>{% endif %}
+<p>Revisão da confirmação na emissão: {% if d.review %}aceita por {{ d.review.new_value.reviewer_name }} — {{ d.review.justification }}{% else %}pendente{% endif %}</p>{% endfor %}
+<h2>Cobertura desta emissão</h2><table><thead><tr><th>Item</th><th>Estado</th></tr></thead><tbody>
+<tr><td>Unidade, recortes e origem</td><td>Registrados conforme o modelo selecionado</td></tr>
+<tr><td>Classes e propriedades dos elementos</td><td>Assistidas; somente as confirmações listadas têm decisão registrada</td></tr>
+<tr><td>Áreas e larguras</td><td>Somente contornos e dimensões medidos; pontos livres têm incerteza</td></tr>
+<tr><td>Regras normativas / NT 2-01</td><td>Fora de cobertura desta emissão; nenhuma regra normativa executada</td></tr>
+<tr><td>Percursos e cobertura de extintores</td><td>Não calculados</td></tr></tbody></table>
+<h2>Pavimentos</h2><ul>{% for f in cfg.get('floors', []) %}<li>{{ f.name }} · <code>{{ f.clip }}</code></li>{% else %}<li>Nenhum pavimento recortado.</li>{% endfor %}</ul>
+<h2>Propriedades confirmadas</h2><table><thead><tr><th>Origem</th><th>Propriedade</th><th>Valor / estado</th><th>Justificativa</th></tr></thead><tbody>
+{% for e in cfg.get('semantic_elements', {}).values() %}{% for name, prop in e.properties.items() %}<tr><td>{{ e.source.layer }} · handle {{ e.source.handle }}<br><code>{{ e.source.instance_path }}</code></td><td>{{ name }}</td><td>{{ prop.value }} · {{ prop.status }}</td><td>{{ prop.justification }}</td></tr>{% endfor %}{% else %}<tr><td colspan="4">Nenhuma propriedade confirmada.</td></tr>{% endfor %}</tbody></table>
+<h2>Áreas</h2><table><thead><tr><th>Contorno</th><th>Área e incerteza</th><th>Estado / referência</th></tr></thead><tbody>{% for c in cfg.get('analytical_contours', {}).values() %}<tr><td>{{ c.name }}</td><td>{{ '%.4f'|format(c.area_m2) }} ± {{ '%.6g'|format(c.uncertainty_m2) }} m²</td><td>{{ c.status }} · {{ 'pontos livres' if c.exploratory else 'vértices exatos' }}<br>{{ c.justification }}</td></tr>{% else %}<tr><td colspan="3">Nenhum contorno medido.</td></tr>{% endfor %}</tbody></table>
+<h2>Larguras de portas</h2><p>Vão, folha e largura livre são dimensões distintas. Dimensão ausente permanece sem medida.</p><table><thead><tr><th>Porta / dimensão</th><th>Medida e incerteza</th><th>Estado / referência</th></tr></thead><tbody>{% for w in cfg.get('door_widths', {}).values() %}<tr><td>{{ w.element_id }}<br>{{ {'OPENING':'Vão','LEAF':'Folha','CLEAR':'Largura livre'}[w.kind] }}</td><td>{{ '%.4f'|format(w.value_m) }} ± {{ '%.6g'|format(w.uncertainty_m) }} m</td><td>{{ w.status }}<br>{{ w.justification }}</td></tr>{% else %}<tr><td colspan="3">Nenhuma largura registrada.</td></tr>{% endfor %}</tbody></table>
+<h2>Pendências</h2><ul>{% for issue in model.quality.get('blocking_issue_ids', []) %}<li>{{ issue }}</li>{% endfor %}<li>Conferir uma medida real independente do DXF e concluir o Gate A com o usuário.</li><li>Validar as regras com responsável técnico antes de qualquer avaliação normativa.</li></ul>
+<h2>Evidências completas do modelo</h2><p>Coordenadas, quadros, origem, autoria, justificativas e métodos usados nesta emissão.</p><pre>{{ details }}</pre>
+</body></html>

@@ -5,7 +5,10 @@ import { api, ApiError } from "@coscip/api-client";
 import { fetchScene, PlanViewer, type Pick, type SceneManifest } from "@coscip/viewer";
 import { Button, Card, ErrorState, PageHeader } from "@coscip/ui";
 
-type Mode = "select" | "reference" | "measure" | "clip";
+import { AnalyticalPanel } from "./AnalyticalPanel";
+import { ClassificationPanel } from "./ClassificationPanel";
+
+type Mode = "select" | "reference" | "measure" | "clip" | "polygon" | "contour" | "width";
 
 interface DrawingOut {
   id: string;
@@ -15,7 +18,7 @@ interface DrawingOut {
   unit_suggestion: { unit: string | null; strength: string; note: string } | null;
   unit: { confirmed: boolean; frame_id: string | null; unit: string | null; scale_to_m: string | null };
   scene_available: boolean;
-  floors: { id: string; name: string; clip: { x0: number; y0: number; x1: number; y1: number } }[];
+  floors: { id: string; name: string; clip: { type?: string; points?: [number, number][]; x0: number; y0: number; x1: number; y1: number } }[];
   model_snapshot: { id: string; quality: { units_confirmed: boolean; blocking_issue_ids: string[] } } | null;
 }
 
@@ -52,6 +55,9 @@ const MODE_HELP: Record<Mode, string> = {
   reference: "Clique nas duas pontas de uma medida conhecida (ex.: folha de porta cotada).",
   measure: "Clique em dois pontos. Perto de uma linha, o clique se ajusta ao vértice exato.",
   clip: "Clique em dois cantos opostos do retângulo do pavimento.",
+  polygon: "Clique nos vértices do pavimento em ordem. Salvar fecha o polígono.",
+  contour: "Clique nos vértices do contorno do ambiente em ordem.",
+  width: "Clique nas duas extremidades da dimensão da porta que você deseja medir.",
 };
 
 function pointBody(p: Pick) {
@@ -122,16 +128,22 @@ export function DrawingPage() {
   useEffect(() => {
     const v = viewer.current;
     if (!v) return;
+    let selection = 0;
     v.onPick = (p) => {
+      const request = ++selection;
       setResult(null);
       if (mode === "select") {
         setPicks([]);
         if (p.entityRow == null) return setOrigin(null);
-        api<EntityOrigin>(`/drawings/${drawingId}/entities/${p.entityRow}`).then(setOrigin);
+        setOrigin(null);
+        api<EntityOrigin>(`/drawings/${drawingId}/entities/${p.entityRow}`)
+          .then((value) => { if (request === selection) setOrigin(value); })
+          .catch((e) => { if (request === selection) setSceneError(e); });
         return;
       }
-      setPicks((prev) => (prev.length >= 2 ? [p] : [...prev, p]));
+      setPicks((prev) => (mode === "polygon" || mode === "contour" ? [...prev, p].slice(0, 256) : prev.length >= 2 ? [p] : [...prev, p]));
     };
+    return () => { selection++; v.onPick = undefined; };
   }, [mode, drawingId]);
 
   const activeFloor = d?.floors.find((f) => f.id === floorId);
@@ -142,7 +154,14 @@ export function DrawingPage() {
     if (!v || !manifest) return;
     const pts = picks.map((p) => [p.x, p.y] as [number, number]);
     const lines: [number, number, number, number][] = [];
-    const rects = (d?.floors ?? []).map((f) => ({ ...f.clip, active: f.id === floorId }));
+    const rects = (d?.floors ?? []).filter((f) => f.clip.type !== "POLYGON").map((f) => ({ ...f.clip, active: f.id === floorId }));
+    for (const floor of d?.floors ?? []) {
+      const polygon = floor.clip.points;
+      if (polygon) polygon.forEach((p, i) => lines.push([...p, ...polygon[(i + 1) % polygon.length]]));
+    }
+    if ((mode === "polygon" || mode === "contour") && pts.length > 1) {
+      pts.forEach((p, i) => lines.push([...p, ...pts[(i + 1) % pts.length]]));
+    }
     if (pts.length === 2 && mode !== "clip") lines.push([...pts[0], ...pts[1]]);
     if (pts.length === 2 && mode === "clip") {
       rects.push({
@@ -189,7 +208,7 @@ export function DrawingPage() {
         method: "POST",
         json: {
           name: floorName,
-          clip: { x0: Math.min(a.x, b.x), y0: Math.min(a.y, b.y), x1: Math.max(a.x, b.x), y1: Math.max(a.y, b.y) },
+          clip: mode === "polygon" ? { type: "POLYGON", points: picks.map((p) => [p.x, p.y]) } : { x0: Math.min(a.x, b.x), y0: Math.min(a.y, b.y), x1: Math.max(a.x, b.x), y1: Math.max(a.y, b.y) },
         },
       });
     },
@@ -212,6 +231,7 @@ export function DrawingPage() {
   return (
     <>
       <PageHeader title={d?.file ?? "Planta"}>
+        <Link to="/unidades" className="text-sm text-teal-800 underline">Revisar unidades</Link>
         {d && (
           <Link to={`/revisoes/${d.revision_id}/diagnostico`} className="rounded-md px-3 py-1.5 text-sm ring-1 ring-slate-300">
             Diagnóstico
@@ -268,6 +288,7 @@ export function DrawingPage() {
             </span>
           </div>
           <button className="mt-1 text-xs text-teal-800 underline" onClick={() => viewer.current?.fit()}>enquadrar</button>
+          <button className="ml-3 mt-1 text-xs text-teal-800 underline" onClick={() => viewer.current?.recomputeFit()}>recalcular enquadramento</button>
           {activeFloor && (
             <button className="ml-3 mt-1 text-xs text-teal-800 underline"
               onClick={() => viewer.current?.fit([activeFloor.clip.x0, activeFloor.clip.y0, activeFloor.clip.x1, activeFloor.clip.y1])}>
@@ -279,7 +300,7 @@ export function DrawingPage() {
         <div className="space-y-3">
           <Card title="Ferramenta">
             <div className="grid grid-cols-2 gap-1.5" role="radiogroup" aria-label="Ferramenta">
-              {([["select", "Selecionar"], ["reference", "Confirmar unidade"], ["measure", "Medir"], ["clip", "Recortar pavimento"]] as [Mode, string][]).map(([m, label]) => (
+              {([["select", "Selecionar"], ["reference", "Confirmar unidade"], ["measure", "Medir"], ["clip", "Recorte retangular"], ["polygon", "Recorte poligonal"], ["contour", "Contorno e área"], ["width", "Larguras de porta"]] as [Mode, string][]).map(([m, label]) => (
                 <button key={m} role="radio" aria-checked={mode === m}
                   className={`rounded px-2 py-1.5 text-xs ring-1 ${mode === m ? "bg-teal-700 text-white ring-teal-700" : "ring-slate-300 hover:bg-slate-50"}`}
                   onClick={() => { setMode(m); setPicks([]); setResult(null); }}>
@@ -288,6 +309,7 @@ export function DrawingPage() {
               ))}
             </div>
             <p className="mt-2 text-xs text-slate-600">{MODE_HELP[mode]}</p>
+            {picks.length > 0 && <button className="mt-2 text-xs text-teal-800 underline" onClick={() => { setPicks((prev) => prev.slice(0, -1)); setResult(null); }}>Desfazer último ponto</button>}
             {picks.length > 0 && mode !== "select" && (
               <ul className="mt-2 text-xs text-slate-600">
                 {picks.map((p, i) => (
@@ -314,6 +336,10 @@ export function DrawingPage() {
               )}
             </Card>
           )}
+
+          {mode === "select" && origin && <ClassificationPanel
+            key={`${drawingId}:${origin.row}`} drawingId={drawingId} row={origin.row}
+            floors={d?.floors ?? []} confirmed={confirmed} />}
 
           {mode === "reference" && (
             <Card title="Confirmar unidade do desenho">
@@ -343,12 +369,16 @@ export function DrawingPage() {
             </Card>
           )}
 
+          {(mode === "contour" || mode === "width") && <AnalyticalPanel
+            key={`${drawingId}:${mode}`} drawingId={drawingId} mode={mode} picks={picks}
+            floors={d?.floors ?? []} onSaved={() => setPicks([])} />}
+
           {mode === "measure" && (
             <Card title="Medida">
               {!confirmed && <p className="text-sm text-amber-800">Confirme a unidade antes de medir.</p>}
               {(d?.floors.length ?? 0) > 0 && (
                 <label className="mb-2 block text-xs">Limitar ao pavimento
-                  <select className="mt-1 w-full rounded border border-slate-300 px-2 py-1" value={floorId} onChange={(e) => setFloorId(e.target.value)}>
+                  <select className="mt-1 w-full rounded border border-slate-300 px-2 py-1" value={floorId} onChange={(e) => { setFloorId(e.target.value); setResult(null); setPicks([]); }}>
                     <option value="">(nenhum)</option>
                     {d?.floors.map((f) => <option key={f.id} value={f.id}>{f.name}</option>)}
                   </select>
@@ -368,14 +398,14 @@ export function DrawingPage() {
             </Card>
           )}
 
-          {mode === "clip" && (
+          {(mode === "clip" || mode === "polygon") && (
             <Card title="Recorte do pavimento">
               <form className="space-y-2 text-sm" onSubmit={(e) => { e.preventDefault(); createFloor.mutate(); }}>
                 <label className="block">Nome
                   <input className="mt-1 w-full rounded border border-slate-300 px-2 py-1" value={floorName} onChange={(e) => setFloorName(e.target.value)} required />
                 </label>
                 {createFloor.error && <ErrorState error={(createFloor.error as ApiError).problem?.title ?? createFloor.error} />}
-                <Button type="submit" disabled={picks.length !== 2 || createFloor.isPending}>Salvar pavimento</Button>
+                <Button type="submit" disabled={(mode === "polygon" ? picks.length < 3 : picks.length !== 2) || createFloor.isPending}>Salvar pavimento</Button>
               </form>
               {(d?.floors.length ?? 0) > 0 && (
                 <ul className="mt-3 text-xs">
