@@ -197,13 +197,6 @@ def get_report(report_id: str):
     raise not_implemented("REP-01")
 
 
-@router.get("/rule-packages")
-def list_rule_packages(s: Session = Depends(db)):
-    rows = s.scalars(select(RulePackage)).all()
-    return {"items": [{"id": p.id, "name": p.name, "jurisdiction": p.jurisdiction,
-                       "state": p.state, "content_sha256": p.content_sha256} for p in rows]}
-
-
 @router.post("/rule-packages/{package_id}/publish")
 def publish_rule_package(package_id: str):
     raise not_implemented("REG-06")

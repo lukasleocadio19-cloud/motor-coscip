@@ -18,7 +18,7 @@ from sqlalchemy.orm import Session
 
 from coscip_api.db import write_tx
 from coscip_api.models import AuditEvent, FileObject, NormativeSource, RulePackage, RuleVersion
-from coscip_normative import NormativeText, SourceError, parse_markdown
+from coscip_normative import NormativeText, SourceError, fold, parse_markdown
 from coscip_normative.package import PackageError, load_package, verify_package
 
 BUNDLED_BASE = Path(__file__).resolve().parents[3] / "normative" / "base"
@@ -96,19 +96,122 @@ def list_sources(s: Session) -> list[dict[str, Any]]:
     return out
 
 
+# Textos já lidos e conferidos, por SHA-256 (o conteúdo é imutável).
+_TEXT_CACHE: dict[str, NormativeText] = {}
+
+
+def load_text(s: Session, storage, src: NormativeSource) -> NormativeText:  # noqa: ANN001
+    cached = _TEXT_CACHE.get(src.text_sha256)
+    if cached is not None:
+        return cached
+    fo = s.get(FileObject, src.artifact_id)
+    with storage.open(fo.key) as fh:
+        raw = fh.read()
+    if hashlib.sha256(raw).hexdigest() != src.text_sha256:
+        raise NormativeError(f"texto de {src.document} não confere com o hash gravado")
+    nt = parse_markdown(raw, fo.key)
+    if len(_TEXT_CACHE) >= 128:
+        _TEXT_CACHE.clear()
+    _TEXT_CACHE[src.text_sha256] = nt
+    return nt
+
+
 def current_texts(s: Session, storage) -> dict[str, NormativeText]:  # noqa: ANN001
     texts: dict[str, NormativeText] = {}
     for row in list_sources(s):
-        if not row["current"]:
-            continue
-        src = s.get(NormativeSource, row["id"])
-        fo = s.get(FileObject, src.artifact_id)
-        with storage.open(fo.key) as fh:
-            raw = fh.read()
-        if hashlib.sha256(raw).hexdigest() != src.text_sha256:
-            raise NormativeError(f"texto de {src.document} não confere com o hash gravado")
-        texts[src.document] = parse_markdown(raw, fo.key)
+        if row["current"]:
+            texts[row["document"]] = load_text(s, storage, s.get(NormativeSource, row["id"]))
     return texts
+
+
+def _flat(text: str) -> str:
+    return " ".join(text.replace("|", " ").split())
+
+
+def source_detail(s: Session, storage, source_id: str) -> dict[str, Any] | None:  # noqa: ANN001
+    src = s.get(NormativeSource, source_id)
+    if src is None or src.text_sha256 is None:
+        return None
+    nt = load_text(s, storage, src)
+    items = []
+    for ident, occ in nt.items.items():
+        first = min(occ, key=lambda i: i.start)
+        # Rótulo: o começo do trecho sem o próprio número do item.
+        head = _flat(nt.text[first.start:first.start + 160]).lstrip("# ")
+        items.append({"id": ident, "kind": first.kind, "page": first.page,
+                      "occurrences": len(occ), "start": first.start, "head": head[:140]})
+    items.sort(key=lambda i: i["start"])
+    row = next((r for r in list_sources(s) if r["id"] == source_id), {})
+    return {**row, "meta": nt.meta, "effective": nt.effective,
+            "summary": nt.summary(), "items": [{k: v for k, v in i.items() if k != "start"}
+                                               for i in items]}
+
+
+def item_text(s: Session, storage, source_id: str, item: str) -> dict[str, Any] | None:  # noqa: ANN001
+    src = s.get(NormativeSource, source_id)
+    if src is None or src.text_sha256 is None:
+        return None
+    nt = load_text(s, storage, src)
+    occ = nt.items.get(item)
+    if not occ:
+        return None
+    return {"document": nt.document, "item": item, "text_sha256": nt.text_sha256,
+            "occurrences": [{"page": o.page, "kind": o.kind,
+                             "text": nt.text[o.start:o.end].strip()} for o in occ]}
+
+
+# Trechos já normalizados por texto (SHA-256): (item, tipo, página, trecho plano, dobrado).
+_SEARCH_INDEX: dict[str, list[tuple[str, str, int | None, str, str]]] = {}
+
+
+def _search_index(nt: NormativeText) -> list[tuple[str, str, int | None, str, str]]:
+    idx = _SEARCH_INDEX.get(nt.text_sha256)
+    if idx is None:
+        idx = []
+        for ident, occ in nt.items.items():
+            for o in occ:
+                flat = _flat(nt.text[o.start:o.end])
+                idx.append((ident, o.kind, o.page, flat, fold(flat)))
+        if len(_SEARCH_INDEX) >= 128:
+            _SEARCH_INDEX.clear()
+        _SEARCH_INDEX[nt.text_sha256] = idx
+    return idx
+
+
+def search(s: Session, storage, q: str, document: str | None = None,  # noqa: ANN001
+           limit: int = 60) -> dict[str, Any]:
+    """Busca por termos (todos precisam aparecer no item) nas fontes vigentes.
+
+    Por documento vale o item mais específico: seção inteira ou anexo inteiro só aparecem
+    quando nenhum item numerado, tabela ou artigo contém todos os termos.
+    """
+    terms = [fold(t) for t in q.split() if len(t) >= 2]
+    if not terms:
+        return {"items": [], "truncated": False}
+    hits: list[dict[str, Any]] = []
+    truncated = False
+    for row in list_sources(s):
+        if not row["current"] or (document and row["document"] != document):
+            continue
+        nt = load_text(s, storage, s.get(NormativeSource, row["id"]))
+        specific: list[dict[str, Any]] = []
+        broad: list[dict[str, Any]] = []
+        seen: set[str] = set()
+        for ident, kind, page, flat, folded in _search_index(nt):
+            if ident in seen or not all(t in folded for t in terms):
+                continue
+            seen.add(ident)
+            start = max(0, folded.find(terms[0]) - 80)
+            hit = {"source_id": row["id"], "document": nt.document, "title": nt.title,
+                   "item": ident, "page": page,
+                   "excerpt": ("…" if start else "") + flat[start:start + 320]}
+            (broad if kind in ("SECTION", "ANNEX") else specific).append(hit)
+        hits.extend(specific or broad)
+        if len(hits) >= limit:
+            truncated = len(hits) > limit
+            hits = hits[:limit]
+            break
+    return {"items": hits, "truncated": truncated}
 
 
 def import_package(factory, storage, directory: Path | None = None,  # noqa: ANN001

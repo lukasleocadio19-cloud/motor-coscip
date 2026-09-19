@@ -207,3 +207,18 @@ def test_auto_regions_without_floor_stay_in_review(tmp_path):
     dist = _result(out, "NT201_EXT_DISTANCIA")[0]
     assert dist["status"] == "REVIEW_REQUIRED" and dist["trace"]["indicative"] == "PASS"
     assert any("automaticamente" in w for w in out["warnings"])
+
+
+def test_decree_and_articles_are_indexed():
+    from coscip_normative import normalize_document_id, parse_markdown
+
+    assert normalize_document_id("DECRETO-42-2018") == "Decreto 42/2018"
+    assert normalize_document_id("Decreto nº 42/2018") == "Decreto 42/2018"
+    raw = ("---\ndocumento: \"DECRETO-42-2018\"\ntitulo: \"COSCIP\"\n---\n\n## Página 1\n\n"
+           "### CAPÍTULO II Art. 4º - Quanto à ocupação, conforme o Anexo II.\n\n"
+           "Art. 15 - Medidas nas tabelas do Anexo III.\n\n## Página 2\n\nANEXO III\n\n"
+           "Tabela 6 - Exigências\n").encode()
+    t = parse_markdown(raw, "decreto.md")
+    assert t.document == "Decreto 42/2018"
+    assert {"Art. 4", "Art. 15", "Anexo III", "Tabela 6"} <= set(t.items)
+    assert t.items["Anexo III"][0].page == 2

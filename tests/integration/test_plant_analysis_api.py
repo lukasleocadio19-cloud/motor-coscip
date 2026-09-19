@@ -118,3 +118,21 @@ def test_plant_analysis_end_to_end(env, tmp_path, monkeypatch):
     assert "sem valor normativo" in html and "<svg" in html and "<script" not in html
     again = env.post(f"/v1/plant-analyses/{a['id']}/reports")
     assert again.status_code == 201 and again.json()["id"] != a["reports"][0]["id"]
+
+
+def test_source_index_item_text_and_search(env):
+    source_id = _ingest(env).json()["items"][0]["id"]
+    detail = env.get(f"/v1/normative/sources/{source_id}")
+    assert detail.status_code == 200, detail.text
+    ids = [i["id"] for i in detail.json()["items"]]
+    assert "5.2.4" in ids and "Tabela 3" in ids
+    item = env.tc.get(f"/v1/normative/sources/{source_id}/item", params={"item": "5.2.4"}).json()
+    assert item["document"] == "NT 2-01" and item["occurrences"][0]["page"]
+    assert env.tc.get(f"/v1/normative/sources/{source_id}/item",
+                   params={"item": "99.9"}).status_code == 404
+    hits = env.tc.get("/v1/normative/search", params={"q": "unidade extintora"}).json()["items"]
+    assert hits and all(h["document"] == "NT 2-01" for h in hits)
+    assert env.tc.get("/v1/normative/search", params={"q": "palavrainexistente"}).json()[
+        "items"] == []
+    assert env.get("/v1/rule-packages").json() == {"items": []}
+

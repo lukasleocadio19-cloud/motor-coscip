@@ -29,7 +29,9 @@ _PAGE = re.compile(r"^##\s+P[áa]gina\s+(\d+)\s*$", re.M)
 _NUMBERED = re.compile(r"^(?:#{1,6}\s*)?(\d+(?:\.\d+){1,5})\.?\s+\S", re.M)
 _SECTION = re.compile(r"^#{2,6}\s*(\d{1,2})\s+[A-ZÁÉÍÓÚÂÊÔÃÕÇ]", re.M)
 _TABLE = re.compile(r"Tabela\s+([A-Z]?\d{1,2}[A-Z]?)\s*[-–—]", re.I)
-_ANNEX = re.compile(r"^(?:#{1,6}\s*)?ANEXO\s+([A-Z])\b", re.M | re.I)
+_ANNEX = re.compile(r"^(?:#{1,6}\s*)?ANEXO\s+([IVX]{1,5}|[A-Z])\b", re.M | re.I)
+# Artigos de decretos/leis ("Art. 15 -", "Art. 4º -"), inclusive no meio da linha.
+_ARTICLE = re.compile(r"\bArt\.\s*(\d{1,3})\s*[ºo°]?\s*[-–—]")
 _DOC_FROM_NAME = re.compile(r"nt[-_ ]?(\d)[-_ ](\d{2})", re.I)
 
 
@@ -39,8 +41,8 @@ class SourceError(ValueError):
 
 @dataclass(frozen=True)
 class Item:
-    id: str  # "5.2.4", "Tabela 3", "Anexo C", "5"
-    kind: str  # NUMBERED | TABLE | ANNEX | SECTION
+    id: str  # "5.2.4", "Tabela 3", "Anexo C", "Anexo III", "Art. 15", "5"
+    kind: str  # NUMBERED | TABLE | ANNEX | SECTION | ARTICLE
     page: int | None
     start: int
     end: int
@@ -73,7 +75,12 @@ class NormativeText:
 
 
 def normalize_document_id(raw: str) -> str:
-    """"NT-2-01" → "NT 2-01"; "NT-2-03-PARTE-2" → "NT 2-03 P2"."""
+    """"NT-2-01" → "NT 2-01"; "NT-2-03-PARTE-2" → "NT 2-03 P2";
+    "DECRETO-42-2018" → "Decreto 42/2018"."""
+    dec = re.fullmatch(r"\s*DECRETO\s*[-_ ]?\s*(?:N[ºo°.]?\s*)?([\d.]+)\s*[-_/ ]\s*(\d{4})\s*",
+                       raw, re.I)
+    if dec:
+        return f"Decreto {dec.group(1).replace('.', '')}/{dec.group(2)}"
     m = re.search(r"(\d)\s*[-_ ]\s*(\d{2})", raw)
     if not m or not re.search(r"\bNT\b|^NT|NT[-_ ]", raw, re.I):
         raise SourceError(f"identificação de NT não reconhecida: {raw!r}")
@@ -121,12 +128,18 @@ def _index(body: str, offset: int) -> dict[str, list[Item]]:
         anchors.append((m.start(), f"Tabela {m.group(1).upper()}", "TABLE"))
     for m in _ANNEX.finditer(body):
         anchors.append((m.start(), f"Anexo {m.group(1).upper()}", "ANNEX"))
+    for m in _ARTICLE.finditer(body):
+        anchors.append((m.start(), f"Art. {m.group(1)}", "ARTICLE"))
     anchors.sort()
     items: dict[str, list[Item]] = {}
     for i, (pos, ident, kind) in enumerate(anchors):
         if kind == "NUMBERED":
             nxt = next((p for p, _, k in anchors[i + 1:] if k == "NUMBERED"), len(body))
             end = min(nxt, pos + ITEM_WINDOW)
+        elif kind == "ARTICLE":
+            nxt = next((p for p, _, k in anchors[i + 1:] if k in ("ARTICLE", "ANNEX")),
+                       len(body))
+            end = min(nxt, pos + 2 * ITEM_WINDOW)
         elif kind == "ANNEX":
             nxt = next((p for p, _, k in anchors[i + 1:] if k == "ANNEX"), len(body))
             end = min(nxt, pos + ANNEX_WINDOW)

@@ -116,4 +116,16 @@ PILOT-01..06 e FUT-01..09 não iniciados — ver documento 03.
 | GEO-04 | base | percurso real: grade de 16 vizinhos, paredes como obstáculo, interior por fechamento morfológico; incerteza declarada |
 | GEO-05 | base | cobertura de extintor/hidrante/acionador/saída com área além do limite e área sem acesso |
 | REP-01 | base | relatório HTML imutável da análise (mapa SVG por pavimento, resultados com citação e página, cobertura normativa, hashes) |
-| UI da análise | — | tela para pedir a análise e ver resultado ainda não existe (API pronta) |
+| UI da análise | **feito** | ver seção seguinte |
+
+## Telas da análise e base normativa completa — 19/09/2026 (Claude, noite)
+
+| ID | Estado | Onde |
+|---|---|---|
+| REG-01 | **feito** | base real com **53 fontes**: as 52 NTs vigentes dos grupos 1–5 + Decreto 42/2018 (COSCIP compilado); leitor aceita decreto, indexa artigos (`Art. 15`) e anexos romanos (`Anexo III`) |
+| REG-01 (consulta) | **feito** | `GET /v1/normative/sources/{id}` (índice de itens), `/sources/{id}/item?item=`, `GET /v1/normative/search?q=` (todos os termos no mesmo item; índice normalizado em memória, ~40 ms) |
+| REG-02 | base | pacote importado na base real (9 regras RASCUNHO, 11 itens de conferência humana), citações conferidas contra as 53 fontes |
+| Tela Base normativa | **feito** | `#/base-normativa`: documentos por grupo com cobertura (regra automática / conferência humana / símbolos / consulta), busca, envio de .md, importação do pacote com falhas listadas; `#/base-normativa/:id`: identificação, regras e itens citados, índice de itens, texto do item com tabelas renderizadas |
+| Tela Análise da planta | **feito** | `#/desenhos/:id/analise` (botão "Analisar planta" na planta): enquadramento, saídas, pavimentos, paredes (automático/manual), mapeamento de blocos; histórico; resultado por região com mapa, contagens, percursos, áreas declaradas, resultados com citação, blocos não reconhecidos → "mapear"; relatório e nova emissão |
+| CLI normativo | **feito** | `coscip_api.cli normative-import-sources <pasta>` e `normative-import-package [pasta]` |
+| REV-01/02 | — | revisão humana dos resultados na tela ainda não existe |

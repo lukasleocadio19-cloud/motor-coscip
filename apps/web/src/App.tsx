@@ -12,6 +12,9 @@ import { HistoryPage } from "./features/reviews/HistoryPage";
 import { ReportPage } from "./features/reports/ReportPage";
 import { SettingsPage } from "./features/local-settings/SettingsPage";
 import { OperationPage } from "./features/operation/OperationPage";
+import { NormativePage } from "./features/normative/NormativePage";
+import { SourcePage } from "./features/normative/SourcePage";
+import { PlantAnalysisPage } from "./features/plant-analysis/PlantAnalysisPage";
 
 // Three.js só carrega ao abrir a análise.
 const AnalysisPage = lazy(() =>
@@ -26,6 +29,7 @@ const NAV = [
   { to: "/", label: "Início" },
   { to: "/projetos", label: "Projetos" },
   { to: "/unidades", label: "Revisar unidades" },
+  { to: "/base-normativa", label: "Base normativa" },
   { to: "/operacao", label: "Operação" },
   { to: "/configuracoes", label: "Configurações" },
 ];
@@ -68,6 +72,9 @@ export function App() {
             path="/desenhos/:drawingId"
             element={<Suspense fallback={<p>Carregando planta…</p>}><DrawingPage /></Suspense>}
           />
+          <Route path="/desenhos/:drawingId/analise" element={<PlantAnalysisPage />} />
+          <Route path="/base-normativa" element={<NormativePage />} />
+          <Route path="/base-normativa/:sourceId" element={<SourcePage />} />
           <Route path="/analises/:analysisId/revisao" element={<ReviewPage />} />
           <Route path="/projetos/:projectId/historico" element={<HistoryPage />} />
           <Route path="/analises/:analysisId/relatorio" element={<ReportPage />} />

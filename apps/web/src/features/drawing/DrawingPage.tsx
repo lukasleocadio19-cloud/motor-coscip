@@ -237,6 +237,9 @@ export function DrawingPage() {
             Diagnóstico
           </Link>
         )}
+        <Link to={`/desenhos/${drawingId}/analise`} className="rounded-md bg-teal-700 px-3 py-1.5 text-sm font-medium text-white hover:bg-teal-800">
+          Analisar planta
+        </Link>
       </PageHeader>
       {drawing.error && <ErrorState error={drawing.error} />}
       <div className="mb-3 flex flex-wrap items-center gap-2 text-sm">

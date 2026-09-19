@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from fastapi import APIRouter, Depends, File, UploadFile
+from fastapi import APIRouter, Depends, File, Query, UploadFile
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -17,7 +17,10 @@ from coscip_api.normative_base import (
     _pkg_out,
     import_package,
     ingest_sources,
+    item_text,
     list_sources,
+    search,
+    source_detail,
 )
 
 router = APIRouter()
@@ -27,6 +30,32 @@ MAX_FILES = 80
 @router.get("/normative/sources")
 def get_sources(s: Session = Depends(db)) -> dict[str, Any]:
     return {"items": list_sources(s)}
+
+
+@router.get("/normative/sources/{source_id}")
+def get_source(source_id: str, st: AppState = Depends(state),
+               s: Session = Depends(db)) -> dict[str, Any]:
+    """Metadados da fonte e índice dos itens (número, tipo, página, começo do texto)."""
+    out = source_detail(s, st.storage, source_id)
+    if out is None:
+        raise ApiError(404, "NOT_FOUND", "Fonte normativa não encontrada")
+    return out
+
+
+@router.get("/normative/sources/{source_id}/item")
+def get_source_item(source_id: str, item: str = Query(min_length=1, max_length=40),
+                    st: AppState = Depends(state), s: Session = Depends(db)) -> dict[str, Any]:
+    out = item_text(s, st.storage, source_id, item)
+    if out is None:
+        raise ApiError(404, "NOT_FOUND", "Item não encontrado nesta fonte")
+    return out
+
+
+@router.get("/normative/search")
+def search_sources(q: str = Query(min_length=2, max_length=200),
+                   document: str | None = Query(default=None, max_length=40),
+                   st: AppState = Depends(state), s: Session = Depends(db)) -> dict[str, Any]:
+    return search(s, st.storage, q, document)
 
 
 @router.post("/normative/sources", status_code=201)
@@ -53,6 +82,11 @@ def post_import_package(st: AppState = Depends(state)) -> dict[str, Any]:
         raise ApiError(422, "CITATIONS_NOT_VERIFIED", str(exc),
                        required_action="INGEST_NORMATIVE_SOURCES",
                        extra={"failures": exc.details}) from exc
+
+
+@router.get("/rule-packages")
+def get_rule_packages(s: Session = Depends(db)) -> dict[str, Any]:
+    return {"items": list_packages(s)}
 
 
 @router.get("/rule-packages/{package_id}")

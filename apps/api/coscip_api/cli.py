@@ -5,6 +5,8 @@
     python -m coscip_api.cli verify-backup <pasta-do-backup>
     python -m coscip_api.cli restore <pasta-do-backup> <pasta-destino-vazia>
     python -m coscip_api.cli make-fixtures <pasta>
+    python -m coscip_api.cli normative-import-sources <pasta-com-.md>
+    python -m coscip_api.cli normative-import-package [<pasta-do-pacote>]
 """
 
 from __future__ import annotations
@@ -112,6 +114,52 @@ def cmd_benchmark(args: argparse.Namespace) -> int:
     return 0
 
 
+def _normative_ctx():
+    import getpass
+
+    from coscip_api.deps import ensure_local_identity
+    from coscip_storage import LocalFileStorage
+
+    factory = _factory()
+    _, operator_id = ensure_local_identity(factory, getpass.getuser())
+    return factory, LocalFileStorage(DataLayout(get_settings().data_dir).root), operator_id
+
+
+def cmd_normative_sources(args: argparse.Namespace) -> int:
+    """Ingere todos os .md da pasta (NTs e decreto); o mesmo texto não é duplicado."""
+    from coscip_api.normative_base import ingest_sources
+
+    files = sorted(Path(args.path).glob("*.md"))
+    if not files:
+        print("Nenhum .md na pasta.", file=sys.stderr)
+        return 1
+    factory, storage, operator_id = _normative_ctx()
+    out = ingest_sources(factory, storage, [(f.name, f.read_bytes()) for f in files],
+                         operator_id)
+    for r in out:
+        print(f"{r['status']:<15} {r.get('document', '—'):<18} {r['file']}"
+              + (f"  ({r['problem']})" if r.get("problem") else ""))
+    rejected = sum(r["status"] == "REJECTED" for r in out)
+    print(f"{len(out) - rejected} fonte(s) na base, {rejected} recusada(s).")
+    return 1 if rejected else 0
+
+
+def cmd_normative_package(args: argparse.Namespace) -> int:
+    from coscip_api.normative_base import NormativeError, import_package
+
+    factory, storage, operator_id = _normative_ctx()
+    try:
+        r = import_package(factory, storage, Path(args.path) if args.path else None,
+                           actor_id=operator_id)
+    except NormativeError as exc:
+        print(f"Pacote recusado: {exc}", file=sys.stderr)
+        for d in exc.details:
+            print(f"- {d}", file=sys.stderr)
+        return 1
+    print(f"{r['status']}: {r['name']} ({r['rules']} regras) — {r['id']}")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="coscip")
     sub = ap.add_subparsers(required=True)
@@ -134,6 +182,12 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("path")
     p.add_argument("--out")
     p.set_defaults(fn=cmd_benchmark)
+    p = sub.add_parser("normative-import-sources", help="ingere os textos .md das NTs")
+    p.add_argument("path")
+    p.set_defaults(fn=cmd_normative_sources)
+    p = sub.add_parser("normative-import-package", help="importa o pacote de regras")
+    p.add_argument("path", nargs="?")
+    p.set_defaults(fn=cmd_normative_package)
     args = ap.parse_args(argv)
     return args.fn(args)
 
