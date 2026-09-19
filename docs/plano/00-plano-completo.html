@@ -1,0 +1,2288 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Motor CAD/COSCIP — Plano completo</title><style>
+:root{--ink:#142a36;--muted:#526872;--line:#dce5e8;--accent:#126b66;--paper:#fff;--bg:#f3f6f7}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,Segoe UI,sans-serif}
+aside{position:fixed;inset:0 auto 0 0;width:292px;overflow:auto;padding:32px 22px;background:#102e38;color:#fff}aside .brand{font-size:21px;line-height:1.25;font-weight:750;letter-spacing:-.4px}aside small{display:block;color:#a9c7ca;margin:14px 0 26px}nav a{display:block;text-decoration:none;color:#c6dbdf;font-size:12px;line-height:1.45;padding:7px 9px;border-radius:5px}nav a:hover{background:#204652;color:#fff}nav a.major{font-size:14px;font-weight:750;margin-top:18px;color:#fff}main{max-width:1320px;margin-left:292px;padding:48px 50px 100px}
+.cover{background:linear-gradient(130deg,#0e4149,#116e66);color:white;border-radius:16px;padding:42px;margin-bottom:30px}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:700;color:#a6dfd7}.cover h1{font-size:42px;line-height:1.12;letter-spacing:-1.3px;margin:18px 0}.cover p{max-width:760px;color:#e1f1ef;font-size:17px}.cover .meta{font-size:13px;color:#bbd9d7}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 36px}.card{background:white;border:1px solid var(--line);padding:22px;border-radius:12px}.card strong{display:block;font-size:25px;color:var(--accent);line-height:1.3}.card span{font-size:13px;color:var(--muted)}.note{font-size:13px;color:var(--muted);margin-bottom:28px}
+article{background:var(--paper);padding:34px 40px;margin:0 0 32px;border:1px solid var(--line);border-radius:14px;overflow:hidden}h1,h2,h3{line-height:1.25}article h1{font-size:30px;letter-spacing:-.7px;margin:6px 0 28px}h2{font-size:24px;margin:44px 0 20px;padding-top:22px;border-top:1px solid var(--line);letter-spacing:-.3px}h3{font-size:18px;margin:28px 0 12px}p{margin:12px 0 18px}a{color:#066d79;text-underline-offset:3px}li{margin:7px 0}strong{font-weight:700}.table-wrap{overflow:auto;margin:22px 0}table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.5}th{text-align:left;background:#e8f2f2;padding:13px;color:#214a50}td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top}tr:nth-child(even) td{background:#f8fafb}code{font-family:Consolas,monospace;font-size:.87em;background:#edf2f4;padding:2px 4px;border-radius:3px;overflow-wrap:anywhere}pre{background:#102e38;color:#e2f0f2;border-radius:10px;padding:22px;overflow:auto;font-size:12px;line-height:1.6}pre code{padding:0;background:transparent;overflow-wrap:normal}.flow{display:flex;flex-direction:column;align-items:center;background:#f0f7f6;padding:28px;border:1px solid #d2e5e2;border-radius:12px;margin:24px 0;gap:6px;text-align:center}.flow b{font-size:14px;background:white;border:1px solid #bad9d4;padding:12px 24px;border-radius:8px}.flow span{color:#278b7e}footer{color:var(--muted);font-size:13px}
+@media(max-width:1080px){aside{width:240px}main{margin-left:240px;padding:30px 22px}article{padding:28px 24px}.cover{padding:30px}.cards{grid-template-columns:1fr}.card{padding:16px}}
+@media(max-width:760px){aside{position:static;width:auto;padding:22px}nav{max-height:220px;overflow:auto}.brand br{display:none}main{margin:0;padding:20px 12px}article{padding:24px 18px}.cover h1{font-size:32px}.cover{padding:26px}h2{font-size:21px}}
+@media print{aside,.cards{display:none}main{margin:0;max-width:none;padding:0}body{font-size:10pt;background:white}.cover{background:white;color:#142a36;border:1px solid #ccc}.cover p,.cover .meta,.eyebrow{color:#526872}article{border:0;padding:0;break-before:page}h2,h3{break-after:avoid}table{font-size:8pt}tr{break-inside:avoid}pre{white-space:pre-wrap;background:#f3f6f7;color:#142a36}.table-wrap{overflow:visible}a{color:inherit}}
+</style></head><body>
+<aside><div class="brand">Motor CAD/COSCIP<br>Plano local</div><small>DXF · um usuário · seu computador<br>IA por API opcional</small><nav aria-label="Sumário"><a class="major" href="#plano">Motor CAD/COSCIP — Plano de construção</a><a class="" href="#plano-1">1. Decisão executiva — motor local de baixo custo</a><a class="" href="#plano-2">2. Premissas confirmadas e limites iniciais</a><a class="" href="#plano-3">3. O que muda e o que permanece</a><a class="" href="#plano-4">4. Escopo por entrega</a><a class="" href="#plano-5">5. Arquitetura local</a><a class="" href="#plano-6">6. Stack escolhida para o computador</a><a class="" href="#plano-7">7. Backend e execução local</a><a class="" href="#plano-8">8. Engenharia CAD e precisão geométrica</a><a class="" href="#plano-9">9. Semântica e revisão humana</a><a class="" href="#plano-10">10. Motor normativo</a><a class="" href="#plano-11">11. Banco e arquivos locais</a><a class="" href="#plano-12">12. Frontend: telas, estados e fluxos</a><a class="" href="#plano-13">13. Instalação, hardware e armazenamento</a><a class="" href="#plano-14">14. Segurança local e recuperação</a><a class="" href="#plano-15">15. IA, documentos e Jev</a><a class="" href="#plano-16">16. API local e evolução para clientes</a><a class="" href="#plano-17">17. Testes, corpus e metas de qualidade</a><a class="" href="#plano-18">18. Operação no computador</a><a class="" href="#plano-19">19. Repositório e entrega local</a><a class="" href="#plano-20">20. Plano de execução com equipe enxuta</a><a class="" href="#plano-21">21. Orçamento de início e capacidade</a><a class="" href="#plano-22">22. Riscos e condições de continuidade</a><a class="" href="#plano-23">23. Primeiros 30 dias do projeto revisado</a><a class="" href="#plano-24">24. Evolução futura e decisões pendentes</a><a class="" href="#plano-25">25. Custo estimado de analisar um projeto no seu computador</a><a class="major" href="#contratos">Motor CAD/COSCIP — Contratos de implementação</a><a class="" href="#contratos-1">1. Invariantes do domínio</a><a class="" href="#contratos-2">2. Modelo relacional lógico</a><a class="" href="#contratos-3">3. Contrato de origem CAD</a><a class="" href="#contratos-4">4. Contrato CBM</a><a class="" href="#contratos-5">5. Contrato de execução e reprodutibilidade</a><a class="" href="#contratos-6">6. API local proposta</a><a class="" href="#contratos-7">7. DSL normativa ilustrativa</a><a class="" href="#contratos-8">8. Contrato de resultado</a><a class="" href="#contratos-9">9. Revisão e comparação de revisões</a><a class="" href="#contratos-10">10. Contrato visual e relatórios</a><a class="" href="#contratos-11">11. IA e controle de custos</a><a class="" href="#contratos-12">12. Definição de pronto dos contratos</a><a class="" href="#contratos-13">13. Persistência e recuperação no SQLite</a><a class="" href="#contratos-14">14. Migração futura</a><a class="major" href="#backlog">Motor CAD/COSCIP — Backlog local de baixo custo</a><a class="" href="#backlog-1">1. Ordem de construção</a><a class="" href="#backlog-2">2. Viabilidade — primeiras quatro semanas</a><a class="" href="#backlog-3">3. Fundação local</a><a class="" href="#backlog-4">4. CAD, visualização e correção assistida</a><a class="" href="#backlog-5">5. Geometria e regras iniciais</a><a class="" href="#backlog-6">6. Revisão, relatório e recuperação</a><a class="" href="#backlog-7">7. IA opcional e econômica</a><a class="" href="#backlog-8">8. Piloto interno</a><a class="" href="#backlog-9">9. Cronograma e responsáveis</a><a class="" href="#backlog-10">10. Critérios de passagem</a><a class="" href="#backlog-11">11. Definição de pronto</a><a class="" href="#backlog-12">12. Backlog futuro — sem bloquear a versão local</a></nav></aside>
+<main><header class="cover"><div class="eyebrow">Execução local · baixo custo</div><h1>Seu motor CAD.<br>No seu computador.</h1><p>DXF, geometria, regras e relatórios locais. Um plano de construção com componentes gratuitos e APIs de IA usadas somente quando habilitadas.</p><div class="meta">19 de setembro de 2026 · Versão 2.0 · Planejamento, sem implementação</div></header>
+<div class="cards"><div class="card"><strong>R$ 0/mês</strong><span>Hospedagem e licença do núcleo selecionado, usando seu PC.</span></div><div class="card"><strong>~R$ 0,54/projeto</strong><span>API de LLM com reserva + energia, no cenário médio simulado.</span></div><div class="card"><strong>Funciona sem IA</strong><span>Cálculos, regras implementadas e relatórios por template são locais.</span></div></div>
+<p class="note">Simulação: R$ 5/US$, energia a R$ 1/kWh, 80 W adicionais e 15 minutos de execução. Exclui desenvolvimento, revisão humana, depreciação e backup. Jev é opcional. Premissas completas na seção 25; valores não medidos no produto.</p>
+<article aria-label="Arquitetura e custos"><h1 id="plano">Motor CAD/COSCIP — Plano de construção</h1>
+<p>Versão 2.0 • 19 de setembro de 2026 • Especificação de planejamento</p>
+<h2 id="plano-1">1. Decisão executiva — motor local de baixo custo</h2>
+<p>Construir primeiro uma aplicação para <strong>um usuário no próprio computador Windows, com entrada DXF, uma análise por vez e APIs de IA opcionais</strong>. O núcleo de CAD, geometria, regras, evidências e relatórios funciona localmente, inclusive sem internet depois de instalado. Quando habilitada, a IA usa provedores externos e recebe somente os trechos necessários à tarefa.</p>
+<p>Stack definida para esta versão: <strong>React + TypeScript + Vite, Python/FastAPI, SQLite, ezdxf e Shapely/GEOS</strong>. Arquivos ficam em uma pasta de dados local. Não é necessário contratar nuvem, SDK ODA, servidor de banco ou GPU de IA para executar o escopo inicial.</p>
+<p>O objetivo de custo é <strong>R$ 0 de mensalidade de hospedagem e licença dos componentes selecionados</strong>, usando computador e armazenamento já disponíveis. APIs, energia, backup, desenvolvimento e tempo de revisão são parcelas separadas. Gratuidade dos componentes não significa que o produto já exista nem que a engenharia seja gratuita.</p>
+<p>Esta versão substitui o cenário operacional da versão 1.1. Atualiza arquitetura, contratos, backlog, implantação e contas; o plano de AWS e DWG comercial deixa de ser requisito de início. Nenhum programa foi instalado ou implementado nesta revisão documental.</p>
+<p>Documentos complementares:</p>
+<ul>
+<li><a href="#contratos">Contratos de dados, APIs e regras — perfil local</a>.</li>
+<li><a href="#backlog">Backlog e etapas de construção — perfil local</a>.</li>
+</ul>
+<h2 id="plano-2">2. Premissas confirmadas e limites iniciais</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>Decisão para iniciar</th>
+<th>Evolução possível</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Uso</td>
+<td>Interno, um operador no seu computador</td>
+<td>Equipe e clientes em outra etapa</td>
+</tr>
+<tr>
+<td>Investimento</td>
+<td>Sem orçamento definido; reduzir despesas recorrentes</td>
+<td>Decidir investimento por entregas verificadas</td>
+</tr>
+<tr>
+<td>Formato analítico</td>
+<td>DXF com entidades suportadas</td>
+<td>DWG nativo após experimento próprio; IFC depois</td>
+</tr>
+<tr>
+<td>DWG recebido</td>
+<td>Guardar como documento de origem; solicitar/exportar DXF correspondente</td>
+<td>Adaptador gratuito ou comercial homologado</td>
+</tr>
+<tr>
+<td>Documentos</td>
+<td>PDF/texto como apoio; evidências em páginas/trechos</td>
+<td>OCR e interpretação multimodal opcionais</td>
+</tr>
+<tr>
+<td>Perfil geométrico</td>
+<td>Um pavimento por análise inicial, unidades confirmadas, correção humana</td>
+<td>Vários pavimentos e rotas verticais posteriormente</td>
+</tr>
+<tr>
+<td>Reconhecimento</td>
+<td>Dicionário e seleção/classificação manual assistida</td>
+<td>Automatização progressiva com corpus</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>Navegador no próprio PC, servido por FastAPI</td>
+<td>Portal compartilhado ou app desktop empacotado</td>
+</tr>
+<tr>
+<td>Banco</td>
+<td>SQLite no disco local</td>
+<td>PostgreSQL/PostGIS se houver múltiplos usuários/carga</td>
+</tr>
+<tr>
+<td>Arquivos</td>
+<td>Pastas privadas, originais imutáveis e manifestos</td>
+<td>Object storage por adaptador futuro</td>
+</tr>
+<tr>
+<td>Concorrência</td>
+<td>Uma análise pesada ativa; demais aguardam na fila</td>
+<td>Aumentar somente após medir recursos</td>
+</tr>
+<tr>
+<td>IA</td>
+<td>API econômica opcional; Jev da TypeSafe opcional</td>
+<td>Trocar modelos por benchmark e custo</td>
+</tr>
+<tr>
+<td>Dados externos</td>
+<td>Nenhum envio a IA até configurar chave e habilitar essa função</td>
+<td>Política própria por projeto</td>
+</tr>
+<tr>
+<td>Hardware</td>
+<td>Configuração ainda não confirmada</td>
+<td>Benchmark antes de comprar equipamentos</td>
+</tr>
+</tbody></table></div>
+<p>Perfil de teste inicial: DXF de até 50 MB e 100 mil entidades antes da expansão, com limite adicional para entidades expandidas. Limites propostos, a ajustar na primeira prova de conceito; tamanho em MB não determina sozinho a dificuldade. Arquivos fora do perfil recebem diagnóstico, sem promessa de processamento completo.</p>
+<p>O serviço local fica restrito a <code>127.0.0.1</code>; a porta será escolhida pelo launcher entre as disponíveis, sem ocupar um serviço existente. Não habilitar acesso pela rede ou internet como simples alteração de endereço: esse uso exige autenticação multiusuário e nova validação de segurança.</p>
+<h2 id="plano-3">3. O que muda e o que permanece</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Parte</th>
+<th>Decisão revisada</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DWG/ODA obrigatório</td>
+<td>Removido do MVP; DXF é a entrada analítica</td>
+</tr>
+<tr>
+<td>Next.js e servidor de frontend</td>
+<td>React/Vite gera arquivos estáticos servidos pelo backend</td>
+</tr>
+<tr>
+<td>PostgreSQL/PostGIS</td>
+<td>SQLite + geometrias WKB e operações Shapely</td>
+</tr>
+<tr>
+<td>S3 e upload direto à nuvem</td>
+<td>Upload em streaming para pasta local de quarentena</td>
+</tr>
+<tr>
+<td>Filas e orquestração gerenciadas</td>
+<td>Jobs persistidos no SQLite e executor local</td>
+</tr>
+<tr>
+<td>Cognito/OIDC</td>
+<td>Perfil local vinculado ao usuário do computador e sessão da aplicação</td>
+</tr>
+<tr>
+<td>Containers obrigatórios</td>
+<td>Instalação Python isolada e pacote de frontend compilado</td>
+</tr>
+<tr>
+<td>CloudWatch e serviços de logs</td>
+<td>Logs rotativos locais e painel de execuções/custos</td>
+</tr>
+<tr>
+<td>Equipe grande desde o início</td>
+<td>Desenvolvimento incremental e validação técnica pelo usuário/especialista</td>
+</tr>
+<tr>
+<td>Jev e LLM obrigatórios</td>
+<td>Enriquecimento opcional; cálculo e relatório por template independem deles</td>
+</tr>
+</tbody></table></div>
+<p>Permanecem obrigatórios: unidades confirmadas, tolerâncias versionadas, revisão de ambiguidades, cinco estados de avaliação, fonte normativa, evidências e histórico imutável. O reconhecimento de ambientes será assistido. Uma soma de pontos heurísticos não será apresentada como probabilidade calibrada.</p>
+<p>A cobertura normativa deve ser explícita: item não implementado não aparece como conforme. Preservar resultados originais e versões; reexecução determinística dentro de tolerâncias não garante repetição bit a bit de respostas externas de IA.</p>
+<h2 id="plano-4">4. Escopo por entrega</h2>
+<h3>Primeiro protótipo utilizável</h3>
+<p>Abrir DXF real, mostrar layers e entidades, selecionar sua origem, confirmar unidade, medir distância/área, marcar elementos manualmente e salvar o projeto. Testar inicialmente 5–10 desenhos autorizados com perfil conhecido.</p>
+<p>Entidades prioritárias: linhas, polylines, arcos, círculos, blocos, atributos e textos. Entidades não suportadas entram em inventário; nada é descartado sem diagnóstico. O critério de saída é selecionar um elemento, conferir sua medida e reencontrar sua origem ao reabrir o projeto.</p>
+<h3>MVP local assistido</h3>
+<ul>
+<li>Cadastro de projeto e revisões; uma organização interna e um operador.</li>
+<li>Importação de DXF e referências DXF empacotadas; DWG/PDF podem ser anexos de origem.</li>
+<li>Diagnóstico de unidade, blocos, layers, XRefs e perdas de importação/exportação.</li>
+<li>Um pavimento por análise, com recorte e contornos confirmados pelo analista.</li>
+<li>Classificação assistida de ambientes, aberturas, saídas e extintores.</li>
+<li>Medições, conexões e trajetos apenas sobre topologia validada.</li>
+<li>Conjunto delimitado de regras de extintores e respectivos pré-requisitos; medições de portas sem prometer análise integral de saídas de emergência.</li>
+<li>Revisão humana, evidências, histórico, relatório HTML/PDF e exportação JSON.</li>
+<li>Fila persistente, cancelamento, recuperação de interrupção, backup/restauração e custo das APIs.</li>
+<li>IA documental por API como módulo que pode permanecer desligado.</li>
+</ul>
+<p>A primeira família normativa proposta continua sendo extintores. O catálogo oficial identifica a NT 2-01; edição aplicável, requisitos, exceções e dependências precisam de homologação antes de resultados reais. <a href="https://www.cbmerj.rj.gov.br/notas-tecnicas/">Catálogo CBMERJ</a>.</p>
+<h3>Depois do piloto</h3>
+<p>Vários pavimentos, escadas e rotas verticais; reconhecimento automático mais amplo; hidrantes e redes; IFC; DWG direto; equipe e clientes. Cada evolução depende de necessidade demonstrada. Sem reconstrução universal de plantas, validação integral do COSCIP, edição CAD completa ou aprovação automática no compromisso inicial.</p>
+<h3>Recebimento de DWG sem licença CAD no motor</h3>
+<p>Solicitar o DXF ao projetista ou exportá-lo por uma ferramenta já licenciada. Registrar DWG original e DXF derivado, ferramenta/versão de exportação quando conhecida e mapa de perdas. Identificadores de entidade DXF não são tratados como handles originais DWG sem correspondência demonstrada.</p>
+<p>LibreDWG poderá ser testado em etapa posterior: é livre sob GPLv3+, com limitações documentadas que exigem corpus. Não integra o caminho obrigatório do MVP. <a href="https://www.gnu.org/software/libredwg/manual/html_node/Overview.html">LibreDWG</a>. ODA File Converter não será assumido gratuito para uso profissional, pois a FAQ restringe não membros a uso não comercial. <a href="https://www.opendesign.com/faq/question/what-are-oda-viewer-and-oda-file-converter">ODA — condições do conversor</a>.</p>
+<h2 id="plano-5">5. Arquitetura local</h2>
+<div class="flow"><b>Navegador no seu computador</b><span>↓</span><b>FastAPI · frontend estático · sessão local</b><span>↓</span><b>SQLite + pastas locais + fila persistente</b><span>↓</span><b>DXF → geometria → modelo confirmado</b><span>↓</span><b>Regras → evidências → relatório local</b><span>+</span><b>API de IA opcional, com limite de gasto</b></div>
+<p>O launcher abre um único serviço Python, que entrega a interface e a API na mesma origem. Um supervisor interno acompanha os jobs; cada estágio pesado roda em processo separado. O servidor continua responsivo enquanto o worker calcula.</p>
+<p>O processo confiável da aplicação é o único responsável por publicar dados no banco. O worker recebe manifesto de entrada e pasta temporária; devolve artefatos validados, sem acesso às chaves de IA. Separação de processo e limites de recursos não são, por si só, sandbox de segurança: a política de isolamento do sistema operacional está na seção 14.</p>
+<p>Não instalar Docker, Redis, Kubernetes ou um servidor PostgreSQL para a primeira versão. Abstrações <code>Storage</code>, <code>JobRunner</code>, <code>CadReader</code> e <code>AIProvider</code> permitem substituições futuras; implementar apenas os adaptadores locais necessários agora.</p>
+<h2 id="plano-6">6. Stack escolhida para o computador</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Camada</th>
+<th>Componente</th>
+<th>Papel</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Interface</td>
+<td>React, TypeScript e Vite</td>
+<td>Compilar interface estática</td>
+</tr>
+<tr>
+<td>UI</td>
+<td>Tailwind CSS e componentes acessíveis</td>
+<td>Formulários, listas e revisão</td>
+</tr>
+<tr>
+<td>Consultas/estado</td>
+<td>TanStack Query; store leve para o viewer</td>
+<td>Atualizar dados e seleção</td>
+</tr>
+<tr>
+<td>Visualização</td>
+<td>Three.js, câmera ortográfica</td>
+<td>Layers, seleção e overlays</td>
+</tr>
+<tr>
+<td>Backend</td>
+<td>Python, FastAPI e Pydantic</td>
+<td>API, arquivos, validações e comandos</td>
+</tr>
+<tr>
+<td>Banco</td>
+<td>SQLite, SQLAlchemy e Alembic</td>
+<td>Dados locais, transações e migrações</td>
+</tr>
+<tr>
+<td>Parser</td>
+<td>ezdxf</td>
+<td>Leitura DXF e origem das entidades</td>
+</tr>
+<tr>
+<td>Geometria</td>
+<td>Shapely/GEOS e NumPy</td>
+<td>Medidas e operações planares</td>
+</tr>
+<tr>
+<td>Grafos</td>
+<td>NetworkX por interface de domínio</td>
+<td>Conectividade e percursos</td>
+</tr>
+<tr>
+<td>Processamento</td>
+<td>Supervisor Python + processos de worker</td>
+<td>Fila local, timeout, cancelamento e retry</td>
+</tr>
+<tr>
+<td>Arquivos</td>
+<td>Filesystem local, SHA-256 e manifestos</td>
+<td>Originais e derivados versionados</td>
+</tr>
+<tr>
+<td>Relatórios</td>
+<td>HTML por template e PDF por Chromium empacotado/testado</td>
+<td>Emissão local, sem SaaS</td>
+</tr>
+<tr>
+<td>IA</td>
+<td>API Gemini econômica; Jev opcional</td>
+<td>Leitura/classificação assistida</td>
+</tr>
+<tr>
+<td>Segredos</td>
+<td>Armazenamento protegido do Windows</td>
+<td>Chaves fora do frontend, banco de projetos e logs</td>
+</tr>
+<tr>
+<td>Operação</td>
+<td>Logs locais, painel de jobs e rotina de backup</td>
+<td>Diagnóstico e continuidade</td>
+</tr>
+</tbody></table></div>
+<p>Vite gera um pacote estático para distribuição; seu servidor de desenvolvimento não será o servidor do produto. Node.js é necessário para construir a interface, não como serviço permanente na instalação final. <a href="https://vite.dev/guide/static-deploy">Vite — distribuição estática</a>.</p>
+<p>ezdxf é MIT; Shapely é BSD, com GEOS sob LGPL; SQLite é domínio público. São opções sem cobrança de licença para esta arquitetura, preservando avisos e obrigações de distribuição de cada componente. <a href="https://ezdxf.readthedocs.io/en/stable/introduction.html">ezdxf</a>, <a href="https://shapely.readthedocs.io/en/2.0.3/index.html">Shapely/GEOS</a>, <a href="https://sqlite.org/copyright.html">SQLite</a>.</p>
+<p>Congelar versões exatas testadas no Windows. Verificar a versão efetiva do SQLite embarcado no Python e usar release com correções de WAL documentadas, não apenas a versão nominal do Python. C++/CGAL e IFC ficam fora das dependências iniciais; só adicionar se uma entrega posterior justificar.</p>
+<h2 id="plano-7">7. Backend e execução local</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Função</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Instalação e sessão</td>
+<td>Perfil local, configuração, chave de sessão e diagnóstico de ambiente</td>
+</tr>
+<tr>
+<td>Projetos/revisões</td>
+<td>Cadastro, manifestos imutáveis e histórico</td>
+</tr>
+<tr>
+<td>Ingestão</td>
+<td>Streaming para disco, checksum, quarentena e referências</td>
+</tr>
+<tr>
+<td>CAD/normalização</td>
+<td>Entidades DXF, blocos, unidade, transformações e tolerâncias</td>
+</tr>
+<tr>
+<td>Semântica/CBM</td>
+<td>Classes, confirmações, fatos e snapshots</td>
+</tr>
+<tr>
+<td>Geometria/topologia</td>
+<td>Medidas, contornos, conexões e percursos</td>
+</tr>
+<tr>
+<td>Regras</td>
+<td>Fontes, aplicabilidade, execução e evidências</td>
+</tr>
+<tr>
+<td>Revisão/relatórios</td>
+<td>Decisões humanas separadas e emissão versionada</td>
+</tr>
+<tr>
+<td>Jobs</td>
+<td>Agendamento, estágios, cancelamento e recuperação</td>
+</tr>
+<tr>
+<td>IA/consumo</td>
+<td>Provedores, reserva de orçamento e registro de uso</td>
+</tr>
+<tr>
+<td>Backup/auditoria</td>
+<td>Eventos, cópias consistentes e restauração</td>
+</tr>
+</tbody></table></div>
+<p>Fluxo operacional:</p>
+<ol>
+<li>Navegador envia DXF ao backend local em streaming; o cliente não fornece caminho arbitrário de destino.</li>
+<li>Arquivo vai à quarentena e recebe SHA-256, diagnóstico e identificador interno.</li>
+<li>Ao concluir a submissão, uma transação registra a revisão e a intenção de job.</li>
+<li>Supervisor reclama um job em transação curta, com token de tentativa e lease; só um estágio pesado fica ativo.</li>
+<li>Worker extrai/calcula em diretório temporário; aplicação valida esquema, limites e checksums antes de publicar.</li>
+<li>Unidade, contorno ou interpretação incerta gera <code>WAITING_INPUT</code>; nenhum worker fica reservado esperando o analista.</li>
+<li>Correção cria snapshot derivado e novo trecho de execução, ligado ao histórico anterior.</li>
+<li>Análise usa modelo, contexto, tolerâncias e pacote de regras congelados.</li>
+<li>Resultados e cena são disponibilizados localmente; IA pode enriquecer dados autorizados e template gera relatório sem IA.</li>
+</ol>
+<p>Na inicialização, conferir jobs interrompidos, processo/instante de criação e token da tentativa. Encerrar ou isolar worker antigo antes de retomar. Aceitar publicação apenas da tentativa vigente, para evitar resultado duplicado após timeout. Suspensão do PC ou reinício não podem marcar análise incompleta como sucesso.</p>
+<p>Persistir a intenção de job na mesma transação dos metadados elimina a necessidade de broker externo. Handler, conclusão de upload e publicação continuam idempotentes. Estados e mensagens de progresso ficam no banco; a interface consulta andamento em intervalos moderados ou por SSE.</p>
+<p>Filesystem e SQLite não formam uma transação única. Escrever em temporário no mesmo volume, verificar/fechar/sincronizar, renomear para destino imutável e depois confirmar referência no banco. Ao reabrir, reconciliar temporários e arquivos órfãos; nunca publicar referência a artefato incompleto. Falha de disco cheio cancela o estágio com diagnóstico.</p>
+<p>Cache é local e inclui projeto/organização, entradas, correções, engine, perfil e regras. Uma mudança normativa pode reaproveitar a geometria, mas não resultados de regras incompatíveis. Repetição de IA com resposta desconhecida não ocorre automaticamente: a requisição pode já ter sido cobrada.</p>
+<h2 id="plano-8">8. Engenharia CAD e precisão geométrica</h2>
+<h3>Ingestão e compatibilidade</h3>
+<p>Inventariar versão, model/paper space, layouts e viewports, UCS/OCS/WCS, blocos e suas instâncias, entidades por tipo, XRefs, imagens, fontes, unidades, extents e objetos proxy. A matriz de suporte deve distinguir: extração fiel, visualização aproximada, análise suportada e não suportado.</p>
+<p>Priorizar <code>LINE</code>, <code>LWPOLYLINE</code>, <code>POLYLINE</code>, <code>ARC</code>, <code>CIRCLE</code>, <code>INSERT</code>, <code>TEXT</code>, <code>MTEXT</code>, atributos e hachuras. <code>DIMENSION</code> e líderes entram como fontes documentais, sem assumir que o texto da cota é a medida real. <code>SPLINE</code>, <code>ELLIPSE</code>, blocos dinâmicos, proxies e entidades 3D têm testes de compatibilidade específicos.</p>
+<p>O usuário envia XRefs em pacote com manifesto. Resolver apenas arquivos desse pacote. Não acessar caminhos locais do usuário, compartilhamentos ou URLs encontrados dentro do desenho. Detectar ciclos, nomes duplicados, profundidade excessiva e dependências ausentes. Fontes e raster externos precisam de política de suporte e direitos de uso.</p>
+<p>Cada identidade de origem combina <strong>arquivo/versão + handle + caminho de instâncias + cadeia de XRefs + layout</strong>. Handle isolado não é identificador global e duas inserções do mesmo bloco não podem se confundir.</p>
+<h3>Três representações</h3>
+<ol>
+<li><strong>Original:</strong> arquivo imutável, entidades e parâmetros extraídos.</li>
+<li><strong>Modelo de cálculo:</strong> coordenadas canônicas, unidades SI, topologia e fatos.</li>
+<li><strong>Cena visual:</strong> primitivas simplificadas e recortes, otimizados para o navegador.</li>
+</ol>
+<p>Manter mapeamento de ida e volta entre as três. O viewer não pode usar simplificação visual como fonte de medida normativa.</p>
+<h3>Normalização</h3>
+<p>Preservar transformações 4×4 e inversas, incluindo escala não uniforme e espelhamento. Preservar arcos e curvas quando possível; aproximações precisam registrar erro máximo. Um círculo transformado com escala não uniforme deixa de ser círculo. Deslocar a origem de desenhos com coordenadas grandes para reduzir perda de precisão, sem perder a localização original.</p>
+<p>O modelo analítico inicial é 2,5D: geometria planar por pavimento e ligações verticais próprias. Shapely não resolve a dimensão vertical nas operações planares; ela precisa de modelagem explícita. <a href="https://shapely.readthedocs.io/en/latest/manual.html">Manual Shapely</a>.</p>
+<p>Usar <code>geometry</code> com referencial local em metros; não fingir que coordenadas de CAD são latitude/longitude. SRID local/indefinido e <code>coordinate_frame_id</code> documentado; conversão geográfica somente com transformação conhecida.</p>
+<h3>Tolerâncias</h3>
+<p>Criar perfis versionados para coincidência, fechamento, ângulo, discretização de curva e erro numérico. Os valores de 2 mm e 3 mm do documento-base são sugestões para experimento, não tolerâncias normativas aprovadas.</p>
+<p>Separar tolerância de representação, tolerância de reparo e incerteza da medição. Fazer uma junção geométrica não autoriza tolerar descumprimento de um requisito. Se a incerteza atravessa o limite de aceitação, devolver <code>REVIEW_REQUIRED</code>.</p>
+<p>Reparo guarda geometria anterior/posterior, algoritmo, motivo e deslocamento. Microgaps perto de portas e paredes de compartimentação não podem ser fechados silenciosamente. Reparos com efeito topológico precisam de confirmação ou impedem a conclusão das regras dependentes.</p>
+<h3>Reconstrução e caminhamento</h3>
+<p>Os requisitos abaixo orientam o núcleo e suas expansões. No MVP, implementar apenas o perfil validado de um pavimento; escadas, ligações verticais e outras famílias de cobertura são fases futuras.</p>
+<ul>
+<li>Produzir candidatos a paredes, faces internas, aberturas e limites de ambientes.</li>
+<li>Polygonizar com validação de ilhas, vazios, auto-interseções e regiões abertas.</li>
+<li>Separar largura nominal da folha, vão desenhado e largura livre utilizável.</li>
+<li>Confirmar vínculo de cada abertura a dois espaços ou a espaço e exterior.</li>
+<li>Navegação usa área transitável, obstáculos e passagens; centros de salas sozinhos não definem uma rota correta.</li>
+<li>Identificar saídas e destino seguro; escada não é automaticamente término válido de fuga.</li>
+<li>Representar escadas por patamares, lances, desníveis e conexões; sem dados, não inventar comprimento vertical.</li>
+<li>Armazenar origem, destino, geometria da rota, custo, algoritmo e hipóteses de transitabilidade.</li>
+<li>Separar menor percurso, percurso normativo, trechos comuns, caminhos independentes e becos sem saída: cada verificação requer seu próprio método.</li>
+</ul>
+<p>Cobertura de equipamento depende da regra aplicável. Não aplicar universalmente caminhamento de fuga a hidrantes, mangueiras ou sprinklers. Distância euclidiana pode ser um diagnóstico exploratório, mas não substitui a definição normativa.</p>
+<p>Para verificar cobertura de toda uma região, amostrar alguns pontos sem limite de erro não comprova conformidade. Usar algoritmo com limite conservador ou subdivisão adaptativa com erro comprovado; se o orçamento computacional não atingir a precisão necessária, registrar região não resolvida para revisão.</p>
+<h2 id="plano-9">9. Semântica e revisão humana</h2>
+<p>Aplicar em ordem: atributos explícitos → mapeamento confirmado → nomes/layers → assinatura geométrica/contexto → classificador opcional. Guardar todos os candidatos relevantes e conflitos. Layer chamado <code>EXTINTORES</code> é evidência, não prova absoluta.</p>
+<p>Mapeamentos podem ser do projeto, da organização ou globais. Promoção a global exige revisão da equipe do produto e testes em corpus separado. Uma correção feita por cliente nunca altera silenciosamente a interpretação de outro cliente.</p>
+<p>Toda propriedade crítica carrega procedência: extraída, calculada, declarada, confirmada ou sugerida por IA. Confirmar que o objeto é uma porta não confirma automaticamente sua largura, material ou resistência ao fogo.</p>
+<p>Na tela, o revisor pode classificar, associar texto, confirmar escala, ajustar contorno analítico, ligar espaços e declarar dados com justificativa. Correções geram nova revisão do modelo; desfazer cria outra alteração auditada. Análises dependentes aparecem como desatualizadas até nova execução.</p>
+<h2 id="plano-10">10. Motor normativo</h2>
+<h3>Governança</h3>
+<p>Manter registro da fonte oficial: documento, edição, ato modificador, URL, arquivo preservado, checksum, datas de publicação/vigência e data de coleta. Registrar também condições de transição, enquadramento processual e documentos referenciados.</p>
+<p>O catálogo do CBMERJ reúne edições e atualizações diferentes. Portanto, a arquitetura deve selecionar um pacote aplicável ao caso, não simplesmente a publicação mais recente disponível. <a href="https://www.cbmerj.rj.gov.br/notas-tecnicas/">Notas Técnicas CBMERJ</a>.</p>
+<p>Fluxo de publicação: <strong>rascunho → revisão técnica → testes → homologação → publicação imutável → substituição/depreciação</strong>. Uma norma revogada permanece no histórico e pode ser necessária para reproduzir análise antiga. Nova vigência não modifica resultados já emitidos.</p>
+<p>Cada item recebe: tipo de obrigação, contexto, exceções, entradas, unidade, operador, parâmetros/tabela, evidência exigida, casos de fronteira e responsável pela validação. Regras dependem umas das outras por grafo explícito.</p>
+<h3>Execução</h3>
+<ol>
+<li>Resolver contexto e pacote normativo aplicável.</li>
+<li>Avaliar aplicabilidade com lógica de três valores: verdadeiro, falso, desconhecido.</li>
+<li>Verificar dados obrigatórios, qualidade e conflitos.</li>
+<li>Executar apenas operações aprovadas e dimensionalmente compatíveis.</li>
+<li>Guardar cálculo, requisito e fonte exata.</li>
+<li>Produzir resultado e evidência.</li>
+</ol>
+<p>Não usar <code>eval</code>, execução livre de Python ou prompts como DSL. YAML/JSON serve como representação; um compilador valida um conjunto fechado de operadores. Fórmulas especiais tornam-se funções versionadas e testadas no código. Limites normativos numéricos usam representação decimal; valores geométricos incluem erro e método de comparação.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Estado técnico</th>
+<th>Rótulo na interface</th>
+<th>Condição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>PASS</code></td>
+<td>Conforme</td>
+<td>Aplicável, entradas suficientes, avaliação concluída e requisito satisfeito</td>
+</tr>
+<tr>
+<td><code>FAIL</code></td>
+<td>Pendência</td>
+<td>Violação demonstrada com evidência suficiente</td>
+</tr>
+<tr>
+<td><code>REVIEW_REQUIRED</code></td>
+<td>Revisão humana</td>
+<td>Ambiguidade, conflito, interpretação ou incerteza relevante</td>
+</tr>
+<tr>
+<td><code>NOT_APPLICABLE</code></td>
+<td>Não se aplica</td>
+<td>Inaplicabilidade demonstrada</td>
+</tr>
+<tr>
+<td><code>MISSING_DATA</code></td>
+<td>Dado ausente</td>
+<td>Informação necessária não disponível</td>
+</tr>
+</tbody></table></div>
+<p>Erro de software, timeout e estágio ainda não executado são estados operacionais, nunca <code>PASS</code> ou <code>NOT_APPLICABLE</code>. Item normativo não implementado entra no inventário de cobertura como <code>UNSUPPORTED</code>, fora dos cinco resultados de avaliação.</p>
+<p>A tela apresenta: verificações executadas, não executadas, dados ausentes, revisões e itens fora de cobertura. A decisão humana é um registro separado do resultado automático, com autor, justificativa e evidência; não reescreve o passado.</p>
+<h2 id="plano-11">11. Banco e arquivos locais</h2>
+<p>SQLite guarda projetos, revisões, metadados CAD, elementos, fatos, jobs, regras, resultados, auditoria e consumo. Os contratos detalhados estão no documento 02. Criar organização e operador locais com IDs estáveis; manter <code>tenant_id</code> e vínculos de projeto para futura migração, sem prometer isolamento multiusuário apenas pela presença desse campo.</p>
+<p>Geometrias analíticas usam WKB e bbox, frame e pavimento explícitos. Operações geométricas ficam na biblioteca de domínio; consultas por região carregam apenas o conjunto necessário, usando índice espacial em memória no worker. O banco guarda índices B-tree de projeto/snapshot/pavimento e metadados. PostGIS, GiST e RLS pertencem ao perfil futuro, não ao SQLite.</p>
+<p>Arquivos originais, dumps de entidades, cenas e relatórios ficam em pastas por projeto/revisão com nomes gerados pela aplicação e manifestos SHA-256. Deduplicação não apaga procedência. Segredos e dados de trabalho não ficam dentro da pasta de instalação do código.</p>
+<p>Configuração: chaves estrangeiras ativas em cada conexão, WAL, durabilidade <code>synchronous=FULL</code>, transações curtas, tratamento de <code>SQLITE_BUSY</code> e escrita serializada na aplicação. WAL permite leitores com escritor, mas apenas um escritor por vez e requer filesystem local. <a href="https://sqlite.org/wal.html">SQLite WAL</a>.</p>
+<p>Não guardar o banco ativo em pasta de rede ou sincronizada por OneDrive/Dropbox. Backups concluídos podem ser copiados para outro destino. Usar a API de backup do SQLite e verificar arquivos referenciados; copiar apenas <code>app.db</code> enquanto o banco está aberto não é o procedimento de backup. <a href="https://sqlite.org/backup.html">SQLite Backup API</a>.</p>
+<p>Na migração futura, converter WKB em PostGIS, criar índices/políticas, copiar manifestos e conferir quantidades/checksums. SQLAlchemy ajuda a separar persistência, mas a migração SQLite → PostgreSQL exige implementação e testes; não é apenas trocar uma URL.</p>
+<h2 id="plano-12">12. Frontend: telas, estados e fluxos</h2>
+<h3>Jornada principal</h3>
+<p>Abrir o aplicativo local → criar/abrir projeto → informar contexto → importar DXF → conferir diagnóstico → confirmar modelo → executar análise → revisar achados → emitir relatório → fazer backup. Comparação avançada entre revisões fica após o piloto.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tela</th>
+<th>Conteúdo</th>
+<th>Ação principal</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Início local</td>
+<td>Projetos recentes, pasta de dados, último backup e fila</td>
+<td>Abrir projeto no computador</td>
+</tr>
+<tr>
+<td>Projetos</td>
+<td>Busca, responsáveis, revisão atual, andamento e filtros</td>
+<td>Abrir ou criar projeto</td>
+</tr>
+<tr>
+<td>Cadastro</td>
+<td>Ocupações, áreas, alturas, datas e fontes das informações</td>
+<td>Completar contexto de aplicabilidade; o recorte geométrico não apaga dados da edificação</td>
+</tr>
+<tr>
+<td>Arquivos</td>
+<td>Upload, dependências, progresso e validação</td>
+<td>Preparar submissão reproduzível</td>
+</tr>
+<tr>
+<td>Diagnóstico</td>
+<td>Unidade, formatos, XRefs ausentes, objetos não suportados</td>
+<td>Resolver bloqueios de importação</td>
+</tr>
+<tr>
+<td>Preparação da planta</td>
+<td>Pavimentos, recortes, alinhamento, classes e contornos</td>
+<td>Confirmar modelo analítico</td>
+</tr>
+<tr>
+<td>Análise</td>
+<td>Planta, filtros, achados, rotas e propriedades</td>
+<td>Investigar um resultado</td>
+</tr>
+<tr>
+<td>Revisão</td>
+<td>Fila por prioridade, decisão e justificativa</td>
+<td>Concluir verificação humana</td>
+</tr>
+<tr>
+<td>Histórico</td>
+<td>Arquivos, modelos e resultados por revisão</td>
+<td>Reabrir evidências antigas; comparação automática é futura</td>
+</tr>
+<tr>
+<td>Relatório</td>
+<td>Resumo, cobertura, pendências e anexos</td>
+<td>Emitir documento versionado</td>
+</tr>
+<tr>
+<td>Configurações locais</td>
+<td>Perfil, pasta, backup, regras, dicionários e IA</td>
+<td>Configurar operação sem serviços externos obrigatórios</td>
+</tr>
+<tr>
+<td>Operação</td>
+<td>Jobs, falhas, espaço, backup e consumo</td>
+<td>Resolver problemas no PC e controlar gasto de API</td>
+</tr>
+</tbody></table></div>
+<h3>Layout da análise</h3>
+<pre><code class="language-text">┌ Projeto / revisão / pavimento ─ pacote normativo ─ execução ────────────┐
+│ Preparação │ Análise │ Revisão │ Histórico │ Relatório                  │
+├────────────────┬────────────────────────────────┬──────────────────────┤
+│ Camadas        │                                │ Resultado selecionado│
+│ Ambientes      │                                │ Estado e motivo      │
+│ Equipamentos   │       PLANTA NAVEGÁVEL          │ Medido / exigido     │
+│ Filtros        │                                │ Norma / item / edição│
+│                │       Rotas e evidências       │ Origem e evidência   │
+│                │                                │ Decisão do revisor   │
+├────────────────┴────────────────────────────────┴──────────────────────┤
+│ Lista de resultados • estado • sistema • pavimento • responsável       │
+└───────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<p>Botões centrais: <code>Mostrar na planta</code>, <code>Ver evidência</code>, <code>Confirmar classificação</code>, <code>Solicitar dado</code>, <code>Registrar revisão</code> e <code>Gerar nova análise</code>. Dados de entrada e resultados sempre mostram a revisão a que pertencem.</p>
+<h3>Viewer</h3>
+<p>Renderização própria por buffers agrupados e instanciados, tiles por região/pavimento, carregamento progressivo e descarte de memória. Evitar um componente React ou objeto de cena pesado por entidade. Three.js fornece o renderizador; seleção, texto CAD, tipos de linha, hatch, clipping, layers e fidelidade são trabalho do produto. <a href="https://threejs.org/docs/pages/WebGLRenderer.html">WebGLRenderer</a>.</p>
+<p>O contrato visual inclui ID da entidade, elemento CBM, bbox, origem local, transformação, layer, tipo e versão da cena. Seleção usa índice espacial ou picking apropriado; o servidor resolve a entidade e os detalhes completos. Camera e overlays devem respeitar a mesma transformação.</p>
+<p>Testar texto, blocos e performance do viewer na prova de conceito. Se houver falha, reduzir explicitamente o perfil suportado, corrigir a renderização ou avaliar outro componente livre. Viewer comercial depende de decisão futura com novo orçamento; não é requisito de continuidade do MVP econômico.</p>
+<p>Medidas exploratórias são identificadas como tal. A medição salva e usada no relatório vem do servidor. Desligar uma camada na tela não exclui seus elementos da análise. Operação que exclui elementos analíticos exige edição explícita do modelo e novo snapshot.</p>
+<h3>Estados de interface</h3>
+<p>Prever carregamento, vazio, erro recuperável, permissão negada, upload interrompido, arquivo rejeitado, processamento demorado, espera por informação, análise cancelada, versão desatualizada e indisponibilidade de GPU. Mostrar progresso por estágio; não inventar porcentagem total.</p>
+<p>Usar cor + ícone + texto; navegação por teclado, foco visível, tabelas acessíveis e mensagens em português. Toda informação crítica da planta terá alternativa textual na lista. Uso no celular e acesso de outro dispositivo ficam fora do MVP local. A interface será utilizável no navegador do computador com uma lista textual acessível dos resultados.</p>
+<h3>Organização do frontend</h3>
+<p>Separar <code>features/projects</code>, <code>uploads</code>, <code>model-preparation</code>, <code>analysis</code>, <code>reviews</code>, <code>reports</code>, <code>local-settings</code>; pacote próprio para o viewer. Usar React/Vite com saída estática. Cliente de API gerado a partir do OpenAPI. Validar formulários também no backend. Store do viewer não guarda todas as entidades completas.</p>
+<p>Sessão local e proteção contra requisições de outros sites seguem a seção 14. Chaves dos provedores ficam exclusivamente no backend/armazenamento protegido do Windows. A tela exibe IA desativada, custo estimado e limite disponível antes do uso habilitado. Não haverá credencial de API embutida no frontend.</p>
+<h2 id="plano-13">13. Instalação, hardware e armazenamento</h2>
+<h3>Como o usuário abre o sistema</h3>
+<p>Um atalho inicia o launcher, verifica versão/pasta de dados, abre o backend em porta livre restrita ao computador e apresenta a interface no navegador. Um comando de saída encerra o processamento de forma controlada; fechar a aba não implica apagar ou concluir um job. Depois da instalação, o modo sem IA trabalha offline.</p>
+<p>Primeira entrega técnica: ambiente Python isolado, dependências travadas, frontend compilado e scripts de iniciar/encerrar/backup. Empacotamento em instalador vem após a prova de conceito; não deve atrasar a primeira planta funcionando. Chromium para PDF é instalado/validado uma vez, sem baixar conteúdo durante cada relatório. Fontes e recursos do documento são locais.</p>
+<h3>Recursos de referência</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Início com arquivos pequenos</th>
+<th>Referência confortável</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>RAM</td>
+<td>16 GB, com limites menores de job</td>
+<td>32 GB</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>Processador recente com 4 núcleos</td>
+<td>6–8 núcleos</td>
+</tr>
+<tr>
+<td>Disco</td>
+<td>SSD com ao menos 20 GB livres para protótipo</td>
+<td>Reserva de 50–100 GB, ajustada ao acervo</td>
+</tr>
+<tr>
+<td>GPU</td>
+<td>Gráficos compatíveis com o viewer</td>
+<td>GPU integrada pode ser suficiente; testar</td>
+</tr>
+<tr>
+<td>Internet</td>
+<td>Instalação e chamadas opcionais de IA</td>
+<td>Desnecessária para cálculo local já instalado</td>
+</tr>
+<tr>
+<td>Jobs</td>
+<td>1 análise pesada por vez</td>
+<td>Aumentar somente após benchmark</td>
+</tr>
+</tbody></table></div>
+<p>Esses valores orientam o teste, não são requisitos comprovados. A configuração real do computador não foi obtida automaticamente. Começar pelo hardware disponível e reduzir o corpus/perfil antes de comprar componentes. Não é necessário rodar um modelo de linguagem local ou adquirir GPU de IA neste projeto.</p>
+<h3>Estrutura de dados proposta</h3>
+<pre><code class="language-text">&lt;pasta-local-de-dados&gt;/
+  database/app.db
+  projects/&lt;project-id&gt;/
+    originals/&lt;revision-id&gt;/
+    normalized/&lt;snapshot-id&gt;/
+    scenes/&lt;snapshot-id&gt;/
+    evidence/&lt;analysis-id&gt;/
+    reports/&lt;report-id&gt;/
+  normative/packages/
+  jobs/staging/&lt;job-id&gt;/&lt;attempt-id&gt;/
+  logs/
+  backup-manifests/
+  config/settings.json
+</code></pre>
+<p>Escolher pasta privada não sincronizada, preferencialmente dados locais do aplicativo no perfil Windows. Relatórios podem ser exportados para Documentos. Backup efetivo deve existir em outro dispositivo; uma segunda pasta no mesmo SSD não protege contra sua falha. Chaves de IA ficam no armazenamento de segredos do sistema, fora dessa árvore exportável.</p>
+<h3>Capacidade e limites</h3>
+<p>Escolher orçamento de RAM do worker deixando margem para Windows, navegador e API; exemplo inicial de até 4 GB no computador de 16 GB, a ajustar pelo benchmark. Limitar recursão de blocos, entidades após expansão, curvas discretizadas, tamanho extraído e tempo. Não usar todos os núcleos indiscriminadamente.</p>
+<p>Antes de importar, conferir espaço para original, derivados, temporários e backup. Como provisão inicial, reservar cinco vezes o tamanho dos arquivos de entrada para derivados/temporários, mas limitar também a expansão efetiva. Limpar temporários encerrados conforme retenção; não remover originais automaticamente para liberar espaço.</p>
+<p>Não há serviço AWS, assinatura de container, domínio público ou conta de hospedagem obrigatório nesta etapa.</p>
+<h2 id="plano-14">14. Segurança local e recuperação</h2>
+<h3>Sessão e fronteira de acesso</h3>
+<p>O MVP atende um operador em uma sessão Windows. Launcher gera segredo de sessão efêmero, estabelece sessão no navegador com troca de token de uso único e limpa o token da URL/histórico; a interface não recebe chaves de API. Sessão em cookie HttpOnly/SameSite, com proteção CSRF, validação de <code>Host</code>/<code>Origin</code> e CORS restrito. Conteúdo de outro site não pode emitir comandos ao motor apenas porque ele escuta em localhost. Loopback HTTP pode ser usado no perfil exclusivamente local; em rede, TLS e autenticação própria passam a ser requisitos.</p>
+<p>Não prometer proteção contra malware ou administrador com acesso à conta Windows. Pasta privada, bloqueio de tela e criptografia de disco, quando disponíveis, protegem o contexto de uso. Banco SQLite comum não é criptografado automaticamente. Não haverá cadastro/convite de clientes no MVP.</p>
+<h3>Arquivos recebidos</h3>
+<p>Limites e validação de caminhos contra traversal, links e expansão excessiva; resolver XRefs somente dentro do pacote autorizado. Não executar macros/scripts incorporados nem buscar URLs/compartilhamentos encontrados no desenho. Sanitizar texto CAD/documental em HTML. PDF não carrega recursos remotos arbitrários.</p>
+<p>Worker em processo separado, sem segredos, com limites e cancelamento, reduz falhas operacionais; não basta para conter arquivo malicioso. Para o protótipo, usar corpus controlado. Antes de receber arquivos externos recorrentes, homologar execução sob identidade restrita com acesso apenas ao diretório do job e saída de rede bloqueada, ou sandbox/VM compatível com a edição do Windows. Não presumir que Windows Sandbox, Hyper-V ou uma licença adicional estejam disponíveis. Manter essa verificação no aceite do piloto.</p>
+<h3>Backup e restauração</h3>
+<ol>
+<li>Pausar novas mutações/publicações enquanto se monta o snapshot de backup.</li>
+<li>Criar cópia consistente do SQLite pela API de backup, com verificação de integridade.</li>
+<li>Copiar artefatos imutáveis referenciados, pacotes de regras, configurações sem segredos e manifesto de hashes.</li>
+<li>Validar o pacote antes de marcá-lo como concluído; retomar trabalho local após o snapshot consistente.</li>
+<li>Copiar o pacote para outro dispositivo e registrar data/destino; arquivos de API não são incluídos.</li>
+<li>Restaurar em pasta separada, verificar hashes e abrir projeto/relatório antes de substituir a base ativa.</li>
+</ol>
+<p>Política inicial sugerida: backup ao final do dia de trabalho e antes de atualização; sete diários e quatro semanais, ajustados ao espaço. Meta interna: perder no máximo o trabalho desde o último backup confirmado; com execução diária, até um dia de trabalho. Meta de restauração de quatro horas só será assumida após exercício no PC.</p>
+<p>O sistema lembra backup vencido quando for aberto. Não supor execução enquanto o computador está desligado. Backups programados pelo Windows são configuração futura opcional. Retenção de originais e documentos depende do processo; não deletar automaticamente com base em prazo presumido.</p>
+<h3>Atualizações</h3>
+<p>Atualização é aplicada entre análises, com backup e teste de migração. Instalar versão nova ao lado da anterior; rollback de código não deve abrir banco migrado incompatível. Pacotes de regras atualizam-se explicitamente, preservando edições antigas. Não baixar e executar regra/código indicado dentro de um projeto recebido.</p>
+<h2 id="plano-15">15. IA, documentos e Jev</h2>
+<p>Integrar LLM por <code>DocumentAssistant</code> e Jev por <code>DecisionClassifier</code>, com provedores substituíveis. Entrada mínima: recorte ou texto necessário, candidatos, esquema de saída e IDs autorizados. Jev recebe apenas texto/JSON; imagens são encaminhadas somente a provedor que as suporte. O LLM propõe extrações com referências ao trecho. Jev devolve escolhas e distribuições dentro do esquema; a aplicação vincula essas escolhas às evidências previamente fornecidas, sem exigir explicação textual gerada por ele.</p>
+<p>Não liberar ferramenta de escrita, navegação arbitrária ou acesso completo aos arquivos para o modelo. Resposta passa por validação de esquema e verificação de que as evidências existem. Sem referência verificável, a sugestão fica descartada ou pendente de revisão.</p>
+<p>Provedor externo requer definição de tratamento de dados, localização, retenção, custo e contingência. O Jev da TypeSafe foi identificado: retorna decisões tipadas e probabilidades; na documentação consultada aceita texto/JSON, sem imagens, áudio ou vídeo, e não gera texto livre. Portanto, só recebe dados já extraídos; recortes visuais ficam com um LLM multimodal. Calibração não garante acerto individual. <a href="https://docs.typesafe.ai/concepts/system-one">TypeSafe — System One</a>.</p>
+<h3>Escolha inicial de API econômica</h3>
+<p>Proponho testar <strong>Gemini 2.5 Flash como LLM de referência para leitura e interpretação documental</strong>, <strong>Gemini 3.1 Flash-Lite como alternativa econômica</strong> e <strong>Jev para classificação textual delimitada</strong>. A escolha final será pelo custo por resposta correta no corpus, incluindo o tempo de revisão humana. Não há benchmark deste projeto realizado; preço e descrição do fornecedor não demonstram qualidade em COSCIP.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Candidato</th>
+<th>Uso proposto</th>
+<th align="right">Entrada por 1 milhão de tokens</th>
+<th align="right">Saída por 1 milhão de tokens</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Gemini 2.5 Flash</td>
+<td>Leitura, extração assistida e redação</td>
+<td align="right">US$ 0,30</td>
+<td align="right">US$ 2,50</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite</td>
+<td>Tarefas leves; comparar custo/qualidade</td>
+<td align="right">US$ 0,25</td>
+<td align="right">US$ 1,50</td>
+</tr>
+<tr>
+<td>Jev</td>
+<td>Escolhas tipadas sobre texto/JSON</td>
+<td align="right">US$ 0,042</td>
+<td align="right">Sem cobrança de saída na publicação consultada</td>
+</tr>
+</tbody></table></div>
+<p>Tarifas padrão consultadas em 19/09/2026, sem descontos de cache/batch, impostos ou intermediários. Saída Gemini inclui tokens de raciocínio cobrados. <a href="https://ai.google.dev/gemini-api/docs/pricing">Preços Gemini</a>, <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">anúncio e preços Jev</a>.</p>
+<p>Usar API paga com política de tratamento de dados compatível; não basear produção em cota gratuita. Preservar versão de modelo retornada e verificar descontinuações antes da implementação. Jev em acesso inicial deve permanecer substituível, sem bloquear o produto.</p>
+<p>Criar teste cego com pelo menos 100–200 tarefas representativas para comparação inicial: extração de especificação, associação de anotação, classificação, contradição e referência à fonte. Medir erro por tipo, abstenção, custo, latência e tempo humano; ampliar a avaliação antes de permitir decisões automáticas críticas.</p>
+<p>Política econômica: reutilizar texto extraído, enviar somente trechos pertinentes, limitar saída/raciocínio, evitar reenviar todas as normas, armazenar resultados por hash e permitir desligar IA. Ao habilitar IA, propor teto de US$ 0,25 por análise e US$ 5 por mês, ajustáveis pelo operador. Reservar custo antes de cada chamada; atingir o limite encaminha tarefas restantes à revisão, sem aumento automático.</p>
+<p>Para geração textual, templates locais bastam no MVP. LLM posterior pode redigir minuta usando apenas resultados selecionados e fontes preservadas; o sistema confere números e citações e marca o texto como minuta até revisão. Não enviar nem protocolar automaticamente.</p>
+<p>Disponibilidade da IA não bloqueia medições determinísticas. Guardar modelo declarado pelo fornecedor, versão do prompt, parâmetros, entrada autorizada e saída efetivamente usada. Cache não transforma inferência probabilística em prova normativa.</p>
+<h2 id="plano-16">16. API local e evolução para clientes</h2>
+<p>Manter API REST <code>/v1</code>, OpenAPI, paginação, erros padronizados e <code>202 Accepted</code> para jobs. Mesma origem para interface/API. Upload local por streaming ou partes numeradas; sessão e checksum verificados antes da importação. Download é mediado pela aplicação, resolvendo IDs internos, sem expor caminho arbitrário do disco.</p>
+<p>Recursos iniciais: sessão/configuração, projetos/revisões, uploads, diagnósticos, modelos, correções, execuções, resultados, evidências, revisões humanas, relatórios, fontes/regras, consumo e backups. Organização interna e operador fixos nesta versão; endpoints de convite, cobrança e webhooks não são implementados agora.</p>
+<p>O documento 02 separa contratos locais e capacidades futuras. IDs e fontes não mudam porque o armazenamento é local. Preservar o CBM independente de ezdxf e o motor normativo independente do CAD.</p>
+<p>Para atender equipe/clientes, abrir uma etapa própria: login e papéis, PostgreSQL/PostGIS, isolamento por organização, storage privado, workers isolados e implantação TLS. Migrar com conferência de hashes e resultados, testar concorrência e acesso cruzado. Não basta publicar o servidor local em uma porta da internet.</p>
+<h2 id="plano-17">17. Testes, corpus e metas de qualidade</h2>
+<h3>Corpus</h3>
+<p>Começar com 5–10 desenhos para descoberta. Piloto interno: buscar 20–30 casos representativos do perfil restrito, conforme disponibilidade e autorização; ampliar o corpus antes de generalizar para outros escritórios e ocupações. Número sozinho não comprova segurança: estratificar por tipo de escritório, versão CAD, disciplina, complexidade, unidades e qualidade da representação.</p>
+<p>Especialistas rotulam elementos, medidas, conexões, aplicabilidade e resultados. Divergências recebem adjudicação. Separar desenvolvimento e avaliação por projeto/escritório, evitando que revisões da mesma planta apareçam nos dois lados. Preservar um conjunto cego.</p>
+<h3>Estratégia de testes</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Categoria</th>
+<th>Casos indispensáveis</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Parser</td>
+<td>Blocos aninhados, XRefs, cotas sobrescritas, layouts, proxies, espelhamento</td>
+</tr>
+<tr>
+<td>Geometria</td>
+<td>Rotação/translação, mudança de unidade, coordenadas grandes, curvas, gaps</td>
+</tr>
+<tr>
+<td>Topologia</td>
+<td>Porta ausente, corredor interrompido, obstáculo, espaço isolado, escada incompleta</td>
+</tr>
+<tr>
+<td>Regras</td>
+<td>Fronteiras, exceções, vigência, unidades, dado ausente e aplicabilidade desconhecida</td>
+</tr>
+<tr>
+<td>Pipeline</td>
+<td>Queda de worker, duplicação, timeout, retomada, cancelamento e artefato incompleto</td>
+</tr>
+<tr>
+<td>Acesso local</td>
+<td>Host/Origin, CSRF, sessão, caminhos de arquivo, chaves de API e worker restrito</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>Upload → preparação → análise → seleção → revisão → relatório</td>
+</tr>
+<tr>
+<td>Operação</td>
+<td>Restore, rollback, quota excedida, armazenamento e rotação de segredo</td>
+</tr>
+</tbody></table></div>
+<p>Testes de propriedades verificam que transladar/rotacionar a planta não altera medidas e que conversão correta de unidade preserva resultados. Comparar GEOS/Shapely com PostGIS não é uma validação inteiramente independente quando compartilham o mesmo núcleo; usar também casos analíticos e medidas de referência.</p>
+<h3>Metas de aceite propostas, a calibrar na prova de conceito</h3>
+<ul>
+<li>100% dos resultados emitidos com regra, entradas e evidências rastreáveis.</li>
+<li>100% dos bloqueios conhecidos de unidade/aplicabilidade crítica impedem falsa conformidade.</li>
+<li>Zero acesso a arquivos fora da pasta autorizada pelos endpoints e nenhuma chave de API exposta à interface/logs; isolamento entre organizações terá suíte própria na migração multiusuário.</li>
+<li>Casos analíticos simples de comprimento dentro do erro definido no perfil geométrico, inicialmente alvo de até 1 mm; área e rotas terão limites próprios por método.</li>
+<li>Classes liberadas para aceitação automática com precisão alvo ≥99% no corpus homologado; publicar também recall, amostra, intervalo de confiança e taxa de revisão.</li>
+<li>Nenhum falso <code>PASS</code> nos casos críticos conhecidos da suíte de lançamento; isso não prova taxa zero em produção.</li>
+<li>100% dos casos de regra publicados com testes de aplicação, não aplicação, falta de dados e fronteiras pertinentes.</li>
+<li>Medir fração de modelo reconstruído corretamente e fração de itens efetivamente avaliados; não esconder dificuldade encaminhando tudo à revisão.</li>
+</ul>
+<h3>Metas de desempenho de referência</h3>
+<p>API de metadados p95 abaixo de 500 ms com um usuário e um job pesado ativo; primeira cena simplificada em até 5 s após disponibilidade do artefato; seleção abaixo de 150 ms; navegação próxima de 30 fps na máquina de referência. Validar com desenho de até 100 mil primitivas visíveis e carregamento progressivo de desenhos maiores.</p>
+<p>Para arquivo de teste de até 50 MB e 100 mil entidades antes de expansão, registrar tempo por etapa na máquina disponível; meta exploratória de 15 min para pipeline local, excluindo fila e tempo humano, em computador de referência de 32 GB. Não prometer essa duração antes de medir o corpus. Registrar também quantidade após expansão, memória máxima e tempo por estágio. Não transformar essa hipótese em SLA antes do benchmark.</p>
+<p>Disponibilidade depende do PC estar ligado e do aplicativo estar aberto. Critérios locais: reabrir sem perda de resultados confirmados, sinalizar interrupções e conseguir restaurar o último backup. SLA de serviço compartilhado é decisão futura.</p>
+<h2 id="plano-18">18. Operação no computador</h2>
+<p>Painel local: fila, estágio, duração, memória máxima quando disponível, erro, última análise, espaço em disco, último backup e consumo de API. Logs rotativos com IDs de correlação, sem conteúdo dos projetos, tokens de sessão ou chaves. Não há envio de telemetria a serviço externo por padrão.</p>
+<p>Runbooks curtos: importar DXF com unidade desconhecida; resolver XRef; cancelar job; recuperar reinício; liberar temporários; restaurar backup; configurar/revogar chave de IA; lidar com limite de gastos; reverter atualização; tratar regra errada.</p>
+<p>Ao fechar ou suspender o PC, preservar estágios concluídos e identificar interrupções. Mostrar diferença entre análise concluída, análise parcial e tarefa aguardando informação. O sistema não é um serviço 24 horas nem tem SLA de nuvem.</p>
+<p>Bug em regra publicada: impedir novas execuções da versão, identificar análises atingidas, preservar documentos antigos e criar reanálise vinculada. Monitoramento automático permanente de normas não é necessário no início; responsável técnico consulta as fontes antes de publicar novos pacotes.</p>
+<h2 id="plano-19">19. Repositório e entrega local</h2>
+<pre><code class="language-text">motor-coscip/
+  apps/
+    web/                    # React/Vite; build estático
+    api/                    # FastAPI, sessão e supervisor
+  workers/
+    local/                  # Parser DXF e estágios em processo separado
+  packages/
+    cbm_schema/ cad/ geometry/ topology/ semantics/ rules/
+    storage/                # Adaptador de filesystem
+    jobs/                   # Estado persistente e executor local
+    ai_gateway/             # Provedores e orçamento
+    viewer/ api_client/ ui/
+  normative/
+    manifests/ rules/ fixtures/
+  tests/
+    unit/ integration/ e2e/ geometry/ recovery/
+  scripts/
+    setup/ start/ stop/ backup/ restore/ package/
+  docs/
+    architecture/ decisions/ runbooks/ compatibility/
+</code></pre>
+<p>Dados reais e segredos fora do repositório. Distribuir runtime/dependências travados, avisos de licença e manifesto de versões. O launcher verifica ambiente, porta livre e pasta de dados antes de iniciar.</p>
+<p>Validação em cada entrega: tipos, testes relevantes, contratos, migrações SQLite, corpus selecionado, build da UI e restauração. Rodar localmente; CI remota opcional sem upload de plantas reais. Não depender de assinatura de serviço de CI para o produto funcionar.</p>
+<p>Publicação de nova regra exige caso normal, fronteira, falta de dados e aplicabilidade. Atualização do parser exige teste do corpus e da origem das entidades. Versões do esquema, engine e frontend permanecem no manifesto da instalação.</p>
+<h2 id="plano-20">20. Plano de execução com equipe enxuta</h2>
+<p>Organizar o trabalho em incrementos que uma pessoa experiente em desenvolvimento possa conduzir, com participação regular do usuário/especialista para conferir desenhos e regras. Conhecimento de geometria CAD continua necessário; apoio pontual pode ser preciso se o responsável pelo código não tiver essa experiência. Ferramentas de IA ajudam na implementação, mas não substituem testes e homologação.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Marco</th>
+<th>Janela indicativa</th>
+<th>Entrega</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Viabilidade local</td>
+<td>Semanas 1–4</td>
+<td>DXF real aberto, medido e rastreável no PC</td>
+</tr>
+<tr>
+<td>Primeiro protótipo utilizável</td>
+<td>Semanas 5–8</td>
+<td>Projetos, viewer, unidade, marcações e persistência</td>
+</tr>
+<tr>
+<td>Preparação e cálculos</td>
+<td>Semanas 9–14</td>
+<td>Contornos/portas assistidos e percursos em um pavimento</td>
+</tr>
+<tr>
+<td>Regras e relatório</td>
+<td>Semanas 15–20</td>
+<td>Pacote limitado homologado, evidências e relatório</td>
+</tr>
+<tr>
+<td>Piloto e recuperação</td>
+<td>Semanas 21–24</td>
+<td>Uso supervisionado, backup, interrupções e limites</td>
+</tr>
+</tbody></table></div>
+<p>São estimativas para desenvolvedor experiente com dedicação regular, corpus disponível e escopo controlado, não compromisso de prazo. Referência: primeiro protótipo em 1–2 meses; MVP assistido em aproximadamente 4–6 meses. Trabalho eventual, formação da equipe ou desenhos complexos ampliam o prazo. Uma demonstração com regra artificial pode sair antes, mas não equivale a produto normativo validado.</p>
+<p>O orçamento anterior de equipe de 5,5 pessoas não é premissa desta versão. Priorizar o marco de viabilidade antes de decidir contratação, hardware ou expansão. O tempo de construir continua sendo investimento, mesmo quando feito internamente.</p>
+<h2 id="plano-21">21. Orçamento de início e capacidade</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Despesa</th>
+<th>Plano inicial</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Hospedagem/cloud</td>
+<td>R$ 0; execução no PC</td>
+</tr>
+<tr>
+<td>Licença de banco/parser DXF/geometria</td>
+<td>R$ 0 para os componentes escolhidos</td>
+</tr>
+<tr>
+<td>SDK DWG/ODA</td>
+<td>Não contratado e não requerido</td>
+</tr>
+<tr>
+<td>GPU para IA</td>
+<td>Não requerida</td>
+</tr>
+<tr>
+<td>APIs de IA</td>
+<td>Consumo opcional, com limites configuráveis</td>
+</tr>
+<tr>
+<td>Armazenamento/backup</td>
+<td>Reutilizar o disponível; cotar unidade externa se faltar</td>
+</tr>
+<tr>
+<td>Energia</td>
+<td>Consumo incremental medido ou estimado</td>
+</tr>
+<tr>
+<td>Desenvolvimento/revisão</td>
+<td>Tempo interno ou contratação, contabilizados separadamente</td>
+</tr>
+</tbody></table></div>
+<p>Não contratar infraestrutura comercial nesta fase. Primeiro testar a máquina atual; evitar compra de hardware antes de medir memória, disco, tempo e esforço de correção humana.</p>
+<p>Exemplo de capacidade: 100 novas revisões de 50 MB representam 5 GB de originais. Com derivados quatro vezes maiores, totalizam cerca de 25 GB ativos, antes de backups e temporários. Uma análise por vez simplifica a operação; volume mensal deve ser confrontado com horas de uso e disponibilidade do PC.</p>
+<p>O orçamento de API é controlado em dólares para acompanhar a cobrança. Configuração inicial de referência ao habilitar IA: teto de US$ 0,25 por análise e US$ 5 por mês; é limite proposto, não gasto autorizado nesta conversa nem garantia de preço fixo. Reservar o custo máximo da próxima chamada antes de enviá-la, contar retries e manter reserva de chamadas cujo consumo seja desconhecido. Não aumentar limites automaticamente.</p>
+<p>Ao faltar orçamento ou internet, concluir cálculos possíveis e marcar tarefas documentais não avaliadas. Não substituir uma análise pendente por conformidade. Consumo real aparece por projeto e mês; projeções em reais usam câmbio escolhido pelo operador.</p>
+<p>Desenvolvimento deve ser orçado por horas e entregas: <code>horas de implementação × custo/hora + validação técnica + manutenção</code>. Sem equipe e taxa definidas, não estabelecer um total monetário fictício como requisito para começar. Custos de escrever o software com ferramentas de IA também são separados das APIs usadas pelo produto final.</p>
+<h2 id="plano-22">22. Riscos e condições de continuidade</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Risco</th>
+<th>Resposta no plano local</th>
+<th>Condição de revisão do escopo</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Exportação DWG → DXF perde dados</td>
+<td>Conferir inventário, fontes e geometria; registrar a derivação</td>
+<td>Elemento essencial ausente impede regra dependente</td>
+</tr>
+<tr>
+<td>Reconstrução automática insuficiente</td>
+<td>Seleção, marcação e correção assistidas</td>
+<td>Automatizar só onde reduz trabalho validado</td>
+</tr>
+<tr>
+<td>PC sem recursos</td>
+<td>Limitar job e lote, carregar cena progressivamente</td>
+<td>Reavaliar hardware após benchmark</td>
+</tr>
+<tr>
+<td>Falha de disco/reinício</td>
+<td>Backup externo, artefatos imutáveis e retomada</td>
+<td>Piloto depende de restauração demonstrada</td>
+</tr>
+<tr>
+<td>Arquivo hostil</td>
+<td>Corpus controlado e isolamento homologado</td>
+<td>Entrada externa recorrente exige fronteira de segurança</td>
+</tr>
+<tr>
+<td>Regra ou aplicabilidade ambígua</td>
+<td>Fonte, revisão humana e casos de teste</td>
+<td>Não publicar regra sem validação técnica</td>
+</tr>
+<tr>
+<td>IA incorreta ou indisponível</td>
+<td>Enriquecimento opcional e conferência de evidências</td>
+<td>Usar revisão humana; sem falsa conformidade</td>
+</tr>
+<tr>
+<td>Gasto de API inesperado</td>
+<td>Reserva por chamada, limite e medição</td>
+<td>Interromper tarefas opcionais ao atingir teto</td>
+</tr>
+<tr>
+<td>Expansão para vários usuários</td>
+<td>Manter contratos e planejar migração</td>
+<td>Não compartilhar SQLite ativo em pasta de rede</td>
+</tr>
+<tr>
+<td>Escopo cresce</td>
+<td>Foco em DXF, um pavimento e uma família inicial</td>
+<td>Novo módulo passa por marco próprio</td>
+</tr>
+</tbody></table></div>
+<h2 id="plano-23">23. Primeiros 30 dias do projeto revisado</h2>
+<p>Semana 1: confirmar hardware, pasta de dados e backup; selecionar 5–10 DXFs reais; definir entidades e perfis suportados; montar ambiente local com dependências gratuitas.</p>
+<p>Semana 2: extrair entidades/layers/blocos, registrar origem, identificar unidades e gerar inventário de perdas. Criar o contrato mínimo CBM e persistência local.</p>
+<p>Semana 3: abrir a planta no navegador, selecionar elementos e conferir medidas conhecidas. Incluir uma marcação manual, salvar, fechar e reabrir sem perder vínculos.</p>
+<p>Semana 4: demonstrar uma regra artificial claramente identificada, relatório local e restauração de backup. Medir tempo/memória no PC. Somente depois experimentar a API de IA em tarefa delimitada e com teto configurado.</p>
+<p>Critério concreto: <strong>abrir DXF, selecionar entidade, medir corretamente, mostrar a evidência e recuperar o projeto após fechar o programa</strong>. A fundação deve passar nesse teste com IA desligada.</p>
+<h2 id="plano-24">24. Evolução futura e decisões pendentes</h2>
+<p>Decidido: uso local, baixo custo, DXF primeiro, um usuário, uma análise por vez, componentes sem mensalidade de licença e APIs opcionais. Não é necessário decidir agora hospedagem, assinatura ODA, domínio, GPU ou login de clientes.</p>
+<p>Ainda necessário para implementar: configuração do computador, pasta/volume para dados, destino de backup, primeiros DXFs autorizados, perfil de ocupação e responsável pela validação normativa. Chave de API só é necessária quando formos testar IA; nunca deve ser colocada no chat ou no repositório.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Gatilho futuro</th>
+<th>Próxima mudança</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Precisa analisar vários pavimentos juntos</td>
+<td>Elevações, alinhamento, escadas e topologia vertical</td>
+</tr>
+<tr>
+<td>Precisa receber DWG sem exportação</td>
+<td>Prova de conceito LibreDWG; alternativa licenciada somente se viável</td>
+</tr>
+<tr>
+<td>Mais operadores simultâneos</td>
+<td>Autenticação/papéis, PostgreSQL e concorrência validada</td>
+</tr>
+<tr>
+<td>Atendimento remoto a clientes</td>
+<td>Implantação TLS, isolamento entre clientes, storage privado e operação</td>
+</tr>
+<tr>
+<td>Banco/consultas espaciais viram gargalo</td>
+<td>Migração para PostGIS após medição</td>
+</tr>
+<tr>
+<td>Necessidade de BIM</td>
+<td>Adaptador IFC independente</td>
+</tr>
+</tbody></table></div>
+<p>Essas evoluções preservam modelo CBM, regras e IDs, mas exigem desenvolvimento e testes adicionais. A primeira versão não será apresentada como SaaS pronto nem motor capaz de analisar todo o COSCIP.</p>
+<h2 id="plano-25">25. Custo estimado de analisar um projeto no seu computador</h2>
+<p><strong>Na versão local, o cenário médio prevê cerca de R$ 0,40 de API de LLM por análise. Com reserva de 30% e energia hipotética, a referência fica em R$ 0,54. Com Jev opcional, aproximadamente R$ 0,57.</strong> Não há rateio obrigatório de servidor em nuvem ou licença DWG, pois esses componentes foram retirados do início.</p>
+<p>São simulações, não medições: o produto ainda será construído. Câmbio de R$ 5/US$, energia a R$ 1/kWh e potência incremental de 80 W são parâmetros ilustrativos, não cotações atuais nem consumo medido do computador. Desenvolvimento, tempo humano, hardware e backup são contabilizados à parte.</p>
+<h3>25.1 Premissa de um projeto</h3>
+<p>Uma submissão/revisão dentro do perfil suportado, uma análise completa e um relatório. Para o MVP, a topologia se limita a um pavimento. O porte abaixo varia pelo volume de entidades e documentos; um projeto complexo pode estar fora do perfil e não fica automaticamente suportado por custar mais tokens.</p>
+<p>Tokens incluem todas as chamadas, contexto reenviado e saída/raciocínio cobrado. Nova revisão gera novo consumo; cache reduz apenas etapas que permaneçam válidas. API continua sendo remota: somente o núcleo determinístico opera integralmente offline.</p>
+<h3>25.2 Cálculo de IA para o projeto médio</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Cálculo</th>
+<th align="right">Custo</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Gemini 2.5 Flash — entrada</td>
+<td>100.000 tokens × US$ 0,30 / milhão</td>
+<td align="right">US$ 0,0300</td>
+</tr>
+<tr>
+<td>Gemini 2.5 Flash — saída/raciocínio</td>
+<td>20.000 tokens × US$ 2,50 / milhão</td>
+<td align="right">US$ 0,0500</td>
+</tr>
+<tr>
+<td>LLM sozinho</td>
+<td>Soma</td>
+<td align="right"><strong>US$ 0,0800 = R$ 0,40</strong></td>
+</tr>
+<tr>
+<td>Jev opcional</td>
+<td>100.000 tokens de entrada × US$ 0,042 / milhão</td>
+<td align="right">US$ 0,0042 = R$ 0,021</td>
+</tr>
+<tr>
+<td>LLM + Jev, sem reserva/energia</td>
+<td>Soma</td>
+<td align="right"><strong>US$ 0,0842 ≈ R$ 0,42</strong></td>
+</tr>
+</tbody></table></div>
+<p>Tarifas públicas consultadas em 19/09/2026, antes de impostos, spread e intermediários: <a href="https://ai.google.dev/gemini-api/docs/pricing">Gemini</a>, <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">Jev</a>. Jev não é necessário em todas as análises. Com o mesmo volume no Gemini 3.1 Flash-Lite, a parcela LLM seria US$ 0,055 = R$ 0,275; a decisão de substituir depende do teste de qualidade.</p>
+<h3>25.3 Cenários locais, sem Jev por padrão</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Premissa</th>
+<th align="right">Simples</th>
+<th align="right">Médio</th>
+<th align="right">Complexo, se suportado</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Entrada LLM</td>
+<td align="right">25 mil tokens</td>
+<td align="right">100 mil tokens</td>
+<td align="right">500 mil tokens</td>
+</tr>
+<tr>
+<td>Saída/raciocínio LLM</td>
+<td align="right">5 mil tokens</td>
+<td align="right">20 mil tokens</td>
+<td align="right">100 mil tokens</td>
+</tr>
+<tr>
+<td>API Gemini 2.5 Flash</td>
+<td align="right">R$ 0,10</td>
+<td align="right">R$ 0,40</td>
+<td align="right">R$ 2,00</td>
+</tr>
+<tr>
+<td>API com reserva de 30%</td>
+<td align="right">R$ 0,13</td>
+<td align="right">R$ 0,52</td>
+<td align="right">R$ 2,60</td>
+</tr>
+<tr>
+<td>Tempo local hipotético</td>
+<td align="right">5 min</td>
+<td align="right">15 min</td>
+<td align="right">45 min</td>
+</tr>
+<tr>
+<td>Energia incremental, 80 W e R$ 1/kWh</td>
+<td align="right">R$ 0,0067</td>
+<td align="right">R$ 0,0200</td>
+<td align="right">R$ 0,0600</td>
+</tr>
+<tr>
+<td><strong>API com reserva + energia</strong></td>
+<td align="right"><strong>R$ 0,14</strong></td>
+<td align="right"><strong>R$ 0,54</strong></td>
+<td align="right"><strong>R$ 2,66</strong></td>
+</tr>
+<tr>
+<td>Com Jev também e mesma reserva</td>
+<td align="right">R$ 0,14</td>
+<td align="right">R$ 0,57</td>
+<td align="right">R$ 2,80</td>
+</tr>
+</tbody></table></div>
+<p>Contas usam valores integrais e são arredondadas no resultado. Para Jev, foram adotados respectivamente 25 mil, 100 mil e 500 mil tokens. O cenário complexo ultrapassa o teto inicial proposto de US$ 0,25 de API por análise; nesse limite, a IA para e as tarefas restantes seguem para revisão. Só processá-lo integralmente com limite explicitamente ajustado.</p>
+<h3>25.4 Fórmula de energia e custo completo</h3>
+<p><code>energia incremental = potência adicional em kW × horas de execução × tarifa por kWh</code>.</p>
+<p>No cenário médio: <code>0,080 × 0,25 × R$ 1 = R$ 0,02</code>. Se o computador ficar ligado exclusivamente para o sistema, contabilizar também sua potência de base e horas ociosas. Se já estaria ligado, usar potência incremental medida. Ler/escrever no disco não gera fatura por operação, mas há desgaste e capacidade consumida.</p>
+<p><code>custo completo = APIs efetivamente cobradas + energia + backup + depreciação + revisão humana + manutenção + amortização do desenvolvimento</code>.</p>
+<p>Exemplo de revisão humana, sem afirmar preço de mercado: 30 minutos a custo interno de R$ 100/h acrescentam R$ 50. Nesse exemplo, R$ 0,54 + R$ 50 = R$ 50,54, antes das outras parcelas. O custo computacional pequeno não elimina a validação profissional.</p>
+<h3>25.5 Simulação mensal</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th align="right">Projetos médios/mês</th>
+<th align="right">APIs com reserva</th>
+<th align="right">Energia incremental hipotética</th>
+<th align="right">Total dessas duas parcelas</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">10</td>
+<td align="right">R$ 5,20</td>
+<td align="right">R$ 0,20</td>
+<td align="right"><strong>R$ 5,40</strong></td>
+</tr>
+<tr>
+<td align="right">50</td>
+<td align="right">R$ 26,00</td>
+<td align="right">R$ 1,00</td>
+<td align="right"><strong>R$ 27,00</strong></td>
+</tr>
+<tr>
+<td align="right">100</td>
+<td align="right">R$ 52,00</td>
+<td align="right">R$ 2,00</td>
+<td align="right"><strong>R$ 54,00</strong></td>
+</tr>
+</tbody></table></div>
+<p>Valores sem Jev. Com Jev no volume médio, acrescentar aproximadamente R$ 0,0273 por projeto incluindo a reserva. O limite mensal proposto de US$ 5 corresponde a R$ 25 neste câmbio de exemplo: a linha de 100 projetos exige aumentá-lo; a de 50 pode atingi-lo se consumir toda a reserva. A tabela não autoriza aumento automático e não transforma reserva em cobrança real.</p>
+<h3>25.6 Se usar o sistema com IA desligada</h3>
+<p><strong>API: R$ 0. Hospedagem: R$ 0. Licença do núcleo selecionado: R$ 0.</strong> Geometria, regras já implementadas, evidências e relatórios por template continuam disponíveis. Interpretação de documentos e ambiguidades fica com o usuário. Restam energia, armazenamento, backup, tempo de construção e revisão.</p>
+<p>Para começar, a referência é <strong>R$ 0 de mensalidade obrigatória do software/servidor e aproximadamente R$ 0,54 por projeto médio nas parcelas simuladas de API com reserva e energia</strong>. Contratar DWG comercial ou nuvem será uma decisão futura, acompanhada de novo orçamento.</p>
+</article>
+<article aria-label="Dados, APIs e regras"><h1 id="contratos">Motor CAD/COSCIP — Contratos de implementação</h1>
+<p>Versão 2.0 • 19 de setembro de 2026 — execução local</p>
+<p>Perfil implementado primeiro: um usuário, DXF, SQLite, arquivos locais e um job pesado por vez. Multiusuário, nuvem, DWG nativo e PostGIS são extensões futuras. Este documento especifica o desenho dos contratos. Exemplos são ilustrativos, não arquivos de configuração prontos para produção. IDs curtos facilitam a leitura; na implementação usar UUIDs. Valores de exemplo não representam exigências reais do CBMERJ.</p>
+<h2 id="contratos-1">1. Invariantes do domínio</h2>
+<ol>
+<li>Original, submissão concluída, snapshot CBM, análise encerrada e pacote de regras publicado são imutáveis.</li>
+<li>Projeto tem múltiplas revisões; revisão reúne um manifesto de arquivos, dependências e fatos declarados.</li>
+<li>Uma análise referencia exatamente um snapshot CBM, um snapshot de contexto, um perfil de tolerâncias e um pacote de regras.</li>
+<li>Correção humana gera novo snapshot e invalida a atualidade, não o histórico, das análises anteriores.</li>
+<li>Toda entidade ou informação de cliente tem organização associada; referências internas respeitam a mesma organização.</li>
+<li>Medidas são armazenadas em SI com método e incerteza. UI localiza números sem alterar o valor de cálculo.</li>
+<li><code>null</code>, desconhecido, não aplicável e zero são valores distintos.</li>
+<li>Resultado de regra é distinto de sucesso técnico do job e de decisão do revisor.</li>
+<li>Regra de produção exige fonte, versão, testes, escopo de aplicabilidade e aprovação técnica.</li>
+<li>Nenhuma ausência de registro pode se transformar implicitamente em conformidade.</li>
+</ol>
+<h2 id="contratos-2">2. Modelo relacional lógico</h2>
+<p>Todas as tabelas de projeto incluem <code>tenant_id</code>, ID, datas e autor quando pertinente. No perfil local, uma organização e um operador são criados na instalação. As colunas abaixo são adicionais, não DDL completo. Dados normativos usam tabelas próprias no mesmo SQLite; a expressão “global” indica escopo do dicionário/pacote, não um schema PostgreSQL. As tabelas de membros e permissões detalhadas ficam para a expansão.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tabela</th>
+<th>Campos principais e vínculos</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>organizations</code></td>
+<td>nome, estado, política de retenção, quota</td>
+</tr>
+<tr>
+<td><code>users</code></td>
+<td>operador local, nome, estado, identity_source=LOCAL_OS; OIDC futuramente</td>
+</tr>
+<tr>
+<td><code>memberships</code> — futura</td>
+<td>organização, usuário, papel, estado; não implementar convites no MVP</td>
+</tr>
+<tr>
+<td><code>project_members</code> — futura</td>
+<td>projeto, membro, permissões específicas para uso compartilhado</td>
+</tr>
+<tr>
+<td><code>projects</code></td>
+<td>nome, referência externa, endereço mínimo, responsável</td>
+</tr>
+<tr>
+<td><code>submission_revisions</code></td>
+<td>projeto, número, anterior, estado, manifesto, checksum</td>
+</tr>
+<tr>
+<td><code>file_objects</code></td>
+<td>storage_backend=LOCAL_FS, chave relativa interna, versão lógica, SHA-256, tamanho, MIME e inspeção</td>
+</tr>
+<tr>
+<td><code>revision_files</code></td>
+<td>revisão, arquivo, disciplina, função, nome lógico</td>
+</tr>
+<tr>
+<td><code>file_dependencies</code></td>
+<td>arquivo de origem, referência, arquivo resolvido, estado</td>
+</tr>
+<tr>
+<td><code>drawings</code></td>
+<td>arquivo, adaptador, versão CAD, diagnóstico, inventário</td>
+</tr>
+<tr>
+<td><code>coordinate_frames</code></td>
+<td>unidade original, escala, matriz, inversa, referência local</td>
+</tr>
+<tr>
+<td><code>floor_frames</code></td>
+<td>pavimento, desenho, recorte, transformação para a edificação</td>
+</tr>
+<tr>
+<td><code>model_snapshots</code></td>
+<td>revisão, pai, esquema CBM, hash, configuração, estado de qualidade</td>
+</tr>
+<tr>
+<td><code>buildings</code></td>
+<td>snapshot, identidade da edificação e contexto</td>
+</tr>
+<tr>
+<td><code>floors</code></td>
+<td>snapshot, edificação, nome, elevação, frame</td>
+</tr>
+<tr>
+<td><code>source_entities</code></td>
+<td>desenho, handle, tipo, bbox, layer, referência ao dump bruto</td>
+</tr>
+<tr>
+<td><code>source_instances</code></td>
+<td>entidade, caminho de blocos/XRefs, transformação, layout</td>
+</tr>
+<tr>
+<td><code>elements</code></td>
+<td>snapshot, pavimento, classe, geometry_wkb BLOB, bbox, frame, estado semântico</td>
+</tr>
+<tr>
+<td><code>element_sources</code></td>
+<td>elemento, entidade/instância, papel na reconstrução</td>
+</tr>
+<tr>
+<td><code>spaces</code></td>
+<td>elemento, uso, área, limite, qualidade de fechamento</td>
+</tr>
+<tr>
+<td><code>openings</code></td>
+<td>elemento, espaço A/B, geometria de passagem, largura livre</td>
+</tr>
+<tr>
+<td><code>equipment</code></td>
+<td>elemento, família, identificação e propriedades específicas</td>
+</tr>
+<tr>
+<td><code>connections</code></td>
+<td>snapshot, nós de origem/destino, tipo, transitabilidade, evidência</td>
+</tr>
+<tr>
+<td><code>facts</code></td>
+<td>sujeito, propriedade, valor tipado, unidade, procedência, evidência, validade</td>
+</tr>
+<tr>
+<td><code>measurements</code></td>
+<td>snapshot, sujeitos, valor, intervalo de erro, método, dependências</td>
+</tr>
+<tr>
+<td><code>routes</code></td>
+<td>snapshot, origem/destino, geometria, custo, algoritmo e restrições</td>
+</tr>
+<tr>
+<td><code>corrections</code></td>
+<td>snapshot base, operação, valor anterior/novo, justificativa, autor</td>
+</tr>
+<tr>
+<td><code>semantic_mappings</code></td>
+<td>escopo, assinatura, classe proposta, estado e versão</td>
+</tr>
+<tr>
+<td><code>normative_sources</code></td>
+<td>documento, edição, ato, item, vigência, URL e arquivo hash</td>
+</tr>
+<tr>
+<td><code>rule_versions</code></td>
+<td>regra estável, versão, DSL, hash, cobertura e aprovação</td>
+</tr>
+<tr>
+<td><code>parameter_sets</code></td>
+<td>tabelas e parâmetros aprovados com fonte e versão</td>
+</tr>
+<tr>
+<td><code>rule_packages</code></td>
+<td>manifesto de versões, jurisdição, contexto e hash</td>
+</tr>
+<tr>
+<td><code>executions</code></td>
+<td>tipo, análise, estado, chave idempotente, pai, runner=LOCAL_PROCESS</td>
+</tr>
+<tr>
+<td><code>execution_stages</code></td>
+<td>execução, estágio, attempt_token, lease, heartbeat, processo, recursos, artefatos e erro</td>
+</tr>
+<tr>
+<td><code>analyses</code></td>
+<td>revisão, modelo, contexto, regras, tolerâncias, manifesto de runtime</td>
+</tr>
+<tr>
+<td><code>rule_results</code></td>
+<td>análise, regra, sujeito, aplicabilidade, resultado, valores e motivo</td>
+</tr>
+<tr>
+<td><code>evidence</code></td>
+<td>tipo, arquivo/entidade/página, geometria, cálculo, hash e proveniência</td>
+</tr>
+<tr>
+<td><code>result_evidence</code></td>
+<td>resultado, evidência, função: entrada, requisito, cálculo, imagem</td>
+</tr>
+<tr>
+<td><code>review_decisions</code></td>
+<td>resultado, decisão humana, motivo, autor e evidência adicional</td>
+</tr>
+<tr>
+<td><code>reports</code></td>
+<td>análise, snapshot de revisão humana, template, artefato, hash</td>
+</tr>
+<tr>
+<td><code>job_commands</code></td>
+<td>intenção persistente, agregado, payload versionado, chave idempotente, estado</td>
+</tr>
+<tr>
+<td><code>audit_events</code></td>
+<td>ator, ação, recurso, correlação, data e diferenças permitidas</td>
+</tr>
+<tr>
+<td><code>usage_records</code></td>
+<td>execução, serviço/modelo, unidade consumida, quantidade, tarifa versionada</td>
+</tr>
+<tr>
+<td><code>budget_reservations</code></td>
+<td>projeto, mês, request_id, valor máximo reservado, liquidado/pendente</td>
+</tr>
+<tr>
+<td><code>backup_records</code></td>
+<td>snapshot, manifesto, destino cadastrado, checksums, estado, data</td>
+</tr>
+<tr>
+<td><code>local_settings</code></td>
+<td>pasta de dados, retenção, limites, modelo e IDs de credencial; sem chaves em texto</td>
+</tr>
+</tbody></table></div>
+<p>Redes hidráulicas futuras acrescentam <code>network_nodes</code>, <code>network_edges</code>, condições de contorno, materiais e cenários de cálculo. IFC acrescenta GlobalId e propriedades BIM, preservando o mesmo elemento CBM.</p>
+<h3>Integridade e índices</h3>
+<ul>
+<li>Unique <code>(tenant_id, project_id, revision_number)</code>.</li>
+<li>Unique <code>(tenant_id, analysis_id, rule_version_id, subject_id, evaluation_key)</code> para impedir resultado duplicado.</li>
+<li>Chave estrangeira composta com <code>tenant_id</code> nas relações de negócio; não aceitar referência de outra organização.</li>
+<li>Índices B-tree <code>(tenant_id, project_id, created_at)</code>, <code>(tenant_id, analysis_id, status)</code> e <code>(tenant_id, snapshot_id, floor_id)</code>. Geometria em WKB/bbox; índice espacial transitório no worker. GiST é exclusivo da expansão PostGIS.</li>
+<li>Snapshot e pavimento são filtros obrigatórios de consulta espacial.</li>
+<li>Entidades brutas completas podem ficar em blocos de arquivo; banco guarda índices e referências necessárias.</li>
+<li>SQLite não tem a política RLS deste projeto: autorização e escopo são impostos pelos repositórios da aplicação. O perfil local é monousuário; multiusuário exige nova arquitetura de acesso.</li>
+<li>O servidor define o perfil e a organização locais; nenhum <code>tenant_id</code> fornecido pelo cliente altera o contexto. Publicação normativa registra o revisor local; papéis segregados entram na expansão.</li>
+</ul>
+<h2 id="contratos-3">3. Contrato de origem CAD</h2>
+<pre><code class="language-json">{
+  &quot;schema_version&quot;: &quot;cad-source/1.0&quot;,
+  &quot;id&quot;: &quot;instance-001&quot;,
+  &quot;file_object_id&quot;: &quot;file-001&quot;,
+  &quot;file_sha256&quot;: &quot;HASH_SHA256_DO_ARQUIVO&quot;,
+  &quot;drawing_id&quot;: &quot;drawing-001&quot;,
+  &quot;layout&quot;: &quot;Model&quot;,
+  &quot;source_handle&quot;: &quot;7AB3&quot;,
+  &quot;entity_type&quot;: &quot;INSERT&quot;,
+  &quot;instance_path&quot;: [&quot;xref:A@82F&quot;, &quot;block:B@1A3&quot;, &quot;entity:7AB3&quot;],
+  &quot;layer&quot;: &quot;INC_EXT&quot;,
+  &quot;block_name&quot;: &quot;EXT_ABC&quot;,
+  &quot;coordinate_frame_id&quot;: &quot;frame-001&quot;,
+  &quot;world_transform&quot;: [
+    [1, 0, 0, 24.738],
+    [0, 1, 0, 17.421],
+    [0, 0, 1, 0],
+    [0, 0, 0, 1]
+  ],
+  &quot;extraction_quality&quot;: &quot;SUPPORTED&quot;,
+  &quot;raw_artifact_id&quot;: &quot;raw-001&quot;
+}
+</code></pre>
+<p>Hash em formato simbólico apenas no exemplo. Na implementação, validar tamanho/formato e comparar o conteúdo. Manter chave estável dentro da revisão; entre revisões, handles são evidência para correspondência, não garantia de identidade.</p>
+<h2 id="contratos-4">4. Contrato CBM</h2>
+<pre><code class="language-json">{
+  &quot;schema_version&quot;: &quot;cbm/1.0&quot;,
+  &quot;snapshot_id&quot;: &quot;model-003&quot;,
+  &quot;tenant_id&quot;: &quot;org-001&quot;,
+  &quot;project_id&quot;: &quot;project-001&quot;,
+  &quot;submission_revision_id&quot;: &quot;revision-002&quot;,
+  &quot;parent_snapshot_id&quot;: &quot;model-002&quot;,
+  &quot;units&quot;: {&quot;length&quot;: &quot;m&quot;, &quot;area&quot;: &quot;m2&quot;, &quot;angle&quot;: &quot;rad&quot;},
+  &quot;tolerance_profile_id&quot;: &quot;tolerances-001&quot;,
+  &quot;context_snapshot_id&quot;: &quot;context-004&quot;,
+  &quot;floors&quot;: [
+    {
+      &quot;id&quot;: &quot;floor-001&quot;,
+      &quot;name&quot;: &quot;Térreo&quot;,
+      &quot;elevation_m&quot;: 0,
+      &quot;coordinate_frame_id&quot;: &quot;frame-001&quot;,
+      &quot;alignment_status&quot;: &quot;CONFIRMED&quot;
+    }
+  ],
+  &quot;elements&quot;: [
+    {
+      &quot;id&quot;: &quot;door-017&quot;,
+      &quot;floor_id&quot;: &quot;floor-001&quot;,
+      &quot;class&quot;: &quot;DOOR&quot;,
+      &quot;geometry_ref&quot;: &quot;geometry-017&quot;,
+      &quot;source_instance_ids&quot;: [&quot;instance-001&quot;],
+      &quot;semantic_status&quot;: &quot;HUMAN_CONFIRMED&quot;,
+      &quot;properties&quot;: {
+        &quot;clear_width&quot;: {
+          &quot;value&quot;: 0.87,
+          &quot;unit&quot;: &quot;m&quot;,
+          &quot;method&quot;: &quot;opening-clear-width/1.0&quot;,
+          &quot;uncertainty_abs&quot;: 0.002,
+          &quot;provenance&quot;: &quot;CALCULATED&quot;,
+          &quot;evidence_ids&quot;: [&quot;evidence-100&quot;]
+        },
+        &quot;fire_resistance&quot;: {
+          &quot;value&quot;: null,
+          &quot;unit&quot;: &quot;min&quot;,
+          &quot;quality&quot;: &quot;MISSING&quot;
+        }
+      },
+      &quot;connects&quot;: [&quot;space-004&quot;, &quot;corridor-002&quot;]
+    }
+  ],
+  &quot;quality&quot;: {
+    &quot;units_confirmed&quot;: true,
+    &quot;unresolved_xrefs&quot;: 0,
+    &quot;unsupported_entity_count&quot;: 3,
+    &quot;unconfirmed_topology_count&quot;: 1,
+    &quot;blocking_issue_ids&quot;: [&quot;issue-topology-001&quot;]
+  }
+}
+</code></pre>
+<p>Em produção, arrays volumosos são paginados e referenciados por manifesto; este JSON resume o contrato lógico. Fatos declarados devem registrar autor, data e documento de suporte. Ocupação, altura e área podem existir por setor: não reduzir edificação de uso misto a uma única string.</p>
+<p>Versão major muda contratos incompatíveis. Adaptadores devem migrar snapshots para uma nova versão sem sobrescrever o original, e versões antigas permanecem legíveis enquanto houver relatórios retidos.</p>
+<h2 id="contratos-5">5. Contrato de execução e reprodutibilidade</h2>
+<pre><code class="language-json">{
+  &quot;execution_id&quot;: &quot;execution-010&quot;,
+  &quot;analysis_id&quot;: &quot;analysis-010&quot;,
+  &quot;state&quot;: &quot;RUNNING&quot;,
+  &quot;stage&quot;: &quot;TOPOLOGY&quot;,
+  &quot;manifest&quot;: {
+    &quot;input_manifest_hash&quot;: &quot;HASH_ENTRADAS&quot;,
+    &quot;model_snapshot_id&quot;: &quot;model-003&quot;,
+    &quot;context_snapshot_id&quot;: &quot;context-004&quot;,
+    &quot;rule_package_id&quot;: &quot;ruleset-007&quot;,
+    &quot;tolerance_profile_id&quot;: &quot;tolerances-001&quot;,
+    &quot;parser_build&quot;: &quot;parser/BUILD_HOMOLOGADO&quot;,
+    &quot;geometry_build&quot;: &quot;geometry/BUILD_HOMOLOGADO&quot;,
+    &quot;rules_build&quot;: &quot;rules/BUILD_HOMOLOGADO&quot;,
+    &quot;semantic_dictionary_version&quot;: &quot;dictionary-003&quot;,
+    &quot;worker_package_hash&quot;: &quot;sha256:HASH_DO_PACOTE_LOCAL&quot;,
+    &quot;runtime_platform&quot;: &quot;windows-x86_64&quot;,
+    &quot;sqlite_runtime_version&quot;: &quot;VERSAO_HOMOLOGADA&quot;,
+    &quot;deterministic_seed&quot;: 0
+  },
+  &quot;progress&quot;: {&quot;completed_stages&quot;: 4, &quot;planned_stages&quot;: 8},
+  &quot;started_at&quot;: &quot;2026-09-19T12:00:00Z&quot;
+}
+</code></pre>
+<p>Também preservar dependências nativas, runtime Python/GEOS/SQLite, compilador quando relevante, algoritmos, parâmetros, correções, fontes normativas e respostas de IA efetivamente usadas. A reexecução determinística é comparada semanticamente e por tolerância; bitwise apenas onde tecnicamente garantido.</p>
+<p>Estados: <code>CREATED → QUEUED → RUNNING → SUCCEEDED | PARTIAL | WAITING_INPUT | FAILED | CANCELLED</code>. Cancelamento pode passar por <code>CANCEL_REQUESTED</code>. Falha técnica guarda código estável, estágio, possibilidade de retry e mensagem segura para o usuário.</p>
+<p>Resultado computacional <code>SUCCEEDED</code> não implica projeto conforme. <code>PARTIAL</code> exige manifesto dos estágios concluídos e cobertura; o relatório recebe marcação visível.</p>
+<h2 id="contratos-6">6. API local proposta</h2>
+<p>Prefixo <code>/v1</code>, mesma origem do frontend e sessão local. O perfil padrão permite somente loopback; rotas não equivalem a uma API pública exposta à internet. O backend resolve organização e operador, valida Host/Origin e protege mutações contra CSRF. Escritas críticas exigem idempotência ou versão esperada.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Método e rota</th>
+<th>Resposta / comportamento</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>GET /local/status</code></td>
+<td>Saúde, versão, pasta lógica, fila e backup; sem segredos</td>
+</tr>
+<tr>
+<td><code>POST /local/session/exchange</code></td>
+<td>Troca token efêmero de uso único por sessão, entregue pelo launcher</td>
+</tr>
+<tr>
+<td><code>GET /me</code></td>
+<td>Operador e organização locais</td>
+</tr>
+<tr>
+<td><code>GET /settings</code></td>
+<td>Configuração redigida; não devolve chaves de API</td>
+</tr>
+<tr>
+<td><code>PATCH /settings</code></td>
+<td>Limites e provedores; alteração auditada</td>
+</tr>
+<tr>
+<td><code>POST /credentials</code></td>
+<td>Cadastra chave no armazenamento protegido, retorna ID e máscara</td>
+</tr>
+<tr>
+<td><code>DELETE /credentials/{id}</code></td>
+<td>Remove credencial local; não presume revogação no fornecedor</td>
+</tr>
+<tr>
+<td><code>GET /projects</code></td>
+<td>Lista paginada e filtrada</td>
+</tr>
+<tr>
+<td><code>POST /projects</code></td>
+<td><code>201</code> projeto criado</td>
+</tr>
+<tr>
+<td><code>PATCH /projects/{id}</code></td>
+<td>Metadados com controle de concorrência</td>
+</tr>
+<tr>
+<td><code>POST /projects/{id}/revisions</code></td>
+<td>Nova revisão em rascunho</td>
+</tr>
+<tr>
+<td><code>POST /revisions/{id}/uploads</code></td>
+<td>Sessão local, tamanho máximo e limites; nenhuma URL S3</td>
+</tr>
+<tr>
+<td><code>PUT /uploads/{id}/parts/{number}</code></td>
+<td>Parte numerada com checksum, gravada em streaming</td>
+</tr>
+<tr>
+<td><code>POST /uploads/{id}/complete</code></td>
+<td>Confere partes/hash e inicia inspeção; não significa arquivo liberado</td>
+</tr>
+<tr>
+<td><code>POST /uploads/{id}/abort</code></td>
+<td>Cancela sessão e agenda limpeza</td>
+</tr>
+<tr>
+<td><code>POST /revisions/{id}/seal</code></td>
+<td>Congela manifesto validado</td>
+</tr>
+<tr>
+<td><code>POST /revisions/{id}/imports</code></td>
+<td><code>202</code> job local de importação DXF</td>
+</tr>
+<tr>
+<td><code>GET /executions/{id}</code></td>
+<td>Estado e progresso por estágio</td>
+</tr>
+<tr>
+<td><code>GET /executions/{id}/events</code></td>
+<td>SSE com sequência, ou polling de estado como alternativa</td>
+</tr>
+<tr>
+<td><code>POST /executions/{id}/cancel</code></td>
+<td><code>202</code> intenção de cancelamento</td>
+</tr>
+<tr>
+<td><code>GET /revisions/{id}/diagnostics</code></td>
+<td>Perdas e ações de resolução</td>
+</tr>
+<tr>
+<td><code>GET /models/{id}</code></td>
+<td>Manifesto CBM e qualidade</td>
+</tr>
+<tr>
+<td><code>GET /models/{id}/floors</code></td>
+<td>Pavimento/frames; MVP analisa um pavimento por execução</td>
+</tr>
+<tr>
+<td><code>GET /models/{id}/elements</code></td>
+<td>Filtros <code>floor</code>, <code>bbox</code>, classe e cursor</td>
+</tr>
+<tr>
+<td><code>GET /models/{id}/scene</code></td>
+<td>Manifesto visual e IDs de artefatos locais</td>
+</tr>
+<tr>
+<td><code>GET /artifacts/{id}/content</code></td>
+<td>Streaming autenticado do arquivo/tile; sem caminhos livres</td>
+</tr>
+<tr>
+<td><code>GET /elements/{id}/sources</code></td>
+<td>Entidades/instâncias e origem</td>
+</tr>
+<tr>
+<td><code>POST /models/{id}/corrections</code></td>
+<td>Correção com snapshot derivado</td>
+</tr>
+<tr>
+<td><code>POST /models/{id}/confirmations</code></td>
+<td>Confirmação contextual auditada</td>
+</tr>
+<tr>
+<td><code>POST /analyses</code></td>
+<td><code>202</code> análise de modelo e pacote congelados</td>
+</tr>
+<tr>
+<td><code>GET /analyses/{id}</code></td>
+<td>Resumo, cobertura, atualidade e modo de IA</td>
+</tr>
+<tr>
+<td><code>GET /analyses/{id}/results</code></td>
+<td>Estados, sistemas e paginação</td>
+</tr>
+<tr>
+<td><code>GET /results/{id}/evidence</code></td>
+<td>Entradas, cálculo, fonte e recortes</td>
+</tr>
+<tr>
+<td><code>POST /results/{id}/reviews</code></td>
+<td>Decisão append-only com justificativa</td>
+</tr>
+<tr>
+<td><code>POST /reports</code></td>
+<td><code>202</code> relatório local de snapshots fixos</td>
+</tr>
+<tr>
+<td><code>GET /reports/{id}</code></td>
+<td>Metadados e artefato de download</td>
+</tr>
+<tr>
+<td><code>GET /rule-packages</code></td>
+<td>Pacotes disponíveis e contexto suportado</td>
+</tr>
+<tr>
+<td><code>POST /rule-packages/{id}/publish</code></td>
+<td>Validações, testes e revisão técnica registrados</td>
+</tr>
+<tr>
+<td><code>GET /projects/{id}/usage</code></td>
+<td>Consumo e estimativa, separando reservado e liquidado</td>
+</tr>
+<tr>
+<td><code>POST /backups</code></td>
+<td>Job de cópia consistente para destino previamente cadastrado</td>
+</tr>
+<tr>
+<td><code>GET /backups/{id}</code></td>
+<td>Manifesto, checksums, estado e data</td>
+</tr>
+</tbody></table></div>
+<p>Restauração ocorre pelo launcher em modo de manutenção, sem API de produção ativa escrevendo na base. Caminhos de dados/backup são configurados localmente e validados contra a pasta permitida; a API não aceita qualquer caminho enviado por uma página.</p>
+<h3>Exemplo de solicitação de análise local</h3>
+<pre><code class="language-http">POST /v1/analyses
+Idempotency-Key: project-001-model-003-request-01
+Content-Type: application/json
+
+{
+  &quot;project_id&quot;: &quot;project-001&quot;,
+  &quot;submission_revision_id&quot;: &quot;revision-002&quot;,
+  &quot;model_snapshot_id&quot;: &quot;model-003&quot;,
+  &quot;context_snapshot_id&quot;: &quot;context-004&quot;,
+  &quot;rule_package_id&quot;: &quot;ruleset-007&quot;,
+  &quot;mode&quot;: &quot;ASSISTED&quot;,
+  &quot;ai_enabled&quot;: false,
+  &quot;ai_policy_id&quot;: null
+}
+</code></pre>
+<p>Sem IA por padrão. Se habilitada, <code>ai_policy_id</code> aponta para limites, tarefas permitidas, provedor e credencial já cadastrada. O servidor aplica o teto restante mesmo se o cliente enviar outro valor.</p>
+<p>Mesmo token e mesmo corpo devolvem a mesma operação; token repetido com outro corpo gera conflito. Servidor valida coerência das referências antes de criar job.</p>
+<pre><code class="language-json">{
+  &quot;analysis_id&quot;: &quot;analysis-010&quot;,
+  &quot;execution_id&quot;: &quot;execution-010&quot;,
+  &quot;state&quot;: &quot;QUEUED&quot;,
+  &quot;runner&quot;: &quot;LOCAL_PROCESS&quot;,
+  &quot;status_url&quot;: &quot;/v1/executions/execution-010&quot;
+}
+</code></pre>
+<h3>Erro estruturado</h3>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;urn:coscip:error:input-required&quot;,
+  &quot;title&quot;: &quot;A unidade do desenho precisa ser confirmada&quot;,
+  &quot;status&quot;: 409,
+  &quot;code&quot;: &quot;DRAWING_UNIT_UNCONFIRMED&quot;,
+  &quot;trace_id&quot;: &quot;trace-001&quot;,
+  &quot;resource_id&quot;: &quot;drawing-001&quot;,
+  &quot;required_action&quot;: &quot;CONFIRM_DRAWING_UNIT&quot;
+}
+</code></pre>
+<p>Padrões: <code>400</code> malformado; <code>401</code> sem sessão; <code>403/404</code> autorização; <code>409</code> conflito; <code>413</code> arquivo grande; <code>422</code> domínio; <code>429</code> limite de consumo; <code>503</code> indisponibilidade transitória. Erros locais incluem <code>DISK_SPACE_LOW</code>, <code>WORKER_INTERRUPTED</code>, <code>UNSUPPORTED_DWG_INPUT</code>, <code>AI_BUDGET_EXCEEDED</code> e <code>BACKUP_INCOMPLETE</code>. Nenhum deles vira conformidade.</p>
+<h3>Contratos futuros, não implementar agora</h3>
+<p>Organizações/membros/convites, OIDC/MFA, webhooks, upload direto a storage externo e comparação automática entre revisões serão contratos de expansão. A versão atual mantém histórico e comparação manual de relatórios, sem prometer pareamento automático de entidades entre arquivos.</p>
+<h2 id="contratos-7">7. DSL normativa ilustrativa</h2>
+<pre><code class="language-yaml">schema_version: rules/1.0
+id: DEMO_DOOR_WIDTH_MIN
+version: 1
+publication_state: TEST_ONLY
+production_eligible: false
+jurisdiction: DEMONSTRACAO
+source:
+  document: EXEMPLO_SEM_VALOR_NORMATIVO
+  edition: DEMO
+  item: DEMO
+applies_when:
+  all:
+    - fact: context.demo_enabled
+      operator: equals
+      value: true
+    - fact: element.class
+      operator: equals
+      value: DOOR
+required_inputs:
+  - element.clear_width
+  - context.demo_required_width
+  - quality.width_validated
+quality_gates:
+  - fact: quality.width_validated
+    operator: equals
+    value: true
+calculation:
+  operator: minimum_with_uncertainty
+  measured: element.clear_width
+  required: context.demo_required_width
+  unit: m
+on_missing: MISSING_DATA
+on_conflict: REVIEW_REQUIRED
+on_unknown_applicability: REVIEW_REQUIRED
+evidence_required:
+  - source_instance
+  - measured_geometry
+  - calculation_trace
+</code></pre>
+<p>Para teste artificial, o contexto pode definir mínimo de 0,90 m. Esse número existe somente para validar o software; não será convertido em requisito CBMERJ. Pacote com <code>TEST_ONLY</code> é proibido em emissão normativa de produção.</p>
+<p>Com medida 0,87 m ±0,002 m, o intervalo inteiro está abaixo de 0,90 m: resultado de teste <code>FAIL</code>. Com medida 0,900 m ±0,002 m, o intervalo atravessa o limite: <code>REVIEW_REQUIRED</code>. Com 0,905 m ±0,002 m, o intervalo inteiro atende: <code>PASS</code>. Esse método deve ser escolhido explicitamente pela regra; outros requisitos podem demandar tratamento próprio.</p>
+<p>No pacote real, requisito aponta para parâmetro/tabela homologada com item, exceções e contexto. Alterar uma tabela cria nova versão e novo hash do pacote. A DSL deve ter testes de combinações e proteção contra ciclos nas dependências.</p>
+<h2 id="contratos-8">8. Contrato de resultado</h2>
+<pre><code class="language-json">{
+  &quot;result_id&quot;: &quot;result-demo-031&quot;,
+  &quot;analysis_id&quot;: &quot;analysis-demo-010&quot;,
+  &quot;rule_id&quot;: &quot;DEMO_DOOR_WIDTH_MIN&quot;,
+  &quot;rule_version&quot;: 1,
+  &quot;production_eligible&quot;: false,
+  &quot;subject_id&quot;: &quot;door-017&quot;,
+  &quot;applicability&quot;: &quot;TRUE&quot;,
+  &quot;status&quot;: &quot;FAIL&quot;,
+  &quot;reason_code&quot;: &quot;MEASURED_UPPER_BOUND_BELOW_MINIMUM&quot;,
+  &quot;measured&quot;: {&quot;value&quot;: 0.87, &quot;unit&quot;: &quot;m&quot;, &quot;uncertainty_abs&quot;: 0.002},
+  &quot;required&quot;: {&quot;value&quot;: 0.9, &quot;unit&quot;: &quot;m&quot;, &quot;source&quot;: &quot;DEMO&quot;},
+  &quot;operation&quot;: &quot;minimum_with_uncertainty/1.0&quot;,
+  &quot;evidence_ids&quot;: [&quot;evidence-100&quot;, &quot;evidence-101&quot;],
+  &quot;location&quot;: {&quot;floor_id&quot;: &quot;floor-001&quot;, &quot;element_id&quot;: &quot;door-017&quot;},
+  &quot;review_state&quot;: &quot;PENDING&quot;
+}
+</code></pre>
+<p>A evidência pode ser documental, sem coordenada: página, trecho e arquivo. Para ausência objetiva de equipamento, guardar região avaliada, método de busca e completude do inventário; não inventar handle de objeto inexistente. Sem inventário suficiente, ausência de identificação não prova ausência física.</p>
+<h2 id="contratos-9">9. Revisão e comparação de revisões</h2>
+<p>Correção inclui <code>base_snapshot_id</code>, versão esperada, operação permitida, alvo, conteúdo, justificativa e evidência. Edição concorrente com base antiga retorna <code>409</code> e solicita conciliação; não sobrescrever a correção de outro analista.</p>
+<p>Decisão humana: confirmar achado, contestar com fundamento, solicitar complemento ou resolver por nova revisão. A decisão referencia resultado e snapshot; contestar um resultado não apaga seu cálculo. Segunda revisão pode ser exigida pela política para casos críticos.</p>
+<p>Na evolução posterior ao piloto, a comparação automática tentará parear entidades por arquivo/handle/caminho, assinatura, geometria e contexto. Classificar correspondências como exatas, prováveis ou incertas. Transferir confirmação humana entre revisões somente se as dependências relevantes permanecerem idênticas e isso for demonstrado; caso contrário, pedir nova confirmação.</p>
+<h2 id="contratos-10">10. Contrato visual e relatórios</h2>
+<p>Cena contém <code>scene_schema_version</code>, <code>model_snapshot_id</code>, pavimento, origem local, bbox, tiles, layers, fontes disponíveis, índice de seleção e mapa de IDs. Referências usam IDs de artefato resolvidos por download autenticado no backend local, nunca caminhos absolutos enviados ao navegador. Tiles possuem checksum, tamanho e versão. UI rejeita combinação de cena de um snapshot e resultados de outro.</p>
+<p>Relatório contém projeto, responsáveis, fontes declaradas, revisão, arquivos e hashes, contexto, pacote normativo, engines, limites de cobertura, resultados, evidências, decisões humanas e data de emissão. Assinatura digital formal é integração futura se necessária; hash sozinho não é assinatura de autoria.</p>
+<p>Um PDF emitido não muda quando a tela recebe nova revisão. Nova emissão tem novo ID. Exportação JSON facilita integração; exportação tabular contém resultados sem expor detalhes privados de outros clientes.</p>
+<h2 id="contratos-11">11. IA e controle de custos</h2>
+<p>Contratos separados:</p>
+<ul>
+<li><code>DecisionClassifier</code>: texto/JSON + opções delimitadas → candidato, distribuição fornecida e metadados. Implementação Jev opcional.</li>
+<li><code>DocumentAssistant</code>: trechos/páginas autorizadas + tarefa → extrações/propostas de texto com evidências. Implementação LLM multimodal econômica.</li>
+</ul>
+<p>Não exigir que Jev produza justificativa textual livre. Os motivos apresentados podem vir de regras da aplicação e evidências enviadas; se texto explicativo for necessário, tratá-lo como outro artefato, revisável.</p>
+<p>Evento de consumo: organização, projeto, análise, estágio, provedor, modelo retornado, tokens de entrada/saída/raciocínio quando cobrados, cache, custo calculado, moeda, versão da tarifa, quantidade de tentativas e ID da chamada. O armazenamento de prompts sensíveis segue política separada do log de custos.</p>
+<p>Orçamento técnico configurável por análise e mês: máximo de chamadas, entrada/saída, tempo e valor. Padrão proposto ao habilitar IA: US$ 0,25 por análise e US$ 5 por mês; sem chave/configuração, IA permanece desligada. Reservar custo máximo antes da chamada, liquidar pelo uso retornado e manter pendente quando houver dúvida sobre cobrança. Não repetir cegamente uma chamada cujo resultado se perdeu. Ao atingir o limite, interromper enriquecimento opcional, registrar análise parcial ou revisão necessária e nunca presumir conformidade. A estimativa antes da execução e o consumo efetivo aparecem para o gestor.</p>
+<h2 id="contratos-12">12. Definição de pronto dos contratos</h2>
+<p>Antes de implementar o primeiro fluxo: validar esquema CBM mínimo, nomenclatura dos estados, IDs de origem, política de unidade, idempotência e modelo de revisão. Gerar OpenAPI e tipos TypeScript a partir do backend; validar manifestos e fixtures na CI.</p>
+<p>Antes do piloto local: congelar contratos, testar migração de banco, documentar limites/erros, validar sessão/caminhos, restaurar backup e confirmar que dados ausentes/ambíguos não aparecem como conformes. Antes de multiusuário, repetir a validação com autenticação real, concorrência e isolamento entre organizações.</p>
+<h2 id="contratos-13">13. Persistência e recuperação no SQLite</h2>
+<p>Usar UUID como texto validado, datas UTC em representação definida, valores decimais normativos como texto decimal tipado ou inteiros escalados e geometria WKB BLOB. Não deixar o tipo NUMERIC do SQLite converter requisito decimal em float silenciosamente. Campos JSON têm esquema validado na aplicação. A medida geométrica continua numérica com incerteza explícita.</p>
+<p>Conexões habilitam chaves estrangeiras, WAL e <code>synchronous=FULL</code>. Escrita serializada, transações curtas e tratamento de busy. Banco no disco local; não compartilhar arquivo ativo em rede/sincronização. Usar versão do runtime SQLite homologada com correções de WAL. <a href="https://sqlite.org/wal.html">SQLite WAL</a>.</p>
+<p>O supervisor grava lease e token de tentativa em transação; workers não publicam diretamente no banco. Um job pesado ativo e uma instância de supervisor, protegida por lock de instalação. Reinício verifica tentativas antigas antes de reclamar trabalho. Um worker atrasado não pode publicar com token vencido.</p>
+<p>Protocolo de publicação: validar artefato em staging, finalizar arquivo no mesmo volume e confirmar registro no banco. Na recuperação, detectar arquivo órfão ou referência ausente. Atualização do estado só é concluída depois que os artefatos existem e passaram pela verificação.</p>
+<p>Backup coordena snapshot consistente do banco e manifesto dos arquivos imutáveis referenciados. A API de backup do SQLite protege a cópia do banco; a aplicação precisa também garantir consistência do conjunto de arquivos. <a href="https://sqlite.org/backup.html">Backup SQLite</a>. Credenciais de IA não são exportadas por padrão e precisam de nova configuração em outra máquina.</p>
+<h2 id="contratos-14">14. Migração futura</h2>
+<p>Abstrações: <code>LocalFileStorage</code>, <code>LocalJobRunner</code>, <code>DxfReader</code>, <code>SQLiteRepository</code> e provedores de IA. Não implementar AWS/ODA antecipadamente. Migrar para PostgreSQL/PostGIS requer exportação/importação controlada, conversão WKB, criação de índices/RLS, identidade multiusuário e conferência do histórico.</p>
+<p>Critério de migração: mesmos arquivos, hashes, regras, fatos e resultados anteriores continuam legíveis; novos cálculos respeitam versões e tolerâncias. Expor o servidor local ou copiar <code>app.db</code> para uma pasta compartilhada não constitui essa migração.</p>
+</article>
+<article aria-label="Backlog e execução"><h1 id="backlog">Motor CAD/COSCIP — Backlog local de baixo custo</h1>
+<p>Versão 2.0 • 19 de setembro de 2026</p>
+<p>Escopo contratado pelo plano: uso interno no computador, DXF, um operador, uma análise pesada por vez, dados locais e APIs opcionais. Esta é uma especificação de trabalho, não implementação concluída. Nuvem, ODA, DWG nativo e multiusuário não são dependências do MVP.</p>
+<h2 id="backlog-1">1. Ordem de construção</h2>
+<div class="flow"><b>DXF real aberto e medido no PC</b><span>↓</span><b>API local + SQLite + viewer</b><span>↓</span><b>Preparação assistida + topologia em um pavimento</b><span>↓</span><b>Regras delimitadas → evidências → relatório</b><span>↓</span><b>Backup e recuperação → piloto → IA opcional</b></div>
+<p>O catálogo normativo pode começar enquanto o CAD Core é construído. Regras são testadas sobre dados sintéticos antes de reconhecimento automático. O fluxo fundamental deve funcionar com IA desligada.</p>
+<h2 id="backlog-2">2. Viabilidade — primeiras quatro semanas</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Entrega</th>
+<th>Dependência</th>
+<th>Critério de aceite</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>POC-01</td>
+<td>Inventário de hardware e espaço disponível</td>
+<td>Nenhuma</td>
+<td>Perfil de processamento definido sem compra antecipada</td>
+</tr>
+<tr>
+<td>POC-02</td>
+<td>Selecionar 5–10 DXFs reais autorizados</td>
+<td>Nenhuma</td>
+<td>Unidades, origem e medidas de referência registradas</td>
+</tr>
+<tr>
+<td>POC-03</td>
+<td>Definir procedimento DWG → DXF quando necessário</td>
+<td>POC-02</td>
+<td>Projetista fornece DXF; origem e perdas documentadas sem SDK pago obrigatório</td>
+</tr>
+<tr>
+<td>POC-04</td>
+<td>Extrair entidades, layers, textos e blocos</td>
+<td>POC-02</td>
+<td>Origem por arquivo/handle/instância correta</td>
+</tr>
+<tr>
+<td>POC-05</td>
+<td>Conferir medidas e transformações</td>
+<td>POC-04</td>
+<td>Rotação, escala, unidades e blocos aninhados conferidos</td>
+</tr>
+<tr>
+<td>POC-06</td>
+<td>Viewer com seleção de entidade</td>
+<td>POC-04</td>
+<td>Seleção leva à origem correta e layers funcionam</td>
+</tr>
+<tr>
+<td>POC-07</td>
+<td>Medir tempo, memória e expansão</td>
+<td>POC-05/06</td>
+<td>Limites definidos para o computador disponível</td>
+</tr>
+<tr>
+<td>POC-08</td>
+<td>Gate de continuidade</td>
+<td>POC-01 a 07</td>
+<td>Desenho aberto, medida conferida e perdas conhecidas</td>
+</tr>
+</tbody></table></div>
+<p>Não testar compatibilidade DWG universal nesta fase. Se DXF exportado perder dado essencial, apontar a limitação e pedir representação adequada antes de concluir a análise.</p>
+<h2 id="backlog-3">3. Fundação local</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Entrega</th>
+<th>Dependência</th>
+<th>Aceite</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LOC-01</td>
+<td>Ambiente Python travado e build React/Vite</td>
+<td>POC-08</td>
+<td>Iniciar API e servir UI sem Node permanente</td>
+</tr>
+<tr>
+<td>LOC-02</td>
+<td>Launcher, porta livre e sessão local</td>
+<td>LOC-01</td>
+<td>Um serviço ativo; loopback, Host/Origin e CSRF testados</td>
+</tr>
+<tr>
+<td>LOC-03</td>
+<td>SQLite, esquema e organização/operador locais</td>
+<td>LOC-01</td>
+<td>Migração, FK e isolamento de projetos testados</td>
+</tr>
+<tr>
+<td>LOC-04</td>
+<td>Projetos e revisões imutáveis</td>
+<td>LOC-03</td>
+<td>Reabrir projeto preserva dados e histórico</td>
+</tr>
+<tr>
+<td>LOC-05</td>
+<td>Upload local, hash e quarentena</td>
+<td>LOC-04</td>
+<td>Streaming sem carregar arquivo inteiro; retomada não corrompe entrada</td>
+</tr>
+<tr>
+<td>LOC-06</td>
+<td>Pastas e resolução segura de arquivos</td>
+<td>LOC-05</td>
+<td>Caminho arbitrário, traversal e links fora do pacote rejeitados</td>
+</tr>
+<tr>
+<td>LOC-07</td>
+<td>Job persistido e supervisor único</td>
+<td>LOC-03/05</td>
+<td>Um job pesado ativo; duplicação não duplica resultados</td>
+</tr>
+<tr>
+<td>LOC-08</td>
+<td>Worker, timeout e cancelamento</td>
+<td>LOC-07</td>
+<td>Interface responde; processo encerrado deixa estado correto</td>
+</tr>
+<tr>
+<td>LOC-09</td>
+<td>Recuperação de interrupção e token de tentativa</td>
+<td>LOC-08</td>
+<td>Queda/reinício não publica saída de tentativa antiga</td>
+</tr>
+<tr>
+<td>LOC-10</td>
+<td>Logs locais e painel de andamento</td>
+<td>LOC-07</td>
+<td>Diagnóstico suficiente sem chaves ou documentos em logs</td>
+</tr>
+</tbody></table></div>
+<h2 id="backlog-4">4. CAD, visualização e correção assistida</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Entrega</th>
+<th>Dependência</th>
+<th>Aceite</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CAD-01</td>
+<td>Adaptador DXF e diagnóstico</td>
+<td>POC-08, LOC-08</td>
+<td>Inventário de entidades suportadas/não suportadas</td>
+</tr>
+<tr>
+<td>CAD-02</td>
+<td>Unidade e frame canônico</td>
+<td>CAD-01</td>
+<td>Unidade incerta bloqueia cálculo dependente</td>
+</tr>
+<tr>
+<td>CAD-03</td>
+<td>Blocos, instâncias e referências DXF</td>
+<td>CAD-01</td>
+<td>Transformações e origem sem colisões</td>
+</tr>
+<tr>
+<td>CAD-04</td>
+<td>Original, modelo e cena separados</td>
+<td>CAD-02/03</td>
+<td>Simplificação visual não altera medida normativa</td>
+</tr>
+<tr>
+<td>VIEW-01</td>
+<td>Cena progressiva e layers</td>
+<td>CAD-04</td>
+<td>Limites de memória do perfil respeitados</td>
+</tr>
+<tr>
+<td>VIEW-02</td>
+<td>Seleção, propriedades e evidência</td>
+<td>VIEW-01</td>
+<td>Clique mostra entidade/instância correta</td>
+</tr>
+<tr>
+<td>VIEW-03</td>
+<td>Marcações e medidas na planta</td>
+<td>VIEW-02</td>
+<td>Overlay alinhado após zoom/pan</td>
+</tr>
+<tr>
+<td>PREP-01</td>
+<td>Recorte de um pavimento</td>
+<td>CAD-04, VIEW-03</td>
+<td>Regiões fora do recorte não somam medidas indevidamente</td>
+</tr>
+<tr>
+<td>PREP-02</td>
+<td>Classificar ambiente, abertura, saída e extintor</td>
+<td>PREP-01</td>
+<td>Origem e confirmação por propriedade registradas</td>
+</tr>
+<tr>
+<td>PREP-03</td>
+<td>Desenhar/ajustar contornos analíticos</td>
+<td>PREP-02</td>
+<td>Original preservado e novo snapshot criado</td>
+</tr>
+<tr>
+<td>PREP-04</td>
+<td>Dicionário por projeto</td>
+<td>PREP-02</td>
+<td>Mapeamento não altera outros projetos sem ação explícita</td>
+</tr>
+<tr>
+<td>VIEW-04</td>
+<td>Acessibilidade e estados de falha</td>
+<td>VIEW-03</td>
+<td>Resultados compreensíveis pela lista textual</td>
+</tr>
+</tbody></table></div>
+<h2 id="backlog-5">5. Geometria e regras iniciais</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Entrega</th>
+<th>Dependência</th>
+<th>Aceite</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GEO-01</td>
+<td>Perfis de tolerância e incerteza</td>
+<td>CAD-02</td>
+<td>Reparos registrados; tolerância não afrouxa requisito</td>
+</tr>
+<tr>
+<td>GEO-02</td>
+<td>Áreas e limites confirmados</td>
+<td>PREP-03, GEO-01</td>
+<td>Casos analíticos e referência conferidos</td>
+</tr>
+<tr>
+<td>GEO-03</td>
+<td>Aberturas e largura livre</td>
+<td>GEO-02</td>
+<td>Vão/folha/largura livre diferenciados</td>
+</tr>
+<tr>
+<td>GEO-04</td>
+<td>Conexões, obstáculos e percursos no pavimento</td>
+<td>GEO-03</td>
+<td>Rota não atravessa paredes nem presume saída segura</td>
+</tr>
+<tr>
+<td>GEO-05</td>
+<td>Cobertura da família inicial</td>
+<td>GEO-04</td>
+<td>Método corresponde à regra e aproximação tem limite de erro</td>
+</tr>
+<tr>
+<td>GEO-06</td>
+<td>Invariância e qualidade</td>
+<td>GEO-01 a 05</td>
+<td>Translação, rotação e unidade preservam resultados</td>
+</tr>
+<tr>
+<td>REG-01</td>
+<td>Registro de fontes e versões</td>
+<td>POC-08</td>
+<td>Documento, hash, edição, vigência e item registrados</td>
+</tr>
+<tr>
+<td>REG-02</td>
+<td>Matriz de cobertura da NT inicial</td>
+<td>REG-01</td>
+<td>Itens automáticos, assistidos e fora do escopo identificados</td>
+</tr>
+<tr>
+<td>REG-03</td>
+<td>Contexto de aplicabilidade</td>
+<td>REG-02</td>
+<td>Informações da edificação e exceções; recorte não redefine contexto</td>
+</tr>
+<tr>
+<td>REG-04</td>
+<td>DSL fechada e regra artificial</td>
+<td>REG-03</td>
+<td>Cinco estados testados; regra de teste não emitida como real</td>
+</tr>
+<tr>
+<td>REG-05</td>
+<td>Conjunto delimitado de extintores</td>
+<td>REG-04, GEO-05/06</td>
+<td>Revisor homologa fontes, casos e limites de uso</td>
+</tr>
+<tr>
+<td>REG-06</td>
+<td>Evidências e pacotes imutáveis</td>
+<td>REG-05</td>
+<td>Cada resultado permite reconstruir sua avaliação</td>
+</tr>
+</tbody></table></div>
+<p>Portas e trajetos são capacidades geométricas. Validação normativa integral de saídas de emergência é outra entrega. Vários pavimentos e trajetos em escadas ficam depois do piloto inicial.</p>
+<h2 id="backlog-6">6. Revisão, relatório e recuperação</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Entrega</th>
+<th>Dependência</th>
+<th>Aceite</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>REV-01</td>
+<td>Fila de revisão e justificativas</td>
+<td>REG-06</td>
+<td>Decisão humana separada do resultado automático</td>
+</tr>
+<tr>
+<td>REV-02</td>
+<td>Histórico por revisão</td>
+<td>REV-01</td>
+<td>Abrir análise antiga com o modelo e regras antigos</td>
+</tr>
+<tr>
+<td>REP-01</td>
+<td>Relatório HTML e JSON local</td>
+<td>REV-01</td>
+<td>Cobertura, hashes, fontes e pendências corretos</td>
+</tr>
+<tr>
+<td>REP-02</td>
+<td>PDF e fontes locais</td>
+<td>REP-01</td>
+<td>Renderização conferida; nenhuma busca externa arbitrária</td>
+</tr>
+<tr>
+<td>REP-03</td>
+<td>Minuta por template, sem IA</td>
+<td>REP-01</td>
+<td>Texto não cria requisito ausente do resultado</td>
+</tr>
+<tr>
+<td>SAFE-01</td>
+<td>Backup consistente de banco e artefatos</td>
+<td>LOC-09</td>
+<td>Snapshot/manifesto íntegros e segredos excluídos</td>
+</tr>
+<tr>
+<td>SAFE-02</td>
+<td>Restauração em pasta separada</td>
+<td>SAFE-01, REP-02</td>
+<td>Projeto e relatório abrem com hashes conferidos</td>
+</tr>
+<tr>
+<td>SAFE-03</td>
+<td>Atualização e rollback</td>
+<td>SAFE-02</td>
+<td>Banco incompatível não é aberto por versão antiga</td>
+</tr>
+<tr>
+<td>SAFE-04</td>
+<td>Testes de disco cheio e encerramento abrupto</td>
+<td>LOC-09, SAFE-01</td>
+<td>Sem falso sucesso nem perda silenciosa</td>
+</tr>
+<tr>
+<td>SAFE-05</td>
+<td>Isolamento de parser no Windows</td>
+<td>LOC-08</td>
+<td>Perfil restrito/VM escolhido e homologado para arquivos externos recorrentes</td>
+</tr>
+</tbody></table></div>
+<p>Backup em outra pasta do mesmo disco não atende à proteção contra falha física. Configurar dispositivo/destino separado e registrar quando foi verificado. Antes de SAFE-05, protótipo usa corpus controlado.</p>
+<h2 id="backlog-7">7. IA opcional e econômica</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Entrega</th>
+<th>Dependência</th>
+<th>Aceite</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AI-01</td>
+<td>Escolher tarefas documentais e corpus de teste</td>
+<td>REG-02</td>
+<td>Benefício e respostas esperadas definidos</td>
+</tr>
+<tr>
+<td>AI-02</td>
+<td>Cofre de chave e provedor substituível</td>
+<td>LOC-10</td>
+<td>Chave não aparece em frontend/logs/backup</td>
+</tr>
+<tr>
+<td>AI-03</td>
+<td>Orçamento por chamada/análise/mês</td>
+<td>AI-02</td>
+<td>Reserva antes de chamada; teto não aumenta sozinho</td>
+</tr>
+<tr>
+<td>AI-04</td>
+<td>Testar Gemini econômico</td>
+<td>AI-01/03</td>
+<td>Extrações e fontes conferidas; custo real medido</td>
+</tr>
+<tr>
+<td>AI-05</td>
+<td>Jev para escolhas tipadas, opcional</td>
+<td>AI-01/03</td>
+<td>Texto/JSON, opções válidas e encaminhamento de incerteza</td>
+</tr>
+<tr>
+<td>AI-06</td>
+<td>Integração de IA na revisão</td>
+<td>AI-04</td>
+<td>Sem internet/limite excedido preserva cálculo e marca pendências</td>
+</tr>
+<tr>
+<td>AI-07</td>
+<td>Minuta assistida e teste de conteúdo hostil</td>
+<td>AI-06, REP-03</td>
+<td>Dados externos não mudam regras, ferramentas ou destino</td>
+</tr>
+</tbody></table></div>
+<p>Não é necessário AI-05 para concluir MVP. Comparar Jev somente nas tarefas adequadas; não pedir redação ou interpretação visual ao modelo. Habilitar IA é configuração explícita e feita depois do núcleo local funcionando.</p>
+<h2 id="backlog-8">8. Piloto interno</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Entrega</th>
+<th>Dependência</th>
+<th>Aceite</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PILOT-01</td>
+<td>Homologar corpus restrito de 20–30 casos</td>
+<td>GEO-06, REG-06, REP-02</td>
+<td>Erros, cobertura e revisões medidos por classe/regra</td>
+</tr>
+<tr>
+<td>PILOT-02</td>
+<td>Ensaiar fluxo sem internet</td>
+<td>REP-03, SAFE-02</td>
+<td>Projeto, cálculo e relatório por template funcionam offline</td>
+</tr>
+<tr>
+<td>PILOT-03</td>
+<td>Testar uso real supervisionado</td>
+<td>PILOT-01/02, SAFE-04/05</td>
+<td>Tempo total incluindo correções humanas registrado</td>
+</tr>
+<tr>
+<td>PILOT-04</td>
+<td>Verificar custo de API e limites</td>
+<td>AI-04/06, se habilitados</td>
+<td>Consumo exibido compatível com cobrança/telemetria</td>
+</tr>
+<tr>
+<td>PILOT-05</td>
+<td>Documentar instalação e recuperação</td>
+<td>PILOT-03</td>
+<td>Usuário consegue iniciar, encerrar, fazer backup e restaurar</td>
+</tr>
+<tr>
+<td>PILOT-06</td>
+<td>Aceitar versão local</td>
+<td>PILOT-03/05 e PILOT-04 se usar IA</td>
+<td>Perfil suportado, limites e rotina de operação claros</td>
+</tr>
+</tbody></table></div>
+<p>Falso <code>PASS</code> em caso crítico conhecido bloqueia a liberação da regra afetada. Quantidade de exemplos não prova taxa de erro zero. Ampliar corpus antes de aceitar projetos fora do perfil.</p>
+<h2 id="backlog-9">9. Cronograma e responsáveis</h2>
+<p>Referência com uma pessoa experiente em desenvolvimento e participação regular de especialista/usuário: semanas 1–4 viabilidade; 5–8 protótipo; 9–14 geometria assistida; 15–20 regras/relatório; 21–24 piloto. Intervalos são estimativas, dependem de dedicação, corpus e domínio CAD. Suporte especializado pontual pode ser necessário.</p>
+<p>Responsabilidades podem acumular-se, mas devem existir: implementação; conferência de medidas; validação normativa; teste de uso; backup e recuperação. Ferramenta de IA de programação não assume a aprovação técnica.</p>
+<p>Entregas demonstradas a cada duas semanas, incluindo um caso de falha. Evitar investir em instalador sofisticado, autenticação SaaS e escalabilidade antes de o DXF real passar pela jornada principal.</p>
+<h2 id="backlog-10">10. Critérios de passagem</h2>
+<p><strong>Gate A — DXF confiável:</strong> extrair, selecionar, medir, mostrar origem e registrar perdas no PC.</p>
+<p><strong>Gate B — persistência:</strong> fechar/reabrir, recuperar job interrompido e preservar originais/resultados.</p>
+<p><strong>Gate C — geometria:</strong> unidade e contornos confirmados; percursos corretos no perfil de um pavimento.</p>
+<p><strong>Gate D — regras:</strong> fontes, contexto, exceções, evidências, cobertura e testes homologados.</p>
+<p><strong>Gate E — operação:</strong> restauração real, limites de recursos, sessão local, segurança do parser e fluxo sem IA comprovados.</p>
+<p><strong>Gate F — piloto aceito:</strong> ganho de trabalho medido, custo registrado e limitações visíveis.</p>
+<h2 id="backlog-11">11. Definição de pronto</h2>
+<ul>
+<li>Jornada demonstrada com DXF autorizado e caso de falha.</li>
+<li>Testes relevantes, contratos e erros documentados.</li>
+<li>Nenhuma confusão entre falta de dados e conformidade.</li>
+<li>Origem, cálculo, norma, correções e versões preservados.</li>
+<li>Chaves fora de interface/logs e arquivos resolvidos por IDs seguros.</li>
+<li>Backup/restauração e retomada considerados quando houver persistência.</li>
+<li>Custos de IA medidos quando a funcionalidade for habilitada.</li>
+<li>Limites e cobertura compreensíveis para o usuário.</li>
+</ul>
+<h2 id="backlog-12">12. Backlog futuro — sem bloquear a versão local</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Entrega futura</th>
+<th>Gatilho</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FUT-01</td>
+<td>Vários pavimentos e rotas verticais</td>
+<td>Demanda real de análise integrada</td>
+</tr>
+<tr>
+<td>FUT-02</td>
+<td>Comparação automática entre revisões</td>
+<td>Histórico manual passa a consumir tempo significativo</td>
+</tr>
+<tr>
+<td>FUT-03</td>
+<td>Experimento LibreDWG</td>
+<td>Recebimento recorrente sem DXF e corpus para compatibilidade</td>
+</tr>
+<tr>
+<td>FUT-04</td>
+<td>IFC e classes BIM</td>
+<td>Projetos BIM disponíveis</td>
+</tr>
+<tr>
+<td>FUT-05</td>
+<td>Hidrantes/redes e cálculo hidráulico</td>
+<td>Primeira família validada e novos casos homologados</td>
+</tr>
+<tr>
+<td>FUT-06</td>
+<td>Mais usuários, identidade e PostgreSQL/PostGIS</td>
+<td>Uso simultâneo por equipe</td>
+</tr>
+<tr>
+<td>FUT-07</td>
+<td>Hospedagem para clientes</td>
+<td>Modelo comercial e operação definidos</td>
+</tr>
+<tr>
+<td>FUT-08</td>
+<td>SDK CAD comercial</td>
+<td>Gratuito/exportação insuficiente e orçamento justificado</td>
+</tr>
+<tr>
+<td>FUT-09</td>
+<td>Instalador desktop aprimorado</td>
+<td>Versão local estabilizada e uso recorrente</td>
+</tr>
+</tbody></table></div>
+<p>Não comprar ODA, contratar AWS ou construir login de clientes para concluir este backlog inicial. A evolução exige reavaliar licenças, custos e segurança antes de ampliar o perfil suportado.</p>
+</article><footer>Pacote de planejamento baseado no documento fornecido e em documentação oficial consultada. As fontes estão junto às afirmações correspondentes.</footer></main></body></html>

@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@source "../../../packages/ui/src";
+
+:root {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #142a36;
+  background: #f3f6f7;
+}
+
+body {
+  margin: 0;
+  background: #f3f6f7;
+}
+
+:focus-visible {
+  outline: 2px solid #126b66;
+  outline-offset: 2px;
+}

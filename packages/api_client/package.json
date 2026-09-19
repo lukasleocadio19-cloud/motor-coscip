@@ -1,0 +1,14 @@
+{
+  "name": "@coscip/api-client",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "gen": "openapi-typescript http://127.0.0.1:${COSCIP_API_PORT:-8765}/v1/openapi.json -o src/schema.d.ts"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^7.4.0"
+  }
+}

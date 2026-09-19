@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "motor-coscip"
+version = "0.1.0"
+description = "Motor CAD/COSCIP local: DXF, geometria, regras e relatórios no computador do operador."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+  "pydantic>=2.8",
+  "pydantic-settings>=2.4",
+  "sqlalchemy>=2.0",
+  "alembic>=1.13",
+  "ezdxf>=1.3",
+  "shapely>=2.0",
+  "numpy>=1.26",
+  "networkx>=3.3",
+  "pyyaml>=6.0",
+  "python-multipart>=0.0.9",
+  "jinja2>=3.1",
+  "keyring>=25.0",
+  "psutil>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "httpx>=0.27", "hypothesis>=6.100", "ruff>=0.6", "mypy>=1.11"]
+
+[project.scripts]
+coscip-launcher = "coscip_api.launcher:main"
+coscip-worker = "coscip_worker.main:main"
+
+[tool.setuptools.packages.find]
+where = [
+  "apps/api",
+  "workers/local",
+  "packages/cbm_schema",
+  "packages/cad",
+  "packages/geometry",
+  "packages/topology",
+  "packages/semantics",
+  "packages/rules",
+  "packages/storage",
+  "packages/jobs",
+  "packages/ai_gateway",
+]
+include = ["coscip_*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["timeout: limite de tempo (informativo)"]
+pythonpath = [
+  ".", "apps/api", "workers/local", "packages/cbm_schema", "packages/cad",
+  "packages/geometry", "packages/topology", "packages/semantics",
+  "packages/rules", "packages/storage", "packages/jobs", "packages/ai_gateway",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["apps/api/coscip_api/migrations/versions", "node_modules"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.isort]
+known-first-party = [
+  "coscip_api", "coscip_worker", "coscip_cbm", "coscip_cad", "coscip_geometry",
+  "coscip_topology", "coscip_semantics", "coscip_rules", "coscip_storage", "coscip_jobs",
+  "coscip_ai", "tests",
+]
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["fastapi.Depends", "fastapi.Header", "fastapi.Query"]

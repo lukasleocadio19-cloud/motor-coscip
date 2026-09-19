@@ -1,0 +1,25 @@
+# Dados reais e segredos ficam fora do repositório (plano §19)
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+node_modules/
+apps/web/dist/
+apps/api/coscip_api/static/
+data/
+*.db
+*.db-wal
+*.db-shm
+*.dxf
+*.dwg
+!normative/fixtures/**/*.dxf
+.env
+*.key
+
+# Gerados localmente
+ErrorReports/
+*.tsbuildinfo
+.claude-launch-tmp

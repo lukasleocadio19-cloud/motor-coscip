@@ -1,0 +1,41 @@
+# Regra ARTIFICIAL para validar o software (contratos §7).
+# O mínimo de 0,90 m existe só para teste e NÃO é requisito do CBMERJ.
+# Pacote TEST_ONLY é proibido em emissão normativa de produção.
+schema_version: rules/1.0
+id: DEMO_DOOR_WIDTH_MIN
+version: 1
+publication_state: TEST_ONLY
+production_eligible: false
+jurisdiction: DEMONSTRACAO
+source:
+  document: EXEMPLO_SEM_VALOR_NORMATIVO
+  edition: DEMO
+  item: DEMO
+applies_when:
+  all:
+    - fact: context.demo_enabled
+      operator: equals
+      value: true
+    - fact: element.class
+      operator: equals
+      value: DOOR
+required_inputs:
+  - element.clear_width
+  - context.demo_required_width
+  - quality.width_validated
+quality_gates:
+  - fact: quality.width_validated
+    operator: equals
+    value: true
+calculation:
+  operator: minimum_with_uncertainty
+  measured: element.clear_width
+  required: context.demo_required_width
+  unit: m
+on_missing: MISSING_DATA
+on_conflict: REVIEW_REQUIRED
+on_unknown_applicability: REVIEW_REQUIRED
+evidence_required:
+  - source_instance
+  - measured_geometry
+  - calculation_trace

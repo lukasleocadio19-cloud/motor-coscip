@@ -1,0 +1,16 @@
+{
+  "name": "motor-coscip",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "packages/api_client",
+    "packages/ui",
+    "packages/viewer"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w apps/web",
+    "build": "npm run build -w apps/web",
+    "typecheck": "npm run typecheck -w apps/web",
+    "gen:api": "npm run gen -w packages/api_client"
+  }
+}
