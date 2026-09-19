@@ -54,7 +54,7 @@ export function SearchPanel({ documents, fixedDocument }: { documents?: string[]
         )}
         <button className="rounded-md bg-teal-700 px-3 py-1.5 text-sm font-medium text-white hover:bg-teal-800">Buscar</button>
       </form>
-      <p className="mt-1 text-xs text-slate-500">Sem diferença de acentos ou maiúsculas; todos os termos precisam estar no mesmo item.</p>
+      <p className="mt-1 text-xs text-slate-500">Sem diferença de acentos ou maiúsculas; palavras longas valem pelo radical (percorrer ~ percorrida); todos os termos no mesmo item.</p>
       {hits.error && <ErrorState error={hits.error} />}
       {hits.isFetching && <p className="mt-3 text-sm text-slate-500">Buscando…</p>}
       {hits.data && !hits.isFetching && (

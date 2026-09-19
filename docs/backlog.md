@@ -147,3 +147,4 @@ PILOT-01..06 e FUT-01..09 não iniciados — ver documento 03.
 |---|---|---|
 | PREP-02 (heurística) | **feito** | placa E-5 + marcação de piso E-17 a ≤ 1,6 m, sem símbolo de extintor a ≤ 2 m → `EXTINTOR` com `presumed`; fato `quality.extinguisher.not_presumed`; regras NT201 distância/área/mínimo v2 com essa porta (pacote v3) |
 | Real | **feito** | 41336: 5 extintores presumidos; "mínimo 2" deixou de ser pendência falsa (indicativo atende, em revisão) — análise `629e6ba9…` |
+| Busca por radical | **feito** | termos com 7+ letras valem pelo radical (percorrer ~ percorrida) |

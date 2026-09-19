@@ -153,6 +153,9 @@ def test_source_index_item_text_and_search(env):
                    params={"item": "99.9"}).status_code == 404
     hits = env.tc.get("/v1/normative/search", params={"q": "unidade extintora"}).json()["items"]
     assert hits and all(h["document"] == "NT 2-01" for h in hits)
+    # radical: "percorrer" encontra "percorrida"
+    stem = env.tc.get("/v1/normative/search", params={"q": "distância percorrer"}).json()
+    assert any(h["item"] == "Tabela 3" for h in stem["items"])
     assert env.tc.get("/v1/normative/search", params={"q": "palavrainexistente"}).json()[
         "items"] == []
     assert env.get("/v1/rule-packages").json() == {"items": []}

@@ -178,6 +178,11 @@ def _search_index(nt: NormativeText) -> list[tuple[str, str, int | None, str, st
     return idx
 
 
+def _stem(term: str) -> str:
+    """Radical simples: palavras longas perdem as 3 últimas letras (percorrer ~ percorrida)."""
+    return term[:max(5, len(term) - 3)] if len(term) >= 7 else term
+
+
 def search(s: Session, storage, q: str, document: str | None = None,  # noqa: ANN001
            limit: int = 60) -> dict[str, Any]:
     """Busca por termos (todos precisam aparecer no item) nas fontes vigentes.
@@ -185,7 +190,7 @@ def search(s: Session, storage, q: str, document: str | None = None,  # noqa: AN
     Por documento vale o item mais específico: seção inteira ou anexo inteiro só aparecem
     quando nenhum item numerado, tabela ou artigo contém todos os termos.
     """
-    terms = [fold(t) for t in q.split() if len(t) >= 2]
+    terms = [_stem(fold(t)) for t in q.split() if len(t) >= 2]
     if not terms:
         return {"items": [], "truncated": False}
     hits: list[dict[str, Any]] = []
