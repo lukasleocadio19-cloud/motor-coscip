@@ -232,6 +232,7 @@ GATES = {
     "quality.manual_call_point.complete": "há área sem acesso a acionador",
     "quality.exit.complete": "há área sem acesso a saída",
     "context.exits_confirmed": "saídas não confirmadas pelo analista",
+    "quality.extinguisher.not_presumed": "extintor presumido pela placa E-5 + E-17 (sem símbolo)",
 }
 CLASS_LABELS = {
     "EXTINTOR": "Extintores", "HIDRANTE": "Hidrantes", "MANGOTINHO": "Mangotinhos",

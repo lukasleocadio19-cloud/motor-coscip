@@ -113,7 +113,8 @@ def test_required_table_and_ceil_div_are_traced():
     rule = _rule("NT201_EXT_AREA")
     facts = {"floor.count.extinguishers": Fact(2, 0.0), "floor.area_m2": Fact(301, 5.0),
              "context.risk_class": Fact("MEDIO"), "context.unifamiliar": Fact(False),
-             "quality.walls_detected": Fact(True), "quality.region_confirmed": Fact(True)}
+             "quality.walls_detected": Fact(True), "quality.region_confirmed": Fact(True),
+             "quality.extinguisher.not_presumed": Fact(True)}
     out = evaluate(rule, EvaluationContext("f", facts))
     assert out.status is EvaluationStatus.FAIL
     assert out.trace["required"] == "3" and "⌈" in out.trace["required_steps"][-1]
@@ -128,6 +129,7 @@ def test_quality_gate_keeps_indicative_verdict():
     facts = {"floor.extinguisher.max_travel_m": Fact(25.0, 1.0),
              "context.risk_class": Fact("PEQUENO"), "context.unifamiliar": Fact(False),
              "quality.walls_detected": Fact(True), "quality.region_confirmed": Fact(False),
+             "quality.extinguisher.not_presumed": Fact(True),
              "quality.extinguisher.complete": Fact(True)}
     out = evaluate(rule, EvaluationContext("f", facts))
     assert out.status is EvaluationStatus.REVIEW_REQUIRED
@@ -275,3 +277,20 @@ def test_classification_rows_are_checked_on_the_same_table_line():
         failures: list[str] = []
         verify_classification(_classification_table(**change), src, failures)
         assert len(failures) == 1, change
+
+
+def test_extinguisher_presumed_from_e5_sign_with_e17_floor_mark():
+    from coscip_analysis.plan import Plan, TextRec
+    from coscip_analysis.symbols import Symbol, _presumed_extinguishers
+
+    def txt(h, s, x, y):
+        return TextRec(h, (f"entity:{h}",), "01 VERMELHO", s, x, y, None)
+
+    plan = Plan(scale_to_m=1.0, texts=[
+        txt("1", "E5", 10, 10), txt("2", "E17", 9, 10),      # par → presumido
+        txt("3", "E-5", 30, 10),                              # placa sem piso → não
+        txt("4", "E5", 50, 10), txt("5", "E17", 51, 10),     # já há extintor desenhado
+    ])
+    real = Symbol("x", "EXTINTOR", 50.5, 10.5, "9", ("entity:9",), "EXT", "0", "block_name", "")
+    out = _presumed_extinguishers(plan, [real])
+    assert [(s.x, s.attrs["presumed"], s.stage) for s in out] == [(10, True, "presumed")]

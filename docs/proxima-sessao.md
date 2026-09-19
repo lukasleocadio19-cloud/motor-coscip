@@ -1,7 +1,7 @@
 # Guia para a próxima sessão — Motor CAD/COSCIP
 
-Atualizado em 19/09/2026, noite (sessão Claude, 2ª parte: recortes reais, enquadramento pela
-NT 1-04, revisão humana e relatório com decisões).
+Atualizado em 19/09/2026, noite (sessão Claude, 3ª parte: extintor presumido pela sinalização;
+antes: recortes reais, enquadramento pela NT 1-04, revisão humana e relatório com decisões).
 **Este arquivo fica em `C:\Users\USER\Downloads\proxima-sessao.md` e deve ser atualizado aqui mesmo**,
 sem criar outro; `motor-coscip/docs/proxima-sessao.md` é uma cópia sincronizada.
 Plano: `motor-coscip/docs/plano/00-plano-completo.html` (v2.0). Status por ID: `motor-coscip/docs/backlog.md`.
@@ -10,6 +10,9 @@ Plano: `motor-coscip/docs/plano/00-plano-completo.html` (v2.0). Status por ID: `
 
 - Gate A aprovado. Base real com **53 fontes** (52 NTs + Decreto 42/2018) e **pacote v2**
   (9 regras + tabela de enquadramento da NT 1-04), tudo com citação conferida.
+  Agora **pacote v3**: extintor indicado só por placa E-5 + piso E-17 vira "presumido" e as
+  regras NT201 (v2) vão para revisão quando o usam. 41336 reanalisado (`629e6ba9…`): 5 extintores
+  presumidos, sem a falsa pendência.
 - As 5 plantas reais têm **pavimentos recortados** e foram **analisadas com enquadramento**.
 - A **revisão humana** existe na tela e entra no relatório. **Nenhuma decisão foi registrada**:
   cabe ao analista (as decisões são append-only e não se apagam).
@@ -32,14 +35,14 @@ Enquadramento **proposto pelo assistente** a partir dos rótulos da planta — c
 |---|---|---|---|---|
 | 9715 | Térreo | 2507–2558 / 1588,8–1612 | D-2 agência bancária → Médio 1 | 8 conformes, 7 revisão, 1 dado ausente. Extintor: 6 un., área e mínimo ok; pior percurso 20,6 ± 1,3 m > 15 m (indicativo não atende, em revisão por área sem acesso) |
 | 21471 | Térreo | 5561,8–5575,6 / 1641,5–1673 | M-2 depósito de GLP → Grande | 5 conformes, 5 revisão, 1 ausente. **Sem camada de parede** reconhecível; percurso até extintor 19,7 m > 10 m (indicativo) |
-| 41336 | Térreo (depósito de GLP) | 4579,5–4607,5 / 2071,2–2089,5 | M-2 → Grande | 1 pendência (mínimo 2 extintores) **provavelmente falsa**: extintores indicados só por placas E5 + E17 (5 posições), sem bloco; sem paredes. O quadro "F-8 Restaurante" na folha contradiz a planta |
+| 41336 | Térreo (depósito de GLP) | 4579,5–4607,5 / 2071,2–2089,5 | M-2 → Grande | com o pacote v3: 5 extintores **presumidos** pelas placas E5 + E17 (sem bloco), regras de extintor com indicativo "atende" e em revisão; sem paredes. O quadro "F-8 Restaurante" na folha contradiz a planta |
 | 21778 e 21801 | Térreo | 441,3–460,4 / 293–310,8 | A-2 multifamiliar → Pequeno | extintores conformes (15,4 ± 1,2 m ≤ 20 m) |
 | 21778 e 21801 | Pavimento tipo (1º ao 3º) | 461,5–481 / 293–310,8 | idem | **pendência**: 1 extintor por andar (mínimo 2); conferir exceção 5.2.4 (só < 50 m²) |
 
 21778 e 21801 são o mesmo prédio (geometria idêntica nas plantas), em duas submissões.
 
 ### Verificações
-- **124 testes passaram**, `ruff` ok, `alembic check` (0004) ok, `npm run build` ok.
+- **125 testes passaram**, `ruff` ok, `alembic check` (0004) ok, `npm run build` ok.
 - Backups: `C:\BackupsMotorCoscip\motor-coscip-backup-20260919T172112Z` (antes da 0003) e
   `...-20260919T180419Z` (antes da 0004).
 - Na tela: origem do risco aparece; formulário de revisão abre (não enviado); 0 decisões na base.
@@ -47,21 +50,19 @@ Enquadramento **proposto pelo assistente** a partir dos rótulos da planta — c
 ## Próximos passos, em ordem
 
 1. **Analista revisa** os resultados das 5 análises na tela (`#/desenhos/<id>/analise`) e faz a
-   nova emissão do relatório. Sugestões: 41336 "mínimo 2" (placas E5), 21471/41336 marcar
+   nova emissão do relatório. Sugestões: 41336 confirmar os 5 extintores presumidos, 21471/41336 marcar
    camadas de parede manualmente (item 4 do formulário) e reanalisar; confirmar as divisões.
 2. Informar o limite da NT 2-08 (Anexo C, imagem) e os sistemas exigidos em cada processo.
 3. Sistemas exigidos a partir do **Decreto 42/2018, Anexo III** (tabelas por divisão, área e
    altura) — mesma técnica da NT 1-04 (tabela no pacote + verificação por linha + imagem).
-4. Reconhecer extintor indicado só por placa (E5 + E17) como símbolo presumido (heurística →
-   sempre revisão).
-5. Mobiliário como obstáculo, portas fechadas, largura/número de saídas (NT 2-08 5.3).
-6. Homologação com responsável técnico (REG-05/06).
+4. Mobiliário como obstáculo, portas fechadas, largura/número de saídas (NT 2-08 5.3).
+5. Homologação com responsável técnico (REG-05/06).
 
 ## Estado do ambiente
 
 - Código: `C:\Users\USER\Downloads\motor-coscip` (branch `master`, só local).
-- Dados: `%LOCALAPPDATA%\MotorCoscip` (base na **0004**; pacotes v1 e v2; análises recentes com
-  enquadramento: 9715 `f2c44ad2…`, 21471 `4722e788…`, 41336 `ca92c008…`, 21778 `e01b8890…`,
+- Dados: `%LOCALAPPDATA%\MotorCoscip` (base na **0004**; pacotes v1, v2 e v3; análises recentes com
+  enquadramento: 9715 `f2c44ad2…`, 21471 `4722e788…`, 41336 `629e6ba9…`, 21778 `e01b8890…`,
   21801 `f830890d…`).
 - Textos das NTs: skills em `%APPDATA%\Claude\local-agent-mode-sessions\skills-plugin\...\skills\`
   (`cbmerj-grupo-1..5-*`, **nunca** `grupo-5-legado-nao-usar`); imagens das páginas em
@@ -90,7 +91,7 @@ Enquadramento **proposto pelo assistente** a partir dos rótulos da planta — c
 ## Comandos úteis
 
 ```powershell
-.venv\Scripts\python -m pytest -p no:cacheprovider --basetemp <pasta-nova>   # 124 testes (~2,7 min)
+.venv\Scripts\python -m pytest -p no:cacheprovider --basetemp <pasta-nova>   # 125 testes (~2,7 min)
 .venv\Scripts\ruff check . --no-cache
 npm run build
 .venv\Scripts\python -m coscip_api.cli backup
@@ -102,5 +103,5 @@ scripts\start\start.ps1
 ## Frase para abrir a próxima sessão
 
 > Leia `C:\Users\USER\Downloads\proxima-sessao.md` e retome pelos próximos passos (sistemas
-> exigidos pelo Decreto 42/2018, Anexo III, e extintor indicado por placa). Ao terminar, atualize
+> exigidos pelo Decreto 42/2018, Anexo III). Ao terminar, atualize
 > este mesmo arquivo e a cópia em docs; não crie outro guia.

@@ -2,7 +2,7 @@
 # Conta cada extintor reconhecido como uma unidade extintora (capacidade não conferida).
 schema_version: rules/1.1
 id: NT201_EXT_AREA
-version: 1
+version: 2
 title: Quantidade de extintores pela área máxima protegida por unidade
 measure: Extintores
 subject: FLOOR
@@ -18,12 +18,14 @@ applies_when:
   all:
     - {fact: context.unifamiliar, operator: equals, value: false}
 required_inputs:
+  - quality.extinguisher.not_presumed
   - floor.count.extinguishers
   - floor.area_m2
   - context.risk_class
   - quality.walls_detected
   - quality.region_confirmed
 quality_gates:
+  - {fact: quality.extinguisher.not_presumed, operator: equals, value: true}
   - {fact: quality.walls_detected, operator: equals, value: true}
   - {fact: quality.region_confirmed, operator: equals, value: true}
 calculation:

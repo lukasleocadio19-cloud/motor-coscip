@@ -243,6 +243,9 @@ def _analyze_region(region: Region, plan: Plan, symbols: list[Symbol], rooms: li
                                           or counts.get("AVISADOR")))
     facts["quality.walls_detected"] = _fact(walls_detected)
     facts["quality.region_confirmed"] = _fact(region.confirmed)
+    # Extintor presumido pela placa E-5 + E-17 (sem símbolo): contagem só indicativa.
+    facts["quality.extinguisher.not_presumed"] = _fact(
+        not any(s.cls == "EXTINTOR" and s.attrs.get("presumed") for s in prot))
 
     coverage = {}
     fields: dict[str, tuple[np.ndarray, np.ndarray]] = {}

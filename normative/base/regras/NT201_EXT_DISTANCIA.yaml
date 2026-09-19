@@ -1,7 +1,7 @@
 # RASCUNHO redigido pelo assistente a partir do texto ingerido da NT 2-01. Sem homologação.
 schema_version: rules/1.1
 id: NT201_EXT_DISTANCIA
-version: 1
+version: 2
 title: Distância máxima a percorrer até um extintor
 measure: Extintores
 subject: FLOOR
@@ -22,12 +22,14 @@ applies_when:
   all:
     - {fact: context.unifamiliar, operator: equals, value: false}
 required_inputs:
+  - quality.extinguisher.not_presumed
   - floor.extinguisher.max_travel_m
   - context.risk_class
   - quality.walls_detected
   - quality.region_confirmed
   - quality.extinguisher.complete
 quality_gates:
+  - {fact: quality.extinguisher.not_presumed, operator: equals, value: true}
   - {fact: quality.walls_detected, operator: equals, value: true}
   - {fact: quality.region_confirmed, operator: equals, value: true}
   - {fact: quality.extinguisher.complete, operator: equals, value: true}

@@ -143,6 +143,7 @@ def recognize(plan: Plan, d: SymbolDictionary,
             symbols.append(Symbol(s.id + "x", "SAIDA", s.x, s.y, s.handle, s.path, s.block,
                                   s.layer, s.stage, f"placa {s.attrs['code']} indica saída",
                                   dict(s.attrs)))
+    symbols.extend(_presumed_extinguishers(plan, symbols))
     _texts_attrs(plan, d, symbols)
     for s in symbols:
         if s.attrs.get("state") == "DEMOLIR":
@@ -190,6 +191,35 @@ def _text_symbols(plan: Plan, d: SymbolDictionary, taken: set) -> list[Symbol]:
                 out.append(Symbol(_sid(t.path, t.handle), cls.id, t.x, t.y, t.handle, t.path,
                                   t.block, t.layer, "text", f"texto '{t.text}'", attrs))
                 break
+    return out
+
+
+_E5 = re.compile(r"^\s*E\s*-?\s*5\s*$", re.I)
+_E17 = re.compile(r"^\s*E\s*-?\s*17\s*$", re.I)
+PRESUMED_PAIR_M = 1.6  # placa E-5 e marcação de piso E-17 do mesmo ponto
+PRESUMED_CLEAR_M = 2.0  # sem símbolo de extintor já reconhecido por perto
+
+
+def _presumed_extinguishers(plan: Plan, symbols: list[Symbol]) -> list[Symbol]:
+    """Extintor indicado só pela sinalização: placa E-5 com marcação de piso E-17 juntas.
+
+    Heurística (projetos que não desenham o símbolo do extintor): o símbolo sai marcado
+    ``presumed`` e as regras de extintor vão para revisão humana quando o usam.
+    """
+    e5 = [t for t in plan.texts if _E5.match(t.text)]
+    e17 = [t for t in plan.texts if _E17.match(t.text)]
+    real = [s for s in symbols if s.cls == "EXTINTOR"]
+    out: list[Symbol] = []
+    for t in e5:
+        floor = min((math.hypot(f.x - t.x, f.y - t.y) for f in e17), default=None)
+        if floor is None or floor > PRESUMED_PAIR_M:
+            continue
+        if any(math.hypot(s.x - t.x, s.y - t.y) <= PRESUMED_CLEAR_M for s in (*real, *out)):
+            continue
+        out.append(Symbol(_sid(t.path, t.handle) + "p", "EXTINTOR", t.x, t.y, t.handle, t.path,
+                          t.block, t.layer, "presumed",
+                          f"placa '{t.text}' + marcação de piso E-17 a {floor:.1f} m "
+                          "(sem símbolo de extintor desenhado)", {"presumed": True}))
     return out
 
 

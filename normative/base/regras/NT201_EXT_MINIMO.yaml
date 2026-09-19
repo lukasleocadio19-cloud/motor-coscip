@@ -2,7 +2,7 @@
 # Exceção do 5.2.4 (risco pequeno com área < 50 m²) tratada na aplicabilidade.
 schema_version: rules/1.1
 id: NT201_EXT_MINIMO
-version: 1
+version: 2
 title: No mínimo dois extintores na área de risco
 measure: Extintores
 subject: FLOOR
@@ -26,9 +26,11 @@ applies_when:
     - {fact: context.risk_class, operator: not_equals, value: PEQUENO}
     - {fact: floor.area_m2, operator: gte, value: 50}
 required_inputs:
+  - quality.extinguisher.not_presumed
   - floor.count.extinguishers
   - quality.region_confirmed
 quality_gates:
+  - {fact: quality.extinguisher.not_presumed, operator: equals, value: true}
   - {fact: quality.region_confirmed, operator: equals, value: true}
 calculation:
   operator: minimum_with_uncertainty

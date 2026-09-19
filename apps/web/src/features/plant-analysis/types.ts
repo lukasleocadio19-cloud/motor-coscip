@@ -174,6 +174,7 @@ export const GATES: Record<string, string> = {
   "quality.manual_call_point.complete": "há área sem acesso a acionador",
   "quality.exit.complete": "há área sem acesso a saída",
   "context.exits_confirmed": "saídas não confirmadas pelo analista",
+  "quality.extinguisher.not_presumed": "extintor presumido pela placa E-5 + E-17 (sem símbolo)",
 };
 
 export const STATUS_ORDER = ["FAIL", "REVIEW_REQUIRED", "MISSING_DATA", "PASS", "NOT_APPLICABLE"] as const;

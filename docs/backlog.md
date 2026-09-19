@@ -140,3 +140,10 @@ PILOT-01..06 e FUT-01..09 não iniciados — ver documento 03.
 | REV-01 | **feito** | decisão append-only com veredito (`final_status`, migração 0004), validação CONFIRM/CONTEST × REQUEST_DATA, auditoria; `GET /v1/plant-analyses/{id}/reviews` |
 | REV-02 | **feito** | revisão na tela (por resultado, histórico, filtro "sem conclusão", aviso de relatório desatualizado); nova emissão traz coluna "Decisão humana", contagem após revisão e `review_snapshot` |
 | Decreto 42, Anexo III | — | sistemas exigidos por divisão/área/altura ainda informados à mão |
+
+## Extintor presumido pela sinalização — 19/09/2026 (Claude, noite 3)
+
+| ID | Estado | Onde |
+|---|---|---|
+| PREP-02 (heurística) | **feito** | placa E-5 + marcação de piso E-17 a ≤ 1,6 m, sem símbolo de extintor a ≤ 2 m → `EXTINTOR` com `presumed`; fato `quality.extinguisher.not_presumed`; regras NT201 distância/área/mínimo v2 com essa porta (pacote v3) |
+| Real | **feito** | 41336: 5 extintores presumidos; "mínimo 2" deixou de ser pendência falsa (indicativo atende, em revisão) — análise `629e6ba9…` |
