@@ -61,7 +61,8 @@ Enquadramento **proposto pelo assistente** a partir dos rótulos da planta — c
    Iluminação, Saídas, Plano de emergência, Materiais de acabamento, Controle de fumaça — **não
    lista hidrantes nem alarme**; M-2 (GLP) não tem coluna (vai para NT 4-05). Tabelas 3–21: por
    grupo acima de 900 m² ou de 2 pavimentos, com colunas por altura. A conversão tem cabeçalhos
-   de coluna quebrados em várias linhas: conferir nas imagens das páginas antes de codificar.
+   de coluna quebrados em várias linhas; o decreto NÃO tem imagens das páginas nas skills:
+   conferir no PDF oficial (URL no front matter do .md) antes de codificar.
    Aplicação imediata: 9715 (D-2, 396 m², térreo) → Tabela 2, coluna A/D/E/G.
 4. Mobiliário como obstáculo, portas fechadas, largura/número de saídas (NT 2-08 5.3).
 5. Homologação com responsável técnico (REG-05/06).
