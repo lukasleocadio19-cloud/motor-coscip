@@ -114,3 +114,28 @@ scripts\start\start.ps1
 > Leia `C:\Users\USER\Downloads\proxima-sessao.md` e retome pelos próximos passos (sistemas
 > exigidos pelo Decreto 42/2018, Anexo III). Ao terminar, atualize
 > este mesmo arquivo e a cópia em docs; não crie outro guia.
+
+## Registro consolidado da sessão de 19/09/2026 (commits `d1468e2` → `4cfacf8`)
+
+### Feito
+- [x] Base normativa real: 52 NTs vigentes (grupos 1–5) + Decreto 42/2018 = 53 fontes, com SHA-256.
+- [x] Leitor aceita decreto, artigos (`Art. 15`) e anexos romanos (`Anexo III`).
+- [x] Consulta: índice de itens, texto do item, busca em todas as normas (radical: percorrer ~ percorrida).
+- [x] CLI `normative-import-sources` / `normative-import-package`.
+- [x] Tela **Base normativa** (cobertura por NT, busca, envio, importação, detalhe com tabelas).
+- [x] Tela **Análise da planta** (enquadramento, pavimentos, paredes, blocos, resultado por região, mapa, relatório).
+- [x] 7 pavimentos recortados nas 5 plantas reais e todas analisadas com enquadramento proposto.
+- [x] Enquadramento NT 1-04 Anexo B (60 divisões → risco), verificado linha a linha; ocupação sugere o risco e grava a origem.
+- [x] Revisão humana (REV-01/02): veredito + justificativa append-only, migração 0004, relatório com decisões.
+- [x] Extintor presumido por placa E-5 + piso E-17 (regras NT201 v2 vão para revisão); 41336 sem falsa pendência.
+- [x] 125 testes, ruff, build e `alembic check` ok; backups antes das migrações 0003 e 0004.
+
+### A fazer
+- [ ] **Analista**: revisar as 5 análises na tela e reemitir os relatórios (nenhuma decisão registrada).
+- [ ] **Analista**: confirmar as ocupações propostas (9715 D-2; 21471 e 41336 M-2; 21778/21801 A-2).
+- [ ] **Analista**: marcar camadas de parede no 21471 e no 41336 e reanalisar.
+- [ ] **Analista**: informar limite da NT 2-08 (Anexo C) e sistemas exigidos em cada processo.
+- [ ] 21778/21801: pendência real no pavimento tipo (1 extintor por andar; mínimo 2) — decidir na revisão.
+- [ ] Codificar a Tabela 2 do Anexo III do decreto (conferir colunas no PDF oficial) e aplicar ao 9715; depois Tabelas 3–21.
+- [ ] Mobiliário como obstáculo, portas fechadas, largura/número de saídas (NT 2-08 5.3).
+- [ ] Homologação das regras com responsável técnico (REG-05/06) — só então valor normativo.
