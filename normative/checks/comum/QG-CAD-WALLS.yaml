@@ -1,0 +1,22 @@
+# Porta de qualidade (§25): sem camada de parede confirmada, percurso não conclui.
+schema_version: checks/1.0
+id: QG-CAD-WALLS
+version: 1
+title: Camadas de parede confirmadas pelo analista
+system: QUALIDADE
+type: MANUAL_CONFIRMATION
+scope: BUILDING
+severity: MAJOR
+publication_state: DRAFT
+production_eligible: false
+group_key: qualidade/camadas-de-parede
+human_review:
+  always: true
+wording:
+  title: Confirmar as camadas que representam as paredes
+  explanation: >-
+    O cálculo de percurso depende de saber quais camadas do desenho são paredes.
+    Enquanto isso não for confirmado, o número aparece como indicativo e nenhuma
+    verificação de distância é concluída.
+  required_action: >-
+    Marcar no formulário as camadas correspondentes às paredes e reanalisar.

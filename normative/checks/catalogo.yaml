@@ -1,0 +1,23 @@
+# RASCUNHO. Catálogo de checks da arquitetura v2 (§18, §19, §75).
+# Nenhum check tem valor normativo: publication_state DRAFT, sem homologação técnica.
+# Toda citação é conferida contra o texto ingerido na importação (verify_catalog).
+schema_version: check-catalog/1.0
+id: coscip-checks-rj
+name: Plano de Verificação COSCIP — piloto extintores e hidrantes
+version: 1
+jurisdiction: CBMERJ-RJ
+publication_state: DRAFT
+notes:
+  - "Piloto das fases 1 e 2: o catálogo existe, é versionado e compila plano determinístico."
+  - "Checks documentais dependem do motor documental (fase 4) para receber evidências."
+checks:
+  - comum/QG-CAD-WALLS.yaml
+  - extintores/EXT-CAD-001.yaml
+  - extintores/EXT-CAD-002.yaml
+  - extintores/EXT-CAD-003-PEQUENO.yaml
+  - extintores/EXT-CAD-003-MEDIO.yaml
+  - extintores/EXT-CAD-003-GRANDE.yaml
+  - hidrantes/HID-REQ-001.yaml
+  - hidrantes/HID-DOC-001.yaml
+  - hidrantes/HID-DOC-004.yaml
+  - hidrantes/HID-CROSS-002.yaml

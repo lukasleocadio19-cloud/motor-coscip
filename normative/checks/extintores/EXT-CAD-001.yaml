@@ -1,0 +1,38 @@
+# RASCUNHO. Presença de unidade extintora reconhecida na planta.
+schema_version: checks/1.0
+id: EXT-CAD-001
+version: 1
+title: Unidades extintoras localizadas na planta
+system: EXTINTORES
+type: CAD_PRESENCE
+scope: FLOOR
+severity: CRITICAL
+publication_state: DRAFT
+production_eligible: false
+group_key: extintores/presenca
+applies_when:
+  all:
+    - {fact: context.unifamiliar, operator: equals, value: false}
+question:
+  kind: presence
+  field: extinguisher
+  accepted_evidence: [CAD, MEMORIAL, HUMANO]
+  quality_gate: quality.extinguisher.not_presumed
+normative_basis:
+  - document: NT 2-01
+    edition: 2ª edição - 2020
+    item: Tabela 3
+    quote: ["Área máxima protegida por 01 (uma) unidade extintora", "250 m"]
+result_rules:
+  missing_required_field: UNDETERMINED
+human_review:
+  on_missing: true
+wording:
+  title: Nenhuma unidade extintora foi localizada no pavimento
+  explanation: >-
+    A extração não reconheceu extintor no pavimento analisado. Isso não conclui que o
+    projeto não os prevê: pode ser símbolo não reconhecido, camada ausente ou planta
+    vinda de PDF.
+  required_action: >-
+    Conferir na planta e, se houver extintores, identificar o símbolo ou a camada
+    correspondente antes de reanalisar.

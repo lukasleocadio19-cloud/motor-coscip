@@ -4,11 +4,15 @@ Aplicação para **um operador no próprio computador Windows**: entrada DXF, ge
 regras normativas, evidências e relatórios locais. IA por API é **opcional** e fica
 desligada até ser configurada. Plano de referência: [`docs/plano/00-plano-completo.html`](docs/plano/00-plano-completo.html) (v2.0, 19/09/2026).
 
-> Estado: **fundação da fase de viabilidade.** O fluxo projeto → revisão → upload → selagem →
-> importação DXF em processo separado → diagnóstico já funciona e tem testes. Preparação da
-> planta, regras reais, relatório e viewer com cena ainda não existem; as rotas respondem
-> `501` com o ID do backlog. Nenhum resultado aqui tem valor normativo: a única regra é a
-> artificial `DEMO_DOOR_WIDTH_MIN` (`TEST_ONLY`).
+> Estado: o fluxo projeto → upload → importação DXF → preparação → análise da planta → revisão
+> humana → relatório funciona e tem testes, com a base normativa completa (53 fontes) e um pacote
+> de regras em rascunho. A **arquitetura v2** (`Check` → `Evidence` → `Finding`, Plano de
+> Verificação) tem as fases 1 e 2 implementadas na camada Python; ainda não está na interface nem
+> na API. **Nenhum resultado tem valor normativo**: regras e checks estão em rascunho, sem
+> homologação técnica.
+>
+> Registro único do projeto, com o que falta e como continuar:
+> [`docs/proxima-sessao.md`](docs/proxima-sessao.md).
 
 ## Começar
 

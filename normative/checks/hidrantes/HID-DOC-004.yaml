@@ -1,0 +1,74 @@
+# RASCUNHO. Identificação completa da motobomba: as oito características do item 5.1.21
+# da NT 2-04 (a lista inclui "número de série", que o documento de arquitetura omitia).
+schema_version: checks/1.0
+id: HID-DOC-004
+version: 1
+title: Características técnicas da motobomba
+system: HIDRANTES
+type: DOCUMENT_FIELD
+scope: SUBJECT
+severity: MAJOR
+publication_state: DRAFT
+production_eligible: false
+group_key: hidrantes/motobomba-identificacao
+depends_on: [HID-REQ-001]
+applies_when:
+  all:
+    - {fact: context.effective_requirement_hydrants, operator: equals, value: true}
+    - {fact: context.has_fire_pump, operator: equals, value: true}
+question:
+  kind: required_fields
+  subject: fire_pump
+  required_fields:
+    - manufacturer
+    - serial_number
+    - model
+    - flow_l_min
+    - pressure_mca
+    - rpm
+    - impeller_diameter_mm
+    - power_cv
+  required_sources: [DOCUMENT]
+  accepted_evidence: [ART, RRT, MEMORIAL, CURVA_BOMBA, FICHA_TECNICA]
+normative_basis:
+  - document: NT 2-04
+    edition: 2ª edição - 2023
+    item: "5.1.21"
+    quote:
+      - "placa de identificação"
+      - "nome do fabricante"
+      - "número de série"
+      - "modelo da bomba"
+      - "vazão nominal"
+      - "pressão nominal"
+      - "rotações por minuto"
+      - "diâmetro do rotor"
+      - "potência, em CV"
+  - document: NT 2-04
+    edition: 2ª edição - 2023
+    item: "5.1.22"
+    quote: ["curva de desempenho", "tabela de seleção"]
+result_rules:
+  missing_required_field: UNDETERMINED
+  conflicting_values: UNDETERMINED
+human_review:
+  on_conflict: true
+  on_missing: true
+wording:
+  title: Documentação incompleta para identificação da motobomba
+  explanation: >-
+    A documentação apresentada não permite identificar inequivocamente o equipamento
+    com as características que a NT 2-04 exige na placa de identificação e na curva de
+    desempenho.
+  required_action: >-
+    Apresentar documento complementar ou substitutivo contendo as características
+    técnicas exigidas da motobomba.
+  field_labels:
+    manufacturer: fabricante
+    serial_number: número de série
+    model: modelo
+    flow_l_min: vazão nominal (L/min)
+    pressure_mca: pressão nominal (mca)
+    rpm: rotação (rpm)
+    impeller_diameter_mm: diâmetro do rotor (mm)
+    power_cv: potência (CV)

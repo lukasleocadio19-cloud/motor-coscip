@@ -12,7 +12,7 @@ from typing import Any
 
 from coscip_cbm import Applicability, EvaluationStatus
 from coscip_geometry.tolerances import compare_maximum, compare_minimum
-from coscip_rules.dsl import Predicate, RequiredSpec, RuleDefinition
+from coscip_rules.dsl import Condition, Predicate, RequiredSpec, RuleDefinition
 
 _UNKNOWN = object()
 
@@ -83,14 +83,19 @@ def _any(values: list[bool | None]) -> bool | None:
     return False
 
 
-def applicability(rule: RuleDefinition, ctx: EvaluationContext) -> Applicability:
+def evaluate_condition(condition: Condition, ctx: EvaluationContext) -> Applicability:
+    """Condição em lógica de três valores. Fato desconhecido não vira FALSE."""
     parts: list[bool | None] = []
-    if rule.applies_when.all:
-        parts.append(_all([_pred(p, ctx) for p in rule.applies_when.all]))
-    if rule.applies_when.any:
-        parts.append(_any([_pred(p, ctx) for p in rule.applies_when.any]))
+    if condition.all:
+        parts.append(_all([_pred(p, ctx) for p in condition.all]))
+    if condition.any:
+        parts.append(_any([_pred(p, ctx) for p in condition.any]))
     res = _all(parts) if parts else True
     return {True: Applicability.TRUE, False: Applicability.FALSE, None: Applicability.UNKNOWN}[res]
+
+
+def applicability(rule: RuleDefinition, ctx: EvaluationContext) -> Applicability:
+    return evaluate_condition(rule.applies_when, ctx)
 
 
 class _MissingKey(Exception):

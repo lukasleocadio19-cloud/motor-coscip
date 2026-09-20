@@ -1,0 +1,36 @@
+# RASCUNHO. Responsabilidade técnica pelo sistema (ART/RRT), citada na NT 2-04 5.1.22.
+schema_version: checks/1.0
+id: HID-DOC-001
+version: 1
+title: Responsabilidade técnica pelo sistema de hidrantes
+system: HIDRANTES
+type: DOCUMENT_PRESENCE
+scope: PROCESS
+severity: CRITICAL
+publication_state: DRAFT
+production_eligible: false
+group_key: hidrantes/responsabilidade-tecnica
+depends_on: [HID-REQ-001]
+applies_when:
+  all:
+    - {fact: context.effective_requirement_hydrants, operator: equals, value: true}
+question:
+  kind: presence
+  field: technical_responsibility_document
+  accepted_evidence: [ART, RRT, TRT]
+  required_sources: [DOCUMENT]
+normative_basis:
+  - document: NT 2-04
+    edition: 2ª edição - 2023
+    item: "5.1.22"
+    quote: ["documento de responsabilidade técnica", "profissional responsável"]
+human_review:
+  on_missing: true
+wording:
+  title: Documento de responsabilidade técnica do sistema não localizado
+  explanation: >-
+    Não foi localizado documento de responsabilidade técnica (ART, RRT ou TRT)
+    abrangendo o sistema de hidrantes.
+  required_action: >-
+    Apresentar o documento de responsabilidade técnica do sistema, emitido pelo
+    profissional responsável junto ao órgão de classe.

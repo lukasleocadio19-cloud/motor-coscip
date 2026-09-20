@@ -1,0 +1,41 @@
+# RASCUNHO. Mínimo de duas unidades extintoras por pavimento (exceção 5.2.4 não modelada aqui).
+schema_version: checks/1.0
+id: EXT-CAD-002
+version: 1
+title: Mínimo de duas unidades extintoras por pavimento
+system: EXTINTORES
+type: CAD_COUNT
+scope: FLOOR
+severity: MAJOR
+publication_state: DRAFT
+production_eligible: false
+group_key: extintores/minimo
+depends_on: [EXT-CAD-001]
+applies_when:
+  all:
+    - {fact: context.unifamiliar, operator: equals, value: false}
+question:
+  kind: minimum_count
+  field: extinguisher
+  required_value: 2
+  unit: un
+  accepted_evidence: [CAD, HUMANO]
+  quality_gate: quality.extinguisher.not_presumed
+normative_basis:
+  - document: NT 2-01
+    edition: 2ª edição - 2020
+    item: "5.2.5"
+    quote: ["no mínimo, 02 (dois) extintores"]
+  - document: NT 2-01
+    edition: 2ª edição - 2020
+    item: "5.2.4"
+    quote: ["50 m"]
+wording:
+  title: Pavimento com menos de duas unidades extintoras
+  explanation: >-
+    A NT 2-01 exige no mínimo duas unidades extintoras por pavimento. A exceção do item
+    5.2.4 vale apenas abaixo do limite de área ali previsto e precisa ser confirmada
+    pelo analista.
+  required_action: >-
+    Prever a segunda unidade extintora no pavimento ou justificar o enquadramento na
+    exceção, com a área do pavimento.

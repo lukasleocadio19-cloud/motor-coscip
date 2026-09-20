@@ -1,0 +1,52 @@
+# RASCUNHO. Cruzamento ART × curva de bomba: a pressão nominal precisa ser a mesma nas
+# duas fontes. Uma fonte só não confirma nem contradiz — fica inconclusivo, não conforme.
+schema_version: checks/1.0
+id: HID-CROSS-002
+version: 1
+title: Pressão nominal da motobomba coerente entre ART e curva
+system: HIDRANTES
+type: CROSS_DOCUMENT
+scope: SUBJECT
+severity: MAJOR
+publication_state: DRAFT
+production_eligible: false
+group_key: hidrantes/motobomba-coerencia
+# Depende só da exigência do sistema: a coerência entre as fontes é
+# verificável mesmo com a identificação da bomba incompleta.
+depends_on: [HID-REQ-001]
+applies_when:
+  all:
+    - {fact: context.effective_requirement_hydrants, operator: equals, value: true}
+    - {fact: context.has_fire_pump, operator: equals, value: true}
+question:
+  kind: consistency
+  subject: fire_pump
+  field: pressure_mca
+  required_sources: [ART, CURVA_BOMBA]
+  accepted_evidence: [ART, CURVA_BOMBA, MEMORIAL]
+  unit: mca
+normative_basis:
+  - document: NT 2-04
+    edition: 2ª edição - 2023
+    item: "5.1.22"
+    quote:
+      - "curva de desempenho"
+      - "as quais deverão ser registradas"
+      - "documento de responsabilidade técnica"
+result_rules:
+  conflicting_values: UNDETERMINED
+  missing_required_field: UNDETERMINED
+human_review:
+  on_conflict: true
+  on_missing: true
+wording:
+  title: Divergência de pressão nominal entre a ART e a curva da bomba
+  explanation: >-
+    A NT 2-04 exige que as informações da curva de desempenho estejam registradas
+    também no documento de responsabilidade técnica. Os valores apresentados não
+    coincidem.
+  required_action: >-
+    Compatibilizar a documentação: apresentar ART e curva com a mesma pressão nominal
+    ou justificar a diferença.
+  field_labels:
+    pressure_mca: pressão nominal (mca)

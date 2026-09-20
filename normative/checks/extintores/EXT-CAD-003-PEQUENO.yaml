@@ -1,0 +1,38 @@
+# RASCUNHO. Distância máxima a percorrer até a unidade extintora — risco Pequeno.
+# Um check por risco: o limite fica literal e conferível, sem tabela embutida no motor.
+schema_version: checks/1.0
+id: EXT-CAD-003-PEQUENO
+version: 1
+title: Distância a percorrer até o extintor (risco Pequeno)
+system: EXTINTORES
+type: CAD_DISTANCE
+scope: FLOOR
+severity: MAJOR
+publication_state: DRAFT
+production_eligible: false
+group_key: extintores/distancia
+depends_on: [EXT-CAD-001]
+applies_when:
+  all:
+    - {fact: context.risk_class, operator: equals, value: PEQUENO}
+    - {fact: context.unifamiliar, operator: equals, value: false}
+question:
+  kind: maximum_value
+  field: extinguisher_walk_distance_m
+  required_value: 20
+  unit: m
+  accepted_evidence: [CAD]
+  quality_gate: quality.walls_detected
+normative_basis:
+  - document: NT 2-01
+    edition: 2ª edição - 2020
+    item: Tabela 3
+    quote: ["Distância máxima percorrida", "20 m", "Pequeno"]
+wording:
+  title: Distância a percorrer até o extintor acima do limite (risco Pequeno)
+  explanation: >-
+    A maior distância a percorrer medida no pavimento ultrapassa os 20 m previstos
+    para o risco Pequeno.
+  required_action: >-
+    Reposicionar ou acrescentar unidade extintora de modo que nenhum ponto do
+    pavimento ultrapasse 20 m de percurso.

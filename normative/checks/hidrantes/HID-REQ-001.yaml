@@ -1,0 +1,35 @@
+# RASCUNHO. Porta de entrada do sistema: a exigência do sistema de hidrantes está estabelecida?
+# Os demais checks de hidrante dependem deste. Sem exigência conhecida, nada abaixo conclui.
+schema_version: checks/1.0
+id: HID-REQ-001
+version: 1
+title: Exigência do sistema de hidrantes estabelecida
+system: HIDRANTES
+type: NORMATIVE_TABLE
+scope: PROCESS
+severity: CRITICAL
+publication_state: DRAFT
+production_eligible: false
+group_key: hidrantes/exigencia
+# Sem applies_when: a pergunta "como a exigência foi determinada?" vale para qualquer
+# processo. Se a exigência não estiver registrada, isso É a pendência — não um motivo
+# para dispensar a verificação.
+question:
+  kind: presence
+  field: hydrant_requirement
+  accepted_evidence: [NORMATIVE_TABLE, HUMANO]
+normative_basis:
+  - document: NT 2-02
+    edition: 1ª edição - 2019; Portaria 1.317/2025
+    item: "5.6.1"
+    quote: ["O comprimento das linhas de mangueiras não poderá ultrapassar 30 m"]
+human_review:
+  on_missing: true
+wording:
+  title: Exigência do sistema de hidrantes não registrada
+  explanation: >-
+    Não há registro de como a exigência do sistema de hidrantes foi determinada
+    (tabela do Anexo III ou decisão do analista). Sem isso, as demais verificações de
+    hidrante ficam sem base.
+  required_action: >-
+    Registrar o enquadramento que determina a exigência do sistema de hidrantes.

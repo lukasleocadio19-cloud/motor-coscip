@@ -100,3 +100,97 @@ class ReviewDecision(StrEnum):
     CONTEST = "CONTEST"
     REQUEST_DATA = "REQUEST_DATA"
     RESOLVED_BY_NEW_REVISION = "RESOLVED_BY_NEW_REVISION"
+
+
+class ComplianceStatus(StrEnum):
+    """Arquitetura v2 §3.A — o que a regra normativa conclui.
+
+    Nunca fundir com ``EvidenceStatus`` nem com ``ReviewStatus``: "não há base para
+    concluir" é diferente de "falta evidência" e de "o analista precisa olhar".
+    """
+
+    COMPLIANT = "COMPLIANT"
+    NON_COMPLIANT = "NON_COMPLIANT"
+    NOT_APPLICABLE = "NOT_APPLICABLE"
+    UNDETERMINED = "UNDETERMINED"
+
+
+class EvidenceStatus(StrEnum):
+    """Arquitetura v2 §3.B — qualidade da evidência reunida para o check."""
+
+    SUFFICIENT = "SUFFICIENT"
+    PARTIAL = "PARTIAL"
+    MISSING = "MISSING"
+    CONFLICTING = "CONFLICTING"
+    UNVERIFIED = "UNVERIFIED"
+
+
+class ReviewStatus(StrEnum):
+    """Arquitetura v2 §3.C — estado da revisão humana do achado."""
+
+    NOT_REQUIRED = "NOT_REQUIRED"
+    PENDING = "PENDING"
+    CONFIRMED = "CONFIRMED"
+    CONTESTED = "CONTESTED"
+    DATA_REQUESTED = "DATA_REQUESTED"
+
+
+class Severity(StrEnum):
+    """Arquitetura v2 §33. Severidade ordena a tela; não é conformidade."""
+
+    CRITICAL = "CRITICAL"
+    MAJOR = "MAJOR"
+    MINOR = "MINOR"
+    INFORMATIONAL = "INFORMATIONAL"
+
+
+SEVERITY_ORDER: dict[Severity, int] = {
+    Severity.CRITICAL: 0,
+    Severity.MAJOR: 1,
+    Severity.MINOR: 2,
+    Severity.INFORMATIONAL: 3,
+}
+
+
+class FindingKind(StrEnum):
+    """Arquitetura v2 §56 — os poucos tipos que o analista vê na tela."""
+
+    NON_COMPLIANT = "NON_COMPLIANT"
+    DOCUMENT_INCOMPLETE = "DOCUMENT_INCOMPLETE"
+    DOCUMENT_MISSING = "DOCUMENT_MISSING"
+    DATA_MISSING = "DATA_MISSING"
+    DIVERGENCE = "DIVERGENCE"
+    NOT_VERIFIABLE = "NOT_VERIFIABLE"
+    ANALYST_REVIEW = "ANALYST_REVIEW"
+    NO_PENDING_ISSUE = "NO_PENDING_ISSUE"
+
+
+FINDING_KIND_LABELS: dict[FindingKind, str] = {
+    FindingKind.NON_COMPLIANT: "Não atende",
+    FindingKind.DOCUMENT_INCOMPLETE: "Documento incompleto",
+    FindingKind.DOCUMENT_MISSING: "Documento ausente",
+    FindingKind.DATA_MISSING: "Dado ausente",
+    FindingKind.DIVERGENCE: "Divergência",
+    FindingKind.NOT_VERIFIABLE: "Não foi possível verificar",
+    FindingKind.ANALYST_REVIEW: "Revisão do analista",
+    FindingKind.NO_PENDING_ISSUE: "Sem pendência",
+}
+
+
+class EvidenceSourceType(StrEnum):
+    """Arquitetura v2 §7 — de onde veio o fato."""
+
+    CAD = "CAD"
+    DOCUMENT = "DOCUMENT"
+    CALCULATION = "CALCULATION"
+    NORMATIVE_TABLE = "NORMATIVE_TABLE"
+    HUMAN = "HUMAN"
+
+
+class ConsensusStatus(StrEnum):
+    """Arquitetura v2 §55 — o que várias fontes dizem sobre o mesmo campo."""
+
+    SUPPORTED = "SUPPORTED"
+    CONFLICTING = "CONFLICTING"
+    SINGLE_SOURCE = "SINGLE_SOURCE"
+    MISSING_REQUIRED_SOURCE = "MISSING_REQUIRED_SOURCE"
