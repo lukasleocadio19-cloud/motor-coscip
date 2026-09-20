@@ -53,9 +53,11 @@ runbook `docs/runbooks/dwg-para-dxf.md`.
 1. **Importar o pacote v4 na base real.** É o que ainda falta da entrega anterior: a permissão de
    gravação em `%LOCALAPPDATA%\MotorCoscip` não foi concedida, então a base real continua em v3.
    Quando houver permissão: `normative-import-package`, reiniciar o aplicativo e conferir a tela.
-2. **Recompilar e conferir a interface.** O `npm run build` não foi executado depois dos últimos
-   ajustes de alerta de divergência e versão no seletor de pacotes (feitos na sessão anterior).
-   O build padrão falha no esbuild com "Acesso negado"; a alternativa está na seção 9.
+2. **Conferir a interface na tela.** O build foi refeito em 20/09 pela alternativa da seção 9
+   (`tsc -b` sem erro e Vite gerando `apps/api/coscip_api/static/` em 3,8 s), então o código dos
+   ajustes de alerta de divergência e versão no seletor **compila**. Falta apenas a conferência
+   visual no navegador, que depende do app rodando. O `npm run build` padrão continua falhando
+   no esbuild com "Acesso negado".
 3. **Fase 3 da arquitetura v2 — adaptar o motor CAD.** Converter os resultados que o motor já
    produz (extintores, portas, paredes, distâncias, saídas) em `Evidence`, em vez de texto de
    relatório. Critério de aceite: uma análise real produz `Finding` sem depender do texto antigo.
@@ -432,7 +434,8 @@ e `ConsensusStatus`.
 
 ### Verificações
 
-- **243 testes passaram** (181 anteriores + 62 novos), `ruff check . --no-cache` limpo.
+- **243 testes passaram** (181 anteriores + 62 novos), `ruff check . --no-cache` limpo,
+  `tsc -b` sem erro e build da interface refeito pela alternativa da seção 9.
 - Catálogo conferido contra as 29 fontes dos grupos 1 e 2 ingeridas do Markdown original:
   **10/10 citações verificadas**, incluindo as nove expressões do item 5.1.21 da NT 2-04.
 - O teste de integração reproduz o processo sintético do §76 e comprova, entre outras coisas:
