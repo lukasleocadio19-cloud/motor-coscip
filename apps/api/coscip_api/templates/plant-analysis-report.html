@@ -54,6 +54,21 @@ Nenhuma aprovação ou reprovação é emitida por este documento.</div>
 <tr><th>Obstáculos para percurso</th><td>{{ data.obstacles.layers|join(', ') or 'nenhuma camada reconhecida' }} <small>({{ data.obstacles.source }}; {{ data.obstacles.segments }} segmentos)</small></td></tr>
 </tbody></table>
 
+{% set req = data.context.get('requirements_reference') %}
+{% if req %}
+<h2>Referência do Anexo III (rascunho)</h2>
+<p>ATC informada: {{ data.context.building_area_m2 or 'não informada' }} m² · pavimentos informados: {{ data.context.building_floors or 'não informados' }} · altura: {{ data.context.building_height_m or 'não informada' }} m.</p>
+<p>{{ req.message }}</p>
+{% if data.context.grouped_houses_or_lots %}<p>Casas ou lotes informados: {{ data.context.grouped_houses_or_lots }}.</p>{% endif %}
+{% if req.source %}<p>{{ req.source.document }}, {{ req.source.item }}, PDF p. {{ req.source.page }}{% if req.column %} · coluna {{ req.column }}{% endif %}.<br><small>SHA-256 do texto: {{ req.source_sha256 }}</small></p>{% endif %}
+{% if req.measures %}<table><thead><tr><th>Medida</th><th>Célula</th><th>Referência</th></tr></thead><tbody>
+{% for m in req.measures %}<tr><td>{{ m.label }}</td><td>{{ m.cell }}</td><td>{{ {'REQUIRED':'Exigido na tabela','CONDITIONAL':'Conferir condição da nota','NOT_MARKED':'Não assinalado nesta tabela'}[m.status] }}</td></tr>{% endfor %}
+</tbody></table>{% endif %}
+{% for warning in req.conflicts or [] %}<p class="warn">Divergência: {{ warning }}</p>{% endfor %}
+{% for note in req.notes %}<p class="mut">{{ note }}</p>{% endfor %}
+<p class="mut">Hidrantes e alarme não têm linha na Tabela 2. Esta referência não altera os sistemas confirmados pelo analista nem substitui a conferência de riscos específicos.</p>
+{% endif %}
+
 {% for r in data.regions if r.kind == 'PLAN' %}
 <h2>{{ r.name }}</h2>
 <p class="mut">{{ 'Pavimento recortado pelo analista' if r.source == 'FLOOR' else 'Região agrupada automaticamente (sugestão)' }} · caixa {{ r.bbox_m|map('num')|join(' / ') }} m{% if r.geometry %} · interior {{ r.geometry.interior_m2|num }} ± {{ r.geometry.interior_uncertainty_m2|num }} m² · célula {{ r.geometry.cell_m|num }} m{% endif %}</p>

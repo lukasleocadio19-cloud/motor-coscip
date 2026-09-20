@@ -1,0 +1,1115 @@
+schema_version: requirements/1.0
+source:
+  document: Decreto 42/2018
+  item: Anexo III, Tabela 2
+  page: 26
+  title: Tabela 2 - Exigências para edificações com área menor ou igual a 900m² e até 02 pavimentos.
+  pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/COSCIP_DEC_42-2018_COMPILADO.pdf
+  visual_check: '19/09/2026: página 26, cabeçalhos e 77 células conferidos no PDF de mesmo SHA-256.'
+columns:
+- id: A/D/E/G
+  divisions:
+  - A-1
+  - A-2
+  - A-3
+  - A-4
+  - A-5
+  - A-6
+  - D-1
+  - D-2
+  - D-3
+  - D-4
+  - D-5
+  - E-1
+  - E-2
+  - E-3
+  - G-1
+  - G-2
+  - G-3
+  - G-4
+  - G-5
+  - G-6
+- id: B
+  divisions:
+  - B-1
+  - B-2
+- id: C
+  divisions:
+  - C-1
+  - C-2
+  - C-3
+  - C-4
+- id: F1/F2/F3/F4/F7/F8/F10
+  divisions:
+  - F-1
+  - F-2
+  - F-3
+  - F-4
+  - F-7
+  - F-8
+  - F-10
+- id: F5/F11
+  divisions:
+  - F-5
+  - F-11
+- id: F6
+  divisions:
+  - F-6
+- id: F9
+  divisions:
+  - F-9
+- id: H1/H4
+  divisions:
+  - H-1
+  - H-4
+- id: H2/H3
+  divisions:
+  - H-2
+  - H-3
+- id: I/J/M3
+  divisions:
+  - I-1
+  - I-2
+  - I-3
+  - J-1
+  - J-2
+  - J-3
+  - J-4
+  - M-3
+- id: L1
+  divisions:
+  - L-1
+header_rows:
+- - ''
+  - Grupo / Divisão de ocupação e uso
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+- - ''
+  - A, D, E, G
+  - B
+  - C
+  - F
+  - ''
+  - ''
+  - ''
+  - H
+  - ''
+  - I, J, M3
+  - L1
+- - Medidas de Segurança contra
+  - ''
+  - ''
+  - ''
+  - F1, F2,
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+- - Incêndio e Pânico
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+- - ''
+  - ''
+  - ''
+  - ''
+  - F3, F4,
+  - F5,
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+- - ''
+  - '-'
+  - '-'
+  - '-'
+  - ''
+  - ''
+  - F6
+  - F9
+  - H1, H4
+  - H2, H3
+  - '-'
+  - '-'
+- - ''
+  - ''
+  - ''
+  - ''
+  - F7, F8,
+  - F11
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+- - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+- - ''
+  - ''
+  - ''
+  - ''
+  - F10
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+- &id001
+  - Extintores
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X1
+  - X
+measures:
+- id: extinguishers
+  label: Extintores
+  source_row: *id001
+  cells:
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X1
+  - X
+  label_quotes:
+  - Extintores
+- id: signage
+  label: Sinalização de segurança
+  source_row:
+  - Sinalização de segurança
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X1
+  - X
+  cells:
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X1
+  - X
+  label_quotes:
+  - Sinalização de segurança
+- id: lighting
+  label: Iluminação de Emergência
+  source_row:
+  - Iluminação de Emergência
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X1
+  - '-'
+  cells:
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X1
+  - '-'
+  label_quotes:
+  - Iluminação de Emergência
+- id: exits
+  label: Saídas de Emergência
+  source_row:
+  - Saídas de Emergência
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X1
+  - X
+  cells:
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X
+  - X1
+  - X
+  label_quotes:
+  - Saídas de Emergência
+- id: emergency_plan
+  label: Plano de emergência
+  source_row:
+  - Plano de emergência
+  - '-'
+  - '-'
+  - '-'
+  - '-'
+  - '-'
+  - X²
+  - '-'
+  - '-'
+  - X
+  - '-'
+  - '-'
+  cells:
+  - '-'
+  - '-'
+  - '-'
+  - '-'
+  - '-'
+  - X²
+  - '-'
+  - '-'
+  - X
+  - '-'
+  - '-'
+  label_quotes:
+  - Plano de emergência
+- id: finishing_materials
+  label: Controle de Materiais de Acabamento
+  source_row:
+  - ''
+  - '-'
+  - X
+  - '-'
+  - X
+  - X
+  - X
+  - '-'
+  - '-'
+  - X
+  - '-'
+  - X
+  cells:
+  - '-'
+  - X
+  - '-'
+  - X
+  - X
+  - X
+  - '-'
+  - '-'
+  - X
+  - '-'
+  - X
+  label_quotes:
+  - Controle de Materiais de
+  - Acabamento
+- id: smoke_control
+  label: Controle de fumaça
+  source_row:
+  - Controle de fumaça
+  - '-'
+  - '-'
+  - '-'
+  - '-'
+  - '-'
+  - X3, 4
+  - '-'
+  - '-'
+  - '-'
+  - '-'
+  - '-'
+  cells:
+  - '-'
+  - '-'
+  - '-'
+  - '-'
+  - '-'
+  - X3, 4
+  - '-'
+  - '-'
+  - '-'
+  - '-'
+  - '-'
+  label_quotes:
+  - Controle de fumaça
+notes:
+- 'OBSERVAÇÕES ESPECÍFICAS: 1- Não serão exigidas as medidas de segurança contra incêndio e pânico para
+  as torres de comunicação (M-3) onde não haja edificação. 2- Exigido somente para lotação superior a
+  200 pessoas. 3- Exigido sistema de exaustão de fumaça em conformidade com a Nota Técnica específica
+  para lotação até 500 pessoas. 4- Obrigatório para lotação superior a 500 pessoas, podendo ser substituído
+  por chuveiros automáticos de resposta rápida com reserva de incêndio para 30 minutos. Obrigatório para
+  lotação superior a 3.000 pessoas. Obrigatório para edificações sem janelas independentemente da lotação.
+  OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações,
+  observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar
+  em conformidade com as normas técnicas oficiais; c) Para o Grupo M (especiais), ver tabelas específicas,
+  ressalvadas as medidas de segurança estabelecidas para a classificação M3; d) Para a divisão G-5 (Hangares),
+  prever sistema de drenagem de líquidos nos pisos para bacias de contenção à distância. Não é permitido
+  o armazenamento de líquidos combustíveis ou inflamáveis dentro dos hangares, exceto aqueles destinados
+  exclusivamente a grupos motogeradores ou conjuntos de pressurização para sistemas de combate a incêndio;
+  e) Para a divisão L-1 (comércio de fogos de artifício e munições) atender a Nota Técnica específica.
+  As divisões L-2 e L-3 somente serão avaliadas pelo CBMERJ através de Comissão de Análise Técnica; f)
+  Observar ainda as exigências para os riscos específicos nas respectivas Notas Técnicas.'
+residential_table:
+  schema_version: requirements/1.0
+  source:
+    document: Decreto 42/2018
+    item: Anexo III, Tabela 3
+    page: 27
+    title: Tabela 3 - Exigências para edificações do grupo A (divisões A-2 e A-3) com área superior a
+      900m²
+    pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+    url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/COSCIP_DEC_42-2018_COMPILADO.pdf
+    visual_check: '19/09/2026: página 27, 12 colunas e 156 células conferidas no PDF de mesmo SHA-256.'
+  scope_quotes:
+  - ou superior a 02 pavimentos
+  columns:
+  - id: A-2 / Térrea
+    divisions:
+    - A-2
+  - id: A-2 / 2 pavimentos
+    divisions:
+    - A-2
+  - id: A-2 / 3 pavimentos
+    divisions:
+    - A-2
+  - id: A-2 / 4–5 pavimentos
+    divisions:
+    - A-2
+  - id: A-2 / Acima de 5 pavimentos / H ≤ 30 m
+    divisions:
+    - A-2
+  - id: A-2 / H > 30 m
+    divisions:
+    - A-2
+  - id: A-3 / Térrea
+    divisions:
+    - A-3
+  - id: A-3 / 2 pavimentos
+    divisions:
+    - A-3
+  - id: A-3 / 3 pavimentos
+    divisions:
+    - A-3
+  - id: A-3 / 4–6 pavimentos
+    divisions:
+    - A-3
+  - id: A-3 / Acima de 6 pavimentos / H ≤ 30 m
+    divisions:
+    - A-3
+  - id: A-3 / H > 30 m
+    divisions:
+    - A-3
+  header_rows:
+  - - ou superior a 02 pavimentos
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - - Grupo de ocupação e uso
+    - GRUPO A - RESIDENCIAL
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - - Divisão
+    - A-2
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - A-3
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - - ''
+    - Classificação quanto ao nº de pavimentos
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - Classificação quanto ao nº de pavimentos e
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - - ''
+    - e à altura (em metros)
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - à altura (em metros)
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - - Medidas de Segurança
+    - ''
+    - ''
+    - ''
+    - ''
+    - Acima
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - Acima de
+    - ''
+  - - contra Incêndio e Pânico
+    - ''
+    - ''
+    - ''
+    - 4 e
+    - de 5pav
+    - H >
+    - ''
+    - ''
+    - ''
+    - 4, 5 e
+    - 6pav
+    - ''
+  - - ''
+    - Térrea
+    - 2pav
+    - 3pav
+    - ''
+    - ''
+    - ''
+    - Térrea
+    - 2pav
+    - 3pav
+    - ''
+    - ''
+    - H > 30m
+  - - ''
+    - ''
+    - ''
+    - ''
+    - 5pav
+    - com
+    - 30m
+    - ''
+    - ''
+    - ''
+    - 6pav
+    - com
+    - ''
+  - - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - H ≤ 30m
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - H ≤ 30m
+    - ''
+  measures:
+  - id: extinguishers
+    label: Extintores
+    source_row:
+    - Extintores
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    label_quotes:
+    - Extintores
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    source_row:
+    - Hidrantes e mangotinhos
+    - X
+    - X
+    - X2
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+    cells:
+    - X
+    - X
+    - X2
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+    label_quotes:
+    - Hidrantes e mangotinhos
+  - id: sprinklers
+    label: Chuveiros automáticos
+    source_row:
+    - Chuveiros automáticos
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    label_quotes:
+    - Chuveiros automáticos
+  - id: signage
+    label: Sinalização de segurança
+    source_row:
+    - Sinalização de segurança
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    label_quotes:
+    - Sinalização de segurança
+  - id: lighting
+    label: Iluminação de Emergência
+    source_row:
+    - Iluminação de Emergência
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    label_quotes:
+    - Iluminação de Emergência
+  - id: alarm
+    label: Alarme de Incêndio
+    source_row:
+    - Alarme de Incêndio
+    - X
+    - X
+    - X2
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+    cells:
+    - X
+    - X
+    - X2
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+    label_quotes:
+    - Alarme de Incêndio
+  - id: detection
+    label: Detecção de Incêndio
+    source_row:
+    - Detecção de Incêndio
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+    label_quotes:
+    - Detecção de Incêndio
+  - id: exits
+    label: Saídas de Emergência
+    source_row:
+    - Saídas de Emergência
+    - X
+    - X3
+    - X3
+    - X3
+    - X4
+    - X4, 5, 6
+    - X
+    - X3
+    - X3
+    - X4, 9
+    - X4, 9
+    - X4, 9, 10
+    cells:
+    - X
+    - X3
+    - X3
+    - X3
+    - X4
+    - X4, 5, 6
+    - X
+    - X3
+    - X3
+    - X4, 9
+    - X4, 9
+    - X4, 9, 10
+    label_quotes:
+    - Saídas de Emergência
+  - id: urban_hydrant
+    label: Hidrante urbano
+    source_row:
+    - Hidrante urbano
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    cells:
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    label_quotes:
+    - Hidrante urbano
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    source_row:
+    - ''
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    label_quotes:
+    - Acesso de viatura em
+    - edificações
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    source_row:
+    - Compartimentação Vertical
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+    label_quotes:
+    - Compartimentação Vertical
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    source_row:
+    - ''
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    label_quotes:
+    - Segurança Estrutural contra
+    - Incêndio
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    source_row:
+    - Controle de Materiais de Acabamento
+    - '-'
+    - '-'
+    - '-'
+    - X8
+    - X8
+    - X8
+    - '-'
+    - '-'
+    - '-'
+    - X8
+    - X8
+    - X8
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X8
+    - X8
+    - X8
+    - '-'
+    - '-'
+    - '-'
+    - X8
+    - X8
+    - X8
+    label_quotes:
+    - Controle de Materiais de Acabamento
+  notes:
+  - 'OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com ATC superior a 600m². 2- Exigido
+    apenas para as edificações com ATC superior a 900m². 3- A escada de emergência da edificação deve
+    ser do tipo Não Enclausurada, conforme NT específica. 4- A escada de emergência da edificação deve
+    ser do tipo Enclausurada, conforme NT específica. 5- Deve haver, no mínimo, 02 escadas de emergência
+    para edificações com 25 ou mais pavimentos. 6- Deve haver Elevador de Emergência para altura maior
+    que 80m. 7- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 8- Aplica-se somente
+    às áreas comuns da edificação. 9- As edificações da Divisão A-3 com 15 ou mais pavimentos, qualquer
+    que seja a área construída, devem possuir no mínimo duas escadas de emergência. 10- Deve haver Elevador
+    de Emergência para altura maior que 60m. OBSERVAÇÕES GERAIS: a) As edificações da Divisão A-1 ficam
+    isentas de exigência de medidas preventiva nos termos do artigo 4º deste Código; b) No cômputo do
+    número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção
+    II do Capítulo IV deste Código; c) As instalações elétricas devem estar em conformidade com as normas
+    técnicas oficiais; d) Observar ainda as exigências para os riscos específicos das respectivas Notas
+    Técnicas.'
+grouping_table:
+  schema_version: requirements/1.0
+  source:
+    document: Decreto 42/2018
+    item: Anexo III, Tabela 4
+    page: 28
+    title: Tabela 4 - Exigências para agrupamento de edificações do grupo A
+    pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+    url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/COSCIP_DEC_42-2018_COMPILADO.pdf
+    visual_check: '19/09/2026: página 28, 3 colunas e 6 células conferidas no PDF de mesmo SHA-256.'
+  columns:
+  - id: A-4 / até 6 casas ou lotes
+    divisions:
+    - A-4
+  - id: A-4 / mais de 6 casas ou lotes
+    divisions:
+    - A-4
+  - id: A-5 / qualquer quantidade
+    divisions:
+    - A-5
+  header_rows:
+  - - Grupo de ocupação e uso
+    - GRUPO A - RESIDENCIAL
+    - ''
+    - ''
+  - - Divisão
+    - A-4
+    - ''
+    - A-5
+  - - ''
+    - Classificação quanto ao nº de edificações
+    - ''
+    - Classificação quanto ao nº de edificações
+  - - Medidas de Segurança contra
+    - ou lotes
+    - ''
+    - ''
+  - - Incêndio e Pânico
+    - Até 06 casas ou
+    - Mais de 06 casas ou
+    - ''
+  - - ''
+    - ''
+    - ''
+    - Independente do número de edificações
+  - - ''
+    - lotes
+    - lotes
+    - ''
+  - - ''
+    - ''
+    - ''
+    - ''
+  measures:
+  - id: urban_hydrant
+    label: Hidrante urbano
+    source_row:
+    - Hidrante urbano
+    - '-'
+    - X
+    - X
+    cells:
+    - '-'
+    - X
+    - X
+    label_quotes:
+    - Hidrante urbano
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    source_row:
+    - ''
+    - X
+    - X
+    - X
+    cells:
+    - X
+    - X
+    - X
+    label_quotes:
+    - Acesso de viatura em
+  notes:
+  - 'OBSERVAÇÕES ESPECÍFICAS: 1- As edificações residenciais privativas unifamiliares (A-1) que compõem
+    o agrupamento da divisão A-4, quando analisadas individualmente, ficam isentas da exigência de medidas
+    de segurança contra incêndio e pânico nos termos do artigo 4º deste Código. 2- As edificações residenciais
+    privativas multifamiliares (A-2) que compõem o agrupamento da Divisão A-5, devem atender individualmente
+    as medidas de segurança contra incêndio e pânico estabelecidas na Tabela 3 para a divisão A-2.'

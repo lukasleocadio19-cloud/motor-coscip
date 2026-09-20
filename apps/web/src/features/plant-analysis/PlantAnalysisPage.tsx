@@ -4,6 +4,7 @@ import { Link, useParams, useSearchParams } from "react-router-dom";
 import { api } from "@coscip/api-client";
 import { Button, Card, EmptyState, ErrorState, ExecutionBadge, PageHeader } from "@coscip/ui";
 
+import { RequirementsPanel } from "./RequirementsPanel";
 import { AnalysisResult } from "./AnalysisResult";
 import {
   type Division, type DrawingInfo, type PlantAnalysis, type PlantContext, type PlantOptions, type Risk,
@@ -65,6 +66,11 @@ export function PlantAnalysisPage() {
   const [overrides, setOverrides] = useState<Record<string, string>>({});
   const [newBlock, setNewBlock] = useState("");
   const [prefilled, setPrefilled] = useState(false);
+  const [buildingArea, setBuildingArea] = useState("");
+  const [buildingFloors, setBuildingFloors] = useState("");
+  const [buildingHeight, setBuildingHeight] = useState("");
+  const [groupedCount, setGroupedCount] = useState("");
+  const [singleOccupancy, setSingleOccupancy] = useState(false);
 
   const opts = options.data;
   useEffect(() => {
@@ -82,6 +88,11 @@ export function PlantAnalysisPage() {
     setOccupancy(last.occupancy ?? "");
     setRiskBasis(last.risk_basis ?? null);
     setUnifamiliar(last.unifamiliar);
+    setBuildingArea(last.building_area_m2 == null ? "" : String(last.building_area_m2));
+    setBuildingFloors(last.building_floors == null ? "" : String(last.building_floors));
+    setSingleOccupancy(last.single_occupancy === true);
+    setGroupedCount(last.grouped_houses_or_lots == null ? "" : String(last.grouped_houses_or_lots));
+    setBuildingHeight(last.building_height_m == null ? "" : String(last.building_height_m));
     setHydrants(toTri(last.requires_hydrants));
     setAlarm(toTri(last.requires_alarm));
     setLighting(toTri(last.requires_lighting));
@@ -111,9 +122,24 @@ export function PlantAnalysisPage() {
   const exitMaxNum = exitMax.trim() ? Number(exitMax.replace(",", ".")) : null;
   const exitInvalid = exitMaxNum !== null && !(exitMaxNum > 0 && exitMaxNum <= 300);
 
+  const areaNum = buildingArea.trim() ? Number(buildingArea.replace(",", ".")) : null;
+  const floorsNum = buildingFloors.trim() ? Number(buildingFloors) : null;
+  const groupedNum = occupancy === "A-4" && groupedCount.trim() ? Number(groupedCount) : null;
+  const heightNum = buildingHeight.trim() ? Number(buildingHeight.replace(",", ".")) : null;
+  const buildingInvalid = (groupedNum !== null && !(Number.isSafeInteger(groupedNum) && groupedNum >= 1))
+    || (heightNum !== null && !(Number.isFinite(heightNum) && heightNum > 0))
+    || (areaNum !== null && !(Number.isFinite(areaNum) && areaNum > 0))
+    || (floorsNum !== null && !(Number.isInteger(floorsNum) && floorsNum >= 1 && floorsNum <= 300));
+  const requirementsContext = { occupancy: occupancy || null, unifamiliar,
+    building_area_m2: buildingInvalid ? null : areaNum,
+    building_floors: buildingInvalid ? null : floorsNum, single_occupancy: singleOccupancy,
+    building_height_m: buildingInvalid ? null : heightNum,
+    grouped_houses_or_lots: buildingInvalid ? null : groupedNum };
+
   const create = useMutation({
     mutationFn: () => {
       const context: PlantContext = {
+        ...requirementsContext,
         risk_class: risk || null,
         unifamiliar,
         occupancy: occupancy.trim() || null,
@@ -145,7 +171,7 @@ export function PlantAnalysisPage() {
 
   const unitOk = drawing.data?.unit.confirmed;
   const noPackage = opts && opts.packages.length === 0;
-  const blocked = !unitOk || !packageId || exitInvalid || (useFloors && floors.length > 0 && chosenFloors.size === 0);
+  const blocked = !unitOk || !packageId || exitInvalid || buildingInvalid || (useFloors && floors.length > 0 && chosenFloors.size === 0);
   const layers = useMemo(() => {
     const f = layerFilter.trim().toLowerCase();
     return (opts?.layers ?? []).filter((l) => !f || l.name.toLowerCase().includes(f));
@@ -237,7 +263,34 @@ export function PlantAnalysisPage() {
               <input type="checkbox" checked={unifamiliar} onChange={(e) => setUnifamiliar(e.target.checked)} />
               Residência unifamiliar
             </label>
-            <p className="mb-1 text-sm text-slate-700">Sistemas exigidos (Anexo III do decreto)</p>
+            <div className="grid grid-cols-2 gap-2 text-sm">
+              <label>ATC da edificação (m²)
+                <input value={buildingArea} onChange={(e) => setBuildingArea(e.target.value)} inputMode="decimal"
+                  className="mt-1 w-full rounded border border-slate-300 px-2 py-1" />
+              </label>
+              <label>Pavimentos da edificação
+                <input value={buildingFloors} onChange={(e) => setBuildingFloors(e.target.value)} inputMode="numeric"
+                  className="mt-1 w-full rounded border border-slate-300 px-2 py-1" />
+              </label>
+            </div>
+            <label className="mt-2 block text-sm">Altura da edificação (m)
+              <input value={buildingHeight} onChange={(e) => setBuildingHeight(e.target.value)} inputMode="decimal"
+                className="mt-1 w-full rounded border border-slate-300 px-2 py-1" />
+            </label>
+            {occupancy === "A-4" && <label className="mt-2 block text-sm">Casas ou lotes do agrupamento
+              <input value={groupedCount} onChange={(e) => setGroupedCount(e.target.value)} inputMode="numeric"
+                className="mt-1 w-full rounded border border-slate-300 px-2 py-1" />
+            </label>}
+            {buildingInvalid && <p role="alert" className="text-xs text-red-700">Informe área e altura positivas, 1 a 300 pavimentos e quantidade inteira positiva de casas/lotes.</p>}
+            <p className="mt-1 text-xs text-slate-500">Valores do processo, computados conforme o Decreto; não são a área útil nem a quantidade de recortes.</p>
+            <label className="mt-2 flex items-start gap-2 text-sm">
+              <input type="checkbox" checked={singleOccupancy} onChange={(e) => setSingleOccupancy(e.target.checked)} />
+              Confirmei que há uma única ocupação na edificação
+            </label>
+            <RequirementsPanel packageId={packageId} context={{ ...requirementsContext,
+              requires_hydrants: triValue(hydrants), requires_alarm: triValue(alarm),
+              requires_lighting: triValue(lighting) }} />
+            <p className="mb-1 text-sm text-slate-700">Sistemas exigidos confirmados pelo analista</p>
             <div className="grid gap-1 text-sm">
               <TriSelect label="Hidrantes" value={hydrants} onChange={setHydrants} />
               <TriSelect label="Alarme" value={alarm} onChange={setAlarm} />
@@ -376,7 +429,7 @@ export function PlantAnalysisPage() {
             {opts && opts.packages.length > 1 && (
               <select value={packageId} onChange={(e) => setPackageId(e.target.value)} aria-label="Pacote de regras"
                 className="rounded border border-slate-300 px-2 py-1.5 text-sm">
-                {opts.packages.map((p) => <option key={p.id} value={p.id}>{p.name} ({p.rules} regras)</option>)}
+                {opts.packages.map((p) => <option key={p.id} value={p.id}>{p.name} · v{p.package?.version ?? "?"} ({p.rules} regras)</option>)}
               </select>
             )}
             <Button type="submit" disabled={blocked || create.isPending}>

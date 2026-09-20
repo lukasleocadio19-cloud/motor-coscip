@@ -13,6 +13,7 @@ from coscip_api import normative_base
 from coscip_cad.synthetic import make_fire_plan
 from tests.integration.test_drawings import JUST, Env
 from tests.unit.test_plant_analysis import BASE, NT_201
+from tests.unit.test_requirements import requirement_sources
 
 NT201_RULES = ("NT201_EXT_DISTANCIA", "NT201_EXT_AREA", "NT201_EXT_MINIMO",
                "NT201_EXT_INSTALACAO_ESPECIAL")
@@ -31,6 +32,7 @@ def _nt201_package(tmp: Path) -> Path:
     (root / "regras").mkdir(parents=True)
     raw = yaml.safe_load((BASE / "pacote.yaml").read_text(encoding="utf-8"))
     raw["rules"] = [f"regras/{r}.yaml" for r in NT201_RULES]
+    raw.pop("requirements", None)
     raw.pop("classification", None)  # a tabela cita a NT 1-04, ausente desta base
     raw["coverage"] = [c for c in raw["coverage"] if c["document"] == "NT 2-01"
                        and c["item"] in {"5.2.4", "6.4"}]
@@ -74,7 +76,16 @@ def test_sources_are_ingested_once_and_bundled_package_needs_every_nt(env):
 
 
 def test_plant_analysis_end_to_end(env, tmp_path, monkeypatch):
-    monkeypatch.setattr(normative_base, "BUNDLED_BASE", _nt201_package(tmp_path))
+    package_dir = _nt201_package(tmp_path)
+    manifest_path = package_dir / "pacote.yaml"
+    manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
+    manifest["requirements"] = "sistemas-exigidos.yaml"
+    manifest_path.write_text(yaml.safe_dump(manifest, allow_unicode=True), encoding="utf-8")
+    shutil.copy(BASE / "sistemas-exigidos.yaml", package_dir)
+    table = yaml.safe_load((BASE / "sistemas-exigidos.yaml").read_text(encoding="utf-8"))
+    decree = requirement_sources(table)["Decreto 42/2018"]
+    assert _ingest(env, decree.text).status_code == 201
+    monkeypatch.setattr(normative_base, "BUNDLED_BASE", package_dir)
     assert _ingest(env).status_code == 201
     pkg = env.post("/v1/rule-packages/import")
     assert pkg.status_code == 201, pkg.text
@@ -83,7 +94,14 @@ def test_plant_analysis_end_to_end(env, tmp_path, monkeypatch):
 
     rev, states = env.import_revision([make_fire_plan(tmp_path / "ppci.dxf")])
     d = env.get(f"/v1/revisions/{rev}/drawings").json()["items"][0]
-    body = {"rule_package_id": pkg_id, "context": {"risk_class": "PEQUENO"}}
+    context = {"risk_class": "PEQUENO", "occupancy": "D-2", "building_area_m2": 396,
+               "building_floors": 1, "single_occupancy": True, "requires_lighting": False}
+    query = env.post(f"/v1/rule-packages/{pkg_id}/requirements-query", context)
+    assert query.status_code == 200 and query.json()["column"] == "A/D/E/G"
+    assert env.post(f"/v1/rule-packages/{pkg_id}/requirements-query",
+                    {**context, "building_floors": 1.5}).status_code == 422
+    assert env.post("/v1/rule-packages/unknown/requirements-query", context).status_code == 422
+    body = {"rule_package_id": pkg_id, "context": context}
     blocked = env.post(f"/v1/drawings/{d['id']}/plant-analyses", body)
     assert blocked.status_code == 409 and blocked.json()["code"] == "DRAWING_UNIT_UNCONFIRMED"
 
@@ -105,6 +123,8 @@ def test_plant_analysis_end_to_end(env, tmp_path, monkeypatch):
     assert _wait(env, started.json()["execution_id"])["state"] == "SUCCEEDED"
     a = env.get(f"/v1/plant-analyses/{started.json()['analysis_id']}").json()
     assert a["state"] == "SUCCEEDED" and a["summary"]["plan_regions"] == 1
+    assert a["context"]["requirements_reference"]["column"] == "A/D/E/G"
+    assert a["context"]["requires_lighting"] is False
     results = env.get(f"/v1/analyses/{a['id']}/results").json()["items"]
     by_rule = {r["values"]["rule_id"]: r["status"] for r in results
                if r["values"]["subject_type"] != "SYMBOL"}
@@ -116,6 +136,9 @@ def test_plant_analysis_end_to_end(env, tmp_path, monkeypatch):
     assert report.headers["X-Content-SHA256"] == a["reports"][0]["sha256"]
     html = report.text
     assert "Análise automática da planta" in html and "CASA DE BOMBAS" in html
+    assert "Referência do Anexo III" in html and "A/D/E/G" in html
+    assert "Não assinalado nesta tabela" in html and "396" in html
+    assert "Divergência:" in html and "Iluminação" in html
     assert "sem valor normativo" in html and "<svg" in html and "<script" not in html
     again = env.post(f"/v1/plant-analyses/{a['id']}/reports")
     assert again.status_code == 201 and again.json()["id"] != a["reports"][0]["id"]

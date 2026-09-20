@@ -42,6 +42,7 @@ from coscip_api.models import (
 )
 from coscip_cbm.enums import UI_LABELS, EvaluationStatus
 from coscip_jobs import JobQueue
+from coscip_normative.requirements import consult_requirements
 
 TEMPLATES = Path(__file__).resolve().parent / "templates"
 REPORT_TEMPLATE = "plant-analysis/1.0"
@@ -55,6 +56,11 @@ class PlantContext(BaseModel):
     occupancy: str | None = Field(default=None, max_length=20)
     # De onde veio a classe de risco (ex.: "NT 1-04, Anexo B: F-8 → MÉDIO 1"), ou vazio.
     risk_basis: str | None = Field(default=None, max_length=300)
+    building_area_m2: float | None = Field(default=None, gt=0, allow_inf_nan=False)
+    building_height_m: float | None = Field(default=None, gt=0, allow_inf_nan=False)
+    building_floors: int | None = Field(default=None, ge=1, le=300, strict=True)
+    single_occupancy: bool | None = None
+    grouped_houses_or_lots: int | None = Field(default=None, ge=1, strict=True)
     requires_hydrants: bool | None = None
     requires_alarm: bool | None = None
     requires_lighting: bool | None = None
@@ -112,6 +118,8 @@ def create(st, drawing_id: str, body: PlantAnalysisIn, key: str) -> dict[str, An
         snap = latest_snapshot(s, d.revision_id)
         fo = s.get(FileObject, d.file_id)
         context = body.context.model_dump()
+        context["requirements_reference"] = consult_requirements(
+            (pkg.manifest or {}).get("requirements"), context)
         ctx_hash = hashlib.sha256(json.dumps(context, sort_keys=True).encode()).hexdigest()
         a = Analysis(tenant_id=st.tenant_id, revision_id=d.revision_id,
                      model_snapshot_id=snap.id, context_snapshot_id=ctx_hash[:36],

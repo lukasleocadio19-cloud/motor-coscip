@@ -265,6 +265,7 @@ def import_package(factory, storage, directory: Path | None = None,  # noqa: ANN
                       "symbols_citation": report["symbols_citation"],
                       "coverage": report["coverage"], "sources": report["sources"],
                       "classification": report.get("classification"),
+                      "requirements": report.get("requirements"),
                       "verified": True})
         s.add(row)
         s.flush()

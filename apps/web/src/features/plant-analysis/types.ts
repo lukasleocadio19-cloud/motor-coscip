@@ -12,6 +12,11 @@ export interface PlantContext {
   exit_max_distance_m: number | null;
   exits_confirmed: boolean;
   risk_basis?: string | null;
+  building_area_m2?: number | null;
+  building_floors?: number | null;
+  building_height_m?: number | null;
+  single_occupancy?: boolean | null;
+  grouped_houses_or_lots?: number | null;
 }
 
 export interface Division {
@@ -24,7 +29,8 @@ export interface Division {
 }
 
 export interface PlantOptions {
-  packages: { id: string; name: string; state: string; rules: number; created_at: string }[];
+  packages: { id: string; name: string; state: string; rules: number; created_at: string;
+    package?: { version: number } | null }[];
   classes: { id: string; label: string }[];
   floors: { id: string; name: string }[];
   layers: { name: string; segments: number; suggested_obstacle: boolean }[];

@@ -14,6 +14,7 @@ from typing import Any
 
 import yaml
 
+from coscip_normative.requirements import verify_requirements
 from coscip_normative.sources import NormativeText, verify_citation, verify_table_row
 from coscip_rules.dsl import RuleDefinition, check_dependency_cycles, parse_rule
 
@@ -37,6 +38,7 @@ class RulePackageDef:
     raw: dict[str, Any] = field(repr=False, default_factory=dict)
     # Tabela de enquadramento (ocupação → risco), opcional.
     classification: dict[str, Any] | None = None
+    requirements: dict[str, Any] | None = None
 
     @property
     def content_sha256(self) -> str:
@@ -45,8 +47,22 @@ class RulePackageDef:
             "rules": sorted(r.content_hash for r in self.rules),
             "symbols": self.symbols,
             "classification": self.classification,
+            "requirements": self.requirements,
         }, sort_keys=True, ensure_ascii=False)
         return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+
+def _package_yaml(root: Path, relative: str) -> dict:
+    path = (root / relative).resolve()
+    if root.resolve() not in path.parents:
+        raise PackageError(f"arquivo fora do pacote: {relative}")
+    try:
+        data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    except (OSError, yaml.YAMLError) as exc:
+        raise PackageError(f"não foi possível ler {relative}: {exc}") from exc
+    if not isinstance(data, dict) or not data:
+        raise PackageError(f"objeto YAML vazio ou inválido: {relative}")
+    return data
 
 
 def load_package(directory: str | Path) -> RulePackageDef:
@@ -54,7 +70,7 @@ def load_package(directory: str | Path) -> RulePackageDef:
     manifest_path = root / "pacote.yaml"
     if not manifest_path.exists():
         raise PackageError(f"pacote.yaml não encontrado em {root}")
-    raw = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
+    raw = _package_yaml(root, "pacote.yaml")
     if raw.get("schema_version") != PACKAGE_SCHEMA:
         raise PackageError(f"esquema esperado {PACKAGE_SCHEMA}")
     rules = []
@@ -62,19 +78,18 @@ def load_package(directory: str | Path) -> RulePackageDef:
         path = (root / rel).resolve()
         if root.resolve() not in path.parents:
             raise PackageError(f"regra fora do pacote: {rel}")
-        rules.append(parse_rule(yaml.safe_load(path.read_text(encoding="utf-8"))))
+        rules.append(parse_rule(_package_yaml(root, rel)))
     ids = [r.id for r in rules]
     if len(ids) != len(set(ids)):
         raise PackageError("regras duplicadas no pacote")
     check_dependency_cycles(rules)
-    symbols = yaml.safe_load((root / raw["symbols"]).read_text(encoding="utf-8"))
+    symbols = _package_yaml(root, raw["symbols"])
     if raw.get("publication_state") in {"DRAFT", "TEST_ONLY"} and any(
             r.production_eligible for r in rules):
         raise PackageError("pacote em rascunho não pode conter regra de produção")
     classification = None
     if raw.get("classification"):
-        classification = yaml.safe_load(
-            (root / raw["classification"]).read_text(encoding="utf-8"))
+        classification = _package_yaml(root, raw["classification"])
         divisions = [d["id"] for d in classification.get("divisions") or []]
         if len(divisions) != len(set(divisions)):
             raise PackageError("divisões duplicadas na tabela de enquadramento")
@@ -86,6 +101,8 @@ def load_package(directory: str | Path) -> RulePackageDef:
         jurisdiction=raw["jurisdiction"], publication_state=raw["publication_state"],
         rules=rules, symbols=symbols, coverage=list(raw.get("coverage") or []), raw=raw,
         classification=classification,
+        requirements=(_package_yaml(root, raw["requirements"])
+                      if raw.get("requirements") else None),
     )
 
 
@@ -169,6 +186,10 @@ def verify_package(pkg: RulePackageDef, sources: dict[str, NormativeText]) -> di
     used = {c["document"] for r in rules_out for c in r["citations"]}
     if pkg.classification:
         used.add(pkg.classification["source"]["document"])
+    requirements_out = (verify_requirements(pkg.requirements, sources, failures)
+                        if pkg.requirements is not None else None)
+    if requirements_out and requirements_out.get("source"):
+        used.add(requirements_out["source"]["document"])
     used_docs = sorted(used)
     return {
         "package": {"id": pkg.id, "name": pkg.name, "version": pkg.version,
@@ -176,7 +197,7 @@ def verify_package(pkg: RulePackageDef, sources: dict[str, NormativeText]) -> di
                     "publication_state": pkg.publication_state,
                     "content_sha256": pkg.content_sha256},
         "rules": rules_out, "symbols_citation": symbols_check, "coverage": coverage_out,
-        "classification": classification_out,
+        "classification": classification_out, "requirements": requirements_out,
         "sources": [sources[d].summary() for d in used_docs if d in sources],
         "verified": not failures, "failures": failures,
     }
