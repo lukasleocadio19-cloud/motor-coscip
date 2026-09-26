@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "coscip-plantas": {
+      "command": ".venv/Scripts/python.exe",
+      "args": ["-m", "coscip_mcp"]
+    }
+  }
+}

@@ -33,6 +33,37 @@ DXFs sintéticos para testar: `.venv\Scripts\python -m coscip_api.cli make-fixtu
 
 Desenvolvimento (Vite com recarga + API na porta 8765): `scripts\start\dev.ps1`.
 
+## MCP: a IA lendo a planta
+
+`apps/mcp/coscip_mcp` expõe o motor como servidor MCP local (stdio, sem dependência nova),
+para o Claude ler plantas DXF com precisão em vez de "olhar" a imagem:
+
+| Ferramenta | O que faz |
+|---|---|
+| `abrir_planta` | abre DXF ou DWG (cópia convertida pelo ODA File Converter, ADR 0006); visão geral: camadas, símbolos por classe, blocos não reconhecidos, unidade provisória |
+| `ver_planta` | PNG com grade e coordenadas em metros, paredes em preto, símbolos numerados, pavimentos e o pior percurso |
+| `listar_textos` / `listar_simbolos` | dados exatos com posição, camada e handle |
+| `classificar_blocos` | ensina ao motor um bloco não reconhecido (confirmar com o usuário) |
+| `medir` | distância entre pontos |
+| `confirmar_unidade` | escala por medida de referência (obrigatória antes de analisar) |
+| `definir_pavimentos` | recortes por janela ou polígono |
+| `analisar_planta` | enquadramento (NT 1-04, Anexo III, Anexo C) + Plano de Verificação por pavimento |
+| `consultar_norma` | texto de item ou busca nas NTs e no Decreto |
+
+**Instalar em outro computador:** [`docs/runbooks/instalar-mcp.md`](docs/runbooks/instalar-mcp.md)
+(`scripts\mcp\instalar.ps1 -RegistrarClaudeDesktop`; autoteste `python -m coscip_mcp --verificar`).
+
+- **Claude Code:** o `.mcp.json` da raiz já registra o servidor (`coscip-plantas`); aprovar ao
+  abrir o projeto.
+- **Claude Desktop (chat):** em `%APPDATA%\Claude\claude_desktop_config.json`, dentro de
+  `mcpServers`, `"coscip-plantas": {"command": "<repo>\\.venv\\Scripts\\python.exe",
+  "args": ["-m", "coscip_mcp"]}`.
+- Textos das NTs: `COSCIP_NORMAS_DIR` (pastas com os `.md`, separadas por `;`) ou, sem ela, as
+  skills CBMERJ instaladas no Claude. Check com citação que não confere fica fora do plano e é
+  listado como não verificado.
+- O arquivo fica no computador, mas o que as ferramentas devolvem (textos, medidas, imagens)
+  vai para o modelo. Confirmar se o sigilo do processo permite.
+
 ## Stack
 
 | Camada | Componente |

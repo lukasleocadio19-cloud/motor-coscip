@@ -58,6 +58,11 @@ runbook `docs/runbooks/dwg-para-dxf.md`.
 
 ### Desenvolvimento, em ordem
 
+> **Prioridade do usuário (25/09/2026):** primeiro fazer do motor uma ferramenta para a IA
+> vencer a dificuldade de LER a planta (MCP local, seção 12, sexta parte); depois construir o
+> software em servidor. O MCP existe e está testado; o próximo passo nele é usar com plantas
+> reais (o usuário não tem as antigas) e ajustar pelo que a IA errar.
+
 1. **Importar o pacote v4 na base real.** É o que ainda falta da entrega anterior: a permissão de
    gravação em `%LOCALAPPDATA%\MotorCoscip` não foi concedida, então a base real continua em v3.
    Quando houver permissão: `normative-import-package`, reiniciar o aplicativo e conferir a tela.
@@ -419,7 +424,7 @@ em `%APPDATA%\Claude\local-agent-mode-sessions\skills-plugin\...\skills\`.
 ## 9. Comandos úteis
 
 ```powershell
-.venv\Scripts\python -m pytest -p no:cacheprovider --basetemp <pasta-nova>   # 314 testes (~2,5 min)
+.venv\Scripts\python -m pytest -p no:cacheprovider --basetemp <pasta-nova>   # 332 testes (~2,5 min)
 .venv\Scripts\ruff check . --no-cache
 .venv\Scripts\python -m coscip_api.cli backup
 .venv\Scripts\python -m coscip_api.cli normative-import-sources <pasta-com-md>
@@ -663,3 +668,64 @@ no texto convertido (seção "Tabelas extraídas" da página 22), então virou d
 - 11 testes novos. Final: **314 testes passaram**, `ruff` limpo, build ok; pacote v5 verifica
   nas 53 fontes.
 - Todo o trabalho de 25/09 foi commitado nesta etapa.
+
+### Sexta parte (25/09/2026) — MCP para a IA ler a planta
+
+O usuário definiu que a maior dificuldade da IA é ler a planta e que o motor deve primeiro
+ser uma ferramenta para isso. Criado `apps/mcp/coscip_mcp` (servidor MCP stdio, JSON-RPC 2.0,
+só biblioteca padrão + numpy; **nenhuma dependência nova**):
+
+- `png.py`: tela RGB e PNG via zlib, fonte 3×5 para coordenadas e números.
+- `render.py`: planta com grade e rótulos em metros, paredes (camadas prováveis) em preto,
+  símbolos coloridos e numerados (mesmo `n` de `listar_simbolos`), pavimentos `P1…` e o pior
+  percurso da última análise.
+- `workspace.py`: plantas abertas; **escala provisória** (cotas fortes → `$INSUNITS` → metros)
+  até `confirmar_unidade` (medida de referência, snap para m/dm/cm/mm/pol/pé com desvio ≤ 2 %;
+  recarrega e reconhece de novo); pavimentos guardados em unidades do desenho; análise com o
+  motor, `plant_evidence`, Plano de Verificação e relatório compacto em português.
+- `norms.py`: textos das NTs de `COSCIP_NORMAS_DIR` ou das skills (grupos 1–5 + Decreto, nunca
+  o legado); pacote e catálogo conferidos; **check com citação que não confere sai do plano**
+  (e quem depende dele) e é listado — não se recusa o catálogo inteiro.
+- `server.py`: 10 ferramentas (`abrir_planta`, `ver_planta`, `listar_textos`,
+  `listar_simbolos`, `classificar_blocos`, `medir`, `confirmar_unidade`, `definir_pavimentos`,
+  `analisar_planta`, `consultar_norma`) com instruções de fluxo para a IA.
+- `.mcp.json` na raiz registra o servidor para o Claude Code; README tem a configuração do
+  Claude Desktop (não aplicada: é configuração do usuário).
+- Smoke com as 53 fontes reais: planta sintética em mm com `$INSUNITS` = metros → provisória
+  errada (legenda não reconhecida), confirmação pela parede de 14 m corrige para mm; D-2 → Médio
+  1 pela NT 1-04; imagem conferida visualmente (legível, pior percurso pela porta da casa de
+  bombas).
+- 10 testes novos em `tests/integration/test_mcp_server.py` (inclui processo real por stdio).
+  Final: **324 testes passaram**, `ruff` limpo.
+
+Limites conhecidos do MCP: PDF não é lido; plantas grandes não
+testadas no MCP (o motor levou até 20,6 s no 9715); a confirmação da unidade depende de a IA
+usar a medida certa — a ferramenta aceita qualquer par de pontos que dê unidade padrão.
+
+### Sétima parte (25/09/2026) — DWG pelo ODA File Converter
+
+- Usuário escolheu a ODA para ler DWG. **ADR 0006**: `coscip_cad.dwg.dwg_to_dxf` converte uma
+  cópia com o ODA File Converter (DXF 2018, auditoria), cache pelo SHA-256 do DWG, origem
+  registrada; `abrir_planta` aceita `.dwg` e devolve `convertido_de_dwg`. O app continua só DXF.
+- **Licença:** ODA File Converter gratuito = uso não comercial para não membros; produto vendido
+  exige assinatura ODA ou Autodesk Design Automation.
+- **Não testado com conversor real:** o ODA não está instalado neste computador (instalação e
+  aceite da licença são do usuário) e não há DWG real. Testes simulam o conversor (7 testes em
+  `tests/unit/test_dwg.py`). Com o ODA instalado, dá para testar ida e volta: DXF sintético →
+  DWG → DXF.
+
+### Oitava parte (25/09/2026) — MCP instalável em outros computadores
+
+- `scripts/mcp/instalar.ps1` (UTF-8 com BOM, CRLF — PowerShell 5.1): acha o Python 3.12, cria
+  `.venv`, `pip install -e .`, roda o autoteste; `-RegistrarClaudeDesktop` mescla
+  `coscip-plantas` no `claude_desktop_config.json` preservando o resto, com cópia `.bak` e JSON
+  sem BOM; `-RegistrarClaudeCode` usa `claude mcp add --scope user`; `-Normas` e `-Oda` viram
+  `env` da entrada. Testado aqui com um arquivo de configuração de teste (não o real).
+- `scripts/mcp/exportar-normas.ps1`: copia os 53 `.md` (grupos 1–5 + Decreto; nunca o
+  legado) das skills para uma pasta, para levar a outro computador. Testado: autoteste com a
+  pasta exportada = 53 documentos, 18 checks, 0 fora.
+- `python -m coscip_mcp --verificar` (`coscip_mcp.diagnostico`): Python, dependências, planta
+  sintética lida e desenhada, NTs e ODA.
+- Guia: `docs/runbooks/instalar-mcp.md`. **O Claude Desktop deste computador não foi
+  configurado** (o usuário não pediu).
+- Final: **332 testes passaram**, `ruff` limpo; tudo commitado e enviado ao GitHub.

@@ -32,10 +32,12 @@ dev = ["pytest>=8", "httpx>=0.27", "hypothesis>=6.100", "ruff>=0.6", "mypy>=1.11
 [project.scripts]
 coscip-launcher = "coscip_api.launcher:main"
 coscip-worker = "coscip_worker.main:main"
+coscip-mcp = "coscip_mcp.server:main"
 
 [tool.setuptools.packages.find]
 where = [
   "apps/api",
+  "apps/mcp",
   "workers/local",
   "packages/cbm_schema",
   "packages/cad",
@@ -55,7 +57,7 @@ include = ["coscip_*"]
 testpaths = ["tests"]
 markers = ["timeout: limite de tempo (informativo)"]
 pythonpath = [
-  ".", "apps/api", "workers/local", "packages/cbm_schema", "packages/cad",
+  ".", "apps/api", "apps/mcp", "workers/local", "packages/cbm_schema", "packages/cad",
   "packages/geometry", "packages/topology", "packages/semantics",
   "packages/rules", "packages/storage", "packages/jobs", "packages/ai_gateway",
   "packages/normative", "packages/analysis",
@@ -73,7 +75,7 @@ select = ["E", "F", "I", "B", "UP"]
 known-first-party = [
   "coscip_api", "coscip_worker", "coscip_cbm", "coscip_cad", "coscip_geometry",
   "coscip_topology", "coscip_semantics", "coscip_rules", "coscip_storage", "coscip_jobs",
-  "coscip_ai", "coscip_normative", "coscip_analysis", "tests",
+  "coscip_ai", "coscip_normative", "coscip_analysis", "coscip_mcp", "tests",
 ]
 
 [tool.ruff.lint.flake8-bugbear]
