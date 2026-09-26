@@ -15,7 +15,7 @@
 #>
 param(
     [string]$Python = "",
-    [string]$Normas = "",          # pasta(s) com os .md das NTs, separadas por ;
+    [string]$Normas = "",          # só se quiser outra pasta: o repositório já traz normative\fontes
     [string]$Oda = "",             # ODAFileConverter.exe, se não estiver no local padrão
     [switch]$RegistrarClaudeDesktop,
     [switch]$RegistrarClaudeCode,
@@ -78,27 +78,12 @@ if ($Oda) { $ambiente["COSCIP_ODA_PATH"] = $Oda }
 
 if ($RegistrarClaudeDesktop) {
     Passo "Registrando no Claude Desktop: $ConfigDesktop"
-    $pasta = Split-Path $ConfigDesktop
-    if (-not (Test-Path $pasta)) { New-Item -ItemType Directory -Force $pasta | Out-Null }
-    if (Test-Path $ConfigDesktop) {
-        $copia = "$ConfigDesktop.$(Get-Date -Format yyyyMMdd-HHmmss).bak"
-        Copy-Item $ConfigDesktop $copia
-        Write-Host "cópia da configuração anterior: $copia"
-        $texto = [System.IO.File]::ReadAllText($ConfigDesktop)
-        if ($texto.Trim()) { $cfg = $texto | ConvertFrom-Json } else { $cfg = New-Object PSObject }
-    } else {
-        $cfg = New-Object PSObject
-    }
-    if (-not ($cfg.PSObject.Properties.Name -contains "mcpServers")) {
-        $cfg | Add-Member -NotePropertyName mcpServers -NotePropertyValue (New-Object PSObject)
-    }
-    $entrada = [ordered]@{ command = $venvPy; args = @("-m", "coscip_mcp") }
-    if ($ambiente.Count) { $entrada["env"] = $ambiente }
-    $cfg.mcpServers | Add-Member -NotePropertyName "coscip-plantas" -NotePropertyValue $entrada -Force
-    $json = $cfg | ConvertTo-Json -Depth 20
-    # JSON sem BOM: o Claude Desktop não aceita a marca no início do arquivo.
-    [System.IO.File]::WriteAllText($ConfigDesktop, $json, (New-Object System.Text.UTF8Encoding($false)))
-    Write-Host "ok: reinicie o Claude Desktop para carregar o servidor 'coscip-plantas'"
+    # Mescla em Python: preserva as preferências do aplicativo, faz cópia .bak e grava sem BOM.
+    $argsReg = @("-m", "coscip_mcp.registro", "--config", $ConfigDesktop, "--python", $venvPy)
+    foreach ($k in $ambiente.Keys) { $argsReg += @("--env", "$k=$($ambiente[$k])") }
+    & $venvPy @argsReg
+    if ($LASTEXITCODE -ne 0) { throw "falha ao registrar no Claude Desktop" }
+    Write-Host "ok: feche e abra o Claude Desktop para carregar o servidor 'coscip-plantas'"
 }
 
 if ($RegistrarClaudeCode) {

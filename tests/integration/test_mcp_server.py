@@ -232,3 +232,45 @@ def test_autoteste_da_instalacao(normas, capsys):
     assert "planta sintética lida e desenhada" in saida
     assert "textos das NTs: 2 documentos" in saida
     assert "Instalação OK." in saida
+
+
+# --- registro no Claude Desktop ----------------------------------------------------------
+
+def test_registro_preserva_a_configuracao_do_aplicativo(tmp_path):
+    from coscip_mcp.registro import register
+
+    cfg = tmp_path / "claude_desktop_config.json"
+    original = {"preferences": {"sidebarMode": "epitaxy", "lista": [], "vazio": {}},
+                "mcpServers": {"outro": {"command": "x.exe", "args": []}}}
+    cfg.write_text(json.dumps(original, indent=2), encoding="utf-8")
+    out = register(cfg, "C:/py.exe", {"COSCIP_ODA_PATH": "C:/oda.exe"})
+    raw = cfg.read_bytes()
+    assert not raw.startswith(b"\xef\xbb\xbf")  # o aplicativo não aceita BOM
+    data = json.loads(raw)
+    assert data["preferences"] == original["preferences"]
+    assert data["mcpServers"]["outro"] == original["mcpServers"]["outro"]
+    assert data["mcpServers"]["coscip-plantas"] == {
+        "command": "C:/py.exe", "args": ["-m", "coscip_mcp"],
+        "env": {"COSCIP_ODA_PATH": "C:/oda.exe"}}
+    assert json.loads(Path(out["backup"]).read_text(encoding="utf-8")) == original
+    register(cfg, "C:/py.exe", remove=True)
+    assert "coscip-plantas" not in json.loads(cfg.read_text(encoding="utf-8"))["mcpServers"]
+
+
+def test_registro_nao_sobrescreve_json_invalido(tmp_path):
+    from coscip_mcp.registro import register
+
+    cfg = tmp_path / "claude_desktop_config.json"
+    cfg.write_text("{ quebrado", encoding="utf-8")
+    with pytest.raises(json.JSONDecodeError):
+        register(cfg, "C:/py.exe")
+    assert cfg.read_text(encoding="utf-8") == "{ quebrado"
+
+
+def test_normas_do_repositorio_sao_encontradas(monkeypatch):
+    from coscip_mcp import norms
+
+    monkeypatch.delenv("COSCIP_NORMAS_DIR", raising=False)
+    files = norms.source_files()
+    assert len(files) == 53 and all(f.parent == norms.BUNDLED_SOURCES for f in files)
+    assert not any("legado" in f.name for f in files)

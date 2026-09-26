@@ -1,8 +1,9 @@
 """Base normativa do MCP: textos das NTs e do Decreto, pacote e catálogo conferidos.
 
 Os textos vêm de pastas com os ``.md`` convertidos (os mesmos que a base do app ingere).
-Ordem de busca: ``COSCIP_NORMAS_DIR`` (pastas separadas por ``;``) ou, se ausente, as skills
-CBMERJ instaladas no Claude (grupos 1–5 e o Decreto; **nunca** o grupo 5 legado).
+Ordem de busca: ``COSCIP_NORMAS_DIR`` (pastas separadas por ``;``), a pasta
+``normative/fontes`` do repositório e, por último, as skills CBMERJ instaladas no Claude
+(grupos 1–5 e o Decreto; **nunca** o grupo 5 legado).
 
 Mesma regra do app: citação que não confere impede o check. Aqui, em vez de recusar o
 catálogo inteiro, o check sem citação conferida (e quem depende dele) fica fora do plano e
@@ -25,6 +26,7 @@ from coscip_normative.verification import CheckCatalog, load_catalog, verify_cat
 ROOT = Path(__file__).resolve().parents[3]
 PACKAGE_DIR = ROOT / "normative" / "base"
 CHECKS_DIR = ROOT / "normative" / "checks"
+BUNDLED_SOURCES = ROOT / "normative" / "fontes"
 SKILL_GROUPS = ("cbmerj-grupo-1-generalidades", "cbmerj-grupo-2-medidas-seguranca",
                 "cbmerj-grupo-3-riscos-especificos", "cbmerj-grupo-4-estruturas-especiais",
                 "cbmerj-grupo-5-eventos")
@@ -37,6 +39,9 @@ def source_files() -> list[Path]:
     if configured:
         return sorted(f for d in configured.split(";") if d.strip()
                       for f in Path(d.strip()).glob("*.md"))
+    bundled = sorted(f for f in BUNDLED_SOURCES.glob("*.md") if f.name != "README.md")
+    if bundled:
+        return bundled
     roots = glob.glob(os.path.expandvars(
         r"%APPDATA%\Claude\local-agent-mode-sessions\skills-plugin\*\*\skills"))
     files: list[Path] = []

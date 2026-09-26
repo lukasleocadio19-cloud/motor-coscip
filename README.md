@@ -58,8 +58,7 @@ para o Claude ler plantas DXF com precisão em vez de "olhar" a imagem:
 - **Claude Desktop (chat):** em `%APPDATA%\Claude\claude_desktop_config.json`, dentro de
   `mcpServers`, `"coscip-plantas": {"command": "<repo>\\.venv\\Scripts\\python.exe",
   "args": ["-m", "coscip_mcp"]}`.
-- Textos das NTs: `COSCIP_NORMAS_DIR` (pastas com os `.md`, separadas por `;`) ou, sem ela, as
-  skills CBMERJ instaladas no Claude. Check com citação que não confere fica fora do plano e é
+- Textos das NTs: `normative/fontes` (no repositório); `COSCIP_NORMAS_DIR` aponta outra pasta. Check com citação que não confere fica fora do plano e é
   listado como não verificado.
 - O arquivo fica no computador, mas o que as ferramentas devolvem (textos, medidas, imagens)
   vai para o modelo. Confirmar se o sigilo do processo permite.

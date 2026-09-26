@@ -11,7 +11,7 @@ análise do motor com citação das NTs. Tudo roda no computador; nada tem valor
 | Windows 10/11 | — | sim |
 | Git e acesso ao repositório privado `lukasleocadio19-cloud/motor-coscip` | `winget install Git.Git` e `winget install GitHub.cli`, depois `gh auth login` | sim |
 | Python **3.12** | `winget install --id Python.Python.3.12 -e --scope user` | sim |
-| Textos das NTs (.md) | skills CBMERJ do Claude **ou** pasta exportada (abaixo) | para a análise citar a norma |
+| Textos das NTs (.md) | já vêm no repositório (`normative/fontes`) | — |
 | ODA File Converter | opendesign.com → ODA File Converter (aceitar a licença) | só para abrir `.dwg` |
 | Claude Desktop ou Claude Code | claude.ai/download | para usar |
 
@@ -37,19 +37,12 @@ O instalador:
 Depois, **reinicie o Claude Desktop**. No Claude Code, abrindo a pasta do repositório, o
 `.mcp.json` já registra o servidor (aprovar quando o Claude Code perguntar).
 
-## Textos das NTs em outro computador
+## Textos das NTs
 
-Sem os textos, ler e ver a planta funcionam, mas os checks ficam fora do plano (citação que
-não confere impede o check). Se o outro computador não tem as skills CBMERJ no Claude:
-
-```powershell
-# no computador que tem as skills
-scripts\mcp\exportar-normas.ps1 -Destino "E:\normas-cbmerj"
-# no outro computador
-scripts\mcp\instalar.ps1 -Normas "E:\normas-cbmerj" -RegistrarClaudeDesktop
-```
-
-São 52 NTs (grupos 1–5, nunca o grupo 5 legado) e o Decreto 42/2018 compilado.
+Os 52 textos das NTs (grupos 1–5, nunca o grupo 5 legado) e o Decreto 42/2018 compilado vêm
+no repositório, em `normative/fontes`; o MCP os encontra sozinho. Para usar outra pasta:
+`instalar.ps1 -Normas "<pasta>"`. Para atualizar a partir das skills CBMERJ:
+`scripts\mcp\exportar-normas.ps1 -Destino normative\fontes` (ver o README da pasta).
 
 ## DWG
 

@@ -424,7 +424,7 @@ em `%APPDATA%\Claude\local-agent-mode-sessions\skills-plugin\...\skills\`.
 ## 9. Comandos úteis
 
 ```powershell
-.venv\Scripts\python -m pytest -p no:cacheprovider --basetemp <pasta-nova>   # 332 testes (~2,5 min)
+.venv\Scripts\python -m pytest -p no:cacheprovider --basetemp <pasta-nova>   # 335 testes (~2,5 min)
 .venv\Scripts\ruff check . --no-cache
 .venv\Scripts\python -m coscip_api.cli backup
 .venv\Scripts\python -m coscip_api.cli normative-import-sources <pasta-com-md>
@@ -726,6 +726,20 @@ usar a medida certa — a ferramenta aceita qualquer par de pontos que dê unida
   pasta exportada = 53 documentos, 18 checks, 0 fora.
 - `python -m coscip_mcp --verificar` (`coscip_mcp.diagnostico`): Python, dependências, planta
   sintética lida e desenhada, NTs e ODA.
-- Guia: `docs/runbooks/instalar-mcp.md`. **O Claude Desktop deste computador não foi
-  configurado** (o usuário não pediu).
-- Final: **332 testes passaram**, `ruff` limpo; tudo commitado e enviado ao GitHub.
+- Guia: `docs/runbooks/instalar-mcp.md`.
+
+### Nona parte (25/09/2026) — NTs no repositório e Claude Desktop configurado
+
+- A pedido do usuário ("coloque tudo no repositório"): os 53 `.md` (52 NTs + Decreto) estão
+  em **`normative/fontes`** (2,2 MB, README com origem e atualização). Ordem de busca do MCP:
+  `COSCIP_NORMAS_DIR` → `normative/fontes` → skills. O MCP instala completo em qualquer
+  computador. O app continua ingerindo pela CLI (`normative-import-sources normative/fontes`).
+- `coscip_mcp.registro`: mescla `mcpServers["coscip-plantas"]` no
+  `claude_desktop_config.json` em Python (preserva as preferências do aplicativo, cópia `.bak`,
+  sem BOM, confere o JSON antes de trocar; JSON inválido não é sobrescrito). O instalador usa
+  esse módulo em vez do `ConvertTo-Json` do PowerShell 5.1.
+- **Claude Desktop deste computador configurado** (25/09, 21:49): entrada `coscip-plantas` →
+  `.venv\Scripts\python.exe -m coscip_mcp`; cópia em
+  `%APPDATA%\Claude\claude_desktop_config.json.20260925-214930.bak`; preferências conferidas
+  iguais. Handshake com o comando registrado, fora da pasta do projeto: ok.
+- Final: **335 testes passaram**, `ruff` limpo; tudo commitado e enviado ao GitHub.
