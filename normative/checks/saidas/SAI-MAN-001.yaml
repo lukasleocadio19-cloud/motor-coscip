@@ -1,0 +1,35 @@
+# RASCUNHO. Em A-2, A-5 e A-6 a distância é medida da porta da unidade autônoma, não do ponto
+# mais distante: o motor ainda não identifica portas de unidade, então é conferência humana.
+schema_version: checks/1.0
+id: SAI-MAN-001
+version: 1
+title: Distância até a saída medida da porta da unidade autônoma
+system: SAIDAS
+type: MANUAL_CONFIRMATION
+scope: FLOOR
+severity: MAJOR
+publication_state: DRAFT
+production_eligible: false
+group_key: saidas/distancia-unidade
+applies_when:
+  any:
+    - {fact: context.occupancy, operator: equals, value: A-2}
+    - {fact: context.occupancy, operator: equals, value: A-5}
+    - {fact: context.occupancy, operator: equals, value: A-6}
+normative_basis:
+  - document: NT 2-08
+    edition: 1ª edição - 2019; Portaria 1.317/2025
+    item: "5.3.3.1"
+    quote: ["edifícios de apartamentos em geral (A-2, A-5 e A-6)",
+            "porta de entrada das unidades autônomas"]
+human_review:
+  always: true
+wording:
+  title: Conferir a distância da porta de cada unidade até a saída
+  explanation: >-
+    Nesta ocupação a NT 2-08 mede a distância a percorrer a partir da porta de entrada
+    das unidades autônomas. O motor ainda não identifica essas portas; o percurso do
+    ponto mais distante não serve como resposta.
+  required_action: >-
+    Medir, da porta da unidade mais desfavorável até a saída, e comparar com o limite
+    do Anexo C.

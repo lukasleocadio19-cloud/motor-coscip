@@ -28,6 +28,8 @@ from coscip_analysis.spatial import (
     Grid,
     Walker,
     clip_mask,
+    direct_farthest,
+    direct_uncertainty,
     interior,
     rasterize,
     travel_uncertainty,
@@ -50,6 +52,13 @@ FIRE_CLASSES = {"EXTINTOR", "HIDRANTE", "MANGOTINHO", "ILUMINACAO_EMERGENCIA", "
                 "ACIONADOR_MANUAL", "AVISADOR", "SPRINKLER", "CENTRAL_ALARME", "SAIDA"}
 SIGN_ASSOCIATION_M = 2.5  # placa E-5 "junto" do extintor: associação heurística, não norma
 UNREACHABLE_TOLERANCE_M2 = 2.0
+# Identidade do cálculo de percurso (§27): muda a versão quando o algoritmo mudar.
+TRAVEL_ALGORITHM = "grid_dijkstra_16"
+TRAVEL_ALGORITHM_VERSION = "1.0"
+# Distância direta (NT 2-08 5.3.3.3, sem leiaute): só para saídas.
+DIRECT_ALGORITHM = "grid_euclidean_nearest"
+DIRECT_ALGORITHM_VERSION = "1.0"
+DIRECT_SYSTEMS = frozenset({"exit"})
 
 
 @dataclass
@@ -324,6 +333,14 @@ def _coverage(walker: Walker, grid: Grid, src: list[Symbol], key: str,
                                "unreachable_m2": 0.0, "unsnapped": []}
     if not src or walker.n == 0:
         return {"summary": summary}
+    if key in DIRECT_SYSTEMS:
+        direct = direct_farthest(grid, walker.free, [(s.x, s.y) for s in src])
+        if direct is not None:
+            summary["max_direct_m"] = round(direct[0], 3)
+            summary["direct_uncertainty_m"] = round(direct_uncertainty(grid.h), 3)
+            summary["direct_worst_point"] = [round(v, 3) for v in direct[1]]
+            summary["direct_algorithm"] = DIRECT_ALGORITHM
+            summary["direct_algorithm_version"] = DIRECT_ALGORITHM_VERSION
     cells = []
     for s in src:
         c = walker.snap(s.x, s.y)
@@ -349,6 +366,8 @@ def _coverage(walker: Walker, grid: Grid, src: list[Symbol], key: str,
         summary["worst_path"] = [[round(x, 2), round(y, 2)] for x, y in path[::stride]]
         summary["method"] = ("Dijkstra em grade de 16 vizinhos sobre o interior; paredes e "
                              f"esquadrias fixas como obstáculo; célula {grid.h:.2f} m")
+        summary["algorithm"] = TRAVEL_ALGORITHM
+        summary["algorithm_version"] = TRAVEL_ALGORITHM_VERSION
     return {"summary": summary, "field": field_, "pred": pred}
 
 

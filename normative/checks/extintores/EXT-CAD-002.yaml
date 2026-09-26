@@ -1,7 +1,8 @@
 # RASCUNHO. Mínimo de duas unidades extintoras por pavimento (exceção 5.2.4 não modelada aqui).
+# v2 (fase 3): pavimento confirmado como porta de qualidade.
 schema_version: checks/1.0
 id: EXT-CAD-002
-version: 1
+version: 2
 title: Mínimo de duas unidades extintoras por pavimento
 system: EXTINTORES
 type: CAD_COUNT
@@ -21,6 +22,7 @@ question:
   unit: un
   accepted_evidence: [CAD, HUMANO]
   quality_gate: quality.extinguisher.not_presumed
+  quality_gates: [quality.region_confirmed]
 normative_basis:
   - document: NT 2-01
     edition: 2ª edição - 2020

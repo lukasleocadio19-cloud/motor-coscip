@@ -16,7 +16,7 @@ from typing import Any, Literal
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from pydantic import BaseModel, Field
-from sqlalchemy import select
+from sqlalchemy import literal_column, select
 
 from coscip_api.db import write_tx
 from coscip_api.model_state import current_frame, latest_snapshot, scale_of
@@ -42,6 +42,7 @@ from coscip_api.models import (
 )
 from coscip_cbm.enums import UI_LABELS, EvaluationStatus
 from coscip_jobs import JobQueue
+from coscip_normative.exit_distances import consult_exit_distance
 from coscip_normative.requirements import consult_requirements
 
 TEMPLATES = Path(__file__).resolve().parent / "templates"
@@ -66,6 +67,11 @@ class PlantContext(BaseModel):
     requires_lighting: bool | None = None
     exit_max_distance_m: float | None = Field(default=None, gt=0, le=300)
     exits_confirmed: bool = False
+    # Linha e coluna do Anexo C da NT 2-08 (distância máxima até a saída).
+    construction_type: Literal["ALFA", "BETA", "GAMA"] | None = None
+    sprinklers_or_detection: bool | None = None
+    multiple_exits: bool | None = None
+    layout_defined: bool | None = None
 
 
 class PlantAnalysisIn(BaseModel):
@@ -120,6 +126,8 @@ def create(st, drawing_id: str, body: PlantAnalysisIn, key: str) -> dict[str, An
         context = body.context.model_dump()
         context["requirements_reference"] = consult_requirements(
             (pkg.manifest or {}).get("requirements"), context)
+        context["exit_distance_reference"] = consult_exit_distance(
+            (pkg.manifest or {}).get("exit_distances"), context)
         ctx_hash = hashlib.sha256(json.dumps(context, sort_keys=True).encode()).hexdigest()
         a = Analysis(tenant_id=st.tenant_id, revision_id=d.revision_id,
                      model_snapshot_id=snap.id, context_snapshot_id=ctx_hash[:36],
@@ -284,7 +292,10 @@ def review_state(s, analysis_id: str) -> dict[str, dict[str, Any]]:  # noqa: ANN
     decisions: dict[str, list[dict[str, Any]]] = {}
     if by_id:
         q = (select(ReviewDecisionRow).where(ReviewDecisionRow.result_id.in_(by_id))
-             .order_by(ReviewDecisionRow.created_at.desc()))
+             # Desempate pela ordem de inserção: no Windows, duas decisões seguidas
+             # podem ter o mesmo created_at e o SQLite devolveria em ordem arbitrária.
+             .order_by(ReviewDecisionRow.created_at.desc(),
+                       literal_column("review_decisions.rowid").desc()))
         for d in s.scalars(q).all():
             decisions.setdefault(d.result_id, []).append({
                 "id": d.id, "decision": d.decision, "final_status": d.final_status,
@@ -295,16 +306,24 @@ def review_state(s, analysis_id: str) -> dict[str, dict[str, Any]]:  # noqa: ANN
         for r in rows}
 
 
+def load_output(s, storage, a: Analysis) -> dict[str, Any]:  # noqa: ANN001
+    """A saída ``analysis.json`` publicada, conferida contra o hash gravado."""
+    rm = a.runtime_manifest or {}
+    if "analysis_artifact_id" not in rm:
+        raise RuntimeError("análise sem saída publicada")
+    fo = s.get(FileObject, rm["analysis_artifact_id"])
+    with storage.open(fo.key) as fh:
+        raw = fh.read()
+    if hashlib.sha256(raw).hexdigest() != fo.sha256:
+        raise RuntimeError("analysis.json não confere com o hash gravado")
+    return json.loads(raw)
+
+
 def issue_report(factory, storage, tenant_id: str, analysis_id: str) -> dict[str, Any]:  # noqa: ANN001
     with factory() as s:
         a = s.get(Analysis, analysis_id)
-        rm = a.runtime_manifest or {}
-        fo = s.get(FileObject, rm["analysis_artifact_id"])
-        with storage.open(fo.key) as fh:
-            raw = fh.read()
-        if hashlib.sha256(raw).hexdigest() != fo.sha256:
-            raise RuntimeError("analysis.json não confere com o hash gravado")
-        data = json.loads(raw)
+        data = load_output(s, storage, a)
+        fo = s.get(FileObject, a.runtime_manifest["analysis_artifact_id"])
         d = s.get(Drawing, a.drawing_id)
         rev = s.get(SubmissionRevision, a.revision_id)
         project = s.get(Project, rev.project_id)

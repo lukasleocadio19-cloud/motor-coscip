@@ -57,9 +57,19 @@ class Question(_Strict):
     required_sources: tuple[str, ...] = ()
     accepted_evidence: tuple[str, ...] = ()
     required_value: float | None = None
+    # Limite que o analista informa no enquadramento (ex.: Anexo C da NT 2-08, que está
+    # como imagem). Usado no lugar de ``required_value``; sem o fato, nada conclui.
+    required_fact: str | None = None
     unit: str | None = None
     # Porta de qualidade: sem ela o resultado numérico aparece, mas não vira conformidade.
     quality_gate: str | None = None
+    # Portas adicionais, todas obrigatórias (ex.: pavimento confirmado, área toda alcançada).
+    quality_gates: tuple[str, ...] = ()
+
+    @property
+    def gates(self) -> tuple[str, ...]:
+        first = (self.quality_gate,) if self.quality_gate else ()
+        return tuple(dict.fromkeys((*first, *self.quality_gates)))
 
 
 class HumanReview(_Strict):

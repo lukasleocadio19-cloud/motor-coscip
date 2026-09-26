@@ -5,6 +5,7 @@ import { api } from "@coscip/api-client";
 import { Button, Card, EmptyState, ErrorState, ExecutionBadge, PageHeader } from "@coscip/ui";
 
 import { RequirementsPanel } from "./RequirementsPanel";
+import { ExitDistancePanel } from "./ExitDistancePanel";
 import { AnalysisResult } from "./AnalysisResult";
 import {
   type Division, type DrawingInfo, type PlantAnalysis, type PlantContext, type PlantOptions, type Risk,
@@ -58,6 +59,10 @@ export function PlantAnalysisPage() {
   const [lighting, setLighting] = useState<Tri>("");
   const [exitMax, setExitMax] = useState("");
   const [exitsConfirmed, setExitsConfirmed] = useState(false);
+  const [construction, setConstruction] = useState<"" | "ALFA" | "BETA" | "GAMA">("");
+  const [protectedBy, setProtectedBy] = useState<Tri>("");
+  const [multipleExits, setMultipleExits] = useState<Tri>("");
+  const [layoutDefined, setLayoutDefined] = useState<Tri>("");
   const [useFloors, setUseFloors] = useState(true);
   const [floorIds, setFloorIds] = useState<Set<string> | null>(null);
   const [wallMode, setWallMode] = useState<"auto" | "manual">("auto");
@@ -98,6 +103,10 @@ export function PlantAnalysisPage() {
     setLighting(toTri(last.requires_lighting));
     setExitMax(last.exit_max_distance_m != null ? String(last.exit_max_distance_m).replace(".", ",") : "");
     setExitsConfirmed(last.exits_confirmed);
+    setConstruction(last.construction_type ?? "");
+    setProtectedBy(toTri(last.sprinklers_or_detection));
+    setMultipleExits(toTri(last.multiple_exits));
+    setLayoutDefined(toTri(last.layout_defined));
   }, [history.data, prefilled]);
 
   const floors = drawing.data?.floors ?? opts?.floors ?? [];
@@ -135,11 +144,14 @@ export function PlantAnalysisPage() {
     building_floors: buildingInvalid ? null : floorsNum, single_occupancy: singleOccupancy,
     building_height_m: buildingInvalid ? null : heightNum,
     grouped_houses_or_lots: buildingInvalid ? null : groupedNum };
+  const exitContext = { ...requirementsContext, construction_type: construction || null,
+    sprinklers_or_detection: triValue(protectedBy), multiple_exits: triValue(multipleExits),
+    layout_defined: triValue(layoutDefined) };
 
   const create = useMutation({
     mutationFn: () => {
       const context: PlantContext = {
-        ...requirementsContext,
+        ...exitContext,
         risk_class: risk || null,
         unifamiliar,
         occupancy: occupancy.trim() || null,
@@ -299,16 +311,34 @@ export function PlantAnalysisPage() {
           </Card>
 
           <Card title="2. Saídas (NT 2-08)">
+            <p className="mb-1 text-sm text-slate-700">Dados do Anexo C</p>
+            <div className="grid gap-1 text-sm">
+              <label className="flex items-center justify-between gap-2">
+                Tipo de edificação
+                <select value={construction}
+                  onChange={(e) => setConstruction(e.target.value as "" | "ALFA" | "BETA" | "GAMA")}
+                  className="w-40 rounded border border-slate-300 px-1 py-1">
+                  <option value="">não informado</option>
+                  <option value="ALFA">(α) propagação fácil</option>
+                  <option value="BETA">(β) resistência mediana</option>
+                  <option value="GAMA">(γ) propagação difícil</option>
+                </select>
+              </label>
+              <TriSelect label="Chuveiros ou detectores automáticos" value={protectedBy}
+                onChange={setProtectedBy} yes="sim" no="não" />
+              <TriSelect label="Mais de uma saída (10 m entre elas)" value={multipleExits}
+                onChange={setMultipleExits} yes="sim" no="não" />
+              <TriSelect label="Leiaute definido na planta" value={layoutDefined}
+                onChange={setLayoutDefined} yes="sim" no="não" />
+            </div>
+            <ExitDistancePanel packageId={packageId} context={exitContext} />
             <label className="mb-2 block text-sm">
-              Distância máxima até a saída, em metros
+              Limite informado pelo analista, em metros (opcional)
               <input value={exitMax} onChange={(e) => setExitMax(e.target.value)} inputMode="decimal"
-                placeholder="da tabela do Anexo C" aria-invalid={exitInvalid}
+                placeholder="substitui o da tabela" aria-invalid={exitInvalid}
                 className={`mt-1 w-full rounded border px-2 py-1 ${exitInvalid ? "border-red-500" : "border-slate-300"}`} />
             </label>
             {exitInvalid && <p className="mb-2 text-xs text-red-700">Informe um valor entre 0 e 300 m.</p>}
-            <p className="mb-3 text-xs text-slate-500">
-              O Anexo C da NT 2-08 está como imagem na base: o analista informa o limite aplicável à ocupação.
-            </p>
             <label className="flex items-start gap-2 text-sm">
               <input type="checkbox" className="mt-1" checked={exitsConfirmed} onChange={(e) => setExitsConfirmed(e.target.checked)} />
               Conferi que as saídas marcadas na planta são as saídas de emergência
@@ -481,15 +511,17 @@ export function PlantAnalysisPage() {
   );
 }
 
-function TriSelect({ label, value, onChange }: { label: string; value: Tri; onChange: (v: Tri) => void }) {
+function TriSelect({ label, value, onChange, yes = "exigido", no = "não exigido" }: {
+  label: string; value: Tri; onChange: (v: Tri) => void; yes?: string; no?: string;
+}) {
   return (
     <label className="flex items-center justify-between gap-2">
       {label}
       <select value={value} onChange={(e) => onChange(e.target.value as Tri)}
         className="w-40 rounded border border-slate-300 px-1 py-1">
         <option value="">não informado</option>
-        <option value="sim">exigido</option>
-        <option value="nao">não exigido</option>
+        <option value="sim">{yes}</option>
+        <option value="nao">{no}</option>
       </select>
     </label>
   );

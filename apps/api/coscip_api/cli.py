@@ -7,6 +7,7 @@
     python -m coscip_api.cli make-fixtures <pasta>
     python -m coscip_api.cli normative-import-sources <pasta-com-.md>
     python -m coscip_api.cli normative-import-package [<pasta-do-pacote>]
+    python -m coscip_api.cli v2-findings <id-da-analise> [--out achados.json]
 """
 
 from __future__ import annotations
@@ -160,6 +161,48 @@ def cmd_normative_package(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_v2_findings(args: argparse.Namespace) -> int:
+    """Achados da arquitetura v2 para uma análise gravada. Só leitura: nada é gravado."""
+    import json
+
+    from coscip_api.plant_findings import VerificationRefused, findings_for_analysis
+    from coscip_cbm import FINDING_KIND_LABELS, FindingKind
+    from coscip_storage import LocalFileStorage
+
+    factory = _factory(run_migrations=False)
+    storage = LocalFileStorage(DataLayout(get_settings().data_dir).root)
+    try:
+        out = findings_for_analysis(factory, storage, args.analysis_id)
+    except LookupError as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
+    except VerificationRefused as exc:
+        print(f"Recusado: {exc}", file=sys.stderr)
+        for d in exc.details:
+            print(f"- {d}", file=sys.stderr)
+        return 1
+    if args.out:
+        Path(args.out).write_text(json.dumps(out, ensure_ascii=False, indent=2),
+                                  encoding="utf-8")
+    print("RASCUNHO — sem valor normativo.")
+    print(f"Plano {out['plan_sha256'][:12]} · catálogo {out['catalog']['id']} "
+          f"v{out['catalog']['version']} · {len(out['evidence'])} evidência(s)")
+    for f in out["floors"]:
+        print(f"  pavimento {f['label']}: {f['evidence']} evidência(s)")
+    for system in out["requirement_overrides"]:
+        print(f"  [aviso] {system}: X na tabela do Anexo III, declarado não exigido pelo analista")
+    print("Resumo:", ", ".join(f"{k}={v}" for k, v in out["summary"].items()))
+    for g in out["groups"]:
+        if g["kind"] == "NO_PENDING_ISSUE":
+            continue
+        onde = f" [{', '.join(g['scopes'])}]" if g["scopes"] else ""
+        kind = FINDING_KIND_LABELS[FindingKind(g["kind"])]
+        print(f"- [{kind}] {g['title']}{onde}")
+    if args.out:
+        print(f"JSON completo: {args.out}")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="coscip")
     sub = ap.add_subparsers(required=True)
@@ -188,6 +231,10 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("normative-import-package", help="importa o pacote de regras")
     p.add_argument("path", nargs="?")
     p.set_defaults(fn=cmd_normative_package)
+    p = sub.add_parser("v2-findings", help="achados v2 (Evidence → Finding) de uma análise")
+    p.add_argument("analysis_id")
+    p.add_argument("--out")
+    p.set_defaults(fn=cmd_v2_findings)
     args = ap.parse_args(argv)
     return args.fn(args)
 

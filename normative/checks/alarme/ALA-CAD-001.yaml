@@ -1,0 +1,36 @@
+# RASCUNHO. Acionador manual reconhecido em cada pavimento (fase 3).
+schema_version: checks/1.0
+id: ALA-CAD-001
+version: 1
+title: Acionador manual localizado no pavimento
+system: ALARME
+type: CAD_PRESENCE
+scope: FLOOR
+severity: CRITICAL
+publication_state: DRAFT
+production_eligible: false
+group_key: alarme/acionador-presenca
+applies_when:
+  all:
+    - {fact: context.effective_requirement_alarm, operator: equals, value: true}
+question:
+  kind: presence
+  field: manual_call_point
+  accepted_evidence: [CAD]
+  quality_gates: [quality.region_confirmed]
+normative_basis:
+  - document: NT 2-07
+    edition: 1ª edição - 2019
+    item: "5.5.2"
+    quote: ["O acionador manual deverá ser instalado", "em cada pavimento da edificação"]
+human_review:
+  on_missing: true
+wording:
+  title: Nenhum acionador manual foi localizado no pavimento
+  explanation: >-
+    O sistema de alarme é exigido e a NT 2-07 pede acionador manual em cada pavimento,
+    mas a extração não reconheceu acionador neste. Mezaninos e jiraus podem ser
+    dispensados quando atendidos pelo acionador do pavimento de referência.
+  required_action: >-
+    Conferir na planta e, se houver acionador, identificar o símbolo ou a camada;
+    se não houver, prever o acionador no pavimento.

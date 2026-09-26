@@ -6,8 +6,10 @@ pendências, cuidados). Desde 20/09/2026 ele mora **dentro do repositório**, em
 `C:\Users\USER\Downloads\proxima-sessao.md` virou apenas um ponteiro para cá — não editar lá,
 não criar cópia, não criar outro registro.
 
-Última atualização: 20/09/2026, fim da sessão que implementou as fases 1 e 2 da arquitetura v2
-e publicou o repositório no GitHub.
+Última atualização: 25/09/2026, sessão que levou o projeto para um segundo computador e
+implementou a fase 3 da arquitetura v2 (CAD → `Evidence` → `Finding`) para extintores,
+hidrantes, acionador manual e saídas. O usuário **não tem mais as plantas reais**: o trabalho
+segue só com dados sintéticos.
 Referências (não são registro): arquitetura-alvo em [`docs/arquitetura-v2.md`](arquitetura-v2.md),
 plano `docs/plano/00-plano-completo.html` (v2.0; IDs e critérios de aceite no documento 03) e
 runbook `docs/runbooks/dwg-para-dxf.md`.
@@ -27,6 +29,12 @@ runbook `docs/runbooks/dwg-para-dxf.md`.
   com dependências e consolidador de achados. Aditivo: **nada do fluxo atual foi alterado**.
 - **Repositório publicado no GitHub** (privado). O registro do projeto e a arquitetura-alvo
   entraram junto.
+- **Fase 3 da arquitetura v2 (25/09):** a saída da análise da planta vira `Evidence` por
+  pavimento (`coscip_analysis.evidence`), os checks de pavimento rodam uma vez por pavimento e o
+  comando `v2-findings` produz os `Finding` de uma análise gravada, lendo o `analysis.json` e
+  não o relatório. Catálogo v2 com **17 checks** (extintores, hidrantes, alarme, saídas), 19
+  citações conferidas. Testado só com DXF sintético: **as plantas reais não estão mais
+  disponíveis** (seção 7).
 - As **5 plantas reais** têm pavimentos recortados e foram analisadas com enquadramento
   proposto pelo assistente (confirmar com os processos).
 - **Revisão humana** pronta na tela e no relatório; **nenhuma decisão registrada** (cabe ao
@@ -53,15 +61,14 @@ runbook `docs/runbooks/dwg-para-dxf.md`.
 1. **Importar o pacote v4 na base real.** É o que ainda falta da entrega anterior: a permissão de
    gravação em `%LOCALAPPDATA%\MotorCoscip` não foi concedida, então a base real continua em v3.
    Quando houver permissão: `normative-import-package`, reiniciar o aplicativo e conferir a tela.
-2. **Conferir a interface na tela.** O build foi refeito em 20/09 pela alternativa da seção 9
-   (`tsc -b` sem erro e Vite gerando `apps/api/coscip_api/static/` em 3,8 s), então o código dos
-   ajustes de alerta de divergência e versão no seletor **compila**. Falta apenas a conferência
-   visual no navegador, que depende do app rodando. O `npm run build` padrão continua falhando
-   no esbuild com "Acesso negado".
-3. **Fase 3 da arquitetura v2 — adaptar o motor CAD.** Converter os resultados que o motor já
-   produz (extintores, portas, paredes, distâncias, saídas) em `Evidence`, em vez de texto de
-   relatório. Critério de aceite: uma análise real produz `Finding` sem depender do texto antigo.
-   É a ponte que falta para os checks já escritos receberem evidência de verdade.
+2. **Conferir a interface na tela.** O build compila (no segundo computador o `npm run build`
+   padrão funciona; no primeiro falhava no esbuild com "Acesso negado" e usava a alternativa da
+   seção 9). Falta a conferência visual no navegador, que depende do app rodando com a base real.
+3. **Persistência e API do fluxo v2 (V2-13).** Fase 3 feita (seção 12). Próximo: gravar plano,
+   evidências e achados de cada análise (tabelas do §45, migração 0005, com backup antes) e
+   expor as rotas do §47 de leitura; hoje o fluxo v2 só existe em memória e no `v2-findings`.
+   Pendências menores da fase 3: portas (largura, GEO-03) como evidência; exceção 5.2.4 da
+   NT 2-01; checks de iluminação (NT 2-06) e sinalização (NT 2-05).
 4. **Fase 4 — motor documental mínimo** (ART, RRT, memorial, laudo, curva de bomba): upload,
    versionamento, extração e localização. Só depois disso os checks documentais do catálogo
    (`HID-DOC-001`, `HID-DOC-004`, `HID-CROSS-002`) deixam de depender de evidência sintética.
@@ -138,7 +145,7 @@ Legenda: **feito** (código + teste) · **base** (estrutura pronta, falta fluxo)
 | GEO-05 | base | cobertura de extintor/hidrante/acionador/saída, área além do limite e sem acesso |
 | GEO-06 | **feito** | invariância por propriedades (Hypothesis) |
 | REG-01 | **feito** | ingestão de NTs/decreto em Markdown (front matter, páginas, itens, tabelas, anexos, artigos, SHA-256); consulta e busca |
-| REG-02 | base | base real v3; código v4 com Tabelas 2–4 do Anexo III (importação real pendente) |
+| REG-02 | base | base real v3; código v5: Tabelas 2–4 do Anexo III + Anexo C da NT 2-08 (importação real pendente) |
 | REG-03 | base | enquadramento NT 1-04 Anexo B (60 divisões → risco); `risk_basis` no contexto; Anexo III Tabelas 2–4 em v4; Tabelas 5–21 pendentes |
 | REG-04 | **feito** | DSL `rules/1.1`: sujeito FLOOR/SYMBOL/ROOM, exigido por valor/tabela/⌈divisão⌉, `fail_status`, portas de qualidade |
 | REG-05, REG-06 | — | exigem homologação técnica |
@@ -153,7 +160,7 @@ Legenda: **feito** (código + teste) · **base** (estrutura pronta, falta fluxo)
 | V2-05 executor | **feito** | 6 perguntas fechadas (`presence`, `required_fields`, `minimum_count`, `minimum_value`, `maximum_value`, `consistency`); portas de qualidade; gating de dependência |
 | V2-06 achados | **feito** | `coscip_findings`: `Finding`, `FindingGroup`, agrupamento por causa raiz, resumo executivo, texto por template |
 | V2-07 catálogo piloto | **feito** | 10 checks RASCUNHO em `normative/checks/` (extintores, hidrantes, porta de qualidade); 10/10 citações conferidas |
-| V2-08 CAD → Evidence | — | **próximo passo** (fase 3) |
+| V2-08 CAD → Evidence | **feito** | `coscip_analysis.evidence`, execução por pavimento, `v2-findings`; extintores, hidrantes, acionador, saídas; só DXF sintético; portas (GEO-03) fora |
 | V2-09 motor documental | — | fase 4 |
 | V2-10 LLM / V2-11 Jev | — | fases 5 e 6; **não começar** antes de V2-08 e V2-09 |
 | V2-12 UI v2 | — | fase 8 |
@@ -254,6 +261,13 @@ Análises mais recentes: 9715 `f2c44ad2…`, 21471 `4722e788…`, 41336 `629e6ba
 - Repositório publicado no GitHub como **privado**, com o registro do projeto e o documento de
   arquitetura dentro dele.
 
+### 25/09/2026 — segundo computador e fase 3 (extintores)
+
+- Repositório clonado do GitHub em `C:\Users\raquel\Downloads\Analise\motor-coscip`;
+  Python 3.12.10 e Node 24 LTS instalados via `winget`; `.venv` recriado. **243 testes passaram
+  antes de qualquer mudança**, `ruff` limpo e `npm run build` padrão funcionou.
+- Fase 3 para extintores, detalhes na seção 12.
+
 ---
 
 ## 6. O que existe no sistema (referência rápida)
@@ -266,7 +280,8 @@ Análises mais recentes: 9715 `f2c44ad2…`, 21471 `4722e788…`, 41336 `629e6ba
   blocos; histórico; resultado por região com mapa; revisão; relatório e nova emissão.
 
 > A interface **ainda não conhece** a arquitetura v2: o Plano de Verificação e os `Finding`
-> existem só na camada Python e nos testes. A tela v2 é a fase 8.
+> existem na camada Python, nos testes e no comando `v2-findings` (só leitura). A tela v2 é a
+> fase 8.
 
 ### API de normas e análise (`/v1`)
 - `POST/GET /normative/sources`; `GET /normative/sources/{id}`; `GET /normative/sources/{id}/item?item=`;
@@ -293,10 +308,17 @@ iluminação na planta.
 | Check | Tipo | Pergunta | O que depende dele |
 |---|---|---|---|
 | `QG-CAD-WALLS` | MANUAL_CONFIRMATION | — (sempre revisão humana) | — |
-| `EXT-CAD-001` | CAD_PRESENCE | `presence` de extintor | `EXT-CAD-002`, `EXT-CAD-003-*` |
-| `EXT-CAD-002` | CAD_COUNT | `minimum_count` 2 por pavimento | — |
-| `EXT-CAD-003-{PEQUENO,MEDIO,GRANDE}` | CAD_DISTANCE | `maximum_value` 20/15/10 m | — |
-| `HID-REQ-001` | NORMATIVE_TABLE | `presence` do registro da exigência | todos os HID |
+| `EXT-CAD-001` v2 | CAD_PRESENCE | `presence` de extintor, por pavimento | `EXT-CAD-002`, `EXT-CAD-003-*` |
+| `EXT-CAD-002` v2 | CAD_COUNT | `minimum_count` 2 por pavimento | — |
+| `EXT-CAD-003-{PEQUENO,MEDIO,GRANDE}` v2 | CAD_DISTANCE | `maximum_value` 20/15/10 m, por pavimento | — |
+| `HID-REQ-001` | NORMATIVE_TABLE | `presence` do registro da exigência (tabela ou analista) | todos os HID |
+| `HID-CAD-001` | CAD_PRESENCE | hidrante ou mangotinho no pavimento | `HID-CAD-002` |
+| `HID-CAD-002` | CAD_DISTANCE | `maximum_value` 30 m de linha de mangueira (NT 2-02 5.6.1) | — |
+| `ALA-CAD-001` | CAD_PRESENCE | acionador manual no pavimento (NT 2-07 5.5.2) | `ALA-CAD-002` |
+| `ALA-CAD-002` | CAD_DISTANCE | `maximum_value` 30 m até o acionador | — |
+| `SAI-CAD-001` | CAD_PRESENCE | saída no pavimento, só com saídas confirmadas | `SAI-CAD-002` |
+| `SAI-CAD-002` | CAD_DISTANCE | limite do Anexo C **informado pelo analista** (`required_fact`); não vale para A-2/A-5/A-6 | — |
+| `SAI-MAN-001` | MANUAL_CONFIRMATION | A-2/A-5/A-6: medir da porta da unidade (NT 2-08 5.3.3.1) | — |
 | `HID-DOC-001` | DOCUMENT_PRESENCE | `presence` de ART/RRT/TRT | — |
 | `HID-DOC-004` | DOCUMENT_FIELD | `required_fields` (8 campos da NT 2-04 5.1.21) | — |
 | `HID-CROSS-002` | CROSS_DOCUMENT | `consistency` da pressão entre ART e curva | — |
@@ -304,13 +326,27 @@ iluminação na planta.
 Um check por classe de risco em vez de tabela embutida: o limite fica literal, conferível e o
 compilador mostra claramente qual se aplica ao processo.
 
+Portas de qualidade dos checks de extintor v2: `quality.extinguisher.not_presumed` (001, 002),
+`quality.walls_detected` (003) e, novas, `quality.region_confirmed` (todos) e
+`quality.extinguisher.complete` (003: toda a área alcançada pelo percurso). **Porta não
+informada conta como não atendida.**
+
 ### Limitações conhecidas
 - Mobiliário não é obstáculo; portas desenhadas fechadas isolam ambientes (→ revisão).
 - Nome de região automática às vezes pega o título errado; legenda erra em casos raros.
 - Área do pavimento é área útil em grade (± perímetro × célula).
 - Plantas de PPCI vindas de PDF ou sem layer de parede: percurso só indicativo.
-- Anexo C da NT 2-08 é imagem: limite até a saída informado pelo analista.
+- ~~Anexo C da NT 2-08 é imagem~~ (resolvido em 25/09): o texto convertido traz a tabela
+  extraída da página 22; ela está em `normative/base/distancias-saida.yaml` (pacote v5), com
+  cada linha conferida. O limite do analista continua valendo e prevalece, com registro.
 - O fluxo v2 ainda **não persiste nada**: plano, evidências e achados vivem em memória.
+- `accepted_evidence` dos checks é declarado, mas o executor ainda não filtra por ele.
+- Exigência de sistema (§30): `context.normative_requirement_<s>` (só X incondicional da consulta
+  ao Anexo III), `context.human_override_<s>` (formulário) e `context.effective_requirement_<s>`
+  para `hydrants`, `alarm`, `lighting`. Traço ou célula condicional **não** viram dispensa.
+  Quando o analista contraria um X, `v2-findings` mostra aviso; ainda não há check para isso.
+- A exceção da NT 2-01 5.2.4 (um extintor abaixo de 50 m²) continua fora do `EXT-CAD-002`;
+  a área do pavimento já sai como evidência (`floor_area_m2`) para quando for modelada.
 
 ---
 
@@ -327,6 +363,14 @@ compilador mostra claramente qual se aplica ao processo.
   em `references\media\nt-x-yy\pagina-NN.png` (o decreto não tem).
 - Preview (`Downloads\.claude\launch.json`): `motor-coscip` (porta 8765; token no log "Abrir:").
 - Backup: pasta local `C:\BackupsMotorCoscip` (mesmo SSD; OneDrive recusado pelo usuário por ora).
+
+**Segundo computador (usuário `raquel`, desde 25/09/2026):** código em
+`C:\Users\raquel\Downloads\Analise\motor-coscip`; Python 3.12 em
+`%LOCALAPPDATA%\Programs\Python\Python312` (`py -3.12`); Node em `C:\Program Files\nodejs`
+(pode faltar no PATH de terminais abertos antes da instalação). **Aqui ainda não existem** a base
+real (`%LOCALAPPDATA%\MotorCoscip`) nem `Downloads\coscip-corpus`: trazer o backup de
+`C:\BackupsMotorCoscip` e restaurar com `scripts\restore\restore.ps1`. Textos das NTs nas skills
+em `%APPDATA%\Claude\local-agent-mode-sessions\skills-plugin\...\skills\`.
 
 ## 8. Cuidados que já custaram tempo
 
@@ -353,15 +397,34 @@ compilador mostra claramente qual se aplica ao processo.
 - Dados reais nunca entram no repositório; nuvem só com autorização.
 - Heredoc do Bash quebra com arquivos Python longos no Windows: escrever com ferramenta de
   arquivo, não com `cat <<EOF`.
+- `Path.write_text` no Windows grava CRLF; o repositório é LF (`.gitattributes`). Usar
+  `write_bytes(s.encode())` ou a ferramenta de arquivo.
+- Id da região de pavimento é `floor-` + 8 primeiros caracteres do id do pavimento: em teste,
+  ids como `floor-0001`/`floor-0002` colidem. Com UUID real não colide.
+- Check de pavimento (`scope: FLOOR`) só roda por pavimento quando `execute_plan` recebe
+  `floors`; sem isso, conta a planta inteira (2 pavimentos com 1 extintor cada = "2").
+- **Empate de `created_at` no Windows**: dois registros seguidos saem com o mesmo horário. Onde
+  a ordem decide algo (snapshot e quadro vigentes, decisão de revisão mais nova), desempatar por
+  `rowid` (ordem de inserção), nunca pelo id UUID. Listagens de tela ainda usam só `created_at`.
+- Heredoc do Bash também quebra com YAML longo: gravar checks com a ferramenta de arquivo.
+- Anexo C da NT 2-08: o texto convertido tem "Edificaçoẽ s" (OCR) e "35,00m" sem espaço na
+  linha β; a conferência usa as células literais.
+- **Decisão do analista (25/09/2026): a regra principal é o item 5.3.3.3 da NT 2-08.** Sem
+  leiaute definido, limite do Anexo C reduzido **em** 30% (×0,7) e distância **direta** (linha
+  reta), não a observação C ("reduzidas a 30%"). Registrada em `distancias-saida.yaml`
+  (`layout_reduction`), conferida na importação; fator diferente de 0,7 é recusado.
+- As imagens das páginas da NT 2-08 (`media/nt-2-08/`) **não existem** neste computador: a
+  conferência visual das células do Anexo C contra o PDF oficial está pendente.
 
 ## 9. Comandos úteis
 
 ```powershell
-.venv\Scripts\python -m pytest -p no:cacheprovider --basetemp <pasta-nova>   # 243 testes (~3 min)
+.venv\Scripts\python -m pytest -p no:cacheprovider --basetemp <pasta-nova>   # 314 testes (~2,5 min)
 .venv\Scripts\ruff check . --no-cache
 .venv\Scripts\python -m coscip_api.cli backup
 .venv\Scripts\python -m coscip_api.cli normative-import-sources <pasta-com-md>
 .venv\Scripts\python -m coscip_api.cli normative-import-package
+.venv\Scripts\python -m coscip_api.cli v2-findings <id-da-analise> --out achados.json   # só leitura
 scripts\start\start.ps1
 ```
 
@@ -375,12 +438,12 @@ node --experimental-strip-types --input-type=module -e "import {build} from 'vit
 ## 10. Frase para abrir a próxima sessão
 
 > Leia `docs/proxima-sessao.md` no repositório (registro único do projeto), em especial as
-> seções 2 e 11. As fases 1 e 2 da arquitetura v2 estão implementadas e testadas, mas rodam
-> com evidência sintética. Comece pela **fase 3**: converter os resultados que o motor CAD já
-> produz em `Evidence`, para que os checks de extintor do catálogo recebam evidência real.
-> Antes disso, resolva as duas pendências de entrega da seção 2 (importar o pacote v4 na base
-> real e recompilar a interface). Não introduza LLM nem Jev. Toda mudança com teste e
-> atualização deste mesmo arquivo; não crie outro registro nem cópia.
+> seções 2, 11 e 12. Fases 1, 2 e 3 da arquitetura v2 prontas (CAD → `Evidence` por pavimento →
+> `Finding`, 17 checks, comando `v2-findings`). Não há plantas reais: trabalhe com DXF
+> sintético. Próximo passo: persistir plano, evidências e achados (V2-13, migração 0005 com
+> backup antes) e expor as rotas de leitura do §47; depois a fase 4 (motor documental mínimo).
+> Não introduza LLM nem Jev. Toda mudança com teste e atualização deste mesmo arquivo; não crie
+> outro registro nem cópia.
 
 ## 11. Sessão 20/09/2026 — fases 1 e 2 da arquitetura v2
 
@@ -452,3 +515,151 @@ e `ConsensusStatus`.
   (fase 4). Todo o teste roda com evidência sintética.
 - Jev e LLM não foram tocados, como o documento de arquitetura exige.
 - Nenhuma decisão humana, ocupação de processo real ou análise anterior foi alterada.
+
+## 12. Sessão 25/09/2026 — fase 3 da arquitetura v2 (extintores)
+
+### O que foi construído
+
+**`coscip_analysis.evidence`** — adaptador `plant-analysis/1.0` → `Evidence`. Lê só a saída
+estruturada (símbolos, cobertura, geometria e fatos `quality.*`/`floor.*` de cada região);
+**não lê** `results` (vereditos das regras antigas) nem o mapa/relatório. Por pavimento (região
+`PLAN`):
+- cada símbolo de segurança vira uma evidência `CAD_SYMBOL` localizada (handle, camada,
+  pavimento), com `source_hash` = SHA-256 do DXF; legenda e demolir ficam de fora;
+- extintor presumido pela placa continua evidência, marcado com a porta
+  `quality.extinguisher.not_presumed`;
+- classe procurada e não achada vira `ExtractionGap` (§54);
+- percurso máximo por sistema (extintor, hidrante, acionador, saída) vira `CAD_GEOMETRY` com
+  valor, incerteza, `grid_dijkstra_16` versão `1.0` (agora gravado na saída da análise) e ponto
+  mais distante; área útil do pavimento idem;
+- região não `PLAN` (corte, fachada) é listada em `skipped_regions`, sem evidência.
+`process_context` monta o `ProcessContext` com os campos do formulário como `context.*`.
+
+**Executor (`coscip_normative.verification.executor`)**
+- `FloorScope` + `execute_plan(..., floors=...)`: check `scope: FLOOR` roda uma vez por
+  pavimento, só com as evidências e os fatos daquele pavimento; dependência é resolvida dentro
+  do pavimento (pavimento vazio não trava o outro). Sem `floors`, o comportamento anterior.
+- Porta de qualidade **não informada** agora conta como não atendida (antes só `False`
+  reprovava) — mesma regra do motor de regras antigo.
+- `Question.quality_gates` (várias portas além de `quality_gate`).
+- Medida vinda do CAD leva `geometry_snapshot_hash` no `MeasuredResult` (§27).
+
+**`coscip_findings`** — `Finding.scope_id`/`scope_label` e `Finding.ref`
+(`EXT-CAD-002@floor-…`); `FindingGroup.scopes` diz em quais pavimentos a causa aparece.
+
+**Catálogo** — `EXT-CAD-001/002/003-*` passam à versão 2 com `quality.region_confirmed` e, nos
+003, `quality.extinguisher.complete`. As 11 citações dos 10 checks foram conferidas de novo
+contra as 29 NTs dos grupos 1 e 2 nas skills deste computador: todas conferem.
+
+**API/CLI** — `plant_service.load_output` (lê o `analysis.json` conferindo o hash, também usado
+pelo relatório); `coscip_api.plant_findings.findings_for_analysis` e o comando
+`v2-findings <id> [--out arquivo.json]`, **só leitura**: recusa o catálogo inteiro se alguma
+citação não conferir contra a base ingerida e não grava nada.
+
+### Verificações
+
+- 15 testes novos em `tests/integration/test_cad_evidence.py` (DXF sintético → análise →
+  evidência → plano → achado) e um passo v2 no teste de ponta a ponta da API com worker real.
+  Destaques: contagem é por pavimento (dois pavimentos com 1 extintor cada reprovam os dois,
+  embora a planta tenha 2); pavimento sem extintor fica inconclusivo sem contaminar o outro;
+  região automática não confirmada não conclui; extintor presumido e área não alcançada não
+  concluem; remover `results` e mapas da saída não muda nenhum achado (critério de aceite).
+- O teste de fluxo v2 antigo ganhou as duas portas novas no contexto (sem elas, nada conclui —
+  exatamente o comportamento novo).
+- **Defeito antigo corrigido:** o histórico de decisões de revisão era ordenado só por
+  `created_at`; no Windows duas decisões seguidas empatam e o SQLite devolvia em ordem
+  arbitrária (a "mais nova" podia sair trocada). Agora desempata por `rowid` (tabela só de
+  acréscimo). Achado porque o teste de ponta a ponta da API falhou uma vez na suíte completa.
+- Final: **258 testes passaram**, `ruff check .` limpo, `npm run build` ok.
+
+### O que deliberadamente **não** foi feito
+
+- Nada gravado no banco, nenhuma rota nova na API, nada na interface.
+- Nenhuma análise real foi executada ou alterada (a base real não está neste computador).
+- Nenhum check novo além da versão 2 dos checks de extintor; nada de LLM ou Jev.
+
+### Segunda parte (25/09/2026) — hidrantes, alarme e saídas
+
+- **Sete checks novos** (seção 6): `HID-CAD-001/002`, `ALA-CAD-001/002`, `SAI-CAD-001/002`,
+  `SAI-MAN-001`. Catálogo na versão 2: 17 checks, **19 citações conferidas** contra as 29 NTs
+  dos grupos 1 e 2.
+- **Limite informado pelo analista:** `Question.required_fact` (exclusivo com `required_value`,
+  validado no catálogo). Sem o fato, o achado é `REQUIRED_LIMIT_MISSING`, a medida já apurada
+  continua anexada e nada conclui. Usado na distância até a saída (Anexo C em imagem).
+- **Exigência de sistema como evidência (§30):** `requirement_evidence` gera
+  `hydrant_requirement`/`alarm_requirement`/`lighting_requirement` a partir da consulta ao
+  Anexo III (`NORMATIVE_TABLE`, localizada pela coluna) e da declaração do formulário (`HUMAN`).
+  `HID-REQ-001` passa a receber evidência real. `PlantEvidence.overrides` lista sistema com X na
+  tabela declarado não exigido.
+- Mangotinho conta como `hydrant` (ponto do sistema da NT 2-02), igual à cobertura do motor.
+- **Defeito antigo corrigido:** snapshot e quadro de coordenadas "vigentes" desempatavam
+  horário igual pelo id UUID — ao acaso. Agora por `rowid`. Achado por falha intermitente de
+  `test_preparation` na suíte completa.
+- 13 testes novos em `tests/integration/test_cad_checks_systems.py`. Final: **271 testes
+  passaram**, `ruff` limpo, `npm run build` ok.
+
+### Terceira parte (25/09/2026) — Anexo C da NT 2-08 como dado
+
+O usuário pediu para tornar legível a tabela que o registro dava como "imagem". Ela já estava
+no texto convertido (seção "Tabelas extraídas" da página 22), então virou dado conferível:
+
+- `normative/base/distancias-saida.yaml` (`exit-distances/1.0`): 6 linhas (α, β, γ×2 grupos×
+  piso de descarga/demais) × 4 colunas (sem/com chuveiros ou detectores × saída única/mais de
+  uma) e as observações A–G com seus efeitos. **Pacote v5.**
+- `coscip_normative.exit_distances`: `verify_exit_distances` confere cada linha com
+  `verify_table_row` na página 22, exige que cada limite esteja escrito numa célula daquela linha
+  e confere cada observação; `consult_exit_distance` só devolve limite com todos os dados
+  (ocupação, tipo α/β/γ, chuveiros/detectores, número de saídas, leiaute definido). Estados:
+  `FOUND`, `MISSING_DATA`, `DEPENDS_ON_FLOOR` (γ com mais de um pavimento e valores diferentes),
+  `REVIEW_REQUIRED` (sem leiaute), `OUT_OF_SCOPE` (F-3 → NT 5-01, M-9 → NT 4-02, grupo fora da
+  linha), `UNAVAILABLE`. Observações que **aumentam** o limite (A, +100%) não são aplicadas.
+- Pacote: `exit_distances` no manifesto, conferido em `verify_package`; análise grava
+  `context.exit_distance_reference`; rota `POST /v1/rule-packages/{id}/exit-distance-query`.
+- Adaptador (§30): `context.normative_exit_max_distance_m` (tabela),
+  `context.human_override_exit_max_distance_m` (formulário) e
+  `context.effective_exit_max_distance_m` com `..._source` (linha, coluna, página ou "informado
+  pelo analista"); `PlantEvidence.overrides` inclui `exit_max_distance_m` quando divergem.
+- `SAI-CAD-002` v2 usa o limite efetivo; `MeasuredResult.required_source` mostra a origem.
+- Interface: cartão "Saídas" com tipo de edificação, chuveiros/detectores, mais de uma saída,
+  leiaute definido e o painel `ExitDistancePanel` com o limite da tabela ao vivo; o campo do
+  analista virou "limite informado pelo analista (opcional)". **Não conferido visualmente no
+  navegador** (sem base real neste computador); `tsc` estrito e build ok.
+- Conferido contra as fontes reais: **pacote v5 inteiro verifica nas 53 fontes**; Anexo C com 6
+  linhas e 6 observações conferidas.
+- 22 testes novos (19 em `tests/unit/test_exit_distances.py`, 3 no adaptador) e a consulta na
+  API dentro do teste de ponta a ponta. Final: **293 testes passaram**, `ruff` limpo, build ok.
+
+### Quarta parte (25/09/2026) — piso de descarga não identificado (opção B)
+
+- **Decisão pendente do usuário:** observação C ("reduzidas **a** 30%") × item 5.3.3.3
+  ("reduzidas **em** 30%" e distâncias **diretas**). O usuário confirmou os dois textos, mas
+  não escolheu a leitura: sem leiaute definido o motor continua sem consultar a tabela.
+- **Faixa de limites:** quando γ tem mais de um pavimento e o limite do piso de descarga difere
+  dos demais, a consulta devolve `DEPENDS_ON_FLOOR` com os dois valores, as duas linhas e a
+  página; o adaptador grava o limite efetivo como lista (`[35, 40]`) com a origem.
+- **Executor:** `required_fact` aceita lista de limites possíveis. Conclui só o que vale para
+  todos — atende o mais exigente ⇒ `COMPLIANT`; não atende nem o mais brando ⇒
+  `NON_COMPLIANT`; entre os dois (incerteza incluída) ⇒ `UNDETERMINED`,
+  `LIMIT_NOT_DETERMINED`, revisão pendente. `MeasuredResult.required_candidates` mostra a
+  faixa; `required` é o limite que decidiu.
+- Limite do analista fora da faixa entra em `overrides`; dentro dela, não.
+- **Opção A (marcar o piso de descarga no recorte do pavimento) não foi feita**: resolveria a
+  faixa intermediária; exige campo novo no pavimento (migração), caixa na tela e fato por
+  pavimento.
+- 10 testes novos. Final: **303 testes passaram**, `ruff` limpo, build ok.
+
+### Quinta parte (25/09/2026) — regra do item 5.3.3.3 e commit
+
+- `layout_reduction` na tabela do Anexo C: fator 0,7, medida `DIRECT`, citação do 5.3.3.3
+  conferida e a decisão escrita. `consult_exit_distance` sem leiaute devolve o limite reduzido
+  (`base_limit_m`/`limit_m`, também por piso) e `measure: DIRECT`; com leiaute, `TRAVEL`.
+- Motor CAD: `spatial.direct_farthest` (maior distância em linha reta de célula livre até a
+  saída mais próxima, `grid_euclidean_nearest` 1.0, incerteza = meia diagonal da célula + posição
+  do símbolo), só para saídas; evidência `exit_direct_distance_m`.
+- `SAI-CAD-002` v3 só com leiaute definido; **novo `SAI-CAD-003`**: sem leiaute, distância
+  direta contra o limite efetivo (sem porta de paredes). Leiaute desconhecido ⇒ os dois ficam
+  com aplicabilidade desconhecida. Catálogo v3: 18 checks, 21 citações conferidas.
+- Painel da interface mostra "tabela 40 m, reduzido em 30% (NT 2-08 5.3.3.3); linha reta".
+- 11 testes novos. Final: **314 testes passaram**, `ruff` limpo, build ok; pacote v5 verifica
+  nas 53 fontes.
+- Todo o trabalho de 25/09 foi commitado nesta etapa.

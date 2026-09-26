@@ -5,11 +5,14 @@ Regras de segurança que o executor nunca quebra:
 - ausência de evidência não vira conformidade (§74);
 - ausência de extração não vira ausência documental (§54);
 - dependência inconclusiva não libera o dependente (§20);
-- porta de qualidade reprovada mostra o número, mas não conclui conformidade (§25).
+- porta de qualidade reprovada ou não informada mostra o número, mas não conclui
+  conformidade (§25).
 """
 
 from __future__ import annotations
 
+from collections.abc import Sequence
+from dataclasses import dataclass, field
 from typing import Any
 
 from coscip_evidence import Consensus, EvidenceSet
@@ -20,15 +23,16 @@ from coscip_cbm import (
     Applicability,
     ComplianceStatus,
     ConsensusStatus,
+    EvidenceSourceType,
     EvidenceStatus,
     FindingKind,
     ReviewStatus,
 )
 from coscip_geometry.tolerances import compare_maximum, compare_minimum
 from coscip_normative.verification.catalog import CheckCatalog
-from coscip_normative.verification.compiler import VerificationPlan
+from coscip_normative.verification.compiler import PlanItem, VerificationPlan
 from coscip_normative.verification.dependencies import dependency_gate
-from coscip_normative.verification.models import CheckDefinition
+from coscip_normative.verification.models import CheckDefinition, Question
 
 
 def _citations(check: CheckDefinition) -> tuple[dict[str, Any], ...]:
@@ -73,9 +77,12 @@ def _sources_of(evidence: EvidenceSet, ids: tuple[str, ...]) -> tuple[str, ...]:
     return tuple(by_id[i].describe_source() for i in ids if i in by_id)
 
 
-def _quality_failed(check: CheckDefinition, context_facts: dict[str, Any]) -> bool:
-    gate = check.question.quality_gate if check.question else None
-    return bool(gate) and context_facts.get(gate) is False
+def _failed_gates(check: CheckDefinition, context_facts: dict[str, Any]) -> list[str]:
+    """Portas não atendidas. Porta sem fato informado conta como não atendida: qualidade
+    desconhecida não sustenta conformidade (mesma regra do motor de regras)."""
+    gates = check.question.gates if check.question else ()
+    return [g if context_facts.get(g) is False else f"{g} (não informada)"
+            for g in gates if context_facts.get(g) is not True]
 
 
 def execute_check(check: CheckDefinition, evidence: EvidenceSet,
@@ -83,12 +90,12 @@ def execute_check(check: CheckDefinition, evidence: EvidenceSet,
     """Responde um check executável a partir das evidências reunidas."""
     question = check.question
     assert question is not None  # checks manuais não chegam aqui
-    if _quality_failed(check, context_facts):
+    if failed := _failed_gates(check, context_facts):
         return _finding(
             check, compliance=check.result_rules.quality_gate_failed,
             evidence=EvidenceStatus.PARTIAL, review=_review_for(check, forced=True),
             kind=FindingKind.NOT_VERIFIABLE, reason_code="QUALITY_GATE_FAILED",
-            explanation_extra=f"Porta de qualidade não atendida: {question.quality_gate}.")
+            explanation_extra=f"Porta de qualidade não atendida: {', '.join(failed)}.")
     match question.kind:
         case "required_fields":
             return _required_fields(check, evidence)
@@ -97,7 +104,7 @@ def execute_check(check: CheckDefinition, evidence: EvidenceSet,
         case "presence" | "minimum_count":
             return _counting(check, evidence)
         case "minimum_value" | "maximum_value":
-            return _comparison(check, evidence)
+            return _comparison(check, evidence, context_facts)
     raise AssertionError(f"pergunta não compilada: {question.kind}")
 
 
@@ -210,13 +217,43 @@ def _counting(check: CheckDefinition, evidence: EvidenceSet) -> Finding:
                                               required=float(required)))
 
 
-def _comparison(check: CheckDefinition, evidence: EvidenceSet) -> Finding:
+def _positive(value: object) -> bool:
+    return not isinstance(value, bool) and isinstance(value, int | float) and value > 0
+
+
+def _required_limits(question: Question, facts: dict[str, Any]) -> tuple[float, ...] | None:
+    """Limites possíveis. Mais de um quando o enquadramento ainda não decide qual vale
+    (ex.: Anexo C da NT 2-08 sem saber se o pavimento é o de descarga)."""
+    if question.required_fact is None:
+        return (float(question.required_value or 0),)
+    value = facts.get(question.required_fact)
+    if _positive(value):
+        return (float(value),)
+    if isinstance(value, list | tuple) and value and all(_positive(v) for v in value):
+        return tuple(sorted({float(v) for v in value}))
+    return None
+
+
+def _comparison(check: CheckDefinition, evidence: EvidenceSet,
+                facts: dict[str, Any]) -> Finding:
     question = check.question
     assert question is not None and question.field is not None
     found = [e for e in evidence.for_field(question.field, subject=question.subject)
              if e.located and e.normalized_value is not None]
     ids = tuple(e.id for e in found)
     sources = _sources_of(evidence, ids)
+    limits = _required_limits(question, facts)
+    if limits is None:
+        # O limite depende do analista (ex.: tabela em imagem): sem ele, nada conclui,
+        # mas a medida já apurada continua no achado.
+        return _finding(
+            check, compliance=check.result_rules.missing_required_field,
+            evidence=EvidenceStatus.PARTIAL if found else EvidenceStatus.MISSING,
+            review=_review_for(check, forced=True), kind=FindingKind.DATA_MISSING,
+            reason_code="REQUIRED_LIMIT_MISSING", missing=(question.required_fact or "",),
+            evidence_ids=ids, sources=sources,
+            explanation_extra=(f"O limite exigido ({question.required_fact}) é informado "
+                               "pelo analista e ainda não foi informado."))
     if not found:
         return _finding(
             check, compliance=check.result_rules.missing_required_field,
@@ -228,13 +265,41 @@ def _comparison(check: CheckDefinition, evidence: EvidenceSet) -> Finding:
         worst = min(found, key=lambda e: float(e.normalized_value))
     value = float(worst.normalized_value)
     uncertainty = worst.uncertainty_abs or 0.0
-    required = float(question.required_value or 0)
+    # Limite vindo do enquadramento: o achado diz de onde (tabela conferida ou analista).
+    origin = (facts.get(f"{question.required_fact}_source") or question.required_fact
+              if question.required_fact else None)
     compare = compare_minimum if question.kind == "minimum_value" else compare_maximum
-    verdict = compare(value, uncertainty, required)
+    # Com vários limites possíveis, conclui só o que vale para TODOS: atende o mais
+    # exigente ⇒ atende; não atende nem o mais brando ⇒ não atende; o resto fica aberto.
+    strict, loose = ((limits[0], limits[-1]) if question.kind == "maximum_value"
+                     else (limits[-1], limits[0]))
+    if compare(value, uncertainty, strict) == "PASS":
+        verdict, required = "PASS", strict
+    elif compare(value, uncertainty, loose) == "FAIL":
+        verdict, required = "FAIL", loose
+    elif len(limits) > 1:
+        verdict, required = "LIMIT_OPEN", strict
+    else:
+        verdict, required = "REVIEW_REQUIRED", strict
     measured = MeasuredResult(
         value=value, unit=question.unit or worst.unit or "", required=required,
+        required_candidates=limits if len(limits) > 1 else (),
+        required_source=origin,
         uncertainty_abs=uncertainty, algorithm=worst.algorithm,
-        algorithm_version=worst.algorithm_version, quality_gate=worst.quality_gate)
+        algorithm_version=worst.algorithm_version, quality_gate=worst.quality_gate,
+        # §27: medida do CAD aponta o desenho exato de onde saiu a geometria.
+        geometry_snapshot_hash=(worst.source_hash
+                                if worst.source_type is EvidenceSourceType.CAD else None))
+    if verdict == "LIMIT_OPEN":
+        shown = " ou ".join(f"{v:g}" for v in limits)
+        return _finding(
+            check, compliance=ComplianceStatus.UNDETERMINED,
+            evidence=EvidenceStatus.PARTIAL, review=_review_for(check, forced=True),
+            kind=FindingKind.NOT_VERIFIABLE, reason_code="LIMIT_NOT_DETERMINED",
+            evidence_ids=ids, sources=sources, measured=measured,
+            explanation_extra=(f"O limite aplicável pode ser {shown} {measured.unit} e a "
+                               "medida, com sua incerteza, atende a um e não ao outro; "
+                               "é preciso definir qual limite vale."))
     if verdict == "REVIEW_REQUIRED":
         return _finding(
             check, compliance=ComplianceStatus.UNDETERMINED,
@@ -268,46 +333,62 @@ def _not_executed(check: CheckDefinition, *, compliance: ComplianceStatus,
                     explanation_extra=reason)
 
 
+@dataclass(frozen=True)
+class FloorScope:
+    """Um pavimento analisado: suas evidências e seus fatos de qualidade.
+
+    Checks de escopo ``FLOOR`` rodam uma vez por pavimento, só com o que foi extraído
+    dele. Os fatos do pavimento se somam aos do processo e prevalecem sobre eles.
+    """
+
+    id: str
+    label: str
+    evidence: EvidenceSet
+    facts: dict[str, Any] = field(default_factory=dict)
+
+
+def _aggregate(statuses: list[ComplianceStatus]) -> ComplianceStatus:
+    """Conclusão de um check de pavimento vista pelo processo, para as dependências."""
+    if not statuses or any(s is ComplianceStatus.UNDETERMINED for s in statuses):
+        return ComplianceStatus.UNDETERMINED
+    if all(s is ComplianceStatus.NOT_APPLICABLE for s in statuses):
+        return ComplianceStatus.NOT_APPLICABLE
+    if any(s is ComplianceStatus.NON_COMPLIANT for s in statuses):
+        return ComplianceStatus.NON_COMPLIANT
+    return ComplianceStatus.COMPLIANT
+
+
 def execute_plan(plan: VerificationPlan, catalog: CheckCatalog, evidence: EvidenceSet,
-                 context_facts: dict[str, Any] | None = None) -> tuple[Finding, ...]:
+                 context_facts: dict[str, Any] | None = None,
+                 floors: Sequence[FloorScope] = ()) -> tuple[Finding, ...]:
     """Executa o plano na ordem das dependências. Mesmo plano + mesmas evidências ⇒
-    mesmos achados."""
+    mesmos achados.
+
+    Sem ``floors``, todo check responde sobre o conjunto do processo. Com ``floors``,
+    cada check de escopo ``FLOOR`` produz um achado por pavimento.
+    """
     facts = context_facts or {}
     by_id = {item.check_id: item for item in plan.items}
     concluded: dict[str, ComplianceStatus] = {}
+    per_floor: dict[str, dict[str, ComplianceStatus]] = {f.id: {} for f in floors}
     findings: list[Finding] = []
     for check_id in plan.execution_order:
         check = catalog.get(check_id)
         item = by_id[check_id]
-        gate = dependency_gate(check.depends_on, concluded)
-        if item.applicability is Applicability.UNKNOWN:
-            finding = _not_executed(
-                check, compliance=ComplianceStatus.UNDETERMINED,
-                kind=FindingKind.NOT_VERIFIABLE, reason_code="APPLICABILITY_UNKNOWN",
-                reason=("Faltam dados do enquadramento para decidir se este item se aplica: "
-                        + ", ".join(item.missing_facts)) if item.missing_facts else (
-                        "Enquadramento insuficiente para decidir a aplicabilidade."),
-                review=ReviewStatus.PENDING)
-        elif gate is not None:
-            state, reason = gate
-            finding = _not_executed(
-                check,
-                compliance=(ComplianceStatus.NOT_APPLICABLE if state == "NOT_APPLICABLE"
-                            else ComplianceStatus.UNDETERMINED),
-                kind=(FindingKind.NO_PENDING_ISSUE if state == "NOT_APPLICABLE"
-                      else FindingKind.NOT_VERIFIABLE),
-                reason_code=f"DEPENDENCY_{state}",
-                reason=f"Não executado porque {reason}.",
-                review=(ReviewStatus.NOT_REQUIRED if state == "NOT_APPLICABLE"
-                        else ReviewStatus.PENDING))
-        elif check.manual:
-            finding = _not_executed(
-                check, compliance=ComplianceStatus.UNDETERMINED,
-                kind=FindingKind.ANALYST_REVIEW, reason_code="MANUAL_CONFIRMATION",
-                reason="Item de confirmação humana: o motor não conclui sozinho.",
-                review=ReviewStatus.PENDING)
-        else:
-            finding = execute_check(check, evidence, facts)
+        if floors and check.scope == "FLOOR":
+            statuses = []
+            for floor in floors:
+                done = {**concluded, **per_floor[floor.id]}
+                finding = _run_item(check, item, done, floor.evidence,
+                                    {**facts, **floor.facts})
+                finding = finding.model_copy(update={"scope_id": floor.id,
+                                                     "scope_label": floor.label})
+                per_floor[floor.id][check_id] = finding.compliance_status
+                statuses.append(finding.compliance_status)
+                findings.append(finding)
+            concluded[check_id] = _aggregate(statuses)
+            continue
+        finding = _run_item(check, item, concluded, evidence, facts)
         concluded[check_id] = finding.compliance_status
         findings.append(finding)
     for item in plan.items:
@@ -318,3 +399,35 @@ def execute_plan(plan: VerificationPlan, catalog: CheckCatalog, evidence: Eviden
                 kind=FindingKind.NO_PENDING_ISSUE, reason_code="NOT_APPLICABLE",
                 reason=item.reason, review=ReviewStatus.NOT_REQUIRED))
     return tuple(findings)
+
+
+def _run_item(check: CheckDefinition, item: PlanItem, concluded: dict[str, ComplianceStatus],
+              evidence: EvidenceSet, facts: dict[str, Any]) -> Finding:
+    gate = dependency_gate(check.depends_on, concluded)
+    if item.applicability is Applicability.UNKNOWN:
+        return _not_executed(
+            check, compliance=ComplianceStatus.UNDETERMINED,
+            kind=FindingKind.NOT_VERIFIABLE, reason_code="APPLICABILITY_UNKNOWN",
+            reason=("Faltam dados do enquadramento para decidir se este item se aplica: "
+                    + ", ".join(item.missing_facts)) if item.missing_facts else (
+                    "Enquadramento insuficiente para decidir a aplicabilidade."),
+            review=ReviewStatus.PENDING)
+    if gate is not None:
+        state, reason = gate
+        return _not_executed(
+            check,
+            compliance=(ComplianceStatus.NOT_APPLICABLE if state == "NOT_APPLICABLE"
+                        else ComplianceStatus.UNDETERMINED),
+            kind=(FindingKind.NO_PENDING_ISSUE if state == "NOT_APPLICABLE"
+                  else FindingKind.NOT_VERIFIABLE),
+            reason_code=f"DEPENDENCY_{state}",
+            reason=f"Não executado porque {reason}.",
+            review=(ReviewStatus.NOT_REQUIRED if state == "NOT_APPLICABLE"
+                    else ReviewStatus.PENDING))
+    if check.manual:
+        return _not_executed(
+            check, compliance=ComplianceStatus.UNDETERMINED,
+            kind=FindingKind.ANALYST_REVIEW, reason_code="MANUAL_CONFIRMATION",
+            reason="Item de confirmação humana: o motor não conclui sozinho.",
+            review=ReviewStatus.PENDING)
+    return execute_check(check, evidence, facts)

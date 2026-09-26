@@ -1,0 +1,35 @@
+# RASCUNHO. Saída reconhecida em cada pavimento (fase 3). Saídas vêm de marcações e placas,
+# por isso só contam depois de confirmadas pelo analista.
+schema_version: checks/1.0
+id: SAI-CAD-001
+version: 1
+title: Saídas localizadas no pavimento
+system: SAIDAS
+type: CAD_PRESENCE
+scope: FLOOR
+severity: CRITICAL
+publication_state: DRAFT
+production_eligible: false
+group_key: saidas/presenca
+applies_when:
+  all:
+    - {fact: context.unifamiliar, operator: equals, value: false}
+question:
+  kind: presence
+  field: exit
+  accepted_evidence: [CAD]
+  quality_gates: [context.exits_confirmed, quality.region_confirmed]
+normative_basis:
+  - document: NT 2-08
+    edition: 1ª edição - 2019; Portaria 1.317/2025
+    item: "5.3.3.1"
+    quote: ["portas de acesso às edificações", "acesso às escadas"]
+human_review:
+  on_missing: true
+wording:
+  title: Nenhuma saída foi localizada no pavimento
+  explanation: >-
+    A extração não reconheceu saída (porta de acesso, escada ou placa de saída) no
+    pavimento. Sem saída identificada não há como medir o percurso até ela.
+  required_action: >-
+    Marcar as saídas do pavimento, confirmá-las no formulário da análise e reanalisar.

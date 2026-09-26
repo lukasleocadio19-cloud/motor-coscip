@@ -15,6 +15,7 @@ from coscip_api.errors import ApiError
 from coscip_api.models import Analysis, Drawing, Floor, RulePackage
 from coscip_api.plant_service import PlantAnalysisIn, PlantContext, PlantError
 from coscip_api.routers.normative import list_packages
+from coscip_normative.exit_distances import consult_exit_distance
 from coscip_normative.requirements import consult_requirements
 
 router = APIRouter()
@@ -28,6 +29,16 @@ def requirements_query(package_id: str, body: PlantContext,
     if pkg is None or not (pkg.manifest or {}).get("verified"):
         raise ApiError(422, "RULE_PACKAGE_NOT_VERIFIED", "Pacote sem citações verificadas")
     return consult_requirements((pkg.manifest or {}).get("requirements"), body.model_dump())
+
+
+@router.post("/rule-packages/{package_id}/exit-distance-query")
+def exit_distance_query(package_id: str, body: PlantContext,
+                        s: Session = Depends(db)) -> dict[str, Any]:
+    """Limite do Anexo C da NT 2-08 para o enquadramento do formulário, sem gravação."""
+    pkg = s.get(RulePackage, package_id)
+    if pkg is None or not (pkg.manifest or {}).get("verified"):
+        raise ApiError(422, "RULE_PACKAGE_NOT_VERIFIED", "Pacote sem citações verificadas")
+    return consult_exit_distance((pkg.manifest or {}).get("exit_distances"), body.model_dump())
 
 
 def _raise(exc: PlantError) -> ApiError:

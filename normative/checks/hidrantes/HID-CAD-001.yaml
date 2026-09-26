@@ -1,0 +1,37 @@
+# RASCUNHO. Hidrante ou mangotinho reconhecido em cada pavimento (fase 3).
+schema_version: checks/1.0
+id: HID-CAD-001
+version: 1
+title: Hidrantes ou mangotinhos localizados no pavimento
+system: HIDRANTES
+type: CAD_PRESENCE
+scope: FLOOR
+severity: CRITICAL
+publication_state: DRAFT
+production_eligible: false
+group_key: hidrantes/presenca
+depends_on: [HID-REQ-001]
+applies_when:
+  all:
+    - {fact: context.effective_requirement_hydrants, operator: equals, value: true}
+question:
+  kind: presence
+  field: hydrant
+  accepted_evidence: [CAD]
+  quality_gates: [quality.region_confirmed]
+normative_basis:
+  - document: NT 2-02
+    edition: 1ª edição - 2019; Portaria 1.317/2025
+    item: "5.6.1"
+    quote: ["Os hidrantes serão distribuídos nas edificações"]
+human_review:
+  on_missing: true
+wording:
+  title: Nenhum hidrante ou mangotinho foi localizado no pavimento
+  explanation: >-
+    O sistema de hidrantes é exigido, mas a extração não reconheceu hidrante nem
+    mangotinho no pavimento. Isso não conclui que o projeto não os prevê: pode ser
+    símbolo não reconhecido ou camada ausente.
+  required_action: >-
+    Conferir na planta e, se houver pontos de hidrante ou mangotinho, identificar o
+    símbolo ou a camada correspondente antes de reanalisar.

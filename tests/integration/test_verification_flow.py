@@ -34,6 +34,9 @@ FATOS = {
     "context.has_fire_pump": True,
     "quality.extinguisher.not_presumed": True,
     "quality.walls_detected": True,
+    # Portas dos checks de extintor v2: sem elas informadas, nada conclui.
+    "quality.region_confirmed": True,
+    "quality.extinguisher.complete": True,
 }
 
 

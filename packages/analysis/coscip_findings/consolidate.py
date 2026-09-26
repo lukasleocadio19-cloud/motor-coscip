@@ -70,10 +70,14 @@ def group_findings(findings: Sequence[Finding]) -> tuple[FindingGroup, ...]:
             title=first.title, explanation=first.explanation,
             required_action=first.required_action, missing=tuple(missing),
             divergences=tuple(d for i in items for d in i.divergences),
-            finding_ids=tuple(i.check_id for i in items),
+            finding_ids=tuple(i.ref for i in items),
             evidence_ids=tuple(dict.fromkeys(e for i in items for e in i.evidence_ids)),
             normative_citations=tuple(citations),
-            review_status=_worst_review(i.review_status for i in items)))
+            review_status=_worst_review(i.review_status for i in items),
+            # Só os pavimentos onde a causa do grupo aparece, não os que estão em ordem.
+            scopes=tuple(dict.fromkeys(
+                i.scope_label or i.scope_id for i in items
+                if i.scope_id and i.kind is _worst_kind(j.kind for j in items)))))
     return tuple(sorted(groups, key=lambda g: (KIND_ORDER.index(g.kind),
                                                SEVERITY_ORDER[g.severity], g.system,
                                                g.group_key)))

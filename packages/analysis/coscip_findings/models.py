@@ -43,6 +43,10 @@ class MeasuredResult(_Strict):
     value: float
     unit: str
     required: float | None = None
+    # De onde veio o limite quando não é literal no check (tabela conferida ou analista).
+    required_source: str | None = None
+    # Limites possíveis quando o enquadramento ainda não decide qual vale.
+    required_candidates: tuple[float, ...] = ()
     uncertainty_abs: float | None = Field(default=None, ge=0)
     algorithm: str | None = None
     algorithm_version: str | None = None
@@ -56,6 +60,10 @@ class Finding(_Strict):
     check_version: int
     system: str
     subject: str = ""
+    # Recorte a que o achado se refere quando o check tem escopo de pavimento. Vazio = o
+    # processo inteiro (ou nenhum pavimento analisado).
+    scope_id: str = ""
+    scope_label: str = ""
     compliance_status: ComplianceStatus
     evidence_status: EvidenceStatus
     review_status: ReviewStatus
@@ -72,6 +80,11 @@ class Finding(_Strict):
     evidence_ids: tuple[str, ...] = ()
     normative_citations: tuple[dict[str, Any], ...] = ()
     group_key: str = ""
+
+    @property
+    def ref(self) -> str:
+        """Identifica o achado na análise: o mesmo check aparece uma vez por pavimento."""
+        return f"{self.check_id}@{self.scope_id}" if self.scope_id else self.check_id
 
     @property
     def is_pending(self) -> bool:
@@ -100,3 +113,5 @@ class FindingGroup(_Strict):
     evidence_ids: tuple[str, ...] = ()
     normative_citations: tuple[dict[str, Any], ...] = ()
     review_status: ReviewStatus = ReviewStatus.NOT_REQUIRED
+    # Pavimentos em que a causa aparece, para a tela dizer onde agir.
+    scopes: tuple[str, ...] = ()

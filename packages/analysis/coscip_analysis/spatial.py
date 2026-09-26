@@ -248,3 +248,27 @@ def clip_mask(grid: Grid, poly: np.ndarray) -> np.ndarray:
 
 def travel_uncertainty(d: float, h: float) -> float:
     return GRID_REL_ERROR * d + 2 * h + SYMBOL_POSITION_M
+
+
+def direct_farthest(grid: Grid, free: np.ndarray,
+                    points: list[tuple[float, float]]) -> tuple[float, tuple[float, float]] | None:
+    """Maior distância em LINHA RETA de uma célula livre até o ponto mais próximo.
+
+    É a medida do item 5.3.3.3 da NT 2-08 (projeto sem leiaute): distância direta, sem
+    contornar paredes. Devolve a distância e o centro da célula mais desfavorável.
+    """
+    rows, cols = np.nonzero(free)
+    if not len(rows) or not points:
+        return None
+    xs = grid.x0 + (cols + 0.5) * grid.h
+    ys = grid.y0 + (rows + 0.5) * grid.h
+    best = np.full(len(xs), np.inf)
+    for px, py in points:
+        best = np.minimum(best, np.hypot(xs - px, ys - py))
+    i = int(np.argmax(best))
+    return float(best[i]), (float(xs[i]), float(ys[i]))
+
+
+def direct_uncertainty(h: float) -> float:
+    """Meia diagonal da célula (ponto dentro dela) mais a posição do símbolo."""
+    return math.sqrt(2) / 2 * h + SYMBOL_POSITION_M

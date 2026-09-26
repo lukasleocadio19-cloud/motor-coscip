@@ -26,7 +26,7 @@ from coscip_normative.verification.context import (
     effective_requirement,
 )
 from coscip_normative.verification.dependencies import dependency_gate, execution_order
-from coscip_normative.verification.executor import execute_check, execute_plan
+from coscip_normative.verification.executor import FloorScope, execute_check, execute_plan
 from coscip_normative.verification.models import (
     CHECK_SCHEMA,
     CheckDefinition,
@@ -44,6 +44,7 @@ __all__ = [
     "CheckCatalog",
     "CheckDefinition",
     "CheckValidationError",
+    "FloorScope",
     "PlanItem",
     "ProcessContext",
     "Question",

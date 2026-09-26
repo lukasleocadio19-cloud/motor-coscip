@@ -1,0 +1,120 @@
+# NT 2-08, Anexo C — distâncias máximas a serem percorridas até a saída.
+# Transcrito da tabela extraída da página 22 do texto ingerido; cada linha é conferida na
+# importação (todas as células na MESMA linha da tabela). RASCUNHO, sem homologação.
+#
+# "Edificaçoẽ s" está assim no texto convertido (erro de OCR do PDF): a conferência usa a
+# célula literal. Conferir as células na imagem da página 22 / no PDF oficial (pendente).
+schema_version: exit-distances/1.0
+source:
+  document: NT 2-08
+  item: Anexo C
+  page: 22
+  title: DISTÂNCIAS MÁXIMAS A SEREM PERCORRIDAS
+# Ordem das colunas de limite em cada linha.
+columns:
+  - id: UNPROTECTED_SINGLE
+    label: Sem chuveiros ou sem detectores automáticos — saída única
+  - id: UNPROTECTED_MULTIPLE
+    label: Sem chuveiros ou sem detectores automáticos — mais de uma saída
+  - id: PROTECTED_SINGLE
+    label: Com chuveiros ou com detectores automáticos — saída única
+  - id: PROTECTED_MULTIPLE
+    label: Com chuveiros ou com detectores automáticos — mais de uma saída
+construction_types:
+  ALFA: (α) Edificações em que a propagação do fogo é fácil
+  BETA: (β) Edificações com estrutura mediana resistência ao fogo
+  GAMA: (γ) Edificações em que a propagação do fogo seja difícil
+rows:
+  - id: ALFA
+    construction: ALFA
+    groups: ANY
+    floor: ANY
+    limits_m: [10, 20, 25, 35]
+    verify: ["(α) Edificaçoẽ s em que a propagação do fogo é fácil", "Qualquer",
+             "10,00 m", "20,00 m", "25,00 m", "35,00 m"]
+  - id: BETA
+    construction: BETA
+    groups: ANY
+    floor: ANY
+    limits_m: [20, 30, 35, 45]
+    verify: ["(β) Edificaçoẽ s com estrutura mediana resistência ao fogo", "Qualquer",
+             "20,00 m", "30,00 m", "35,00m", "45,00 m"]
+  - id: GAMA-CDEFHILM-DESCARGA
+    construction: GAMA
+    groups: [C, D, E, F, G-3, G-4, H, I, L, M]
+    floor: DISCHARGE
+    limits_m: [35, 40, 45, 55]
+    verify: ["C, D, E, F, G-3, G-4, H, I, L e M", "De saída da edificação (piso de descarga)",
+             "35,00 m", "40,00 m", "45,00 m", "55,00 m"]
+  - id: GAMA-CDEFHILM-DEMAIS
+    construction: GAMA
+    groups: [C, D, E, F, G-3, G-4, H, I, L, M]
+    floor: OTHER
+    limits_m: [35, 35, 35, 35]
+    # Tipo e grupo em células mescladas com a linha de cima; "Demais" aparece em duas
+    # linhas com os mesmos valores.
+    merged_from: GAMA-CDEFHILM-DESCARGA
+    verify: ["Demais", "35,00 m"]
+  - id: GAMA-ABGJ-DESCARGA
+    construction: GAMA
+    groups: [A, B, G-1, G-2, G-5, G-6, J]
+    floor: DISCHARGE
+    limits_m: [40, 50, 55, 65]
+    verify: ["A, B, G-1, G-2, G-5, G-6 e J", "De saída da edificação (piso de descarga)",
+             "40,00 m", "50,00 m", "55,00 m", "65,00 m"]
+  - id: GAMA-ABGJ-DEMAIS
+    construction: GAMA
+    groups: [A, B, G-1, G-2, G-5, G-6, J]
+    floor: OTHER
+    limits_m: [35, 35, 35, 35]
+    merged_from: GAMA-ABGJ-DESCARGA
+    verify: ["Demais", "35,00 m"]
+# Projeto sem leiaute definido. O Anexo C (observação C) diz "reduzidas a 30%" e o item
+# 5.3.3.3 diz "reduzidas em 30%", com distâncias diretas. DECISÃO DO ANALISTA (25/09/2026):
+# prevalece o item 5.3.3.3 — limite = 70% do valor da tabela, medida em linha reta.
+layout_reduction:
+  factor: 0.7
+  measure: DIRECT
+  basis:
+    document: NT 2-08
+    item: "5.3.3.3"
+    quote: ["devem ser consideradas as distâncias diretas comparadas aos limites do Anexo C",
+            "reduzidas em 30%"]
+  decision: >-
+    Divergência com a observação C do Anexo C ("reduzidas a 30%"): prevalece o item
+    5.3.3.3 ("reduzidas em 30%", distâncias diretas), por decisão do analista em 25/09/2026.
+# Observações do Anexo C. As que AUMENTAM o limite ficam de fora (lado seguro); a que REDUZ
+# (C) é aplicada pela regra do item 5.3.3.3 acima.
+notes:
+  - id: A
+    effect: INCREASES
+    divisions: [G-1, G-2, I-1, I-2, J-1, J-2, J-3, J-4]
+    quote: ["acrescidas de 100%", "controle de fumaça"]
+    text: >-
+      Edificações exclusivamente térreas de G-1, G-2, I-1, I-2 e J-1 a J-4 com controle de
+      fumaça têm os limites acrescidos de 100%. Não aplicado: o analista confere.
+  - id: B
+    effect: REFERRAL
+    divisions: [F-3]
+    quote: ["NT 5-01"]
+    text: F-3 com recintos esportivos, de eventos e de exibição segue a NT 5-01.
+  - id: C
+    effect: REDUCES
+    quote: ["leiaute definido em planta baixa", "reduzidas a 30%"]
+    text: >-
+      Sem leiaute definido em planta baixa os limites são reduzidos. O Anexo diz "reduzidas
+      a 30%"; por decisão do analista prevalece o item 5.3.3.3: reduzidas em 30%, medindo
+      distâncias diretas.
+  - id: E
+    effect: CONDITION
+    quote: ["mais de uma saída", "distância mínima de 10 m entre elas"]
+    text: A coluna "mais de uma saída" só vale com pelo menos 10 m entre as saídas.
+  - id: F
+    effect: CONDITION
+    quote: ["áreas técnicas", "porta de entrada das mesmas"]
+    text: Em áreas técnicas sem permanência humana, a distância é medida da porta de entrada.
+  - id: G
+    effect: REFERRAL
+    divisions: [M-9]
+    quote: ["NT 4-02"]
+    text: M-9 (restrição de liberdade), locais de acesso restrito, segue a NT 4-02.

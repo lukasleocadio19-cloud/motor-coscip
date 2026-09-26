@@ -17,7 +17,7 @@ import json
 import math
 from typing import Any
 
-from sqlalchemy import select
+from sqlalchemy import literal_column, select
 from sqlalchemy.orm import Session
 
 from coscip_api.models import (
@@ -37,17 +37,23 @@ UNIT_NAMES = {"m": "metros", "dm": "decímetros", "cm": "centímetros", "mm": "m
               "in": "polegadas", "ft": "pés"}
 
 
+def _inserted_last(model):  # noqa: ANN001, ANN202
+    """Desempate pela ordem de inserção. No Windows dois registros seguidos podem ter o
+    mesmo ``created_at``; desempatar pelo id (UUID aleatório) escolhia ao acaso."""
+    return literal_column(f"{model.__tablename__}.rowid").desc()
+
+
 def current_frame(s: Session, drawing_id: str) -> CoordinateFrame | None:
     return s.scalars(
         select(CoordinateFrame).where(CoordinateFrame.drawing_id == drawing_id)
-        .order_by(CoordinateFrame.created_at.desc(), CoordinateFrame.id.desc()).limit(1)
+        .order_by(CoordinateFrame.created_at.desc(), _inserted_last(CoordinateFrame)).limit(1)
     ).first()
 
 
 def latest_snapshot(s: Session, revision_id: str) -> ModelSnapshot | None:
     return s.scalars(
         select(ModelSnapshot).where(ModelSnapshot.revision_id == revision_id)
-        .order_by(ModelSnapshot.created_at.desc(), ModelSnapshot.id.desc()).limit(1)
+        .order_by(ModelSnapshot.created_at.desc(), _inserted_last(ModelSnapshot)).limit(1)
     ).first()
 
 

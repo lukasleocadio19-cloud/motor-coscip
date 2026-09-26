@@ -14,6 +14,7 @@ from typing import Any
 
 import yaml
 
+from coscip_normative.exit_distances import verify_exit_distances
 from coscip_normative.requirements import verify_requirements
 from coscip_normative.sources import NormativeText, verify_citation, verify_table_row
 from coscip_rules.dsl import RuleDefinition, check_dependency_cycles, parse_rule
@@ -39,6 +40,8 @@ class RulePackageDef:
     # Tabela de enquadramento (ocupação → risco), opcional.
     classification: dict[str, Any] | None = None
     requirements: dict[str, Any] | None = None
+    # NT 2-08, Anexo C: distâncias máximas até a saída, opcional.
+    exit_distances: dict[str, Any] | None = None
 
     @property
     def content_sha256(self) -> str:
@@ -48,6 +51,7 @@ class RulePackageDef:
             "symbols": self.symbols,
             "classification": self.classification,
             "requirements": self.requirements,
+            "exit_distances": self.exit_distances,
         }, sort_keys=True, ensure_ascii=False)
         return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
 
@@ -103,6 +107,8 @@ def load_package(directory: str | Path) -> RulePackageDef:
         classification=classification,
         requirements=(_package_yaml(root, raw["requirements"])
                       if raw.get("requirements") else None),
+        exit_distances=(_package_yaml(root, raw["exit_distances"])
+                        if raw.get("exit_distances") else None),
     )
 
 
@@ -190,6 +196,10 @@ def verify_package(pkg: RulePackageDef, sources: dict[str, NormativeText]) -> di
                         if pkg.requirements is not None else None)
     if requirements_out and requirements_out.get("source"):
         used.add(requirements_out["source"]["document"])
+    exit_out = (verify_exit_distances(pkg.exit_distances, sources, failures)
+                if pkg.exit_distances is not None else None)
+    if exit_out and exit_out.get("source"):
+        used.add(exit_out["source"]["document"])
     used_docs = sorted(used)
     return {
         "package": {"id": pkg.id, "name": pkg.name, "version": pkg.version,
@@ -198,6 +208,7 @@ def verify_package(pkg: RulePackageDef, sources: dict[str, NormativeText]) -> di
                     "content_sha256": pkg.content_sha256},
         "rules": rules_out, "symbols_citation": symbols_check, "coverage": coverage_out,
         "classification": classification_out, "requirements": requirements_out,
+        "exit_distances": exit_out,
         "sources": [sources[d].summary() for d in used_docs if d in sources],
         "verified": not failures, "failures": failures,
     }

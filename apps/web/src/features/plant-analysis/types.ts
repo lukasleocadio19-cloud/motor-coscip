@@ -17,6 +17,11 @@ export interface PlantContext {
   building_height_m?: number | null;
   single_occupancy?: boolean | null;
   grouped_houses_or_lots?: number | null;
+  // Linha e coluna do Anexo C da NT 2-08.
+  construction_type?: "ALFA" | "BETA" | "GAMA" | null;
+  sprinklers_or_detection?: boolean | null;
+  multiple_exits?: boolean | null;
+  layout_defined?: boolean | null;
 }
 
 export interface Division {

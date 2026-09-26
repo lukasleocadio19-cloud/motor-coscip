@@ -1,0 +1,38 @@
+# RASCUNHO. Acionador manual a no máximo 30 m de percurso (fase 3).
+schema_version: checks/1.0
+id: ALA-CAD-002
+version: 1
+title: Percurso até o acionador manual mais próximo
+system: ALARME
+type: CAD_DISTANCE
+scope: FLOOR
+severity: MAJOR
+publication_state: DRAFT
+production_eligible: false
+group_key: alarme/acionador-distancia
+depends_on: [ALA-CAD-001]
+applies_when:
+  all:
+    - {fact: context.effective_requirement_alarm, operator: equals, value: true}
+question:
+  kind: maximum_value
+  field: manual_call_point_walk_distance_m
+  required_value: 30
+  unit: m
+  accepted_evidence: [CAD]
+  quality_gate: quality.walls_detected
+  quality_gates: [quality.region_confirmed, quality.manual_call_point.complete]
+normative_basis:
+  - document: NT 2-07
+    edition: 1ª edição - 2019
+    item: "5.5.2"
+    quote: ["em cada pavimento da edificação", "distância máxima de 30 m",
+            "acionador manual mais próximo"]
+wording:
+  title: Ponto do pavimento além de 30 m do acionador manual
+  explanation: >-
+    O maior percurso medido até o acionador manual mais próximo ultrapassa os 30 m da
+    NT 2-07.
+  required_action: >-
+    Reposicionar ou acrescentar acionador manual de modo que nenhum ponto do pavimento
+    fique além de 30 m de percurso.

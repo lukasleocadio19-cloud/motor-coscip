@@ -3,12 +3,13 @@
 # Toda citação é conferida contra o texto ingerido na importação (verify_catalog).
 schema_version: check-catalog/1.0
 id: coscip-checks-rj
-name: Plano de Verificação COSCIP — piloto extintores e hidrantes
-version: 1
+name: Plano de Verificação COSCIP — extintores, hidrantes, alarme e saídas
+version: 3
 jurisdiction: CBMERJ-RJ
 publication_state: DRAFT
 notes:
   - "Piloto das fases 1 e 2: o catálogo existe, é versionado e compila plano determinístico."
+  - "Fase 3: checks de CAD por pavimento alimentados pela análise da planta."
   - "Checks documentais dependem do motor documental (fase 4) para receber evidências."
 checks:
   - comum/QG-CAD-WALLS.yaml
@@ -18,6 +19,14 @@ checks:
   - extintores/EXT-CAD-003-MEDIO.yaml
   - extintores/EXT-CAD-003-GRANDE.yaml
   - hidrantes/HID-REQ-001.yaml
+  - hidrantes/HID-CAD-001.yaml
+  - hidrantes/HID-CAD-002.yaml
   - hidrantes/HID-DOC-001.yaml
   - hidrantes/HID-DOC-004.yaml
   - hidrantes/HID-CROSS-002.yaml
+  - alarme/ALA-CAD-001.yaml
+  - alarme/ALA-CAD-002.yaml
+  - saidas/SAI-CAD-001.yaml
+  - saidas/SAI-CAD-002.yaml
+  - saidas/SAI-CAD-003.yaml
+  - saidas/SAI-MAN-001.yaml

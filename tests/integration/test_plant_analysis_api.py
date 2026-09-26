@@ -9,9 +9,10 @@ from pathlib import Path
 import pytest
 import yaml
 
-from coscip_api import normative_base
+from coscip_api import normative_base, plant_findings
 from coscip_cad.synthetic import make_fire_plan
 from tests.integration.test_drawings import JUST, Env
+from tests.unit.test_exit_distances import NT_208
 from tests.unit.test_plant_analysis import BASE, NT_201
 from tests.unit.test_requirements import requirement_sources
 
@@ -33,6 +34,7 @@ def _nt201_package(tmp: Path) -> Path:
     raw = yaml.safe_load((BASE / "pacote.yaml").read_text(encoding="utf-8"))
     raw["rules"] = [f"regras/{r}.yaml" for r in NT201_RULES]
     raw.pop("requirements", None)
+    raw.pop("exit_distances", None)  # cita a NT 2-08, ausente desta base
     raw.pop("classification", None)  # a tabela cita a NT 1-04, ausente desta base
     raw["coverage"] = [c for c in raw["coverage"] if c["document"] == "NT 2-01"
                        and c["item"] in {"5.2.4", "6.4"}]
@@ -82,9 +84,14 @@ def test_plant_analysis_end_to_end(env, tmp_path, monkeypatch):
     manifest["requirements"] = "sistemas-exigidos.yaml"
     manifest_path.write_text(yaml.safe_dump(manifest, allow_unicode=True), encoding="utf-8")
     shutil.copy(BASE / "sistemas-exigidos.yaml", package_dir)
+    manifest["exit_distances"] = "distancias-saida.yaml"
+    manifest_path.write_text(yaml.safe_dump(manifest, allow_unicode=True), encoding="utf-8")
+    shutil.copy(BASE / "distancias-saida.yaml", package_dir)
     table = yaml.safe_load((BASE / "sistemas-exigidos.yaml").read_text(encoding="utf-8"))
     decree = requirement_sources(table)["Decreto 42/2018"]
     assert _ingest(env, decree.text).status_code == 201
+    assert env.tc.post("/v1/normative/sources", headers=env.h, files=[(
+        "files", ("nt-2-08.md", NT_208.encode("utf-8"), "text/markdown"))]).status_code == 201
     monkeypatch.setattr(normative_base, "BUNDLED_BASE", package_dir)
     assert _ingest(env).status_code == 201
     pkg = env.post("/v1/rule-packages/import")
@@ -125,11 +132,20 @@ def test_plant_analysis_end_to_end(env, tmp_path, monkeypatch):
     assert a["state"] == "SUCCEEDED" and a["summary"]["plan_regions"] == 1
     assert a["context"]["requirements_reference"]["column"] == "A/D/E/G"
     assert a["context"]["requires_lighting"] is False
+    # Anexo C conferido no pacote: faltam os dados de linha/coluna neste formulário.
+    assert a["context"]["exit_distance_reference"]["status"] == "MISSING_DATA"
+    exit_ctx = {**context, "construction_type": "GAMA", "sprinklers_or_detection": False,
+                "multiple_exits": True, "layout_defined": True}
+    found = env.post(f"/v1/rule-packages/{pkg_id}/exit-distance-query", exit_ctx).json()
+    assert found["status"] == "FOUND" and found["limit_m"] == 40 and found["page"] == 22
+    assert env.post(f"/v1/rule-packages/{pkg_id}/exit-distance-query",
+                    {**exit_ctx, "construction_type": "DELTA"}).status_code == 422
     results = env.get(f"/v1/analyses/{a['id']}/results").json()["items"]
     by_rule = {r["values"]["rule_id"]: r["status"] for r in results
                if r["values"]["subject_type"] != "SYMBOL"}
     assert by_rule == {"NT201_EXT_DISTANCIA": "PASS", "NT201_EXT_AREA": "PASS",
                        "NT201_EXT_MINIMO": "PASS", "NT201_EXT_INSTALACAO_ESPECIAL": "FAIL"}
+    _v2_findings_from_stored_analysis(env, a["id"], tmp_path)
 
     report = env.get(a["reports"][0]["content_url"])
     assert report.status_code == 200
@@ -162,6 +178,40 @@ def test_plant_analysis_end_to_end(env, tmp_path, monkeypatch):
     html = env.get(third["content_url"]).text
     assert "extintor junto à porta da casa de bombas" in html and "contestado" in html
     assert env.get(f"/v1/plant-analyses/{a['id']}").json()["reports"][0]["reviewed"] == 1
+
+
+def _extinguisher_catalog(tmp: Path) -> Path:
+    """Só os checks de extintor: a base de teste tem apenas a NT 2-01."""
+    root = tmp / "checks"
+    shutil.copytree(plant_findings.CHECKS_DIR / "extintores", root / "extintores")
+    raw = yaml.safe_load((plant_findings.CHECKS_DIR / "catalogo.yaml").read_text("utf-8"))
+    raw["checks"] = [c for c in raw["checks"] if c.startswith("extintores/")]
+    (root / "catalogo.yaml").write_text(yaml.safe_dump(raw, allow_unicode=True), "utf-8")
+    return root
+
+
+def _v2_findings_from_stored_analysis(env: Env, analysis_id: str, tmp: Path) -> None:
+    """Fase 3: a análise gravada vira Finding lendo o analysis.json, não o relatório."""
+    st = env.tc.app.state.coscip
+    # O catálogo inteiro cita NTs ausentes desta base: recusado, nunca executado pela metade.
+    with pytest.raises(plant_findings.VerificationRefused) as refused:
+        plant_findings.findings_for_analysis(st.session_factory, st.storage, analysis_id)
+    assert any("NT 2-04" in d for d in refused.value.details)
+    with pytest.raises(LookupError):
+        plant_findings.findings_for_analysis(st.session_factory, st.storage, "nao-existe")
+
+    out = plant_findings.findings_for_analysis(
+        st.session_factory, st.storage, analysis_id, checks_dir=_extinguisher_catalog(tmp))
+    assert out["normative_value"] is False and [f["label"] for f in out["floors"]] == ["Térreo"]
+    by_check = {f["check_id"]: f for f in out["findings"]}
+    assert by_check["EXT-CAD-001"]["compliance_status"] == "COMPLIANT"
+    assert by_check["EXT-CAD-002"]["measured"]["value"] == 2.0
+    dist = by_check["EXT-CAD-003-PEQUENO"]
+    assert dist["compliance_status"] == "COMPLIANT" and dist["scope_label"] == "Térreo"
+    assert dist["measured"]["geometry_snapshot_hash"] == out["drawing_sha256"]
+    assert by_check["EXT-CAD-003-GRANDE"]["compliance_status"] == "NOT_APPLICABLE"
+    ext = [e for e in out["evidence"] if e["field"] == "extinguisher"]
+    assert len(ext) == 2 and all(e["locator"]["entity_handle"] for e in ext)
 
 
 def test_source_index_item_text_and_search(env):

@@ -1,0 +1,50 @@
+# RASCUNHO. Distância máxima a percorrer até a saída (fase 3).
+# v2: o limite vem da consulta ao Anexo C transcrito e conferido (distancias-saida.yaml no
+# pacote) ou, quando o analista informa, do valor dele — o efetivo carrega a origem.
+# A-2, A-5 e A-6 medem a partir da porta da unidade autônoma: ver SAI-MAN-001.
+# v3: só com leiaute definido; sem leiaute vale a distância direta (SAI-CAD-003, 5.3.3.3).
+schema_version: checks/1.0
+id: SAI-CAD-002
+version: 3
+title: Distância a percorrer até a saída
+system: SAIDAS
+type: CAD_DISTANCE
+scope: FLOOR
+severity: MAJOR
+publication_state: DRAFT
+production_eligible: false
+group_key: saidas/distancia
+depends_on: [SAI-CAD-001]
+applies_when:
+  all:
+    - {fact: context.unifamiliar, operator: equals, value: false}
+    - {fact: context.layout_defined, operator: equals, value: true}
+    - {fact: context.occupancy, operator: not_equals, value: A-2}
+    - {fact: context.occupancy, operator: not_equals, value: A-5}
+    - {fact: context.occupancy, operator: not_equals, value: A-6}
+question:
+  kind: maximum_value
+  field: exit_walk_distance_m
+  required_fact: context.effective_exit_max_distance_m
+  unit: m
+  accepted_evidence: [CAD]
+  quality_gate: quality.walls_detected
+  quality_gates: [context.exits_confirmed, quality.region_confirmed, quality.exit.complete]
+normative_basis:
+  - document: NT 2-08
+    edition: 1ª edição - 2019; Portaria 1.317/2025
+    item: "5.3.3.1"
+    quote: ["devem atender o Anexo C", "a partir do ponto mais distante"]
+  - document: NT 2-08
+    edition: 1ª edição - 2019; Portaria 1.317/2025
+    item: Anexo C
+    quote: ["DISTÂNCIAS MÁXIMAS A SEREM PERCORRIDAS"]
+wording:
+  title: Distância a percorrer até a saída acima do limite
+  explanation: >-
+    O maior percurso medido do ponto mais distante do pavimento até a saída ultrapassa
+    o limite do Anexo C da NT 2-08 (consulta à tabela ou valor informado pelo analista;
+    a origem acompanha a medida). Sem leiaute definido vale o SAI-CAD-003.
+  required_action: >-
+    Rever a posição ou o número de saídas de modo que nenhum ponto do pavimento fique
+    além do limite do Anexo C.

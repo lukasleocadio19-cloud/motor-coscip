@@ -29,8 +29,8 @@ _QUESTION_REQUIREMENTS: dict[str, tuple[str, ...]] = {
     "presence": ("field",),
     "required_fields": ("required_fields",),
     "minimum_count": ("field", "required_value"),
-    "minimum_value": ("field", "required_value"),
-    "maximum_value": ("field", "required_value"),
+    "minimum_value": ("field",),
+    "maximum_value": ("field",),
     "consistency": ("field",),
 }
 
@@ -71,6 +71,14 @@ def _validate(check: CheckDefinition) -> None:
         value = getattr(question, name)
         if value is None or value == () or value == "":
             raise CheckValidationError(f"{check.id}: pergunta {question.kind} exige {name}")
+    if question.kind in {"minimum_value", "maximum_value"}:
+        if (question.required_value is None) == (question.required_fact is None):
+            raise CheckValidationError(
+                f"{check.id}: pergunta {question.kind} exige exatamente um entre "
+                "required_value e required_fact")
+    elif question.required_fact is not None:
+        raise CheckValidationError(
+            f"{check.id}: required_fact só vale em minimum_value/maximum_value")
     if question.kind != "required_fields" and question.required_fields:
         raise CheckValidationError(
             f"{check.id}: required_fields só vale na pergunta required_fields")

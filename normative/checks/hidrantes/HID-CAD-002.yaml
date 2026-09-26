@@ -1,0 +1,40 @@
+# RASCUNHO. Linha de mangueira alcança o ponto mais distante em até 30 m de percurso (fase 3).
+schema_version: checks/1.0
+id: HID-CAD-002
+version: 1
+title: Percurso da linha de mangueira até o ponto mais distante
+system: HIDRANTES
+type: CAD_DISTANCE
+scope: FLOOR
+severity: MAJOR
+publication_state: DRAFT
+production_eligible: false
+group_key: hidrantes/alcance
+depends_on: [HID-CAD-001]
+applies_when:
+  all:
+    - {fact: context.effective_requirement_hydrants, operator: equals, value: true}
+question:
+  kind: maximum_value
+  field: hydrant_walk_distance_m
+  required_value: 30
+  unit: m
+  accepted_evidence: [CAD]
+  quality_gate: quality.walls_detected
+  quality_gates: [quality.region_confirmed, quality.hydrant.complete]
+normative_basis:
+  - document: NT 2-02
+    edition: 1ª edição - 2019; Portaria 1.317/2025
+    item: "5.6.1"
+    quote: ["O comprimento das linhas de mangueiras não poderá ultrapassar 30 m",
+            "distância de percurso"]
+wording:
+  title: Ponto do pavimento além de 30 m de linha de mangueira
+  explanation: >-
+    O maior percurso medido entre um hidrante ou mangotinho e o ponto mais distante a
+    proteger ultrapassa os 30 m da NT 2-02. A própria NT excetua os casos das NT 4-05
+    (GLP/GN), NT 4-02 e da seção 5.20: se o processo se enquadra em uma delas, o
+    analista registra a exceção.
+  required_action: >-
+    Reposicionar ou acrescentar ponto de hidrante ou mangotinho de modo que nenhum
+    ponto do pavimento fique além de 30 m de percurso.

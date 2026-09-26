@@ -1,8 +1,9 @@
 # RASCUNHO. Distância máxima a percorrer até a unidade extintora — risco Pequeno.
 # Um check por risco: o limite fica literal e conferível, sem tabela embutida no motor.
+# v2 (fase 3): pavimento confirmado e área toda alcançada pelo percurso como portas de qualidade.
 schema_version: checks/1.0
 id: EXT-CAD-003-PEQUENO
-version: 1
+version: 2
 title: Distância a percorrer até o extintor (risco Pequeno)
 system: EXTINTORES
 type: CAD_DISTANCE
@@ -23,6 +24,7 @@ question:
   unit: m
   accepted_evidence: [CAD]
   quality_gate: quality.walls_detected
+  quality_gates: [quality.region_confirmed, quality.extinguisher.complete]
 normative_basis:
   - document: NT 2-01
     edition: 2ª edição - 2020
