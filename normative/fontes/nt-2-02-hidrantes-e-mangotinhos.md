@@ -279,7 +279,7 @@ Fonte: CBMERJ
 | Risco Médio 2 | Regulável | 38 | 38 | 30 | Flexível | 2 | 35 | 400 |
 | Risco Grande | Regulável | 63 | 63 | 30 | Flexível | 2 | 40 | 1000 |
 
-Fonte: NT 2-02, página 5, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-02, página 5, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Na imagem: "Fonte: CBMERJ (Redação dada pela Portaria CBMERJ nº 1317, de 10/12/2025)". O cabeçalho em dois níveis (Esguicho: tipo e diâmetro; Mangueira: diâmetro, comprimento e tipo) foi achatado por coluna.
 <!-- /tabela-conferida: Tabela 1 p5 -->
 
@@ -341,7 +341,7 @@ Fonte: COSCIP.
 | Abrigos | X | X | X | X |  |
 | Portas Com moldura |  | X | X | X | X |
 
-Fonte: NT 2-02, página 6, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-02, página 6, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
 Células em branco = fundo cinza na imagem (material não previsto para aquele elemento). Fonte indicada: COSCIP.
 <!-- /tabela-conferida: Tabela 2 p6 -->
 
@@ -510,7 +510,7 @@ Fonte: NBR 13714.
 | Galvanizado | 120 |
 | Cobre | 150 |
 
-Fonte: NT 2-02, página 8, Tabela 3; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-02, página 8, Tabela 3; conferida em 2026-09-29 (visual + geometrica).
 Nota da tabela (fora da comparação): "Os valores do fator \"C\" de Hazen Willians são válidos para tubos novos". Fonte indicada: NBR 13714.
 <!-- /tabela-conferida: Tabela 3 p8 -->
 
@@ -815,7 +815,7 @@ Fonte: CBMERJ.
 | 30 m | 38 mm (1 1/2”) |
 | 30 m | 63 mm (2 1/2”) |
 
-Fonte: NT 2-02, página 12, Tabela 4; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-02, página 12, Tabela 4; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada: CBMERJ. Seções de 15 m (5.13.2).
 <!-- /tabela-conferida: Tabela 4 p12 -->
 

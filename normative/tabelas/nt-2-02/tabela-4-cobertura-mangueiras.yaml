@@ -39,6 +39,28 @@ caminhos:
       - 38 mm (1 1/2”)
     - - 30 m
       - 63 mm (2 1/2”)
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 306.77
+      - 470.35
+      - 544.78
+      - 569.89
+      linhas:
+      - - LINHAS DE MANGUEIRA
+        - null
+      - - Comprimento máximo
+        - Diâmetro
+      - - ''
+        - ''
+      - - 30 m
+        - 38 mm (1 1/2”)
+      - - ''
+        - ''
+      - - 30 m
+        - 63 mm (2 1/2”)
 notas:
 - 'Fonte indicada: CBMERJ. Seções de 15 m (5.13.2).'
 estado: verificada
@@ -46,6 +68,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

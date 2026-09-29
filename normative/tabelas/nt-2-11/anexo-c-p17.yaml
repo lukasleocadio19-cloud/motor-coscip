@@ -339,6 +339,373 @@ caminhos:
       - '2'
       - 10% da população fixa***
     - - canalização ****
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 48.77
+      - 78.07
+      - 555.88
+      - 725.92
+      linhas:
+      - - ''
+        - ''
+        - Divisão
+        - ''
+        - Composição da Brigada de Incêndio Voluntária *
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Funcionários por turno
+        - null
+        - null
+      - - Grupo
+        - Ocupação/Uso
+        - null
+        - Descrição
+        - (incluindo terceirizados)
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - 1 A 20
+        - null
+        - Acima de 20
+      - - A
+        - Residencial
+        - A-1
+        - Residencial privativa unifamiliar
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - A-2
+        - Residencial privativa multifamiliar
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - A-3
+        - Residencial coletiva
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - A-4
+        - Agrupamento residencial privativa unifamiliar
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - A-5
+        - Agrupamento residencial privativa multifamiliar
+        - '1'
+        - null
+        - 10 % da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - ''
+        - '1'
+        - 10 % da população fixa***
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - B
+        - Serviços de hospedagem
+        - B-1
+        - Residencial transitório
+        - '2'
+        - null
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - ''
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - B-2
+        - Residencial com serviço
+        - '2'
+        - null
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - ''
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - C
+        - Comercial
+        - C-1
+        - Comercial 1
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - C-2
+        - Comercial 2
+        - '2'
+        - null
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - ''
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - C-3
+        - Shopping centers
+        - '2'
+        - null
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - ''
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - D
+        - Serviço profissional e institucional
+        - D-1
+        - Local para prestação de serviço profissional ou condução de negócios
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - D-2
+        - Clínica médica e laboratório de análises técnicas
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - D-3
+        - Serviços de manutenção e reparação (exceto os classificados em G-5)
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - D-4
+        - Edificação pública
+        - '2'
+        - null
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - ''
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - D-5
+        - Edificações destinadas à restrição
+        - '2'
+        - null
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - de liberdade
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - '2'
+        - null
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
 notas:
 - 'Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<"
   = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas
@@ -353,9 +720,11 @@ resultado:
   estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: divergente
   motivo: número de linhas/colunas diferente
   forma:
   - - 5

@@ -42,20 +42,20 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 2-01 | Tabela 3 | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 4 | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 5 | 5 | verificada | visual + geometrica | 0 | 0 |
-| NT 2-02 | Tabela 1 | 5 | verificada | visual + texto | 0 | 0 |
-| NT 2-02 | Tabela 2 | 6 | verificada | visual + texto | 0 | 1 |
-| NT 2-02 | Tabela 3 | 8 | verificada | visual + texto | 0 | 1 |
-| NT 2-02 | Tabela 4 | 12 | verificada | visual + texto | 0 | 0 |
-| NT 2-02 | Tabela 5 | 13 | divergente | visual + texto | 0 | 0 |
+| NT 2-02 | Tabela 1 | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-02 | Tabela 2 | 6 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-02 | Tabela 3 | 8 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-02 | Tabela 4 | 12 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-02 | Tabela 5 | 13 | divergente | visual + geometrica | 0 | 0 |
 | NT 2-08 | Tabela 1 | 12 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-08 | Tabela do Anexo A | 18 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-08 | Tabela do Anexo B | 20 | verificada | visual + geometrica | 0 | 1 |
 | NT 2-08 | Tabela do Anexo C | 22 | verificada | visual + geometrica | 0 | 0 |
-| NT 2-11 | Tabela do Anexo C | 17 | divergente | visual + texto | 0 | 2 |
-| NT 2-11 | Tabela do Anexo C | 18 | divergente | visual + texto | 0 | 2 |
-| NT 2-11 | Tabela do Anexo C | 19 | divergente | visual + texto | 0 | 1 |
-| NT 2-11 | Tabela do Anexo C | 20 | divergente | visual + texto | 0 | 1 |
-| NT 2-11 | Tabela do Anexo C | 21 | divergente | visual + texto | 0 | 2 |
+| NT 2-11 | Tabela do Anexo C | 17 | divergente | visual + geometrica | 0 | 2 |
+| NT 2-11 | Tabela do Anexo C | 18 | divergente | visual + geometrica | 0 | 2 |
+| NT 2-11 | Tabela do Anexo C | 19 | divergente | visual + geometrica | 0 | 1 |
+| NT 2-11 | Tabela do Anexo C | 20 | divergente | visual + geometrica | 0 | 1 |
+| NT 2-11 | Tabela do Anexo C | 21 | divergente | visual + geometrica | 0 | 2 |
 | NT 3-02 | Tabela 3 | 7 | verificada | visual + geometrica | 0 | 0 |
 | NT 4-05 | Tabela 2 | 6 | verificada | visual + geometrica | 0 | 0 |
 | NT 4-05 | Tabela 3 | 6 | verificada | visual + geometrica | 0 | 0 |

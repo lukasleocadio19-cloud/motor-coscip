@@ -257,6 +257,172 @@ caminhos:
       - Não exigível
     - - Edificação histórica com isenção de canalização ****
       - Não exigível
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 41.8
+      - 57.28
+      - 548.64
+      - 608.26
+      linhas:
+      - - ''
+        - ''
+        - ''
+        - Descrição
+        - Composição da Brigada de Incêndio Voluntária *
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Funcionários por turno
+        - null
+      - - Grupo
+        - Ocupação/Uso
+        - Divisão
+        - null
+        - (incluindo terceirizados)
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - 1 A 20
+        - Acima de 20
+      - - J
+        - Depósito
+        - J-1
+        - Depósitos de material incombustível
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - J-2
+        - Todo tipo de Depósito
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - J-3
+        - Todo tipo de Depósito
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - J-4
+        - Todo tipo de Depósito
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - L
+        - Explosivos ou munições
+        - L-1
+        - Comércio
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - L-2
+        - Indústria
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - L-3
+        - Depósito
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - M
+        - Especial
+        - M-1
+        - Túnel
+        - Não exigível
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - Não exigível
+        - null
+      - - null
+        - null
+        - M-2
+        - Líquidos ou gases inflamáveis ou combustíveis
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - M-3
+        - Central de comunicação e energia
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - M-4
+        - Loteamento e Pátios
+        - Não exigível
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - Não exigível
+        - null
 notas:
 - 'Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<"
   = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas
@@ -269,9 +435,11 @@ resultado:
   estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: divergente
   motivo: número de linhas/colunas diferente
   forma:
   - - 5

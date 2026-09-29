@@ -55,6 +55,34 @@ caminhos:
       - X
       - X
       - X
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 304.95
+      - 573.29
+      - 545.23
+      - 638.86
+      linhas:
+      - - Materiais
+        - Alvenaria de Tijolo
+        - Alumínio Anodizado
+        - Chapa Tratada
+        - Fibra de Vdiro
+        - Madeira
+      - - Abrigos
+        - X
+        - X
+        - X
+        - X
+        - ''
+      - - Portas Com moldura
+        - ''
+        - X
+        - X
+        - X
+        - X
 notas:
 - 'Células em branco = fundo cinza na imagem (material não previsto para aquele elemento). Fonte indicada:
   COSCIP.'
@@ -65,6 +93,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

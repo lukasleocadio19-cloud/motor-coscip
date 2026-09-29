@@ -43,6 +43,28 @@ caminhos:
       - '120'
     - - Cobre
       - '150'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 312.08
+      - 536.53
+      - 534.93
+      - 629.8
+      linhas:
+      - - Tipo de Tubo
+        - Fator "C"
+      - - Ferro fundido ou dúctil sem revestimento interno
+        - '100'
+      - - Aço Preto (Sistema de tubo molhado)
+        - '120'
+      - - Galvanizado
+        - '120'
+      - - Cobre
+        - '150'
+      - - NOTA - Os valores do fator "C" de Hazen Willians são válidos para tubos novos
+        - null
 notas:
 - 'Nota da tabela (fora da comparação): "Os valores do fator \"C\" de Hazen Willians são válidos para
   tubos novos". Fonte indicada: NBR 13714.'
@@ -53,6 +75,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

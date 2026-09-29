@@ -139,6 +139,97 @@ caminhos:
       - '2'
       - '40'
       - '1000'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 50.2
+      - 117.84
+      - 552.14
+      - 252.23
+      linhas:
+      - - Classificação
+        - Esguicho
+        - null
+        - Mangueira
+        - null
+        - null
+        - Hidrantes
+        - Pressão de
+        - Vazão
+      - - de Risco
+        - Tipo
+        - Diâmetro
+        - Diâmetro
+        - Comp.
+        - Tipo
+        - ''
+        - Trabalho
+        - (L/min)
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - (mca)
+        - ''
+      - - null
+        - ''
+        - (mm)
+        - (mm)
+        - Máx. (m)
+        - ''
+        - null
+        - ''
+        - null
+      - - Risco Pequeno - Mangotinho
+        - Regulável
+        - '25'
+        - '25'
+        - '30'
+        - Semi-rígida
+        - '1'
+        - '58'
+        - '100'
+      - - Risco Pequeno
+        - Regulável
+        - '38'
+        - '38'
+        - '30'
+        - Flexível
+        - '1'
+        - '10'
+        - '100'
+      - - Risco Médio 1
+        - Regulável
+        - '38'
+        - '38'
+        - '30'
+        - Flexível
+        - '1'
+        - '35'
+        - '200'
+      - - Risco Médio 2
+        - Regulável
+        - '38'
+        - '38'
+        - '30'
+        - Flexível
+        - '2'
+        - '35'
+        - '400'
+      - - Risco Grande
+        - Regulável
+        - '63'
+        - '63'
+        - '30'
+        - Flexível
+        - '2'
+        - '40'
+        - '1000'
 notas:
 - 'Na imagem: "Fonte: CBMERJ (Redação dada pela Portaria CBMERJ nº 1317, de 10/12/2025)". O cabeçalho
   em dois níveis (Esguicho: tipo e diâmetro; Mangueira: diâmetro, comprimento e tipo) foi achatado por
@@ -148,6 +239,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
