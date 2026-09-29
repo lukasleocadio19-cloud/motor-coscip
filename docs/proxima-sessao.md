@@ -6,12 +6,15 @@ pendências, cuidados). Desde 20/09/2026 ele mora **dentro do repositório**, em
 `C:\Users\USER\Downloads\proxima-sessao.md` virou apenas um ponteiro para cá — não editar lá,
 não criar cópia, não criar outro registro.
 
-Última atualização: 25/09/2026, sessão que levou o projeto para um segundo computador e
-implementou a fase 3 da arquitetura v2 (CAD → `Evidence` → `Finding`) para extintores,
-hidrantes, acionador manual e saídas. O usuário **não tem mais as plantas reais**: o trabalho
-segue só com dados sintéticos.
+Última atualização: 29/09/2026, sessão de avaliação (repositório + skills CBMERJ) que
+redigiu o **plano de correção integral** (`docs/plano/01-plano-de-correcao.md`, fases F0–F9,
+IDs `COR-F0`…`COR-F9`) — nenhum código alterado. Antes: 25/09/2026, fase 3 da arquitetura v2.
+O usuário **não tem mais as plantas reais**: o trabalho segue só com dados sintéticos.
+A máquina principal do usuário (`C:\Users\Usuario`) **não tem Python nem Node** e não consegue
+instalá-los; tem Git autenticado no GitHub. Validação pela CI (fase F0) ou por sessão com Python.
 Referências (não são registro): arquitetura-alvo em [`docs/arquitetura-v2.md`](arquitetura-v2.md),
-plano `docs/plano/00-plano-completo.html` (v2.0; IDs e critérios de aceite no documento 03) e
+plano `docs/plano/00-plano-completo.html` (v2.0; IDs e critérios de aceite no documento 03),
+**plano de correção** [`docs/plano/01-plano-de-correcao.md`](plano/01-plano-de-correcao.md) e
 runbook `docs/runbooks/dwg-para-dxf.md`.
 
 ---
@@ -52,11 +55,31 @@ runbook `docs/runbooks/dwg-para-dxf.md`.
 - [ ] 21471 e 41336: marcar as camadas de parede no item 4 do formulário e reanalisar.
 - [ ] Informar em cada processo o limite da NT 2-08 (Anexo C é imagem) e os sistemas exigidos.
 - [ ] 21778/21801: pendência real no pavimento tipo (1 extintor por andar; mínimo 2) — decidir
-      na revisão (exceção NT 2-01 5.2.4 só vale abaixo de 50 m²).
+      na revisão (exceção NT 2-01 5.2.4 só vale abaixo de 50 m²). **Critério decidido pelo
+      usuário em 29/09/2026: mínimo de 2 por pavimento** (registrar como interpretação, F4.1).
 - [ ] 41336: confirmar os 5 extintores presumidos pelas placas E5 + E17.
 - [ ] Gate A: 1 medida real independente ainda não feita (POC-02/08).
 
 ### Desenvolvimento, em ordem
+
+> **Prioridade do usuário (29/09/2026): executar o plano de correção integral**
+> [`docs/plano/01-plano-de-correcao.md`](plano/01-plano-de-correcao.md), fase a fase, a partir
+> da F0 (CI + pacote portátil, porque a máquina principal não tem Python). Estado por fase:
+>
+> | Fase | Tema | Estado |
+> |---|---|---|
+> | COR-F0 | CI, lock de dependências, pacote portátil, docs desatualizadas | — |
+> | COR-F1 | Base normativa única (repo = fonte das skills), manifesto, vigência | — |
+> | COR-F2 | 434 imagens de página → tabelas conferidas (dupla extração) | — |
+> | COR-F3 | Correções das skills e unificação das duas gerações | — |
+> | COR-F4 | Correções normativas do motor (EXT-CAD-002 por pavimento, 5.2.4, 5.2.5, 6.7) | — |
+> | COR-F5 | Identificação sem dupla contagem/omissão (MINSERT, camadas, duplicados, balanço) | — |
+> | COR-F6 | Executor conta objetos, filtra `accepted_evidence` | — |
+> | COR-F7 | Distância vetorial exata + FMM de conferência + orçamento de incerteza | — |
+> | COR-F8 | Integração skills ↔ MCP | — |
+> | COR-F9 | Validação de fidelidade e homologação | — |
+>
+> Os itens 1–8 abaixo continuam válidos; o plano de correção os incorpora (F4.3 = itens 1 e 5).
 
 > **Prioridade do usuário (25/09/2026):** primeiro fazer do motor uma ferramenta para a IA
 > vencer a dificuldade de LER a planta (MCP local, seção 12, sexta parte); depois construir o
@@ -442,13 +465,13 @@ node --experimental-strip-types --input-type=module -e "import {build} from 'vit
 
 ## 10. Frase para abrir a próxima sessão
 
-> Leia `docs/proxima-sessao.md` no repositório (registro único do projeto), em especial as
-> seções 2, 11 e 12. Fases 1, 2 e 3 da arquitetura v2 prontas (CAD → `Evidence` por pavimento →
-> `Finding`, 17 checks, comando `v2-findings`). Não há plantas reais: trabalhe com DXF
-> sintético. Próximo passo: persistir plano, evidências e achados (V2-13, migração 0005 com
-> backup antes) e expor as rotas de leitura do §47; depois a fase 4 (motor documental mínimo).
-> Não introduza LLM nem Jev. Toda mudança com teste e atualização deste mesmo arquivo; não crie
-> outro registro nem cópia.
+> Leia `docs/proxima-sessao.md` (registro único) e `docs/plano/01-plano-de-correcao.md`.
+> Execute o plano de correção a partir da primeira fase ainda não concluída na tabela da seção 2
+> (F0 se nenhuma), uma branch e um PR por fase, CI verde antes do merge, atualizando este
+> arquivo ao fim de cada fase. Decisão já tomada: EXT-CAD-002 exige 2 extintores por pavimento,
+> como critério registrado (F4.1). Não há plantas reais: trabalhe com DXF sintético. Não
+> introduza LLM nem Jev. A máquina principal do usuário não tem Python: valide pela CI ou numa
+> sessão com Python. Não crie outro registro nem cópia.
 
 ## 11. Sessão 20/09/2026 — fases 1 e 2 da arquitetura v2
 
