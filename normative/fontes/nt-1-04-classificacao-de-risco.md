@@ -1037,6 +1037,147 @@ Observação: Os valores de materiais não listados nesta tabela poderão ser ap
 | Uréia | 9 |
 | Viscose | 17 |
 
+<!-- tabela-conferida: Tabela do Anexo D (1/3) p19 -->
+### Tabela do Anexo D (1/3) — Valores de referência — potencial calorífico específico (Hi), coluna 1 de 3 (conferida)
+
+| Tipo de material | Hi (MJ/kg) |
+| --- | --- |
+| Acetileno | 50 |
+| Acetileno dissolvido | 17 |
+| Acetona | 30 |
+| Acrílico | 28 |
+| Açúcar | 17 |
+| Amido | 17 |
+| Algodão | 18 |
+| Álcool alílico | 34 |
+| Álcool amílico | 42 |
+| Álcool etílico | 25 |
+| Álcool metílico | 21 |
+| Benzeno | 40 |
+| Benzina | 42 |
+| Biodiesel | 39 |
+| Borracha (Espuma) | 37 |
+| Borracha (Tira) | 32 |
+| Butano | 46 |
+| Cacau em pó | 17 |
+| Café | 17 |
+| Cafeína | 21 |
+| Cálcio | 4 |
+| Carbono | 34 |
+| Carvão | 36 |
+| Celulose | 16 |
+| Cereais | 17 |
+| Chá | 17 |
+| Chocolate | 25 |
+| Cloreto de polivinil | 21 |
+| C-Heptano | 46 |
+| C-Hexano | 46 |
+| Couro | 19 |
+| C-Pentano | 46 |
+| C-Propano | 50 |
+| Creosoto | 37 |
+| D-glucose | 15 |
+| Diesel | 43 |
+| Dietilamina | 42 |
+
+Fonte: NT 1-04, página 19, Tabela do Anexo D (1/3); conferida em 2026-09-29 (visual + texto).
+A página traz três colunas lado a lado (Tipo de material | Hi); cada uma é um arquivo. Observação da página: valores de materiais não listados podem ser apresentados pelo responsável técnico, citada a fonte bibliográfica.
+<!-- /tabela-conferida: Tabela do Anexo D (1/3) p19 -->
+
+<!-- tabela-conferida: Tabela do Anexo D (2/3) p19 -->
+### Tabela do Anexo D (2/3) — Valores de referência — potencial calorífico específico (Hi), coluna 2 de 3 (conferida)
+
+| Tipo de material | Hi (MJ/kg) |
+| --- | --- |
+| Dietilcetona | 34 |
+| Dietileter | 37 |
+| Enxofre | 8,4 |
+| Epóxi | 34 |
+| Etano | 47 |
+| Etanol | 26 |
+| Eteno | 50 |
+| Éter amílico | 42 |
+| Éter etílico | 34 |
+| Etileno | 50 |
+| Etino | 48 |
+| Farinha de trigo | 17 |
+| Fenol | 34 |
+| Heptano | 46 |
+| Hexametileno | 46 |
+| Hexano | 46 |
+| Hexaptano | 46 |
+| Hidreto de magnésio | 17 |
+| Hidreto de sódio | 9 |
+| Hidrogênio | 143 |
+| Fibra sintética 6,6 | 29 |
+| Fósforo | 25 |
+| Gás natural | 26 |
+| Gasolina | 47 |
+| Glicerina | 17 |
+| Gordura e oleo vegetal | 42 |
+| Grãos | 17 |
+| Graxa; Lubrificante | 41 |
+| Látex | 44 |
+| Lã | 23 |
+| Leite em pó | 17 |
+| Linho | 17 |
+| Linóleo | 2 |
+| Lixo de cozinha | 18 |
+| Madeira | 19 |
+| Magnésio | 25 |
+| Manteiga | 37 |
+
+Fonte: NT 1-04, página 19, Tabela do Anexo D (2/3); conferida em 2026-09-29 (visual + texto).
+A página traz três colunas lado a lado (Tipo de material | Hi); cada uma é um arquivo. Observação da página: valores de materiais não listados podem ser apresentados pelo responsável técnico, citada a fonte bibliográfica.
+<!-- /tabela-conferida: Tabela do Anexo D (2/3) p19 -->
+
+<!-- tabela-conferida: Tabela do Anexo D (3/3) p19 -->
+### Tabela do Anexo D (3/3) — Valores de referência — potencial calorífico específico (Hi), coluna 3 de 3 (conferida)
+
+| Tipo de material | Hi (MJ/kg) |
+| --- | --- |
+| Metano | 50 |
+| Metanol | 19 |
+| Monóxido de carbono | 10 |
+| Nafta | 42 |
+| N-Butano | 45 |
+| Nitrocelulose | 8,4 |
+| N-Octano | 44 |
+| N-Pentano | 45 |
+| Óleo de linhaça | 37 |
+| Óleo vegetal | 42 |
+| Palha | 16 |
+| Papel | 17 |
+| Parafina | 46 |
+| Petróleo | 41 |
+| Plástico | 31 |
+| Poliacrilonítrico | 30 |
+| Policarbonato | 29 |
+| Poliéster | 31 |
+| Poliestireno | 39 |
+| Polietileno | 44 |
+| Polimetilmetacrílico | 24 |
+| Polioximetileno | 15 |
+| Poliuretano | 23 |
+| Polipropileno | 43 |
+| Polivinilclorido | 16 |
+| Propano | 46 |
+| PVC | 17 |
+| Resina de fenol | 25 |
+| Resina de uréia | 21 |
+| Resina melamínica | 18 |
+| Seda | 19 |
+| Sisal | 17 |
+| Tabaco | 17 |
+| Tolueno | 42 |
+| Turfa | 34 |
+| Uréia | 9 |
+| Viscose | 17 |
+
+Fonte: NT 1-04, página 19, Tabela do Anexo D (3/3); conferida em 2026-09-29 (visual + texto).
+A página traz três colunas lado a lado (Tipo de material | Hi); cada uma é um arquivo. Observação da página: valores de materiais não listados podem ser apresentados pelo responsável técnico, citada a fonte bibliográfica.
+<!-- /tabela-conferida: Tabela do Anexo D (3/3) p19 -->
+
 ---
 
 ## Página 20

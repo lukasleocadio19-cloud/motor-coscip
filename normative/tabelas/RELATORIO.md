@@ -4,8 +4,8 @@ Gerado por `python -m tools.normas.tabelas relatorio`. Estado de cada tabela con
 
 | Estado | Tabelas |
 | --- | --- |
-| divergente | 6 |
-| verificada | 45 |
+| divergente | 8 |
+| verificada | 51 |
 
 Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale como segundo caminho só até a extração geométrica (`pdfplumber`, workflow `normas-midia.yml`) rodar sobre o PDF oficial conferido por hash.
 
@@ -37,6 +37,9 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 1-04 | Tabela 1 | 17 | verificada | visual + geometrica | 0 | 1 |
 | NT 1-04 | Tabela 1 | 18 | verificada | visual + geometrica | 0 | 3 |
 | NT 1-04 | Tabela 2 | 18 | verificada | visual + geometrica | 0 | 2 |
+| NT 1-04 | Tabela do Anexo D (1/3) | 19 | verificada | visual + texto | 0 | 1 |
+| NT 1-04 | Tabela do Anexo D (2/3) | 19 | verificada | visual + texto | 0 | 2 |
+| NT 1-04 | Tabela do Anexo D (3/3) | 19 | verificada | visual + texto | 0 | 1 |
 | NT 2-01 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 2 | 4 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 3 | 5 | verificada | visual + geometrica | 0 | 0 |
@@ -56,6 +59,11 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 2-11 | Tabela do Anexo C | 19 | divergente | visual + geometrica | 0 | 1 |
 | NT 2-11 | Tabela do Anexo C | 20 | divergente | visual + geometrica | 0 | 1 |
 | NT 2-11 | Tabela do Anexo C | 21 | divergente | visual + geometrica | 0 | 2 |
+| NT 2-11 | Tabela do Anexo D | 22 | verificada | visual + texto | 0 | 2 |
+| NT 2-11 | Tabela do Anexo D | 23 | verificada | visual + texto | 0 | 4 |
+| NT 2-11 | Tabela do Anexo D | 24 | divergente | visual + texto | 0 | 2 |
+| NT 2-11 | Tabela do Anexo D | 25 | verificada | visual + texto | 0 | 3 |
+| NT 2-11 | Tabela do Anexo D | 26 | divergente | visual + texto | 0 | 4 |
 | NT 3-02 | Tabela 3 | 7 | verificada | visual + geometrica | 0 | 0 |
 | NT 4-05 | Tabela 2 | 6 | verificada | visual + geometrica | 0 | 0 |
 | NT 4-05 | Tabela 3 | 6 | verificada | visual + geometrica | 0 | 0 |

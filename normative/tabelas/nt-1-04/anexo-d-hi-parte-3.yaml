@@ -1,0 +1,193 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-04
+arquivo: nt-1-04-classificacao-de-risco.md
+tabela: Tabela do Anexo D (3/3)
+titulo: Valores de referência — potencial calorífico específico (Hi), coluna 3 de 3
+pagina: 19
+fonte_pdf_sha256: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-04/pagina-19.jpg
+    imagem_sha256: db01b307c7862e6d02de4f8409829db5ade6c3665773c62497598ca00576f9ab
+    linhas_cabecalho: 1
+    cabecalho_publicado:
+    - Tipo de material
+    - Hi (MJ/kg)
+    linhas:
+    - - Tipo de material
+      - Hi (MJ/kg)
+    - - Metano
+      - '50'
+    - - Metanol
+      - '19'
+    - - Monóxido de carbono
+      - '10'
+    - - Nafta
+      - '42'
+    - - N-Butano
+      - '45'
+    - - Nitrocelulose
+      - 8,4
+    - - N-Octano
+      - '44'
+    - - N-Pentano
+      - '45'
+    - - Óleo de linhaça
+      - '37'
+    - - Óleo vegetal
+      - '42'
+    - - Palha
+      - '16'
+    - - Papel
+      - '17'
+    - - Parafina
+      - '46'
+    - - Petróleo
+      - '41'
+    - - Plástico
+      - '31'
+    - - Poliacrilonítrico
+      - '30'
+    - - Policarbonato
+      - '29'
+    - - Poliéster
+      - '31'
+    - - Poliestireno
+      - '39'
+    - - Polietileno
+      - '44'
+    - - Polimetilmetacrílico
+      - '24'
+    - - Polioximetileno
+      - '15'
+    - - Poliuretano
+      - '23'
+    - - Polipropileno
+      - '43'
+    - - Polivinilclorido
+      - '16'
+    - - Propano
+      - '46'
+    - - PVC
+      - '17'
+    - - Resina de fenol
+      - '25'
+    - - Resina de uréia
+      - '21'
+    - - Resina melamínica
+      - '18'
+    - - Seda
+      - '19'
+    - - Sisal
+      - '17'
+    - - Tabaco
+      - '17'
+    - - Tolueno
+      - '42'
+    - - Turfa
+      - '34'
+    - - Uréia
+      - '9'
+    - - Viscose
+      - '17'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 19
+      tabela_na_pagina: 3
+    linhas:
+    - - Tipo de material
+      - Hi (MJ/kg)
+    - - Metano
+      - '50'
+    - - Metanol
+      - '19'
+    - - Monóxido de carbono
+      - '10'
+    - - Nafta
+      - '42'
+    - - N-Butano
+      - '45'
+    - - Nitrocelulose
+      - 8,4
+    - - N-Octano
+      - '44'
+    - - N-Pentano
+      - '45'
+    - - Óleo de linhaça
+      - '37'
+    - - Óleo vegetal
+      - '42'
+    - - Palha
+      - '16'
+    - - Papel
+      - '17'
+    - - Parafina
+      - '46'
+    - - Petróleo
+      - '41'
+    - - Plástico
+      - '31'
+    - - Poliacrilonítrico
+      - '30'
+    - - Policarbonato
+      - '29'
+    - - Poliéster
+      - '31'
+    - - Poliestireno
+      - '39'
+    - - Polietileno
+      - '44'
+    - - Polimetilmetacrílico
+      - '24'
+    - - Polioximetileno
+      - '15'
+    - - Poliuretano
+      - '23'
+    - - Polipropileno
+      - '43'
+    - - Polivinilclorido
+      - '16'
+    - - Propano
+      - '46'
+    - - PVC
+      - '17'
+    - - Resina de fenol
+      - '25'
+    - - Resina de uréia
+      - '21'
+    - - Resina melamínica
+      - '18'
+    - - Seda
+      - '19'
+    - - Sisal
+      - '17'
+    - - Tabaco
+      - '17'
+    - - Tolueno
+      - '42'
+    - - Turfa
+      - '34'
+    - - Uréia
+      - '9'
+    - - Viscose
+      - '17'
+notas:
+- 'A página traz três colunas lado a lado (Tipo de material | Hi); cada uma é um arquivo. Observação da
+  página: valores de materiais não listados podem ser apresentados pelo responsável técnico, citada a
+  fonte bibliográfica.'
+inconsistencias_da_fonte:
+- O texto do item D.2 (Hi) remete a "Tabela C.1 abaixo"; a tabela da página não tem número e está no Anexo
+  D.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

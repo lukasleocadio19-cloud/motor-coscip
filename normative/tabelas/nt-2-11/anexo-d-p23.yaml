@@ -1,0 +1,364 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela do Anexo D
+titulo: Dimensionamento para bombeiro civil (BC), página 23
+pagina: 23
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 4
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-23.jpg
+    imagem_sha256: e6c1f1531478d3d3aa0a6f31639fd0c4eb7941ac10b9524405aae79aed9eb777
+    linhas_cabecalho: 4
+    cabecalho_publicado:
+    - Grupo
+    - Ocupação/Uso
+    - Divisão
+    - Descrição
+    - BC — 5.000 a 10.000 m²
+    - BC — 10.000 a 30.000 m²
+    - BC — acima de 30.000 m²
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Composição da Brigada de Incêndio
+    - - Área total construída
+    - - 5000m² a 10000 m²
+      - 10000 m² a 30000 m²
+      - Acima de 30000 m²
+    - - Número de Bombeiros Civis por turno
+    - - E
+      - Escolar e cultura física
+      - E-1
+      - Escolar em geral
+      - Não exigível
+      - '1'
+      - Obs3
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - ''
+      - ''
+      - ''
+    - - ^
+      - ^
+      - E-2
+      - Escolar especial
+      - Não exigível
+      - '1'
+      - Obs3
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - ''
+      - ''
+      - ''
+    - - ^
+      - ^
+      - E-3
+      - Espaço para cultura física
+      - Não exigível
+      - '1'
+      - Obs3
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - ''
+      - ''
+      - ''
+    - - ^
+      - ^
+      - E-4
+      - Escola para portadores de deficiências
+      - Não exigível
+      - '1'
+      - Obs3
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - ''
+      - ''
+      - ''
+    - - F
+      - Local de Reunião de Público
+      - F-1
+      - Local onde há objeto de valor inestimável
+      - '1'
+      - '2'
+      - Obs3
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - ''
+      - ''
+      - ''
+    - - ^
+      - ^
+      - F-2
+      - Local religioso e velório
+      - '1'
+      - '1'
+      - Obs3
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - ''
+      - ''
+      - ''
+    - - ^
+      - ^
+      - F-3
+      - Centro esportivo
+      - '1'
+      - '2'
+      - Obs2
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - ''
+      - ''
+      - ''
+    - - ^
+      - ^
+      - F-4
+      - Estação e terminal de passageiro
+      - '1'
+      - '2'
+      - Obs2
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - ''
+      - ''
+      - ''
+    - - ^
+      - ^
+      - F-5
+      - Arte cênica e auditório
+      - '1'
+      - '2'
+      - Obs2
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - ''
+      - ''
+      - ''
+    - - ^
+      - ^
+      - F-6
+      - Local de Diversões Públicas
+      - '1'
+      - '2'
+      - Obs3
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - ''
+      - ''
+      - ''
+    - - ^
+      - ^
+      - F-7
+      - Instalações temporárias
+      - ''
+      - Vide NT 5-04
+      - <
+    - - ^
+      - ^
+      - F-8
+      - Local para refeição
+      - '1'
+      - '2'
+      - Obs3
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - ''
+      - ''
+      - ''
+    - - ^
+      - ^
+      - F-9
+      - Recreação pública
+      - Não exigível
+      - '1'
+      - Obs4
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - ''
+      - ''
+      - ''
+    - - ^
+      - ^
+      - F-10
+      - Exposição de objetos ou animais
+      - Não exigível
+      - '1'
+      - Obs4
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - ''
+      - ''
+      - ''
+    - - ^
+      - ^
+      - F-11
+      - Centro de exibição
+      - '1'
+      - '1'
+      - Obs3
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - ''
+      - ''
+      - ''
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 23
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Composição da Brigada de Incêndio
+    - - Área total construída
+    - - 5000m2 a 10000 m2
+      - 10000 m2 a 30000 m2
+      - Acima de 30000 m2
+    - - Número de Bombeiros Civis por turno
+    - - E
+      - Escolar e cultura física
+      - E-1
+      - Escolar em geral
+      - Não exigível
+      - '1'
+      - Obs3
+    - - Edificação histórica com isenção de canalização ****
+    - - E-2
+      - Escolar especial
+      - Não exigível
+      - '1'
+      - Obs3
+    - - Edificação histórica com isenção de canalização ****
+    - - E-3
+      - Espaço para cultura física
+      - Não exigível
+      - '1'
+      - Obs3
+    - - Edificação histórica com isenção de canalização ****
+    - - E-4
+      - Escola para portadores de deficiências
+      - Não exigível
+      - '1'
+      - Obs3
+    - - Edificação histórica com isenção de canalização ****
+    - - F
+      - Local de Reunião de Público
+      - F-1
+      - Local onde há objeto de valor inestimável
+      - '1'
+      - '2'
+      - Obs3
+    - - Edificação histórica com isenção de canalização ****
+    - - F-2
+      - Local religioso e velório
+      - '1'
+      - '1'
+      - Obs3
+    - - Edificação histórica com isenção de canalização ****
+    - - F-3
+      - Centro esportivo
+      - '1'
+      - '2'
+      - Obs2
+    - - Edificação histórica com isenção de canalização ****
+    - - F-4
+      - Estação e terminal de passageiro
+      - '1'
+      - '2'
+      - Obs2
+    - - Edificação histórica com isenção de canalização ****
+    - - F-5
+      - Arte cênica e auditório
+      - '1'
+      - '2'
+      - Obs2
+    - - Edificação histórica com isenção de canalização ****
+    - - F-6
+      - Local de Diversões Públicas
+      - '1'
+      - '2'
+      - Obs3
+    - - Edificação histórica com isenção de canalização ****
+    - - F-7
+      - Instalações temporárias
+      - Vide NT 5-04
+    - - F-8
+      - Local para refeição
+      - '1'
+      - '2'
+      - Obs3
+    - - Edificação histórica com isenção de canalização ****
+    - - F-9
+      - Recreação pública
+      - Não exigível
+      - '1'
+      - Obs4
+    - - Edificação histórica com isenção de canalização ****
+    - - F-10
+      - Exposição de objetos ou animais
+      - Não exigível
+      - '1'
+      - Obs4
+    - - Edificação histórica com isenção de canalização ****
+    - - F-11
+      - Centro de exibição
+      - '1'
+      - '1'
+      - Obs3
+    - - Edificação histórica com isenção de canalização ****
+notas:
+- 'Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.:
+  "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação
+  histórica…" (fundo amarelo) não trazem valor em nenhuma faixa.'
+inconsistencias_da_fonte:
+- 'As linhas "Edificação histórica com isenção de canalização ****" estão em branco nas três faixas de
+  área: a NT não diz quantos BC se exigem nesses casos.'
+- A marca "****" não é definida no quadro de observações (página 26), que só traz Obs1 a Obs8.
+- F-6 está destacada em vermelho na imagem (sem explicação na NT).
+- 'F-7: primeira faixa em branco e "Vide NT 5-04" nas outras duas; não há linha de edificação histórica.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
