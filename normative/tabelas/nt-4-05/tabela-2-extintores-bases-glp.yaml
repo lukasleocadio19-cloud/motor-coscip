@@ -66,8 +66,92 @@ caminhos:
       - 01 120-B:C
   geometrica:
     metodo: pdfplumber 0.11.10, estratégia por linhas
-    todas_da_pagina: false
+    todas_da_pagina: true
     candidatos:
+    - bbox:
+      - 305.51
+      - 72.05
+      - 541.47
+      - 356.68
+      linhas:
+      - - Classe
+        - Capacidade de Armazenamento (kg de GLP)
+        - ''
+        - ''
+        - Capacidade de
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - Armazenamento
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - (botijões 13 kg)¹
+        - null
+      - - I
+        - Até 520
+        - null
+        - Até 40
+        - null
+        - null
+      - - II
+        - Até 1560
+        - null
+        - Até 120
+        - null
+        - null
+      - - III
+        - Até 6240
+        - null
+        - Até 480
+        - null
+        - null
+      - - IVA
+        - Até 12480
+        - null
+        - Até 960
+        - null
+        - null
+      - - IVB
+        - Até 24960
+        - null
+        - Até 1920
+        - null
+        - null
+      - - V
+        - Até 49920
+        - null
+        - Até 3840
+        - null
+        - null
+      - - VI
+        - Até 99840
+        - null
+        - Até 7680
+        - null
+        - null
+      - - Especial
+        - Mais de 99840
+        - null
+        - Mais de 7680
+        - null
+        - null
+      - - 'Obs.: 1 - Apenas referência. A capacidade de armazenamento deve sempre ser medida em kg de
+          GLP. 2 - Os pontos de venda no perímetro urbano ficam limitados a 10 unidades de botijões de
+          13 kg – Ver 5.2.6. 3 - Os pontos de venda no perímetro rural ficam limitados a 30 unidades de
+          botijões de 13 kg - Ver 5.2.6. 4 - Os pontos de venda de recipientes de GLP em postos revendedores
+          de combustíveis líquidos ficam limitados a 10 unidades de botijões de 13 kg - Ver 5.2.7. 5 -
+          O(s) lote(s) pode(m) conter recipientes transportáveis de GLP cheios, parcialmente cheios e
+          vazios, desde que atendida a quantidade de botijões permitida de acordo com a classe.'
+        - null
+        - null
+        - null
+        - null
+        - null
     - bbox: &id001
       - 42.64
       - 225.05
@@ -125,6 +209,77 @@ caminhos:
         - null
         - null
         - null
+    - bbox:
+      - 48.02
+      - 263.45
+      - 103.62
+      - 301.87
+      linhas:
+      - - Capacidade
+      - - volumétrica
+      - - (m3)
+    - bbox:
+      - 310.53
+      - 619.07
+      - 541.47
+      - 766.57
+      linhas:
+      - - Classe
+        - Quantidade
+        - ''
+        - Capacidade
+        - ''
+      - - null
+        - null
+        - null
+        - Extintora
+        - null
+      - - I
+        - '2'
+        - 20 – B:C
+        - null
+        - null
+      - - II
+        - '3'
+        - 20 – B:C
+        - null
+        - null
+      - - III
+        - '4'
+        - 20 – B:C
+        - null
+        - null
+      - - IVA
+        - '4'
+        - 40 – B:C
+        - null
+        - null
+      - - IVB
+        - '6'
+        - 40 – B:C
+        - null
+        - null
+      - - V
+        - '8'
+        - 40 – B:C
+        - null
+        - null
+      - - VI
+        - '10'
+        - 40 – B:C
+        - null
+        - null
+      - - Especial
+        - '12'
+        - 40 – B:C
+        - null
+        - null
+      - - 'Obs.: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de
+          15 m para alcançar o equipamento.'
+        - null
+        - null
+        - null
+        - null
 notas:
 - 'Obs.: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15 m para
   alcançar o equipamento.'
@@ -136,7 +291,7 @@ resultado:
   caminhos_comparados:
   - visual
   - geometrica
-  candidato_geometrico: 0
-  candidatos_na_pagina: 1
+  candidato_geometrico: 1
+  candidatos_na_pagina: 4
   bbox: *id001
   texto: verificada

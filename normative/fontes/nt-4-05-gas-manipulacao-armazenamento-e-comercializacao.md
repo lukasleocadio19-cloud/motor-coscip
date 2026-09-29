@@ -413,6 +413,25 @@ Obs.: 1 - Apenas referência. A capacidade de armazenamento deve sempre ser medi
 Fonte: ABNT NBR 15514 – Adaptado.
 <!-- /tabela-conferida: Tabela 3 p6 -->
 
+<!-- tabela-conferida: Tabela 4 p6 -->
+### Tabela 4 — Proteção por extintores para área de armazenamento de recipientes transportáveis de GLP (conferida)
+
+| Classe | Quantidade | Capacidade Extintora |
+| --- | --- | --- |
+| I | 2 | 20 – B:C |
+| II | 3 | 20 – B:C |
+| III | 4 | 20 – B:C |
+| IVA | 4 | 40 – B:C |
+| IVB | 6 | 40 – B:C |
+| V | 8 | 40 – B:C |
+| VI | 10 | 40 – B:C |
+| Especial | 12 | 40 – B:C |
+
+Fonte: NT 4-05, página 6, Tabela 4; conferida em 2026-09-29 (visual + geometrica).
+Obs.: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15 m para alcançar o equipamento.
+Fonte: IT28 – CBPMESP.
+<!-- /tabela-conferida: Tabela 4 p6 -->
+
 ---
 
 ## Página 7

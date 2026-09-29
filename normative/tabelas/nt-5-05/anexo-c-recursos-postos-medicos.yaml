@@ -135,7 +135,7 @@ caminhos:
       - 02 (duas)
   geometrica:
     metodo: pdfplumber 0.11.10, estratégia por linhas
-    todas_da_pagina: false
+    todas_da_pagina: true
     candidatos:
     - bbox: &id001
       - 49.48

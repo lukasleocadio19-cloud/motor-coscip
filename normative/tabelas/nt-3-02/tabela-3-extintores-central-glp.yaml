@@ -54,7 +54,7 @@ caminhos:
       - 01 (um) 80-B:C ou 01 (um) PQS-50 Kg
   geometrica:
     metodo: pdfplumber 0.11.10, estratégia por linhas
-    todas_da_pagina: false
+    todas_da_pagina: true
     candidatos:
     - bbox: &id001
       - 56.31
@@ -77,6 +77,15 @@ caminhos:
       - - '> 1800'
         - 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg
         - 01 (um) 80-B:C ou 01 (um) PQS-50 Kg
+    - bbox:
+      - 61.8
+      - 114.5
+      - 114.62
+      - 150.62
+      linhas:
+      - - Capacidade
+      - - total da
+      - - central (Kg)
 notas:
 - 'Fonte: CBMERJ.'
 - '"Quantidade e capacidade extintora" é célula mesclada sobre as colunas Extintor Portátil e Extintor
@@ -88,6 +97,6 @@ resultado:
   - visual
   - geometrica
   candidato_geometrico: 0
-  candidatos_na_pagina: 1
+  candidatos_na_pagina: 2
   bbox: *id001
   texto: verificada

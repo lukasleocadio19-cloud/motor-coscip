@@ -3,12 +3,11 @@ gerado_por: tools/normas/manifesto.py (não editar à mão)
 resumo:
   fontes: 53
   imagens_referenciadas: 476
-  imagens_presentes: 434
-  imagens_ausentes: 42
+  imagens_presentes: 476
+  imagens_ausentes: 0
   tabelas_por_estado:
     bruto: 279
-    divergente: 1
-    verificada: 6
+    verificada: 7
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -24,108 +23,108 @@ fontes:
   imagens:
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-20.jpg
     pagina: 20
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 1cdfb1ab92e834ff4a36c7580b710a45318b1fdfc3473ae1363b19040837a1fa
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-21.jpg
     pagina: 21
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 62a2cbbee4e5911bf2f7eb4b50b1134ec3b2d046741c2f147b7616181321031a
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-22.jpg
     pagina: 22
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: b8a678ae9741e8658d7b33f78f4b70c35885ef946d86b2ba51756b998abc3dbd
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-23.jpg
     pagina: 23
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 4d17250595be54733e52ad64d11d59f1b1423998b8f6e089458d70224ece69ac
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-24.jpg
     pagina: 24
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 2a8f86a74e9f69575f32aa323930e94c4acce8a3940995082fae8e7203293ab0
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-25.jpg
     pagina: 25
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: c03c3c655a14eef5a7e5220fba62898c467170b409b16432dd86d41d3ff813cf
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-26.jpg
     pagina: 26
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: aca77bdd91c5ddc92376f688ae050edcc4f327089bd5c6bf66f4e65ea8b05ac3
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-27.jpg
     pagina: 27
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 75ffe2fd613b9ecc97b0d8740e0607d29a86d83071c32c2dba60340f199578a9
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-28.jpg
     pagina: 28
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: b8dd2e35ebb50eed02d9bce791e566c534468a5c0bd91b17eaabbd248bbec90c
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-29.jpg
     pagina: 29
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: c1366bab942109b7812cc1f1fe84672d24ed4c6a020caa068c25a6ece23c773b
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-30.jpg
     pagina: 30
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 7c5bd88e66ea37a06f737e993197eb4cecad8e9e8de44e294d3c39aa4504297d
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-31.jpg
     pagina: 31
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: f7984c1cd77c47b433f31a867a69875b5e8dde8a2b187d017badc69b7be01fb0
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-32.jpg
     pagina: 32
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 35ecc707d736be728f50c52380d07f9ff5dfe8d7dea2b3dbbca9f5582b5a203b
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-33.jpg
     pagina: 33
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: c43aff31edb5f44ba162397cbe4ff623e4d429f8606a45c3bbd5e4fc908ba428
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-34.jpg
     pagina: 34
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 64b396040f217bed68932710626f94e2f59549225f24ece6d1f5bd124b48563e
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-35.jpg
     pagina: 35
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: cf6e49c18b5a879e03ce096aafb5a9f1bae79f5d67c8b1962399cfb3cef759cd
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-36.jpg
     pagina: 36
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 3470fcafebe6ae475fdd40aa395274a9673b77ade40a78624b89742e20546aa8
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-37.jpg
     pagina: 37
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: a0c22d027b6acd64b916033af65c375b42a6be2e8f5189e6579a170c6cd8f7ae
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-38.jpg
     pagina: 38
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: a52b0503e808821a3f591b56768acc17f6fe1bd4a8af6f07e9e1ec7abef7272d
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-39.jpg
     pagina: 39
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: fcbb907f0f71fdba774bd29f543f22faea87ce229c36d5ede7456f0593aac610
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-40.jpg
     pagina: 40
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: d122b07312a3d23db6711db3e3fbc33e052ab8b7626407e3c7650a21655f869e
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-41.jpg
     pagina: 41
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 871766aaa53c2afe8443572212cae3da4a3f1087f63033948d051b587734aff0
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-42.jpg
     pagina: 42
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 1f2f641a4ab124cf30cf40b3d78c8e2c69f3a4d3aa2d28bc9117a1460fdc1285
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-43.jpg
     pagina: 43
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 488dec8ca85054332f98d1ddbf19d263dbeccc26f405380e0c9ee526c51767b7
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-44.jpg
     pagina: 44
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 92a2bb859e70fcad6d4b5c4f372fecb077e3dacc1f0ccad699042b50e5dfc545
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-45.jpg
     pagina: 45
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: c412c420b73d7bb6a2591457e763ca66bfaade66b624da494ce7dd59cd539c4c
   tabelas:
   - pagina: 1
     estado: bruto
@@ -659,12 +658,12 @@ fontes:
   imagens:
   - caminho: media/nt-2-01/pagina-04.jpg
     pagina: 4
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 90441f09545d8252e3e1b8e2e0a6a852cf5b92f6bc6662938c9adeb6e38f3ef4
   - caminho: media/nt-2-01/pagina-05.jpg
     pagina: 5
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 81e0b3e19cca95e6a70952474d85cd847ea3b748b14ccec1fc62666626e14592
   - caminho: media/nt-2-01/pagina-06.jpg
     pagina: 6
     estado: presente
@@ -694,60 +693,60 @@ fontes:
   imagens:
   - caminho: media/nt-2-02/pagina-05.jpg
     pagina: 5
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 8935b6f748c6aabe4757e37cd9947f14594c8e8d5c8e226bbe489fbe1fb27346
   - caminho: media/nt-2-02/pagina-06.jpg
     pagina: 6
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: df2d7cdb45136f4b3f4eb3776f975b224f816713c6acb65484d55c89218cb417
   - caminho: media/nt-2-02/pagina-07.jpg
     pagina: 7
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 25ee2e0fc1e564c9b5a9fce7a5946070c4b4b9ebbb3a7444f18f71bfa4f95fd1
   - caminho: media/nt-2-02/pagina-08.jpg
     pagina: 8
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 19834e49603f04dad3a25f535f7c207749e9e851474c001aa600dc019ea46aa9
   - caminho: media/nt-2-02/pagina-09.jpg
     pagina: 9
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: df4728a95f30c2277aaa6b90755cbcebc3a122d6fcaa742a0872ce8f92c2cca5
   - caminho: media/nt-2-02/pagina-10.jpg
     pagina: 10
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: e163669b4701db6ec541de66dd1e7bc2afd00a74d13d810ec7813e0041e60fcc
   - caminho: media/nt-2-02/pagina-11.jpg
     pagina: 11
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: ff24376248cf1ebab8e2ce550c798052bf0ccda667a92722e38f22404261feec
   - caminho: media/nt-2-02/pagina-12.jpg
     pagina: 12
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 4fe0334c3250764cf05b76897234919ea182093ee612ee5b40c689341fbc123c
   - caminho: media/nt-2-02/pagina-13.jpg
     pagina: 13
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 1f62d92a34cc6b96bfdfb068f7a368f9ecb6f09f094ceac65a4c41c397558e02
   - caminho: media/nt-2-02/pagina-14.jpg
     pagina: 14
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 86fe3bcaf59d39273104c8b1c2d65bbc9e6af95a2fbcfc698549cadc62137bfa
   - caminho: media/nt-2-02/pagina-15.jpg
     pagina: 15
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 816adc9edd13e41b5aa146a1f84bc6355e519edc57b2c15ec27ad071f4287c06
   - caminho: media/nt-2-02/pagina-16.jpg
     pagina: 16
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 44ae3825409ce2317d41e2f5f8fc684fb50aac4430569a5f22c2c26aac7d1fa7
   - caminho: media/nt-2-02/pagina-17.jpg
     pagina: 17
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: d61805b1b92692ca6247eee17139ba6d56afd8501489675c6a425765c1a5d2dc
   - caminho: media/nt-2-02/pagina-18.jpg
     pagina: 18
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 22ef7717902a0ca73e736eb6e4fdb168bd929d4794a55cc0209016d9a35d434f
   - caminho: media/nt-2-02/pagina-19.jpg
     pagina: 19
     estado: presente
@@ -1093,7 +1092,7 @@ fontes:
     de dezembro de 2025
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_2-08_1Ed_2019_alterada_Portaria_1317_2025.pdf
   sha256_pdf: c204bd957038c3c8dd18a62a89472161ae6e2cc5602dcb9075bef8bca3b34c5e
-  sha256_md: d5cb2216cad16529eb8cfe6985efac096b059c14fc2b42d3e6d83026791805e9
+  sha256_md: 46e6f9127d3f225e537710d0cab59ecc7099a89c6f12d09399f4f61c3afe77b3
   data_captura: '2026-07-23'
   paginas: 22
   midia: nt-2-08
@@ -2504,7 +2503,7 @@ fontes:
   ato: Portaria CBMERJ n° 1179, de 11 de abril de 2022
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT-4-05-Gas-GLPGN-Manipulacao-armazenamento-e-comercializacao-2022.pdf
   sha256_pdf: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
-  sha256_md: 01dd1032596c16de39dcb6eb41f0c8240bf2ff60265c812c6332708eaef017f5
+  sha256_md: 390fa9c1d0c79b3b33d1b04ad18c219065ce1c2165edd5b3445447eae483a29f
   data_captura: '2026-07-23'
   paginas: 23
   midia: nt-4-05
@@ -2619,7 +2618,7 @@ fontes:
   - pagina: 6
     tabela: Tabela 4
     arquivo: normative/tabelas/nt-4-05/tabela-4-extintores-armazenamento-recipientes.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 8
     estado: bruto
   - pagina: 10

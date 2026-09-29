@@ -1191,7 +1191,7 @@ Observações: A) Edificações exclusivamente térreas das divisões G-1, G-2, 
 | (γ) Edificações em que a propagação do fogo seja difícil | A, B, G-1, G-2, G-5, G-6 e J | De saída da edificação (piso de descarga) | 40,00 m | 50,00 m | 55,00 m | 65,00 m |
 | (γ) Edificações em que a propagação do fogo seja difícil | A, B, G-1, G-2, G-5, G-6 e J | Demais | 35,00 m | 35,00 m | 35,00 m | 35,00 m |
 
-Fonte: NT 2-08, página 22, Tabela do Anexo C; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-08, página 22, Tabela do Anexo C; conferida em 2026-09-29 (visual + geometrica).
 Fonte: CBMERJ.
 Células mescladas: "(γ) …" abrange as 4 últimas linhas; cada grupo de ocupação γ abrange 2 linhas (piso de descarga e demais). Na publicação, as linhas "Demais" herdam o tipo e o grupo da linha de cima.
 Confere com normative/base/distancias-saida.yaml (24 limites; linhas α, β, γ×2×2), que o motor usa. Observações A–G: ver o texto da página 22.

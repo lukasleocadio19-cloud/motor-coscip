@@ -122,7 +122,121 @@ caminhos:
       - 35,00 m
       - 35,00 m
       - 35,00 m
-  geometrica: null
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.42
+      - 71.4
+      - 545.95
+      - 331.85
+      linhas:
+      - - Tipo de edificação
+        - Grupo e divisão de ocupação
+        - Pavimento
+        - Sem chuveiros ou sem detectores automáticos
+        - null
+        - Com chuveiros ou com detectores automáticos
+        - null
+      - - null
+        - null
+        - null
+        - Saída única
+        - Mais de uma saída
+        - Saída única
+        - Mais de uma saída
+      - - (α) Edificações em que a propagação do fogo é fácil
+        - Qualquer
+        - Qualquer
+        - 10,00 m
+        - 20,00 m
+        - 25,00 m
+        - 35,00 m
+      - - (β) Edificações com estrutura mediana resistência ao fogo
+        - Qualquer
+        - Qualquer
+        - 20,00 m
+        - 30,00 m
+        - 35,00m
+        - 45,00 m
+      - - (γ) Edificações em que a propagação do fogo seja difícil
+        - C, D, E, F, G-3, G-4, H, I, L e M
+        - De saída da edificação (piso de descarga)
+        - 35,00 m
+        - 40,00 m
+        - 45,00 m
+        - 55,00 m
+      - - null
+        - null
+        - Demais
+        - 35,00 m
+        - 35,00 m
+        - 35,00 m
+        - 35,00 m
+      - - null
+        - A, B, G-1, G-2, G-5, G-6 e J
+        - De saída da edificação (piso de descarga)
+        - 40,00 m
+        - 50,00 m
+        - 55,00 m
+        - 65,00 m
+      - - null
+        - null
+        - Demais
+        - 35,00 m
+        - 35,00 m
+        - 35,00 m
+        - 35,00 m
+    - bbox:
+      - 260.81
+      - 75.96
+      - 401.04
+      - 94.41
+      linhas:
+      - - Sem chuveiros ou sem detectores
+      - - automáticos
+    - bbox:
+      - 405.19
+      - 75.96
+      - 542.5
+      - 94.41
+      linhas:
+      - - Com chuveiros ou com detectores
+      - - automáticos
+    - bbox:
+      - 138.26
+      - 85.22
+      - 195.02
+      - 112.92
+      linhas:
+      - - Grupo e
+      - - divisão de
+      - - ocupação
+    - bbox:
+      - 60.0
+      - 89.9
+      - 131.3
+      - 108.26
+      linhas:
+      - - Tipo de
+      - - edificação
+    - bbox:
+      - 332.95
+      - 103.7
+      - 401.04
+      - 122.06
+      linhas:
+      - - Mais de uma
+      - - saída
+    - bbox:
+      - 477.34
+      - 103.7
+      - 542.5
+      - 122.06
+      linhas:
+      - - Mais de uma
+      - - saída
 notas:
 - 'Fonte: CBMERJ.'
 - 'Células mescladas: "(γ) …" abrange as 4 últimas linhas; cada grupo de ocupação γ abrange 2 linhas (piso
@@ -136,6 +250,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 7
+  bbox: *id001
+  texto: verificada
