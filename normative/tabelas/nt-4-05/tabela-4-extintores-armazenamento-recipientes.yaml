@@ -77,16 +77,38 @@ caminhos:
     - - Especial
       - '12'
       - 40 - B:C
-  geometrica: null
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    bbox:
+    - 48.02
+    - 263.45
+    - 103.62
+    - 301.87
+    linhas:
+    - - Capacidade
+    - - volumétrica
+    - - (m3)
 notas:
 - 'Obs.: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15 m para
   alcançar o equipamento.'
 - 'Fonte: IT28 – CBPMESP.'
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+  - - 1
+    - 1
+    - 1

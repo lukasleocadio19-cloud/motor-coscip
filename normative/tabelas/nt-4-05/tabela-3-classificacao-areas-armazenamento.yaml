@@ -77,7 +77,92 @@ caminhos:
     - - Especial
       - Mais de 99840
       - Mais de 7680
-  geometrica: null
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    bbox:
+    - 305.51
+    - 72.05
+    - 541.47
+    - 356.68
+    linhas:
+    - - Classe
+      - Capacidade de Armazenamento (kg de GLP)
+      - ''
+      - ''
+      - Capacidade de
+      - ''
+    - - null
+      - null
+      - null
+      - null
+      - Armazenamento
+      - null
+    - - null
+      - null
+      - null
+      - null
+      - (botijões 13 kg)¹
+      - null
+    - - I
+      - Até 520
+      - null
+      - Até 40
+      - null
+      - null
+    - - II
+      - Até 1560
+      - null
+      - Até 120
+      - null
+      - null
+    - - III
+      - Até 6240
+      - null
+      - Até 480
+      - null
+      - null
+    - - IVA
+      - Até 12480
+      - null
+      - Até 960
+      - null
+      - null
+    - - IVB
+      - Até 24960
+      - null
+      - Até 1920
+      - null
+      - null
+    - - V
+      - Até 49920
+      - null
+      - Até 3840
+      - null
+      - null
+    - - VI
+      - Até 99840
+      - null
+      - Até 7680
+      - null
+      - null
+    - - Especial
+      - Mais de 99840
+      - null
+      - Mais de 7680
+      - null
+      - null
+    - - 'Obs.: 1 - Apenas referência. A capacidade de armazenamento deve sempre ser medida em kg de GLP.
+        2 - Os pontos de venda no perímetro urbano ficam limitados a 10 unidades de botijões de 13 kg
+        – Ver 5.2.6. 3 - Os pontos de venda no perímetro rural ficam limitados a 30 unidades de botijões
+        de 13 kg - Ver 5.2.6. 4 - Os pontos de venda de recipientes de GLP em postos revendedores de combustíveis
+        líquidos ficam limitados a 10 unidades de botijões de 13 kg - Ver 5.2.7. 5 - O(s) lote(s) pode(m)
+        conter recipientes transportáveis de GLP cheios, parcialmente cheios e vazios, desde que atendida
+        a quantidade de botijões permitida de acordo com a classe.'
+      - null
+      - null
+      - null
+      - null
+      - null
 notas:
 - 'Obs.: 1 - Apenas referência. A capacidade de armazenamento deve sempre ser medida em kg de GLP. 2 -
   Os pontos de venda no perímetro urbano ficam limitados a 10 unidades de botijões de 13 kg - Ver 5.2.6.
@@ -87,11 +172,32 @@ notas:
   de GLP cheios, parcialmente cheios e vazios, desde que atendida a quantidade de botijões permitida de
   acordo com a classe.'
 - 'Fonte: ABNT NBR 15514 – Adaptado.'
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+  - - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6

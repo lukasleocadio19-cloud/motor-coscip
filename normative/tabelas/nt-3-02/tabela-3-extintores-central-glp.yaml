@@ -52,16 +52,48 @@ caminhos:
     - - '> 1800'
       - 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg
       - 01 (um) 80-B:C ou 01 (um) PQS-50 Kg
-  geometrica: null
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    bbox:
+    - 56.31
+    - 111.02
+    - 283.0
+    - 227.78
+    linhas:
+    - - Capacidade total da central (Kg)
+      - Quantidade e capacidade extintora
+      - null
+    - - null
+      - Extintor Portátil
+      - Extintor sobre rodas
+    - - ≤ 270
+      - 01 (um) 20-B:C ou 01 (um) PQS-6 Kg
+      - Não exigido
+    - - '> 270 a 1800'
+      - 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg
+      - Não exigido
+    - - '> 1800'
+      - 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg
+      - 01 (um) 80-B:C ou 01 (um) PQS-50 Kg
 notas:
 - 'Fonte: CBMERJ.'
 - '"Quantidade e capacidade extintora" é célula mesclada sobre as colunas Extintor Portátil e Extintor
   sobre rodas.'
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 2
+    - 2
+    - 3
+    - 3
+    - 3
+  - - 3
+    - 3
+    - 3
+    - 3
+    - 3

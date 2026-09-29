@@ -466,20 +466,6 @@ GLP com interposição de parede resistente ao fogo.
 | > 270 a 1800 | 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg | Não exigido |
 | > 1800 | 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg | 01 (um) 80-B:C ou 01 (um) PQS-50 Kg |
 
-<!-- tabela-conferida: Tabela 3 p7 -->
-### Tabela 3 — Proteção por extintores para central de GLP (conferida)
-
-| Capacidade total da central (Kg) | Quantidade e capacidade extintora — Extintor Portátil | Quantidade e capacidade extintora — Extintor sobre rodas |
-| --- | --- | --- |
-| ≤ 270 | 01 (um) 20-B:C ou 01 (um) PQS-6 Kg | Não exigido |
-| > 270 a 1800 | 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg | Não exigido |
-| > 1800 | 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg | 01 (um) 80-B:C ou 01 (um) PQS-50 Kg |
-
-Fonte: NT 3-02, página 7, Tabela 3; conferida em 2026-09-29 (visual + texto).
-Fonte: CBMERJ.
-"Quantidade e capacidade extintora" é célula mesclada sobre as colunas Extintor Portátil e Extintor sobre rodas.
-<!-- /tabela-conferida: Tabela 3 p7 -->
-
 ---
 
 ## Página 8

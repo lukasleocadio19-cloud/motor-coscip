@@ -44,14 +44,69 @@ caminhos:
       - '934'
     - - 40.001 em diante
       - '935'
-  geometrica: null
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    bbox:
+    - 59.78
+    - 192.17
+    - 279.92
+    - 278.95
+    linhas:
+    - - ''
+      - Público
+      - ''
+      - ''
+      - Código DAEM
+      - ''
+    - - 1.000 até 5.000
+      - null
+      - null
+      - '931'
+      - null
+      - null
+    - - 5.001 até 20.000
+      - null
+      - null
+      - '932'
+      - null
+      - null
+    - - 20.001 até 30.000
+      - null
+      - null
+      - '933'
+      - null
+      - null
+    - - 30.001 até 40.000
+      - null
+      - null
+      - '934'
+      - null
+      - null
+    - - 40.001 em diante
+      - null
+      - null
+      - '935'
+      - null
+      - null
 notas:
 - 'Fonte: FUNESBOM.'
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+  - - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
