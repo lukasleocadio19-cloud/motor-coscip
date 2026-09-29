@@ -349,6 +349,261 @@ caminhos:
       - Edificações destinadas à restrição de liberdade,
       - Obs6
     - - Edificação histórica com isenção de canalização ****
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 41.77
+      - 78.08
+      - 540.87
+      - 740.56
+      linhas:
+      - - ''
+        - ''
+        - ''
+        - ''
+        - Composição da Brigada de Incêndio
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Área total construída
+        - null
+        - null
+      - - Grupo
+        - Ocupação/Uso
+        - Divisão
+        - Descrição
+        - ''
+        - null
+        - null
+      - - ''
+        - ''
+        - ''
+        - ''
+        - 5000m2 a 10000 m2
+        - 10000 m2 a 30000 m2
+        - Acima de 30000 m2
+      - - null
+        - null
+        - null
+        - null
+        - Número de Bombeiros Civis por turno
+        - null
+        - null
+      - - A
+        - Residencial
+        - A-1
+        - Residencial privativa unifamiliar
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - null
+        - null
+      - - null
+        - null
+        - A-2
+        - Residencial privativa multifamiliar
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - null
+        - null
+      - - null
+        - null
+        - A-3
+        - Residencial coletiva
+        - Não exigível
+        - null
+        - Obs1
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - null
+        - null
+      - - null
+        - null
+        - A-4
+        - Agrupamento residencial privativa unifamiliar
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - null
+        - null
+      - - null
+        - null
+        - A-5
+        - Agrupamento residencial privativa multifamiliar
+        - Não exigível
+        - Não exigível
+        - Obs1
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - null
+        - null
+      - - B
+        - Serviços de hospedagem
+        - B-1
+        - Residencial transitório
+        - Não exigível
+        - '1'
+        - Obs3
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+      - - null
+        - null
+        - B-2
+        - Residencial com serviço
+        - Não exigível
+        - '1'
+        - Obs3
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+      - - C
+        - Comercial
+        - C-1
+        - Comercial 1
+        - Não exigível
+        - '1'
+        - Obs3
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+      - - null
+        - null
+        - C-2
+        - Comercial 2
+        - '1'
+        - '1'
+        - Obs3
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+      - - null
+        - null
+        - C-3
+        - Shopping centers
+        - Não exigível
+        - '1'
+        - Obs2
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+      - - D
+        - Serviço profissional e institucional
+        - D-1
+        - Local para prestação de serviço profissional ou condução de negócios
+        - Não exigível
+        - '1'
+        - Obs3
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+      - - null
+        - null
+        - D-2
+        - Clínica médica e laboratório de análises técnicas
+        - Não exigível
+        - '1'
+        - Obs3
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+      - - null
+        - null
+        - D-3
+        - Serviços de manutenção e reparação (exceto os classificados em G-5)
+        - Não exigível
+        - '1'
+        - Obs3
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+      - - null
+        - null
+        - D-4
+        - Laboratórios de análises clínicas e assemelhados
+        - Não exigível
+        - '1'
+        - Obs3
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+      - - null
+        - null
+        - D-5
+        - Edificações destinadas à restrição de liberdade,
+        - Obs6
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
 notas:
 - 'Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.:
   "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação
@@ -357,11 +612,84 @@ inconsistencias_da_fonte:
 - 'As linhas "Edificação histórica com isenção de canalização ****" estão em branco nas três faixas de
   área: a NT não diz quantos BC se exigem nesses casos.'
 - A marca "****" não é definida no quadro de observações (página 26), que só traz Obs1 a Obs8.
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 5
+    - 1
+    - 3
+    - 1
+    - 5
+    - 1
+    - 3
+    - 1
+    - 4
+    - 1
+    - 3
+    - 1
+    - 5
+    - 1
+    - 7
+    - 1
+    - 5
+    - 1
+    - 7
+    - 1
+    - 5
+    - 1
+    - 5
+    - 1
+    - 7
+    - 1
+    - 5
+    - 1
+    - 5
+    - 1
+    - 5
+    - 1
+    - 3
+    - 1
+  - - 1
+    - 1
+    - 4
+    - 3
+    - 1
+    - 5
+    - 1
+    - 3
+    - 1
+    - 4
+    - 1
+    - 3
+    - 1
+    - 5
+    - 1
+    - 7
+    - 1
+    - 5
+    - 1
+    - 7
+    - 1
+    - 5
+    - 1
+    - 5
+    - 1
+    - 7
+    - 1
+    - 5
+    - 1
+    - 5
+    - 1
+    - 5
+    - 1
+    - 3
+    - 1

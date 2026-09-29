@@ -213,7 +213,7 @@ constante do Anexo D (método determinístico). Após o cálculo do valor da car
 | C | Comercial | C-2 | Comercial 2 | Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio 2 conforme Nota Técnica específica, tais como: comércio atacadista de produtos químicos e petroquímicos, de resíduos de papel e papelão, espuma e isopor, etc. |
 | C | Comercial | C-3 | Shopping centers | Centro de compras em geral (shopping centers) |
 
-Fonte: NT 1-04, página 5, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 5, Tabela do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por") desfeita.
 <!-- /tabela-conferida: Tabela do Anexo A p5 -->
 
@@ -255,7 +255,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 | E | Escolar e cultura física | E-2 | Escolar especial | Escolas de artes e artesanato, de línguas, de cultura geral, de cultura estrangeira, escolas religiosas e assemelhados |
 | E | Escolar e cultura física | E-3 | Espaço para cultura física | Locais de ensino e/ou práticas de artes marciais, natação, ginástica (artística, dança, musculação e outros) esportes coletivos (tênis, futebol e outros que não estejam incluídos em F-3), sauna, casas de fisioterapia e assemelhados. Sem arquibancadas. |
 
-Fonte: NT 1-04, página 6, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 6, Tabela do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por") desfeita.
 <!-- /tabela-conferida: Tabela do Anexo A p6 -->
 
@@ -303,7 +303,7 @@ Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arq
 | F | Local de Reunião de Público | F-10 | Exposição de animais | Locais para exposição agropecuária e assemelhados. Edificações permanentes |
 | F | Local de Reunião de Público | F-11 | Clubes sociais e diversão | Clubes sociais, bilhares, boliche, salões de baile, restaurantes com atividades de diversões públicas, zoológicos, aquários, parque de diversões (edificação permanente), e assemelhados. |
 
-Fonte: NT 1-04, página 7, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 7, Tabela do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por") desfeita.
 <!-- /tabela-conferida: Tabela do Anexo A p7 -->
 
@@ -349,7 +349,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 | H | Serviço de saúde | H-3 | Hospital e assemelhados | Hospitais, casa de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos de atendimento de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital psiquiátrico. |
 | H | Serviço de saúde | H-4 | Clínica e consultório médico, odontológico e assemelhados | Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados. Todos sem internação. |
 
-Fonte: NT 1-04, página 8, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 8, Tabela do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por") desfeita.
 <!-- /tabela-conferida: Tabela do Anexo A p8 -->
 
@@ -450,7 +450,7 @@ Fonte: Decreto nº 42/2018 - COSCIP.
 | M | Especial | M-8 | Loteamento | Loteamento - é a divisão de glebas em lotes destinados à edificação, com aberturas de novas vias de circulação ou de logradouros públicos ou privados |
 | M | Especial | M-9 | Local onde a liberdade das pessoas sofre restrição | Manicômios, reformatórios, prisões em geral (casa de detenção, penitenciárias, presídios) e instituições assemelhadas, todos com celas |
 
-Fonte: NT 1-04, página 10, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 10, Tabela do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por") desfeita.
 Fonte indicada: Decreto nº 42/2018 – COSCIP.
 <!-- /tabela-conferida: Tabela do Anexo A p10 -->
@@ -1181,7 +1181,7 @@ Observação: Os valores de materiais não listados nesta tabela poderão ser ap
 | Diesel | 43 |
 | Dietilamina | 42 |
 
-Fonte: NT 1-04, página 19, Tabela do Anexo D (1/3); conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 19, Tabela do Anexo D (1/3); conferida em 2026-09-29 (visual + geometrica).
 A página traz três colunas lado a lado (Tipo de material | Hi); cada uma é um arquivo. Observação da página: valores de materiais não listados podem ser apresentados pelo responsável técnico, citada a fonte bibliográfica.
 <!-- /tabela-conferida: Tabela do Anexo D (1/3) p19 -->
 
@@ -1228,7 +1228,7 @@ A página traz três colunas lado a lado (Tipo de material | Hi); cada uma é um
 | Magnésio | 25 |
 | Manteiga | 37 |
 
-Fonte: NT 1-04, página 19, Tabela do Anexo D (2/3); conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 19, Tabela do Anexo D (2/3); conferida em 2026-09-29 (visual + geometrica).
 A página traz três colunas lado a lado (Tipo de material | Hi); cada uma é um arquivo. Observação da página: valores de materiais não listados podem ser apresentados pelo responsável técnico, citada a fonte bibliográfica.
 <!-- /tabela-conferida: Tabela do Anexo D (2/3) p19 -->
 
@@ -1275,7 +1275,7 @@ A página traz três colunas lado a lado (Tipo de material | Hi); cada uma é um
 | Uréia | 9 |
 | Viscose | 17 |
 
-Fonte: NT 1-04, página 19, Tabela do Anexo D (3/3); conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 19, Tabela do Anexo D (3/3); conferida em 2026-09-29 (visual + geometrica).
 A página traz três colunas lado a lado (Tipo de material | Hi); cada uma é um arquivo. Observação da página: valores de materiais não listados podem ser apresentados pelo responsável técnico, citada a fonte bibliográfica.
 <!-- /tabela-conferida: Tabela do Anexo D (3/3) p19 -->
 

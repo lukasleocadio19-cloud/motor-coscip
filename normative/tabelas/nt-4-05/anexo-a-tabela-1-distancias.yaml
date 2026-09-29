@@ -419,6 +419,262 @@ caminhos:
       - 15,0
       - 15,0
       - '-'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.64
+      - 125.12
+      - 545.77
+      - 602.13
+      linhas:
+      - - Localização
+        - null
+        - ''
+        - Distâncias de segurança (m)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - null
+        - null
+        - A
+        - null
+        - B
+        - C
+        - D
+        - E
+        - F
+        - G
+        - H
+        - I
+        - J
+        - K
+        - L
+        - null
+      - - Área de transferência
+        - A
+        - '-'
+        - null
+        - 3,0
+        - 7,5
+        - 7,5
+        - 7,5
+        - 6,0
+        - 15,0
+        - 15,0
+        - 15,0
+        - 15,0
+        - 15,0
+        - '0'
+        - null
+      - - Casa de bombas e compressores de GLP
+        - B
+        - 3,0
+        - null
+        - '-'
+        - 3,0
+        - 7,5
+        - 7,5
+        - '-'
+        - 15,0
+        - 15,0
+        - 15,0
+        - 15,0
+        - 15,0
+        - '0'
+        - null
+      - - Área de armazenamento a granel – recipientes estacionários
+        - C
+        - 7,5
+        - null
+        - 3,0
+        - b)
+        - 7,5
+        - 15,0
+        - 7,5
+        - 15,0
+        - 15,0
+        - 15,0
+        - 15,0(c)
+        - 15,0 (c)
+        - '0'
+        - null
+      - - Área de armazenamento de recipientes transportáveis cheios, parcialmente utilizados ou vazios
+          (e)
+        - D
+        - 7,5
+        - null
+        - 7,5
+        - 7,5
+        - '-'
+        - 1,5
+        - 6,0
+        - 7,5
+        - 7,5
+        - 7,5
+        - 7,5
+        - 7,5
+        - 7,5
+        - null
+      - - Área de envasamento
+        - E
+        - 7,5
+        - null
+        - 7,5
+        - 15,0
+        - 1,5
+        - '-'
+        - 6,0
+        - 15,0
+        - 15,0
+        - 15,0
+        - 15,0
+        - 15,0
+        - '0'
+        - null
+      - - Área de estocagem de inflamáveis auxiliares
+        - F
+        - 6,0
+        - null
+        - ''
+        - 7,5
+        - 6,0
+        - 6,0
+        - '-'
+        - 6,0
+        - 6,0
+        - 6,0
+        - 6,0
+        - 6,0
+        - 7,5
+        - null
+      - - Área de utilidades
+        - G
+        - 15,0
+        - null
+        - 15,0
+        - 15,0
+        - 7,5
+        - 15,0
+        - 6,0
+        - '-'
+        - 3,0
+        - 3,0
+        - 1,5
+        - 1,5
+        - 7,5
+        - null
+      - - Área de apoio operacional
+        - H
+        - 15,0
+        - null
+        - 15,0
+        - 15,0
+        - 7,5
+        - 15,0
+        - 6,0
+        - 3,0
+        - '-'
+        - 3,0
+        - 1,5
+        - 1,5
+        - 15,0
+        - null
+      - - Área administrativa
+        - I
+        - 15,0
+        - null
+        - 15,0
+        - 15,0
+        - 7,5
+        - 15,0
+        - 6,0
+        - 3,0
+        - 3,0
+        - '-'
+        - e)
+        - e)
+        - 15,0
+        - null
+      - - Divisa de propriedade
+        - J
+        - 15,0
+        - null
+        - 15,0
+        - 15,0 (c)
+        - 7,5
+        - 15,0
+        - 6,0
+        - 1,5
+        - 1,5
+        - e)
+        - '-'
+        - e)
+        - 15,0
+        - null
+      - - Via pública (c)
+        - K
+        - 15,0
+        - null
+        - 15,0
+        - 15,0 (c)
+        - 7,5
+        - 15,0
+        - 6,0
+        - 1,5
+        - 1,5
+        - e)
+        - e)
+        - '-'
+        - 15,0
+        - null
+      - - Recipientes estacionários para decantação (d)
+        - L
+        - '0'
+        - null
+        - '0'
+        - '0'
+        - 7,5
+        - '0'
+        - 7,5
+        - 7,5
+        - 15,0
+        - 15,0
+        - 15,0
+        - 15,0
+        - '-'
+        - null
+      - - 'Observações: a) Para a leitura desta tabela as letras maiúsculas têm o mesmo significado tanto
+          na horizontal, quanto na vertical; b) Ver Tabela 1 desta NT. c) Ver na Tabela 2 deste anexo
+          a indicação da distância de segurança recomendada à divisa de propriedade ou via pública para
+          recipientes estacionários com capacidade volumétrica individual superior a 120 m³. d) Válido
+          para recipientes estacionários para decantação até 10 m3. e) As distâncias mínimas de segurança
+          não se aplicam aos recipientes novos ou requalificados sem uso.'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
 notas:
 - 'Observações da tabela:'
 - a) Para a leitura desta tabela as letras maiúsculas têm o mesmo significado tanto na horizontal, quanto
@@ -439,6 +695,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

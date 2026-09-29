@@ -622,7 +622,7 @@ Tabela 1 - Currículos mínimos para a formação de BC (Fonte: ABNT NBR14608)
 | 05 Técnicas e Táticas de Combate a Incêndio | - Conhecer as principais técnicas de busca e exploração da área em sinistro, ventilação natural ou forçada (pressão negativa, venturi e positiva), entradas forçadas, resgate de vítimas, confinamento, isolamento, salvatagem, combate com emprego correto dos tipos de jato de água (neblina, cone de força e sólido), emprego, dimensionamento e técnicas de aplicação de espuma mecânica e rescaldo de incêndio; - Demonstrar a montagem de uma linha direta de combate a incêndio, a partir de um hidrante e/ou viatura, linha adutora e linha siamesa; - Demonstrar o uso da linha de água para ataque direto, ataque indireto e ataque combinado. | 1h | - Demonstrar as principais técnicas de busca e exploração da área em sinistro, ventilação natural ou forçada (pressão negativa, venturi e positiva), entradas forçadas, resgate de vítimas, confinamento, isolamento, salvatagem, combate com emprego correto dos tipos de jato de água (neblina, cone de força e sólido), emprego, dimensionamento e técnicas de aplicação de espuma mecânica e rescaldo de incêndio; - Demonstrar a montagem de uma linha direta de combate a incêndio, a partir de um hidrante e/ou viatura, linha adutora e linha siamesa; - Demonstrar o uso da linha de água para ataque direto, ataque indireto e ataque combinado. | 4h |
 |  | Total | 4h | Total | 8h |
 
-Fonte: NT 2-11, página 11, Tabela 1 (A.1); conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-11, página 11, Tabela 1 (A.1); conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada: ABNT NBR 14608. Células em branco = sem parte prática no módulo.
 Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao total da linha "Total".
 <!-- /tabela-conferida: Tabela 1 (A.1) p11 -->
@@ -660,7 +660,7 @@ Total 4h Total 8h
 | 03 Equipamentos Auxiliares | - Conhecer como transportar e armar uma escada prolongável. - Conhecer como operar no mínimo as seguintes ferramentas de corte, arrombamento e remoção (machado, machado-picareta, corta-a-frio, croque, alavanca simples, alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); - Conhecer e operar lanternas e refletores portáteis para iluminação; - Conhecer e utilizar na prática uma lona para salvatagem. | 1h | - Demonstrar na prática como transportar e armar uma escada prolongável; como operar ferramentas de corte, arrombamento e remoção (machado, machado-picareta, corta-a-frio, croque, alavanca simples, alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); como operar lanternas e refletores portáteis para iluminação; como usar uma lona para salvatagem. | 2h |
 |  | Total | 4h | Total | 8h |
 
-Fonte: NT 2-11, página 12, Tabela 1 (A.2); conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-11, página 12, Tabela 1 (A.2); conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada: ABNT NBR 14608. Quebra de palavra da imagem ("Equipament / o", "corta- / a-frio") desfeita.
 Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao total da linha "Total".
 <!-- /tabela-conferida: Tabela 1 (A.2) p12 -->
@@ -707,7 +707,7 @@ Total 10h Total 6h
 | 02 EPR | - Conhecer e saber a origem e os riscos de exposição a no mínimo os seguintes tipos de gases: asfixiantes – gás liquefeito de petróleo (GLP), gás metano (CH4), dióxido de carbono (CO2) e acetileno; gases tóxicos – monóxido de carbono (CO), sulfídrico (H2S) e cianídrico (HCN) e gases irritantes ou corrosivos – amônia (NH2) e cloro; - Conhecer as características de atmosfera insalubre por concentração de O2; - Conhecer a utilização e a higienização e limpeza dos seguintes equipamentos de proteção respiratória: máscaras filtrantes e conjunto de máscara autônoma de ar respirável e máscara dedicada para a vítima (carona); - Saber calcular a autonomia do conjunto de máscara autônoma. - Conhecer e saber identificar a finalidade dos impressos nos cilindros de ar respirável. | 4h | Demonstrar a utilização (montar o equipamento, equipar-se e deslocar-se com e sem vítima); Exercitar o calculo de autonomia do conjunto autônomo de respiração. | 4h |
 |  | Total | 2h | Total | 2h |
 
-Fonte: NT 2-11, página 13, Tabela 1 (A.3); conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-11, página 13, Tabela 1 (A.3); conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada: ABNT NBR 14608.
 <!-- /tabela-conferida: Tabela 1 (A.3) p13 -->
 
@@ -722,7 +722,7 @@ Fonte indicada: ABNT NBR 14608.
 | 04 Resgate de Vítimas em Espaços Confinados | - Conhecer as normas, procedimentos e técnicas para resgate de vítimas em espaços confinados. | 6h | Utilizar os equipamentos para resgate de vítimas em espaços confinados. | 6h |
 |  | Total | 10h | Total | 6h |
 
-Fonte: NT 2-11, página 13, Tabela 1 (A.4); conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-11, página 13, Tabela 1 (A.4); conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada: ABNT NBR 14608.
 Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao total da linha "Total".
 <!-- /tabela-conferida: Tabela 1 (A.4) p13 -->
@@ -801,7 +801,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 | 05 Ações Operacionais | - Conhecer o sistema de organização da área do sinistro em zonas de segurança, apoio de acesso limitado (quente, morna e fria); - Conhecer os equipamentos e métodos de contenção e confinamento de derramamento de produtos perigosos. | 1h | - Demonstrar na prática a aplicação e utilização de barreiras de contenção, absorção, mantas absorventes, matérias adsorventes e absorventes orgânicos; - Demonstrar na prática as técnicas de resgate de vítimas contaminadas e descontaminação de vítimas e ambientes. | 2h |
 |  | Total | 6h | Total | 2h |
 
-Fonte: NT 2-11, página 14, Tabela 1 (A.5); conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-11, página 14, Tabela 1 (A.5); conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada: ABNT NBR 14608.
 Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao total da linha "Total".
 <!-- /tabela-conferida: Tabela 1 (A.5) p14 -->
@@ -867,7 +867,7 @@ Tabela 2 - Currículo mínimo para atualização de BC
 | 15 Psicologia em emergências | - Reconhecer o agravo emocional das pessoas em situações de emergências e a administração do estresse após incidentes críticos para os profissionais de emergência. | 30 min. |  |  |
 |  | Total | 12h | Total | 08h |
 
-Fonte: NT 2-11, página 15, Tabela 1 (A.6, página 15); conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-11, página 15, Tabela 1 (A.6, página 15); conferida em 2026-09-29 (visual + geometrica).
 Continuação da página 14.
 Conferência aritmética (além dos dois caminhos): os módulos 01 a 15 (páginas 14 e 15) somam 12h na parte teórica e 8h na prática, iguais aos totais.
 <!-- /tabela-conferida: Tabela 1 (A.6, página 15) p15 -->
@@ -894,7 +894,7 @@ Conferência aritmética (além dos dois caminhos): os módulos 01 a 15 (página
 | Objetivo | Carga horária | Objetivo | Carga Horária |
 | - Consolidar os Itens: 01 a 12 da tabela A.6 | 4h | - Consolidar os Itens: 01, 03, 04, 05 e 09 da tabela A.6 | 4h |
 
-Fonte: NT 2-11, página 15, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-11, página 15, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
 Quatro blocos (título, partes, cabeçalho e linha); "<" = mesclada com a da esquerda.
 <!-- /tabela-conferida: Tabela 2 p15 -->
 
@@ -983,7 +983,7 @@ noções básicas da ciência do fogo
 | Carga horária | 4(quatro) horas |
 | Carga horária total | 12 (doze) horas |
 
-Fonte: NT 2-11, página 16, Tabela 1 (Anexo B); conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-11, página 16, Tabela 1 (Anexo B); conferida em 2026-09-29 (visual + geometrica).
 Anexo B da NT 2-11 (formação de BVI). Conferência aritmética: 8 h (teoria) + 4 h (prática) = 12 h; com as 4 h de noções de primeiros socorros, as 16 h do título.
 <!-- /tabela-conferida: Tabela 1 (Anexo B) p16 -->
 
@@ -1001,7 +1001,7 @@ Anexo B da NT 2-11 (formação de BVI). Conferência aritmética: 8 h (teoria) +
 | Emergências Clinicas/AVC/IAM/Convulsões |  |
 | Carga horária total | 4(quatro) horas |
 
-Fonte: NT 2-11, página 16, Tabela 1 (Anexo B, primeiros socorros); conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-11, página 16, Tabela 1 (Anexo B, primeiros socorros); conferida em 2026-09-29 (visual + geometrica).
 Segunda parte da Tabela 1 do Anexo B.
 <!-- /tabela-conferida: Tabela 1 (Anexo B, primeiros socorros) p16 -->
 
@@ -1275,46 +1275,6 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  | D-5 | Edificações destinadas à restrição de liberdade, | Obs6 |  |  |
 |  |  |  | Edificação histórica com isenção de canalização **** |  |  |  |
 
-<!-- tabela-conferida: Tabela do Anexo D p22 -->
-### Tabela do Anexo D — Dimensionamento para bombeiro civil (BC), página 22 (conferida)
-
-| Grupo | Ocupação/Uso | Divisão | Descrição | BC — 5.000 a 10.000 m² | BC — 10.000 a 30.000 m² | BC — acima de 30.000 m² |
-| --- | --- | --- | --- | --- | --- | --- |
-| A | Residencial | A-1 | Residencial privativa unifamiliar | Não exigível | Não exigível | Não exigível |
-| A | Residencial | A-1 | Edificação histórica com isenção de canalização **** |  |  |  |
-| A | Residencial | A-2 | Residencial privativa multifamiliar | Não exigível | Não exigível | Não exigível |
-| A | Residencial | A-2 | Edificação histórica com isenção de canalização **** |  |  |  |
-| A | Residencial | A-3 | Residencial coletiva | Não exigível | Não exigível | Obs1 |
-| A | Residencial | A-3 | Edificação histórica com isenção de canalização **** |  |  |  |
-| A | Residencial | A-4 | Agrupamento residencial privativa unifamiliar | Não exigível | Não exigível | Não exigível |
-| A | Residencial | A-4 | Edificação histórica com isenção de canalização **** |  |  |  |
-| A | Residencial | A-5 | Agrupamento residencial privativa multifamiliar | Não exigível | Não exigível | Obs1 |
-| A | Residencial | A-5 | Edificação histórica com isenção de canalização **** |  |  |  |
-| B | Serviços de hospedagem | B-1 | Residencial transitório | Não exigível | 1 | Obs3 |
-| B | Serviços de hospedagem | B-1 | Edificação histórica com isenção de canalização **** |  |  |  |
-| B | Serviços de hospedagem | B-2 | Residencial com serviço | Não exigível | 1 | Obs3 |
-| B | Serviços de hospedagem | B-2 | Edificação histórica com isenção de canalização **** |  |  |  |
-| C | Comercial | C-1 | Comercial 1 | Não exigível | 1 | Obs3 |
-| C | Comercial | C-1 | Edificação histórica com isenção de canalização **** |  |  |  |
-| C | Comercial | C-2 | Comercial 2 | 1 | 1 | Obs3 |
-| C | Comercial | C-2 | Edificação histórica com isenção de canalização **** |  |  |  |
-| C | Comercial | C-3 | Shopping centers | Não exigível | 1 | Obs2 |
-| C | Comercial | C-3 | Edificação histórica com isenção de canalização **** |  |  |  |
-| D | Serviço profissional e institucional | D-1 | Local para prestação de serviço profissional ou condução de negócios | Não exigível | 1 | Obs3 |
-| D | Serviço profissional e institucional | D-1 | Edificação histórica com isenção de canalização **** |  |  |  |
-| D | Serviço profissional e institucional | D-2 | Clínica médica e laboratório de análises técnicas | Não exigível | 1 | Obs3 |
-| D | Serviço profissional e institucional | D-2 | Edificação histórica com isenção de canalização **** |  |  |  |
-| D | Serviço profissional e institucional | D-3 | Serviços de manutenção e reparação (exceto os classificados em G-5) | Não exigível | 1 | Obs3 |
-| D | Serviço profissional e institucional | D-3 | Edificação histórica com isenção de canalização **** |  |  |  |
-| D | Serviço profissional e institucional | D-4 | Laboratórios de análises clínicas e assemelhados | Não exigível | 1 | Obs3 |
-| D | Serviço profissional e institucional | D-4 | Edificação histórica com isenção de canalização **** |  |  |  |
-| D | Serviço profissional e institucional | D-5 | Edificações destinadas à restrição de liberdade, | Obs6 | Obs6 | Obs6 |
-| D | Serviço profissional e institucional | D-5 | Edificação histórica com isenção de canalização **** |  |  |  |
-
-Fonte: NT 2-11, página 22, Tabela do Anexo D; conferida em 2026-09-29 (visual + texto).
-Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.: "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação histórica…" (fundo amarelo) não trazem valor em nenhuma faixa.
-<!-- /tabela-conferida: Tabela do Anexo D p22 -->
-
 ---
 
 ## Página 23
@@ -1398,7 +1358,7 @@ Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada c
 | F | Local de Reunião de Público | F-11 | Centro de exibição | 1 | 1 | Obs3 |
 | F | Local de Reunião de Público | F-11 | Edificação histórica com isenção de canalização **** |  |  |  |
 
-Fonte: NT 2-11, página 23, Tabela do Anexo D; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-11, página 23, Tabela do Anexo D; conferida em 2026-09-29 (visual + geometrica).
 Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.: "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação histórica…" (fundo amarelo) não trazem valor em nenhuma faixa.
 <!-- /tabela-conferida: Tabela do Anexo D p23 -->
 
@@ -1539,7 +1499,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 | M | Especial | M-4 | Loteamento e Pátios | Não exigível | Não exigível | Obs1 |
 | M | Especial | M-4 | Edificação histórica com isenção de canalização **** |  |  |  |
 
-Fonte: NT 2-11, página 25, Tabela do Anexo D; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-11, página 25, Tabela do Anexo D; conferida em 2026-09-29 (visual + geometrica).
 Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.: "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação histórica…" (fundo amarelo) não trazem valor em nenhuma faixa.
 <!-- /tabela-conferida: Tabela do Anexo D p25 -->
 

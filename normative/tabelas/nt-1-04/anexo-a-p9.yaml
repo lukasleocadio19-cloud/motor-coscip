@@ -137,6 +137,236 @@ caminhos:
     - - Depósito
     - - L-3
       - Depósito de material explosivo ou munições
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.44
+      - 78.39
+      - 548.6
+      - 556.33
+      linhas:
+      - - ''
+        - Ocupação/Uso
+        - ''
+        - Descrição
+        - ''
+      - - Grupo
+        - null
+        - Divisão
+        - null
+        - Definição e exemplos
+      - - ''
+        - null
+        - ''
+        - null
+        - ''
+      - - ''
+        - Industrial
+        - ''
+        - Industrial 1
+        - Edificações industriais que, em função das
+      - - null
+        - null
+        - null
+        - null
+        - atividades exercidas e dos materiais utilizados,
+      - - null
+        - null
+        - I-1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - são classificadas como Risco Médio 1 conforme
+      - - null
+        - null
+        - ''
+        - null
+        - Anexo B.
+      - - null
+        - null
+        - ''
+        - Industrial 2
+        - Edificações industriais que, em função das ati-
+      - - null
+        - null
+        - null
+        - null
+        - vidades exercidas e dos materiais utilizados, são
+      - - I
+        - null
+        - I-2
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - classificadas como Risco Médio 2 conforme
+      - - ''
+        - null
+        - ''
+        - null
+        - Anexo B.
+      - - null
+        - null
+        - ''
+        - Industrial 3
+        - Edificações industriais que, em função das ati-
+      - - null
+        - null
+        - null
+        - null
+        - vidades exercidas e dos materiais utilizados, são
+      - - null
+        - null
+        - I-3
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - classificadas como Risco Grande conforme Anexo
+      - - null
+        - null
+        - ''
+        - null
+        - B.
+      - - ''
+        - Depósito
+        - ''
+        - Depósitos de material incombustível
+        - Edificações sem processo industrial que ar-
+      - - null
+        - null
+        - null
+        - null
+        - mazenam tijolos, pedras, areias, cimentos, metais
+      - - null
+        - null
+        - J-1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - e outros materiais incombustíveis, todos sem
+      - - null
+        - null
+        - ''
+        - null
+        - embalagem.
+      - - null
+        - null
+        - ''
+        - Todo tipo de Depósito
+        - Depósitos com carga de incêndio até 1.000
+      - - null
+        - null
+        - J-2
+        - null
+        - null
+      - - J
+        - null
+        - null
+        - null
+        - MJ/m², conforme Anexo C ou Anexo D.
+      - - null
+        - null
+        - ''
+        - null
+        - null
+      - - ''
+        - ''
+        - ''
+        - Todo tipo de Depósito
+        - Depósitos com carga de incêndio entre 1.000 e
+      - - null
+        - null
+        - J-3
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - 1.200 MJ/m2 , conforme Anexo C ou Anexo D.
+      - - null
+        - null
+        - ''
+        - null
+        - null
+      - - null
+        - null
+        - ''
+        - Todo tipo de Depósito
+        - Depósitos onde a carga de incêndio ultrapassa a
+      - - null
+        - null
+        - J-4
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - 1.200 MJ/m², conforme Anexo C ou Anexo D.
+      - - null
+        - null
+        - ''
+        - null
+        - null
+      - - ''
+        - ''
+        - ''
+        - Comércio
+        - Comércio em geral de fogos de artifício, munições
+      - - null
+        - null
+        - L-1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - e assemelhados
+      - - null
+        - null
+        - ''
+        - null
+        - null
+      - - L
+        - Explosivos ou munições
+        - L-2
+        - Indústria
+        - Indústria de material explosivo ou munições
+      - - ''
+        - null
+        - ''
+        - null
+        - ''
+      - - null
+        - ''
+        - ''
+        - Depósito
+        - ''
+      - - null
+        - null
+        - L-3
+        - null
+        - Depósito de material explosivo ou munições
+      - - null
+        - null
+        - ''
+        - null
+        - ''
 notas:
 - Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula
   mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por")
@@ -146,9 +376,11 @@ resultado:
   estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: divergente
   motivo: número de linhas/colunas diferente
   forma:
   - - 5

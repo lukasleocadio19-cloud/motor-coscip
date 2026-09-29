@@ -155,6 +155,323 @@ caminhos:
       - 56 mca
       - 2 linhas manuais e 01 canhão monitor
       - 60 min
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 55.45
+      - 119.43
+      - 547.6
+      - 460.7
+      linhas:
+      - - ''
+        - Hidrante
+        - Mínimo
+        - Diâmetro mínimo da tubulação
+        - ''
+        - ''
+        - ''
+        - ''
+        - Tempo
+      - - null
+        - null
+        - null
+        - null
+        - Pressão
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - alcance
+        - null
+        - null
+        - null
+        - Pressão
+        - Funcionamento
+        - null
+      - - Volume
+        - null
+        - null
+        - null
+        - mínima no
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - horizontal
+        - null
+        - null
+        - Canhão
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - sistema de
+        - null
+        - mínima no
+        - simultânea (para
+        - null
+      - - armazenado
+        - null
+        - do jato
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - hidrantes
+        - monitor
+        - canhão
+        - efeitos de
+        - null
+      - - de GLP
+        - null
+        - compacto
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - (medida no
+        - null
+        - monitor
+        - cálculo)
+        - null
+      - - null
+        - null
+        - (linha
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - null
+      - - ''
+        - null
+        - null
+        - null
+        - esguicho)
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - manual) ¹
+        - null
+        - null
+        - null
+        - ''
+        - ''
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - null
+        - null
+      - - Inferior a
+        - Não
+        - ''
+        - '-'
+        - ''
+        - ''
+        - ''
+        - ''
+        - '-'
+      - - null
+        - null
+        - '-'
+        - null
+        - '-'
+        - Não
+        - '-'
+        - '-'
+        - null
+      - - 12.480 kg
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - ''
+        - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - null
+      - - Superior a
+        - Simples
+        - ''
+        - 65 mm
+        - ''
+        - ''
+        - ''
+        - ''
+        - 30 mim
+      - - 12.480 kg
+        - null
+        - 15 m
+        - null
+        - 35 mca
+        - Não
+        - '-'
+        - 2 linhas manuais
+        - null
+      - - inferior a
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 49.920 kg
+        - null
+        - ''
+        - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - null
+      - - Superior a
+        - Duplo
+        - ''
+        - 75 mm
+        - ''
+        - ''
+        - ''
+        - ''
+        - 45 min
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 2 linhas manuais e
+        - null
+      - - 49.920 kg
+        - null
+        - 20 m
+        - null
+        - 40 mca
+        - Sim
+        - 56 mca
+        - null
+        - null
+      - - inferior a
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 01 canhão monitor
+        - null
+      - - 99.840 kg
+        - null
+        - ''
+        - null
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+        - null
+      - - Superior a
+        - Duplo
+        - ''
+        - 75 mm
+        - ''
+        - ''
+        - ''
+        - 2 linhas manuais e
+        - 60 min
+      - - null
+        - null
+        - 20 m
+        - null
+        - 40 mca
+        - Sim
+        - 56 mca
+        - null
+        - null
+      - - 99.840 kg *
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 01 canhão monitor
+        - null
+      - - null
+        - null
+        - ''
+        - null
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+      - - 1) O alcance horizontal do jato compacto produzido pelas linhas manuais de resfriamento deve
+          ser medido da saída do esguicho ao
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ponto de queda do jato, porém este alcance deve ser desconsiderado quando da aplicação de 6.5.1.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
 notas:
 - 'Nota 1 da tabela: O alcance horizontal do jato compacto produzido pelas linhas manuais de resfriamento
   deve ser medido da saída do esguicho ao ponto de queda do jato, porém este alcance deve ser desconsiderado
@@ -171,9 +488,11 @@ resultado:
   estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: divergente
   motivo: número de linhas/colunas diferente
   forma:
   - - 9
@@ -182,7 +501,7 @@ resultado:
     - 9
     - 9
   - - 9
-    - 5
+    - 4
     - 9
     - 9
-    - 9
+    - 6

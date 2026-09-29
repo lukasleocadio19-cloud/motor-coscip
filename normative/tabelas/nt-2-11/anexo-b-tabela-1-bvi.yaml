@@ -96,6 +96,208 @@ caminhos:
       - 4(quatro) horas
     - - Carga horária total
       - 12 (doze) horas
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 71.05
+      - 122.86
+      - 516.35
+      - 548.13
+      linhas:
+      - - ''
+        - Assunto – Teoria
+        - null
+        - null
+        - null
+        - ''
+      - - Teoria do Fogo
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Propagação do Fogo
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Classes de Incêndio
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Prevenção de Incêndio
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Método de Extinção de Incêndio
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Agentes Extintores
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - EPI (Equipamento de Proteção Individual)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Equipamento Portátil de Combate a Incêndio
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Equipamento Fixo de Combate a Incêndio
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Escape de Pessoal
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Pessoa Com Mobilidade Reduzida
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Riscos Específicos da Planta
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Psicologia em emergências
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - Carga horária
+        - ''
+        - ''
+        - 8 (oito) horas
+        - ''
+      - - ''
+        - Assunto – Prática
+        - null
+        - null
+        - null
+        - ''
+      - - Maneabilidade com equipamentos
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Técnica de Extinção de Incêndio com equipamento portátil
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Técnica de Extinção de Incêndio com equipamento fixo
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Técnicas de entrada e saída do local de Incêndio
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Operação Simulada de Combate a Incêndio
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - Carga horária
+        - ''
+        - ''
+        - 4(quatro) horas
+        - ''
+      - - ''
+        - Carga horária total
+        - ''
+        - ''
+        - 12 (doze) horas
+        - ''
+    - bbox:
+      - 71.05
+      - 584.76
+      - 516.35
+      - 732.56
+      linhas:
+      - - ''
+        - Assunto – Teoria e Pratica
+        - null
+        - null
+        - null
+        - ''
+      - - Avaliação Inicial
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Obstrução de Vias Aéreas Superiores
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - RCP (Reanimação Cardiopulmonar)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Hemorragias
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Transporte da Vítima
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Emergências Clinicas/AVC/IAM/Convulsões
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - Carga horária total
+        - ''
+        - ''
+        - 4(quatro) horas
+        - ''
 notas:
 - 'Anexo B da NT 2-11 (formação de BVI). Conferência aritmética: 8 h (teoria) + 4 h (prática) = 12 h;
   com as 4 h de noções de primeiros socorros, as 16 h do título.'
@@ -107,6 +309,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

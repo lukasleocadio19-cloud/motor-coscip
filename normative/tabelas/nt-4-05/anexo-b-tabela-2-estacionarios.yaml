@@ -220,6 +220,303 @@ caminhos:
       - 120min
       - 180min
       - 180min
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 59.83
+      - 78.05
+      - 528.77
+      - 735.18
+      linhas:
+      - - ''
+        - Capacidade de
+        - ''
+        - Inferior a 10 m³
+        - ''
+        - Superior a 10 m³
+        - ''
+        - ''
+        - Superior a 20
+        - ''
+        - ''
+        - Superior a 60
+        - ''
+        - Superior a 120 m³
+        - Esferas
+      - - null
+        - armazenamento
+        - null
+        - null
+        - null
+        - e igual ou
+        - null
+        - null
+        - m³ e igual ou
+        - null
+        - null
+        - m³ e igual ou
+        - null
+        - null
+        - null
+      - - null
+        - individual
+        - null
+        - null
+        - null
+        - inferior 20 m³
+        - null
+        - null
+        - inferior 60 m³
+        - null
+        - null
+        - inferior 120 m³
+        - null
+        - null
+        - null
+      - - Hidrante simples
+        - null
+        - null
+        - Sim
+        - Não
+        - null
+        - null
+        - Não
+        - null
+        - null
+        - Não
+        - null
+        - null
+        - Não
+        - Não
+      - - Hidrante duplo
+        - null
+        - null
+        - Não
+        - Sim
+        - null
+        - null
+        - Sim
+        - null
+        - null
+        - Sim
+        - null
+        - null
+        - Sim
+        - Sim
+      - - Diâmetro mínimo da tubulação
+        - null
+        - null
+        - 60mm
+        - 75mm
+        - null
+        - null
+        - 75mm
+        - null
+        - null
+        - 75mm
+        - null
+        - null
+        - 75mm
+        - 75mm
+      - - Pressão mínima no sistema de hidrantes (medida no esguicho)
+        - null
+        - null
+        - 35mca
+        - 40mca
+        - null
+        - null
+        - 40mca
+        - null
+        - null
+        - 40mca
+        - null
+        - null
+        - 40mca
+        - 40mca
+      - - Mínimo alcance horizontal do jato compacto (linha manual) 8
+        - null
+        - null
+        - 15 m
+        - 20 m
+        - null
+        - null
+        - 20 m
+        - null
+        - null
+        - 30 m
+        - null
+        - null
+        - 30 m
+        - 30 m
+      - - Vazão sistema de hidrante
+        - null
+        - null
+        - 200l/min
+        - 400l/min
+        - null
+        - null
+        - 400l/min
+        - null
+        - null
+        - 1000l/min
+        - null
+        - null
+        - 1000l/min
+        - 1000l/min
+      - - Canhão monitor
+        - null
+        - null
+        - Não
+        - Não
+        - null
+        - null
+        - Sim
+        - null
+        - null
+        - Sim (portátil)
+        - null
+        - null
+        - Sim (portátil)
+        - Sim (Auto oscilatório)
+      - - Pressão mínima no canhão monitor
+        - null
+        - null
+        - '-'
+        - '-'
+        - null
+        - null
+        - 56 mca
+        - null
+        - null
+        - 56 mca
+        - null
+        - null
+        - 56 mca
+        - 56 mca
+      - - Vazão canhão monitor
+        - null
+        - null
+        - '-'
+        - '-'
+        - null
+        - null
+        - 800l/min
+        - null
+        - null
+        - 800l/min
+        - null
+        - null
+        - 800l/min
+        - 800l/min
+      - - Sistema com bicos aspersores
+        - null
+        - null
+        - Não
+        - Não
+        - null
+        - null
+        - Não
+        - null
+        - null
+        - Sim
+        - null
+        - null
+        - Sim
+        - Sim
+      - - Taxa mínima dos Aspersores
+        - null
+        - null
+        - '-'
+        - '-'
+        - null
+        - null
+        - '-'
+        - null
+        - null
+        - 5lpm/m2
+        - null
+        - null
+        - 5lpm/m2
+        - 5lpm/m2
+      - - Funcionamento simultâneo (para efeitos de cálculo)
+        - null
+        - null
+        - 2 (duas) linhas manuais
+        - 2 (duas)linhas manuais
+        - null
+        - null
+        - 2 (duas)linhas manuais e 01 (um) canhão monitor
+        - null
+        - null
+        - Demanda de água somente para os aspersores
+        - null
+        - null
+        - Demanda de água somente para os aspersores
+        - Demanda de água somente para os aspersores
+      - - Tempo
+        - null
+        - null
+        - 30 mim
+        - 40 mim
+        - null
+        - null
+        - 60 mim
+        - null
+        - null
+        - 120min
+        - null
+        - null
+        - 180min
+        - 180min
+      - - 'Observações: 1) Essa tabela se aplica quando o somatório dos recipientes for maior que 15 m³
+          (alínea f de 5.1.6), todavia, para aplicação dos critérios é analisado a capacidade de armazenamento
+          individual do recipiente. 2) Caso as baterias de recipientes de GLP com capacidade individual
+          de, no máximo, 60 m³ estiverem com afastamentos de 15 m ou mais, entre si, podem ser consideradas
+          isoladas. 3) Deve ser previsto resfriamento para a esfera submetida ao incêndio, bem como para
+          as esferas e baterias de recipientes de GLP cuja distância entre costados seja inferior a 30
+          m. 4) Para recipientes de volume individual inferior a 200 m³ submetida ao incêndio, devem ser
+          resfriados todos os recipientes, independentemente de sua capacidade volumétrica cuja distância,
+          entre costados, seja inferior a 15 m. 5) Um ou mais recipientes de volume individual igual ou
+          superior a 200 m³ devem ser considerados equivalentes a uma esfera. 6) Quando o suprimento de
+          água sair da rede de incêndio da edificação/área de risco deve-se somar a maior vazão estabelecida,
+          ao valor correspondente ao uso de dois canhões monitores fixos (vazão individual por canhões
+          de 1.200 lpm). 7) A localização dos cilindros e esferas de GLP deve atender às normas técnicas
+          oficiais. 8) O armazenamento de GLP em tanques subterrâneos não necessita de proteção contra
+          incêndios por resfriamento. 9) O alcance horizontal do jato compacto produzido pelas linhas
+          manuais de resfriamento deve ser medido da saída do esguicho ao ponto de queda do jato, porém
+          este alcance deve ser desconsiderado quando da aplicação de 6.5.1. 10) Ver alínea “g” de 5.1.6.'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    - bbox:
+      - 156.25
+      - 83.42
+      - 196.05
+      - 114.92
+      linhas:
+      - - Inferior a
+      - - 10 m³
+    - bbox:
+      - 421.73
+      - 83.42
+      - 465.56
+      - 114.92
+      linhas:
+      - - Superior a
+      - - 120 m³
 notas:
 - 'Observações da tabela:'
 - 1) Essa tabela se aplica quando o somatório dos recipientes for maior que 15 m³ (alínea f de 5.1.6),
@@ -254,6 +551,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 3
+  bbox: *id001
+  texto: verificada

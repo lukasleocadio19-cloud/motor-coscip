@@ -168,6 +168,543 @@ caminhos:
     - - '- No eventual afastamento do funcionário que exerça a função de BC, os responsáveis pelos imóveis,
         estabelecimentos ou áreas de risco'
     - - deverão designar substituto devidamente capacitado como BC.
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 41.83
+      - 57.04
+      - 549.28
+      - 544.53
+      linhas:
+      - - Grupo
+        - null
+        - Ocupação/Uso
+        - Divisão
+        - Descrição
+        - Composição da Brigada de Incêndio
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - Área total construída
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+        - 5000m2 a
+        - null
+        - ''
+        - ''
+        - 10.000 m2 a
+        - null
+        - ''
+        - Acima de 30.000 m2
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 10000 m2
+        - null
+        - null
+        - null
+        - 30.000 m2
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - Número de Bombeiros Civis por turno
+        - Número de Bombeiros Civis por turno
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - M
+        - null
+        - Especial
+        - M-5
+        - Silos
+        - Não exigível
+        - null
+        - null
+        - null
+        - Não exigível
+        - null
+        - null
+        - null
+        - Obs7
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - null
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - null
+        - ''
+        - null
+      - - null
+        - null
+        - null
+        - M-6
+        - Estrutura temporária
+        - Vide NT 5-04
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - M-7
+        - Edificação mista
+        - Não exigível
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - M-8
+        - Quiosque
+        - Não exigível
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - M-9
+        - Áreas e atividades de exploração de recursos naturais
+        - Não exigível
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - null
+        - ''
+        - null
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+      - - ''
+        - 'Obs1: Edificações da divisão A3, A5 e M4 com ATC construída acima de 30.000, pegarão 01 bombeiro
+          civil a cada 60.000 m2'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - null
+        - 'Obs2: Mais um bombeiro para cada 15.000'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - 'Obs3: Mais um bombeiro para cada 30.000'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - 'Obs4: Mais um bombeiro para cada 45.000'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - 'Obs5: Mais um bombeiro para cada 60.000'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - 'Obs6: Para as edificações da divisão D-5 serão exigidos treinamento de Brigada Voluntária para
+          todos os agentes executam as atividades'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - carcereiras.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - 'Obs7: Edificações da divisão G3 e I1 com ATC construída acima de 30.000, pegarão 01 bombeiro
+          civil a cada 30.000 m2.'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - 'Obs8: Edificações da divisão J1 e J2 com ATC construída acima de 30.000, pegarão 01 bombeiro
+          civil a cada 45.000 m2.'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - '- A quantidade a ser exigida de BC não excederá o quantitativo máximo de 08 BC. Porém por conveniência
+          e decisão do plano de'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - emergência contra incêndio e pânico esse número poderá ser superada, se houver acordo entre
+          o profissional responsável pelo
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - plano e o proprietário.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - '- No eventual afastamento do funcionário que exerça a função de BC, os responsáveis pelos imóveis,
+          estabelecimentos ou áreas de risco'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - deverão designar substituto devidamente capacitado como BC.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    - bbox:
+      - 188.45
+      - 156.46
+      - 290.5
+      - 175.05
+      linhas:
+      - - Edificação histórica com
+      - - isenção de canalização ****
+    - bbox:
+      - 188.45
+      - 198.02
+      - 290.5
+      - 216.45
+      linhas:
+      - - Edificação histórica com
+      - - isenção de canalização ****
+    - bbox:
+      - 188.45
+      - 239.48
+      - 290.5
+      - 258.05
+      linhas:
+      - - Edificação histórica com
+      - - isenção de canalização ****
+    - bbox:
+      - 188.45
+      - 281.01
+      - 290.5
+      - 299.47
+      linhas:
+      - - Edificação histórica com
+      - - isenção de canalização ****
+    - bbox:
+      - 188.45
+      - 334.45
+      - 290.5
+      - 352.88
+      linhas:
+      - - Edificação histórica com
+      - - isenção de canalização ****
 notas:
 - 'Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.:
   "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação
@@ -189,9 +726,11 @@ resultado:
   estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 6
+  bbox: *id001
+  texto: divergente
   motivo: número de linhas/colunas diferente
   forma:
   - - 5

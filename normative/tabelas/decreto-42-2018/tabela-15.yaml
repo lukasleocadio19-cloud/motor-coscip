@@ -248,7 +248,435 @@ caminhos:
       - X
       - X
       - X
-  geometrica: null
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.9
+      - 53.48
+      - 552.52
+      - 626.29
+      linhas:
+      - - Tabela 15 – Exigências para edificações do grupo G (divisões G-1 e G-2) com área superior a
+          900m2
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ou superior a 02 pavimentos.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Grupo de ocupação e uso
+        - GRUPO G – SERVIÇOS AUTOMOTIVOS E ASSEMELHADOS
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Divisão
+        - G-1 e G-2
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - Classificação quanto ao nº de pavimentos e à altura (em metros)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - Acima de
+        - ''
+      - - Medidas de Segurança contra Incêndio e Pânico
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - Térrea
+        - 2pav
+        - 3pav
+        - 4, 5 e 6pav
+        - 6pav com
+        - H > 30m
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - H ≤ 30m
+        - ''
+      - - Extintores11
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrantes e mangotinhos11
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Chuveiros automáticos 11
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X1
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Sinalização de segurança 11
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Iluminação de Emergência 11
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Alarme de Incêndio 11
+        - X2
+        - X2
+        - X2
+        - X2
+        - X2
+        - X2
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Detecção de Incêndio 11
+        - '-'
+        - '-'
+        - '-'
+        - X3
+        - X3
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Saídas de Emergência 11
+        - X
+        - X4
+        - X4
+        - X5
+        - X5
+        - X 5, 6, 7
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Controle de fumaça 11
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X8
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrante urbano
+        - X9
+        - X9
+        - X9
+        - X9
+        - X9
+        - X9
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Acesso de viatura em edificações
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Compartimentação Vertical 11
+        - '-'
+        - '-'
+        - '-'
+        - X10
+        - X10
+        - X10
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Segurança Estrutural contra Incêndio
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Controle de Materiais de Acabamento
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 'OBSERVAÇÕES ESPECÍFICAS:'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 1- Exigido apenas para as edificações com mais de 10 pavimentos.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 2- Deve haver pelo menos um acionador manual, por pavimento, a no máximo 5 m da saída de emergência.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 3- Este sistema poderá ser substituído por chuveiros automáticos nas edificações com até 10
+          pavimentos.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 4- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 5- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 6- Deve haver, no mínimo, 02 escadas de emergência para edificações da divisão G-2 com 25 ou
+          mais pavimentos.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 7- Deve haver Elevador de Emergência para altura maior que 60m.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 8- Acima de 60m de altura, sendo dispensado caso a edificação seja aberta lateralmente.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 9- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 10- Exigido para as compartimentações das fachadas e selagens dos shafts e dutos de instalações.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 11- As ocupações da divisão G-1 do tipo automatizado (garagens automáticas), abertas ou fechadas,
+          em função de suas
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - características arquitetônicas e ocupacionais, poderão ter as medidas de segurança dispensadas
+          ou adequadas
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - conforme estabelecido em Nota Técnica específica.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 'OBSERVAÇÕES GERAIS:'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar
+          as prescrições da Seção II
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - do Capítulo IV deste Código;
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
 notas:
 - As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as
   células com a nota correspondente.
@@ -257,6 +685,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

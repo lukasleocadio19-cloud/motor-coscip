@@ -451,7 +451,670 @@ caminhos:
       - X
       - X
       - X
-  geometrica: null
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id002
+      - 42.82
+      - 53.48
+      - 552.63
+      - 692.98
+      linhas:
+      - - Tabela 12 – Exigências para edificações do grupo F (divisões F-5, F-8 e F-11) com área superior
+          a 900 m2
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ou superior a 02 pavimentos.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Grupo de ocupação e uso
+        - GRUPO F – LOCAL DE REUNIÃO DE PÚBLICO
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - F-5 (arte cênica e auditório) e
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Divisão
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - F-8 (local para refeição)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - F-11 (clubes sociais)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - Classificação quanto ao nº de pavimentos e
+        - null
+        - null
+        - null
+        - null
+        - null
+        - Classificação quanto ao nº de pavimentos
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - à altura (em metros)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - e à altura (em metros)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Medidas de Segurança contra
+        - ''
+        - ''
+        - ''
+        - ''
+        - Acima
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - Acima de
+        - null
+      - - Incêndio e Pânico
+        - null
+        - null
+        - null
+        - 4, 5 e
+        - de 6pav
+        - H >
+        - null
+        - null
+        - null
+        - 4, 5 e
+        - null
+        - H >
+      - - null
+        - Térrea
+        - 2pav
+        - 3pav
+        - null
+        - null
+        - null
+        - Térrea
+        - 2pav
+        - 3pav
+        - null
+        - 6pav com
+        - null
+      - - ''
+        - null
+        - null
+        - null
+        - 6pav
+        - com
+        - 30m
+        - null
+        - null
+        - null
+        - 6pav
+        - null
+        - 30m
+      - - null
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+        - null
+        - ''
+        - ''
+        - ''
+        - null
+        - H ≤ 30m
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - ''
+        - H ≤ 30m
+        - ''
+        - null
+        - null
+        - null
+        - ''
+        - null
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+        - null
+      - - Extintores
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrantes e mangotinhos
+        - X
+        - X
+        - X1
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X1
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Chuveiros automáticos
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Sinalização de segurança
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Iluminação de Emergência
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Alarme de Incêndio
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Detecção de Incêndio
+        - X2
+        - X2
+        - X2
+        - X
+        - X
+        - X
+        - '-'
+        - '-'
+        - '-'
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Saídas de Emergência
+        - X
+        - X3
+        - X3
+        - X4
+        - X4, 5
+        - X4, 5, 6
+        - X
+        - X3
+        - X3
+        - X4
+        - X4, 5
+        - X4, 5, 6
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Plano de emergência
+        - X7
+        - X7
+        - X7
+        - X7
+        - X7
+        - X7
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Controle de fumaça
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X8
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X8
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrante urbano
+        - X9
+        - X9
+        - X9
+        - X9
+        - X9
+        - X9
+        - X9
+        - X9
+        - X9
+        - X9
+        - X9
+        - X9
+      - - Acesso de viatura em
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - null
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - edificações
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Compartimentação Vertical
+        - '-'
+        - '-'
+        - '-'
+        - X10
+        - X10
+        - X
+        - '-'
+        - '-'
+        - '-'
+        - X10
+        - X10
+        - X
+      - - Segurança Estrutural contra
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - null
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - Incêndio
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Controle de Materiais de Acabamento
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - 'OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com ATC superior a 600m². 2-
+          Será exigido somente para as áreas de depósitos, almoxarifados e assemelhados superiores a 250m².
+          3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica.
+          4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.
+          5- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir
+          no mínimo duas escadas de emergência. 6- Deve haver Elevador de Emergência para altura maior
+          que 60m. 7- Somente para locais com público acima de 500 pessoas. 8- Exigido para edificações
+          com altura superior a 60m. 9- Exigido apenas para as edificações com ATC igual ou superior a
+          1.500m². 10- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e
+          chuveiros automáticos; exceto para as compartimentações das fachadas e selagens dos shafts e
+          dutos de instalações. OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição
+          da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código;
+          b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c)
+          Nos locais de concentração de público, antes do início de cada evento, é obrigatória a explanação
+          ao público da localização das saídas de emergência, bem como das medidas de segurança contra
+          incêndio existentes no local; d) Observar ainda as exigências para os riscos específicos das
+          respectivas Notas Técnicas.'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
 notas:
 - As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as
   células com a nota correspondente.
@@ -460,6 +1123,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id002
+  texto: verificada

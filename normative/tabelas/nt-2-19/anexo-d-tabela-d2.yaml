@@ -55,15 +55,65 @@ caminhos:
     - - 1,5
       - Alta
       - Laboratórios químicos, oficinas de pintura de automóveis
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 62.85
+      - 346.97
+      - 512.09
+      - 395.21
+      linhas:
+      - - ''
+        - Valores de  n
+        - null
+        - null
+        - ''
+      - - Existência de chuveiros automáticos
+        - null
+        - Brigada contra incêndio
+        - Existência de detecção automática
+        - null
+      - -  =0,60 n1
+        - null
+        -  = 0,90 n1
+        -  =0,90 n1
+        - null
+    - bbox: &id001
+      - 54.88
+      - 469.27
+      - 534.19
+      - 572.35
+      linhas:
+      - - Valores de  s2
+        - Risco de ativação do incêndio
+        - Exemplos de ocupação
+      - - 0,85
+        - Pequena
+        - Escolas, galerias de arte, parques aquáticos, igrejas e museus
+      - - 1,0
+        - Normal
+        - Bibliotecas, cinemas, correios, consultórios médicos, escritórios, farmácias, frigoríficos,
+          hotéis, livrarias, hospitais, laboratórios fotográficos, indústrias de papel, oficinas elétricas
+          ou mecânicas, residências, restaurantes, teatros, depósitos em geral
+      - - 1,2
+        - Média
+        - Montagens de automóveis, hangares, indústrias mecânicas
+      - - 1,5
+        - Alta
+        - Laboratórios químicos, oficinas de pintura de automóveis
 notas: []
 estado: verificada
 resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 1
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada
   celulas:
   - linha: 0
     coluna: 0

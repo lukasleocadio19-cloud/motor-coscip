@@ -50,6 +50,43 @@ caminhos:
         ou quando utilizado para introdução de ar; - Ser dimensionado para uma velocidade máxima de 10
         m/s quando for construído em alvenaria ou gesso acartonado; - Ser dimensionado para uma velocidade
         máxima de 15 m/s quando for construído em chapa metálica'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.86
+      - 321.11
+      - 283.62
+      - 682.15
+      linhas:
+      - - ''
+        - controle de fumaça
+        - ''
+        - ''
+        - Controle de fumaça
+        - ''
+      - - null
+        - natural
+        - null
+        - null
+        - mecânico
+        - null
+      - - '- Ser construídos em materiais incombustíveis e ter resistência interna à fumaça e gases quentes
+          de 60 min; - Apresentar uma estanqueidade satisfatória do ar; - Ter a seção mínima igual às
+          áreas livres das aberturas que o servem em cada piso; - Ter a relação entre as dimensões transversais
+          de um duto não superior a dois; - Os dutos coletores verticais não podem comportar mais de dois
+          desvios e qualquer um deles deve fazer com a vertical um ângulo máximo de 20º .'
+        - null
+        - null
+        - '- Ser construídos em materiais incombustíveis e ter resistência interna à fumaça e gases quentes
+          de 60 min; - Apresentar uma estanqueidade satisfatória do ar; - Ter resistência externa a fogo
+          por 60 min, quando fizer parte de um sistema utilizado para extrair fumaça de diversos ambientes
+          ou quando utilizado para introdução de ar; - Ser dimensionado para uma velocidade máxima de
+          10 m/s quando for construído em alvenaria ou gesso acartonado; - Ser dimensionado para uma velocidade
+          máxima de 15 m/s quando for construído em chapa metálica'
+        - null
+        - null
 notas:
 - 'Fonte indicada: CBMERJ.'
 estado: verificada
@@ -57,6 +94,23 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 1
+    coluna: 0
+    a: '- Ser construídos em materiais incombustíveis e ter resistência interna à fumaça e gases quentes
+      de 60 min; - Apresentar uma estanqueidade satisfatória do ar; - Ter a seção mínima igual às áreas
+      livres das aberturas que o servem em cada piso; - Ter a relação entre as dimensões transversais
+      de um duto não superior a dois; - Os dutos coletores verticais não podem comportar mais de dois
+      desvios e qualquer um deles deve fazer com a vertical um ângulo máximo de 20º.'
+    b: '- Ser construídos em materiais incombustíveis e ter resistência interna à fumaça e gases quentes
+      de 60 min; - Apresentar uma estanqueidade satisfatória do ar; - Ter a seção mínima igual às áreas
+      livres das aberturas que o servem em cada piso; - Ter a relação entre as dimensões transversais
+      de um duto não superior a dois; - Os dutos coletores verticais não podem comportar mais de dois
+      desvios e qualquer um deles deve fazer com a vertical um ângulo máximo de 20º .'
+    estado: verificada
+    score: 99.9

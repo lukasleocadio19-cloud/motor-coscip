@@ -81,6 +81,100 @@ caminhos:
     - - Maior que 3.785,01
       - ¼ da soma dos diâmetros dos tanques adjacentes
       - 120,00
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 312.71
+      - 375.1
+      - 553.76
+      - 741.18
+      linhas:
+      - - ''
+        - Capacidade
+        - ''
+        - Entre tanques (m)
+        - ''
+        - Edificações e
+        - ''
+      - - null
+        - volumétrica
+        - null
+        - null
+        - null
+        - limites da
+        - null
+      - - null
+        - (m3)
+        - null
+        - null
+        - null
+        - propriedade (m)
+        - null
+      - - 0,50 a 2,00
+        - null
+        - null
+        - '0'
+        - 1,50
+        - null
+        - null
+      - - 2,01 a 8,00
+        - null
+        - null
+        - '1'
+        - 7,50
+        - null
+        - null
+      - - 8,01 a 120,00
+        - null
+        - null
+        - 1,50
+        - 15,00
+        - null
+        - null
+      - - 120,01 a 265,00
+        - null
+        - null
+        - ¼ da soma dos diâmetros dos tanques adjacentes
+        - 23,00
+        - null
+        - null
+      - - 265,01 a 341,00
+        - null
+        - null
+        - ¼ da soma dos diâmetros dos tanques adjacentes
+        - 30,00
+        - null
+        - null
+      - - 341,01 a 454,00
+        - null
+        - null
+        - ¼ da soma dos diâmetros dos tanques adjacentes
+        - 38,00
+        - null
+        - null
+      - - 454,01 a 757,00
+        - null
+        - null
+        - ¼ da soma dos diâmetros dos tanques adjacentes
+        - 61,00
+        - null
+        - null
+      - - 757,01 a 3.785,00
+        - null
+        - null
+        - ¼ da soma dos diâmetros dos tanques adjacentes
+        - 91,00
+        - null
+        - null
+      - - Maior que 3.785,01
+        - null
+        - null
+        - ¼ da soma dos diâmetros dos tanques adjacentes
+        - 120,00
+        - null
+        - null
 notas:
 - 'Fonte indicada na página: IT 28/2018 – CBPMESP – Adaptado.'
 inconsistencias_da_fonte:
@@ -91,6 +185,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

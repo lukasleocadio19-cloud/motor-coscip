@@ -1189,7 +1189,7 @@ Tabela 1 - Continuação
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X10 | X10 | X10 | X11 | X11 | X11 |
 
-Fonte: Decreto 42/2018, página 29, Tabela 5; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 29, Tabela 5; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 5 p29 -->
 
@@ -1265,7 +1265,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 30, Tabela 6; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 30, Tabela 6; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 6 p30 -->
 
@@ -1341,7 +1341,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 31, Tabela 7; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 31, Tabela 7; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 7 p31 -->
 
@@ -1417,7 +1417,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 32, Tabela 8; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 32, Tabela 8; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 8 p32 -->
 
@@ -1493,7 +1493,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 33, Tabela 9; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 33, Tabela 9; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 9 p33 -->
 
@@ -1578,7 +1578,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 34, Tabela 10; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 34, Tabela 10; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 10 p34 -->
 
@@ -1694,7 +1694,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 35, Tabela 11; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 35, Tabela 11; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 11 p35 -->
 
@@ -1782,7 +1782,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 36, Tabela 12; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 36, Tabela 12; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 12 p36 -->
 
@@ -1866,7 +1866,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Segurança Estrutural contra Incêndio | - | - | - | - | - | - | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X2 | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 37, Tabela 13; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 37, Tabela 13; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 13 p37 -->
 
@@ -1943,7 +1943,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 38, Tabela 14; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 38, Tabela 14; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 14 p38 -->
 
@@ -2040,7 +2040,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 39, Tabela 15; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 39, Tabela 15; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 15 p39 -->
 
@@ -2127,7 +2127,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 40, Tabela 16; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 40, Tabela 16; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 16 p40 -->
 
@@ -2235,7 +2235,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 | Sistema de espuma | X8 | X8 | X8 | X8 | X8 | X8 | - | - | - | - | - | - |
 
-Fonte: Decreto 42/2018, página 41, Tabela 17; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 41, Tabela 17; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 17 p41 -->
 
@@ -2318,7 +2318,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 42, Tabela 18; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 42, Tabela 18; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 18 p42 -->
 
@@ -2407,7 +2407,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 43, Tabela 19; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 43, Tabela 19; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 19 p43 -->
 
@@ -2489,7 +2489,7 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 44, Tabela 20; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 44, Tabela 20; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 20 p44 -->
 
@@ -2568,7 +2568,7 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | X | X | X | X | X | X |
 
-Fonte: Decreto 42/2018, página 45, Tabela 21; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 45, Tabela 21; conferida em 2026-09-29 (visual + geometrica).
 As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
 <!-- /tabela-conferida: Tabela 21 p45 -->
 

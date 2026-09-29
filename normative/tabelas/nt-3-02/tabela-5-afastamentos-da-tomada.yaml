@@ -41,6 +41,40 @@ caminhos:
       - 3,00 m
     - - Reservatórios que contenham outros fluidos inflamáveis.
       - 6,00 m
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 321.67
+      - 582.13
+      - 529.76
+      - 729.58
+      linhas:
+      - - Local
+        - ''
+        - Afastamento
+        - ''
+      - - null
+        - null
+        - mínimo (d)
+        - null
+      - - Ralos, rebaixos ou canaletas e veículos abastecedores.
+        - 1,50 m
+        - null
+        - null
+      - - Aberturas das edificações (janelas, portas, tomadas de ar e similares).
+        - 3,00 m
+        - null
+        - null
+      - - Fonte de ignição e materiais de fácil combustão.
+        - 3,00 m
+        - null
+        - null
+      - - Reservatórios que contenham outros fluidos inflamáveis.
+        - 6,00 m
+        - null
+        - null
 notas:
 - 'Fonte indicada na página: ABNT NBR 13523:2019.'
 - Pelo item 5.6.3, com a tomada protegida por paredes e cobertura com TRRF = 120 min, os afastamentos
@@ -53,6 +87,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

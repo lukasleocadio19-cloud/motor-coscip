@@ -323,6 +323,448 @@ caminhos:
     - - Edificação histórica com
     - - isenção de canalização
     - - '****'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 41.78
+      - 57.28
+      - 541.47
+      - 730.33
+      linhas:
+      - - Grupo
+        - Ocupação/Uso
+        - Divisão
+        - ''
+        - Composição da Brigada de Incêndio
+        - Composição da Brigada de Incêndio
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Área total construída
+        - Área total construída
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - ''
+        - ''
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Descrição
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - null
+        - null
+        - ''
+        - 5000m2 a 10000 m2
+        - null
+        - 10000 m2 a 30000 m2
+        - Acima de 30.000m2
+      - - null
+        - null
+        - null
+        - null
+        - Número de Bombeiros Civis por turno
+        - Número de Bombeiros Civis por turno
+        - null
+        - null
+      - - G
+        - Serviço automotivo e assemelhado
+        - G-1
+        - Garagem sem acesso de público
+        - Não exigível
+        - null
+        - '1'
+        - Obs4
+      - - null
+        - null
+        - null
+        - Edificação histórica com
+        - ''
+        - null
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - isenção de canalização
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '****'
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - G-2
+        - Garagem com acesso de público
+        - Não exigível
+        - null
+        - '1'
+        - Obs4
+      - - null
+        - null
+        - null
+        - Edificação histórica com
+        - ''
+        - null
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - isenção de canalização
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '****'
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - G-3
+        - Galpão garagem
+        - Não exigível
+        - null
+        - '1'
+        - Obs3
+      - - null
+        - null
+        - null
+        - Edificação histórica com
+        - ''
+        - null
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - isenção de canalização
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '****'
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - G-4
+        - Postos de combustível
+        - Não exigível
+        - null
+        - '1'
+        - Obs4
+      - - null
+        - null
+        - null
+        - Edificação histórica com
+        - ''
+        - null
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - isenção de canalização
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '****'
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - G-5
+        - Serviço de conservação, manutenção e reparos
+        - Não exigível
+        - null
+        - '1'
+        - Obs4
+      - - null
+        - null
+        - null
+        - Edificação histórica com
+        - ''
+        - null
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - isenção de canalização
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '****'
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - G-6
+        - Hangares
+        - Não exigível
+        - null
+        - '1'
+        - Obs5
+      - - null
+        - null
+        - null
+        - Edificação histórica com
+        - ''
+        - null
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - isenção de canalização
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '****'
+        - null
+        - null
+        - null
+        - null
+      - - H
+        - Serviço de saúde
+        - H-1
+        - Hospital e assemelhado
+        - '1'
+        - null
+        - '1'
+        - Obs3
+      - - null
+        - null
+        - null
+        - Edificação histórica com
+        - ''
+        - null
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - isenção de canalização
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '****'
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - H-2
+        - Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais
+        - Não exigível
+        - null
+        - '1'
+        - Obs3
+      - - null
+        - null
+        - null
+        - Edificação histórica com
+        - ''
+        - null
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - isenção de canalização
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '****'
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - H-3
+        - Hospital veterinário e assemelhados
+        - Não exigível
+        - null
+        - '1'
+        - Obs4
+      - - null
+        - null
+        - null
+        - Edificação histórica com
+        - ''
+        - null
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - isenção de canalização
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '****'
+        - null
+        - null
+        - null
+        - null
+      - - I
+        - Industrial
+        - I-1
+        - Industrial 1
+        - Não exigível
+        - null
+        - Não exigível
+        - Obs4
+      - - null
+        - null
+        - null
+        - Edificação histórica com
+        - ''
+        - null
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - isenção de canalização
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '****'
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - I-2
+        - Industrial 2
+        - Não exigível
+        - null
+        - '1'
+        - Obs4
+      - - null
+        - null
+        - null
+        - Edificação histórica com
+        - ''
+        - null
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - isenção de canalização
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '****'
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - I-3
+        - Industrial 3
+        - '1'
+        - null
+        - '2'
+        - Obs3
+      - - null
+        - null
+        - null
+        - Edificação histórica com
+        - ''
+        - null
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - isenção de canalização
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '****'
+        - null
+        - null
+        - null
+        - null
 notas:
 - 'Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.:
   "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação
@@ -338,9 +780,11 @@ resultado:
   estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: divergente
   motivo: número de linhas/colunas diferente
   forma:
   - - 5

@@ -127,6 +127,580 @@ caminhos:
     - - '- Conhecer os equipamentos de'
     - - reanimação cardiorespiratória (DEA,
     - - pocketmask).
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 49.85
+      - 56.63
+      - 543.93
+      - 392.08
+      linhas:
+      - - ''
+        - PRODUTOS PERIGOSOS – A.5
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - ''
+        - Parte teórica
+        - null
+        - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - Parte prática
+        - null
+        - null
+        - ''
+      - - Módulo
+        - Módulo
+        - Objetivo
+        - Objetivo
+        - null
+        - ''
+        - Carga
+        - ''
+        - Objetivo
+        - Objetivo
+        - ''
+        - Carga
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - horária
+        - null
+        - null
+        - null
+        - null
+        - Horária
+        - null
+      - - 01 Legislação
+        - null
+        - '- Conhecer a legislação que regulamenta a identificação, transporte, armazenagem, manipulação
+          e as emergências envolvendo produtos perigosos.'
+        - null
+        - null
+        - 1h
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+        - null
+      - - 02 Conceitos
+        - null
+        - '- Conhecer as classes de riscos, os sistemas de identificação, painel de segurança, rótulo
+          de risco, ficha de emergência e FISPQ.'
+        - null
+        - null
+        - 1h
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+        - null
+      - - 03 Guia de procediment os de emergência
+        - null
+        - '- Conhecer e saber consultar o manual de emergências com produtos perigosos da ABIQUIM/PRÓ-QUÍMICA.'
+        - null
+        - null
+        - 2h
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+        - null
+      - - 04 EPI e EPR
+        - null
+        - '- Conhecer e demonstrar na prática o conhecimento dos equipamentos de proteção individual e
+          respiratória nível A, B e C específicos para atendimento a produtos perigosos.'
+        - null
+        - null
+        - 1h
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+        - null
+      - - 05 Ações Operacionai s
+        - null
+        - '- Conhecer o sistema de organização da área do sinistro em zonas de segurança, apoio de acesso
+          limitado (quente, morna e fria); - Conhecer os equipamentos e métodos de contenção e confinamento
+          de derramamento de produtos perigosos.'
+        - null
+        - null
+        - 1h
+        - null
+        - null
+        - '- Demonstrar na prática a aplicação e utilização de barreiras de contenção, absorção, mantas
+          absorventes, matérias adsorventes e absorventes orgânicos; - Demonstrar na prática as técnicas
+          de resgate de vítimas contaminadas e descontaminação de vítimas e ambientes.'
+        - null
+        - 2h
+        - null
+        - null
+      - - ''
+        - null
+        - Total
+        - null
+        - null
+        - 6h
+        - null
+        - null
+        - Total
+        - null
+        - 2h
+        - null
+        - null
+    - bbox:
+      - 49.85
+      - 403.27
+      - 543.93
+      - 779.54
+      linhas:
+      - - ''
+        - PRIMEIROS SOCORROS – A.6
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - ''
+        - Parte teórica
+        - null
+        - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - Parte prática
+        - null
+        - ''
+      - - Módulo
+        - null
+        - Objetivo
+        - null
+        - null
+        - Carga horária
+        - null
+        - null
+        - Objetivo
+        - null
+        - Carga Horária
+        - null
+      - - 01 Legislação Específica
+        - null
+        - ''
+        - '- Conhecer a legislação que regulamenta'
+        - ''
+        - 30 min.
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+      - - null
+        - null
+        - null
+        - os procedimentos de primeiros-socorros
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - para o nível equivalente a Bombeiro
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - profissional civil.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 02 Procedimentos Iniciais
+        - null
+        - ''
+        - '- Conhecer os procedimentos para'
+        - ''
+        - 1 h.
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+      - - null
+        - null
+        - null
+        - avaliação da segurança do local,
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - números de vítimas e os procedimentos
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - de biossegurança;
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '- Conhecer os procedimentos para'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - acionamento e comunicação protocolar
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - com os serviços públicos e privados de
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - socorro de vítimas e ações para
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - localização dos hospitais de referência
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - nas proximidades do local de trabalho;
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '- Conhecer os procedimentos para o'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - planejamento das ações conforme
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - definido previamente no plano de
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - emergência da planta.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 03 Avaliação Inicial
+        - null
+        - ''
+        - '- Conhecer, avaliar e identificar os riscos'
+        - ''
+        - 30 min.
+        - null
+        - null
+        - Avaliar e reconhecer os riscos iminentes, os mecanismos de lesão número de vítimas e o exame
+          físico destas.
+        - null
+        - 30 min.
+        - null
+      - - null
+        - null
+        - null
+        - iminentes, os mecanismos de lesão,
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - número de vítimas e o exame físico
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - sumário destas.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 04 Vias Aéreas
+        - null
+        - ''
+        - '- Conhecer os sinais e sintomas de'
+        - ''
+        - 30 min.
+        - null
+        - null
+        - Promover a desobstrução utilizando a técnica adequada.
+        - null
+        - 1h.
+        - null
+      - - null
+        - null
+        - null
+        - obstruções de vias aéreas superiores em
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - adultos, crianças e bebês conscientes e
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - inconscientes, e promover a
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - desobstrução quando indicado.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 05 SBV (Suporte Básico de Vida)
+        - null
+        - ''
+        - '- Apresentar as técnicas do SBV para'
+        - ''
+        - 2h
+        - null
+        - null
+        - Praticar o protocolo do SBV (Suporte Básico de Vida)
+        - null
+        - 2h.
+        - null
+      - - null
+        - null
+        - null
+        - adultos, crianças e bebês;
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '- Conhecer os equipamentos de'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - reanimação cardiorespiratória (DEA,
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - pocketmask).
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
 notas:
 - 'Fonte indicada: ABNT NBR 14608. Continua na página 15 (módulos 06 a 15 e total).'
 estado: divergente
@@ -134,9 +708,11 @@ resultado:
   estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: divergente
   motivo: número de linhas/colunas diferente
   forma:
   - - 1
@@ -149,36 +725,11 @@ resultado:
     - 5
   - - 1
     - 2
-    - 5
+    - 8
+    - 2
     - 3
-    - 1
-    - 1
-    - 1
     - 3
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
+    - 3
+    - 3
     - 5
-    - 1
-    - 1
-    - 1
-    - 5
-    - 1
-    - 1
-    - 1
-    - 1
-    - 5
-    - 1
-    - 1
-    - 1
-    - 1
+    - 4

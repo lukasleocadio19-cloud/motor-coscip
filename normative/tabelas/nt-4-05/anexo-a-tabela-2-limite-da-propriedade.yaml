@@ -53,6 +53,66 @@ caminhos:
       - 91,0
     - - Maior que 3.785
       - 122,0
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 70.44
+      - 84.06
+      - 518.16
+      - 330.48
+      linhas:
+      - - ''
+        - Capacidade (m³)
+        - ''
+        - ''
+        - Distância (m)
+        - ''
+      - - Maior que 120 a 265
+        - null
+        - null
+        - 23,0
+        - null
+        - null
+      - - Maior que 265 a 341
+        - null
+        - null
+        - 30,0
+        - null
+        - null
+      - - Maior que 341 a 454
+        - null
+        - null
+        - 38,0
+        - null
+        - null
+      - - Maior que 454 a 757
+        - null
+        - null
+        - 61,0
+        - null
+        - null
+      - - Maior que 757 a 3.785
+        - null
+        - null
+        - 91,0
+        - null
+        - null
+      - - Maior que 3.785
+        - null
+        - null
+        - 122,0
+        - null
+        - null
+      - - 'Observação: a) Ver na Tabela 1 deste anexo a indicação da distância de segurança recomendada
+          à divisa de propriedade ou via pública para recipientes estacionários com capacidade volumétrica
+          individual inferior a 120 m³.'
+        - null
+        - null
+        - null
+        - null
+        - null
 notas:
 - 'Observação da tabela: a) Ver na Tabela 1 deste anexo a indicação da distância de segurança recomendada
   à divisa de propriedade ou via pública para recipientes estacionários com capacidade volumétrica individual
@@ -66,6 +126,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

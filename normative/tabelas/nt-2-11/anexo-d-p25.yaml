@@ -276,6 +276,248 @@ caminhos:
       - Não exigível
       - Obs1
     - - Edificação histórica com isenção de canalização ****
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 48.8
+      - 57.28
+      - 562.67
+      - 657.9
+      linhas:
+      - - Grupo
+        - Ocupação/Uso
+        - Divisão
+        - Descrição
+        - Composição da Brigada de Incêndio
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Área total construída
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - null
+      - - ''
+        - ''
+        - null
+        - null
+        - 5000m2 a 10000 m2
+        - 10.000 m2 a 30.000 m2
+        - Acima de 30.000 m2
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Número de Bombeiros Civis por turno
+        - null
+        - null
+        - null
+      - - J
+        - Depósito
+        - J-1
+        - Depósitos de material incombustível
+        - Não exigível
+        - Não exigível
+        - Obs8
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+        - null
+      - - null
+        - null
+        - J-2
+        - Todo tipo de Depósito
+        - Não exigível
+        - Não exigível
+        - Obs8
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+        - null
+      - - null
+        - null
+        - J-3
+        - Todo tipo de Depósito
+        - '1'
+        - '1'
+        - Obs4
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+        - null
+      - - null
+        - null
+        - J-4
+        - Todo tipo de Depósito
+        - '1'
+        - '2'
+        - Obs4
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - L
+        - Explosivos ou munições
+        - L-1
+        - Comércio
+        - '1'
+        - '2'
+        - Obs3
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+        - null
+      - - null
+        - null
+        - L-2
+        - Indústria
+        - '1'
+        - '2'
+        - Obs3
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+        - null
+      - - ''
+        - ''
+        - L-3
+        - Depósito
+        - '1'
+        - '2'
+        - Obs3
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+        - null
+      - - M
+        - Especial
+        - M-1
+        - Túnel
+        - Não exigível
+        - Não exigível
+        - Não exigível
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+        - null
+      - - null
+        - null
+        - M-2
+        - Líquidos ou gases inflamáveis ou combustíveis
+        - Não exigível
+        - '1'
+        - Obs4
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - null
+        - null
+        - M-3
+        - Central de comunicação e energia
+        - Não exigível
+        - '1'
+        - Obs5
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+        - null
+      - - null
+        - null
+        - M-4
+        - Loteamento e Pátios
+        - Não exigível
+        - Não exigível
+        - Obs1
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - ''
+        - ''
+        - ''
+        - null
 notas:
 - 'Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.:
   "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação
@@ -290,6 +532,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

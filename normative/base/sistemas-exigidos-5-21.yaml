@@ -191,9 +191,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-05.yaml
-    file_sha256: 55eb52b0588eac708e4ae4860a547b9ad8977a494ca5ec78469789b13d97548e
+    file_sha256: eb420641bb8a052a605079c5185259b73a556e59ff303ff7bad011b5d3d12405
 - table: 6
   page: 30
   title: Exigências para edificações do grupo B com área superior a 900 m² ou superior a 02 pavimentos
@@ -378,9 +378,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-06.yaml
-    file_sha256: 3ab0f5f1043a4e0dae2aa581fd71bb91447655effb43b7d868af815aaedb1a42
+    file_sha256: 54819b4f9fc147ffc5c60daac1be67b836cfe5f666c36a8f0aebfe3dd1ccbb7b
 - table: 7
   page: 31
   title: Exigências para edificações do grupo C com área superior a 900 m² ou superior a 02 pavimentos
@@ -567,9 +567,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-07.yaml
-    file_sha256: c4d42446d9165ba7b3ab864e339a125e55eaceae1fc572a4b8f7589e060c23ae
+    file_sha256: 5a8849f922877f81b4042b50df675d4928497a7439cce19449f6390b5bc531b1
 - table: 8
   page: 32
   title: Exigências para edificações do grupo D com área superior a 900 m² ou superior a 02 pavimentos.
@@ -757,9 +757,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-08.yaml
-    file_sha256: 8a7858d8423c47273604b258fa803a0f3323da247d8d275f0995301ce9760294
+    file_sha256: 8fefaf835cb351bc5af71da16a8bbf6105ef8adb31d1dbfc55b954b510eff01e
 - table: 9
   page: 33
   title: Exigências para edificações do grupo E com área superior a 900 m² ou superior a 02 pavimentos
@@ -945,9 +945,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-09.yaml
-    file_sha256: 73883644ee37a3713d8af368ada7537f07bbb5de6798696b4ad2a62d08470b14
+    file_sha256: 25f284af7cb82ed23e5f9f073fccdea78db0bc6934d8b3c915f43ffac006427a
 - table: 10
   page: 34
   title: Exigências para edificações do grupo F (divisões F-1 e F-2) com área superior a 900 m2 ou superior
@@ -1225,9 +1225,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-10.yaml
-    file_sha256: a005518d53b283983959460e88e4f63af7297b45b87e75b20987e3f27de249f3
+    file_sha256: e08801ab644c993956ada48df61d51b579fba20b0c75328345a03888bd4ac87d
 - table: 11
   page: 35
   title: Exigências para edificações do grupo F (divisões F-3, F-4 e F-9) com área superior a 900m2 ou
@@ -1523,9 +1523,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-11.yaml
-    file_sha256: 6dae13b1137458e64cb1ed3e5fd3c4c8a8e1a97532b7a0d877cbe93c99156410
+    file_sha256: defae668fcda4f4741e1340c0f9faae8fead837018ce5ea6c03360ccbd86d4d3
 - table: 12
   page: 36
   title: Exigências para edificações do grupo F (divisões F-5, F-8 e F-11) com área superior a 900 m2
@@ -1804,9 +1804,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-12.yaml
-    file_sha256: a76565e08e8615381e7d060bed1b5401e4ad532afa49d421e6f50751ddb55f4a
+    file_sha256: cc8e4524d95d4c9e23de37a5fd21592d2e4340373ddf35a8880266652d7d3e4b
 - table: 13
   page: 37
   title: Exigências para edificações do grupo F (divisões F-7 e F-10) com área superior a 900m2 ou superior
@@ -2084,9 +2084,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-13.yaml
-    file_sha256: 515cdc0cd3ca00819ec929a62a49c36e4bc2568c9ff3c1c3f8f8b361f4f79d0f
+    file_sha256: 477f8b801f396e65fe3859b34b12a488e29fabf7cce04a007ca18132a48cdf01
 - table: 14
   page: 38
   title: Exigências para edificações do grupo F (divisão F-6) com área superior a 900m2 ou superior a
@@ -2271,9 +2271,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-14.yaml
-    file_sha256: 50aa3b92985c90b0fc769426ff79ae19aace13e20729af9a245caf744bec5ac8
+    file_sha256: 5e90838dddf97d1d0d92913128b047a2e66427d2ca65b0216bfc079196f9436f
 - table: 15
   page: 39
   title: Exigências para edificações do grupo G (divisões G-1 e G-2) com área superior a 900m2 ou superior
@@ -2448,9 +2448,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-15.yaml
-    file_sha256: 30ae72546c059c1ea825c57e33c8101acb739daa81c2a94103300c763bfe0892
+    file_sha256: 201ffa4271636c4a262a90b9de97c056c679e29774451b26e6596f28035a4ccd
 - table: 16
   page: 40
   title: Exigências para edificações do grupo G (divisões G-3 e G-4) com área superior a 900 m2 ou superior
@@ -2728,9 +2728,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-16.yaml
-    file_sha256: 2b39d4c7d6f51a130e287b1d424605468db39e159aa2699b929e4c1d4b8bcbb1
+    file_sha256: a74973c0b985e8b4dbc6a082886f584b303ae5147f1b9b9c7bd3d73040f8e513
 - table: 17
   page: 41
   title: Exigências para edificações do grupo G (divisões G-5 e G-6) com área superior a 900 m2 ou superior
@@ -3025,9 +3025,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-17.yaml
-    file_sha256: 9d90576888e05239ae3209e793072472b6a2c9856616a902961b5cf24fe2fb12
+    file_sha256: aec422383f287773b48682a4e999e5613cbe42172feab7e9be99dd1fdf2a8651
 - table: 18
   page: 42
   title: Exigências para edificações do grupo H (divisões H-1 e H-2) com área superior a 900 m2 ou superior
@@ -3305,9 +3305,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-18.yaml
-    file_sha256: 2b88c40667c6df7ce507549673f8fc4dd417fa8f4197430bf0be8e924b26e961
+    file_sha256: 679f8e706bd99b2fa46965db57a49498a118a6cddc3e0fcd9bae81606c2b7ba9
 - table: 19
   page: 43
   title: Exigências para edificações do grupo H (divisões H-3 e H-4) com área superior a 900 m2 ou superior
@@ -3620,9 +3620,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-19.yaml
-    file_sha256: 9c50de202bd897c9e4c940546227b738f83cb62454658304df525925cb668e95
+    file_sha256: 279ed7a900bb9da042cc73fb617b537351c6c6dd4213f4b8b2a7c81679dc724b
 - table: 20
   page: 44
   title: Exigências para edificações do grupo I (divisões I-1 e I-2) com área superior a 900m2 ou superior
@@ -3900,9 +3900,9 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-20.yaml
-    file_sha256: 6a1f7ffac110b63b4ee3b61b5e0c6ee5bdaed906dfdb9c53ccb17b1731584dc0
+    file_sha256: 5b82079c3dccb24eef41c4e76c3dd457fff1a4d00e1b6d9f3893cdd63cd36419
 - table: 21
   page: 45
   title: Exigências para edificações do grupo I (divisão I-3) com área superior a 900m2 ou superior a
@@ -4087,6 +4087,6 @@ tables:
     state: verificada
     paths:
     - visual
-    - texto
+    - geometrica
     file: normative/tabelas/decreto-42-2018/tabela-21.yaml
-    file_sha256: c8d357d3a744a94c37c855ea7c01b84858e4cbecc59473f0479996e1e7c4fbc3
+    file_sha256: ec4bf8e944160a813c46e3ee256c15a2a3c92b353e144bce42d8532541aa6f1f

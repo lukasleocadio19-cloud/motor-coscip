@@ -336,7 +336,7 @@ e) possuir um dos lados de maior dimensão totalmente aberto para acesso aos rec
 | Recipiente Transportável | Laranja | Amarela |
 | Recipiente estacionário | Laranja ou branca com conexões em laranja | Amarela ou branca com conexões em amarelo |
 
-Fonte: NT 3-02, página 5, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-02, página 5, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 13523:2019.
 <!-- /tabela-conferida: Tabela 1 p5 -->
 
@@ -418,7 +418,7 @@ c) construção das estruturas com TRRF mínimo de 120 min, conforme NT 2-19 - S
 | > 20 até 120 m³ | 3,0 m |
 | > 120 m³ | 7,5 m |
 
-Fonte: NT 3-02, página 6, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-02, página 6, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 13523:2019.
 d = afastamento da cerca de proteção em relação ao recipiente (legenda da Figura 3).
 <!-- /tabela-conferida: Tabela 2 p6 -->
@@ -578,7 +578,7 @@ Fonte: ABNT NBR 13523:2019
 | Fonte de ignição e materiais de fácil combustão. | 3,00 m |
 | Reservatórios que contenham outros fluidos inflamáveis. | 6,00 m |
 
-Fonte: NT 3-02, página 8, Tabela 5; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-02, página 8, Tabela 5; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 13523:2019.
 Pelo item 5.6.3, com a tomada protegida por paredes e cobertura com TRRF = 120 min, os afastamentos podem ser reduzidos à metade nas direções com interposição das paredes.
 <!-- /tabela-conferida: Tabela 5 p8 -->
@@ -804,7 +804,7 @@ Fonte: ABNT NBR 13523:2019, adaptado por CBMERJ.
 | > 8 a 120 | 15 | 15 | 15 | 1,5 | 1,5 | - | 3 | - | 6 |
 | > 120 | 22,5 | 15 | 22,5 | ¼ da soma dos diâmetros dos recipientes adjacentes | 1,5 | - | 3 | - | 6 |
 
-Fonte: NT 3-02, página 12, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-02, página 12, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Afastamentos de segurança em metros. Cabeçalho de dois níveis achatado na publicação ("grupo: subcoluna").
 Observações da tabela:
 a) Nos recipientes de superfície, as distâncias apresentadas são medidas a partir da superfície externa do recipiente mais próximo. A válvula de segurança dos recipientes estacionários deve estar fora das projeções da edificação, como telhados, balcões, marquises.
@@ -890,7 +890,7 @@ Fonte: ABNT NBR 13523:2019, adaptado por CBMERJ.
 | 5,51 a 8,0 m³ | 7,5 m | 3 m | 51 a 74 | 26 a 37 | 19 a 26 | 12 a 16 |
 | Acima de 8 até 10 m³ | 15 m | 15 m | 75 a 92 máximo | 38 a 46 máximo | 27 a 33 máximo | 17 a 22 máximo |
 
-Fonte: NT 3-02, página 13, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-02, página 13, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Observações da tabela:
 a) Centrais com capacidade acima do limite estabelecido na Tabela 2 devem ser analisadas por órgãos competentes considerando situações temporárias e se em caso definitivas com as devidas medidas mitigadoras compensatórias definidas
 b) Afastamento não aplicável para centrais GLP instaladas em nicho conforme item 5.7.2 desta NT.
@@ -907,7 +907,7 @@ Fonte indicada na página: ABNT NBR 13523:2019.
 | Até 5,5 | 0 | 6,0 m | 7,5 m |
 | Acima de 5,5 | 0 | 6,0 m | 15,0 m |
 
-Fonte: NT 3-02, página 13, Tabela 3 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-02, página 13, Tabela 3 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 13523:2019, adaptado por CBMERJ.
 <!-- /tabela-conferida: Tabela 3 do Anexo A p13 -->
 
@@ -919,7 +919,7 @@ Fonte indicada na página: ABNT NBR 13523:2019, adaptado por CBMERJ.
 | Até 2 | 0 | 3,0 m | 7,5 m |
 | Acima de 2 | 0 | 7,5 m | 15,0 m |
 
-Fonte: NT 3-02, página 13, Tabela 4 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-02, página 13, Tabela 4 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 13523:2019, adaptado por CBMERJ.
 <!-- /tabela-conferida: Tabela 4 do Anexo A p13 -->
 

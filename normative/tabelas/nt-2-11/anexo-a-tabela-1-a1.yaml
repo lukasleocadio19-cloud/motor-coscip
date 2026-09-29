@@ -145,6 +145,150 @@ caminhos:
       - 4h
       - Total
       - 8h
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.85
+      - 94.19
+      - 550.95
+      - 779.78
+      linhas:
+      - - ''
+        - PREVENÇÃO E COMBATE A INCÊNDIO – A.1
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - ''
+        - Parte teórica
+        - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - Parte prática
+        - null
+        - ''
+      - - Módulo
+        - null
+        - Objetivo
+        - null
+        - Carga horária
+        - null
+        - null
+        - Objetivo
+        - null
+        - Carga Horária
+        - null
+      - - 01 Introdução
+        - null
+        - '- Conhecer os objetivos e conceitos gerais do curso'
+        - null
+        - 30 min.
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+      - - 02 Aspectos legais
+        - null
+        - '- Conhecer os aspectos legais (normas, regulamentações e legislação em todas as esferas governamentais
+          pertinentes) relacionados à responsabilidade do bombeiro profissional civil.'
+        - null
+        - 30 min.
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+      - - 03 Teoria do fogo
+        - null
+        - '- Conhecer os quatro elementos formadores da combustão, as formas de propagação do calor, as
+          temperaturas do fogo, os métodos de extinção do fogo, classificação dos incêndios, os principais
+          agentes extintores, unidade extintora e capacidade extintora, as fases do combate ao fogo, o
+          Flashover, o Backdraft, o Bleve e o Boil Over.'
+        - null
+        - 1h
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+      - - 04 Proteção Contra Incêndio
+        - null
+        - '- Conhecer os conceitos gerais de prevenção, educação e proteção contra incêndio; noções de
+          proteção passiva e proteção ativa: isolamento de risco, compartimentação vertical e horizontal;
+          noções de resistência das estruturas e dos materiais ao fogo; - Conhecer os equipamentos fixos
+          e portáteis de combate a incêndio, saídas de emergência, escalas de segurança, corredores e
+          rotas de fuga, sistemas de iluminação de emergência, elevador de segurança, meios de aviso,
+          detecção e alarme de incêndio e sinalização de emergência.'
+        - null
+        - 1h
+        - null
+        - null
+        - '- Demonstrar os principais procedimentos para o funcionamento do sistema de meios de fuga:
+          saídas de emergência, escadas de segurança, corredores e rotas de fuga; dos sistemas de iluminação
+          de emergência; do elevador de segurança; dos meios de aviso detecção e alarme de incêndio; da
+          sinalização de emergência.'
+        - null
+        - 4h
+        - null
+      - - 05 Técnicas e Táticas de Combate a Incêndio
+        - null
+        - '- Conhecer as principais técnicas de busca e exploração da área em sinistro, ventilação natural
+          ou forçada (pressão negativa, venturi e positiva), entradas forçadas, resgate de vítimas, confinamento,
+          isolamento, salvatagem, combate com emprego correto dos tipos de jato de água (neblina, cone
+          de força e sólido), emprego, dimensionamento e técnicas de aplicação de espuma mecânica e rescaldo
+          de incêndio; - Demonstrar a montagem de uma linha direta de combate a incêndio, a partir de
+          um hidrante e/ou viatura, linha adutora e linha siamesa; - Demonstrar o uso da linha de água
+          para ataque direto, ataque indireto e ataque combinado.'
+        - null
+        - 1h
+        - null
+        - null
+        - '- Demonstrar as principais técnicas de busca e exploração da área em sinistro, ventilação natural
+          ou forçada (pressão negativa, venturi e positiva), entradas forçadas, resgate de vítimas, confinamento,
+          isolamento, salvatagem, combate com emprego correto dos tipos de jato de água (neblina, cone
+          de força e sólido), emprego, dimensionamento e técnicas de aplicação de espuma mecânica e rescaldo
+          de incêndio; - Demonstrar a montagem de uma linha direta de combate a incêndio, a partir de
+          um hidrante e/ou viatura, linha adutora e linha siamesa; - Demonstrar o uso da linha de água
+          para ataque direto, ataque indireto e ataque combinado.'
+        - null
+        - 4h
+        - null
+      - - ''
+        - null
+        - Total
+        - null
+        - 4h
+        - null
+        - null
+        - Total
+        - null
+        - 8h
+        - null
+      - - ''
+        - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
 notas:
 - 'Fonte indicada: ABNT NBR 14608. Células em branco = sem parte prática no módulo.'
 - 'Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao
@@ -157,6 +301,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

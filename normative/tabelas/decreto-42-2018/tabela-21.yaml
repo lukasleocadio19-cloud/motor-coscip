@@ -261,7 +261,307 @@ caminhos:
       - X
       - X
       - X
-  geometrica: null
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.8
+      - 53.48
+      - 552.65
+      - 602.47
+      linhas:
+      - - Tabela 21 – Exigências para edificações do grupo I (divisão I-3) com área superior a 900m2
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ou superior a 02 pavimentos.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Grupo de ocupação e uso
+        - GRUPO I – INDUSTRIAL
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Divisão
+        - I-3 (industrial Risco Grande)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - Classificação quanto ao nº de pavimentos e à altura (em metros)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - Acima de
+        - ''
+      - - Medidas de Segurança contra Incêndio e Pânico
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - Térrea
+        - 2pav
+        - 3pav
+        - 4, 5 e 6pav
+        - 6pav com
+        - H > 30m
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - H ≤ 30m
+        - ''
+      - - Extintores
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrantes e mangotinhos
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Chuveiros automáticos
+        - X1
+        - X1
+        - X1
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Sinalização de segurança
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Iluminação de Emergência
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Alarme de Incêndio
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Detecção de Incêndio
+        - '-'
+        - '-'
+        - '-'
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Saídas de Emergência
+        - X
+        - X2
+        - X2
+        - X3
+        - X3, 4
+        - X3, 4, 5
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Plano de emergência
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Controle de fumaça
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrante urbano
+        - X6
+        - X6
+        - X6
+        - X6
+        - X6
+        - X6
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Acesso de viatura em edificações
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Compartimentação Vertical
+        - '-'
+        - '-'
+        - '-'
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Segurança Estrutural contra Incêndio
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Controle de Materiais de Acabamento
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - 'OBSERVAÇÕES ESPECÍFICAS: 1- Exigido para os galpões industriais com somatório de áreas destinadas
+          a estoque ou industrialização superior a 1.500m². A exigência de chuveiros automáticos poderá
+          ser substituída por compartimentação horizontal em células com área máxima de 1.500m², conforme
+          regulamentação do CBMERJ. 2- A escada de emergência da edificação deve ser do tipo Não Enclausurada,
+          conforme NT específica. 3- A escada de emergência da edificação deve ser do tipo Enclausurada,
+          conforme NT específica. 4- As edificações com 15 ou mais pavimentos, qualquer que seja a área
+          construída, devem possuir no mínimo duas escadas de emergência. 5- Deve haver Elevador de Emergência
+          para altura maior que 60m. 6- Exigido apenas para as edificações com ATC igual ou superior a
+          1.500m². OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área
+          das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações
+          elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar ainda as
+          exigências para os riscos específicos das respectivas Notas Técnicas.'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
 notas:
 - As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as
   células com a nota correspondente.
@@ -270,6 +570,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

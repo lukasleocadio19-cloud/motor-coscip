@@ -99,6 +99,246 @@ caminhos:
       - 2h
       - Total
       - 2h
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.86
+      - 57.06
+      - 550.94
+      - 432.5
+      linhas:
+      - - ''
+        - EPI e EPR – A.3
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - ''
+        - Parte teórica
+        - null
+        - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - Parte prática
+        - null
+        - null
+        - ''
+      - - Módulo
+        - Módulo
+        - Objetivo
+        - Objetivo
+        - null
+        - ''
+        - Carga
+        - ''
+        - Objetivo
+        - Objetivo
+        - ''
+        - Carga
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - horária
+        - null
+        - null
+        - null
+        - null
+        - Horária
+        - null
+      - - 01 EPI
+        - null
+        - '- Conhecer os equipamentos de proteção individual para a proteção da cabeça, olhos e face,
+          proteção auditiva, proteção respiratória, tronco, membros superiores, membros inferiores e corpo
+          inteiro, em conformidade com as Normas Brasileiras específicas para combate a incêndio, nacionais
+          e, na falta de Normas Brasileiras, adotar Normas Internacionais.'
+        - null
+        - null
+        - 2h
+        - null
+        - null
+        - Vestir os EPIs
+        - null
+        - 2h
+        - null
+        - null
+      - - 02 EPR
+        - null
+        - '- Conhecer e saber a origem e os riscos de exposição a no mínimo os seguintes tipos de gases:
+          asfixiantes – gás liquefeito de petróleo (GLP), gás metano (CH4), dióxido de carbono (CO2) e
+          acetileno; gases tóxicos – monóxido de carbono (CO), sulfídrico (H2S) e cianídrico (HCN) e gases
+          irritantes ou corrosivos – amônia (NH2) e cloro; - Conhecer as características de atmosfera
+          insalubre por concentração de O2; - Conhecer a utilização e a higienização e limpeza dos seguintes
+          equipamentos de proteção respiratória: máscaras filtrantes e conjunto de máscara autônoma de
+          ar respirável e máscara dedicada para a vítima (carona); - Saber calcular a autonomia do conjunto
+          de máscara autônoma. - Conhecer e saber identificar a finalidade dos impressos nos cilindros
+          de ar respirável.'
+        - null
+        - null
+        - 4h
+        - null
+        - null
+        - Demonstrar a utilização (montar o equipamento, equipar-se e deslocar-se com e sem vítima); Exercitar
+          o calculo de autonomia do conjunto autônomo de respiração.
+        - null
+        - 4h
+        - null
+        - null
+      - - ''
+        - null
+        - Total
+        - null
+        - null
+        - 2h
+        - null
+        - null
+        - Total
+        - null
+        - 2h
+        - null
+        - null
+    - bbox:
+      - 56.86
+      - 444.73
+      - 550.94
+      - 745.37
+      linhas:
+      - - ''
+        - SALVAMENTO TERRESTRE – A.4
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - ''
+        - Parte teórica
+        - null
+        - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - Parte prática
+        - null
+        - null
+        - ''
+      - - Módulo
+        - Módulo
+        - Objetivo
+        - Objetivo
+        - null
+        - ''
+        - Carga
+        - ''
+        - Objetivo
+        - Objetivo
+        - ''
+        - Carga
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - horária
+        - null
+        - null
+        - null
+        - null
+        - Horária
+        - null
+      - - 01 Emergência em elevadores
+        - null
+        - '- Conhecer os procedimentos básicos a serem adotados em emergências com elevadores.'
+        - null
+        - null
+        - 2h
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+        - null
+      - - 02 Prevenção em Área de pouso de helicópteros
+        - null
+        - '- Conhecer os principais riscos no pouso de helicóptero e conhecer e demonstrar os principais
+          procedimentos de segurança para balizamento, embarque e desembarque de passageiros e procedimentos
+          de controle em caso de emergência, envolvendo incêndio e resgate de vítimas.'
+        - null
+        - null
+        - 1h
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+        - null
+      - - 03 Plano de Emergência
+        - null
+        - '- Conhecer as principais recomendações de um plano de emergência, relativas a uma emergência
+          contra incêndio, hostilidades em caso de ameaças de bombas e terrorismo, uma emergência de abando
+          de área em uma planta.'
+        - null
+        - null
+        - 1h
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+        - null
+      - - 04 Resgate de Vítimas em Espaços Confinados
+        - null
+        - '- Conhecer as normas, procedimentos e técnicas para resgate de vítimas em espaços confinados.'
+        - null
+        - null
+        - 6h
+        - null
+        - null
+        - Utilizar os equipamentos para resgate de vítimas em espaços confinados.
+        - null
+        - 6h
+        - null
+        - null
+      - - ''
+        - null
+        - Total
+        - null
+        - null
+        - 10h
+        - null
+        - null
+        - Total
+        - null
+        - 6h
+        - null
+        - null
 notas:
 - 'Fonte indicada: ABNT NBR 14608.'
 inconsistencias_da_fonte:
@@ -110,6 +350,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

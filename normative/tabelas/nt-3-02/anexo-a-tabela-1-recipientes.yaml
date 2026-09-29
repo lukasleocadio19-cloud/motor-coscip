@@ -157,6 +157,327 @@ caminhos:
       - '3'
       - '-'
       - '6'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 49.58
+      - 108.26
+      - 544.05
+      - 773.5
+      linhas:
+      - - ''
+        - Afastamentos de segurança (m) para recipientes transportáveis e estacionários (m)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - 'Capacidade individual do recipiente (m³) vide obs.: h'
+        - null
+        - 'Divisas de propriedades edificáveis / edificações vide obs.: d, f, n'
+        - null
+        - ''
+        - Passeio
+        - ''
+        - Entre recipientes
+        - Aberturas abaixo da descarga da válvula de segurança
+        - null
+        - ''
+        - Fontes de ignição e outras aberturas (portas, janelas,
+        - null
+        - ''
+        - 'Produtos tóxicos, Perigosos inflamáveis e chama aberta vide obs.: i, m'
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - público
+        - null
+        - null
+        - null
+        - null
+        - null
+        - etc.) e materiais
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - vide
+        - null
+        - null
+        - null
+        - null
+        - null
+        - combustíveis
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - obs.:d,
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - k, o
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 'vide obs.: j'
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - 'Superfície (obs.: a, c, e, o)'
+        - 'Enterrado /aterrado (obs.: b)'
+        - ''
+        - null
+        - null
+        - null
+        - Abastecidos no local
+        - Trocáveis
+        - Abastecidos no local
+        - null
+        - Trocáveis
+        - null
+        - null
+        - null
+      - - ≤ 0,5 (obs. l)
+        - null
+        - '0 (obs.: g, j)'
+        - '3'
+        - '3 (obs.: j)'
+        - null
+        - null
+        - '0'
+        - '1'
+        - '1'
+        - '3 (obs.: k)'
+        - null
+        - '1,5 (obs.: k)'
+        - null
+        - '6'
+        - null
+      - - '> 0,5 a 2'
+        - null
+        - '1,5 (obs.: g)'
+        - '3'
+        - '3'
+        - null
+        - null
+        - '0'
+        - 1,5
+        - '-'
+        - '3'
+        - null
+        - '-'
+        - null
+        - '6'
+        - null
+      - - '> 2 a 5,5'
+        - null
+        - '3 (obs.: g)'
+        - '3'
+        - '3'
+        - null
+        - null
+        - '1'
+        - 1,5
+        - '-'
+        - '3'
+        - null
+        - '-'
+        - null
+        - '6'
+        - null
+      - - '> 5,5 a 8'
+        - null
+        - '7,5 (obs.: g)'
+        - '3'
+        - 7,5
+        - null
+        - null
+        - '1'
+        - 1,5
+        - '-'
+        - '3'
+        - null
+        - '-'
+        - null
+        - '6'
+        - null
+      - - '> 8 a 120'
+        - null
+        - '15'
+        - '15'
+        - '15'
+        - null
+        - null
+        - 1,5
+        - 1,5
+        - '-'
+        - '3'
+        - null
+        - '-'
+        - null
+        - '6'
+        - null
+      - - '> 120'
+        - null
+        - 22,5
+        - '15'
+        - 22,5
+        - null
+        - null
+        - ¼ da soma dos diâmetros dos recipientes adjacentes
+        - 1,5
+        - '-'
+        - '3'
+        - null
+        - '-'
+        - null
+        - '6'
+        - null
+      - - 'Observações: a Nos recipientes de superfície, as distâncias apresentadas são medidas a partir
+          da superfície externa do recipiente mais próximo. A válvula de segurança dos recipientes estacionários
+          deve estar fora das projeções da edificação, como telhados, balcões, marquises. b A distância
+          para os recipientes enterrados/aterrados deve ser medida a partir da válvula de segurança, enchimento
+          e indicador de nível máximo. Caso o recipiente esteja instalado em caixa de alvenaria, esta
+          distância pode ser reduzida pela metade, respeitando um mínimo de 1,0 m do costado do recipiente
+          para divisa de propriedades edificáveis/edificações. c As distâncias de afastamento das edificações
+          não consideram as projeções de complementos ou partes destas, como telhados, balcões, marquises.
+          d Para recipientes transportáveis devem ser atendidos os afastamentos mínimos em função da capacidade
+          volumétrica total do agrupamento de recipientes, conforme a Tabela 2. e No caso de existência
+          de duas ou mais centrais de GLP com recipientes transportáveis, estas devem distar entre si
+          em no mínimo 7,5 m. Centrais de GLP com distância entre si inferior a 7,5 m serão consideradas
+          como uma única central para a aplicação da Tabela 1 e Tabela 2. Exceto em edificações comerciais
+          com centrais de GLP para atendimento individualizado à diversos estabelecimentos. Neste caso,
+          poderá ser utilizada mais de uma central de GLP, em uma única área destinada para este fim,
+          desde que, os recipientes estejam em abrigo resistente ao fogo com, no mínimo, TRRF 120 min,
+          dispostos lado a lado e com afastamento mínimo considerando a capacidade total da somatória
+          de todos os recipientes conforme Tabela 2, até no máximo 10 m³. f Para recipientes acima de
+          0,5 m³, o número máximo de recipientes deve ser igual a 6. Se mais que uma instalação como esta
+          for feita, ela deve distar pelo menos 7,5 m da outra. g A distância de recipientes de superfície
+          de capacidade individual de até 8 m³, para edificações/divisa de propriedade, pode ser reduzida
+          à metade, desde que sejam instalados no máximo três recipientes com capacidade total de até
+          16 m³. Este recipiente ou conjunto de recipientes deve estar pelo menos 7,5 m distante de qualquer
+          outro recipiente com capacidade individual maior que 0,5 m³. h Os recipientes de GLP não podem
+          ser instalados dentro de bacias de contenção de outros combustíveis. i No caso de depósitos
+          de oxigênio e hidrogênio, os afastamentos devem ser conforme as Tabelas 3 e 4, respectivamente.
+          j Para os recipientes transportáveis instalados no interior de abrigos, com paredes e cobertura
+          com, no mínimo, TRRF de 120 min, interpondo-se entre os recipientes e o ponto considerado, a
+          distância pode ser reduzida à metade. k Distâncias não obrigatoriamente requeridas para situações
+          em edificações existentes que possam ter instalações em nicho conforme item 5.7.2 desta NT.
+          l Para recipientes transportáveis contidos em abrigos, com paredes laterais e cobertura de materiais
+          incombustíveis certificados, que se interponha entre os recipientes e aberturas (portas e janelas),
+          a distância pode ser reduzida à metade. m Para captação de ar forçado acima das válvulas dos
+          recipientes, o afastamento mínimo de segurança pode ser reduzido para 3 m. n Para divisa de
+          propriedade comprovadamente não edificável (por exemplo: margens de rios, faixa de segurança
+          de redes elétricas de alta-tensão e de rodovias etc.), o afastamento mínimo de segurança para
+          recipientes estacionários é equivalente à Tabela 2 (Afastamento da cerca de proteção) desta
+          NT. o Os recipientes de superfície podem ser instalados ao longo do limite da propriedade e/ou
+          passeio público, desde que exista uma parede resistente ao fogo conforme 5.5.4. Neste caso,
+          o afastamento mínimo de segurança será medido ao redor da parede, conforme 5.5.2 e Figura 5.'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    - bbox:
+      - 54.96
+      - 140.4
+      - 92.18
+      - 200.3
+      linhas:
+      - - Capacidade
+      - - individual do
+      - - recipiente
+      - - (m³)
+      - - 'vide obs.: h'
+    - bbox:
+      - 102.98
+      - 140.4
+      - 184.34
+      - 163.6
+      linhas:
+      - - edificáveis / edificações
+      - - ''
+      - - 'vide obs.: d, f, n'
+    - bbox:
+      - 289.01
+      - 140.4
+      - 368.59
+      - 156.83
+      linhas:
+      - - Aberturas abaixo da descarga da válvula de
+      - - segurança
+    - bbox:
+      - 471.58
+      - 150.61
+      - 538.78
+      - 189.18
+      linhas:
+      - - Produtos tóxicos,
+      - - Perigosos
+      - - inflamáveis e
+      - - chama aberta
+      - - ''
+      - - 'vide obs.: i, m'
+    - bbox:
+      - 230.57
+      - 163.6
+      - 278.21
+      - 176.8
+      linhas:
+      - - Entre
+      - - recipientes
 notas:
 - 'Afastamentos de segurança em metros. Cabeçalho de dois níveis achatado na publicação ("grupo: subcoluna").'
 - 'Observações da tabela:'
@@ -215,6 +536,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 6
+  bbox: *id001
+  texto: verificada

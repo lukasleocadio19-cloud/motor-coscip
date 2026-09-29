@@ -48,6 +48,44 @@ caminhos:
     - - Recipiente estacionário
       - Laranja ou branca com conexões em laranja
       - Amarela ou branca com conexões em amarelo
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 55.59
+      - 543.21
+      - 283.92
+      - 644.38
+      linhas:
+      - - Central
+        - ''
+        - Cor da tubulação
+        - null
+        - null
+        - null
+        - ''
+      - - null
+        - ''
+        - Fase líquida
+        - ''
+        - ''
+        - Fase vapor
+        - ''
+      - - Recipiente Transportável
+        - Laranja
+        - null
+        - null
+        - Amarela
+        - null
+        - null
+      - - Recipiente estacionário
+        - Laranja ou branca com conexões em laranja
+        - null
+        - null
+        - Amarela ou branca com conexões em amarelo
+        - null
+        - null
 notas:
 - 'Fonte indicada na página: ABNT NBR 13523:2019.'
 estado: verificada
@@ -55,6 +93,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

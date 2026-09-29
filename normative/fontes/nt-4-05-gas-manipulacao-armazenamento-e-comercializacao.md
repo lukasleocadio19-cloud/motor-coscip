@@ -308,7 +308,7 @@ Fonte: IT 28/2018 - CBPMESP - Adaptado.
 | 757,01 a 3.785,00 | ¼ da soma dos diâmetros dos tanques adjacentes | 91,00 |
 | Maior que 3.785,01 | ¼ da soma dos diâmetros dos tanques adjacentes | 120,00 |
 
-Fonte: NT 4-05, página 5, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-05, página 5, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: IT 28/2018 – CBPMESP – Adaptado.
 <!-- /tabela-conferida: Tabela 1 p5 -->
 
@@ -562,7 +562,7 @@ b) o armazenamento dos recipientes transportáveis de GLP, cheios, parcialmente 
 | Igual ou superior a 5kg até inferior a 13kg | Até 5 recipientes | Até 5 recipientes |
 | Igual a 13 kg | Até 4 recipientes | Até 5 recipientes |
 
-Fonte: NT 4-05, página 8, Tabela 5; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-05, página 8, Tabela 5; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 15514.
 <!-- /tabela-conferida: Tabela 5 p8 -->
 
@@ -702,7 +702,7 @@ Fonte: CBMERJ.
 | 6,01 até 10,00 | 04 20-B:C | 01 80-B:C |
 | Acima de 10,00 | 04 20-B:C | 01 120-B:C |
 
-Fonte: NT 4-05, página 10, Tabela 6; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-05, página 10, Tabela 6; conferida em 2026-09-29 (visual + geometrica).
 Obs. da tabela: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15m para alcançar o equipamento.
 Fonte indicada na página: CBMERJ.
 <!-- /tabela-conferida: Tabela 6 p10 -->
@@ -863,7 +863,7 @@ Fonte: ABNT NBR 15186.
 | Via pública (c) | K | 15,0 | 15,0 | 15,0 (c) | 7,5 | 15,0 | 6,0 | 1,5 | 1,5 | e) | e) | - | 15,0 |
 | Recipientes estacionários para decantação (d) | L | 0 | 0 | 0 | 7,5 | 0 | 7,5 | 7,5 | 15,0 | 15,0 | 15,0 | 15,0 | - |
 
-Fonte: NT 4-05, página 13, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-05, página 13, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Observações da tabela:
 a) Para a leitura desta tabela as letras maiúsculas têm o mesmo significado tanto na horizontal, quanto na vertical;
 b) Ver Tabela 1 desta NT.
@@ -910,7 +910,7 @@ Fonte: ABNT NBR 15186.
 | Maior que 757 a 3.785 | 91,0 |
 | Maior que 3.785 | 122,0 |
 
-Fonte: NT 4-05, página 14, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-05, página 14, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Observação da tabela: a) Ver na Tabela 1 deste anexo a indicação da distância de segurança recomendada à divisa de propriedade ou via pública para recipientes estacionários com capacidade volumétrica individual inferior a 120 m³.
 Fonte indicada na página: ABNT NBR 15186.
 <!-- /tabela-conferida: Tabela 2 do Anexo A p14 -->
@@ -1019,7 +1019,7 @@ Fonte: CBMERJ.
 | Funcionamento simultâneo (para efeitos de cálculo) | 2 (duas) linhas manuais | 2 (duas)linhas manuais | 2 (duas)linhas manuais e 01 (um) canhão monitor | Demanda de água somente para os aspersores | Demanda de água somente para os aspersores | Demanda de água somente para os aspersores |
 | Tempo | 30 mim | 40 mim | 60 mim | 120min | 180min | 180min |
 
-Fonte: NT 4-05, página 16, Tabela 2 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-05, página 16, Tabela 2 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 Observações da tabela:
 1) Essa tabela se aplica quando o somatório dos recipientes for maior que 15 m³ (alínea f de 5.1.6), todavia, para aplicação dos critérios é analisado a capacidade de armazenamento individual do recipiente.
 2) Caso as baterias de recipientes de GLP com capacidade individual de, no máximo, 60 m³ estiverem com afastamentos de 15 m ou mais, entre si, podem ser consideradas isoladas.
