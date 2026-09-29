@@ -13,6 +13,10 @@ forma:
   - 24
   rotulos_quebrados: true
   linhas_cabecalho: 0
+forma_geometrica:
+  faixa:
+  - 10
+  - 39
 anexo3:
   tabela: 21
   blocos:

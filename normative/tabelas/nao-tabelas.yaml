@@ -18,3 +18,8 @@ paginas:
     imagem: media/nt-5-05/pagina-04.jpg
     motivo: definições 4.6 a 4.21 e itens 5.1 e 5.2 em duas colunas de texto
     conferido_em: '2026-09-29'
+  - arquivo: nt-4-05-gas-manipulacao-armazenamento-e-comercializacao.md
+    pagina: 4
+    imagem: media/nt-4-05/pagina-04.jpg
+    motivo: fim da alínea c) do item 5.1.6 ("válvulas de retenção instaladas na entrada de enchimento do recipiente") em duas colunas de texto
+    conferido_em: '2026-09-29'

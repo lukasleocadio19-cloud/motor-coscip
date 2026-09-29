@@ -24,9 +24,12 @@ entre marcadores (idempotente), e marca a seção antiga como bruta.
 from __future__ import annotations
 
 import argparse
+import base64
+import json
 import re
 import sys
 import unicodedata
+import zlib
 from pathlib import Path
 from typing import Any
 
@@ -107,7 +110,8 @@ def compare(a_rows: list[list[str | None]], b_rows: list[list[str | None]]) -> d
 
 
 FORMA_KEYS = ("faixa", "mesclar_linhas", "rotulos_quebrados", "linhas_cabecalho",
-              "juntar_cabecalho", "descartar_linhas", "cabecalho_sem_repeticao")
+              "juntar_cabecalho", "descartar_linhas", "cabecalho_sem_repeticao",
+              "celulas_verticais")
 
 
 def forma_of(table: dict[str, Any], path: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -221,6 +225,10 @@ def shape(rows: list[list[str | None]], forma: dict[str, Any]) -> list[list[str]
     junta as linhas de cabeçalho pela coluna original (ou as mantém, se mescladas), descarta
     as linhas pedidas (observações) e remove as células vazias (``None`` = célula mesclada)."""
     rows = [[(c or "").strip() for c in r] for r in rows]
+    for i, j in forma.get("celulas_verticais") or []:
+        # texto girado 90° na página: a extração lê de baixo para cima, letra a letra
+        # ("r a e d a d a r tn E"); volta a ordem e tira os espaços que ela inventou
+        rows[i][j] = rows[i][j][::-1].replace(" ", "")
     if forma.get("faixa"):  # só as linhas [início, fim) da extração (título/texto em volta fora)
         ini, fim = forma["faixa"]
         rows = rows[ini:fim]
@@ -512,6 +520,10 @@ def diagnose(limit: int = 6) -> str:
                 for j, r in enumerate(cand["linhas"]):
                     cells = [c for c in r if c]
                     lines.append(f"      bruta[{j}] {len(r)}: {cells[:4]}"[:160])
+        if geo:  # a grade inteira (o artefato não baixa de todo ambiente): ajuste local da forma
+            blob = zlib.compress(json.dumps(geo, ensure_ascii=False).encode("utf-8"), 9)
+            lines.append(f"   GEO {f.relative_to(TABELAS).as_posix()} "
+                         f"{base64.b64encode(blob).decode('ascii')}")
     return "\n".join(lines) or "todas verificadas"
 
 

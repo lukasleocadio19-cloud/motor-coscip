@@ -1,0 +1,69 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-02
+arquivo: nt-3-02-gas-glp-gn-uso-em-edificacoes.md
+tabela: Tabela 3 do Anexo A
+titulo: Afastamentos mínimos de segurança para estocagem de oxigênio
+pagina: 13
+fonte_pdf_sha256: 8a44a1be179fd3e5c38d06b32f637226230702d48b6c3f8c0f8ae37add147950
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-02/pagina-13.jpg
+    imagem_sha256: e8983c63b44cbf0ee20c30304b7b30c6774b127cabed18a78d9e23658bc22659
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Capacidade total da Central de GLP (m³)
+    - 'Oxigênio: Até 11 Nm³'
+    - 'Oxigênio: 11,1 a 566 Nm³'
+    - 'Oxigênio: Acima de 566 Nm³'
+    linhas:
+    - - Capacidade total da Central de GLP (m³)
+      - Capacidade máxima de oxigênio possível de ser contida nos recipientes, em fase líquida e gasosa,
+        incluindo reservas de oxigênio na fase gasosa (Nm³)
+      - <
+      - <
+    - - ^
+      - Até 11
+      - 11,1 a 566
+      - Acima de 566
+    - - Até 5,5
+      - '0'
+      - 6,0 m
+      - 7,5 m
+    - - Acima de 5,5
+      - '0'
+      - 6,0 m
+      - 15,0 m
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 13
+      tabela_na_pagina: 2
+    linhas:
+    - - Capacidade total da Central de GLP (m³)
+      - Capacidade máxima de oxigênio possível de ser contida nos recipientes, em fase líquida e gasosa,
+        incluindo reservas de oxigênio na fase gasosa (Nm³)
+    - - Até 11
+      - 11,1 a 566
+      - Acima de 566
+    - - Até 5,5
+      - '0'
+      - 6,0 m
+      - 7,5 m
+    - - Acima de 5,5
+      - '0'
+      - 6,0 m
+      - 15,0 m
+notas:
+- 'Fonte indicada na página: ABNT NBR 13523:2019, adaptado por CBMERJ.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

@@ -6,11 +6,11 @@ resumo:
   imagens_presentes: 478
   imagens_ausentes: 1
   tabelas_por_estado:
-    bruto: 173
+    bruto: 160
     capa: 38
-    divergente: 13
-    nao_tabela: 3
-    verificada: 71
+    divergente: 14
+    nao_tabela: 4
+    verificada: 84
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -2240,7 +2240,7 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2025/02/NT3-02_2Ed_2023_alterada_2025.pdf
   sha256_pdf: 8a44a1be179fd3e5c38d06b32f637226230702d48b6c3f8c0f8ae37add147950
-  sha256_md: c48e5b9af0d9999b06616803cd492f05e9a23b201bf12aac51ca51ae5aca0c2b
+  sha256_md: 40e69a55e93cb204fb83561f722489a2ae5044abd9fcecfaff3f5c1b82f1aac6
   data_captura: '2026-07-23'
   paginas: 15
   midia: nt-3-02
@@ -2307,19 +2307,37 @@ fontes:
     sha256: d2c39a204c701ea3669d5a053fd0897f8206be5e585c802fee075f829cfae7ec
   tabelas:
   - pagina: 5
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-3-02/tabela-1-identificacao-da-tubulacao.yaml
+    estado: verificada
   - pagina: 6
-    estado: bruto
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-3-02/tabela-2-afastamentos-da-cerca.yaml
+    estado: verificada
   - pagina: 7
     tabela: Tabela 3
     arquivo: normative/tabelas/nt-3-02/tabela-3-extintores-central-glp.yaml
     estado: verificada
   - pagina: 8
-    estado: bruto
+    tabela: Tabela 5
+    arquivo: normative/tabelas/nt-3-02/tabela-5-afastamentos-da-tomada.yaml
+    estado: verificada
   - pagina: 12
-    estado: bruto
+    tabela: Tabela 1 do Anexo A
+    arquivo: normative/tabelas/nt-3-02/anexo-a-tabela-1-recipientes.yaml
+    estado: verificada
   - pagina: 13
-    estado: bruto
+    tabela: Tabela 2 do Anexo A
+    arquivo: normative/tabelas/nt-3-02/anexo-a-tabela-2-agrupamento.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela 3 do Anexo A
+    arquivo: normative/tabelas/nt-3-02/anexo-a-tabela-3-oxigenio.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela 4 do Anexo A
+    arquivo: normative/tabelas/nt-3-02/anexo-a-tabela-4-hidrogenio.yaml
+    estado: verificada
 - arquivo: nt-3-03-motogeradores.md
   documento: NT 3-03
   titulo: NT 3-03 - Motogeradores de energia em edificações e áreas de risco
@@ -2698,7 +2716,7 @@ fontes:
   ato: Portaria CBMERJ n° 1179, de 11 de abril de 2022
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT-4-05-Gas-GLPGN-Manipulacao-armazenamento-e-comercializacao-2022.pdf
   sha256_pdf: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
-  sha256_md: 390fa9c1d0c79b3b33d1b04ad18c219065ce1c2165edd5b3445447eae483a29f
+  sha256_md: 5657eb28cb3120901dcabc601c6bfd0497869d90cfebaff10f9b4254c1a28f83
   data_captura: '2026-07-23'
   paginas: 23
   midia: nt-4-05
@@ -2799,9 +2817,13 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 4
-    estado: bruto
+    estado: nao_tabela
+    motivo: fim da alínea c) do item 5.1.6 ("válvulas de retenção instaladas na entrada de enchimento
+      do recipiente") em duas colunas de texto
   - pagina: 5
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-4-05/tabela-1-afastamento-recipientes-estacionarios.yaml
+    estado: verificada
   - pagina: 6
     tabela: Tabela 2
     arquivo: normative/tabelas/nt-4-05/tabela-2-extintores-bases-glp.yaml
@@ -2815,17 +2837,29 @@ fontes:
     arquivo: normative/tabelas/nt-4-05/tabela-4-extintores-armazenamento-recipientes.yaml
     estado: verificada
   - pagina: 8
-    estado: bruto
+    tabela: Tabela 5
+    arquivo: normative/tabelas/nt-4-05/tabela-5-empilhamento.yaml
+    estado: verificada
   - pagina: 10
-    estado: bruto
+    tabela: Tabela 6
+    arquivo: normative/tabelas/nt-4-05/tabela-6-extintores-gnc.yaml
+    estado: verificada
   - pagina: 13
-    estado: bruto
+    tabela: Tabela 1 do Anexo A
+    arquivo: normative/tabelas/nt-4-05/anexo-a-tabela-1-distancias.yaml
+    estado: verificada
   - pagina: 14
-    estado: bruto
+    tabela: Tabela 2 do Anexo A
+    arquivo: normative/tabelas/nt-4-05/anexo-a-tabela-2-limite-da-propriedade.yaml
+    estado: verificada
   - pagina: 15
-    estado: bruto
+    tabela: Tabela 1 do Anexo B
+    arquivo: normative/tabelas/nt-4-05/anexo-b-tabela-1-transportaveis.yaml
+    estado: divergente
   - pagina: 16
-    estado: bruto
+    tabela: Tabela 2 do Anexo B
+    arquivo: normative/tabelas/nt-4-05/anexo-b-tabela-2-estacionarios.yaml
+    estado: verificada
   - pagina: 17
     estado: bruto
   - pagina: 18

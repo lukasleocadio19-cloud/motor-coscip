@@ -1,0 +1,54 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-02
+arquivo: nt-3-02-gas-glp-gn-uso-em-edificacoes.md
+tabela: Tabela 2
+titulo: Afastamentos da cerca de proteção
+pagina: 6
+fonte_pdf_sha256: 8a44a1be179fd3e5c38d06b32f637226230702d48b6c3f8c0f8ae37add147950
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-02/pagina-06.jpg
+    imagem_sha256: 8221a5e6e8bb64b60d0f2c9070c09f86558a5cb1f7784a309032933867d31cd7
+    linhas_cabecalho: 1
+    linhas:
+    - - Capacidade do recipiente
+      - Afastamento mínimo (d)
+    - - Até 10 m³
+      - 1,0 m
+    - - '> 10 até 20 m³'
+      - 1,5 m
+    - - '> 20 até 120 m³'
+      - 3,0 m
+    - - '> 120 m³'
+      - 7,5 m
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 6
+      tabela_na_pagina: 1
+    linhas:
+    - - Capacidade do recipiente
+      - Afastamento mínimo (d)
+    - - Até 10 m³
+      - 1,0 m
+    - - '> 10 até 20 m³'
+      - 1,5 m
+    - - '> 20 até 120 m³'
+      - 3,0 m
+    - - '> 120 m³'
+      - 7,5 m
+notas:
+- 'Fonte indicada na página: ABNT NBR 13523:2019.'
+- d = afastamento da cerca de proteção em relação ao recipiente (legenda da Figura 3).
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

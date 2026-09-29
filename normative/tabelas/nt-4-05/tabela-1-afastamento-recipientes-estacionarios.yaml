@@ -1,0 +1,96 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-05
+arquivo: nt-4-05-gas-manipulacao-armazenamento-e-comercializacao.md
+tabela: Tabela 1
+titulo: Afastamento mínimo de segurança para recipientes estacionários de GLP
+pagina: 5
+fonte_pdf_sha256: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-05/pagina-05.jpg
+    imagem_sha256: 5d17ebac2d074b4f28d568df26a3bf68c9f3bcac2785ba8f54297433899bb5d2
+    linhas_cabecalho: 1
+    linhas:
+    - - Capacidade volumétrica (m³)
+      - Entre tanques (m)
+      - Edificações e limites da propriedade (m)
+    - - 0,50 a 2,00
+      - '0'
+      - 1,50
+    - - 2,01 a 8,00
+      - '1'
+      - 7,50
+    - - 8,01 a 120,00
+      - 1,50
+      - 15,00
+    - - 120,01 a 265,00
+      - ¼ da soma dos diâmetros dos tanques adjacentes
+      - 23,00
+    - - 265,01 a 341,00
+      - ¼ da soma dos diâmetros dos tanques adjacentes
+      - 30,00
+    - - 341,01 a 454,00
+      - ¼ da soma dos diâmetros dos tanques adjacentes
+      - 38,00
+    - - 454,01 a 757,00
+      - ¼ da soma dos diâmetros dos tanques adjacentes
+      - 61,00
+    - - 757,01 a 3.785,00
+      - ¼ da soma dos diâmetros dos tanques adjacentes
+      - 91,00
+    - - Maior que 3.785,01
+      - ¼ da soma dos diâmetros dos tanques adjacentes
+      - 120,00
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 5
+      tabela_na_pagina: 1
+    linhas:
+    - - Capacidade volumétrica (m3)
+      - Entre tanques (m)
+      - Edificações e limites da propriedade (m)
+    - - 0,50 a 2,00
+      - '0'
+      - 1,50
+    - - 2,01 a 8,00
+      - '1'
+      - 7,50
+    - - 8,01 a 120,00
+      - 1,50
+      - 15,00
+    - - 120,01 a 265,00
+      - ¼ da soma dos diâmetros dos tanques adjacentes
+      - 23,00
+    - - 265,01 a 341,00
+      - ¼ da soma dos diâmetros dos tanques adjacentes
+      - 30,00
+    - - 341,01 a 454,00
+      - ¼ da soma dos diâmetros dos tanques adjacentes
+      - 38,00
+    - - 454,01 a 757,00
+      - ¼ da soma dos diâmetros dos tanques adjacentes
+      - 61,00
+    - - 757,01 a 3.785,00
+      - ¼ da soma dos diâmetros dos tanques adjacentes
+      - 91,00
+    - - Maior que 3.785,01
+      - ¼ da soma dos diâmetros dos tanques adjacentes
+      - 120,00
+notas:
+- 'Fonte indicada na página: IT 28/2018 – CBPMESP – Adaptado.'
+inconsistencias_da_fonte:
+- Para capacidade acima de 3.785 m³ esta tabela dá 120,00 m até edificações e limites da propriedade;
+  a Tabela 2 do Anexo A (p. 14), para o limite da propriedade, dá 122,0 m.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

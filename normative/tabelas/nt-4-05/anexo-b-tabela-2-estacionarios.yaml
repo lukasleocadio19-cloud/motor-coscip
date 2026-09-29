@@ -1,0 +1,259 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-05
+arquivo: nt-4-05-gas-manipulacao-armazenamento-e-comercializacao.md
+tabela: Tabela 2 do Anexo B
+titulo: Critérios de exigência de sistema fixo de resfriamento para recipientes estacionários
+pagina: 16
+fonte_pdf_sha256: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 0
+  - 16
+  linhas_cabecalho: 3
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-05/pagina-16.jpg
+    imagem_sha256: 2939bc21c249f90e0db47c72fd12855090c343e9c1dbc32b90b72a51f1fa4901
+    linhas_cabecalho: 1
+    linhas:
+    - - Capacidade de armazenamento individual
+      - Inferior a 10 m³
+      - Superior a 10 m³ e igual ou inferior 20 m³
+      - Superior a 20 m³ e igual ou inferior 60 m³
+      - Superior a 60 m³ e igual ou inferior 120 m³
+      - Superior a 120 m³
+      - Esferas
+    - - Hidrante simples
+      - Sim
+      - Não
+      - Não
+      - Não
+      - Não
+      - Não
+    - - Hidrante duplo
+      - Não
+      - Sim
+      - Sim
+      - Sim
+      - Sim
+      - Sim
+    - - Diâmetro mínimo da tubulação
+      - 60mm
+      - 75mm
+      - 75mm
+      - 75mm
+      - 75mm
+      - 75mm
+    - - Pressão mínima no sistema de hidrantes (medida no esguicho)
+      - 35mca
+      - 40mca
+      - 40mca
+      - 40mca
+      - 40mca
+      - 40mca
+    - - Mínimo alcance horizontal do jato compacto (linha manual) 8
+      - 15 m
+      - 20 m
+      - 20 m
+      - 30 m
+      - 30 m
+      - 30 m
+    - - Vazão sistema de hidrante
+      - 200l/min
+      - 400l/min
+      - 400l/min
+      - 1000l/min
+      - 1000l/min
+      - 1000l/min
+    - - Canhão monitor
+      - Não
+      - Não
+      - Sim
+      - Sim (portátil)
+      - Sim (portátil)
+      - Sim (Auto oscilatório)
+    - - Pressão mínima no canhão monitor
+      - '-'
+      - '-'
+      - 56 mca
+      - 56 mca
+      - 56 mca
+      - 56 mca
+    - - Vazão canhão monitor
+      - '-'
+      - '-'
+      - 800l/min
+      - 800l/min
+      - 800l/min
+      - 800l/min
+    - - Sistema com bicos aspersores
+      - Não
+      - Não
+      - Não
+      - Sim
+      - Sim
+      - Sim
+    - - Taxa mínima dos Aspersores
+      - '-'
+      - '-'
+      - '-'
+      - 5lpm/m²
+      - 5lpm/m²
+      - 5lpm/m²
+    - - Funcionamento simultâneo (para efeitos de cálculo)
+      - 2 (duas) linhas manuais
+      - 2 (duas)linhas manuais
+      - 2 (duas)linhas manuais e 01 (um) canhão monitor
+      - Demanda de água somente para os aspersores
+      - Demanda de água somente para os aspersores
+      - Demanda de água somente para os aspersores
+    - - Tempo
+      - 30 mim
+      - 40 mim
+      - 60 mim
+      - 120min
+      - 180min
+      - 180min
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 16
+      tabela_na_pagina: 1
+    linhas:
+    - - Capacidade de armazenamento individual
+      - Inferior a 10 m³
+      - Superior a 10 m³ e igual ou inferior 20 m³
+      - Superior a 20 m³ e igual ou inferior 60 m³
+      - Superior a 60 m³ e igual ou inferior 120 m³
+      - Superior a 120 m³
+      - Esferas
+    - - Hidrante simples
+      - Sim
+      - Não
+      - Não
+      - Não
+      - Não
+      - Não
+    - - Hidrante duplo
+      - Não
+      - Sim
+      - Sim
+      - Sim
+      - Sim
+      - Sim
+    - - Diâmetro mínimo da tubulação
+      - 60mm
+      - 75mm
+      - 75mm
+      - 75mm
+      - 75mm
+      - 75mm
+    - - Pressão mínima no sistema de hidrantes (medida no esguicho)
+      - 35mca
+      - 40mca
+      - 40mca
+      - 40mca
+      - 40mca
+      - 40mca
+    - - Mínimo alcance horizontal do jato compacto (linha manual) 8
+      - 15 m
+      - 20 m
+      - 20 m
+      - 30 m
+      - 30 m
+      - 30 m
+    - - Vazão sistema de hidrante
+      - 200l/min
+      - 400l/min
+      - 400l/min
+      - 1000l/min
+      - 1000l/min
+      - 1000l/min
+    - - Canhão monitor
+      - Não
+      - Não
+      - Sim
+      - Sim (portátil)
+      - Sim (portátil)
+      - Sim (Auto oscilatório)
+    - - Pressão mínima no canhão monitor
+      - '-'
+      - '-'
+      - 56 mca
+      - 56 mca
+      - 56 mca
+      - 56 mca
+    - - Vazão canhão monitor
+      - '-'
+      - '-'
+      - 800l/min
+      - 800l/min
+      - 800l/min
+      - 800l/min
+    - - Sistema com bicos aspersores
+      - Não
+      - Não
+      - Não
+      - Sim
+      - Sim
+      - Sim
+    - - Taxa mínima dos Aspersores
+      - '-'
+      - '-'
+      - '-'
+      - 5lpm/m2
+      - 5lpm/m2
+      - 5lpm/m2
+    - - Funcionamento simultâneo (para efeitos de cálculo)
+      - 2 (duas) linhas manuais
+      - 2 (duas)linhas manuais
+      - 2 (duas)linhas manuais e 01 (um) canhão monitor
+      - Demanda de água somente para os aspersores
+      - Demanda de água somente para os aspersores
+      - Demanda de água somente para os aspersores
+    - - Tempo
+      - 30 mim
+      - 40 mim
+      - 60 mim
+      - 120min
+      - 180min
+      - 180min
+notas:
+- 'Observações da tabela:'
+- 1) Essa tabela se aplica quando o somatório dos recipientes for maior que 15 m³ (alínea f de 5.1.6),
+  todavia, para aplicação dos critérios é analisado a capacidade de armazenamento individual do recipiente.
+- 2) Caso as baterias de recipientes de GLP com capacidade individual de, no máximo, 60 m³ estiverem com
+  afastamentos de 15 m ou mais, entre si, podem ser consideradas isoladas.
+- 3) Deve ser previsto resfriamento para a esfera submetida ao incêndio, bem como para as esferas e baterias
+  de recipientes de GLP cuja distância entre costados seja inferior a 30 m.
+- 4) Para recipientes de volume individual inferior a 200 m³ submetida ao incêndio, devem ser resfriados
+  todos os recipientes, independentemente de sua capacidade volumétrica cuja distância, entre costados,
+  seja inferior a 15 m.
+- 5) Um ou mais recipientes de volume individual igual ou superior a 200 m³ devem ser considerados equivalentes
+  a uma esfera.
+- 6) Quando o suprimento de água sair da rede de incêndio da edificação/área de risco deve-se somar a
+  maior vazão estabelecida, ao valor correspondente ao uso de dois canhões monitores fixos (vazão individual
+  por canhões de 1.200 lpm).
+- 7) A localização dos cilindros e esferas de GLP deve atender às normas técnicas oficiais.
+- 8) O armazenamento de GLP em tanques subterrâneos não necessita de proteção contra incêndios por resfriamento.
+- 9) O alcance horizontal do jato compacto produzido pelas linhas manuais de resfriamento deve ser medido
+  da saída do esguicho ao ponto de queda do jato, porém este alcance deve ser desconsiderado quando da
+  aplicação de 6.5.1.
+- 10) Ver alínea “g” de 5.1.6.
+- 'Fonte indicada na página: CBMERJ.'
+inconsistencias_da_fonte:
+- A linha "Mínimo alcance horizontal do jato compacto (linha manual)" remete à nota 8, que trata de tanques
+  subterrâneos; a nota sobre o alcance do jato é a 9 (na Tabela 1 deste anexo, a mesma linha remete à
+  nota 1, de mesmo texto).
+- '"30 mim", "40 mim" e "60 mim" na linha Tempo (as outras colunas dizem "min").'
+- 10 m³ exatos não estão em nenhuma coluna ("Inferior a 10 m³" / "Superior a 10 m³").
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

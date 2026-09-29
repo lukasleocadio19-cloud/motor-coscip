@@ -1,0 +1,188 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-05
+arquivo: nt-4-05-gas-manipulacao-armazenamento-e-comercializacao.md
+tabela: Tabela 1 do Anexo B
+titulo: Critérios de exigência de sistema fixo de resfriamento para recipientes transportáveis
+pagina: 15
+fonte_pdf_sha256: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 0
+  - 27
+  mesclar_linhas:
+  - - 0
+    - 1
+  - - 1
+    - 2
+  - - 2
+    - 3
+  - - 3
+    - 4
+  - - 4
+    - 5
+  - - 5
+    - 6
+  - - 6
+    - 7
+  - - 7
+    - 8
+  - - 8
+    - 9
+  - - 9
+    - 10
+  - - 10
+    - 11
+  - - 11
+    - 12
+  - - 13
+    - 14
+  - - 15
+    - 16
+  - - 16
+    - 17
+  - - 17
+    - 18
+  - - 19
+    - 20
+  - - 20
+    - 21
+  - - 21
+    - 22
+  - - 22
+    - 23
+  - - 24
+    - 25
+  - - 25
+    - 26
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-05/pagina-15.jpg
+    imagem_sha256: e8d9e1a1414faded45049844f30f8a11c36a018007c6c7e8b5bf79143cd3a26d
+    linhas_cabecalho: 1
+    linhas:
+    - - Volume armazenado de GLP
+      - Hidrante
+      - Mínimo alcance horizontal do jato compacto (linha manual) ¹
+      - Diâmetro mínimo da tubulação
+      - Pressão mínima no sistema de hidrantes (medida no esguicho)
+      - Canhão monitor
+      - Pressão mínima no canhão monitor
+      - Funcionamento simultânea (para efeitos de cálculo)
+      - Tempo
+    - - Inferior a 12.480 kg
+      - Não
+      - '-'
+      - '-'
+      - '-'
+      - Não
+      - '-'
+      - '-'
+      - '-'
+    - - Superior a 12.480 kg inferior a 49.920 kg
+      - Simples
+      - 15 m
+      - 65 mm
+      - 35 mca
+      - Não
+      - '-'
+      - 2 linhas manuais
+      - 30 mim
+    - - Superior a 49.920 kg inferior a 99.840 kg
+      - Duplo
+      - 20 m
+      - 75 mm
+      - 40 mca
+      - Sim
+      - 56 mca
+      - 2 linhas manuais e 01 canhão monitor
+      - 45 min
+    - - Superior a 99.840 kg *
+      - Duplo
+      - 20 m
+      - 75 mm
+      - 40 mca
+      - Sim
+      - 56 mca
+      - 2 linhas manuais e 01 canhão monitor
+      - 60 min
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 15
+      tabela_na_pagina: 1
+    linhas:
+    - - Volume armazenado de GLP
+      - Hidrante
+      - Mínimo alcance horizontal do jato compacto (linha manual) ¹
+      - Diâmetro mínimo da tubulação
+      - Pressão mínima no sistema de hidrantes (medida no esguicho)
+      - Canhão monitor
+      - Pressão mínima no canhão monitor
+      - Funcionamento simultânea (para efeitos de cálculo)
+      - Tempo
+    - - Inferior a 12.480 kg
+      - Não
+      - '-'
+      - Não
+      - '-'
+    - - Superior a 12.480 kg inferior a 49.920 kg
+      - Simples
+      - 15 m
+      - 65 mm
+      - 35 mca
+      - Não
+      - '-'
+      - 2 linhas manuais
+      - 30 mim
+    - - Superior a 49.920 kg inferior a 99.840 kg
+      - Duplo
+      - 20 m
+      - 75 mm
+      - 40 mca
+      - Sim
+      - 56 mca
+      - 2 linhas manuais e 01 canhão monitor
+      - 45 min
+    - - Superior a 99.840 kg *
+      - Duplo
+      - 20 m
+      - 75 mm
+      - 40 mca
+      - Sim
+      - 56 mca
+      - 2 linhas manuais e 01 canhão monitor
+      - 60 min
+notas:
+- 'Nota 1 da tabela: O alcance horizontal do jato compacto produzido pelas linhas manuais de resfriamento
+  deve ser medido da saída do esguicho ao ponto de queda do jato, porém este alcance deve ser desconsiderado
+  quando da aplicação de 6.5.1.'
+- 'Fonte indicada na página: CBMERJ.'
+inconsistencias_da_fonte:
+- '"30 mim" na coluna Tempo (as outras linhas dizem "min").'
+- A última faixa tem um asterisco ("Superior a 99.840 kg *") que a página não define; a única nota da
+  tabela é a 1).
+- 'As faixas não incluem os limites: 12.480 kg, 49.920 kg e 99.840 kg exatos não estão em nenhuma linha
+  ("inferior a" / "superior a").'
+estado: divergente
+resultado:
+  estado: divergente
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 9
+    - 9
+    - 9
+    - 9
+    - 9
+  - - 9
+    - 5
+    - 9
+    - 9
+    - 9

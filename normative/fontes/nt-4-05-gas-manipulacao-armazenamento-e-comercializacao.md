@@ -293,6 +293,25 @@ Fonte: IT 28/2018 - CBPMESP - Adaptado.
 | 757,01 a 3.785,00 |  |  | ¼ da soma dos diâmetros dos tanques adjacentes | 91,00 |  |  |
 | Maior que 3.785,01 |  |  | ¼ da soma dos diâmetros dos tanques adjacentes | 120,00 |  |  |
 
+<!-- tabela-conferida: Tabela 1 p5 -->
+### Tabela 1 — Afastamento mínimo de segurança para recipientes estacionários de GLP (conferida)
+
+| Capacidade volumétrica (m³) | Entre tanques (m) | Edificações e limites da propriedade (m) |
+| --- | --- | --- |
+| 0,50 a 2,00 | 0 | 1,50 |
+| 2,01 a 8,00 | 1 | 7,50 |
+| 8,01 a 120,00 | 1,50 | 15,00 |
+| 120,01 a 265,00 | ¼ da soma dos diâmetros dos tanques adjacentes | 23,00 |
+| 265,01 a 341,00 | ¼ da soma dos diâmetros dos tanques adjacentes | 30,00 |
+| 341,01 a 454,00 | ¼ da soma dos diâmetros dos tanques adjacentes | 38,00 |
+| 454,01 a 757,00 | ¼ da soma dos diâmetros dos tanques adjacentes | 61,00 |
+| 757,01 a 3.785,00 | ¼ da soma dos diâmetros dos tanques adjacentes | 91,00 |
+| Maior que 3.785,01 | ¼ da soma dos diâmetros dos tanques adjacentes | 120,00 |
+
+Fonte: NT 4-05, página 5, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: IT 28/2018 – CBPMESP – Adaptado.
+<!-- /tabela-conferida: Tabela 1 p5 -->
+
 ---
 
 ## Página 6
@@ -534,6 +553,19 @@ b) o armazenamento dos recipientes transportáveis de GLP, cheios, parcialmente 
 | Igual ou superior a 5kg até inferior a 13kg | Até 5 recipientes | Até 5 recipientes |  |  |
 | Igual a 13 kg | Até 4 recipientes | Até 5 recipientes |  |  |
 
+<!-- tabela-conferida: Tabela 5 p8 -->
+### Tabela 5 — Empilhamento de recipientes transportáveis de GLP (conferida)
+
+| Massa líquida dos recipientes | Recipientes Cheios | Recipientes Vazios ou parcialmente utilizados |
+| --- | --- | --- |
+| Inferior a 5 kg | Altura máxima da pilha = 1,50 m | Altura máxima da pilha =1,50 m |
+| Igual ou superior a 5kg até inferior a 13kg | Até 5 recipientes | Até 5 recipientes |
+| Igual a 13 kg | Até 4 recipientes | Até 5 recipientes |
+
+Fonte: NT 4-05, página 8, Tabela 5; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 15514.
+<!-- /tabela-conferida: Tabela 5 p8 -->
+
 ---
 
 ## Página 9
@@ -658,6 +690,22 @@ Fonte: CBMERJ.
 | 6,01 até 10,00 | 04 20-B:C | 01 80-B:C |  |  |
 | Acima de 10,00 | 04 20-B:C | 01 120-B:C |  |  |
 | Obs.: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15m para alcançar o equipamento. |  |  |  |  |
+
+<!-- tabela-conferida: Tabela 6 p10 -->
+### Tabela 6 — Proteção por extintores Bases e Estações de manipulação e distribuição de GNC (conferida)
+
+| Capacidade volumétrica (m³) | Extintor portátil (quantidade e capacidade extintora) | Extintor sobre rodas (quantidade e capacidade extintora) |
+| --- | --- | --- |
+| Até 0,50 | 01 20-B:C | - |
+| 0,50 até 3,50 | 02 20-B:C | - |
+| 3,51 até 6,00 | 02 20-B:C | 01 80-B:C |
+| 6,01 até 10,00 | 04 20-B:C | 01 80-B:C |
+| Acima de 10,00 | 04 20-B:C | 01 120-B:C |
+
+Fonte: NT 4-05, página 10, Tabela 6; conferida em 2026-09-29 (visual + texto).
+Obs. da tabela: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15m para alcançar o equipamento.
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 6 p10 -->
 
 ---
 
@@ -797,6 +845,34 @@ Fonte: ABNT NBR 15186.
 | Recipientes estacionários para decantação (d) | L | 0 |  | 0 | 0 | 7,5 | 0 | 7,5 | 7,5 | 15,0 | 15,0 | 15,0 | 15,0 | - |  |
 | Observações: a) Para a leitura desta tabela as letras maiúsculas têm o mesmo significado tanto na horizontal, quanto na vertical; b) Ver Tabela 1 desta NT. c) Ver na Tabela 2 deste anexo a indicação da distância de segurança recomendada à divisa de propriedade ou via pública para recipientes estacionários com capacidade volumétrica individual superior a 120 m³. d) Válido para recipientes estacionários para decantação até 10 m3. e) As distâncias mínimas de segurança não se aplicam aos recipientes novos ou requalificados sem uso. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 1 do Anexo A p13 -->
+### Tabela 1 do Anexo A — Distância Mínima de segurança para armazenamento de GNC (conferida)
+
+| Localização | Letra | A (m) | B (m) | C (m) | D (m) | E (m) | F (m) | G (m) | H (m) | I (m) | J (m) | K (m) | L (m) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Área de transferência | A | - | 3,0 | 7,5 | 7,5 | 7,5 | 6,0 | 15,0 | 15,0 | 15,0 | 15,0 | 15,0 | 0 |
+| Casa de bombas e compressores de GLP | B | 3,0 | - | 3,0 | 7,5 | 7,5 | - | 15,0 | 15,0 | 15,0 | 15,0 | 15,0 | 0 |
+| Área de armazenamento a granel - recipientes estacionários | C | 7,5 | 3,0 | b) | 7,5 | 15,0 | 7,5 | 15,0 | 15,0 | 15,0 | 15,0(c) | 15,0 (c) | 0 |
+| Área de armazenamento de recipientes transportáveis cheios, parcialmente utilizados ou vazios (e) | D | 7,5 | 7,5 | 7,5 | - | 1,5 | 6,0 | 7,5 | 7,5 | 7,5 | 7,5 | 7,5 | 7,5 |
+| Área de envasamento | E | 7,5 | 7,5 | 15,0 | 1,5 | - | 6,0 | 15,0 | 15,0 | 15,0 | 15,0 | 15,0 | 0 |
+| Área de estocagem de inflamáveis auxiliares | F | 6,0 |  | 7,5 | 6,0 | 6,0 | - | 6,0 | 6,0 | 6,0 | 6,0 | 6,0 | 7,5 |
+| Área de utilidades | G | 15,0 | 15,0 | 15,0 | 7,5 | 15,0 | 6,0 | - | 3,0 | 3,0 | 1,5 | 1,5 | 7,5 |
+| Área de apoio operacional | H | 15,0 | 15,0 | 15,0 | 7,5 | 15,0 | 6,0 | 3,0 | - | 3,0 | 1,5 | 1,5 | 15,0 |
+| Área administrativa | I | 15,0 | 15,0 | 15,0 | 7,5 | 15,0 | 6,0 | 3,0 | 3,0 | - | e) | e) | 15,0 |
+| Divisa de propriedade | J | 15,0 | 15,0 | 15,0 (c) | 7,5 | 15,0 | 6,0 | 1,5 | 1,5 | e) | - | e) | 15,0 |
+| Via pública (c) | K | 15,0 | 15,0 | 15,0 (c) | 7,5 | 15,0 | 6,0 | 1,5 | 1,5 | e) | e) | - | 15,0 |
+| Recipientes estacionários para decantação (d) | L | 0 | 0 | 0 | 7,5 | 0 | 7,5 | 7,5 | 15,0 | 15,0 | 15,0 | 15,0 | - |
+
+Fonte: NT 4-05, página 13, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Observações da tabela:
+a) Para a leitura desta tabela as letras maiúsculas têm o mesmo significado tanto na horizontal, quanto na vertical;
+b) Ver Tabela 1 desta NT.
+c) Ver na Tabela 2 deste anexo a indicação da distância de segurança recomendada à divisa de propriedade ou via pública para recipientes estacionários com capacidade volumétrica individual superior a 120 m³.
+d) Válido para recipientes estacionários para decantação até 10 m³.
+e) As distâncias mínimas de segurança não se aplicam aos recipientes novos ou requalificados sem uso.
+Fonte indicada na página: ABNT NBR 15186.
+<!-- /tabela-conferida: Tabela 1 do Anexo A p13 -->
+
 ---
 
 ## Página 14
@@ -821,6 +897,23 @@ Fonte: ABNT NBR 15186.
 | Maior que 757 a 3.785 |  |  | 91,0 |  |  |
 | Maior que 3.785 |  |  | 122,0 |  |  |
 | Observação: a) Ver na Tabela 1 deste anexo a indicação da distância de segurança recomendada à divisa de propriedade ou via pública para recipientes estacionários com capacidade volumétrica individual inferior a 120 m³. |  |  |  |  |  |
+
+<!-- tabela-conferida: Tabela 2 do Anexo A p14 -->
+### Tabela 2 do Anexo A — Distâncias mínimas de segurança ao limite da propriedade para os recipientes estacionários com capacidade volumétrica individual superior a 120 m³ (conferida)
+
+| Capacidade (m³) | Distância (m) |
+| --- | --- |
+| Maior que 120 a 265 | 23,0 |
+| Maior que 265 a 341 | 30,0 |
+| Maior que 341 a 454 | 38,0 |
+| Maior que 454 a 757 | 61,0 |
+| Maior que 757 a 3.785 | 91,0 |
+| Maior que 3.785 | 122,0 |
+
+Fonte: NT 4-05, página 14, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Observação da tabela: a) Ver na Tabela 1 deste anexo a indicação da distância de segurança recomendada à divisa de propriedade ou via pública para recipientes estacionários com capacidade volumétrica individual inferior a 120 m³.
+Fonte indicada na página: ABNT NBR 15186.
+<!-- /tabela-conferida: Tabela 2 do Anexo A p14 -->
 
 ---
 
@@ -906,6 +999,40 @@ Fonte: CBMERJ.
 | Funcionamento simultâneo (para efeitos de cálculo) |  |  | 2 (duas) linhas manuais | 2 (duas)linhas manuais |  |  | 2 (duas)linhas manuais e 01 (um) canhão monitor |  |  | Demanda de água somente para os aspersores |  |  | Demanda de água somente para os aspersores | Demanda de água somente para os aspersores |
 | Tempo |  |  | 30 mim | 40 mim |  |  | 60 mim |  |  | 120min |  |  | 180min | 180min |
 | Observações: 1) Essa tabela se aplica quando o somatório dos recipientes for maior que 15 m³ (alínea f de 5.1.6), todavia, para aplicação dos critérios é analisado a capacidade de armazenamento individual do recipiente. 2) Caso as baterias de recipientes de GLP com capacidade individual de, no máximo, 60 m³ estiverem com afastamentos de 15 m ou mais, entre si, podem ser consideradas isoladas. 3) Deve ser previsto resfriamento para a esfera submetida ao incêndio, bem como para as esferas e baterias de recipientes de GLP cuja distância entre costados seja inferior a 30 m. 4) Para recipientes de volume individual inferior a 200 m³ submetida ao incêndio, devem ser resfriados todos os recipientes, independentemente de sua capacidade volumétrica cuja distância, entre costados, seja inferior a 15 m. 5) Um ou mais recipientes de volume individual igual ou superior a 200 m³ devem ser considerados equivalentes a uma esfera. 6) Quando o suprimento de água sair da rede de incêndio da edificação/área de risco deve-se somar a maior vazão estabelecida, ao valor correspondente ao uso de dois canhões monitores fixos (vazão individual por canhões de 1.200 lpm). 7) A localização dos cilindros e esferas de GLP deve atender às normas técnicas oficiais. 8) O armazenamento de GLP em tanques subterrâneos não necessita de proteção contra incêndios por resfriamento. 9) O alcance horizontal do jato compacto produzido pelas linhas manuais de resfriamento deve ser medido da saída do esguicho ao ponto de queda do jato, porém este alcance deve ser desconsiderado quando da aplicação de 6.5.1. 10) Ver alínea “g” de 5.1.6. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+<!-- tabela-conferida: Tabela 2 do Anexo B p16 -->
+### Tabela 2 do Anexo B — Critérios de exigência de sistema fixo de resfriamento para recipientes estacionários (conferida)
+
+| Capacidade de armazenamento individual | Inferior a 10 m³ | Superior a 10 m³ e igual ou inferior 20 m³ | Superior a 20 m³ e igual ou inferior 60 m³ | Superior a 60 m³ e igual ou inferior 120 m³ | Superior a 120 m³ | Esferas |
+| --- | --- | --- | --- | --- | --- | --- |
+| Hidrante simples | Sim | Não | Não | Não | Não | Não |
+| Hidrante duplo | Não | Sim | Sim | Sim | Sim | Sim |
+| Diâmetro mínimo da tubulação | 60mm | 75mm | 75mm | 75mm | 75mm | 75mm |
+| Pressão mínima no sistema de hidrantes (medida no esguicho) | 35mca | 40mca | 40mca | 40mca | 40mca | 40mca |
+| Mínimo alcance horizontal do jato compacto (linha manual) 8 | 15 m | 20 m | 20 m | 30 m | 30 m | 30 m |
+| Vazão sistema de hidrante | 200l/min | 400l/min | 400l/min | 1000l/min | 1000l/min | 1000l/min |
+| Canhão monitor | Não | Não | Sim | Sim (portátil) | Sim (portátil) | Sim (Auto oscilatório) |
+| Pressão mínima no canhão monitor | - | - | 56 mca | 56 mca | 56 mca | 56 mca |
+| Vazão canhão monitor | - | - | 800l/min | 800l/min | 800l/min | 800l/min |
+| Sistema com bicos aspersores | Não | Não | Não | Sim | Sim | Sim |
+| Taxa mínima dos Aspersores | - | - | - | 5lpm/m² | 5lpm/m² | 5lpm/m² |
+| Funcionamento simultâneo (para efeitos de cálculo) | 2 (duas) linhas manuais | 2 (duas)linhas manuais | 2 (duas)linhas manuais e 01 (um) canhão monitor | Demanda de água somente para os aspersores | Demanda de água somente para os aspersores | Demanda de água somente para os aspersores |
+| Tempo | 30 mim | 40 mim | 60 mim | 120min | 180min | 180min |
+
+Fonte: NT 4-05, página 16, Tabela 2 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Observações da tabela:
+1) Essa tabela se aplica quando o somatório dos recipientes for maior que 15 m³ (alínea f de 5.1.6), todavia, para aplicação dos critérios é analisado a capacidade de armazenamento individual do recipiente.
+2) Caso as baterias de recipientes de GLP com capacidade individual de, no máximo, 60 m³ estiverem com afastamentos de 15 m ou mais, entre si, podem ser consideradas isoladas.
+3) Deve ser previsto resfriamento para a esfera submetida ao incêndio, bem como para as esferas e baterias de recipientes de GLP cuja distância entre costados seja inferior a 30 m.
+4) Para recipientes de volume individual inferior a 200 m³ submetida ao incêndio, devem ser resfriados todos os recipientes, independentemente de sua capacidade volumétrica cuja distância, entre costados, seja inferior a 15 m.
+5) Um ou mais recipientes de volume individual igual ou superior a 200 m³ devem ser considerados equivalentes a uma esfera.
+6) Quando o suprimento de água sair da rede de incêndio da edificação/área de risco deve-se somar a maior vazão estabelecida, ao valor correspondente ao uso de dois canhões monitores fixos (vazão individual por canhões de 1.200 lpm).
+7) A localização dos cilindros e esferas de GLP deve atender às normas técnicas oficiais.
+8) O armazenamento de GLP em tanques subterrâneos não necessita de proteção contra incêndios por resfriamento.
+9) O alcance horizontal do jato compacto produzido pelas linhas manuais de resfriamento deve ser medido da saída do esguicho ao ponto de queda do jato, porém este alcance deve ser desconsiderado quando da aplicação de 6.5.1.
+10) Ver alínea “g” de 5.1.6.
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 2 do Anexo B p16 -->
 
 ---
 

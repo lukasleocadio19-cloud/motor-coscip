@@ -1,0 +1,71 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-05
+arquivo: nt-4-05-gas-manipulacao-armazenamento-e-comercializacao.md
+tabela: Tabela 2 do Anexo A
+titulo: Distâncias mínimas de segurança ao limite da propriedade para os recipientes estacionários com
+  capacidade volumétrica individual superior a 120 m³
+pagina: 14
+fonte_pdf_sha256: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 0
+  - 7
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-05/pagina-14.jpg
+    imagem_sha256: 6b7ce537548ef84b5c6e785455d7beac2a80068cc9dcebd14d82dc33be81b829
+    linhas_cabecalho: 1
+    linhas:
+    - - Capacidade (m³)
+      - Distância (m)
+    - - Maior que 120 a 265
+      - 23,0
+    - - Maior que 265 a 341
+      - 30,0
+    - - Maior que 341 a 454
+      - 38,0
+    - - Maior que 454 a 757
+      - 61,0
+    - - Maior que 757 a 3.785
+      - 91,0
+    - - Maior que 3.785
+      - 122,0
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 14
+      tabela_na_pagina: 1
+    linhas:
+    - - Capacidade (m³)
+      - Distância (m)
+    - - Maior que 120 a 265
+      - 23,0
+    - - Maior que 265 a 341
+      - 30,0
+    - - Maior que 341 a 454
+      - 38,0
+    - - Maior que 454 a 757
+      - 61,0
+    - - Maior que 757 a 3.785
+      - 91,0
+    - - Maior que 3.785
+      - 122,0
+notas:
+- 'Observação da tabela: a) Ver na Tabela 1 deste anexo a indicação da distância de segurança recomendada
+  à divisa de propriedade ou via pública para recipientes estacionários com capacidade volumétrica individual
+  inferior a 120 m³.'
+- 'Fonte indicada na página: ABNT NBR 15186.'
+inconsistencias_da_fonte:
+- Acima de 3.785 m³ esta tabela dá 122,0 m; a Tabela 1 do corpo da NT (p. 5) dá 120,00 m até edificações
+  e limites da propriedade.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

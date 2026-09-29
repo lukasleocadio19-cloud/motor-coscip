@@ -1,0 +1,126 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-02
+arquivo: nt-3-02-gas-glp-gn-uso-em-edificacoes.md
+tabela: Tabela 2 do Anexo A
+titulo: Afastamentos mínimos de segurança para agrupamento de recipientes transportáveis
+pagina: 13
+fonte_pdf_sha256: 8a44a1be179fd3e5c38d06b32f637226230702d48b6c3f8c0f8ae37add147950
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 5
+  - 10
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-02/pagina-13.jpg
+    imagem_sha256: e8983c63b44cbf0ee20c30304b7b30c6774b127cabed18a78d9e23658bc22659
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - 'Central de capacidade volumétrica total (obs.: a)'
+    - 'Divisa de propriedades edificáveis / edificações (obs.: c, d)'
+    - 'Passeio público (obs.: b, d)'
+    - 'Quantidade total de recipientes transportáveis: P-45 (0,108 m³)'
+    - 'Quantidade total de recipientes transportáveis: P-90 (0,216 m³)'
+    - 'Quantidade total de recipientes transportáveis: P-125 (0,300 m³)'
+    - 'Quantidade total de recipientes transportáveis: P-190 (0,450 m³)'
+    linhas:
+    - - Até 2,0 m³
+      - 0 m
+      - 3 m
+      - '18'
+      - '9'
+      - '6'
+      - '4'
+    - - 2,1 a 3,5 m³
+      - 1,5 m
+      - 3 m
+      - 19 a 32
+      - 10 a 16
+      - 7 a 11
+      - 5 a 7
+    - - 3,51 a 5,5 m³
+      - 3 m
+      - 3 m
+      - 33 a 50
+      - 17 a 25
+      - 12 a 18
+      - 8 a 11
+    - - 5,51 a 8,0 m³
+      - 7,5 m
+      - 3 m
+      - 51 a 74
+      - 26 a 37
+      - 19 a 26
+      - 12 a 16
+    - - Acima de 8 até 10 m³
+      - 15 m
+      - 15 m
+      - 75 a 92 máximo
+      - 38 a 46 máximo
+      - 27 a 33 máximo
+      - 17 a 22 máximo
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 13
+      tabela_na_pagina: 1
+    linhas:
+    - - Até 2,0 m³
+      - 0 m
+      - 3 m
+      - '18'
+      - '9'
+      - '6'
+      - '4'
+    - - 2,1 a 3,5 m³
+      - 1,5 m
+      - 3 m
+      - 19 a 32
+      - 10 a 16
+      - 7 a 11
+      - 5 a 7
+    - - 3,51 a 5,5 m³
+      - 3 m
+      - 3 m
+      - 33 a 50
+      - 17 a 25
+      - 12 a 18
+      - 8 a 11
+    - - 5,51 a 8,0 m³
+      - 7,5 m
+      - 3 m
+      - 51 a 74
+      - 26 a 37
+      - 19 a 26
+      - 12 a 16
+    - - Acima de 8 até 10 m³
+      - 15 m
+      - 15 m
+      - 75 a 92 máximo
+      - 38 a 46 máximo
+      - 27 a 33 máximo
+      - 17 a 22 máximo
+notas:
+- 'Observações da tabela:'
+- a) Centrais com capacidade acima do limite estabelecido na Tabela 2 devem ser analisadas por órgãos
+  competentes considerando situações temporárias e se em caso definitivas com as devidas medidas mitigadoras
+  compensatórias definidas
+- b) Afastamento não aplicável para centrais GLP instaladas em nicho conforme item 5.7.2 desta NT.
+- c) Caso o local destinado à instalação da central que utilize recipientes transportáveis não permita
+  os afastamentos acima, a central pode ser subdividida com a utilização de paredes divisórias resistentes
+  ao fogo com TRRF mínimo de 120 min, material aprovado conforme ABNT NBR 10636, com comprimento e altura
+  de dimensões superiores ao recipiente. Neste caso, deve se adotar o afastamento mínimo referente à capacidade
+  total de cada subdivisão da central de GLP.
+- d) Para recipientes contidos em abrigos, com paredes laterais e cobertura resistente ao fogo com TRRF
+  = 2 h, interpondo-se entre os recipientes e o ponto considerado, a distância pode ser reduzida à metade.
+- 'Fonte indicada na página: ABNT NBR 13523:2019.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

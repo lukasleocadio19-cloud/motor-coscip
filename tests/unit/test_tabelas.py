@@ -166,3 +166,10 @@ def test_forma_geometrica_so_vale_para_a_grade_desenhada():
     grade = [["Extintores", "X"], ["Hidrantes", "X"], ["Chuveiros", None, "X"]]
     assert tabelas.shape(grade, tabelas.geo_forma(table)) == [
         ["Extintores", "X"], ["Hidrantes", "X"], ["Chuveiros", "X"]]
+
+
+def test_celula_vertical_volta_a_ordem_da_leitura():
+    grade = [["r a e d a d a r tn E", "Sistema de extração natural"]]
+    (linha,) = tabelas.shape(grade, {"linhas_cabecalho": 0, "celulas_verticais": [[0, 0]]})
+    assert linha[0] == "Entradadear"
+    assert tabelas.compare_cell("Entrada de ar", linha[0])["estado"] == "verificada"
