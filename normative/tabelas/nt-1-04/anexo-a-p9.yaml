@@ -1,0 +1,201 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-04
+arquivo: nt-1-04-classificacao-de-risco.md
+tabela: Tabela do Anexo A
+titulo: Classificação quanto à ocupação (página 9)
+pagina: 9
+fonte_pdf_sha256: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-04/pagina-09.png
+    imagem_sha256: bec946608272be845c1e4cc8a938a2f8d9003d002bc73622ccf6e4805b84bcbf
+    linhas_cabecalho: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Definição e exemplos
+    - - I
+      - Industrial
+      - I-1
+      - Industrial 1
+      - Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são
+        classificadas como Risco Médio 1 conforme Anexo B.
+    - - ^
+      - ^
+      - I-2
+      - Industrial 2
+      - Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são
+        classificadas como Risco Médio 2 conforme Anexo B.
+    - - ^
+      - ^
+      - I-3
+      - Industrial 3
+      - Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são
+        classificadas como Risco Grande conforme Anexo B.
+    - - J
+      - Depósito
+      - J-1
+      - Depósitos de material incombustível
+      - Edificações sem processo industrial que armazenam tijolos, pedras, areias, cimentos, metais e
+        outros materiais incombustíveis, todos sem embalagem.
+    - - ^
+      - ^
+      - J-2
+      - Todo tipo de Depósito
+      - Depósitos com carga de incêndio até 1.000 MJ/m², conforme Anexo C ou Anexo D.
+    - - ^
+      - ^
+      - J-3
+      - Todo tipo de Depósito
+      - Depósitos com carga de incêndio entre 1.000 e 1.200 MJ/m², conforme Anexo C ou Anexo D.
+    - - ^
+      - ^
+      - J-4
+      - Todo tipo de Depósito
+      - Depósitos onde a carga de incêndio ultrapassa a 1.200 MJ/m², conforme Anexo C ou Anexo D.
+    - - L
+      - Explosivos ou munições
+      - L-1
+      - Comércio
+      - Comércio em geral de fogos de artifício, munições e assemelhados
+    - - ^
+      - ^
+      - L-2
+      - Indústria
+      - Indústria de material explosivo ou munições
+    - - ^
+      - ^
+      - L-3
+      - Depósito
+      - Depósito de material explosivo ou munições
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 9
+      tabela_na_pagina: 1
+    linhas:
+    - - Ocupação/Uso
+      - Descrição
+    - - Grupo
+      - Divisão
+      - Definição e exemplos
+    - - Industrial
+      - Industrial 1
+      - Edificações industriais que, em função das
+    - - atividades exercidas e dos materiais utilizados,
+    - - I-1
+    - - são classificadas como Risco Médio 1 conforme
+    - - Anexo B.
+    - - Industrial 2
+      - Edificações industriais que, em função das ati-
+    - - vidades exercidas e dos materiais utilizados, são
+    - - I
+      - I-2
+    - - classificadas como Risco Médio 2 conforme
+    - - Anexo B.
+    - - Industrial 3
+      - Edificações industriais que, em função das ati-
+    - - vidades exercidas e dos materiais utilizados, são
+    - - I-3
+    - - classificadas como Risco Grande conforme Anexo
+    - - B.
+    - - Depósito
+      - Depósitos de material incombustível
+      - Edificações sem processo industrial que ar-
+    - - mazenam tijolos, pedras, areias, cimentos, metais
+    - - J-1
+    - - e outros materiais incombustíveis, todos sem
+    - - embalagem.
+    - - Todo tipo de Depósito
+      - Depósitos com carga de incêndio até 1.000
+    - - J-2
+    - - J
+      - MJ/m², conforme Anexo C ou Anexo D.
+    - - Todo tipo de Depósito
+      - Depósitos com carga de incêndio entre 1.000 e
+    - - J-3
+    - - 1.200 MJ/m2, conforme Anexo C ou Anexo D.
+    - - Todo tipo de Depósito
+      - Depósitos onde a carga de incêndio ultrapassa a
+    - - J-4
+    - - 1.200 MJ/m², conforme Anexo C ou Anexo D.
+    - - Comércio
+      - Comércio em geral de fogos de artifício, munições
+    - - L-1
+    - - e assemelhados
+    - - L
+      - Explosivos ou munições
+      - L-2
+      - Indústria
+      - Indústria de material explosivo ou munições
+    - - Depósito
+    - - L-3
+      - Depósito de material explosivo ou munições
+notas:
+- Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula
+  mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por")
+  desfeita.
+estado: divergente
+resultado:
+  estado: divergente
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 5
+    - 5
+    - 3
+    - 3
+    - 5
+    - 3
+    - 3
+    - 3
+    - 5
+    - 3
+    - 3
+  - - 2
+    - 3
+    - 3
+    - 1
+    - 1
+    - 1
+    - 1
+    - 2
+    - 1
+    - 2
+    - 1
+    - 1
+    - 2
+    - 1
+    - 1
+    - 1
+    - 1
+    - 3
+    - 1
+    - 1
+    - 1
+    - 1
+    - 2
+    - 1
+    - 2
+    - 2
+    - 1
+    - 1
+    - 2
+    - 1
+    - 1
+    - 2
+    - 1
+    - 1
+    - 5
+    - 1
+    - 2

@@ -6,11 +6,11 @@ resumo:
   imagens_presentes: 478
   imagens_ausentes: 1
   tabelas_por_estado:
-    bruto: 187
+    bruto: 181
     capa: 38
-    divergente: 11
+    divergente: 12
     nao_tabela: 1
-    verificada: 57
+    verificada: 62
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -438,7 +438,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-04-Classificacao-das-edificacoes-e-areas-de-risco-quanto-ao-risco-de-incendio.pdf
   sha256_pdf: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
-  sha256_md: 2bf7591e78e4c9844a85537202b21b80407d99d4788049a260f742cb6d9291f0
+  sha256_md: 814a1010a62ff3a93d6f240f2ca3e6abe719942974779e2137166bcdf4b55384
   data_captura: '2026-07-23'
   paginas: 20
   midia: nt-1-04
@@ -507,17 +507,29 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 5
-    estado: bruto
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-1-04/anexo-a-p5.yaml
+    estado: verificada
   - pagina: 6
-    estado: bruto
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-1-04/anexo-a-p6.yaml
+    estado: verificada
   - pagina: 7
-    estado: bruto
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-1-04/anexo-a-p7.yaml
+    estado: verificada
   - pagina: 8
-    estado: bruto
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-1-04/anexo-a-p8.yaml
+    estado: verificada
   - pagina: 9
-    estado: bruto
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-1-04/anexo-a-p9.yaml
+    estado: divergente
   - pagina: 10
-    estado: bruto
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-1-04/anexo-a-p10.yaml
+    estado: verificada
   - pagina: 11
     tabela: Tabela do Anexo B
     arquivo: normative/tabelas/nt-1-04/anexo-b-p11.yaml

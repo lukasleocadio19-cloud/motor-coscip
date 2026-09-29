@@ -4,8 +4,8 @@ Gerado por `python -m tools.normas.tabelas relatorio`. Estado de cada tabela con
 
 | Estado | Tabelas |
 | --- | --- |
-| divergente | 11 |
-| verificada | 57 |
+| divergente | 12 |
+| verificada | 62 |
 
 Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale como segundo caminho só até a extração geométrica (`pdfplumber`, workflow `normas-midia.yml`) rodar sobre o PDF oficial conferido por hash.
 
@@ -28,6 +28,12 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | Decreto 42/2018 | Tabela 19 | 43 | verificada | visual + texto | 0 | 0 |
 | Decreto 42/2018 | Tabela 20 | 44 | verificada | visual + texto | 0 | 0 |
 | Decreto 42/2018 | Tabela 21 | 45 | verificada | visual + texto | 0 | 0 |
+| NT 1-04 | Tabela do Anexo A | 5 | verificada | visual + texto | 0 | 0 |
+| NT 1-04 | Tabela do Anexo A | 6 | verificada | visual + texto | 0 | 0 |
+| NT 1-04 | Tabela do Anexo A | 7 | verificada | visual + texto | 0 | 0 |
+| NT 1-04 | Tabela do Anexo A | 8 | verificada | visual + texto | 0 | 1 |
+| NT 1-04 | Tabela do Anexo A | 9 | divergente | visual + texto | 0 | 0 |
+| NT 1-04 | Tabela do Anexo A | 10 | verificada | visual + texto | 0 | 0 |
 | NT 1-04 | Tabela do Anexo B | 11 | verificada | visual + geometrica | 0 | 0 |
 | NT 1-04 | Tabela do Anexo B | 12 | verificada | visual + geometrica | 0 | 0 |
 | NT 1-04 | Tabela do Anexo B | 13 | verificada | visual + geometrica | 0 | 1 |

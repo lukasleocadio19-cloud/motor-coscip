@@ -1,0 +1,153 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-04
+arquivo: nt-1-04-classificacao-de-risco.md
+tabela: Tabela do Anexo A
+titulo: Classificação quanto à ocupação (página 5)
+pagina: 5
+fonte_pdf_sha256: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-04/pagina-05.png
+    imagem_sha256: 7d043ce82adb988c5c6bea43e8925f1cd34d149cfc1163ba5e3ec5d769f5af38
+    linhas_cabecalho: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Definição e exemplos
+    - - A
+      - Residencial
+      - A-1
+      - Residencial privativa unifamiliar
+      - Casas térreas ou assobradadas (isoladas e não isoladas)
+    - - ^
+      - ^
+      - A-2
+      - Residencial privativa multifamiliar
+      - Edifícios de apartamento em geral
+    - - ^
+      - ^
+      - A-3
+      - Residencial coletiva
+      - Pensionatos, internatos, orfanatos, alojamentos, mosteiros, conventos.
+    - - ^
+      - ^
+      - A-4
+      - Agrupamento residencial privativo unifamiliar
+      - Conjunto de duas ou mais edificações residenciais privativas unifamiliares dentro de um lote.
+    - - ^
+      - ^
+      - A-5
+      - Agrupamento residencial privativo multifamiliar
+      - Conjunto de duas ou mais edificações residenciais privativas multifamiliares dentro de um lote.
+    - - ^
+      - ^
+      - A-6
+      - Mista
+      - Edificação composta de unidades residenciais privativas (apartamentos) e unidades autônomas destinadas
+        a espaços comerciais (lojas ou salas).
+    - - B
+      - Serviço de hospedagem
+      - B-1
+      - Hotel e assemelhados
+      - Hotéis, motéis, pensões, hospedarias, pousadas, albergues, casas de cômodos, camping.
+    - - ^
+      - ^
+      - B-2
+      - Hotel residencial
+      - Hotéis e assemelhados com cozinha própria nos apartamentos (incluem-se, flats, aparthotel, hotel
+        residência, e similares destinados a ocupação transitória)
+    - - C
+      - Comercial
+      - C-1
+      - Comercial 1
+      - 'Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio
+        1 conforme Nota Técnica específica, tais como: artigos de metal, louças, artigos hospitalares,
+        edifícios de lojas de departamentos, magazines, armarinhos, galerias comerciais, supermercados
+        em geral, mercados e outros.'
+    - - ^
+      - ^
+      - C-2
+      - Comercial 2
+      - 'Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio
+        2 conforme Nota Técnica específica, tais como: comércio atacadista de produtos químicos e petroquímicos,
+        de resíduos de papel e papelão, espuma e isopor, etc.'
+    - - ^
+      - ^
+      - C-3
+      - Shopping centers
+      - Centro de compras em geral (shopping centers)
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 5
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Definição e exemplos
+    - - A
+      - Residencial
+      - A-1
+      - Residencial privativa unifamiliar
+      - Casas térreas ou assobradadas (isoladas e não isoladas)
+    - - A-2
+      - Residencial privativa multifamiliar
+      - Edifícios de apartamento em geral
+    - - A-3
+      - Residencial coletiva
+      - Pensionatos, internatos, orfanatos, alojamentos, mosteiros, conventos.
+    - - A-4
+      - Agrupamento residencial privativo unifamiliar
+      - Conjunto de duas ou mais edificações residenciais privativas unifamiliares dentro de um lote.
+    - - A-5
+      - Agrupamento residencial privativo multifamiliar
+      - Conjunto de duas ou mais edificações residenciais privativas multifamiliares dentro de um lote.
+    - - A-6
+      - Mista
+      - Edificação composta de unidades residenciais privativas (apartamentos) e unidades autônomas destinadas
+        a espaços comerciais (lojas ou salas).
+    - - B
+      - Serviço de hospedagem
+      - B-1
+      - Hotel e assemelhados
+      - Hotéis, motéis, pensões, hospedarias, pousadas, albergues, casas de cômodos, camping.
+    - - B-2
+      - Hotel residencial
+      - Hotéis e assemelhados com cozinha própria nos apartamentos (incluem-se, flats, aparthotel, hotel
+        residência, e similares destinados a ocupação transitória)
+    - - C
+      - Comercial
+      - C-1
+      - Comercial 1
+      - 'Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio
+        1 conforme Nota Técnica específica, tais como: artigos de metal, louças, artigos hospitalares,
+        edifícios de lojas de departamentos, magazines, armarinhos, galerias comerciais, supermercados
+        em geral, mercados e outros.'
+    - - C-2
+      - Comercial 2
+      - 'Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio
+        2 conforme Nota Técnica específica, tais como: comércio atacadista de produtos químicos e petroquímicos,
+        de resíduos de papel e papelão, espuma e isopor, etc.'
+    - - C-3
+      - Shopping centers
+      - Centro de compras em geral (shopping centers)
+notas:
+- Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula
+  mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por")
+  desfeita.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

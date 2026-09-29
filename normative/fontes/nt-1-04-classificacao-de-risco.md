@@ -196,6 +196,27 @@ constante do Anexo D (método determinístico). Após o cálculo do valor da car
 |  |  | C-2 | Comercial 2 | Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio 2 conforme Nota Técnica específica, tais como: comércio atacadista de produtos químicos e petroquímicos, de resíduos de papel e papelão, espuma e isopor, etc. |
 |  |  | C-3 | Shopping centers | Centro de compras em geral (shopping centers) |
 
+<!-- tabela-conferida: Tabela do Anexo A p5 -->
+### Tabela do Anexo A — Classificação quanto à ocupação (página 5) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| A | Residencial | A-1 | Residencial privativa unifamiliar | Casas térreas ou assobradadas (isoladas e não isoladas) |
+| A | Residencial | A-2 | Residencial privativa multifamiliar | Edifícios de apartamento em geral |
+| A | Residencial | A-3 | Residencial coletiva | Pensionatos, internatos, orfanatos, alojamentos, mosteiros, conventos. |
+| A | Residencial | A-4 | Agrupamento residencial privativo unifamiliar | Conjunto de duas ou mais edificações residenciais privativas unifamiliares dentro de um lote. |
+| A | Residencial | A-5 | Agrupamento residencial privativo multifamiliar | Conjunto de duas ou mais edificações residenciais privativas multifamiliares dentro de um lote. |
+| A | Residencial | A-6 | Mista | Edificação composta de unidades residenciais privativas (apartamentos) e unidades autônomas destinadas a espaços comerciais (lojas ou salas). |
+| B | Serviço de hospedagem | B-1 | Hotel e assemelhados | Hotéis, motéis, pensões, hospedarias, pousadas, albergues, casas de cômodos, camping. |
+| B | Serviço de hospedagem | B-2 | Hotel residencial | Hotéis e assemelhados com cozinha própria nos apartamentos (incluem-se, flats, aparthotel, hotel residência, e similares destinados a ocupação transitória) |
+| C | Comercial | C-1 | Comercial 1 | Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio 1 conforme Nota Técnica específica, tais como: artigos de metal, louças, artigos hospitalares, edifícios de lojas de departamentos, magazines, armarinhos, galerias comerciais, supermercados em geral, mercados e outros. |
+| C | Comercial | C-2 | Comercial 2 | Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio 2 conforme Nota Técnica específica, tais como: comércio atacadista de produtos químicos e petroquímicos, de resíduos de papel e papelão, espuma e isopor, etc. |
+| C | Comercial | C-3 | Shopping centers | Centro de compras em geral (shopping centers) |
+
+Fonte: NT 1-04, página 5, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por") desfeita.
+<!-- /tabela-conferida: Tabela do Anexo A p5 -->
+
 ---
 
 ## Página 6
@@ -218,6 +239,25 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 | E | Escolar e cultura física | E-1 | Escolar em geral | Pré-escola (creches, escolas maternais, jardins de infância). Escolas de educação básica, ensino fundamental e médio, educação de jovens e adultos, ensino superior, ensino técnico e assemelhados. Escolas profissionais em geral. |
 |  |  | E-2 | Escolar especial | Escolas de artes e artesanato, de línguas, de cultura geral, de cultura estrangeira, escolas religiosas e assemelhados |
 |  |  | E-3 | Espaço para cultura física | Locais de ensino e/ou práticas de artes marciais, natação, ginástica (artística, dança, musculação e outros) esportes coletivos (tênis, futebol e outros que não estejam incluídos em F-3), sauna, casas de fisioterapia e assemelhados. Sem arquibancadas. |
+
+<!-- tabela-conferida: Tabela do Anexo A p6 -->
+### Tabela do Anexo A — Classificação quanto à ocupação (página 6) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| C | Comercial | C-4 | Quiosque | Ponto de venda localizado no mall de centro comercial e de centro de compras em geral (shopping centers) |
+| D | Serviço profissional e institucional | D-1 | Local para prestação de serviço profissional ou condução de negócios | Escritórios administrativos ou técnicos, instituições financeiras (exceto as classificadas em D-2), cabeleireiros, centros profissionais e assemelhados, repartições públicas (exceto as classificadas em D-5). |
+| D | Serviço profissional e institucional | D-2 | Agências bancárias | Agências bancárias e assemelhados |
+| D | Serviço profissional e institucional | D-3 | Serviços de manutenção e reparação (exceto os classificados em G-4) | Lavanderias, assistência técnica, reparação e manutenção de aparelhos eletrodomésticos, chaveiros, serviços de pintura, pintura de letreiros, serviços de limpeza e outros. |
+| D | Serviço profissional e institucional | D-4 | Laboratórios de análises clínicas e assemelhados | Laboratórios de análises clínicas sem internação e assemelhados. Laboratórios ambientais, fotográficos e assemelhados. |
+| D | Serviço profissional e institucional | D-5 | Edificação pública das forças armadas, policiais e militares estaduais | Quartéis, delegacias, postos policiais, grupamentos e assemelhados |
+| E | Escolar e cultura física | E-1 | Escolar em geral | Pré-escola (creches, escolas maternais, jardins de infância). Escolas de educação básica, ensino fundamental e médio, educação de jovens e adultos, ensino superior, ensino técnico e assemelhados. Escolas profissionais em geral. |
+| E | Escolar e cultura física | E-2 | Escolar especial | Escolas de artes e artesanato, de línguas, de cultura geral, de cultura estrangeira, escolas religiosas e assemelhados |
+| E | Escolar e cultura física | E-3 | Espaço para cultura física | Locais de ensino e/ou práticas de artes marciais, natação, ginástica (artística, dança, musculação e outros) esportes coletivos (tênis, futebol e outros que não estejam incluídos em F-3), sauna, casas de fisioterapia e assemelhados. Sem arquibancadas. |
+
+Fonte: NT 1-04, página 6, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por") desfeita.
+<!-- /tabela-conferida: Tabela do Anexo A p6 -->
 
 ---
 
@@ -246,6 +286,27 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  | F-10 | Exposição de animais | Locais para exposição agropecuária e assemelhados. Edificações permanentes |
 |  |  | F-11 | Clubes sociais e diversão | Clubes sociais, bilhares, boliche, salões de baile, restaurantes com atividades de diversões públicas, zoológicos, aquários, parque de diversões (edificação permanente), e assemelhados. |
 
+<!-- tabela-conferida: Tabela do Anexo A p7 -->
+### Tabela do Anexo A — Classificação quanto à ocupação (página 7) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| F | Local de Reunião de Público | F-1 | Local onde há objeto de valor inestimável | Museus, centro de documentos históricos, galerias de arte, arquivos, bibliotecas e assemelhados |
+| F | Local de Reunião de Público | F-2 | Local religioso e velório | Igrejas, capelas, sinagogas, mesquitas, templos, cemitérios, crematórios, necrotérios, salas de funerais e assemelhados |
+| F | Local de Reunião de Público | F-3 | Centro esportivo e de exibições | Arenas em geral, estádios, ginásios, piscinas, rodeios, autódromos, sambódromo, jóquei clube, pista de patinação e assemelhados. Todos com arquibancadas. |
+| F | Local de Reunião de Público | F-4 | Estação e terminal de passageiro | Estações rodoferroviárias e marítimas, portos, marina, metrô, aeroportos, helipontos, teleféricos, estações de transbordo em geral e assemelhados |
+| F | Local de Reunião de Público | F-5 | Arte cênica e auditório | Teatros em geral, cinemas, óperas, auditórios de estúdios de rádio e televisão, auditórios em geral e assemelhados |
+| F | Local de Reunião de Público | F-6 | Boates e casas de show | Boates, danceterias, discotecas, centro de convenções, e assemelhados |
+| F | Local de Reunião de Público | F-7 | Instalações temporárias | Circos, parques temático, parque de diversões, feiras, eventos de foodtruck e assemelhados |
+| F | Local de Reunião de Público | F-8 | Local para refeição | Restaurantes, lanchonetes, bares, cafés, refeitórios, cantinas e assemelhados |
+| F | Local de Reunião de Público | F-9 | Recreação pública | Parques recreativos (sem atividade de diversões públicas) e assemelhados |
+| F | Local de Reunião de Público | F-10 | Exposição de animais | Locais para exposição agropecuária e assemelhados. Edificações permanentes |
+| F | Local de Reunião de Público | F-11 | Clubes sociais e diversão | Clubes sociais, bilhares, boliche, salões de baile, restaurantes com atividades de diversões públicas, zoológicos, aquários, parque de diversões (edificação permanente), e assemelhados. |
+
+Fonte: NT 1-04, página 7, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por") desfeita.
+<!-- /tabela-conferida: Tabela do Anexo A p7 -->
+
 ---
 
 ## Página 8
@@ -271,6 +332,26 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  | H-2 | Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais | Tratamento de dependentes de drogas, álcool e assemelhados, todos sem celas, asilos, residências geriátricas. |
 |  |  | H-3 | Hospital e assemelhados | Hospitais, casa de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos de atendimento de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital psiquiátrico. |
 |  |  | H-4 | Clínica e consultório médico, odontológico e assemelhados | Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados. Todos sem internação. |
+
+<!-- tabela-conferida: Tabela do Anexo A p8 -->
+### Tabela do Anexo A — Classificação quanto à ocupação (página 8) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| G | Serviço automotivo e assemelhado | G-1 | Garagem sem acesso de público e sem abastecimento | Garagens automáticas e garagens com manobristas. |
+| G | Serviço automotivo e assemelhado | G-2 | Garagem com acesso de público e sem abastecimento | Garagens coletivas sem automação, em geral e sem abastecimento (exceto veículos de carga e coletivos) |
+| G | Serviço automotivo e assemelhado | G-3 | Local dotado de abastecimento de combustível | Postos de abastecimento de combustíveis e serviço, garagens com abastecimento de combustível (exceto veículos de carga e coletivos) |
+| G | Serviço automotivo e assemelhado | G-4 | Serviço de conservação, manutenção e reparos | Oficinas de conserto de veículos. Borracharia (sem recauchutagem). Oficinas e garagens de veículos de carga e coletivos (tais como: empresas de ônibus, transportadoras, etc). Garagens de máquinas agrícolas e rodoviárias. Retificadoras de motores. |
+| G | Serviço automotivo e assemelhado | G-5 | Hangar | Abrigos para aeronaves com ou sem abastecimento |
+| G | Serviço automotivo e assemelhado | G-6 | Galpão ou garagem náutica | Abrigos para embarcações com ou sem abastecimento. Estrutura náutica que combina áreas para guarda de embarcações em terra ou sobre a água, cobertas ou não, e acessórios de acesso à água, podendo incluir oficina para manutenção e reparo de embarcações e seus equipamentos. |
+| H | Serviço de saúde | H-1 | Hospital veterinário e assemelhados | Hospitais, clínicas e consultórios veterinários e assemelhados (inclui-se alojamento com ou sem adestramento) |
+| H | Serviço de saúde | H-2 | Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais | Tratamento de dependentes de drogas, álcool e assemelhados, todos sem celas, asilos, residências geriátricas. |
+| H | Serviço de saúde | H-3 | Hospital e assemelhados | Hospitais, casa de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos de atendimento de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital psiquiátrico. |
+| H | Serviço de saúde | H-4 | Clínica e consultório médico, odontológico e assemelhados | Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados. Todos sem internação. |
+
+Fonte: NT 1-04, página 8, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por") desfeita.
+<!-- /tabela-conferida: Tabela do Anexo A p8 -->
 
 ---
 
@@ -353,6 +434,26 @@ Fonte: Decreto nº 42/2018 - COSCIP.
 |  |  | M-7 | Pátios de armazenagem | Pátios - área não coberta que tem como destinação de uso a estocagem de produtos. |
 |  |  | M-8 | Loteamento | Loteamento - é a divisão de glebas em lotes destinados à edificação, com aberturas de novas vias de circulação ou de logradouros públicos ou privados |
 |  |  | M-9 | Local onde a liberdade das pessoas sofre restrição | Manicômios, reformatórios, prisões em geral (casa de detenção, penitenciárias, presídios) e instituições assemelhadas, todos com celas |
+
+<!-- tabela-conferida: Tabela do Anexo A p10 -->
+### Tabela do Anexo A — Classificação quanto à ocupação (página 10) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| M | Especial | M-1 | Túnel | Túnel rodoferroviário destinados a transporte de passageiros ou cargas diversas |
+| M | Especial | M-2 | Líquidos ou gases inflamáveis ou combustíveis | Edificação destinada a manipulação, armazenamento e distribuição de líquidos ou gases inflamáveis ou combustíveis, tais como: ponto de venda ou depósito de GLP, etc. |
+| M | Especial | M-3 | Central de comunicação | Central telefônica, centros de comunicação, antenas de telefonia e assemelhados. |
+| M | Especial | M-4 | Estrutura temporária | Canteiro de obras e assemelhados, (não possuem atividade de reunião de público) |
+| M | Especial | M-5 | Silos | Armazéns de grãos e assemelhados |
+| M | Especial | M-6 | Energia | Geração, transmissão e distribuição de energia e assemelhados. |
+| M | Especial | M-7 | Pátios de armazenagem | Pátios – área não coberta que tem como destinação de uso a estocagem de produtos. |
+| M | Especial | M-8 | Loteamento | Loteamento - é a divisão de glebas em lotes destinados à edificação, com aberturas de novas vias de circulação ou de logradouros públicos ou privados |
+| M | Especial | M-9 | Local onde a liberdade das pessoas sofre restrição | Manicômios, reformatórios, prisões em geral (casa de detenção, penitenciárias, presídios) e instituições assemelhadas, todos com celas |
+
+Fonte: NT 1-04, página 10, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por") desfeita.
+Fonte indicada: Decreto nº 42/2018 – COSCIP.
+<!-- /tabela-conferida: Tabela do Anexo A p10 -->
 
 ---
 
