@@ -327,6 +327,8 @@ notas:
 - 'Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.:
   "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação
   histórica…" (fundo amarelo) não trazem valor em nenhuma faixa.'
+- 'Contra a camada de texto: "****" e o cabeçalho quebram em linhas extras (divergência de forma). Aguarda
+  o caminho geométrico.'
 inconsistencias_da_fonte:
 - 'As linhas "Edificação histórica com isenção de canalização ****" estão em branco nas três faixas de
   área: a NT não diz quantos BC se exigem nesses casos.'

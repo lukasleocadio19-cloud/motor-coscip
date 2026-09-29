@@ -6,9 +6,10 @@ resumo:
   imagens_presentes: 478
   imagens_ausentes: 0
   tabelas_por_estado:
-    bruto: 250
-    divergente: 8
-    verificada: 34
+    bruto: 189
+    capa: 38
+    divergente: 9
+    verificada: 57
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -148,39 +149,73 @@ fontes:
   - pagina: 28
     estado: bruto
   - pagina: 29
-    estado: bruto
+    tabela: Tabela 5
+    arquivo: normative/tabelas/decreto-42-2018/tabela-05.yaml
+    estado: verificada
   - pagina: 30
-    estado: bruto
+    tabela: Tabela 6
+    arquivo: normative/tabelas/decreto-42-2018/tabela-06.yaml
+    estado: verificada
   - pagina: 31
-    estado: bruto
+    tabela: Tabela 7
+    arquivo: normative/tabelas/decreto-42-2018/tabela-07.yaml
+    estado: verificada
   - pagina: 32
-    estado: bruto
+    tabela: Tabela 8
+    arquivo: normative/tabelas/decreto-42-2018/tabela-08.yaml
+    estado: verificada
   - pagina: 33
-    estado: bruto
+    tabela: Tabela 9
+    arquivo: normative/tabelas/decreto-42-2018/tabela-09.yaml
+    estado: verificada
   - pagina: 34
-    estado: bruto
+    tabela: Tabela 10
+    arquivo: normative/tabelas/decreto-42-2018/tabela-10.yaml
+    estado: verificada
   - pagina: 35
-    estado: bruto
+    tabela: Tabela 11
+    arquivo: normative/tabelas/decreto-42-2018/tabela-11.yaml
+    estado: verificada
   - pagina: 36
-    estado: bruto
+    tabela: Tabela 12
+    arquivo: normative/tabelas/decreto-42-2018/tabela-12.yaml
+    estado: verificada
   - pagina: 37
-    estado: bruto
+    tabela: Tabela 13
+    arquivo: normative/tabelas/decreto-42-2018/tabela-13.yaml
+    estado: verificada
   - pagina: 38
-    estado: bruto
+    tabela: Tabela 14
+    arquivo: normative/tabelas/decreto-42-2018/tabela-14.yaml
+    estado: verificada
   - pagina: 39
-    estado: bruto
+    tabela: Tabela 15
+    arquivo: normative/tabelas/decreto-42-2018/tabela-15.yaml
+    estado: verificada
   - pagina: 40
-    estado: bruto
+    tabela: Tabela 16
+    arquivo: normative/tabelas/decreto-42-2018/tabela-16.yaml
+    estado: verificada
   - pagina: 41
-    estado: bruto
+    tabela: Tabela 17
+    arquivo: normative/tabelas/decreto-42-2018/tabela-17.yaml
+    estado: verificada
   - pagina: 42
-    estado: bruto
+    tabela: Tabela 18
+    arquivo: normative/tabelas/decreto-42-2018/tabela-18.yaml
+    estado: verificada
   - pagina: 43
-    estado: bruto
+    tabela: Tabela 19
+    arquivo: normative/tabelas/decreto-42-2018/tabela-19.yaml
+    estado: verificada
   - pagina: 44
-    estado: bruto
+    tabela: Tabela 20
+    arquivo: normative/tabelas/decreto-42-2018/tabela-20.yaml
+    estado: verificada
   - pagina: 45
-    estado: bruto
+    tabela: Tabela 21
+    arquivo: normative/tabelas/decreto-42-2018/tabela-21.yaml
+    estado: verificada
   - pagina: 46
     estado: bruto
   - pagina: 47
@@ -227,7 +262,7 @@ fontes:
     sha256: 4dfe8bdf8afb52825a80ad880da4c0d402b9d5115345448f0e14288511910821
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 23
     estado: bruto
   - pagina: 24
@@ -256,7 +291,7 @@ fontes:
     sha256: 609d8fe74facba3659de1f5d4357a733f7a202e48a53799bd29803587e7f6505
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 4
     estado: bruto
   - pagina: 7
@@ -305,7 +340,7 @@ fontes:
     sha256: d25f93cf2d8ad0565da7d2ab6a4adab62c8dfdfadf4767d3eecd8f11991cb079
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 3
     estado: bruto
   - pagina: 8
@@ -469,7 +504,7 @@ fontes:
     sha256: db01b307c7862e6d02de4f8409829db5ade6c3665773c62497598ca00576f9ab
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 5
     estado: bruto
   - pagina: 6
@@ -546,7 +581,7 @@ fontes:
   imagens: []
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 2
     estado: bruto
 - arquivo: nt-1-06-adequacao-normativa.md
@@ -644,7 +679,7 @@ fontes:
     sha256: 65f71fc852a8109a7683cf413a585f4862a47e9a34eb4ecae0a8ce17f6f40471
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 13
     estado: bruto
   - pagina: 14
@@ -705,7 +740,7 @@ fontes:
     sha256: d2a12a90a745ecc087a14127ae6cba3b298663224174b544e0dff6f99dcb3577
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 3
     estado: bruto
   - pagina: 4
@@ -808,7 +843,7 @@ fontes:
     sha256: 03e77181c2fb76aa14c40a2f9ffc7dd2607dc7cb508596b5ede1d01200da1983
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 5
     tabela: Tabela 1
     arquivo: normative/tabelas/nt-2-02/tabela-1-classificacao-riscos.yaml
@@ -843,7 +878,7 @@ fontes:
   imagens: []
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 4
     estado: bruto
   - pagina: 5
@@ -952,7 +987,7 @@ fontes:
     sha256: 89f979bd1373e0b1021c0fa11f84d91d2ee639f828c8e6ab0d9b411e5c6b1942
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 9
     estado: bruto
   - pagina: 10
@@ -1129,7 +1164,7 @@ fontes:
   imagens: []
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
 - arquivo: nt-2-07-deteccao-e-alarme.md
   documento: NT 2-07
   titulo: NT 2-07 - Sistema de detecção e alarme de incêndio
@@ -1144,7 +1179,7 @@ fontes:
   imagens: []
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
 - arquivo: nt-2-08-saidas-de-emergencia.md
   documento: NT 2-08
   titulo: NT 2-08 - Saídas de emergência em edificações
@@ -1248,7 +1283,7 @@ fontes:
     sha256: 021c628d9a92ff5bb3fa4b9f62d8b8422eb8e2eb0b554d7cc32f6171b6364751
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 7
     estado: bruto
   - pagina: 12
@@ -1373,7 +1408,7 @@ fontes:
     sha256: 0df4ec5ba1c44f67f70cb205941efca1f448306f2bcc2890f84e8fbf9cef271b
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 6
     estado: bruto
   - pagina: 14
@@ -1462,7 +1497,7 @@ fontes:
     sha256: c945ab7a227e68affca759fbbace9d6e21a12af860b789ad33ffc0376366b2ac
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 11
     estado: bruto
   - pagina: 12
@@ -1529,7 +1564,7 @@ fontes:
   imagens: []
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
 - arquivo: nt-2-13-sistemas-fixos-de-gases.md
   documento: NT 2-13
   titulo: NT 2-13 - Sistemas fixos de gases para combate a incêndio
@@ -1556,7 +1591,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-14-Controle-de-fumaca.pdf
   sha256_pdf: 638248ce4348b3275bbb285538d4c4c6e31603356600de98e4c597529073424b
-  sha256_md: a047338e24e3d5ca550365fd47d1b9dfcfa58420f2de1453a50a7a0851231623
+  sha256_md: c0e170089218d7a8a9720f394368e84feca7e24feabaa98a1def915262d2e828
   data_captura: '2026-07-23'
   paginas: 46
   midia: nt-2-14
@@ -1747,11 +1782,15 @@ fontes:
     sha256: 05e30b79f8c36744f6e3124313c070e2b962e19d10e4fe7b81d94cdd3c729c04
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 6
-    estado: bruto
+    tabela: Quadro 1
+    arquivo: normative/tabelas/nt-2-14/quadro-1-sistemas-de-controle.yaml
+    estado: verificada
   - pagina: 7
-    estado: bruto
+    tabela: Quadro 2
+    arquivo: normative/tabelas/nt-2-14/quadro-2-caracteristicas-dos-dutos.yaml
+    estado: verificada
 - arquivo: nt-2-15-hidrante-urbano.md
   documento: NT 2-15
   titulo: NT 2-15 - Hidrante urbano
@@ -1835,7 +1874,7 @@ fontes:
     sha256: 4e0a99c6754ad6ff917eb1bc949c71965725ddb3ef3007419928a47be1471393
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
 - arquivo: nt-2-17-separacao-entre-edificacoes.md
   documento: NT 2-17
   titulo: NT 2-17 - Separação entre edificações
@@ -1874,7 +1913,7 @@ fontes:
     sha256: 49116fcca29ffbe1ad4b9226742d6b0e07cf9b089151a3173523986eac31d097
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 4
     estado: bruto
   - pagina: 5
@@ -1973,7 +2012,7 @@ fontes:
     sha256: 9900ca1b479b4011e6911b7237fc1956c84d3e112ea688c6af1f744e06c290f6
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
 - arquivo: nt-2-19-seguranca-estrutural.md
   documento: NT 2-19
   titulo: NT 2-19 - Segurança estrutural contra incêndio - Resistência ao fogo dos elementos de construção
@@ -1981,7 +2020,7 @@ fontes:
   ato: Portaria CBMERJ nº 1280, de 20 de dezembro de 2024
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2025/12/NT2_19_2Ed_2025_alterada_Portaria_1317_2025.pdf
   sha256_pdf: 29a57e10630596f21a7e914197a2ae021c3e78b9a399b2d16799ac9bba1390fe
-  sha256_md: 16ff48ab99a5624a5ac5ece2210e8b48e2853a40e4177c1600a2d2d311605971
+  sha256_md: 520cba6b1c8ad00a019b96f33ad918862eb902ca767e1d219b39cd1729f17ad3
   data_captura: '2026-07-23'
   paginas: 12
   midia: nt-2-19
@@ -2036,13 +2075,25 @@ fontes:
     sha256: 39bd7e771ec4ca85db6e4baa65bdb5cbfeb1bc870f1c11fabab9fcb9e7f428ec
   tabelas:
   - pagina: 9
-    estado: bruto
+    tabela: Tabela A
+    arquivo: normative/tabelas/nt-2-19/anexo-a-tabela-a-trrf.yaml
+    estado: verificada
   - pagina: 10
-    estado: bruto
+    tabela: Tabela B
+    arquivo: normative/tabelas/nt-2-19/anexo-b-tabela-b-alvenarias.yaml
+    estado: verificada
   - pagina: 11
-    estado: bruto
+    tabela: Tabela C
+    arquivo: normative/tabelas/nt-2-19/anexo-c-tabela-c-drywall.yaml
+    estado: verificada
   - pagina: 12
-    estado: bruto
+    tabela: Tabela D1
+    arquivo: normative/tabelas/nt-2-19/anexo-d-tabela-d1.yaml
+    estado: divergente
+  - pagina: 12
+    tabela: Tabela D2
+    arquivo: normative/tabelas/nt-2-19/anexo-d-tabela-d2.yaml
+    estado: verificada
 - arquivo: nt-2-20-controle-de-materiais-de-acabamento.md
   documento: NT 2-20
   titulo: NT 2-20 - Controle de materiais de acabamento e de revestimento
@@ -2093,7 +2144,7 @@ fontes:
     sha256: 5dc11302b6e88e8f4966d8c6343e04b265fc377ee01c7e749092f475606edc94
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 6
     estado: bruto
   - pagina: 7
@@ -2124,7 +2175,7 @@ fontes:
     sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 4
     estado: bruto
   - pagina: 5
@@ -2254,7 +2305,7 @@ fontes:
     sha256: 662af1dec428c88d9ca5e385a63d8290ec00036604cf42213540c1c4f45552e2
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 5
     estado: bruto
   - pagina: 6
@@ -2281,7 +2332,7 @@ fontes:
     sha256: 76ae55bcf2bf54426ffa3865e1a7c17c56eb845d17162ae894699fd64c34ad64
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
 - arquivo: nt-3-05-caldeiras-e-vasos-de-pressao.md
   documento: NT 3-05
   titulo: NT 3-05 - Caldeiras e vasos de pressão
@@ -2300,7 +2351,7 @@ fontes:
     sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
 - arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
   documento: NT 3-06
   titulo: NT 3-06 - Armazenagem de líquidos inflamáveis e combustíveis
@@ -2379,7 +2430,7 @@ fontes:
     sha256: c8ca885d2053a9291c7410b026f2252ac1a16a12c1156c114a9b872de1d24b92
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 4
     estado: bruto
   - pagina: 5
@@ -2498,7 +2549,7 @@ fontes:
     sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
 - arquivo: nt-4-03-edificacoes-tombadas.md
   documento: NT 4-03
   titulo: NT 4-03 - Edificações tombadas
@@ -2517,7 +2568,7 @@ fontes:
     sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
 - arquivo: nt-4-04-municoes-explosivos-e-artefatos-pirotecnicos.md
   documento: NT 4-04
   titulo: NT 4-04 - Munições, explosivos e artefatos pirotécnicos - Fabricação, armazenagem e comércio
@@ -2576,7 +2627,7 @@ fontes:
     sha256: c21edd5a438c4c52d37ec3098858c64bd3d2cb87d423ed320d19209d14b63e5d
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 3
     estado: bruto
   - pagina: 8
@@ -2693,7 +2744,7 @@ fontes:
     sha256: 87f09ad38cc9576d5f274e6b9a02e637f4390748951b077c85e1a62cd69ad9aa
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 4
     estado: bruto
   - pagina: 5
@@ -2770,7 +2821,7 @@ fontes:
     sha256: dec81f199aa8c6adad117aaf84b11851cf1400e7a1840585c0dd869e39e7a62e
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 3
     estado: bruto
   - pagina: 5
@@ -2811,7 +2862,7 @@ fontes:
     sha256: f45c3a1eddfdb5c919c9ed6242bf0313c26825f4106f243614c150fbe720055d
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 3
     estado: bruto
 - arquivo: nt-4-08-patios-para-armazenagens.md
@@ -2848,7 +2899,7 @@ fontes:
     sha256: 795f4ac1cd6f91e6de4908a7a88e631e1b62ebfc05bf0ee662dd3d7b347d1815
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 3
     estado: bruto
 - arquivo: nt-4-09-tuneis.md
@@ -2901,7 +2952,7 @@ fontes:
     sha256: 5471adf5ffd42b17d6429afb6db2a218c5eb5dd186b6a1e5e7891eea6982ac4e
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 8
     estado: bruto
   - pagina: 9
@@ -2924,7 +2975,7 @@ fontes:
     sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 3
     estado: bruto
   - pagina: 4
@@ -3062,7 +3113,7 @@ fontes:
     sha256: 2c6e3422001da6d06ea44e54aaf2554de818bbe932e437a3eef0affb03b40cc9
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
 - arquivo: nt-5-02-eventos-pirotecnicos.md
   documento: NT 5-02
   titulo: NT 5-02 - Eventos pirotécnicos
@@ -3199,7 +3250,7 @@ fontes:
     sha256: 67024429f79a59a8c2aef0dd7a6f2e700e2f49677b1a3cfd655dd5cc5fc6b89a
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 6
     estado: bruto
 - arquivo: nt-5-05-atendimento-medico-para-eventos.md
@@ -3268,7 +3319,7 @@ fontes:
     sha256: b995ec50af0ed4cae19e73b4c178ae788e84c7b60285693c3e71d0626d4e38c1
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: capa
   - pagina: 3
     estado: bruto
   - pagina: 4

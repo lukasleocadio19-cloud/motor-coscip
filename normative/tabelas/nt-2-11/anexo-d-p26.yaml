@@ -175,6 +175,8 @@ notas:
 - 'Quadro de observações abaixo da tabela (fora da comparação): Obs1 a Obs8 (acréscimo de 1 BC por faixa
   de área; D-5 com treinamento de brigada voluntária), máximo de 08 BC salvo decisão do plano de emergência,
   substituto no afastamento.'
+- 'Contra a camada de texto: "****" e o cabeçalho quebram em linhas extras (divergência de forma). Aguarda
+  o caminho geométrico.'
 inconsistencias_da_fonte:
 - 'As linhas "Edificação histórica com isenção de canalização ****" estão em branco nas três faixas de
   área: a NT não diz quantos BC se exigem nesses casos.'

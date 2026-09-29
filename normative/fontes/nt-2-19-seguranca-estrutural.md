@@ -563,6 +563,43 @@ M-1 150 150 150 - - - - M-2 - - 120 120 - - - - M-5 120 90 60 60 90 120 - - - - 
 |  |  | M-5 | 120 |  | 90 |  | 60 | 60 | 90 | 120 | - | - | - | - |
 |  |  | M-3 | 120 |  | 90 |  | 90 | 90 | 120 | 120 | 120 | 120 | 150 | - |
 
+<!-- tabela-conferida: Tabela A p9 -->
+### Tabela A — Tempos Requeridos de Resistência ao Fogo (TRRF) em minutos (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Subsolo — Classe S2 hs>10m | Subsolo — Classe S1 hs≤10m | Altura — Classe P1 h ≤6m | Altura — Classe P2 6m<h≤12m | Altura — Classe P3 12m<h≤23m | Altura — Classe P4 23m<h≤30m | Altura — Classe P5 30m<h≤ 80m | Altura — Classe P6 80m<h≤120m | Altura — Classe P7 120<h≤150 m | Altura — Classe P8 150m<h≤250 m |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| A | Residencial | A-1 a A-3 e A-6 | 90 | 60 | 30 | 30 | 60 | 90 | 120 | 120 | 150 | 180 |
+| B | Serviços de hospedagem | B-1 e B-2 | 90 | 60 | 30 | 60 (30) | 60 | 90 | 120 | 150 | 180 | 180 |
+| C | Comercial varejista | C-1 | 90 | 60 | 60 (30) | 60 | 60 | 90 | 120 | 150 | 150 | 180 |
+| C | Comercial varejista | C-2 e C-3 | 90 | 60 | 60 | 60 | 60 | 90 | 120 | 150 | 150 | 180 |
+| D | Serviços profissionais, pessoais e técnicos | D-1 a D-4 | 90 | 60 | 30 | 60 (30) | 60 | 90 | 120 | 120 | 150 | 180 |
+| E | Educacional e cultura física | E-1 a E-6 | 90 | 60 | 30 | 30 | 60 | 90 | 120 | 120 | 150 | 180 |
+| F | Locais de reunião de público | F-1, F-2, F-5, F-6, F-8, F-10 e F-11 | 90 | 60 | 60 (30) | 60 | 60 | 90 | 120 | 150 | 180 | - |
+| F | Locais de reunião de público | F-3, F-4 e F-7 | 90 | 60 | ver item 5.3.3 | ver item 5.3.3 | 30 | 60 | 60 | 90 | 120 | - |
+| F | Locais de reunião de público | F-9 | 90 | 60 | 30 | 60 | 60 | 90 | 120 | - | - | - |
+| G | Serviços automotivos | G-1 e G-2 não abertos lateralmente e G-3 a G-5 | 90 | 60 (30) | 30 | 60 (30) | 60 | 90 | 120 | 120 | 150 | 180 |
+| G | Serviços automotivos | G-1 e G-2 Abertos lateralmente | 90 | 60 (30) | 30 | 30 | 30 | 30 | 60 | 120 | 120 | 150 |
+| H | Serviços de saúde e institucionais | H-1 e H-4 | 90 | 60 | 30 | 60 | 60 | 90 | 120 | 150 | 180 | 180 |
+| H | Serviços de saúde e institucionais | H-2 e H-3 | 90 | 60 | 30 | 60 | 60 | 90 | 120 | 150 | 180 | 180 |
+| I | Industrial | I-1 | 90 (60) | 60 (30) | 30 | 30 | 30 | 60 | 120 | - | - | - |
+| I | Industrial | I-2 | 120 | 90 | 30 | 30 | 60 (30) | 90 | 120 | - | - | - |
+| I | Industrial | I-3 | 120 | 90 | 60 (30) | 60 (30) | 90 (60) | 120 (90) | 120 | - | - | - |
+| J | Depósitos | J-1 | 60 | 30 | ver item 5.3.4 | ver item 5.3.4 | 30 | 30 | 60 | - | - | - |
+| J | Depósitos | J-2 | 90 | 60 (30) | 60 | 60 | 60 | 60 | 60 | - | - | - |
+| J | Depósitos | J-3 | 90 | 60 (30) | 60 | 60 | 60 | 120 (90) | 120 | - | - | - |
+| J | Depósitos | J-4 | 120 | 90 | 60 | 60 | 90 (60) | 120 (90) | 120 | - | - | - |
+| L | Explosivos | L-1, L-2 e L-3 | 120 | 120 | 120 | - | - | - | - | - | - | - |
+| M | Especial | M-1 | 150 | 150 | 150 | - | - | - | - | - | - | - |
+| M | Especial | M-2 | - | - | 120 | 120 | - | - | - | - | - | - |
+| M | Especial | M-5 | 120 | 90 | 60 | 60 | 90 | 120 | - | - | - | - |
+| M | Especial | M-3 | 120 | 90 | 90 | 90 | 120 | 120 | 120 | 120 | 150 | - |
+
+Fonte: NT 2-19, página 9, Tabela A; conferida em 2026-09-29 (visual + texto).
+Anexo A da NT 2-19. "^" = mesclada com a de cima; "<" = mesclada com a da esquerda ("ver item 5.3.3", "ver item 5.3.4" e "-" que abrangem várias classes). Valores entre parênteses: observação 3 (pavimentos de até 900 m² com compartimentação vertical).
+A camada de texto perdeu os sinais das classes ("6mh12m", "hs10m"); a leitura visual os restitui: S2 hs>10m, S1 hs≤10m, P1 h≤6m, P2 6m<h≤12m, P3 12m<h≤23m, P4 23m<h≤30m, P5 30m<h≤80m, P6 80m<h≤120m, P7 120<h≤150 m, P8 150m<h≤250 m.
+Observações 1 a 6 abaixo da tabela: ver o texto da página 9. Fonte indicada: CBMERJ.
+<!-- /tabela-conferida: Tabela A p9 -->
+
 ---
 
 ## Página 10
@@ -594,6 +631,29 @@ Fonte: ABNT NBR 15758:2009.
 | Paredes de concreto armado monolítico sem revestimento | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): arma dura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. |  |  |  |  |  |  |  |  |  |  | 11,5 | 150 | 120 | 120 | 60 | 90 |
 |  |  |  |  |  |  |  |  |  |  |  |  | 16 | 210 | 180 | 180 | 180 | 180 |
 | (*) Paredes sem função estrutural ensaiadas totalmente vinculadas dentro da estrutura de concreto armado, com dimensões 2,8m x 2,8m totalmente expostas ao fogo (em uma face) (**) Ensaio encerrado sem ocorrência de falência em nenhum dos três critérios de avaliação. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+<!-- tabela-conferida: Tabela B p10 -->
+### Tabela B — Resistência ao fogo para alvenarias (conferida)
+
+| Paredes ensaiadas (*) | Tipo | Assentamento — cimento | Assentamento — cal | Assentamento — areia | Espessura média da argamassa de assentamento (cm) | Chapisco — cimento | Chapisco — areia | Emboço — cimento | Emboço — cal | Emboço — areia | Espessura de argamassa de revestimento (cada face) (cm) | Espessura total da parede (cm) | Duração do ensaio (min) | Integridade (min) | Estanqueidade (min) | Isolação térmica (min) | Resistência ao fogo (minutos) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Parede de tijolos de barro cozido (dimensões nominais dos tijolos) 5 cm x 10 cm x 20 cm: Massa: 1,5 kg | Meio tijolo sem revestimento | - | 1 | 5 | 1 | - | - | - | - | - | - | 10 | 120 | ≥ 120 | ≥ 120 | 90 | 90 |
+| Parede de tijolos de barro cozido (dimensões nominais dos tijolos) 5 cm x 10 cm x 20 cm: Massa: 1,5 kg | Um tijolo sem revestimento | - | 1 | 5 | 1 | - | - | - | - | - | - | 20 | 395 (**) | ≥ 360 | ≥ 360 | ≥ 360 | ≥ 360 |
+| Parede de tijolos de barro cozido (dimensões nominais dos tijolos) 5 cm x 10 cm x 20 cm: Massa: 1,5 kg | Meio tijolo com revestimento | - | 1 | 5 | 1 | 1 | 3 | 1 | 2 | 9 | 2,5 | 15 | 300 | ≥ 240 | ≥ 240 | 240 | 240 |
+| Parede de tijolos de barro cozido (dimensões nominais dos tijolos) 5 cm x 10 cm x 20 cm: Massa: 1,5 kg | Um tijolo com revestimento | - | 1 | 5 | 1 | 1 | 3 | 1 | 2 | 9 | 2,5 | 25 | 300 (**) | ≥ 240 | ≥ 360 | ≥ 300 | > 360 |
+| Parede de blocos vazados de concreto (2 furos) (blocos com dimensões nominais: 14 cm x 19 cm x 39 cm e 19 cm x 19 cm x 39 cm; e massas de 13 kg e 17 kg respectivamente | Bloco de 14 cm sem revestimento | 1 | 1 | 8 | 1 | - | - | - | - | - | - | 14 | 100 | ≥ 90 | ≥ 90 | 90 | 90 |
+| Parede de blocos vazados de concreto (2 furos) (blocos com dimensões nominais: 14 cm x 19 cm x 39 cm e 19 cm x 19 cm x 39 cm; e massas de 13 kg e 17 kg respectivamente | Bloco de 19 cm sem revestimento | 1 | 1 | 8 | 1 | - | - | - | - | - | - | 19 | 120 | ≥ 120 | ≥ 120 | 90 | 90 |
+| Parede de blocos vazados de concreto (2 furos) (blocos com dimensões nominais: 14 cm x 19 cm x 39 cm e 19 cm x 19 cm x 39 cm; e massas de 13 kg e 17 kg respectivamente | Bloco de 14 cm com revestimento | 1 | 1 | 8 | 1 | 1 | 3 | 1 | 2 | 9 | 1,5 | 17 | 150 | ≥ 120 | ≥ 120 | 120 | 120 |
+| Parede de blocos vazados de concreto (2 furos) (blocos com dimensões nominais: 14 cm x 19 cm x 39 cm e 19 cm x 19 cm x 39 cm; e massas de 13 kg e 17 kg respectivamente | Bloco de 19 cm com revestimento | 1 | 1 | 8 | 1 | 1 | 3 | 1 | 2 | 9 | 1,5 | 22 | 185 | ≥ 180 | ≥ 180 | 180 | 180 |
+| Paredes de tijolos cerâmicos de oito furos (dimensões nominais dos tijolos 10 cm x 20 cm x 20 cm (massa 2,9 Kg) | Meio - tijolo com revestimento | - | 1 | 4 | 1 | 1 | 3 | 1 | 2 | 9 | 1,5 | 13 | 150 | ≥ 120 | ≥ 120 | 120 | 120 |
+| Paredes de tijolos cerâmicos de oito furos (dimensões nominais dos tijolos 10 cm x 20 cm x 20 cm (massa 2,9 Kg) | Um tijolo com revestimento | - | 1 | 4 | 1 | 1 | 3 | 1 | 2 | 9 | 1,5 | 23 | 300 (**) | ≥ 240 | ≥ 240 | ≥ 240 | > 240 |
+| Paredes de concreto armado monolítico sem revestimento | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | 11,5 | 150 | 120 | 120 | 60 | 90 |
+| Paredes de concreto armado monolítico sem revestimento | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº 3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de aço CA- 50A diâmetro ¼ polegada. | 16 | 210 | 180 | 180 | 180 | 180 |
+
+Fonte: NT 2-19, página 10, Tabela B; conferida em 2026-09-29 (visual + texto).
+Anexo B da NT 2-19. "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (o traço do concreto armado ocupa as colunas de características). Fonte indicada: ABNT NBR 15758:2009.
+Notas da tabela (fora da comparação): (*) paredes sem função estrutural ensaiadas totalmente vinculadas dentro da estrutura de concreto armado, 2,8 m x 2,8 m, expostas ao fogo em uma face; (**) ensaio encerrado sem falência em nenhum dos três critérios.
+<!-- /tabela-conferida: Tabela B p10 -->
 
 ---
 
@@ -634,6 +694,36 @@ Legenda: CH = Chapa de Gesso ST = Standard RU = Resistente a umidade RF = Resist
 | 18 | 150/90/400/2CH 15 - 2CH 15 | 150 | 90 | 400 | 4 | 15 | 4,70 | 5,60 | CF90 | CF120 |
 | 19 | 160/48/600/DEL/2CH 12,5 - 2CH 12,5 | 160 | 48 | 600 | 4 | 12,5 | 4,90 | 5,80 | CF60 | CF90 |
 | 20 | 160/48/400/DEL/2CH 12,5 - 2CH 12,5 | 160 | 48 | 400 | 4 | 12,5 | 5,50 | 6,50 | CF60 | CF90 |
+
+<!-- tabela-conferida: Tabela C p11 -->
+### Tabela C — Resistência ao fogo de paredes em chapas de gesso para drywall (conferida)
+
+| Itens | Paredes ensaiadas conforme ABNT NBR 15758 | Espessura total da parede (mm) | Largura da estrutura (mm) | Distância entre montantes (mm) | Chapas em gesso — quantidade | Chapas em gesso — espessura | Altura máxima (m) — montantes simples | Altura máxima (m) — montantes duplos | Resistência ao fogo — chapas ST ou RU | Resistência ao fogo — chapas RF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 73/48/600/1CH 12,5 - 1CH 12,5 | 73 | 48 | 600 | 2 | 12,5 | 2,50 | 2,90 | CF30 | CF30 |
+| 2 | 73/48/400/1CH 12,5 - 1CH 12,5 | 73 | 48 | 400 | 2 | 12,5 | 2,70 | 3,25 | CF30 | CF30 |
+| 3 | 98/48/600/2CH 12,5 - 1CH 12,5 | 98 | 48 | 600 | 4 | 12,5 | 2,90 | 3,50 | CF60 | CF90 |
+| 4 | 98/48/400/2CH 12,5 - 1CH 12,5 | 98 | 48 | 400 | 4 | 12,5 | 3,20 | 3,80 | CF60 | CF90 |
+| 5 | 108/48/600/2CH 15 - 2CH 15 | 108 | 48 | 600 | 4 | 15 | 3,00 | 3,60 | CF90 | CF120 |
+| 6 | 108/48/400/2CH 15 - 2CH 15 | 108 | 48 | 400 | 4 | 15 | 3,30 | 3,90 | CF90 | CF120 |
+| 7 | 95/70/600/1CH 12,5 - 1CH 12,5 | 95 | 70 | 600 | 2 | 12,5 | 3,00 | 3,60 | CF30 | CF30 |
+| 8 | 95/70/400/1CH 12,5 - 1CH 12,5 | 95 | 70 | 400 | 2 | 12,5 | 3,30 | 4,05 | CF30 | CF30 |
+| 9 | 120/70/600/2CH 12,5 - 2CH 12,5 | 120 | 70 | 600 | 4 | 12,5 | 3,70 | 4,40 | CF60 | CF90 |
+| 10 | 120/70/400/2CH 12,5 - 2CH 12,5 | 120 | 70 | 400 | 4 | 12,5 | 4,10 | 4,80 | CF60 | CF90 |
+| 11 | 130/70/600/2CH 15 - 2CH 15 | 130 | 70 | 600 | 4 | 15 | 3,80 | 4,50 | CF90 | CF120 |
+| 12 | 130/70/400/2CH 15 - 2CH 15 | 130 | 70 | 400 | 4 | 15 | 4,20 | 4,90 | CF90 | CF120 |
+| 13 | 115/90/600/1CH 12,5 - 1CH 12,5 | 115 | 90 | 600 | 2 | 12,5 | 3,50 | 4,15 | CF30 | CF30 |
+| 14 | 115/90/400/1CH 12,5 - 1CH 12,5 | 115 | 90 | 400 | 2 | 12,5 | 3,85 | 4,60 | CF30 | CF30 |
+| 15 | 140/90/600/2CH 12,5 - 2CH 12,5 | 140 | 90 | 600 | 4 | 12,5 | 4,20 | 5,00 | CF60 | CF90 |
+| 16 | 140/90/400/2CH 12,5 - 2CH 12,5 | 140 | 90 | 400 | 4 | 12,5 | 4,60 | 5,50 | CF60 | CF90 |
+| 17 | 150/90/600/2CH 15 - 2CH 15 | 150 | 90 | 600 | 4 | 15 | 4,30 | 5,10 | CF90 | CF120 |
+| 18 | 150/90/400/2CH 15 - 2CH 15 | 150 | 90 | 400 | 4 | 15 | 4,70 | 5,60 | CF90 | CF120 |
+| 19 | 160/48/600/DEL/2CH 12,5 - 2CH 12,5 | 160 | 48 | 600 | 4 | 12,5 | 4,90 | 5,80 | CF60 | CF90 |
+| 20 | 160/48/400/DEL/2CH 12,5 - 2CH 12,5 | 160 | 48 | 400 | 4 | 12,5 | 5,50 | 6,50 | CF60 | CF90 |
+
+Fonte: NT 2-19, página 11, Tabela C; conferida em 2026-09-29 (visual + texto).
+Anexo C da NT 2-19. O cabeçalho em três níveis foi achatado por coluna. Legenda: CH = chapa de gesso; ST = standard; RU = resistente à umidade; RF = resistente ao fogo. Notas 1 a 3 abaixo da tabela: ver o texto da página 11.
+<!-- /tabela-conferida: Tabela C p11 -->
 
 ---
 
@@ -689,3 +779,16 @@ Limites de aplicação da equação D3: 0,025 ≤ Av/Af ≤ 0,50 Onde: H - altur
 | 1,0 | Normal | Bibliotecas, cinemas, correios, consultórios médicos, escritórios, farmácias, frigoríficos, hotéis, livrarias, hospitais, laboratórios fotográficos, indústrias de papel, oficinas elétricas ou mecânicas, residências, restaurantes, teatros, depósitos em geral |
 | 1,2 | Média | Montagens de automóveis, hangares, indústrias mecânicas |
 | 1,5 | Alta | Laboratórios químicos, oficinas de pintura de automóveis |
+<!-- tabela-conferida: Tabela D2 p12 -->
+### Tabela D2 — Risco de ativação (conferida)
+
+| Valores de γs2 | Risco de ativação do incêndio | Exemplos de ocupação |
+| --- | --- | --- |
+| 0,85 | Pequena | Escolas, galerias de arte, parques aquáticos, igrejas e museus |
+| 1,0 | Normal | Bibliotecas, cinemas, correios, consultórios médicos, escritórios, farmácias, frigoríficos, hotéis, livrarias, hospitais, laboratórios fotográficos, indústrias de papel, oficinas elétricas ou mecânicas, residências, restaurantes, teatros, depósitos em geral |
+| 1,2 | Média | Montagens de automóveis, hangares, indústrias mecânicas |
+| 1,5 | Alta | Laboratórios químicos, oficinas de pintura de automóveis |
+
+Fonte: NT 2-19, página 12, Tabela D2; conferida em 2026-09-29 (visual + texto).
+<!-- /tabela-conferida: Tabela D2 p12 -->
+

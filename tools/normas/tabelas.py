@@ -46,11 +46,18 @@ _END = "<!-- /tabela-conferida: {id} -->"
 
 # ---------------------------------------------------------------- normalização e comparação
 
+# Fonte Symbol do PDF extraída como área de uso privado (U+F0xx = código Symbol xx).
+_SYMBOL_GREEK = "αβχδεφγηιϕκλμνοπθρστυϖωξψζ"  # códigos Symbol 0x61 a 0x7A
+_SYMBOL_PUA = str.maketrans({0xF03C: "<", 0xF03E: ">", 0xF03D: "=", 0xF0A3: "≤", 0xF0B3: "≥",
+                             0xF0B1: "±", 0xF0B4: "×", 0xF0B0: "°", 0xF02D: "-",
+                             **{0xF061 + i: ch for i, ch in enumerate(_SYMBOL_GREEK)}})
+
+
 def norm(cell: str | None) -> str | None:
     """Forma de comparação: sem acento, minúscula, espaços únicos, OCR de acento solto."""
     if cell is None:
         return None
-    text = unicodedata.normalize("NFKD", str(cell))
+    text = unicodedata.normalize("NFKD", str(cell).translate(_SYMBOL_PUA))
     text = "".join(c for c in text if not unicodedata.combining(c))
     text = text.replace(" ", " ").replace("–", "-").replace("—", "-").lower()
     text = re.sub(r"(?<=\w) (?=[a-z]\b)", "", text)  # "edificaco es" → "edificacoes"

@@ -81,6 +81,9 @@ caminhos:
 notas:
 - 'Na imagem o título é "Tabela 05"; o texto (5.15.8 f) a chama de Tabela 5. CP = canalização preventiva;
   RP = rede preventiva. Fonte indicada: CBMERJ.'
+- 'Divergência técnica, não de conteúdo conhecido: a camada de texto funde as linhas duas a duas e o pdfplumber
+  lê o PDF com espaçamento entre caracteres ("C la ssific a ç ã o") numa linha só. A leitura visual não
+  tem segundo caminho independente: conferir na imagem antes de usar.'
 estado: divergente
 resultado:
   estado: divergente

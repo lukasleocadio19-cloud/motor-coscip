@@ -1,0 +1,62 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-14
+arquivo: nt-2-14-controle-de-fumaca.md
+tabela: Quadro 2
+titulo: Características dos dutos
+pagina: 7
+fonte_pdf_sha256: 638248ce4348b3275bbb285538d4c4c6e31603356600de98e4c597529073424b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-14/pagina-07.jpg
+    imagem_sha256: edb9d65d2e48f246f3c3d0ea87d3b2b9bde8f623aacc3b3e2bc15271faf8af29
+    linhas_cabecalho: 1
+    cabecalho_publicado:
+    - Controle de fumaça natural
+    - Controle de fumaça mecânico
+    linhas:
+    - - controle de fumaça natural
+      - Controle de fumaça mecânico
+    - - '- Ser construídos em materiais incombustíveis e ter resistência interna à fumaça e gases quentes
+        de 60 min; - Apresentar uma estanqueidade satisfatória do ar; - Ter a seção mínima igual às áreas
+        livres das aberturas que o servem em cada piso; - Ter a relação entre as dimensões transversais
+        de um duto não superior a dois; - Os dutos coletores verticais não podem comportar mais de dois
+        desvios e qualquer um deles deve fazer com a vertical um ângulo máximo de 20º.'
+      - '- Ser construídos em materiais incombustíveis e ter resistência interna à fumaça e gases quentes
+        de 60 min; - Apresentar uma estanqueidade satisfatória do ar; - Ter resistência externa a fogo
+        por 60 min, quando fizer parte de um sistema utilizado para extrair fumaça de diversos ambientes
+        ou quando utilizado para introdução de ar; - Ser dimensionado para uma velocidade máxima de 10
+        m/s quando for construído em alvenaria ou gesso acartonado; - Ser dimensionado para uma velocidade
+        máxima de 15 m/s quando for construído em chapa metálica'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 7
+      tabela_na_pagina: 1
+    linhas:
+    - - controle de fumaça natural
+      - Controle de fumaça mecânico
+    - - '- Ser construídos em materiais incombustíveis e ter resistência interna à fumaça e gases quentes
+        de 60 min; - Apresentar uma estanqueidade satisfatória do ar; - Ter a seção mínima igual às áreas
+        livres das aberturas que o servem em cada piso; - Ter a relação entre as dimensões transversais
+        de um duto não superior a dois; - Os dutos coletores verticais não podem comportar mais de dois
+        desvios e qualquer um deles deve fazer com a vertical um ângulo máximo de 20º.'
+      - '- Ser construídos em materiais incombustíveis e ter resistência interna à fumaça e gases quentes
+        de 60 min; - Apresentar uma estanqueidade satisfatória do ar; - Ter resistência externa a fogo
+        por 60 min, quando fizer parte de um sistema utilizado para extrair fumaça de diversos ambientes
+        ou quando utilizado para introdução de ar; - Ser dimensionado para uma velocidade máxima de 10
+        m/s quando for construído em alvenaria ou gesso acartonado; - Ser dimensionado para uma velocidade
+        máxima de 15 m/s quando for construído em chapa metálica'
+notas:
+- 'Fonte indicada: CBMERJ.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

@@ -1,0 +1,74 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-14
+arquivo: nt-2-14-controle-de-fumaca.md
+tabela: Quadro 1
+titulo: Sistemas de controle
+pagina: 6
+fonte_pdf_sha256: 638248ce4348b3275bbb285538d4c4c6e31603356600de98e4c597529073424b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-14/pagina-06.jpg
+    imagem_sha256: da73a4e3e2abe6eafbcd144de7dd9447de3e4105063d902de96a26811f5cd639
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Função
+    - Sistema e componentes
+    linhas:
+    - - Entrada de ar
+      - Sistema de extração natural
+    - - -através de abertura na fachada e acantonamentos adjacentes; -portas dos locais a extrair fumaça,
+        localizadas nas fachadas e acantonamentos adjacentes; - pelos vãos das escadas abertas; -insuflação
+        mecânica por meio de grelhas ou venezianas.
+    - - Sistema de extração mecânica
+    - - '- abertura ou vão de entrada; - pelas portas; - pelos vãos das escadas abertas; - abertura de
+        ar por insuflação mecânica por meio de grelhas ou venezianas; -escadas pressurizadas'
+    - - Extração de fumaça
+      - Sistema de extração natural
+    - - '- abertura ou vão de extração; -Janela e veneziana de extração; - grelhas ligadas a dutos; -
+        clarabóia ou alçapão de extração; - dutos e peças especiais; - registros corta fogo e fumaça;
+        - mecanismos elétricos, pneumáticos e mecânicos de acionamento dos dispositivos de extração de
+        fumaça.'
+    - - Sistema de extração mecânica
+    - - '- grelhas de extração de fumaça em dutos; - dutos e peças especiais; - registro corta fogo e
+        fumaça; - ventiladores de extração mecânica de fumaça; - mecanismos elétricos, pneumáticos e mecânicos
+        de acionamento dos dispositivos de extração de fumaça.'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 6
+      tabela_na_pagina: 1
+    linhas:
+    - - Entrada de ar
+      - Sistema de extração natural
+    - - -através de abertura na fachada e acantonamentos adjacentes; -portas dos locais a extrair fumaça,
+        localizadas nas fachadas e acantonamentos adjacentes; - pelos vãos das escadas abertas; -insuflação
+        mecânica por meio de grelhas ou venezianas.
+    - - Sistema de extração mecânica
+    - - '- abertura ou vão de entrada; - pelas portas; - pelos vãos das escadas abertas; - abertura de
+        ar por insuflação mecânica por meio de grelhas ou venezianas; -escadas pressurizadas'
+    - - Extração de fumaça
+      - Sistema de extração natural
+    - - '- abertura ou vão de extração; -Janela e veneziana de extração; - grelhas ligadas a dutos; -
+        clarabóia ou alçapão de extração; - dutos e peças especiais; - registros corta fogo e fumaça;
+        - mecanismos elétricos, pneumáticos e mecânicos de acionamento dos dispositivos de extração de
+        fumaça.'
+    - - Sistema de extração mecânica
+    - - '- grelhas de extração de fumaça em dutos; - dutos e peças especiais; - registro corta fogo e
+        fumaça; - ventiladores de extração mecânica de fumaça; - mecanismos elétricos, pneumáticos e mecânicos
+        de acionamento dos dispositivos de extração de fumaça.'
+notas:
+- 'Quadro com a função escrita na vertical à esquerda ("Entrada de ar", "Extração de fumaça"), cada uma
+  com o sistema natural e o mecânico e a lista de componentes. Na publicação, a função repete-se em cada
+  linha. Fonte indicada: CBMERJ.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

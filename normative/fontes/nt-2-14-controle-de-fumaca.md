@@ -382,6 +382,24 @@ c) onde haja dispositivos de fechamento (dumpers etc.) para o sistema de dutos d
 |  |  |  | Sistema de extração mecânica |  |
 |  |  | - grelhas de extração de fumaça em dutos; - dutos e peças especiais; - registro corta fogo e fumaça; - ventiladores de extração mecânica de fumaça; - mecanismos elétricos, pneumáticos e mecânicos de acionamento dos dispositivos de extração de fumaça. |  |  |
 
+<!-- tabela-conferida: Quadro 1 p6 -->
+### Quadro 1 — Sistemas de controle (conferida)
+
+| Função | Sistema e componentes |
+| --- | --- |
+| Entrada de ar | Sistema de extração natural |
+| Entrada de ar | -através de abertura na fachada e acantonamentos adjacentes; -portas dos locais a extrair fumaça, localizadas nas fachadas e acantonamentos adjacentes; - pelos vãos das escadas abertas; -insuflação mecânica por meio de grelhas ou venezianas. |
+| Entrada de ar | Sistema de extração mecânica |
+| Entrada de ar | - abertura ou vão de entrada; - pelas portas; - pelos vãos das escadas abertas; - abertura de ar por insuflação mecânica por meio de grelhas ou venezianas; -escadas pressurizadas |
+| Extração de fumaça | Sistema de extração natural |
+| Extração de fumaça | - abertura ou vão de extração; -Janela e veneziana de extração; - grelhas ligadas a dutos; - clarabóia ou alçapão de extração; - dutos e peças especiais; - registros corta fogo e fumaça; - mecanismos elétricos, pneumáticos e mecânicos de acionamento dos dispositivos de extração de fumaça. |
+| Extração de fumaça | Sistema de extração mecânica |
+| Extração de fumaça | - grelhas de extração de fumaça em dutos; - dutos e peças especiais; - registro corta fogo e fumaça; - ventiladores de extração mecânica de fumaça; - mecanismos elétricos, pneumáticos e mecânicos de acionamento dos dispositivos de extração de fumaça. |
+
+Fonte: NT 2-14, página 6, Quadro 1; conferida em 2026-09-29 (visual + texto).
+Quadro com a função escrita na vertical à esquerda ("Entrada de ar", "Extração de fumaça"), cada uma com o sistema natural e o mecânico e a lista de componentes. Na publicação, a função repete-se em cada linha. Fonte indicada: CBMERJ.
+<!-- /tabela-conferida: Quadro 1 p6 -->
+
 ---
 
 ## Página 7
@@ -457,6 +475,17 @@ b) sobrepressão relativamente aos caminhos horizontais de evacuação. (escada 
 | --- | --- | --- | --- | --- | --- |
 |  | natural |  |  | mecânico |  |
 | - Ser construídos em materiais incombustíveis e ter resistência interna à fumaça e gases quentes de 60 min; - Apresentar uma estanqueidade satisfatória do ar; - Ter a seção mínima igual às áreas livres das aberturas que o servem em cada piso; - Ter a relação entre as dimensões transversais de um duto não superior a dois; - Os dutos coletores verticais não podem comportar mais de dois desvios e qualquer um deles deve fazer com a vertical um ângulo máximo de 20º. |  |  | - Ser construídos em materiais incombustíveis e ter resistência interna à fumaça e gases quentes de 60 min; - Apresentar uma estanqueidade satisfatória do ar; - Ter resistência externa a fogo por 60 min, quando fizer parte de um sistema utilizado para extrair fumaça de diversos ambientes ou quando utilizado para introdução de ar; - Ser dimensionado para uma velocidade máxima de 10 m/s quando for construído em alvenaria ou gesso acartonado; - Ser dimensionado para uma velocidade máxima de 15 m/s quando for construído em chapa metálica |  |  |
+
+<!-- tabela-conferida: Quadro 2 p7 -->
+### Quadro 2 — Características dos dutos (conferida)
+
+| Controle de fumaça natural | Controle de fumaça mecânico |
+| --- | --- |
+| - Ser construídos em materiais incombustíveis e ter resistência interna à fumaça e gases quentes de 60 min; - Apresentar uma estanqueidade satisfatória do ar; - Ter a seção mínima igual às áreas livres das aberturas que o servem em cada piso; - Ter a relação entre as dimensões transversais de um duto não superior a dois; - Os dutos coletores verticais não podem comportar mais de dois desvios e qualquer um deles deve fazer com a vertical um ângulo máximo de 20º. | - Ser construídos em materiais incombustíveis e ter resistência interna à fumaça e gases quentes de 60 min; - Apresentar uma estanqueidade satisfatória do ar; - Ter resistência externa a fogo por 60 min, quando fizer parte de um sistema utilizado para extrair fumaça de diversos ambientes ou quando utilizado para introdução de ar; - Ser dimensionado para uma velocidade máxima de 10 m/s quando for construído em alvenaria ou gesso acartonado; - Ser dimensionado para uma velocidade máxima de 15 m/s quando for construído em chapa metálica |
+
+Fonte: NT 2-14, página 7, Quadro 2; conferida em 2026-09-29 (visual + texto).
+Fonte indicada: CBMERJ.
+<!-- /tabela-conferida: Quadro 2 p7 -->
 
 ---
 

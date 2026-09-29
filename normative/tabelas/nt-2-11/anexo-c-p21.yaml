@@ -304,6 +304,9 @@ notas:
 - 'Quadro de notas abaixo da tabela (fora da comparação): "*" substituto capacitado no afastamento do
   BVI; "***" cálculo pela regra do arredondamento, com exemplos; o percentual pode ser superado por decisão
   do Plano de Emergência.'
+- 'Divergência técnica, não de conteúdo conhecido: a camada de texto quebra os rótulos longos em linhas
+  e o pdfplumber separa as células de várias linhas (e reposiciona as mescladas do cabeçalho). A leitura
+  visual não tem segundo caminho independente: conferir na imagem antes de usar.'
 inconsistencias_da_fonte:
 - A marca "****" (edificação histórica com isenção de canalização) é usada em todas as linhas destacadas,
   mas o quadro de notas da página 21 só define "*" e "***".

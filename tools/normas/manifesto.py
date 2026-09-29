@@ -60,21 +60,34 @@ def media_refs(text: str) -> list[tuple[str, int | None]]:
     return list(seen.items())
 
 
-def table_states(slug: str) -> dict[int, list[dict[str, Any]]]:
-    """Estado das tabelas conferidas em ``normative/tabelas/<slug>/*.yaml``, por página."""
+def table_states(arquivo: str) -> dict[int, list[dict[str, Any]]]:
+    """Estado das tabelas conferidas da fonte ``arquivo`` (campo ``arquivo`` de cada
+    ``normative/tabelas/*/*.yaml``), por página. A pasta não precisa ter o nome da mídia."""
     out: dict[int, list[dict[str, Any]]] = {}
-    folder = TABELAS / slug
-    if not folder.is_dir():
-        return out
-    for f in sorted(folder.glob("*.yaml")):
+    for f in sorted(TABELAS.glob("*/*.yaml")):
         data = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
+        if data.get("arquivo") != arquivo:
+            continue
         page = int(data.get("pagina") or 0)
         out.setdefault(page, []).append({
             "tabela": str(data.get("tabela") or f.stem),
-            "arquivo": f"normative/tabelas/{slug}/{f.name}",
+            "arquivo": f"normative/tabelas/{f.parent.name}/{f.name}",
             "estado": str(data.get("estado") or "pendente_humano"),
         })
     return out
+
+
+def _is_cover(text: str, page: int) -> bool:
+    """Tabela extraída da página 1 que é o cabeçalho da NT ("NOTA TÉCNICA / CBMERJ / Versão")."""
+    if page != 1:
+        return False
+    from tools.normas.tabelas import raw_table
+
+    try:
+        cells = " ".join(c for row in raw_table(text, 1, 1) for c in row).upper()
+    except ValueError:
+        return False
+    return "NOTA" in cells and "CBMERJ" in cells and ("VERSÃO" in cells or "VIGÊNCIA" in cells)
 
 
 def media_slug(refs: list[tuple[str, int | None]], filename: str) -> str:
@@ -99,7 +112,7 @@ def entry(path: Path) -> dict[str, Any]:
         images.append({"caminho": rel, "pagina": page,
                        "estado": "presente" if present else "ausente",
                        "sha256": sha256_bytes(img.read_bytes()) if present else None})
-    conferred = table_states(slug)
+    conferred = table_states(path.name)
     raw_pages = sorted({p for m in _RAW_TABLES.finditer(text)
                         if (p := _page_of(text, m.start())) is not None})
     tables = []
@@ -107,6 +120,9 @@ def entry(path: Path) -> dict[str, Any]:
         states = conferred.get(page)
         if states:
             tables += [{"pagina": page, **s} for s in states]
+        elif _is_cover(text, page):
+            # quadro de capa da NT (número, versão, vigência): não é tabela normativa
+            tables.append({"pagina": page, "estado": "capa"})
         else:
             tables.append({"pagina": page, "estado": "bruto"})
     pages = src.meta.get("paginas_pdf")

@@ -55,5 +55,8 @@ def test_summary_counts_are_consistent():
     r = DATA["resumo"]
     assert r["imagens_presentes"] + r["imagens_ausentes"] == r["imagens_referenciadas"] >= 434
     assert sum(r["tabelas_por_estado"].values()) == sum(len(f["tabelas"]) for f in DATA["fontes"])
-    allowed = {"bruto", "verificada", "divergente", "pendente_humano"}
+    # "capa": quadro de cabeçalho da NT na página 1 (número, versão, vigência), não normativo
+    allowed = {"bruto", "verificada", "divergente", "pendente_humano", "capa"}
     assert set(r["tabelas_por_estado"]) <= allowed
+    assert all(t["pagina"] == 1 for f in DATA["fontes"] for t in f["tabelas"]
+               if t["estado"] == "capa")
