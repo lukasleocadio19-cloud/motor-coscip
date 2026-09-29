@@ -19,7 +19,7 @@ question:
   field: hydrant_walk_distance_m
   required_value: 30
   unit: m
-  accepted_evidence: [CAD]
+  accepted_evidence: [CAD, CALCULATION]  # medida calculada sobre a geometria do CAD
   quality_gate: quality.walls_detected
   quality_gates: [quality.region_confirmed, quality.hydrant.complete, quality.recognition.complete]
 normative_basis:

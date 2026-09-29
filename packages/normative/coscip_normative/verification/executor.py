@@ -6,7 +6,10 @@ Regras de segurança que o executor nunca quebra:
 - ausência de extração não vira ausência documental (§54);
 - dependência inconclusiva não libera o dependente (§20);
 - porta de qualidade reprovada ou não informada mostra o número, mas não conclui
-  conformidade (§25).
+  conformidade (§25);
+- só conta evidência de fonte aceita pelo check (``accepted_evidence``) e conta OBJETOS, não
+  evidências: o mesmo extintor visto no CAD e no memorial é um só; fontes que discordam da
+  quantidade geram divergência, nunca conformidade (plano de correção, F6).
 """
 
 from __future__ import annotations
@@ -190,14 +193,57 @@ def _consistency(check: CheckDefinition, evidence: EvidenceSet) -> Finding:
     return _satisfied(check, consensus.evidence_ids, sources)
 
 
+def _accepted(question: Question, items) -> tuple[list, list]:  # noqa: ANN001
+    """Evidências localizadas da fonte aceita pelo check (tipo de fonte ou categoria do
+    documento) e as recusadas — as recusadas ficam registradas no achado, nunca somem."""
+    ok, refused = [], []
+    allowed = set(question.accepted_evidence)
+    for e in items:
+        if not e.located or e.normalized_value is None:
+            continue
+        if not allowed or e.source_type.value in allowed or (
+                e.source_category and e.source_category in allowed):
+            ok.append(e)
+        else:
+            refused.append(e)
+    return ok, refused
+
+
+def _refused_note(refused: list) -> str:  # noqa: ANN001
+    if not refused:
+        return ""
+    kinds = sorted({e.source_category or e.source_type.value for e in refused})
+    return (f"{len(refused)} evidência(s) de fonte não aceita por este item foram "
+            f"desconsideradas ({', '.join(kinds)}).")
+
+
+def _object_counts(found: list) -> tuple[dict[str, int], dict[str, set[str]]]:  # noqa: ANN001
+    """Quantos objetos cada fonte mostra. Objeto = ``object_key`` (ou a própria evidência);
+    quantidade declarada (número) vale como a contagem daquela fonte."""
+    objects: dict[str, set[str]] = {}
+    declared: dict[str, int] = {}
+    for e in found:
+        src = e.source_category or e.source_type.value
+        value = e.normalized_value
+        if not isinstance(value, bool) and isinstance(value, int | float):
+            declared[src] = max(declared.get(src, 0), int(value))
+            continue
+        objects.setdefault(src, set()).add(e.locator.object_key or e.id)
+    counts = {src: len(keys) for src, keys in objects.items()}
+    for src, n in declared.items():
+        counts[src] = n
+    return counts, objects
+
+
 def _counting(check: CheckDefinition, evidence: EvidenceSet) -> Finding:
     question = check.question
     assert question is not None and question.field is not None
-    found = [e for e in evidence.for_field(question.field, subject=question.subject)
-             if e.located and e.normalized_value is not None]
+    found, refused = _accepted(question,
+                               evidence.for_field(question.field, subject=question.subject))
     required = int(question.required_value or 1)
     ids = tuple(e.id for e in found)
     sources = _sources_of(evidence, ids)
+    note = _refused_note(refused)
     if not found:
         # §54: nada encontrado não é "não existe". Fica inconclusivo e vai para revisão.
         gap = evidence.has_gap(question.field, subject=question.subject)
@@ -206,21 +252,41 @@ def _counting(check: CheckDefinition, evidence: EvidenceSet) -> Finding:
             evidence=EvidenceStatus.MISSING, review=_review_for(check, forced=True),
             kind=FindingKind.DATA_MISSING, reason_code="NO_EVIDENCE",
             missing=(question.field,),
-            explanation_extra=("A extração rodou e não localizou o elemento; confirmar na "
-                               "fonte antes de concluir ausência."
-                               if gap else "Nenhuma evidência foi reunida para este item."))
-    if len(found) < required:
+            explanation_extra=" ".join(p for p in (
+                "A extração rodou e não localizou o elemento; confirmar na fonte antes de "
+                "concluir ausência." if gap else "Nenhuma evidência foi reunida para este item.",
+                note) if p))
+    counts, objects = _object_counts(found)
+    if len(set(counts.values())) > 1:
+        # CAD diz 1, memorial diz 3: não se soma nem se escolhe — é divergência.
+        shown = ", ".join(f"{src}: {n}" for src, n in sorted(counts.items()))
+        return _finding(
+            check, compliance=check.result_rules.conflicting_values,
+            evidence=EvidenceStatus.CONFLICTING, review=_review_for(check, conflict=True),
+            kind=FindingKind.DIVERGENCE, reason_code="COUNT_DIVERGENCE",
+            divergences=(Divergence(subject=question.subject, field=question.field,
+                                    values=tuple(str(n) for _, n in sorted(counts.items())),
+                                    sources=tuple(sorted(counts)), evidence_ids=ids),),
+            evidence_ids=ids, sources=sources,
+            explanation_extra=" ".join(p for p in (
+                f"As fontes não concordam na quantidade ({shown}).", note) if p))
+    # todas as fontes concordam: o número de objetos distintos (união das chaves)
+    union = set().union(*objects.values()) if objects else set()
+    count = max(len(union), *counts.values()) if counts else len(union)
+    measured = MeasuredResult(value=float(count), unit="un", required=float(required))
+    if count < required:
         return _finding(
             check, compliance=check.result_rules.not_satisfied,
             evidence=EvidenceStatus.SUFFICIENT, review=_review_for(check),
             kind=FindingKind.NON_COMPLIANT, reason_code="BELOW_MINIMUM_COUNT",
-            evidence_ids=ids, sources=sources,
-            measured=MeasuredResult(value=float(len(found)), unit="un",
-                                    required=float(required)),
-            explanation_extra=f"Localizados {len(found)}; exigidos {required}.")
-    return _satisfied(check, ids, sources,
-                      measured=MeasuredResult(value=float(len(found)), unit="un",
-                                              required=float(required)))
+            evidence_ids=ids, sources=sources, measured=measured,
+            explanation_extra=" ".join(p for p in (
+                f"Localizados {count}; exigidos {required}.", note) if p))
+    return _finding(check, compliance=ComplianceStatus.COMPLIANT,
+                    evidence=EvidenceStatus.SUFFICIENT, review=_review_for(check),
+                    kind=FindingKind.NO_PENDING_ISSUE, reason_code="SATISFIED",
+                    evidence_ids=ids, sources=sources, measured=measured,
+                    explanation_extra=note)
 
 
 def _fits(objects: list[frozenset[str]], slots: tuple[tuple[str, ...], ...]) -> bool:
@@ -243,8 +309,15 @@ def _composition(check: CheckDefinition, evidence: EvidenceSet) -> Finding:
     desconhecido nunca vira conformidade nem reprovação."""
     question = check.question
     assert question is not None and question.field is not None
-    found = [e for e in evidence.for_field(question.field, subject=question.subject)
-             if e.located and e.normalized_value is not None]
+    accepted, _refused = _accepted(question,
+                                   evidence.for_field(question.field, subject=question.subject))
+    # um objeto = uma vaga no máximo, mesmo que CAD e memorial falem dele (F6)
+    found, seen = [], set()
+    for e in sorted(accepted, key=lambda e: e.id):
+        key = e.locator.object_key or e.id
+        if key not in seen:
+            seen.add(key)
+            found.append(e)
     ids = tuple(e.id for e in found)
     sources = _sources_of(evidence, ids)
     if not found:
@@ -275,6 +348,11 @@ def _composition(check: CheckDefinition, evidence: EvidenceSet) -> Finding:
         explanation_extra=f"Localizados: {shown}.")
 
 
+def _neg(text: str) -> tuple[int, ...]:
+    """Chave que inverte a ordem de ``text`` (empate no ``max`` fica com o id menor)."""
+    return tuple(-ord(c) for c in text)
+
+
 def _positive(value: object) -> bool:
     return not isinstance(value, bool) and isinstance(value, int | float) and value > 0
 
@@ -296,8 +374,8 @@ def _comparison(check: CheckDefinition, evidence: EvidenceSet,
                 facts: dict[str, Any]) -> Finding:
     question = check.question
     assert question is not None and question.field is not None
-    found = [e for e in evidence.for_field(question.field, subject=question.subject)
-             if e.located and e.normalized_value is not None]
+    found, refused = _accepted(question,
+                               evidence.for_field(question.field, subject=question.subject))
     ids = tuple(e.id for e in found)
     sources = _sources_of(evidence, ids)
     limits = _required_limits(question, facts)
@@ -318,9 +396,14 @@ def _comparison(check: CheckDefinition, evidence: EvidenceSet,
             evidence=EvidenceStatus.MISSING, review=_review_for(check, forced=True),
             kind=FindingKind.DATA_MISSING, reason_code="NO_EVIDENCE",
             missing=(question.field,))
-    worst = max(found, key=lambda e: float(e.normalized_value))
+    # Pior medida CONSIDERANDO a incerteza: para máximo, o maior valor + incerteza; para
+    # mínimo, o menor valor − incerteza (F6). Empate: a evidência de id menor (determinismo).
     if question.kind == "minimum_value":
-        worst = min(found, key=lambda e: float(e.normalized_value))
+        worst = min(found, key=lambda e: (float(e.normalized_value) - (e.uncertainty_abs or 0),
+                                          e.id))
+    else:
+        worst = max(found, key=lambda e: (float(e.normalized_value) + (e.uncertainty_abs or 0),
+                                          _neg(e.id)))
     value = float(worst.normalized_value)
     uncertainty = worst.uncertainty_abs or 0.0
     # Limite vindo do enquadramento: o achado diz de onde (tabela conferida ou analista).

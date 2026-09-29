@@ -27,7 +27,7 @@ question:
   field: exit_walk_distance_m
   required_fact: context.effective_exit_max_distance_m
   unit: m
-  accepted_evidence: [CAD]
+  accepted_evidence: [CAD, CALCULATION]  # medida calculada sobre a geometria do CAD
   quality_gate: quality.walls_detected
   quality_gates: [context.exits_confirmed, quality.region_confirmed, quality.exit.complete, quality.recognition.complete]
 normative_basis:

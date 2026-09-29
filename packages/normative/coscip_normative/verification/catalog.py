@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -36,6 +37,12 @@ _QUESTION_REQUIREMENTS: dict[str, tuple[str, ...]] = {
 }
 
 
+# Sinônimos que já causaram erro: a fonte aceita é o TIPO da evidência (EvidenceSourceType)
+# ou a CATEGORIA do documento (ART, MEMORIAL…); "HUMANO" não casava com nada (F6).
+_SOURCE_SYNONYMS = {"HUMANO": "HUMAN", "DOCUMENTO": "DOCUMENT", "CALCULO": "CALCULATION",
+                    "TABELA": "NORMATIVE_TABLE"}
+
+
 class CatalogError(ValueError):
     pass
 
@@ -60,6 +67,14 @@ def _validate(check: CheckDefinition) -> None:
             raise CheckValidationError(f"{check.id}: citação {src.item} sem termos de conferência")
         if check.production_eligible and src.document.startswith("EXEMPLO"):
             raise CheckValidationError(f"{check.id}: fonte de exemplo não pode ir à produção")
+    if check.question is not None:
+        for token in check.question.accepted_evidence:
+            if token in _SOURCE_SYNONYMS:
+                raise CheckValidationError(
+                    f"{check.id}: accepted_evidence '{token}' não existe; use "
+                    f"'{_SOURCE_SYNONYMS[token]}' (tipo de fonte) ou a categoria do documento")
+            if not re.fullmatch(r"[A-Z][A-Z0-9_]*", token):
+                raise CheckValidationError(f"{check.id}: accepted_evidence inválido: {token!r}")
     if check.interpretation is not None:
         if not check.interpretation.basis:
             raise CheckValidationError(f"{check.id}: interpretação sem texto de apoio")

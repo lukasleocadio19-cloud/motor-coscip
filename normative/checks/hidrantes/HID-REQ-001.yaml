@@ -2,7 +2,7 @@
 # Os demais checks de hidrante dependem deste. Sem exigência conhecida, nada abaixo conclui.
 schema_version: checks/1.0
 id: HID-REQ-001
-version: 1
+version: 2
 title: Exigência do sistema de hidrantes estabelecida
 system: HIDRANTES
 type: NORMATIVE_TABLE
@@ -17,7 +17,9 @@ group_key: hidrantes/exigencia
 question:
   kind: presence
   field: hydrant_requirement
-  accepted_evidence: [NORMATIVE_TABLE, HUMAN]
+  # consulta ao Anexo III (tabela) ou declaração do analista; "NORMATIVE" = categoria do
+  # documento que registra a consulta à tabela
+  accepted_evidence: [NORMATIVE_TABLE, NORMATIVE, HUMAN]
 normative_basis:
   - document: NT 2-02
     edition: 1ª edição - 2019; Portaria 1.317/2025
