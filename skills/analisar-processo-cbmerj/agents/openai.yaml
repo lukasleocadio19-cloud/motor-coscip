@@ -1,0 +1,12 @@
+interface:
+  display_name: "Analista de Processos CBMERJ"
+  short_description: "Analisa processos CBMERJ por requisito e evid\xEAncia."
+  default_prompt: "Use $analisar-processo-cbmerj para analisar estes documentos e\
+    \ confront\xE1-los com o COSCIP-RJ e as NTs aplic\xE1veis."
+policy:
+  products:
+  - "chatgpt"
+  - "codex"
+  - "api"
+  - "atlas"
+  allow_implicit_invocation: true

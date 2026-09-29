@@ -1,0 +1,12 @@
+interface:
+  display_name: CBMERJ Grupo 1
+  short_description: "Generalidades, regulariza\xE7\xE3o e classifica\xE7\xE3o"
+  default_prompt: Use $cbmerj-grupo-1-generalidades para analisar o enquadramento,
+    o regime e os procedimentos deste processo.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

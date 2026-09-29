@@ -41,8 +41,9 @@ Depois, **reinicie o Claude Desktop**. No Claude Code, abrindo a pasta do reposi
 
 Os 52 textos das NTs (grupos 1–5, nunca o grupo 5 legado) e o Decreto 42/2018 compilado vêm
 no repositório, em `normative/fontes`; o MCP os encontra sozinho. Para usar outra pasta:
-`instalar.ps1 -Normas "<pasta>"`. Para atualizar a partir das skills CBMERJ:
-`scripts\mcp\exportar-normas.ps1 -Destino normative\fontes` (ver o README da pasta).
+`instalar.ps1 -Normas "<pasta>"`. **O repositório é a fonte única** (plano de correção, F1): as
+skills CBMERJ são geradas daqui (`tools/skills/pack.py`), nunca o contrário. Correção de texto
+se faz em `normative/fontes` (ver o README da pasta).
 
 ## DWG
 

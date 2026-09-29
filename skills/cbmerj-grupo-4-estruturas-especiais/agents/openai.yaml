@@ -1,0 +1,13 @@
+interface:
+  display_name: CBMERJ Grupo 4
+  short_description: "Analisa edifica\xE7\xF5es e estruturas especiais pelas NTs do\
+    \ Grupo 4."
+  default_prompt: "Use $cbmerj-grupo-4-estruturas-especiais para analisar as edifica\xE7\
+    \xF5es e estruturas especiais deste processo."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

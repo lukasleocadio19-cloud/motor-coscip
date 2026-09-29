@@ -1,0 +1,36 @@
+# Zips das skills CBMERJ gerados do repositório (plano de correção, F1.1).
+# O repositório é a fonte: skills/ + normative/fontes. O envio para a conta claude.ai é manual.
+name: Skills
+
+on:
+  push:
+    branches: [master]
+    paths: ["skills/**", "normative/fontes/**", "normative/indices/**", "tools/skills/**", "tools/normas/**"]
+  pull_request:
+    paths: ["skills/**", "normative/fontes/**", "tools/skills/**", "tools/normas/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  empacotar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements/dev.lock
+      - run: |
+          python -m pip install --require-hashes -r requirements/dev.lock
+          python -m pip install -e . --no-deps
+      - name: Links e scripts citados existem
+        run: python -m tools.skills.verificar_links
+      - name: Empacotar
+        run: python -m tools.skills.pack --transicao
+      - uses: actions/upload-artifact@v4
+        with:
+          name: skills-cbmerj
+          path: dist/skills/

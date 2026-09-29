@@ -1,0 +1,11 @@
+interface:
+  display_name: "CBMERJ Atos e Tramitação"
+  short_description: "Atos administrativos, competências e fluxos digitais"
+  default_prompt: "Use $cbmerj-atos-administrativos para verificar o rito, a competência, os documentos e a tramitação deste processo CBMERJ."
+policy:
+  products:
+  - "chatgpt"
+  - "codex"
+  - "api"
+  - "atlas"
+  allow_implicit_invocation: true

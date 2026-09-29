@@ -1,0 +1,13 @@
+interface:
+  display_name: CBMERJ Grupo 5
+  short_description: "Analisa reuni\xE3o de p\xFAblico e eventos pelas NTs do Grupo\
+    \ 5."
+  default_prompt: "Use $cbmerj-grupo-5-eventos para analisar a reuni\xE3o de p\xFA\
+    blico ou o evento deste processo."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

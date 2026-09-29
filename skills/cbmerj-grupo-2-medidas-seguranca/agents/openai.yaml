@@ -1,0 +1,12 @@
+interface:
+  display_name: CBMERJ Grupo 2
+  short_description: "Dimensiona medidas de seguran\xE7a contra inc\xEAndio"
+  default_prompt: "Use $cbmerj-grupo-2-medidas-seguranca para conferir e dimensionar\
+    \ as medidas de seguran\xE7a deste projeto."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

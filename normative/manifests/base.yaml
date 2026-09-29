@@ -1,0 +1,3005 @@
+schema_version: base-manifest/1.0
+gerado_por: tools/normas/manifesto.py (não editar à mão)
+resumo:
+  fontes: 53
+  imagens_referenciadas: 434
+  imagens_presentes: 227
+  imagens_ausentes: 207
+  tabelas_por_estado:
+    bruto: 284
+fontes:
+- arquivo: decreto-42-2018-coscip-compilado.md
+  documento: Decreto 42/2018
+  titulo: Decreto Estadual nº 42, de 17 de dezembro de 2018 - COSCIP-RJ
+  edicao: Versão compilada com as alterações do Decreto nº 46.925/2020
+  ato: null
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/COSCIP_DEC_42-2018_COMPILADO.pdf
+  sha256_pdf: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+  sha256_md: dbddb2942a91a38287ac47d04fb6ec32eb173be896a17df3bdd3f11e24aa3e85
+  data_captura: '2026-07-23'
+  paginas: 57
+  midia: decreto-42-2018-coscip-compilado
+  imagens: []
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 20
+    estado: bruto
+  - pagina: 21
+    estado: bruto
+  - pagina: 22
+    estado: bruto
+  - pagina: 23
+    estado: bruto
+  - pagina: 24
+    estado: bruto
+  - pagina: 25
+    estado: bruto
+  - pagina: 26
+    estado: bruto
+  - pagina: 27
+    estado: bruto
+  - pagina: 28
+    estado: bruto
+  - pagina: 29
+    estado: bruto
+  - pagina: 30
+    estado: bruto
+  - pagina: 31
+    estado: bruto
+  - pagina: 32
+    estado: bruto
+  - pagina: 33
+    estado: bruto
+  - pagina: 34
+    estado: bruto
+  - pagina: 35
+    estado: bruto
+  - pagina: 36
+    estado: bruto
+  - pagina: 37
+    estado: bruto
+  - pagina: 38
+    estado: bruto
+  - pagina: 39
+    estado: bruto
+  - pagina: 40
+    estado: bruto
+  - pagina: 41
+    estado: bruto
+  - pagina: 42
+    estado: bruto
+  - pagina: 43
+    estado: bruto
+  - pagina: 44
+    estado: bruto
+  - pagina: 45
+    estado: bruto
+  - pagina: 46
+    estado: bruto
+  - pagina: 47
+    estado: bruto
+  - pagina: 48
+    estado: bruto
+  - pagina: 49
+    estado: bruto
+  - pagina: 50
+    estado: bruto
+  - pagina: 51
+    estado: bruto
+  - pagina: 52
+    estado: bruto
+  - pagina: 53
+    estado: bruto
+  - pagina: 54
+    estado: bruto
+  - pagina: 55
+    estado: bruto
+  - pagina: 56
+    estado: bruto
+  - pagina: 57
+    estado: bruto
+- arquivo: nt-1-01-parte-1-regularizacao.md
+  documento: NT 1-01 P1
+  titulo: NT 1-01 - Parte 1 - Procedimentos administrativos para regularização
+  edicao: 1ª edição - 2019; consolidada com a Portaria CBMERJ nº 1.317/2025
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_1-01_Parte1_alterada_Portaria_1317_2025.pdf
+  sha256_pdf: ef60d4d275f294070a335b903b76a486afae0e8784ee128bcaa6c0d8432e5ca5
+  sha256_md: ae2c30fa7b0b0930d86fd83c0080ed22159f509b854bbaa39e24173c27f830db
+  data_captura: '2026-07-23'
+  paginas: 26
+  midia: nt-1-01-parte-1
+  imagens:
+  - caminho: media/nt-1-01-parte-1/pagina-23.png
+    pagina: 23
+    estado: presente
+    sha256: ace4cee8a1f5969bc23b322c8b053044bb84d29f485b163a2a5e38106671aa99
+  - caminho: media/nt-1-01-parte-1/pagina-24.png
+    pagina: 24
+    estado: presente
+    sha256: 4dfe8bdf8afb52825a80ad880da4c0d402b9d5115345448f0e14288511910821
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 23
+    estado: bruto
+  - pagina: 24
+    estado: bruto
+  - pagina: 26
+    estado: bruto
+- arquivo: nt-1-01-parte-2-fiscalizacao.md
+  documento: NT 1-01 P2
+  titulo: NT 1-01 - Parte 2 - Procedimentos administrativos para fiscalização
+  edicao: 2ª edição - 2021
+  ato: Portaria CBMERJ nº 1.151, de 10 de maio de 2021
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT_1-01-Procedimentos-Administrativos-para-Regularizacao-e-Fiscalizacao-Parte-2-Fiscalizacao_2021_1620759470.pdf
+  sha256_pdf: 01ffb41a7be61d731fd9997546980a430f6d49f9698fade87917101dedd9bef3
+  sha256_md: 67afd73ba2d711b9c2d7894085fba9b37a65c89a94cede1c2cc2f53f378b6f5c
+  data_captura: '2026-07-23'
+  paginas: 42
+  midia: nt-1-01-parte-2
+  imagens:
+  - caminho: media/nt-1-01-parte-2/pagina-34.png
+    pagina: 34
+    estado: presente
+    sha256: 5d8bcd9a0b6ce5b817545859fbbf27e7e03ad88322deccd92433082245596dec
+  - caminho: media/nt-1-01-parte-2/pagina-42.png
+    pagina: 42
+    estado: presente
+    sha256: 609d8fe74facba3659de1f5d4357a733f7a202e48a53799bd29803587e7f6505
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 4
+    estado: bruto
+  - pagina: 7
+    estado: bruto
+  - pagina: 16
+    estado: bruto
+  - pagina: 17
+    estado: bruto
+  - pagina: 18
+    estado: bruto
+  - pagina: 19
+    estado: bruto
+  - pagina: 20
+    estado: bruto
+  - pagina: 21
+    estado: bruto
+  - pagina: 34
+    estado: bruto
+  - pagina: 35
+    estado: bruto
+  - pagina: 36
+    estado: bruto
+  - pagina: 39
+    estado: bruto
+  - pagina: 42
+    estado: bruto
+- arquivo: nt-1-02-terminologia.md
+  documento: NT 1-02
+  titulo: NT 1-02 - Terminologia de segurança contra incêndio e pânico
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-02-Terminologia-de-seguranca-contra-incendio-e-panico.pdf
+  sha256_pdf: 3b24e09a6e117ded078a50af35595ad80b957267a0a286ed4bb759c6029cfbef
+  sha256_md: 327653cf700540fd1526b0f32bd73b7d03db7fce07af9cd0b123713b2a62bf5a
+  data_captura: '2026-07-23'
+  paginas: 30
+  midia: nt-1-02
+  imagens:
+  - caminho: media/nt-1-02/pagina-01.png
+    pagina: 1
+    estado: presente
+    sha256: 8395622c02688584fe92f1f8c0b14e576b1d5ee20c0688d08a6e2a6a2bac1af6
+  - caminho: media/nt-1-02/pagina-02.png
+    pagina: 2
+    estado: presente
+    sha256: d25f93cf2d8ad0565da7d2ab6a4adab62c8dfdfadf4767d3eecd8f11991cb079
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 3
+    estado: bruto
+  - pagina: 8
+    estado: bruto
+  - pagina: 13
+    estado: bruto
+  - pagina: 15
+    estado: bruto
+  - pagina: 20
+    estado: bruto
+- arquivo: nt-1-03-simbolos-graficos.md
+  documento: NT 1-03
+  titulo: NT 1-03 - Símbolos gráficos para projetos de segurança contra incêndio e pânico
+  edicao: 2ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT1-03_2Edio_2023.pdf
+  sha256_pdf: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
+  sha256_md: 70a9579ab7eba1cab0864165eb32aa635f85e979d018c03d7be4fe922ebb3640
+  data_captura: '2026-07-23'
+  paginas: 12
+  midia: nt-1-03
+  imagens:
+  - caminho: media/nt-1-03/pagina-01.png
+    pagina: 1
+    estado: presente
+    sha256: 9c2e931b6be818407d3401952fc91aaf2c57d8c999bcd8ac5ba682be65f1fa18
+  - caminho: media/nt-1-03/pagina-02.png
+    pagina: 2
+    estado: presente
+    sha256: 0ef393834aec0dac41eddabe3c0db4dfe4ada767942eb7abe548a67882e60749
+  - caminho: media/nt-1-03/pagina-03.png
+    pagina: 3
+    estado: presente
+    sha256: 3882061e415642a8ff7768df17e4f7b043dd9b65b2f304de5e66d6ab941e0c6c
+  - caminho: media/nt-1-03/pagina-04.png
+    pagina: 4
+    estado: presente
+    sha256: 244634785b728719e26275ffa5b0ee12dec4d857f82ab6bb6fdfa3b7e152cb52
+  - caminho: media/nt-1-03/pagina-05.png
+    pagina: 5
+    estado: presente
+    sha256: f2288ff03a61207101d9d741e84dd0580bded0f492e7dbff9224e59a5f921ff6
+  - caminho: media/nt-1-03/pagina-06.png
+    pagina: 6
+    estado: presente
+    sha256: 61b209f46626130651e51f86aea408475f96916348a43d3f04a97e7fdbc7bbea
+  - caminho: media/nt-1-03/pagina-07.png
+    pagina: 7
+    estado: presente
+    sha256: f6a7a3cfcec7341204d1dbd0ecb79805724187231c44b7c5978b21445ec1acf2
+  - caminho: media/nt-1-03/pagina-08.png
+    pagina: 8
+    estado: presente
+    sha256: 97464e807d5881b36c0bddebe88e6311fa07689cb49dfd6be3a98b6a620252c2
+  - caminho: media/nt-1-03/pagina-09.png
+    pagina: 9
+    estado: presente
+    sha256: 8a21d4bc5ac52ea1b7669f74c2ff73ee52b3e98d1ed3feb0502ef72bde20cfd2
+  - caminho: media/nt-1-03/pagina-10.png
+    pagina: 10
+    estado: presente
+    sha256: 6970844f9e1354577d032fb60886d0b90fbc2efe6ee1fb7453e61e15f2ca35fb
+  - caminho: media/nt-1-03/pagina-11.png
+    pagina: 11
+    estado: presente
+    sha256: 87477ee5f1d4fc2def302b4d03c5b5fb4b2ee93548102f14f01bf7445ef9e0df
+  - caminho: media/nt-1-03/pagina-12.png
+    pagina: 12
+    estado: presente
+    sha256: d4dab043904cc3acad1c4273c877f5779e21266bca93f3dd404f20f713fe1f41
+  tabelas:
+  - pagina: 4
+    estado: bruto
+  - pagina: 5
+    estado: bruto
+  - pagina: 6
+    estado: bruto
+  - pagina: 7
+    estado: bruto
+  - pagina: 8
+    estado: bruto
+  - pagina: 9
+    estado: bruto
+  - pagina: 10
+    estado: bruto
+  - pagina: 11
+    estado: bruto
+  - pagina: 12
+    estado: bruto
+- arquivo: nt-1-04-classificacao-de-risco.md
+  documento: NT 1-04
+  titulo: NT 1-04 - Classificação das edificações e áreas de risco quanto ao risco de incêndio
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-04-Classificacao-das-edificacoes-e-areas-de-risco-quanto-ao-risco-de-incendio.pdf
+  sha256_pdf: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+  sha256_md: 3a6a695f6bab930f3a523ef6ffb5310637b4c0c23d1eaa049921aaa0c307b920
+  data_captura: '2026-07-23'
+  paginas: 20
+  midia: nt-1-04
+  imagens:
+  - caminho: media/nt-1-04/pagina-05.png
+    pagina: 5
+    estado: presente
+    sha256: 7d043ce82adb988c5c6bea43e8925f1cd34d149cfc1163ba5e3ec5d769f5af38
+  - caminho: media/nt-1-04/pagina-06.png
+    pagina: 6
+    estado: presente
+    sha256: ee055c39cd5b88e4d71e9a7e9f62e7c4d7bf6bc076ed9f4b8f1dde0de4c22dd9
+  - caminho: media/nt-1-04/pagina-07.png
+    pagina: 7
+    estado: presente
+    sha256: 7c4f3337b7a7f55c74e83b1ab48a7e73288cc15acf9a351ba723f2bc01afd019
+  - caminho: media/nt-1-04/pagina-08.png
+    pagina: 8
+    estado: presente
+    sha256: 53b8b50f80c43683d46a8769662c9cbe0c3ecda34f3b2888baf91e6bd30c2590
+  - caminho: media/nt-1-04/pagina-09.png
+    pagina: 9
+    estado: presente
+    sha256: bec946608272be845c1e4cc8a938a2f8d9003d002bc73622ccf6e4805b84bcbf
+  - caminho: media/nt-1-04/pagina-10.png
+    pagina: 10
+    estado: presente
+    sha256: a33cdf7a3eaeecdbcdaa4b8fbc7cb05b4d46a429d51be541887ea5bda3c484cf
+  - caminho: media/nt-1-04/pagina-11.png
+    pagina: 11
+    estado: presente
+    sha256: 2e73546fa69d33cfe07df30b1eefaaf158bab02ab10c0006879be389e0dd03a2
+  - caminho: media/nt-1-04/pagina-12.png
+    pagina: 12
+    estado: presente
+    sha256: b02e50b551b7bc7244a9e22bbd0f4ebf8fa72410a549202355bc40e6f9c9916b
+  - caminho: media/nt-1-04/pagina-13.png
+    pagina: 13
+    estado: presente
+    sha256: 9dfcb93499d86122076c1f4322f3cd695cefa21480cff552199f838226e59e0e
+  - caminho: media/nt-1-04/pagina-14.png
+    pagina: 14
+    estado: presente
+    sha256: 49d9c8e6d4f2242989df7f39ea1386f705e372a322fdbec8820ee03ac90b1ea7
+  - caminho: media/nt-1-04/pagina-15.png
+    pagina: 15
+    estado: presente
+    sha256: ce25785eccfa08d9ee1baa1190430f1b4f787d07dab5eacba14598ab2d3a5ec0
+  - caminho: media/nt-1-04/pagina-16.png
+    pagina: 16
+    estado: presente
+    sha256: 4acecc50b4c76eecad10c70ba047922f3f2b50fa78855197d076165b94b000d7
+  - caminho: media/nt-1-04/pagina-17.png
+    pagina: 17
+    estado: presente
+    sha256: e20c5e6f1b888af05704d92430f647a6a97a8faf4376ea48392499213649df35
+  - caminho: media/nt-1-04/pagina-18.png
+    pagina: 18
+    estado: presente
+    sha256: ac505b94486827cfa6ec1fc80ec2cc96463520cc0260c2591ce56382e97764a1
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 5
+    estado: bruto
+  - pagina: 6
+    estado: bruto
+  - pagina: 7
+    estado: bruto
+  - pagina: 8
+    estado: bruto
+  - pagina: 9
+    estado: bruto
+  - pagina: 10
+    estado: bruto
+  - pagina: 11
+    estado: bruto
+  - pagina: 12
+    estado: bruto
+  - pagina: 13
+    estado: bruto
+  - pagina: 14
+    estado: bruto
+  - pagina: 15
+    estado: bruto
+  - pagina: 16
+    estado: bruto
+  - pagina: 17
+    estado: bruto
+  - pagina: 18
+    estado: bruto
+  - pagina: 19
+    estado: bruto
+  - pagina: 20
+    estado: bruto
+- arquivo: nt-1-05-edificacoes-anteriores.md
+  documento: NT 1-05
+  titulo: NT 1-05 - Edificações anteriores - Adequação ao COSCIP
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-05-Edificacoes-anteriores-Adequacao-ao-COSCIP.pdf
+  sha256_pdf: b06f6b5aadc8afd9d76f319d165383991c26dad7b603062e3d34ebd3720df877
+  sha256_md: 29ca0e6d716c825dfa16c2ddc455659faf6c87b422bad67f73d87bf53b39ed12
+  data_captura: '2026-07-23'
+  paginas: 9
+  midia: nt-1-05
+  imagens: []
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 2
+    estado: bruto
+- arquivo: nt-1-06-adequacao-normativa.md
+  documento: NT 1-06
+  titulo: NT 1-06 - Processo administrativo em tramitação por adequação normativa
+  edicao: 2ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT1-06_2Edio_2023.pdf
+  sha256_pdf: 43fc14ce1f3a1046323e2aa3871622aa924b18c3843dd410bb76615377f3c928
+  sha256_md: 28876151e491fc7acdd3ee2d15184d31fe0c2bdcece4ee2f6410acc44952f871
+  data_captura: '2026-07-23'
+  paginas: 10
+  midia: nt-1-06
+  imagens: []
+  tabelas: []
+- arquivo: nt-1-07-atividades-de-baixo-risco.md
+  documento: NT 1-07
+  titulo: NT 1-07 - Atividades econômicas de baixo risco
+  edicao: 1ª edição - 2020
+  ato: Portaria CBMERJ nº 1109, de 20 de maio de 2020
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-07-Atividades-economicas-de-baixo-risco-2020.pdf
+  sha256_pdf: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+  sha256_md: 5b3429094d94a048e370d4281fcd8252a4625a7c2e9eb530d6b0687be54afc5a
+  data_captura: '2026-07-23'
+  paginas: 29
+  midia: nt-1-07
+  imagens:
+  - caminho: media/nt-1-07/pagina-13.png
+    pagina: 13
+    estado: presente
+    sha256: cf958de2e16281d278f618257cb4f969f018319e577807bb0ef13d15cf45fac3
+  - caminho: media/nt-1-07/pagina-14.png
+    pagina: 14
+    estado: presente
+    sha256: 8b762401878c61ec5e543025278b1825c1f8db23837dbcabeb4dfa58c575308b
+  - caminho: media/nt-1-07/pagina-15.png
+    pagina: 15
+    estado: presente
+    sha256: 9a5ced6ec59d520cbc3be4e0592bc215dca94caa709bd89a9d92482a7f4a36c1
+  - caminho: media/nt-1-07/pagina-16.png
+    pagina: 16
+    estado: presente
+    sha256: 064a257c0af53c4be1e711a2601c9bc86eb09f10f53495d9ce9f5236c894262f
+  - caminho: media/nt-1-07/pagina-17.png
+    pagina: 17
+    estado: presente
+    sha256: dc57cd310e735ce9403f0ee1695af1038b66f167cb792da23c5669ecb67adbcc
+  - caminho: media/nt-1-07/pagina-18.png
+    pagina: 18
+    estado: presente
+    sha256: 5711196f78584fc12ac3bc648f15b73ae0f2b11042d943451d6b789f02ed493e
+  - caminho: media/nt-1-07/pagina-19.png
+    pagina: 19
+    estado: presente
+    sha256: a62e67bf4b59a9f69933c1b6d20eb0ba7964a7877c3d1036e8f710d1153dcc37
+  - caminho: media/nt-1-07/pagina-20.png
+    pagina: 20
+    estado: presente
+    sha256: d8f7cc9a34689131034ccc8a6f63f74e5760b4ac9e7e9fd64b1a50914e0e635e
+  - caminho: media/nt-1-07/pagina-21.png
+    pagina: 21
+    estado: presente
+    sha256: 4ab71371a0bbcee2f2999a525a02f877e7745f0812b1dd7a33b8c72d565f4f7c
+  - caminho: media/nt-1-07/pagina-22.png
+    pagina: 22
+    estado: presente
+    sha256: ed3a837c6149640fa957ba784a617c60fe36acbba3a7c3256e7dffcd922caae9
+  - caminho: media/nt-1-07/pagina-23.png
+    pagina: 23
+    estado: presente
+    sha256: 189a84a904fc638bde80e5f5883a9716bdf5c31ee4d52e637de5f31c9bf5a472
+  - caminho: media/nt-1-07/pagina-24.png
+    pagina: 24
+    estado: presente
+    sha256: 4479944787dca1a2ef8a68c5d032ecea3f9d25920b9a50310de3d28da434d2ab
+  - caminho: media/nt-1-07/pagina-25.png
+    pagina: 25
+    estado: presente
+    sha256: 4a0c5425091aa6d68fa7fb6244d12aa8f37c5ff1df672f6468ae5f3ee721e61f
+  - caminho: media/nt-1-07/pagina-26.png
+    pagina: 26
+    estado: presente
+    sha256: 59c32662f1925fe2fe2b1b26436fbba85edc3fc1b6f17f76bf09b6f3d57eb94b
+  - caminho: media/nt-1-07/pagina-27.png
+    pagina: 27
+    estado: presente
+    sha256: 4615b493da5d4acc0a7544189d7defa6693a00ee02a3dc54c20554387e6ed2bf
+  - caminho: media/nt-1-07/pagina-28.png
+    pagina: 28
+    estado: presente
+    sha256: b144aedb3f748ceb76c27e40dc72223627a7195458ebf92ef35d9a5fa59ab00b
+  - caminho: media/nt-1-07/pagina-29.png
+    pagina: 29
+    estado: presente
+    sha256: 65f71fc852a8109a7683cf413a585f4862a47e9a34eb4ecae0a8ce17f6f40471
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 13
+    estado: bruto
+  - pagina: 14
+    estado: bruto
+  - pagina: 15
+    estado: bruto
+  - pagina: 16
+    estado: bruto
+  - pagina: 17
+    estado: bruto
+  - pagina: 18
+    estado: bruto
+  - pagina: 19
+    estado: bruto
+  - pagina: 20
+    estado: bruto
+  - pagina: 21
+    estado: bruto
+  - pagina: 22
+    estado: bruto
+  - pagina: 23
+    estado: bruto
+  - pagina: 24
+    estado: bruto
+  - pagina: 25
+    estado: bruto
+  - pagina: 26
+    estado: bruto
+  - pagina: 27
+    estado: bruto
+  - pagina: 28
+    estado: bruto
+  - pagina: 29
+    estado: bruto
+- arquivo: nt-2-01-extintores.md
+  documento: NT 2-01
+  titulo: NT 2-01 - Sistema de proteção por extintores de incêndio
+  edicao: 2ª edição - 2020
+  ato: Portaria CBMERJ nº 1120, de 22 de setembro de 2020
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-01-Sistema-de-protecao-por-extintores-de-incendio-versao-02-Aprovada-pela-Portaria-CBMERJ-1120_2020_1601400175.pdf
+  sha256_pdf: f2e6db5a1fbc6fd43919d45461214c0d839e69d7a07c669a43b71ffa895381e3
+  sha256_md: eeb1599a5d5e08fddf83aa9e7fc8dcc9ce948654eb6c9a75986bbd5dfe470891
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-2-01
+  imagens:
+  - caminho: media/nt-2-01/pagina-06.jpg
+    pagina: 6
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 3
+    estado: bruto
+  - pagina: 4
+    estado: bruto
+  - pagina: 5
+    estado: bruto
+  - pagina: 6
+    estado: bruto
+- arquivo: nt-2-02-hidrantes-e-mangotinhos.md
+  documento: NT 2-02
+  titulo: NT 2-02 - Sistemas de hidrantes e de mangotinhos para combate a incêndio
+  edicao: 1ª edição - 2019; consolidada com a Portaria CBMERJ nº 1.317/2025
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_2-02_alterada-pela-Portaria-1317_2025.pdf
+  sha256_pdf: 175c79afcac17335da3d68aef49e4ec9cc88706ddd012ed49e0b2748bf8524e9
+  sha256_md: 0b9d4087124a2c4319d8720794057a79025d1c839c4a0c1a90ff62f3a3958602
+  data_captura: '2026-07-23'
+  paginas: 21
+  midia: nt-2-02
+  imagens:
+  - caminho: media/nt-2-02/pagina-19.jpg
+    pagina: 19
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-02/pagina-20.jpg
+    pagina: 20
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 5
+    estado: bruto
+  - pagina: 6
+    estado: bruto
+  - pagina: 8
+    estado: bruto
+  - pagina: 12
+    estado: bruto
+  - pagina: 13
+    estado: bruto
+- arquivo: nt-2-03-parte-1-sprinklers-requisitos-gerais.md
+  documento: NT 2-03 P1
+  titulo: NT 2-03 - Parte 1 - Sistemas de chuveiros automáticos / sprinklers - Requisitos gerais
+  edicao: 1ª edição - 2019; atualizada pela Portaria CBMERJ nº 1.120/2020
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-03-Sistemas-de-chuveiros-automticos-sprinklers-Parte-1-Requisitos-gerais-2019-atualizada_1647374313.pdf
+  sha256_pdf: 008f8743d8520eca54955e3aaaed82cf5cd49cefce1e8b095040fe2755536e9f
+  sha256_md: e80b0eeeb1d612a3298807a4e25a045243a0241657aff5b6826fb92ba1cd4417
+  data_captura: '2026-07-23'
+  paginas: 10
+  midia: nt-2-03-parte-1
+  imagens: []
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 4
+    estado: bruto
+  - pagina: 5
+    estado: bruto
+  - pagina: 9
+    estado: bruto
+- arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+  documento: NT 2-03 P2
+  titulo: NT 2-03 - Parte 2 - Sistemas de chuveiros automáticos / sprinklers - Áreas de armazenamento
+  edicao: 1ª edição - 2019; atualizada pela Portaria CBMERJ nº 1.120/2020
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-03-sprinklers-Parte-2-Minuta-das-alteracoes_1604941555.pdf
+  sha256_pdf: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+  sha256_md: 4eaf00b6bcc9ce2480d4177cbe7d2dd12322c7aafd7a61dc909113ddc7a92489
+  data_captura: '2026-07-23'
+  paginas: 22
+  midia: nt-2-03-parte-2
+  imagens:
+  - caminho: media/nt-2-03-parte-2/pagina-01.jpg
+    pagina: 1
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-02.jpg
+    pagina: 2
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-05.jpg
+    pagina: 5
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-06.jpg
+    pagina: 6
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-07.jpg
+    pagina: 7
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-08.jpg
+    pagina: 8
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-09.jpg
+    pagina: 9
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-10.jpg
+    pagina: 10
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-11.jpg
+    pagina: 11
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-12.jpg
+    pagina: 12
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-13.jpg
+    pagina: 13
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-14.jpg
+    pagina: 14
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-15.jpg
+    pagina: 15
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-16.jpg
+    pagina: 16
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-17.jpg
+    pagina: 17
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-18.jpg
+    pagina: 18
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-19.jpg
+    pagina: 19
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-20.jpg
+    pagina: 20
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-21.jpg
+    pagina: 21
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-2/pagina-22.jpg
+    pagina: 22
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 9
+    estado: bruto
+  - pagina: 10
+    estado: bruto
+  - pagina: 11
+    estado: bruto
+  - pagina: 12
+    estado: bruto
+  - pagina: 13
+    estado: bruto
+  - pagina: 14
+    estado: bruto
+  - pagina: 15
+    estado: bruto
+  - pagina: 16
+    estado: bruto
+  - pagina: 17
+    estado: bruto
+  - pagina: 19
+    estado: bruto
+  - pagina: 21
+    estado: bruto
+- arquivo: nt-2-04-conjunto-de-pressurizacao.md
+  documento: NT 2-04
+  titulo: NT 2-04 - Conjunto de pressurização para sistemas de combate a incêndio
+  edicao: 2ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT2-04_2Edio_2023.pdf
+  sha256_pdf: 37837bf154bc5c517e2732e206e6d72e3e441591364182531614acad69fa5ed1
+  sha256_md: e25f73472b7ab35df6dfdd3a6f6020ca9160fef5cb97291c8c9081aea51dd8b1
+  data_captura: '2026-07-23'
+  paginas: 10
+  midia: nt-2-04
+  imagens:
+  - caminho: media/nt-2-04/pagina-01.jpg
+    pagina: 1
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-04/pagina-10.jpg
+    pagina: 10
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 3
+    estado: bruto
+  - pagina: 4
+    estado: bruto
+  - pagina: 5
+    estado: bruto
+  - pagina: 7
+    estado: bruto
+- arquivo: nt-2-05-sinalizacao.md
+  documento: NT 2-05
+  titulo: NT 2-05 - Sinalização de segurança contra incêndio e pânico
+  edicao: 3ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT2-05_3Edio_2023.pdf
+  sha256_pdf: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
+  sha256_md: 1f01956b304d6c28684790a81ddb5175075ce7722071b113eadd7bff8c522015
+  data_captura: '2026-07-23'
+  paginas: 18
+  midia: nt-2-05
+  imagens:
+  - caminho: media/nt-2-05/pagina-01.jpg
+    pagina: 1
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-02.jpg
+    pagina: 2
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-05.jpg
+    pagina: 5
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-06.jpg
+    pagina: 6
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-07.jpg
+    pagina: 7
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-08.jpg
+    pagina: 8
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-09.jpg
+    pagina: 9
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-10.jpg
+    pagina: 10
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-11.jpg
+    pagina: 11
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-12.jpg
+    pagina: 12
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-13.jpg
+    pagina: 13
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-14.jpg
+    pagina: 14
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-15.jpg
+    pagina: 15
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-16.jpg
+    pagina: 16
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-17.jpg
+    pagina: 17
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-05/pagina-18.jpg
+    pagina: 18
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 3
+    estado: bruto
+  - pagina: 7
+    estado: bruto
+  - pagina: 8
+    estado: bruto
+  - pagina: 9
+    estado: bruto
+  - pagina: 10
+    estado: bruto
+  - pagina: 11
+    estado: bruto
+  - pagina: 12
+    estado: bruto
+  - pagina: 13
+    estado: bruto
+  - pagina: 14
+    estado: bruto
+  - pagina: 15
+    estado: bruto
+  - pagina: 16
+    estado: bruto
+  - pagina: 17
+    estado: bruto
+  - pagina: 18
+    estado: bruto
+- arquivo: nt-2-06-iluminacao-de-emergencia.md
+  documento: NT 2-06
+  titulo: NT 2-06 - Iluminação de emergência
+  edicao: 1ª edição - 2019; atualizada pela Portaria CBMERJ nº 1.125/2020
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-06-Iluminacao-de-emergencia-Minuta-das-alteracoes_1605536471.pdf
+  sha256_pdf: c17684555a36149c6856426926c85867be3922638e0588ed815b12e4fcff30ec
+  sha256_md: c607e83f7b50e2648aa2bf018207da6731a181fcb63268c930327c9856d1314a
+  data_captura: '2026-07-23'
+  paginas: 4
+  midia: nt-2-06
+  imagens: []
+  tabelas:
+  - pagina: 1
+    estado: bruto
+- arquivo: nt-2-07-deteccao-e-alarme.md
+  documento: NT 2-07
+  titulo: NT 2-07 - Sistema de detecção e alarme de incêndio
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-07-Sistema-de-deteccao-e-alarme-de-incendio.pdf
+  sha256_pdf: 3c50d59558803a1063f4bc07bec5e56116d034fb4e2d2538d24943a807f4736b
+  sha256_md: 4e5b10ea044e13115ed8403c2049fb6adcd4928e0c2d612c08ba02a623ae13f8
+  data_captura: '2026-07-23'
+  paginas: 7
+  midia: nt-2-07
+  imagens: []
+  tabelas:
+  - pagina: 1
+    estado: bruto
+- arquivo: nt-2-08-saidas-de-emergencia.md
+  documento: NT 2-08
+  titulo: NT 2-08 - Saídas de emergência em edificações
+  edicao: 1ª edição - 2019; consolidada com a Portaria CBMERJ nº 1.317/2025
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019. Alterada pela Portaria CBMERJ nº 1317, de 10
+    de dezembro de 2025
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_2-08_1Ed_2019_alterada_Portaria_1317_2025.pdf
+  sha256_pdf: c204bd957038c3c8dd18a62a89472161ae6e2cc5602dcb9075bef8bca3b34c5e
+  sha256_md: 145c26643c0d78bacb1a6cda735c32afc5709bab24c84ca7257e50821b2c75ed
+  data_captura: '2026-07-23'
+  paginas: 22
+  midia: nt-2-08
+  imagens:
+  - caminho: media/nt-2-08/pagina-01.jpg
+    pagina: 1
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-02.jpg
+    pagina: 2
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-05.jpg
+    pagina: 5
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-06.jpg
+    pagina: 6
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-07.jpg
+    pagina: 7
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-08.jpg
+    pagina: 8
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-09.jpg
+    pagina: 9
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-10.jpg
+    pagina: 10
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-11.jpg
+    pagina: 11
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-12.jpg
+    pagina: 12
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-13.jpg
+    pagina: 13
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-14.jpg
+    pagina: 14
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-15.jpg
+    pagina: 15
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-16.jpg
+    pagina: 16
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-17.jpg
+    pagina: 17
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-18.jpg
+    pagina: 18
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-19.jpg
+    pagina: 19
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-20.jpg
+    pagina: 20
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-21.jpg
+    pagina: 21
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-08/pagina-22.jpg
+    pagina: 22
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 7
+    estado: bruto
+  - pagina: 12
+    estado: bruto
+  - pagina: 18
+    estado: bruto
+  - pagina: 20
+    estado: bruto
+  - pagina: 22
+    estado: bruto
+- arquivo: nt-2-09-pressurizacao-de-escada.md
+  documento: NT 2-09
+  titulo: NT 2-09 - Pressurização de escada de emergência, elevador de emergência, antecâmaras e áreas
+    de refúgio
+  edicao: 2ª edição - 2025
+  ato: Portaria CBMERJ nº 1280, de 20 de dezembro de 2025
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/12/NT_2_09_2Ed_2025.pdf
+  sha256_pdf: 4298bc2245a5f83e8db9d1dc5065fe356f70a3762ba0b1797ea6c6a8fc92c23e
+  sha256_md: 7af6d317be3c7e797acb28e8b79b363c6feeeb731af1b63261f3309d71ac47f4
+  data_captura: '2026-07-23'
+  paginas: 11
+  midia: nt-2-09
+  imagens:
+  - caminho: media/nt-2-09/pagina-01.jpg
+    pagina: 1
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-09/pagina-02.jpg
+    pagina: 2
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-09/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-09/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-09/pagina-05.jpg
+    pagina: 5
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-09/pagina-06.jpg
+    pagina: 6
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-09/pagina-07.jpg
+    pagina: 7
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-09/pagina-08.jpg
+    pagina: 8
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-09/pagina-09.jpg
+    pagina: 9
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-09/pagina-10.jpg
+    pagina: 10
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-09/pagina-11.jpg
+    pagina: 11
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 4
+    estado: bruto
+  - pagina: 6
+    estado: bruto
+  - pagina: 7
+    estado: bruto
+  - pagina: 10
+    estado: bruto
+  - pagina: 11
+    estado: bruto
+- arquivo: nt-2-10-pecip.md
+  documento: NT 2-10
+  titulo: NT 2-10 - Plano de emergência contra incêndio e pânico - PECIP
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-10-Plano-de-emergencia-contra-incendio-e-panico-PECIP.pdf
+  sha256_pdf: 4406f8268fbb577e70b4ba3367f3bcc0ab1d961da201005b855a34989290b84b
+  sha256_md: bb0c844402205f40e1e37cdbc40e29da5d5af8ff44bb6755e586395e3b230955
+  data_captura: '2026-07-23'
+  paginas: 20
+  midia: nt-2-10
+  imagens:
+  - caminho: media/nt-2-10/pagina-13.jpg
+    pagina: 13
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-10/pagina-14.jpg
+    pagina: 14
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-10/pagina-15.jpg
+    pagina: 15
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-10/pagina-16.jpg
+    pagina: 16
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-10/pagina-17.jpg
+    pagina: 17
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-10/pagina-18.jpg
+    pagina: 18
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 6
+    estado: bruto
+  - pagina: 14
+    estado: bruto
+  - pagina: 15
+    estado: bruto
+  - pagina: 19
+    estado: bruto
+  - pagina: 20
+    estado: bruto
+- arquivo: nt-2-11-brigadas-de-incendio.md
+  documento: NT 2-11
+  titulo: NT 2-11 - Brigadas de incêndio
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-11-Brigadas-de-incendio.pdf
+  sha256_pdf: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+  sha256_md: 0bd25f005c9ea7adbf2259d633739d95941b7069ed29aacc5db3f124bb3d4a0b
+  data_captura: '2026-07-23'
+  paginas: 26
+  midia: nt-2-11
+  imagens:
+  - caminho: media/nt-2-11/pagina-11.jpg
+    pagina: 11
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-11/pagina-12.jpg
+    pagina: 12
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-11/pagina-13.jpg
+    pagina: 13
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-11/pagina-14.jpg
+    pagina: 14
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-11/pagina-15.jpg
+    pagina: 15
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-11/pagina-17.jpg
+    pagina: 17
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-11/pagina-18.jpg
+    pagina: 18
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-11/pagina-19.jpg
+    pagina: 19
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-11/pagina-20.jpg
+    pagina: 20
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-11/pagina-21.jpg
+    pagina: 21
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-11/pagina-22.jpg
+    pagina: 22
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-11/pagina-23.jpg
+    pagina: 23
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-11/pagina-24.jpg
+    pagina: 24
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-11/pagina-25.jpg
+    pagina: 25
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-11/pagina-26.jpg
+    pagina: 26
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 11
+    estado: bruto
+  - pagina: 12
+    estado: bruto
+  - pagina: 13
+    estado: bruto
+  - pagina: 14
+    estado: bruto
+  - pagina: 15
+    estado: bruto
+  - pagina: 16
+    estado: bruto
+  - pagina: 17
+    estado: bruto
+  - pagina: 18
+    estado: bruto
+  - pagina: 19
+    estado: bruto
+  - pagina: 20
+    estado: bruto
+  - pagina: 21
+    estado: bruto
+  - pagina: 22
+    estado: bruto
+  - pagina: 23
+    estado: bruto
+  - pagina: 24
+    estado: bruto
+  - pagina: 25
+    estado: bruto
+  - pagina: 26
+    estado: bruto
+- arquivo: nt-2-12-spda.md
+  documento: NT 2-12
+  titulo: NT 2-12 - Sistema de proteção contra descargas atmosféricas - SPDA
+  edicao: 1ª edição - 2019; atualizada pela Portaria CBMERJ nº 1.179/2022
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT-2-12-SPDA-2019-Atualizada-Portaria_1179_2022.pdf
+  sha256_pdf: 36393d39d931ecb2d8a8937384d0fd11bf950824408a4df60aed99dc4605ffeb
+  sha256_md: c79ba03fc26b221294eb21f780da01a4601cda80248b0e455191c61d4c6ee1b6
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-2-12
+  imagens: []
+  tabelas:
+  - pagina: 1
+    estado: bruto
+- arquivo: nt-2-13-sistemas-fixos-de-gases.md
+  documento: NT 2-13
+  titulo: NT 2-13 - Sistemas fixos de gases para combate a incêndio
+  edicao: 2ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT2-13_2Edio_2023.pdf
+  sha256_pdf: 7041b4808a1f7252223cc0386ba0188df7bbbfa20e45ff6dff3d84cbe7a2e3ae
+  sha256_md: aa42e4a22b862b8278faca2a51bd3713092ae77b459fcaf53c83adce670fb619
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-2-13
+  imagens:
+  - caminho: media/nt-2-13/pagina-06.jpg
+    pagina: 6
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 4
+    estado: bruto
+- arquivo: nt-2-14-controle-de-fumaca.md
+  documento: NT 2-14
+  titulo: NT 2-14 - Controle de fumaça
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-14-Controle-de-fumaca.pdf
+  sha256_pdf: 638248ce4348b3275bbb285538d4c4c6e31603356600de98e4c597529073424b
+  sha256_md: 25a561b8acf555e07304a5a8a4c8f124083af1b76b4987778f4c7db020784699
+  data_captura: '2026-07-23'
+  paginas: 46
+  midia: nt-2-14
+  imagens:
+  - caminho: media/nt-2-14/pagina-01.jpg
+    pagina: 1
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-02.jpg
+    pagina: 2
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-05.jpg
+    pagina: 5
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-06.jpg
+    pagina: 6
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-07.jpg
+    pagina: 7
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-08.jpg
+    pagina: 8
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-09.jpg
+    pagina: 9
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-10.jpg
+    pagina: 10
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-11.jpg
+    pagina: 11
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-12.jpg
+    pagina: 12
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-13.jpg
+    pagina: 13
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-14.jpg
+    pagina: 14
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-15.jpg
+    pagina: 15
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-16.jpg
+    pagina: 16
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-17.jpg
+    pagina: 17
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-18.jpg
+    pagina: 18
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-19.jpg
+    pagina: 19
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-20.jpg
+    pagina: 20
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-21.jpg
+    pagina: 21
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-22.jpg
+    pagina: 22
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-23.jpg
+    pagina: 23
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-24.jpg
+    pagina: 24
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-25.jpg
+    pagina: 25
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-26.jpg
+    pagina: 26
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-27.jpg
+    pagina: 27
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-28.jpg
+    pagina: 28
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-29.jpg
+    pagina: 29
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-30.jpg
+    pagina: 30
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-31.jpg
+    pagina: 31
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-32.jpg
+    pagina: 32
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-33.jpg
+    pagina: 33
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-34.jpg
+    pagina: 34
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-35.jpg
+    pagina: 35
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-36.jpg
+    pagina: 36
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-37.jpg
+    pagina: 37
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-38.jpg
+    pagina: 38
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-39.jpg
+    pagina: 39
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-40.jpg
+    pagina: 40
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-41.jpg
+    pagina: 41
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-42.jpg
+    pagina: 42
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-43.jpg
+    pagina: 43
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-44.jpg
+    pagina: 44
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-45.jpg
+    pagina: 45
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-14/pagina-46.jpg
+    pagina: 46
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 6
+    estado: bruto
+  - pagina: 7
+    estado: bruto
+- arquivo: nt-2-15-hidrante-urbano.md
+  documento: NT 2-15
+  titulo: NT 2-15 - Hidrante urbano
+  edicao: 2ª edição - 2025
+  ato: Portaria CBMERJ nº 1280, de 20 de dezembro de 2024
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/12/NT_2_15_2Ed_2025.pdf
+  sha256_pdf: 9bf5c0a472cde68a362e14c4d6ff48d90edee26d6c5af77022953040af4d5d13
+  sha256_md: f296aae1e6da6ae782ecb0554065af8e470998c83a1cb61f5ad8d3000d5af13f
+  data_captura: '2026-07-23'
+  paginas: 8
+  midia: nt-2-15
+  imagens:
+  - caminho: media/nt-2-15/pagina-01.jpg
+    pagina: 1
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-15/pagina-02.jpg
+    pagina: 2
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-15/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-15/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-15/pagina-05.jpg
+    pagina: 5
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-15/pagina-06.jpg
+    pagina: 6
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-15/pagina-07.jpg
+    pagina: 7
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-15/pagina-08.jpg
+    pagina: 8
+    estado: ausente
+    sha256: null
+  tabelas: []
+- arquivo: nt-2-16-acesso-de-viaturas.md
+  documento: NT 2-16
+  titulo: NT 2-16 - Acesso de viaturas em edificações
+  edicao: 2ª edição - 2020
+  ato: Portaria CBMERJ nº 1125, de 21 de outubro de 2020
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-16-Acesso-de-viaturas-em-edificacoes-2020-versao-02.pdf
+  sha256_pdf: e6bd6d005b860c38bbdea97ad5e59969ed14c4fb55b6794157f5b903f3974585
+  sha256_md: be3f498c1c31d76a7fbd4cdd32157c2980843c5ce4b22614fd83b4541e22294b
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-2-16
+  imagens:
+  - caminho: media/nt-2-16/pagina-01.jpg
+    pagina: 1
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-16/pagina-02.jpg
+    pagina: 2
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-16/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-16/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-16/pagina-05.jpg
+    pagina: 5
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-16/pagina-06.jpg
+    pagina: 6
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 1
+    estado: bruto
+- arquivo: nt-2-17-separacao-entre-edificacoes.md
+  documento: NT 2-17
+  titulo: NT 2-17 - Separação entre edificações
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-17-Separacao-entre-edificacoes.pdf
+  sha256_pdf: 83120c1cd247417d8c543db5db69752e45da5911f26f40205cba174e71d62db7
+  sha256_md: 3fd7310ac186e3eda385b1cc1b1b05b909e011c84b2db317099901e86d0e5b00
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-2-17
+  imagens:
+  - caminho: media/nt-2-17/pagina-01.jpg
+    pagina: 1
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-17/pagina-02.jpg
+    pagina: 2
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-17/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-17/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-17/pagina-05.jpg
+    pagina: 5
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-17/pagina-06.jpg
+    pagina: 6
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 4
+    estado: bruto
+  - pagina: 5
+    estado: bruto
+- arquivo: nt-2-18-compartimentacao.md
+  documento: NT 2-18
+  titulo: NT 2-18 - Compartimentação horizontal e vertical
+  edicao: 2ª edição - 2022
+  ato: Portaria CBMERJ nº 1179, de 11 de abril de 2022
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT-2-18-Compartimentao-horizontal-e-vertical-2022_1649879739.pdf
+  sha256_pdf: f3cc3993e2a919c4ee77f5b7e06782dfd8d168476807c40ccf8f63939e7a9f88
+  sha256_md: 1a7e144761e36019e8b88b3870fcd78936470cf2e154ae3078f02b3a53a84011
+  data_captura: '2026-07-23'
+  paginas: 20
+  midia: nt-2-18
+  imagens:
+  - caminho: media/nt-2-18/pagina-01.jpg
+    pagina: 1
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-02.jpg
+    pagina: 2
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-05.jpg
+    pagina: 5
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-06.jpg
+    pagina: 6
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-07.jpg
+    pagina: 7
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-08.jpg
+    pagina: 8
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-09.jpg
+    pagina: 9
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-10.jpg
+    pagina: 10
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-11.jpg
+    pagina: 11
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-12.jpg
+    pagina: 12
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-13.jpg
+    pagina: 13
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-14.jpg
+    pagina: 14
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-15.jpg
+    pagina: 15
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-16.jpg
+    pagina: 16
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-17.jpg
+    pagina: 17
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-18.jpg
+    pagina: 18
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-19.jpg
+    pagina: 19
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-18/pagina-20.jpg
+    pagina: 20
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 1
+    estado: bruto
+- arquivo: nt-2-19-seguranca-estrutural.md
+  documento: NT 2-19
+  titulo: NT 2-19 - Segurança estrutural contra incêndio - Resistência ao fogo dos elementos de construção
+  edicao: 2ª edição - 2025; consolidada com a Portaria CBMERJ nº 1.317/2025
+  ato: Portaria CBMERJ nº 1280, de 20 de dezembro de 2024
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2025/12/NT2_19_2Ed_2025_alterada_Portaria_1317_2025.pdf
+  sha256_pdf: 29a57e10630596f21a7e914197a2ae021c3e78b9a399b2d16799ac9bba1390fe
+  sha256_md: ce8b7450bddba34ecef3a19adefe81490727cbe0228763c3d0f5023b1a702b0f
+  data_captura: '2026-07-23'
+  paginas: 12
+  midia: nt-2-19
+  imagens:
+  - caminho: media/nt-2-19/pagina-01.jpg
+    pagina: 1
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-19/pagina-02.jpg
+    pagina: 2
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-19/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-19/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-19/pagina-05.jpg
+    pagina: 5
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-19/pagina-06.jpg
+    pagina: 6
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-19/pagina-07.jpg
+    pagina: 7
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-19/pagina-08.jpg
+    pagina: 8
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-19/pagina-09.jpg
+    pagina: 9
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-19/pagina-10.jpg
+    pagina: 10
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-19/pagina-11.jpg
+    pagina: 11
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-19/pagina-12.jpg
+    pagina: 12
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 9
+    estado: bruto
+  - pagina: 10
+    estado: bruto
+  - pagina: 11
+    estado: bruto
+  - pagina: 12
+    estado: bruto
+- arquivo: nt-2-20-controle-de-materiais-de-acabamento.md
+  documento: NT 2-20
+  titulo: NT 2-20 - Controle de materiais de acabamento e de revestimento
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-20-Controle-de-materiais-de-acabamento-e-de-revestimento.pdf
+  sha256_pdf: 6fa8dffe9aa7d10fb27c845b40da733db84862ac9fc144ec3948e8db24e90d4d
+  sha256_md: 5bc11ae2886088026def7dc85f2e31dafdd600a16be55d5be65b8bb70c5865fb
+  data_captura: '2026-07-23'
+  paginas: 9
+  midia: nt-2-20
+  imagens:
+  - caminho: media/nt-2-20/pagina-01.jpg
+    pagina: 1
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-20/pagina-02.jpg
+    pagina: 2
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-20/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-20/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-20/pagina-05.jpg
+    pagina: 5
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-20/pagina-06.jpg
+    pagina: 6
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-20/pagina-07.jpg
+    pagina: 7
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-20/pagina-08.jpg
+    pagina: 8
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-20/pagina-09.jpg
+    pagina: 9
+    estado: ausente
+    sha256: null
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 6
+    estado: bruto
+  - pagina: 7
+    estado: bruto
+  - pagina: 8
+    estado: bruto
+  - pagina: 9
+    estado: bruto
+- arquivo: nt-3-01-cozinha-profissional.md
+  documento: NT 3-01
+  titulo: NT 3-01 - Cozinha profissional
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-01-Cozinha-profissional.pdf
+  sha256_pdf: 39376c0411829f52c7e1c06a9dcde0f09528d2e5db87b4e3915d796783b2ebca
+  sha256_md: 4c8f89208c4f455c1fa3fb8d125239d3356809736ccd2efab35d3716f62e8426
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-3-01
+  imagens:
+  - caminho: media/nt-3-01/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 2e7641cfbd98433ab677cfa8e812983e107f8a89b9ee214a79c2da28aad89842
+  - caminho: media/nt-3-01/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 4
+    estado: bruto
+  - pagina: 5
+    estado: bruto
+- arquivo: nt-3-02-gas-glp-gn-uso-em-edificacoes.md
+  documento: NT 3-02
+  titulo: NT 3-02 - Gás (GLP-GN) - Uso em edificações e áreas de risco
+  edicao: 2ª edição - 2023; atualizada em 2025
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2025/02/NT3-02_2Ed_2023_alterada_2025.pdf
+  sha256_pdf: 8a44a1be179fd3e5c38d06b32f637226230702d48b6c3f8c0f8ae37add147950
+  sha256_md: 554fc2b83eab3e0b1fbd77014569d098e3f47111aef3ce58fe237bfb15aa5875
+  data_captura: '2026-07-23'
+  paginas: 15
+  midia: nt-3-02
+  imagens:
+  - caminho: media/nt-3-02/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 7c9f42fd231597f822368cb1976dd4491fbecd1349754bc7c33080f6984250de
+  - caminho: media/nt-3-02/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 60c99f9c8a7a3d65a119085d8fc2a2dc7906b3f241d6b8622731cf9e6e38d75e
+  - caminho: media/nt-3-02/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 41119039db4318eac1e8c6c74068a4681258c5f2b09e24c4e4da4f4f63486e4a
+  - caminho: media/nt-3-02/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: df00faf3933790f1274bb5de79bd787abf34d310398bddb5c134831a61563bb2
+  - caminho: media/nt-3-02/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 91f6fba5b2f018cacda139d594083e7f4876e1f8aef0e1f34e35cec9e23e4f01
+  - caminho: media/nt-3-02/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 8221a5e6e8bb64b60d0f2c9070c09f86558a5cb1f7784a309032933867d31cd7
+  - caminho: media/nt-3-02/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 761b5e1f6af44aa0b28d00da26cdbc5dccf79a2e275fd76fa6de86d44d2318a8
+  - caminho: media/nt-3-02/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: e9a4351a0befe4a0cc5a16d418582de31e6d484b354dd8113ad0c7dc94dceeec
+  - caminho: media/nt-3-02/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 85b8086a962ccf7434a5da3282d9ffcefa7d8aa2137d5430be765ec36c4d38f8
+  - caminho: media/nt-3-02/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: aada374b68de4976601fb008a175c41d10daddb51e19d1ad3fec0aff5e69c558
+  - caminho: media/nt-3-02/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: 371632334c5bf5bf7ab0639afe5ce2b1601cb5a48ef5da6c2ea8ce537f3f0df9
+  - caminho: media/nt-3-02/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: f614e2dea867e91196553e2f142bc9a2501986737a15336c26fa14b44d615ad6
+  - caminho: media/nt-3-02/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: e8983c63b44cbf0ee20c30304b7b30c6774b127cabed18a78d9e23658bc22659
+  - caminho: media/nt-3-02/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 5944e8ac4755b867162c8f6e364c2656c5eb9539504f8c59aee3b6371b1756f1
+  - caminho: media/nt-3-02/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: d2c39a204c701ea3669d5a053fd0897f8206be5e585c802fee075f829cfae7ec
+  tabelas:
+  - pagina: 5
+    estado: bruto
+  - pagina: 6
+    estado: bruto
+  - pagina: 7
+    estado: bruto
+  - pagina: 8
+    estado: bruto
+  - pagina: 12
+    estado: bruto
+  - pagina: 13
+    estado: bruto
+- arquivo: nt-3-03-motogeradores.md
+  documento: NT 3-03
+  titulo: NT 3-03 - Motogeradores de energia em edificações e áreas de risco
+  edicao: 1ª edição - 2019; consolidada com a Portaria CBMERJ nº 1.317/2025
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_3-03_1Ed_2019_alterada_Portaria_1317_2025.pdf
+  sha256_pdf: 181e7aa6c1341d3032421dde20512ea3e9c55b5588fbd188a1ab3eaa31b958de
+  sha256_md: 396977dc4366a0052ad74423126e4b328b6b0facda5e1ba77affdb040593f487
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-3-03
+  imagens:
+  - caminho: media/nt-3-03/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: abb21f464115d007e18d63b29e5be8817f8d9ef89f69a6267bd19c8040fe3604
+  - caminho: media/nt-3-03/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 3d8143acc90042a928bc4baf0da5a0a05be4c13b6ab0f10830fda4f2aab7237d
+  - caminho: media/nt-3-03/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 6d1442bcb0c980dee8289304d78697dd013fe6a60be40e92ffc28ec29c9e45ea
+  - caminho: media/nt-3-03/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 673775b47c4d465918cb77a77327c716e1036fd490f26341e813456cf27db066
+  - caminho: media/nt-3-03/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 41eccd843347df0545100a67b3a803a49116fbbf6e0526f0b2b9f43ab50ce743
+  - caminho: media/nt-3-03/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 662af1dec428c88d9ca5e385a63d8290ec00036604cf42213540c1c4f45552e2
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 5
+    estado: bruto
+  - pagina: 6
+    estado: bruto
+- arquivo: nt-3-04-subestacoes-eletricas.md
+  documento: NT 3-04
+  titulo: NT 3-04 - Subestações elétricas
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-04-Subestacoes-eletricas.pdf
+  sha256_pdf: 3ed344a5d2862df5b5e61d7ae7a439dd61e1e8a580830cfbd4cd1fd0186eb825
+  sha256_md: 7ee6ae72e0169e20d911b2c3e767fbf2fc0cb080a2d984e65baf98ecf920f9c6
+  data_captura: '2026-07-23'
+  paginas: 11
+  midia: nt-3-04
+  imagens:
+  - caminho: media/nt-3-04/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-3-04/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: 76ae55bcf2bf54426ffa3865e1a7c17c56eb845d17162ae894699fd64c34ad64
+  tabelas:
+  - pagina: 1
+    estado: bruto
+- arquivo: nt-3-05-caldeiras-e-vasos-de-pressao.md
+  documento: NT 3-05
+  titulo: NT 3-05 - Caldeiras e vasos de pressão
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-05-Caldeiras-e-vasos-de-pressao.pdf
+  sha256_pdf: 73174c3094cb82924f6c6d99f81887cd5e6ce4c1b2b63bf80d974cd9b8d14178
+  sha256_md: e2d0d63458a85f84bf1ec1a2b14cdb7fe7e78ecaa43e676af36b0b821b551fd6
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-3-05
+  imagens:
+  - caminho: media/nt-3-05/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  tabelas:
+  - pagina: 1
+    estado: bruto
+- arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+  documento: NT 3-06
+  titulo: NT 3-06 - Armazenagem de líquidos inflamáveis e combustíveis
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-06-Armazenagem-de-liquidos-inflamaveis-e-combustiveis.pdf
+  sha256_pdf: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+  sha256_md: 4ae53f1ce4e1fcbc97a1a0fb48cda41b0b9c5bdf8124ceae654e9931d820ba2e
+  data_captura: '2026-07-23'
+  paginas: 16
+  midia: nt-3-06
+  imagens:
+  - caminho: media/nt-3-06/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 5820b2a562ef757838dcb43b25e2914f6f7ae8c1a46ca8e406cc69536310ba92
+  - caminho: media/nt-3-06/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-3-06/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 17f2aac9467c2dc70e335d1273c320bc89b86cf2792f100fcdd67f2b3343854e
+  - caminho: media/nt-3-06/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 01a51c92b91fd8a96a04f2ec497cb70ae549e19f75571db88e58ae75766c74a6
+  - caminho: media/nt-3-06/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 7b0b728cbe25e16c27b64e963d2dd7c0c2d827c83096533337d77194cd855849
+  - caminho: media/nt-3-06/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 546dcc234933e457ad542865262e6038509e3ad0662ca7bbf66ba6c5ce86c891
+  - caminho: media/nt-3-06/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 92409814c0fe1494773cb937961f8da01bab50e93481d840a44c4126c00bcc52
+  - caminho: media/nt-3-06/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: ac4daa600f8d0c7291680d812f55ad67fa1cae3c5dc56d7e845b7bf7c24e626d
+  - caminho: media/nt-3-06/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 6dccaed643f2b124ab92b4e08f7e0b727f98945b92b4f329f44b3a49216b50cf
+  - caminho: media/nt-3-06/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: 8d720884baa5782de57c8bff5246e9e49e29d5f9b75e65d6eef4964935dd6592
+  - caminho: media/nt-3-06/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: d163625ce5e135572e4c3f64e8195e715f61950ae0f9b1fa2180c768eeee2f25
+  - caminho: media/nt-3-06/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: a3f81ccd47a4530551b077862eaf32c6a60d4031e64d30786156544908679e1d
+  - caminho: media/nt-3-06/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: 2ffad39fbe2179ea7f23931db0cb48f64713e923a105bfd1475fb3a6f276993c
+  - caminho: media/nt-3-06/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 07c27ace04fce0cbc8e403853bb1b39e3c7be28809d2c77cbd260e54d0d76cde
+  - caminho: media/nt-3-06/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: 864bef45ce9746e08e7a7993b56088906dee52d9fb7f37431620b1b80dadb691
+  - caminho: media/nt-3-06/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: c8ca885d2053a9291c7410b026f2252ac1a16a12c1156c114a9b872de1d24b92
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 4
+    estado: bruto
+  - pagina: 5
+    estado: bruto
+  - pagina: 7
+    estado: bruto
+  - pagina: 8
+    estado: bruto
+  - pagina: 9
+    estado: bruto
+  - pagina: 10
+    estado: bruto
+  - pagina: 11
+    estado: bruto
+  - pagina: 13
+    estado: bruto
+  - pagina: 14
+    estado: bruto
+  - pagina: 15
+    estado: bruto
+  - pagina: 16
+    estado: bruto
+- arquivo: nt-3-07-heliponto-e-heliporto.md
+  documento: NT 3-07
+  titulo: NT 3-07 - Heliponto e heliporto
+  edicao: 2ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT3-07_2Edio_2023.pdf
+  sha256_pdf: 85f786298c328a4f770b2788c4e7b07966b65cbd9374f1a8276bec1c98153fd9
+  sha256_md: 38c0b870b320d0f9fe8c7ae72b94dadfad9fd93d9c64c15fe897088fd58cbb51
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-3-07
+  imagens:
+  - caminho: media/nt-3-07/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 5c9552771017059ab4954f6f2a90786a9533c42b8077faa38b72ea02e9884ced
+  - caminho: media/nt-3-07/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 3070ce2fe84b56ae6e76c58fda4d4a9cf745666382d076b36ebdbe259b3bcda4
+  - caminho: media/nt-3-07/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 769a9f5479efbc2685d6a3226fe755193a1b8d1f0b9b7cf64c404ff679dd9c7a
+  - caminho: media/nt-3-07/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 3b7e02e2d2f5aad02b1d4f69efeb82706ecf7a18cc4356f6d0452419c3a97ece
+  - caminho: media/nt-3-07/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: cc3fab986e613311966942aa78164e23c4c0695e5e494c71015661610f5cdb87
+  - caminho: media/nt-3-07/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: c43b54ee778f2b3fd192e5b58a60825d43f10c2a6ade0ed8b3782f8c11d7b428
+  tabelas:
+  - pagina: 6
+    estado: bruto
+- arquivo: nt-4-01-quiosques-e-areas-de-exposicao-ou-venda.md
+  documento: NT 4-01
+  titulo: NT 4-01 - Quiosques e áreas para exposição ou venda de produtos e serviços
+  edicao: 2ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT4-01_2Edio_2023.pdf
+  sha256_pdf: 1cb4c036d0b4ac64945dd66b209843d0ac14bc61fd66c065219ba7f1830938d6
+  sha256_md: ddb052506c56e9688ea43c00f2ac8d3850003a91015059c0434c04e9b416f597
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-4-01
+  imagens:
+  - caminho: media/nt-4-01/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: cf3c9ebffd89c88a5366746a88222c30ed114b9b9c98cfea708d1d656683ebfd
+  - caminho: media/nt-4-01/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 9a7313131243e12b67cfe4acbb9087e21e4a1c40a58b24bb4eea205ff9f88ae7
+  - caminho: media/nt-4-01/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: ed905e3e442af2cedb4b776aa044ab57a12f5c44d858e50e6dd5f6237012396b
+  - caminho: media/nt-4-01/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 4057f4553a65d9f9cf6626187e9dc4b9eafb2636968dc22b6fb7934b17fb34f6
+  - caminho: media/nt-4-01/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: f24e7eb08531e32a0cbdb15c59c46b19c13319791ce350567a9502798a4ec902
+  tabelas:
+  - pagina: 4
+    estado: bruto
+- arquivo: nt-4-02-restricao-de-liberdade.md
+  documento: NT 4-02
+  titulo: NT 4-02 - Edificações destinadas à restrição de liberdade
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-02-Edificacoes-destinadas-a-restricao-de-liberdade.pdf
+  sha256_pdf: f7b383579f1219bb29d135b29948f68ec18fa580511a90a0e74b2dba796b2ab2
+  sha256_md: 8cc310380aeb21ed74493bc40ab6c6221aa7a8330af9b5867917916e15131352
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-4-02
+  imagens:
+  - caminho: media/nt-4-02/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 28fe3d0e700f8b23f6fc84b01bb32f8e771f96e7614e17a1f8a7af8fe2558d8a
+  - caminho: media/nt-4-02/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  tabelas:
+  - pagina: 1
+    estado: bruto
+- arquivo: nt-4-03-edificacoes-tombadas.md
+  documento: NT 4-03
+  titulo: NT 4-03 - Edificações tombadas
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-03-Edificacoes-tombadas.pdf
+  sha256_pdf: d254b42c3f3b8a389674582f2592e98eeba694412ff25f2f80d3c2a076570c78
+  sha256_md: 033cc1fb21b8244adb13eaa2ec683e414546291664681f69a451499da6afb52a
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-4-03
+  imagens:
+  - caminho: media/nt-4-03/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  tabelas:
+  - pagina: 1
+    estado: bruto
+- arquivo: nt-4-04-municoes-explosivos-e-artefatos-pirotecnicos.md
+  documento: NT 4-04
+  titulo: NT 4-04 - Munições, explosivos e artefatos pirotécnicos - Fabricação, armazenagem e comércio
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-04-Municoes-explosivos-e-artefatos-pirotecnicos-Fabricacao-armazenagem-e-comercio.pdf
+  sha256_pdf: 4a60b8e260a3765210bab4f348c2b40ae4cfe7fd14c683d83875f2d68e9be3af
+  sha256_md: 25ee89132a1b2fdcd026a5ccf48f5e0cbaba83009bdcedc772556425d606f76a
+  data_captura: '2026-07-23'
+  paginas: 11
+  midia: nt-4-04
+  imagens:
+  - caminho: media/nt-4-04/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: e6674fbdcaeb52d6eaebb3db2b084a4399dd77451fe2c92821023da893c4a2d6
+  - caminho: media/nt-4-04/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-4-04/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: b6e5d19c9116750a5a963b051d46eabee915aad0d153c0e8e07f77b37c53ff94
+  - caminho: media/nt-4-04/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 39b80bf6be90696d7880be6755b2466fa675052f1aaa6ab67a9680555b6187b1
+  - caminho: media/nt-4-04/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 4df7514927df280af8d6d4e2c6cc5530c1e58b5f4a19d8c61c541d174a7850d4
+  - caminho: media/nt-4-04/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 65f2062edc7ac07219818462e14acc692616aea6619944971348e3c46054576b
+  - caminho: media/nt-4-04/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 3240de3d8527dfc32313e55617d60fe663e7fbfb09c6b8d52eb5f250d4afdc90
+  - caminho: media/nt-4-04/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 246877a10722eb901d4c6dfeaba9e5cf04e050e6512963acb64d51b038d76e8e
+  - caminho: media/nt-4-04/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: f222eff88ddca61de6fa0d847fea1a6e08d366936eb179f7d8ea52328325fb09
+  - caminho: media/nt-4-04/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: 0feec8a3cc840182ee48ea6a0633f2b1f4560eb5a3ffc0921328e0c915a40dec
+  - caminho: media/nt-4-04/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: c21edd5a438c4c52d37ec3098858c64bd3d2cb87d423ed320d19209d14b63e5d
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 3
+    estado: bruto
+  - pagina: 8
+    estado: bruto
+  - pagina: 9
+    estado: bruto
+  - pagina: 10
+    estado: bruto
+  - pagina: 11
+    estado: bruto
+- arquivo: nt-4-05-gas-manipulacao-armazenamento-e-comercializacao.md
+  documento: NT 4-05
+  titulo: NT 4-05 - Gás (GLP-GN) - Manipulação, armazenamento e comercialização
+  edicao: 2ª edição - 2022
+  ato: Portaria CBMERJ n° 1179, de 11 de abril de 2022
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT-4-05-Gas-GLPGN-Manipulacao-armazenamento-e-comercializacao-2022.pdf
+  sha256_pdf: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
+  sha256_md: 2eaf1ef756f91f438a913a5aedb4ae5331f4fb4bcf5fc033552046265c59e9cd
+  data_captura: '2026-07-23'
+  paginas: 23
+  midia: nt-4-05
+  imagens:
+  - caminho: media/nt-4-05/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 5369394364b0fd6dce26afc45293b4f4282d2c0a679bcfc8ce2de899080ebdcb
+  - caminho: media/nt-4-05/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 73dee108e1e95b5eceb2006767e15936bfc2a74eceb1e4aee5c284634328cbfb
+  - caminho: media/nt-4-05/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 949e492c27791a5b39a81f18b7dfc0cb107aaa194b5ddd86bd515c7531cecebb
+  - caminho: media/nt-4-05/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 17b8b802ed7c1570de90c44848ec5e69b5dbbe2f27357b09610f601d9781f16e
+  - caminho: media/nt-4-05/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 5d17ebac2d074b4f28d568df26a3bf68c9f3bcac2785ba8f54297433899bb5d2
+  - caminho: media/nt-4-05/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 0bf4a56125cf38da2eb006e1e3fdfb60105975c67dbee7921a89b55b3d8a5bd1
+  - caminho: media/nt-4-05/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: f5b2c4080f5a7245e488de3f6eb9e2bdd49b2094eb1b45fa2927269d7f036802
+  - caminho: media/nt-4-05/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 9c803f8f8e8d71e0d0b52639a83725975d242fb3d4209c1b81b15eb72886184c
+  - caminho: media/nt-4-05/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 7c027c32efb8de6ce08c71ee940b3c7ac85197a839f0b8479ff0c7562ed660db
+  - caminho: media/nt-4-05/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: 2c7aa86b1c332991d985be93cfa8cabfac0cb6975f0803bf7047d86734dd2377
+  - caminho: media/nt-4-05/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: 0c08c91ac028c58c48be731a0a9bee0bea48f7e359c4a59cb956f7f42b40696f
+  - caminho: media/nt-4-05/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: b3c702d8e7936ffaa9a6e8243d031a4167a38c30a499d64a63d61ceafedd686e
+  - caminho: media/nt-4-05/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: 3471e0e962149e6ed06707c5facf2d8e278f0f7702bcb1a5a6753aec543ba575
+  - caminho: media/nt-4-05/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 6b7ce537548ef84b5c6e785455d7beac2a80068cc9dcebd14d82dc33be81b829
+  - caminho: media/nt-4-05/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: e8d9e1a1414faded45049844f30f8a11c36a018007c6c7e8b5bf79143cd3a26d
+  - caminho: media/nt-4-05/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: 2939bc21c249f90e0db47c72fd12855090c343e9c1dbc32b90b72a51f1fa4901
+  - caminho: media/nt-4-05/pagina-17.jpg
+    pagina: 17
+    estado: presente
+    sha256: 7166389d111cdaf2ea65c6843d0a7a0a1bcb42abefbb2888ff5c818c929fcd9b
+  - caminho: media/nt-4-05/pagina-18.jpg
+    pagina: 18
+    estado: presente
+    sha256: ac90f39f6102029d3df0ccd57324716a9db581e20857c95879d5904cb64bd8aa
+  - caminho: media/nt-4-05/pagina-19.jpg
+    pagina: 19
+    estado: presente
+    sha256: 56a0cf66fcfe175fe7fe6676b01399b76d13dd7e45bb36eea2de4f5b1b833a1a
+  - caminho: media/nt-4-05/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: 53a190ae7be32d1be89f439b58e2c271d7155b4c1efe700d910a5cf476a89e05
+  - caminho: media/nt-4-05/pagina-21.jpg
+    pagina: 21
+    estado: presente
+    sha256: 414bf881492d4e782c289aa0276e58fe8ee0803b9c3437a2365d1ddd0dfc88b0
+  - caminho: media/nt-4-05/pagina-22.jpg
+    pagina: 22
+    estado: presente
+    sha256: 33cff48a8326f7a7a54e7b3f50edb3e10decec6505f0d7da7c33d9215e094034
+  - caminho: media/nt-4-05/pagina-23.jpg
+    pagina: 23
+    estado: presente
+    sha256: 87f09ad38cc9576d5f274e6b9a02e637f4390748951b077c85e1a62cd69ad9aa
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 4
+    estado: bruto
+  - pagina: 5
+    estado: bruto
+  - pagina: 6
+    estado: bruto
+  - pagina: 8
+    estado: bruto
+  - pagina: 10
+    estado: bruto
+  - pagina: 13
+    estado: bruto
+  - pagina: 14
+    estado: bruto
+  - pagina: 15
+    estado: bruto
+  - pagina: 16
+    estado: bruto
+  - pagina: 17
+    estado: bruto
+  - pagina: 18
+    estado: bruto
+  - pagina: 23
+    estado: bruto
+- arquivo: nt-4-06-postos-de-servicos-e-abastecimento.md
+  documento: NT 4-06
+  titulo: NT 4-06 - Postos de serviços e abastecimento de veículos
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-06-Postos-de-servicos-e-abastecimento-de-veiculos.pdf
+  sha256_pdf: da02569719cdc9a437cf642d2a36368e08e7b8c988e88a1c2ff85bf4253ee29b
+  sha256_md: 1ab456f88e8bdd8d3c60e6429b2bc97ca95994a119c8c537b290c62638cb9f38
+  data_captura: '2026-07-23'
+  paginas: 7
+  midia: nt-4-06
+  imagens:
+  - caminho: media/nt-4-06/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 233bf04dc5d676dbc4f558c9385666655b7e7c701ab7a0a3da7896810f2798fa
+  - caminho: media/nt-4-06/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-4-06/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 4afe5edf78d36fe2b8317c2c5474826909c6d540bce604a9362efb2acd1e8b43
+  - caminho: media/nt-4-06/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 4b424cd34391ddd1c7293b8a7967893222a9136b2e9defdec53544ffb71977ab
+  - caminho: media/nt-4-06/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 0a4a7d51b596536937ff7907c59dbcb30a25d42482e493c4b9959dac8208e6b4
+  - caminho: media/nt-4-06/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 873178d9c05a47425623587931dbd5cb003f19268832a25a039ec54c80867e7c
+  - caminho: media/nt-4-06/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: dec81f199aa8c6adad117aaf84b11851cf1400e7a1840585c0dd869e39e7a62e
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 3
+    estado: bruto
+  - pagina: 5
+    estado: bruto
+  - pagina: 7
+    estado: bruto
+- arquivo: nt-4-07-garagens.md
+  documento: NT 4-07
+  titulo: NT 4-07 - Edificações e estruturas para garagens
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-07-Edificacoes-e-estruturas-para-garagens.pdf
+  sha256_pdf: c6e9454a1a93d18e2926b05b9eb513cd00b9462eb778b7d397a00213d2442dae
+  sha256_md: 9160f1fcefa4499a3d5d2ea3ecfe3b27ef141c75bdbc4ee62be6f8ad6dffc06d
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-4-07
+  imagens:
+  - caminho: media/nt-4-07/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: cbcaf7a0559a9df952e5409b2717ce8c114b4c17ec9cc15a833e04133242635a
+  - caminho: media/nt-4-07/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-4-07/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 57d29385594448a516ee98d7e0e3cebb600dfc6cb7c63d3360cd2b73b05f69b4
+  - caminho: media/nt-4-07/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: ea6f1018c74422f885c5ee7034182db90207641877100016b9e3a79caf0e192b
+  - caminho: media/nt-4-07/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: f45c3a1eddfdb5c919c9ed6242bf0313c26825f4106f243614c150fbe720055d
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 3
+    estado: bruto
+- arquivo: nt-4-08-patios-para-armazenagens.md
+  documento: NT 4-08
+  titulo: NT 4-08 - Pátios para armazenagens diversas
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-08-Patios-para-armazenagens-diversas.pdf
+  sha256_pdf: abd8e600d8d434885b63f1a8a651065a017c0c0c6f1280a2f483f8f0e4f5476a
+  sha256_md: d68134d296633a361d4e29a13881d4b7903d1af0c4c33881e433a3bcb5809ffd
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-4-08
+  imagens:
+  - caminho: media/nt-4-08/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: cd81c7e7a3def131424a9e72dfc2af0eb5852e85e8760f39ace521a437cf8de3
+  - caminho: media/nt-4-08/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-4-08/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 88f16618322701bcea3131a024709f437ca7b948a2619851ccc9104258b565a4
+  - caminho: media/nt-4-08/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: f69cd402174e3559a4bba3fe917dac015f1fca679a7014fc62b01c714c9000d7
+  - caminho: media/nt-4-08/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 795f4ac1cd6f91e6de4908a7a88e631e1b62ebfc05bf0ee662dd3d7b347d1815
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 3
+    estado: bruto
+- arquivo: nt-4-09-tuneis.md
+  documento: NT 4-09
+  titulo: NT 4-09 - Túneis
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-09-Tuneis.pdf
+  sha256_pdf: bea8f7902227b297338f0e78c459935df3a79f505eb1b02d54814a4997351fd2
+  sha256_md: 2701ef3c4408b705113410dfb32fe9cb69ddd14884b5c869bbe95797e5fa7410
+  data_captura: '2026-07-23'
+  paginas: 9
+  midia: nt-4-09
+  imagens:
+  - caminho: media/nt-4-09/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: cfbc3d34517c2c241717e4d4784a91129b6459ea86b80dbcf4301c69623ebd26
+  - caminho: media/nt-4-09/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-4-09/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: b90b4dc510f4515d2520c35ba18596a62d0b5aaee339db75501c7c099000cfc4
+  - caminho: media/nt-4-09/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: f6babe936c0ca940d24a16076c5f80187e2db57cd5f93ecd4e193033406abdd4
+  - caminho: media/nt-4-09/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 9a70dafcedff24be15505d7188efe631f7b6fe12d69c26fd14f9ccd9ae68d732
+  - caminho: media/nt-4-09/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 35609c3978e72b18bb2ffb888222f357becc881b2183aa2bbb3f6d1534fbc40b
+  - caminho: media/nt-4-09/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 88a3df9fc0e6d0ec01aec5035495a018a4355b58c24e378e7e641b9f08b0d1da
+  - caminho: media/nt-4-09/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 2f986f970ab38bbb18c4c3c764ce150f9a967015c4d43cc9f79745d4461cfbcb
+  - caminho: media/nt-4-09/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 5471adf5ffd42b17d6429afb6db2a218c5eb5dd186b6a1e5e7891eea6982ac4e
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 8
+    estado: bruto
+  - pagina: 9
+    estado: bruto
+- arquivo: nt-4-10-canteiro-de-obras.md
+  documento: NT 4-10
+  titulo: NT 4-10 - Canteiro de obras
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-10-Canteiro-de-obras.pdf
+  sha256_pdf: f928f7de4b06facda68fcdf110baef5fd3b915c377b9d888f37cbf5a51dc14c1
+  sha256_md: 1ed64c4e1b32073fd51482e4f3abcbe4759374879409d32ddd1ad646422c8224
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-4-10
+  imagens:
+  - caminho: media/nt-4-10/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 3
+    estado: bruto
+  - pagina: 4
+    estado: bruto
+- arquivo: nt-4-11-estruturas-temporarias-atendimento-medico-covid-19.md
+  documento: NT 4-11
+  titulo: NT 4-11 - Estruturas temporárias de atendimento médico para enfrentamento da Covid-19
+  edicao: 2ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT4-11_2Edio_2023.pdf
+  sha256_pdf: 0961d030e6f7b06ffe7e3d9be7d09d3bc09389c83332c050208696e99b643495
+  sha256_md: dcafafcd9aee1f7d1d4538c1df4e4da134214acb23b0f02ee2aa821613e9e396
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-4-11
+  imagens: []
+  tabelas:
+  - pagina: 3
+    estado: bruto
+- arquivo: nt-5-01-centros-esportivos-eventos-e-exibicao.md
+  documento: NT 5-01
+  titulo: NT 5-01 - Centros esportivos, de eventos e de exibição
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-5-01-Centros-esportivos-de-eventos-e-de-exibicao.pdf
+  sha256_pdf: 174fb1ef25a2b58358aebd35185e24ebff393c5ddd471b5161115fd6d2056a1d
+  sha256_md: ce4b132f27b16b60f8cef2e91b263c1a084d281342bdfcc352ac0acfa978421d
+  data_captura: '2026-07-23'
+  paginas: 26
+  midia: nt-5-01
+  imagens:
+  - caminho: media/nt-5-01/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 5c2766b76cb06548b56d3781c39c231f7e74c51f0c05b552e2211b372d59f44c
+  - caminho: media/nt-5-01/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-5-01/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 5b82310650b274ac97e92dfd1bf91d73d4ebff4524aa9bcd13bc1b89349e9d9f
+  - caminho: media/nt-5-01/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 70c5ff75b6627ee9062b679a32d8fd3816a50ab1f9bfdcaa45dc44164debb98b
+  - caminho: media/nt-5-01/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 24f8054934fa1b6fd143a1a507ceae6aaf4b2f87aac5c458b593170988aae6fb
+  - caminho: media/nt-5-01/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: f3bafa0faf6fefdc36456b9db1c8cb98903a9aa5c6890e9cdb2c2ef1d6816e41
+  - caminho: media/nt-5-01/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 57ae24f6a3bd9ae4cdddebc7573b6af3cfffe482f4789e78c1952ef7af1927bd
+  - caminho: media/nt-5-01/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 107bfe71fc1740897dfb9c0b8dd8c1a417f5b1a52186c431b187e6b4f42ee724
+  - caminho: media/nt-5-01/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: f249febcf4e9d95b4820e22d0feb88b8356455965b0ec80b9ce9cf418a83bb34
+  - caminho: media/nt-5-01/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: eb5ccd5d818efa5af071aaecca665e0140948fc3fe05dc74b5f1f6efed7605b8
+  - caminho: media/nt-5-01/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: 94d8caa7c21312d5a9fbe714eed35b8c89975aeecb8ead75c9a2fdaab92169c1
+  - caminho: media/nt-5-01/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: 4bdf82f1963a5e179aa7ae868f3f3ad37c2efcd0714bcebab6d239f1018bbe94
+  - caminho: media/nt-5-01/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: 38ca48ef586c2b0654d2f9517fa22bd3429552d3e0fddba1ee1f7ac6d4797ff5
+  - caminho: media/nt-5-01/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 9f7b5f2b55aaa3804941e6f991929b0772993822f6df1eeab3b16f118180a560
+  - caminho: media/nt-5-01/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: e9afbe37afeffcd44b9aa851852a1e067c9f51cce1487ee756b14a58afe959db
+  - caminho: media/nt-5-01/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: e4ac68e84bacd75ab9b290a3956679a8a1da75c9e91c7fe6fa921abb975c924f
+  - caminho: media/nt-5-01/pagina-17.jpg
+    pagina: 17
+    estado: presente
+    sha256: 312ad3b45d2005eba35593ef5ad83971e9beec8196512094d58312a271ffadae
+  - caminho: media/nt-5-01/pagina-18.jpg
+    pagina: 18
+    estado: presente
+    sha256: 78cb1aaf682d5bbc30cc3949a671b0a55231dab2396bf386ea4f0bca63542509
+  - caminho: media/nt-5-01/pagina-19.jpg
+    pagina: 19
+    estado: presente
+    sha256: 0aa9970df457ebebd67ba3b9cceffd26351ae27e42974b2a13b7293fd36802ee
+  - caminho: media/nt-5-01/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: 575f778b9ec1e5277e490429070726e7f13114b787c680847db71e046564d926
+  - caminho: media/nt-5-01/pagina-21.jpg
+    pagina: 21
+    estado: presente
+    sha256: bb563f022688254f18cb05d86f699d3ffa0454d22036cdfb3739450c2c1cdaac
+  - caminho: media/nt-5-01/pagina-22.jpg
+    pagina: 22
+    estado: presente
+    sha256: bf6f7dcc6129a1e271f061cf1f29324299015b7d1b398bdcdd4eb59657c15f3b
+  - caminho: media/nt-5-01/pagina-23.jpg
+    pagina: 23
+    estado: presente
+    sha256: 7a1856e98680f2ed69d65d2f7ec46983923ed4a608c72999bd1b2ac49362b39f
+  - caminho: media/nt-5-01/pagina-24.jpg
+    pagina: 24
+    estado: presente
+    sha256: 8b6f36a7ba35bfa0d3eb5e312719a144d79091d04a2753c85ed0070cd4e84ca8
+  - caminho: media/nt-5-01/pagina-25.jpg
+    pagina: 25
+    estado: presente
+    sha256: 7c1421527140d64d99700b6dd1dcda2a76a3d3c9ce0466ba45d8f087c4f1e160
+  - caminho: media/nt-5-01/pagina-26.jpg
+    pagina: 26
+    estado: presente
+    sha256: 2c6e3422001da6d06ea44e54aaf2554de818bbe932e437a3eef0affb03b40cc9
+  tabelas:
+  - pagina: 1
+    estado: bruto
+- arquivo: nt-5-02-eventos-pirotecnicos.md
+  documento: NT 5-02
+  titulo: NT 5-02 - Eventos pirotécnicos
+  edicao: 3ª edição - 2025
+  ato: Portaria CBMERJ nº 1317, de 10 de dezembro de 2025
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2025/12/NT_5-02_3Ed_2025.pdf
+  sha256_pdf: eeff91b4e54b032a0e477c61d88747424a2bdcd1e01824f3503e69c63e97f346
+  sha256_md: 399fa12ce1610a5004010935f9627ee94b58c02aa15838ae7321d462b51154a7
+  data_captura: '2026-07-23'
+  paginas: 8
+  midia: nt-5-02
+  imagens:
+  - caminho: media/nt-5-02/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: c7c745376b86c90a68fb40532c1ca81069863258a1ed39a81cd248ffd486b7ab
+  - caminho: media/nt-5-02/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 47f7135eb23f632932e00a20ba4f96b09bf555357f628b6924dc517fa10784fa
+  - caminho: media/nt-5-02/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 44b20d292d0dab4520b1797421ad11efc95b4a5f3cfc3e4b2f53f605270efeb9
+  - caminho: media/nt-5-02/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 3d97052f7ffce533d76dffa41474677b1921bb70055799631b9a4a0778edfaa5
+  - caminho: media/nt-5-02/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: d187f22b70736339c3ce616c81e0226425959c86519e875ebd4a64f05e59b734
+  - caminho: media/nt-5-02/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 3f88c83e7266b2fad154a139c83548e0c8fce7abeaa0d5b32e23e4e303f50761
+  - caminho: media/nt-5-02/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 207b64e7a5260898ad93e80af83d5f474a96177981d48a8e2572823d5fb9789b
+  - caminho: media/nt-5-02/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 70911565d9e15bcc9d8d113c85d071703c37337429c7033d33856b1cfaf76bdf
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 4
+    estado: bruto
+  - pagina: 8
+    estado: bruto
+- arquivo: nt-5-03-carros-alegoricos-trios-eletricos-e-carros-de-som.md
+  documento: NT 5-03
+  titulo: NT 5-03 - Carros alegóricos, trios elétricos e carros de som
+  edicao: 2ª edição - 2025
+  ato: Portaria CBMERJ nº 1317, de 10 de dezembro de 2025
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2025/12/NT_5-03_2Ed_2025.pdf
+  sha256_pdf: 349f47ca450a6737b72cac42d6c502a341b3f308d1b9b851bd6a2edc7b206e56
+  sha256_md: a97b30b5ce691ea43cf222dd8d356e3ea78d2771ccfd8a7b70f7127ec757fab1
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-5-03
+  imagens:
+  - caminho: media/nt-5-03/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 3ec6eeb5b94b8843f408f2e3ea824d9f1f315a6db4040572cd39f7ac49a98aa5
+  - caminho: media/nt-5-03/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 57185183e07919f4812bd4cfd9cb3920c3252ceb27c18907e30aa38a4f4db59e
+  - caminho: media/nt-5-03/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: e325881b2ab20b15724ab44b3af657de96977d911963239b19922493938b075e
+  - caminho: media/nt-5-03/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 535ce9bb42e3dbdcc9070df345381473548f49673fba5e7e951edde6e5e9910f
+  - caminho: media/nt-5-03/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: ac466b4df56ca6fe437d111ac0ed5ab1a0bc563cd101e3ea72bdf1c0a5c89f55
+  - caminho: media/nt-5-03/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: c342798fd88858bd759dbc8492ab8e8c086f6a66fd678ffc94ec55bfc47fb6f4
+  tabelas:
+  - pagina: 6
+    estado: bruto
+- arquivo: nt-5-04-eventos-temporarios-de-reuniao-de-publico.md
+  documento: NT 5-04
+  titulo: NT 5-04 - Eventos temporários de reunião de público
+  edicao: 1ª edição - 2019; atualizada pela Portaria CBMERJ nº 1.167/2022
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT_5-04_alterada_pela_Portaria_1167_2022_1644255940_2022-02-07-1.pdf
+  sha256_pdf: d243a23b3425827d77def2bef613397066a89dc48dc5a3c9cc8e8b46f3328b9d
+  sha256_md: d52859a9b7b89abed41661c61ba67a5d8cfbcb1add1f732645161aabc3ed115f
+  data_captura: '2026-07-23'
+  paginas: 8
+  midia: nt-5-04
+  imagens:
+  - caminho: media/nt-5-04/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 01d05558f3e798654d65a9d93a140f3ecd86ec4da0e82d7d03f4a4ebbe68e0b2
+  - caminho: media/nt-5-04/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 1b460eedfff9887752b76f40914863539776cb0fc0aa0630827c1e6bde203b58
+  - caminho: media/nt-5-04/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: e897e833dad5aafab261afc67fe50322d4369e4517eefd3f1b8a00866c2c1c17
+  - caminho: media/nt-5-04/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: d4cf5b5f9e63740eac4491bbd3de68d2782f514dabcdfc043ef5f3c1104a99d2
+  - caminho: media/nt-5-04/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: f31b75afcd04ce87adc397d7f96921ee95b08c27cfdd4424303187fc7277e74b
+  - caminho: media/nt-5-04/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 08acfe4a28b4e46808c1547c2550a0187dfbfa995bf6092cd83455fe4918af04
+  - caminho: media/nt-5-04/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 016e026ff6f90a8ce888fbe3623441ba67cf4738befdd11bb7059fc0cfc884b6
+  - caminho: media/nt-5-04/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 67024429f79a59a8c2aef0dd7a6f2e700e2f49677b1a3cfd655dd5cc5fc6b89a
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 6
+    estado: bruto
+- arquivo: nt-5-05-atendimento-medico-para-eventos.md
+  documento: NT 5-05
+  titulo: NT 5-05 - Atendimento médico para eventos de reunião de público
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-5-05-Atendimento-medico-para-eventos-de-reuniao-de-publico.pdf
+  sha256_pdf: 54345183121ed1b645442a50f3b7a2ae982a0144cf1a3b6ce4498fe460aa0da6
+  sha256_md: c9fdd8ba436ca9bf9aa5c6b88ca93a0c516ca0574261d123cf381eda5aafc602
+  data_captura: '2026-07-23'
+  paginas: 13
+  midia: nt-5-05
+  imagens:
+  - caminho: media/nt-5-05/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: e0496e6569c434f87b5137f3ac23a6c23c65112eb31c1511340185585d25026f
+  - caminho: media/nt-5-05/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-5-05/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 3e6acdc293c9cb180a86ddbd85f34cbdb756bdfcb957ad79ac22b7bb84b3c6a4
+  - caminho: media/nt-5-05/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 9716b5f03f8f176bfcf37e2951f4d61b5bf3bf3783617af3b71a024d1c6f5d7c
+  - caminho: media/nt-5-05/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 1c8c9301f90bb38d0c411c918adcb1e9bb2803bcda70c46ca1dbc53f9ebc5d87
+  - caminho: media/nt-5-05/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 3613bce4485218437b617363ef341e629e769d2e8d35a8a1443df800d921cde9
+  - caminho: media/nt-5-05/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: de4be2f3c3d8146e1d29b2850c688d7764abf69d6dcdd89ceb86476b6748c4b0
+  - caminho: media/nt-5-05/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: f5ff7ef76a79806b1e26682b9b85b9cad10766c575e7d68ea216d60d9004586f
+  - caminho: media/nt-5-05/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 7c8c6126178e7a78378bc35e4f49c5c1b0819a0a786b04e7993e117296af3e1f
+  - caminho: media/nt-5-05/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: daf9232c53d8033a15848b95f2a82b60377790e898c0739825905796b2eeb21c
+  - caminho: media/nt-5-05/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: 755b93cbd6f71a3084aca7a8cd036815e9c1ce86e99516667b7440b60dfcbe49
+  - caminho: media/nt-5-05/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: e820caac550bc8ca09740b22b73d1458a181665f0529d54435fcb9ecc7d2445a
+  - caminho: media/nt-5-05/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: b995ec50af0ed4cae19e73b4c178ae788e84c7b60285693c3e71d0626d4e38c1
+  tabelas:
+  - pagina: 1
+    estado: bruto
+  - pagina: 3
+    estado: bruto
+  - pagina: 4
+    estado: bruto
+  - pagina: 5
+    estado: bruto
+  - pagina: 10
+    estado: bruto
