@@ -37,7 +37,7 @@ FATOS = {
     # Portas dos checks de extintor v2: sem elas informadas, nada conclui.
     "quality.region_confirmed": True,
     # F5.3: balanço de reconhecimento completo (sem bloco de segurança não reconhecido)
-    "quality.recognition.complete": True,
+    "quality.recognition.complete": True, "quality.geometry.consistent": True,
     "quality.extinguisher.complete": True,
 }
 

@@ -314,6 +314,7 @@ def _floor(region: dict[str, Any], *, process_id: str, source: str, version: int
             extraction_method=GEOMETRY_METHOD,
             algorithm=cov.get("algorithm", TRAVEL_ALGORITHM),
             algorithm_version=cov.get("algorithm_version", TRAVEL_ALGORITHM_VERSION),
+            uncertainty_budget=cov.get("uncertainty_budget"),
             quality_gate=walls_gate))
 
     facts = {name: fact.get("value") for name, fact in (region.get("facts") or {}).items()

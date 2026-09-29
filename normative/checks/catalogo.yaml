@@ -4,7 +4,7 @@
 schema_version: check-catalog/1.0
 id: coscip-checks-rj
 name: Plano de Verificação COSCIP — extintores, hidrantes, alarme e saídas
-version: 5
+version: 6
 jurisdiction: CBMERJ-RJ
 publication_state: DRAFT
 notes:

@@ -88,6 +88,8 @@ class Evidence(_Strict):
     extraction_schema: str | None = None
     algorithm: str | None = None
     algorithm_version: str | None = None
+    # Parcelas da incerteza de uma medida geométrica, cada uma com origem (F7.3).
+    uncertainty_budget: dict[str, Any] | None = None
     quality_gate: str | None = None
     semantic_validation: str | None = None
     confidence: float | None = Field(default=None, ge=0, le=1)

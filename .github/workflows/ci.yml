@@ -63,6 +63,14 @@ jobs:
           --basetemp "${{ runner.temp }}/pytest"
           --junitxml "${{ runner.temp }}/junit-${{ matrix.os }}.xml"
 
+      - name: Determinismo (hash da saída da análise)
+        run: python -m tools.ci.determinismo --out "${{ runner.temp }}/determinismo-${{ runner.os }}.json"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: determinismo-${{ runner.os }}
+          path: ${{ runner.temp }}/determinismo-${{ runner.os }}.json
+
       - name: Interface (npm ci + build)
         run: |
           npm ci
@@ -75,3 +83,21 @@ jobs:
           name: junit-${{ matrix.os }}
           path: ${{ runner.temp }}/junit-${{ matrix.os }}.xml
           if-no-files-found: ignore
+
+  # F7.4: mesma entrada ⇒ mesmo analysis.json em Windows e Linux.
+  determinismo:
+    name: determinismo (Windows × Linux)
+    needs: testes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: determinismo-*
+          path: hashes
+          merge-multiple: true
+      - name: Hashes iguais nos dois sistemas
+        run: python -m tools.ci.determinismo --comparar hashes/determinismo-Linux.json hashes/determinismo-Windows.json

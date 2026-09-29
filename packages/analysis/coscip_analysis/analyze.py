@@ -25,6 +25,7 @@ from coscip_analysis.regions import (
     rooms_from_texts,
 )
 from coscip_analysis.spatial import (
+    SYMBOL_POSITION_M,
     Grid,
     Walker,
     clip_mask,
@@ -41,6 +42,18 @@ from coscip_analysis.symbols import (
     mark_legends,
     recognition_ledger,
     recognize,
+)
+from coscip_analysis.vector_paths import (
+    FMM_ALGORITHM,
+    FMM_ALGORITHM_VERSION,
+    VECTOR_ALGORITHM,
+    VECTOR_ALGORITHM_VERSION,
+    build_domain,
+    fmm_grid,
+    fmm_worst,
+    region_polygon,
+    uncertainty_budget,
+    worst_point,
 )
 from coscip_rules.dsl import RuleDefinition
 from coscip_rules.engine import EvaluationContext, Fact, evaluate
@@ -88,6 +101,10 @@ class AnalysisInput:
     # Quadros de legenda marcados pelo analista ([x0, y0, x1, y1] em metros): têm prioridade
     # sobre a heurística; símbolo dentro deles nunca protege nada.
     legend_regions: list[list[float]] = field(default_factory=list)
+    # Incerteza relativa da escala (0 = unidade padrão confirmada: mm, cm, m… é exata).
+    scale_rel_uncertainty: float = 0.0
+    # Método vetorial + FMM de conferência (F7). Desligar só para medir desempenho.
+    vector_paths: bool = True
 
 
 def _fact(value: Any, unc: float | None = 0.0, evidence: tuple[str, ...] = ()) -> Fact:
@@ -159,7 +176,7 @@ def run(inp: AnalysisInput, progress=None) -> dict[str, Any]:  # noqa: ANN001
     for i, region in enumerate(regions, start=1):
         step(f"Analisando {region.name} ({i}/{len(regions)})")
         regions_out.append(_analyze_region(region, plan, symbols, rooms, obstacle, d,
-                                           inp.rules, ctx_facts, results, blocking))
+                                           inp.rules, ctx_facts, results, blocking, inp))
 
     assigned = {s["id"] for r in regions_out for s in r["symbols"]}
     outside = [s.as_dict() for s in symbols if s.id not in assigned and s.excluded is None
@@ -206,7 +223,8 @@ def _totals(symbols: list[Symbol]) -> dict[str, dict[str, int]]:
 def _analyze_region(region: Region, plan: Plan, symbols: list[Symbol], rooms: list[Room],
                     obstacle: np.ndarray, d: SymbolDictionary, rules: list[RuleBinding],
                     ctx_facts: dict[str, Fact], results: list[dict[str, Any]],
-                    blocking: list[tuple[float, float]] = ()) -> dict[str, Any]:
+                    blocking: list[tuple[float, float]] = (),
+                    inp: AnalysisInput | None = None) -> dict[str, Any]:
     x0, y0, x1, y1 = region.bbox
     inside_sym = [s for s in symbols
                   if x0 <= s.x <= x1 and y0 <= s.y <= y1
@@ -287,9 +305,18 @@ def _analyze_region(region: Region, plan: Plan, symbols: list[Symbol], rooms: li
 
     coverage = {}
     fields: dict[str, tuple[np.ndarray, np.ndarray]] = {}
+    geo: dict[str, Any] = {}
+    if (inp is None or inp.vector_paths) and walls_detected:
+        poly = region_polygon(region.polygon)
+        geo = {"domain": build_domain(segs[sel], poly, grid, free),
+               "fmm": fmm_grid(segs[sel], poly),
+               "scale_rel": inp.scale_rel_uncertainty if inp else 0.0}
+    consistent = True
     for key, classes, label in SYSTEMS:
         src = [s for s in prot if s.cls in classes]
-        cov = _coverage(walker, grid, src, key, label)
+        cov = _coverage(walker, grid, src, key, label, geo)
+        if cov["summary"].get("consistent") is False:
+            consistent = False
         coverage[key] = cov["summary"]
         if cov.get("field") is not None:
             fields[key] = (cov["field"], cov["pred"])
@@ -300,6 +327,9 @@ def _analyze_region(region: Region, plan: Plan, symbols: list[Symbol], rooms: li
             facts[f"quality.{key}.complete"] = _fact(
                 cov["summary"]["unreachable_m2"] <= UNREACHABLE_TOLERANCE_M2)
     out["coverage"] = coverage
+    # F7.2: método principal e FMM concordam dentro das incertezas somadas (sem paredes, não
+    # há o que conferir: a porta de paredes já impede concluir distância).
+    facts["quality.geometry.consistent"] = _fact(consistent)
 
     # --- sujeitos ---------------------------------------------------------------------
     subjects: list[tuple[str, str, str, dict[str, Fact]]] = [
@@ -355,8 +385,60 @@ def _analyze_region(region: Region, plan: Plan, symbols: list[Symbol], rooms: li
     return out
 
 
+def _symbol_half_size(s: Symbol) -> float:
+    """Metade do lado do símbolo (bloco compacto): incerteza da posição do equipamento."""
+    size = s.attrs.get("size_m")
+    return float(size) / (2 * math.sqrt(2)) if size else SYMBOL_POSITION_M
+
+
+def _vector(summary: dict[str, Any], src: list[Symbol], geo: dict[str, Any]) -> None:
+    """Distância vetorial exata (principal) + FMM (conferência) + orçamento (F7)."""
+    dom = geo.get("domain")
+    if dom is None:
+        return
+    points = [(s.x, s.y) for s in src]
+    res = worst_point(dom, points)
+    fmm = fmm_worst(geo.get("fmm"), points)
+    grid_value, grid_unc = summary.get("max_travel_m"), summary.get("uncertainty_m")
+    methods: dict[str, Any] = {"grid": {"algorithm": TRAVEL_ALGORITHM, "value_m": grid_value,
+                                        "uncertainty_m": grid_unc}}
+    if fmm is not None:
+        methods["fmm"] = {"algorithm": FMM_ALGORITHM, "version": FMM_ALGORITHM_VERSION,
+                          "value_m": round(fmm.value, 3),
+                          "uncertainty_m": round(fmm.uncertainty, 3),
+                          "cell_m": fmm.h, "point": [round(v, 3) for v in fmm.point]}
+    if res is None:
+        methods["vector"] = {"skipped": dom.skipped or "sem resultado"}
+        principal, unc = grid_value, grid_unc
+    else:
+        budget = uncertainty_budget(res, symbol_half_size_m=_symbol_half_size(src[res.source]),
+                                    scale_rel=geo.get("scale_rel", 0.0))
+        methods["vector"] = {"algorithm": VECTOR_ALGORITHM, "version": VECTOR_ALGORITHM_VERSION,
+                             "value_m": round(res.value, 3), "point": [round(v, 3)
+                                                                       for v in res.point],
+                             "sampling_error_m": round(res.sampling_error, 4),
+                             "nodes": res.nodes, "evaluations": res.evaluations,
+                             "bends": res.bends,
+                             # Ilha fechada (interior de pilar, shaft): sem caminho, como na
+                             # grade; a porta quality.<sistema>.complete decide.
+                             "unreachable_points": res.unreachable}
+        principal, unc = res.value, budget["total"]["m"]
+        summary.update(max_travel_m=round(res.value, 3), uncertainty_m=round(unc, 3),
+                       worst_point=[round(v, 3) for v in res.point],
+                       worst_path=[[round(x, 2), round(y, 2)] for x, y in reversed(res.path)],
+                       algorithm=VECTOR_ALGORITHM, algorithm_version=VECTOR_ALGORITHM_VERSION,
+                       uncertainty_budget=budget,
+                       method=("grafo de visibilidade sobre as paredes (menor caminho exato) e "
+                               "pior ponto por branch and bound; conferido por Fast Marching"))
+    if fmm is not None and principal is not None and unc is not None:
+        gap = abs(principal - fmm.value)
+        summary["consistent"] = bool(gap <= unc + fmm.uncertainty)
+        methods["difference_m"] = round(gap, 3)
+    summary["methods"] = methods
+
+
 def _coverage(walker: Walker, grid: Grid, src: list[Symbol], key: str,
-              label: str) -> dict[str, Any]:
+              label: str, geo: dict[str, Any] | None = None) -> dict[str, Any]:
     summary: dict[str, Any] = {"label": label, "sources": len(src), "max_travel_m": None,
                                "uncertainty_m": None, "worst_point": None,
                                "unreachable_m2": 0.0, "unsnapped": []}
@@ -397,6 +479,8 @@ def _coverage(walker: Walker, grid: Grid, src: list[Symbol], key: str,
                              f"esquadrias fixas como obstáculo; célula {grid.h:.2f} m")
         summary["algorithm"] = TRAVEL_ALGORITHM
         summary["algorithm_version"] = TRAVEL_ALGORITHM_VERSION
+        if geo:
+            _vector(summary, src, geo)
     return {"summary": summary, "field": field_, "pred": pred}
 
 

@@ -53,7 +53,7 @@ para o Claude ler plantas DXF com precisão em vez de "olhar" a imagem:
 | `listar_textos` / `listar_simbolos` | dados exatos com posição, camada e handle |
 | `classificar_blocos` | ensina ao motor um bloco não reconhecido (confirmar com o usuário) |
 | `medir` | distância entre pontos |
-| `confirmar_unidade` | escala por medida de referência (obrigatória antes de analisar) |
+| `confirmar_unidade` | escala por duas medidas de referência não paralelas, desvio ≤ 0,5 % entre elas (obrigatória antes de analisar) |
 | `definir_pavimentos` | recortes por janela ou polígono |
 | `analisar_planta` | enquadramento (NT 1-04, Anexo III, Anexo C) + Plano de Verificação por pavimento |
 | `consultar_norma` | texto de item ou busca nas NTs e no Decreto |

@@ -17,8 +17,10 @@ vetorial (só PDF), valem as regras de leitura visual de
 1. `abrir_planta(caminho)` → camadas, símbolos por classe, blocos não reconhecidos, unidade
    provisória, **balanço de reconhecimento**.
 2. `ver_planta` / `listar_textos` / `listar_simbolos` para localizar títulos, pavimentos, cotas.
-3. `confirmar_unidade` **somente** com medida confirmada pelo usuário (ou cota legível que ele
-   aceite). O `$INSUNITS` do arquivo errou em 5 de 5 projetos reais: nunca supor.
+3. `confirmar_unidade` **somente** com medidas confirmadas pelo usuário (ou cotas legíveis que
+   ele aceite): **duas** referências em direções diferentes (ex. uma cota horizontal e uma
+   vertical); o motor bloqueia se forem paralelas ou discordarem mais que 0,5 %. O `$INSUNITS`
+   do arquivo errou em 5 de 5 projetos reais: nunca supor.
 4. `definir_pavimentos` (janelas/polígonos em metros, lidos dos títulos da planta).
 5. `analisar_planta` com o enquadramento do processo (ocupação, ATC, pavimentos, altura,
    sistemas exigidos, dados do Anexo C da NT 2-08).

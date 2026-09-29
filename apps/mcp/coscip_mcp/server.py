@@ -28,8 +28,9 @@ Fluxo recomendado:
    classificação, unidade provisória.
 2. ver_planta → imagem com grade em metros e símbolos numerados; use janela=[x0,y0,x1,y1]
    para aproximar. listar_textos e listar_simbolos dão os dados exatos com coordenadas.
-3. confirmar_unidade SOMENTE com medida confirmada pelo usuário ou cota legível que o
-   usuário aceite. Nunca suponha a unidade: o cabeçalho do DXF errou em 5 de 5 projetos.
+3. confirmar_unidade SOMENTE com medidas confirmadas pelo usuário ou cotas legíveis que o
+   usuário aceite: DUAS referências em direções diferentes (horizontal e vertical). Nunca
+   suponha a unidade: o cabeçalho do DXF errou em 5 de 5 projetos.
 4. definir_pavimentos com janelas/polígonos em metros (leia os títulos com listar_textos).
 5. analisar_planta com o enquadramento que o usuário informar.
 Regras: não invente dados que a planta não mostra; o que o motor não localizou é
@@ -149,17 +150,22 @@ class Server:
             lambda a: _text(ws.measure(a["planta_id"], a["pontos"])))
         self._tool(
             "confirmar_unidade", "Confirmar unidade do desenho",
-            "Confirma a escala com uma medida de referência: dois pontos na coordenada atual e "
-            "o comprimento real em metros (ex. uma cota, a largura de uma porta). Só use com "
-            "medida confirmada pelo usuário. Aceita se bater com m, cm, mm, dm, pol ou pé "
-            "(desvio ≤ 2 %).",
-            _obj({"planta_id": ID, "ponto_a": PONTO, "ponto_b": PONTO,
-                  "medida_real_m": {"type": "number", "exclusiveMinimum": 0},
+            "Confirma a escala com DUAS medidas de referência independentes, em direções "
+            "diferentes (ex. uma cota horizontal e uma vertical): para cada uma, dois pontos "
+            "na coordenada atual e o comprimento real em metros. Só use com medidas "
+            "confirmadas pelo usuário. Bloqueia se as referências forem paralelas (< 30°) ou "
+            "discordarem entre si mais que 0,5 %; aceita se a média bater com m, cm, mm, dm, "
+            "pol ou pé (desvio ≤ 2 %).",
+            _obj({"planta_id": ID,
+                  "referencias": {"type": "array", "minItems": 2, "items": _obj(
+                      {"ponto_a": PONTO, "ponto_b": PONTO,
+                       "medida_real_m": {"type": "number", "exclusiveMinimum": 0}},
+                      ("ponto_a", "ponto_b", "medida_real_m"))},
                   "justificativa": {"type": "string",
-                                    "description": "de onde vem a medida e quem confirmou"}},
-                 ("planta_id", "ponto_a", "ponto_b", "medida_real_m", "justificativa")),
-            lambda a: _text(ws.confirm_unit(a["planta_id"], a["ponto_a"], a["ponto_b"],
-                                            a["medida_real_m"], a["justificativa"])))
+                                    "description": "de onde vêm as medidas e quem confirmou"}},
+                 ("planta_id", "referencias", "justificativa")),
+            lambda a: _text(ws.confirm_unit(a["planta_id"], a["referencias"],
+                                            a["justificativa"])))
         self._tool(
             "definir_pavimentos", "Definir pavimentos",
             "Recorta os pavimentos a analisar (substitui os anteriores). Cada um com nome e "

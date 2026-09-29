@@ -6,9 +6,10 @@ pendências, cuidados). Desde 20/09/2026 ele mora **dentro do repositório**, em
 `C:\Users\USER\Downloads\proxima-sessao.md` virou apenas um ponteiro para cá — não editar lá,
 não criar cópia, não criar outro registro.
 
-Última atualização: 25/09/2026, sessão que levou o projeto para um segundo computador e
-implementou a fase 3 da arquitetura v2 (CAD → `Evidence` → `Finding`) para extintores,
-hidrantes, acionador manual e saídas. O usuário **não tem mais as plantas reais**: o trabalho
+Última atualização: 29/09/2026, sessão em nuvem que executou o plano de correção
+(`docs/plano/01-plano-de-correcao.md`, fases F0–F9; estado na seção 3 e detalhe na seção 13).
+Antes: 25/09/2026, segundo computador e fase 3 da arquitetura v2 (CAD → `Evidence` → `Finding`)
+para extintores, hidrantes, acionador manual e saídas. O usuário **não tem mais as plantas reais**: o trabalho
 segue só com dados sintéticos.
 Referências (não são registro): arquitetura-alvo em [`docs/arquitetura-v2.md`](arquitetura-v2.md),
 plano `docs/plano/00-plano-completo.html` (v2.0; IDs e critérios de aceite no documento 03) e
@@ -170,6 +171,22 @@ Legenda: **feito** (código + teste) · **base** (estrutura pronta, falta fluxo)
 | V2-10 LLM / V2-11 Jev | — | fases 5 e 6; **não começar** antes de V2-08 e V2-09 |
 | V2-12 UI v2 | — | fase 8 |
 | V2-13 persistência | — | tabelas do §45 ainda não existem; hoje o fluxo v2 roda em memória |
+
+### Plano de correção (`docs/plano/01-plano-de-correcao.md`, 29/09/2026)
+Executado na branch `claude/admiring-einstein-n5rh19`, **um commit por fase** (a sessão não
+pôde abrir uma branch por fase). Detalhe na seção 13.
+| ID | Estado | Observação |
+|---|---|---|
+| COR-F0 CI e pacote | **feito** | CI Windows+Linux (ruff, pytest, npm build, lock conferido); `requirements/*.lock` com hash; `tools/package/portatil.py` + `release.yml`; ADR 0007. Falta: proteção da `master`, teste do zip na máquina principal, SHA-256 do Python embeddable fixado |
+| COR-F1 base única | **feito** | `skills/` no repositório (9 vigentes + 8 em `transicao/`), zips pela CI, manifesto `normative/manifests/base.yaml`, índice de itens (4.738), workflow de vigência; MCP só lê `normative/fontes` |
+| COR-F2 imagens e tabelas | **parcial** | 476/476 imagens de página referenciadas presentes (renderizadas na CI pelo `normas-midia.yml`); **29 tabelas `verificada`** em dois caminhos (NT 2-01 T1–5, NT 2-08 Anexo C, Decreto T5–21, NT 3-02 T3, NT 4-05 T2–4, NT 5-05 T1 e Anexo C). Falta o resto da lista de prioridade (NT 2-08 Anexo A e larguras, NT 1-04 B–D, NT 2-02, 2-11, 2-14, 2-18, 2-19). Inconsistência da fonte registrada: NT 5-05 Anexo C "02 (um)" |
+| COR-F3 skills | **feito** | correções de conteúdo, `anatomia-do-bilhete`, `protocolo-de-reducao`, `contar_bilhete.py`, `localizar_item.py` (índice), `achado.schema.json`, `verificar_links.py` verde |
+| COR-F4 normativo | **feito** | `interpretation` (critério adotado, base conferida); EXT-CAD-002 por pavimento; 5.2.4 pela área da edificação (EXT-CAD-002-EXC); EXT-CAD-004 composição 5.2.5; EXT-CAD-005 (6.7); Anexo III T5–21 por altura (`sistemas-exigidos-5-21.yaml`); pacote v6 |
+| COR-F5 reconhecimento | **feito** | camadas desligadas/congeladas/não plotáveis, MINSERT, ATTRIB, `object_key`, dedupe, balanço de reconhecimento e porta `quality.recognition.complete`; 19 testes de armadilha |
+| COR-F6 executor | **feito** | conta objetos distintos (`COUNT_DIVERGENCE`), `accepted_evidence` aplicado, pior caso por valor ± incerteza |
+| COR-F7 cálculo | **feito** | vetorial exato (grafo de visibilidade + branch and bound) como principal; FMM (`scikit-fmm`) e grade como conferência; porta `quality.geometry.consistent`; orçamento de incerteza; `confirmar_unidade` com duas referências não paralelas (≤ 0,5 %); hash canônico igual em Windows e Linux (job `determinismo` da CI) |
+| COR-F8 integração | — | |
+| COR-F9 validação | — | depende do corpus-gabarito e do responsável técnico |
 
 ### Revisão, relatório e recuperação
 | ID | Estado | Observação |
@@ -743,3 +760,60 @@ usar a medida certa — a ferramenta aceita qualquer par de pontos que dê unida
   `%APPDATA%\Claude\claude_desktop_config.json.20260925-214930.bak`; preferências conferidas
   iguais. Handshake com o comando registrado, fora da pasta do projeto: ok.
 - Final: **335 testes passaram**, `ruff` limpo; tudo commitado e enviado ao GitHub.
+
+## 13. Sessão 29/09/2026 — plano de correção (F0–F9)
+
+Sessão em nuvem (Linux, Python 3.12 no `.venv`, sem acesso ao site do CBMERJ: o proxy bloqueia
+`cbmerj.rj.gov.br`, por isso os PDFs oficiais são baixados e renderizados pela CI no workflow
+`normas-midia.yml`, que grava de volta na branch). Um commit por fase na branch
+`claude/admiring-einstein-n5rh19`. Nenhum dado real entrou no repositório; tudo sintético.
+
+### O que foi feito, por fase
+- **F0** — `.github/workflows/ci.yml` (Windows + Linux: lock conferido, ruff, pytest com
+  JUnit, `npm ci` + build); `requirements/dev.lock` e `runtime.lock` (uv, `--universal`, com
+  hash; `tools/ci/check_lock.py`); pacote portátil (`tools/package/portatil.py`,
+  `release.yml`, `scripts/package/python-embed.json`, ADR 0007); marcador `windows` no pytest.
+- **F1** — `skills/` (vigentes) e `skills/transicao/` (antigas a aposentar),
+  `skills/pacotes.yaml`, `tools/skills/pack.py` (zips determinísticos, CI `skills.yml`);
+  manifesto da base (`tools/normas/manifesto.py` → `normative/manifests/base.yaml`); índice de
+  itens (`normative/indices/itens.jsonl`); vigência (`tools/normas/vigencia.py` +
+  `vigencia.yml`); `coscip_mcp.norms` só lê `COSCIP_NORMAS_DIR` ou `normative/fontes`.
+- **F2** — `tools/normas/render_paginas.py` (pypdfium2) e `tools/normas/tabelas.py`
+  (caminho visual digitado da imagem × caminho geométrico `pdfplumber` × camada de texto;
+  número tem de ser idêntico, texto por rapidfuzz ≥ 90; estado calculado; publicação idempotente
+  no `.md` com a seção antiga marcada "bruto, não usar para citação"); relatório
+  `normative/tabelas/RELATORIO.md`. Estado: ver seção 3.
+- **F3** — skills corrigidas (itens, remissões, estados do contrato), referências novas do
+  bilhete, `skills/_comum/achado.schema.json` e `uso-do-mcp-coscip-plantas.md`,
+  `tools/skills/verificar_links.py`.
+- **F4** — `Interpretation` na DSL de regras e de checks (base conferida como citação,
+  papel `interpretation`); pergunta `composition`; checks EXT-CAD-002 v3, EXT-CAD-002-EXC,
+  EXT-CAD-004, EXT-CAD-005; pacote v6 com `requirements_height` (Anexo III T5–21 gerado por
+  `tools/normas/anexo3.py` e conferido de novo no texto).
+- **F5** — leitor DXF respeita estado de camada, expande MINSERT, lê ATTRIB; `object_key`
+  (5 cm), dedupe, união de saídas, balanço de reconhecimento no MCP e no relatório;
+  armadilhas sintéticas (`coscip_cad.synthetic.TRAPS`).
+- **F6** — executor: contagem por objeto distinto, divergência de contagem, fonte fora de
+  `accepted_evidence` recusada com nota, pior caso por valor + incerteza.
+- **F7** — `coscip_analysis.vector_paths`: domínio vetorial das paredes (Shapely), grafo de
+  visibilidade com Dijkstra (SciPy) e pior ponto por branch and bound (1-Lipschitz; erro de
+  amostragem declarado ≤ 0,05 m); Fast Marching (`scikit-fmm`, nova dependência BSD-3) e a
+  grade antiga como conferência; `uncertainty_budget` (método, amostragem, posição do símbolo =
+  metade do bloco, unidade/escala, modelagem de parede; total = soma arredondada para cima)
+  carregado em `Evidence` e `MeasuredResult`; porta `quality.geometry.consistent` nos 7 checks
+  de distância (catálogo v6); `confirmar_unidade` do MCP exige duas referências não paralelas
+  (≥ 30°) que concordem em 0,5 %; `tools/ci/determinismo.py` + job `determinismo` na CI.
+  Nas plantas analíticas (corredor em L, pilar, duas portas) o erro ficou entre 0,009 e
+  0,013 m com incerteza declarada 0,125 m; a grade dava ±1,1 a ±1,6 m.
+
+### Decisões e cuidados desta sessão
+- Testes antigos alterados **só** quando o plano muda o comportamento: portas novas nos
+  fixtures (F4/F5/F7), algoritmo principal agora vetorial (F7), contrato de
+  `confirmar_unidade` com duas medidas (F7.3). No F6 nenhum teste antigo foi alterado.
+- Linha de parede em traço único vira obstáculo de 1 cm de meia-largura; o ponto de pior caso
+  fica a ~2 cm do canto (entra na parcela de modelagem de parede).
+- Interior fechado (pilar, shaft) não tem caminho: a grade já o marca como não alcançado e a
+  porta `quality.<sistema>.complete` decide; o vetorial registra `unreachable_points`.
+- A API (`CAD-02`) continua com uma medida (desvio ≤ 2 %); só o MCP passou a exigir duas.
+- Depois de cada push, o bot do `normas-midia.yml` pode commitar na branch: `git pull --rebase`
+  antes do próximo push; conflito em arquivo gerado se resolve **regenerando**, nunca à mão.

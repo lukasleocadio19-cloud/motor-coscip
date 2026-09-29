@@ -14,7 +14,8 @@ from coscip_normative.verification.executor import execute_check
 
 CHECKS = Path(__file__).resolve().parents[2] / "normative" / "checks"
 GATES = {"quality.extinguisher.not_presumed": True, "quality.region_confirmed": True,
-         "quality.recognition.complete": True, "quality.extinguisher.complete": True,
+         "quality.recognition.complete": True, "quality.geometry.consistent": True,
+         "quality.extinguisher.complete": True,
          "quality.walls_detected": True}
 
 

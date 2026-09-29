@@ -217,3 +217,63 @@ def make_trap(path: Path, kind: str) -> Path:
             msp.add_blockref("EXTINTOR_PQS_ABC", (30, 8 - i), dxfattribs={"layer": "LEGENDA"})
     doc.saveas(path)
     return path
+
+
+ANALYTIC = ("corredor_l", "pilar", "duas_portas")
+
+
+def make_analytic(path: Path, kind: str) -> tuple[Path, float, tuple[float, float]]:
+    """Planta com a maior distância percorrida conhecida analiticamente (F7).
+
+    Paredes em linha simples (espessura zero: o domínio é exato) no layer PAREDE e UM
+    extintor pequeno (círculo de 5 cm). Devolve (arquivo, distância exata, pior ponto).
+    """
+    import math
+
+    doc = ezdxf.new("R2018", setup=True)
+    doc.header["$INSUNITS"] = 6
+    for name in ("PAREDE", "INC_EXT"):
+        doc.layers.add(name)
+    ext = doc.blocks.new("EXTINTOR_PQS_ABC")
+    ext.add_circle((0, 0), 0.05, dxfattribs={"layer": "INC_EXT"})
+    msp = doc.modelspace()
+
+    def poly(pts: list[tuple[float, float]], close: bool = True) -> None:
+        # Cada lado em trechos de até 1 m (LINEs colineares, como sai de muitos desenhos):
+        # a detecção de paredes pede um mínimo de segmentos e o grafo ignora os colineares.
+        ring = [*pts, pts[0]] if close else pts
+        for (x1, y1), (x2, y2) in zip(ring, ring[1:], strict=False):
+            n = max(1, math.ceil(math.dist((x1, y1), (x2, y2))))
+            for i in range(n):
+                a = (x1 + (x2 - x1) * i / n, y1 + (y2 - y1) * i / n)
+                b = (x1 + (x2 - x1) * (i + 1) / n, y1 + (y2 - y1) * (i + 1) / n)
+                msp.add_line(a, b, dxfattribs={"layer": "PAREDE"})
+
+    if kind == "corredor_l":
+        # L: perna horizontal 20×2 e perna vertical x 18..20 até y 15; extintor em (1, 1)
+        poly([(0, 0), (20, 0), (20, 15), (18, 15), (18, 2), (0, 2)])
+        src = (1.0, 1.0)
+        corner = (18.0, 2.0)
+        worst = (20.0, 15.0)
+        dist = math.dist(src, corner) + math.dist(corner, worst)
+    elif kind == "pilar":
+        # sala 10×10, pilar 2×2 no centro; extintor em (0,5; 0,5): o canto (10, 10) fica
+        # atrás do pilar e o caminho contorna o canto (4, 6) ou (6, 4)
+        poly([(0, 0), (10, 0), (10, 10), (0, 10)])
+        poly([(4, 4), (6, 4), (6, 6), (4, 6)])
+        src, worst = (0.5, 0.5), (10.0, 10.0)
+        dist = math.dist(src, (4.0, 6.0)) + math.dist((4.0, 6.0), worst)
+    elif kind == "duas_portas":
+        # 20×6 com parede em x = 10 e duas portas de 1 m (y 0,5..1,5 e 4,5..5,5); extintor em
+        # (1, 5); o pior ponto é (20, 0), pela porta de baixo (canto (10; 1,5))
+        poly([(0, 0), (20, 0), (20, 6), (0, 6)])
+        for a, b in (((10, 0), (10, 0.5)), ((10, 1.5), (10, 4.5)), ((10, 5.5), (10, 6))):
+            poly([a, b], close=False)
+        src, worst = (1.0, 5.0), (20.0, 0.0)
+        dist = min(math.dist(src, (10, 1.5)) + math.dist((10, 1.5), worst),
+                   math.dist(src, (10, 4.5)) + math.dist((10, 4.5), worst))
+    else:
+        raise ValueError(f"planta analítica desconhecida: {kind}")
+    msp.add_blockref("EXTINTOR_PQS_ABC", src, dxfattribs={"layer": "INC_EXT"})
+    doc.saveas(path)
+    return path, dist, worst

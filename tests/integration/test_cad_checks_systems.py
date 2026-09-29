@@ -89,7 +89,9 @@ def test_acionador_manual_verificado_quando_alarme_exigido(base):
     assert _by(achados, "ALA-CAD-001").compliance_status is ComplianceStatus.COMPLIANT
     distancia = _by(achados, "ALA-CAD-002")
     assert distancia.compliance_status is ComplianceStatus.COMPLIANT
-    assert distancia.measured.algorithm == "grid_dijkstra_16"
+    # F7: método vetorial é o principal; grade e FMM ficam como conferência na evidência.
+    assert distancia.measured.algorithm == "visibility_graph_bnb"
+    assert distancia.measured.uncertainty_budget["total"]["m"] == distancia.measured.uncertainty_abs
 
 
 def test_saidas_nao_confirmadas_nao_concluem(base):
@@ -146,6 +148,7 @@ def _saida(limite=None, medida=18.0, origem=None):
     piso = FloorScope(id="f1", label="Térreo", evidence=EvidenceSet.build("p", itens),
                       facts={"quality.region_confirmed": True, "quality.walls_detected": True,
                              "quality.recognition.complete": True,
+                             "quality.geometry.consistent": True,
                              "quality.exit.complete": True})
     plano = compile_verification_plan(catalog, ctx)
     achados = execute_plan(plano, catalog, EvidenceSet.build("p", ()), ctx.all_facts(),
@@ -354,7 +357,7 @@ def test_com_leiaute_vale_o_percurso(com_saida):
     _, achados = _findings(com(com_saida, layout_defined=True, exit_distance_reference=inteiro))
     assert _by(achados, "SAI-CAD-003").compliance_status is ComplianceStatus.NOT_APPLICABLE
     percurso = _by(achados, "SAI-CAD-002")
-    assert percurso.measured.algorithm == "grid_dijkstra_16"
+    assert percurso.measured.algorithm == "visibility_graph_bnb"
 
 
 def test_leiaute_desconhecido_nao_escolhe_a_medida(com_saida):

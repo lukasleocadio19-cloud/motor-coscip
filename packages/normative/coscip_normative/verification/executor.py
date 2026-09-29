@@ -428,6 +428,7 @@ def _comparison(check: CheckDefinition, evidence: EvidenceSet,
         required_source=origin,
         uncertainty_abs=uncertainty, algorithm=worst.algorithm,
         algorithm_version=worst.algorithm_version, quality_gate=worst.quality_gate,
+        uncertainty_budget=worst.uncertainty_budget,
         # §27: medida do CAD aponta o desenho exato de onde saiu a geometria.
         geometry_snapshot_hash=(worst.source_hash
                                 if worst.source_type is EvidenceSourceType.CAD else None))
