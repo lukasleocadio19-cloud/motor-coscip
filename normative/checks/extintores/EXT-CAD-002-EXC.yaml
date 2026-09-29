@@ -1,0 +1,53 @@
+# RASCUNHO. Exceção da NT 2-01 5.2.4 no nível da EDIFICAÇÃO: risco pequeno e ATC (formulário)
+# inferior a 50 m² → basta uma única unidade extintora de pó ABC. Substitui o EXT-CAD-002
+# nesse caso (que fica inaplicável) e confere que a unidade é ABC.
+schema_version: checks/1.0
+id: EXT-CAD-002-EXC
+version: 1
+title: Exceção 5.2.4 — uma única unidade extintora de pó ABC
+system: EXTINTORES
+type: CAD_COUNT
+scope: FLOOR
+severity: MAJOR
+publication_state: DRAFT
+production_eligible: false
+group_key: extintores/excecao-5-2-4
+depends_on: [EXT-CAD-001]
+applies_when:
+  all:
+    - {fact: context.unifamiliar, operator: equals, value: false}
+    - {fact: context.risk_class, operator: equals, value: PEQUENO}
+    - {fact: context.building_area_m2, operator: lt, value: 50}
+question:
+  kind: composition
+  field: extinguisher_agent
+  alternatives:
+    - [[A, B, C]]
+  # todos os agentes conhecidos (NT 2-01 Tabela A1): conhecido e não ABC reprova; só o
+  # agente não identificado fica inconclusivo
+  value_classes:
+    AGUA: [A]
+    ESPUMA: [A, B]
+    CO2: [B, C]
+    PQS_BC: [B, C]
+    PQS_ABC: [A, B, C]
+  accepted_evidence: [CAD, HUMAN]
+  quality_gate: quality.extinguisher.not_presumed
+  quality_gates: [quality.region_confirmed]
+normative_basis:
+  - document: NT 2-01
+    edition: 2ª edição - 2020
+    item: Tabela A1
+    quote: ["Água Pressurizada", "Gás Carbônico", "ABC (Fosfato"]
+  - document: NT 2-01
+    edition: 2ª edição - 2020
+    item: "5.2.4"
+    quote: ["única unidade extintora de pó ABC", "risco pequeno com área inferior a 50 m"]
+wording:
+  title: Exceção 5.2.4 sem unidade extintora de pó ABC identificada
+  explanation: >-
+    Edificação de risco pequeno com área inferior a 50 m²: a NT 2-01 (item 5.2.4) permite uma
+    única unidade extintora, desde que de pó ABC. Não se localizou unidade de pó ABC no
+    pavimento.
+  required_action: >-
+    Indicar em planta a unidade extintora de pó ABC (ou prever as duas unidades do item 5.2.5).

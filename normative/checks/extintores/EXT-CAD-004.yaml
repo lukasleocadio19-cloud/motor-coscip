@@ -1,0 +1,61 @@
+# RASCUNHO. Composição mínima da NT 2-01 5.2.5 no pavimento: um extintor para classe A e um
+# para classes B e C, ou dois extintores iguais de pó ABC (ABC substitui A, B e C: 5.2.3).
+# Classes por agente: NT 2-01 Anexo A, Tabela A1. Agente não identificado nunca conclui.
+schema_version: checks/1.0
+id: EXT-CAD-004
+version: 1
+title: Composição mínima de extintores (classe A e classes B/C) no pavimento
+system: EXTINTORES
+type: CAD_COUNT
+scope: FLOOR
+severity: MAJOR
+publication_state: DRAFT
+production_eligible: false
+group_key: extintores/composicao
+depends_on: [EXT-CAD-001]
+applies_when:
+  all:
+    - {fact: context.unifamiliar, operator: equals, value: false}
+  any:
+    - {fact: context.risk_class, operator: not_equals, value: PEQUENO}
+    - {fact: context.building_area_m2, operator: gte, value: 50}
+question:
+  kind: composition
+  field: extinguisher_agent
+  # uma vaga A e outra B+C (um ABC atende qualquer uma), ou duas vagas ABC
+  alternatives:
+    - [[A], [B, C]]
+    - [[A, B, C], [A, B, C]]
+  value_classes:
+    AGUA: [A]
+    ESPUMA: [A, B]
+    CO2: [B, C]
+    PQS_BC: [B, C]
+    PQS_ABC: [A, B, C]
+  accepted_evidence: [CAD, HUMAN]
+  quality_gate: quality.extinguisher.not_presumed
+  quality_gates: [quality.region_confirmed]
+normative_basis:
+  - document: NT 2-01
+    edition: 2ª edição - 2020
+    item: "5.2.5"
+    quote: ["sendo um para incêndio classe A e um para incêndio classes B e C",
+            "02 (dois) extintores iguais de pó ABC"]
+  - document: NT 2-01
+    edition: 2ª edição - 2020
+    item: "5.2.3"
+    quote: ["pó quimico (ABC) poderá substituir qualquer tipo de extintor das classes A, B e C"]
+  - document: NT 2-01
+    edition: 2ª edição - 2020
+    item: Tabela A1
+    quote: ["Água Pressurizada", "Espuma Mecânica", "Gás Carbônico", "PQS (Bicarbonato de",
+            "ABC (Fosfato"]
+wording:
+  title: Pavimento sem a composição mínima de extintores
+  explanation: >-
+    A NT 2-01 (item 5.2.5) exige, na área de risco, ao menos um extintor para incêndio classe A
+    e um para classes B e C, ou dois extintores iguais de pó ABC. Com os agentes identificados
+    na planta a composição não se completa.
+  required_action: >-
+    Prever os agentes extintores que completem a composição (classe A e classes B/C, ou dois
+    de pó ABC) e indicá-los em planta.

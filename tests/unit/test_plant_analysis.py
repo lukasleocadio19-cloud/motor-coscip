@@ -34,21 +34,40 @@ arquitetônicos, mobiliários e etc.
 
 ## Página 4
 
+5.2.3 O extintor de pó quimico (ABC) poderá substituir qualquer tipo de extintor das \
+classes A, B e C dentro de uma edificação ou área de risco.
+
 5.2.4 É permitida a instalação de uma única unidade extintora de pó ABC em edificações do \
 risco pequeno com área inferior a 50 m².
 
-5.2.5 Os extintores devem ser adequados, de forma que haja, no mínimo, 02 (dois) extintores \
-de incêndio.
+5.2.5 Os extintores de incêndio devem ser adequados à classe de incêndio predominante dentro \
+da área de risco a ser protegida, de forma que haja, no mínimo, 02 (dois) extintores de \
+incêndio, sendo um para incêndio classe A e um para incêndio classes B e C. É permitida a \
+instalação de 02 (dois) extintores iguais de pó ABC.
+
+5.3 Extintor sobre rodas
+
+a) não se admite a possibilidade de um extintor sobre rodas proteger locais situados em \
+pavimentos diferentes;
 
 ## Página 5
 
 6.4 Para instalações especiais, tais como casa de máquinas, casa de bombas, devendo os \
 referidos extintores não distar mais do que 5 m da instalação a proteger.
 
+6.7 Para edificações residenciais multifamiliares serão cobrados extintores na área de uso \
+comum, incluindo as circulações dos pavimentos destinados às unidades residenciais.
+
 | Tabela 3 - Determinação da unidade extintora mínima |  |
 | Extintor / risco | Pequeno | Médio | Grande |
 | Área máxima protegida por 01 (uma) unidade extintora | 250 m² | 150 m² | 100 m² |
 | Distância máxima percorrida | 20 m | 15 m | 10 m |
+
+## Página 6
+
+Tabela A1 - Classificação dos extintores segundo o agente extintor
+
+| Água Pressurizada | Espuma Mecânica | Gás Carbônico (CO₂) | PQS (Bicarbonato de | ABC (Fosfato |
 """
 
 

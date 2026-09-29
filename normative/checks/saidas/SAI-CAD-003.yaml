@@ -1,10 +1,10 @@
 # RASCUNHO. Projeto sem leiaute definido (NT 2-08 5.3.3.3): distância DIRETA até a saída,
 # comparada ao limite do Anexo C reduzido em 30%. A consulta à tabela já aplica a redução;
 # se o analista informar o limite, vale o valor dele.
-# Decisão do analista (25/09/2026): prevalece o 5.3.3.3 sobre a observação C ("a 30%").
+# v2: a decisão do analista (25/09/2026) virou interpretação registrada (F4.1).
 schema_version: checks/1.0
 id: SAI-CAD-003
-version: 1
+version: 2
 title: Distância direta até a saída (projeto sem leiaute)
 system: SAIDAS
 type: CAD_DISTANCE
@@ -39,6 +39,22 @@ normative_basis:
     edition: 1ª edição - 2019; Portaria 1.317/2025
     item: Anexo C
     quote: ["DISTÂNCIAS MÁXIMAS A SEREM PERCORRIDAS"]
+interpretation:
+  scope: DISTANCIA_DIRETA_REDUCAO_EM_30
+  basis:
+    - document: NT 2-08
+      edition: 1ª edição - 2019; Portaria 1.317/2025
+      item: "5.3.3.3"
+      quote: ["distâncias diretas comparadas aos limites do Anexo C, reduzidas em 30%"]
+    - document: NT 2-08
+      edition: 1ª edição - 2019; Portaria 1.317/2025
+      item: Anexo C
+      quote: ["reduzidas a 30%"]
+  decision: >-
+    sem leiaute definido prevalece o item 5.3.3.3: limite do Anexo C reduzido EM 30% (×0,7) e
+    distância direta, e não a observação C do Anexo C ("reduzidas a 30%").
+  decided_by: analista
+  decided_on: "2026-09-25"
 wording:
   title: Distância direta até a saída acima do limite reduzido
   explanation: >-

@@ -17,7 +17,7 @@ group_key: hidrantes/exigencia
 question:
   kind: presence
   field: hydrant_requirement
-  accepted_evidence: [NORMATIVE_TABLE, HUMANO]
+  accepted_evidence: [NORMATIVE_TABLE, HUMAN]
 normative_basis:
   - document: NT 2-02
     edition: 1ª edição - 2019; Portaria 1.317/2025

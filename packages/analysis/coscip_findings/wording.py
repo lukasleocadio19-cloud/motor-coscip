@@ -41,6 +41,15 @@ def compose_explanation(base: str, missing: Sequence[str],
     return "\n\n".join(parts)
 
 
+def criterion_block(criterion: Mapping[str, object] | None) -> str:
+    """Critério adotado, escrito como tal — nunca como "a norma exige" (F4.1)."""
+    if not criterion:
+        return ""
+    basis = ", ".join(f"{b['document']} {b['item']}" for b in criterion.get("basis") or [])
+    return (f"Critério adotado ({criterion['decided_by']}, {criterion['decided_on']}): "
+            f"{criterion['decision']}" + (f" Texto de apoio: {basis}." if basis else ""))
+
+
 def evidence_summary(sources: Sequence[str]) -> tuple[str, ...]:
     """Resumo curto das fontes, sem hash nem detalhe de algoritmo (§43)."""
     return tuple(dict.fromkeys(s for s in sources if s))

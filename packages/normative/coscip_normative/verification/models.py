@@ -14,7 +14,7 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 from coscip_cbm import ComplianceStatus, Severity
-from coscip_rules.dsl import Condition, Source
+from coscip_rules.dsl import Condition, Interpretation, Source
 
 CHECK_SCHEMA = "checks/1.0"
 
@@ -30,7 +30,7 @@ CHECK_TYPES = (
 # plano, vai para o analista e nunca é concluído pelo motor.
 QUESTION_KINDS = (
     "presence", "required_fields", "minimum_count", "minimum_value", "maximum_value",
-    "consistency",
+    "consistency", "composition",
 )
 
 CheckType = Literal[CHECK_TYPES]
@@ -65,6 +65,18 @@ class Question(_Strict):
     quality_gate: str | None = None
     # Portas adicionais, todas obrigatórias (ex.: pavimento confirmado, área toda alcançada).
     quality_gates: tuple[str, ...] = ()
+    # composition: cada alternativa é uma lista de "vagas"; cada vaga, as classes de fogo
+    # que UM objeto distinto precisa atender. Basta uma alternativa atendida.
+    alternatives: tuple[tuple[tuple[str, ...], ...], ...] = ()
+    # composition: valor da evidência (ex.: agente) → classes que ele atende.
+    value_classes: dict[str, tuple[str, ...]] = Field(default_factory=dict)
+
+    @model_validator(mode="after")
+    def _composition(self) -> Question:
+        if self.kind == "composition" and not (self.alternatives and self.value_classes
+                                               and self.field):
+            raise ValueError("composition exige field, alternatives e value_classes")
+        return self
 
     @property
     def gates(self) -> tuple[str, ...]:
@@ -129,6 +141,8 @@ class CheckDefinition(_Strict):
     result_rules: ResultRules = ResultRules()
     human_review: HumanReview = HumanReview()
     normative_basis: tuple[Source, ...] = ()
+    # Critério adotado além da literalidade (F4.1): conferido e mostrado à parte.
+    interpretation: Interpretation | None = None
     # Achados com a mesma causa raiz são agrupados por esta chave (§32).
     group_key: str = ""
     wording: Wording

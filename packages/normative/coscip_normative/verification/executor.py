@@ -17,7 +17,7 @@ from typing import Any
 
 from coscip_evidence import Consensus, EvidenceSet
 from coscip_findings.models import Divergence, Finding, MeasuredResult
-from coscip_findings.wording import compose_explanation, evidence_summary
+from coscip_findings.wording import compose_explanation, criterion_block, evidence_summary
 
 from coscip_cbm import (
     Applicability,
@@ -48,8 +48,11 @@ def _finding(check: CheckDefinition, *, compliance: ComplianceStatus,
              explanation_extra: str = "") -> Finding:
     labels = check.wording.field_labels
     base = check.wording.explanation
+    criterion = check.interpretation.as_dict() if check.interpretation else None
     if explanation_extra:
         base = f"{base}\n\n{explanation_extra}".strip()
+    if criterion:
+        base = f"{base}\n\n{criterion_block(criterion)}".strip()
     return Finding(
         check_id=check.id, check_version=check.version, system=check.system,
         subject=check.question.subject if check.question else "",
@@ -60,7 +63,8 @@ def _finding(check: CheckDefinition, *, compliance: ComplianceStatus,
         required_action=check.wording.required_action,
         evidence_summary=evidence_summary(sources), missing=missing,
         divergences=divergences, measured=measured, evidence_ids=evidence_ids,
-        normative_citations=_citations(check), group_key=check.grouping)
+        normative_citations=_citations(check), adopted_criterion=criterion,
+        group_key=check.grouping)
 
 
 def _review_for(check: CheckDefinition, *, conflict: bool = False,
@@ -105,6 +109,8 @@ def execute_check(check: CheckDefinition, evidence: EvidenceSet,
             return _counting(check, evidence)
         case "minimum_value" | "maximum_value":
             return _comparison(check, evidence, context_facts)
+        case "composition":
+            return _composition(check, evidence)
     raise AssertionError(f"pergunta não compilada: {question.kind}")
 
 
@@ -215,6 +221,58 @@ def _counting(check: CheckDefinition, evidence: EvidenceSet) -> Finding:
     return _satisfied(check, ids, sources,
                       measured=MeasuredResult(value=float(len(found)), unit="un",
                                               required=float(required)))
+
+
+def _fits(objects: list[frozenset[str]], slots: tuple[tuple[str, ...], ...]) -> bool:
+    """Cada vaga recebe um objeto distinto que atende todas as suas classes (emparelhamento
+    por busca exaustiva: poucos objetos por pavimento)."""
+    def place(i: int, used: frozenset[int]) -> bool:
+        if i == len(slots):
+            return True
+        need = set(slots[i])
+        return any(j not in used and need <= objects[j] and place(i + 1, used | {j})
+                   for j in range(len(objects)))
+    return place(0, frozenset())
+
+
+def _composition(check: CheckDefinition, evidence: EvidenceSet) -> Finding:
+    """Composição mínima (ex.: NT 2-01 5.2.5: um A e um B/C, ou dois ABC).
+
+    Valor fora de ``value_classes`` (agente não identificado) não atende vaga nenhuma. Se as
+    conhecidas já bastam, conclui; se não bastam e há desconhecidas, fica inconclusivo —
+    desconhecido nunca vira conformidade nem reprovação."""
+    question = check.question
+    assert question is not None and question.field is not None
+    found = [e for e in evidence.for_field(question.field, subject=question.subject)
+             if e.located and e.normalized_value is not None]
+    ids = tuple(e.id for e in found)
+    sources = _sources_of(evidence, ids)
+    if not found:
+        return _finding(
+            check, compliance=check.result_rules.missing_required_field,
+            evidence=EvidenceStatus.MISSING, review=_review_for(check, forced=True),
+            kind=FindingKind.DATA_MISSING, reason_code="NO_EVIDENCE",
+            missing=(question.field,))
+    known = [frozenset(question.value_classes[str(e.normalized_value)]) for e in found
+             if str(e.normalized_value) in question.value_classes]
+    unknown = [e for e in found if str(e.normalized_value) not in question.value_classes]
+    shown = ", ".join(sorted(str(e.normalized_value) for e in found))
+    if any(_fits(known, alt) for alt in question.alternatives):
+        return _satisfied(check, ids, sources)
+    if unknown:
+        return _finding(
+            check, compliance=check.result_rules.missing_required_field,
+            evidence=EvidenceStatus.PARTIAL, review=_review_for(check, forced=True),
+            kind=FindingKind.DATA_MISSING, reason_code="VALUE_NOT_IDENTIFIED",
+            missing=(question.field,), evidence_ids=ids, sources=sources,
+            explanation_extra=(f"{len(unknown)} de {len(found)} sem identificação ({shown}); "
+                               "com os identificados a composição não se completa."))
+    return _finding(
+        check, compliance=check.result_rules.not_satisfied,
+        evidence=EvidenceStatus.SUFFICIENT, review=_review_for(check),
+        kind=FindingKind.NON_COMPLIANT, reason_code="COMPOSITION_NOT_MET",
+        evidence_ids=ids, sources=sources,
+        explanation_extra=f"Localizados: {shown}.")
 
 
 def _positive(value: object) -> bool:

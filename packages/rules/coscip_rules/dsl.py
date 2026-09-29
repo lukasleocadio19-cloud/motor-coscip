@@ -9,7 +9,8 @@ import yaml
 from pydantic import BaseModel, ConfigDict, Field, ValidationError
 
 # Conjunto fechado. Novas operações entram como funções versionadas e testadas.
-PREDICATE_OPERATORS = frozenset({"equals", "not_equals", "in", "gte", "lte", "is_known"})
+PREDICATE_OPERATORS = frozenset({"equals", "not_equals", "in", "gte", "lte", "gt", "lt",
+                                 "is_known"})
 CALCULATION_OPERATORS = frozenset({"minimum_with_uncertainty", "maximum_with_uncertainty"})
 OUTCOMES = frozenset({"MISSING_DATA", "REVIEW_REQUIRED"})
 
@@ -40,6 +41,23 @@ class Source(_Strict):
     page: int | None = None
     # rules/1.1: termos que precisam constar no trecho do item ingerido (verificação REG-01).
     quote: tuple[str, ...] = ()
+
+
+class Interpretation(_Strict):
+    """Critério adotado quando o texto da norma não diz literalmente o alcance que a regra
+    aplica (plano de correção, F4.1). ``verify_*`` confere a frase de cada ``basis``, não o
+    alcance: o alcance é **decisão registrada**, mostrada separada do texto da norma."""
+
+    scope: str  # ex.: POR_PAVIMENTO, DISTANCIA_DIRETA, PERCURSO_COMO_MANGUEIRA
+    basis: tuple[Source, ...]
+    decision: str
+    decided_by: str
+    decided_on: str  # AAAA-MM-DD
+
+    def as_dict(self) -> dict[str, Any]:
+        return {"scope": self.scope, "decision": self.decision, "decided_by": self.decided_by,
+                "decided_on": self.decided_on,
+                "basis": [{"document": b.document, "item": b.item} for b in self.basis]}
 
 
 class TableSpec(_Strict):
@@ -109,6 +127,7 @@ class RuleDefinition(_Strict):
     extra_sources: tuple[Source, ...] = ()
     # Fatos obtidos por associação heurística (ex.: placa próxima) não sustentam FAIL.
     fail_status: Literal["FAIL", "REVIEW_REQUIRED"] = "FAIL"
+    interpretation: Interpretation | None = None
 
     @property
     def content_hash(self) -> str:

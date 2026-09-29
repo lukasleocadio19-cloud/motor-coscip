@@ -4,17 +4,23 @@
 schema_version: check-catalog/1.0
 id: coscip-checks-rj
 name: Plano de Verificação COSCIP — extintores, hidrantes, alarme e saídas
-version: 3
+version: 4
 jurisdiction: CBMERJ-RJ
 publication_state: DRAFT
 notes:
   - "Piloto das fases 1 e 2: o catálogo existe, é versionado e compila plano determinístico."
   - "Fase 3: checks de CAD por pavimento alimentados pela análise da planta."
   - "Checks documentais dependem do motor documental (fase 4) para receber evidências."
+  - "v4 (plano de correção F4): interpretation registrada (EXT-CAD-002 por pavimento,
+    SAI-CAD-003), exceção 5.2.4 no nível da edificação (EXT-CAD-002-EXC), composição 5.2.5
+    (EXT-CAD-004) e multifamiliar 6.7 (EXT-CAD-005)."
 checks:
   - comum/QG-CAD-WALLS.yaml
   - extintores/EXT-CAD-001.yaml
   - extintores/EXT-CAD-002.yaml
+  - extintores/EXT-CAD-002-EXC.yaml
+  - extintores/EXT-CAD-004.yaml
+  - extintores/EXT-CAD-005.yaml
   - extintores/EXT-CAD-003-PEQUENO.yaml
   - extintores/EXT-CAD-003-MEDIO.yaml
   - extintores/EXT-CAD-003-GRANDE.yaml

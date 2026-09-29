@@ -32,6 +32,7 @@ _QUESTION_REQUIREMENTS: dict[str, tuple[str, ...]] = {
     "minimum_value": ("field",),
     "maximum_value": ("field",),
     "consistency": ("field",),
+    "composition": ("field", "alternatives", "value_classes"),
 }
 
 
@@ -59,6 +60,11 @@ def _validate(check: CheckDefinition) -> None:
             raise CheckValidationError(f"{check.id}: citação {src.item} sem termos de conferência")
         if check.production_eligible and src.document.startswith("EXEMPLO"):
             raise CheckValidationError(f"{check.id}: fonte de exemplo não pode ir à produção")
+    if check.interpretation is not None:
+        if not check.interpretation.basis:
+            raise CheckValidationError(f"{check.id}: interpretação sem texto de apoio")
+        if any(not b.quote for b in check.interpretation.basis):
+            raise CheckValidationError(f"{check.id}: apoio da interpretação sem termos")
     question = check.question
     if question is None:
         if check.type != "MANUAL_CONFIRMATION":
@@ -198,11 +204,14 @@ def verify_catalog(catalog: CheckCatalog,
     failures: list[str] = []
     for check in catalog.checks:
         citations = []
-        for src in check.normative_basis:
+        basis = check.interpretation.basis if check.interpretation else ()
+        for role, src in ([("normative_basis", s) for s in check.normative_basis]
+                          + [("interpretation", s) for s in basis]):
             if src.document.startswith("EXEMPLO"):
                 continue
             result = verify_citation(sources, src.document, src.item, tuple(src.quote))
-            citations.append({**result.as_dict(), "edition_declared": src.edition})
+            citations.append({**result.as_dict(), "edition_declared": src.edition,
+                              "role": role})
             if not result.verified:
                 missing = f" ({', '.join(result.missing_terms)})" if result.missing_terms else ""
                 failures.append(f"{check.id}: {src.document} {src.item} — "
@@ -210,7 +219,9 @@ def verify_catalog(catalog: CheckCatalog,
         checks_out.append({"id": check.id, "version": check.version, "title": check.title,
                            "system": check.system, "type": check.type,
                            "severity": str(check.severity), "manual": check.manual,
-                           "content_sha256": check.content_hash, "citations": citations})
+                           "content_sha256": check.content_hash, "citations": citations,
+                           "interpretation": (check.interpretation.as_dict()
+                                              if check.interpretation else None)})
     used = sorted({c["document"] for check in checks_out for c in check["citations"]})
     return {
         "catalog": {"id": catalog.id, "name": catalog.name, "version": catalog.version,

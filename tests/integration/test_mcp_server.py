@@ -164,13 +164,14 @@ def test_fluxo_completo_com_unidade_errada_no_cabecalho(srv, planta_mm):
 
     erro, rel, _, _ = call(srv, "analisar_planta", planta_id=pid,
                            contexto={"occupancy": "D-2", "exits_confirmed": True,
-                                     "layout_defined": True})
+                                     "building_area_m2": 360, "layout_defined": True})
     assert not erro, rel
     assert rel["enquadramento"]["risco"] is None  # NT 1-04 não está nesta base de teste
     (terreo,) = rel["pavimentos"]
     assert terreo["paredes"]["detectadas"] and 320 < terreo["area_util_m2"] < 350
     assert 11 < terreo["maior_percurso_m"]["extinguisher"]["valor"] < 13.5
-    assert "Mínimo de duas unidades extintoras por pavimento (Térreo)" in rel["sem_pendencia"]
+    assert ("Mínimo de duas unidades extintoras por pavimento (critério adotado) (Térreo)"
+            in rel["sem_pendencia"])
     fora = rel["checks_nao_verificados_por_citacao"]
     assert "HID-CAD-001" in fora and "HID-CAD-002" in fora  # NT 2-02 ausente → e dependente
     assert "EXT-CAD-001" not in fora

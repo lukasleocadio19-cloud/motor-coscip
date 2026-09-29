@@ -161,17 +161,21 @@ def verify_package(pkg: RulePackageDef, sources: dict[str, NormativeText]) -> di
     failures = []
     for rule in pkg.rules:
         checks = []
-        for src in (rule.source, *rule.extra_sources):
+        basis = rule.interpretation.basis if rule.interpretation else ()
+        for role, src in ([("source", s) for s in (rule.source, *rule.extra_sources)]
+                          + [("interpretation", s) for s in basis]):
             if src.document.startswith("EXEMPLO"):
                 continue
             c = verify_citation(sources, src.document, src.item, tuple(src.quote))
-            checks.append({**c.as_dict(), "edition_declared": src.edition})
+            checks.append({**c.as_dict(), "edition_declared": src.edition, "role": role})
             if not c.verified:
                 failures.append(f"{rule.id}: {src.document} {src.item} — {c.problem}"
                                 + (f" ({', '.join(c.missing_terms)})" if c.missing_terms else ""))
         rules_out.append({"id": rule.id, "version": rule.version, "title": rule.title,
                           "measure": rule.measure, "subject": rule.subject,
-                          "content_sha256": rule.content_hash, "citations": checks})
+                          "content_sha256": rule.content_hash, "citations": checks,
+                          "interpretation": (rule.interpretation.as_dict()
+                                             if rule.interpretation else None)})
     sym_src = pkg.symbols.get("source") or {}
     symbols_check = None
     if sym_src:

@@ -46,7 +46,8 @@ def _analyze(tmp_path: Path, *, floors=None, risk="PEQUENO"):
     return run(AnalysisInput(
         dxf=dxf, scale_to_m=1.0, dictionary=parse_dictionary(pkg.symbols),
         rules=[RuleBinding(r) for r in pkg.rules],
-        context={"risk_class": risk, "unifamiliar": False}, floors=floors))
+        context={"risk_class": risk, "unifamiliar": False, "building_area_m2": 360},
+        floors=floors))
 
 
 def _findings(analysis, process_id="p-sintetico"):

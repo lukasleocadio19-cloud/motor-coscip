@@ -41,6 +41,7 @@ SYMBOL_FIELDS = {
     "SAIDA": "exit",
 }
 SYMBOL_METHOD = "CAD_SYMBOL"
+UNKNOWN_AGENT = "DESCONHECIDO"
 GEOMETRY_METHOD = "CAD_GEOMETRY"
 
 
@@ -254,6 +255,21 @@ def _floor(region: dict[str, Any], *, process_id: str, source: str, version: int
             algorithm=f"symbol:{sym.get('stage') or 'block_name'}",
             algorithm_version=str(dictionary.get("version", "")) or None,
             quality_gate=("quality.extinguisher.not_presumed" if presumed else None)))
+        if field == "extinguisher":
+            # Agente do extintor (atributo do bloco ou texto junto): composição da NT 2-01
+            # 5.2.5. Não identificado fica explícito, nunca omitido.
+            attrs = sym.get("attrs") or {}
+            agent = attrs.get("agent") or UNKNOWN_AGENT
+            items.append(base(
+                id=f"cad:{floor_id}:extinguisher_agent:{sym['id']}",
+                locator=EvidenceLocator(entity_handle=sym.get("handle") or None,
+                                        layer=sym.get("layer") or None, floor_id=floor_id),
+                field="extinguisher_agent",
+                raw_value=attrs.get("agent_text") or sym.get("block") or sym["class"],
+                normalized_value=agent, extraction_method=SYMBOL_METHOD,
+                extraction_schema=f"symbols:{dictionary.get('id', '')}",
+                algorithm="symbol:agent", quality_gate=(
+                    "quality.extinguisher.not_presumed" if presumed else None)))
     for field in SYMBOL_FIELDS.values():
         if field not in found:
             gaps.append(ExtractionGap(process_id=process_id, source_id=source,
