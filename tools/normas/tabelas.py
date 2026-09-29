@@ -470,12 +470,42 @@ def report() -> str:
     return "\n".join(lines) + "\n"
 
 
+def diagnose(limit: int = 6) -> str:
+    """Texto para o log da CI: motivo, células divergentes e forma de cada candidata geométrica
+    das tabelas que não estão ``verificada`` (o artefato não é legível de todo ambiente)."""
+    lines = []
+    for f in table_files():
+        data = load(f)
+        if data.get("estado") == "verificada":
+            continue
+        res = data.get("resultado") or {}
+        lines.append(f"== {f.relative_to(TABELAS)}: {data.get('estado')} "
+                     f"{res.get('motivo') or ''} caminhos={res.get('caminhos_comparados')}")
+        for c in (res.get("celulas") or [])[:limit]:
+            lines.append(f"   L{c['linha']}C{c['coluna']}: visual={c.get('a')!r} "
+                         f"outro={c.get('b')!r} {c.get('estado')} {c.get('score') or ''}")
+        visual = compact(data["caminhos"]["visual"]["linhas"])
+        lines.append(f"   visual: {len(visual)} linhas {[len(r) for r in visual][:12]}")
+        geo = (data.get("caminhos") or {}).get("geometrica")
+        for i, cand in enumerate((geo or {}).get("candidatos") or []):
+            try:
+                shaped = shape(cand["linhas"], forma_of(data, geo))
+            except IndexError:
+                lines.append(f"   geo[{i}]: a forma não cabe")
+                continue
+            lines.append(f"   geo[{i}]: {len(shaped)} linhas {[len(r) for r in shaped][:12]}")
+            for r in shaped[:3]:
+                lines.append(f"      {r}")
+    return "\n".join(lines) or "todas verificadas"
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Tabelas conferidas (F2)")
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("comparar", help="recalcula o estado de todas as tabelas")
     sub.add_parser("publicar", help="insere as verificadas nos .md")
     sub.add_parser("relatorio", help="grava normative/tabelas/RELATORIO.md")
+    sub.add_parser("diagnostico", help="por que cada tabela não verificada não verifica")
     ex = sub.add_parser("extrair", help="caminho geométrico a partir do PDF oficial")
     ex.add_argument("pdf", type=Path)
     ex.add_argument("--tabela", type=Path, required=True, help="arquivo .yaml da tabela")
@@ -489,6 +519,8 @@ def main(argv: list[str] | None = None) -> int:
             print(f"publicado: {md.relative_to(ROOT)}")
     elif args.cmd == "relatorio":
         (TABELAS / "RELATORIO.md").write_bytes(report().encode("utf-8"))
+    elif args.cmd == "diagnostico":
+        print(diagnose())
     elif args.cmd == "extrair":
         import hashlib
 

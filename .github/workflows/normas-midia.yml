@@ -51,6 +51,9 @@ jobs:
           python -m tools.normas.manifesto
           python -m tools.normas.indice_itens
           cat render.log >> "$GITHUB_STEP_SUMMARY"
+      - name: Diagnóstico das tabelas não verificadas
+        if: always()
+        run: python -m tools.normas.tabelas diagnostico
       - name: Tabelas extraídas (para conferir mesmo quando os testes falham)
         if: always()
         uses: actions/upload-artifact@v4
