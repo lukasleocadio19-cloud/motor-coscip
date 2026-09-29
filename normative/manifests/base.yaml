@@ -6,8 +6,8 @@ resumo:
   imagens_presentes: 476
   imagens_ausentes: 0
   tabelas_por_estado:
-    bruto: 279
-    verificada: 7
+    bruto: 277
+    verificada: 12
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -651,7 +651,7 @@ fontes:
   ato: Portaria CBMERJ nº 1120, de 22 de setembro de 2020
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-01-Sistema-de-protecao-por-extintores-de-incendio-versao-02-Aprovada-pela-Portaria-CBMERJ-1120_2020_1601400175.pdf
   sha256_pdf: f2e6db5a1fbc6fd43919d45461214c0d839e69d7a07c669a43b71ffa895381e3
-  sha256_md: fde5612a9187fd898049194321f986923e0b2f2a862059c0bd9e74f635ff850e
+  sha256_md: aa6069cd9f97fda34cda850909878facedaab1b290268aeadfe04b797c1c4bcf
   data_captura: '2026-07-23'
   paginas: 6
   midia: nt-2-01
@@ -674,9 +674,25 @@ fontes:
   - pagina: 3
     estado: bruto
   - pagina: 4
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-2-01/tabela-1-capacidade-portateis.yaml
+    estado: verificada
+  - pagina: 4
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-2-01/tabela-2-capacidade-sobre-rodas.yaml
+    estado: verificada
   - pagina: 5
-    estado: bruto
+    tabela: Tabela 3
+    arquivo: normative/tabelas/nt-2-01/tabela-3-unidade-area-distancia.yaml
+    estado: verificada
+  - pagina: 5
+    tabela: Tabela 4
+    arquivo: normative/tabelas/nt-2-01/tabela-4-classe-d.yaml
+    estado: verificada
+  - pagina: 5
+    tabela: Tabela 5
+    arquivo: normative/tabelas/nt-2-01/tabela-5-classe-k.yaml
+    estado: verificada
   - pagina: 6
     estado: bruto
 - arquivo: nt-2-02-hidrantes-e-mangotinhos.md

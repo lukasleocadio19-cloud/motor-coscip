@@ -1,0 +1,46 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-01
+arquivo: nt-2-01-extintores.md
+tabela: Tabela 4
+titulo: Classes do fogo e distâncias máximas a serem percorridas
+pagina: 5
+fonte_pdf_sha256: f2e6db5a1fbc6fd43919d45461214c0d839e69d7a07c669a43b71ffa895381e3
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-01/pagina-05.jpg
+    imagem_sha256: 81e0b3e19cca95e6a70952474d85cd847ea3b748b14ccec1fc62666626e14592
+    linhas:
+    - - Classe do Fogo
+      - Distância Máxima a ser Percorrida (metros)
+    - - D
+      - '23'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 5
+      tabela_na_pagina: 2
+    forma:
+      faixa:
+      - 3
+      - 5
+      linhas_cabecalho: 1
+    linhas:
+    - - Classe do Fogo
+      - Distância Máxima a ser Percorrida (metros)
+    - - D
+      - '23'
+  geometrica: null
+notas:
+- 'Fonte: NFPA 10.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

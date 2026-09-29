@@ -1,0 +1,57 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-01
+arquivo: nt-2-01-extintores.md
+tabela: Tabela 2
+titulo: Capacidades extintoras mínimas de extintores sobre rodas
+pagina: 4
+fonte_pdf_sha256: f2e6db5a1fbc6fd43919d45461214c0d839e69d7a07c669a43b71ffa895381e3
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-01/pagina-04.jpg
+    imagem_sha256: 90441f09545d8252e3e1b8e2e0a6a852cf5b92f6bc6662938c9adeb6e38f3ef4
+    linhas:
+    - - Tipo de Agente Extintor
+      - Capacidade Extintora Mínima
+    - - Água
+      - 10-A
+    - - Espuma mecânica
+      - '6-A : 40-B'
+    - - Dióxido de carbono
+      - '10-B : C'
+    - - Pó BC
+      - '80-B : C'
+    - - Pó ABC
+      - '6-A : 80-B : C'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 4
+      tabela_na_pagina: 2
+    linhas:
+    - - Tipo de Agente Extintor
+      - Capacidade Extintora Mínima
+    - - Água
+      - 10-A
+    - - Espuma mecânica
+      - '6-A: 40-B'
+    - - Dióxido de carbono
+      - '10-B: C'
+    - - Pó BC
+      - '80-B: C'
+    - - Pó ABC
+      - '6-A: 80-B: C'
+  geometrica: null
+notas:
+- 'Fonte: ABNT NBR 12693.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

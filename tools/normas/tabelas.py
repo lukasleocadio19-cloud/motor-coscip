@@ -55,6 +55,7 @@ def norm(cell: str | None) -> str | None:
     text = text.replace(" ", " ").replace("–", "-").replace("—", "-").lower()
     text = re.sub(r"(?<=\w) (?=[a-z]\b)", "", text)  # "edificaco es" → "edificacoes"
     text = re.sub(r"(\d)\s*([m²%])", r"\1\2", text)  # "35,00 m" → "35,00m"
+    text = re.sub(r"\s*:\s*", ":", text)  # "2-A : 10-B" → "2-a:10-b"
     return " ".join(text.split())
 
 
@@ -94,7 +95,8 @@ def compare(a_rows: list[list[str | None]], b_rows: list[list[str | None]]) -> d
     return {"estado": worst, "celulas": cells}
 
 
-FORMA_KEYS = ("linhas_cabecalho", "juntar_cabecalho", "descartar_linhas")
+FORMA_KEYS = ("faixa", "mesclar_linhas", "linhas_cabecalho", "juntar_cabecalho",
+              "descartar_linhas")
 
 
 def forma_of(table: dict[str, Any], path: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -181,6 +183,13 @@ def shape(rows: list[list[str | None]], forma: dict[str, Any]) -> list[list[str]
     junta as linhas de cabeçalho pela coluna original (ou as mantém, se mescladas), descarta
     as linhas pedidas (observações) e remove as células vazias (``None`` = célula mesclada)."""
     rows = [[(c or "").strip() for c in r] for r in rows]
+    if forma.get("faixa"):  # só as linhas [início, fim) da extração (título/texto em volta fora)
+        ini, fim = forma["faixa"]
+        rows = rows[ini:fim]
+    for i, j in sorted(forma.get("mesclar_linhas") or [], reverse=True):
+        # célula com texto em duas linhas ("Médio" / "1 e 2"): junta pela coluna
+        rows[i] = [" ".join(filter(None, (a, b))) for a, b in zip(rows[i], rows[j], strict=False)]
+        del rows[j]
     head_n = int(forma.get("linhas_cabecalho", 1))
     if forma.get("juntar_cabecalho", True):  # cabeçalho quebrado em linhas: junta por coluna
         head = [" ".join(filter(None, col)) for col in zip(*rows[:head_n], strict=False)]
