@@ -3,6 +3,8 @@
 # o workflow normas-midia.yml renderiza a imagem do PDF oficial (hash conferido).
 schema_version: imagens-solicitadas/1.0
 paginas:
+  nt-1-04-classificacao-de-risco.md: [19]
+  nt-2-11-brigadas-de-incendio.md: [16]
   nt-2-01-extintores.md: [4, 5]
   nt-2-02-hidrantes-e-mangotinhos.md: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
   decreto-42-2018-coscip-compilado.md: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,

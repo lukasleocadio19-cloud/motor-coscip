@@ -694,6 +694,73 @@ Tabela 1 - Carga de incêndio relativa à altura de armazenamento (Depósitos)
 | Materiais de construção | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
 | Materiais sintéticos | 2655 | 5310 | 10620 | 15930 | 21240 | 26550 |
 
+<!-- tabela-conferida: Tabela 1 p17 -->
+### Tabela 1 — Carga de incêndio relativa à altura de armazenamento (Depósitos), página 17 (conferida)
+
+| Tipo de material | qfi (MJ/m²) — altura 1 m | qfi (MJ/m²) — altura 2 m | qfi (MJ/m²) — altura 4 m | qfi (MJ/m²) — altura 6 m | qfi (MJ/m²) — altura 8 m | qfi (MJ/m²) — altura 10 m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Açúcar | 3780 | 7560 | 15120 | 22680 | 30240 | 37800 |
+| Açúcar, produtos de | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
+| Acumuladores/baterias | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
+| Adubos químicos | 90 | 180 | 360 | 540 | 720 | 900 |
+| Alcatrão | 1530 | 3060 | 6120 | 9180 | 12240 | 15300 |
+| Algodão | 585 | 1170 | 2340 | 3510 | 4680 | 5850 |
+| Alimentação (alimentos industrializados) | 1530 | 3060 | 6120 | 9180 | 12240 | 15300 |
+| Aparelhos eletroeletrônicos | 180 | 360 | 720 | 1080 | 1440 | 1800 |
+| Aparelhos fotográficos | 270 | 540 | 1080 | 1620 | 2160 | 2700 |
+| Artigos de borracha | 2250 | 4500 | 9000 | 13500 | 18000 | 22500 |
+| Bebidas alcoólicas | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
+| Borracha | 12870 | 25740 | 51480 | 77220 | 102960 | 128700 |
+| Brinquedos | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
+| Cabos elétricos | 270 | 540 | 1080 | 1620 | 2160 | 2700 |
+| Cacau, produtos de | 2610 | 5220 | 10440 | 15660 | 20880 | 26100 |
+| Café cru | 1305 | 2610 | 5220 | 7830 | 10440 | 13050 |
+| Caixas de madeira | 270 | 540 | 1080 | 1620 | 2160 | 2700 |
+| Calçado | 180 | 360 | 720 | 1080 | 1440 | 1800 |
+| Celuloide | 1530 | 3060 | 6120 | 9180 | 12240 | 15300 |
+| Cera | 1530 | 3060 | 6120 | 9180 | 12240 | 15300 |
+| Cera, artigos de | 945 | 1890 | 3780 | 5670 | 7560 | 9450 |
+| Chocolate | 1530 | 3060 | 6120 | 9180 | 12240 | 15300 |
+| Colas combustíveis | 1530 | 3060 | 6120 | 9180 | 12240 | 15300 |
+| Colchões não sintéticos | 2250 | 4500 | 9000 | 13500 | 18000 | 22500 |
+| Cosméticos | 248 | 495 | 990 | 1485 | 1980 | 2475 |
+| Couro | 765 | 1530 | 3060 | 4590 | 6120 | 7650 |
+| Couro, artigos de | 270 | 540 | 1080 | 1620 | 2160 | 2700 |
+| Couro sintético | 765 | 1530 | 3060 | 4590 | 6120 | 7650 |
+| Couro sintético, artigos de | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
+| Depósitos de mercadorias incombustíveis em pilhas de caixas de madeira ou de papelão | 90 | 180 | 360 | 540 | 720 | 900 |
+| Depósitos de mercadorias incombustíveis em pilhas de caixas de plástico | 90 | 180 | 360 | 540 | 720 | 900 |
+| Depósitos de mercadorias incombustíveis em estantes metálicas (sem embalagem) | 9 | 18 | 36 | 54 | 72 | 90 |
+| Depósitos de paletes de madeira | 1530 | 3060 | 6120 | 9180 | 12240 | 15300 |
+| Espumas sintéticas | 1125 | 2250 | 4500 | 6750 | 9000 | 11250 |
+| Espumas sintéticas, artigos de | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
+| Farinha em sacos | 3780 | 7560 | 15120 | 22680 | 30240 | 37800 |
+| Feltro | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
+| Feno, fardos de | 450 | 900 | 1800 | 2700 | 3600 | 4500 |
+| Fiação, produtos de fio | 765 | 1530 | 3060 | 4590 | 6120 | 7650 |
+| Fiação, produtos de lã | 855 | 1710 | 3420 | 5130 | 6840 | 8550 |
+| Fósforos | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
+| Gorduras | 8100 | 16200 | 32400 | 48600 | 64800 | 81000 |
+| Gorduras comestíveis | 8505 | 17010 | 34020 | 51030 | 68040 | 85050 |
+| Grãos, sementes | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
+| Instrumentos de ótica | 90 | 180 | 360 | 540 | 720 | 900 |
+| Legumes, verduras, hortifrutigranjeiros | 158 | 315 | 630 | 945 | 1260 | 1575 |
+| Leite em pó | 4050 | 8100 | 16200 | 24300 | 32400 | 40500 |
+| Lenha | 1125 | 2250 | 4500 | 6750 | 9000 | 11250 |
+| Madeira em troncos | 2835 | 5670 | 11340 | 17010 | 22680 | 28350 |
+| Madeira, aparas | 945 | 1890 | 3780 | 5670 | 7560 | 9450 |
+| Madeira, restos de | 1350 | 2700 | 5400 | 8100 | 10800 | 13500 |
+| Madeira, vigas e tábuas | 1890 | 3780 | 7560 | 11340 | 15120 | 18900 |
+| Malte | 6030 | 12060 | 24120 | 36180 | 48240 | 60300 |
+| Massas alimentícias | 765 | 1530 | 3060 | 4590 | 6120 | 7650 |
+| Materiais de construção | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
+| Materiais sintéticos | 2655 | 5310 | 10620 | 15930 | 21240 | 26550 |
+
+Fonte: NT 1-04, página 17, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Primeira parte da Tabela 1 do Anexo C da NT 1-04 (continua na página 18). Fonte indicada: ABNT NBR 14432.
+Conferência aritmética (além dos dois caminhos): em cada linha a carga é proporcional à altura de armazenamento (valor em 2 m ÷ 2 × altura, arredondado).
+<!-- /tabela-conferida: Tabela 1 p17 -->
+
 ---
 
 ## Página 18
@@ -757,9 +824,68 @@ Fonte: CBMERJ.
 | Médio 2 |  |  | 1000 < qfi ≤ 1200 MJ/m² |  |  |
 | Grande |  |  | qfi ≥1200 MJ/m² |  |  |
 
+<!-- tabela-conferida: Tabela 1 p18 -->
+### Tabela 1 — Carga de incêndio relativa à altura de armazenamento (Depósitos), página 18 (conferida)
+
+| Tipo de material | qfi (MJ/m²) — altura 1 m | qfi (MJ/m²) — altura 2 m | qfi (MJ/m²) — altura 4 m | qfi (MJ/m²) — altura 6 m | qfi (MJ/m²) — altura 8 m | qfi (MJ/m²) — altura 10 m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Material de escritório | 585 | 1170 | 2340 | 3510 | 4680 | 5850 |
+| Medicamentos, embalagem | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
+| Depósitos de mercadorias incombustíveis em pilhas de caixas de plástico | 90 | 180 | 360 | 540 | 720 | 900 |
+| Móveis de madeira | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
+| Móveis, estofados sem espuma sintética | 180 | 360 | 720 | 1080 | 1440 | 1800 |
+| Painel de madeira aglomerada | 3015 | 6030 | 12060 | 18090 | 24120 | 30150 |
+| Papel | 3780 | 7560 | 15120 | 22680 | 30240 | 37800 |
+| Papel prensado | 945 | 1890 | 3780 | 5670 | 7560 | 9450 |
+| Papelaria, estoque | 495 | 990 | 1980 | 2970 | 3960 | 4950 |
+| Produtos farmacêuticos, estoque | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
+| Peças automotivas | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
+| Perfumaria, artigos de | 225 | 450 | 900 | 1350 | 1800 | 2250 |
+| Pneus | 810 | 1620 | 3240 | 4860 | 6480 | 8100 |
+| Portas de madeira | 810 | 1620 | 3240 | 4860 | 6480 | 8100 |
+| Produtos químicos combustíveis | 450 | 900 | 1800 | 2700 | 3600 | 4500 |
+| Queijos | 1125 | 2250 | 4500 | 6750 | 9000 | 11250 |
+| Resinas sintéticas | 1890 | 3780 | 7560 | 11340 | 15120 | 18900 |
+| Resinas sintéticas, placas de | 1530 | 3060 | 6120 | 9180 | 12240 | 15300 |
+| Sabão | 1890 | 3780 | 7560 | 11340 | 15120 | 18900 |
+| Sacos de papel | 5670 | 11340 | 22680 | 34020 | 45360 | 56700 |
+| Sacos de plástico | 11340 | 22680 | 45360 | 68040 | 90720 | 113400 |
+| Tabaco em bruto | 765 | 1530 | 3060 | 4590 | 6120 | 7650 |
+| Tabaco, artigos de | 945 | 1890 | 3780 | 5670 | 7560 | 9450 |
+| Tapeçarias | 765 | 1530 | 3060 | 4590 | 6120 | 7650 |
+| Tapeçarias | 900 | 1800 | 3600 | 5400 | 7200 | 9000 |
+| Tecidos sintéticos | 585 | 1170 | 2340 | 3510 | 4680 | 5850 |
+| Tecidos, fardos de algodão | 585 | 1170 | 2340 | 3510 | 4680 | 5850 |
+| Tecidos, seda artificial | 450 | 900 | 1800 | 2700 | 3600 | 4500 |
+| Toldos ou lonas | 450 | 900 | 1800 | 2700 | 3600 | 4500 |
+| Velas de cera | 10080 | 20160 | 40320 | 60480 | 80640 | 100800 |
+| Vernizes | 1125 | 2250 | 4500 | 6750 | 9000 | 11250 |
+| Vernizes de cera | 2250 | 4500 | 9000 | 13500 | 18000 | 22500 |
+
+Fonte: NT 1-04, página 18, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Continuação da Tabela 1 do Anexo C. Fonte indicada: ABNT NBR 14432.
+Conferência aritmética (além dos dois caminhos): em cada linha a carga é proporcional à altura de armazenamento (valor em 2 m ÷ 2 × altura, arredondado).
+Observações da tabela (fora da comparação): a) pode haver interpolação entre os valores; b) a carga de incêndio para depósitos desta tabela pode ser substituída pelo método determinístico.
+<!-- /tabela-conferida: Tabela 1 p18 -->
+
+<!-- tabela-conferida: Tabela 2 p18 -->
+### Tabela 2 — Parâmetros para definição da classificação de risco (conferida)
+
+| Risco | Carga de incêndio específica (Mj/m²) |
+| --- | --- |
+| Médio 1 | qfi ≤ 1000 MJ/m² |
+| Médio 2 | 1000 < qfi ≤ 1200 MJ/m² |
+| Grande | qfi ≥1200 MJ/m² |
+
+Fonte: NT 1-04, página 18, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Fonte indicada: CBMERJ.
+<!-- /tabela-conferida: Tabela 2 p18 -->
+
 ---
 
 ## Página 19
+
+![Representação visual da página 19](media/nt-1-04/pagina-19.jpg)
 
 ### ANEXO D - MÉTODO DETERMINÍSTICO PARA LEVANTAMENTO DA CARGA DE INCÊNDIO ESPECÍFICA
 

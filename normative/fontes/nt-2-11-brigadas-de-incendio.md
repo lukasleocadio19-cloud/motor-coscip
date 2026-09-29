@@ -776,6 +776,8 @@ Tabela 2 - Currículo mínimo para atualização de BC
 
 ## Página 16
 
+![Representação visual da página 16](media/nt-2-11/pagina-16.jpg)
+
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 ### ANEXO B - CRITÉRIOS PARA FORMAÇÃO DE BVI

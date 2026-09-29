@@ -2,12 +2,12 @@ schema_version: base-manifest/1.0
 gerado_por: tools/normas/manifesto.py (não editar à mão)
 resumo:
   fontes: 53
-  imagens_referenciadas: 476
+  imagens_referenciadas: 478
   imagens_presentes: 476
-  imagens_ausentes: 0
+  imagens_ausentes: 2
   tabelas_por_estado:
-    bruto: 268
-    verificada: 21
+    bruto: 266
+    verificada: 24
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -401,7 +401,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-04-Classificacao-das-edificacoes-e-areas-de-risco-quanto-ao-risco-de-incendio.pdf
   sha256_pdf: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
-  sha256_md: e8d85bde51697f6e1001e4466042f4337dd732ac27ab3a6e2c41524474a24a93
+  sha256_md: 4d0fdfdd475b2515eef66fd1dbff2f21bd48a47d6bfc974a6211e0123d7ebfb4
   data_captura: '2026-07-23'
   paginas: 20
   midia: nt-1-04
@@ -462,6 +462,10 @@ fontes:
     pagina: 18
     estado: presente
     sha256: ac505b94486827cfa6ec1fc80ec2cc96463520cc0260c2591ce56382e97764a1
+  - caminho: media/nt-1-04/pagina-19.jpg
+    pagina: 19
+    estado: ausente
+    sha256: null
   tabelas:
   - pagina: 1
     estado: bruto
@@ -502,9 +506,17 @@ fontes:
     arquivo: normative/tabelas/nt-1-04/anexo-b-p16.yaml
     estado: verificada
   - pagina: 17
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-1-04/anexo-c-tabela-1-p17.yaml
+    estado: verificada
   - pagina: 18
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-1-04/anexo-c-tabela-1-p18.yaml
+    estado: verificada
+  - pagina: 18
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-1-04/anexo-c-tabela-2-p18.yaml
+    estado: verificada
   - pagina: 19
     estado: bruto
   - pagina: 20
@@ -1358,7 +1370,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-11-Brigadas-de-incendio.pdf
   sha256_pdf: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
-  sha256_md: e7957f1660f3691a245cf953588430e8849bd3729bf06f9f9c83a5774eadb774
+  sha256_md: 212bbc275fde70e08ae5249f22b9104b1addc5e4bf88c06fd05279952cf6b0e9
   data_captura: '2026-07-23'
   paginas: 26
   midia: nt-2-11
@@ -1383,6 +1395,10 @@ fontes:
     pagina: 15
     estado: presente
     sha256: 4cadcf01f9e18c4d8a97a9f93f95dc46c69e814c7a24bdffa84a98e02986c23d
+  - caminho: media/nt-2-11/pagina-16.jpg
+    pagina: 16
+    estado: ausente
+    sha256: null
   - caminho: media/nt-2-11/pagina-17.jpg
     pagina: 17
     estado: presente
