@@ -123,6 +123,16 @@ def forma_of(table: dict[str, Any], path: dict[str, Any] | None = None) -> dict[
     return base
 
 
+def geo_forma(table: dict[str, Any]) -> dict[str, Any]:
+    """Forma do caminho geométrico: a comum, com ``forma_geometrica`` por cima. Fica fora do
+    caminho porque a extração o regrava; serve quando a grade desenhada tem outra estrutura
+    que a camada de texto (ex. ``faixa`` conta as linhas da camada de texto, não as da
+    grade; ``faixa: null`` a desliga)."""
+    base = forma_of(table, (table.get("caminhos") or {}).get("geometrica"))
+    base.update(table.get("forma_geometrica") or {})
+    return base
+
+
 MERGED_UP = "^"  # na leitura visual: célula mesclada com a de cima (o valor está lá)
 MERGED_LEFT = "<"  # na leitura visual: célula mesclada com a da esquerda
 
@@ -150,7 +160,7 @@ def evaluate(table: dict[str, Any]) -> dict[str, Any]:
         return {"estado": "pendente_humano", "caminhos_comparados": have,
                 "motivo": "é preciso a leitura visual e um segundo caminho independente"}
     if geo:
-        forma = forma_of(table, geo)
+        forma = geo_forma(table)
         tries = []
         for i, c in enumerate(geo["candidatos"]):
             try:
@@ -489,13 +499,19 @@ def diagnose(limit: int = 6) -> str:
         geo = (data.get("caminhos") or {}).get("geometrica")
         for i, cand in enumerate((geo or {}).get("candidatos") or []):
             try:
-                shaped = shape(cand["linhas"], forma_of(data, geo))
+                shaped = shape(cand["linhas"], geo_forma(data))
             except IndexError:
+                shaped = None
                 lines.append(f"   geo[{i}]: a forma não cabe")
-                continue
-            lines.append(f"   geo[{i}]: {len(shaped)} linhas {[len(r) for r in shaped][:12]}")
-            for r in shaped[:3]:
-                lines.append(f"      {r}")
+            if shaped is not None:
+                lines.append(f"   geo[{i}]: {len(shaped)} linhas "
+                             f"{[len(r) for r in shaped][:12]}")
+                for r in shaped[:3]:
+                    lines.append(f"      {r}")
+            if shaped is None or len(shaped) != len(visual):  # a grade crua, para a forma
+                for j, r in enumerate(cand["linhas"]):
+                    cells = [c for c in r if c]
+                    lines.append(f"      bruta[{j}] {len(r)}: {cells[:4]}"[:160])
     return "\n".join(lines) or "todas verificadas"
 
 

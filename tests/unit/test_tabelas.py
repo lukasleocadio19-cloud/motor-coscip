@@ -155,3 +155,14 @@ def test_engine_risk_classification_matches_verified_anexo_b():
             verified.setdefault(row[2], prev)
     engine = {d["id"]: d["risk"] for d in base["divisions"]}
     assert engine == verified
+
+
+def test_forma_geometrica_so_vale_para_a_grade_desenhada():
+    table = {"forma": {"faixa": [2, 4], "linhas_cabecalho": 0},
+             "forma_geometrica": {"faixa": None},
+             "caminhos": {"geometrica": {"candidatos": []}}}
+    assert tabelas.forma_of(table)["faixa"] == [2, 4]  # camada de texto
+    assert not tabelas.geo_forma(table)["faixa"]  # grade: sem o recorte da camada de texto
+    grade = [["Extintores", "X"], ["Hidrantes", "X"], ["Chuveiros", None, "X"]]
+    assert tabelas.shape(grade, tabelas.geo_forma(table)) == [
+        ["Extintores", "X"], ["Hidrantes", "X"], ["Chuveiros", "X"]]

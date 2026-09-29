@@ -8,3 +8,13 @@ paginas:
     imagem: media/nt-2-08/pagina-07.jpg
     motivo: trecho do item 5.3.4.7 ("disponham de dispositivo de fechamento automático das portas corta-fogo com eletroímãs") em duas colunas de texto
     conferido_em: '2026-09-29'
+  - arquivo: nt-5-05-atendimento-medico-para-eventos.md
+    pagina: 3
+    imagem: media/nt-5-05/pagina-03.jpg
+    motivo: item 3 (referências normativas, alíneas a a i) e item 4.2 (tipos de ambulância) em duas colunas de texto
+    conferido_em: '2026-09-29'
+  - arquivo: nt-5-05-atendimento-medico-para-eventos.md
+    pagina: 4
+    imagem: media/nt-5-05/pagina-04.jpg
+    motivo: definições 4.6 a 4.21 e itens 5.1 e 5.2 em duas colunas de texto
+    conferido_em: '2026-09-29'

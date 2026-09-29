@@ -6,10 +6,10 @@ resumo:
   imagens_presentes: 478
   imagens_ausentes: 1
   tabelas_por_estado:
-    bruto: 175
+    bruto: 173
     capa: 38
     divergente: 13
-    nao_tabela: 1
+    nao_tabela: 3
     verificada: 71
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
@@ -3374,9 +3374,12 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 3
-    estado: bruto
+    estado: nao_tabela
+    motivo: item 3 (referências normativas, alíneas a a i) e item 4.2 (tipos de ambulância) em duas colunas
+      de texto
   - pagina: 4
-    estado: bruto
+    estado: nao_tabela
+    motivo: definições 4.6 a 4.21 e itens 5.1 e 5.2 em duas colunas de texto
   - pagina: 5
     tabela: Tabela 1
     arquivo: normative/tabelas/nt-5-05/tabela-1-codigo-emolumento.yaml
