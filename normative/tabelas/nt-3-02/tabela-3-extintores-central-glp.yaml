@@ -1,0 +1,67 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-02
+arquivo: nt-3-02-gas-glp-gn-uso-em-edificacoes.md
+tabela: Tabela 3
+titulo: Proteção por extintores para central de GLP
+pagina: 7
+fonte_pdf_sha256: 8a44a1be179fd3e5c38d06b32f637226230702d48b6c3f8c0f8ae37add147950
+conferida_em: '2026-09-29'
+indice_geometrico: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-02/pagina-07.jpg
+    imagem_sha256: 761b5e1f6af44aa0b28d00da26cdbc5dccf79a2e275fd76fa6de86d44d2318a8
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Capacidade total da central (Kg)
+    - Quantidade e capacidade extintora — Extintor Portátil
+    - Quantidade e capacidade extintora — Extintor sobre rodas
+    linhas:
+    - - Capacidade total da central (Kg)
+      - Quantidade e capacidade extintora
+    - - Extintor Portátil
+      - Extintor sobre rodas
+    - - ≤ 270
+      - 01 (um) 20-B:C ou 01 (um) PQS-6 Kg
+      - Não exigido
+    - - '> 270 a 1800'
+      - 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg
+      - Não exigido
+    - - '> 1800'
+      - 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg
+      - 01 (um) 80-B:C ou 01 (um) PQS-50 Kg
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF), cabeçalho mesclado em 2 linhas
+    origem:
+      pagina: 7
+      tabela_na_pagina: 1
+      linhas_cabecalho: 2
+      juntar_cabecalho: false
+    linhas:
+    - - Capacidade total da central (Kg)
+      - Quantidade e capacidade extintora
+    - - Extintor Portátil
+      - Extintor sobre rodas
+    - - ≤ 270
+      - 01 (um) 20-B:C ou 01 (um) PQS-6 Kg
+      - Não exigido
+    - - '> 270 a 1800'
+      - 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg
+      - Não exigido
+    - - '> 1800'
+      - 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg
+      - 01 (um) 80-B:C ou 01 (um) PQS-50 Kg
+  geometrica: null
+notas:
+- 'Fonte: CBMERJ.'
+- '"Quantidade e capacidade extintora" é célula mesclada sobre as colunas Extintor Portátil e Extintor
+  sobre rodas.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

@@ -50,8 +50,7 @@ Aprovada pela Portaria CBMERJ nº 1120, de 22 de setembro de 2020 (DOERJ nº 179
 
 A - Capacidade extintora
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -146,8 +145,7 @@ considerados todos os obstáculos arquitetônicos, mobiliários e etc.
 
 5.2 Extintores portáteis
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 4.18 | Extintor sobre rodas: extintor que possui massa |  |
@@ -232,8 +230,7 @@ f) a proteção por extintores sobre rodas deve ser obrigatória nas edificaçõ
 
 a) fogo classe A: conforme Tabela 3 e para melhor entendimento, vide Anexo A;
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tipo de Agente Extintor |  | Capacidade Extintora |  |
@@ -305,8 +302,7 @@ b) bordas amarelas: 0,15 m de largura.
 
 7.3 Extintores de incêndio halogenados (gases limpos) devem estar de acordo com as resoluções 267/2000 e 340/2003 do Conselho Nacional do Meio Ambiente (Conama).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | entendimento, vide Anexo A. |  |  |  |  |  |  |  |  |  |
@@ -381,8 +377,7 @@ Tabela A2 - Extintores Classe K
 
 Fonte: NFPA 10.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | ANEXO A - CAPACIDADE EXTINTORA |  |  |  |  |  |

@@ -1,0 +1,92 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-05
+arquivo: nt-4-05-gas-manipulacao-armazenamento-e-comercializacao.md
+tabela: Tabela 4
+titulo: Proteção por extintores para área de armazenamento de recipientes transportáveis de GLP
+pagina: 6
+fonte_pdf_sha256: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
+conferida_em: '2026-09-29'
+indice_geometrico: 2
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-05/pagina-06.jpg
+    linhas:
+    - - Classe
+      - Quantidade
+      - Capacidade Extintora
+    - - I
+      - '2'
+      - 20 – B:C
+    - - II
+      - '3'
+      - 20 – B:C
+    - - III
+      - '4'
+      - 20 – B:C
+    - - IVA
+      - '4'
+      - 40 – B:C
+    - - IVB
+      - '6'
+      - 40 – B:C
+    - - V
+      - '8'
+      - 40 – B:C
+    - - VI
+      - '10'
+      - 40 – B:C
+    - - Especial
+      - '12'
+      - 40 – B:C
+    imagem_sha256: 0bf4a56125cf38da2eb006e1e3fdfb60105975c67dbee7921a89b55b3d8a5bd1
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF), cabeçalho quebrado juntado por
+      coluna
+    origem:
+      pagina: 6
+      tabela_na_pagina: 3
+      linhas_cabecalho: 2
+      descartar_linhas:
+      - 10
+    linhas:
+    - - Classe
+      - Quantidade
+      - Capacidade Extintora
+    - - I
+      - '2'
+      - 20 - B:C
+    - - II
+      - '3'
+      - 20 - B:C
+    - - III
+      - '4'
+      - 20 - B:C
+    - - IVA
+      - '4'
+      - 40 - B:C
+    - - IVB
+      - '6'
+      - 40 - B:C
+    - - V
+      - '8'
+      - 40 - B:C
+    - - VI
+      - '10'
+      - 40 - B:C
+    - - Especial
+      - '12'
+      - 40 - B:C
+  geometrica: null
+notas:
+- 'Obs.: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15 m para
+  alcançar o equipamento.'
+- 'Fonte: IT28 – CBPMESP.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

@@ -100,8 +100,7 @@ G - Modelo do Termo de Ajustamento de Conduta
 
 H - Tabela das Multas Previstas no Termo De Ajustamento De Conduta (TAC)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -226,8 +225,7 @@ Para efeito desta Nota Técnica aplicam-se, além das definições constantes da
 
 5.1.1 Os procedimentos administrativos referentes à fiscalização são aqueles relacionados às notificações,
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | por objetivo promover a adequação da edificação ou |  |
@@ -376,8 +374,7 @@ f) para regularização de eventos temporários de reunião de público, deverá
 
 7
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tipo de Edificação ou Área de Risco |  | Prazo em |  |
@@ -898,8 +895,7 @@ g) anexar qualquer documento que seja julgado necessário.
 
 5.7.3 Tão logo seja(m) verificada(s) irregularidade(s) na emissão do Certificado de Aprovação Simplificado (CAS), o mesmo poderá ser automaticamente cancelado pelo CBMERJ, em sistema próprio, sem a necessidade de abertura de processo administrativo e nem publicação em boletim ostensivo, ficando a Organização de Bombeiro Militar (OBM) responsável por aplicar a notificação prevista na alínea “g” do item 5.2.3.1 e informar sobre a nulidade do Certificado de Aprovação Simplificado (CAS) ao setor de licenciamento e fiscalização da Prefeitura Municipal da área de circunscrição de onde a edificação ou área de
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 5.6.3.3 Antes do deferimento do processo de análise |  |  |  |
@@ -988,8 +984,7 @@ c) edificações ou áreas de risco que tenham sofrido alterações de layout, a
 
 17
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | de fiscalização | na modalidade consagrada pelo |  |  |
@@ -1067,8 +1062,7 @@ c) edificações ou áreas de risco que tenham sofrido alterações de layout, a
 
 6.1.2 A celebração do compromisso de ajustamento de conduta dependerá de requerimento do proprietário ou responsável legal pela edificação ou área de risco, em que declare expressamente os motivos que o impossibilitem de cumprir dentro do prazo, as exigências legais formuladas mediante notificação regular e da aceitação, por meio de parecer favorável da Comissão de Controle e Fiscalização (CCF) prevista no inciso II do parágrafo único do Art. 68 do Decreto Estadual nº 42/2018 - COSCIP.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | c) findo o prazo previsto na notificação e |  |  |  |  |
@@ -1212,8 +1206,7 @@ ser designado um militar da Diretoria de Diversões Públicas (DDP) para fazer p
 
 19
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | irá manifestar-se por meio de parecer favorável ou |  |  |  |  |
@@ -1336,8 +1329,7 @@ h) cópia do Laudo de Exigências e demais documentações expedidas pelo CBMERJ
 
 6.4.1 O objetivo principal do cronograma é discriminar ações com data de início e término de maneira que ao final do processo, obrigatoriamente, a edificação ou
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 6.3.1.1 Quando for autorizado o previsto no item |  |
@@ -1439,8 +1431,7 @@ c) abrir processo relacionado solicitando à Organização de Bombeiro Militar (
 
 21
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | termo no Diário Oficial do Estado do Rio de Janeiro e |  |
@@ -2337,8 +2328,7 @@ regularização, sob pena de aplicação de novo Auto de Interdição.
 
 34
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | DISPOSITIVOS PREVENTIVOS | EXIGIDO | EXISTENTE | ESTADO DE FUNCIONAMENTO |
@@ -2382,8 +2372,7 @@ __________________________________________________
 
 35
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS | AUTORIZADO | EXISTENTE | ESTADO DE FUNCIONAMENTO |
@@ -2427,8 +2416,7 @@ __________________________________________________
 
 ### CADASTRO NO CBMERJ
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | CRONOGRAMA PARA A EFETIVA REGULARIZAÇÃO |  |  |  |
@@ -2614,8 +2602,7 @@ e que já possuam o Certificado de Aprovação.
 
 39
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  |  |
@@ -2764,8 +2751,7 @@ campos previstos como Diretoria-Geral de Serviços Técnicos (DGST) deverão ser
 
 42
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Classificação quanto ao risco de incêndio | Prazo de vigência do TAC (anos) | Área total construída (m²) |  |  |  |  |

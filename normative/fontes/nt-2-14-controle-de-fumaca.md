@@ -122,8 +122,7 @@ H - Taxa de porcentagem para determinação das áreas de aberturas
 
 I - Termo de Compromisso
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | NOTA TÉCNICA |  | CBMERJ |  |
@@ -370,8 +369,7 @@ c) onde haja dispositivos de fechamento (dumpers etc.) para o sistema de dutos d
 
 6.2.4.1 As instalações de controle de fumaça devem
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Entrada de ar |  | Sistema de extração natural |  |
@@ -452,8 +450,7 @@ b) sobrepressão relativamente aos caminhos horizontais de evacuação. (escada 
 
 7.1.3.1 Nas instalações de controle por sobrepressão, a introdução da fumaça nas escadas é limitada pelo estabelecimento de uma pressão positiva no interior
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | controle de fumaça |  |  | Controle de fumaça |  |

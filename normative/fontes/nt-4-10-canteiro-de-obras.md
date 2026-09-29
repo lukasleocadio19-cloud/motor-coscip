@@ -45,8 +45,7 @@ metodo: "extração textual por blocos; tabelas convertidas para Markdown; marca
 
 Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -125,8 +124,7 @@ Para efeito desta Nota Técnica, além das definições constantes da NT 1-02 -T
 
 5.3 Os canteiros de obras deverão seguir as diretrizes da NT 1-01 - Procedimentos administrativos para regularização e fiscalização.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | que | desenvolvem as atividades de trabalho ligadas |  |
@@ -230,8 +228,7 @@ b) os acionadores manuais devem ser posicionados nas proximidades das portas de 
 
 c) o sistema deverá ter duas fontes de alimentação elétrica. A principal é a rede do sistema elétrico da edificação, e a auxiliar é constituída por baterias,
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Tipologia de área |  | Distância |  |  | Área máxima |  |  |

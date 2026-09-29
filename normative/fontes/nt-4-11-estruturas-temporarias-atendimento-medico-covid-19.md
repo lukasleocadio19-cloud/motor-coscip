@@ -129,8 +129,7 @@ Para efeitos desta Nota Técnica, aplicam-se as definições específicas desta 
 
 4.4 Rotas de saída, saída de emergência ou saída: caminho contínuo, devidamente protegido e sinalizado, proporcionado por portas, corredores,“halls”, passagens externas, balcões, vestíbulos, escadas, rampas, conexões entre túneis paralelos ou outros dispositivos de saída, ou combinações desses, a ser percorrido pelo usuário em caso de emergência, de qualquer ponto da edificação, recinto de evento ou túnel, até atingir a via pública ou espaço aberto, com garantia de integridade física.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | (Covid-19), reconhecido por meio da Lei Estadual nº |  |

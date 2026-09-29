@@ -530,8 +530,7 @@ e) quantitativo de faces de exposição no qual foi aplicado o material.
 
 M-1 150 150 150 - - - - M-2 - - 120 120 - - - - M-5 120 90 60 60 90 120 - - - - M-3 120 90 90 90 120 120 120 120 150 - OBSERVAÇÕES: 1. Para os casos não enquadrados No Anexo A, deverá ser solicitado Parecer Técnico junto ao Corpo de Bombeiros Militar do Estado do Rio de Janeiro. 2. Para a classificação detalhada das ocupações (Ocupação/Uso) consultar o Anexo A da NT 1-04 - Classificação das edificações quanto à ocupação e ao risco de incêndio. 3. Os tempos entre parênteses podem ser usados nas edificações nas quais cada pavimento tenha área menor ou igual a 900 m², desd e que haja compartimentação vertical entre os pavimentos. 4. O TRRF dos subsolos, sobressolos e semienterrados não podem ser inferiores ao TRRF dos pavimentos situados acima do solo (ver item 6.9). 5. Para edificações em madeira, verificar item 6.12. 6. Para indústria ou depósito com inflamáveis, considerar I-3 e J-4, respectivamente. Fonte: CBMERJ
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão |  | Profundidade do |  |  | Altura da edificação (h) |  |  |  |  |  |  |  |
@@ -574,8 +573,7 @@ M-1 150 150 150 - - - - M-2 - - 120 120 - - - - M-5 120 90 60 60 90 120 - - - - 
 
 Fonte: ABNT NBR 15758:2009.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Paredes ensaiadas (*) |  | Características das paredes |  |  |  |  |  |  |  |  |  |  | Resultado dos ensaios |  |  |  |  |
@@ -607,8 +605,7 @@ Fonte: ABNT NBR 15758:2009.
 
 Legenda: CH = Chapa de Gesso ST = Standard RU = Resistente a umidade RF = Resistente ao fogo Notas: 1) Especificações e execução de acordo com a norma ABNT NBR 15758. 2) Exigir atestado de qualificação do PSQ Drywall (Programa Setorial de Qualidade) do PBQP -H. 3) Será admitido o uso de parede “drywall” com alturas superiores a 6,5 m em compartimentações de áreas, desde que seja apres entado atestado da empresa fabricante do drywall especificando a altura limite que pode ser executada a parede; a tipologia (características construtivas) e o tempo de resistência ao fogo correspondente.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  |  |  |  | Altura Máxima da parede |  | Resistência ao fogo CF |  |
@@ -676,8 +673,7 @@ Equação D3:
 
 Limites de aplicação da equação D3: 0,025 ≤ Av/Af ≤ 0,50 Onde: H - altura do compartimento (m); Av - área de aberturas para o ambiente externo da edificação (janelas, portas e outras aberturas) (m²); Ah - área de ventilação horizontal (piso) (m²); Af - área de piso do compartimento estudado (m²).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Valores de  n |  |  |  |

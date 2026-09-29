@@ -75,8 +75,7 @@ Aprovada pela Portaria CBMERJ nº 1109, de 20 de maio de 2020 (DOERJ nº 093, de
 
 A - Relação de CNAEs passíveis de dispensa de regularização
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -653,8 +652,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 ### ANEXO A - Relação de CNAEs passíveis de dispensa de regularização
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | CNAE | Descrição |
@@ -710,8 +708,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 0135-1/00 | Cultivo de cacau |
@@ -768,8 +765,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 0210-1/06 | Cultivo de mudas em viveiros florestais |
@@ -826,8 +822,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 1032-5/01 | Fabricação de conservas de palmito |
@@ -884,8 +879,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 2399-1/01 | Decoração, lapidação, gravação, vitrificação e outros trabalhos em cerâmica, louça, vidro e cristal |  |  |
@@ -952,8 +946,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 4110-7/00 | Incorporação de empreendimentos imobiliários |  |  |
@@ -1017,8 +1010,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 4541-2/02 | Comércio por atacado de peças e acessórios para motocicletas e motonetas |  |  |
@@ -1084,8 +1076,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 4645-1/01 |  | Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, hospitalar e de |  |
@@ -1149,8 +1140,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 4744-0/02 | Comércio varejista de madeira e artefatos |  |  |
@@ -1209,8 +1199,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 4921-3/01 | Transporte rodoviário coletivo de passageiros, com itinerário fixo, municipal |  |  |
@@ -1275,8 +1264,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 5911-1/02 | Produção de filmes para publicidade |  |  |
@@ -1337,8 +1325,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 6435-2/02 | Associações de poupança e empréstimo |
@@ -1395,8 +1382,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 6619-3/04 | Caixas eletrônicos |  |  |
@@ -1455,8 +1441,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 7420-0/03 | Laboratórios fotográficos |  |  |
@@ -1515,8 +1500,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 8219-9/01 | Fotocópias |  |  |
@@ -1577,8 +1561,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 8622-4/00 | Serviços de remoção de pacientes, exceto os serviços móveis de atendimento a urgências |  |  |
@@ -1637,8 +1620,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 9319-1/01 | Produção e promoção de eventos esportivos |  |  |

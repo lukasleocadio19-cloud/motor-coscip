@@ -1,0 +1,97 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-05
+arquivo: nt-4-05-gas-manipulacao-armazenamento-e-comercializacao.md
+tabela: Tabela 3
+titulo: Classificação das áreas de armazenamento
+pagina: 6
+fonte_pdf_sha256: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
+conferida_em: '2026-09-29'
+indice_geometrico: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-05/pagina-06.jpg
+    linhas:
+    - - Classe
+      - Capacidade de Armazenamento (kg de GLP)
+      - Capacidade de Armazenamento (botijões 13 kg)¹
+    - - I
+      - Até 520
+      - Até 40
+    - - II
+      - Até 1560
+      - Até 120
+    - - III
+      - Até 6240
+      - Até 480
+    - - IVA
+      - Até 12480
+      - Até 960
+    - - IVB
+      - Até 24960
+      - Até 1920
+    - - V
+      - Até 49920
+      - Até 3840
+    - - VI
+      - Até 99840
+      - Até 7680
+    - - Especial
+      - Mais de 99840
+      - Mais de 7680
+    imagem_sha256: 0bf4a56125cf38da2eb006e1e3fdfb60105975c67dbee7921a89b55b3d8a5bd1
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF), cabeçalho quebrado juntado por
+      coluna
+    origem:
+      pagina: 6
+      tabela_na_pagina: 1
+      linhas_cabecalho: 3
+      descartar_linhas:
+      - 11
+    linhas:
+    - - Classe
+      - Capacidade de Armazenamento (kg de GLP)
+      - Capacidade de Armazenamento (botijões 13 kg)¹
+    - - I
+      - Até 520
+      - Até 40
+    - - II
+      - Até 1560
+      - Até 120
+    - - III
+      - Até 6240
+      - Até 480
+    - - IVA
+      - Até 12480
+      - Até 960
+    - - IVB
+      - Até 24960
+      - Até 1920
+    - - V
+      - Até 49920
+      - Até 3840
+    - - VI
+      - Até 99840
+      - Até 7680
+    - - Especial
+      - Mais de 99840
+      - Mais de 7680
+  geometrica: null
+notas:
+- 'Obs.: 1 - Apenas referência. A capacidade de armazenamento deve sempre ser medida em kg de GLP. 2 -
+  Os pontos de venda no perímetro urbano ficam limitados a 10 unidades de botijões de 13 kg - Ver 5.2.6.
+  3 - Os pontos de venda no perímetro rural ficam limitados a 30 unidades de botijões de 13 kg - Ver 5.2.6.
+  4 - Os pontos de venda de recipientes de GLP em postos revendedores de combustíveis líquidos ficam limitados
+  a 10 unidades de botijões de 13 kg - Ver 5.2.7. 5 - O(s) lote(s) pode(m) conter recipientes transportáveis
+  de GLP cheios, parcialmente cheios e vazios, desde que atendida a quantidade de botijões permitida de
+  acordo com a classe.'
+- 'Fonte: ABNT NBR 15514 – Adaptado.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

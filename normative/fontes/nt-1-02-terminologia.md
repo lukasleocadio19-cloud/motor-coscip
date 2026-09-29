@@ -66,8 +66,7 @@ metodo: "extração textual por blocos; tabelas convertidas para Markdown; marca
 
 Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -158,8 +157,7 @@ Andar: piso acima do piso térreo, piso elevado.
 
 Aparelhos a gás: aparelhos destinados à utilização de gás combustível.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | abertura na vegetação que atua como barreira |
@@ -451,8 +449,7 @@ Cela individual: menor célula possível de um estabelecimento penal. Neste côm
 
 Central de espuma: local onde situam-se as bombas, aparelhos dosadores e/ou geradores de
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | toda carga homogênea, sem |
@@ -734,8 +731,7 @@ Eletrobomba: bomba centrífuga de pressurização com acionamento elétrico.
 
 Eletrobomba Jockey: bomba centrífuga com acio-
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | que são arrastados |
@@ -861,8 +857,7 @@ Explosivos tipo lama: misturas de nitratos diluídos em água e agentes sensibil
 
 Extintor de incêndio: aparelho de acionamento manual, constituído de recipiente e acessórios contendo o agente extintor destinado a combater princípios de incêndio.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | em que o |
@@ -1170,8 +1165,7 @@ Ocupação: tipo de atividade econômica, uso residencial ou outro, com ou sem f
 
 Ocupação múltipla: para que a ocupação múltipla se caracterize, é necessário que a área destinada às ocupações secundárias seja superior a 10% da área total da edificação ou superior a 1.500m². Caracterizam-se também como ocupação múltipla as edificações que possuam em qualquer pavimento
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | gerador com um invólucro, |

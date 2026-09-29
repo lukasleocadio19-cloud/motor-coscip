@@ -78,8 +78,7 @@ A - Figuras com distanciamentos
 
 B - Exemplos de dimensionamento
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |

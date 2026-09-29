@@ -51,8 +51,7 @@ Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019.
 
 A - Modelo de subestação elétrica, figuras, conformação e afastamentos
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  | NOTA |  |  | CBMERJ |  |

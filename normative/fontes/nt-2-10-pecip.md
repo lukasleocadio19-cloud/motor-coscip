@@ -68,8 +68,7 @@ D - Modelo e exemplos de planta de emergência
 
 E - Ficha de segurança pré-evento
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -354,8 +353,7 @@ f) outros locais, de acordo com o PECIP e a natureza da ocupação da edificaç�
 
 5.2.6.3 Nas edificações das Divisões H-2 e H-3, além da localização descrita em 5.2.6.1, as plantas de emergência devem ser fixadas atrás das portas de acesso aos quartos, dormitórios, ambulatórios, enfermarias, banheiros coletivos, salas de estar e refeitórios.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Risco de incêndio da edificação (conforme NT 1-04) |  | Quantidade mínima de |  |  |
@@ -751,8 +749,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 ### ANEXO C - SIMBOLOGIA DE SEGURANÇA PARA UTILIZAÇÃO EM PLANTAS DE EMERGÊNCIA
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Simbologia na |  | Descrição |
@@ -784,8 +781,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Risco de incêndio (materiais ou áreas com presença de produtos altamente inflamáveis) |
@@ -862,8 +858,7 @@ ATENÇÃO: Qualquer item marcado como “NÃO”, na Tabela 1, deve ser resolvid
 
 página 1 de 2
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | TABELA 1 |  |  |  |  |  |  |  |
@@ -906,8 +901,7 @@ Assinatura:_____________________________________________________________________
 
 página 2 de 2
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | TABELA 2 |  |  |  |  |  |  |  |  |  |  |

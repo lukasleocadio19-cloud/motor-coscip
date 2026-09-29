@@ -47,8 +47,7 @@ metodo: "extração textual por blocos; tabelas convertidas para Markdown; marca
 
 Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  | NOTA |  |  | CBMERJ |  |

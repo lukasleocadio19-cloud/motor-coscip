@@ -68,8 +68,7 @@ B - Classificação das mercadorias - exemplos
 
 C - Exemplos das mercadorias - classes I, II, III E IV
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -430,8 +429,7 @@ estireno);
 
 ### ANEXO B - CLASSIFICAÇÃO DAS MERCADORIAS - EXEMPLOS
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Mercadoria |  |  | Classe |  |
@@ -455,8 +453,7 @@ estireno);
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Velas Embaladas, em caixas de papelão - Tratar como plástico expandido | Plástico Grupo A |
@@ -489,8 +486,7 @@ estireno);
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Isolamento de fibra de vidro - Rolos de mantas laminadas com papel em um dos lados, em sacos ou não | Classe IV |
@@ -520,8 +516,7 @@ estireno);
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Colchões - De molas - Espuma (produto final) | Classe III Plástico Grupo A |
@@ -548,8 +543,7 @@ estireno);
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | - Líquidos ou semilíquidos (ketchup, por exemplo) incombustíveis em recipientes plásticos com paredes de espessura maior que ¼ pol. (6,4 mm) e volumes maiores que 5 gal (18,9 L) | Plástico Grupo A |
@@ -591,8 +585,7 @@ estireno);
 
 6. Quando bebidas alcoólicas destiladas são armazenadas em recipientes de vidro em porta-paletes, estas devem ser consideradas Classe III; quando paletizadas, devem ser consideradas Classe IV.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | - Linha, em carretéis plásticos | Plástico Grupo A |
@@ -616,8 +609,7 @@ estireno);
 
 ### ANEXO C - EXEMPLOS DAS MERCADORIAS - CLASSES I, II, III e IV
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Exemplos de mercadorias Classe I |  |
@@ -668,8 +660,7 @@ Arame Arame sem capa em carretéis de metal em estrados de madeira
 
 * A maioria das baterias tem gabinete de polipropileno. Se armazenadas vazias devem ser tratadas como plástico Grupo A. Baterias para caminhões, mesmo quando cheias, devem ser consideradas plástico Grupo A por causa das paredes mais espessas.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Exemplos de mercadorias Classe II |  |
@@ -722,8 +713,7 @@ Produtos de madeira Pilhas sólidas - Madeira, compensado, aglomerado, placa de 
 
 * Produto em embalagem laminada com plástico em caixa de papelão corrugado. Se embalado em metal laminado, pode ser considerado Classe I.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Exemplos de mercadorias Classe III |  |
@@ -812,8 +802,7 @@ Produtos de madeira - Carretéis (vazios) - Palitos, pegadores, cabides, em caix
 
 ### FONTE: IT-24/2018 - CBPMESP.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Exemplos de mercadorias Classe IV |  |
@@ -883,8 +872,7 @@ Produtos de madeira Moldes
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Exemplos de plásticos Grupo A |  |

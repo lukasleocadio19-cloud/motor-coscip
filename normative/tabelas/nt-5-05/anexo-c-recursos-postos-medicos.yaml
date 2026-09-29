@@ -1,0 +1,161 @@
+schema_version: tabela-conferida/1.0
+documento: NT 5-05
+arquivo: nt-5-05-atendimento-medico-para-eventos.md
+tabela: Tabela do Anexo C
+titulo: Dimensionamento de recursos dos postos médicos
+pagina: 10
+fonte_pdf_sha256: 54345183121ed1b645442a50f3b7a2ae982a0144cf1a3b6ce4498fe460aa0da6
+conferida_em: '2026-09-29'
+indice_geometrico: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-5-05/pagina-10.jpg
+    imagem_sha256: daf9232c53d8033a15848b95f2a82b60377790e898c0739825905796b2eeb21c
+    linhas:
+    - - Público
+      - Postos
+      - Macas
+      - Médicos
+      - Enfermeiros
+      - Técnicos de enfermagem
+      - Ambulância tipo D
+      - Ambulância tipo B
+    - - 1.000 Até 4.999
+      - 01 (um)
+      - 02 (duas)
+      - 01 (um)
+      - 01 (um)
+      - 01 (um)
+      - 01 (uma)
+      - '----'
+    - - 5.000 Até 9.999
+      - 02 (dois)
+      - 04 (2/2) (quatro)
+      - 02 (dois)
+      - 02 (um)
+      - 02 (dois)
+      - 01 (uma)
+      - 01 (uma)
+    - - 10.000 Até 14.999
+      - 03 (três)
+      - 06 (2/2/2) (seis)
+      - 03 (três)
+      - 03 (três)
+      - 03 (três)
+      - 01 (uma)
+      - 02 (duas)
+    - - 15.000 Até 19.999
+      - 04 (quatro)
+      - 08 (2/2/2/2) (oito)
+      - 04 (quatro)
+      - 04 (quatro)
+      - 04 (quatro)
+      - 02 (duas)
+      - 02 (duas)
+    - - 20.000 Até 29.999
+      - 04 (quatro)
+      - 12 (4/4/2/2) (doze)
+      - 06 (seis)
+      - 04 (quatro)
+      - 04 (quatro)
+      - 02 (duas)
+      - 02 (duas)
+    - - 30.000 Até 40.000
+      - 04 (quatro)
+      - 16 (4/4/4/4) (dezesseis)
+      - 08 (oito)
+      - 04 (quatro)
+      - 04 (quatro)
+      - 02 (duas)
+      - 02 (duas)
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF), cabeçalho em 2 linhas juntado por
+      coluna
+    origem:
+      pagina: 10
+      tabela_na_pagina: 1
+      linhas_cabecalho: 2
+    linhas:
+    - - Público
+      - Postos
+      - Macas
+      - Médicos
+      - Enfermeiros
+      - Técnicos de enfermagem
+      - Ambulância tipo D
+      - Ambulância tipo B
+    - - 1.000 Até 4.999
+      - 01 (um)
+      - 02 (duas)
+      - 01 (um)
+      - 01 (um)
+      - 01 (um)
+      - 01 (uma)
+      - '----'
+    - - 5.000 Até 9.999
+      - 02 (dois)
+      - 04 (2/2) (quatro)
+      - 02 (dois)
+      - 02 (um)
+      - 02 (dois)
+      - 01 (uma)
+      - 01 (uma)
+    - - 10.000 Até 14.999
+      - 03 (três)
+      - 06 (2/2/2) (seis)
+      - 03 (três)
+      - 03 (três)
+      - 03 (três)
+      - 01 (uma)
+      - 02 (duas)
+    - - 15.000 Até 19.999
+      - 04 (quatro)
+      - 08 (2/2/2/2) (oito)
+      - 04 (quatro)
+      - 04 (quatro)
+      - 04 (quatro)
+      - 02 (duas)
+      - 02 (duas)
+    - - 20.000 Até 29.999
+      - 04 (quatro)
+      - 12 (4/4/2/2) (doze)
+      - 06 (seis)
+      - 04 (quatro)
+      - 04 (quatro)
+      - 02 (duas)
+      - 02 (duas)
+    - - 30.000 Até 40.000
+      - 04 (quatro)
+      - 16 (4/4/4/4) (dezess eis)
+      - 08 (oito)
+      - 04 (quatro)
+      - 04 (quatro)
+      - 02 (duas)
+      - 02 (duas)
+  geometrica: null
+notas:
+- 'Fonte: CBMERJ.'
+- 'Inconsistência do próprio PDF oficial (conferida na imagem): na linha 5.000 Até 9.999, coluna Enfermeiros,
+  o numeral é "02" e o extenso "(um)". A leitura está conferida; qual valor vale é decisão do analista
+  (não resolvida aqui).'
+inconsistencias_da_fonte:
+- linha: 2
+  coluna: 4
+  valor: 02 (um)
+  descricao: numeral e extenso divergem no PDF oficial
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  celulas:
+  - linha: 6
+    coluna: 2
+    a: 16 (4/4/4/4) (dezesseis)
+    b: 16 (4/4/4/4) (dezess eis)
+    estado: verificada
+    score: 98.0

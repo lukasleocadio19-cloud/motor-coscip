@@ -54,8 +54,7 @@ Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019 (DOERJ nº 167, 
 
 Alterada pela Portaria CBMERJ nº 1109, de 20 de maio de 2020 (DOERJ nº 093, de 26.05.2020). Alterada pela Portaria CBMERJ nº 1167, de 02 de fevereiro de 2022 (DOERJ nº 023, de 04.02.2022).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -326,8 +325,7 @@ e) quando houver montagem de estrutura temporária com mais de um pavimento, no 
 
 6.2.7 As catracas deverão ser dimensionadas para atender a todo o público e a seu acesso em um tempo máximo de 1 hora. Para este cálculo deverá ser considerada uma capacidade máxima de 660 pessoas por catraca por hora.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Área total |  | Edificação permanente | Estrutura temporária |

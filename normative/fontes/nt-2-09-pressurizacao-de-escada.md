@@ -237,8 +237,7 @@ m) os pavimentos subsolo ou semi-enterrado também devem ser atendidos pela esca
 
 5.2.2.4 A pressurização da escada, elevador de
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | ou similar, para | manter o equilíbrio da porta corta-fogo |  |
@@ -413,8 +412,7 @@ c) na portaria ou guarita de entrada do edifício.
 
 5.3.2.7.8 O sistema de alarme deve permitir seu teste, sem necessariamente operar o sistema de
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | central de alarme e detecção | devem estar localizados |  |
@@ -486,8 +484,7 @@ Fonte: ABNT NBR 14880.
 
 a) A área total a ser considerada na trajetória de escape do ar para fora de um espaço pressurizado,
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tipo de PCF | Tamanho (m) |  | PCF |  |  | PCF |  |
@@ -662,8 +659,7 @@ e) sistema de iluminação de emergência.
 
 ### ANEXO A - CRITÉRIOS PARA OS SISTEMAS DE PRESSURIZAÇÃO
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Ocupação/Uso | Divisão |  | Critério de |  |  | Número de |  | Número de Estágios |
@@ -703,8 +699,7 @@ Observações:
 
 (B) As edificações classificadas como M-9 (presídios e similares) deverão seguir os critérios estabelecidos na NT 4-02 - Edificações destinadas à restrição de liberdade.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Ocupação/Uso | Divisão |  | Critério de |  |  | Número de |  | Número de Estágios |

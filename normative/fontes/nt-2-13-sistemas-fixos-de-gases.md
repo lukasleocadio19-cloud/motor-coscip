@@ -236,8 +236,7 @@ c) quando for adotado um gás ativo em concentrações acima do NOAEL.
 
 5.6.1 Os alarmes pré-descarga devem possuir intensidade sonora 15 dB acima da intensidade sonora em condições normais do ambiente, não podendo ser
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 4.16 Protocolo de Montreal: |  | tratado internacional que |

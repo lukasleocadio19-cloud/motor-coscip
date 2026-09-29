@@ -50,8 +50,7 @@ ANEXOS A - Esquema de compartimentação horizontal B - Figuras
 
 Aprovada pela Portaria CBMERJ nº 1179, de 11 de abril de 2022 (DOERJ nº 069, de 13.04.2022).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |

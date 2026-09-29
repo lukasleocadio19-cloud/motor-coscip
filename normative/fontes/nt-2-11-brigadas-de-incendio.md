@@ -76,8 +76,7 @@ C - Dimensionamento para Brigadista Voluntário de
 
 Incêndio - BVI D - Dimensionamento para Bombeiro Civil - BC
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -596,8 +595,7 @@ b) suspensão temporária: notificação do descredenciamento temporário por es
 
 Tabela 1 - Currículos mínimos para a formação de BC (Fonte: ABNT NBR14608)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | PREVENÇÃO E COMBATE A INCÊNDIO - A.1 |  |  |  |  |  |  |  |  |  |
@@ -622,8 +620,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Total 4h Total 8h
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES - A.2 |  |  |  |  |  |  |  |  |  |  |  |
@@ -644,8 +641,7 @@ Total 4h Total 8h
 
 Total 10h Total 6h
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | EPI e EPR - A.3 |  |  |  |  |  |  |  |  |  |  |  |
@@ -678,8 +674,7 @@ Total 10h Total 6h
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | PRODUTOS PERIGOSOS - A.5 |  |  |  |  |  |  |  |  |  |  |  |
@@ -741,8 +736,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Tabela 2 - Currículo mínimo para atualização de BC
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 06 Estado de Choque | - Conhecer os sinais e sintomas do estado de choque e aplicar as técnicas básicas de tratamento. | 30 min. | Aplicar as técnicas de cuidados básicos do estado de choque. | 30 min. |
@@ -792,8 +786,7 @@ noções básicas da ciência do fogo
 
 ### NOÇÕES DE PRIMEIROS SOCORROS
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Assunto - Teoria |  |  |  |  |
@@ -841,8 +834,7 @@ noções básicas da ciência do fogo
 
 ### ANEXO C - DIMENSIONAMENTO PARA BRIGADISTA VOLUNTÁRIO DE INCÊNDIO - BVI
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | Divisão |  | Composição da Brigada de Incêndio Voluntária * |  |  |
@@ -906,8 +898,7 @@ noções básicas da ciência do fogo
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo |  | Divisão |  | Composição da Brigada de Incêndio Voluntária* |  |
@@ -953,8 +944,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | Divisão | Descrição |  | Composição da Brigada de Incêndio Voluntária* |  |  |
@@ -996,8 +986,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  | Descrição | Composição da Brigada de Incêndio Voluntária * |  |
@@ -1036,8 +1025,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Composição da Brigada de Incêndio Voluntária * |  |
@@ -1068,8 +1056,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 ### ANEXO D - DIMENSIONAMENTO PARA BOMBEIRO CIVIL - BC
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Composição da Brigada de Incêndio |  |  |
@@ -1117,8 +1104,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Composição da Brigada de Incêndio |  |  |  |
@@ -1166,8 +1152,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão |  | Composição da Brigada de Incêndio | Composição da Brigada de Incêndio |  |  |
@@ -1234,8 +1219,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Composição da Brigada de Incêndio |  |  |  |  |
@@ -1277,8 +1261,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo |  | Ocupação/Uso | Divisão | Descrição | Composição da Brigada de Incêndio |  |  |  |  |  |  |  |  |  |

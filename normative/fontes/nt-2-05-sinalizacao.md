@@ -188,8 +188,7 @@ Obs. 1: Deverá ser adotada nas áreas comuns, por exemplo: salão de festas, ce
 
 Obs. 2: Deverá ser adotada, conforme cada caso, nas centrais de GLP, salas de geradores, subestações,
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Edificações |  | Orientação e |  | Proibição / alerta |
@@ -364,8 +363,7 @@ Tabela 2 - Cores de segurança e contraste
 
 Fonte: ABNT NBR 16820.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Nível | Sinalização retangular | Sinalização quadrada e triangular | Sinalização circular |
@@ -395,8 +393,7 @@ Tabela 3 - Sinalização de proibição
 
 Fonte: ABNT NBR 16820.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Código | Símbolo | Significado | Forma e cor | Aplicação |
@@ -417,8 +414,7 @@ Tabela 4 - Sinalização de alerta
 
 Fonte: ABNT NBR 16820.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Código | Símbolo | Significado | Forma e cor | Aplicação |
@@ -441,8 +437,7 @@ Tabela 5 - Sinalização de orientação e salvamento (continua)
 
 Fonte: ABNT NBR 16820.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Código | Símbolo | Significado | Forma e cor | Aplicação |
@@ -466,8 +461,7 @@ Tabela 5 (continuação)
 
 Fonte: ABNT NBR 16820.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Código | Símbolo | Significado | Forma e cor | Aplicação |
@@ -492,8 +486,7 @@ Tabela 5 (continuação)
 
 Fonte: ABNT NBR 16820.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Código | Símbolo | Significado | Forma e cor | Aplicação |
@@ -515,8 +508,7 @@ Tabela 5 (conclusão)
 
 Fonte: ABNT NBR 16820.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Código | Símbolo | Significado | Forma e cor | Aplicação |
@@ -536,8 +528,7 @@ Tabela 6 - Sinalização de equipamentos (continua)
 
 Fonte: ABNT NBR 16820.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Código | Símbolo | Significado | Forma e cor | Aplicação |
@@ -559,8 +550,7 @@ Tabela 6 (continuação)
 
 Fonte: ABNT NBR 16820.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Código | Símbolo | Significado | Forma e cor | Aplicação |
@@ -582,8 +572,7 @@ Tabela 6 (conclusão)
 
 Fonte: ABNT NBR 16820.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Código | Símbolo | Significado | Forma e cor | Aplicação |
@@ -604,8 +593,7 @@ Tabela 7 - Dimensões dos símbolos de sinalização
 
 Fonte: ABNT NBR 16820.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Sinal | Forma geométrica | Cota | Relação entre dimensão e distância de visualização |  |  |  |  |  |  |
@@ -632,8 +620,7 @@ Todas as palavras e sentenças devem apresentar letras em caixa alta utilizando 
 
 Fonte: ABNT NBR 16820.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Altura mínima | Distância de leitura com | Altura mínima | Distância de leitura com maior impacto m |

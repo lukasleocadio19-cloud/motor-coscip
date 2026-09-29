@@ -52,8 +52,7 @@ A - Tabela de índices das distâncias de segurança
 
 B - Exemplos
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | NOTA TÉCNICA |  | CBMERJ |  |
@@ -208,8 +207,7 @@ d) possuam as laterais totalmente abertas, podendo ou não ter proteções later
 
 6.2 Eventuais interligações existentes entre edificações não serão consideradas na caracterização de passagens cobertas caso possuam construções em suas áreas adjacentes ou haja guarda de equipamentos, linha de produção ou estacionamento de veículos.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Classificação | Risco |
@@ -232,8 +230,7 @@ D = α x (L ou H)* + 1,5
 
 Fonte: NFPA 80 A.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Risco |  |  | Relação Largura/Altura (ou inversa) - “X” |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |

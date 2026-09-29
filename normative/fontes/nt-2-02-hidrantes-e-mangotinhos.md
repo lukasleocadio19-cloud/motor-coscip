@@ -65,8 +65,7 @@ B - Modelo de planilha de cálculo
 
 C - Modelo de Termo de compromisso
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -253,8 +252,7 @@ Fonte: CBMERJ
 
 5.2.6 Complementarmente ao item anterior, seu acesso deverá estar voltado para cima em ângulo de 45º e posicionada, no máximo, a 0,15 m de profundidade em relação ao piso do passeio, conforme Figura 2.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Classificação | Esguicho |  | Mangueira |  |  | Hidrantes | Pressão de | Vazão |
@@ -308,8 +306,7 @@ Fonte: COSCIP.
 
 5.3.2 As mangueiras de incêndio deverão estar acondicionadas dentro dos abrigos, conforme NBR 12779 e as mangueiras de incêndio semirrígidas deverão ser enroladas com o uso de carretéis axiais.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Materiais | Alvenaria de Tijolo | Alumínio Anodizado | Chapa Tratada | Fibra de Vdiro | Madeira |
@@ -457,8 +454,7 @@ Fonte: NBR 13714.
 
 5.7.8 A velocidade máxima da água na tubulação não deve ser superior a 5 m/s (considerando sucção e recalque) a qual deverá ser calculada pela seguinte
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tipo de Tubo | Fator "C" |
@@ -743,8 +739,7 @@ Fonte: CBMERJ.
 
 5.13.5 As mangueiras serão de 38 mm (1 ½”) ou de 63 mm (2 ½”) de diâmetro interno, flexíveis, de fibra
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | LINHAS DE MANGUEIRA |  |
@@ -811,8 +806,7 @@ Fonte: CBMERJ.
 
 5.15.11 Serão aceitas as instalações de incêndio em polietileno de alta densidade (PEAD), desde que enterrados a 0,90 m do piso acabado, quando não houver trânsito de veículos e a 1,20 m do piso acabado, quando houver trânsito de veículos no local. Estes, quando aparentes e externos a edificação, deverão promover a transição para FG, FF ou AC a no
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Classificação de Risco | Sucção | Recalque | Alívio |

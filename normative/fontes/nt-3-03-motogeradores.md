@@ -50,8 +50,7 @@ metodo: "extração textual por blocos; tabelas convertidas para Markdown; marca
 
 Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019 (DOERJ nº 167, de 04/09/2019) Alterada pela Portaria CBMERJ nº 1317, de 10 de dezembro de 2025 (DOERJ nº 229, de 12/12/2025)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | NOTA TÉCNICA |  | CBMERJ |  |
@@ -272,8 +271,7 @@ a) no caso de tanques de superfície, deverá ser observado o afastamento mínim
 
 b) no caso de tanques enterrados, deverá ser previsto o afastamento mínimo de 4,00 m entre tanques e de 1,00 m entre o costado do tanque e a projeção de
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Pavimento |  | Capacidade do |  |  | Capacidade do |  |
@@ -337,8 +335,7 @@ a) nas salas que abrigam os motogeradores e os tanques de óleo diesel, deverão
 
 b) nas salas destinadas ao bombeamento de óleo diesel, quando houver, deverá ser prevista quantidade de extintores na proporção de 01 aparelho extintor do tipo pó químico ABC, com capacidade extintora mínima de 20-B:C.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Capacidade do tanque |  |  | Período de aplicação do LGE |  |

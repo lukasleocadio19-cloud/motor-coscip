@@ -68,8 +68,7 @@ B - Tipos de escadas de emergência
 
 C - Distâncias máximas a serem percorridas
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -426,8 +425,7 @@ f) ter pé direito mínimo de 2,30 m.
 
 5.4.3 Quando houver exigência de uma escada e for utilizado o recurso arquitetônico de construir duas escadas em um único corpo, estas serão consideradas como uma única escada, quanto aos critérios de acesso, ventilação e iluminação.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | disponham de dispositivo de fechamento | automático |
@@ -768,8 +766,7 @@ Figura 10 - Dimensões de guardas e corrimãos
 
 a) ter afastamento menor que 0,11 m entre balaústres verticais, longarinas intermediárias, grades, telas, vidros de segurança laminados ou aramados e outros;
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Desníveis |  | Inclinação admissível em cada segmento de rampa (i %) |  | Número |  |
@@ -1055,8 +1052,7 @@ r) os teatros, cinemas, auditórios, boates e salões diversos terão suas lota�
 
 ### ANEXO A - DADOS PARA O DIMENSIONAMENTO DAS SAÍDAS DE EMERGÊNCIA
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Ocupação | Divisão | População (A) | Capacidade da Unidade de passagem (B) |  |  |  |  |  |  |
@@ -1109,8 +1105,7 @@ Observações: (A) As edificações com 06 pavimentos devem adotar escada de eme
 
 Os parâmetros dados nesta Tabela são os mínimos aceitáveis para o cálculo da população.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Classificação da edificação |  | Tipos de escadas x Nº de pavimentos |  |  |  |  |  |  |
@@ -1172,8 +1167,7 @@ ocupações Serviço de Saúde acima de 2 pavimentos. Fonte: CBMERJ.
 
 Observações: A) Edificações exclusivamente térreas das divisões G-1, G-2, I-1, I-2, J-1, J-2, J-3 e J-4 terão suas distâncias máximas a serem percorridas acrescidas de 100%, desde que possuam controle de fumaça de acordo com a Instrução Técnica CB-15 (ver item 5.5.2.9 e 5.5.2.9.1). B) Para a divisão F-3, onde o local se trata de recintos esportivos, de eventos e de exibição, deve ser consultada a NT 5-01 - Centros esportivos, de eventos e de exibição. C) Para que ocorram as distâncias previstas neste anexo e notas acima, é necessária a apresentação de leiaute definido em planta baixa (de salão aberto, sala de eventos, escritório panorâmico, galpões e outros). Do contrário, as distâncias definidas acima serão reduzidas a 30%. D) Exemplos de edificações: α) prédios estruturados em madeira, prédios com entrepisos de ferro e madeira, pavilhões em arcos de madeira laminada e outros; β) edificações com paredes-cortinas de vidro; edificações com janelas sem peitoris (distância entre vergas e peitoris das aberturas do andar seguinte menor que 1,00 m); lojas com galerias elevadas e vãos abertos e outros; γ) Prédios com concreto armado calculado para resistir ao fogo, com divisórias incombustíveis, sem divisórias leves, com parapeitos de alvenaria sob as janelas ou com abas prolongando os entrepisos e outros. E) para admitir os valores da coluna “mais de uma saída” deve haver uma distância mínima de 10 m entre elas; F) nas áreas técnicas (locais destinados a equipamentos, sem permanência humana e de acesso restrito), a distância máxima a ser percorrida deve ser medida a partir da porta de entrada das mesmas. G) nas edificações destinadas à restrição de liberdade, divisão M-9, para os locais de acesso restrito, a distância máxima a ser percorrida para atingir um local de relativa segurança (espaço livre exterior, área de refúgio, área compartimentada com uma saída direta para o espaço livre exterior, escada à prova de fumaça) ou para saída da edificação deve seguir o previsto na NT 4-02 - Edificações destinadas à restrição de liberdade. Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tipo de edificação | Grupo e divisão de ocupação | Pavimento | Sem chuveiros ou sem detectores automáticos |  | Com chuveiros ou com detectores automáticos |  |

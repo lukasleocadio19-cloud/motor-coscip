@@ -53,8 +53,7 @@ A - Posicionamento da sinalização de segurança
 
 B - Valores-limites de concentração para CO/NOx e de visibilidade em túnel
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -433,8 +432,7 @@ Tabela 2 - Posicionamento da sinalização de segurança para túneis ferroviár
 
 Fonte: ABNT NBR 15981:2011.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Tipo |  |  | Localização |  |  | Posição |  |  | Distanciamento máximo (m) |  |
@@ -468,8 +466,7 @@ Tabela 3 - Valores-limites de concentração para CO/NOx e de visibilidade em t�
 
 Fonte: ABNT NBR 15661:2012.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Gases / Visibilidade |  | Concentração (ppm) |  |  | Concentração (ppm) |  |

@@ -169,8 +169,7 @@ Fonte: CBMERJ.
 
 Figura 3 - Área livre em frente ao elevador
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Distância entre o ponto de |  | Largura mínima do vão livre de passagem (m) |

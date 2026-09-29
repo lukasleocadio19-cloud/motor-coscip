@@ -28,6 +28,8 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "httpx>=0.27", "hypothesis>=6.100", "ruff>=0.6", "mypy>=1.11"]
+# ferramentas da base normativa (F2): renderizar páginas e extrair tabelas dos PDFs oficiais
+normas = ["pypdfium2>=4.30", "pdfplumber>=0.11", "rapidfuzz>=3.9", "pillow>=10.4"]
 
 [project.scripts]
 coscip-launcher = "coscip_api.launcher:main"

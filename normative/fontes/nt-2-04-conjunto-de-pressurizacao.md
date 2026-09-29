@@ -150,8 +150,7 @@ específicas desta seção.
 
 4.17 Válvula de alívio: válvula próxima à descarga da bomba de incêndio utilizada para limitar a pressão do sistema de proteção contra incêndio, em condições anormais.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | bomba na qual a pressão de |
@@ -229,8 +228,7 @@ Fonte: CBMERJ.
 
 5.1.10.2 O diferencial de pressão entre os acionamentos sequenciais da bomba principal ou reserva e da bomba jockey deve ser de 100 KPa,
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Risco | Diâmetro |
@@ -314,8 +312,7 @@ h) potência, em CV.
 
 5.2.5 As baterias do motor a explosão, localizadas na casa de máquinas de incêndio, devem ser mantidas carregadas por sistema de flutuação automática, por meio de carregador duplo de baterias. O sistema de flutuação deve ser capaz de atender, independentemente, aos dois jogos de baterias (principal
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Risco | Sucção | Recalque | Alívio |
@@ -503,8 +500,7 @@ U - União ou Flange (dispositivos mecânicos para facilitar a retirada das bomb
 
 A - Válvula de Alívio (dispositivo hidráulico de abertura por pressão).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Dispositivos | Riscos |  |  |

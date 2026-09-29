@@ -72,8 +72,7 @@ A - Relação das atividades não enquadradas no risco diferenciado
 
 B - Relação de unidades de atendimento
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -1232,8 +1231,7 @@ nome completo e função.
 
 ### ANEXO A - RELAÇÃO DAS ATIVIDADES NÃO ENQUADRADAS NO RISCO DIFERENCIADO
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | CNAE | Descrição |
@@ -1318,8 +1316,7 @@ nome completo e função.
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 26xx-x/xx | Fabricação de equipamentos de informática, produtos eletrônicos e óptico |
@@ -1421,8 +1418,7 @@ Tabela 5 - Unidade especializada em prevenção em estádios
 
 Tabela 6 - Unidade com atendimento de FARE
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Unidade |  |  | Endereço |  |

@@ -268,8 +268,7 @@ f) existência de canal de comunicação fidedigno entre o heliponto e administr
 
 Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Tipo de |  |  | Resistência do piso da área |  | Quantidade de extintores | Capacidades extintoras |

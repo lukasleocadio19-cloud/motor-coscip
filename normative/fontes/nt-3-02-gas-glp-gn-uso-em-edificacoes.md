@@ -319,8 +319,7 @@ d) ter altura interna útil de 1,80 m, no mínimo;
 
 e) possuir um dos lados de maior dimensão totalmente aberto para acesso aos recipientes e ventilação. Esta
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Central |  | Cor da tubulação |  |  |  |  |
@@ -387,8 +386,7 @@ c) construção das estruturas com TRRF mínimo de 120 min, conforme NT 2-19 - S
 
 5.4.1 A central de GLP deve ser protegida por extintores de incêndio de capacidade extintora mínima de
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Capacidade do recipiente |  |  | Afastamento mínimo (d) |  |
@@ -458,8 +456,7 @@ Figura 5 - Afastamento de segurança para central de
 
 GLP com interposição de parede resistente ao fogo.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Capacidade total da central (Kg) | Quantidade e capacidade extintora |  |
@@ -468,6 +465,20 @@ GLP com interposição de parede resistente ao fogo.
 | ≤ 270 | 01 (um) 20-B:C ou 01 (um) PQS-6 Kg | Não exigido |
 | > 270 a 1800 | 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg | Não exigido |
 | > 1800 | 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg | 01 (um) 80-B:C ou 01 (um) PQS-50 Kg |
+
+<!-- tabela-conferida: Tabela 3 p7 -->
+### Tabela 3 — Proteção por extintores para central de GLP (conferida)
+
+| Capacidade total da central (Kg) | Quantidade e capacidade extintora — Extintor Portátil | Quantidade e capacidade extintora — Extintor sobre rodas |
+| --- | --- | --- |
+| ≤ 270 | 01 (um) 20-B:C ou 01 (um) PQS-6 Kg | Não exigido |
+| > 270 a 1800 | 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg | Não exigido |
+| > 1800 | 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg | 01 (um) 80-B:C ou 01 (um) PQS-50 Kg |
+
+Fonte: NT 3-02, página 7, Tabela 3; conferida em 2026-09-29 (visual + texto).
+Fonte: CBMERJ.
+"Quantidade e capacidade extintora" é célula mesclada sobre as colunas Extintor Portátil e Extintor sobre rodas.
+<!-- /tabela-conferida: Tabela 3 p7 -->
 
 ---
 
@@ -519,8 +530,7 @@ Fonte: ABNT NBR 13523:2019
 
 5.6.4 É vedada a instalação das tomadas para abastecimento em caixas ou galerias subterrâneas e próximas de depressões do solo, valetas para captação de
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Local |  | Afastamento |  |
@@ -721,8 +731,7 @@ Tabela 1 - Afastamentos mínimos de segurança para recipientes transportáveis 
 
 Fonte: ABNT NBR 13523:2019, adaptado por CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Afastamentos de segurança (m) para recipientes transportáveis e estacionários (m) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -759,8 +768,7 @@ Tabela 4 - Afastamentos mínimos de segurança para estocagem de hidrogênio
 
 Fonte: ABNT NBR 13523:2019, adaptado por CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Central de |  |  | Divisa de |  | Passeio público (obs.: b, d) |  | Quantidade total de recipientes transportáveis |  |  |  |  |

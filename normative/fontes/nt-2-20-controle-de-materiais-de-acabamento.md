@@ -63,8 +63,7 @@ A - Tabelas de classificação dos materiais
 
 B - Utilização dos materiais conforme a classificação da edificação
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -303,8 +302,7 @@ Legenda: Dm - Densidade óptica específica máxima corrigida. Fluxo crítico - 
 
 Fonte: ABNT NBR 15575:2013 - Edificações habitacionais - Desempenho.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Método de Ensaio |  |  |  | ISO 1182 | NBR 8660 | EN ISO 11925-2 (exposição de 15 s) | ASTM E 662 |
@@ -333,8 +331,7 @@ Legenda: Dm - Densidade óptica específica máxima corrigida. Ip - Índice de p
 
 Fonte: ABNT NBR 15575:2013 - Edificações habitacionais - Desempenho.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Método de Ensaio |  |  | ISO 1182 | NBR 9442 | ASTM E 662 |
@@ -383,8 +380,7 @@ FS - Tempo em que a frente da chama leva para atingir a marca de 150 mm indicada
 
 Fonte: ABNT NBR 15575:2013 - Edificações habitacionais - Desempenho.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Método de Ensaio |  |  |  | ISO 1182 | EN 13823 (SBI) | EM ISO 11925-2 (exposição = 30 s) |
@@ -429,8 +425,7 @@ estão aplicados;
 
 Fonte: ABNT NBR 15575:2013.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  | Finalidade do material |  |  |  |  |

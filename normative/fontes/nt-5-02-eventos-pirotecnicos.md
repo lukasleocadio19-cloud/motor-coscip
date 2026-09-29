@@ -40,8 +40,7 @@ E v e n t o s p i r o t é c n i c o s
 
 2 0 2 5
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | PROJETO DE REVISÃO/2025 NOTA TÉCNICA CBMERJ |  |
@@ -270,8 +269,7 @@ e) áreas de proteção ambiental.
 
 7.3 Excetuam-se dos distanciamentos previstos no item 7.2, os postos de abastecimento de combustíveis
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Fire machine: equipamento de efeitos especiais |
@@ -498,8 +496,7 @@ Obs.: Para aplicar as distâncias reduzidas indicadas na coluna "tubo de lançam
 
 Fonte: Lei n° 5390/2009, combinada com o REG/T 03 do Exército Brasileiro.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Calibre nominal do tubo de |  |  |  |  | Distância - tubo de lançamento (m) | Distância - tubo de lançamento inclinado (m) |

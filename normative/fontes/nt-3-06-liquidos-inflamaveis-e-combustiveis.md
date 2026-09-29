@@ -62,8 +62,7 @@ Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019
 
 A - Tabelas
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -228,8 +227,7 @@ combustíveis
 
 6.1.4.5 Todos os tanques destinados ao armazenamento de líquidos combustíveis e inflamáveis deverão possuir localização em relação aos limites de propriedade, vias de circulação interna e edificações de acordo com o previsto nas Tabelas 1,
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Líquidos | Ponto de fulgor |  | Ponto de |  |
@@ -306,8 +304,7 @@ c) o espaçamento entre tanques adjacentes não pode ser inferior a 1 m;
 
 d) a capacidade volumétrica mínima descrita nas alíneas “a” e “b” de 6.2.2 deve ser obtida através do somatório da capacidade individual das contenções primária e secundária.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Diâmetro do tanque |  | Tanques |  |  | Tanques verticais com teto |  |  |  |  |
@@ -472,8 +469,7 @@ c) aplicadores manuais.
 
 6.3.3.3.2 A taxa de aplicação manual de solução de espuma, para a área da bacia de contenção, em incêndio envolvendo hidrocarbonetos, deve ser de 6,50 l/min/m2, com o tempo de aplicação de 30 min para hidrocarbonetos de classe I e de 20 min para hidrocarbonetos de classe II; para solventes polares, as taxas devem ser aquelas recomendadas pelos fabricantes do líquido gerador de espuma (LGE).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Diâmetro do maior | Número mínimo de aplicadores |
@@ -601,8 +597,7 @@ Tabela 9 - Área a ser resfriada dos tanques vizinhos por
 
 aspersores
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tipo de tanque | Classe do líquido | Altura do tanque vertical ou altura da geratriz superior do tanque horizontal (m) | Capacidade do tanque (m³) |  |  |
@@ -701,8 +696,7 @@ Sistemas alternativos de proteção contra incêndios, podem ser utilizados, des
 
 6.4.2 A taxa e o tempo de aplicação de solução de
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Distância entre costados | Taxa a, b |
@@ -798,8 +792,7 @@ Fonte - ABNT NBR 17505.
 
 7.3.2 Nas áreas controláveis de armazenamento as quantidades podem ser aumentadas em 100 % onde o
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tipo de espuma |  | Taxa |  |  | Tempo |  | Produto armazenado |
@@ -889,8 +882,7 @@ b) no mínimo um extintor portátil com capacidade extintora mínima de 40:B, de
 
 7.5.3 A área interna dos diques deverá permanecer livre e desimpedida, não se admitindo a existência de qualquer material estranho a sua
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Andar | Quantidade | Número de áreas controláveis de armazenamento por andar |
@@ -1013,8 +1005,7 @@ Tabela 2 - Localização de tanques de superfície para armazenamento de líquid
 
 Fonte - ABNT NBR 17505.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tipo de tanque |  | Distância mínima até o limite de |  |  | Distância mínima ao lado mais |  |
@@ -1062,8 +1053,7 @@ Tabela 5 - Tabela de referência para ser utilizada nas Tabelas 1, 2 e 3 (quando
 
 Fonte - ABNT NBR 17505.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tipo de tanque |  | Distância mínima até o limite de |  |  | Distância mínima ao lado mais |  |
@@ -1127,8 +1117,7 @@ Tabela 7 - Proteção por extintores de incêndio para tanques
 
 Fonte - ABNT NBR 17505.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tanque de maior capacidade, em operação com líquidos m3 |  | Distância mínima até o limite de |  |  |  |  |  |  | Distância mínima do lado mais próximo de |  |  |  |  |
@@ -1173,8 +1162,7 @@ e exposição em ocupações comerciais
 
 Fonte - ABNT NBR 17505.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | I A |  | III B |

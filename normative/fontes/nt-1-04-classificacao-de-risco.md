@@ -68,8 +68,7 @@ D - Método determinístico para levantamento da carga de incêndio específica 
 
 E - Exemplo de planilha para cálculo da carga de incêndio específica
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -180,8 +179,7 @@ constante do Anexo D (método determinístico). Após o cálculo do valor da car
 
 ### ANEXO A - CLASSIFICAÇÃO DAS EDIFICAÇÕES E ÁREAS DE RISCO QUANTO À OCUPAÇÃO
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
@@ -206,8 +204,7 @@ constante do Anexo D (método determinístico). Após o cálculo do valor da car
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
@@ -230,8 +227,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  |  |
@@ -258,8 +254,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  |  |
@@ -285,8 +280,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Ocupação/Uso |  | Descrição |  |
@@ -345,8 +339,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Fonte: Decreto nº 42/2018 - COSCIP.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
@@ -369,8 +362,7 @@ Fonte: Decreto nº 42/2018 - COSCIP.
 
 ### ANEXO B - CLASSIFICAÇÃO DAS EDIFICAÇÕES E ÁREAS DE RISCO QUANTO AO RISCO DE INCÊNDIO
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Grupo |  |  | Ocupação/Uso |  |  | Divisão |  |  | Descrição |  |  | Risco |  |
@@ -396,8 +388,7 @@ Fonte: Decreto nº 42/2018 - COSCIP.
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Grupo |  |  | Ocupação/Uso |  |  | Divisão |  |  | Descrição |  |  | Risco |  |
@@ -440,8 +431,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Grupo |  |  | Ocupação/Uso |  |  | Divisão |  |  | Descrição |  |  | Risco |  |
@@ -456,8 +446,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Grupo |  |  | Ocupação/Uso |  |  | Divisão |  |  | Descrição |  |  | Risco |  |
@@ -473,8 +462,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Grupo |  |  | Ocupação/Uso |  |  | Divisão |  |  | Descrição |  |  | Risco |  |
@@ -489,8 +477,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Grupo |  |  | Ocupação/Uso |  |  | Divisão |  |  | Descrição |  |  | Risco |  |
@@ -522,8 +509,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Tabela 1 - Carga de incêndio relativa à altura de armazenamento (Depósitos)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Carga de Incêndio (qfi) em MJ/m2 |  |  |  |  |  |
@@ -601,8 +587,7 @@ Tabela 2 - Parâmetros para definição da classificação de risco
 
 Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Carga de Incêndio (qfi) em MJ/m2 |  |  |  |  |  |
@@ -669,8 +654,7 @@ Tipo de material Hi (MJ/kg) Acetileno 50 Dietilcetona 34 Metano 50 Acetileno dis
 
 Observação: Os valores de materiais não listados nesta tabela poderão ser apresentados pelo responsável técnico, desde que citada a fonte bibliográfica.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Hi |
@@ -818,8 +802,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Observações: 1 - Constante da Tabela E 2 - Massa total de cada material multiplicado pelo potencial calorífico específico 3 - Somatória de todos os potenciais caloríficos considerados 4 - Total do potencial calorífico do pavimento dividido pela Área do piso do pavimento = (qfi)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tipo do material existente na edificação por compartimento |  | Massa total de cada material Mi - (kg) |  | Potencial |  | Potencial calorífico por material² Mi x Hi = qi (MJ) |

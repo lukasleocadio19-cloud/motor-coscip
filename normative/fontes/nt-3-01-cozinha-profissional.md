@@ -44,8 +44,7 @@ metodo: "extração textual por blocos; tabelas convertidas para Markdown; marca
 
 Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  | NOTA |  |  | CBMERJ |  |
@@ -176,8 +175,7 @@ do uso de sistema de extinção com dióxido de carbono (CO2).
 
 5.8 Os requisitos básicos do sistema de exaustão macânica são estabelecidos de acordo com a Tabela 2.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | que são arrastados |
@@ -229,8 +227,7 @@ e) plaqueta de identificação do fabricante.
 
 5.9.9 O extintor de incêndio para proteção de ambiente de cozinha profissional será dimensionado
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Requer sistema fixo de extinção de incêndio | Requer sistema fixo de extinção de incêndio |

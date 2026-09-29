@@ -63,8 +63,7 @@ A - Tabelas de distanciamentos de segurança
 
 B - Tabela de nomenclaturas de fogos de artifício
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  | NOTA TÉCNICA |  | CBMERJ |  |
@@ -157,8 +156,7 @@ Para efeito desta Nota Técnica, além das definições constantes da NT 1-02 - 
 
 4.5 Barricada: um anteparo natural ou artificial tecnicamente adequado em tipo, dimensões e construção para limitar, de maneira objetiva, os efeitos de uma explosão eventual sobre as construções, rodovias, ferrovias, a ela adjacentes.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | m aceiro é uma abertura na vegetação |
@@ -400,8 +398,7 @@ produtos químicos utilizados na fabricação de explosivos
 
 Tabela 2 - Distanciamentos de segurança para iniciadores
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Peso Líquido |  |  | Distâncias Mínimas (m) |  |  |  |  |
@@ -444,8 +441,7 @@ Tabela 2 - Distanciamentos de segurança para iniciadores
 
 Tabela 3 - Distanciamentos de segurança para explosivos
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Peso Líquido |  |  |  | Distâncias Mínimas (m) |  |  |  |  |
@@ -510,8 +506,7 @@ Tabela 4 - Distanciamentos de segurança para artefatos pirotécnicos -
 
 perigo de fogo e pequeno risco de explosão
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Peso Líquido |  |  |  | Distâncias Mínimas (m) |  |  |  |  |
@@ -553,8 +548,7 @@ Fonte: REGT/02 - Exército Brasileiro. Observações: (a) Nome genérico, usual 
 
 50 mm.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Nome | Descrição | Efeito principal | Exemplos |

@@ -1,0 +1,62 @@
+# Imagens de página e caminho geométrico das tabelas (plano de correção, F2.1/F2.2).
+# Manual: baixa os PDFs oficiais (confere o SHA-256 capturado), renderiza as páginas que os
+# .md citam e ainda não existem, extrai as tabelas com pdfplumber e faz commit na própria
+# branch em que foi disparado. Nada é resolvido em silêncio: o estado de cada tabela é
+# recalculado e divergências ficam no arquivo.
+name: Normas — imagens e tabelas
+
+on:
+  # push deste arquivo numa branch de trabalho também dispara (workflow_dispatch só aparece
+  # depois que o arquivo chega à branch padrão)
+  push:
+    branches: ["claude/**", "fase/**"]
+    paths: [".github/workflows/normas-midia.yml", "normative/tabelas/**/*.yaml"]
+  workflow_dispatch:
+    inputs:
+      documento:
+        description: "Só um documento (ex.: NT 2-01); vazio = todos"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  midia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements/dev.lock
+      - run: |
+          python -m pip install --require-hashes -r requirements/dev.lock
+          python -m pip install -e . --no-deps
+      - uses: actions/cache@v4
+        with:
+          path: pdfs
+          key: pdfs-oficiais-${{ hashFiles('normative/manifests/base.yaml') }}
+          restore-keys: pdfs-oficiais-
+      - name: Renderizar e extrair
+        run: |
+          args="--imagens --tabelas --cache pdfs"
+          if [ -n "${{ inputs.documento || '' }}" ]; then args="$args --documento '${{ inputs.documento }}'"; fi
+          eval python -m tools.normas.render_paginas $args | tee render.log
+          python -m tools.normas.tabelas comparar
+          python -m tools.normas.tabelas publicar
+          python -m tools.normas.tabelas relatorio
+          python -m tools.normas.manifesto
+          python -m tools.normas.indice_itens
+          cat render.log >> "$GITHUB_STEP_SUMMARY"
+      - name: Testes da base
+        run: python -m pytest -p no:cacheprovider -q tests/unit/test_base_manifest.py tests/unit/test_tabelas.py tests/unit/test_skills_pack.py
+      - name: Commit na branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add normative
+          if git diff --cached --quiet; then echo "nada novo"; exit 0; fi
+          git commit -m "F2: imagens de página e tabelas extraídas dos PDFs oficiais (workflow normas-midia)"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

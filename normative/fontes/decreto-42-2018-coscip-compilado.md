@@ -111,8 +111,7 @@ Seção II Da Aplicação Art. 3º - A regularização das edificações e área
 
 II - a mudança na ocupação ou outra qualquer nos registros da atividade;
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | CONSIDERANDO: |  |
@@ -813,8 +812,7 @@ LXXV- via interna: via privada para acesso às unidades de agrupamentos; LXXVI- 
 
 Tabela 1: Classificação das edificações e áreas de risco quanto à ocupação
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
@@ -839,8 +837,7 @@ Tabela 1: Classificação das edificações e áreas de risco quanto à ocupaç�
 
 Tabela 1 - Continuação
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
@@ -861,8 +858,7 @@ Tabela 1 - Continuação
 
 Tabela 1 - Continuação
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Ocupação/Uso |  |  |  |
@@ -888,8 +884,7 @@ Tabela 1 - Continuação
 
 Tabela 1 - Continuação
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  |  |
@@ -914,8 +909,7 @@ Tabela 1 - Continuação
 
 Tabela 1 - Continuação
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso |  | Descrição |  |
@@ -973,8 +967,7 @@ Tabela 1 - Continuação
 
 Tabela 1 - Continuação
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
@@ -998,8 +991,7 @@ Tabela 1 - Continuação
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 2 - Exigências para edificações com área menor ou igual a 900m² e até 02 pavimentos. |  |  |  |  |  |  |  |  |  |  |  |
@@ -1036,8 +1028,7 @@ Tabela 1 - Continuação
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 3 - Exigências para edificações do grupo A (divisões A-2 e A-3) com área superior a 900m² |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1081,8 +1072,7 @@ Tabela 1 - Continuação
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 4 - Exigências para agrupamento de edificações do grupo A |  |  |  |
@@ -1115,8 +1105,7 @@ Tabela 1 - Continuação
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 5 - Exigências para edificações do grupo A (divisão A-6) com área superior a 900m² |  |  |  |  |  |  |
@@ -1166,8 +1155,7 @@ Tabela 1 - Continuação
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 6 - Exigências para edificações do grupo B com área superior a 900 m² ou superior a 02 pavimentos |  |  |  |  |  |  |
@@ -1216,8 +1204,7 @@ Tabela 1 - Continuação
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 7 - Exigências para edificações do grupo C com área superior a 900 m² ou superior a 02 pavimentos |  |  |  |  |  |  |
@@ -1266,8 +1253,7 @@ Tabela 1 - Continuação
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 8 - Exigências para edificações do grupo D com área superior a 900 m² ou superior a 02 pavimentos. |  |  |  |  |  |  |
@@ -1316,8 +1302,7 @@ Tabela 1 - Continuação
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 9 - Exigências para edificações do grupo E com área superior a 900 m² ou superior a 02 pavimentos |  |  |  |  |  |  |
@@ -1366,8 +1351,7 @@ Tabela 1 - Continuação
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 10 - Exigências para edificações do grupo F (divisões F-1 e F-2) com área superior a 900 m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1425,8 +1409,7 @@ Tabela 1 - Continuação
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 11 - Exigências para edificações do grupo F (divisões F-3, F-4 e F-9) com área superior a 900m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1514,8 +1497,7 @@ Tabela 1 - Continuação
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 12 - Exigências para edificações do grupo F (divisões F-5, F-8 e F-11) com área superior a 900 m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1576,8 +1558,7 @@ Tabela 1 - Continuação
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 13 - Exigências para edificações do grupo F (divisões F-7 e F-10) com área superior a 900m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1634,8 +1615,7 @@ Tabela 1 - Continuação
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 14 - Exigências para edificações do grupo F (divisão F-6) com área superior a 900m2 |  |  |  |  |  |  |
@@ -1685,8 +1665,7 @@ Tabela 1 - Continuação
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 15 - Exigências para edificações do grupo G (divisões G-1 e G-2) com área superior a 900m2 |  |  |  |  |  |  |
@@ -1757,8 +1736,7 @@ Tabela 1 - Continuação
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 16 - Exigências para edificações do grupo G (divisões G-3 e G-4) com área superior a 900 m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1818,8 +1796,7 @@ Tabela 1 - Continuação
 
 .
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 17 - Exigências para edificações do grupo G (divisões G-5 e G-6) com área superior a 900 m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1899,8 +1876,7 @@ Tabela 1 - Continuação
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 18 - Exigências para edificações do grupo H (divisões H-1 e H-2) com área superior a 900 m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1956,8 +1932,7 @@ Tabela 1 - Continuação
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 19 - Exigências para edificações do grupo H (divisões H-3 e H-4) com área superior a 900 m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -2016,8 +1991,7 @@ Tabela 1 - Continuação
 
 do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 20 - Exigências para edificações do grupo I (divisões I-1 e I-2) com área superior a 900m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -2073,8 +2047,7 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 21 - Exigências para edificações do grupo I (divisão I-3) com área superior a 900m2 |  |  |  |  |  |  |
@@ -2126,8 +2099,7 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 22 - Exigências para edificações do grupo J (divisões J-1 e J-2) com área superior a 900m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -2184,8 +2156,7 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 23 - Exigências para edificações do grupo J (divisões J-3 e J-4) com área superior a 900m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -2241,8 +2212,7 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 24 - Exigências para edificações do grupo L (divisão L-1) com área superior a 900m2 |  |  |  |  |  |  |
@@ -2326,8 +2296,7 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 25 - Exigências para edificações e áreas de risco do grupo M (divisão M-1) com qualquer área |  |  |  |  |  |
@@ -2373,8 +2342,7 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 26 - Exigências para edificações e áreas de risco do grupo M (divisão M-2) com qualquer área |  |  |  |  |  |
@@ -2451,8 +2419,7 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 27 - Exigências para edificações do grupo M (divisão M-3) com área superior a 900m2 |  |  |  |  |  |  |
@@ -2515,8 +2482,7 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 28- Exigências para edificações e áreas de risco do grupo M (divisões M-4 e M-7) com qualquer área |  |  |  |  |
@@ -2578,8 +2544,7 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 29 - Exigências para edificações e áreas de risco do grupo M (divisão M-5) qualquer área ou altura |  |
@@ -2635,8 +2600,7 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 30 - Exigências para edificações e áreas de risco do grupo M (divisão M-6) com qualquer área |  |  |  |  |  |  |
@@ -2702,8 +2666,7 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 31 - Exigências para áreas de risco do grupo M (divisão M-8) |  |
@@ -2734,8 +2697,7 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 
 as medidas alternativas estabelecidos em Nota Técnica específica; d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 32 - Exigências para edificações do grupo M (divisão M-9) com qualquer área ou número de pavimentos |  |  |  |  |  |  |
@@ -2785,8 +2747,7 @@ as medidas alternativas estabelecidos em Nota Técnica específica; d) Observar 
 
 Tabela 33 - Valores de multas previstas no TAC em função da área total construída (ATC) e risco de incêndio
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 33 - Valores de multas previstas no TAC em função da área total construída (ATC) e risco de incêndio dos imóveis, estabelecimentos e áreas de risco |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |

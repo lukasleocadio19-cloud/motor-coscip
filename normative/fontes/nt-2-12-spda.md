@@ -43,8 +43,7 @@ Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019 (DOERJ nº 167, 
 
 Alterada pela Portaria CBMERJ nº 1179, de 11 de abril de 2022 (DOERJ nº 069, de 13.04.2022).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |

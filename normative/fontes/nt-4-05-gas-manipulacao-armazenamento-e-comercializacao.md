@@ -77,8 +77,7 @@ D - Figuras referentes a afastamentos
 
 E - Afastamentos de segurança para armazenamento de recipientes transportáveis para substituição em empilhadeiras e outros veículos movidos a GLP
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -227,8 +226,7 @@ a) válvulas de bloqueio (válvulas de fechamento rápido com comando manual e �
 
 b) válvula de bloqueio por excesso de fluxo instalada na saída do recipiente que abastece uma tubulação;
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | entrada de |
@@ -278,8 +276,7 @@ Fonte: IT 28/2018 - CBPMESP - Adaptado.
 
 5.1.14 Os afastamentos entre os tanques com capacidade volumétrica maior ou igual a 8 m³ não
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Capacidade |  | Entre tanques (m) |  | Edificações e |  |
@@ -334,8 +331,7 @@ Fonte: ABNT NBR 15514 - Adaptado.
 
 Tabela 4 - Proteção por extintores para área de armazenamento de recipientes transportáveis de GLP
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Classe | Capacidade de Armazenamento (kg de GLP) |  |  | Capacidade de |  |
@@ -380,6 +376,61 @@ Tabela 4 - Proteção por extintores para área de armazenamento de recipientes 
 | VI | 10 | 40 - B:C |  |  |
 | Especial | 12 | 40 - B:C |  |  |
 | Obs.: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15 m para alcançar o equipamento. |  |  |  |  |
+
+<!-- tabela-conferida: Tabela 2 p6 -->
+### Tabela 2 — Proteção por extintores para área de bases de armazenamento de GLP em recipientes estacionários, envasamento e distribuição de GLP (conferida)
+
+| Capacidade volumétrica (m³) | Extintor portátil (quantidade e capacidade extintora) | Extintor sobre rodas (quantidade e capacidade extintora) |
+| --- | --- | --- |
+| Até 0,50 | 01 20-B:C | - |
+| 0,5 até 3,5 | 02 20-B:C | - |
+| 3,51 até 6,00 | 02 20-B:C | 01 80-B:C |
+| 6,01 até 10,00 | 04 20-B:C | 01 80-B:C |
+| Acima de 10,00 | 04 20-B:C | 01 120-B:C |
+
+Fonte: NT 4-05, página 6, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Obs.: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15 m para alcançar o equipamento.
+Fonte: IT 28 – CBPMESP.
+"Proteção por extintores" e "Quantidade e capacidade extintora" são células mescladas do cabeçalho.
+<!-- /tabela-conferida: Tabela 2 p6 -->
+
+<!-- tabela-conferida: Tabela 3 p6 -->
+### Tabela 3 — Classificação das áreas de armazenamento (conferida)
+
+| Classe | Capacidade de Armazenamento (kg de GLP) | Capacidade de Armazenamento (botijões 13 kg)¹ |
+| --- | --- | --- |
+| I | Até 520 | Até 40 |
+| II | Até 1560 | Até 120 |
+| III | Até 6240 | Até 480 |
+| IVA | Até 12480 | Até 960 |
+| IVB | Até 24960 | Até 1920 |
+| V | Até 49920 | Até 3840 |
+| VI | Até 99840 | Até 7680 |
+| Especial | Mais de 99840 | Mais de 7680 |
+
+Fonte: NT 4-05, página 6, Tabela 3; conferida em 2026-09-29 (visual + texto).
+Obs.: 1 - Apenas referência. A capacidade de armazenamento deve sempre ser medida em kg de GLP. 2 - Os pontos de venda no perímetro urbano ficam limitados a 10 unidades de botijões de 13 kg - Ver 5.2.6. 3 - Os pontos de venda no perímetro rural ficam limitados a 30 unidades de botijões de 13 kg - Ver 5.2.6. 4 - Os pontos de venda de recipientes de GLP em postos revendedores de combustíveis líquidos ficam limitados a 10 unidades de botijões de 13 kg - Ver 5.2.7. 5 - O(s) lote(s) pode(m) conter recipientes transportáveis de GLP cheios, parcialmente cheios e vazios, desde que atendida a quantidade de botijões permitida de acordo com a classe.
+Fonte: ABNT NBR 15514 – Adaptado.
+<!-- /tabela-conferida: Tabela 3 p6 -->
+
+<!-- tabela-conferida: Tabela 4 p6 -->
+### Tabela 4 — Proteção por extintores para área de armazenamento de recipientes transportáveis de GLP (conferida)
+
+| Classe | Quantidade | Capacidade Extintora |
+| --- | --- | --- |
+| I | 2 | 20 – B:C |
+| II | 3 | 20 – B:C |
+| III | 4 | 20 – B:C |
+| IVA | 4 | 40 – B:C |
+| IVB | 6 | 40 – B:C |
+| V | 8 | 40 – B:C |
+| VI | 10 | 40 – B:C |
+| Especial | 12 | 40 – B:C |
+
+Fonte: NT 4-05, página 6, Tabela 4; conferida em 2026-09-29 (visual + texto).
+Obs.: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15 m para alcançar o equipamento.
+Fonte: IT28 – CBPMESP.
+<!-- /tabela-conferida: Tabela 4 p6 -->
 
 ---
 
@@ -471,8 +522,7 @@ a) as áreas destinadas ao estacionamento deverão ter distância mínima de 3,0
 
 b) o armazenamento dos recipientes transportáveis de GLP, cheios, parcialmente utilizados e/ou vazios existentes no imóvel, tanto no(s) veículo(s) transportador(es) quanto na(s) área(s) de armazenamento, deve ter o seu somatório igual ou inferior à capacidade máxima total da(s) área(s) de armazenamento, em quilogramas de GLP, existente(s) no referido imóvel;
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Massa líquida dos recipientes | Recipientes Cheios |  | Recipientes |  |
@@ -594,8 +644,7 @@ Fonte: CBMERJ.
 
 5.4.4 As edificações que possuem bases e estações de manipulação e distribuição de gás natural comprimido deverão possuir sistema de proteção contra descarga atmosférica (SPDA), conforme NT 2- 12 - Sistema de proteção contra descargas atmosféricas (SPDA).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Proteção por extintores |  |  |  |  |
@@ -728,8 +777,7 @@ Tabela 1 - Distância Mínima de segurança para armazenamento de GNC
 
 Fonte: ABNT NBR 15186.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Localização |  |  | Distâncias de segurança (m) |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -761,8 +809,7 @@ capacidade volumétrica individual superior a 120 m³
 
 Fonte: ABNT NBR 15186.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Capacidade (m³) |  |  | Distância (m) |  |
@@ -789,8 +836,7 @@ Tabela 1 - Critérios de exigência de sistema fixo de resfriamento para recipie
 
 Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Hidrante | Mínimo | Diâmetro mínimo da tubulação |  | Canhão monitor |  |  | Tempo |
@@ -839,8 +885,7 @@ Tabela 2 - Critérios de exigência de sistema fixo de resfriamento para recipie
 
 Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Capacidade de |  | Inferior a 10 m³ |  | Superior a 10 m³ |  |  | Superior a 20 |  |  | Superior a 60 |  | Superior a 120 m³ | Esferas |
@@ -874,8 +919,7 @@ Tabela 1 - Exigências e afastamentos de segurança para áreas de armazenamento
 
 Fonte: ABNT NBR 15514 - Adaptado, combinado com a Lei Estadual nº 4945/06.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  |  |  |  |  |  |
@@ -908,8 +952,7 @@ Tabela 2 - Afastamentos de quaisquer componentes de estação de armazenagem e d
 
 Fonte: ABNT NBR 15600.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Componente | Afastamentos (m) |  |  |  |  |  |  |  |  |  |  |  |
@@ -1010,8 +1053,7 @@ vazios em empilhadeiras e outros veículos movidos a GLP
 
 Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Afastamentos (m) |  |  |  |  |  |  |  |

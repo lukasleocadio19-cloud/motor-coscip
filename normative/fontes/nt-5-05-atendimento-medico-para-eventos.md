@@ -67,8 +67,7 @@ D - Requisitos mínimos dos postos médicos
 
 E - FARE (Resolução SEDEC nº 131/2019)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  | NOTA |  |  | CBMERJ |  |
@@ -143,8 +142,7 @@ f) TIPO F - Embarcação de Transporte Médico: veículo motorizado aquaviário,
 
 4.5 Certidão de Anotação de Responsabilidade Técnica (CART): documento emitido pelo Conselho Regional de Medicina do Estado do Rio de Janeiro (CREMERJ) com informações sobre o evento e sobre o médico responsável técnico, devidamente registrado naquele Conselho.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Lei nº 10.671, de 15 de maio de 2003 - Estatuto do |
@@ -231,8 +229,7 @@ hospital de referência. Pode ser adaptado em uma edificação existente ou mont
 
 a) as três vias da FARE (disponíveis no site do CBMERJ);
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Técnico em Enfermagem: é o titular do diploma |
@@ -316,8 +313,7 @@ b) estar guarnecido com material de consumo em quantidade suficiente para atende
 
 6.2 Todo dispositivo de atendimento médico deverá estar preparado e disponível para o público, pelo menos 02 horas antes do início do evento, sendo mantido em operação enquanto houver concentração de público no local.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Público |  |  | Código DAEM |  |
@@ -327,6 +323,21 @@ b) estar guarnecido com material de consumo em quantidade suficiente para atende
 | 20.001 até 30.000 |  |  | 933 |  |  |
 | 30.001 até 40.000 |  |  | 934 |  |  |
 | 40.001 em diante |  |  | 935 |  |  |
+
+<!-- tabela-conferida: Tabela 1 p5 -->
+### Tabela 1 — Código Emolumento (conferida)
+
+| Público | Código DAEM |
+| --- | --- |
+| 1.000 até 5.000 | 931 |
+| 5.001 até 20.000 | 932 |
+| 20.001 até 30.000 | 933 |
+| 30.001 até 40.000 | 934 |
+| 40.001 em diante | 935 |
+
+Fonte: NT 5-05, página 5, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: FUNESBOM.
+<!-- /tabela-conferida: Tabela 1 p5 -->
 
 ---
 
@@ -374,8 +385,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Público | Postos | Macas | Médicos | Enfermeiros |  | Técnicos de |  |  | Ambulância |  |  | Ambulância |  |
@@ -387,6 +397,23 @@ Fonte: CBMERJ.
 | 15.000 Até 19.999 | 04 (quatro) | 08 (2/2/2/2) (oito) | 04 (quatro) | 04 (quatro) | 04 (quatro) |  |  | 02 (duas) |  |  | 02 (duas) |  |  |
 | 20.000 Até 29.999 | 04 (quatro) | 12 (4/4/2/2) (doze) | 06 (seis) | 04 (quatro) | 04 (quatro) |  |  | 02 (duas) |  |  | 02 (duas) |  |  |
 | 30.000 Até 40.000 | 04 (quatro) | 16 (4/4/4/4) (dezess eis) | 08 (oito) | 04 (quatro) | 04 (quatro) |  |  | 02 (duas) |  |  | 02 (duas) |  |  |
+
+<!-- tabela-conferida: Tabela do Anexo C p10 -->
+### Tabela do Anexo C — Dimensionamento de recursos dos postos médicos (conferida)
+
+| Público | Postos | Macas | Médicos | Enfermeiros | Técnicos de enfermagem | Ambulância tipo D | Ambulância tipo B |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1.000 Até 4.999 | 01 (um) | 02 (duas) | 01 (um) | 01 (um) | 01 (um) | 01 (uma) | ---- |
+| 5.000 Até 9.999 | 02 (dois) | 04 (2/2) (quatro) | 02 (dois) | 02 (um) | 02 (dois) | 01 (uma) | 01 (uma) |
+| 10.000 Até 14.999 | 03 (três) | 06 (2/2/2) (seis) | 03 (três) | 03 (três) | 03 (três) | 01 (uma) | 02 (duas) |
+| 15.000 Até 19.999 | 04 (quatro) | 08 (2/2/2/2) (oito) | 04 (quatro) | 04 (quatro) | 04 (quatro) | 02 (duas) | 02 (duas) |
+| 20.000 Até 29.999 | 04 (quatro) | 12 (4/4/2/2) (doze) | 06 (seis) | 04 (quatro) | 04 (quatro) | 02 (duas) | 02 (duas) |
+| 30.000 Até 40.000 | 04 (quatro) | 16 (4/4/4/4) (dezesseis) | 08 (oito) | 04 (quatro) | 04 (quatro) | 02 (duas) | 02 (duas) |
+
+Fonte: NT 5-05, página 10, Tabela do Anexo C; conferida em 2026-09-29 (visual + texto).
+Fonte: CBMERJ.
+Inconsistência do próprio PDF oficial (conferida na imagem): na linha 5.000 Até 9.999, coluna Enfermeiros, o numeral é "02" e o extenso "(um)". A leitura está conferida; qual valor vale é decisão do analista (não resolvida aqui).
+<!-- /tabela-conferida: Tabela do Anexo C p10 -->
 
 ---
 

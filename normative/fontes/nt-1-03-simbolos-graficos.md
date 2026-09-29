@@ -140,8 +140,7 @@ Para efeito desta Nota Técnica, aplicam-se as definições constantes da NT 1-0
 
 Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | EXTINTORES | PORTÁTEIS | EXTINTOR DE GÁS CARBÔNICO - CO2 |  |
@@ -166,8 +165,7 @@ Fonte: CBMERJ.
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | SISTEMA FIXO DE EXTINÇÃO | SISTEMA DE HIDRANTES | HIDRANTE DUPLO |  |
@@ -195,8 +193,7 @@ Fonte: CBMERJ.
 
 Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | PAINEL DE COMANDO DO SISTEMA DE SPRINKLERS |  |
@@ -221,8 +218,7 @@ Fonte: CBMERJ.
 
 Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA |  | PONTO DE ILUMINAÇÃO DE EMERGÊNCIA |  |
@@ -246,8 +242,7 @@ Fonte: CBMERJ.
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | VASOS E TANQUES (CONT.) | TANQUES | TANQUE VERTICAL SUPERFÍCIE |  |
@@ -270,8 +265,7 @@ Fonte: CBMERJ.
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | SISTEMA DE DETECÇÃO |  | DETECTOR TÉRMICO |  |
@@ -295,8 +289,7 @@ Fonte: CBMERJ.
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | BARRA ANTIPÂNICO |  |
@@ -323,8 +316,7 @@ Fonte: CBMERJ.
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | DAMPER CORTA-FOGO E CORTAFUMAÇA |  |
@@ -346,8 +338,7 @@ Fonte: CBMERJ.
 
 Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | ROTAS DE FUGA | DIRECIONAMENTO | DIREÇÃO DO FLUXO |  |

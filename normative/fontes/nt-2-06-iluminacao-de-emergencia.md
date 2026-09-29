@@ -44,8 +44,7 @@ Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019 (DOERJ nº 167, 
 
 Alterada pela Portaria CBMERJ nº 1125, de 21 de outubro de 2020 (DOERJ nº 196, de 22.10.2020).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
