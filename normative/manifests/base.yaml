@@ -6,8 +6,8 @@ resumo:
   imagens_presentes: 476
   imagens_ausentes: 0
   tabelas_por_estado:
-    bruto: 277
-    verificada: 12
+    bruto: 268
+    verificada: 21
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -401,7 +401,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-04-Classificacao-das-edificacoes-e-areas-de-risco-quanto-ao-risco-de-incendio.pdf
   sha256_pdf: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
-  sha256_md: 037c753df3d7aab3a250fb418932fbccb2d0797195dac12ad057564d71245a89
+  sha256_md: bf89d19d0391cc8b48c818d4ce1e91d1e9e9c9251a2a3d9bd27433d2980e4232
   data_captura: '2026-07-23'
   paginas: 20
   midia: nt-1-04
@@ -478,17 +478,29 @@ fontes:
   - pagina: 10
     estado: bruto
   - pagina: 11
-    estado: bruto
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-1-04/anexo-b-p11.yaml
+    estado: verificada
   - pagina: 12
-    estado: bruto
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-1-04/anexo-b-p12.yaml
+    estado: verificada
   - pagina: 13
-    estado: bruto
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-1-04/anexo-b-p13.yaml
+    estado: verificada
   - pagina: 14
-    estado: bruto
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-1-04/anexo-b-p14.yaml
+    estado: verificada
   - pagina: 15
-    estado: bruto
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-1-04/anexo-b-p15.yaml
+    estado: verificada
   - pagina: 16
-    estado: bruto
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-1-04/anexo-b-p16.yaml
+    estado: verificada
   - pagina: 17
     estado: bruto
   - pagina: 18
@@ -1108,7 +1120,7 @@ fontes:
     de dezembro de 2025
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_2-08_1Ed_2019_alterada_Portaria_1317_2025.pdf
   sha256_pdf: c204bd957038c3c8dd18a62a89472161ae6e2cc5602dcb9075bef8bca3b34c5e
-  sha256_md: 46e6f9127d3f225e537710d0cab59ecc7099a89c6f12d09399f4f61c3afe77b3
+  sha256_md: a10d1ae1e95c006630a445e8c4f901b4b4fd053e1c97efc77a80631364c032a1
   data_captura: '2026-07-23'
   paginas: 22
   midia: nt-2-08
@@ -1207,11 +1219,17 @@ fontes:
   - pagina: 7
     estado: bruto
   - pagina: 12
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-2-08/tabela-1-inclinacao-rampas.yaml
+    estado: verificada
   - pagina: 18
-    estado: bruto
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-2-08/anexo-a-dimensionamento-saidas.yaml
+    estado: verificada
   - pagina: 20
-    estado: bruto
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-2-08/anexo-b-tipos-de-escadas.yaml
+    estado: verificada
   - pagina: 22
     tabela: Tabela do Anexo C
     arquivo: normative/tabelas/nt-2-08/anexo-c-distancias-maximas.yaml

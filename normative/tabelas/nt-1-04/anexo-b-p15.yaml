@@ -1,0 +1,65 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-04
+arquivo: nt-1-04-classificacao-de-risco.md
+tabela: Tabela do Anexo B
+titulo: Classificação quanto ao risco de incêndio (página 15)
+pagina: 15
+fonte_pdf_sha256: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-04/pagina-15.png
+    imagem_sha256: ce25785eccfa08d9ee1baa1190430f1b4f787d07dab5eacba14598ab2d3a5ec0
+    linhas_cabecalho: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Risco
+    - - I
+      - Industrial
+      - I-3
+      - (continuação) coquerias; equipamento bélico pesado; espumas; gráfica; impermeabilizantes, solventes
+        e produtos afins; materiais plásticos; refino de óleos lubrificantes; papel e derivados; produtos
+        derivados de petróleo; artigos de plásticos em geral; produtos de limpeza e polimento; ceras de
+        polimento; plastificantes, resinas e fibras; resinas termofixas; resinas termoplásticas; sabões
+        e detergentes sintéticos; tintas de impressão; tintas, vernizes, esmaltes e lacas; moagem e derivados
+        de trigo; extração e beneficiamento de xisto; fabricação de óleos vegetais. (ver item 5.13).
+      - GRANDE
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 15
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Risco
+    - - I
+      - Industrial
+      - I-3
+      - (continuação) coquerias; equipamento bélico pesado; espumas; gráfica; impermeabilizantes, solventes
+        e produtos afins; materiais plásticos; refino de óleos lubrificantes; papel e derivados; produtos
+        derivados de petróleo; artigos de plásticos em geral; produtos de limpeza e polimento; ceras de
+        polimento; plastificantes, resinas e fibras; resinas termofixas; resinas termoplásticas; sabões
+        e detergentes sintéticos; tintas de impressão; tintas, vernizes, esmaltes e lacas; moagem e derivados
+        de trigo; extração e beneficiamento de xisto; fabricação de óleos vegetais. (ver item 5.13).
+      - GRANDE
+notas:
+- Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página.
+  "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação
+  cada linha repete o valor.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

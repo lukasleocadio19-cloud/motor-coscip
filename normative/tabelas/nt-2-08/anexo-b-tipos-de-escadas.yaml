@@ -1,0 +1,288 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-08
+arquivo: nt-2-08-saidas-de-emergencia.md
+tabela: Tabela do Anexo B
+titulo: Tipos de escadas de emergência por ocupação
+pagina: 20
+fonte_pdf_sha256: c204bd957038c3c8dd18a62a89472161ae6e2cc5602dcb9075bef8bca3b34c5e
+conferida_em: '2026-09-29'
+forma:
+  mesclar_linhas:
+  - - 1
+    - 2
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-08/pagina-20.jpg
+    imagem_sha256: 81e813e19b865b93681f4ec51e588844226280571e3145f7bda4f89a48ff9753
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Ocupação
+    - Divisão
+    - 2 pavimentos
+    - 3 pavimentos
+    - 4, 5 e 6 pavimentos
+    - Acima de 6 com H ≤30m
+    - H≥30m
+    linhas:
+    - - Classificação da edificação
+      - Tipos de escadas x Nº de pavimentos
+    - - Ocupação
+      - Divisão
+      - '2'
+      - '3'
+      - 4, 5 e 6
+      - Acima de 6 com H ≤30m
+      - H≥30m
+    - - Residencial
+      - A-2
+      - NE
+      - NE
+      - NE1
+      - PF
+      - PF4
+    - - A-3
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - A-6
+      - NE
+      - NE
+      - PF2
+      - PF
+      - PF4
+    - - Serviço de Hospedagem
+      - B-1 B-2
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - Comercial
+      - C-1 C-2 C-3 C-4
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - Serviço profissional e institucional
+      - D-1 D-2 D-3 D-4 D-5
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - Escolar e Cultura Física
+      - E-1 E-2 E-3
+      - NE
+      - NE
+      - PF6
+      - PF
+      - PF5
+    - - Local de Reunião de Público
+      - F-1 F-2 F-3 F-4 F-6 F-8 F-9 F-10
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - F-5 F-7 F-11
+      - NE
+      - NE
+      - PF7
+      - PF
+      - PF5
+    - - Serviço automotivo e assemelhado
+      - G-1 G-2 G-3 G-4 G-5 G-6
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF4,5
+    - - Serviço de Saúde
+      - H-1 H-4
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - H-2 H-3
+      - NE
+      - PFP
+      - PFP
+      - PFP
+      - PFP5
+    - - Industrial
+      - I-1 I-2 I-3
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - Depósito
+      - J-1 J-2 J-3 J-4
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - Explosivos ou munições
+      - L-1
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - Especial
+      - M-3 M-6
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF), cabeçalho em 3 linhas
+    origem:
+      pagina: 20
+      tabela_na_pagina: 1
+    linhas:
+    - - Classificação da edificação
+      - Tipos de escadas x Nº de pavimentos
+    - - Ocupação
+      - Divisão
+      - '2'
+      - '3'
+      - 4, 5 e 6
+      - Acima de 6 com H ≤30m
+      - H≥30m
+    - - Residencial
+      - A-2
+      - NE
+      - NE
+      - NE 1
+      - PF
+      - PF4
+    - - A-3
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - A-6
+      - NE
+      - NE
+      - PF2
+      - PF
+      - PF4
+    - - Serviço de Hospedagem
+      - B-1 B-2
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - Comercial
+      - C-1 C-2 C-3 C-4
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - Serviço profissional e institucional
+      - D-1 D-2 D-3 D-4 D-5
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - Escolar e Cultura Física
+      - E-1 E-2 E-3
+      - NE
+      - NE
+      - PF6
+      - PF
+      - PF5
+    - - Local de Reunião de Público
+      - F-1 F-2 F-3 F-4 F-6 F-8 F-9 F-10
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - F-5 F-7 F-11
+      - NE
+      - NE
+      - PF7
+      - PF
+      - PF5
+    - - Serviço automotivo e assemelhado
+      - G-1 G-2 G-3 G-4 G-5 G-6
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF 4,5
+    - - Serviço de Saúde
+      - H-1 H-4
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - H-2 H-3
+      - NE
+      - PFP
+      - PFP
+      - PFP
+      - PFP5
+    - - Industrial
+      - I-1 I-2 I-3
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - Depósito
+      - J-1 J-2 J-3 J-4
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - Explosivos ou munições
+      - L-1
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+    - - Especial
+      - M-3 M-6
+      - NE
+      - NE
+      - PF
+      - PF
+      - PF5
+inconsistencias_da_fonte:
+- 'As células trazem notas sobrescritas numeradas (¹ a ⁷, ex.: NE¹, PF⁴, PF⁴˒⁵), mas as observações da
+  tabela (páginas 20 e 21) são identificadas por letras (A) a (K). A correspondência número → letra não
+  está escrita na NT: decidir com o analista antes de usar uma nota.'
+notas:
+- 'Siglas: NE = escada não enclausurada; PF = escada enclausurada à prova de fumaça; PFP = enclausurada
+  à prova de fumaça pressurizada (observações J e K). Números colados ao tipo (NE1, PF4, PF4,5…) são as
+  notas sobrescritas da imagem.'
+- 'As células de Ocupação são mescladas: na publicação, as linhas A-3, A-6, F-5/F-7/F-11 e H-2/H-3 herdam
+  a ocupação da linha de cima.'
+- 'Observações (A) a (K): ver o texto das páginas 20 e 21.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

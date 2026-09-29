@@ -380,6 +380,28 @@ Fonte: Decreto nº 42/2018 - COSCIP.
 |  |  |  |  |  |  | C-3 |  |  | Shopping centers |  |  | MÉDIO 2 |  |  |
 |  |  |  |  |  |  | C-4 |  |  | Quiosque |  |  | MÉDIO 1 |  |  |
 
+<!-- tabela-conferida: Tabela do Anexo B p11 -->
+### Tabela do Anexo B — Classificação quanto ao risco de incêndio (página 11) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Risco |
+| --- | --- | --- | --- | --- |
+| A | Residencial | A-1 | Residencial privativa unifamiliar | PEQUENO |
+| A | Residencial | A-2 | Residencial privativa multifamiliar | PEQUENO |
+| A | Residencial | A-3 | Residencial coletiva | MÉDIO 1 |
+| A | Residencial | A-4 | Agrupamento residencial privativo unifamiliar | PEQUENO |
+| A | Residencial | A-5 | Agrupamento residencial privativo multifamiliar | PEQUENO |
+| A | Residencial | A-6 | Mista (ver item 5.9) | MÉDIO 1 |
+| B | Serviço de hospedagem | B-1 | Hotel e assemelhados | MÉDIO 1 |
+| B | Serviço de hospedagem | B-2 | Hotel residencial | MÉDIO 1 |
+| C | Comercial | C-1 | Edificações comerciais: artigos de metal; louças; artesanato; artigos hospitalares, odontológicos, veterinários; antiguidades; lojas de animais; lojas de brinquedos; farmácias; artigos de uso doméstico; concessionária de veículos; artigos de cosméticos; comércio de bebidas; artigos de eletrônica e telefonia; edifícios de lojas de departamentos; magazines; livrarias; joalherias; artigos de iluminação; artigos musicais; comércio de máquinas e equipamentos em geral; comércio de móveis em geral; artigos de vestuário; comércio de artes; padaria e confeitaria; óticas; papelarias; armarinhos; tabacaria; sorveteria; tapeçaria; artigos de informática; comércio de tecido; comércio de tintas e solventes (até 500 litros de inflamáveis); galerias comerciais; supermercados em geral; hortifrutigranjeiros; mercados e outros. (ver item 5.10). | MÉDIO 1 |
+| C | Comercial | C-2 | Edificações comerciais atacadistas como: de produtos químicos e petroquímicos; de resíduos de papel e papelão; espuma e isopor; de resinas; de produtos alimentícios; de mercadorias em geral e outros. (ver item 5.11). | MÉDIO 2 |
+| C | Comercial | C-3 | Shopping centers | MÉDIO 2 |
+| C | Comercial | C-4 | Quiosque | MÉDIO 1 |
+
+Fonte: NT 1-04, página 11, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página. "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação cada linha repete o valor.
+<!-- /tabela-conferida: Tabela do Anexo B p11 -->
+
 ---
 
 ## Página 12
@@ -423,6 +445,45 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  |  |  |  |  | H-3 |  |  | Hospitais, casas de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital psiquiátrico. |  |  |  |  |  |
 |  |  |  |  |  |  | H-4 |  |  | Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados. Todos sem internação. |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela do Anexo B p12 -->
+### Tabela do Anexo B — Classificação quanto ao risco de incêndio (página 12) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Risco |
+| --- | --- | --- | --- | --- |
+| D | Serviço profissional e institucional | D-1 | Local para prestação de serviço profissional ou condução de negócios | MÉDIO 1 |
+| D | Serviço profissional e institucional | D-2 | Agências bancárias | MÉDIO 1 |
+| D | Serviço profissional e institucional | D-3 | Serviços de manutenção e reparação (exceto os classificados em G-4) | MÉDIO 1 |
+| D | Serviço profissional e institucional | D-4 | Laboratórios de análises clínicas e assemelhados | MÉDIO 1 |
+| D | Serviço profissional e institucional | D-5 | Edificação pública das forças armadas, policiais e militares estaduais | MÉDIO 1 |
+| E | Escolar e cultura física | E-1 | Escolar em geral | MÉDIO 1 |
+| E | Escolar e cultura física | E-2 | Escolar especial | MÉDIO 1 |
+| E | Escolar e cultura física | E-3 | Espaço para cultura física | MÉDIO 1 |
+| F | Local de Reunião de Público | F-1 | Local onde há objeto de valor inestimável | MÉDIO 1 |
+| F | Local de Reunião de Público | F-2 | Local religioso e velório | MÉDIO 1 |
+| F | Local de Reunião de Público | F-3 | Centro esportivo e de exibições | MÉDIO 1 |
+| F | Local de Reunião de Público | F-4 | Estação e terminal de passageiro | MÉDIO 1 |
+| F | Local de Reunião de Público | F-5 | Arte cênica e auditório | MÉDIO 1 |
+| F | Local de Reunião de Público | F-6 | Boates e casas de show | MÉDIO 1 |
+| F | Local de Reunião de Público | F-7 | Instalações temporárias | MÉDIO 1 |
+| F | Local de Reunião de Público | F-8 | Local para refeição | MÉDIO 1 |
+| F | Local de Reunião de Público | F-9 | Recreação pública | MÉDIO 1 |
+| F | Local de Reunião de Público | F-10 | Exposição de animais | MÉDIO 1 |
+| F | Local de Reunião de Público | F-11 | Clubes sociais e diversão | MÉDIO 1 |
+| G | Serviço automotivo e assemelhado | G-1 | Garagem sem acesso de público e sem abastecimento | MÉDIO 1 |
+| G | Serviço automotivo e assemelhado | G-2 | Garagem com acesso de público e sem abastecimento | MÉDIO 1 |
+| G | Serviço automotivo e assemelhado | G-3 | Local dotado de abastecimento de combustível | MÉDIO 1 |
+| G | Serviço automotivo e assemelhado | G-4 | Serviço de conservação, manutenção e reparos | MÉDIO 1 |
+| G | Serviço automotivo e assemelhado | G-5 | Hangar | MÉDIO 2 |
+| G | Serviço automotivo e assemelhado | G-6 | Galpão ou garagem náutica | MÉDIO 2 |
+| H | Serviço de saúde | H-1 | Hospitais, clínicas e consultórios veterinários e assemelhados | MÉDIO 1 |
+| H | Serviço de saúde | H-2 | Local para tratamento de dependentes de droga, álcool e assemelhados, todos sem celas, asilos, residências geriátricas | MÉDIO 1 |
+| H | Serviço de saúde | H-3 | Hospitais, casas de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital psiquiátrico. | MÉDIO 1 |
+| H | Serviço de saúde | H-4 | Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados. Todos sem internação. | MÉDIO 1 |
+
+Fonte: NT 1-04, página 12, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página. "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação cada linha repete o valor.
+<!-- /tabela-conferida: Tabela do Anexo B p12 -->
+
 ---
 
 ## Página 13
@@ -437,6 +498,17 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  | Grupo |  |  | Ocupação/Uso |  |  | Divisão |  |  | Descrição |  |  | Risco |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | I |  |  | Industrial |  |  | I-1 |  |  | Edificações industriais que fabricam: aditivos de uso industrial; adoçantes naturais e artificiais; água envasada; alimentos e pratos prontos; alimentos para animais; amianto; equipamentos para sinalização e alarme; aparelhos ortopédicos; extração de areia, ardósia, basalto, calcário, dolomita e argila; fabricação de aviamentos para costura; balanças; fabricação de bebidas não alcóolicas (exceção refrigerantes); de bicicletas; bijuterias e artefatos; bolsas; biscoitos; café e derivados; calçados; caldeiras; artigos de escritório (caneta); catalisadores; casas pré moldadas de concreto; cerâmica; de chá; chocolate; de cimento; condimentos; cordoaria; couro; de doces, embalagens de vidro; embalagens de metais; especiarias, molhos, temperos e condimentos; artefatos de esporte; esquadrias de metal; fermentos e leveduras; ferramentas; galvanoplastia; fibras artificiais e sintéticas; conservas de frutas; balas e semelhantes; gelo comum; extração de pedras preciosas; extração de gesso e caulim; extração de grafita e granito; guarda chuvas; instrumentos musicais; fabricação de artigos de joalheria; jogos eletrônicos; lâmpadas; laticínios; extração de mármore e marmoraria; matadouro de (abate de suínos, bovinos, aves); artigos de metal; extração e beneficiamento de minérios; cunhagem de moedas e medalhas; móveis com predominância de metais; móveis de materiais sem madeira); artigos ópticos; artefatos de pesca; serralheria; rolamentos para fins industriais; de sorvetes; artigos de vidro. |  |  | MÉDIO 1 |  |  |
+
+<!-- tabela-conferida: Tabela do Anexo B p13 -->
+### Tabela do Anexo B — Classificação quanto ao risco de incêndio (página 13) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Risco |
+| --- | --- | --- | --- | --- |
+| I | Industrial | I-1 | Edificações industriais que fabricam: aditivos de uso industrial; adoçantes naturais e artificiais; água envasada; alimentos e pratos prontos; alimentos para animais; amianto; equipamentos para sinalização e alarme; aparelhos ortopédicos; extração de areia, ardósia, basalto, calcário, dolomita e argila; fabricação de aviamentos para costura; balanças; fabricação de bebidas não alcóolicas (exceção refrigerantes); de bicicletas; bijuterias e artefatos; bolsas; biscoitos; café e derivados; calçados; caldeiras; artigos de escritório (caneta); catalisadores; casas pré moldadas de concreto; cerâmica; de chá; chocolate; de cimento; condimentos; cordoaria; couro; de doces, embalagens de vidro; embalagens de metais; especiarias, molhos, temperos e condimentos; artefatos de esporte; esquadrias de metal; fermentos e leveduras; ferramentas; galvanoplastia; fibras artificiais e sintéticas; conservas de frutas; balas e semelhantes; gelo comum; extração de pedras preciosas; extração de gesso e caulim; extração de grafita e granito; guarda chuvas; instrumentos musicais; fabricação de artigos de joalheria; jogos eletrônicos; lâmpadas; laticínios; extração de mármore e marmoraria; matadouro de (abate de suínos, bovinos, aves); artigos de metal; extração e beneficiamento de minérios; cunhagem de moedas e medalhas; móveis com predominância de metais; móveis de materiais sem madeira); artigos ópticos; artefatos de pesca; serralheria; rolamentos para fins industriais; de sorvetes; artigos de vidro. | MÉDIO 1 |
+
+Fonte: NT 1-04, página 13, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página. "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação cada linha repete o valor.
+<!-- /tabela-conferida: Tabela do Anexo B p13 -->
 
 ---
 
@@ -454,6 +526,18 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 | I |  |  | Industrial |  |  | I-2 |  |  | Edificações industriais que fabricam: absorventes higiênicos; medicamentos; adubos e fertilizantes; defensivos agrícolas; aparelhos de áudio e vídeo; equipamentos de medida; equipamentos de transmissão; equipamentos elétricos; componentes eletrônicos; compressores; aparelhos elétricos; equipamentos e informática; artigos de tabaco; transmissores de comunicação; aparelhos eletrodomésticos; aparelhos fotográficos e cinematográficos; motocicletas; instrumentos cirúrgicos, odontológicos e laboratorial; cigarros, cigarrilhas e charutos; aparelhos eletromédicos e eletroterapêuticos; aparelhos telefônicos; hidráulicos e pneumáticos; fabricação de automóveis; aeronaves; motores para automóveis e turbinas; de açúcar; estufas e fornos elétricos; vinho; cervejarias e chopes; fabricação de refrigerantes; adesivos e selantes; aparelhos de ar condicionado; aparelhos e máquinas de refrigeração e ventilação; desinfetantes; elastômeros; fios, cabos e condutores elétricos; embarcações; de locomotivas; fabricação de produtos alimentícios; fabricação de farmoquímicos; fabricação de fogões, refrigeradores e máquinas de lavar e secar; fornos industriais; fraldas descartáveis; gases industriais; produtos de carne; frigorífico; fabricação de refrescos, xaropes; de sucos; letras, letreiros e placas; transformadores, indutores, conversores, sincronizadores e semelhantes; margarina, óleos vegetais; massas alimentícias; mastiques; painéis e letreiros luminosos; moagem e fabricação de derivados de milho; pilhas, baterias e acumuladores elétricos; produtos adesivos; produtos químicos inorgânicos; ração. (ver item 5.13). |  |  | MÉDIO 2 |  |  |
 | I |  |  | Industrial |  |  | I-3 |  |  | Edificações industriais que fabricam: caixotes barris ou pallets de madeira; carpintaria; coletam resíduos perigosos; fabricam produtos químicos; bancos e estofados; vassouras; fabricação de lápis; produtos graxos; produtos petroquímicos; laminados planos e tubulares de materiais plásticos; escovas, pincéis e vassouras; tratamento e disposição de resíduos perigosos; extração de petróleo e gás natural; embalagens de materiais plásticos; esquadrias de madeiras; artefatos de madeira; marcenarias; artefatos de materiais plásticos; extração e beneficiamento de carvão; casas de madeiras pré fabricadas; fabricação de álcool; tanoaria e embalagens de madeira; aguardente de cana de açúcar; amido e féculas de vegetais; artefatos de cortiça, bambu, palha, vime; artigos de tapeçaria; mobiliário com predominância de madeira; têxtil; artefatos de borracha; colas; extração e beneficiamento de areias betuminosas; fabricação de armas de fogo e munição; beneficiamento e produtos de arroz; fabricação de biocombustível; cloro e álcalis; colchões; combustíveis nucleares; |  |  | GRANDE |  |  |
 
+<!-- tabela-conferida: Tabela do Anexo B p14 -->
+### Tabela do Anexo B — Classificação quanto ao risco de incêndio (página 14) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Risco |
+| --- | --- | --- | --- | --- |
+| I | Industrial | I-2 | Edificações industriais que fabricam: absorventes higiênicos; medicamentos; adubos e fertilizantes; defensivos agrícolas; aparelhos de áudio e vídeo; equipamentos de medida; equipamentos de transmissão; equipamentos elétricos; componentes eletrônicos; compressores; aparelhos elétricos; equipamentos e informática; artigos de tabaco; transmissores de comunicação; aparelhos eletrodomésticos; aparelhos fotográficos e cinematográficos; motocicletas; instrumentos cirúrgicos, odontológicos e laboratorial; cigarros, cigarrilhas e charutos; aparelhos eletromédicos e eletroterapêuticos; aparelhos telefônicos; hidráulicos e pneumáticos; fabricação de automóveis; aeronaves; motores para automóveis e turbinas; de açúcar; estufas e fornos elétricos; vinho; cervejarias e chopes; fabricação de refrigerantes; adesivos e selantes; aparelhos de ar condicionado; aparelhos e máquinas de refrigeração e ventilação; desinfetantes; elastômeros; fios, cabos e condutores elétricos; embarcações; de locomotivas; fabricação de produtos alimentícios; fabricação de farmoquímicos; fabricação de fogões, refrigeradores e máquinas de lavar e secar; fornos industriais; fraldas descartáveis; gases industriais; produtos de carne; frigorífico; fabricação de refrescos, xaropes; de sucos; letras, letreiros e placas; transformadores, indutores, conversores, sincronizadores e semelhantes; margarina, óleos vegetais; massas alimentícias; mastiques; painéis e letreiros luminosos; moagem e fabricação de derivados de milho; pilhas, baterias e acumuladores elétricos; produtos adesivos; produtos químicos inorgânicos; ração. (ver item 5.13). | MÉDIO 2 |
+| I | Industrial | I-3 | Edificações industriais que fabricam: caixotes barris ou pallets de madeira; carpintaria; coletam resíduos perigosos; fabricam produtos químicos; bancos e estofados; vassouras; fabricação de lápis; produtos graxos; produtos petroquímicos; laminados planos e tubulares de materiais plásticos; escovas, pincéis e vassouras; tratamento e disposição de resíduos perigosos; extração de petróleo e gás natural; embalagens de materiais plásticos; esquadrias de madeiras; artefatos de madeira; marcenarias; artefatos de materiais plásticos; extração e beneficiamento de carvão; casas de madeiras pré fabricadas; fabricação de álcool; tanoaria e embalagens de madeira; aguardente de cana de açúcar; amido e féculas de vegetais; artefatos de cortiça, bambu, palha, vime; artigos de tapeçaria; mobiliário com predominância de madeira; têxtil; artefatos de borracha; colas; extração e beneficiamento de areias betuminosas; fabricação de armas de fogo e munição; beneficiamento e produtos de arroz; fabricação de biocombustível; cloro e álcalis; colchões; combustíveis nucleares; | GRANDE |
+
+Fonte: NT 1-04, página 14, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página. "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação cada linha repete o valor.
+<!-- /tabela-conferida: Tabela do Anexo B p14 -->
+
 ---
 
 ## Página 15
@@ -468,6 +552,17 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  | Grupo |  |  | Ocupação/Uso |  |  | Divisão |  |  | Descrição |  |  | Risco |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | I |  |  | Industrial |  |  | I-3 |  |  | (continuação) coquerias; equipamento bélico pesado; espumas; gráfica; impermeabilizantes, solventes e produtos afins; materiais plásticos; refino de óleos lubrificantes; papel e derivados; produtos derivados de petróleo; artigos de plásticos em geral; produtos de limpeza e polimento; ceras de polimento; plastificantes, resinas e fibras; resinas termofixas; resinas termoplásticas; sabões e detergentes sintéticos; tintas de impressão; tintas, vernizes, esmaltes e lacas; moagem e derivados de trigo; extração e beneficiamento de xisto; fabricação de óleos vegetais. (ver item 5.13). |  |  | GRANDE |  |  |
+
+<!-- tabela-conferida: Tabela do Anexo B p15 -->
+### Tabela do Anexo B — Classificação quanto ao risco de incêndio (página 15) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Risco |
+| --- | --- | --- | --- | --- |
+| I | Industrial | I-3 | (continuação) coquerias; equipamento bélico pesado; espumas; gráfica; impermeabilizantes, solventes e produtos afins; materiais plásticos; refino de óleos lubrificantes; papel e derivados; produtos derivados de petróleo; artigos de plásticos em geral; produtos de limpeza e polimento; ceras de polimento; plastificantes, resinas e fibras; resinas termofixas; resinas termoplásticas; sabões e detergentes sintéticos; tintas de impressão; tintas, vernizes, esmaltes e lacas; moagem e derivados de trigo; extração e beneficiamento de xisto; fabricação de óleos vegetais. (ver item 5.13). | GRANDE |
+
+Fonte: NT 1-04, página 15, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página. "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação cada linha repete o valor.
+<!-- /tabela-conferida: Tabela do Anexo B p15 -->
 
 ---
 
@@ -498,6 +593,32 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  |  |  |  |  | M-7 |  |  | Pátios de armazenagem |  |  | MÉDIO 2 |  |  |
 |  |  |  |  |  |  | M-8 |  |  | Loteamento |  |  | MÉDIO 1 |  |  |
 |  |  |  |  |  |  | M-9 |  |  | Local onde a liberdade das pessoas sofre restrição |  |  | MÉDIO 1 |  |  |
+
+<!-- tabela-conferida: Tabela do Anexo B p16 -->
+### Tabela do Anexo B — Classificação quanto ao risco de incêndio (página 16) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Risco |
+| --- | --- | --- | --- | --- |
+| J | Depósito | J-1 | Edificações sem processo industrial que armazenam tijolos, pedras, areias, cimentos, metais e outros materiais incombustíveis, todos sem embalagem. | MÉDIO 1 |
+| J | Depósito | J-2 | Depósitos com carga de incêndio até 1.000 MJ/m², conforme Anexo C ou Anexo D. | MÉDIO 1 |
+| J | Depósito | J-3 | Depósitos com carga de incêndio entre 1.000 e 1.200 MJ/m², conforme Anexo C ou Anexo D. | MÉDIO 2 |
+| J | Depósito | J-4 | Depósitos onde a carga de incêndio ultrapassa a 1.200 MJ/m², conforme Anexo C ou Anexo D. Edificação de guarda móveis e self storage; | GRANDE |
+| L | Explosivos ou munições | L-1 | Comércio em geral de fogos de artifício, munições e assemelhados | GRANDE |
+| L | Explosivos ou munições | L-2 | Indústria de material explosivo, munições e fósforos | GRANDE |
+| L | Explosivos ou munições | L-3 | Depósito de material explosivo ou munições | GRANDE |
+| M | Especial | M-1 | Túnel | GRANDE |
+| M | Especial | M-2 | Líquidos ou gases inflamáveis ou combustíveis | GRANDE |
+| M | Especial | M-3 | Central de comunicação | MÉDIO 1 |
+| M | Especial | M-4 | Estrutura temporária | MÉDIO 1 |
+| M | Especial | M-5 | Silos | GRANDE |
+| M | Especial | M-6 | Energia | MÉDIO 1 |
+| M | Especial | M-7 | Pátios de armazenagem | MÉDIO 2 |
+| M | Especial | M-8 | Loteamento | MÉDIO 1 |
+| M | Especial | M-9 | Local onde a liberdade das pessoas sofre restrição | MÉDIO 1 |
+
+Fonte: NT 1-04, página 16, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página. "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação cada linha repete o valor.
+<!-- /tabela-conferida: Tabela do Anexo B p16 -->
 
 ---
 

@@ -1,0 +1,166 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-04
+arquivo: nt-1-04-classificacao-de-risco.md
+tabela: Tabela do Anexo B
+titulo: Classificação quanto ao risco de incêndio (página 11)
+pagina: 11
+fonte_pdf_sha256: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-04/pagina-11.png
+    imagem_sha256: 2e73546fa69d33cfe07df30b1eefaaf158bab02ab10c0006879be389e0dd03a2
+    linhas_cabecalho: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Risco
+    - - A
+      - Residencial
+      - A-1
+      - Residencial privativa unifamiliar
+      - PEQUENO
+    - - ^
+      - ^
+      - A-2
+      - Residencial privativa multifamiliar
+      - PEQUENO
+    - - ^
+      - ^
+      - A-3
+      - Residencial coletiva
+      - MÉDIO 1
+    - - ^
+      - ^
+      - A-4
+      - Agrupamento residencial privativo unifamiliar
+      - PEQUENO
+    - - ^
+      - ^
+      - A-5
+      - Agrupamento residencial privativo multifamiliar
+      - PEQUENO
+    - - ^
+      - ^
+      - A-6
+      - Mista (ver item 5.9)
+      - MÉDIO 1
+    - - B
+      - Serviço de hospedagem
+      - B-1
+      - Hotel e assemelhados
+      - MÉDIO 1
+    - - ^
+      - ^
+      - B-2
+      - Hotel residencial
+      - ^
+    - - C
+      - Comercial
+      - C-1
+      - 'Edificações comerciais: artigos de metal; louças; artesanato; artigos hospitalares, odontológicos,
+        veterinários; antiguidades; lojas de animais; lojas de brinquedos; farmácias; artigos de uso doméstico;
+        concessionária de veículos; artigos de cosméticos; comércio de bebidas; artigos de eletrônica
+        e telefonia; edifícios de lojas de departamentos; magazines; livrarias; joalherias; artigos de
+        iluminação; artigos musicais; comércio de máquinas e equipamentos em geral; comércio de móveis
+        em geral; artigos de vestuário; comércio de artes; padaria e confeitaria; óticas; papelarias;
+        armarinhos; tabacaria; sorveteria; tapeçaria; artigos de informática; comércio de tecido; comércio
+        de tintas e solventes (até 500 litros de inflamáveis); galerias comerciais; supermercados em geral;
+        hortifrutigranjeiros; mercados e outros. (ver item 5.10).'
+      - MÉDIO 1
+    - - ^
+      - ^
+      - C-2
+      - 'Edificações comerciais atacadistas como: de produtos químicos e petroquímicos; de resíduos de
+        papel e papelão; espuma e isopor; de resinas; de produtos alimentícios; de mercadorias em geral
+        e outros. (ver item 5.11).'
+      - MÉDIO 2
+    - - ^
+      - ^
+      - C-3
+      - Shopping centers
+      - MÉDIO 2
+    - - ^
+      - ^
+      - C-4
+      - Quiosque
+      - MÉDIO 1
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 11
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Risco
+    - - A
+      - Residencial
+      - A-1
+      - Residencial privativa unifamiliar
+      - PEQUENO
+    - - A-2
+      - Residencial privativa multifamiliar
+      - PEQUENO
+    - - A-3
+      - Residencial coletiva
+      - MÉDIO 1
+    - - A-4
+      - Agrupamento residencial privativo unifamiliar
+      - PEQUENO
+    - - A-5
+      - Agrupamento residencial privativo multifamiliar
+      - PEQUENO
+    - - A-6
+      - Mista (ver item 5.9)
+      - MÉDIO 1
+    - - B
+      - Serviço de hospedagem
+      - B-1
+      - Hotel e assemelhados
+      - MÉDIO 1
+    - - B-2
+      - Hotel residencial
+    - - C
+      - Comercial
+      - C-1
+      - 'Edificações comerciais: artigos de metal; louças; artesanato; artigos hospitalares, odontológicos,
+        veterinários; antiguidades; lojas de animais; lojas de brinquedos; farmácias; artigos de uso doméstico;
+        concessionária de veículos; artigos de cosméticos; comércio de bebidas; artigos de eletrônica
+        e telefonia; edifícios de lojas de departamentos; magazines; livrarias; joalherias; artigos de
+        iluminação; artigos musicais; comércio de máquinas e equipamentos em geral; comércio de móveis
+        em geral; artigos de vestuário; comércio de artes; padaria e confeitaria; óticas; papelarias;
+        armarinhos; tabacaria; sorveteria; tapeçaria; artigos de informática; comércio de tecido; comércio
+        de tintas e solventes (até 500 litros de inflamáveis); galerias comerciais; supermercados em geral;
+        hortifrutigranjeiros; mercados e outros. (ver item 5.10).'
+      - MÉDIO 1
+    - - C-2
+      - 'Edificações comerciais atacadistas como: de produtos químicos e petroquímicos; de resíduos de
+        papel e papelão; espuma e isopor; de resinas; de produtos alimentícios; de mercadorias em geral
+        e outros. (ver item 5.11).'
+      - MÉDIO 2
+    - - C-3
+      - Shopping centers
+      - MÉDIO 2
+    - - C-4
+      - Quiosque
+      - MÉDIO 1
+notas:
+- Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página.
+  "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação
+  cada linha repete o valor.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

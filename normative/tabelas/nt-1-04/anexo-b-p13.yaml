@@ -1,0 +1,87 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-04
+arquivo: nt-1-04-classificacao-de-risco.md
+tabela: Tabela do Anexo B
+titulo: Classificação quanto ao risco de incêndio (página 13)
+pagina: 13
+fonte_pdf_sha256: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-04/pagina-13.png
+    imagem_sha256: 9dfcb93499d86122076c1f4322f3cd695cefa21480cff552199f838226e59e0e
+    linhas_cabecalho: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Risco
+    - - I
+      - Industrial
+      - I-1
+      - 'Edificações industriais que fabricam: aditivos de uso industrial; adoçantes naturais e artificiais;
+        água envasada; alimentos e pratos prontos; alimentos para animais; amianto; equipamentos para
+        sinalização e alarme; aparelhos ortopédicos; extração de areia, ardósia, basalto, calcário, dolomita
+        e argila; fabricação de aviamentos para costura; balanças; fabricação de bebidas não alcóolicas
+        (exceção refrigerantes); de bicicletas; bijuterias e artefatos; bolsas; biscoitos; café e derivados;
+        calçados; caldeiras; artigos de escritório (caneta); catalisadores; casas pré moldadas de concreto;
+        cerâmica; de chá; chocolate; de cimento; condimentos; cordoaria; couro; de doces, embalagens de
+        vidro; embalagens de metais; especiarias, molhos, temperos e condimentos; artefatos de esporte;
+        esquadrias de metal; fermentos e leveduras; ferramentas; galvanoplastia; fibras artificiais e
+        sintéticas; conservas de frutas; balas e semelhantes; gelo comum; extração de pedras preciosas;
+        extração de gesso e caulim; extração de grafita e granito; guarda chuvas; instrumentos musicais;
+        fabricação de artigos de joalheria; jogos eletrônicos; lâmpadas; laticínios; extração de mármore
+        e marmoraria; matadouro de (abate de suínos, bovinos, aves); artigos de metal; extração e beneficiamento
+        de minérios; cunhagem de moedas e medalhas; móveis com predominância de metais; móveis de materiais
+        sem madeira); artigos ópticos; artefatos de pesca; serralheria; rolamentos para fins industriais;
+        de sorvetes; artigos de vidro.'
+      - MÉDIO 1
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 13
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Risco
+    - - I
+      - Industrial
+      - I-1
+      - 'Edificações industriais que fabricam: aditivos de uso industrial; adoçantes naturais e artificiais;
+        água envasada; alimentos e pratos prontos; alimentos para animais; amianto; equipamentos para
+        sinalização e alarme; aparelhos ortopédicos; extração de areia, ardósia, basalto, calcário, dolomita
+        e argila; fabricação de aviamentos para costura; balanças; fabricação de bebidas não alcóolicas
+        (exceção refrigerantes); de bicicletas; bijuterias e artefatos; bolsas; biscoitos; café e derivados;
+        calçados; caldeiras; artigos de escritório (caneta); catalisadores; casas pré moldadas de concreto;
+        cerâmica; de chá; chocolate; de cimento; condimentos; cordoaria; couro; de doces, embalagens de
+        vidro; embalagens de metais; especiarias, molhos, temperos e condimentos; artefatos de esporte;
+        esquadrias de metal; fermentos e leveduras; ferramentas; galvanoplastia; fibras artificiais e
+        sintéticas; conservas de frutas; balas e semelhantes; gelo comum; extração de pedras preciosas;
+        extração de gesso e caulim; extração de grafita e granito; guarda chuvas; instrumentos musicais;
+        fabricação de artigos de joalheria; jogos eletrônicos; lâmpadas; laticínios; extração de mármore
+        e marmoraria; matadouro de (abate de suínos, bovinos, aves); artigos de metal; extração e beneficiamento
+        de minérios; cunhagem de moedas e medalhas; móveis com predominância de metais; móveis de materiais
+        sem madeira); artigos ópticos; artefatos de pesca; serralheria; rolamentos para fins industriais;
+        de sorvetes; artigos de vidro.'
+      - MÉDIO 1
+notas:
+- Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página.
+  "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação
+  cada linha repete o valor.
+inconsistencias_da_fonte:
+- 'I-1: parêntese sem abertura em "móveis de materiais sem madeira)" (igual na imagem e no texto).'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

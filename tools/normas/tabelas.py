@@ -58,6 +58,8 @@ def norm(cell: str | None) -> str | None:
     text = re.sub(r"\s*:\s*", ":", text)  # "2-A : 10-B" → "2-a:10-b"
     text = re.sub(r"\s*,\s*", ",", text)  # "X 5 ,6" → "x 5,6"
     text = re.sub(r"\bx\s+(?=\d)", "x", text)  # nota colada ao X: "X 5,6" → "x5,6"
+    text = re.sub(r"\bm2\b", "m²", text)  # sobrescrito achatado pela conversão: "MJ/m2"
+    text = re.sub(r"(?<=[a-z]) (?=\d)", "", text)  # nota sobrescrita: "NE 1" = "NE1"
     return " ".join(text.split())
 
 
@@ -114,6 +116,15 @@ def forma_of(table: dict[str, Any], path: dict[str, Any] | None = None) -> dict[
     return base
 
 
+MERGED_UP = "^"  # na leitura visual: célula mesclada com a de cima (o valor está lá)
+
+
+def compact(rows: list[list[str | None]]) -> list[list[str | None]]:
+    """Leitura visual na forma dos caminhos brutos: a célula mesclada aparece uma vez só (na
+    primeira linha da mescla), então as marcadas ``^`` saem antes de comparar."""
+    return [[c for c in r if c != MERGED_UP] for r in rows]
+
+
 def evaluate(table: dict[str, Any]) -> dict[str, Any]:
     """Resultado calculado a partir dos caminhos (``resultado`` do arquivo).
 
@@ -136,7 +147,7 @@ def evaluate(table: dict[str, Any]) -> dict[str, Any]:
                 shaped = shape(c["linhas"], forma)
             except IndexError:  # a forma não cabe nesta candidata: outra tabela da página
                 continue
-            tries.append((compare(visual["linhas"], shaped), i))
+            tries.append((compare(compact(visual["linhas"]), shaped), i))
         if not tries:
             return {"estado": "pendente_humano", "caminhos_comparados": ["visual"],
                     "motivo": "nenhuma tabela geométrica encontrada na página"}
@@ -147,9 +158,9 @@ def evaluate(table: dict[str, Any]) -> dict[str, Any]:
                "candidato_geometrico": idx, "candidatos_na_pagina": len(tries),
                "bbox": geo["candidatos"][idx].get("bbox")}
         if texto:
-            out["texto"] = compare(visual["linhas"], texto["linhas"])["estado"]
+            out["texto"] = compare(compact(visual["linhas"]), texto["linhas"])["estado"]
     else:
-        res = compare(visual["linhas"], texto["linhas"])
+        res = compare(compact(visual["linhas"]), texto["linhas"])
         out = {"estado": res["estado"], "caminhos_comparados": ["visual", "texto"],
                "observacao": ("segundo caminho = camada de texto do PDF (seção 'Tabelas "
                               "extraídas'); falta a extração geométrica do PDF oficial")}
@@ -330,8 +341,13 @@ def to_markdown(table: dict[str, Any]) -> str:
     n_head = int(visual.get("linhas_cabecalho", 1))
     header = visual.get("cabecalho_publicado") or rows[0]  # cabeçalho mesclado, achatado
     body, prev = [], list(header)
-    for r in rows[n_head:]:  # linha mais curta = células mescladas à esquerda: herda de cima
-        full = prev[: len(header) - len(r)] + list(r)
+    for r in rows[n_head:]:
+        if MERGED_UP in r:  # grade completa: "^" = mesclada com a célula de cima
+            if len(r) != len(header):
+                raise ValueError(f"{table['tabela']}: linha com '^' precisa de todas as colunas")
+            full = [prev[j] if c == MERGED_UP else c for j, c in enumerate(r)]
+        else:  # linha mais curta = células mescladas à esquerda: herda de cima
+            full = prev[: len(header) - len(r)] + list(r)
         body.append(full)
         prev = full
     esc = [[(c or "").replace("|", "/") for c in r] for r in [header, *body]]

@@ -121,3 +121,37 @@ def test_committed_tables_state_is_computed_not_hand_written():
         block = f"### {data['tabela']} — {data['titulo']} (conferida)"
         assert (block in md) == (data["estado"] == "verificada"), (
             f"{f.name}: rode python -m tools.normas.tabelas publicar")
+
+
+def test_merged_up_marker_is_compared_compact_and_published_full():
+    table = {"documento": "NT X", "tabela": "Tabela 9", "titulo": "t", "pagina": 1,
+             "conferida_em": "2026-09-29", "resultado": {"caminhos_comparados": ["visual"]},
+             "caminhos": {"visual": {"linhas_cabecalho": 1, "linhas": [
+                 ["Grupo", "Divisão", "Risco"], ["A", "A-1", "PEQUENO"], ["^", "A-2", "^"]]}}}
+    assert tabelas.compact(table["caminhos"]["visual"]["linhas"])[2] == ["A-2"]
+    md = tabelas.to_markdown(table)
+    assert "| A | A-2 | PEQUENO |" in md
+
+
+def test_superscript_spacing_and_m2_are_not_content():
+    assert tabelas.compare_cell("NE 1", "NE1")["estado"] == "verificada"
+    assert tabelas.compare_cell("1.200 MJ/m2", "1.200 MJ/m²")["estado"] == "verificada"
+    assert tabelas.compare_cell("PF 4", "PF 5")["estado"] == "divergente"
+
+
+def test_engine_risk_classification_matches_verified_anexo_b():
+    """O enquadramento que o motor usa (NT 1-04, Anexo B) é o da tabela conferida (F2)."""
+    import yaml
+
+    base = yaml.safe_load((tabelas.ROOT / "normative" / "base" / "enquadramento.yaml")
+                          .read_text("utf-8"))
+    verified: dict[str, str] = {}
+    for f in sorted((tabelas.TABELAS / "nt-1-04").glob("anexo-b-p*.yaml")):
+        data = tabelas.load(f)
+        assert data["estado"] == "verificada", f.name
+        prev = None
+        for row in data["caminhos"]["visual"]["linhas"][1:]:
+            prev = prev if row[4] == tabelas.MERGED_UP else row[4]
+            verified.setdefault(row[2], prev)
+    engine = {d["id"]: d["risk"] for d in base["divisions"]}
+    assert engine == verified

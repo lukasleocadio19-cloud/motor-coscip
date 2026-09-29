@@ -1,0 +1,183 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-04
+arquivo: nt-1-04-classificacao-de-risco.md
+tabela: Tabela do Anexo B
+titulo: Classificação quanto ao risco de incêndio (página 16)
+pagina: 16
+fonte_pdf_sha256: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-04/pagina-16.png
+    imagem_sha256: 4acecc50b4c76eecad10c70ba047922f3f2b50fa78855197d076165b94b000d7
+    linhas_cabecalho: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Risco
+    - - J
+      - Depósito
+      - J-1
+      - Edificações sem processo industrial que armazenam tijolos, pedras, areias, cimentos, metais e
+        outros materiais incombustíveis, todos sem embalagem.
+      - MÉDIO 1
+    - - ^
+      - ^
+      - J-2
+      - Depósitos com carga de incêndio até 1.000 MJ/m², conforme Anexo C ou Anexo D.
+      - MÉDIO 1
+    - - ^
+      - ^
+      - J-3
+      - Depósitos com carga de incêndio entre 1.000 e 1.200 MJ/m², conforme Anexo C ou Anexo D.
+      - MÉDIO 2
+    - - ^
+      - ^
+      - J-4
+      - Depósitos onde a carga de incêndio ultrapassa a 1.200 MJ/m², conforme Anexo C ou Anexo D. Edificação
+        de guarda móveis e self storage;
+      - GRANDE
+    - - L
+      - Explosivos ou munições
+      - L-1
+      - Comércio em geral de fogos de artifício, munições e assemelhados
+      - GRANDE
+    - - ^
+      - ^
+      - L-2
+      - Indústria de material explosivo, munições e fósforos
+      - GRANDE
+    - - ^
+      - ^
+      - L-3
+      - Depósito de material explosivo ou munições
+      - GRANDE
+    - - M
+      - Especial
+      - M-1
+      - Túnel
+      - GRANDE
+    - - ^
+      - ^
+      - M-2
+      - Líquidos ou gases inflamáveis ou combustíveis
+      - GRANDE
+    - - ^
+      - ^
+      - M-3
+      - Central de comunicação
+      - MÉDIO 1
+    - - ^
+      - ^
+      - M-4
+      - Estrutura temporária
+      - MÉDIO 1
+    - - ^
+      - ^
+      - M-5
+      - Silos
+      - GRANDE
+    - - ^
+      - ^
+      - M-6
+      - Energia
+      - MÉDIO 1
+    - - ^
+      - ^
+      - M-7
+      - Pátios de armazenagem
+      - MÉDIO 2
+    - - ^
+      - ^
+      - M-8
+      - Loteamento
+      - MÉDIO 1
+    - - ^
+      - ^
+      - M-9
+      - Local onde a liberdade das pessoas sofre restrição
+      - MÉDIO 1
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 16
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Risco
+    - - J
+      - Depósito
+      - J-1
+      - Edificações sem processo industrial que armazenam tijolos, pedras, areias, cimentos, metais e
+        outros materiais incombustíveis, todos sem embalagem.
+      - MÉDIO 1
+    - - J-2
+      - Depósitos com carga de incêndio até 1.000 MJ/m², conforme Anexo C ou Anexo D.
+      - MÉDIO 1
+    - - J-3
+      - Depósitos com carga de incêndio entre 1.000 e 1.200 MJ/m2, conforme Anexo C ou Anexo D.
+      - MÉDIO 2
+    - - J-4
+      - Depósitos onde a carga de incêndio ultrapassa a 1.200 MJ/m², conforme Anexo C ou Anexo D. Edificação
+        de guarda móveis e self storage;
+      - GRANDE
+    - - L
+      - Explosivos ou munições
+      - L-1
+      - Comércio em geral de fogos de artifício, munições e assemelhados
+      - GRANDE
+    - - L-2
+      - Indústria de material explosivo, munições e fósforos
+      - GRANDE
+    - - L-3
+      - Depósito de material explosivo ou munições
+      - GRANDE
+    - - M
+      - Especial
+      - M-1
+      - Túnel
+      - GRANDE
+    - - M-2
+      - Líquidos ou gases inflamáveis ou combustíveis
+      - GRANDE
+    - - M-3
+      - Central de comunicação
+      - MÉDIO 1
+    - - M-4
+      - Estrutura temporária
+      - MÉDIO 1
+    - - M-5
+      - Silos
+      - GRANDE
+    - - M-6
+      - Energia
+      - MÉDIO 1
+    - - M-7
+      - Pátios de armazenagem
+      - MÉDIO 2
+    - - M-8
+      - Loteamento
+      - MÉDIO 1
+    - - M-9
+      - Local onde a liberdade das pessoas sofre restrição
+      - MÉDIO 1
+notas:
+- Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página.
+  "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação
+  cada linha repete o valor.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

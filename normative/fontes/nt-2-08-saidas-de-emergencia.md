@@ -780,6 +780,21 @@ a) ter afastamento menor que 0,11 m entre balaústres verticais, longarinas inte
 | 0,20 |  |  | 8,33 (1:12) < i ≤ 10,0 (1:10) | 4 |  |  |
 | 0,075 |  |  | 10,0 (1:10) < i ≤ 12 (1:8,33) | 1 |  |  |
 
+<!-- tabela-conferida: Tabela 1 p12 -->
+### Tabela 1 — Inclinação máxima de segmentos de rampa (conferida)
+
+| Desníveis máximos de cada segmento de rampa h (m) | Inclinação admissível em cada segmento de rampa (i %) | Número máximo de segmentos de rampa |
+| --- | --- | --- |
+| 1,50 | 5,00 (1:20) | Sem limite |
+| 1,00 | 5,00 (1:20) < i ≤ 6,25 (1:16) | Sem limite |
+| 0,80 | 6,25 (1:16) < i ≤ 8,33 (1:12) | 15 |
+| 0,20 | 8,33 (1:12) < i ≤ 10,0 (1:10) | 4 |
+| 0,075 | 10,0 (1:10) < i ≤ 12 (1:8,33) | 1 |
+
+Fonte: NT 2-08, página 12, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 9050. Na imagem o cabeçalho da 2ª coluna é "( i %)".
+<!-- /tabela-conferida: Tabela 1 p12 -->
+
 ---
 
 ## Página 13
@@ -1085,6 +1100,42 @@ r) os teatros, cinemas, auditórios, boates e salões diversos terão suas lota�
 |  | M-2, M-3, M-4, M-5, M-6 | Uma pessoa por 10,00 m² de área | 100 |  |  | 60 |  |  | 100 |
 |  | M-8 | Uma pessoa por 4,00 m² de área | 60 |  |  | 45 |  |  | 100 |
 
+<!-- tabela-conferida: Tabela do Anexo A p18 -->
+### Tabela do Anexo A — Dados para o dimensionamento das saídas de emergência (conferida)
+
+| Ocupação | Divisão | População (A) | Capacidade da unidade de passagem (B) — Acesso e descargas | Capacidade da unidade de passagem (B) — Escadas e rampas | Capacidade da unidade de passagem (B) — Portas |
+| --- | --- | --- | --- | --- | --- |
+| Residencial | A-1, A-2, A-4 e A-5 | Duas pessoas por dormitório (C) | 60 | 45 | 100 |
+| Residencial | A-3 | Duas pessoas por dormitório e uma pessoa por 4 m² de área de alojamento (D) | 60 | 45 | 100 |
+| Serviços de hospedagem | - | Uma pessoa por 15,00 m² de área (E) (G) | 60 | 45 | 100 |
+| Comercial | - | Uma pessoa por 3,00 m² de área (E) (J) | 100 | 60 | 100 |
+| Serviço profissional e institucional | D-1, D-2 e D-3 | Uma pessoa por 7,00 m² de área | 100 | 60 | 100 |
+| Serviço profissional e institucional | D-4 e D-5 | Uma pessoa por 7,00 m² de área (D) + | 100 | 60 | 100 |
+| Escolar e cultura física | E-1, E-2 e E-3 | Uma pessoa por 1,50 m² de área de sala de aula (F) | 100 | 60 | 100 |
+| Escolar e cultura física | E-4 | Uma pessoa por 1,50 m² de área de sala de aula (F) | 30 | 22 | 30 |
+| Local de Reunião de Público | F-1, F-9 e F-10 | Uma pessoa por 3,00 m² de área | 100 | 75 | 100 |
+| Local de Reunião de Público | F-2, F-5, F-8 | Uma pessoa por m² de área (E) (G) | 100 | 75 | 100 |
+| Local de Reunião de Público | F-3, F-6, F-7 e F-11 | Duas pessoas por m² de área (G) (K) (1:0,5 m²) | 100 | 75 | 100 |
+| Local de Reunião de Público | F-4 | Uma pessoa por 3,00 m² de área (E) (J) + (F) | 100 | 75 | 100 |
+| Serviço automotivo e assemelhado | G-1, G-2 e G-3 | Uma pessoa por 40 vagas de veículo | 100 | 60 | 100 |
+| Serviço automotivo e assemelhado | G-4, G-5 | Uma pessoa por 20,00 m² de área (E) | 100 | 60 | 100 |
+| Serviço automotivo e assemelhado | G-6 | Uma pessoa por 40 m² de área (E) | 100 | 60 | 100 |
+| Serviço de Saúde | H-3 | Uma pessoa por 7,00 m² de área (E) | 60 | 45 | 100 |
+| Serviço de Saúde | H-2 | Duas pessoas por dormitório (c) e uma pessoa por 4 m² de área de alojamento (E) | 30 | 22 | 30 |
+| Serviço de Saúde | H-1 | Uma pessoa e meia por leito + uma pessoa por 7,00 m² de área de ambulatório (H) | 30 | 22 | 30 |
+| Industrial | - | Uma pessoa por 10,00 m² de área | 100 | 60 | 100 |
+| Depósito | - | Uma pessoa por 30,00 m² de área (J) | 100 | 60 | 100 |
+| Explosivos ou munições | L-1 | Uma pessoa por 3,00 m² de área | 100 | 60 | 100 |
+| Explosivos ou munições | L-2, L-3 | Uma pessoa por 10,00 m² de área | 100 | 60 | 100 |
+| Especial | M-1 | + | 100 | 75 | 100 |
+| Especial | M-2, M-3, M-4, M-5, M-6 | Uma pessoa por 10,00 m² de área | 100 | 60 | 100 |
+| Especial | M-8 | Uma pessoa por 4,00 m² de área | 60 | 45 | 100 |
+
+Fonte: NT 2-08, página 18, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Células mescladas ("^" na leitura visual): a capacidade da unidade de passagem vale para o bloco de linhas indicado na imagem (ex.: 60/45/100 para Residencial e Serviços de hospedagem; 100/60/100 de Comercial até E-1, E-2 e E-3). Na publicação, cada linha repete o valor do bloco.
+Observações (A) a (N) e a redução das unidades de passagem: ver o texto da página 19. "+" = consultar normas específicas (observação I).
+<!-- /tabela-conferida: Tabela do Anexo A p18 -->
+
 ---
 
 ## Página 19
@@ -1128,6 +1179,34 @@ Os parâmetros dados nesta Tabela são os mínimos aceitáveis para o cálculo d
 | Depósito | J-1 J-2 J-3 J-4 | NE | NE | PF | PF |  |  | PF5 |
 | Explosivos ou munições | L-1 | NE | NE | PF | PF |  |  | PF5 |
 | Especial | M-3 M-6 | NE | NE | PF | PF |  |  | PF5 |
+
+<!-- tabela-conferida: Tabela do Anexo B p20 -->
+### Tabela do Anexo B — Tipos de escadas de emergência por ocupação (conferida)
+
+| Ocupação | Divisão | 2 pavimentos | 3 pavimentos | 4, 5 e 6 pavimentos | Acima de 6 com H ≤30m | H≥30m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Residencial | A-2 | NE | NE | NE1 | PF | PF4 |
+| Residencial | A-3 | NE | NE | PF | PF | PF5 |
+| Residencial | A-6 | NE | NE | PF2 | PF | PF4 |
+| Serviço de Hospedagem | B-1 B-2 | NE | NE | PF | PF | PF5 |
+| Comercial | C-1 C-2 C-3 C-4 | NE | NE | PF | PF | PF5 |
+| Serviço profissional e institucional | D-1 D-2 D-3 D-4 D-5 | NE | NE | PF | PF | PF5 |
+| Escolar e Cultura Física | E-1 E-2 E-3 | NE | NE | PF6 | PF | PF5 |
+| Local de Reunião de Público | F-1 F-2 F-3 F-4 F-6 F-8 F-9 F-10 | NE | NE | PF | PF | PF5 |
+| Local de Reunião de Público | F-5 F-7 F-11 | NE | NE | PF7 | PF | PF5 |
+| Serviço automotivo e assemelhado | G-1 G-2 G-3 G-4 G-5 G-6 | NE | NE | PF | PF | PF4,5 |
+| Serviço de Saúde | H-1 H-4 | NE | NE | PF | PF | PF5 |
+| Serviço de Saúde | H-2 H-3 | NE | PFP | PFP | PFP | PFP5 |
+| Industrial | I-1 I-2 I-3 | NE | NE | PF | PF | PF5 |
+| Depósito | J-1 J-2 J-3 J-4 | NE | NE | PF | PF | PF5 |
+| Explosivos ou munições | L-1 | NE | NE | PF | PF | PF5 |
+| Especial | M-3 M-6 | NE | NE | PF | PF | PF5 |
+
+Fonte: NT 2-08, página 20, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Siglas: NE = escada não enclausurada; PF = escada enclausurada à prova de fumaça; PFP = enclausurada à prova de fumaça pressurizada (observações J e K). Números colados ao tipo (NE1, PF4, PF4,5…) são as notas sobrescritas da imagem.
+As células de Ocupação são mescladas: na publicação, as linhas A-3, A-6, F-5/F-7/F-11 e H-2/H-3 herdam a ocupação da linha de cima.
+Observações (A) a (K): ver o texto das páginas 20 e 21.
+<!-- /tabela-conferida: Tabela do Anexo B p20 -->
 
 ---
 
