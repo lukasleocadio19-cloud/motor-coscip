@@ -39,8 +39,9 @@ from coscip_normative.verification.models import CheckDefinition, Question
 
 
 def _citations(check: CheckDefinition) -> tuple[dict[str, Any], ...]:
+    # ``quote``: os termos conferidos no texto ingerido (a citação literal do achado, F8).
     return tuple({"document": s.document, "edition": s.edition, "item": s.item,
-                  "page": s.page} for s in check.normative_basis)
+                  "page": s.page, "quote": list(s.quote)} for s in check.normative_basis)
 
 
 def _finding(check: CheckDefinition, *, compliance: ComplianceStatus,

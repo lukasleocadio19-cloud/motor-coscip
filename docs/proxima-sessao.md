@@ -185,7 +185,7 @@ pôde abrir uma branch por fase). Detalhe na seção 13.
 | COR-F5 reconhecimento | **feito** | camadas desligadas/congeladas/não plotáveis, MINSERT, ATTRIB, `object_key`, dedupe, balanço de reconhecimento e porta `quality.recognition.complete`; 19 testes de armadilha |
 | COR-F6 executor | **feito** | conta objetos distintos (`COUNT_DIVERGENCE`), `accepted_evidence` aplicado, pior caso por valor ± incerteza |
 | COR-F7 cálculo | **feito** | vetorial exato (grafo de visibilidade + branch and bound) como principal; FMM (`scikit-fmm`) e grade como conferência; porta `quality.geometry.consistent`; orçamento de incerteza; `confirmar_unidade` com duas referências não paralelas (≤ 0,5 %); hash canônico igual em Windows e Linux (job `determinismo` da CI) |
-| COR-F8 integração | — | |
+| COR-F8 integração | **feito** | `coscip_findings.achado.to_achado`: `Finding` → contrato comum (`achado.schema.json`), sem mudar status; `achados` em `analisar_planta` e em `v2-findings --out`; `consolidar_matriz.py` (orquestrador), `rascunho_bilhete.py` e `conferir_citacoes.py` (bilhete); processo sintético (DXF + memorial fictício) de ponta a ponta no teste. Falta: rodar a skill real com o MCP no Claude Desktop |
 | COR-F9 validação | — | depende do corpus-gabarito e do responsável técnico |
 
 ### Revisão, relatório e recuperação
@@ -805,6 +805,21 @@ Sessão em nuvem (Linux, Python 3.12 no `.venv`, sem acesso ao site do CBMERJ: o
   (≥ 30°) que concordem em 0,5 %; `tools/ci/determinismo.py` + job `determinismo` na CI.
   Nas plantas analíticas (corredor em L, pilar, duas portas) o erro ficou entre 0,009 e
   0,013 m com incerteza declarada 0,125 m; a grade dava ±1,1 a ±1,6 m.
+
+- **F8** — `coscip_findings.achado` (`to_achado`/`to_achados`): o `Finding` vira achado do
+  contrato comum com os três status copiados, citação com os termos conferidos (`quote` passou
+  a sair em `normative_citations`), critério adotado separado, evidências e medida; o texto do
+  `fato` não leva hash nem nome de algoritmo. `analisar_planta` devolve `achados`;
+  `findings_for_analysis` (`v2-findings --out`) também. Esquema ganhou `outras_regras`
+  (`$defs/regra`). Scripts de skill: `orquestrar-analise-cbmerj/scripts/consolidar_matriz.py`
+  (valida — `jsonschema` se houver, senão conferência mínima —, não traduz, agrupa
+  equivalentes e marca `divergente`), `emitir-bilhete-cbmerj/scripts/rascunho_bilhete.py`
+  (entra não conforme e pendência do projeto sem revisão aberta; falta de dado vai para a nota
+  interna) e `conferir_citacoes.py` (documento, dispositivo e ano da edição no índice).
+  Protocolo de leitura de pranchas: com planta vetorial e GATE-0 aberto a distância é cobrada
+  pela medida do motor. Aceite no teste `tests/integration/test_processo_sintetico_f8.py`
+  (fixture `tests/fixtures/processo-sintetico/`, fictícia): matriz com motor + skill e bilhete
+  com 2/2 citações localizadas. `jsonschema` entrou no extra `dev`.
 
 ### Decisões e cuidados desta sessão
 - Testes antigos alterados **só** quando o plano muda o comportamento: portas novas nos

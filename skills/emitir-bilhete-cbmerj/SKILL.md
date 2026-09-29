@@ -42,7 +42,13 @@ Chamada após a etapa 8 (consolidação) e 9 (bloqueios) de `$orquestrar-analise
 
 ### 1. Selecionar o que entra
 
-Entram no bilhete os achados com resultado `não conforme` e `pendente`.
+Entram no bilhete os achados com resultado `não conforme` e `pendente` **do projeto**: documento ausente ou incompleto e divergência a compatibilizar (`tipo` `DOCUMENT_MISSING`, `DOCUMENT_INCOMPLETE`, `DIVERGENCE`), com saneamento e sem revisão do analista em aberto. Falta de dado para a própria análise (`DATA_MISSING`, `NOT_VERIFIABLE`, `ANALYST_REVIEW`, como unidade da planta não confirmada ou enquadramento não informado) não é exigência ao requerente: fica na nota de rastreabilidade para o analista resolver.
+
+Com a matriz no contrato comum (`matriz.json` de `$orquestrar-analise-cbmerj`), o rascunho sai do script, que já aplica essa seleção, a ordem e a forma canônica; o texto final continua sendo revisado pelo analista:
+
+```bash
+python3 scripts/rascunho_bilhete.py matriz.json --out bilhete.txt --nota nota.md
+```
 
 Não entram: `conforme`, `não aplicável`, severidade, nível de confiança, nome de módulo ou habilidade, estado de leitura de CAD, rastro de ferramenta, deliberação interna.
 
@@ -96,7 +102,13 @@ python3 scripts/localizar_item.py "distancia maxima a ser percorrida" --nt 2-01
 
 O script procura no texto integral das NTs (as `nt-*.md` das skills de grupo instaladas ao lado, `COSCIP_NORMAS_DIR` ou `normative/fontes` do repositório) e, na falta dele, no índice [references/itens.jsonl](references/itens.jsonl), gerado da mesma base que o motor usa; devolve item, edição e página do PDF. Ler o trecho antes de citar: o item imediatamente acima da linha nem sempre é o que fundamenta a exigência. Com o MCP `coscip-plantas` disponível, `consultar_norma` é a alternativa (mesma base).
 
-4. Confirmada a fonte, registrar a citação na nota de rastreabilidade. O banco é **gerado** da base normativa (`tools/normas/indice_itens.py`): não se edita à mão; item que falte nele falta na base — corrigir a base por pull request.
+4. Confirmada a fonte, registrar a citação na nota de rastreabilidade. Antes de entregar, conferir **todas** as citações do bilhete contra o índice (documento, dispositivo e ano da edição; `[A CONFERIR]` conta como não localizada):
+
+```bash
+python3 scripts/conferir_citacoes.py bilhete.txt
+```
+
+O banco é **gerado** da base normativa (`tools/normas/indice_itens.py`): não se edita à mão; item que falte nele falta na base — corrigir a base por pull request.
 
 **Nunca inventar item por dedução ou analogia.** Se, depois da busca, o item não for localizado, não emitir o bilhete com a NT solta: marcar a lacuna de forma visível para o analista completar —
 

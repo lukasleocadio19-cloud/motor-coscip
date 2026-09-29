@@ -159,6 +159,14 @@ Cruzar os módulos em uma matriz única. Para cada achado:
 
 Resolver duplicidade sem apagar diferenças: consolidar achados equivalentes e preservar todas as fontes e evidências.
 
+Com os achados no contrato comum ([references/achado.schema.json](references/achado.schema.json)) — os do motor vêm prontos de `analisar_planta` (`achados`) ou de `v2-findings --out` —, a matriz sai do script, que valida cada achado, os mantém **como vieram** (nenhum status recalculado) e marca como `divergente` o grupo equivalente com status diferentes:
+
+```bash
+python3 scripts/consolidar_matriz.py motor.json le.json --out matriz.json --md matriz.md
+```
+
+Achado fora do contrato impede a matriz; corrigir o achado, não o script.
+
 Antes da conclusão, executar a reconciliação de cobertura: todo requisito ativado deve ter `regra`, `responsável`, `teste`, `evidência`, `estado` e `fonte`. Requisito sem responsável ou sem evidência esperada é uma lacuna bloqueante da automação.
 
 ### 9. Aplicar bloqueios

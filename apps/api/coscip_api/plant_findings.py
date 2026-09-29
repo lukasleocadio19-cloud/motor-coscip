@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Any
 
 from coscip_findings import consolidate
+from coscip_findings.achado import to_achados
 
 from coscip_analysis.evidence import plant_evidence
 from coscip_api.models import Analysis
@@ -71,6 +72,8 @@ def findings_for_analysis(factory, storage, analysis_id: str,  # noqa: ANN001
         "summary": result.summary.as_dict(),
         "groups": [g.model_dump(mode="json") for g in result.groups],
         "findings": [{"ref": f.ref, **f.model_dump(mode="json")} for f in findings],
+        # F8: contrato comum das skills (skills/_comum/achado.schema.json), sem tradução.
+        "achados": to_achados(findings, pe.evidence),
         "evidence": [e.model_dump(mode="json") for e in pe.evidence],
         "normative_value": False,
     }

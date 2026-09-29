@@ -213,6 +213,18 @@ def _v2_findings_from_stored_analysis(env: Env, analysis_id: str, tmp: Path) -> 
     assert by_check["EXT-CAD-003-GRANDE"]["compliance_status"] == "NOT_APPLICABLE"
     ext = [e for e in out["evidence"] if e["field"] == "extinguisher"]
     assert len(ext) == 2 and all(e["locator"]["entity_handle"] for e in ext)
+    # F8: v2-findings --out carrega os mesmos achados no contrato comum das skills
+    import json
+
+    import jsonschema
+    root = Path(__file__).resolve().parents[2]
+    schema = json.loads((root / "skills" / "_comum" / "achado.schema.json").read_text("utf-8"))
+    assert len(out["achados"]) == len(out["findings"])
+    for achado in out["achados"]:
+        jsonschema.validate(achado, schema)
+    by_id = {a["id"]: a for a in out["achados"]}
+    for f in out["findings"]:
+        assert by_id[f["ref"]]["compliance_status"] == f["compliance_status"]
 
 
 def test_source_index_item_text_and_search(env):

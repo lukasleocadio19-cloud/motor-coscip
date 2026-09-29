@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/lukasleocadio19-cloud/motor-coscip/skills/_comum/achado.schema.json",
   "title": "Achado de análise CBMERJ (skills e motor)",
-  "description": "Contrato comum de saída (plano de correção, F3.4). O mesmo vocabulário do Finding do motor (coscip_findings): os três status (compliance, evidence, review) nunca se fundem; ausência de evidência nunca vira conformidade; citação não localizada fica com item '[A CONFERIR]' e o achado não pode ser COMPLIANT. Enums conferidos por tests/unit/test_achado_schema.py contra coscip_cbm.enums.",
+  "description": "Contrato comum de saída (plano de correção, F3.4). O mesmo vocabulário do Finding do motor (coscip_findings): os três status (compliance, evidence, review) nunca se fundem; ausência de evidência nunca vira conformidade; citação não localizada fica com item '[A CONFERIR]' e o achado não pode ser COMPLIANT. Enums conferidos por tests/unit/test_skills_conteudo.py contra coscip_cbm.enums; o motor converte o Finding com coscip_findings.achado.to_achado (F8).",
   "type": "object",
   "required": [
     "id",
@@ -45,34 +45,13 @@
       "description": "o que foi observado, com a fonte"
     },
     "regra": {
-      "type": "object",
-      "required": [
-        "documento",
-        "item"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "documento": {
-          "type": "string",
-          "description": "NT x-yy ou Decreto 42/2018"
-        },
-        "edicao": {
-          "type": "string"
-        },
-        "item": {
-          "type": "string",
-          "description": "item, tabela, anexo ou artigo localizado; '[A CONFERIR]' se não localizado"
-        },
-        "pagina": {
-          "type": [
-            "integer",
-            "null"
-          ]
-        },
-        "citacao": {
-          "type": "string",
-          "description": "trecho literal conferido"
-        }
+      "$ref": "#/$defs/regra"
+    },
+    "outras_regras": {
+      "type": "array",
+      "description": "demais dispositivos citados pelo mesmo achado (o check pode ter mais de uma base)",
+      "items": {
+        "$ref": "#/$defs/regra"
       }
     },
     "criterio_adotado": {
@@ -250,5 +229,38 @@
         }
       }
     }
-  ]
+  ],
+  "$defs": {
+    "regra": {
+      "type": "object",
+      "required": [
+        "documento",
+        "item"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "documento": {
+          "type": "string",
+          "description": "NT x-yy ou Decreto 42/2018"
+        },
+        "edicao": {
+          "type": "string"
+        },
+        "item": {
+          "type": "string",
+          "description": "item, tabela, anexo ou artigo localizado; '[A CONFERIR]' se não localizado"
+        },
+        "pagina": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "citacao": {
+          "type": "string",
+          "description": "trecho literal conferido"
+        }
+      }
+    }
+  }
 }

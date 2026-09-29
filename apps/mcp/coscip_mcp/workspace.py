@@ -23,6 +23,7 @@ from typing import Any, Literal
 
 import numpy as np
 from coscip_findings import consolidate
+from coscip_findings.achado import to_achados
 from pydantic import BaseModel, ConfigDict, Field
 
 from coscip_analysis import AnalysisInput, parse_dictionary, run
@@ -517,6 +518,9 @@ def _report(d: OpenDrawing, out: dict[str, Any], ctx: dict[str, Any], pe, result
         "resumo": result.summary.as_dict(),
         "pendencias": pending,
         "sem_pendencia": ok,
+        # F8: os mesmos achados no contrato comum das skills (skills/_comum/achado.schema.json),
+        # para entrar na matriz consolidada sem tradução.
+        "achados": to_achados(result.findings, pe.evidence),
         "checks_nao_verificados_por_citacao": base.excluded_checks,
         "avisos_do_motor": out.get("warnings", []),
         "simbolos_fora_dos_pavimentos": len(out.get("symbols_outside_regions", [])),
