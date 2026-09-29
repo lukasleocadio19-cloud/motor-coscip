@@ -29,6 +29,9 @@ class InsertRec:
     cx: float | None = None
     cy: float | None = None
     size: float | None = None
+    rotation: float = 0.0
+    # Atributos visíveis da inserção (etiqueta → valor), ex.: {"AGENTE": "PQS"}.
+    attribs: tuple[tuple[str, str], ...] = ()
 
     @property
     def child_prefix(self) -> tuple[str, ...]:
@@ -45,6 +48,9 @@ class TextRec:
     x: float
     y: float
     block: str | None
+    # ATTRIB: etiqueta e caminho da inserção dona (o texto é atributo dela, não texto solto).
+    tag: str | None = None
+    owner_path: tuple[str, ...] | None = None
 
 
 @dataclass(frozen=True)
@@ -68,6 +74,10 @@ class Plan:
     entity_count: int = 0
     invisible_skipped: int = 0
     max_sagitta_m: float = 0.0
+    # Balanço (F5): o que o leitor não entregou e por quê; XREFs; conteúdo fora do Model.
+    skipped: list = field(default_factory=list)
+    xrefs: list[str] = field(default_factory=list)
+    paper_space: dict[str, int] = field(default_factory=dict)
 
     def layer_mask(self, predicate) -> np.ndarray:  # noqa: ANN001
         keep = np.array([bool(predicate(n)) for n in self.layers], dtype=bool)
@@ -96,6 +106,7 @@ def load_plan(path: Path, scale_to_m: float, max_expanded: int = 2_000_000) -> P
     seg_flags: list[int] = []
     k = scale_to_m
     raw_inserts: list[tuple] = []
+    plan_rot: dict[int, float] = {}
     open_blocks: list[tuple[tuple[str, ...], int, int]] = []  # (prefixo, índice, 1º segmento)
     ranges: dict[int, tuple[int, int]] = {}
 
@@ -104,6 +115,8 @@ def load_plan(path: Path, scale_to_m: float, max_expanded: int = 2_000_000) -> P
             prefix, idx, start = open_blocks.pop()
             ranges[idx] = (start, len(seg_layers))
 
+    by_path: dict[tuple[str, ...], int] = {}
+    attribs: dict[int, list[tuple[str, str]]] = {}
     for e in reader.entities(doc):
         plan.entity_count += 1
         path_t = tuple(e.instance_path)
@@ -112,13 +125,19 @@ def load_plan(path: Path, scale_to_m: float, max_expanded: int = 2_000_000) -> P
             idx = len(raw_inserts)
             raw_inserts.append((e.handle, path_t, e.block_name, e.layer,
                                 e.anchor[0] * k, e.anchor[1] * k))
+            by_path[path_t] = idx
             open_blocks.append(((*path_t[:-1], f"block:{e.block_name}@{e.handle}"), idx,
                                 len(seg_layers)))
+            plan_rot[idx] = e.rotation
         elif e.entity_type in {"TEXT", "MTEXT", "ATTRIB"} and e.text and e.anchor:
             txt = " ".join(e.text.split())
             if txt:
+                owner = path_t[:-1] if e.entity_type == "ATTRIB" else None
+                if owner is not None and owner in by_path:
+                    attribs.setdefault(by_path[owner], []).append((e.tag or "", txt))
                 plan.texts.append(TextRec(e.handle, path_t, e.layer, txt,
-                                          e.anchor[0] * k, e.anchor[1] * k, e.block_name))
+                                          e.anchor[0] * k, e.anchor[1] * k, e.block_name,
+                                          tag=e.tag, owner_path=owner))
         if e.polylines:
             lid = layer_ids.setdefault(e.layer, len(layer_ids))
             plan.max_sagitta_m = max(plan.max_sagitta_m, e.max_sagitta * k)
@@ -134,6 +153,10 @@ def load_plan(path: Path, scale_to_m: float, max_expanded: int = 2_000_000) -> P
                                                       np.asarray(pl, dtype=float) * k))
     close_until(())
     plan.invisible_skipped = reader.invisible_skipped
+    plan.skipped = list(reader.skipped)
+    plan.xrefs = [b.name for b in doc.blocks if b.block and b.block.is_xref]
+    plan.paper_space = {lay.name: len(lay) for lay in doc.layouts if lay.name != "Model"
+                        and len(lay) > 1}
     plan.layers = [n for n, _ in sorted(layer_ids.items(), key=lambda kv: kv[1])]
     plan.segments = (np.asarray(coords, dtype=float).reshape(-1, 4) if coords
                      else np.zeros((0, 4)))
@@ -148,7 +171,9 @@ def load_plan(path: Path, scale_to_m: float, max_expanded: int = 2_000_000) -> P
             x0, x1, y0, y1 = xs.min(), xs.max(), ys.min(), ys.max()
             cx, cy = float((x0 + x1) / 2), float((y0 + y1) / 2)
             size = float(np.hypot(x1 - x0, y1 - y0))
-        plan.inserts.append(InsertRec(*rec, cx=cx, cy=cy, size=size))
+        plan.inserts.append(InsertRec(*rec, cx=cx, cy=cy, size=size,
+                                      rotation=plan_rot.get(idx, 0.0),
+                                      attribs=tuple(attribs.get(idx, ()))))
     return plan
 
 

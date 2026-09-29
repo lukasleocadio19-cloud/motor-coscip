@@ -3,7 +3,7 @@
 # v2 (fase 3): pavimento confirmado e área toda alcançada pelo percurso como portas de qualidade.
 schema_version: checks/1.0
 id: EXT-CAD-003-MEDIO
-version: 2
+version: 3
 title: Distância a percorrer até o extintor (risco Médio)
 system: EXTINTORES
 type: CAD_DISTANCE
@@ -24,7 +24,7 @@ question:
   unit: m
   accepted_evidence: [CAD]
   quality_gate: quality.walls_detected
-  quality_gates: [quality.region_confirmed, quality.extinguisher.complete]
+  quality_gates: [quality.region_confirmed, quality.extinguisher.complete, quality.recognition.complete]
 normative_basis:
   - document: NT 2-01
     edition: 2ª edição - 2020

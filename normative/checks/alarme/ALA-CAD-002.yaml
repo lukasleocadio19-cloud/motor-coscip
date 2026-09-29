@@ -1,7 +1,7 @@
 # RASCUNHO. Acionador manual a no máximo 30 m de percurso (fase 3).
 schema_version: checks/1.0
 id: ALA-CAD-002
-version: 1
+version: 2
 title: Percurso até o acionador manual mais próximo
 system: ALARME
 type: CAD_DISTANCE
@@ -21,7 +21,7 @@ question:
   unit: m
   accepted_evidence: [CAD]
   quality_gate: quality.walls_detected
-  quality_gates: [quality.region_confirmed, quality.manual_call_point.complete]
+  quality_gates: [quality.region_confirmed, quality.manual_call_point.complete, quality.recognition.complete]
 normative_basis:
   - document: NT 2-07
     edition: 1ª edição - 2019

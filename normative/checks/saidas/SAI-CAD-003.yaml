@@ -4,7 +4,7 @@
 # v2: a decisão do analista (25/09/2026) virou interpretação registrada (F4.1).
 schema_version: checks/1.0
 id: SAI-CAD-003
-version: 2
+version: 3
 title: Distância direta até a saída (projeto sem leiaute)
 system: SAIDAS
 type: CAD_DISTANCE
@@ -28,7 +28,7 @@ question:
   unit: m
   accepted_evidence: [CAD]
   # Linha reta não contorna paredes: dispensa a porta de paredes, não a de pavimento.
-  quality_gates: [context.exits_confirmed, quality.region_confirmed]
+  quality_gates: [context.exits_confirmed, quality.region_confirmed, quality.recognition.complete]
 normative_basis:
   - document: NT 2-08
     edition: 1ª edição - 2019; Portaria 1.317/2025

@@ -248,7 +248,8 @@ def _floor(region: dict[str, Any], *, process_id: str, source: str, version: int
         items.append(base(
             id=f"cad:{floor_id}:{field}:{sym['id']}",
             locator=EvidenceLocator(entity_handle=sym.get("handle") or None,
-                                    layer=sym.get("layer") or None, floor_id=floor_id),
+                                    layer=sym.get("layer") or None, floor_id=floor_id,
+                                    object_key=sym.get("object_key")),
             field=field, raw_value=sym.get("block") or sym.get("evidence") or sym["class"],
             normalized_value=True, extraction_method=SYMBOL_METHOD,
             extraction_schema=f"symbols:{dictionary.get('id', '')}",
@@ -263,7 +264,8 @@ def _floor(region: dict[str, Any], *, process_id: str, source: str, version: int
             items.append(base(
                 id=f"cad:{floor_id}:extinguisher_agent:{sym['id']}",
                 locator=EvidenceLocator(entity_handle=sym.get("handle") or None,
-                                        layer=sym.get("layer") or None, floor_id=floor_id),
+                                        layer=sym.get("layer") or None, floor_id=floor_id,
+                                        object_key=sym.get("object_key")),
                 field="extinguisher_agent",
                 raw_value=attrs.get("agent_text") or sym.get("block") or sym["class"],
                 normalized_value=agent, extraction_method=SYMBOL_METHOD,

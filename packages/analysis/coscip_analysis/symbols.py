@@ -8,6 +8,12 @@ Ordem de evidência (a mais forte primeiro):
 
 A inserção mais externa reconhecida vence: o conteúdo interno dela não gera outro símbolo.
 Nenhum símbolo é "confirmado" aqui; cada um guarda o padrão que o reconheceu.
+
+Balanço (plano de correção, F5): toda inserção e todo texto curto termina em exatamente um
+destino — reconhecido(classe), ignorado(motivo) ou não reconhecido — e nada entra duas vezes:
+MINSERT vem expandido do leitor, atributo (ATTRIB) é atributo da inserção e não texto solto,
+texto junto de um símbolo da mesma classe vira atributo dele, bloco duplicado no mesmo ponto é
+um objeto só e marcações de saída a até 1 m viram uma saída com várias evidências.
 """
 
 from __future__ import annotations
@@ -29,6 +35,9 @@ _ANON = re.compile(r"^\*[A-Z]\d*$|^A\$C[0-9A-F]+$", re.I)
 # Código de placa sem hífen ("P1", "E5") é comum em legenda de portas/pilares: só vale como
 # placa quando o layer é de segurança contra incêndio.
 _SAFETY_LAYER = re.compile(r"SIN|PLACA|INC|EMERG|PSCIP|BOMB|PPCI|PSCI", re.I)
+OBJECT_TOL_M = 0.05  # dois blocos iguais a até 5 cm = o mesmo objeto (erro de CAD)
+EXIT_MERGE_M = 1.0  # marcações de saída (bloco, texto, placa S-12) da mesma porta
+TEXT_MAX = 40  # texto curto: candidato a símbolo/atributo; mais longo é texto corrido
 
 
 @dataclass
@@ -44,17 +53,26 @@ class Symbol:
     stage: str  # override | block_name | layer | text
     evidence: str
     attrs: dict[str, Any] = field(default_factory=dict)
-    excluded: str | None = None  # LEGEND | DEMOLISH
+    excluded: str | None = None  # LEGEND | DEMOLISH | DUPLICATE | MERGED
+    rotation: float = 0.0
 
     @property
     def protective(self) -> bool:
         return self.excluded is None
 
+    @property
+    def object_key(self) -> str:
+        """Identidade do objeto físico (F5.2): classe + posição na tolerância + raiz."""
+        root = self.path[0] if self.path else self.handle
+        raw = f"{self.cls}|{round(self.x / OBJECT_TOL_M)}|{round(self.y / OBJECT_TOL_M)}|{root}"
+        return hashlib.sha1(raw.encode()).hexdigest()[:16]
+
     def as_dict(self) -> dict[str, Any]:
         return {"id": self.id, "class": self.cls, "x": round(self.x, 4), "y": round(self.y, 4),
                 "handle": self.handle, "instance_path": list(self.path), "block": self.block,
                 "layer": self.layer, "stage": self.stage, "evidence": self.evidence,
-                "attrs": self.attrs, "excluded": self.excluded}
+                "attrs": self.attrs, "excluded": self.excluded,
+                "object_key": self.object_key}
 
 
 def _sid(path: tuple[str, ...], handle: str) -> str:
@@ -89,8 +107,16 @@ def _under(path: tuple[str, ...], prefixes: set[tuple[str, ...]]) -> bool:
 
 
 def recognize(plan: Plan, d: SymbolDictionary,
-              overrides: dict[str, str] | None = None) -> tuple[list[Symbol], list[dict]]:
-    """Devolve (símbolos, blocos frequentes não reconhecidos)."""
+              overrides: dict[str, str] | None = None,
+              ledger: dict[str, Any] | None = None) -> tuple[list[Symbol], list[dict]]:
+    """Devolve (símbolos, blocos frequentes não reconhecidos).
+
+    ``ledger`` (opcional) recebe o destino de cada inserção e texto curto, para o balanço de
+    reconhecimento (``recognition_ledger``)."""
+    book = ledger if ledger is not None else {}
+    book.setdefault("inserts", {})
+    book.setdefault("texts", {})
+    book.setdefault("unrecognized", [])
     overrides = {k.upper(): v for k, v in (overrides or {}).items()}
     by_block: dict[InsertRec, tuple[str, str, str]] = {}
     for ins in plan.inserts:
@@ -108,6 +134,10 @@ def recognize(plan: Plan, d: SymbolDictionary,
     unrecognized: Counter[tuple[str, str]] = Counter()
     for ins in plan.inserts:  # ordem DFS: pais antes dos filhos
         if _under(ins.path, taken):
+            book["inserts"][ins.path] = "IGNORED:INSIDE_RECOGNIZED"
+            continue
+        if ins.block in plan.xrefs:  # conteúdo em arquivo externo: bloqueia o balanço
+            book["inserts"][ins.path] = "IGNORED:XREF"
             continue
         found = by_block.get(ins)
         if found is None and (_ANON.match(ins.block) or ins.block.upper() in {"0", "BLOCO"}):
@@ -120,9 +150,13 @@ def recognize(plan: Plan, d: SymbolDictionary,
         if found is None:
             if len(ins.path) == 1:
                 unrecognized[(ins.block, ins.layer)] += 1
+            # não reconhecido em QUALQUER nível (bloco desconhecido dentro de outro também)
+            book["inserts"][ins.path] = "NOT_RECOGNIZED"
+            book["unrecognized"].append(ins)
             continue
         cls, stage, why = found
         attrs = _block_attrs(d, cls, ins.block)
+        _attrib_attrs(d, cls, ins, attrs)
         x, y = ins.x, ins.y
         # Posição = centro do desenho do bloco quando ele é compacto (símbolo); o ponto de
         # inserção fica como evidência (há blocos com base a dezenas de metros do desenho).
@@ -131,23 +165,28 @@ def recognize(plan: Plan, d: SymbolDictionary,
             attrs["insert_point"] = [round(ins.x, 3), round(ins.y, 3)]
             attrs["size_m"] = round(ins.size, 3)
         symbols.append(Symbol(_sid(ins.path, ins.handle), cls, x, y, ins.handle,
-                              ins.path, ins.block, ins.layer, stage, why, attrs))
+                              ins.path, ins.block, ins.layer, stage, why, attrs,
+                              rotation=ins.rotation))
+        book["inserts"][ins.path] = f"RECOGNIZED:{cls}"
         taken.add(ins.child_prefix)
 
     _embedded_signs(plan, symbols)
-    symbols.extend(_text_symbols(plan, d, taken))
+    symbols.extend(_text_symbols(plan, d, taken, symbols, book))
     exits = {c for cls in d.classes.values() for c in cls.sign_codes}
     for s in list(symbols):
         # Placa S-12/S-14 (bloco ou texto) também marca a porta de saída.
         if s.cls == "SINALIZACAO" and s.attrs.get("code") in exits:
             symbols.append(Symbol(s.id + "x", "SAIDA", s.x, s.y, s.handle, s.path, s.block,
                                   s.layer, s.stage, f"placa {s.attrs['code']} indica saída",
-                                  dict(s.attrs)))
+                                  {**s.attrs, "derived_from": s.id}))
     symbols.extend(_presumed_extinguishers(plan, symbols))
     _texts_attrs(plan, d, symbols)
     for s in symbols:
         if s.attrs.get("state") == "DEMOLIR":
             s.excluded = "DEMOLISH"
+    _dedupe(symbols)
+    _merge_exits(symbols)
+    book["exploded_candidates"] = _exploded_candidates(plan, d, symbols, book)
     frequent = [{"block": b, "layer": lay, "count": n}
                 for (b, lay), n in unrecognized.most_common(25) if n >= 2]
     return symbols, frequent
@@ -175,23 +214,169 @@ def _agent(d: SymbolDictionary, text: str) -> dict[str, Any]:
     return {}
 
 
-def _text_symbols(plan: Plan, d: SymbolDictionary, taken: set) -> list[Symbol]:
+def _attrib_attrs(d: SymbolDictionary, cls: str, ins: InsertRec, attrs: dict[str, Any]) -> None:
+    """Atributos (ATTRIB) da inserção: agente, carga e capacidade do extintor, código da placa."""
+    if not ins.attribs:
+        return
+    attrs["attribs"] = {tag or f"#{i}": value for i, (tag, value) in enumerate(ins.attribs)}
+    for _tag, value in ins.attribs:
+        if cls == "EXTINTOR":
+            if "agent" not in attrs and (a := _agent(d, value)):
+                attrs.update(a, agent_text=value)
+            if "capacity" not in attrs and (m := d.capacity.search(value.upper())):
+                attrs["capacity"] = f"{m.group(1).replace(',', '.')} {m.group(2).lower()}"
+            if "rating" not in attrs and (m := d.rating.search(value.upper())):
+                attrs["rating"] = m.group(0).strip()
+        if cls in {"SINALIZACAO", "SAIDA"} and "code" not in attrs and (c := _sign_code(value)):
+            attrs["code"] = c
+
+
+def _text_symbols(plan: Plan, d: SymbolDictionary, taken: set, blocks: list[Symbol],
+                  book: dict[str, Any]) -> list[Symbol]:
     out = []
+    r = d.attribute_radius_m
     for t in plan.texts:
-        if len(t.text) > 40 or _under(t.path, taken):
+        if len(t.text) > TEXT_MAX:
+            continue
+        if t.owner_path is not None:  # ATTRIB: atributo da inserção dona, não texto solto
+            book["texts"][t.path] = "IGNORED:ATTRIBUTE"
+            continue
+        if _under(t.path, taken):
+            book["texts"][t.path] = "IGNORED:INSIDE_RECOGNIZED"
             continue
         for cls in d.classes.values():
             if any(p.search(t.text) for p in cls.text):
                 if (cls.id == "SINALIZACAO" and "-" not in t.text
                         and not _SAFETY_LAYER.search(t.layer)):
                     continue
+                owner = next((s for s in blocks if s.cls == cls.id
+                              and math.hypot(s.x - t.x, s.y - t.y) <= r), None)
+                if owner is not None:
+                    # "EXTINTOR" / "SAÍDA" escrito junto do símbolo: rótulo dele, não outro
+                    owner.attrs.setdefault("labels", []).append(t.text)
+                    book["texts"][t.path] = "IGNORED:TEXT_AS_ATTRIBUTE"
+                    break
                 attrs: dict[str, Any] = {}
                 if code := _sign_code(t.text):
                     attrs["code"] = code
                 out.append(Symbol(_sid(t.path, t.handle), cls.id, t.x, t.y, t.handle, t.path,
                                   t.block, t.layer, "text", f"texto '{t.text}'", attrs))
+                book["texts"][t.path] = f"RECOGNIZED:{cls.id}"
                 break
+        else:
+            book["texts"].setdefault(t.path, "NOT_RECOGNIZED")
     return out
+
+
+def _dedupe(symbols: list[Symbol]) -> None:
+    """Bloco igual no mesmo ponto (cópia sobreposta, erro comum de CAD) é um objeto só."""
+    keep: dict[tuple, list[Symbol]] = {}
+    for s in symbols:
+        if s.excluded is not None or s.stage in {"text", "presumed"}:
+            continue
+        cell = (s.cls, s.block, round(s.rotation) % 360,
+                math.floor(s.x / OBJECT_TOL_M), math.floor(s.y / OBJECT_TOL_M))
+        keep.setdefault(cell[:3], []).append(s)
+    for group in keep.values():
+        group.sort(key=lambda s: (s.path, s.handle))
+        kept: list[Symbol] = []
+        for s in group:
+            twin = next((k for k in kept if math.hypot(k.x - s.x, k.y - s.y) <= OBJECT_TOL_M),
+                        None)
+            if twin is None:
+                kept.append(s)
+                continue
+            s.excluded = "DUPLICATE"
+            twin.attrs.setdefault("duplicates", []).append(s.handle)
+
+
+def _merge_exits(symbols: list[Symbol]) -> None:
+    """Bloco de saída, texto "SAÍDA" e placa S-12/S-14 da mesma porta: uma saída só."""
+    rank = {"override": 0, "block_name": 1, "layer": 2, "text": 3}
+    exits = sorted((s for s in symbols if s.cls == "SAIDA" and s.excluded is None),
+                   key=lambda s: (rank.get(s.stage, 4), s.path, s.handle))
+    kept: list[Symbol] = []
+    for s in exits:
+        twin = next((k for k in kept if math.hypot(k.x - s.x, k.y - s.y) <= EXIT_MERGE_M), None)
+        if twin is None:
+            kept.append(s)
+            continue
+        s.excluded = "MERGED"
+        twin.attrs.setdefault("merged_evidence", []).append(s.evidence)
+
+
+def _exploded_candidates(plan: Plan, d: SymbolDictionary, symbols: list[Symbol],
+                         book: dict[str, Any]) -> list[dict[str, Any]]:
+    """Extintor desenhado com linhas soltas (sem bloco): texto de agente + carga sem símbolo
+    por perto. Vira candidato à revisão — nunca símbolo, nunca conformidade."""
+    ext = [s for s in symbols if s.cls == "EXTINTOR"]
+    r = d.attribute_radius_m
+    out = []
+    for t in plan.texts:
+        if len(t.text) > TEXT_MAX or book["texts"].get(t.path) != "NOT_RECOGNIZED":
+            continue
+        up = t.text.upper()
+        if not (_agent(d, t.text) and (d.capacity.search(up) or d.rating.search(up))):
+            continue
+        if any(math.hypot(s.x - t.x, s.y - t.y) <= r for s in ext):
+            continue
+        out.append({"text": t.text, "x": round(t.x, 3), "y": round(t.y, 3), "handle": t.handle,
+                    "layer": t.layer, "reason": "texto de agente/carga sem símbolo de extintor"})
+    return out
+
+
+def is_safety_layer(d: SymbolDictionary, layer: str) -> bool:
+    return bool(_SAFETY_LAYER.search(layer)) or _match_layer(d, layer) is not None
+
+
+def recognition_ledger(plan: Plan, symbols: list[Symbol], d: SymbolDictionary,
+                       book: dict[str, Any]) -> dict[str, Any]:
+    """Balanço de reconhecimento (F5.3): cada inserção e texto curto em exatamente um destino.
+
+    Símbolo excluído depois do reconhecimento (legenda, demolir, duplicado, saída fundida)
+    passa de "reconhecido" para "ignorado" com o motivo."""
+    excluded = {s.path: s.excluded for s in symbols if s.excluded and s.stage != "presumed"
+                and "derived_from" not in s.attrs}
+
+    def final(path: tuple[str, ...], dest: str) -> str:
+        return f"IGNORED:{excluded[path]}" if dest.startswith("RECOGNIZED") and path in excluded \
+            else dest
+
+    ins_dest = {p: final(p, v) for p, v in book["inserts"].items()}
+    txt_dest = {p: final(p, v) for p, v in book["texts"].items()}
+    for sk in plan.skipped:
+        if sk.entity_type == "INSERT":
+            ins_dest[tuple(sk.instance_path)] = f"IGNORED:{sk.reason}"
+        elif sk.entity_type in {"TEXT", "MTEXT", "ATTRIB"} and sk.text and \
+                len(" ".join(sk.text.split())) <= TEXT_MAX:
+            txt_dest[tuple(sk.instance_path)] = f"IGNORED:{sk.reason}"
+
+    def tally(dest: dict) -> dict[str, Any]:
+        counts: dict[str, int] = {}
+        for v in dest.values():
+            counts[v] = counts.get(v, 0) + 1
+        total = len(dest)
+        resolved = sum(n for k, n in counts.items() if not k.startswith("NOT_RECOGNIZED"))
+        return {"total": total, "by_destination": dict(sorted(counts.items())),
+                "coverage": round(resolved / total, 4) if total else 1.0}
+
+    groups: dict[tuple[str, str, int], int] = {}
+    for ins in book["unrecognized"]:
+        key = (ins.block, ins.layer, len(ins.path))
+        groups[key] = groups.get(key, 0) + 1
+    unrec = [{"block": b, "layer": lay, "depth": depth, "count": n,
+              "safety_layer": is_safety_layer(d, lay)}
+             for (b, lay, depth), n in sorted(groups.items(), key=lambda kv: (-kv[1], kv[0]))]
+    blocking = [u for u in unrec if u["safety_layer"]]
+    return {
+        "schema": "recognition-ledger/1.0",
+        "inserts": tally(ins_dest), "short_texts": tally(txt_dest),
+        "unrecognized_blocks": unrec,
+        "unrecognized_in_safety_layers": sum(u["count"] for u in blocking),
+        "exploded_candidates": book.get("exploded_candidates", []),
+        "xrefs": list(plan.xrefs), "paper_space": dict(plan.paper_space),
+        "complete": not blocking and not plan.xrefs,
+    }
 
 
 _E5 = re.compile(r"^\s*E\s*-?\s*5\s*$", re.I)

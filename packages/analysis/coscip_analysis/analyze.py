@@ -35,7 +35,13 @@ from coscip_analysis.spatial import (
     travel_uncertainty,
 )
 from coscip_analysis.svgmap import region_map
-from coscip_analysis.symbols import Symbol, mark_legends, recognize
+from coscip_analysis.symbols import (
+    Symbol,
+    is_safety_layer,
+    mark_legends,
+    recognition_ledger,
+    recognize,
+)
 from coscip_rules.dsl import RuleDefinition
 from coscip_rules.engine import EvaluationContext, Fact, evaluate
 
@@ -79,6 +85,9 @@ class AnalysisInput:
     symbol_overrides: dict[str, str] = field(default_factory=dict)
     obstacle_layers: list[str] | None = None  # escolha do analista substitui os padrões
     max_expanded: int = 2_000_000
+    # Quadros de legenda marcados pelo analista ([x0, y0, x1, y1] em metros): têm prioridade
+    # sobre a heurística; símbolo dentro deles nunca protege nada.
+    legend_regions: list[list[float]] = field(default_factory=list)
 
 
 def _fact(value: Any, unc: float | None = 0.0, evidence: tuple[str, ...] = ()) -> Fact:
@@ -101,8 +110,20 @@ def run(inp: AnalysisInput, progress=None) -> dict[str, Any]:  # noqa: ANN001
     plan = load_plan(inp.dxf, inp.scale_to_m, inp.max_expanded)
     d = inp.dictionary
     step("Reconhecendo símbolos")
-    symbols, unrecognized = recognize(plan, d, inp.symbol_overrides)
-    legend_marked = mark_legends(symbols, plan, d)
+    book: dict[str, Any] = {}
+    symbols, unrecognized = recognize(plan, d, inp.symbol_overrides, ledger=book)
+    legend_marked = 0
+    for x0, y0, x1, y1 in inp.legend_regions:
+        for s in symbols:
+            if s.excluded is None and x0 <= s.x <= x1 and y0 <= s.y <= y1:
+                s.excluded = "LEGEND"
+                s.attrs["legend_source"] = "analista"
+                legend_marked += 1
+    legend_marked += mark_legends(symbols, plan, d)
+    ledger = recognition_ledger(plan, symbols, d, book)
+    blocking = [(i.cx if i.cx is not None else i.x, i.cy if i.cy is not None else i.y)
+                for i in book["unrecognized"] if is_safety_layer(d, i.layer)]
+    blocking += [(c["x"], c["y"]) for c in ledger["exploded_candidates"]]
     clusters = cluster_texts(plan.texts)
 
     if inp.obstacle_layers is not None:
@@ -138,7 +159,7 @@ def run(inp: AnalysisInput, progress=None) -> dict[str, Any]:  # noqa: ANN001
     for i, region in enumerate(regions, start=1):
         step(f"Analisando {region.name} ({i}/{len(regions)})")
         regions_out.append(_analyze_region(region, plan, symbols, rooms, obstacle, d,
-                                           inp.rules, ctx_facts, results))
+                                           inp.rules, ctx_facts, results, blocking))
 
     assigned = {s["id"] for r in regions_out for s in r["symbols"]}
     outside = [s.as_dict() for s in symbols if s.id not in assigned and s.excluded is None
@@ -163,6 +184,7 @@ def run(inp: AnalysisInput, progress=None) -> dict[str, Any]:  # noqa: ANN001
         "legend_marked": legend_marked,
         "symbols_outside_regions": outside,
         "unrecognized_blocks": unrecognized,
+        "recognition_ledger": ledger,
         "regions": regions_out,
         "results": results,
         "summary": {"by_status": by_status, "regions": len(regions_out),
@@ -183,7 +205,8 @@ def _totals(symbols: list[Symbol]) -> dict[str, dict[str, int]]:
 
 def _analyze_region(region: Region, plan: Plan, symbols: list[Symbol], rooms: list[Room],
                     obstacle: np.ndarray, d: SymbolDictionary, rules: list[RuleBinding],
-                    ctx_facts: dict[str, Fact], results: list[dict[str, Any]]) -> dict[str, Any]:
+                    ctx_facts: dict[str, Fact], results: list[dict[str, Any]],
+                    blocking: list[tuple[float, float]] = ()) -> dict[str, Any]:
     x0, y0, x1, y1 = region.bbox
     inside_sym = [s for s in symbols
                   if x0 <= s.x <= x1 and y0 <= s.y <= y1
@@ -251,6 +274,12 @@ def _analyze_region(region: Region, plan: Plan, symbols: list[Symbol], rooms: li
                                           or counts.get("CENTRAL_ALARME")
                                           or counts.get("AVISADOR")))
     facts["quality.walls_detected"] = _fact(walls_detected)
+    # F5.3: bloco não reconhecido em camada de segurança, extintor "explodido" (sem bloco) ou
+    # XREF pendente neste pavimento impedem concluir contagem e distância.
+    pending = [(x, y) for x, y in blocking if x0 <= x <= x1 and y0 <= y <= y1
+               and region.contains(np.array([x]), np.array([y]))[0]]
+    facts["quality.recognition.complete"] = _fact(not pending and not plan.xrefs)
+    facts["quality.xref_resolved"] = _fact(not plan.xrefs)
     facts["quality.region_confirmed"] = _fact(region.confirmed)
     # Extintor presumido pela placa E-5 + E-17 (sem símbolo): contagem só indicativa.
     facts["quality.extinguisher.not_presumed"] = _fact(

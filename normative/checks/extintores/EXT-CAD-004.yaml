@@ -3,7 +3,7 @@
 # Classes por agente: NT 2-01 Anexo A, Tabela A1. Agente não identificado nunca conclui.
 schema_version: checks/1.0
 id: EXT-CAD-004
-version: 1
+version: 2
 title: Composição mínima de extintores (classe A e classes B/C) no pavimento
 system: EXTINTORES
 type: CAD_COUNT
@@ -34,7 +34,7 @@ question:
     PQS_ABC: [A, B, C]
   accepted_evidence: [CAD, HUMAN]
   quality_gate: quality.extinguisher.not_presumed
-  quality_gates: [quality.region_confirmed]
+  quality_gates: [quality.region_confirmed, quality.recognition.complete]
 normative_basis:
   - document: NT 2-01
     edition: 2ª edição - 2020

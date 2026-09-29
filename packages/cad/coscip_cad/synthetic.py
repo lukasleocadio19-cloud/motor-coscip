@@ -139,3 +139,81 @@ def make_fire_plan(path: Path, *, scale: float = 1.0) -> Path:
         text(desc, 61.5, y, "LEGENDA")
     doc.saveas(path)
     return path
+
+
+TRAPS = ("minsert", "camada", "duplicado", "saida", "aninhado", "explodido", "xref",
+         "atributo", "legenda")
+
+
+def make_trap(path: Path, kind: str) -> Path:
+    """Planta 20×10 m com UMA armadilha de reconhecimento (plano de correção, F5.4).
+
+    Paredes no layer PAREDE e um extintor de referência em (2, 2) em todas; o resto depende
+    de ``kind`` (ver ``TRAPS``). Os testes afirmam a contagem exata e o motivo de cada
+    elemento ignorado.
+    """
+    if kind not in TRAPS:
+        raise ValueError(f"armadilha desconhecida: {kind}")
+    doc = ezdxf.new("R2018", setup=True)
+    doc.header["$INSUNITS"] = 6
+    for name in ("PAREDE", "INC_EXT", "INC_SAIDA", "SINALIZACAO", "TEXTOS", "LEGENDA",
+                 "INC_OFF", "INC_CONGELADA", "INC_NAO_PLOTA", "INC_DIVERSOS"):
+        doc.layers.add(name)
+    ext = doc.blocks.new("EXTINTOR_PQS_ABC")
+    ext.add_circle((0, 0), 0.2, dxfattribs={"layer": "INC_EXT"})
+    msp = doc.modelspace()
+    for a, b in (((0, 0), (20, 0)), ((20, 0), (20, 10)), ((20, 10), (0, 10)), ((0, 10), (0, 0))):
+        msp.add_line(a, b, dxfattribs={"layer": "PAREDE"})
+    msp.add_blockref("EXTINTOR_PQS_ABC", (2, 2), dxfattribs={"layer": "INC_EXT"})
+
+    if kind == "minsert":  # matriz 3×4 = 12 extintores em uma entidade
+        ref = msp.add_blockref("EXTINTOR_PQS_ABC", (5, 3), dxfattribs={"layer": "INC_EXT"})
+        ref.grid(size=(3, 4), spacing=(2.0, 3.0))  # linhas × colunas; (dy, dx)
+    elif kind == "camada":  # desligada, congelada e não plotável: nada disso é desenho
+        doc.layers.get("INC_OFF").off()
+        doc.layers.get("INC_CONGELADA").freeze()
+        doc.layers.get("INC_NAO_PLOTA").dxf.plot = 0
+        for x, layer in ((6, "INC_OFF"), (8, "INC_CONGELADA"), (10, "INC_NAO_PLOTA")):
+            msp.add_blockref("EXTINTOR_PQS_ABC", (x, 5), dxfattribs={"layer": layer})
+        msp.add_text("SAÍDA", dxfattribs={"layer": "INC_OFF", "height": 0.25}).set_placement(
+            (12, 1))
+    elif kind == "duplicado":  # cópia no mesmo ponto e a 3 cm: um objeto; a 1 m: outro
+        for x, y in ((8, 5), (8, 5), (8.03, 5)):
+            msp.add_blockref("EXTINTOR_PQS_ABC", (x, y), dxfattribs={"layer": "INC_EXT"})
+        msp.add_blockref("EXTINTOR_PQS_ABC", (9, 5), dxfattribs={"layer": "INC_EXT"})
+    elif kind == "saida":  # bloco de saída + texto SAÍDA + placa S-12 na mesma porta
+        sai = doc.blocks.new("SAIDA_EMERGENCIA")
+        sai.add_line((-0.5, 0), (0.5, 0), dxfattribs={"layer": "INC_SAIDA"})
+        s12 = doc.blocks.new("PLACA_S-12")
+        s12.add_lwpolyline([(0, 0), (0.3, 0), (0.3, 0.15), (0, 0.15)], close=True,
+                           dxfattribs={"layer": "SINALIZACAO"})
+        msp.add_blockref("SAIDA_EMERGENCIA", (10, 0.1), dxfattribs={"layer": "INC_SAIDA"})
+        msp.add_text("SAÍDA", dxfattribs={"layer": "INC_SAIDA", "height": 0.25}).set_placement(
+            (10.2, 0.6))
+        msp.add_blockref("PLACA_S-12", (9.7, 0.3), dxfattribs={"layer": "SINALIZACAO"})
+    elif kind == "aninhado":  # bloco desconhecido dentro de desconhecido, em camada de incêndio
+        sub = doc.blocks.new("SUB_Y")
+        sub.add_circle((0, 0), 0.2, dxfattribs={"layer": "INC_DIVERSOS"})
+        grp = doc.blocks.new("GRUPO_X")
+        grp.add_line((0, 0), (1, 0), dxfattribs={"layer": "TEXTOS"})
+        grp.add_blockref("SUB_Y", (0.5, 0.5), dxfattribs={"layer": "INC_DIVERSOS"})
+        msp.add_blockref("GRUPO_X", (10, 5), dxfattribs={"layer": "TEXTOS"})
+    elif kind == "explodido":  # extintor desenhado com linhas soltas + texto de agente
+        msp.add_circle((10, 5), 0.2, dxfattribs={"layer": "INC_EXT"})
+        msp.add_text("PQS 6KG", dxfattribs={"layer": "INC_EXT", "height": 0.2}).set_placement(
+            (10.3, 5))
+    elif kind == "xref":  # conteúdo em arquivo externo: ausente desta planta
+        doc.add_xref_def("arquitetura.dwg", "ARQ_XREF")
+        msp.add_blockref("ARQ_XREF", (0, 0), dxfattribs={"layer": "TEXTOS"})
+    elif kind == "atributo":  # ATTRIB com agente e rótulo "SAÍDA" que é atributo, não texto
+        tag = doc.blocks.new("EXTINTOR_TAG")
+        tag.add_circle((0, 0), 0.2, dxfattribs={"layer": "INC_EXT"})
+        tag.add_attdef("AGENTE", (0.3, 0), dxfattribs={"height": 0.15})
+        tag.add_attdef("OBS", (0.3, -0.3), dxfattribs={"height": 0.15})
+        ref = msp.add_blockref("EXTINTOR_TAG", (10, 5), dxfattribs={"layer": "INC_EXT"})
+        ref.add_auto_attribs({"AGENTE": "CO2 6KG", "OBS": "SAÍDA"})
+    elif kind == "legenda":  # quadro de simbologia marcado pelo analista (sem título)
+        for i in range(2):
+            msp.add_blockref("EXTINTOR_PQS_ABC", (30, 8 - i), dxfattribs={"layer": "LEGENDA"})
+    doc.saveas(path)
+    return path

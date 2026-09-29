@@ -29,7 +29,7 @@ from coscip_analysis import AnalysisInput, parse_dictionary, run
 from coscip_analysis.analyze import FIRE_CLASSES
 from coscip_analysis.evidence import plant_evidence
 from coscip_analysis.plan import Plan, load_plan, sha256_file
-from coscip_analysis.symbols import Symbol, mark_legends, recognize
+from coscip_analysis.symbols import Symbol, mark_legends, recognition_ledger, recognize
 from coscip_cad import DxfReader
 from coscip_cad.dwg import DwgConversionError, dwg_to_dxf
 from coscip_cad.unit_evidence import suggest_unit
@@ -69,6 +69,7 @@ class OpenDrawing:
     plan: Plan
     symbols: list[Symbol] = field(default_factory=list)
     unrecognized: list[dict[str, Any]] = field(default_factory=list)
+    ledger: dict[str, Any] = field(default_factory=dict)
     overrides: dict[str, str] = field(default_factory=dict)
     floors: list[dict[str, Any]] = field(default_factory=list)  # clip em unidades do desenho
     confirmation: dict[str, Any] | None = None
@@ -145,8 +146,10 @@ class Workspace:
         d.last_analysis = None
 
     def _recognize(self, d: OpenDrawing) -> None:
-        d.symbols, d.unrecognized = recognize(d.plan, dictionary(), d.overrides)
+        book: dict[str, Any] = {}
+        d.symbols, d.unrecognized = recognize(d.plan, dictionary(), d.overrides, ledger=book)
         mark_legends(d.symbols, d.plan, dictionary())
+        d.ledger = recognition_ledger(d.plan, d.symbols, dictionary(), book)
 
     def overview(self, d: OpenDrawing) -> dict[str, Any]:
         plan = d.plan
@@ -175,6 +178,7 @@ class Workspace:
             "camadas": layers[:40], "total_camadas": len(layers),
             "simbolos_por_classe": totals,
             "blocos_nao_reconhecidos": d.unrecognized[:25],
+            "balanco_reconhecimento": ledger_brief(d.ledger),
             "pavimentos_definidos": [f["name"] for f in d.floors],
             "avisos": d.warnings,
             "proximo_passo": ("ver_planta para enxergar o desenho; listar_textos e "
@@ -377,6 +381,23 @@ def _derive_risk(ctx: dict[str, Any], table: dict[str, Any] | None) -> None:
                              f"{row['risk']}")
 
 
+def ledger_brief(ledger: dict[str, Any]) -> dict[str, Any]:
+    """Balanço de reconhecimento (F5.3) para a IA: completo? o que falta e por quê."""
+    if not ledger:
+        return {}
+    return {
+        "completo": ledger["complete"],
+        "insercoes": ledger["inserts"], "textos_curtos": ledger["short_texts"],
+        "nao_reconhecidos_em_camada_de_seguranca": ledger["unrecognized_in_safety_layers"],
+        "blocos_nao_reconhecidos": ledger["unrecognized_blocks"][:15],
+        "candidatos_extintor_sem_bloco": ledger["exploded_candidates"][:10],
+        "xrefs": ledger["xrefs"], "layouts_com_geometria": ledger["paper_space"],
+        "leitura": ("Completo = nenhum bloco não reconhecido em camada de segurança e nenhum "
+                    "XREF: só então contagem e distância podem concluir. Bloco de segurança "
+                    "não reconhecido: classificar_blocos com confirmação do usuário."),
+    }
+
+
 def _report(d: OpenDrawing, out: dict[str, Any], ctx: dict[str, Any], pe, result,  # noqa: ANN001
             base: norms.NormBase) -> dict[str, Any]:
     floors = []
@@ -438,6 +459,12 @@ def _report(d: OpenDrawing, out: dict[str, Any], ctx: dict[str, Any], pe, result
             "divergencias_do_analista": list(pe.overrides),
         },
         "pavimentos": floors,
+        # GATE-0 da skill (F8): medida do motor só entra na matriz com unidade confirmada e
+        # balanço de reconhecimento completo.
+        "gate_0": {"unidade_confirmada": d.confirmed,
+                   "balanco_completo": out["recognition_ledger"]["complete"],
+                   "aberto": bool(d.confirmed and out["recognition_ledger"]["complete"])},
+        "balanco_reconhecimento": ledger_brief(out["recognition_ledger"]),
         "regioes_ignoradas": [{"regiao": n, "motivo": r} for n, r in pe.skipped_regions],
         "resumo": result.summary.as_dict(),
         "pendencias": pending,

@@ -145,6 +145,7 @@ def _saida(limite=None, medida=18.0, origem=None):
     ]
     piso = FloorScope(id="f1", label="Térreo", evidence=EvidenceSet.build("p", itens),
                       facts={"quality.region_confirmed": True, "quality.walls_detected": True,
+                             "quality.recognition.complete": True,
                              "quality.exit.complete": True})
     plano = compile_verification_plan(catalog, ctx)
     achados = execute_plan(plano, catalog, EvidenceSet.build("p", ()), ctx.all_facts(),
