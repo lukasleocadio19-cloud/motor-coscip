@@ -51,6 +51,15 @@ jobs:
           python -m tools.normas.manifesto
           python -m tools.normas.indice_itens
           cat render.log >> "$GITHUB_STEP_SUMMARY"
+      - name: Tabelas extraídas (para conferir mesmo quando os testes falham)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tabelas-extraidas
+          path: |
+            normative/tabelas
+            render.log
+          if-no-files-found: ignore
       - name: Testes da base
         run: python -m pytest -p no:cacheprovider -q tests/unit/test_base_manifest.py tests/unit/test_tabelas.py tests/unit/test_skills_pack.py tests/unit/test_anexo3_5_21.py
       - name: Commit na branch
