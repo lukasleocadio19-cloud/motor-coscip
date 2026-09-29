@@ -22,6 +22,7 @@ from coscip_normative.verification.models import (
     CheckDefinition,
     CheckValidationError,
 )
+from coscip_rules.dsl import homologation_problem
 
 CATALOG_SCHEMA = "check-catalog/1.0"
 
@@ -60,6 +61,10 @@ def _validate(check: CheckDefinition) -> None:
     if check.production_eligible and check.publication_state in {"DRAFT", "TEST_ONLY"}:
         raise CheckValidationError(
             f"{check.id}: check {check.publication_state} não pode ir à produção")
+    problem = homologation_problem(check.id, check.publication_state,
+                                   check.production_eligible, check.homologation)
+    if problem:
+        raise CheckValidationError(problem)
     if not check.normative_basis and not check.manual:
         raise CheckValidationError(f"{check.id}: check executável sem base normativa")
     for src in check.normative_basis:

@@ -14,7 +14,7 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 from coscip_cbm import ComplianceStatus, Severity
-from coscip_rules.dsl import Condition, Interpretation, Source
+from coscip_rules.dsl import Condition, Homologation, Interpretation, Source
 
 CHECK_SCHEMA = "checks/1.0"
 
@@ -143,6 +143,8 @@ class CheckDefinition(_Strict):
     normative_basis: tuple[Source, ...] = ()
     # Critério adotado além da literalidade (F4.1): conferido e mostrado à parte.
     interpretation: Interpretation | None = None
+    # F9: sem homologação registrada o check não sai de rascunho.
+    homologation: Homologation | None = None
     # Achados com a mesma causa raiz são agrupados por esta chave (§32).
     group_key: str = ""
     wording: Wording
@@ -153,7 +155,10 @@ class CheckDefinition(_Strict):
 
     @property
     def content_hash(self) -> str:
-        canonical = json.dumps(self.model_dump(mode="json"), sort_keys=True, ensure_ascii=False)
+        data = self.model_dump(mode="json")
+        if data.get("homologation") is None:  # campo do F9: ausente não muda o hash antigo
+            data.pop("homologation", None)
+        canonical = json.dumps(data, sort_keys=True, ensure_ascii=False)
         return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
 
     @property

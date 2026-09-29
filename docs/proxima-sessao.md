@@ -186,7 +186,7 @@ pôde abrir uma branch por fase). Detalhe na seção 13.
 | COR-F6 executor | **feito** | conta objetos distintos (`COUNT_DIVERGENCE`), `accepted_evidence` aplicado, pior caso por valor ± incerteza |
 | COR-F7 cálculo | **feito** | vetorial exato (grafo de visibilidade + branch and bound) como principal; FMM (`scikit-fmm`) e grade como conferência; porta `quality.geometry.consistent`; orçamento de incerteza; `confirmar_unidade` com duas referências não paralelas (≤ 0,5 %); hash canônico igual em Windows e Linux (job `determinismo` da CI) |
 | COR-F8 integração | **feito** | `coscip_findings.achado.to_achado`: `Finding` → contrato comum (`achado.schema.json`), sem mudar status; `achados` em `analisar_planta` e em `v2-findings --out`; `consolidar_matriz.py` (orquestrador), `rascunho_bilhete.py` e `conferir_citacoes.py` (bilhete); processo sintético (DXF + memorial fictício) de ponta a ponta no teste. Falta: rodar a skill real com o MCP no Claude Desktop |
-| COR-F9 validação | — | depende do corpus-gabarito e do responsável técnico |
+| COR-F9 validação | **base** | `tools/validacao/fidelidade.py` (exigências acertadas/faltantes/indevidas, citações corretas, precisão/revocação de símbolos, erro de distância; corpus fora do repositório, recusado se estiver dentro); relatório `docs/validacao/2026-09-29.md` só com a referência sintética (**corpus real não medido**); trava `homologation` (responsável, CREA/CAU, data, relatório): sem ela regra/check não fica `HOMOLOGATED`/`PUBLISHED` nem vai à produção. Todos os 30 seguem DRAFT |
 
 ### Revisão, relatório e recuperação
 | ID | Estado | Observação |
@@ -820,6 +820,17 @@ Sessão em nuvem (Linux, Python 3.12 no `.venv`, sem acesso ao site do CBMERJ: o
   pela medida do motor. Aceite no teste `tests/integration/test_processo_sintetico_f8.py`
   (fixture `tests/fixtures/processo-sintetico/`, fictícia): matriz com motor + skill e bilhete
   com 2/2 citações localizadas. `jsonschema` entrou no extra `dev`.
+
+- **F7.4 (correção)** — a CI mostrou hashes diferentes já no DXF: o ezdxf ordena a seção
+  OBJECTS pela ordem de um conjunto de strings (depende de `PYTHONHASHSEED`). As plantas do
+  teste de determinismo são geradas num subprocesso com `PYTHONHASHSEED=0`; a análise roda
+  com semente aleatória e o teste confere sementes 1 e 2 com o mesmo hash. O JSON da CI leva o
+  DXF e a saída comprimidos: em divergência o job imprime o diff.
+- **F9** — `tools/validacao/fidelidade.py` e o formato do corpus-gabarito (pasta por
+  processo com `gabarito.yaml` + saídas do sistema em `sistema/`); relatório
+  `docs/validacao/2026-09-29.md` (corpus não medido; distâncias analíticas: erro de −0,013 a
+  +0,009 m com ± 0,125 m, contra ± 1,1 a ± 1,6 m da grade); `Homologation` em
+  `coscip_rules.dsl` usado por regras e checks (hash de conteúdo inalterado quando ausente).
 
 ### Decisões e cuidados desta sessão
 - Testes antigos alterados **só** quando o plano muda o comportamento: portas novas nos
