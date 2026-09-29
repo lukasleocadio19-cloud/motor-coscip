@@ -130,8 +130,13 @@ def evaluate(table: dict[str, Any]) -> dict[str, Any]:
                 "motivo": "é preciso a leitura visual e um segundo caminho independente"}
     if geo:
         forma = forma_of(table, geo)
-        tries = [(compare(visual["linhas"], shape(c["linhas"], forma)), i)
-                 for i, c in enumerate(geo["candidatos"])]
+        tries = []
+        for i, c in enumerate(geo["candidatos"]):
+            try:
+                shaped = shape(c["linhas"], forma)
+            except IndexError:  # a forma não cabe nesta candidata: outra tabela da página
+                continue
+            tries.append((compare(visual["linhas"], shaped), i))
         if not tries:
             return {"estado": "pendente_humano", "caminhos_comparados": ["visual"],
                     "motivo": "nenhuma tabela geométrica encontrada na página"}

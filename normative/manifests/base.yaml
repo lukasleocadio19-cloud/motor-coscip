@@ -7,8 +7,7 @@ resumo:
   imagens_ausentes: 0
   tabelas_por_estado:
     bruto: 277
-    divergente: 3
-    verificada: 9
+    verificada: 12
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -652,7 +651,7 @@ fontes:
   ato: Portaria CBMERJ nº 1120, de 22 de setembro de 2020
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-01-Sistema-de-protecao-por-extintores-de-incendio-versao-02-Aprovada-pela-Portaria-CBMERJ-1120_2020_1601400175.pdf
   sha256_pdf: f2e6db5a1fbc6fd43919d45461214c0d839e69d7a07c669a43b71ffa895381e3
-  sha256_md: a2f1c8299113292f62b9f415727da9a0eef07a582be9b28e72c30b35d447a5e1
+  sha256_md: b3910c66c6dfd50ef939a607742bb7dae76b39861fea6348f6286e6e632bbef8
   data_captura: '2026-07-23'
   paginas: 6
   midia: nt-2-01
@@ -685,15 +684,15 @@ fontes:
   - pagina: 5
     tabela: Tabela 3
     arquivo: normative/tabelas/nt-2-01/tabela-3-unidade-area-distancia.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 5
     tabela: Tabela 4
     arquivo: normative/tabelas/nt-2-01/tabela-4-classe-d.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 5
     tabela: Tabela 5
     arquivo: normative/tabelas/nt-2-01/tabela-5-classe-k.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 6
     estado: bruto
 - arquivo: nt-2-02-hidrantes-e-mangotinhos.md
