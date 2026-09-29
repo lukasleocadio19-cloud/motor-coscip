@@ -1179,3 +1179,22 @@ Observações: A) Edificações exclusivamente térreas das divisões G-1, G-2, 
 |  |  | Demais | 35,00 m | 35,00 m | 35,00 m | 35,00 m |
 |  | A, B, G-1, G-2, G-5, G-6 e J | De saída da edificação (piso de descarga) | 40,00 m | 50,00 m | 55,00 m | 65,00 m |
 |  |  | Demais | 35,00 m | 35,00 m | 35,00 m | 35,00 m |
+<!-- tabela-conferida: Tabela do Anexo C p22 -->
+### Tabela do Anexo C — Distâncias máximas a serem percorridas (conferida)
+
+| Tipo de edificação | Grupo e divisão de ocupação | Pavimento | Sem chuveiros ou sem detectores automáticos — Saída única | Sem chuveiros ou sem detectores automáticos — Mais de uma saída | Com chuveiros ou com detectores automáticos — Saída única | Com chuveiros ou com detectores automáticos — Mais de uma saída |
+| --- | --- | --- | --- | --- | --- | --- |
+| (α) Edificações em que a propagação do fogo é fácil | Qualquer | Qualquer | 10,00 m | 20,00 m | 25,00 m | 35,00 m |
+| (β) Edificações com estrutura mediana resistência ao fogo | Qualquer | Qualquer | 20,00 m | 30,00 m | 35,00m | 45,00 m |
+| (γ) Edificações em que a propagação do fogo seja difícil | C, D, E, F, G-3, G-4, H, I, L e M | De saída da edificação (piso de descarga) | 35,00 m | 40,00 m | 45,00 m | 55,00 m |
+| (γ) Edificações em que a propagação do fogo seja difícil | C, D, E, F, G-3, G-4, H, I, L e M | Demais | 35,00 m | 35,00 m | 35,00 m | 35,00 m |
+| (γ) Edificações em que a propagação do fogo seja difícil | A, B, G-1, G-2, G-5, G-6 e J | De saída da edificação (piso de descarga) | 40,00 m | 50,00 m | 55,00 m | 65,00 m |
+| (γ) Edificações em que a propagação do fogo seja difícil | A, B, G-1, G-2, G-5, G-6 e J | Demais | 35,00 m | 35,00 m | 35,00 m | 35,00 m |
+
+Fonte: NT 2-08, página 22, Tabela do Anexo C; conferida em 2026-09-29 (visual + texto).
+Fonte: CBMERJ.
+Células mescladas: "(γ) …" abrange as 4 últimas linhas; cada grupo de ocupação γ abrange 2 linhas (piso de descarga e demais). Na publicação, as linhas "Demais" herdam o tipo e o grupo da linha de cima.
+Confere com normative/base/distancias-saida.yaml (24 limites; linhas α, β, γ×2×2), que o motor usa. Observações A–G: ver o texto da página 22.
+Na imagem: "35,00m" sem espaço na linha β (igual ao texto convertido); "Edificações" está correto no PDF — "Edificaçoẽ s" é erro da conversão.
+<!-- /tabela-conferida: Tabela do Anexo C p22 -->
+

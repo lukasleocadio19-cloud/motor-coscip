@@ -63,9 +63,16 @@ def test_evaluate_needs_two_paths_and_says_which():
     res = tabelas.evaluate(two)
     assert res["estado"] == "verificada" and res["caminhos_comparados"] == ["visual", "texto"]
     assert "falta a extração geométrica" in res["observacao"]
-    shape = {"caminhos": {"visual": {"linhas": [["a", "1"]]},
-                          "geometrica": {"linhas": [["a"]]}}}
-    assert tabelas.evaluate(shape)["estado"] == "divergente"
+    bad = {"caminhos": {"visual": {"linhas": [["a", "1"]]},
+                        "geometrica": {"candidatos": [{"linhas": [["a"]]}]}}}
+    assert tabelas.evaluate(bad)["estado"] == "divergente"
+    # entre as candidatas da página vale a que concorda; a escolha fica registrada
+    two_tables = {"caminhos": {"visual": {"linhas": [["a", "1"]]},
+                               "geometrica": {"candidatos": [{"linhas": [["x"]]},
+                                                             {"linhas": [["a", None, "1"]]}]}}}
+    res = tabelas.evaluate(two_tables)
+    assert res["estado"] == "verificada" and res["candidato_geometrico"] == 1
+    assert res["caminhos_comparados"] == ["visual", "geometrica"]
 
 
 def test_synthetic_pdf_render_and_geometric_extraction(tmp_path):

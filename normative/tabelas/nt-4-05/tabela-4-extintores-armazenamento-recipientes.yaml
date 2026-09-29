@@ -6,7 +6,10 @@ titulo: Proteção por extintores para área de armazenamento de recipientes tra
 pagina: 6
 fonte_pdf_sha256: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
 conferida_em: '2026-09-29'
-indice_geometrico: 2
+forma:
+  linhas_cabecalho: 2
+  descartar_linhas:
+  - 10
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -46,9 +49,6 @@ caminhos:
     origem:
       pagina: 6
       tabela_na_pagina: 3
-      linhas_cabecalho: 2
-      descartar_linhas:
-      - 10
     linhas:
     - - Classe
       - Quantidade
@@ -79,15 +79,17 @@ caminhos:
       - 40 - B:C
   geometrica:
     metodo: pdfplumber 0.11.10, estratégia por linhas
-    bbox:
-    - 48.02
-    - 263.45
-    - 103.62
-    - 301.87
-    linhas:
-    - - Capacidade
-    - - volumétrica
-    - - (m3)
+    todas_da_pagina: false
+    candidatos:
+    - bbox: &id001
+      - 48.02
+      - 263.45
+      - 103.62
+      - 301.87
+      linhas:
+      - - Capacidade
+      - - volumétrica
+      - - (m3)
 notas:
 - 'Obs.: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15 m para
   alcançar o equipamento.'
@@ -98,6 +100,10 @@ resultado:
   caminhos_comparados:
   - visual
   - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
   motivo: número de linhas/colunas diferente
   forma:
   - - 3
@@ -110,5 +116,4 @@ resultado:
     - 3
     - 3
   - - 1
-    - 1
     - 1

@@ -807,6 +807,8 @@ LXXV- via interna: via privada para acesso às unidades de agrupamentos; LXXVI- 
 
 ## Página 20
 
+![Representação visual da página 20](media/decreto-42-2018-coscip-compilado/pagina-20.jpg)
+
 
 ### ANEXO II CLASSIFICAÇÃO DAS EDIFICAÇÕES
 
@@ -834,6 +836,8 @@ Tabela 1: Classificação das edificações e áreas de risco quanto à ocupaç�
 
 ## Página 21
 
+![Representação visual da página 21](media/decreto-42-2018-coscip-compilado/pagina-21.jpg)
+
 
 Tabela 1 - Continuação
 
@@ -854,6 +858,8 @@ Tabela 1 - Continuação
 ---
 
 ## Página 22
+
+![Representação visual da página 22](media/decreto-42-2018-coscip-compilado/pagina-22.jpg)
 
 
 Tabela 1 - Continuação
@@ -881,6 +887,8 @@ Tabela 1 - Continuação
 
 ## Página 23
 
+![Representação visual da página 23](media/decreto-42-2018-coscip-compilado/pagina-23.jpg)
+
 
 Tabela 1 - Continuação
 
@@ -905,6 +913,8 @@ Tabela 1 - Continuação
 ---
 
 ## Página 24
+
+![Representação visual da página 24](media/decreto-42-2018-coscip-compilado/pagina-24.jpg)
 
 
 Tabela 1 - Continuação
@@ -964,6 +974,8 @@ Tabela 1 - Continuação
 
 ## Página 25
 
+![Representação visual da página 25](media/decreto-42-2018-coscip-compilado/pagina-25.jpg)
+
 
 Tabela 1 - Continuação
 
@@ -985,6 +997,8 @@ Tabela 1 - Continuação
 ---
 
 ## Página 26
+
+![Representação visual da página 26](media/decreto-42-2018-coscip-compilado/pagina-26.jpg)
 
 
 ### ANEXO III EXIGÊNCIAS PARA EDIFICAÇÕES E ÁREAS DE RISCO
@@ -1024,6 +1038,8 @@ Tabela 1 - Continuação
 ---
 
 ## Página 27
+
+![Representação visual da página 27](media/decreto-42-2018-coscip-compilado/pagina-27.jpg)
 
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
@@ -1069,6 +1085,8 @@ Tabela 1 - Continuação
 
 ## Página 28
 
+![Representação visual da página 28](media/decreto-42-2018-coscip-compilado/pagina-28.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
@@ -1101,6 +1119,8 @@ Tabela 1 - Continuação
 ---
 
 ## Página 29
+
+![Representação visual da página 29](media/decreto-42-2018-coscip-compilado/pagina-29.jpg)
 
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
@@ -1152,6 +1172,8 @@ Tabela 1 - Continuação
 
 ## Página 30
 
+![Representação visual da página 30](media/decreto-42-2018-coscip-compilado/pagina-30.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
@@ -1200,6 +1222,8 @@ Tabela 1 - Continuação
 ---
 
 ## Página 31
+
+![Representação visual da página 31](media/decreto-42-2018-coscip-compilado/pagina-31.jpg)
 
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
@@ -1250,6 +1274,8 @@ Tabela 1 - Continuação
 
 ## Página 32
 
+![Representação visual da página 32](media/decreto-42-2018-coscip-compilado/pagina-32.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
@@ -1299,6 +1325,8 @@ Tabela 1 - Continuação
 
 ## Página 33
 
+![Representação visual da página 33](media/decreto-42-2018-coscip-compilado/pagina-33.jpg)
+
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
@@ -1347,6 +1375,8 @@ Tabela 1 - Continuação
 ---
 
 ## Página 34
+
+![Representação visual da página 34](media/decreto-42-2018-coscip-compilado/pagina-34.jpg)
 
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
@@ -1405,6 +1435,8 @@ Tabela 1 - Continuação
 ---
 
 ## Página 35
+
+![Representação visual da página 35](media/decreto-42-2018-coscip-compilado/pagina-35.jpg)
 
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
@@ -1494,6 +1526,8 @@ Tabela 1 - Continuação
 
 ## Página 36
 
+![Representação visual da página 36](media/decreto-42-2018-coscip-compilado/pagina-36.jpg)
+
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
@@ -1555,6 +1589,8 @@ Tabela 1 - Continuação
 
 ## Página 37
 
+![Representação visual da página 37](media/decreto-42-2018-coscip-compilado/pagina-37.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
@@ -1612,6 +1648,8 @@ Tabela 1 - Continuação
 
 ## Página 38
 
+![Representação visual da página 38](media/decreto-42-2018-coscip-compilado/pagina-38.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
@@ -1661,6 +1699,8 @@ Tabela 1 - Continuação
 ---
 
 ## Página 39
+
+![Representação visual da página 39](media/decreto-42-2018-coscip-compilado/pagina-39.jpg)
 
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
@@ -1733,6 +1773,8 @@ Tabela 1 - Continuação
 
 ## Página 40
 
+![Representação visual da página 40](media/decreto-42-2018-coscip-compilado/pagina-40.jpg)
+
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
@@ -1792,6 +1834,8 @@ Tabela 1 - Continuação
 ---
 
 ## Página 41
+
+![Representação visual da página 41](media/decreto-42-2018-coscip-compilado/pagina-41.jpg)
 
 
 .
@@ -1873,6 +1917,8 @@ Tabela 1 - Continuação
 
 ## Página 42
 
+![Representação visual da página 42](media/decreto-42-2018-coscip-compilado/pagina-42.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
@@ -1928,6 +1974,8 @@ Tabela 1 - Continuação
 ---
 
 ## Página 43
+
+![Representação visual da página 43](media/decreto-42-2018-coscip-compilado/pagina-43.jpg)
 
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
@@ -1989,6 +2037,8 @@ Tabela 1 - Continuação
 
 ## Página 44
 
+![Representação visual da página 44](media/decreto-42-2018-coscip-compilado/pagina-44.jpg)
+
 do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
 
 ### Tabelas extraídas (bruto, não usar para citação)
@@ -2043,6 +2093,8 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 ---
 
 ## Página 45
+
+![Representação visual da página 45](media/decreto-42-2018-coscip-compilado/pagina-45.jpg)
 
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.

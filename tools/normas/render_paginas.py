@@ -61,15 +61,14 @@ def tables_without_geometry(fonte: dict[str, Any]) -> list[Path]:
         path = t.get("arquivo")
         if path:
             data = tabelas.load(tabelas.ROOT / path)
-            if not (data.get("caminhos") or {}).get("geometrica"):
+            geo = (data.get("caminhos") or {}).get("geometrica") or {}
+            if not geo.get("todas_da_pagina"):
                 out.append(tabelas.ROOT / path)
     return out
 
 
 def run(do_images: bool, do_tables: bool, cache: Path | None, fetcher=fetch,
         only: set[str] | None = None) -> dict[str, list[str]]:
-    import pdfplumber
-
     data = yaml.safe_load(MANIFESTO.read_text(encoding="utf-8"))
     log: dict[str, list[str]] = {"imagens": [], "tabelas": [], "erros": []}
     for fonte in data["fontes"]:
@@ -88,15 +87,7 @@ def run(do_images: bool, do_tables: bool, cache: Path | None, fetcher=fetch,
             log["imagens"].append(p.relative_to(FONTES).as_posix())
         for tpath in tabs:
             t = tabelas.load(tpath)
-            found = tabelas.extract_geometric(pdf, t["pagina"])
-            idx = int(t.get("indice_geometrico", 0))
-            if idx >= len(found):
-                log["erros"].append(f"{tpath.name}: página {t['pagina']} tem {len(found)} "
-                                    "tabela(s) geométricas; conferir indice_geometrico")
-                continue
-            t["caminhos"]["geometrica"] = {
-                "metodo": f"pdfplumber {pdfplumber.__version__}, estratégia por linhas",
-                "bbox": found[idx]["bbox"], "linhas": found[idx]["linhas"]}
+            t["caminhos"]["geometrica"] = tabelas.geometric_path(pdf, t["pagina"])
             tpath.write_bytes(tabelas.dump(t).encode("utf-8"))
             tabelas.refresh(tpath)
             log["tabelas"].append(tpath.name)

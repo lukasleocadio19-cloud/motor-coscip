@@ -3,7 +3,8 @@
 # importação (todas as células na MESMA linha da tabela). RASCUNHO, sem homologação.
 #
 # "Edificaçoẽ s" está assim no texto convertido (erro de OCR do PDF): a conferência usa a
-# célula literal. Conferir as células na imagem da página 22 / no PDF oficial (pendente).
+# célula literal. Conferido na imagem da página 22 em 29/09/2026 (F2): os 24 limites
+# conferem; ver normative/tabelas/nt-2-08/anexo-c-distancias-maximas.yaml.
 schema_version: exit-distances/1.0
 source:
   document: NT 2-08

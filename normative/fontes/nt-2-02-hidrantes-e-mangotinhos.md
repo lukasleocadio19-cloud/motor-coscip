@@ -224,6 +224,8 @@ para lançamento de espuma.
 
 ## Página 5
 
+![Representação visual da página 5](media/nt-2-02/pagina-05.jpg)
+
 Fonte: CBMERJ (Redação dada pela Portaria CBMERJ nº 1317, de 10/12/2025)
 
 distância mínima de 8 m lineares, medidos da saída do esguicho até o ponto de queda do jato (alcance linear), de acordo com a alínea A, do item 5.12.3
@@ -269,6 +271,8 @@ Fonte: CBMERJ
 ---
 
 ## Página 6
+
+![Representação visual da página 6](media/nt-2-02/pagina-06.jpg)
 
 Figura 2: Dispositivo de recalque no passeio público
 
@@ -317,6 +321,8 @@ Fonte: COSCIP.
 ---
 
 ## Página 7
+
+![Representação visual da página 7](media/nt-2-02/pagina-07.jpg)
 
 5.3.3 Os abrigos de mangueiras deverão possuir destinação exclusiva para os equipamentos de combate a incêndio.
 
@@ -385,6 +391,8 @@ d) carretel axial.
 ---
 
 ## Página 8
+
+![Representação visual da página 8](media/nt-2-02/pagina-08.jpg)
 
 a) a altura do registro do hidrante será, no mínimo, de 1 m e no máximo de 1,5 m do piso;
 
@@ -469,6 +477,8 @@ Fonte: NBR 13714.
 
 ## Página 9
 
+![Representação visual da página 9](media/nt-2-02/pagina-09.jpg)
+
 fórmula:
 
 Onde:
@@ -538,6 +548,8 @@ c) 01 unidade extintora de no mínimo 6 Kg de CO2 e 01 unidade extintora de no m
 ---
 
 ## Página 10
+
+![Representação visual da página 10](media/nt-2-02/pagina-10.jpg)
 
 5.9 Dos reservatórios e da reserva técnica de incêndio (RTI)
 
@@ -611,6 +623,8 @@ c) 02 eletrobombas, para os sistemas de risco médio 2 e grande, devendo uma das
 
 ## Página 11
 
+![Representação visual da página 11](media/nt-2-02/pagina-11.jpg)
+
 (sucção negativa) ou de fluxo (sucção positiva) para acionamento automático.
 
 5.10.10 Se o abastecimento da canalização ou rede preventiva for feito por reservatório subterrâneo ou baixo, estes deverão apresentar conjunto de bombas de acionamento independente e automático, de modo a manter a pressão constante e permanente na rede.
@@ -666,6 +680,8 @@ d) assegurando-se a reserva técnica para incêndio, o mesmo reservatório desti
 ---
 
 ## Página 12
+
+![Representação visual da página 12](media/nt-2-02/pagina-12.jpg)
 
 poderá ser utilizado, observando o disposto em 5.10.15;
 
@@ -754,6 +770,8 @@ Fonte: CBMERJ.
 
 ## Página 13
 
+![Representação visual da página 13](media/nt-2-02/pagina-13.jpg)
+
 resistente à umidade, revestida internamente de borracha, capazes de suportar a pressão mínima de teste de 21 kg/cm² para mangueiras do tipo I, de 28 kg/cm² para mangueiras do tipo II, IV e V e de 30 kg/cm² para mangueiras do tipo III, dotados de junta storz e com seção de 15 m de comprimento.
 
 5.13.6 As edificações enquadradas no risco grande que possuam áreas não classificadas no referido risco poderão adotar, nos hidrantes destas áreas, mangueiras de 38 mm (1 ½”), desde que a pressão máxima admissível seja de 60 mca.
@@ -819,6 +837,8 @@ Fonte: CBMERJ.
 
 ## Página 14
 
+![Representação visual da página 14](media/nt-2-02/pagina-14.jpg)
+
 máximo 0,60 m do piso acabado e, quando internos à edificação, deverão promover a transição para FG, FF ou AC no trecho enterrado, sendo vedada a referida tubulação aparente no interior da edificação devendo cumprir, entretanto, todos os parâmetros técnicos previstos nas NBRs 15561 e 10897.
 
 5.15.12 Para edificações de um complexo, será aceita prumada única na distribuição geral do sistema preventivo, com suas derivações para os blocos e/ou prédios que as compõem.
@@ -875,6 +895,8 @@ Fonte: ABNT NBR 13.714.
 
 ## Página 15
 
+![Representação visual da página 15](media/nt-2-02/pagina-15.jpg)
+
 5.17.6 As mangueiras de incêndio semirrígidas deverão atender aos parâmetros técnicos previstos na Norma EN 694/2014 de acordo com o seu risco.
 
 5.17.7 A canalização preventiva de incêndio para uso do sistema de mangotinhos será dimensionada apenas para edificações do risco pequeno, conforme NT 1-04 - Classificação das edificações quanto ao risco de incêndio e para edificações com as seguintes ocupações: residenciais coletivas (asilos, clínicas psiquiátricas, reformatórios e congêneres) e públicas (tendo como ocupação principal a restrição da liberdade).
@@ -929,6 +951,8 @@ Fonte: ABNT NBR 13.714.
 
 ## Página 16
 
+![Representação visual da página 16](media/nt-2-02/pagina-16.jpg)
+
 pressão de trabalho no mínimo de 40 mca e vazão mínima do sistema de 500 l/min, atentando, no entanto, para o que preceitua a NT 1-04, para fins de enquadramento da edificação, quanto ao seu risco de incêndio.
 
 5.20.4 Os parâmetros de pressão mínima nos hidrantes, bem como de vazão do sistema de incêndio para os depósitos de GLP/GN deverão seguir o que preceitua o Anexo B da NT 4-05 - Gás (GLP/GN) - Manipulação, armazenamento e comercialização.
@@ -947,6 +971,8 @@ pressão de trabalho no mínimo de 40 mca e vazão mínima do sistema de 500 l/m
 
 ## Página 17
 
+![Representação visual da página 17](media/nt-2-02/pagina-17.jpg)
+
 ### ANEXO A - DOS MANANCIAIS E RESERVATÓRIOS DE ABASTECIMENTO
 
 Tabela 1 - Dimensões de poços de sucção
@@ -962,6 +988,8 @@ Fonte: ABNT NBR 13.714.
 ---
 
 ## Página 18
+
+![Representação visual da página 18](media/nt-2-02/pagina-18.jpg)
 
 Figura 2 - Tomada inferior de sucção para bomba principal
 

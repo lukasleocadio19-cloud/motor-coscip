@@ -94,21 +94,56 @@ def compare(a_rows: list[list[str | None]], b_rows: list[list[str | None]]) -> d
     return {"estado": worst, "celulas": cells}
 
 
+FORMA_KEYS = ("linhas_cabecalho", "juntar_cabecalho", "descartar_linhas")
+
+
+def forma_of(table: dict[str, Any], path: dict[str, Any] | None = None) -> dict[str, Any]:
+    """Forma comum aos caminhos brutos (cabeçalho, linhas descartadas). O caminho pode ter a
+    sua própria (``forma``), quando a estrutura bruta dele for outra."""
+    base = dict(table.get("forma") or {})
+    origem = ((table.get("caminhos") or {}).get("texto") or {}).get("origem") or {}
+    for k in FORMA_KEYS:  # formato antigo: forma dentro de texto.origem
+        if k in origem and k not in base:
+            base[k] = origem[k]
+    if path and path.get("forma"):
+        base.update(path["forma"])
+    return base
+
+
 def evaluate(table: dict[str, Any]) -> dict[str, Any]:
-    """Resultado calculado a partir dos caminhos (``resultado`` do arquivo)."""
+    """Resultado calculado a partir dos caminhos (``resultado`` do arquivo).
+
+    Segundo caminho: a extração geométrica, quando existe (entre as tabelas candidatas da
+    página vale a que mais concorda com a leitura visual — a escolha fica registrada); senão
+    a camada de texto, com observação."""
     paths = table.get("caminhos") or {}
     visual = paths.get("visual")
-    second_name = "geometrica" if paths.get("geometrica") else (
-        "texto" if paths.get("texto") else None)
-    if not visual or second_name is None:
+    geo = paths.get("geometrica")
+    texto = paths.get("texto")
+    if not visual or not (geo or texto):
         have = sorted(k for k, v in paths.items() if v)
         return {"estado": "pendente_humano", "caminhos_comparados": have,
                 "motivo": "é preciso a leitura visual e um segundo caminho independente"}
-    res = compare(visual["linhas"], paths[second_name]["linhas"])
-    out = {"estado": res["estado"], "caminhos_comparados": ["visual", second_name]}
-    if second_name == "texto":
-        out["observacao"] = ("segundo caminho = camada de texto do PDF (seção 'Tabelas "
-                             "extraídas'); falta a extração geométrica do PDF oficial")
+    if geo:
+        forma = forma_of(table, geo)
+        tries = [(compare(visual["linhas"], shape(c["linhas"], forma)), i)
+                 for i, c in enumerate(geo["candidatos"])]
+        if not tries:
+            return {"estado": "pendente_humano", "caminhos_comparados": ["visual"],
+                    "motivo": "nenhuma tabela geométrica encontrada na página"}
+        res, idx = min(tries, key=lambda t: (ORDER[t[0]["estado"]],
+                                             len([c for c in t[0]["celulas"]
+                                                  if c["estado"] != "verificada"]), t[1]))
+        out = {"estado": res["estado"], "caminhos_comparados": ["visual", "geometrica"],
+               "candidato_geometrico": idx, "candidatos_na_pagina": len(tries),
+               "bbox": geo["candidatos"][idx].get("bbox")}
+        if texto:
+            out["texto"] = compare(visual["linhas"], texto["linhas"])["estado"]
+    else:
+        res = compare(visual["linhas"], texto["linhas"])
+        out = {"estado": res["estado"], "caminhos_comparados": ["visual", "texto"],
+               "observacao": ("segundo caminho = camada de texto do PDF (seção 'Tabelas "
+                              "extraídas'); falta a extração geométrica do PDF oficial")}
     for key in ("motivo", "forma"):
         if key in res:
             out[key] = res[key]
@@ -141,17 +176,18 @@ def raw_table(md_text: str, page: int, index: int = 1) -> list[list[str]]:
     return rows
 
 
-def texto_path(md_text: str, origem: dict[str, Any]) -> list[list[str]]:
-    """Caminho "texto" calculado do ``.md`` (nunca digitado): junta as linhas de cabeçalho
-    pela coluna original, descarta as linhas pedidas e remove as células vazias."""
-    rows = raw_table(md_text, int(origem["pagina"]), int(origem.get("tabela_na_pagina", 1)))
-    head_n = int(origem.get("linhas_cabecalho", 1))
-    if origem.get("juntar_cabecalho", True):  # cabeçalho quebrado em linhas: junta por coluna
+def shape(rows: list[list[str | None]], forma: dict[str, Any]) -> list[list[str]]:
+    """Normaliza um caminho bruto (texto ou geométrico) para a forma da leitura visual:
+    junta as linhas de cabeçalho pela coluna original (ou as mantém, se mescladas), descarta
+    as linhas pedidas (observações) e remove as células vazias (``None`` = célula mesclada)."""
+    rows = [[(c or "").strip() for c in r] for r in rows]
+    head_n = int(forma.get("linhas_cabecalho", 1))
+    if forma.get("juntar_cabecalho", True):  # cabeçalho quebrado em linhas: junta por coluna
         head = [" ".join(filter(None, col)) for col in zip(*rows[:head_n], strict=False)]
         out = [[c for c in head if c]]
     else:  # cabeçalho com células mescladas: cada linha fica como está, sem as vazias
         out = [[c for c in r if c] for r in rows[:head_n]]
-    skip = set(origem.get("descartar_linhas") or [])
+    skip = set(forma.get("descartar_linhas") or [])
     for i, row in enumerate(rows[head_n:], start=head_n):
         if i in skip:
             continue
@@ -159,6 +195,13 @@ def texto_path(md_text: str, origem: dict[str, Any]) -> list[list[str]]:
         if cells:
             out.append(cells)
     return out
+
+
+def texto_path(md_text: str, origem: dict[str, Any],
+               forma: dict[str, Any] | None = None) -> list[list[str]]:
+    """Caminho "texto" calculado do ``.md`` (nunca digitado)."""
+    rows = raw_table(md_text, int(origem["pagina"]), int(origem.get("tabela_na_pagina", 1)))
+    return shape(rows, forma if forma is not None else origem)
 
 
 # ---------------------------------------------------------------- arquivos
@@ -181,7 +224,7 @@ def refresh(path: Path) -> bool:
     texto = (data.get("caminhos") or {}).get("texto")
     if texto and texto.get("origem"):
         md = (FONTES / data["arquivo"]).read_text(encoding="utf-8")
-        texto["linhas"] = texto_path(md, texto["origem"])
+        texto["linhas"] = texto_path(md, texto["origem"], forma_of(data, texto))
     res = evaluate(data)
     data["estado"] = res["estado"]
     data["resultado"] = res
@@ -227,6 +270,14 @@ def extract_geometric(pdf: bytes, page: int) -> list[dict[str, Any]]:
     return tables
 
 
+def geometric_path(pdf: bytes, page: int) -> dict[str, Any]:
+    """Todas as tabelas geométricas da página (a escolha é feita em ``evaluate``)."""
+    import pdfplumber
+
+    return {"metodo": f"pdfplumber {pdfplumber.__version__}, estratégia por linhas",
+            "todas_da_pagina": True, "candidatos": extract_geometric(pdf, page)}
+
+
 # ---------------------------------------------------------------- publicação no .md
 
 def to_markdown(table: dict[str, Any]) -> str:
@@ -234,7 +285,12 @@ def to_markdown(table: dict[str, Any]) -> str:
     rows = visual["linhas"]
     n_head = int(visual.get("linhas_cabecalho", 1))
     header = visual.get("cabecalho_publicado") or rows[0]  # cabeçalho mesclado, achatado
-    esc = [[(c or "").replace("|", "/") for c in r] for r in [header, *rows[n_head:]]]
+    body, prev = [], list(header)
+    for r in rows[n_head:]:  # linha mais curta = células mescladas à esquerda: herda de cima
+        full = prev[: len(header) - len(r)] + list(r)
+        body.append(full)
+        prev = full
+    esc = [[(c or "").replace("|", "/") for c in r] for r in [header, *body]]
     lines = [f"### {table['tabela']} — {table['titulo']} (conferida)", "",
              "| " + " | ".join(esc[0]) + " |", "| " + " | ".join("---" for _ in header) + " |"]
     lines += ["| " + " | ".join(r) + " |" for r in esc[1:]]
@@ -263,6 +319,25 @@ def publish(table: dict[str, Any], md_text: str) -> str:
     return md_text[:pos] + block + md_text[pos:]
 
 
+SOLICITADAS = TABELAS / "imagens-solicitadas.yaml"
+
+
+def ensure_images(md_text: str, slug: str, pages: list[int]) -> str:
+    """Garante a referência à imagem de cada página pedida, logo após o marcador."""
+    ext = ".jpg"
+    for page in sorted(pages):
+        rel = f"media/{slug}/pagina-{page:02d}{ext}"
+        if f"]({rel})" in md_text or re.search(rf"\]\(media/{re.escape(slug)}/pagina-{page:02d}"
+                                               r"\.(png|jpg)\)", md_text):
+            continue
+        m = re.search(rf"^## Página {page}[ \t]*$", md_text, re.M)
+        if not m:
+            raise ValueError(f"{slug}: página {page} sem marcador")
+        md_text = (md_text[:m.end()] + f"\n\n![Representação visual da página {page}]({rel})"
+                   + md_text[m.end():])
+    return md_text
+
+
 def mark_raw(md_text: str) -> str:
     return re.sub(rf"^{re.escape(RAW_HEADING)}\s*$", RAW_MARKED, md_text, flags=re.M)
 
@@ -275,11 +350,18 @@ def publish_all() -> list[Path]:
         by_file.setdefault(FONTES / data["arquivo"], []).append(data)
     for md in sorted(FONTES.glob("*.md")):
         by_file.setdefault(md, [])
+    wanted = (yaml.safe_load(SOLICITADAS.read_text(encoding="utf-8")) or {}).get("paginas", {}) \
+        if SOLICITADAS.exists() else {}
     for md, tables in sorted(by_file.items()):
         if md.name == "README.md":
             continue
         text = md.read_text(encoding="utf-8")
         new = mark_raw(text)
+        if md.name in wanted:
+            from tools.normas.manifesto import media_refs, media_slug
+
+            slug = media_slug(media_refs(new), md.name)
+            new = ensure_images(new, slug, wanted[md.name])
         for t in sorted(tables, key=lambda t: (t["pagina"], t["tabela"])):
             new = publish(t, new)
         if new != text:
@@ -322,7 +404,6 @@ def main(argv: list[str] | None = None) -> int:
     ex = sub.add_parser("extrair", help="caminho geométrico a partir do PDF oficial")
     ex.add_argument("pdf", type=Path)
     ex.add_argument("--tabela", type=Path, required=True, help="arquivo .yaml da tabela")
-    ex.add_argument("--indice", type=int, default=0, help="qual tabela da página")
     args = ap.parse_args(argv)
     if args.cmd == "comparar":
         for f in table_files():
@@ -336,18 +417,12 @@ def main(argv: list[str] | None = None) -> int:
     elif args.cmd == "extrair":
         import hashlib
 
-        import pdfplumber
 
         pdf = args.pdf.read_bytes()
         data = load(args.tabela)
         if hashlib.sha256(pdf).hexdigest() != data["fonte_pdf_sha256"]:
             raise SystemExit("SHA-256 do PDF não confere com o da base: recusado")
-        found = extract_geometric(pdf, data["pagina"])
-        if len(found) <= args.indice:
-            raise SystemExit(f"página {data['pagina']}: {len(found)} tabela(s) geométricas")
-        data["caminhos"]["geometrica"] = {
-            "metodo": f"pdfplumber {pdfplumber.__version__}, estratégia por linhas",
-            "bbox": found[args.indice]["bbox"], "linhas": found[args.indice]["linhas"]}
+        data["caminhos"]["geometrica"] = geometric_path(pdf, data["pagina"])
         args.tabela.write_bytes(dump(data).encode("utf-8"))
         refresh(args.tabela)
     return 0

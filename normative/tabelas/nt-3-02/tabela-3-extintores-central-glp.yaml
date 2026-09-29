@@ -6,7 +6,9 @@ titulo: Proteção por extintores para central de GLP
 pagina: 7
 fonte_pdf_sha256: 8a44a1be179fd3e5c38d06b32f637226230702d48b6c3f8c0f8ae37add147950
 conferida_em: '2026-09-29'
-indice_geometrico: 0
+forma:
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -36,8 +38,6 @@ caminhos:
     origem:
       pagina: 7
       tabela_na_pagina: 1
-      linhas_cabecalho: 2
-      juntar_cabecalho: false
     linhas:
     - - Capacidade total da central (Kg)
       - Quantidade e capacidade extintora
@@ -54,46 +54,40 @@ caminhos:
       - 01 (um) 80-B:C ou 01 (um) PQS-50 Kg
   geometrica:
     metodo: pdfplumber 0.11.10, estratégia por linhas
-    bbox:
-    - 56.31
-    - 111.02
-    - 283.0
-    - 227.78
-    linhas:
-    - - Capacidade total da central (Kg)
-      - Quantidade e capacidade extintora
-      - null
-    - - null
-      - Extintor Portátil
-      - Extintor sobre rodas
-    - - ≤ 270
-      - 01 (um) 20-B:C ou 01 (um) PQS-6 Kg
-      - Não exigido
-    - - '> 270 a 1800'
-      - 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg
-      - Não exigido
-    - - '> 1800'
-      - 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg
-      - 01 (um) 80-B:C ou 01 (um) PQS-50 Kg
+    todas_da_pagina: false
+    candidatos:
+    - bbox: &id001
+      - 56.31
+      - 111.02
+      - 283.0
+      - 227.78
+      linhas:
+      - - Capacidade total da central (Kg)
+        - Quantidade e capacidade extintora
+        - null
+      - - null
+        - Extintor Portátil
+        - Extintor sobre rodas
+      - - ≤ 270
+        - 01 (um) 20-B:C ou 01 (um) PQS-6 Kg
+        - Não exigido
+      - - '> 270 a 1800'
+        - 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg
+        - Não exigido
+      - - '> 1800'
+        - 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg
+        - 01 (um) 80-B:C ou 01 (um) PQS-50 Kg
 notas:
 - 'Fonte: CBMERJ.'
 - '"Quantidade e capacidade extintora" é célula mesclada sobre as colunas Extintor Portátil e Extintor
   sobre rodas.'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 2
-    - 2
-    - 3
-    - 3
-    - 3
-  - - 3
-    - 3
-    - 3
-    - 3
-    - 3
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

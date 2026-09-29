@@ -156,6 +156,8 @@ considerados todos os obstáculos arquitetônicos, mobiliários e etc.
 
 ## Página 4
 
+![Representação visual da página 4](media/nt-2-01/pagina-04.jpg)
+
 5.2.1 Para a instalação dos extintores portáteis, devem ser observadas as seguintes exigências:
 
 a) quando forem fixados em paredes ou colunas, os suportes devem resistir a três vezes a massa total do extintor;
@@ -267,6 +269,8 @@ a) fogo classe A: conforme Tabela 3 e para melhor entendimento, vide Anexo A;
 ---
 
 ## Página 5
+
+![Representação visual da página 5](media/nt-2-01/pagina-05.jpg)
 
 6.2 Classes de Incêndio Especiais - D e K
 

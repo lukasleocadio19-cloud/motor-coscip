@@ -34,7 +34,7 @@ SCHEMA = "base-manifest/1.0"
 _IMG = re.compile(r"!\[[^\]]*\]\((media/[^)\s]+)\)")
 _PAGE = re.compile(r"^## Página (\d+)\s*$", re.M)
 _ATO = re.compile(r"Aprovad[ao] pel[ao] ((?:Portaria|Resolução)[^(\n]*?)\s*(?:\(|$)", re.M)
-_RAW_TABLES = re.compile(r"^### Tabelas extraídas\s*$", re.M)
+_RAW_TABLES = re.compile(r"^### Tabelas extraídas\b.*$", re.M)
 
 
 def sha256_bytes(data: bytes) -> str:

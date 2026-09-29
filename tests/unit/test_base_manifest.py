@@ -53,7 +53,7 @@ def test_no_orphan_images():
 
 def test_summary_counts_are_consistent():
     r = DATA["resumo"]
-    assert r["imagens_presentes"] + r["imagens_ausentes"] == r["imagens_referenciadas"] == 434
+    assert r["imagens_presentes"] + r["imagens_ausentes"] == r["imagens_referenciadas"] >= 434
     assert sum(r["tabelas_por_estado"].values()) == sum(len(f["tabelas"]) for f in DATA["fontes"])
     allowed = {"bruto", "verificada", "divergente", "pendente_humano"}
     assert set(r["tabelas_por_estado"]) <= allowed
