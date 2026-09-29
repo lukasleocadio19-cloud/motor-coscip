@@ -12,10 +12,15 @@ compara os hashes.
 from __future__ import annotations
 
 import argparse
+import base64
+import difflib
 import hashlib
 import json
+import os
+import subprocess
 import sys
 import tempfile
+import zlib
 from pathlib import Path
 from typing import Any
 
@@ -37,10 +42,21 @@ def canonical(obj: Any) -> Any:
     return obj
 
 
-def digest(obj: Any) -> str:
-    text = json.dumps(canonical(obj), sort_keys=True, ensure_ascii=False,
+def canonical_text(obj: Any) -> str:
+    return json.dumps(canonical(obj), sort_keys=True, ensure_ascii=False,
                       separators=(",", ":"), allow_nan=False)
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def digest(obj: Any) -> str:
+    return hashlib.sha256(canonical_text(obj).encode("utf-8")).hexdigest()
+
+
+def _pack(data: bytes) -> str:
+    return base64.b64encode(zlib.compress(data, 9)).decode("ascii")
+
+
+def _unpack(text: str) -> list[str]:
+    return zlib.decompress(base64.b64decode(text)).decode("utf-8").splitlines()
 
 
 def _fixed_newlines(path: Path) -> Path:
@@ -50,18 +66,31 @@ def _fixed_newlines(path: Path) -> Path:
     return path
 
 
-def drawings(folder: Path) -> list[tuple[str, Path, str]]:
+KINDS = ("fire_plan", "corredor_l", "pilar", "duas_portas")
+
+
+def generate(folder: Path) -> None:
+    """Grava as plantas sintéticas. Só é chamada com ``PYTHONHASHSEED=0``: o ezdxf ordena a
+    seção OBJECTS pela ordem de um conjunto de strings, então a ENTRADA dependeria da semente
+    de hash do processo. A análise, essa sim, roda com semente aleatória e tem de dar o mesmo
+    resultado."""
     import ezdxf
 
     from coscip_cad.synthetic import ANALYTIC, make_analytic, make_fire_plan
 
     ezdxf.options.write_fixed_meta_data_for_testing = True
-    out = [("fire_plan", _fixed_newlines(make_fire_plan(folder / "fire_plan.dxf")),
-            "fire_plan")]
+    _fixed_newlines(make_fire_plan(folder / "fire_plan.dxf"))
     for kind in ANALYTIC:
-        path, _, _ = make_analytic(folder / f"{kind}.dxf", kind)
-        out.append((kind, _fixed_newlines(path), "analytic"))
-    return out
+        _fixed_newlines(make_analytic(folder / f"{kind}.dxf", kind)[0])
+
+
+def drawings(folder: Path) -> list[tuple[str, Path, str]]:
+    env = {**os.environ, "PYTHONHASHSEED": "0",
+           "PYTHONPATH": os.pathsep.join([str(ROOT), os.environ.get("PYTHONPATH", "")])}
+    subprocess.run([sys.executable, "-m", "tools.ci.determinismo", "--gerar", str(folder)],
+                   check=True, env=env, cwd=ROOT)
+    return [(k, folder / f"{k}.dxf", "fire_plan" if k == "fire_plan" else "analytic")
+            for k in KINDS]
 
 
 def analyze(path: Path, floors: list[dict[str, Any]]) -> dict[str, Any]:
@@ -81,8 +110,13 @@ def hashes() -> dict[str, dict[str, str]]:
     with tempfile.TemporaryDirectory() as tmp:
         for name, path, floors in drawings(Path(tmp)):
             result = analyze(path, FLOORS[floors])
+            # o conteúdo vai junto (comprimido) para a CI mostrar ONDE diverge
             out[name] = {"dxf_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
-                         "analysis_sha256": digest(result)}
+                         "analysis_sha256": digest(result),
+                         "dxf_gz": _pack(path.read_bytes()),
+                         "analysis_gz": _pack(json.dumps(canonical(result), sort_keys=True,
+                                                         ensure_ascii=False, indent=0,
+                                                         allow_nan=False).encode("utf-8"))}
     return out
 
 
@@ -97,6 +131,12 @@ def compare(files: list[Path]) -> int:
             if len(set(values.values())) != 1:
                 bad += 1
                 print(f"DIVERGE {name} {key}: {values}")
+                blob = key.replace("_sha256", "_gz")
+                texts = [(f, _unpack(s[blob])) for f, s in seen.items() if s.get(blob)]
+                if len(texts) >= 2:
+                    (fa, a), (fb, b) = texts[:2]
+                    diff = list(difflib.unified_diff(a, b, fa, fb, n=2, lineterm=""))
+                    print("\n".join(diff[:60]))
     print("ok: saídas idênticas" if not bad else f"{bad} divergência(s)")
     return 1 if bad else 0
 
@@ -105,14 +145,19 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Determinismo da análise (F7.4)")
     ap.add_argument("--out", type=Path)
     ap.add_argument("--comparar", nargs="+", type=Path)
+    ap.add_argument("--gerar", type=Path, help=argparse.SUPPRESS)
     args = ap.parse_args(argv)
+    if args.gerar:
+        generate(args.gerar)
+        return 0
     if args.comparar:
         return compare(args.comparar)
     result = hashes()
-    text = json.dumps(result, indent=2, sort_keys=True)
     if args.out:
-        args.out.write_text(text + "\n", encoding="utf-8")
-    print(text)
+        args.out.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n",
+                            encoding="utf-8")
+    print(json.dumps({k: {h: v[h] for h in ("dxf_sha256", "analysis_sha256")}
+                      for k, v in result.items()}, indent=2, sort_keys=True))
     return 0
 
 

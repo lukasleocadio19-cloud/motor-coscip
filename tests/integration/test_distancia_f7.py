@@ -9,6 +9,9 @@ a mesma entrada dá a mesma saída (hash canônico).
 from __future__ import annotations
 
 import json
+import os
+import subprocess
+import sys
 from pathlib import Path
 
 import pytest
@@ -114,11 +117,20 @@ def test_divergencia_entre_metodos_nao_conclui():
     assert "quality.geometry.consistent" in diverge.explanation
 
 
-def test_mesma_entrada_mesma_saida(pkg, tmp_path):
-    first = determinismo.hashes()
-    again = determinismo.hashes()
-    assert first == again
-    assert set(first) == {"fire_plan", *ANALYTIC}
+def test_mesma_entrada_mesma_saida(tmp_path):
+    """F7.4: a análise não depende da ordem de dicionário/conjunto (semente de hash)."""
+    out = {}
+    for seed in ("1", "2"):
+        env = {**os.environ, "PYTHONHASHSEED": seed}
+        dest = tmp_path / f"seed-{seed}.json"
+        subprocess.run([sys.executable, "-m", "tools.ci.determinismo", "--out", str(dest)],
+                       check=True, env=env, cwd=ROOT, capture_output=True)
+        out[seed] = json.loads(dest.read_text("utf-8"))
+    assert set(out["1"]) == {"fire_plan", *ANALYTIC}
+    for name in out["1"]:
+        assert out["1"][name]["dxf_sha256"] == out["2"][name]["dxf_sha256"]
+        assert out["1"][name]["analysis_sha256"] == out["2"][name]["analysis_sha256"], name
+    assert determinismo.compare([tmp_path / "seed-1.json", tmp_path / "seed-2.json"]) == 0
     # o hash canônico ignora só o tempo de relógio
     a = {"x": 1, "duration_s": 0.1, "y": [{"duration_s": 2, "z": 1.5}]}
     b = {"y": [{"z": 1.5, "duration_s": 9}], "x": 1, "duration_s": 3}
