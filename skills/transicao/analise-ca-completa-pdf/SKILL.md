@@ -112,7 +112,8 @@ Regra Geral Base: NT 1-01 (Procedimentos Administrativos - Parte 1), item 5.5.
   2. Falta ART de Estanqueidade para o sistema de GLP ou GN que opera no subsolo do Restaurante (Item 5.5.7 "m/n").
 
 ==============================================================
-STATUS DO CA: [COM PENDÊNCIAS DOCUMENTAIS / EM CONFORMIDADE - APTO PARA EMISSÃO]
+RESULTADO DA ANÁLISE TÉCNICA: [tecnicamente favorável / tecnicamente desfavorável / pendente de saneamento / dependente de decisão humana/CAT]
+(estados do contrato de papéis de $orquestrar-analise-cbmerj; a emissão do CA é ato da autoridade competente)
 ==============================================================
 ```
 

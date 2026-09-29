@@ -94,9 +94,9 @@ Ordem de trabalho:
 python3 scripts/localizar_item.py "distancia maxima a ser percorrida" --nt 2-01
 ```
 
-O script varre as conversões oficiais mantidas em `$cbmerj-grupo-N-*/references/nt-*.md` e devolve item, edição e página do PDF. Ler o trecho antes de citar: o item imediatamente acima da linha nem sempre é o que fundamenta a exigência.
+O script procura no texto integral das NTs (as `nt-*.md` das skills de grupo instaladas ao lado, `COSCIP_NORMAS_DIR` ou `normative/fontes` do repositório) e, na falta dele, no índice [references/itens.jsonl](references/itens.jsonl), gerado da mesma base que o motor usa; devolve item, edição e página do PDF. Ler o trecho antes de citar: o item imediatamente acima da linha nem sempre é o que fundamenta a exigência. Com o MCP `coscip-plantas` disponível, `consultar_norma` é a alternativa (mesma base).
 
-4. Confirmada a fonte, promover a citação no banco.
+4. Confirmada a fonte, registrar a citação na nota de rastreabilidade. O banco é **gerado** da base normativa (`tools/normas/indice_itens.py`): não se edita à mão; item que falte nele falta na base — corrigir a base por pull request.
 
 **Nunca inventar item por dedução ou analogia.** Se, depois da busca, o item não for localizado, não emitir o bilhete com a NT solta: marcar a lacuna de forma visível para o analista completar —
 

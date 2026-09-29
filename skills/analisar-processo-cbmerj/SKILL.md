@@ -15,14 +15,15 @@ Não substituir dado ausente por hipótese favorável. Não concluir pela aprova
 
 1. Fixar o ato solicitado. Se o usuário disser “EvRP”, registrar como rótulo operacional e verificar se o ato formal é AE.
 2. Ler o roteiro correspondente:
-   - PSCIP/LE: [fluxo-le.md](references/fluxo-le.md)
+   - PSCIP/LE: [fluxo-le.md](references/fluxo-le.md), com o [checklist-documental-le.md](references/checklist-documental-le.md) e o [protocolo-leitura-pranchas.md](references/protocolo-leitura-pranchas.md) (varredura em 9 quadrantes, leitura do Quadro Resumo célula a célula, regras de não-cobrança, autoconferência dos riscos específicos)
    - CA: [fluxo-ca.md](references/fluxo-ca.md)
    - AE/evento: [fluxo-ae-eventos.md](references/fluxo-ae-eventos.md)
    - demais atos: [fluxos-outros-atos.md](references/fluxos-outros-atos.md)
 3. Para qualquer rito, ler [protocolo-confronto-documental.md](references/protocolo-confronto-documental.md).
 4. Ler [contrato-dados-processo.md](references/contrato-dados-processo.md) e preencher os campos aplicáveis.
-5. Se o processo estiver incompleto, executar tudo o que for possível e separar “não conforme” de “não verificável”.
-6. Devolver ao orquestrador atos de competência reservada ou de rito não localizado, sem inventar procedimento.
+5. Registrar cada achado no esquema comum [achado.schema.json](references/achado.schema.json) — o mesmo vocabulário dos achados do motor (`compliance`, `evidence`, `review` nunca se fundem), para a matriz cruzar skill e motor sem tradução.
+6. Se o processo estiver incompleto, executar tudo o que for possível e separar “não conforme” de “não verificável”.
+7. Devolver ao orquestrador atos de competência reservada ou de rito não localizado, sem inventar procedimento.
 
 ## Fontes e módulos
 
@@ -50,7 +51,7 @@ Toda regra normativa deve vir da edição incorporada no módulo competente, com
 
 Inventariar cada arquivo, prancha e formulário: identificador, tipo, versão/data, assinatura, responsável, escopo e páginas. Preservar versões anteriores e eleger uma versão corrente somente quando isso estiver comprovado.
 
-Executar `scripts/inventariar_dossie.py` quando os arquivos estiverem disponíveis localmente. Reconciliar o resultado com o Termo de Aceite, mantendo nome original, tamanho, horário de upload e hash. Um PDF pode conter vários atos; criar um registro por ato interno, não apenas por arquivo.
+Executar `scripts/inventariar_dossie.py` quando os arquivos estiverem disponíveis localmente (percorre subpastas; DWG/DXF só são identificados — a leitura da planta é feita pelo MCP `coscip-plantas`, ver [references/uso-do-mcp-coscip-plantas.md](references/uso-do-mcp-coscip-plantas.md)). Reconciliar o resultado com o Termo de Aceite, mantendo nome original, tamanho, horário de upload e hash. Um PDF pode conter vários atos; criar um registro por ato interno, não apenas por arquivo.
 
 ### 2. Determinar cabimento e regime
 

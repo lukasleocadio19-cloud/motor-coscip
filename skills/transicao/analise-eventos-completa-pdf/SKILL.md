@@ -26,7 +26,7 @@ Eventos exigem farta comprovação de responsabilidade sobre estruturas provisó
    - **Projeto de SCIP do Evento.**
    - **Montagem de Estruturas Temporárias** (Palcos, arquibancadas, tendas, camarotes).
    - **Instalações Elétricas e Geradores** (Grupo gerador exige ART e laudo de aterramento/SPDA se aplicável).
-   - **Trio Elétrico/Carro de Som** (Se Carnaval/Blocos - NT 5-02).
+   - **Trio Elétrico/Carro de Som/Carro Alegórico** (Se Carnaval/Blocos - NT 5-03). Pirotecnia: NT 5-02.
 4. **Documentos de Autorização Local:**
    - "Nada Opor" do proprietário do espaço ou órgão público responsável pelo logradouro.
    - Contrato de locação da área.
@@ -39,7 +39,7 @@ Eventos exigem farta comprovação de responsabilidade sobre estruturas provisó
 A prancha PDF deve apresentar obrigatoriamente um **Quadro Resumo do Evento**:
 
 1. **Público Estimado vs. Capacidade Máxima:** 
-   - A planta deve explicitar a lotação. Divida a área livre pelo índice (ex: 2 a 3 pessoas/m² conforme o tipo de evento - pista, camarote c/ mesas, etc). O fator mais crítico deve reger o projeto.
+   - A planta deve explicitar a lotação. Evento temporário: aplicar a densidade da **NT 5-04, item 6.3.5 b e c** para público em pé (ler o item na NT: 3 pessoas/m² de área útil com saídas distintas; 2,50 pessoas/m² com saída única) e, para as demais áreas, o coeficiente de população da **NT 2-08, Anexo A**, pela divisão da ocupação. Citar item e tabela; não usar índice de memória. O fator mais crítico deve reger o projeto.
 2. **Caracterização:** 
    - Datas do evento, horário de início e fim.
    - Área ocupada total (m²).
@@ -106,7 +106,8 @@ Lista numerada para correção dos PDFs da planta:
 2. Posicionamento de Extintores: Falta locar extintor CO2 próximo ao gerador (Prancha 01).
 
 ==============================================================
-STATUS DO EVENTO: [COM EXIGÊNCIAS / APROVADO]
+RESULTADO DA ANÁLISE TÉCNICA: [tecnicamente favorável / tecnicamente desfavorável / pendente de saneamento / dependente de decisão humana/CAT]
+(estados do contrato de papéis de $orquestrar-analise-cbmerj; a análise recomenda, a autoridade autoriza)
 ==============================================================
 ```
 Regra: Nunca estimar saídas; aplique o rigor matemático. A vida em eventos depende de escape rápido.

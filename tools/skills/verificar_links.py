@@ -79,8 +79,8 @@ def run() -> dict[str, Any]:
     nts = catalog_nts()
     report: dict[str, list[str]] = {}
     for name, spec in cfg["vigentes"].items():
-        report[name] = check_skill(name, files_for(name, spec.get("fontes") or []), vigentes,
-                                   known, nts)
+        files = files_for(name, spec.get("fontes") or [], spec.get("comuns"))
+        report[name] = check_skill(name, files, vigentes, known, nts)
     for name in cfg["aposentar"]:
         try:
             files = files_for(name, [])

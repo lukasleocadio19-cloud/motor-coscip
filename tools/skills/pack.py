@@ -27,6 +27,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
 SKILLS = ROOT / "skills"
+COMUNS = SKILLS / "_comum"
 FONTES = ROOT / "normative" / "fontes"
 DIST = ROOT / "dist" / "skills"
 _EPOCH = (2026, 1, 1, 0, 0, 0)
@@ -64,7 +65,8 @@ def generated_references(name: str) -> dict[str, bytes]:
             "references/itens.jsonl": indice_itens.jsonl().encode("utf-8")}
 
 
-def files_for(name: str, patterns: list[str]) -> dict[str, bytes]:
+def files_for(name: str, patterns: list[str], comuns: list[str] | None = None
+              ) -> dict[str, bytes]:
     """Conteúdo final da skill: caminho relativo → bytes (ordenado, determinístico)."""
     from tools.normas.manifesto import media_refs
 
@@ -84,6 +86,11 @@ def files_for(name: str, patterns: list[str]) -> dict[str, bytes]:
             img = FONTES / media
             if img.is_file():  # ausente fica registrada no manifesto; o texto remete ao PDF
                 out[f"references/{media}"] = img.read_bytes()
+    for fname in comuns or []:
+        rel = f"references/{fname}"
+        if rel in out:
+            raise ValueError(f"{name}: {rel} vem de skills/_comum; não duplicar na skill")
+        out[rel] = (COMUNS / fname).read_bytes()
     for rel, data in generated_references(name).items():
         if rel in out:
             raise ValueError(f"{name}: {rel} é gerado; não versionar em skills/")
@@ -105,7 +112,7 @@ def write_zip(name: str, files: dict[str, bytes], dest: Path) -> Path:
 
 def pack(transicao: bool = False, dest: Path = DIST) -> list[Path]:
     cfg = config()
-    out = [write_zip(n, files_for(n, spec.get("fontes") or []), dest)
+    out = [write_zip(n, files_for(n, spec.get("fontes") or [], spec.get("comuns")), dest)
            for n, spec in cfg["vigentes"].items()]
     if transicao:
         for n in cfg["aposentar"]:

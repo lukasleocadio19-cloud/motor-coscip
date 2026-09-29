@@ -26,6 +26,7 @@ Aplicar [references/contrato-de-papeis.md](references/contrato-de-papeis.md). So
 5. Ler [references/catalogo-geral-das-nts.md](references/catalogo-geral-das-nts.md) para selecionar as NTs por objeto e pergunta de análise.
 6. Abrir `$cbmerj-atos-administrativos` para o catálogo oficial, estado de vigência, competência, digitalização e modalidade do pedido.
 7. Ler [references/matriz-de-cobertura.md](references/matriz-de-cobertura.md) e atribuir um responsável a cada requisito acionado.
+   Quando o dossiê tiver planta vetorial (DXF/DWG), ler [references/uso-do-mcp-coscip-plantas.md](references/uso-do-mcp-coscip-plantas.md): a leitura da planta e as medições do Grupo 2 vêm do MCP `coscip-plantas`, e o GATE-0 da planta só abre com unidade confirmada e balanço de reconhecimento completo. Achados de todas as fontes seguem [references/achado.schema.json](references/achado.schema.json).
 8. Usar as sínteses derivadas do relatório técnico-operacional para decisões de governança, fluxo, atualização e controvérsia.
 9. Se a análise ocorrer após 23/07/2026, ou se o ato estiver marcado como `vigência aparente`, `transitória`, `superação parcial` ou `requer validação`, confirmar no portal oficial do CBMERJ se houve alteração do Decreto, NT, Portaria, AAST ou Nota DGST.
 

@@ -23,12 +23,15 @@ Mesmo que o **Termo de Aceite** ou demais documentos descrevam que o projeto foi
 - **PROIBIDO** exigir reapresentação do projeto em PDF/A por motivo de formato.
 - O analista trabalha com o PDF convertido normalmente.
 
-### REGRA NÃO-COBRANÇA Nº 2 — DISTÂNCIAS DE EXTINTORES (RAIO DE 15m / 20m)
+### REGRA NÃO-COBRANÇA Nº 2 — DISTÂNCIAS DE EXTINTORES (NT 2-01, TABELA 3)
 
-A planta original do projetista está em escala. A verificação do **raio de cobertura de cada unidade extintora** (15m para risco pequeno, 20m para risco baixo) **é responsabilidade do analista**, que deve medir em escala usando as ferramentas de medição.
+A planta original do projetista está em escala. Pela **NT 2-01, item 6.1.1, Tabela 3**, a distância máxima a percorrer até um extintor é **20 m no risco pequeno, 15 m no risco médio e 10 m no risco grande** (área máxima protegida por unidade extintora: 250 m², 150 m² e 100 m²). Conferir sempre na Tabela 3 da NT (`$cbmerj-grupo-2-medidas-seguranca`), não de memória.
+
+- **Com planta vetorial (DXF/DWG)**: a distância é medida pelo motor (MCP `coscip-plantas`: `abrir_planta` → `confirmar_unidade` → `definir_pavimentos` → `analisar_planta`); o resultado entra na matriz como os demais achados, com a incerteza declarada.
+- **Só com PDF**: a verificação da distância percorrida **é responsabilidade do analista**, que mede em escala usando as ferramentas de medição.
 
 - **PROIBIDO** gerar pendência genérica do tipo "verificar raio de 15m dos extintores" ou "comprovar cobertura por mangueira".
-- **OBRIGATÓRIO** (ao invés disso): calcular se o **quantitativo e a capacidade extintora total** (em unidades extintoras 2A:20BC etc.) atendem à área construída a ser protegida, conforme **tabela do Anexo A da NT 2-01** (Tabela de Capacidade Extintora vs. Área Máxima Protegida por Risco).
+- **OBRIGATÓRIO** (ao invés disso): calcular se o **quantitativo e a capacidade extintora total** atendem à área construída a ser protegida, conforme a **NT 2-01, Tabela 3** (área máxima protegida por unidade extintora, por risco), com a capacidade extintora mínima das **Tabelas 1 e 2** (item 5.2.1 d e 6.1.1.1).
 - Cobrar SOMENTE: (i) tipo correto para a classe de fogo do local (A, B, C, D, K); (ii) **proporção de unidades extintoras x área protegida** segundo o quadro normativo da NT 2-01; (iii) presença de extintor específico onde norma exige (PQS junto à central de GLP, CO2 em motogerador/subestação, Classe K em cozinha profissional, etc.).
 - Se houver erro grosseiro de quantitativo, apontar com base no cálculo da proporção, não em raio.
 
@@ -352,13 +355,13 @@ Para cada risco específico assinalado no Quadro Resumo da Fase 2, **adicionar A
 |---|---|---|
 | GLP | NT 3-02 | Gás Combustível |
 | Gás Natural | NT 3-02 | Gás Combustível |
-| Inflamáveis líquidos | NT 3-06 / NT 4-03 | Armazenagem / Posto |
+| Inflamáveis líquidos | NT 3-06 (posto de abastecimento: NT 4-06) | Líquidos inflamáveis e combustíveis |
 | Cozinha profissional | NT 3-01 | Cozinhas Profissionais |
 | Motogerador | NT 3-03 | Motogerador |
 | Subestação | NT 3-04 | Subestação |
 | Caldeira / Vaso de pressão | NT 3-05 | Vasos de Pressão / Caldeiras |
-| Paiol / Explosivos | NT 4-06 | Paiol de Explosivos |
-| Heliponto | NT 4-11 | Heliponto |
+| Paiol / Explosivos | NT 4-04 | Munições, explosivos e artefatos pirotécnicos |
+| Heliponto | NT 3-07 | Heliponto e heliporto |
 
 ---
 
@@ -380,17 +383,17 @@ A documentação de projeto/prancha (se via principal a ser assinada posteriorme
 
 ### 1. NT 2-01 (Extintores)
 
-⚠️ **NÃO COBRAR raio de cobertura (15m / 20m)** — vide Regra Não-Cobrança nº 2. Cobrar apenas:
+⚠️ **Distância percorrida (NT 2-01, Tabela 3: 20/15/10 m)** — vide Regra Não-Cobrança nº 2: com planta vetorial, vem do motor; só com PDF, o analista mede. Cobrar:
 
-- **Quantitativo correto** segundo a **Tabela de Capacidade Extintora vs. Área Máxima Protegida** (Anexo A da NT 2-01). Calcular: (Área protegida total ÷ Área máxima por unidade extintora) ≤ Quantidade de extintores apresentada na prancha.
+- **Quantitativo correto** segundo a **NT 2-01, Tabela 3** (área máxima protegida por unidade extintora: 250/150/100 m² para risco pequeno/médio/grande). Calcular: ⌈área protegida ÷ área máxima por unidade⌉ ≤ quantidade de extintores apresentada na prancha, com o mínimo de 2 do item 5.2.5 (exceção do 5.2.4: uma unidade de pó ABC em edificação de risco pequeno com área inferior a 50 m²).
 - **Tipo correto para a classe de fogo** do local protegido (A: papel/madeira/tecido; B: líquidos inflamáveis; C: elétrico; D: metais pirofóricos; K: óleo de cozinha).
-- **Capacidade extintora mínima** (ex: 2A:20BC para risco pequeno; 3A:40BC para risco médio).
+- **Capacidade extintora mínima** conforme a **NT 2-01, Tabelas 1 e 2** (item 5.2.1 d; 6.1.1.1 e 6.1.1.2) — ler a tabela na NT; não usar número de memória.
 - **Extintores específicos onde a norma exige** (CO2 em motogerador/subestação; PQS junto à central de GLP; Classe K em cozinha profissional).
 
 ### 2. NT 2-02 (Hidrantes e Mangotinhos)
 
 - Existência da RTI (Reserva Técnica de Incêndio) e CMI (Casa de Máquinas de Incêndio) delimitadas em planta.
-- Volume de RTI compatível com a classificação (mínimo 8.000L para sistema tipo 1; até 24.000L para A-5 risco pequeno; etc.).
+- Volume de RTI compatível com o tipo de sistema e a classificação, conforme as tabelas da **NT 2-02** (ler a tabela na NT via `$cbmerj-grupo-2-medidas-seguranca`; não usar número de memória).
 - Isométrico do sistema apresentado.
 - **Raio de 30m das mangueiras** — verificar em escala (analista mede), cobrar apenas se evidente que há área não coberta.
 
@@ -519,7 +522,7 @@ Todo processo que apresente não conformidades deve ser compilado e entregue na 
 
 ### VERIFICAÇÃO FINAL ANTES DE FECHAR O LAUDO (OBRIGATÓRIA)
 
-**Antes de emitir o STATUS GERAL, revalide os seguintes pontos de integridade — NÃO PULE:**
+**Antes de emitir o RESULTADO DA ANÁLISE TÉCNICA, revalide os seguintes pontos de integridade — NÃO PULE:**
 
 1. ✅ A matriz do Quadro Resumo (Fase 2) foi preenchida com TODOS os campos, **linha por linha**?
 2. ✅ O bloco "RISCOS ESPECIAIS / ESPECÍFICOS" foi lido **literalmente, célula por célula**, em CADA prancha?
@@ -529,7 +532,7 @@ Todo processo que apresente não conformidades deve ser compilado e entregue na 
 6. ✅ Para **CADA** risco específico marcado, foi conferida a existência de ART/RRT específica do risco?
 7. ✅ As declarações do Memorial foram cruzadas com as marcações do Quadro Resumo (pendência de omissão cruzada)?
 8. ✅ **NÃO foi gerada pendência sobre formato DWG vs PDF** (Regra Não-Cobrança nº 1)?
-9. ✅ **NÃO foi gerada pendência sobre raio de cobertura de extintores** (Regra Não-Cobrança nº 2 — usar apenas a proporção da Tabela do Anexo A da NT 2-01)?
+9. ✅ **NÃO foi gerada pendência genérica sobre distância de extintores** (Regra Não-Cobrança nº 2 — proporção da NT 2-01 Tabela 3; distância do motor quando há planta vetorial)?
 10. ✅ Antes de cobrar QUALQUER elemento como "ausente" da prancha, foi aplicado o **PROTOCOLO DE VARREDURA EXAUSTIVA DA PRANCHA** (9 quadrantes, todas as folhas)?
 11. ✅ O **CHECKLIST DOCUMENTAL FECHADO** da Fase 1 foi preenchido integralmente?
 12. ✅ Foram conferidos requerimento, DAEM, comprovante, identificação, vínculo com o imóvel, ato constitutivo, memorial, ART/RRT e composição mínima do projeto?
@@ -590,10 +593,11 @@ Exemplo:
    Risco específico GLP foi declarado no Quadro Resumo (Prancha 01). Faltam detalhes de projeto: localização da central, dimensões, ventilação, tubulação, e ART específica de projeto de gás.
 
 3. Extintores – NT 2-01 (cálculo de proporção)
-   Para área protegida de [XXX m²], a NT 2-01 exige no mínimo [N] unidades extintoras 2A:20BC (cálculo: área ÷ área máxima por unidade da Tabela do Anexo A). A prancha apresenta apenas [M] extintores. Adequar quantitativo.
+   Para área protegida de [XXX m²], a NT 2-01 (item 6.1.1, Tabela 3) exige no mínimo [N] unidades extintoras (cálculo: ⌈área ÷ área máxima por unidade da Tabela 3⌉, mínimo de 2 pelo item 5.2.5), com a capacidade extintora das Tabelas 1 e 2. A prancha apresenta apenas [M] extintores. Adequar quantitativo.
 
 ==============================================================
-STATUS GERAL: [COM EXIGÊNCIAS / APROVADO]
+RESULTADO DA ANÁLISE TÉCNICA: [tecnicamente favorável / tecnicamente desfavorável / pendente de saneamento / dependente de decisão humana/CAT]
+(estados do contrato de papéis de $orquestrar-analise-cbmerj; a análise recomenda, não aprova — o ato é da autoridade competente)
 ==============================================================
 ```
 
@@ -609,7 +613,7 @@ STATUS GERAL: [COM EXIGÊNCIAS / APROVADO]
 - **Ler o Quadro Resumo célula por célula, linha por linha** — proibido pular linhas do bloco RISCOS ESPECIAIS.
 - **Para riscos específicos marcados**, vincular OBRIGATORIAMENTE à NT correspondente e gerar pendência de detalhamento técnico E verificação de ART específica.
 - **NÃO COBRAR** divergência de formato DWG vs PDF (será convertido pelo sistema).
-- **NÃO COBRAR** raio de cobertura de extintores (15m / 20m) — analista mede em escala. Cobrar apenas a **proporção quantitativa** da Tabela do Anexo A da NT 2-01.
+- **Distância a percorrer até o extintor** (NT 2-01, Tabela 3: 20/15/10 m): com planta vetorial, medida pelo motor; só com PDF, o analista mede em escala e não se gera pendência genérica. Cobrar a **proporção quantitativa** da Tabela 3 da NT 2-01.
 - **NÃO COBRAR** quadros/legendas/simbologia como "ausentes" sem aplicar o PROTOCOLO DE VARREDURA EXAUSTIVA DA PRANCHA (9 quadrantes em todas as folhas).
 - **SEMPRE preencher** o CHECKLIST DOCUMENTAL FECHADO da Fase 1 antes da análise técnica.
 - **SEMPRE fundamentar** cada pendência com norma, item/subitem/tabela/anexo, constatação objetiva, não conformidade, exigência e localização no processo/projeto.
