@@ -1,15 +1,19 @@
 # Empacotamento
 
-Adiado até depois da prova de conceito (plano §13, FUT-09): o instalador não deve atrasar a
-primeira planta funcionando.
+**Pacote portátil do Windows** (ADR 0007, plano de correção F0.3): feito pelo workflow
+`.github/workflows/release.yml` a cada tag `v*` (ou manualmente, "Run workflow", para um
+pacote de teste sem Release). O script é `tools/package/portatil.py`.
 
-Quando chegar a hora, o pacote deve conter:
+- `python-embed.json`: versão, URL e SHA-256 do Python embeddable oficial. Hash vazio = o
+  workflow confere a assinatura Sigstore, mostra o hash e para; fixe-o aqui e rode de novo.
+- Dependências: `requirements/runtime.lock` (regenerar com o comando do cabeçalho do lock
+  quando mudar o `pyproject.toml`; a CI acusa lock desatualizado).
+- Uso: descompactar a pasta inteira, `verificar.cmd`, depois `iniciar.cmd` ou `mcp.cmd`.
+  Registrar no Claude Desktop: `app\scripts\mcp\instalar.ps1 -Portatil <pasta> -RegistrarClaudeDesktop`.
 
-- runtime Python 3.12 e dependências **travadas** (versões exatas testadas no Windows);
-- `apps/api/coscip_api/static` já compilado (sem Node.js na máquina final);
-- Chromium para PDF instalado e validado uma vez (REP-02);
-- avisos de licença (ezdxf MIT, Shapely BSD, GEOS LGPL, SQLite domínio público, Three.js MIT…);
-- manifesto de versões (esquema, engine, frontend) e hash do pacote do worker.
+Ainda pendente (plano §13):
 
-Instalar a versão nova **ao lado** da anterior; rollback de código não abre banco migrado
-incompatível (SAFE-03).
+- Chromium para PDF (REP-02);
+- avisos de licença agregados (ezdxf MIT, Shapely BSD, GEOS LGPL, SQLite domínio público,
+  Three.js MIT…);
+- atualização lado a lado com rollback que não abre banco migrado incompatível (SAFE-03).

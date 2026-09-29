@@ -76,7 +76,10 @@ coverage:
     item: Anexo C
     quote: ["DISTÂNCIAS MÁXIMAS A SEREM PERCORRIDAS"]
     topic: Limites de distância até a saída por ocupação
-    reason: Tabela do Anexo C está como imagem na base; o analista informa o limite aplicável.
+    reason: >-
+      O Anexo C é dado conferido do pacote (distancias-saida.yaml, desde a v5); a medição
+      automática depende do leiaute, dos chuveiros/detectores e do número de saídas informados
+      pelo analista, e o limite informado por ele prevalece com registro.
   - document: NT 2-08
     item: 5.3.2.4
     quote: ["número de saídas"]

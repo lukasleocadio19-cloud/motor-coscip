@@ -103,7 +103,7 @@ Legenda: **feito** (código + teste) · **base** (estrutura pronta, falta fluxo)
 |---|---|---|
 | POC-01 | **feito** | 16 GB, i7-3770, RTX 3050, SSD único |
 | POC-02 | **feito** | 5 projetos em `Downloads\coscip-corpus`; referências = cotas do projeto; falta 1 medida real independente |
-| POC-03 | **feito** | DWG→DXF: AutoCAD 2027 `accoreconsole` + `DXFOUT` 2018 (runbook); nunca ODA |
+| POC-03 | **feito** | DWG→DXF: AutoCAD 2027 `accoreconsole` + `DXFOUT` 2018 para o corpus (runbook); ODA File Converter no MCP (ADR 0006) |
 | POC-04 | **feito** | `coscip_cad.dxf_reader` (entidades, layers, textos, blocos) |
 | POC-05 | **feito** | espelhamento, escala, unidades, blocos |
 | POC-06 | **feito** | cena binária por camada, seleção → origem no DXF; 1,28 mi de segmentos (9715) |

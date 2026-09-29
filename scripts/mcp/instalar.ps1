@@ -3,6 +3,7 @@
   Instala o MCP "coscip-plantas" (Motor COSCIP) neste computador.
 
 .DESCRIPTION
+  Com -Portatil <pasta>: usa o python.exe do pacote portátil (sem .venv, sem pip) e pula 1-2.
   1. Encontra o Python 3.12 (py -3.12 ou -Python).
   2. Cria/atualiza o ambiente .venv do repositório e instala o motor.
   3. Roda o autoteste (python -m coscip_mcp --verificar).
@@ -11,10 +12,12 @@
 .EXAMPLE
   scripts\mcp\instalar.ps1
   scripts\mcp\instalar.ps1 -RegistrarClaudeDesktop -Normas "D:\normas-cbmerj"
+  scripts\mcp\instalar.ps1 -Portatil D:\MotorCoscip-0.2.0-win64 -RegistrarClaudeDesktop
   scripts\mcp\instalar.ps1 -RegistrarClaudeCode -Oda "C:\Program Files\ODA\ODAFileConverter 25.12.0\ODAFileConverter.exe"
 #>
 param(
     [string]$Python = "",
+    [string]$Portatil = "",        # pasta descompactada do MotorCoscip-<versão>-win64.zip
     [string]$Normas = "",          # só se quiser outra pasta: o repositório já traz normative\fontes
     [string]$Oda = "",             # ODAFileConverter.exe, se não estiver no local padrão
     [switch]$RegistrarClaudeDesktop,
@@ -27,6 +30,12 @@ Set-Location $root
 
 function Passo($texto) { Write-Host "`n== $texto" -ForegroundColor Cyan }
 
+if ($Portatil) {
+    # Pacote portátil (F0.3): Python e dependências já vêm dentro da pasta.
+    $venvPy = Join-Path (Resolve-Path $Portatil).Path "python\python.exe"
+    if (-not (Test-Path $venvPy)) { throw "python.exe não encontrado em $Portatil\python" }
+    Passo "Pacote portátil: $venvPy"
+} else {
 # --- 1. Python 3.12 ---------------------------------------------------------------------
 Passo "Python 3.12"
 $venvPy = Join-Path $root ".venv\Scripts\python.exe"
@@ -62,6 +71,7 @@ Passo "Instalando o motor e as dependências (pode levar alguns minutos na prime
 & $venvPy -m pip install -e . --quiet
 if ($LASTEXITCODE -ne 0) { throw "falha no pip install" }
 Write-Host "ok"
+}
 
 # --- 3. Autoteste -----------------------------------------------------------------------
 Passo "Autoteste"
