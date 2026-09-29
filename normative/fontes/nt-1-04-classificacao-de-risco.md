@@ -398,7 +398,7 @@ Fonte: Decreto nº 42/2018 - COSCIP.
 | C | Comercial | C-3 | Shopping centers | MÉDIO 2 |
 | C | Comercial | C-4 | Quiosque | MÉDIO 1 |
 
-Fonte: NT 1-04, página 11, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 11, Tabela do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página. "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação cada linha repete o valor.
 <!-- /tabela-conferida: Tabela do Anexo B p11 -->
 
@@ -480,7 +480,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 | H | Serviço de saúde | H-3 | Hospitais, casas de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital psiquiátrico. | MÉDIO 1 |
 | H | Serviço de saúde | H-4 | Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados. Todos sem internação. | MÉDIO 1 |
 
-Fonte: NT 1-04, página 12, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 12, Tabela do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página. "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação cada linha repete o valor.
 <!-- /tabela-conferida: Tabela do Anexo B p12 -->
 
@@ -506,7 +506,7 @@ Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 1
 | --- | --- | --- | --- | --- |
 | I | Industrial | I-1 | Edificações industriais que fabricam: aditivos de uso industrial; adoçantes naturais e artificiais; água envasada; alimentos e pratos prontos; alimentos para animais; amianto; equipamentos para sinalização e alarme; aparelhos ortopédicos; extração de areia, ardósia, basalto, calcário, dolomita e argila; fabricação de aviamentos para costura; balanças; fabricação de bebidas não alcóolicas (exceção refrigerantes); de bicicletas; bijuterias e artefatos; bolsas; biscoitos; café e derivados; calçados; caldeiras; artigos de escritório (caneta); catalisadores; casas pré moldadas de concreto; cerâmica; de chá; chocolate; de cimento; condimentos; cordoaria; couro; de doces, embalagens de vidro; embalagens de metais; especiarias, molhos, temperos e condimentos; artefatos de esporte; esquadrias de metal; fermentos e leveduras; ferramentas; galvanoplastia; fibras artificiais e sintéticas; conservas de frutas; balas e semelhantes; gelo comum; extração de pedras preciosas; extração de gesso e caulim; extração de grafita e granito; guarda chuvas; instrumentos musicais; fabricação de artigos de joalheria; jogos eletrônicos; lâmpadas; laticínios; extração de mármore e marmoraria; matadouro de (abate de suínos, bovinos, aves); artigos de metal; extração e beneficiamento de minérios; cunhagem de moedas e medalhas; móveis com predominância de metais; móveis de materiais sem madeira); artigos ópticos; artefatos de pesca; serralheria; rolamentos para fins industriais; de sorvetes; artigos de vidro. | MÉDIO 1 |
 
-Fonte: NT 1-04, página 13, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 13, Tabela do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página. "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação cada linha repete o valor.
 <!-- /tabela-conferida: Tabela do Anexo B p13 -->
 
@@ -534,7 +534,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 | I | Industrial | I-2 | Edificações industriais que fabricam: absorventes higiênicos; medicamentos; adubos e fertilizantes; defensivos agrícolas; aparelhos de áudio e vídeo; equipamentos de medida; equipamentos de transmissão; equipamentos elétricos; componentes eletrônicos; compressores; aparelhos elétricos; equipamentos e informática; artigos de tabaco; transmissores de comunicação; aparelhos eletrodomésticos; aparelhos fotográficos e cinematográficos; motocicletas; instrumentos cirúrgicos, odontológicos e laboratorial; cigarros, cigarrilhas e charutos; aparelhos eletromédicos e eletroterapêuticos; aparelhos telefônicos; hidráulicos e pneumáticos; fabricação de automóveis; aeronaves; motores para automóveis e turbinas; de açúcar; estufas e fornos elétricos; vinho; cervejarias e chopes; fabricação de refrigerantes; adesivos e selantes; aparelhos de ar condicionado; aparelhos e máquinas de refrigeração e ventilação; desinfetantes; elastômeros; fios, cabos e condutores elétricos; embarcações; de locomotivas; fabricação de produtos alimentícios; fabricação de farmoquímicos; fabricação de fogões, refrigeradores e máquinas de lavar e secar; fornos industriais; fraldas descartáveis; gases industriais; produtos de carne; frigorífico; fabricação de refrescos, xaropes; de sucos; letras, letreiros e placas; transformadores, indutores, conversores, sincronizadores e semelhantes; margarina, óleos vegetais; massas alimentícias; mastiques; painéis e letreiros luminosos; moagem e fabricação de derivados de milho; pilhas, baterias e acumuladores elétricos; produtos adesivos; produtos químicos inorgânicos; ração. (ver item 5.13). | MÉDIO 2 |
 | I | Industrial | I-3 | Edificações industriais que fabricam: caixotes barris ou pallets de madeira; carpintaria; coletam resíduos perigosos; fabricam produtos químicos; bancos e estofados; vassouras; fabricação de lápis; produtos graxos; produtos petroquímicos; laminados planos e tubulares de materiais plásticos; escovas, pincéis e vassouras; tratamento e disposição de resíduos perigosos; extração de petróleo e gás natural; embalagens de materiais plásticos; esquadrias de madeiras; artefatos de madeira; marcenarias; artefatos de materiais plásticos; extração e beneficiamento de carvão; casas de madeiras pré fabricadas; fabricação de álcool; tanoaria e embalagens de madeira; aguardente de cana de açúcar; amido e féculas de vegetais; artefatos de cortiça, bambu, palha, vime; artigos de tapeçaria; mobiliário com predominância de madeira; têxtil; artefatos de borracha; colas; extração e beneficiamento de areias betuminosas; fabricação de armas de fogo e munição; beneficiamento e produtos de arroz; fabricação de biocombustível; cloro e álcalis; colchões; combustíveis nucleares; | GRANDE |
 
-Fonte: NT 1-04, página 14, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 14, Tabela do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página. "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação cada linha repete o valor.
 <!-- /tabela-conferida: Tabela do Anexo B p14 -->
 
@@ -560,7 +560,7 @@ Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 1
 | --- | --- | --- | --- | --- |
 | I | Industrial | I-3 | (continuação) coquerias; equipamento bélico pesado; espumas; gráfica; impermeabilizantes, solventes e produtos afins; materiais plásticos; refino de óleos lubrificantes; papel e derivados; produtos derivados de petróleo; artigos de plásticos em geral; produtos de limpeza e polimento; ceras de polimento; plastificantes, resinas e fibras; resinas termofixas; resinas termoplásticas; sabões e detergentes sintéticos; tintas de impressão; tintas, vernizes, esmaltes e lacas; moagem e derivados de trigo; extração e beneficiamento de xisto; fabricação de óleos vegetais. (ver item 5.13). | GRANDE |
 
-Fonte: NT 1-04, página 15, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 15, Tabela do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página. "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação cada linha repete o valor.
 <!-- /tabela-conferida: Tabela do Anexo B p15 -->
 
@@ -616,7 +616,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 | M | Especial | M-8 | Loteamento | MÉDIO 1 |
 | M | Especial | M-9 | Local onde a liberdade das pessoas sofre restrição | MÉDIO 1 |
 
-Fonte: NT 1-04, página 16, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 16, Tabela do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página. "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação cada linha repete o valor.
 <!-- /tabela-conferida: Tabela do Anexo B p16 -->
 

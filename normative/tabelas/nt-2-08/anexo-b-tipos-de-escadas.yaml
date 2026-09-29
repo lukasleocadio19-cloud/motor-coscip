@@ -267,6 +267,187 @@ caminhos:
       - PF
       - PF
       - PF5
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 65.08
+      - 81.72
+      - 537.33
+      - 718.06
+      linhas:
+      - - Classificação da edificação
+        - null
+        - Tipos de escadas x Nº de pavimentos
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Ocupação
+        - Divisão
+        - '2'
+        - '3'
+        - 4, 5 e 6
+        - ''
+        - Acima de 6
+        - ''
+        - H≥30m
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - com H ≤30m
+        - null
+        - null
+      - - Residencial
+        - A-2
+        - NE
+        - NE
+        - NE 1
+        - PF
+        - null
+        - null
+        - PF4
+      - - null
+        - A-3
+        - NE
+        - NE
+        - PF
+        - PF
+        - null
+        - null
+        - PF5
+      - - null
+        - A-6
+        - NE
+        - NE
+        - PF2
+        - PF
+        - null
+        - null
+        - PF4
+      - - Serviço de Hospedagem
+        - B-1 B-2
+        - NE
+        - NE
+        - PF
+        - PF
+        - null
+        - null
+        - PF5
+      - - Comercial
+        - C-1 C-2 C-3 C-4
+        - NE
+        - NE
+        - PF
+        - PF
+        - null
+        - null
+        - PF5
+      - - Serviço profissional e institucional
+        - D-1 D-2 D-3 D-4 D-5
+        - NE
+        - NE
+        - PF
+        - PF
+        - null
+        - null
+        - PF5
+      - - Escolar e Cultura Física
+        - E-1 E-2 E-3
+        - NE
+        - NE
+        - PF6
+        - PF
+        - null
+        - null
+        - PF5
+      - - Local de Reunião de Público
+        - F-1 F-2 F-3 F-4 F-6 F-8 F-9 F-10
+        - NE
+        - NE
+        - PF
+        - PF
+        - null
+        - null
+        - PF5
+      - - null
+        - F-5 F-7 F-11
+        - NE
+        - NE
+        - PF7
+        - PF
+        - null
+        - null
+        - PF5
+      - - Serviço automotivo e assemelhado
+        - G-1 G-2 G-3 G-4 G-5 G-6
+        - NE
+        - NE
+        - PF
+        - PF
+        - null
+        - null
+        - PF 4,5
+      - - Serviço de Saúde
+        - H-1 H-4
+        - NE
+        - NE
+        - PF
+        - PF
+        - null
+        - null
+        - PF5
+      - - null
+        - H-2 H-3
+        - NE
+        - PFP
+        - PFP
+        - PFP
+        - null
+        - null
+        - PFP5
+      - - Industrial
+        - I-1 I-2 I-3
+        - NE
+        - NE
+        - PF
+        - PF
+        - null
+        - null
+        - PF5
+      - - Depósito
+        - J-1 J-2 J-3 J-4
+        - NE
+        - NE
+        - PF
+        - PF
+        - null
+        - null
+        - PF5
+      - - Explosivos ou munições
+        - L-1
+        - NE
+        - NE
+        - PF
+        - PF
+        - null
+        - null
+        - PF5
+      - - Especial
+        - M-3 M-6
+        - NE
+        - NE
+        - PF
+        - PF
+        - null
+        - null
+        - PF5
 inconsistencias_da_fonte:
 - 'As células trazem notas sobrescritas numeradas (¹ a ⁷, ex.: NE¹, PF⁴, PF⁴˒⁵), mas as observações da
   tabela (páginas 20 e 21) são identificadas por letras (A) a (K). A correspondência número → letra não
@@ -283,6 +464,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

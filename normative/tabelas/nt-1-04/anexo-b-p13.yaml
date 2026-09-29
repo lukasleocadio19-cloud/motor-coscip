@@ -71,6 +71,61 @@ caminhos:
         sem madeira); artigos ópticos; artefatos de pesca; serralheria; rolamentos para fins industriais;
         de sorvetes; artigos de vidro.'
       - MÉDIO 1
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.27
+      - 70.86
+      - 549.33
+      - 478.3
+      linhas:
+      - - ''
+        - Grupo
+        - ''
+        - ''
+        - Ocupação/Uso
+        - ''
+        - ''
+        - Divisão
+        - ''
+        - ''
+        - Descrição
+        - ''
+        - ''
+        - Risco
+        - ''
+      - - I
+        - null
+        - null
+        - Industrial
+        - null
+        - null
+        - I-1
+        - null
+        - null
+        - 'Edificações industriais que fabricam: aditivos de uso industrial; adoçantes naturais e artificiais;
+          água envasada; alimentos e pratos prontos; alimentos para animais; amianto; equipamentos para
+          sinalização e alarme; aparelhos ortopédicos; extração de areia, ardósia, basalto, calcário,
+          dolomita e argila; fabricação de aviamentos para costura; balanças; fabricação de bebidas não
+          alcóolicas (exceção refrigerantes); de bicicletas; bijuterias e artefatos; bolsas; biscoitos;
+          café e derivados; calçados; caldeiras; artigos de escritório (caneta); catalisadores; casas
+          pré moldadas de concreto; cerâmica; de chá; chocolate; de cimento; condimentos; cordoaria; couro;
+          de doces, embalagens de vidro; embalagens de metais; especiarias, molhos, temperos e condimentos;
+          artefatos de esporte; esquadrias de metal; fermentos e leveduras; ferramentas; galvanoplastia;
+          fibras artificiais e sintéticas; conservas de frutas; balas e semelhantes; gelo comum; extração
+          de pedras preciosas; extração de gesso e caulim; extração de grafita e granito; guarda chuvas;
+          instrumentos musicais; fabricação de artigos de joalheria; jogos eletrônicos; lâmpadas; laticínios;
+          extração de mármore e marmoraria; matadouro de (abate de suínos, bovinos, aves); artigos de
+          metal; extração e beneficiamento de minérios; cunhagem de moedas e medalhas; móveis com predominância
+          de metais; móveis de materiais sem madeira); artigos ópticos; artefatos de pesca; serralheria;
+          rolamentos para fins industriais; de sorvetes; artigos de vidro.'
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
 notas:
 - Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página.
   "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação
@@ -82,6 +137,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

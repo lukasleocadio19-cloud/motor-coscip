@@ -256,6 +256,469 @@ caminhos:
     - - H-4
       - Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados.
         Todos sem internação.
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 46.23
+      - 67.46
+      - 542.37
+      - 782.98
+      linhas:
+      - - ''
+        - Grupo
+        - ''
+        - ''
+        - Ocupação/Uso
+        - ''
+        - ''
+        - Divisão
+        - ''
+        - ''
+        - Descrição
+        - ''
+        - ''
+        - Risco
+        - ''
+      - - D
+        - null
+        - null
+        - Serviço profissional e institucional
+        - null
+        - null
+        - D-1
+        - null
+        - null
+        - Local para prestação de serviço profissional ou condução de negócios
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - D-2
+        - null
+        - null
+        - Agências bancárias
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - D-3
+        - null
+        - null
+        - Serviços de manutenção e reparação (exceto os classificados em G-4)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - D-4
+        - null
+        - null
+        - Laboratórios de análises clínicas e assemelhados
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - D-5
+        - null
+        - null
+        - Edificação pública das forças armadas, policiais e militares estaduais
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - E
+        - null
+        - null
+        - Escolar e cultura física
+        - null
+        - null
+        - E-1
+        - null
+        - null
+        - Escolar em geral
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - E-2
+        - null
+        - null
+        - Escolar especial
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - E-3
+        - null
+        - null
+        - Espaço para cultura física
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - F
+        - null
+        - null
+        - Local de Reunião de Público
+        - null
+        - null
+        - F-1
+        - null
+        - null
+        - Local onde há objeto de valor inestimável
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - F-2
+        - null
+        - null
+        - Local religioso e velório
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - F-3
+        - null
+        - null
+        - Centro esportivo e de exibições
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - F-4
+        - null
+        - null
+        - Estação e terminal de passageiro
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - F-5
+        - null
+        - null
+        - Arte cênica e auditório
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - F-6
+        - null
+        - null
+        - Boates e casas de show
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - F-7
+        - null
+        - null
+        - Instalações temporárias
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - F-8
+        - null
+        - null
+        - Local para refeição
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - F-9
+        - null
+        - null
+        - Recreação pública
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - F-10
+        - null
+        - null
+        - Exposição de animais
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - F-11
+        - null
+        - null
+        - Clubes sociais e diversão
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - G
+        - null
+        - null
+        - Serviço automotivo e assemelhado
+        - null
+        - null
+        - G-1
+        - null
+        - null
+        - Garagem sem acesso de público e sem abastecimento
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - G-2
+        - null
+        - null
+        - Garagem com acesso de público e sem abastecimento
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - G-3
+        - null
+        - null
+        - Local dotado de abastecimento de combustível
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - G-4
+        - null
+        - null
+        - Serviço de conservação, manutenção e reparos
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - G-5
+        - null
+        - null
+        - Hangar
+        - null
+        - null
+        - MÉDIO 2
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - G-6
+        - null
+        - null
+        - Galpão ou garagem náutica
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - H
+        - null
+        - null
+        - Serviço de saúde
+        - null
+        - null
+        - H-1
+        - null
+        - null
+        - Hospitais, clínicas e consultórios veterinários e assemelhados
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - H-2
+        - null
+        - null
+        - Local para tratamento de dependentes de droga, álcool e assemelhados, todos sem celas, asilos,
+          residências geriátricas
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - H-3
+        - null
+        - null
+        - Hospitais, casas de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos
+          de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital psiquiátrico.
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - H-4
+        - null
+        - null
+        - Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados.
+          Todos sem internação.
+        - null
+        - null
+        - null
+        - null
+        - null
 notas:
 - Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página.
   "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação
@@ -265,6 +728,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

@@ -103,6 +103,87 @@ caminhos:
         de areias betuminosas; fabricação de armas de fogo e munição; beneficiamento e produtos de arroz;
         fabricação de biocombustível; cloro e álcalis; colchões; combustíveis nucleares;'
       - GRANDE
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 46.25
+      - 70.86
+      - 542.34
+      - 784.77
+      linhas:
+      - - ''
+        - Grupo
+        - ''
+        - ''
+        - Ocupação/Uso
+        - ''
+        - ''
+        - Divisão
+        - ''
+        - ''
+        - Descrição
+        - ''
+        - ''
+        - Risco
+        - ''
+      - - I
+        - null
+        - null
+        - Industrial
+        - null
+        - null
+        - I-2
+        - null
+        - null
+        - 'Edificações industriais que fabricam: absorventes higiênicos; medicamentos; adubos e fertilizantes;
+          defensivos agrícolas; aparelhos de áudio e vídeo; equipamentos de medida; equipamentos de transmissão;
+          equipamentos elétricos; componentes eletrônicos; compressores; aparelhos elétricos; equipamentos
+          e informática; artigos de tabaco; transmissores de comunicação; aparelhos eletrodomésticos;
+          aparelhos fotográficos e cinematográficos; motocicletas; instrumentos cirúrgicos, odontológicos
+          e laboratorial; cigarros, cigarrilhas e charutos; aparelhos eletromédicos e eletroterapêuticos;
+          aparelhos telefônicos; hidráulicos e pneumáticos; fabricação de automóveis; aeronaves; motores
+          para automóveis e turbinas; de açúcar; estufas e fornos elétricos; vinho; cervejarias e chopes;
+          fabricação de refrigerantes; adesivos e selantes; aparelhos de ar condicionado; aparelhos e
+          máquinas de refrigeração e ventilação; desinfetantes; elastômeros; fios, cabos e condutores
+          elétricos; embarcações; de locomotivas; fabricação de produtos alimentícios; fabricação de farmoquímicos;
+          fabricação de fogões, refrigeradores e máquinas de lavar e secar; fornos industriais; fraldas
+          descartáveis; gases industriais; produtos de carne; frigorífico; fabricação de refrescos, xaropes;
+          de sucos; letras, letreiros e placas; transformadores, indutores, conversores, sincronizadores
+          e semelhantes; margarina, óleos vegetais; massas alimentícias; mastiques; painéis e letreiros
+          luminosos; moagem e fabricação de derivados de milho; pilhas, baterias e acumuladores elétricos;
+          produtos adesivos; produtos químicos inorgânicos; ração. (ver item 5.13).'
+        - null
+        - null
+        - MÉDIO 2
+        - null
+        - null
+      - - I
+        - null
+        - null
+        - Industrial
+        - null
+        - null
+        - I-3
+        - null
+        - null
+        - 'Edificações industriais que fabricam: caixotes barris ou pallets de madeira; carpintaria; coletam
+          resíduos perigosos; fabricam produtos químicos; bancos e estofados; vassouras; fabricação de
+          lápis; produtos graxos; produtos petroquímicos; laminados planos e tubulares de materiais plásticos;
+          escovas, pincéis e vassouras; tratamento e disposição de resíduos perigosos; extração de petróleo
+          e gás natural; embalagens de materiais plásticos; esquadrias de madeiras; artefatos de madeira;
+          marcenarias; artefatos de materiais plásticos; extração e beneficiamento de carvão; casas de
+          madeiras pré fabricadas; fabricação de álcool; tanoaria e embalagens de madeira; aguardente
+          de cana de açúcar; amido e féculas de vegetais; artefatos de cortiça, bambu, palha, vime; artigos
+          de tapeçaria; mobiliário com predominância de madeira; têxtil; artefatos de borracha; colas;
+          extração e beneficiamento de areias betuminosas; fabricação de armas de fogo e munição; beneficiamento
+          e produtos de arroz; fabricação de biocombustível; cloro e álcalis; colchões; combustíveis nucleares;'
+        - null
+        - null
+        - GRANDE
+        - null
+        - null
 notas:
 - Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página.
   "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação
@@ -112,6 +193,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

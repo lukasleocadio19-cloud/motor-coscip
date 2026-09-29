@@ -401,7 +401,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-04-Classificacao-das-edificacoes-e-areas-de-risco-quanto-ao-risco-de-incendio.pdf
   sha256_pdf: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
-  sha256_md: bf89d19d0391cc8b48c818d4ce1e91d1e9e9c9251a2a3d9bd27433d2980e4232
+  sha256_md: e8d85bde51697f6e1001e4466042f4337dd732ac27ab3a6e2c41524474a24a93
   data_captura: '2026-07-23'
   paginas: 20
   midia: nt-1-04
@@ -1120,7 +1120,7 @@ fontes:
     de dezembro de 2025
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_2-08_1Ed_2019_alterada_Portaria_1317_2025.pdf
   sha256_pdf: c204bd957038c3c8dd18a62a89472161ae6e2cc5602dcb9075bef8bca3b34c5e
-  sha256_md: a10d1ae1e95c006630a445e8c4f901b4b4fd053e1c97efc77a80631364c032a1
+  sha256_md: 564e231a3e622000226c5930d1f3c4050d6044f05d77f2aedfa736fcc181f687
   data_captura: '2026-07-23'
   paginas: 22
   midia: nt-2-08

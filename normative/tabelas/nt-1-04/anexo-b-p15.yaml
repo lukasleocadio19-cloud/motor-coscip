@@ -51,6 +51,52 @@ caminhos:
         e detergentes sintéticos; tintas de impressão; tintas, vernizes, esmaltes e lacas; moagem e derivados
         de trigo; extração e beneficiamento de xisto; fabricação de óleos vegetais. (ver item 5.13).
       - GRANDE
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.27
+      - 57.06
+      - 549.33
+      - 236.45
+      linhas:
+      - - ''
+        - Grupo
+        - ''
+        - ''
+        - Ocupação/Uso
+        - ''
+        - ''
+        - Divisão
+        - ''
+        - ''
+        - Descrição
+        - ''
+        - ''
+        - Risco
+        - ''
+      - - I
+        - null
+        - null
+        - Industrial
+        - null
+        - null
+        - I-3
+        - null
+        - null
+        - (continuação) coquerias; equipamento bélico pesado; espumas; gráfica; impermeabilizantes, solventes
+          e produtos afins; materiais plásticos; refino de óleos lubrificantes; papel e derivados; produtos
+          derivados de petróleo; artigos de plásticos em geral; produtos de limpeza e polimento; ceras
+          de polimento; plastificantes, resinas e fibras; resinas termofixas; resinas termoplásticas;
+          sabões e detergentes sintéticos; tintas de impressão; tintas, vernizes, esmaltes e lacas; moagem
+          e derivados de trigo; extração e beneficiamento de xisto; fabricação de óleos vegetais. (ver
+          item 5.13).
+        - null
+        - null
+        - GRANDE
+        - null
+        - null
 notas:
 - Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página.
   "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação
@@ -60,6 +106,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

@@ -27,20 +27,20 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | Decreto 42/2018 | Tabela 19 | 43 | verificada | visual + texto | 0 | 0 |
 | Decreto 42/2018 | Tabela 20 | 44 | verificada | visual + texto | 0 | 0 |
 | Decreto 42/2018 | Tabela 21 | 45 | verificada | visual + texto | 0 | 0 |
-| NT 1-04 | Tabela do Anexo B | 11 | verificada | visual + texto | 0 | 0 |
-| NT 1-04 | Tabela do Anexo B | 12 | verificada | visual + texto | 0 | 0 |
-| NT 1-04 | Tabela do Anexo B | 13 | verificada | visual + texto | 0 | 1 |
-| NT 1-04 | Tabela do Anexo B | 14 | verificada | visual + texto | 0 | 0 |
-| NT 1-04 | Tabela do Anexo B | 15 | verificada | visual + texto | 0 | 0 |
-| NT 1-04 | Tabela do Anexo B | 16 | verificada | visual + texto | 0 | 0 |
+| NT 1-04 | Tabela do Anexo B | 11 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-04 | Tabela do Anexo B | 12 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-04 | Tabela do Anexo B | 13 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-04 | Tabela do Anexo B | 14 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-04 | Tabela do Anexo B | 15 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-04 | Tabela do Anexo B | 16 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 2 | 4 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 3 | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 4 | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 5 | 5 | verificada | visual + geometrica | 0 | 0 |
-| NT 2-08 | Tabela 1 | 12 | verificada | visual + texto | 0 | 0 |
-| NT 2-08 | Tabela do Anexo A | 18 | verificada | visual + texto | 0 | 0 |
-| NT 2-08 | Tabela do Anexo B | 20 | verificada | visual + texto | 0 | 1 |
+| NT 2-08 | Tabela 1 | 12 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-08 | Tabela do Anexo A | 18 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-08 | Tabela do Anexo B | 20 | verificada | visual + geometrica | 0 | 1 |
 | NT 2-08 | Tabela do Anexo C | 22 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-02 | Tabela 3 | 7 | verificada | visual + geometrica | 0 | 0 |
 | NT 4-05 | Tabela 2 | 6 | verificada | visual + geometrica | 0 | 0 |

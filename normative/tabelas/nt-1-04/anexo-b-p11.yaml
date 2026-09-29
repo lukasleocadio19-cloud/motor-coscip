@@ -152,6 +152,221 @@ caminhos:
     - - C-4
       - Quiosque
       - MÉDIO 1
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.23
+      - 103.06
+      - 549.36
+      - 653.95
+      linhas:
+      - - ''
+        - Grupo
+        - ''
+        - ''
+        - Ocupação/Uso
+        - ''
+        - ''
+        - Divisão
+        - ''
+        - ''
+        - Descrição
+        - ''
+        - ''
+        - Risco
+        - ''
+      - - A
+        - null
+        - null
+        - Residencial
+        - null
+        - null
+        - A-1
+        - null
+        - null
+        - Residencial privativa unifamiliar
+        - null
+        - null
+        - PEQUENO
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - A-2
+        - null
+        - null
+        - Residencial privativa multifamiliar
+        - null
+        - null
+        - PEQUENO
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - A-3
+        - null
+        - null
+        - Residencial coletiva
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - A-4
+        - null
+        - null
+        - Agrupamento residencial privativo unifamiliar
+        - null
+        - null
+        - PEQUENO
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - A-5
+        - null
+        - null
+        - Agrupamento residencial privativo multifamiliar
+        - null
+        - null
+        - PEQUENO
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - A-6
+        - null
+        - null
+        - Mista (ver item 5.9)
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - B
+        - null
+        - null
+        - Serviço de hospedagem
+        - null
+        - null
+        - B-1
+        - null
+        - null
+        - Hotel e assemelhados
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - B-2
+        - null
+        - null
+        - Hotel residencial
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - C
+        - null
+        - null
+        - Comercial
+        - null
+        - null
+        - C-1
+        - null
+        - null
+        - 'Edificações comerciais: artigos de metal; louças; artesanato; artigos hospitalares, odontológicos,
+          veterinários; antiguidades; lojas de animais; lojas de brinquedos; farmácias; artigos de uso
+          doméstico; concessionária de veículos; artigos de cosméticos; comércio de bebidas; artigos de
+          eletrônica e telefonia; edifícios de lojas de departamentos; magazines; livrarias; joalherias;
+          artigos de iluminação; artigos musicais; comércio de máquinas e equipamentos em geral; comércio
+          de móveis em geral; artigos de vestuário; comércio de artes; padaria e confeitaria; óticas;
+          papelarias; armarinhos; tabacaria; sorveteria; tapeçaria; artigos de informática; comércio de
+          tecido; comércio de tintas e solventes (até 500 litros de inflamáveis); galerias comerciais;
+          supermercados em geral; hortifrutigranjeiros; mercados e outros. (ver item 5.10).'
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - C-2
+        - null
+        - null
+        - 'Edificações comerciais atacadistas como: de produtos químicos e petroquímicos; de resíduos
+          de papel e papelão; espuma e iso- por; de resinas; de produtos alimentícios; de mercadorias
+          em geral e outros. (ver item 5.11).'
+        - null
+        - null
+        - MÉDIO 2
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - C-3
+        - null
+        - null
+        - Shopping centers
+        - null
+        - null
+        - MÉDIO 2
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - C-4
+        - null
+        - null
+        - Quiosque
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
 notas:
 - Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página.
   "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação
@@ -161,6 +376,19 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 10
+    coluna: 1
+    a: 'Edificações comerciais atacadistas como: de produtos químicos e petroquímicos; de resíduos de
+      papel e papelão; espuma e isopor; de resinas; de produtos alimentícios; de mercadorias em geral
+      e outros. (ver item 5.11).'
+    b: 'Edificações comerciais atacadistas como: de produtos químicos e petroquímicos; de resíduos de
+      papel e papelão; espuma e iso- por; de resinas; de produtos alimentícios; de mercadorias em geral
+      e outros. (ver item 5.11).'
+    estado: verificada
+    score: 99.5

@@ -791,7 +791,7 @@ a) ter afastamento menor que 0,11 m entre balaústres verticais, longarinas inte
 | 0,20 | 8,33 (1:12) < i ≤ 10,0 (1:10) | 4 |
 | 0,075 | 10,0 (1:10) < i ≤ 12 (1:8,33) | 1 |
 
-Fonte: NT 2-08, página 12, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-08, página 12, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 9050. Na imagem o cabeçalho da 2ª coluna é "( i %)".
 <!-- /tabela-conferida: Tabela 1 p12 -->
 
@@ -1131,7 +1131,7 @@ r) os teatros, cinemas, auditórios, boates e salões diversos terão suas lota�
 | Especial | M-2, M-3, M-4, M-5, M-6 | Uma pessoa por 10,00 m² de área | 100 | 60 | 100 |
 | Especial | M-8 | Uma pessoa por 4,00 m² de área | 60 | 45 | 100 |
 
-Fonte: NT 2-08, página 18, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-08, página 18, Tabela do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Células mescladas ("^" na leitura visual): a capacidade da unidade de passagem vale para o bloco de linhas indicado na imagem (ex.: 60/45/100 para Residencial e Serviços de hospedagem; 100/60/100 de Comercial até E-1, E-2 e E-3). Na publicação, cada linha repete o valor do bloco.
 Observações (A) a (N) e a redução das unidades de passagem: ver o texto da página 19. "+" = consultar normas específicas (observação I).
 <!-- /tabela-conferida: Tabela do Anexo A p18 -->
@@ -1202,7 +1202,7 @@ Os parâmetros dados nesta Tabela são os mínimos aceitáveis para o cálculo d
 | Explosivos ou munições | L-1 | NE | NE | PF | PF | PF5 |
 | Especial | M-3 M-6 | NE | NE | PF | PF | PF5 |
 
-Fonte: NT 2-08, página 20, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-08, página 20, Tabela do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 Siglas: NE = escada não enclausurada; PF = escada enclausurada à prova de fumaça; PFP = enclausurada à prova de fumaça pressurizada (observações J e K). Números colados ao tipo (NE1, PF4, PF4,5…) são as notas sobrescritas da imagem.
 As células de Ocupação são mescladas: na publicação, as linhas A-3, A-6, F-5/F-7/F-11 e H-2/H-3 herdam a ocupação da linha de cima.
 Observações (A) a (K): ver o texto das páginas 20 e 21.

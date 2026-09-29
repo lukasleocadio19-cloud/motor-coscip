@@ -57,6 +57,88 @@ caminhos:
     - - 0,075
       - 10,0 (1:10) < i ≤ 12 (1:8,33)
       - '1'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 312.69
+      - 144.98
+      - 560.83
+      - 266.69
+      linhas:
+      - - ''
+        - Desníveis
+        - ''
+        - Inclinação admissível em cada segmento de rampa ( i %)
+        - ''
+        - Número
+        - ''
+      - - null
+        - máximos de cada
+        - null
+        - null
+        - null
+        - máximo de
+        - null
+      - - null
+        - segmento de
+        - null
+        - null
+        - null
+        - segmentos
+        - null
+      - - null
+        - rampa h (m)
+        - null
+        - null
+        - null
+        - de rampa
+        - null
+      - - 1,50
+        - null
+        - null
+        - 5,00 (1:20)
+        - Sem limite
+        - null
+        - null
+      - - 1,00
+        - null
+        - null
+        - 5,00 (1:20) < i ≤ 6,25 (1:16)
+        - Sem limite
+        - null
+        - null
+      - - 0,80
+        - null
+        - null
+        - 6,25 (1:16) < i ≤ 8,33 (1:12)
+        - '15'
+        - null
+        - null
+      - - 0,20
+        - null
+        - null
+        - 8,33 (1:12) < i ≤ 10,0 (1:10)
+        - '4'
+        - null
+        - null
+      - - 0,075
+        - null
+        - null
+        - 10,0 (1:10) < i ≤ 12 (1:8,33)
+        - '1'
+        - null
+        - null
+    - bbox:
+      - 396.07
+      - 144.98
+      - 498.69
+      - 181.7
+      linhas:
+      - - Inclinação admissível em
+      - - cada segmento de rampa
+      - - ( i %)
 notas:
 - 'Fonte indicada na página: ABNT NBR 9050. Na imagem o cabeçalho da 2ª coluna é "( i %)".'
 estado: verificada
@@ -64,6 +146,15 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 0
+    coluna: 1
+    a: Inclinação admissível em cada segmento de rampa (i %)
+    b: Inclinação admissível em cada segmento de rampa ( i %)
+    estado: verificada
+    score: 99.1
