@@ -610,6 +610,23 @@ Tabela 1 - Currículos mínimos para a formação de BC (Fonte: ABNT NBR14608)
 |  |  | Total |  | 4h |  |  | Total |  | 8h |  |
 |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 1 (A.1) p11 -->
+### Tabela 1 (A.1) — Currículos mínimos para a formação de BC — Prevenção e combate a incêndio (A.1) (conferida)
+
+| Módulo | Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- | --- |
+| 01 Introdução | - Conhecer os objetivos e conceitos gerais do curso | 30 min. |  |  |
+| 02 Aspectos legais | - Conhecer os aspectos legais (normas, regulamentações e legislação em todas as esferas governamentais pertinentes) relacionados à responsabilidade do bombeiro profissional civil. | 30 min. |  |  |
+| 03 Teoria do fogo | - Conhecer os quatro elementos formadores da combustão, as formas de propagação do calor, as temperaturas do fogo, os métodos de extinção do fogo, classificação dos incêndios, os principais agentes extintores, unidade extintora e capacidade extintora, as fases do combate ao fogo, o Flashover, o Backdraft, o Bleve e o Boil Over. | 1h |  |  |
+| 04 Proteção Contra Incêndio | - Conhecer os conceitos gerais de prevenção, educação e proteção contra incêndio; noções de proteção passiva e proteção ativa: isolamento de risco, compartimentação vertical e horizontal; noções de resistência das estruturas e dos materiais ao fogo; - Conhecer os equipamentos fixos e portáteis de combate a incêndio, saídas de emergência, escalas de segurança, corredores e rotas de fuga, sistemas de iluminação de emergência, elevador de segurança, meios de aviso, detecção e alarme de incêndio e sinalização de emergência. | 1h | - Demonstrar os principais procedimentos para o funcionamento do sistema de meios de fuga: saídas de emergência, escadas de segurança, corredores e rotas de fuga; dos sistemas de iluminação de emergência; do elevador de segurança; dos meios de aviso detecção e alarme de incêndio; da sinalização de emergência. | 4h |
+| 05 Técnicas e Táticas de Combate a Incêndio | - Conhecer as principais técnicas de busca e exploração da área em sinistro, ventilação natural ou forçada (pressão negativa, venturi e positiva), entradas forçadas, resgate de vítimas, confinamento, isolamento, salvatagem, combate com emprego correto dos tipos de jato de água (neblina, cone de força e sólido), emprego, dimensionamento e técnicas de aplicação de espuma mecânica e rescaldo de incêndio; - Demonstrar a montagem de uma linha direta de combate a incêndio, a partir de um hidrante e/ou viatura, linha adutora e linha siamesa; - Demonstrar o uso da linha de água para ataque direto, ataque indireto e ataque combinado. | 1h | - Demonstrar as principais técnicas de busca e exploração da área em sinistro, ventilação natural ou forçada (pressão negativa, venturi e positiva), entradas forçadas, resgate de vítimas, confinamento, isolamento, salvatagem, combate com emprego correto dos tipos de jato de água (neblina, cone de força e sólido), emprego, dimensionamento e técnicas de aplicação de espuma mecânica e rescaldo de incêndio; - Demonstrar a montagem de uma linha direta de combate a incêndio, a partir de um hidrante e/ou viatura, linha adutora e linha siamesa; - Demonstrar o uso da linha de água para ataque direto, ataque indireto e ataque combinado. | 4h |
+|  | Total | 4h | Total | 8h |
+
+Fonte: NT 2-11, página 11, Tabela 1 (A.1); conferida em 2026-09-29 (visual + texto).
+Fonte indicada: ABNT NBR 14608. Células em branco = sem parte prática no módulo.
+Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao total da linha "Total".
+<!-- /tabela-conferida: Tabela 1 (A.1) p11 -->
+
 ---
 
 ## Página 12
@@ -632,6 +649,21 @@ Total 4h Total 8h
 | 02 Equipament o de Sistema fixo e operação automática |  | - Conhecer os equipamentos e os principais procedimentos de emergência para o correto funcionamento de bombas (elétricas e a combustão), chuveiros automáticos (sprinklers) e sistemas fixos de combate a incêndio (com espuma mecânica, gases etc.). |  |  | 1h |  |  | - Demonstrar na prática os equipamentos e os principais procedimentos de emergência para o correto funcionamento de bombas (elétricas e a combustão), chuveiros automáticos (sprinklers) e sistemas fixos de combate a incêndio (com espuma mecânica, gases etc.). |  | 4h |  |  |
 | 03 Equipament os Auxiliares |  | - Conhecer como transportar e armar uma escada prolongável. - Conhecer como operar no mínimo as seguintes ferramentas de corte, arrombamento e remoção (machado, machado-picareta, corta-a-frio, croque, alavanca simples, alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); - Conhecer e operar lanternas e refletores portáteis para iluminação; - Conhecer e utilizar na prática uma lona para salvatagem. |  |  | 1h |  |  | - Demonstrar na prática como transportar e armar uma escada prolongável; como operar ferramentas de corte, arrombamento e remoção (machado, machado-picareta, cortaa-frio, croque, alavanca simples, alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); como operar lanternas e refletores portáteis para iluminação; como usar uma lona para salvatagem. |  | 2h |  |  |
 |  |  | Total |  |  | 4h |  |  | Total |  | 8h |  |  |
+
+<!-- tabela-conferida: Tabela 1 (A.2) p12 -->
+### Tabela 1 (A.2) — Currículos mínimos para a formação de BC — Equipamentos de combate a incêndio e auxiliares (A.2) (conferida)
+
+| Módulo | Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- | --- |
+| 01 Equipamento de Operação Manual | - Conhecer os tipos e a operação de: extintores (portáteis e extintores sobre rodas, com carga de água, pó BC, CO2, etc.), hidrantes (predial, de coluna e subterrâneo), mangotinho, mangueiras de incêndio, chaves de mangueira (simples e mista), redutores, tampões e adaptadores para mangueiras e hidrantes, derivantes, válvula de recalque, passagem de nível, esguichos e proporcionadores de espuma (de linha e de sistema). | 2h | Demonstrar na prática os tipos e a operação de: extintores (portáteis e extintores sobre rodas, com carga de água, pó BC, CO2, etc.), hidrantes (predial, de coluna e subterrâneo), mangotinho, mangueiras de incêndio, chaves de mangueira (simples e mista), redutores, tampões e adaptadores para mangueiras e hidrantes, derivantes, válvula de recalque, passagem de nível, esguichos e proporcionadores de espuma (de linha e de sistema). | 2h |
+| 02 Equipamento de Sistema fixo e operação automática | - Conhecer os equipamentos e os principais procedimentos de emergência para o correto funcionamento de bombas (elétricas e a combustão), chuveiros automáticos (sprinklers) e sistemas fixos de combate a incêndio (com espuma mecânica, gases etc.). | 1h | - Demonstrar na prática os equipamentos e os principais procedimentos de emergência para o correto funcionamento de bombas (elétricas e a combustão), chuveiros automáticos (sprinklers) e sistemas fixos de combate a incêndio (com espuma mecânica, gases etc.). | 4h |
+| 03 Equipamentos Auxiliares | - Conhecer como transportar e armar uma escada prolongável. - Conhecer como operar no mínimo as seguintes ferramentas de corte, arrombamento e remoção (machado, machado-picareta, corta-a-frio, croque, alavanca simples, alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); - Conhecer e operar lanternas e refletores portáteis para iluminação; - Conhecer e utilizar na prática uma lona para salvatagem. | 1h | - Demonstrar na prática como transportar e armar uma escada prolongável; como operar ferramentas de corte, arrombamento e remoção (machado, machado-picareta, corta-a-frio, croque, alavanca simples, alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); como operar lanternas e refletores portáteis para iluminação; como usar uma lona para salvatagem. | 2h |
+|  | Total | 4h | Total | 8h |
+
+Fonte: NT 2-11, página 12, Tabela 1 (A.2); conferida em 2026-09-29 (visual + texto).
+Fonte indicada: ABNT NBR 14608. Quebra de palavra da imagem ("Equipament / o", "corta- / a-frio") desfeita.
+Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao total da linha "Total".
+<!-- /tabela-conferida: Tabela 1 (A.2) p12 -->
 
 ---
 
@@ -665,6 +697,35 @@ Total 10h Total 6h
 | 03 Plano de Emergência |  | - Conhecer as principais recomendações de um plano de emergência, relativas a uma emergência contra incêndio, hostilidades em caso de ameaças de bombas e terrorismo, uma emergência de abando de área em uma planta. |  |  | 1h |  |  |  |  |  |  |  |
 | 04 Resgate de Vítimas em Espaços Confinados |  | - Conhecer as normas, procedimentos e técnicas para resgate de vítimas em espaços confinados. |  |  | 6h |  |  | Utilizar os equipamentos para resgate de vítimas em espaços confinados. |  | 6h |  |  |
 |  |  | Total |  |  | 10h |  |  | Total |  | 6h |  |  |
+
+<!-- tabela-conferida: Tabela 1 (A.3) p13 -->
+### Tabela 1 (A.3) — Currículos mínimos para a formação de BC — EPI e EPR (A.3) (conferida)
+
+| Módulo | Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- | --- |
+| 01 EPI | - Conhecer os equipamentos de proteção individual para a proteção da cabeça, olhos e face, proteção auditiva, proteção respiratória, tronco, membros superiores, membros inferiores e corpo inteiro, em conformidade com as Normas Brasileiras específicas para combate a incêndio, nacionais e, na falta de Normas Brasileiras, adotar Normas Internacionais. | 2h | Vestir os EPIs | 2h |
+| 02 EPR | - Conhecer e saber a origem e os riscos de exposição a no mínimo os seguintes tipos de gases: asfixiantes – gás liquefeito de petróleo (GLP), gás metano (CH4), dióxido de carbono (CO2) e acetileno; gases tóxicos – monóxido de carbono (CO), sulfídrico (H2S) e cianídrico (HCN) e gases irritantes ou corrosivos – amônia (NH2) e cloro; - Conhecer as características de atmosfera insalubre por concentração de O2; - Conhecer a utilização e a higienização e limpeza dos seguintes equipamentos de proteção respiratória: máscaras filtrantes e conjunto de máscara autônoma de ar respirável e máscara dedicada para a vítima (carona); - Saber calcular a autonomia do conjunto de máscara autônoma. - Conhecer e saber identificar a finalidade dos impressos nos cilindros de ar respirável. | 4h | Demonstrar a utilização (montar o equipamento, equipar-se e deslocar-se com e sem vítima); Exercitar o calculo de autonomia do conjunto autônomo de respiração. | 4h |
+|  | Total | 2h | Total | 2h |
+
+Fonte: NT 2-11, página 13, Tabela 1 (A.3); conferida em 2026-09-29 (visual + texto).
+Fonte indicada: ABNT NBR 14608.
+<!-- /tabela-conferida: Tabela 1 (A.3) p13 -->
+
+<!-- tabela-conferida: Tabela 1 (A.4) p13 -->
+### Tabela 1 (A.4) — Currículos mínimos para a formação de BC — Salvamento terrestre (A.4) (conferida)
+
+| Módulo | Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- | --- |
+| 01 Emergência em elevadores | - Conhecer os procedimentos básicos a serem adotados em emergências com elevadores. | 2h |  |  |
+| 02 Prevenção em Área de pouso de helicópteros | - Conhecer os principais riscos no pouso de helicóptero e conhecer e demonstrar os principais procedimentos de segurança para balizamento, embarque e desembarque de passageiros e procedimentos de controle em caso de emergência, envolvendo incêndio e resgate de vítimas. | 1h |  |  |
+| 03 Plano de Emergência | - Conhecer as principais recomendações de um plano de emergência, relativas a uma emergência contra incêndio, hostilidades em caso de ameaças de bombas e terrorismo, uma emergência de abando de área em uma planta. | 1h |  |  |
+| 04 Resgate de Vítimas em Espaços Confinados | - Conhecer as normas, procedimentos e técnicas para resgate de vítimas em espaços confinados. | 6h | Utilizar os equipamentos para resgate de vítimas em espaços confinados. | 6h |
+|  | Total | 10h | Total | 6h |
+
+Fonte: NT 2-11, página 13, Tabela 1 (A.4); conferida em 2026-09-29 (visual + texto).
+Fonte indicada: ABNT NBR 14608.
+Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao total da linha "Total".
+<!-- /tabela-conferida: Tabela 1 (A.4) p13 -->
 
 ---
 
@@ -728,6 +789,23 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  |  | reanimação cardiorespiratória (DEA, |  |  |  |  |  |  |  |  |
 |  |  |  | pocketmask). |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 1 (A.5) p14 -->
+### Tabela 1 (A.5) — Currículos mínimos para a formação de BC — Produtos perigosos (A.5) (conferida)
+
+| Módulo | Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- | --- |
+| 01 Legislação | - Conhecer a legislação que regulamenta a identificação, transporte, armazenagem, manipulação e as emergências envolvendo produtos perigosos. | 1h |  |  |
+| 02 Conceitos | - Conhecer as classes de riscos, os sistemas de identificação, painel de segurança, rótulo de risco, ficha de emergência e FISPQ. | 1h |  |  |
+| 03 Guia de procedimentos de emergência | - Conhecer e saber consultar o manual de emergências com produtos perigosos da ABIQUIM/PRÓ-QUÍMICA. | 2h |  |  |
+| 04 EPI e EPR | - Conhecer e demonstrar na prática o conhecimento dos equipamentos de proteção individual e respiratória nível A, B e C específicos para atendimento a produtos perigosos. | 1h |  |  |
+| 05 Ações Operacionais | - Conhecer o sistema de organização da área do sinistro em zonas de segurança, apoio de acesso limitado (quente, morna e fria); - Conhecer os equipamentos e métodos de contenção e confinamento de derramamento de produtos perigosos. | 1h | - Demonstrar na prática a aplicação e utilização de barreiras de contenção, absorção, mantas absorventes, matérias adsorventes e absorventes orgânicos; - Demonstrar na prática as técnicas de resgate de vítimas contaminadas e descontaminação de vítimas e ambientes. | 2h |
+|  | Total | 6h | Total | 2h |
+
+Fonte: NT 2-11, página 14, Tabela 1 (A.5); conferida em 2026-09-29 (visual + texto).
+Fonte indicada: ABNT NBR 14608.
+Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao total da linha "Total".
+<!-- /tabela-conferida: Tabela 1 (A.5) p14 -->
+
 ---
 
 ## Página 15
@@ -771,6 +849,54 @@ Tabela 2 - Currículo mínimo para atualização de BC
 |  | Parte teórica |  |  |  |  |  | Parte prática |  |  |
 | Objetivo |  |  | Carga horária |  |  | Objetivo |  | Carga Horária |  |
 | - Consolidar os Itens: 01 a 12 da tabela A.6 |  |  | 4h |  |  | - Consolidar os Itens: 01, 03, 04, 05 e 09 da tabela A.6 |  | 4h |  |
+
+<!-- tabela-conferida: Tabela 1 (A.6, página 15) p15 -->
+### Tabela 1 (A.6, página 15) — Currículos mínimos para a formação de BC — Primeiros socorros (A.6), módulos 06 a 15 (conferida)
+
+| Módulo | Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- | --- |
+| 06 Estado de Choque | - Conhecer os sinais e sintomas do estado de choque e aplicar as técnicas básicas de tratamento. | 30 min. | Aplicar as técnicas de cuidados básicos do estado de choque. | 30 min. |
+| 07 Hemorragias | - Conhecer as técnicas de hemostasia. | 30 min. | Aplicar as técnicas de compressão direta e utilização de torniquete. |  |
+| 08 Fraturas | - Reconhecer as fraturas abertas e fechadas e aplicar as técnicas de imobilização. | 30 min. | Aplicar técnica de imobilização. | 30 min. |
+| 09 Ferimentos | - Identificar os tipos de ferimentos e aplicar os cuidados iniciais. | 30 min. | Aplicar as técnicas de limpeza e bandagens. | 30 min. |
+| 10 Queimaduras | - Conhecer os tipos (térmicas, químicas e elétricas) e os graus (primeiro, segundo e terceiro) das queimaduras e aplicar as técnicas e procedimentos básicos de socorro de queimaduras. | 30 min. |  |  |
+| 11 mergências Clinicas | - Reconhecer AVC (Acidente Vascular Cerebral), convulsões, dispnéias, IAM (Infarto Agudo do Miocárdio). | 2h | Aplicar as técnicas de atendimento básico. | 1h |
+| 12 Transporte de vitimas | - Conhecer as técnicas de transporte de vítimas clínicas e traumáticas com suspeita de lesão na coluna vertebral e aplicar as técnicas de transporte de vítimas. | 1h | Aplicar as técnicas de transporte de vítimas. | 1h |
+| 13 Pessoa com mobilidade reduzida | - Conhecer as técnicas de abordagem, cuidados e condução de acordo com o plano de emergência da planta. | 30 min. |  |  |
+| 14 Protocolo com incidente com múltiplas vítimas | - Conhecer as ações de avaliação, zoneamento, balizamento, triagem e método start para acidentes e incidentes que envolvam múltiplas vítimas. | 1h | Aplicar na prática as técnicas que envolvam múltiplas vítimas. | 1h |
+| 15 Psicologia em emergências | - Reconhecer o agravo emocional das pessoas em situações de emergências e a administração do estresse após incidentes críticos para os profissionais de emergência. | 30 min. |  |  |
+|  | Total | 12h | Total | 08h |
+
+Fonte: NT 2-11, página 15, Tabela 1 (A.6, página 15); conferida em 2026-09-29 (visual + texto).
+Continuação da página 14.
+Conferência aritmética (além dos dois caminhos): os módulos 01 a 15 (páginas 14 e 15) somam 12h na parte teórica e 8h na prática, iguais aos totais.
+<!-- /tabela-conferida: Tabela 1 (A.6, página 15) p15 -->
+
+<!-- tabela-conferida: Tabela 2 p15 -->
+### Tabela 2 — Currículo mínimo para atualização de BC (conferida)
+
+| Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- |
+| PREVENÇÃO E COMBATE A INCÊNDIO | PREVENÇÃO E COMBATE A INCÊNDIO | PREVENÇÃO E COMBATE A INCÊNDIO | PREVENÇÃO E COMBATE A INCÊNDIO |
+| Parte teórica | Parte teórica | Parte prática | Parte prática |
+| Objetivo | Carga horária | Objetivo | Carga Horária |
+| - Consolidar os Itens: 01, 02 e 03 da tabela A.1 | 2h | - Consolidar os Itens 4 e 5 da tabela A.1 | 2h |
+| EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES | EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES | EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES | EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES |
+| Parte teórica | Parte teórica | Parte prática | Parte prática |
+| Objetivo | Carga horária | Objetivo | Carga Horária |
+| - Consolidar os Itens: 01 e 02 da tabela A.2 | 2h | - Consolidar os Itens 1 da Tabela A.2 | 2h |
+| SALVAMENTO TERRESTRE/ EPI E EPR | SALVAMENTO TERRESTRE/ EPI E EPR | SALVAMENTO TERRESTRE/ EPI E EPR | SALVAMENTO TERRESTRE/ EPI E EPR |
+| Parte teórica | Parte teórica | Parte prática | Parte prática |
+| Objetivo | Carga horária | Objetivo | Carga Horária |
+| - Consolidar os Itens: 01 e 02 da tabela A.3 - Consolidar os Itens: 01 e 04 da tabela A.4 | 4h | - Consolidar os Itens: 01 e 02 da tabela A.3 - Consolidar o Iten4 da Tabela A.4 | 4h |
+| PRIMEIROS SOCORROS | PRIMEIROS SOCORROS | PRIMEIROS SOCORROS | PRIMEIROS SOCORROS |
+| Parte teórica | Parte teórica | Parte prática | Parte prática |
+| Objetivo | Carga horária | Objetivo | Carga Horária |
+| - Consolidar os Itens: 01 a 12 da tabela A.6 | 4h | - Consolidar os Itens: 01, 03, 04, 05 e 09 da tabela A.6 | 4h |
+
+Fonte: NT 2-11, página 15, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Quatro blocos (título, partes, cabeçalho e linha); "<" = mesclada com a da esquerda.
+<!-- /tabela-conferida: Tabela 2 p15 -->
 
 ---
 
@@ -827,6 +953,57 @@ noções básicas da ciência do fogo
 | Transporte da Vítima |  |  |  |  |  |
 | Emergências Clinicas/AVC/IAM/Convulsões |  |  |  |  |  |
 |  | Carga horária total |  |  | 4(quatro) horas |  |
+
+<!-- tabela-conferida: Tabela 1 (Anexo B) p16 -->
+### Tabela 1 (Anexo B) — Currículo mínimo para brigadista voluntário de incêndio — noções básicas da ciência do fogo (conferida)
+
+| Assunto | Carga horária |
+| --- | --- |
+| Assunto – Teoria | Assunto – Teoria |
+| Teoria do Fogo |  |
+| Propagação do Fogo |  |
+| Classes de Incêndio |  |
+| Prevenção de Incêndio |  |
+| Método de Extinção de Incêndio |  |
+| Agentes Extintores |  |
+| EPI (Equipamento de Proteção Individual) |  |
+| Equipamento Portátil de Combate a Incêndio |  |
+| Equipamento Fixo de Combate a Incêndio |  |
+| Escape de Pessoal |  |
+| Pessoa Com Mobilidade Reduzida |  |
+| Riscos Específicos da Planta |  |
+| Psicologia em emergências |  |
+| Carga horária | 8 (oito) horas |
+| Assunto – Prática | Assunto – Prática |
+| Maneabilidade com equipamentos |  |
+| Técnica de Extinção de Incêndio com equipamento portátil |  |
+| Técnica de Extinção de Incêndio com equipamento fixo |  |
+| Técnicas de entrada e saída do local de Incêndio |  |
+| Operação Simulada de Combate a Incêndio |  |
+| Carga horária | 4(quatro) horas |
+| Carga horária total | 12 (doze) horas |
+
+Fonte: NT 2-11, página 16, Tabela 1 (Anexo B); conferida em 2026-09-29 (visual + texto).
+Anexo B da NT 2-11 (formação de BVI). Conferência aritmética: 8 h (teoria) + 4 h (prática) = 12 h; com as 4 h de noções de primeiros socorros, as 16 h do título.
+<!-- /tabela-conferida: Tabela 1 (Anexo B) p16 -->
+
+<!-- tabela-conferida: Tabela 1 (Anexo B, primeiros socorros) p16 -->
+### Tabela 1 (Anexo B, primeiros socorros) — Noções de primeiros socorros (BVI) (conferida)
+
+| Assunto | Carga horária |
+| --- | --- |
+| Assunto – Teoria e Pratica | Assunto – Teoria e Pratica |
+| Avaliação Inicial |  |
+| Obstrução de Vias Aéreas Superiores |  |
+| RCP (Reanimação Cardiopulmonar) |  |
+| Hemorragias |  |
+| Transporte da Vítima |  |
+| Emergências Clinicas/AVC/IAM/Convulsões |  |
+| Carga horária total | 4(quatro) horas |
+
+Fonte: NT 2-11, página 16, Tabela 1 (Anexo B, primeiros socorros); conferida em 2026-09-29 (visual + texto).
+Segunda parte da Tabela 1 do Anexo B.
+<!-- /tabela-conferida: Tabela 1 (Anexo B, primeiros socorros) p16 -->
 
 ---
 

@@ -1,0 +1,162 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela 1 (A.1)
+titulo: Currículos mínimos para a formação de BC — Prevenção e combate a incêndio (A.1)
+pagina: 11
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-11.jpg
+    imagem_sha256: 7eb229e3d9bf2e99912ec6db6e1eba6894d3fc7183a70acd7f838015893f04ed
+    linhas_cabecalho: 3
+    cabecalho_publicado:
+    - Módulo
+    - Parte teórica — objetivo
+    - Parte teórica — carga horária
+    - Parte prática — objetivo
+    - Parte prática — carga horária
+    linhas:
+    - - PREVENÇÃO E COMBATE A INCÊNDIO – A.1
+    - - Parte teórica
+      - Parte prática
+    - - Módulo
+      - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - 01 Introdução
+      - '- Conhecer os objetivos e conceitos gerais do curso'
+      - 30 min.
+      - ''
+      - ''
+    - - 02 Aspectos legais
+      - '- Conhecer os aspectos legais (normas, regulamentações e legislação em todas as esferas governamentais
+        pertinentes) relacionados à responsabilidade do bombeiro profissional civil.'
+      - 30 min.
+      - ''
+      - ''
+    - - 03 Teoria do fogo
+      - '- Conhecer os quatro elementos formadores da combustão, as formas de propagação do calor, as
+        temperaturas do fogo, os métodos de extinção do fogo, classificação dos incêndios, os principais
+        agentes extintores, unidade extintora e capacidade extintora, as fases do combate ao fogo, o Flashover,
+        o Backdraft, o Bleve e o Boil Over.'
+      - 1h
+      - ''
+      - ''
+    - - 04 Proteção Contra Incêndio
+      - '- Conhecer os conceitos gerais de prevenção, educação e proteção contra incêndio; noções de proteção
+        passiva e proteção ativa: isolamento de risco, compartimentação vertical e horizontal; noções
+        de resistência das estruturas e dos materiais ao fogo; - Conhecer os equipamentos fixos e portáteis
+        de combate a incêndio, saídas de emergência, escalas de segurança, corredores e rotas de fuga,
+        sistemas de iluminação de emergência, elevador de segurança, meios de aviso, detecção e alarme
+        de incêndio e sinalização de emergência.'
+      - 1h
+      - '- Demonstrar os principais procedimentos para o funcionamento do sistema de meios de fuga: saídas
+        de emergência, escadas de segurança, corredores e rotas de fuga; dos sistemas de iluminação de
+        emergência; do elevador de segurança; dos meios de aviso detecção e alarme de incêndio; da sinalização
+        de emergência.'
+      - 4h
+    - - 05 Técnicas e Táticas de Combate a Incêndio
+      - '- Conhecer as principais técnicas de busca e exploração da área em sinistro, ventilação natural
+        ou forçada (pressão negativa, venturi e positiva), entradas forçadas, resgate de vítimas, confinamento,
+        isolamento, salvatagem, combate com emprego correto dos tipos de jato de água (neblina, cone de
+        força e sólido), emprego, dimensionamento e técnicas de aplicação de espuma mecânica e rescaldo
+        de incêndio; - Demonstrar a montagem de uma linha direta de combate a incêndio, a partir de um
+        hidrante e/ou viatura, linha adutora e linha siamesa; - Demonstrar o uso da linha de água para
+        ataque direto, ataque indireto e ataque combinado.'
+      - 1h
+      - '- Demonstrar as principais técnicas de busca e exploração da área em sinistro, ventilação natural
+        ou forçada (pressão negativa, venturi e positiva), entradas forçadas, resgate de vítimas, confinamento,
+        isolamento, salvatagem, combate com emprego correto dos tipos de jato de água (neblina, cone de
+        força e sólido), emprego, dimensionamento e técnicas de aplicação de espuma mecânica e rescaldo
+        de incêndio; - Demonstrar a montagem de uma linha direta de combate a incêndio, a partir de um
+        hidrante e/ou viatura, linha adutora e linha siamesa; - Demonstrar o uso da linha de água para
+        ataque direto, ataque indireto e ataque combinado.'
+      - 4h
+    - - ''
+      - Total
+      - 4h
+      - Total
+      - 8h
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 11
+      tabela_na_pagina: 1
+    linhas:
+    - - PREVENÇÃO E COMBATE A INCÊNDIO - A.1
+    - - Parte teórica
+      - Parte prática
+    - - Módulo
+      - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - 01 Introdução
+      - '- Conhecer os objetivos e conceitos gerais do curso'
+      - 30 min.
+    - - 02 Aspectos legais
+      - '- Conhecer os aspectos legais (normas, regulamentações e legislação em todas as esferas governamentais
+        pertinentes) relacionados à responsabilidade do bombeiro profissional civil.'
+      - 30 min.
+    - - 03 Teoria do fogo
+      - '- Conhecer os quatro elementos formadores da combustão, as formas de propagação do calor, as
+        temperaturas do fogo, os métodos de extinção do fogo, classificação dos incêndios, os principais
+        agentes extintores, unidade extintora e capacidade extintora, as fases do combate ao fogo, o Flashover,
+        o Backdraft, o Bleve e o Boil Over.'
+      - 1h
+    - - 04 Proteção Contra Incêndio
+      - '- Conhecer os conceitos gerais de prevenção, educação e proteção contra incêndio; noções de proteção
+        passiva e proteção ativa: isolamento de risco, compartimentação vertical e horizontal; noções
+        de resistência das estruturas e dos materiais ao fogo; - Conhecer os equipamentos fixos e portáteis
+        de combate a incêndio, saídas de emergência, escalas de segurança, corredores e rotas de fuga,
+        sistemas de iluminação de emergência, elevador de segurança, meios de aviso, detecção e alarme
+        de incêndio e sinalização de emergência.'
+      - 1h
+      - '- Demonstrar os principais procedimentos para o funcionamento do sistema de meios de fuga: saídas
+        de emergência, escadas de segurança, corredores e rotas de fuga; dos sistemas de iluminação de
+        emergência; do elevador de segurança; dos meios de aviso detecção e alarme de incêndio; da sinalização
+        de emergência.'
+      - 4h
+    - - 05 Técnicas e Táticas de Combate a Incêndio
+      - '- Conhecer as principais técnicas de busca e exploração da área em sinistro, ventilação natural
+        ou forçada (pressão negativa, venturi e positiva), entradas forçadas, resgate de vítimas, confinamento,
+        isolamento, salvatagem, combate com emprego correto dos tipos de jato de água (neblina, cone de
+        força e sólido), emprego, dimensionamento e técnicas de aplicação de espuma mecânica e rescaldo
+        de incêndio; - Demonstrar a montagem de uma linha direta de combate a incêndio, a partir de um
+        hidrante e/ou viatura, linha adutora e linha siamesa; - Demonstrar o uso da linha de água para
+        ataque direto, ataque indireto e ataque combinado.'
+      - 1h
+      - '- Demonstrar as principais técnicas de busca e exploração da área em sinistro, ventilação natural
+        ou forçada (pressão negativa, venturi e positiva), entradas forçadas, resgate de vítimas, confinamento,
+        isolamento, salvatagem, combate com emprego correto dos tipos de jato de água (neblina, cone de
+        força e sólido), emprego, dimensionamento e técnicas de aplicação de espuma mecânica e rescaldo
+        de incêndio; - Demonstrar a montagem de uma linha direta de combate a incêndio, a partir de um
+        hidrante e/ou viatura, linha adutora e linha siamesa; - Demonstrar o uso da linha de água para
+        ataque direto, ataque indireto e ataque combinado.'
+      - 4h
+    - - Total
+      - 4h
+      - Total
+      - 8h
+notas:
+- 'Fonte indicada: ABNT NBR 14608. Células em branco = sem parte prática no módulo.'
+- 'Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao
+  total da linha "Total".'
+inconsistencias_da_fonte:
+- 'Módulo 04 (parte teórica): "escalas de segurança", provavelmente "escadas de segurança" (a parte prática
+  diz "escadas de segurança").'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

@@ -1,0 +1,115 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela 1 (A.3)
+titulo: Currículos mínimos para a formação de BC — EPI e EPR (A.3)
+pagina: 13
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  mesclar_linhas:
+  - - 2
+    - 3
+  linhas_cabecalho: 3
+  juntar_cabecalho: false
+  cabecalho_sem_repeticao: true
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-13.jpg
+    imagem_sha256: b2a8a5123a504b5cf8e4602a66402108628ac9f95310a9d326192601b3874216
+    linhas_cabecalho: 3
+    cabecalho_publicado:
+    - Módulo
+    - Parte teórica — objetivo
+    - Parte teórica — carga horária
+    - Parte prática — objetivo
+    - Parte prática — carga horária
+    linhas:
+    - - EPI e EPR – A.3
+    - - Parte teórica
+      - Parte prática
+    - - Módulo
+      - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - 01 EPI
+      - '- Conhecer os equipamentos de proteção individual para a proteção da cabeça, olhos e face, proteção
+        auditiva, proteção respiratória, tronco, membros superiores, membros inferiores e corpo inteiro,
+        em conformidade com as Normas Brasileiras específicas para combate a incêndio, nacionais e, na
+        falta de Normas Brasileiras, adotar Normas Internacionais.'
+      - 2h
+      - Vestir os EPIs
+      - 2h
+    - - 02 EPR
+      - '- Conhecer e saber a origem e os riscos de exposição a no mínimo os seguintes tipos de gases:
+        asfixiantes – gás liquefeito de petróleo (GLP), gás metano (CH4), dióxido de carbono (CO2) e acetileno;
+        gases tóxicos – monóxido de carbono (CO), sulfídrico (H2S) e cianídrico (HCN) e gases irritantes
+        ou corrosivos – amônia (NH2) e cloro; - Conhecer as características de atmosfera insalubre por
+        concentração de O2; - Conhecer a utilização e a higienização e limpeza dos seguintes equipamentos
+        de proteção respiratória: máscaras filtrantes e conjunto de máscara autônoma de ar respirável
+        e máscara dedicada para a vítima (carona); - Saber calcular a autonomia do conjunto de máscara
+        autônoma. - Conhecer e saber identificar a finalidade dos impressos nos cilindros de ar respirável.'
+      - 4h
+      - Demonstrar a utilização (montar o equipamento, equipar-se e deslocar-se com e sem vítima); Exercitar
+        o calculo de autonomia do conjunto autônomo de respiração.
+      - 4h
+    - - ''
+      - Total
+      - 2h
+      - Total
+      - 2h
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 13
+      tabela_na_pagina: 1
+    linhas:
+    - - EPI e EPR - A.3
+    - - Parte teórica
+      - Parte prática
+    - - Módulo
+      - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - 01 EPI
+      - '- Conhecer os equipamentos de proteção individual para a proteção da cabeça, olhos e face, proteção
+        auditiva, proteção respiratória, tronco, membros superiores, membros inferiores e corpo inteiro,
+        em conformidade com as Normas Brasileiras específicas para combate a incêndio, nacionais e, na
+        falta de Normas Brasileiras, adotar Normas Internacionais.'
+      - 2h
+      - Vestir os EPIs
+      - 2h
+    - - 02 EPR
+      - '- Conhecer e saber a origem e os riscos de exposição a no mínimo os seguintes tipos de gases:
+        asfixiantes - gás liquefeito de petróleo (GLP), gás metano (CH4), dióxido de carbono (CO2) e acetileno;
+        gases tóxicos - monóxido de carbono (CO), sulfídrico (H2S) e cianídrico (HCN) e gases irritantes
+        ou corrosivos - amônia (NH2) e cloro; - Conhecer as características de atmosfera insalubre por
+        concentração de O2; - Conhecer a utilização e a higienização e limpeza dos seguintes equipamentos
+        de proteção respiratória: máscaras filtrantes e conjunto de máscara autônoma de ar respirável
+        e máscara dedicada para a vítima (carona); - Saber calcular a autonomia do conjunto de máscara
+        autônoma. - Conhecer e saber identificar a finalidade dos impressos nos cilindros de ar respirável.'
+      - 4h
+      - Demonstrar a utilização (montar o equipamento, equipar-se e deslocar-se com e sem vítima); Exercitar
+        o calculo de autonomia do conjunto autônomo de respiração.
+      - 4h
+    - - Total
+      - 2h
+      - Total
+      - 2h
+notas:
+- 'Fonte indicada: ABNT NBR 14608.'
+inconsistencias_da_fonte:
+- A linha "Total" diz 2h (teórica) e 2h (prática), mas os módulos somam 6h (2h + 4h) em cada parte.
+- '"amônia (NH2)": a fórmula da amônia é NH3.'
+- '"Exercitar o calculo" (sem acento; igual na imagem e no texto).'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

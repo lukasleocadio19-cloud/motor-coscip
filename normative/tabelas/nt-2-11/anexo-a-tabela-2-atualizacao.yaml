@@ -1,0 +1,148 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela 2
+titulo: Currículo mínimo para atualização de BC
+pagina: 15
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-15.jpg
+    imagem_sha256: 4cadcf01f9e18c4d8a97a9f93f95dc46c69e814c7a24bdffa84a98e02986c23d
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Parte teórica — objetivo
+    - Parte teórica — carga horária
+    - Parte prática — objetivo
+    - Parte prática — carga horária
+    linhas:
+    - - PREVENÇÃO E COMBATE A INCÊNDIO
+      - <
+      - <
+      - <
+    - - Parte teórica
+      - <
+      - Parte prática
+      - <
+    - - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - '- Consolidar os Itens: 01, 02 e 03 da tabela A.1'
+      - 2h
+      - '- Consolidar os Itens 4 e 5 da tabela A.1'
+      - 2h
+    - - EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES
+      - <
+      - <
+      - <
+    - - Parte teórica
+      - <
+      - Parte prática
+      - <
+    - - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - '- Consolidar os Itens: 01 e 02 da tabela A.2'
+      - 2h
+      - '- Consolidar os Itens 1 da Tabela A.2'
+      - 2h
+    - - SALVAMENTO TERRESTRE/ EPI E EPR
+      - <
+      - <
+      - <
+    - - Parte teórica
+      - <
+      - Parte prática
+      - <
+    - - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - '- Consolidar os Itens: 01 e 02 da tabela A.3 - Consolidar os Itens: 01 e 04 da tabela A.4'
+      - 4h
+      - '- Consolidar os Itens: 01 e 02 da tabela A.3 - Consolidar o Iten4 da Tabela A.4'
+      - 4h
+    - - PRIMEIROS SOCORROS
+      - <
+      - <
+      - <
+    - - Parte teórica
+      - <
+      - Parte prática
+      - <
+    - - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - '- Consolidar os Itens: 01 a 12 da tabela A.6'
+      - 4h
+      - '- Consolidar os Itens: 01, 03, 04, 05 e 09 da tabela A.6'
+      - 4h
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 15
+      tabela_na_pagina: 2
+    linhas:
+    - - PREVENÇÃO E COMBATE A INCÊNDIO
+    - - Parte teórica
+      - Parte prática
+    - - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - '- Consolidar os Itens: 01, 02 e 03 da tabela A.1'
+      - 2h
+      - '- Consolidar os Itens 4 e 5 da tabela A.1'
+      - 2h
+    - - EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES
+    - - Parte teórica
+      - Parte prática
+    - - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - '- Consolidar os Itens: 01 e 02 da tabela A.2'
+      - 2h
+      - '- Consolidar os Itens 1 da Tabela A.2'
+      - 2h
+    - - SALVAMENTO TERRESTRE/ EPI E EPR
+    - - Parte teórica
+      - Parte prática
+    - - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - '- Consolidar os Itens: 01 e 02 da tabela A.3 - Consolidar os Itens: 01 e 04 da tabela A.4'
+      - 4h
+      - '- Consolidar os Itens: 01 e 02 da tabela A.3 - Consolidar o Iten4 da Tabela A.4'
+      - 4h
+    - - PRIMEIROS SOCORROS
+    - - Parte teórica
+      - Parte prática
+    - - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - '- Consolidar os Itens: 01 a 12 da tabela A.6'
+      - 4h
+      - '- Consolidar os Itens: 01, 03, 04, 05 e 09 da tabela A.6'
+      - 4h
+notas:
+- Quatro blocos (título, partes, cabeçalho e linha); "<" = mesclada com a da esquerda.
+inconsistencias_da_fonte:
+- '"Consolidar o Iten4 da Tabela A.4" (item 4) e "Consolidar os Itens 1 da Tabela A.2": grafia da NT.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

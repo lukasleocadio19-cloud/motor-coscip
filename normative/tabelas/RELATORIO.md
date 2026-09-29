@@ -4,8 +4,8 @@ Gerado por `python -m tools.normas.tabelas relatorio`. Estado de cada tabela con
 
 | Estado | Tabelas |
 | --- | --- |
-| divergente | 12 |
-| verificada | 62 |
+| divergente | 13 |
+| verificada | 71 |
 
 Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale como segundo caminho só até a extração geométrica (`pdfplumber`, workflow `normas-midia.yml`) rodar sobre o PDF oficial conferido por hash.
 
@@ -62,6 +62,16 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 2-08 | Tabela do Anexo A | 18 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-08 | Tabela do Anexo B | 20 | verificada | visual + geometrica | 0 | 1 |
 | NT 2-08 | Tabela do Anexo C | 22 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-11 | Tabela 1 (A.1) | 11 | verificada | visual + texto | 0 | 1 |
+| NT 2-11 | Tabela 1 (A.2) | 12 | verificada | visual + texto | 0 | 0 |
+| NT 2-11 | Tabela 1 (A.3) | 13 | verificada | visual + texto | 0 | 3 |
+| NT 2-11 | Tabela 1 (A.4) | 13 | verificada | visual + texto | 0 | 1 |
+| NT 2-11 | Tabela 1 (A.5) | 14 | verificada | visual + texto | 0 | 1 |
+| NT 2-11 | Tabela 1 (A.6, página 14) | 14 | divergente | visual + texto | 0 | 0 |
+| NT 2-11 | Tabela 1 (A.6, página 15) | 15 | verificada | visual + texto | 0 | 2 |
+| NT 2-11 | Tabela 2 | 15 | verificada | visual + texto | 0 | 1 |
+| NT 2-11 | Tabela 1 (Anexo B) | 16 | verificada | visual + texto | 0 | 1 |
+| NT 2-11 | Tabela 1 (Anexo B, primeiros socorros) | 16 | verificada | visual + texto | 0 | 0 |
 | NT 2-11 | Tabela do Anexo C | 17 | divergente | visual + geometrica | 0 | 2 |
 | NT 2-11 | Tabela do Anexo C | 18 | divergente | visual + geometrica | 0 | 2 |
 | NT 2-11 | Tabela do Anexo C | 19 | divergente | visual + geometrica | 0 | 1 |

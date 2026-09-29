@@ -1,0 +1,61 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela 1 (Anexo B, primeiros socorros)
+titulo: Noções de primeiros socorros (BVI)
+pagina: 16
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-16.jpg
+    imagem_sha256: 6fcb92f8bfa0c94220645fd3a426f32c51fad6eeb8e83d9ee56a0d3f29cdf9e9
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Assunto
+    - Carga horária
+    linhas:
+    - - Assunto – Teoria e Pratica
+      - <
+    - - Avaliação Inicial
+      - ''
+    - - Obstrução de Vias Aéreas Superiores
+      - ''
+    - - RCP (Reanimação Cardiopulmonar)
+      - ''
+    - - Hemorragias
+      - ''
+    - - Transporte da Vítima
+      - ''
+    - - Emergências Clinicas/AVC/IAM/Convulsões
+      - ''
+    - - Carga horária total
+      - 4(quatro) horas
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 16
+      tabela_na_pagina: 2
+    linhas:
+    - - Assunto - Teoria e Pratica
+    - - Avaliação Inicial
+    - - Obstrução de Vias Aéreas Superiores
+    - - RCP (Reanimação Cardiopulmonar)
+    - - Hemorragias
+    - - Transporte da Vítima
+    - - Emergências Clinicas/AVC/IAM/Convulsões
+    - - Carga horária total
+      - 4(quatro) horas
+notas:
+- Segunda parte da Tabela 1 do Anexo B.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

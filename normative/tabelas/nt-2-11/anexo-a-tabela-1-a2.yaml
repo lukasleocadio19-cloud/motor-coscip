@@ -1,0 +1,158 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela 1 (A.2)
+titulo: Currículos mínimos para a formação de BC — Equipamentos de combate a incêndio e auxiliares (A.2)
+pagina: 12
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  mesclar_linhas:
+  - - 2
+    - 3
+  linhas_cabecalho: 3
+  juntar_cabecalho: false
+  cabecalho_sem_repeticao: true
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-12.jpg
+    imagem_sha256: e91e68c9ad4824e155dcbef1dedbcabc2fc34544254e39ca2521186993314009
+    linhas_cabecalho: 3
+    cabecalho_publicado:
+    - Módulo
+    - Parte teórica — objetivo
+    - Parte teórica — carga horária
+    - Parte prática — objetivo
+    - Parte prática — carga horária
+    linhas:
+    - - EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES – A.2
+    - - Parte teórica
+      - Parte prática
+    - - Módulo
+      - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - 01 Equipamento de Operação Manual
+      - '- Conhecer os tipos e a operação de: extintores (portáteis e extintores sobre rodas, com carga
+        de água, pó BC, CO2, etc.), hidrantes (predial, de coluna e subterrâneo), mangotinho, mangueiras
+        de incêndio, chaves de mangueira (simples e mista), redutores, tampões e adaptadores para mangueiras
+        e hidrantes, derivantes, válvula de recalque, passagem de nível, esguichos e proporcionadores
+        de espuma (de linha e de sistema).'
+      - 2h
+      - 'Demonstrar na prática os tipos e a operação de: extintores (portáteis e extintores sobre rodas,
+        com carga de água, pó BC, CO2, etc.), hidrantes (predial, de coluna e subterrâneo), mangotinho,
+        mangueiras de incêndio, chaves de mangueira (simples e mista), redutores, tampões e adaptadores
+        para mangueiras e hidrantes, derivantes, válvula de recalque, passagem de nível, esguichos e proporcionadores
+        de espuma (de linha e de sistema).'
+      - 2h
+    - - 02 Equipamento de Sistema fixo e operação automática
+      - '- Conhecer os equipamentos e os principais procedimentos de emergência para o correto funcionamento
+        de bombas (elétricas e a combustão), chuveiros automáticos (sprinklers) e sistemas fixos de combate
+        a incêndio (com espuma mecânica, gases etc.).'
+      - 1h
+      - '- Demonstrar na prática os equipamentos e os principais procedimentos de emergência para o correto
+        funcionamento de bombas (elétricas e a combustão), chuveiros automáticos (sprinklers) e sistemas
+        fixos de combate a incêndio (com espuma mecânica, gases etc.).'
+      - 4h
+    - - 03 Equipamentos Auxiliares
+      - '- Conhecer como transportar e armar uma escada prolongável. - Conhecer como operar no mínimo
+        as seguintes ferramentas de corte, arrombamento e remoção (machado, machado-picareta, corta-a-frio,
+        croque, alavanca simples, alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); -
+        Conhecer e operar lanternas e refletores portáteis para iluminação; - Conhecer e utilizar na prática
+        uma lona para salvatagem.'
+      - 1h
+      - '- Demonstrar na prática como transportar e armar uma escada prolongável; como operar ferramentas
+        de corte, arrombamento e remoção (machado, machado-picareta, corta-a-frio, croque, alavanca simples,
+        alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); como operar lanternas e refletores
+        portáteis para iluminação; como usar uma lona para salvatagem.'
+      - 2h
+    - - ''
+      - Total
+      - 4h
+      - Total
+      - 8h
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 12
+      tabela_na_pagina: 1
+    linhas:
+    - - EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES - A.2
+    - - Parte teórica
+      - Parte prática
+    - - Módulo
+      - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - 01 Equipament o de Operação Manual
+      - '- Conhecer os tipos e a operação de: extintores (portáteis e extintores sobre rodas, com carga
+        de água, pó BC, CO2, etc.), hidrantes (predial, de coluna e subterrâneo), mangotinho, mangueiras
+        de incêndio, chaves de mangueira (simples e mista), redutores, tampões e adaptadores para mangueiras
+        e hidrantes, derivantes, válvula de recalque, passagem de nível, esguichos e proporcionadores
+        de espuma (de linha e de sistema).'
+      - 2h
+      - 'Demonstrar na prática os tipos e a operação de: extintores (portáteis e extintores sobre rodas,
+        com carga de água, pó BC, CO2, etc.), hidrantes (predial, de coluna e subterrâneo), mangotinho,
+        mangueiras de incêndio, chaves de mangueira (simples e mista), redutores, tampões e adaptadores
+        para mangueiras e hidrantes, derivantes, válvula de recalque, passagem de nível, esguichos e proporcionadores
+        de espuma (de linha e de sistema).'
+      - 2h
+    - - 02 Equipament o de Sistema fixo e operação automática
+      - '- Conhecer os equipamentos e os principais procedimentos de emergência para o correto funcionamento
+        de bombas (elétricas e a combustão), chuveiros automáticos (sprinklers) e sistemas fixos de combate
+        a incêndio (com espuma mecânica, gases etc.).'
+      - 1h
+      - '- Demonstrar na prática os equipamentos e os principais procedimentos de emergência para o correto
+        funcionamento de bombas (elétricas e a combustão), chuveiros automáticos (sprinklers) e sistemas
+        fixos de combate a incêndio (com espuma mecânica, gases etc.).'
+      - 4h
+    - - 03 Equipament os Auxiliares
+      - '- Conhecer como transportar e armar uma escada prolongável. - Conhecer como operar no mínimo
+        as seguintes ferramentas de corte, arrombamento e remoção (machado, machado-picareta, corta-a-frio,
+        croque, alavanca simples, alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); -
+        Conhecer e operar lanternas e refletores portáteis para iluminação; - Conhecer e utilizar na prática
+        uma lona para salvatagem.'
+      - 1h
+      - '- Demonstrar na prática como transportar e armar uma escada prolongável; como operar ferramentas
+        de corte, arrombamento e remoção (machado, machado-picareta, cortaa-frio, croque, alavanca simples,
+        alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); como operar lanternas e refletores
+        portáteis para iluminação; como usar uma lona para salvatagem.'
+      - 2h
+    - - Total
+      - 4h
+      - Total
+      - 8h
+notas:
+- 'Fonte indicada: ABNT NBR 14608. Quebra de palavra da imagem ("Equipament / o", "corta- / a-frio") desfeita.'
+- 'Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao
+  total da linha "Total".'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  celulas:
+  - linha: 5
+    coluna: 0
+    a: 03 Equipamentos Auxiliares
+    b: 03 Equipament os Auxiliares
+    estado: verificada
+    score: 98.1
+  - linha: 5
+    coluna: 3
+    a: '- Demonstrar na prática como transportar e armar uma escada prolongável; como operar ferramentas
+      de corte, arrombamento e remoção (machado, machado-picareta, corta-a-frio, croque, alavanca simples,
+      alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); como operar lanternas e refletores
+      portáteis para iluminação; como usar uma lona para salvatagem.'
+    b: '- Demonstrar na prática como transportar e armar uma escada prolongável; como operar ferramentas
+      de corte, arrombamento e remoção (machado, machado-picareta, cortaa-frio, croque, alavanca simples,
+      alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); como operar lanternas e refletores
+      portáteis para iluminação; como usar uma lona para salvatagem.'
+    estado: verificada
+    score: 99.9

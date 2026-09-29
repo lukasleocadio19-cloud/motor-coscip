@@ -1,0 +1,112 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela 1 (Anexo B)
+titulo: Currículo mínimo para brigadista voluntário de incêndio — noções básicas da ciência do fogo
+pagina: 16
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-16.jpg
+    imagem_sha256: 6fcb92f8bfa0c94220645fd3a426f32c51fad6eeb8e83d9ee56a0d3f29cdf9e9
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Assunto
+    - Carga horária
+    linhas:
+    - - Assunto – Teoria
+      - <
+    - - Teoria do Fogo
+      - ''
+    - - Propagação do Fogo
+      - ''
+    - - Classes de Incêndio
+      - ''
+    - - Prevenção de Incêndio
+      - ''
+    - - Método de Extinção de Incêndio
+      - ''
+    - - Agentes Extintores
+      - ''
+    - - EPI (Equipamento de Proteção Individual)
+      - ''
+    - - Equipamento Portátil de Combate a Incêndio
+      - ''
+    - - Equipamento Fixo de Combate a Incêndio
+      - ''
+    - - Escape de Pessoal
+      - ''
+    - - Pessoa Com Mobilidade Reduzida
+      - ''
+    - - Riscos Específicos da Planta
+      - ''
+    - - Psicologia em emergências
+      - ''
+    - - Carga horária
+      - 8 (oito) horas
+    - - Assunto – Prática
+      - <
+    - - Maneabilidade com equipamentos
+      - ''
+    - - Técnica de Extinção de Incêndio com equipamento portátil
+      - ''
+    - - Técnica de Extinção de Incêndio com equipamento fixo
+      - ''
+    - - Técnicas de entrada e saída do local de Incêndio
+      - ''
+    - - Operação Simulada de Combate a Incêndio
+      - ''
+    - - Carga horária
+      - 4(quatro) horas
+    - - Carga horária total
+      - 12 (doze) horas
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 16
+      tabela_na_pagina: 1
+    linhas:
+    - - Assunto - Teoria
+    - - Teoria do Fogo
+    - - Propagação do Fogo
+    - - Classes de Incêndio
+    - - Prevenção de Incêndio
+    - - Método de Extinção de Incêndio
+    - - Agentes Extintores
+    - - EPI (Equipamento de Proteção Individual)
+    - - Equipamento Portátil de Combate a Incêndio
+    - - Equipamento Fixo de Combate a Incêndio
+    - - Escape de Pessoal
+    - - Pessoa Com Mobilidade Reduzida
+    - - Riscos Específicos da Planta
+    - - Psicologia em emergências
+    - - Carga horária
+      - 8 (oito) horas
+    - - Assunto - Prática
+    - - Maneabilidade com equipamentos
+    - - Técnica de Extinção de Incêndio com equipamento portátil
+    - - Técnica de Extinção de Incêndio com equipamento fixo
+    - - Técnicas de entrada e saída do local de Incêndio
+    - - Operação Simulada de Combate a Incêndio
+    - - Carga horária
+      - 4(quatro) horas
+    - - Carga horária total
+      - 12 (doze) horas
+notas:
+- 'Anexo B da NT 2-11 (formação de BVI). Conferência aritmética: 8 h (teoria) + 4 h (prática) = 12 h;
+  com as 4 h de noções de primeiros socorros, as 16 h do título.'
+inconsistencias_da_fonte:
+- 'Título com "incêndiotreinamento" (sem espaço) e "Teoria e Pratica", "Clinicas" sem acento: grafia da
+  NT.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

@@ -1,0 +1,115 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela 1 (A.4)
+titulo: Currículos mínimos para a formação de BC — Salvamento terrestre (A.4)
+pagina: 13
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  mesclar_linhas:
+  - - 2
+    - 3
+  linhas_cabecalho: 3
+  juntar_cabecalho: false
+  cabecalho_sem_repeticao: true
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-13.jpg
+    imagem_sha256: b2a8a5123a504b5cf8e4602a66402108628ac9f95310a9d326192601b3874216
+    linhas_cabecalho: 3
+    cabecalho_publicado:
+    - Módulo
+    - Parte teórica — objetivo
+    - Parte teórica — carga horária
+    - Parte prática — objetivo
+    - Parte prática — carga horária
+    linhas:
+    - - SALVAMENTO TERRESTRE – A.4
+    - - Parte teórica
+      - Parte prática
+    - - Módulo
+      - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - 01 Emergência em elevadores
+      - '- Conhecer os procedimentos básicos a serem adotados em emergências com elevadores.'
+      - 2h
+      - ''
+      - ''
+    - - 02 Prevenção em Área de pouso de helicópteros
+      - '- Conhecer os principais riscos no pouso de helicóptero e conhecer e demonstrar os principais
+        procedimentos de segurança para balizamento, embarque e desembarque de passageiros e procedimentos
+        de controle em caso de emergência, envolvendo incêndio e resgate de vítimas.'
+      - 1h
+      - ''
+      - ''
+    - - 03 Plano de Emergência
+      - '- Conhecer as principais recomendações de um plano de emergência, relativas a uma emergência
+        contra incêndio, hostilidades em caso de ameaças de bombas e terrorismo, uma emergência de abando
+        de área em uma planta.'
+      - 1h
+      - ''
+      - ''
+    - - 04 Resgate de Vítimas em Espaços Confinados
+      - '- Conhecer as normas, procedimentos e técnicas para resgate de vítimas em espaços confinados.'
+      - 6h
+      - Utilizar os equipamentos para resgate de vítimas em espaços confinados.
+      - 6h
+    - - ''
+      - Total
+      - 10h
+      - Total
+      - 6h
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 13
+      tabela_na_pagina: 2
+    linhas:
+    - - SALVAMENTO TERRESTRE - A.4
+    - - Parte teórica
+      - Parte prática
+    - - Módulo
+      - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - 01 Emergência em elevadores
+      - '- Conhecer os procedimentos básicos a serem adotados em emergências com elevadores.'
+      - 2h
+    - - 02 Prevenção em Área de pouso de helicópteros
+      - '- Conhecer os principais riscos no pouso de helicóptero e conhecer e demonstrar os principais
+        procedimentos de segurança para balizamento, embarque e desembarque de passageiros e procedimentos
+        de controle em caso de emergência, envolvendo incêndio e resgate de vítimas.'
+      - 1h
+    - - 03 Plano de Emergência
+      - '- Conhecer as principais recomendações de um plano de emergência, relativas a uma emergência
+        contra incêndio, hostilidades em caso de ameaças de bombas e terrorismo, uma emergência de abando
+        de área em uma planta.'
+      - 1h
+    - - 04 Resgate de Vítimas em Espaços Confinados
+      - '- Conhecer as normas, procedimentos e técnicas para resgate de vítimas em espaços confinados.'
+      - 6h
+      - Utilizar os equipamentos para resgate de vítimas em espaços confinados.
+      - 6h
+    - - Total
+      - 10h
+      - Total
+      - 6h
+notas:
+- 'Fonte indicada: ABNT NBR 14608.'
+- 'Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao
+  total da linha "Total".'
+inconsistencias_da_fonte:
+- 'Módulo 03: "abando de área" (abandono).'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

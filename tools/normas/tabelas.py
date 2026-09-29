@@ -107,7 +107,7 @@ def compare(a_rows: list[list[str | None]], b_rows: list[list[str | None]]) -> d
 
 
 FORMA_KEYS = ("faixa", "mesclar_linhas", "rotulos_quebrados", "linhas_cabecalho",
-              "juntar_cabecalho", "descartar_linhas")
+              "juntar_cabecalho", "descartar_linhas", "cabecalho_sem_repeticao")
 
 
 def forma_of(table: dict[str, Any], path: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -228,6 +228,8 @@ def shape(rows: list[list[str | None]], forma: dict[str, Any]) -> list[list[str]
         out = [[c for c in head if c]]
     else:  # cabeçalho com células mescladas: cada linha fica como está, sem as vazias
         out = [[c for c in r if c] for r in rows[:head_n]]
+    if forma.get("cabecalho_sem_repeticao"):  # extração que duplica a célula mesclada
+        out = [[c for i, c in enumerate(r) if i == 0 or c != r[i - 1]] for r in out]
     out = [r for r in out if r]
     skip = set(forma.get("descartar_linhas") or [])
     for i, row in enumerate(rows[head_n:], start=head_n):

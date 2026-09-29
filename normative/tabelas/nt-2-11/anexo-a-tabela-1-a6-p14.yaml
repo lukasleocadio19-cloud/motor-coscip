@@ -1,0 +1,184 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela 1 (A.6, página 14)
+titulo: Currículos mínimos para a formação de BC — Primeiros socorros (A.6), módulos 01 a 05
+pagina: 14
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-14.jpg
+    imagem_sha256: 85ad12cad2c6817de8c30c03ec3c3a9b53b5da25fab196bbf049a32e1a5a7186
+    linhas_cabecalho: 3
+    cabecalho_publicado:
+    - Módulo
+    - Parte teórica — objetivo
+    - Parte teórica — carga horária
+    - Parte prática — objetivo
+    - Parte prática — carga horária
+    linhas:
+    - - PRIMEIROS SOCORROS – A.6
+    - - Parte teórica
+      - Parte prática
+    - - Módulo
+      - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - 01 Legislação Específica
+      - '- Conhecer a legislação que regulamenta os procedimentos de primeiros-socorros para o nível equivalente
+        a Bombeiro profissional civil.'
+      - 30 min.
+      - ''
+      - ''
+    - - 02 Procedimentos Iniciais
+      - '- Conhecer os procedimentos para avaliação da segurança do local, números de vítimas e os procedimentos
+        de biossegurança; - Conhecer os procedimentos para acionamento e comunicação protocolar com os
+        serviços públicos e privados de socorro de vítimas e ações para localização dos hospitais de referência
+        nas proximidades do local de trabalho; - Conhecer os procedimentos para o planejamento das ações
+        conforme definido previamente no plano de emergência da planta.'
+      - 1 h.
+      - ''
+      - ''
+    - - 03 Avaliação Inicial
+      - '- Conhecer, avaliar e identificar os riscos iminentes, os mecanismos de lesão, número de vítimas
+        e o exame físico sumário destas.'
+      - 30 min.
+      - Avaliar e reconhecer os riscos iminentes, os mecanismos de lesão número de vítimas e o exame físico
+        destas.
+      - 30 min.
+    - - 04 Vias Aéreas
+      - '- Conhecer os sinais e sintomas de obstruções de vias aéreas superiores em adultos, crianças
+        e bebês conscientes e inconscientes, e promover a desobstrução quando indicado.'
+      - 30 min.
+      - Promover a desobstrução utilizando a técnica adequada.
+      - 1h.
+    - - 05 SBV (Suporte Básico de Vida)
+      - '- Apresentar as técnicas do SBV para adultos, crianças e bebês; - Conhecer os equipamentos de
+        reanimação cardiorespiratória (DEA, pocketmask).'
+      - 2h
+      - Praticar o protocolo do SBV (Suporte Básico de Vida)
+      - 2h.
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 14
+      tabela_na_pagina: 2
+    linhas:
+    - - PRIMEIROS SOCORROS - A.6
+    - - Parte teórica
+      - Parte prática
+    - - Módulo
+      - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - 01 Legislação Específica
+      - '- Conhecer a legislação que regulamenta'
+      - 30 min.
+    - - os procedimentos de primeiros-socorros
+    - - para o nível equivalente a Bombeiro
+    - - profissional civil.
+    - - 02 Procedimentos Iniciais
+      - '- Conhecer os procedimentos para'
+      - 1 h.
+    - - avaliação da segurança do local,
+    - - números de vítimas e os procedimentos
+    - - de biossegurança;
+    - - '- Conhecer os procedimentos para'
+    - - acionamento e comunicação protocolar
+    - - com os serviços públicos e privados de
+    - - socorro de vítimas e ações para
+    - - localização dos hospitais de referência
+    - - nas proximidades do local de trabalho;
+    - - '- Conhecer os procedimentos para o'
+    - - planejamento das ações conforme
+    - - definido previamente no plano de
+    - - emergência da planta.
+    - - 03 Avaliação Inicial
+      - '- Conhecer, avaliar e identificar os riscos'
+      - 30 min.
+      - Avaliar e reconhecer os riscos iminentes, os mecanismos de lesão número de vítimas e o exame físico
+        destas.
+      - 30 min.
+    - - iminentes, os mecanismos de lesão,
+    - - número de vítimas e o exame físico
+    - - sumário destas.
+    - - 04 Vias Aéreas
+      - '- Conhecer os sinais e sintomas de'
+      - 30 min.
+      - Promover a desobstrução utilizando a técnica adequada.
+      - 1h.
+    - - obstruções de vias aéreas superiores em
+    - - adultos, crianças e bebês conscientes e
+    - - inconscientes, e promover a
+    - - desobstrução quando indicado.
+    - - 05 SBV (Suporte Básico de Vida)
+      - '- Apresentar as técnicas do SBV para'
+      - 2h
+      - Praticar o protocolo do SBV (Suporte Básico de Vida)
+      - 2h.
+    - - adultos, crianças e bebês;
+    - - '- Conhecer os equipamentos de'
+    - - reanimação cardiorespiratória (DEA,
+    - - pocketmask).
+notas:
+- 'Fonte indicada: ABNT NBR 14608. Continua na página 15 (módulos 06 a 15 e total).'
+estado: divergente
+resultado:
+  estado: divergente
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 1
+    - 2
+    - 5
+    - 3
+    - 3
+    - 5
+    - 5
+    - 5
+  - - 1
+    - 2
+    - 5
+    - 3
+    - 1
+    - 1
+    - 1
+    - 3
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 5
+    - 1
+    - 1
+    - 1
+    - 5
+    - 1
+    - 1
+    - 1
+    - 1
+    - 5
+    - 1
+    - 1
+    - 1
+    - 1

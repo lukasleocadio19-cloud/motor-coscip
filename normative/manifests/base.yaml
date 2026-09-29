@@ -6,11 +6,11 @@ resumo:
   imagens_presentes: 478
   imagens_ausentes: 1
   tabelas_por_estado:
-    bruto: 181
+    bruto: 175
     capa: 38
-    divergente: 12
+    divergente: 13
     nao_tabela: 1
-    verificada: 62
+    verificada: 71
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -1451,7 +1451,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-11-Brigadas-de-incendio.pdf
   sha256_pdf: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
-  sha256_md: 8ee99e0c281fe2ea25fae33e5ccd8163e7a8c5279400455ef002703788aea7ca
+  sha256_md: 575941f2af93dac24a34d78e7d3fbccd5f1be5535635d212e1f46564ba903d8b
   data_captura: '2026-07-23'
   paginas: 26
   midia: nt-2-11
@@ -1524,17 +1524,45 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 11
-    estado: bruto
+    tabela: Tabela 1 (A.1)
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a1.yaml
+    estado: verificada
   - pagina: 12
-    estado: bruto
+    tabela: Tabela 1 (A.2)
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a2.yaml
+    estado: verificada
   - pagina: 13
-    estado: bruto
+    tabela: Tabela 1 (A.3)
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a3.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela 1 (A.4)
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a4.yaml
+    estado: verificada
   - pagina: 14
-    estado: bruto
+    tabela: Tabela 1 (A.5)
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a5.yaml
+    estado: verificada
+  - pagina: 14
+    tabela: Tabela 1 (A.6, página 14)
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a6-p14.yaml
+    estado: divergente
   - pagina: 15
-    estado: bruto
+    tabela: Tabela 1 (A.6, página 15)
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a6-p15.yaml
+    estado: verificada
+  - pagina: 15
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-2-atualizacao.yaml
+    estado: verificada
   - pagina: 16
-    estado: bruto
+    tabela: Tabela 1 (Anexo B)
+    arquivo: normative/tabelas/nt-2-11/anexo-b-tabela-1-bvi.yaml
+    estado: verificada
+  - pagina: 16
+    tabela: Tabela 1 (Anexo B, primeiros socorros)
+    arquivo: normative/tabelas/nt-2-11/anexo-b-tabela-1-primeiros-socorros.yaml
+    estado: verificada
   - pagina: 17
     tabela: Tabela do Anexo C
     arquivo: normative/tabelas/nt-2-11/anexo-c-p17.yaml
