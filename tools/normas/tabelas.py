@@ -117,12 +117,15 @@ def forma_of(table: dict[str, Any], path: dict[str, Any] | None = None) -> dict[
 
 
 MERGED_UP = "^"  # na leitura visual: célula mesclada com a de cima (o valor está lá)
+MERGED_LEFT = "<"  # na leitura visual: célula mesclada com a da esquerda
 
 
 def compact(rows: list[list[str | None]]) -> list[list[str | None]]:
     """Leitura visual na forma dos caminhos brutos: a célula mesclada aparece uma vez só (na
-    primeira linha da mescla), então as marcadas ``^`` saem antes de comparar."""
-    return [[c for c in r if c != MERGED_UP] for r in rows]
+    primeira linha da mescla), então as marcadas ``^`` saem antes de comparar; célula em
+    branco na imagem (``""``, ex. fundo cinza = não se aplica) também, como nos brutos.
+    ``None`` (ilegível) fica: vira pendência."""
+    return [[c for c in r if c not in (MERGED_UP, MERGED_LEFT, "")] for r in rows]
 
 
 def evaluate(table: dict[str, Any]) -> dict[str, Any]:
@@ -342,10 +345,13 @@ def to_markdown(table: dict[str, Any]) -> str:
     header = visual.get("cabecalho_publicado") or rows[0]  # cabeçalho mesclado, achatado
     body, prev = [], list(header)
     for r in rows[n_head:]:
-        if MERGED_UP in r:  # grade completa: "^" = mesclada com a célula de cima
+        if MERGED_UP in r or MERGED_LEFT in r:  # grade completa: "^" de cima, "<" da esquerda
             if len(r) != len(header):
-                raise ValueError(f"{table['tabela']}: linha com '^' precisa de todas as colunas")
-            full = [prev[j] if c == MERGED_UP else c for j, c in enumerate(r)]
+                raise ValueError(f"{table['tabela']}: linha com '^'/'<' precisa de todas as "
+                                 "colunas")
+            full = []
+            for j, c in enumerate(r):
+                full.append(prev[j] if c == MERGED_UP else full[-1] if c == MERGED_LEFT else c)
         else:  # linha mais curta = células mescladas à esquerda: herda de cima
             full = prev[: len(header) - len(r)] + list(r)
         body.append(full)

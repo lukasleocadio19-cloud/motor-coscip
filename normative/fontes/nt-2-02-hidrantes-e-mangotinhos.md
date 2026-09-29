@@ -268,6 +268,21 @@ Fonte: CBMERJ
 | Risco Médio 2 | Regulável | 38 | 38 | 30 | Flexível | 2 | 35 | 400 |
 | Risco Grande | Regulável | 63 | 63 | 30 | Flexível | 2 | 40 | 1000 |
 
+<!-- tabela-conferida: Tabela 1 p5 -->
+### Tabela 1 — Classificação dos riscos (conferida)
+
+| Classificação de risco | Esguicho — tipo | Esguicho — diâmetro (mm) | Mangueira — diâmetro (mm) | Mangueira — comprimento máx. (m) | Mangueira — tipo | Hidrantes | Pressão de trabalho (mca) | Vazão (L/min) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Risco Pequeno - Mangotinho | Regulável | 25 | 25 | 30 | Semi-rígida | 1 | 58 | 100 |
+| Risco Pequeno | Regulável | 38 | 38 | 30 | Flexível | 1 | 10 | 100 |
+| Risco Médio 1 | Regulável | 38 | 38 | 30 | Flexível | 1 | 35 | 200 |
+| Risco Médio 2 | Regulável | 38 | 38 | 30 | Flexível | 2 | 35 | 400 |
+| Risco Grande | Regulável | 63 | 63 | 30 | Flexível | 2 | 40 | 1000 |
+
+Fonte: NT 2-02, página 5, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Na imagem: "Fonte: CBMERJ (Redação dada pela Portaria CBMERJ nº 1317, de 10/12/2025)". O cabeçalho em dois níveis (Esguicho: tipo e diâmetro; Mangueira: diâmetro, comprimento e tipo) foi achatado por coluna.
+<!-- /tabela-conferida: Tabela 1 p5 -->
+
 ---
 
 ## Página 6
@@ -317,6 +332,18 @@ Fonte: COSCIP.
 | --- | --- | --- | --- | --- | --- |
 | Abrigos | X | X | X | X |  |
 | Portas Com moldura |  | X | X | X | X |
+
+<!-- tabela-conferida: Tabela 2 p6 -->
+### Tabela 2 — Composição dos abrigos (conferida)
+
+| Materiais | Alvenaria de Tijolo | Alumínio Anodizado | Chapa Tratada | Fibra de Vdiro | Madeira |
+| --- | --- | --- | --- | --- | --- |
+| Abrigos | X | X | X | X |  |
+| Portas Com moldura |  | X | X | X | X |
+
+Fonte: NT 2-02, página 6, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Células em branco = fundo cinza na imagem (material não previsto para aquele elemento). Fonte indicada: COSCIP.
+<!-- /tabela-conferida: Tabela 2 p6 -->
 
 ---
 
@@ -472,6 +499,20 @@ Fonte: NBR 13714.
 | Galvanizado | 120 |
 | Cobre | 150 |
 | NOTA - Os valores do fator "C" de Hazen Willians são válidos para tubos novos |  |
+
+<!-- tabela-conferida: Tabela 3 p8 -->
+### Tabela 3 — Fator "C" de Hazen-Williams (conferida)
+
+| Tipo de Tubo | Fator "C" |
+| --- | --- |
+| Ferro fundido ou dúctil sem revestimento interno | 100 |
+| Aço Preto (Sistema de tubo molhado) | 120 |
+| Galvanizado | 120 |
+| Cobre | 150 |
+
+Fonte: NT 2-02, página 8, Tabela 3; conferida em 2026-09-29 (visual + texto).
+Nota da tabela (fora da comparação): "Os valores do fator \"C\" de Hazen Willians são válidos para tubos novos". Fonte indicada: NBR 13714.
+<!-- /tabela-conferida: Tabela 3 p8 -->
 
 ---
 
@@ -765,6 +806,18 @@ Fonte: CBMERJ.
 | 30 m | 38 mm (1 1/2”) |
 |  |  |
 | 30 m | 63 mm (2 1/2”) |
+
+<!-- tabela-conferida: Tabela 4 p12 -->
+### Tabela 4 — Cobertura de mangueiras (conferida)
+
+| Linhas de mangueira — comprimento máximo | Linhas de mangueira — diâmetro |
+| --- | --- |
+| 30 m | 38 mm (1 1/2”) |
+| 30 m | 63 mm (2 1/2”) |
+
+Fonte: NT 2-02, página 12, Tabela 4; conferida em 2026-09-29 (visual + texto).
+Fonte indicada: CBMERJ. Seções de 15 m (5.13.2).
+<!-- /tabela-conferida: Tabela 4 p12 -->
 
 ---
 

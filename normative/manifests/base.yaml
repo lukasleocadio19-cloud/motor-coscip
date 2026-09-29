@@ -6,8 +6,9 @@ resumo:
   imagens_presentes: 478
   imagens_ausentes: 0
   tabelas_por_estado:
-    bruto: 266
-    verificada: 24
+    bruto: 256
+    divergente: 6
+    verificada: 28
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -726,7 +727,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_2-02_alterada-pela-Portaria-1317_2025.pdf
   sha256_pdf: 175c79afcac17335da3d68aef49e4ec9cc88706ddd012ed49e0b2748bf8524e9
-  sha256_md: 5533526fab675d7f2095eb3b4877443fdb5ef85f56452d0b21f87b75d3f7ceea
+  sha256_md: 2d12f434c710a60557789a2aa2da4ce7ecbe76daccf42d09d1d6493fafeaca44
   data_captura: '2026-07-23'
   paginas: 21
   midia: nt-2-02
@@ -799,15 +800,25 @@ fontes:
   - pagina: 1
     estado: bruto
   - pagina: 5
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-2-02/tabela-1-classificacao-riscos.yaml
+    estado: verificada
   - pagina: 6
-    estado: bruto
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-2-02/tabela-2-composicao-abrigos.yaml
+    estado: verificada
   - pagina: 8
-    estado: bruto
+    tabela: Tabela 3
+    arquivo: normative/tabelas/nt-2-02/tabela-3-fator-c-hazen-williams.yaml
+    estado: verificada
   - pagina: 12
-    estado: bruto
+    tabela: Tabela 4
+    arquivo: normative/tabelas/nt-2-02/tabela-4-cobertura-mangueiras.yaml
+    estado: verificada
   - pagina: 13
-    estado: bruto
+    tabela: Tabela 5
+    arquivo: normative/tabelas/nt-2-02/tabela-5-drenos-colares.yaml
+    estado: divergente
 - arquivo: nt-2-03-parte-1-sprinklers-requisitos-gerais.md
   documento: NT 2-03 P1
   titulo: NT 2-03 - Parte 1 - Sistemas de chuveiros automáticos / sprinklers - Requisitos gerais
@@ -1455,15 +1466,25 @@ fontes:
   - pagina: 16
     estado: bruto
   - pagina: 17
-    estado: bruto
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-11/anexo-c-p17.yaml
+    estado: divergente
   - pagina: 18
-    estado: bruto
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-11/anexo-c-p18.yaml
+    estado: divergente
   - pagina: 19
-    estado: bruto
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-11/anexo-c-p19.yaml
+    estado: divergente
   - pagina: 20
-    estado: bruto
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-11/anexo-c-p20.yaml
+    estado: divergente
   - pagina: 21
-    estado: bruto
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-11/anexo-c-p21.yaml
+    estado: divergente
   - pagina: 22
     estado: bruto
   - pagina: 23

@@ -1,0 +1,351 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela do Anexo C
+titulo: Dimensionamento para brigadista voluntário de incêndio (BVI), página 19
+pagina: 19
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-19.jpg
+    imagem_sha256: 7c28471cf903216d4348de9d2c0e0886336757a21ac0f8bbf9371884d6a4e850
+    linhas_cabecalho: 3
+    cabecalho_publicado:
+    - Grupo
+    - Ocupação/Uso
+    - Divisão
+    - Descrição
+    - BVI — 1 a 20 funcionários por turno
+    - BVI — acima de 20 funcionários por turno
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Composição da Brigada de Incêndio Voluntária*
+    - - Funcionários por turno (incluindo terceirizados)
+    - - 1 A20
+      - Acima de 20
+    - - G
+      - Serviço automotivo e assemelhado
+      - G-1
+      - Garagem sem acesso de público
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - G-2
+      - Garagem com acesso de público
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - G-3
+      - Galpão garagem
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - G-4
+      - Postos de combustível
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - G-5
+      - Serviço de conservação, manutenção e reparos
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - G-6
+      - Hangares
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - H
+      - Serviço de saúde
+      - H-1
+      - Hospital e assemelhado
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - H-2
+      - Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - H-3
+      - Hospital veterinário e assemelhados
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - I
+      - Industrial
+      - I-1
+      - Industrial 1
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - I-2
+      - Industrial 2
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - I-3
+      - Industrial 3
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 19
+      tabela_na_pagina: 1
+    linhas:
+    - - Divisão
+      - Descrição
+      - Composição da Brigada de Incêndio Voluntária*
+    - - Funcionários por turno
+    - - Funcionários por turno
+    - - Grupo
+      - Ocupação/Uso
+      - Descrição
+      - (incluindo terceirizados)
+    - - 1 A20
+      - Acima de 20
+    - - G
+      - Serviço automotivo e assemelhado
+      - G-1
+      - Garagem sem acesso de público
+      - Não exigível
+    - - Edificação histórica com isenção de canalização ****
+      - Não exigível
+    - - G-2
+      - Garagem com acesso de público
+      - Não exigível
+    - - Edificação histórica com isenção de canalização ****
+      - Não exigível
+    - - G-3
+      - Galpão garagem
+      - Não exigível
+    - - Edificação histórica com isenção de canalização ****
+      - Não exigível
+    - - G-4
+      - Postos de combustível
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - G-5
+      - Serviço de conservação, manutenção e reparos
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - G-6
+      - Hangares
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - H
+      - Serviço de saúde
+      - H-1
+      - Hospital e assemelhado
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - H-2
+      - Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - H-3
+      - Hospital veterinário e assemelhados
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - I
+      - Industrial
+      - I-1
+      - Industrial 1
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - I-2
+      - Industrial 2
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - I-3
+      - Industrial 3
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+notas:
+- 'Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<"
+  = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas
+  "Edificação histórica…" em fundo amarelo na imagem.'
+inconsistencias_da_fonte:
+- A marca "****" (edificação histórica com isenção de canalização) é usada em todas as linhas destacadas,
+  mas o quadro de notas da página 21 só define "*" e "***".
+estado: divergente
+resultado:
+  estado: divergente
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 5
+    - 1
+    - 2
+    - 5
+    - 2
+    - 3
+    - 2
+    - 3
+    - 2
+    - 4
+    - 3
+    - 4
+    - 3
+    - 4
+    - 3
+    - 6
+    - 3
+    - 4
+    - 3
+    - 4
+    - 3
+    - 6
+    - 3
+    - 4
+    - 3
+    - 4
+    - 3
+  - - 3
+    - 1
+    - 1
+    - 4
+    - 2
+    - 5
+    - 2
+    - 3
+    - 2
+    - 3
+    - 2
+    - 4
+    - 3
+    - 4
+    - 3
+    - 4
+    - 3
+    - 6
+    - 3
+    - 4
+    - 3
+    - 4
+    - 3
+    - 6
+    - 3
+    - 4
+    - 3
+    - 4
+    - 3

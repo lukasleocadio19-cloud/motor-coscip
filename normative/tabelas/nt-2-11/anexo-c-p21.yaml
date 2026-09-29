@@ -1,0 +1,195 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela do Anexo C
+titulo: Dimensionamento para brigadista voluntário de incêndio (BVI), página 21
+pagina: 21
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-21.jpg
+    imagem_sha256: 3baea33a909e7e44c23fe4c4f70604082b3c413a6a1a3dbdbdf979cf9508bf23
+    linhas_cabecalho: 3
+    cabecalho_publicado:
+    - Grupo
+    - Ocupação/Uso
+    - Divisão
+    - Descrição
+    - BVI — 1 a 20 funcionários por turno
+    - BVI — acima de 20 funcionários por turno
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Composição da Brigada de Incêndio Voluntária *
+    - - Funcionários por turno (incluindo terceirizados)
+    - - 1 A 20
+      - Acima de 20
+    - - M
+      - Especial
+      - M-5
+      - Silos
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - M-6
+      - Estrutura temporária
+      - Vide NT 5-04
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Vide NT 5-04
+      - <
+    - - ^
+      - ^
+      - M-7
+      - Edificação mista
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - M-8
+      - Quiosque
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - M-9
+      - Áreas e atividades de exploração de recursos naturais
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 21
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Composição da Brigada de Incêndio Voluntária *
+    - - Funcionários por turno (incluindo terceirizados)
+    - - 1 A 20
+      - Acima de 20
+    - - M
+      - Especial
+      - M-5
+      - Silos
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - M-6
+      - Estrutura temporária
+      - Vide NT 5-04
+    - - Edificação histórica com isenção de canalização ****
+      - Vide NT 5-04
+    - - M-7
+      - Edificação mista
+      - Não exigível
+    - - Edificação histórica com isenção de canalização ****
+      - Não exigível
+    - - M-8
+      - Quiosque
+      - Não exigível
+    - - Edificação histórica com isenção de canalização ****
+      - Não exigível
+    - - M-9
+      - Áreas e atividades de exploração de recursos naturais
+      - Não exigível
+    - - Edificação histórica com isenção de canalização ****
+      - Não exigível
+    - - '* No eventual afastamento do funcionário que exerça a função de BVI, os responsáveis pelos imóveis,
+        estabelecimentos ou áreas de risco deverão designar substituto devidamente capacitado como BVI.'
+    - - '*** Para efeito do resultado do cálculo deverá ser utilizada a regra do arredondamento. Exemplo
+        1: nº de funcionários 23 x 0,10 = 2,3 BVI. Para efeito de aplicação prática será considerado o
+        quantitativo de 2 BVI. Exemplo 2: nº de funcionários 37 x 0,10 = 3,7 BVI. Para efeito de aplicação
+        prática será considerado o quantitativo de 3 BVI. Exemplo 3: nº de funcionários 65 x 0,10 = 6,5
+        BVI. Para efeito de aplicação prática será considerado o quantitativo de 6 BVI. Por conveniência
+        e decisão do Plano de Emergência predial esse percentual poderá ser superado, se houver acordo
+        entre o profissional responsável pelo plano e o proprietário.'
+notas:
+- 'Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<"
+  = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas
+  "Edificação histórica…" em fundo amarelo na imagem.'
+- 'Quadro de notas abaixo da tabela (fora da comparação): "*" substituto capacitado no afastamento do
+  BVI; "***" cálculo pela regra do arredondamento, com exemplos; o percentual pode ser superado por decisão
+  do Plano de Emergência.'
+inconsistencias_da_fonte:
+- A marca "****" (edificação histórica com isenção de canalização) é usada em todas as linhas destacadas,
+  mas o quadro de notas da página 21 só define "*" e "***".
+- 'A nota "***" manda usar "a regra do arredondamento", mas os exemplos truncam: 37 × 0,10 = 3,7 → 3 BVI
+  e 65 × 0,10 = 6,5 → 6 BVI (arredondando seriam 4 e 7).'
+estado: divergente
+resultado:
+  estado: divergente
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 5
+    - 1
+    - 2
+    - 6
+    - 3
+    - 3
+    - 2
+    - 3
+    - 2
+    - 3
+    - 2
+    - 3
+    - 2
+  - - 5
+    - 1
+    - 2
+    - 6
+    - 3
+    - 3
+    - 2
+    - 3
+    - 2
+    - 3
+    - 2
+    - 3
+    - 2
+    - 1
+    - 1
