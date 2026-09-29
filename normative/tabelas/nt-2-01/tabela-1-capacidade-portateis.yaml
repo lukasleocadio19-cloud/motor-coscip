@@ -48,7 +48,124 @@ caminhos:
       - '2-A: 20-B: C'
     - - Compostos halogenados
       - '5-B: C'
-  geometrica: null
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 305.36
+      - 56.64
+      - 546.13
+      - 116.66
+      linhas:
+      - - 5.2.6 Serão aceitos extintores com acabamento
+      - - externo em material cromado, latão ou metal polido,
+      - - desde que possuam marca de conformidade expedida
+      - - por órgão credenciado pelo Sistema Brasileiro de
+      - - Certificação (Inmetro).
+    - bbox: &id001
+      - 43.37
+      - 267.51
+      - 282.21
+      - 401.3
+      linhas:
+      - - Tipo de Agente Extintor
+        - ''
+        - Capacidade Extintora
+        - ''
+      - - null
+        - null
+        - Mínima
+        - null
+      - - Água
+        - 2-A
+        - null
+        - null
+      - - Espuma mecânica
+        - '2-A : 10-B'
+        - null
+        - null
+      - - Dióxido de carbono
+        - '5-B : C'
+        - null
+        - null
+      - - Pó BC
+        - '20-B : C'
+        - null
+        - null
+      - - Pó ABC
+        - '2-A : 20-B : C'
+        - null
+        - null
+      - - Compostos halogenados
+        - '5-B : C'
+        - null
+        - null
+    - bbox:
+      - 305.36
+      - 375.51
+      - 546.13
+      - 482.83
+      linhas:
+      - - Tipo de Agente Extintor
+        - ''
+        - Capacidade Extintora
+        - ''
+      - - null
+        - null
+        - Mínima
+        - null
+      - - Água
+        - 10-A
+        - null
+        - null
+      - - Espuma mecânica
+        - '6-A : 40-B'
+        - null
+        - null
+      - - Dióxido de carbono
+        - '10-B : C'
+        - null
+        - null
+      - - Pó BC
+        - '80-B : C'
+        - null
+        - null
+      - - Pó ABC
+        - '6-A : 80-B : C'
+        - null
+        - null
+    - bbox:
+      - 43.37
+      - 676.54
+      - 282.21
+      - 760.56
+      linhas:
+      - - 5.2.5 Os extintores de incêndio devem ser adequados
+      - - à classe de incêndio predominante dentro da área de
+      - - risco a ser protegida, de forma que haja, no mínimo,
+      - - 02 (dois) extintores de incêndio, sendo um para
+      - - incêndio classe A e um para incêndio classes B e C. É
+      - - permitida a instalação de 02 (dois) extintores iguais de
+      - - pó ABC.
+    - bbox:
+      - 305.36
+      - 698.79
+      - 546.13
+      - 777.12
+      linhas:
+      - - 'b) fogo classe B: conforme Tabela 3 e para melhor'
+        - null
+      - - entendimento, vide Anexo A;
+        - ''
+      - - 'c) fogo classe C: conforme Tabela 3 e para melhor'
+        - null
+      - - entendimento, vide Anexo A;
+        - null
+      - - 'd) fogo Classe D: conforme 6.2; e'
+        - null
+      - - 'e) fogo Classe K: conforme 6.2 e para melhor'
+        - null
 notas:
 - 'Fonte: ABNT NBR 12693.'
 estado: verificada
@@ -56,6 +173,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 1
+  candidatos_na_pagina: 5
+  bbox: *id001
+  texto: verificada

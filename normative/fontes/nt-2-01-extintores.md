@@ -278,7 +278,7 @@ a) fogo classe A: conforme Tabela 3 e para melhor entendimento, vide Anexo A;
 | Pó ABC | 2-A : 20-B : C |
 | Compostos halogenados | 5-B : C |
 
-Fonte: NT 2-01, página 4, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-01, página 4, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Fonte: ABNT NBR 12693.
 <!-- /tabela-conferida: Tabela 1 p4 -->
 
@@ -293,7 +293,7 @@ Fonte: ABNT NBR 12693.
 | Pó BC | 80-B : C |
 | Pó ABC | 6-A : 80-B : C |
 
-Fonte: NT 2-01, página 4, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-01, página 4, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
 Fonte: ABNT NBR 12693.
 <!-- /tabela-conferida: Tabela 2 p4 -->
 
@@ -401,41 +401,6 @@ b) bordas amarelas: 0,15 m de largura.
 | extintores deve ser aquele estabelecido pelo |  |  |
 | fabricante e/ou da empresa de manutenção certificada |  |  |
 | pelo Sistema Brasileiro de Certificação. |  |  |
-
-<!-- tabela-conferida: Tabela 3 p5 -->
-### Tabela 3 — Determinação da unidade extintora mínima, área e distância a serem percorridas para o dimensionamento de extintores de incêndio para classes A, B e C (conferida)
-
-| Extintor / risco | Risco pequeno | Risco médio 1 e 2 | Risco grande |
-| --- | --- | --- | --- |
-| Área máxima protegida por 01 (uma) unidade extintora | 250 m² | 150 m² | 100 m² |
-| Distância máxima percorrida | 20 m | 15 m | 10 m |
-
-Fonte: NT 2-01, página 5, Tabela 3; conferida em 2026-09-29 (visual + texto).
-Fonte: CBMERJ.
-"Risco" é célula mesclada sobre Pequeno, Médio 1 e 2 e Grande; "Extintor / risco" ocupa as duas linhas do cabeçalho.
-<!-- /tabela-conferida: Tabela 3 p5 -->
-
-<!-- tabela-conferida: Tabela 4 p5 -->
-### Tabela 4 — Classes do fogo e distâncias máximas a serem percorridas (conferida)
-
-| Classe do Fogo | Distância Máxima a ser Percorrida (metros) |
-| --- | --- |
-| D | 23 |
-
-Fonte: NT 2-01, página 5, Tabela 4; conferida em 2026-09-29 (visual + texto).
-Fonte: NFPA 10.
-<!-- /tabela-conferida: Tabela 4 p5 -->
-
-<!-- tabela-conferida: Tabela 5 p5 -->
-### Tabela 5 — Classes do fogo e distâncias máximas a serem percorridas (conferida)
-
-| Classe do Fogo | Distância Máxima a ser Percorrida (metros) |
-| --- | --- |
-| K | 10 |
-
-Fonte: NT 2-01, página 5, Tabela 5; conferida em 2026-09-29 (visual + texto).
-Fonte: CBMERJ.
-<!-- /tabela-conferida: Tabela 5 p5 -->
 
 ---
 
