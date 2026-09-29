@@ -37,6 +37,299 @@ caminhos:
       - 1000 < qfi ≤ 1200 MJ/m²
     - - Grande
       - qfi ≥1200 MJ/m²
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 60.43
+      - 57.05
+      - 528.34
+      - 483.7
+      linhas:
+      - - ''
+        - Carga de Incêndio (qfi) em MJ/m2
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Tipo de material
+        - Altura de armazenamento (em metros)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - '1'
+        - '2'
+        - '4'
+        - '6'
+        - '8'
+        - '10'
+      - - Material de escritório
+        - '585'
+        - '1170'
+        - '2340'
+        - '3510'
+        - '4680'
+        - '5850'
+      - - Medicamentos, embalagem
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Depósitos de mercadorias incombustíveis em pilhas de caixas de plástico
+        - '90'
+        - '180'
+        - '360'
+        - '540'
+        - '720'
+        - '900'
+      - - Móveis de madeira
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Móveis, estofados sem espuma sintética
+        - '180'
+        - '360'
+        - '720'
+        - '1080'
+        - '1440'
+        - '1800'
+      - - Painel de madeira aglomerada
+        - '3015'
+        - '6030'
+        - '12060'
+        - '18090'
+        - '24120'
+        - '30150'
+      - - Papel
+        - '3780'
+        - '7560'
+        - '15120'
+        - '22680'
+        - '30240'
+        - '37800'
+      - - Papel prensado
+        - '945'
+        - '1890'
+        - '3780'
+        - '5670'
+        - '7560'
+        - '9450'
+      - - Papelaria, estoque
+        - '495'
+        - '990'
+        - '1980'
+        - '2970'
+        - '3960'
+        - '4950'
+      - - Produtos farmacêuticos, estoque
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Peças automotivas
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Perfumaria, artigos de
+        - '225'
+        - '450'
+        - '900'
+        - '1350'
+        - '1800'
+        - '2250'
+      - - Pneus
+        - '810'
+        - '1620'
+        - '3240'
+        - '4860'
+        - '6480'
+        - '8100'
+      - - Portas de madeira
+        - '810'
+        - '1620'
+        - '3240'
+        - '4860'
+        - '6480'
+        - '8100'
+      - - Produtos químicos combustíveis
+        - '450'
+        - '900'
+        - '1800'
+        - '2700'
+        - '3600'
+        - '4500'
+      - - Queijos
+        - '1125'
+        - '2250'
+        - '4500'
+        - '6750'
+        - '9000'
+        - '11250'
+      - - Resinas sintéticas
+        - '1890'
+        - '3780'
+        - '7560'
+        - '11340'
+        - '15120'
+        - '18900'
+      - - Resinas sintéticas, placas de
+        - '1530'
+        - '3060'
+        - '6120'
+        - '9180'
+        - '12240'
+        - '15300'
+      - - Sabão
+        - '1890'
+        - '3780'
+        - '7560'
+        - '11340'
+        - '15120'
+        - '18900'
+      - - Sacos de papel
+        - '5670'
+        - '11340'
+        - '22680'
+        - '34020'
+        - '45360'
+        - '56700'
+      - - Sacos de plástico
+        - '11340'
+        - '22680'
+        - '45360'
+        - '68040'
+        - '90720'
+        - '113400'
+      - - Tabaco em bruto
+        - '765'
+        - '1530'
+        - '3060'
+        - '4590'
+        - '6120'
+        - '7650'
+      - - Tabaco, artigos de
+        - '945'
+        - '1890'
+        - '3780'
+        - '5670'
+        - '7560'
+        - '9450'
+      - - Tapeçarias
+        - '765'
+        - '1530'
+        - '3060'
+        - '4590'
+        - '6120'
+        - '7650'
+      - - Tapeçarias
+        - '900'
+        - '1800'
+        - '3600'
+        - '5400'
+        - '7200'
+        - '9000'
+      - - Tecidos sintéticos
+        - '585'
+        - '1170'
+        - '2340'
+        - '3510'
+        - '4680'
+        - '5850'
+      - - Tecidos, fardos de algodão
+        - '585'
+        - '1170'
+        - '2340'
+        - '3510'
+        - '4680'
+        - '5850'
+      - - Tecidos, seda artificial
+        - '450'
+        - '900'
+        - '1800'
+        - '2700'
+        - '3600'
+        - '4500'
+      - - Toldos ou lonas
+        - '450'
+        - '900'
+        - '1800'
+        - '2700'
+        - '3600'
+        - '4500'
+      - - Velas de cera
+        - '10080'
+        - '20160'
+        - '40320'
+        - '60480'
+        - '80640'
+        - '100800'
+      - - Vernizes
+        - '1125'
+        - '2250'
+        - '4500'
+        - '6750'
+        - '9000'
+        - '11250'
+      - - Vernizes de cera
+        - '2250'
+        - '4500'
+        - '9000'
+        - '13500'
+        - '18000'
+        - '22500'
+      - - 'Obsservações: a) Pode haver interpolação entre os valores. b) A carga incêndio para depósitos
+          apresentada nesta tabela pode ser substituída pelo método determinístico (Anexo E)'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    - bbox: &id001
+      - 60.43
+      - 548.09
+      - 528.34
+      - 648.35
+      linhas:
+      - - ''
+        - Risco
+        - ''
+        - ''
+        - Carga de incêndio específica (Mj/m²)
+        - ''
+      - - Médio 1
+        - null
+        - null
+        - qfi ≤ 1000 MJ/m²
+        - null
+        - null
+      - - Médio 2
+        - null
+        - null
+        - 1000 < qfi ≤ 1200 MJ/m²
+        - null
+        - null
+      - - Grande
+        - null
+        - null
+        - qfi ≥1200 MJ/m²
+        - null
+        - null
 notas:
 - 'Fonte indicada: CBMERJ.'
 inconsistencias_da_fonte:
@@ -48,6 +341,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 1
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

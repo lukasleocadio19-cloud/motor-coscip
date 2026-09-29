@@ -3,8 +3,8 @@ gerado_por: tools/normas/manifesto.py (não editar à mão)
 resumo:
   fontes: 53
   imagens_referenciadas: 478
-  imagens_presentes: 476
-  imagens_ausentes: 2
+  imagens_presentes: 478
+  imagens_ausentes: 0
   tabelas_por_estado:
     bruto: 266
     verificada: 24
@@ -401,7 +401,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-04-Classificacao-das-edificacoes-e-areas-de-risco-quanto-ao-risco-de-incendio.pdf
   sha256_pdf: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
-  sha256_md: 4d0fdfdd475b2515eef66fd1dbff2f21bd48a47d6bfc974a6211e0123d7ebfb4
+  sha256_md: b1aede1a1e6ecf625eb78b50498f6a4476028d726b1eeb69d0ee88df9c9408f1
   data_captura: '2026-07-23'
   paginas: 20
   midia: nt-1-04
@@ -464,8 +464,8 @@ fontes:
     sha256: ac505b94486827cfa6ec1fc80ec2cc96463520cc0260c2591ce56382e97764a1
   - caminho: media/nt-1-04/pagina-19.jpg
     pagina: 19
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: db01b307c7862e6d02de4f8409829db5ade6c3665773c62497598ca00576f9ab
   tabelas:
   - pagina: 1
     estado: bruto
@@ -1397,8 +1397,8 @@ fontes:
     sha256: 4cadcf01f9e18c4d8a97a9f93f95dc46c69e814c7a24bdffa84a98e02986c23d
   - caminho: media/nt-2-11/pagina-16.jpg
     pagina: 16
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 6fcb92f8bfa0c94220645fd3a426f32c51fad6eeb8e83d9ee56a0d3f29cdf9e9
   - caminho: media/nt-2-11/pagina-17.jpg
     pagina: 17
     estado: presente

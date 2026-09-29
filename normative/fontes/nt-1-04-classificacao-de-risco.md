@@ -756,7 +756,7 @@ Tabela 1 - Carga de incêndio relativa à altura de armazenamento (Depósitos)
 | Materiais de construção | 360 | 720 | 1440 | 2160 | 2880 | 3600 |
 | Materiais sintéticos | 2655 | 5310 | 10620 | 15930 | 21240 | 26550 |
 
-Fonte: NT 1-04, página 17, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 17, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Primeira parte da Tabela 1 do Anexo C da NT 1-04 (continua na página 18). Fonte indicada: ABNT NBR 14432.
 Conferência aritmética (além dos dois caminhos): em cada linha a carga é proporcional à altura de armazenamento (valor em 2 m ÷ 2 × altura, arredondado).
 <!-- /tabela-conferida: Tabela 1 p17 -->
@@ -862,7 +862,7 @@ Fonte: CBMERJ.
 | Vernizes | 1125 | 2250 | 4500 | 6750 | 9000 | 11250 |
 | Vernizes de cera | 2250 | 4500 | 9000 | 13500 | 18000 | 22500 |
 
-Fonte: NT 1-04, página 18, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 18, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Continuação da Tabela 1 do Anexo C. Fonte indicada: ABNT NBR 14432.
 Conferência aritmética (além dos dois caminhos): em cada linha a carga é proporcional à altura de armazenamento (valor em 2 m ÷ 2 × altura, arredondado).
 Observações da tabela (fora da comparação): a) pode haver interpolação entre os valores; b) a carga de incêndio para depósitos desta tabela pode ser substituída pelo método determinístico.
@@ -877,7 +877,7 @@ Observações da tabela (fora da comparação): a) pode haver interpolação ent
 | Médio 2 | 1000 < qfi ≤ 1200 MJ/m² |
 | Grande | qfi ≥1200 MJ/m² |
 
-Fonte: NT 1-04, página 18, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 18, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada: CBMERJ.
 <!-- /tabela-conferida: Tabela 2 p18 -->
 

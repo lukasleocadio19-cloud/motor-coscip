@@ -33,9 +33,9 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 1-04 | Tabela do Anexo B | 14 | verificada | visual + geometrica | 0 | 0 |
 | NT 1-04 | Tabela do Anexo B | 15 | verificada | visual + geometrica | 0 | 0 |
 | NT 1-04 | Tabela do Anexo B | 16 | verificada | visual + geometrica | 0 | 0 |
-| NT 1-04 | Tabela 1 | 17 | verificada | visual + texto | 0 | 1 |
-| NT 1-04 | Tabela 1 | 18 | verificada | visual + texto | 0 | 3 |
-| NT 1-04 | Tabela 2 | 18 | verificada | visual + texto | 0 | 2 |
+| NT 1-04 | Tabela 1 | 17 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-04 | Tabela 1 | 18 | verificada | visual + geometrica | 0 | 3 |
+| NT 1-04 | Tabela 2 | 18 | verificada | visual + geometrica | 0 | 2 |
 | NT 2-01 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 2 | 4 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 3 | 5 | verificada | visual + geometrica | 0 | 0 |

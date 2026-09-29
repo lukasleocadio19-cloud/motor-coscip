@@ -832,6 +832,429 @@ caminhos:
       - '15930'
       - '21240'
       - '26550'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 67.23
+      - 98.44
+      - 535.36
+      - 769.57
+      linhas:
+      - - ''
+        - Carga de Incêndio (qfi) em MJ/m2
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Tipo de material
+        - Altura de armazenamento (em metros)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - '1'
+        - '2'
+        - '4'
+        - '6'
+        - '8'
+        - '10'
+      - - Açúcar
+        - '3780'
+        - '7560'
+        - '15120'
+        - '22680'
+        - '30240'
+        - '37800'
+      - - Açúcar, produtos de
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Acumuladores/baterias
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Adubos químicos
+        - '90'
+        - '180'
+        - '360'
+        - '540'
+        - '720'
+        - '900'
+      - - Alcatrão
+        - '1530'
+        - '3060'
+        - '6120'
+        - '9180'
+        - '12240'
+        - '15300'
+      - - Algodão
+        - '585'
+        - '1170'
+        - '2340'
+        - '3510'
+        - '4680'
+        - '5850'
+      - - Alimentação (alimentos industrializados)
+        - '1530'
+        - '3060'
+        - '6120'
+        - '9180'
+        - '12240'
+        - '15300'
+      - - Aparelhos eletroeletrônicos
+        - '180'
+        - '360'
+        - '720'
+        - '1080'
+        - '1440'
+        - '1800'
+      - - Aparelhos fotográficos
+        - '270'
+        - '540'
+        - '1080'
+        - '1620'
+        - '2160'
+        - '2700'
+      - - Artigos de borracha
+        - '2250'
+        - '4500'
+        - '9000'
+        - '13500'
+        - '18000'
+        - '22500'
+      - - Bebidas alcoólicas
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Borracha
+        - '12870'
+        - '25740'
+        - '51480'
+        - '77220'
+        - '102960'
+        - '128700'
+      - - Brinquedos
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Cabos elétricos
+        - '270'
+        - '540'
+        - '1080'
+        - '1620'
+        - '2160'
+        - '2700'
+      - - Cacau, produtos de
+        - '2610'
+        - '5220'
+        - '10440'
+        - '15660'
+        - '20880'
+        - '26100'
+      - - Café cru
+        - '1305'
+        - '2610'
+        - '5220'
+        - '7830'
+        - '10440'
+        - '13050'
+      - - Caixas de madeira
+        - '270'
+        - '540'
+        - '1080'
+        - '1620'
+        - '2160'
+        - '2700'
+      - - Calçado
+        - '180'
+        - '360'
+        - '720'
+        - '1080'
+        - '1440'
+        - '1800'
+      - - Celuloide
+        - '1530'
+        - '3060'
+        - '6120'
+        - '9180'
+        - '12240'
+        - '15300'
+      - - Cera
+        - '1530'
+        - '3060'
+        - '6120'
+        - '9180'
+        - '12240'
+        - '15300'
+      - - Cera, artigos de
+        - '945'
+        - '1890'
+        - '3780'
+        - '5670'
+        - '7560'
+        - '9450'
+      - - Chocolate
+        - '1530'
+        - '3060'
+        - '6120'
+        - '9180'
+        - '12240'
+        - '15300'
+      - - Colas combustíveis
+        - '1530'
+        - '3060'
+        - '6120'
+        - '9180'
+        - '12240'
+        - '15300'
+      - - Colchões não sintéticos
+        - '2250'
+        - '4500'
+        - '9000'
+        - '13500'
+        - '18000'
+        - '22500'
+      - - Cosméticos
+        - '248'
+        - '495'
+        - '990'
+        - '1485'
+        - '1980'
+        - '2475'
+      - - Couro
+        - '765'
+        - '1530'
+        - '3060'
+        - '4590'
+        - '6120'
+        - '7650'
+      - - Couro, artigos de
+        - '270'
+        - '540'
+        - '1080'
+        - '1620'
+        - '2160'
+        - '2700'
+      - - Couro sintético
+        - '765'
+        - '1530'
+        - '3060'
+        - '4590'
+        - '6120'
+        - '7650'
+      - - Couro sintético, artigos de
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Depósitos de mercadorias incombustíveis em pilhas de caixas de madeira ou de papelão
+        - '90'
+        - '180'
+        - '360'
+        - '540'
+        - '720'
+        - '900'
+      - - Depósitos de mercadorias incombustíveis em pilhas de caixas de plástico
+        - '90'
+        - '180'
+        - '360'
+        - '540'
+        - '720'
+        - '900'
+      - - Depósitos de mercadorias incombustíveis em estantes metálicas (sem embalagem)
+        - '9'
+        - '18'
+        - '36'
+        - '54'
+        - '72'
+        - '90'
+      - - Depósitos de paletes de madeira
+        - '1530'
+        - '3060'
+        - '6120'
+        - '9180'
+        - '12240'
+        - '15300'
+      - - Espumas sintéticas
+        - '1125'
+        - '2250'
+        - '4500'
+        - '6750'
+        - '9000'
+        - '11250'
+      - - Espumas sintéticas, artigos de
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Farinha em sacos
+        - '3780'
+        - '7560'
+        - '15120'
+        - '22680'
+        - '30240'
+        - '37800'
+      - - Feltro
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Feno, fardos de
+        - '450'
+        - '900'
+        - '1800'
+        - '2700'
+        - '3600'
+        - '4500'
+      - - Fiação, produtos de fio
+        - '765'
+        - '1530'
+        - '3060'
+        - '4590'
+        - '6120'
+        - '7650'
+      - - Fiação, produtos de lã
+        - '855'
+        - '1710'
+        - '3420'
+        - '5130'
+        - '6840'
+        - '8550'
+      - - Fósforos
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Gorduras
+        - '8100'
+        - '16200'
+        - '32400'
+        - '48600'
+        - '64800'
+        - '81000'
+      - - Gorduras comestíveis
+        - '8505'
+        - '17010'
+        - '34020'
+        - '51030'
+        - '68040'
+        - '85050'
+      - - Grãos, sementes
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Instrumentos de ótica
+        - '90'
+        - '180'
+        - '360'
+        - '540'
+        - '720'
+        - '900'
+      - - Legumes, verduras, hortifrutigranjeiros
+        - '158'
+        - '315'
+        - '630'
+        - '945'
+        - '1260'
+        - '1575'
+      - - Leite em pó
+        - '4050'
+        - '8100'
+        - '16200'
+        - '24300'
+        - '32400'
+        - '40500'
+      - - Lenha
+        - '1125'
+        - '2250'
+        - '4500'
+        - '6750'
+        - '9000'
+        - '11250'
+      - - Madeira em troncos
+        - '2835'
+        - '5670'
+        - '11340'
+        - '17010'
+        - '22680'
+        - '28350'
+      - - Madeira, aparas
+        - '945'
+        - '1890'
+        - '3780'
+        - '5670'
+        - '7560'
+        - '9450'
+      - - Madeira, restos de
+        - '1350'
+        - '2700'
+        - '5400'
+        - '8100'
+        - '10800'
+        - '13500'
+      - - Madeira, vigas e tábuas
+        - '1890'
+        - '3780'
+        - '7560'
+        - '11340'
+        - '15120'
+        - '18900'
+      - - Malte
+        - '6030'
+        - '12060'
+        - '24120'
+        - '36180'
+        - '48240'
+        - '60300'
+      - - Massas alimentícias
+        - '765'
+        - '1530'
+        - '3060'
+        - '4590'
+        - '6120'
+        - '7650'
+      - - Materiais de construção
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Materiais sintéticos
+        - '2655'
+        - '5310'
+        - '10620'
+        - '15930'
+        - '21240'
+        - '26550'
 notas:
 - 'Primeira parte da Tabela 1 do Anexo C da NT 1-04 (continua na página 18). Fonte indicada: ABNT NBR
   14432.'
@@ -844,6 +1267,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
