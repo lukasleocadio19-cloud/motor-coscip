@@ -15,7 +15,7 @@ from typing import Any
 import yaml
 
 from coscip_normative.exit_distances import verify_exit_distances
-from coscip_normative.requirements import verify_requirements
+from coscip_normative.requirements import verify_height_tables, verify_requirements
 from coscip_normative.sources import NormativeText, verify_citation, verify_table_row
 from coscip_rules.dsl import RuleDefinition, check_dependency_cycles, parse_rule
 
@@ -42,6 +42,8 @@ class RulePackageDef:
     requirements: dict[str, Any] | None = None
     # NT 2-08, Anexo C: distâncias máximas até a saída, opcional.
     exit_distances: dict[str, Any] | None = None
+    # Anexo III, Tabelas 5 a 21 (ATC > 900 m² ou mais de 2 pavimentos), opcional.
+    requirements_height: dict[str, Any] | None = None
 
     @property
     def content_sha256(self) -> str:
@@ -52,6 +54,7 @@ class RulePackageDef:
             "classification": self.classification,
             "requirements": self.requirements,
             "exit_distances": self.exit_distances,
+            "requirements_height": self.requirements_height,
         }, sort_keys=True, ensure_ascii=False)
         return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
 
@@ -109,6 +112,8 @@ def load_package(directory: str | Path) -> RulePackageDef:
                       if raw.get("requirements") else None),
         exit_distances=(_package_yaml(root, raw["exit_distances"])
                         if raw.get("exit_distances") else None),
+        requirements_height=(_package_yaml(root, raw["requirements_height"])
+                             if raw.get("requirements_height") else None),
     )
 
 
@@ -200,6 +205,12 @@ def verify_package(pkg: RulePackageDef, sources: dict[str, NormativeText]) -> di
                         if pkg.requirements is not None else None)
     if requirements_out and requirements_out.get("source"):
         used.add(requirements_out["source"]["document"])
+    if pkg.requirements_height is not None:
+        height_out = verify_height_tables(pkg.requirements_height, sources, failures)
+        if requirements_out is not None:
+            # a consulta do Anexo III recebe as Tabelas 5–21 junto (mesmo relatório)
+            requirements_out["height_tables"] = height_out
+            requirements_out["verified"] &= height_out["verified"]
     exit_out = (verify_exit_distances(pkg.exit_distances, sources, failures)
                 if pkg.exit_distances is not None else None)
     if exit_out and exit_out.get("source"):

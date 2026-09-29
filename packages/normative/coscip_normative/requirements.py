@@ -162,6 +162,139 @@ def verify_requirements(table: dict, sources: dict[str, NormativeText],
     return checked
 
 
+_VALUE = re.compile(r"^(X.*|-+|—)$")
+
+
+def _page_rows(src: NormativeText | None, page: int) -> list[list[str]]:
+    """Linhas de tabela da página (camada de texto), com os rótulos que a extração quebrou em
+    três linhas (rótulo / valores / rótulo) juntados de volta; só as células não vazias."""
+    if src is None:
+        return []
+    match = re.search(rf"^## Página {page}\s*$([\s\S]*?)(?=^## Página |\Z)", src.text, re.M)
+    body = (match.group(1) if match else "").split("<!-- tabela-conferida:")[0]
+    rows = [[c.strip() for c in line.strip().strip("|").split("|") if c.strip()]
+            for line in body.splitlines() if line.strip().startswith("|")]
+    rows = [r for r in rows if r and not re.fullmatch(r"[\s:-]+", "".join(r))]
+    out, i = [], 0
+    while i < len(rows):
+        if (i + 2 < len(rows) and len(rows[i]) == 1 and not _VALUE.match(rows[i][0])
+                and all(_VALUE.match(c) for c in rows[i + 1]) and len(rows[i + 2]) == 1
+                and not _VALUE.match(rows[i + 2][0])):
+            out.append([f"{rows[i][0]} {rows[i + 2][0]}", *rows[i + 1]])
+            i += 3
+            continue
+        out.append(rows[i])
+        i += 1
+    return out
+
+
+def _fold_cell(cell: str) -> str:
+    text = fold(cell)
+    text = re.sub(r"\s*,\s*", ",", text)
+    return re.sub(r"\bx\s+(?=\d)", "x", text)
+
+
+HEIGHT_BANDS = ("Térrea", "2pav", "3pav", "4, 5 e 6pav", "Acima de 6pav com H ≤ 30m", "H > 30m")
+
+
+def verify_height_tables(data: dict, sources: dict[str, NormativeText],
+                         failures: list[str]) -> dict:
+    """Confere as Tabelas 5–21 contra o texto ingerido: título na página, cada linha de medida
+    (rótulo + todas as células) igual a uma linha da tabela da página, colunas no padrão."""
+    src = sources.get(data.get("source", {}).get("document", ""))
+    errors: list[str] = []
+    if not src or src.pdf_sha256 != data["source"].get("pdf_sha256"):
+        errors.append("Anexo III 5–21: PDF diferente do conferido ou fonte ausente")
+    tables_out = []
+    seen_divisions: set[str] = set()
+    for t in data.get("tables") or []:
+        errs = []
+        page_rows = [[_fold_cell(c) for c in r] for r in _page_rows(src, t["page"])]
+        page_text = " ".join(" ".join(r) for r in page_rows)
+        if (_fold_cell(f"Tabela {t['table']}") not in page_text
+                or _fold_cell(t["title"][:60]) not in page_text):
+            errs.append("título ausente na página")
+        if t.get("verification", {}).get("state") != "verificada":
+            errs.append("tabela não verificada em dois caminhos")
+        width = 0
+        for block in t["blocks"]:
+            if tuple(block["colunas"]) != HEIGHT_BANDS:
+                errs.append("colunas fora do padrão de pavimentos/altura")
+            dup = seen_divisions & set(block["divisoes"])
+            if dup:
+                errs.append(f"divisão em mais de uma tabela: {sorted(dup)}")
+            seen_divisions |= set(block["divisoes"])
+            width += len(block["colunas"])
+        for m in t["measures"]:
+            row = [_fold_cell(c) for c in [m["source_label"], *m["cells"]]]
+            if len(m["cells"]) != width:
+                errs.append(f"{m['label']}: {len(m['cells'])} células, esperado {width}")
+            elif row not in page_rows:
+                errs.append(f"linha não confere com o texto: {m['label']}")
+        failures.extend(f"Anexo III / Tabela {t['table']}: {e}" for e in errs)
+        errors.extend(errs)
+        tables_out.append({**t, "verified": not errs})
+    failures.extend(e for e in errors if e.startswith("Anexo III 5–21"))
+    return {"source": data.get("source"), "tables": tables_out,
+            "verified": not errors and bool(tables_out),
+            "source_sha256": src.text_sha256 if src else None}
+
+
+def _height_band(floors: int, height: float) -> int:
+    """Coluna das Tabelas 5–21: Térrea, 2pav, 3pav, 4–6pav, >6pav com H ≤ 30 m, H > 30 m."""
+    if height > 30:
+        return 5
+    if floors <= 3:
+        return max(floors, 1) - 1
+    return 3 if floors <= 6 else 4
+
+
+def _consult_height(height: dict | None, context: dict) -> dict:
+    out = {"status": "UNAVAILABLE", "measures": [], "notes": [], "source": None,
+           "message": "Pacote sem as Tabelas 5–21 do Anexo III verificadas."}
+    if height is None:  # pacote sem as tabelas: fora do que esta consulta cobre
+        return {**out, "status": "OUT_OF_SCOPE",
+                "message": "Consultar tabelas específicas: ATC acima de 900 m² "
+                           "ou mais de 2 pavimentos."}
+    if not height.get("verified"):
+        return out
+    occ = context["occupancy"]
+    found = [(t, bi, b) for t in height["tables"] for bi, b in enumerate(t["blocks"])
+             if occ in b["divisoes"]]
+    if not found:
+        return {**out, "status": "OUT_OF_SCOPE",
+                "message": "Divisão sem coluna nas Tabelas 5–21; consultar a NT específica."}
+    table, bi, block = found[0]
+    out.update(source={"document": "Decreto 42/2018", "item": f"Anexo III, Tabela {table['table']}",
+                       "page": table["page"], "title": table["title"]},
+               source_sha256=height.get("source_sha256"),
+               notes=[f"Observações da Tabela {table['table']} na página {table['page']}."])
+    h = context.get("building_height_m")
+    if h is None:
+        return {**out, "status": "MISSING_DATA",
+                "message": f"Informe a altura da edificação para escolher a coluna da "
+                           f"Tabela {table['table']}."}
+    band = _height_band(int(context["building_floors"]), float(h))
+    offset = sum(len(b["colunas"]) for b in table["blocks"][:bi])
+    measures = []
+    for m in table["measures"]:
+        cell = m["cells"][offset + band]
+        status = ("NOT_MARKED" if cell == "-" else
+                  "REQUIRED" if cell == "X" and not m.get("label_note") else "CONDITIONAL")
+        measures.append({"id": m["id"], "label": m["label"], "cell": cell, "status": status})
+    fields = {"lighting": "requires_lighting", "hydrants": "requires_hydrants",
+              "alarm": "requires_alarm"}
+    conflicts = [f"{m['label']}: consta X na tabela, mas foi informado como não exigido. "
+                 "Conferir a justificativa no processo."
+                 for m in measures if m["status"] == "REQUIRED" and m["id"] in fields
+                 and context.get(fields[m["id"]]) is False]
+    return {**out, "status": "INDICATIVE",
+            "column": f"{'/'.join(block['divisoes'])} / {block['colunas'][band]}",
+            "conflicts": conflicts, "measures": measures,
+            "message": "Consulta em rascunho; conferir as observações da tabela e os riscos "
+                       "específicos. Traço não é dispensa global; X com nota é condicional."}
+
+
 def consult_requirements(table: dict | None, context: dict[str, Any]) -> dict:
     """Área e pavimentos são da edificação, nunca do recorte ou da área útil em grade."""
     out = {"status": "MISSING_DATA", "message": "Informe ocupação, ATC e pavimentos da edificação.",
@@ -186,9 +319,7 @@ def consult_requirements(table: dict | None, context: dict[str, Any]) -> dict:
     if area > 900 or floors > 2:
         if occ in {"A-2", "A-3"}:
             return _consult_residential(table.get("residential_table"), context)
-        return {**out, "status": "OUT_OF_SCOPE",
-                "message": "Consultar tabelas específicas: ATC acima de 900 m² "
-                           "ou mais de 2 pavimentos."}
+        return _consult_height(table.get("height_tables"), context)
     column = next((i for i, c in enumerate(table["columns"]) if occ in c["divisions"]), None)
     if column is None:
         return {**out, "status": "OUT_OF_SCOPE",

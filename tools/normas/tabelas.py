@@ -56,6 +56,8 @@ def norm(cell: str | None) -> str | None:
     text = re.sub(r"(?<=\w) (?=[a-z]\b)", "", text)  # "edificaco es" → "edificacoes"
     text = re.sub(r"(\d)\s*([m²%])", r"\1\2", text)  # "35,00 m" → "35,00m"
     text = re.sub(r"\s*:\s*", ":", text)  # "2-A : 10-B" → "2-a:10-b"
+    text = re.sub(r"\s*,\s*", ",", text)  # "X 5 ,6" → "x 5,6"
+    text = re.sub(r"\bx\s+(?=\d)", "x", text)  # nota colada ao X: "X 5,6" → "x5,6"
     return " ".join(text.split())
 
 
@@ -95,8 +97,8 @@ def compare(a_rows: list[list[str | None]], b_rows: list[list[str | None]]) -> d
     return {"estado": worst, "celulas": cells}
 
 
-FORMA_KEYS = ("faixa", "mesclar_linhas", "linhas_cabecalho", "juntar_cabecalho",
-              "descartar_linhas")
+FORMA_KEYS = ("faixa", "mesclar_linhas", "rotulos_quebrados", "linhas_cabecalho",
+              "juntar_cabecalho", "descartar_linhas")
 
 
 def forma_of(table: dict[str, Any], path: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -190,12 +192,17 @@ def shape(rows: list[list[str | None]], forma: dict[str, Any]) -> list[list[str]
         # célula com texto em duas linhas ("Médio" / "1 e 2"): junta pela coluna
         rows[i] = [" ".join(filter(None, (a, b))) for a, b in zip(rows[i], rows[j], strict=False)]
         del rows[j]
+    if forma.get("rotulos_quebrados"):
+        rows = _join_split_labels(rows)
     head_n = int(forma.get("linhas_cabecalho", 1))
-    if forma.get("juntar_cabecalho", True):  # cabeçalho quebrado em linhas: junta por coluna
+    if head_n == 0:
+        out: list[list[str]] = []
+    elif forma.get("juntar_cabecalho", True):  # cabeçalho quebrado em linhas: junta por coluna
         head = [" ".join(filter(None, col)) for col in zip(*rows[:head_n], strict=False)]
         out = [[c for c in head if c]]
     else:  # cabeçalho com células mescladas: cada linha fica como está, sem as vazias
         out = [[c for c in r if c] for r in rows[:head_n]]
+    out = [r for r in out if r]
     skip = set(forma.get("descartar_linhas") or [])
     for i, row in enumerate(rows[head_n:], start=head_n):
         if i in skip:
@@ -203,6 +210,29 @@ def shape(rows: list[list[str | None]], forma: dict[str, Any]) -> list[list[str]
         cells = [c for c in row if c]
         if cells:
             out.append(cells)
+    return out
+
+
+_VALUE = re.compile(r"^(X.*|-+|—)$")
+
+
+def _join_split_labels(rows: list[list[str]]) -> list[list[str]]:
+    """Rótulo quebrado pela extração em três linhas — "Acesso de viatura em" / valores /
+    "edificações" — volta a ser uma linha: rótulo inteiro + valores."""
+    out: list[list[str]] = []
+    i = 0
+    while i < len(rows):
+        cells = [c for c in rows[i] if c]
+        nxt = [c for c in rows[i + 1] if c] if i + 1 < len(rows) else []
+        after = [c for c in rows[i + 2] if c] if i + 2 < len(rows) else []
+        if (len(cells) == 1 and not _VALUE.match(cells[0]) and nxt
+                and all(_VALUE.match(c) for c in nxt) and len(after) == 1
+                and not _VALUE.match(after[0])):
+            out.append([f"{cells[0]} {after[0]}", *nxt])
+            i += 3
+            continue
+        out.append(rows[i])
+        i += 1
     return out
 
 

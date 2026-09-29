@@ -5,12 +5,29 @@ Gerado por `python -m tools.normas.tabelas relatorio`. Estado de cada tabela con
 | Estado | Tabelas |
 | --- | --- |
 | divergente | 3 |
-| verificada | 9 |
+| verificada | 26 |
 
 Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale como segundo caminho só até a extração geométrica (`pdfplumber`, workflow `normas-midia.yml`) rodar sobre o PDF oficial conferido por hash.
 
 | Documento | Tabela | Pág. | Estado | Caminhos | Células a decidir | Inconsistências da fonte |
 | --- | --- | --- | --- | --- | --- | --- |
+| Decreto 42/2018 | Tabela 5 | 29 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 6 | 30 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 7 | 31 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 8 | 32 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 9 | 33 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 10 | 34 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 11 | 35 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 12 | 36 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 13 | 37 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 14 | 38 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 15 | 39 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 16 | 40 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 17 | 41 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 18 | 42 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 19 | 43 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 20 | 44 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 21 | 45 | verificada | visual + texto | 0 | 0 |
 | NT 2-01 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 2 | 4 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 3 | 5 | divergente | visual + geometrica | 0 | 0 |

@@ -34,6 +34,7 @@ def _nt201_package(tmp: Path) -> Path:
     raw = yaml.safe_load((BASE / "pacote.yaml").read_text(encoding="utf-8"))
     raw["rules"] = [f"regras/{r}.yaml" for r in NT201_RULES]
     raw.pop("requirements", None)
+    raw.pop("requirements_height", None)  # Tabelas 5–21 do Decreto, ausente desta base
     raw.pop("exit_distances", None)  # cita a NT 2-08, ausente desta base
     raw.pop("classification", None)  # a tabela cita a NT 1-04, ausente desta base
     raw["coverage"] = [c for c in raw["coverage"] if c["document"] == "NT 2-01"

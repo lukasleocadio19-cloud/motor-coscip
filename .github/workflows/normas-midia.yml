@@ -47,11 +47,12 @@ jobs:
           python -m tools.normas.tabelas comparar
           python -m tools.normas.tabelas publicar
           python -m tools.normas.tabelas relatorio
+          python -m tools.normas.anexo3
           python -m tools.normas.manifesto
           python -m tools.normas.indice_itens
           cat render.log >> "$GITHUB_STEP_SUMMARY"
       - name: Testes da base
-        run: python -m pytest -p no:cacheprovider -q tests/unit/test_base_manifest.py tests/unit/test_tabelas.py tests/unit/test_skills_pack.py
+        run: python -m pytest -p no:cacheprovider -q tests/unit/test_base_manifest.py tests/unit/test_tabelas.py tests/unit/test_skills_pack.py tests/unit/test_anexo3_5_21.py
       - name: Commit na branch
         run: |
           git config user.name "github-actions[bot]"

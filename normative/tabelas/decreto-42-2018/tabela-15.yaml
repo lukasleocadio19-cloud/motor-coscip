@@ -1,0 +1,258 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 15
+titulo: Exigências para edificações do grupo G (divisões G-1 e G-2) com área superior a 900m2 ou superior
+  a 02 pavimentos.
+pagina: 39
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 9
+  - 23
+  rotulos_quebrados: true
+  linhas_cabecalho: 0
+anexo3:
+  tabela: 15
+  blocos:
+  - divisoes:
+    - G-1
+    - G-2
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026); nota
+      sobrescrita escrita como algarismo após o X ("X¹" → "X1")
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-39.jpg
+    imagem_sha256: fcbb907f0f71fdba774bd29f543f22faea87ce229c36d5ede7456f0593aac610
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Medidas de Segurança contra Incêndio e Pânico
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+    linhas:
+    - - Extintores11
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Hidrantes e mangotinhos11
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Chuveiros automáticos 11
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X1
+      - X
+    - - Sinalização de segurança 11
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Iluminação de Emergência 11
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Alarme de Incêndio 11
+      - X2
+      - X2
+      - X2
+      - X2
+      - X2
+      - X2
+    - - Detecção de Incêndio 11
+      - '-'
+      - '-'
+      - '-'
+      - X3
+      - X3
+      - X
+    - - Saídas de Emergência 11
+      - X
+      - X4
+      - X4
+      - X5
+      - X5
+      - X 5, 6, 7
+    - - Controle de fumaça 11
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X8
+    - - Hidrante urbano
+      - X9
+      - X9
+      - X9
+      - X9
+      - X9
+      - X9
+    - - Acesso de viatura em edificações
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Compartimentação Vertical 11
+      - '-'
+      - '-'
+      - '-'
+      - X10
+      - X10
+      - X10
+    - - Segurança Estrutural contra Incêndio
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Controle de Materiais de Acabamento
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF), só o corpo da tabela
+    origem:
+      pagina: 39
+      tabela_na_pagina: 1
+    linhas:
+    - - Extintores11
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Hidrantes e mangotinhos11
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Chuveiros automáticos 11
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X1
+      - X
+    - - Sinalização de segurança 11
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Iluminação de Emergência 11
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Alarme de Incêndio 11
+      - X2
+      - X2
+      - X2
+      - X2
+      - X2
+      - X2
+    - - Detecção de Incêndio 11
+      - '-'
+      - '-'
+      - '-'
+      - X3
+      - X3
+      - X
+    - - Saídas de Emergência 11
+      - X
+      - X4
+      - X4
+      - X5
+      - X5
+      - X 5, 6, 7
+    - - Controle de fumaça 11
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X8
+    - - Hidrante urbano
+      - X9
+      - X9
+      - X9
+      - X9
+      - X9
+      - X9
+    - - Acesso de viatura em edificações
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Compartimentação Vertical 11
+      - '-'
+      - '-'
+      - '-'
+      - X10
+      - X10
+      - X10
+    - - Segurança Estrutural contra Incêndio
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Controle de Materiais de Acabamento
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+  geometrica: null
+notas:
+- As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as
+  células com a nota correspondente.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
