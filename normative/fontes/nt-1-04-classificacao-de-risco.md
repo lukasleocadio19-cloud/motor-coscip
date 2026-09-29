@@ -410,6 +410,26 @@ Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arq
 |  |  | L-3 |  | Depósito de material explosivo ou munições |
 |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela do Anexo A p9 -->
+### Tabela do Anexo A — Classificação quanto à ocupação (página 9) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| I | Industrial | I-1 | Industrial 1 | Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são classificadas como Risco Médio 1 conforme Anexo B. |
+| I | Industrial | I-2 | Industrial 2 | Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são classificadas como Risco Médio 2 conforme Anexo B. |
+| I | Industrial | I-3 | Industrial 3 | Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são classificadas como Risco Grande conforme Anexo B. |
+| J | Depósito | J-1 | Depósitos de material incombustível | Edificações sem processo industrial que armazenam tijolos, pedras, areias, cimentos, metais e outros materiais incombustíveis, todos sem embalagem. |
+| J | Depósito | J-2 | Todo tipo de Depósito | Depósitos com carga de incêndio até 1.000 MJ/m², conforme Anexo C ou Anexo D. |
+| J | Depósito | J-3 | Todo tipo de Depósito | Depósitos com carga de incêndio entre 1.000 e 1.200 MJ/m², conforme Anexo C ou Anexo D. |
+| J | Depósito | J-4 | Todo tipo de Depósito | Depósitos onde a carga de incêndio ultrapassa a 1.200 MJ/m², conforme Anexo C ou Anexo D. |
+| L | Explosivos ou munições | L-1 | Comércio | Comércio em geral de fogos de artifício, munições e assemelhados |
+| L | Explosivos ou munições | L-2 | Indústria | Indústria de material explosivo ou munições |
+| L | Explosivos ou munições | L-3 | Depósito | Depósito de material explosivo ou munições |
+
+Fonte: NT 1-04, página 9, Tabela do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por") desfeita.
+<!-- /tabela-conferida: Tabela do Anexo A p9 -->
+
 ---
 
 ## Página 10

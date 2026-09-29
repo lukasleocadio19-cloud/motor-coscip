@@ -47,6 +47,12 @@ runbook `docs/runbooks/dwg-para-dxf.md`.
 ## 2. Pendências (o que ainda precisa ser feito)
 
 ### Com o analista (usuário)
+- [ ] F2: decidir as 3 tabelas `divergente` (NT 2-02 T5; NT 2-11 A.6 p. 14; Decreto T1 p. 24
+      se a grade não confirmar) e as inconsistências da fonte registradas nos `.yaml` (ex.:
+      NT 1-04 sobreposição em 1.200 MJ/m²; NT 4-05 T1 120 m × Anexo A T2 122 m acima de
+      3.785 m³; NT 3-02 duas "Tabela 2"; NT 4-05 Anexo B nota 8 que deveria ser 9).
+- [ ] F2: dizer se as Tabelas 22–32 do Anexo III (grupos J, L, M) entram no motor depois de
+      conferidas (hoje o motor usa T2–21).
 - [ ] Revisar as 5 análises na tela (`#/desenhos/<id>/analise`) e fazer nova emissão dos relatórios.
 - [ ] Confirmar as ocupações propostas: 9715 D-2 (agência bancária); 21471 e 41336 M-2 (depósito
       de GLP); 21778/21801 A-2 (apartamentos).
@@ -78,7 +84,7 @@ runbook `docs/runbooks/dwg-para-dxf.md`.
 4. **Fase 4 — motor documental mínimo** (ART, RRT, memorial, laudo, curva de bomba): upload,
    versionamento, extração e localização. Só depois disso os checks documentais do catálogo
    (`HID-DOC-001`, `HID-DOC-004`, `HID-CROSS-002`) deixam de depender de evidência sintética.
-5. **Anexo III, Tabelas 5–21**, conferindo células e notas no PDF oficial.
+5. ~~**Anexo III, Tabelas 5–21**~~ — feito no plano de correção (F4.3 e F2, seção 13).
    Mapa: `decreto-42-2018-coscip-compilado.md`, linhas ~997–2080, PDF p. 26–45.
    Na Tabela 2, **F1/F2/F3/F4/F7/F8/F10 formam UMA coluna**; não há linhas de hidrantes/alarme
    e M-2 não tem coluna. A consulta não converte essas ausências em dispensa.
@@ -179,7 +185,7 @@ pôde abrir uma branch por fase). Detalhe na seção 13.
 |---|---|---|
 | COR-F0 CI e pacote | **feito** | CI Windows+Linux (ruff, pytest, npm build, lock conferido); `requirements/*.lock` com hash; `tools/package/portatil.py` + `release.yml`; ADR 0007. Falta: proteção da `master`, teste do zip na máquina principal, SHA-256 do Python embeddable fixado |
 | COR-F1 base única | **feito** | `skills/` no repositório (9 vigentes + 8 em `transicao/`), zips pela CI, manifesto `normative/manifests/base.yaml`, índice de itens (4.738), workflow de vigência; MCP só lê `normative/fontes` |
-| COR-F2 imagens e tabelas | **parcial** | 476/476 imagens de página referenciadas presentes (renderizadas na CI pelo `normas-midia.yml`); **38 tabelas `verificada`** em dois caminhos (NT 2-01 T1–5; NT 2-08 T1 e Anexos A, B, C; NT 1-04 Anexo B p. 11–16, que agora é a fonte conferida do enquadramento do motor; Decreto T5–21; NT 3-02 T3; NT 4-05 T2–4; NT 5-05 T1 e Anexo C). Falta o resto da lista de prioridade (NT 1-04 Anexos C–D, NT 2-02, 2-11, 2-14, 2-18, 2-19). Inconsistência registrada: NT 2-08 Anexo B tem notas numeradas ¹–⁷ e observações com letras (A)–(K) Inconsistência da fonte registrada: NT 5-05 Anexo C "02 (um)" |
+| COR-F2 imagens e tabelas | **parcial** | Imagens de página renderizadas pela CI (`normas-midia.yml`). **107 tabelas `verificada`**, 3 `divergente`, 4 falsos positivos (`nao_tabela`), 38 capas, **148 `bruto`** (fora da lista de prioridade, salvo Decreto p. 1 e 46–57, NT 1-04 p. 20 e NT 2-01 p. 3). Lista de prioridade: NT 2-01 (T1–5, A1, A2), NT 2-02 (T1–4), NT 2-08 (T1, Anexos A–C), NT 1-04 (Anexos A–D), NT 2-11 (Anexos A–D), NT 2-14 (Quadros 1–2), NT 2-19 (Tabelas A–D2), NT 3-02 (T1–3, T5, Anexo A T1–4), NT 4-05 (T1–6, Anexos A, B, C, E), NT 5-05 e Decreto (Anexo II T1 p. 20–25 e Anexo III T2–21). Divergentes: NT 2-02 T5 (grade e texto fundem as linhas), NT 2-11 A.6 p. 14 (cabeçalho em outra coluna da grade), Decreto T1 p. 24 (aguarda a grade). O motor confere contra as tabelas conferidas: enquadramento (NT 1-04 Anexo B), divisões (Decreto T1) e Anexo III T2–4. Inconsistências da fonte registradas em cada `.yaml` (`inconsistencias_da_fonte`) e no `RELATORIO.md` |
 | COR-F3 skills | **feito** | correções de conteúdo, `anatomia-do-bilhete`, `protocolo-de-reducao`, `contar_bilhete.py`, `localizar_item.py` (índice), `achado.schema.json`, `verificar_links.py` verde |
 | COR-F4 normativo | **feito** | `interpretation` (critério adotado, base conferida); EXT-CAD-002 por pavimento; 5.2.4 pela área da edificação (EXT-CAD-002-EXC); EXT-CAD-004 composição 5.2.5; EXT-CAD-005 (6.7); Anexo III T5–21 por altura (`sistemas-exigidos-5-21.yaml`); pacote v6 |
 | COR-F5 reconhecimento | **feito** | camadas desligadas/congeladas/não plotáveis, MINSERT, ATTRIB, `object_key`, dedupe, balanço de reconhecimento e porta `quality.recognition.complete`; 19 testes de armadilha |
@@ -783,6 +789,22 @@ Sessão em nuvem (Linux, Python 3.12 no `.venv`, sem acesso ao site do CBMERJ: o
   número tem de ser idêntico, texto por rapidfuzz ≥ 90; estado calculado; publicação idempotente
   no `.md` com a seção antiga marcada "bruto, não usar para citação"); relatório
   `normative/tabelas/RELATORIO.md`. Estado: ver seção 3.
+  Leitura visual: `^` = mesclada com a de cima, `<` = com a da esquerda, `""` = em branco
+  (grade completa na publicação). Normalizações iguais nos dois lados: caracteres da fonte
+  Symbol (U+F0xx) → `<`, `>`, `≤`, `≥` e letras gregas; `m2` = `m²`; espaço entre letra e
+  algarismo (nota sobrescrita) não conta. Forma por caminho: `forma` (comum) e
+  `forma_geometrica` (só a grade do `pdfplumber`, que a extração regrava; ex. `faixa` das
+  Tabelas 5–21 do Anexo III, que têm uma linha vazia entre medidas); `mesclar_linhas`
+  aceita `[i, j, [colunas]]`; `celulas_verticais` (texto girado lido de trás para frente);
+  `subscrito_deslocado` (γn1 lido como "γ = 0,60 n1"); `comparar_por_coluna` (grade que parte
+  o registro em linhas de texto ou centraliza a célula mesclada: o texto de cada coluna, na
+  ordem, tem de ser igual — sem tolerância —, e o resultado registra que a extensão da
+  mescla vem só da leitura visual). Estados do manifesto: `capa` (p. 1), `nao_tabela`
+  (`normative/tabelas/nao-tabelas.yaml`, conferido na imagem). `python -m tools.normas.tabelas
+  diagnostico` imprime no log da CI o motivo de cada não verificada e a grade inteira
+  comprimida (`GEO …`), porque o artefato não baixa daqui. `anexo3.py` só lê tabela com bloco
+  `anexo3` (as T2–4 conferidas ficam fora do `sistemas-exigidos-5-21.yaml`, e a checagem das
+  T2–4 no pacote ignora o bloco conferido publicado na página).
 - **F3** — skills corrigidas (itens, remissões, estados do contrato), referências novas do
   bilhete, `skills/_comum/achado.schema.json` e `uso-do-mcp-coscip-plantas.md`,
   `tools/skills/verificar_links.py`.

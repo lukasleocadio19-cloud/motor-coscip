@@ -173,3 +173,67 @@ def test_celula_vertical_volta_a_ordem_da_leitura():
     (linha,) = tabelas.shape(grade, {"linhas_cabecalho": 0, "celulas_verticais": [[0, 0]]})
     assert linha[0] == "Entradadear"
     assert tabelas.compare_cell("Entrada de ar", linha[0])["estado"] == "verificada"
+
+
+@pytest.mark.parametrize(("arquivo", "chave"), [("tabela-02.yaml", None),
+                                                 ("tabela-03.yaml", "residential_table"),
+                                                 ("tabela-04.yaml", "grouping_table")])
+def test_engine_anexo3_tables_2_to_4_match_verified(arquivo, chave):
+    """As Tabelas 2 a 4 do Anexo III que o motor usa são as conferidas (F2), célula a célula."""
+    import yaml
+
+    base = yaml.safe_load((tabelas.ROOT / "normative" / "base" / "sistemas-exigidos.yaml")
+                          .read_text("utf-8"))
+    engine = base[chave] if chave else base
+    data = tabelas.load(tabelas.TABELAS / "decreto-42-2018" / arquivo)
+    assert data["estado"] == "verificada"
+    assert engine["source"]["pdf_sha256"] == data["fonte_pdf_sha256"]
+    verified = data["caminhos"]["visual"]["linhas"]
+    assert [m["label"] for m in engine["measures"]] == [r[0] for r in verified]
+    for m, row in zip(engine["measures"], verified, strict=True):
+        assert len(m["cells"]) == len(row) - 1, m["label"]
+        for a, b in zip(m["cells"], row[1:], strict=True):
+            assert tabelas.compare_cell(a, b)["estado"] == "verificada", (m["label"], a, b)
+
+
+def test_engine_divisions_are_those_of_decreto_tabela_1():
+    """As 60 divisões do enquadramento do motor são as da Tabela 1 do Anexo II do Decreto."""
+    import yaml
+
+    base = yaml.safe_load((tabelas.ROOT / "normative" / "base" / "enquadramento.yaml")
+                          .read_text("utf-8"))
+    decreto = set()
+    for f in sorted((tabelas.TABELAS / "decreto-42-2018").glob("tabela-01-p*.yaml")):
+        decreto |= {r[2] for r in tabelas.load(f)["caminhos"]["visual"]["linhas"][1:]}
+    assert {d["id"] for d in base["divisions"]} == decreto
+
+
+def test_mescla_parcial_move_so_as_colunas_dadas():
+    grade = [["", "", "Divisão", "Composição"], ["", "", "", "Funcionários"],
+             ["Grupo", "Uso", "", "(incluindo terceirizados)"], ["A", "Res", "A-1", "Não"]]
+    forma = {"mesclar_linhas": [[0, 2, [0, 1]], [1, 2, [3]]], "linhas_cabecalho": 3,
+             "juntar_cabecalho": False}
+    assert tabelas.shape(grade, forma) == [
+        ["Grupo", "Uso", "Divisão", "Composição"], ["Funcionários (incluindo terceirizados)"],
+        ["A", "Res", "A-1", "Não"]]
+
+
+def test_subscrito_deslocado_volta_para_depois_da_letra_grega():
+    grade = [[" =0,60 n1", " = 0,90 n1", "sem n1 aqui"]]
+    (linha,) = tabelas.shape(grade, {"linhas_cabecalho": 0, "subscrito_deslocado": ["n1"]})
+    assert linha[:2] == ["n1 =0,60", "n1 = 0,90"] and linha[2] == "sem n1 aqui"
+    assert tabelas.compare_cell("γn1 =0,60", linha[0])["estado"] == "verificada"
+
+
+def test_comparacao_por_coluna_exige_o_mesmo_texto_na_mesma_ordem():
+    visual = [["Grupo", "Divisão", "Definição"], ["I", "I-1", "Edificações industriais"],
+              ["^", "I-2", "Outras atividades"]]
+    grade = [["Grupo", "Divisão", "Definição"], [None, None, "Edificações indus-"],
+             ["I", "I-1", "triais"], [None, "I-2", "Outras atividades"]]
+    ok = tabelas.compare_by_column(visual, grade, {})
+    assert ok["estado"] == "verificada"
+    trocada = [grade[0], grade[1], [None, "I-2", "triais"], ["I", "I-1", "Outras atividades"]]
+    ruim = tabelas.compare_by_column(visual, trocada, {})
+    assert ruim["estado"] == "divergente" and ruim["celulas"][0]["coluna"] == 1
+    with pytest.raises(IndexError):  # grade com outra largura: outra tabela da página
+        tabelas.compare_by_column(visual, [["a", "b"]], {})

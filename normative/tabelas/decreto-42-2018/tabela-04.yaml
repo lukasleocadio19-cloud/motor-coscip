@@ -1,0 +1,65 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 4
+titulo: Exigências para agrupamento de edificações do grupo A
+pagina: 28
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 8
+  - 12
+  rotulos_quebrados: true
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-28.jpg
+    imagem_sha256: b8dd2e35ebb50eed02d9bce791e566c534468a5c0bd91b17eaabbd248bbec90c
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Medidas de Segurança contra Incêndio e Pânico
+    - 'A-4: até 06 casas ou lotes'
+    - 'A-4: mais de 06 casas ou lotes'
+    - 'A-5: independente do número de edificações'
+    linhas:
+    - - Hidrante urbano
+      - '-'
+      - X
+      - X
+    - - Acesso de viatura em edificações
+      - X
+      - X
+      - X
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 28
+      tabela_na_pagina: 1
+    linhas:
+    - - Hidrante urbano
+      - '-'
+      - X
+      - X
+    - - Acesso de viatura em edificações
+      - X
+      - X
+      - X
+notas:
+- Grupo A – Residencial; A-4 classificada quanto ao nº de edificações ou lotes, A-5 quanto ao nº de edificações.
+- 'Observações específicas da tabela:'
+- 1- As edificações residenciais privativas unifamiliares (A-1) que compõem o agrupamento da divisão A-4,
+  quando analisadas individualmente, ficam isentas da exigência de medidas de segurança contra incêndio
+  e pânico nos termos do artigo 4º deste Código.
+- 2- As edificações residenciais privativas multifamiliares (A-2) que compõem o agrupamento da Divisão
+  A-5, devem atender individualmente as medidas de segurança contra incêndio e pânico estabelecidas na
+  Tabela 3 para a divisão A-2.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

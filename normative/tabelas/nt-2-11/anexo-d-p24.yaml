@@ -9,6 +9,60 @@ conferida_em: '2026-09-29'
 forma:
   linhas_cabecalho: 4
   juntar_cabecalho: false
+forma_geometrica:
+  mesclar_linhas:
+  - - 0
+    - 3
+  - - 7
+    - 8
+  - - 8
+    - 9
+  - - 11
+    - 12
+  - - 12
+    - 13
+  - - 15
+    - 16
+  - - 16
+    - 17
+  - - 19
+    - 20
+  - - 20
+    - 21
+  - - 23
+    - 24
+  - - 24
+    - 25
+  - - 27
+    - 28
+  - - 28
+    - 29
+  - - 31
+    - 32
+  - - 32
+    - 33
+  - - 35
+    - 36
+  - - 36
+    - 37
+  - - 39
+    - 40
+  - - 40
+    - 41
+  - - 43
+    - 44
+  - - 44
+    - 45
+  - - 47
+    - 48
+  - - 48
+    - 49
+  - - 51
+    - 52
+  - - 52
+    - 53
+  linhas_cabecalho: 5
+  cabecalho_sem_repeticao: true
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -775,9 +829,9 @@ inconsistencias_da_fonte:
 - 'As linhas "Edificação histórica com isenção de canalização ****" estão em branco nas três faixas de
   área: a NT não diz quantos BC se exigem nesses casos.'
 - A marca "****" não é definida no quadro de observações (página 26), que só traz Obs1 a Obs8.
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -785,86 +839,3 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: divergente
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 5
-    - 1
-    - 3
-    - 1
-    - 7
-    - 1
-    - 5
-    - 1
-    - 5
-    - 1
-    - 5
-    - 1
-    - 5
-    - 1
-    - 5
-    - 1
-    - 7
-    - 1
-    - 5
-    - 1
-    - 5
-    - 1
-    - 7
-    - 1
-    - 5
-    - 1
-    - 5
-    - 1
-  - - 5
-    - 2
-    - 1
-    - 3
-    - 2
-    - 7
-    - 1
-    - 1
-    - 1
-    - 5
-    - 1
-    - 1
-    - 1
-    - 5
-    - 1
-    - 1
-    - 1
-    - 5
-    - 1
-    - 1
-    - 1
-    - 5
-    - 1
-    - 1
-    - 1
-    - 5
-    - 1
-    - 1
-    - 1
-    - 7
-    - 1
-    - 1
-    - 1
-    - 5
-    - 1
-    - 1
-    - 1
-    - 5
-    - 1
-    - 1
-    - 1
-    - 7
-    - 1
-    - 1
-    - 1
-    - 5
-    - 1
-    - 1
-    - 1
-    - 5
-    - 1
-    - 1
-    - 1

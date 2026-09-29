@@ -779,6 +779,18 @@ Limites de aplicação da equação D3: 0,025 ≤ Av/Af ≤ 0,50 Onde: H - altur
 | 1,0 | Normal | Bibliotecas, cinemas, correios, consultórios médicos, escritórios, farmácias, frigoríficos, hotéis, livrarias, hospitais, laboratórios fotográficos, indústrias de papel, oficinas elétricas ou mecânicas, residências, restaurantes, teatros, depósitos em geral |
 | 1,2 | Média | Montagens de automóveis, hangares, indústrias mecânicas |
 | 1,5 | Alta | Laboratórios químicos, oficinas de pintura de automóveis |
+<!-- tabela-conferida: Tabela D1 p12 -->
+### Tabela D1 — Fatores de ponderação das medidas de segurança contra incêndio (conferida)
+
+| Existência de chuveiros automáticos | Brigada contra incêndio | Existência de detecção automática |
+| --- | --- | --- |
+| γn1 =0,60 | γn1 = 0,90 | γn1 =0,90 |
+
+Fonte: NT 2-19, página 12, Tabela D1; conferida em 2026-09-29 (visual + geometrica).
+Anexo D da NT 2-19 (redução do TRRF, equação D1). Na ausência do meio de proteção, o respectivo γn = 1.
+Divergência técnica nas células de valor: a camada de texto perde o γ (fonte Symbol) e desloca o índice "n1" para depois do número ("γ =0,60 n1"); a ordem dos números muda e a comparação não aceita. Valores lidos na imagem: 0,60 (chuveiros), 0,90 (brigada), 0,90 (detecção). Aguarda o caminho geométrico.
+<!-- /tabela-conferida: Tabela D1 p12 -->
+
 <!-- tabela-conferida: Tabela D2 p12 -->
 ### Tabela D2 — Risco de ativação (conferida)
 

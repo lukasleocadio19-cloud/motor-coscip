@@ -1,0 +1,161 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 1 do Anexo II
+titulo: Classificação das edificações e áreas de risco quanto à ocupação
+pagina: 20
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-20.jpg
+    imagem_sha256: 1cdfb1ab92e834ff4a36c7580b710a45318b1fdfc3473ae1363b19040837a1fa
+    linhas_cabecalho: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Definição e exemplos
+    - - A
+      - Residencial
+      - A-1
+      - Residencial privativa unifamiliar
+      - Casas térreas ou assobradadas (isoladas e não isoladas)
+    - - ^
+      - ^
+      - A-2
+      - Residencial privativa multifamiliar
+      - Edifícios de apartamento em geral
+    - - ^
+      - ^
+      - A-3
+      - Residencial coletiva
+      - Pensionatos, internatos, orfanatos, alojamentos, mosteiros, conventos.
+    - - ^
+      - ^
+      - A-4
+      - Agrupamento residencial privativo unifamiliar
+      - Conjunto de duas ou mais edificações residenciais privativas unifamiliares dentro de um lote.
+    - - ^
+      - ^
+      - A-5
+      - Agrupamento residencial privativo multifamiliar
+      - Conjunto de duas ou mais edificações residenciais privativas multifamiliares dentro de um lote.
+    - - ^
+      - ^
+      - A-6
+      - Mista
+      - Edificação composta de unidades residenciais privativas (apartamentos) e unidades autônomas destinadas
+        a espaços comerciais (lojas ou salas).
+    - - B
+      - Serviço de hospedagem
+      - B-1
+      - Hotel e assemelhados
+      - Hotéis, motéis, pensões, hospedarias, pousadas, albergues, casas de cômodos, camping.
+    - - ^
+      - ^
+      - B-2
+      - Hotel residencial
+      - Hotéis e assemelhados com cozinha própria nos apartamentos (incluem-se, flats, apart-hotel, hotel
+        residência, e similares destinados a ocupação transitória)
+    - - C
+      - Comercial
+      - C-1
+      - Comercial 1
+      - 'Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio
+        1 conforme Nota Técnica específica, tais como: artigos de metal, louças, artigos hospitalares,
+        edifícios de lojas de departamentos, magazines, armarinhos, galerias comerciais, supermercados
+        em geral, mercados e outros.'
+    - - ^
+      - ^
+      - C-2
+      - Comercial 2
+      - 'Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio
+        2 conforme Nota Técnica específica, tais como: comércio atacadista de produtos químicos e petroquímicos,
+        de resíduos de papel e papelão, espuma e isopor, etc.'
+    - - ^
+      - ^
+      - C-3
+      - Shopping centers
+      - Centro de compras em geral (shopping centers)
+    - - ^
+      - ^
+      - C-4
+      - Quiosque
+      - Ponto de venda localizado no mall de centro comercial e de centro de compras em geral (shopping
+        centers)
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 20
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Definição e exemplos
+    - - A
+      - Residencial
+      - A-1
+      - Residencial privativa unifamiliar
+      - Casas térreas ou assobradadas (isoladas e não isoladas)
+    - - A-2
+      - Residencial privativa multifamiliar
+      - Edifícios de apartamento em geral
+    - - A-3
+      - Residencial coletiva
+      - Pensionatos, internatos, orfanatos, alojamentos, mosteiros, conventos.
+    - - A-4
+      - Agrupamento residencial privativo unifamiliar
+      - Conjunto de duas ou mais edificações residenciais privativas unifamiliares dentro de um lote.
+    - - A-5
+      - Agrupamento residencial privativo multifamiliar
+      - Conjunto de duas ou mais edificações residenciais privativas multifamiliares dentro de um lote.
+    - - A-6
+      - Mista
+      - Edificação composta de unidades residenciais privativas (apartamentos) e unidades autônomas destinadas
+        a espaços comerciais (lojas ou salas).
+    - - B
+      - Serviço de hospedagem
+      - B-1
+      - Hotel e assemelhados
+      - Hotéis, motéis, pensões, hospedarias, pousadas, albergues, casas de cômodos, camping.
+    - - B-2
+      - Hotel residencial
+      - Hotéis e assemelhados com cozinha própria nos apartamentos (incluem-se, flats, apart-hotel, hotel
+        residência, e similares destinados a ocupação transitória)
+    - - C
+      - Comercial
+      - C-1
+      - Comercial 1
+      - 'Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio
+        1 conforme Nota Técnica específica, tais como: artigos de metal, louças, artigos hospitalares,
+        edifícios de lojas de departamentos, magazines, armarinhos, galerias comerciais, supermercados
+        em geral, mercados e outros.'
+    - - C-2
+      - Comercial 2
+      - 'Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio
+        2 conforme Nota Técnica específica, tais como: comércio atacadista de produtos químicos e petroquímicos,
+        de resíduos de papel e papelão, espuma e isopor, etc.'
+    - - C-3
+      - Shopping centers
+      - Centro de compras em geral (shopping centers)
+    - - C-4
+      - Quiosque
+      - Ponto de venda localizado no mall de centro comercial e de centro de compras em geral (shopping
+        centers)
+notas:
+- Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

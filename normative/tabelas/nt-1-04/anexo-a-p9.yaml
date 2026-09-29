@@ -8,6 +8,8 @@ fonte_pdf_sha256: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e75
 conferida_em: '2026-09-29'
 forma:
   linhas_cabecalho: 1
+forma_geometrica:
+  comparar_por_coluna: true
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -371,63 +373,15 @@ notas:
 - Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula
   mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por")
   desfeita.
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
   candidato_geometrico: 0
   candidatos_na_pagina: 1
   bbox: *id001
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
   texto: divergente
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 5
-    - 5
-    - 3
-    - 3
-    - 5
-    - 3
-    - 3
-    - 3
-    - 5
-    - 3
-    - 3
-  - - 2
-    - 3
-    - 3
-    - 1
-    - 1
-    - 1
-    - 1
-    - 2
-    - 1
-    - 2
-    - 1
-    - 1
-    - 2
-    - 1
-    - 1
-    - 1
-    - 1
-    - 3
-    - 1
-    - 1
-    - 1
-    - 1
-    - 2
-    - 1
-    - 2
-    - 2
-    - 1
-    - 1
-    - 2
-    - 1
-    - 1
-    - 2
-    - 1
-    - 1
-    - 5
-    - 1
-    - 2

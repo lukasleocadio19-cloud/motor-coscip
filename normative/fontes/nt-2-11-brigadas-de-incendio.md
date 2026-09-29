@@ -1069,6 +1069,47 @@ Segunda parte da Tabela 1 do Anexo B.
 |  |  |  | Edificação histórica com isenção de | 2 |  | 10% da população fixa*** |
 |  |  |  | canalização **** |  |  |  |
 
+<!-- tabela-conferida: Tabela do Anexo C p17 -->
+### Tabela do Anexo C — Dimensionamento para brigadista voluntário de incêndio (BVI), página 17 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BVI — 1 a 20 funcionários por turno | BVI — acima de 20 funcionários por turno |
+| --- | --- | --- | --- | --- | --- |
+| A | Residencial | A-1 | Residencial privativa unifamiliar | Não exigível | Não exigível |
+| A | Residencial | A-1 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| A | Residencial | A-2 | Residencial privativa multifamiliar | Não exigível | Não exigível |
+| A | Residencial | A-2 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| A | Residencial | A-3 | Residencial coletiva | Não exigível | Não exigível |
+| A | Residencial | A-3 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| A | Residencial | A-4 | Agrupamento residencial privativa unifamiliar | Não exigível | Não exigível |
+| A | Residencial | A-4 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| A | Residencial | A-5 | Agrupamento residencial privativa multifamiliar | 1 | 10 % da população fixa*** |
+| A | Residencial | A-5 | Edificação histórica com isenção de canalização **** | 1 | 10 % da população fixa*** |
+| B | Serviços de hospedagem | B-1 | Residencial transitório | 2 | 10% da população fixa*** |
+| B | Serviços de hospedagem | B-1 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| B | Serviços de hospedagem | B-2 | Residencial com serviço | 2 | 10% da população fixa*** |
+| B | Serviços de hospedagem | B-2 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| C | Comercial | C-1 | Comercial 1 | Não exigível | Não exigível |
+| C | Comercial | C-1 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| C | Comercial | C-2 | Comercial 2 | 2 | 10% da população fixa*** |
+| C | Comercial | C-2 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| C | Comercial | C-3 | Shopping centers | 2 | 10% da população fixa*** |
+| C | Comercial | C-3 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| D | Serviço profissional e institucional | D-1 | Local para prestação de serviço profissional ou condução de negócios | Não exigível | Não exigível |
+| D | Serviço profissional e institucional | D-1 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| D | Serviço profissional e institucional | D-2 | Clínica médica e laboratório de análises técnicas | Não exigível | Não exigível |
+| D | Serviço profissional e institucional | D-2 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| D | Serviço profissional e institucional | D-3 | Serviços de manutenção e reparação (exceto os classificados em G-5) | Não exigível | Não exigível |
+| D | Serviço profissional e institucional | D-3 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| D | Serviço profissional e institucional | D-4 | Edificação pública | 2 | 10% da população fixa*** |
+| D | Serviço profissional e institucional | D-4 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| D | Serviço profissional e institucional | D-5 | Edificações destinadas à restrição de liberdade | 2 | 10% da população fixa*** |
+| D | Serviço profissional e institucional | D-5 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+
+Fonte: NT 2-11, página 17, Tabela do Anexo C; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<" = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas "Edificação histórica…" em fundo amarelo na imagem.
+Divergência técnica, não de conteúdo conhecido: a camada de texto quebra os rótulos longos em linhas e o pdfplumber separa as células de várias linhas (e reposiciona as mescladas do cabeçalho). A leitura visual não tem segundo caminho independente: conferir na imagem antes de usar.
+<!-- /tabela-conferida: Tabela do Anexo C p17 -->
+
 ---
 
 ## Página 18
@@ -1115,6 +1156,46 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  | F-11 | Centro de exibição | 2 | 10% da população fixa*** |
 |  |  |  | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
 
+<!-- tabela-conferida: Tabela do Anexo C p18 -->
+### Tabela do Anexo C — Dimensionamento para brigadista voluntário de incêndio (BVI), página 18 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BVI — 1 a 20 funcionários por turno | BVI — acima de 20 funcionários por turno |
+| --- | --- | --- | --- | --- | --- |
+| E | Escolar e cultura física | E-1 | Escolar em geral | 2 | 10% da população fixa*** |
+| E | Escolar e cultura física | E-1 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| E | Escolar e cultura física | E-2 | Escolar especial | Não exigível | Não exigível |
+| E | Escolar e cultura física | E-2 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| E | Escolar e cultura física | E-3 | Espaço para cultura física | Não exigível | Não exigível |
+| E | Escolar e cultura física | E-3 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| E | Escolar e cultura física | E-4 | Escola para portadores de deficiências | 2 | 10% da população fixa*** |
+| E | Escolar e cultura física | E-4 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-1 | Local onde há objeto de valor inestimável | 2 | 30% da população fixa*** |
+| F | Local de Reunião de Público | F-1 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-2 | Local religioso e velório | Não exigível | Não exigível |
+| F | Local de Reunião de Público | F-2 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| F | Local de Reunião de Público | F-3 | Centro esportivo | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-3 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-4 | Estação e terminal de passageiro | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-4 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-5 | Arte cênica e auditório | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-5 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-6 | Local de Diversões Públicas | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-6 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-7 | Instalações temporárias | Vide NT 5-04 | Vide NT 5-04 |
+| F | Local de Reunião de Público | F-8 | Local para refeição | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-8 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-9 | Recreação pública | Não exigível | Não exigível |
+| F | Local de Reunião de Público | F-9 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| F | Local de Reunião de Público | F-10 | Exposição de objetos ou animais | Não exigível | Não exigível |
+| F | Local de Reunião de Público | F-10 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| F | Local de Reunião de Público | F-11 | Centro de exibição | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-11 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+
+Fonte: NT 2-11, página 18, Tabela do Anexo C; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<" = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas "Edificação histórica…" em fundo amarelo na imagem.
+Divergência técnica, não de conteúdo conhecido: a camada de texto quebra os rótulos longos em linhas e o pdfplumber separa as células de várias linhas (e reposiciona as mescladas do cabeçalho). A leitura visual não tem segundo caminho independente: conferir na imagem antes de usar.
+<!-- /tabela-conferida: Tabela do Anexo C p18 -->
+
 ---
 
 ## Página 19
@@ -1157,6 +1238,41 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  | I-3 | Industrial 3 |  | 2 |  | 10% da população fixa*** |
 |  |  |  | Edificação histórica com isenção de canalização **** |  | 2 |  | 10% da população fixa*** |
 
+<!-- tabela-conferida: Tabela do Anexo C p19 -->
+### Tabela do Anexo C — Dimensionamento para brigadista voluntário de incêndio (BVI), página 19 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BVI — 1 a 20 funcionários por turno | BVI — acima de 20 funcionários por turno |
+| --- | --- | --- | --- | --- | --- |
+| G | Serviço automotivo e assemelhado | G-1 | Garagem sem acesso de público | Não exigível | Não exigível |
+| G | Serviço automotivo e assemelhado | G-1 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| G | Serviço automotivo e assemelhado | G-2 | Garagem com acesso de público | Não exigível | Não exigível |
+| G | Serviço automotivo e assemelhado | G-2 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| G | Serviço automotivo e assemelhado | G-3 | Galpão garagem | Não exigível | Não exigível |
+| G | Serviço automotivo e assemelhado | G-3 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| G | Serviço automotivo e assemelhado | G-4 | Postos de combustível | 2 | 10% da população fixa*** |
+| G | Serviço automotivo e assemelhado | G-4 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| G | Serviço automotivo e assemelhado | G-5 | Serviço de conservação, manutenção e reparos | 2 | 10% da população fixa*** |
+| G | Serviço automotivo e assemelhado | G-5 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| G | Serviço automotivo e assemelhado | G-6 | Hangares | 2 | 10% da população fixa*** |
+| G | Serviço automotivo e assemelhado | G-6 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| H | Serviço de saúde | H-1 | Hospital e assemelhado | 2 | 10% da população fixa*** |
+| H | Serviço de saúde | H-1 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| H | Serviço de saúde | H-2 | Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais | 2 | 10% da população fixa*** |
+| H | Serviço de saúde | H-2 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| H | Serviço de saúde | H-3 | Hospital veterinário e assemelhados | 2 | 10% da população fixa*** |
+| H | Serviço de saúde | H-3 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| I | Industrial | I-1 | Industrial 1 | 2 | 10% da população fixa*** |
+| I | Industrial | I-1 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| I | Industrial | I-2 | Industrial 2 | 2 | 10% da população fixa*** |
+| I | Industrial | I-2 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| I | Industrial | I-3 | Industrial 3 | 2 | 10% da população fixa*** |
+| I | Industrial | I-3 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+
+Fonte: NT 2-11, página 19, Tabela do Anexo C; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<" = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas "Edificação histórica…" em fundo amarelo na imagem.
+Divergência técnica, não de conteúdo conhecido: a camada de texto quebra os rótulos longos em linhas e o pdfplumber separa as células de várias linhas (e reposiciona as mescladas do cabeçalho). A leitura visual não tem segundo caminho independente: conferir na imagem antes de usar.
+<!-- /tabela-conferida: Tabela do Anexo C p19 -->
+
 ---
 
 ## Página 20
@@ -1196,6 +1312,39 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  | M-4 | Loteamento e Pátios | Não exigível |  |
 |  |  |  | Edificação histórica com isenção de canalização **** | Não exigível |  |
 
+<!-- tabela-conferida: Tabela do Anexo C p20 -->
+### Tabela do Anexo C — Dimensionamento para brigadista voluntário de incêndio (BVI), página 20 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BVI — 1 a 20 funcionários por turno | BVI — acima de 20 funcionários por turno |
+| --- | --- | --- | --- | --- | --- |
+| J | Depósito | J-1 | Depósitos de material incombustível | 2 | 10% da população fixa*** |
+| J | Depósito | J-1 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| J | Depósito | J-2 | Todo tipo de Depósito | 2 | 10% da população fixa*** |
+| J | Depósito | J-2 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| J | Depósito | J-3 | Todo tipo de Depósito | 2 | 10% da população fixa*** |
+| J | Depósito | J-3 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| J | Depósito | J-4 | Todo tipo de Depósito | 2 | 10% da população fixa*** |
+| J | Depósito | J-4 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| L | Explosivos ou munições | L-1 | Comércio | 2 | 10% da população fixa*** |
+| L | Explosivos ou munições | L-1 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| L | Explosivos ou munições | L-2 | Indústria | 2 | 10% da população fixa*** |
+| L | Explosivos ou munições | L-2 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| L | Explosivos ou munições | L-3 | Depósito | 2 | 10% da população fixa*** |
+| L | Explosivos ou munições | L-3 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| M | Especial | M-1 | Túnel | Não exigível | Não exigível |
+| M | Especial | M-1 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| M | Especial | M-2 | Líquidos ou gases inflamáveis ou combustíveis | 2 | 10% da população fixa*** |
+| M | Especial | M-2 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| M | Especial | M-3 | Central de comunicação e energia | 2 | 10% da população fixa*** |
+| M | Especial | M-3 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| M | Especial | M-4 | Loteamento e Pátios | Não exigível | Não exigível |
+| M | Especial | M-4 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+
+Fonte: NT 2-11, página 20, Tabela do Anexo C; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<" = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas "Edificação histórica…" em fundo amarelo na imagem.
+Divergência técnica, não de conteúdo conhecido: a camada de texto quebra os rótulos longos em linhas e o pdfplumber separa as células de várias linhas (e reposiciona as mescladas do cabeçalho). A leitura visual não tem segundo caminho independente: conferir na imagem antes de usar.
+<!-- /tabela-conferida: Tabela do Anexo C p20 -->
+
 ---
 
 ## Página 21
@@ -1224,6 +1373,28 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  |  |  |  |  |
 | * No eventual afastamento do funcionário que exerça a função de BVI, os responsáveis pelos imóveis, estabelecimentos ou áreas de risco deverão designar substituto devidamente capacitado como BVI. |  |  |  |  |  |
 | *** Para efeito do resultado do cálculo deverá ser utilizada a regra do arredondamento. Exemplo 1: nº de funcionários 23 x 0,10 = 2,3 BVI. Para efeito de aplicação prática será considerado o quantitativo de 2 BVI. Exemplo 2: nº de funcionários 37 x 0,10 = 3,7 BVI. Para efeito de aplicação prática será considerado o quantitativo de 3 BVI. Exemplo 3: nº de funcionários 65 x 0,10 = 6,5 BVI. Para efeito de aplicação prática será considerado o quantitativo de 6 BVI. Por conveniência e decisão do Plano de Emergência predial esse percentual poderá ser superado, se houver acordo entre o profissional responsável pelo plano e o proprietário. |  |  |  |  |  |
+
+<!-- tabela-conferida: Tabela do Anexo C p21 -->
+### Tabela do Anexo C — Dimensionamento para brigadista voluntário de incêndio (BVI), página 21 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BVI — 1 a 20 funcionários por turno | BVI — acima de 20 funcionários por turno |
+| --- | --- | --- | --- | --- | --- |
+| M | Especial | M-5 | Silos | 2 | 10% da população fixa*** |
+| M | Especial | M-5 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| M | Especial | M-6 | Estrutura temporária | Vide NT 5-04 | Vide NT 5-04 |
+| M | Especial | M-6 | Edificação histórica com isenção de canalização **** | Vide NT 5-04 | Vide NT 5-04 |
+| M | Especial | M-7 | Edificação mista | Não exigível | Não exigível |
+| M | Especial | M-7 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| M | Especial | M-8 | Quiosque | Não exigível | Não exigível |
+| M | Especial | M-8 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| M | Especial | M-9 | Áreas e atividades de exploração de recursos naturais | Não exigível | Não exigível |
+| M | Especial | M-9 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+
+Fonte: NT 2-11, página 21, Tabela do Anexo C; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<" = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas "Edificação histórica…" em fundo amarelo na imagem.
+Quadro de notas abaixo da tabela (fora da comparação): "*" substituto capacitado no afastamento do BVI; "***" cálculo pela regra do arredondamento, com exemplos; o percentual pode ser superado por decisão do Plano de Emergência.
+Divergência técnica, não de conteúdo conhecido: a camada de texto quebra os rótulos longos em linhas e o pdfplumber separa as células de várias linhas (e reposiciona as mescladas do cabeçalho). A leitura visual não tem segundo caminho independente: conferir na imagem antes de usar.
+<!-- /tabela-conferida: Tabela do Anexo C p21 -->
 
 ---
 
@@ -1274,6 +1445,46 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  |  | Edificação histórica com isenção de canalização **** |  |  |  |
 |  |  | D-5 | Edificações destinadas à restrição de liberdade, | Obs6 |  |  |
 |  |  |  | Edificação histórica com isenção de canalização **** |  |  |  |
+
+<!-- tabela-conferida: Tabela do Anexo D p22 -->
+### Tabela do Anexo D — Dimensionamento para bombeiro civil (BC), página 22 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BC — 5.000 a 10.000 m² | BC — 10.000 a 30.000 m² | BC — acima de 30.000 m² |
+| --- | --- | --- | --- | --- | --- | --- |
+| A | Residencial | A-1 | Residencial privativa unifamiliar | Não exigível | Não exigível | Não exigível |
+| A | Residencial | A-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| A | Residencial | A-2 | Residencial privativa multifamiliar | Não exigível | Não exigível | Não exigível |
+| A | Residencial | A-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| A | Residencial | A-3 | Residencial coletiva | Não exigível | Não exigível | Obs1 |
+| A | Residencial | A-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| A | Residencial | A-4 | Agrupamento residencial privativa unifamiliar | Não exigível | Não exigível | Não exigível |
+| A | Residencial | A-4 | Edificação histórica com isenção de canalização **** |  |  |  |
+| A | Residencial | A-5 | Agrupamento residencial privativa multifamiliar | Não exigível | Não exigível | Obs1 |
+| A | Residencial | A-5 | Edificação histórica com isenção de canalização **** |  |  |  |
+| B | Serviços de hospedagem | B-1 | Residencial transitório | Não exigível | 1 | Obs3 |
+| B | Serviços de hospedagem | B-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| B | Serviços de hospedagem | B-2 | Residencial com serviço | Não exigível | 1 | Obs3 |
+| B | Serviços de hospedagem | B-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| C | Comercial | C-1 | Comercial 1 | Não exigível | 1 | Obs3 |
+| C | Comercial | C-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| C | Comercial | C-2 | Comercial 2 | 1 | 1 | Obs3 |
+| C | Comercial | C-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| C | Comercial | C-3 | Shopping centers | Não exigível | 1 | Obs2 |
+| C | Comercial | C-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| D | Serviço profissional e institucional | D-1 | Local para prestação de serviço profissional ou condução de negócios | Não exigível | 1 | Obs3 |
+| D | Serviço profissional e institucional | D-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| D | Serviço profissional e institucional | D-2 | Clínica médica e laboratório de análises técnicas | Não exigível | 1 | Obs3 |
+| D | Serviço profissional e institucional | D-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| D | Serviço profissional e institucional | D-3 | Serviços de manutenção e reparação (exceto os classificados em G-5) | Não exigível | 1 | Obs3 |
+| D | Serviço profissional e institucional | D-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| D | Serviço profissional e institucional | D-4 | Laboratórios de análises clínicas e assemelhados | Não exigível | 1 | Obs3 |
+| D | Serviço profissional e institucional | D-4 | Edificação histórica com isenção de canalização **** |  |  |  |
+| D | Serviço profissional e institucional | D-5 | Edificações destinadas à restrição de liberdade, | Obs6 | Obs6 | Obs6 |
+| D | Serviço profissional e institucional | D-5 | Edificação histórica com isenção de canalização **** |  |  |  |
+
+Fonte: NT 2-11, página 22, Tabela do Anexo D; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.: "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação histórica…" (fundo amarelo) não trazem valor em nenhuma faixa.
+<!-- /tabela-conferida: Tabela do Anexo D p22 -->
 
 ---
 
@@ -1429,6 +1640,41 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  |  | isenção de canalização |  |  |  |  |
 |  |  |  | **** |  |  |  |  |
 
+<!-- tabela-conferida: Tabela do Anexo D p24 -->
+### Tabela do Anexo D — Dimensionamento para bombeiro civil (BC), página 24 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BC — 5.000 a 10.000 m² | BC — 10.000 a 30.000 m² | BC — acima de 30.000 m² |
+| --- | --- | --- | --- | --- | --- | --- |
+| G | Serviço automotivo e assemelhado | G-1 | Garagem sem acesso de público | Não exigível | 1 | Obs4 |
+| G | Serviço automotivo e assemelhado | G-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| G | Serviço automotivo e assemelhado | G-2 | Garagem com acesso de público | Não exigível | 1 | Obs4 |
+| G | Serviço automotivo e assemelhado | G-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| G | Serviço automotivo e assemelhado | G-3 | Galpão garagem | Não exigível | 1 | Obs3 |
+| G | Serviço automotivo e assemelhado | G-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| G | Serviço automotivo e assemelhado | G-4 | Postos de combustível | Não exigível | 1 | Obs4 |
+| G | Serviço automotivo e assemelhado | G-4 | Edificação histórica com isenção de canalização **** |  |  |  |
+| G | Serviço automotivo e assemelhado | G-5 | Serviço de conservação, manutenção e reparos | Não exigível | 1 | Obs4 |
+| G | Serviço automotivo e assemelhado | G-5 | Edificação histórica com isenção de canalização **** |  |  |  |
+| G | Serviço automotivo e assemelhado | G-6 | Hangares | Não exigível | 1 | Obs5 |
+| G | Serviço automotivo e assemelhado | G-6 | Edificação histórica com isenção de canalização **** |  |  |  |
+| H | Serviço de saúde | H-1 | Hospital e assemelhado | 1 | 1 | Obs3 |
+| H | Serviço de saúde | H-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| H | Serviço de saúde | H-2 | Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais | Não exigível | 1 | Obs3 |
+| H | Serviço de saúde | H-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| H | Serviço de saúde | H-3 | Hospital veterinário e assemelhados | Não exigível | 1 | Obs4 |
+| H | Serviço de saúde | H-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| I | Industrial | I-1 | Industrial 1 | Não exigível | Não exigível | Obs4 |
+| I | Industrial | I-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| I | Industrial | I-2 | Industrial 2 | Não exigível | 1 | Obs4 |
+| I | Industrial | I-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| I | Industrial | I-3 | Industrial 3 | 1 | 2 | Obs3 |
+| I | Industrial | I-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+
+Fonte: NT 2-11, página 24, Tabela do Anexo D; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.: "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação histórica…" (fundo amarelo) não trazem valor em nenhuma faixa.
+Contra a camada de texto: "****" e o cabeçalho quebram em linhas extras (divergência de forma). Aguarda o caminho geométrico.
+<!-- /tabela-conferida: Tabela do Anexo D p24 -->
+
 ---
 
 ## Página 25
@@ -1547,3 +1793,25 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  | - No eventual afastamento do funcionário que exerça a função de BC, os responsáveis pelos imóveis, estabelecimentos ou áreas de risco |  |  |  |  |  |  |  |  |  |  |  |  |  |
 |  | deverão designar substituto devidamente capacitado como BC. |  |  |  |  |  |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+<!-- tabela-conferida: Tabela do Anexo D p26 -->
+### Tabela do Anexo D — Dimensionamento para bombeiro civil (BC), página 26 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BC — 5.000 a 10.000 m² | BC — 10.000 a 30.000 m² | BC — acima de 30.000 m² |
+| --- | --- | --- | --- | --- | --- | --- |
+| M | Especial | M-5 | Silos | Não exigível | Não exigível | Obs7 |
+| M | Especial | M-5 | Edificação histórica com isenção de canalização **** |  |  |  |
+| M | Especial | M-6 | Estrutura temporária | Vide NT 5-04 | Vide NT 5-04 | Vide NT 5-04 |
+| M | Especial | M-6 | Edificação histórica com isenção de canalização **** |  |  |  |
+| M | Especial | M-7 | Edificação mista | Não exigível | Não exigível | Não exigível |
+| M | Especial | M-7 | Edificação histórica com isenção de canalização **** |  |  |  |
+| M | Especial | M-8 | Quiosque | Não exigível | Não exigível | Não exigível |
+| M | Especial | M-8 | Edificação histórica com isenção de canalização **** |  |  |  |
+| M | Especial | M-9 | Áreas e atividades de exploração de recursos naturais | Não exigível | Não exigível | Não exigível |
+| M | Especial | M-9 | Edificação histórica com isenção de canalização **** |  |  |  |
+
+Fonte: NT 2-11, página 26, Tabela do Anexo D; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.: "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação histórica…" (fundo amarelo) não trazem valor em nenhuma faixa.
+Quadro de observações abaixo da tabela (fora da comparação): Obs1 a Obs8 (acréscimo de 1 BC por faixa de área; D-5 com treinamento de brigada voluntária), máximo de 08 BC salvo decisão do plano de emergência, substituto no afastamento.
+Contra a camada de texto: "****" e o cabeçalho quebram em linhas extras (divergência de forma). Aguarda o caminho geométrico.
+<!-- /tabela-conferida: Tabela do Anexo D p26 -->
+

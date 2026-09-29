@@ -505,3 +505,49 @@ Fonte: NFPA 10.
 |  | Portátil | 3 l | K |
 | Agente Classe K |  | 6 l | K |
 |  |  | 10 l | K |
+<!-- tabela-conferida: Tabela A1 p6 -->
+### Tabela A1 — Classificação dos extintores segundo o agente extintor, carga nominal e capacidade extintora equivalente – Classes A, B e C (conferida)
+
+| Agente Extintor | Classificação | Modelo | Classe A | Classe B | Classe C |
+| --- | --- | --- | --- | --- | --- |
+| Água Pressurizada | Portátil | 10 l | 2-A | - | - |
+| Água Pressurizada | Sobre Rodas | 75 l | 10-A | - | - |
+| Água Pressurizada | Sobre Rodas | 150 l | 20-A | - | - |
+| Espuma Mecânica | Portátil | 9 l | 2-A | 10-B | - |
+| Gás Carbônico (CO₂) | Portátil | 4 Kg | - | 2-B | C |
+| Gás Carbônico (CO₂) | Portátil | 6 kg | - | 2-B | C |
+| Gás Carbônico (CO₂) | Sobre Rodas | 10 kg | - | 5-B | C |
+| Gás Carbônico (CO₂) | Sobre Rodas | 25 kg | - | 10-B | C |
+| Gás Carbônico (CO₂) | Sobre Rodas | 30 kg | - | 10-B | C |
+| Gás Carbônico (CO₂) | Sobre Rodas | 50 kg | - | 10-B | C |
+| PQS (Bicarbonato de Sódio) | Portátil | 4 kg | - | 10-B | C |
+| PQS (Bicarbonato de Sódio) | Portátil | 6 kg | - | 10-B | C |
+| PQS (Bicarbonato de Sódio) | Portátil | 8 kg | - | 10-B | C |
+| PQS (Bicarbonato de Sódio) | Portátil | 12 kg |  | 20-B | C |
+| PQS (Bicarbonato de Sódio) | Sobre Rodas | 20 kg | - | 20-B | C |
+| PQS (Bicarbonato de Sódio) | Sobre Rodas | 50 kg | - | 30-B | C |
+| PQS (Bicarbonato de Sódio) | Sobre Rodas | 100 kg |  | 40-B | C |
+| ABC (Fosfato Monoamônico) | Portátil | 4 kg | 2-A | 20-B | C |
+| ABC (Fosfato Monoamônico) | Portátil | 6 kg | 3-A | 20-B | C |
+| ABC (Fosfato Monoamônico) | Portátil | 8 kg | 4-A | 30-B | C |
+| ABC (Fosfato Monoamônico) | Portátil | 12 kg | 6-A | 30-B | C |
+| Halogenado | Portátil | 3 kg | - | 5-B | C |
+| Halogenado | Portátil | 6 kg | 1-A | 10-B | C |
+
+Fonte: NT 2-01, página 6, Tabela A1; conferida em 2026-09-29 (visual + geometrica).
+"^" = mesclada com a de cima (agente e classificação). Observação da tabela: pode ser usada para estimar a capacidade extintora equivalente de extintores antigos, sem capacidade declarada pelo fabricante. Fonte indicada: CBMERJ e NBR 12693.
+<!-- /tabela-conferida: Tabela A1 p6 -->
+
+<!-- tabela-conferida: Tabela A2 p6 -->
+### Tabela A2 — Extintores Classe K (conferida)
+
+| Agente Extintor | Classificação | Modelo | Classe K |
+| --- | --- | --- | --- |
+| Agente Classe K | Portátil | 3 l | K |
+| Agente Classe K | Portátil | 6 l | K |
+| Agente Classe K | Portátil | 10 l | K |
+
+Fonte: NT 2-01, página 6, Tabela A2; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada: NFPA 10.
+<!-- /tabela-conferida: Tabela A2 p6 -->
+

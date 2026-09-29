@@ -9,6 +9,14 @@ conferida_em: '2026-09-29'
 forma:
   linhas_cabecalho: 4
   juntar_cabecalho: false
+forma_geometrica:
+  faixa:
+  - 0
+  - 15
+  mesclar_linhas:
+  - - 2
+    - 3
+  cabecalho_sem_repeticao: true
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -721,58 +729,13 @@ inconsistencias_da_fonte:
 - Obs7 cita "Edificações da divisão G3 e I1", mas só a linha M-5 (Silos) remete à Obs7; G-3 remete à Obs3
   e I-1 à Obs4.
 - Obs1 e Obs7/Obs8 usam "pegarão" e "ATC construída acima de 30.000" sem unidade (m²).
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
   candidato_geometrico: 0
-  candidatos_na_pagina: 6
+  candidatos_na_pagina: 1
   bbox: *id001
   texto: divergente
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 5
-    - 1
-    - 3
-    - 1
-    - 7
-    - 1
-    - 3
-    - 1
-    - 3
-    - 1
-    - 3
-    - 1
-    - 3
-    - 1
-  - - 5
-    - 1
-    - 3
-    - 2
-    - 2
-    - 7
-    - 1
-    - 3
-    - 1
-    - 3
-    - 1
-    - 3
-    - 1
-    - 3
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1

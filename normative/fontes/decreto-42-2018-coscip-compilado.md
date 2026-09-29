@@ -79,6 +79,8 @@ metodo: "extração textual por blocos; tabelas convertidas para Markdown; marca
 
 ## Página 1
 
+![Representação visual da página 1](media/decreto-42-2018-coscip-compilado/pagina-01.jpg)
+
 DECRETO Nº 42, DE 17 DE DEZEMBRO DE 2018
 
 REGULAMENTA O DECRETO-LEI Nº 247, DE 21 DE JULHO DE 1975, DISPONDO SOBRE O CÓDIGO DE SEGURANÇA CONTRA INCÊNDIO E PÂNICO - COSCIP, NO ÂMBITO DO ESTADO DO RIO DE JANEIRO. O INTERVENTOR NA ÁREA DE SEGURANÇA PÚBLICA DO ESTADO DO RIO DE JANEIRO, no uso de suas atribuições constitucionais e legais, que lhe conferem o art. 34, inciso III, da Constituição da República Federativa do Brasil, o art. 3º do Decreto Presidencial nº 9.288, de 16 de fevereiro de 2018, e o art. 145 da Constituição do Estado do Rio de Janeiro, e tendo em vista o que consta no Processo Administrativo nº E-27/033/002/2018, e
@@ -832,6 +834,28 @@ Tabela 1: Classificação das edificações e áreas de risco quanto à ocupaç�
 |  |  | C-3 | Shopping centers | Centro de compras em geral (shopping centers) |
 |  |  | C-4 | Quiosque | Ponto de venda localizado no mall de centro comercial e de centro de compras em geral (shopping centers) |
 
+<!-- tabela-conferida: Tabela 1 do Anexo II p20 -->
+### Tabela 1 do Anexo II — Classificação das edificações e áreas de risco quanto à ocupação (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| A | Residencial | A-1 | Residencial privativa unifamiliar | Casas térreas ou assobradadas (isoladas e não isoladas) |
+| A | Residencial | A-2 | Residencial privativa multifamiliar | Edifícios de apartamento em geral |
+| A | Residencial | A-3 | Residencial coletiva | Pensionatos, internatos, orfanatos, alojamentos, mosteiros, conventos. |
+| A | Residencial | A-4 | Agrupamento residencial privativo unifamiliar | Conjunto de duas ou mais edificações residenciais privativas unifamiliares dentro de um lote. |
+| A | Residencial | A-5 | Agrupamento residencial privativo multifamiliar | Conjunto de duas ou mais edificações residenciais privativas multifamiliares dentro de um lote. |
+| A | Residencial | A-6 | Mista | Edificação composta de unidades residenciais privativas (apartamentos) e unidades autônomas destinadas a espaços comerciais (lojas ou salas). |
+| B | Serviço de hospedagem | B-1 | Hotel e assemelhados | Hotéis, motéis, pensões, hospedarias, pousadas, albergues, casas de cômodos, camping. |
+| B | Serviço de hospedagem | B-2 | Hotel residencial | Hotéis e assemelhados com cozinha própria nos apartamentos (incluem-se, flats, apart-hotel, hotel residência, e similares destinados a ocupação transitória) |
+| C | Comercial | C-1 | Comercial 1 | Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio 1 conforme Nota Técnica específica, tais como: artigos de metal, louças, artigos hospitalares, edifícios de lojas de departamentos, magazines, armarinhos, galerias comerciais, supermercados em geral, mercados e outros. |
+| C | Comercial | C-2 | Comercial 2 | Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio 2 conforme Nota Técnica específica, tais como: comércio atacadista de produtos químicos e petroquímicos, de resíduos de papel e papelão, espuma e isopor, etc. |
+| C | Comercial | C-3 | Shopping centers | Centro de compras em geral (shopping centers) |
+| C | Comercial | C-4 | Quiosque | Ponto de venda localizado no mall de centro comercial e de centro de compras em geral (shopping centers) |
+
+Fonte: Decreto 42/2018, página 20, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + texto).
+Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+<!-- /tabela-conferida: Tabela 1 do Anexo II p20 -->
+
 ---
 
 ## Página 21
@@ -854,6 +878,24 @@ Tabela 1 - Continuação
 | E | Escolar e cultura física | E-1 | Escolar em geral | Pré-escola (creches, escolas maternais, jardins de infância). Escolas de educação básica, ensino fundamental e médio, educação de jovens e adultos, ensino superior, ensino técnico e assemelhados. Escolas profissionais em geral. |
 |  |  | E-2 | Escolar especial | Escolas de artes e artesanato, de línguas, de cultura geral, de cultura estrangeira, escolas religiosas e assemelhados |
 |  |  | E-3 | Espaço para cultura física | Locais de ensino e/ou práticas de artes marciais, natação, ginástica (artística, dança, musculação e outros) esportes coletivos (tênis, futebol e outros que não estejam incluídos em F-3), sauna, casas de fisioterapia e assemelhados. Sem arquibancadas. |
+
+<!-- tabela-conferida: Tabela 1 do Anexo II p21 -->
+### Tabela 1 do Anexo II — Classificação das edificações e áreas de risco quanto à ocupação (continuação, p. 21) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| D | Serviço profissional e institucional | D-1 | Local para prestação de serviço profissional ou condução de negócios | Escritórios administrativos ou técnicos, instituições financeiras (exceto as classificadas em D-2), cabeleireiros, centros profissionais e assemelhados, repartições públicas (exceto as classificadas em D-5). |
+| D | Serviço profissional e institucional | D-2 | Agências bancárias | Agências bancárias e assemelhados |
+| D | Serviço profissional e institucional | D-3 | Serviços de manutenção e reparação (exceto os classificados em G-4) | Lavanderias, assistência técnica, reparação e manutenção de aparelhos eletrodomésticos, chaveiros, serviços de pintura, pintura de letreiros, serviços de limpeza e outros. |
+| D | Serviço profissional e institucional | D-4 | Laboratórios de análises clínicas e assemelhados | Laboratórios de análises clínicas sem internação e assemelhados. Laboratórios ambientais, fotográficos e assemelhados. |
+| D | Serviço profissional e institucional | D-5 | Edificação pública das forças armadas, policiais e militares estaduais | Quartéis, delegacias, postos policiais, grupamentos e assemelhados |
+| E | Escolar e cultura física | E-1 | Escolar em geral | Pré-escola (creches, escolas maternais, jardins de infância). Escolas de educação básica, ensino fundamental e médio, educação de jovens e adultos, ensino superior, ensino técnico e assemelhados. Escolas profissionais em geral. |
+| E | Escolar e cultura física | E-2 | Escolar especial | Escolas de artes e artesanato, de línguas, de cultura geral, de cultura estrangeira, escolas religiosas e assemelhados |
+| E | Escolar e cultura física | E-3 | Espaço para cultura física | Locais de ensino e/ou práticas de artes marciais, natação, ginástica (artística, dança, musculação e outros) esportes coletivos (tênis, futebol e outros que não estejam incluídos em F-3), sauna, casas de fisioterapia e assemelhados. Sem arquibancadas. |
+
+Fonte: Decreto 42/2018, página 21, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + texto).
+Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+<!-- /tabela-conferida: Tabela 1 do Anexo II p21 -->
 
 ---
 
@@ -883,6 +925,27 @@ Tabela 1 - Continuação
 |  |  | F-10 | Exposição de animais | Locais para exposição agropecuária e assemelhados. Edificações permanentes |
 |  |  | F-11 | Clubes sociais e diversão | Clubes sociais, bilhares, boliche, salões de baile, restaurantes com atividades de diversões públicas, zoológicos, aquários, parque de diversões (edificação permanente), e assemelhados. |
 
+<!-- tabela-conferida: Tabela 1 do Anexo II p22 -->
+### Tabela 1 do Anexo II — Classificação das edificações e áreas de risco quanto à ocupação (continuação, p. 22) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| F | Local de Reunião de Público | F-1 | Local onde há objeto de valor inestimável | Museus, centro de documentos históricos, galerias de arte, arquivos, bibliotecas e assemelhados |
+| F | Local de Reunião de Público | F-2 | Local religioso e velório | Igrejas, capelas, sinagogas, mesquitas, templos, cemitérios, crematórios, necrotérios, salas de funerais e assemelhados |
+| F | Local de Reunião de Público | F-3 | Centro esportivo e de exibições | Arenas em geral, estádios, ginásios, piscinas, rodeios, autódromos, sambódromo, jóquei clube, pista de patinação e assemelhados. Todos com arquibancadas. |
+| F | Local de Reunião de Público | F-4 | Estação e terminal de passageiro | Estações rodoferroviárias e marítimas, portos, marina, metrô, aeroportos, helipontos, teleféricos, estações de transbordo em geral e assemelhados |
+| F | Local de Reunião de Público | F-5 | Arte cênica e auditório | Teatros em geral, cinemas, óperas, auditórios de estúdios de rádio e televisão, auditórios em geral e assemelhados |
+| F | Local de Reunião de Público | F-6 | Boates e casas de show | Boates, danceterias, discotecas, centro de convenções, e assemelhados |
+| F | Local de Reunião de Público | F-7 | Instalações temporárias | Circos, parques temático, parque de diversões, feiras, eventos de foodtruck e assemelhados |
+| F | Local de Reunião de Público | F-8 | Local para refeição | Restaurantes, lanchonetes, bares, cafés, refeitórios, cantinas e assemelhados |
+| F | Local de Reunião de Público | F-9 | Recreação pública | Parques recreativos (sem atividade de diversões públicas) e assemelhados |
+| F | Local de Reunião de Público | F-10 | Exposição de animais | Locais para exposição agropecuária e assemelhados. Edificações permanentes |
+| F | Local de Reunião de Público | F-11 | Clubes sociais e diversão | Clubes sociais, bilhares, boliche, salões de baile, restaurantes com atividades de diversões públicas, zoológicos, aquários, parque de diversões (edificação permanente), e assemelhados. |
+
+Fonte: Decreto 42/2018, página 22, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + texto).
+Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+<!-- /tabela-conferida: Tabela 1 do Anexo II p22 -->
+
 ---
 
 ## Página 23
@@ -909,6 +972,26 @@ Tabela 1 - Continuação
 |  |  | H-2 | Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais | Tratamento de dependentes de drogas, álcool e assemelhados, todos sem celas, asilos, residências geriátricas. |
 |  |  | H-3 | Hospital e assemelhados | Hospitais, casa de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos de atendimento de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital psiquiátrico. |
 |  |  | H-4 | Clínica e consultório médico, odontológico e assemelhados | Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados. Todos sem internação. |
+
+<!-- tabela-conferida: Tabela 1 do Anexo II p23 -->
+### Tabela 1 do Anexo II — Classificação das edificações e áreas de risco quanto à ocupação (continuação, p. 23) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| G | Serviço automotivo e assemelhado | G-1 | Garagem sem acesso de público e sem abastecimento | Garagens automáticas e garagens com manobristas. |
+| G | Serviço automotivo e assemelhado | G-2 | Garagem com acesso de público e sem abastecimento | Garagens coletivas sem automação, em geral e sem abastecimento (exceto veículos de carga e coletivos) |
+| G | Serviço automotivo e assemelhado | G-3 | Local dotado de abastecimento de combustível | Postos de abastecimento de combustíveis e serviço, garagens com abastecimento de combustível (exceto veículos de carga e coletivos) |
+| G | Serviço automotivo e assemelhado | G-4 | Serviço de conservação, manutenção e reparos | Oficinas de conserto de veículos. Borracharia (sem recauchutagem). Oficinas e garagens de veículos de carga e coletivos (tais como: empresas de ônibus, transportadoras, etc). Garagens de máquinas agrícolas e rodoviárias. Retificadoras de motores. |
+| G | Serviço automotivo e assemelhado | G-5 | Hangar | Abrigos para aeronaves com ou sem abastecimento |
+| G | Serviço automotivo e assemelhado | G-6 | Galpão ou garagem náutica | Abrigos para embarcações com ou sem abastecimento. Estrutura náutica que combina áreas para guarda de embarcações em terra ou sobre a água, cobertas ou não, e acessórios de acesso à água, podendo incluir oficina para manutenção e reparo de embarcações e seus equipamentos. |
+| H | Serviço de saúde | H-1 | Hospital veterinário e assemelhados | Hospitais, clínicas e consultórios veterinários e assemelhados (inclui-se alojamento com ou sem adestramento) |
+| H | Serviço de saúde | H-2 | Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais | Tratamento de dependentes de drogas, álcool e assemelhados, todos sem celas, asilos, residências geriátricas. |
+| H | Serviço de saúde | H-3 | Hospital e assemelhados | Hospitais, casa de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos de atendimento de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital psiquiátrico. |
+| H | Serviço de saúde | H-4 | Clínica e consultório médico, odontológico e assemelhados | Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados. Todos sem internação. |
+
+Fonte: Decreto 42/2018, página 23, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + texto).
+Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+<!-- /tabela-conferida: Tabela 1 do Anexo II p23 -->
 
 ---
 
@@ -994,6 +1077,25 @@ Tabela 1 - Continuação
 |  |  | M-8 | Loteamento | Loteamento - é a divisão de glebas em lotes destinados à edificação, com aberturas de novas vias de circulação ou de logradouros públicos ou privados |
 |  |  | M-9 | Local onde a liberdade das pessoas sofre restrição | Manicômios, reformatórios, prisões em geral (casa de detenção, penitenciárias, presídios) e instituições assemelhadas, todos com celas |
 
+<!-- tabela-conferida: Tabela 1 do Anexo II p25 -->
+### Tabela 1 do Anexo II — Classificação das edificações e áreas de risco quanto à ocupação (continuação, p. 25) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| M | Especial | M-1 | Túnel | Túnel rodoferroviário destinados a transporte de passageiros ou cargas diversas |
+| M | Especial | M-2 | Líquidos ou gases inflamáveis ou combustíveis | Edificação destinada a manipulação, armazenamento e distribuição de líquidos ou gases inflamáveis ou combustíveis, tais como: ponto de venda ou depósito de GLP, etc. |
+| M | Especial | M-3 | Central de comunicação | Central telefônica, centros de comunicação, antenas de telefonia e assemelhados. |
+| M | Especial | M-4 | Estrutura temporária | Canteiro de obras e assemelhados, (não possuem atividade de reunião de público) |
+| M | Especial | M-5 | Silos | Armazéns de grãos e assemelhados |
+| M | Especial | M-6 | Energia | Geração, transmissão e distribuição de energia e assemelhados. |
+| M | Especial | M-7 | Pátios de armazenagem | Pátios – área não coberta que tem como destinação de uso a estocagem de produtos. |
+| M | Especial | M-8 | Loteamento | Loteamento - é a divisão de glebas em lotes destinados à edificação, com aberturas de novas vias de circulação ou de logradouros públicos ou privados |
+| M | Especial | M-9 | Local onde a liberdade das pessoas sofre restrição | Manicômios, reformatórios, prisões em geral (casa de detenção, penitenciárias, presídios) e instituições assemelhadas, todos com celas |
+
+Fonte: Decreto 42/2018, página 25, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + texto).
+Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+<!-- /tabela-conferida: Tabela 1 do Anexo II p25 -->
+
 ---
 
 ## Página 26
@@ -1034,6 +1136,36 @@ Tabela 1 - Continuação
 |  |  |  |  |  |  |  |  |  |  |  |  |
 | Controle de fumaça | - | - | - | - | - | X3, 4 | - | - | - | - | - |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Não serão exigidas as medidas de segurança contra incêndio e pânico para as torres de comunicação (M-3) onde não haja edificação. 2- Exigido somente para lotação superior a 200 pessoas. 3- Exigido sistema de exaustão de fumaça em conformidade com a Nota Técnica específica para lotação até 500 pessoas. 4- Obrigatório para lotação superior a 500 pessoas, podendo ser substituído por chuveiros automáticos de resposta rápida com reserva de incêndio para 30 minutos. Obrigatório para lotação superior a 3.000 pessoas. Obrigatório para edificações sem janelas independentemente da lotação. OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Para o Grupo M (especiais), ver tabelas específicas, ressalvadas as medidas de segurança estabelecidas para a classificação M3; d) Para a divisão G-5 (Hangares), prever sistema de drenagem de líquidos nos pisos para bacias de contenção à distância. Não é permitido o armazenamento de líquidos combustíveis ou inflamáveis dentro dos hangares, exceto aqueles destinados exclusivamente a grupos motogeradores ou conjuntos de pressurização para sistemas de combate a incêndio; e) Para a divisão L-1 (comércio de fogos de artifício e munições) atender a Nota Técnica específica. As divisões L-2 e L-3 somente serão avaliadas pelo CBMERJ através de Comissão de Análise Técnica; f) Observar ainda as exigências para os riscos específicos nas respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |
+
+<!-- tabela-conferida: Tabela 2 p26 -->
+### Tabela 2 — Exigências para edificações com área menor ou igual a 900m² e até 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | A, D, E, G | B | C | F1, F2, F3, F4, F7, F8, F10 | F5, F11 | F6 | F9 | H1, H4 | H2, H3 | I, J, M3 | L1 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X | X | X | X | X1 | X |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X1 | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X | X | X | X1 | - |
+| Saídas de Emergência | X | X | X | X | X | X | X | X | X | X1 | X |
+| Plano de emergência | - | - | - | - | - | X2 | - | - | X | - | - |
+| Controle de Materiais de Acabamento | - | X | - | X | X | X | - | - | X | - | X |
+| Controle de fumaça | - | - | - | - | - | X3, 4 | - | - | - | - | - |
+
+Fonte: Decreto 42/2018, página 26, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Cabeçalho: Grupo / Divisão de ocupação e uso (grupos A, D, E, G; B; C; F; H; I, J, M3; L1). Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Observações específicas da tabela:
+1- Não serão exigidas as medidas de segurança contra incêndio e pânico para as torres de comunicação (M-3) onde não haja edificação.
+2- Exigido somente para lotação superior a 200 pessoas.
+3- Exigido sistema de exaustão de fumaça em conformidade com a Nota Técnica específica para lotação até 500 pessoas.
+4- Obrigatório para lotação superior a 500 pessoas, podendo ser substituído por chuveiros automáticos de resposta rápida com reserva de incêndio para 30 minutos. Obrigatório para lotação superior a 3.000 pessoas. Obrigatório para edificações sem janelas independentemente da lotação.
+Observações gerais da tabela:
+a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código;
+b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+c) Para o Grupo M (especiais), ver tabelas específicas, ressalvadas as medidas de segurança estabelecidas para a classificação M3;
+d) Para a divisão G-5 (Hangares), prever sistema de drenagem de líquidos nos pisos para bacias de contenção à distância. Não é permitido o armazenamento de líquidos combustíveis ou inflamáveis dentro dos hangares, exceto aqueles destinados exclusivamente a grupos motogeradores ou conjuntos de pressurização para sistemas de combate a incêndio;
+e) Para a divisão L-1 (comércio de fogos de artifício e munições) atender a Nota Técnica específica. As divisões L-2 e L-3 somente serão avaliadas pelo CBMERJ através de Comissão de Análise Técnica;
+f) Observar ainda as exigências para os riscos específicos nas respectivas Notas Técnicas.
+Redação dada pelo Decreto nº 46.925, de 05.2.2020 (indicação na página).
+<!-- /tabela-conferida: Tabela 2 p26 -->
 
 ---
 
@@ -1081,6 +1213,45 @@ Tabela 1 - Continuação
 | Controle de Materiais de Acabamento | - | - | - | X8 | X8 | X8 | - | - | - | X8 | X8 | X8 |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com ATC superior a 600m². 2- Exigido apenas para as edificações com ATC superior a 900m². 3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 5- Deve haver, no mínimo, 02 escadas de emergência para edificações com 25 ou mais pavimentos. 6- Deve haver Elevador de Emergência para altura maior que 80m. 7- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 8- Aplica-se somente às áreas comuns da edificação. 9- As edificações da Divisão A-3 com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 10- Deve haver Elevador de Emergência para altura maior que 60m. OBSERVAÇÕES GERAIS: a) As edificações da Divisão A-1 ficam isentas de exigência de medidas preventiva nos termos do artigo 4º deste Código; b) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; c) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 3 p27 -->
+### Tabela 3 — Exigências para edificações do grupo A (divisões A-2 e A-3) com área superior a 900m² ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | A-2: Térrea | A-2: 2pav | A-2: 3pav | A-2: 4 e 5pav | A-2: Acima de 5pav com H ≤ 30m | A-2: H > 30m | A-3: Térrea | A-3: 2pav | A-3: 3pav | A-3: 4, 5 e 6pav | A-3: Acima de 6pav com H ≤ 30m | A-3: H > 30m |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X2 | X | X | X | X | X | X1 | X | X | X |
+| Chuveiros automáticos | - | - | - | - | - | X | - | - | - | - | - | X |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X2 | X | X | X | X | X | X1 | X | X | X |
+| Detecção de Incêndio | - | - | - | - | - | - | - | - | - | X | X | X |
+| Saídas de Emergência | X | X3 | X3 | X3 | X4 | X4, 5, 6 | X | X3 | X3 | X4, 9 | X4, 9 | X4, 9, 10 |
+| Hidrante urbano | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 |
+| Acesso de viatura em edificações | X | X | X | X | X | X | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X | X | X | - | - | - | X | X | X |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | - | - | - | X8 | X8 | X8 | - | - | - | X8 | X8 | X8 |
+
+Fonte: Decreto 42/2018, página 27, Tabela 3; conferida em 2026-09-29 (visual + texto).
+Grupo A – Residencial; divisões A-2 e A-3, cada uma com a classificação quanto ao nº de pavimentos e à altura (em metros). Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Observações específicas da tabela:
+1- Exigido apenas para as edificações com ATC superior a 600m².
+2- Exigido apenas para as edificações com ATC superior a 900m².
+3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica.
+4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.
+5- Deve haver, no mínimo, 02 escadas de emergência para edificações com 25 ou mais pavimentos.
+6- Deve haver Elevador de Emergência para altura maior que 80m.
+7- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+8- Aplica-se somente às áreas comuns da edificação.
+9- As edificações da Divisão A-3 com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência.
+10- Deve haver Elevador de Emergência para altura maior que 60m.
+Observações gerais da tabela:
+a) As edificações da Divisão A-1 ficam isentas de exigência de medidas preventiva nos termos do artigo 4º deste Código;
+b) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código;
+c) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+<!-- /tabela-conferida: Tabela 3 p27 -->
+
 ---
 
 ## Página 28
@@ -1115,6 +1286,21 @@ Tabela 1 - Continuação
 | do artigo 4º deste Código. |  |  |  |
 | 2- As edificações residenciais privativas multifamiliares (A-2) que compõem o agrupamento da Divisão A-5, devem atender |  |  |  |
 | individualmente as medidas de segurança contra incêndio e pânico estabelecidas na Tabela 3 para a divisão A-2. |  |  |  |
+
+<!-- tabela-conferida: Tabela 4 p28 -->
+### Tabela 4 — Exigências para agrupamento de edificações do grupo A (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | A-4: até 06 casas ou lotes | A-4: mais de 06 casas ou lotes | A-5: independente do número de edificações |
+| --- | --- | --- | --- |
+| Hidrante urbano | - | X | X |
+| Acesso de viatura em edificações | X | X | X |
+
+Fonte: Decreto 42/2018, página 28, Tabela 4; conferida em 2026-09-29 (visual + texto).
+Grupo A – Residencial; A-4 classificada quanto ao nº de edificações ou lotes, A-5 quanto ao nº de edificações.
+Observações específicas da tabela:
+1- As edificações residenciais privativas unifamiliares (A-1) que compõem o agrupamento da divisão A-4, quando analisadas individualmente, ficam isentas da exigência de medidas de segurança contra incêndio e pânico nos termos do artigo 4º deste Código.
+2- As edificações residenciais privativas multifamiliares (A-2) que compõem o agrupamento da Divisão A-5, devem atender individualmente as medidas de segurança contra incêndio e pânico estabelecidas na Tabela 3 para a divisão A-2.
+<!-- /tabela-conferida: Tabela 4 p28 -->
 
 ---
 
@@ -2576,6 +2762,8 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 
 ## Página 46
 
+![Representação visual da página 46](media/decreto-42-2018-coscip-compilado/pagina-46.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
@@ -2633,6 +2821,8 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 
 ## Página 47
 
+![Representação visual da página 47](media/decreto-42-2018-coscip-compilado/pagina-47.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
@@ -2688,6 +2878,8 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 ---
 
 ## Página 48
+
+![Representação visual da página 48](media/decreto-42-2018-coscip-compilado/pagina-48.jpg)
 
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
@@ -2773,6 +2965,8 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 
 ## Página 49
 
+![Representação visual da página 49](media/decreto-42-2018-coscip-compilado/pagina-49.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
@@ -2818,6 +3012,8 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 ---
 
 ## Página 50
+
+![Representação visual da página 50](media/decreto-42-2018-coscip-compilado/pagina-50.jpg)
 
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
@@ -2896,6 +3092,8 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 
 ## Página 51
 
+![Representação visual da página 51](media/decreto-42-2018-coscip-compilado/pagina-51.jpg)
+
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
@@ -2959,6 +3157,8 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 
 ## Página 52
 
+![Representação visual da página 52](media/decreto-42-2018-coscip-compilado/pagina-52.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
@@ -3021,6 +3221,8 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 
 ## Página 53
 
+![Representação visual da página 53](media/decreto-42-2018-coscip-compilado/pagina-53.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
@@ -3076,6 +3278,8 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 ---
 
 ## Página 54
+
+![Representação visual da página 54](media/decreto-42-2018-coscip-compilado/pagina-54.jpg)
 
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
@@ -3143,6 +3347,8 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 
 ## Página 55
 
+![Representação visual da página 55](media/decreto-42-2018-coscip-compilado/pagina-55.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
@@ -3173,6 +3379,8 @@ As observações específicas e gerais da tabela estão no texto da página (e n
 ---
 
 ## Página 56
+
+![Representação visual da página 56](media/decreto-42-2018-coscip-compilado/pagina-56.jpg)
 
 
 as medidas alternativas estabelecidos em Nota Técnica específica; d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
@@ -3222,6 +3430,8 @@ as medidas alternativas estabelecidos em Nota Técnica específica; d) Observar 
 ---
 
 ## Página 57
+
+![Representação visual da página 57](media/decreto-42-2018-coscip-compilado/pagina-57.jpg)
 
 ### ANEXO IV VALORES DAS MULTAS PREVISTAS NO TERMO DE AJUSTAMENTO DE CONDUTA (TAC)
 

@@ -382,6 +382,24 @@ c) onde haja dispositivos de fechamento (dumpers etc.) para o sistema de dutos d
 |  |  |  | Sistema de extração mecânica |  |
 |  |  | - grelhas de extração de fumaça em dutos; - dutos e peças especiais; - registro corta fogo e fumaça; - ventiladores de extração mecânica de fumaça; - mecanismos elétricos, pneumáticos e mecânicos de acionamento dos dispositivos de extração de fumaça. |  |  |
 
+<!-- tabela-conferida: Quadro 1 p6 -->
+### Quadro 1 — Sistemas de controle (conferida)
+
+| Função | Sistema e componentes |
+| --- | --- |
+| Entrada de ar | Sistema de extração natural |
+| Entrada de ar | -através de abertura na fachada e acantonamentos adjacentes; -portas dos locais a extrair fumaça, localizadas nas fachadas e acantonamentos adjacentes; - pelos vãos das escadas abertas; -insuflação mecânica por meio de grelhas ou venezianas. |
+| Entrada de ar | Sistema de extração mecânica |
+| Entrada de ar | - abertura ou vão de entrada; - pelas portas; - pelos vãos das escadas abertas; - abertura de ar por insuflação mecânica por meio de grelhas ou venezianas; -escadas pressurizadas |
+| Extração de fumaça | Sistema de extração natural |
+| Extração de fumaça | - abertura ou vão de extração; -Janela e veneziana de extração; - grelhas ligadas a dutos; - clarabóia ou alçapão de extração; - dutos e peças especiais; - registros corta fogo e fumaça; - mecanismos elétricos, pneumáticos e mecânicos de acionamento dos dispositivos de extração de fumaça. |
+| Extração de fumaça | Sistema de extração mecânica |
+| Extração de fumaça | - grelhas de extração de fumaça em dutos; - dutos e peças especiais; - registro corta fogo e fumaça; - ventiladores de extração mecânica de fumaça; - mecanismos elétricos, pneumáticos e mecânicos de acionamento dos dispositivos de extração de fumaça. |
+
+Fonte: NT 2-14, página 6, Quadro 1; conferida em 2026-09-29 (visual + geometrica).
+Quadro com a função escrita na vertical à esquerda ("Entrada de ar", "Extração de fumaça"), cada uma com o sistema natural e o mecânico e a lista de componentes. Na publicação, a função repete-se em cada linha. Fonte indicada: CBMERJ.
+<!-- /tabela-conferida: Quadro 1 p6 -->
+
 ---
 
 ## Página 7

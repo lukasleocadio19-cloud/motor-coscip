@@ -106,8 +106,9 @@ def verify_requirements(table: dict, sources: dict[str, NormativeText],
     if (fold(source["title"]) not in fold(page)
             or any(fold(q) not in fold(page) for q in table.get("scope_quotes", []))):
         errors.append("título/escopo da tabela ausente na página indicada")
+    raw = page.split("<!-- tabela-conferida:")[0]  # a tabela conferida publicada não é fonte
     rows = [[fold(c) for c in line.strip().strip("|").split("|")]
-            for line in page.splitlines() if line.strip().startswith("|")]
+            for line in raw.splitlines() if line.strip().startswith("|")]
     columns = table["columns"]
     if [set(c["divisions"]) for c in columns] != expected_columns:
         errors.append("divisões não correspondem à ordem das colunas conferidas no PDF")

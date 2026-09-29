@@ -8,6 +8,12 @@ fonte_pdf_sha256: 638248ce4348b3275bbb285538d4c4c6e31603356600de98e4c59752907342
 conferida_em: '2026-09-29'
 forma:
   linhas_cabecalho: 0
+forma_geometrica:
+  celulas_verticais:
+  - - 0
+    - 1
+  - - 4
+    - 1
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -122,9 +128,9 @@ notas:
 - 'Quadro com a função escrita na vertical à esquerda ("Entrada de ar", "Extração de fumaça"), cada uma
   com o sistema natural e o mecânico e a lista de componentes. Na publicação, a função repete-se em cada
   linha. Fonte indicada: CBMERJ.'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -136,12 +142,12 @@ resultado:
   - linha: 0
     coluna: 0
     a: Entrada de ar
-    b: r a e d a d a r tn E
-    estado: divergente
-    score: 56.0
+    b: Entradadear
+    estado: verificada
+    score: 91.7
   - linha: 4
     coluna: 0
     a: Extração de fumaça
-    b: a ç a m u f e d o ã ç a r t x E
-    estado: divergente
-    score: 41.2
+    b: Extraçãodefumaça
+    estado: verificada
+    score: 94.1

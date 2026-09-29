@@ -1,0 +1,410 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 3
+titulo: Exigências para edificações do grupo A (divisões A-2 e A-3) com área superior a 900m² ou superior
+  a 02 pavimentos
+pagina: 27
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 11
+  - 28
+  rotulos_quebrados: true
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-27.jpg
+    imagem_sha256: 75ffe2fd613b9ecc97b0d8740e0607d29a86d83071c32c2dba60340f199578a9
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Medidas de Segurança contra Incêndio e Pânico
+    - 'A-2: Térrea'
+    - 'A-2: 2pav'
+    - 'A-2: 3pav'
+    - 'A-2: 4 e 5pav'
+    - 'A-2: Acima de 5pav com H ≤ 30m'
+    - 'A-2: H > 30m'
+    - 'A-3: Térrea'
+    - 'A-3: 2pav'
+    - 'A-3: 3pav'
+    - 'A-3: 4, 5 e 6pav'
+    - 'A-3: Acima de 6pav com H ≤ 30m'
+    - 'A-3: H > 30m'
+    linhas:
+    - - Extintores
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Hidrantes e mangotinhos
+      - X
+      - X
+      - X2
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X1
+      - X
+      - X
+      - X
+    - - Chuveiros automáticos
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X
+    - - Sinalização de segurança
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Iluminação de Emergência
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Alarme de Incêndio
+      - X
+      - X
+      - X2
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X1
+      - X
+      - X
+      - X
+    - - Detecção de Incêndio
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+    - - Saídas de Emergência
+      - X
+      - X3
+      - X3
+      - X3
+      - X4
+      - X4, 5, 6
+      - X
+      - X3
+      - X3
+      - X4, 9
+      - X4, 9
+      - X4, 9, 10
+    - - Hidrante urbano
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+    - - Acesso de viatura em edificações
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Compartimentação Vertical
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+    - - Segurança Estrutural contra Incêndio
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Controle de Materiais de Acabamento
+      - '-'
+      - '-'
+      - '-'
+      - X8
+      - X8
+      - X8
+      - '-'
+      - '-'
+      - '-'
+      - X8
+      - X8
+      - X8
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 27
+      tabela_na_pagina: 1
+    linhas:
+    - - Extintores
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Hidrantes e mangotinhos
+      - X
+      - X
+      - X2
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X1
+      - X
+      - X
+      - X
+    - - Chuveiros automáticos
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X
+    - - Sinalização de segurança
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Iluminação de Emergência
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Alarme de Incêndio
+      - X
+      - X
+      - X2
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X1
+      - X
+      - X
+      - X
+    - - Detecção de Incêndio
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+    - - Saídas de Emergência
+      - X
+      - X3
+      - X3
+      - X3
+      - X4
+      - X4, 5, 6
+      - X
+      - X3
+      - X3
+      - X4, 9
+      - X4, 9
+      - X4, 9, 10
+    - - Hidrante urbano
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+      - X7
+    - - Acesso de viatura em edificações
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Compartimentação Vertical
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+    - - Segurança Estrutural contra Incêndio
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Controle de Materiais de Acabamento
+      - '-'
+      - '-'
+      - '-'
+      - X8
+      - X8
+      - X8
+      - '-'
+      - '-'
+      - '-'
+      - X8
+      - X8
+      - X8
+notas:
+- Grupo A – Residencial; divisões A-2 e A-3, cada uma com a classificação quanto ao nº de pavimentos e
+  à altura (em metros). Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+- 'Observações específicas da tabela:'
+- 1- Exigido apenas para as edificações com ATC superior a 600m².
+- 2- Exigido apenas para as edificações com ATC superior a 900m².
+- 3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica.
+- 4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.
+- 5- Deve haver, no mínimo, 02 escadas de emergência para edificações com 25 ou mais pavimentos.
+- 6- Deve haver Elevador de Emergência para altura maior que 80m.
+- 7- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+- 8- Aplica-se somente às áreas comuns da edificação.
+- 9- As edificações da Divisão A-3 com 15 ou mais pavimentos, qualquer que seja a área construída, devem
+  possuir no mínimo duas escadas de emergência.
+- 10- Deve haver Elevador de Emergência para altura maior que 60m.
+- 'Observações gerais da tabela:'
+- a) As edificações da Divisão A-1 ficam isentas de exigência de medidas preventiva nos termos do artigo
+  4º deste Código;
+- b) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições
+  da Seção II do Capítulo IV deste Código;
+- c) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+- d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

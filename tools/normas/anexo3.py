@@ -55,8 +55,8 @@ def build() -> dict[str, Any]:
     tables = []
     for f in sorted(FOLDER.glob("tabela-*.yaml")):
         data = tabelas.load(f)
-        if data["estado"] != "verificada":
-            continue
+        if data["estado"] != "verificada" or "anexo3" not in data:
+            continue  # sem bloco ``anexo3``: tabela conferida fora das Tabelas 5 a 21
         cols = [c for b in data["anexo3"]["blocos"] for c in b["colunas"]]
         measures = []
         for row in data["caminhos"]["visual"]["linhas"]:

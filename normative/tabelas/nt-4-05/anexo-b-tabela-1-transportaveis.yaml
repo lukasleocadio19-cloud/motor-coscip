@@ -56,6 +56,57 @@ forma:
   - - 25
     - 26
   linhas_cabecalho: 1
+forma_geometrica:
+  faixa:
+  - 0
+  - 31
+  mesclar_linhas:
+  - - 0
+    - 1
+  - - 1
+    - 2
+  - - 2
+    - 3
+  - - 3
+    - 4
+  - - 4
+    - 5
+  - - 5
+    - 6
+  - - 6
+    - 7
+  - - 7
+    - 8
+  - - 8
+    - 9
+  - - 9
+    - 10
+  - - 10
+    - 11
+  - - 11
+    - 12
+  - - 14
+    - 15
+  - - 15
+    - 16
+  - - 18
+    - 19
+  - - 19
+    - 20
+  - - 20
+    - 21
+  - - 22
+    - 23
+  - - 23
+    - 24
+  - - 24
+    - 25
+  - - 25
+    - 26
+  - - 28
+    - 29
+  - - 29
+    - 30
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -483,9 +534,9 @@ inconsistencias_da_fonte:
   tabela é a 1).
 - 'As faixas não incluem os limites: 12.480 kg, 49.920 kg e 99.840 kg exatos não estão em nenhuma linha
   ("inferior a" / "superior a").'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -493,15 +544,3 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: divergente
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 9
-    - 9
-    - 9
-    - 9
-    - 9
-  - - 9
-    - 4
-    - 9
-    - 9
-    - 6

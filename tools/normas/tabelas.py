@@ -109,9 +109,45 @@ def compare(a_rows: list[list[str | None]], b_rows: list[list[str | None]]) -> d
     return {"estado": worst, "celulas": cells}
 
 
+def _sem_hifen(text: str) -> str:
+    """Hífen entre letras sai (quebra de linha "ati- vidades" = "atividades"; dos dois lados)."""
+    return re.sub(r"(?<=[^\W\d_])-\s*(?=[^\W\d_])", "", text)
+
+
+def compare_by_column(visual_rows: list[list[str | None]], raw_rows: list[list[str | None]],
+                      forma: dict[str, Any]) -> dict[str, Any]:
+    """Comparação por coluna, para a grade que parte cada registro em linhas de texto ou põe
+    a célula mesclada no meio do bloco: o texto de cada coluna, de cima para baixo, tem de
+    ser o da leitura visual (grade completa, com ``^``/``<``) — igual depois de ``norm``,
+    sem tolerância; a ordem dentro da coluna é a conferência."""
+    rows = [[(c or "").strip() for c in r] for r in raw_rows]
+    if forma.get("faixa"):
+        ini, fim = forma["faixa"]
+        rows = rows[ini:fim]
+    used = [j for j in range(max(map(len, rows), default=0)) if any(
+        j < len(r) and r[j] for r in rows)]
+    width = {len(r) for r in visual_rows}
+    if len(width) != 1 or len(used) != width.pop():
+        raise IndexError("a grade não tem as colunas da leitura visual")
+
+    def column(rs: list[list[str]], j: int) -> str:
+        return " ".join(c for r in rs if (c := (r[j] if j < len(r) else "") or "")
+                        and c not in (MERGED_UP, MERGED_LEFT))
+
+    cells = []
+    for k, j in enumerate(used):
+        a, b = column(visual_rows, k), column(rows, j)
+        na, nb = _sem_hifen(norm(a) or ""), _sem_hifen(norm(b) or "")
+        if na != nb:
+            cells.append({"linha": 0, "coluna": k, "a": a[:200], "b": b[:200],
+                          "estado": "divergente", "motivo": "texto da coluna diferente"})
+    return {"estado": "divergente" if cells else "verificada", "celulas": cells,
+            **({"motivo": "comparação por coluna"} if cells else {})}
+
+
 FORMA_KEYS = ("faixa", "mesclar_linhas", "rotulos_quebrados", "linhas_cabecalho",
               "juntar_cabecalho", "descartar_linhas", "cabecalho_sem_repeticao",
-              "celulas_verticais")
+              "celulas_verticais", "subscrito_deslocado", "comparar_por_coluna")
 
 
 def forma_of(table: dict[str, Any], path: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -168,6 +204,9 @@ def evaluate(table: dict[str, Any]) -> dict[str, Any]:
         tries = []
         for i, c in enumerate(geo["candidatos"]):
             try:
+                if forma.get("comparar_por_coluna"):
+                    tries.append((compare_by_column(visual["linhas"], c["linhas"], forma), i))
+                    continue
                 shaped = shape(c["linhas"], forma)
             except IndexError:  # a forma não cabe nesta candidata: outra tabela da página
                 continue
@@ -181,6 +220,10 @@ def evaluate(table: dict[str, Any]) -> dict[str, Any]:
         out = {"estado": res["estado"], "caminhos_comparados": ["visual", "geometrica"],
                "candidato_geometrico": idx, "candidatos_na_pagina": len(tries),
                "bbox": geo["candidatos"][idx].get("bbox")}
+        if forma.get("comparar_por_coluna"):
+            out["observacao"] = ("comparação por coluna: confere o texto e a ordem de cada "
+                                 "coluna; quais linhas cada célula mesclada cobre vem só da "
+                                 "leitura visual")
         if texto:
             out["texto"] = compare(compact(visual["linhas"]), texto["linhas"])["estado"]
     else:
@@ -220,6 +263,16 @@ def raw_table(md_text: str, page: int, index: int = 1) -> list[list[str]]:
     return rows
 
 
+def _subscrito(cell: str, sub: str) -> str:
+    if not cell.endswith(" " + sub):
+        return cell
+    body = cell[: -len(sub) - 1]
+    for k, ch in enumerate(body):
+        if "\u0370" <= ch <= "\u03ff" or "\uf000" <= ch <= "\uf0ff":  # grego ou fonte Symbol
+            return body[: k + 1] + sub + body[k + 1:]
+    return cell
+
+
 def shape(rows: list[list[str | None]], forma: dict[str, Any]) -> list[list[str]]:
     """Normaliza um caminho bruto (texto ou geométrico) para a forma da leitura visual:
     junta as linhas de cabeçalho pela coluna original (ou as mantém, se mescladas), descarta
@@ -229,10 +282,21 @@ def shape(rows: list[list[str | None]], forma: dict[str, Any]) -> list[list[str]
         # texto girado 90° na página: a extração lê de baixo para cima, letra a letra
         # ("r a e d a d a r tn E"); volta a ordem e tira os espaços que ela inventou
         rows[i][j] = rows[i][j][::-1].replace(" ", "")
+    for sub in forma.get("subscrito_deslocado") or []:
+        # a extração lê o subscrito depois do resto da linha ("γ =0,60 n1"): volta para
+        # logo depois da primeira letra grega da célula ("γn1 =0,60")
+        rows = [[_subscrito(c, sub) for c in r] for r in rows]
     if forma.get("faixa"):  # só as linhas [início, fim) da extração (título/texto em volta fora)
         ini, fim = forma["faixa"]
         rows = rows[ini:fim]
-    for i, j in sorted(forma.get("mesclar_linhas") or [], reverse=True):
+    merges = forma.get("mesclar_linhas") or []
+    for i, j, cols in sorted((m for m in merges if len(m) == 3), reverse=True):
+        # só as colunas dadas passam da linha j para a i (a grade pôs parte de um cabeçalho
+        # numa linha e parte em outra); a linha j fica, e sai do corpo se esvaziar
+        for c in cols:
+            rows[i][c] = " ".join(filter(None, (rows[i][c], rows[j][c])))
+            rows[j][c] = ""
+    for i, j in sorted((m for m in merges if len(m) == 2), reverse=True):
         # célula com texto em duas linhas ("Médio" / "1 e 2"): junta pela coluna
         rows[i] = [" ".join(filter(None, (a, b))) for a, b in zip(rows[i], rows[j], strict=False)]
         del rows[j]

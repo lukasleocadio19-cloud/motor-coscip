@@ -2,15 +2,15 @@ schema_version: base-manifest/1.0
 gerado_por: tools/normas/manifesto.py (não editar à mão)
 resumo:
   fontes: 53
-  imagens_referenciadas: 479
+  imagens_referenciadas: 492
   imagens_presentes: 479
-  imagens_ausentes: 0
+  imagens_ausentes: 13
   tabelas_por_estado:
-    bruto: 160
+    bruto: 148
     capa: 38
-    divergente: 16
+    divergente: 3
     nao_tabela: 4
-    verificada: 82
+    verificada: 107
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -19,11 +19,15 @@ fontes:
   ato: null
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/COSCIP_DEC_42-2018_COMPILADO.pdf
   sha256_pdf: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
-  sha256_md: 433dddfd30a69945eed40c8553bfbb13eed31a44e229e76e87d73ca80602b100
+  sha256_md: 58ea680a69b911c27afb84f7b35041e1510725663501436dfb267e3a0ed897a8
   data_captura: '2026-07-23'
   paginas: 57
   midia: decreto-42-2018-coscip-compilado
   imagens:
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-01.jpg
+    pagina: 1
+    estado: ausente
+    sha256: null
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-20.jpg
     pagina: 20
     estado: presente
@@ -128,27 +132,93 @@ fontes:
     pagina: 45
     estado: presente
     sha256: c412c420b73d7bb6a2591457e763ca66bfaade66b624da494ce7dd59cd539c4c
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-46.jpg
+    pagina: 46
+    estado: ausente
+    sha256: null
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-47.jpg
+    pagina: 47
+    estado: ausente
+    sha256: null
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-48.jpg
+    pagina: 48
+    estado: ausente
+    sha256: null
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-49.jpg
+    pagina: 49
+    estado: ausente
+    sha256: null
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-50.jpg
+    pagina: 50
+    estado: ausente
+    sha256: null
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-51.jpg
+    pagina: 51
+    estado: ausente
+    sha256: null
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-52.jpg
+    pagina: 52
+    estado: ausente
+    sha256: null
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-53.jpg
+    pagina: 53
+    estado: ausente
+    sha256: null
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-54.jpg
+    pagina: 54
+    estado: ausente
+    sha256: null
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-55.jpg
+    pagina: 55
+    estado: ausente
+    sha256: null
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-56.jpg
+    pagina: 56
+    estado: ausente
+    sha256: null
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-57.jpg
+    pagina: 57
+    estado: ausente
+    sha256: null
   tabelas:
   - pagina: 1
     estado: bruto
   - pagina: 20
-    estado: bruto
+    tabela: Tabela 1 do Anexo II
+    arquivo: normative/tabelas/decreto-42-2018/tabela-01-p20.yaml
+    estado: verificada
   - pagina: 21
-    estado: bruto
+    tabela: Tabela 1 do Anexo II
+    arquivo: normative/tabelas/decreto-42-2018/tabela-01-p21.yaml
+    estado: verificada
   - pagina: 22
-    estado: bruto
+    tabela: Tabela 1 do Anexo II
+    arquivo: normative/tabelas/decreto-42-2018/tabela-01-p22.yaml
+    estado: verificada
   - pagina: 23
-    estado: bruto
+    tabela: Tabela 1 do Anexo II
+    arquivo: normative/tabelas/decreto-42-2018/tabela-01-p23.yaml
+    estado: verificada
   - pagina: 24
-    estado: bruto
+    tabela: Tabela 1 do Anexo II
+    arquivo: normative/tabelas/decreto-42-2018/tabela-01-p24.yaml
+    estado: divergente
   - pagina: 25
-    estado: bruto
+    tabela: Tabela 1 do Anexo II
+    arquivo: normative/tabelas/decreto-42-2018/tabela-01-p25.yaml
+    estado: verificada
   - pagina: 26
-    estado: bruto
+    tabela: Tabela 2
+    arquivo: normative/tabelas/decreto-42-2018/tabela-02.yaml
+    estado: verificada
   - pagina: 27
-    estado: bruto
+    tabela: Tabela 3
+    arquivo: normative/tabelas/decreto-42-2018/tabela-03.yaml
+    estado: verificada
   - pagina: 28
-    estado: bruto
+    tabela: Tabela 4
+    arquivo: normative/tabelas/decreto-42-2018/tabela-04.yaml
+    estado: verificada
   - pagina: 29
     tabela: Tabela 5
     arquivo: normative/tabelas/decreto-42-2018/tabela-05.yaml
@@ -438,7 +508,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-04-Classificacao-das-edificacoes-e-areas-de-risco-quanto-ao-risco-de-incendio.pdf
   sha256_pdf: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
-  sha256_md: 10d4732bf46f70303a1e8df8f68d0e376ca01f7062b87221965d3fb75ff28f76
+  sha256_md: 637b8a586bf538e1799a076811c4f0afd9b0b6a19014e7252a09c9378fe3c555
   data_captura: '2026-07-23'
   paginas: 20
   midia: nt-1-04
@@ -525,7 +595,7 @@ fontes:
   - pagina: 9
     tabela: Tabela do Anexo A
     arquivo: normative/tabelas/nt-1-04/anexo-a-p9.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 10
     tabela: Tabela do Anexo A
     arquivo: normative/tabelas/nt-1-04/anexo-a-p10.yaml
@@ -734,7 +804,7 @@ fontes:
   ato: Portaria CBMERJ nº 1120, de 22 de setembro de 2020
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-01-Sistema-de-protecao-por-extintores-de-incendio-versao-02-Aprovada-pela-Portaria-CBMERJ-1120_2020_1601400175.pdf
   sha256_pdf: f2e6db5a1fbc6fd43919d45461214c0d839e69d7a07c669a43b71ffa895381e3
-  sha256_md: 8349ca33a00adb79264fbadbf067bc4f3eda09d397a7dc9aa0d8d313bdf86cc1
+  sha256_md: e9e984cc7e777f6f2c22533205ea43ae9e35de290a6c3c3e09c94fce4f5deeb8
   data_captura: '2026-07-23'
   paginas: 6
   midia: nt-2-01
@@ -783,11 +853,11 @@ fontes:
   - pagina: 6
     tabela: Tabela A1
     arquivo: normative/tabelas/nt-2-01/tabela-a1-capacidade-equivalente.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 6
     tabela: Tabela A2
     arquivo: normative/tabelas/nt-2-01/tabela-a2-classe-k.yaml
-    estado: divergente
+    estado: verificada
 - arquivo: nt-2-02-hidrantes-e-mangotinhos.md
   documento: NT 2-02
   titulo: NT 2-02 - Sistemas de hidrantes e de mangotinhos para combate a incêndio
@@ -1451,7 +1521,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-11-Brigadas-de-incendio.pdf
   sha256_pdf: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
-  sha256_md: 10c6986f6ea041b673ffa77d660bb64b0ecc376c71f31e91367ce0f825b7e731
+  sha256_md: 49d92117eada4d2f26000db00ecd0ae7bf6423735f2b17b422a2723eda2a969f
   data_captura: '2026-07-23'
   paginas: 26
   midia: nt-2-11
@@ -1566,27 +1636,27 @@ fontes:
   - pagina: 17
     tabela: Tabela do Anexo C
     arquivo: normative/tabelas/nt-2-11/anexo-c-p17.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 18
     tabela: Tabela do Anexo C
     arquivo: normative/tabelas/nt-2-11/anexo-c-p18.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 19
     tabela: Tabela do Anexo C
     arquivo: normative/tabelas/nt-2-11/anexo-c-p19.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 20
     tabela: Tabela do Anexo C
     arquivo: normative/tabelas/nt-2-11/anexo-c-p20.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 21
     tabela: Tabela do Anexo C
     arquivo: normative/tabelas/nt-2-11/anexo-c-p21.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 22
     tabela: Tabela do Anexo D
     arquivo: normative/tabelas/nt-2-11/anexo-d-p22.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 23
     tabela: Tabela do Anexo D
     arquivo: normative/tabelas/nt-2-11/anexo-d-p23.yaml
@@ -1594,7 +1664,7 @@ fontes:
   - pagina: 24
     tabela: Tabela do Anexo D
     arquivo: normative/tabelas/nt-2-11/anexo-d-p24.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 25
     tabela: Tabela do Anexo D
     arquivo: normative/tabelas/nt-2-11/anexo-d-p25.yaml
@@ -1602,7 +1672,7 @@ fontes:
   - pagina: 26
     tabela: Tabela do Anexo D
     arquivo: normative/tabelas/nt-2-11/anexo-d-p26.yaml
-    estado: divergente
+    estado: verificada
 - arquivo: nt-2-12-spda.md
   documento: NT 2-12
   titulo: NT 2-12 - Sistema de proteção contra descargas atmosféricas - SPDA
@@ -1644,7 +1714,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-14-Controle-de-fumaca.pdf
   sha256_pdf: 638248ce4348b3275bbb285538d4c4c6e31603356600de98e4c597529073424b
-  sha256_md: c2843fc5fdce40c0a34ee40379a3aafb2ef8e50171f73212b87c7b0adce084c4
+  sha256_md: d662e6dac6a5b9513afe1b34f1c8f82e7bde77829e0062ea2ee16a0dfe48f861
   data_captura: '2026-07-23'
   paginas: 46
   midia: nt-2-14
@@ -1839,7 +1909,7 @@ fontes:
   - pagina: 6
     tabela: Quadro 1
     arquivo: normative/tabelas/nt-2-14/quadro-1-sistemas-de-controle.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 7
     tabela: Quadro 2
     arquivo: normative/tabelas/nt-2-14/quadro-2-caracteristicas-dos-dutos.yaml
@@ -2073,7 +2143,7 @@ fontes:
   ato: Portaria CBMERJ nº 1280, de 20 de dezembro de 2024
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2025/12/NT2_19_2Ed_2025_alterada_Portaria_1317_2025.pdf
   sha256_pdf: 29a57e10630596f21a7e914197a2ae021c3e78b9a399b2d16799ac9bba1390fe
-  sha256_md: fe046b409dd3b14839e6506785f0f276cfcbb5e06403c38678e45e8d5f8f8fcd
+  sha256_md: 40622b60136ececdba22cdf0db6d4bde80d618e4713e380d6a3c0d58ef8f76c3
   data_captura: '2026-07-23'
   paginas: 12
   midia: nt-2-19
@@ -2142,7 +2212,7 @@ fontes:
   - pagina: 12
     tabela: Tabela D1
     arquivo: normative/tabelas/nt-2-19/anexo-d-tabela-d1.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 12
     tabela: Tabela D2
     arquivo: normative/tabelas/nt-2-19/anexo-d-tabela-d2.yaml
@@ -2716,7 +2786,7 @@ fontes:
   ato: Portaria CBMERJ n° 1179, de 11 de abril de 2022
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT-4-05-Gas-GLPGN-Manipulacao-armazenamento-e-comercializacao-2022.pdf
   sha256_pdf: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
-  sha256_md: dcb1b6df4b054c83406030ab5c081d4615bffb01e4875bbd4437bdd98ed20e8e
+  sha256_md: 364b9663559399b8ecbec2cdf2f30943f6b501fe66adff90c74e9c8abcf77e9a
   data_captura: '2026-07-23'
   paginas: 23
   midia: nt-4-05
@@ -2855,17 +2925,23 @@ fontes:
   - pagina: 15
     tabela: Tabela 1 do Anexo B
     arquivo: normative/tabelas/nt-4-05/anexo-b-tabela-1-transportaveis.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 16
     tabela: Tabela 2 do Anexo B
     arquivo: normative/tabelas/nt-4-05/anexo-b-tabela-2-estacionarios.yaml
     estado: verificada
   - pagina: 17
-    estado: bruto
+    tabela: Tabela 1 do Anexo C
+    arquivo: normative/tabelas/nt-4-05/anexo-c-tabela-1-transportaveis-glp.yaml
+    estado: verificada
   - pagina: 18
-    estado: bruto
+    tabela: Tabela 2 do Anexo C
+    arquivo: normative/tabelas/nt-4-05/anexo-c-tabela-2-gnc.yaml
+    estado: verificada
   - pagina: 23
-    estado: bruto
+    tabela: Tabela 1 do Anexo E
+    arquivo: normative/tabelas/nt-4-05/anexo-e-tabela-1-empilhadeiras.yaml
+    estado: verificada
 - arquivo: nt-4-06-postos-de-servicos-e-abastecimento.md
   documento: NT 4-06
   titulo: NT 4-06 - Postos de serviços e abastecimento de veículos

@@ -8,6 +8,8 @@ fonte_pdf_sha256: f2e6db5a1fbc6fd43919d45461214c0d839e69d7a07c669a43b71ffa895381
 conferida_em: '2026-09-29'
 forma:
   linhas_cabecalho: 1
+forma_geometrica:
+  comparar_por_coluna: true
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -53,7 +55,7 @@ caminhos:
     metodo: pdfplumber 0.11.10, estratégia por linhas
     todas_da_pagina: true
     candidatos:
-    - bbox: &id001
+    - bbox:
       - 42.71
       - 56.64
       - 524.62
@@ -286,7 +288,7 @@ caminhos:
       linhas:
       - - ''
       - - Tabela A2 – Extintores Classe K
-    - bbox:
+    - bbox: &id001
       - 42.71
       - 487.23
       - 524.62
@@ -318,25 +320,15 @@ caminhos:
       - - ''
 notas:
 - 'Fonte indicada: NFPA 10.'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
-  candidato_geometrico: 0
-  candidatos_na_pagina: 5
+  candidato_geometrico: 3
+  candidatos_na_pagina: 1
   bbox: *id001
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
   texto: divergente
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 4
-    - 4
-    - 2
-    - 2
-  - - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1

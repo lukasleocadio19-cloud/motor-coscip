@@ -1,0 +1,242 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 2
+titulo: Exigências para edificações com área menor ou igual a 900m² e até 02 pavimentos
+pagina: 26
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 9
+  - 18
+  rotulos_quebrados: true
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-26.jpg
+    imagem_sha256: aca77bdd91c5ddc92376f688ae050edcc4f327089bd5c6bf66f4e65ea8b05ac3
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Medidas de Segurança contra Incêndio e Pânico
+    - A, D, E, G
+    - B
+    - C
+    - F1, F2, F3, F4, F7, F8, F10
+    - F5, F11
+    - F6
+    - F9
+    - H1, H4
+    - H2, H3
+    - I, J, M3
+    - L1
+    linhas:
+    - - Extintores
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X1
+      - X
+    - - Sinalização de segurança
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X1
+      - X
+    - - Iluminação de Emergência
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X1
+      - '-'
+    - - Saídas de Emergência
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X1
+      - X
+    - - Plano de emergência
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X2
+      - '-'
+      - '-'
+      - X
+      - '-'
+      - '-'
+    - - Controle de Materiais de Acabamento
+      - '-'
+      - X
+      - '-'
+      - X
+      - X
+      - X
+      - '-'
+      - '-'
+      - X
+      - '-'
+      - X
+    - - Controle de fumaça
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X3, 4
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 26
+      tabela_na_pagina: 1
+    linhas:
+    - - Extintores
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X1
+      - X
+    - - Sinalização de segurança
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X1
+      - X
+    - - Iluminação de Emergência
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X1
+      - '-'
+    - - Saídas de Emergência
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X1
+      - X
+    - - Plano de emergência
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X²
+      - '-'
+      - '-'
+      - X
+      - '-'
+      - '-'
+    - - Controle de Materiais de Acabamento
+      - '-'
+      - X
+      - '-'
+      - X
+      - X
+      - X
+      - '-'
+      - '-'
+      - X
+      - '-'
+      - X
+    - - Controle de fumaça
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X3, 4
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+notas:
+- 'Cabeçalho: Grupo / Divisão de ocupação e uso (grupos A, D, E, G; B; C; F; H; I, J, M3; L1). Nota sobrescrita
+  escrita como algarismo após o X ("X¹" → "X1").'
+- 'Observações específicas da tabela:'
+- 1- Não serão exigidas as medidas de segurança contra incêndio e pânico para as torres de comunicação
+  (M-3) onde não haja edificação.
+- 2- Exigido somente para lotação superior a 200 pessoas.
+- 3- Exigido sistema de exaustão de fumaça em conformidade com a Nota Técnica específica para lotação
+  até 500 pessoas.
+- 4- Obrigatório para lotação superior a 500 pessoas, podendo ser substituído por chuveiros automáticos
+  de resposta rápida com reserva de incêndio para 30 minutos. Obrigatório para lotação superior a 3.000
+  pessoas. Obrigatório para edificações sem janelas independentemente da lotação.
+- 'Observações gerais da tabela:'
+- a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições
+  da Seção II do Capítulo IV deste Código;
+- b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+- c) Para o Grupo M (especiais), ver tabelas específicas, ressalvadas as medidas de segurança estabelecidas
+  para a classificação M3;
+- d) Para a divisão G-5 (Hangares), prever sistema de drenagem de líquidos nos pisos para bacias de contenção
+  à distância. Não é permitido o armazenamento de líquidos combustíveis ou inflamáveis dentro dos hangares,
+  exceto aqueles destinados exclusivamente a grupos motogeradores ou conjuntos de pressurização para sistemas
+  de combate a incêndio;
+- e) Para a divisão L-1 (comércio de fogos de artifício e munições) atender a Nota Técnica específica.
+  As divisões L-2 e L-3 somente serão avaliadas pelo CBMERJ através de Comissão de Análise Técnica;
+- f) Observar ainda as exigências para os riscos específicos nas respectivas Notas Técnicas.
+- Redação dada pelo Decreto nº 46.925, de 05.2.2020 (indicação na página).
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

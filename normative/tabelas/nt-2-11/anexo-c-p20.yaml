@@ -9,6 +9,20 @@ conferida_em: '2026-09-29'
 forma:
   linhas_cabecalho: 3
   juntar_cabecalho: false
+forma_geometrica:
+  faixa:
+  - 0
+  - 26
+  mesclar_linhas:
+  - - 0
+    - 2
+    - - 0
+      - 1
+      - 2
+  - - 1
+    - 2
+    - - 4
+  linhas_cabecalho: 4
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -433,9 +447,9 @@ notas:
 inconsistencias_da_fonte:
 - A marca "****" (edificação histórica com isenção de canalização) é usada em todas as linhas destacadas,
   mas o quadro de notas da página 21 só define "*" e "***".
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -443,56 +457,3 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: divergente
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 5
-    - 1
-    - 2
-    - 6
-    - 3
-    - 4
-    - 3
-    - 4
-    - 3
-    - 4
-    - 3
-    - 6
-    - 3
-    - 4
-    - 3
-    - 4
-    - 3
-    - 5
-    - 2
-    - 4
-    - 3
-    - 4
-    - 3
-    - 3
-    - 2
-  - - 2
-    - 1
-    - 4
-    - 2
-    - 6
-    - 3
-    - 4
-    - 3
-    - 4
-    - 3
-    - 4
-    - 3
-    - 6
-    - 3
-    - 4
-    - 3
-    - 4
-    - 3
-    - 5
-    - 2
-    - 4
-    - 3
-    - 4
-    - 3
-    - 3
-    - 2
