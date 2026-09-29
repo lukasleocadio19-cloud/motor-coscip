@@ -69,6 +69,8 @@ Corpo de Bombeiros Militar do Estado do Rio de Janeiro CBMERJ Praça da Repúbli
 
 ## Página 3
 
+![Representação visual da página 3](media/nt-2-01/pagina-03.jpg)
+
 ### 1 OBJETIVO
 
 Esta Nota estabelece os requisitos exigíveis para projeto, dimensionamento e instalação de extintores de incêndio portáteis e sobre rodas, em edificações e áreas de risco, para combate a princípio de incêndio, conforme previsto no Decreto Estadual no 42/2018 - Código de Segurança Contra Incêndio e Pânico do Estado do Rio de Janeiro (COSCIP).

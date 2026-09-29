@@ -1,0 +1,10 @@
+# Blocos que a conversão marcou como "Tabelas extraídas", mas que na imagem da página são
+# texto corrido (parágrafo quebrado em colunas). Só entra aqui o que foi conferido na
+# imagem; o manifesto passa a mostrar o estado "nao_tabela" (plano de correção, F2).
+schema_version: nao-tabelas/1.0
+paginas:
+  - arquivo: nt-2-08-saidas-de-emergencia.md
+    pagina: 7
+    imagem: media/nt-2-08/pagina-07.jpg
+    motivo: trecho do item 5.3.4.7 ("disponham de dispositivo de fechamento automático das portas corta-fogo com eletroímãs") em duas colunas de texto
+    conferido_em: '2026-09-29'

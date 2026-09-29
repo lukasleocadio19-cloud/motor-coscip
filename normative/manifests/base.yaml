@@ -2,13 +2,14 @@ schema_version: base-manifest/1.0
 gerado_por: tools/normas/manifesto.py (não editar à mão)
 resumo:
   fontes: 53
-  imagens_referenciadas: 478
+  imagens_referenciadas: 479
   imagens_presentes: 478
-  imagens_ausentes: 0
+  imagens_ausentes: 1
   tabelas_por_estado:
-    bruto: 189
+    bruto: 187
     capa: 38
-    divergente: 9
+    divergente: 11
+    nao_tabela: 1
     verificada: 57
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
@@ -721,11 +722,15 @@ fontes:
   ato: Portaria CBMERJ nº 1120, de 22 de setembro de 2020
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-01-Sistema-de-protecao-por-extintores-de-incendio-versao-02-Aprovada-pela-Portaria-CBMERJ-1120_2020_1601400175.pdf
   sha256_pdf: f2e6db5a1fbc6fd43919d45461214c0d839e69d7a07c669a43b71ffa895381e3
-  sha256_md: b3910c66c6dfd50ef939a607742bb7dae76b39861fea6348f6286e6e632bbef8
+  sha256_md: 8349ca33a00adb79264fbadbf067bc4f3eda09d397a7dc9aa0d8d313bdf86cc1
   data_captura: '2026-07-23'
   paginas: 6
   midia: nt-2-01
   imagens:
+  - caminho: media/nt-2-01/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
   - caminho: media/nt-2-01/pagina-04.jpg
     pagina: 4
     estado: presente
@@ -764,7 +769,13 @@ fontes:
     arquivo: normative/tabelas/nt-2-01/tabela-5-classe-k.yaml
     estado: verificada
   - pagina: 6
-    estado: bruto
+    tabela: Tabela A1
+    arquivo: normative/tabelas/nt-2-01/tabela-a1-capacidade-equivalente.yaml
+    estado: divergente
+  - pagina: 6
+    tabela: Tabela A2
+    arquivo: normative/tabelas/nt-2-01/tabela-a2-classe-k.yaml
+    estado: divergente
 - arquivo: nt-2-02-hidrantes-e-mangotinhos.md
   documento: NT 2-02
   titulo: NT 2-02 - Sistemas de hidrantes e de mangotinhos para combate a incêndio
@@ -1285,7 +1296,9 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 7
-    estado: bruto
+    estado: nao_tabela
+    motivo: trecho do item 5.3.4.7 ("disponham de dispositivo de fechamento automático das portas corta-fogo
+      com eletroímãs") em duas colunas de texto
   - pagina: 12
     tabela: Tabela 1
     arquivo: normative/tabelas/nt-2-08/tabela-1-inclinacao-rampas.yaml

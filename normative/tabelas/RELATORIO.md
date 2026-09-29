@@ -4,7 +4,7 @@ Gerado por `python -m tools.normas.tabelas relatorio`. Estado de cada tabela con
 
 | Estado | Tabelas |
 | --- | --- |
-| divergente | 9 |
+| divergente | 11 |
 | verificada | 57 |
 
 Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale como segundo caminho só até a extração geométrica (`pdfplumber`, workflow `normas-midia.yml`) rodar sobre o PDF oficial conferido por hash.
@@ -45,6 +45,8 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 2-01 | Tabela 3 | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 4 | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 5 | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-01 | Tabela A1 | 6 | divergente | visual + texto | 0 | 1 |
+| NT 2-01 | Tabela A2 | 6 | divergente | visual + texto | 0 | 0 |
 | NT 2-02 | Tabela 1 | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-02 | Tabela 2 | 6 | verificada | visual + geometrica | 0 | 1 |
 | NT 2-02 | Tabela 3 | 8 | verificada | visual + geometrica | 0 | 1 |

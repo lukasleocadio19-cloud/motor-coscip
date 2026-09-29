@@ -56,7 +56,17 @@ def test_summary_counts_are_consistent():
     assert r["imagens_presentes"] + r["imagens_ausentes"] == r["imagens_referenciadas"] >= 434
     assert sum(r["tabelas_por_estado"].values()) == sum(len(f["tabelas"]) for f in DATA["fontes"])
     # "capa": quadro de cabeçalho da NT na página 1 (número, versão, vigência), não normativo
-    allowed = {"bruto", "verificada", "divergente", "pendente_humano", "capa"}
+    # "nao_tabela": falso positivo da extração, conferido na imagem (nao-tabelas.yaml)
+    allowed = {"bruto", "verificada", "divergente", "pendente_humano", "capa", "nao_tabela"}
     assert set(r["tabelas_por_estado"]) <= allowed
     assert all(t["pagina"] == 1 for f in DATA["fontes"] for t in f["tabelas"]
                if t["estado"] == "capa")
+
+
+def test_nao_tabelas_foram_conferidas_na_imagem():
+    import yaml as _yaml
+
+    reg = _yaml.safe_load((manifesto.TABELAS / "nao-tabelas.yaml").read_text("utf-8"))
+    for e in reg["paginas"]:
+        assert (manifesto.FONTES / e["imagem"]).is_file(), e
+        assert e["motivo"] and e["conferido_em"]

@@ -1,0 +1,71 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-01
+arquivo: nt-2-01-extintores.md
+tabela: Tabela A2
+titulo: Extintores Classe K
+pagina: 6
+fonte_pdf_sha256: f2e6db5a1fbc6fd43919d45461214c0d839e69d7a07c669a43b71ffa895381e3
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-01/pagina-06.jpg
+    imagem_sha256: d2a12a90a745ecc087a14127ae6cba3b298663224174b544e0dff6f99dcb3577
+    linhas_cabecalho: 1
+    linhas:
+    - - Agente Extintor
+      - Classificação
+      - Modelo
+      - Classe K
+    - - Agente Classe K
+      - Portátil
+      - 3 l
+      - K
+    - - ^
+      - ^
+      - 6 l
+      - K
+    - - ^
+      - ^
+      - 10 l
+      - K
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 6
+      tabela_na_pagina: 2
+    linhas:
+    - - Agente Extintor
+      - Classificação
+      - Modelo
+      - Classe K
+    - - Portátil
+      - 3 l
+      - K
+    - - Agente Classe K
+      - 6 l
+      - K
+    - - 10 l
+      - K
+notas:
+- 'Fonte indicada: NFPA 10.'
+estado: divergente
+resultado:
+  estado: divergente
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 4
+    - 4
+    - 2
+    - 2
+  - - 4
+    - 3
+    - 3
+    - 2

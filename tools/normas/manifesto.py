@@ -77,6 +77,18 @@ def table_states(arquivo: str) -> dict[int, list[dict[str, Any]]]:
     return out
 
 
+def _nao_tabelas() -> dict[tuple[str, int], str]:
+    """Falsos positivos da extração, conferidos na imagem (``tabelas/nao-tabelas.yaml``)."""
+    f = TABELAS / "nao-tabelas.yaml"
+    if not f.is_file():
+        return {}
+    data = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
+    return {(e["arquivo"], int(e["pagina"])): e["motivo"] for e in data.get("paginas") or []}
+
+
+NAO_TABELAS = _nao_tabelas()
+
+
 def _is_cover(text: str, page: int) -> bool:
     """Tabela extraída da página 1 que é o cabeçalho da NT ("NOTA TÉCNICA / CBMERJ / Versão")."""
     if page != 1:
@@ -120,6 +132,9 @@ def entry(path: Path) -> dict[str, Any]:
         states = conferred.get(page)
         if states:
             tables += [{"pagina": page, **s} for s in states]
+        elif (path.name, page) in NAO_TABELAS:
+            tables.append({"pagina": page, "estado": "nao_tabela",
+                           "motivo": NAO_TABELAS[(path.name, page)]})
         elif _is_cover(text, page):
             # quadro de capa da NT (número, versão, vigência): não é tabela normativa
             tables.append({"pagina": page, "estado": "capa"})
