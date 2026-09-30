@@ -179,13 +179,13 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 3-06 | Tabela 6 do Anexo A | 15 | divergente | visual + texto | 0 | 1 |
 | NT 3-06 | Tabela 7 do Anexo A | 15 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 8 do Anexo A | 16 | verificada | visual + geometrica | 0 | 1 |
-| NT 3-07 | Tabela do Anexo A | 6 | verificada | visual + texto | 0 | 2 |
-| NT 4-01 | Tabela 1 | 4 | verificada | visual + texto | 0 | 0 |
-| NT 4-04 | Tabela 1 do Anexo A | 8 | verificada | visual + texto | 0 | 2 |
-| NT 4-04 | Tabela 2 do Anexo A | 8 | verificada | visual + texto | 0 | 0 |
-| NT 4-04 | Tabela 3 do Anexo A | 9 | verificada | visual + texto | 0 | 1 |
-| NT 4-04 | Tabela 4 do Anexo A | 10 | verificada | visual + texto | 0 | 2 |
-| NT 4-04 | Tabela do Anexo B | 11 | verificada | visual + texto | 0 | 1 |
+| NT 3-07 | Tabela do Anexo A | 6 | verificada | visual + geometrica | 0 | 2 |
+| NT 4-01 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-04 | Tabela 1 do Anexo A | 8 | verificada | visual + geometrica | 0 | 2 |
+| NT 4-04 | Tabela 2 do Anexo A | 8 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-04 | Tabela 3 do Anexo A | 9 | verificada | visual + geometrica | 0 | 1 |
+| NT 4-04 | Tabela 4 do Anexo A | 10 | verificada | visual + geometrica | 0 | 2 |
+| NT 4-04 | Tabela do Anexo B | 11 | verificada | visual + geometrica | 0 | 1 |
 | NT 4-05 | Tabela 1 | 5 | verificada | visual + geometrica | 0 | 1 |
 | NT 4-05 | Tabela 2 | 6 | verificada | visual + geometrica | 0 | 0 |
 | NT 4-05 | Tabela 3 | 6 | verificada | visual + geometrica | 0 | 0 |
@@ -199,12 +199,12 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 4-05 | Tabela 1 do Anexo C | 17 | verificada | visual + geometrica | 0 | 0 |
 | NT 4-05 | Tabela 2 do Anexo C | 18 | verificada | visual + geometrica | 0 | 1 |
 | NT 4-05 | Tabela 1 do Anexo E | 23 | verificada | visual + geometrica | 0 | 1 |
-| NT 4-06 | Tabela do Anexo B | 7 | verificada | visual + texto | 0 | 0 |
-| NT 4-09 | Tabela 1 do Anexo A | 8 | verificada | visual + texto | 0 | 1 |
-| NT 4-09 | Tabela 2 do Anexo A | 8 | verificada | visual + texto | 0 | 0 |
-| NT 4-09 | Tabela 3 do Anexo B | 9 | verificada | visual + texto | 0 | 0 |
-| NT 4-10 | Tabela 1 | 4 | verificada | visual + texto | 0 | 0 |
-| NT 5-02 | Tabela 1 do Anexo A | 8 | verificada | visual + texto | 0 | 0 |
-| NT 5-04 | Tabela 1 | 6 | verificada | visual + texto | 0 | 0 |
+| NT 4-06 | Tabela do Anexo B | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-09 | Tabela 1 do Anexo A | 8 | verificada | visual + geometrica | 0 | 1 |
+| NT 4-09 | Tabela 2 do Anexo A | 8 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-09 | Tabela 3 do Anexo B | 9 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-10 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 0 |
+| NT 5-02 | Tabela 1 do Anexo A | 8 | verificada | visual + geometrica | 0 | 0 |
+| NT 5-04 | Tabela 1 | 6 | verificada | visual + geometrica | 0 | 0 |
 | NT 5-05 | Tabela 1 | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 5-05 | Tabela do Anexo C | 10 | verificada | visual + geometrica | 0 | 1 |

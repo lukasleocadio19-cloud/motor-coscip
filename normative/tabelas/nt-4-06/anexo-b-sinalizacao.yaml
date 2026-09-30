@@ -53,6 +53,32 @@ caminhos:
     - - Válvula de bloqueio geral
       - '1'
       - “Uso em caso de emergen̂ cia”
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 76.85
+      - 86.98
+      - 525.26
+      - 309.67
+      linhas:
+      - - Local
+        - Quantidade
+        - Legenda
+      - - Bombas de Abastecimento
+        - 1 por ponto
+        - '- Proibido abastecimento por pessoas não autorizadas; - Desligue o motor do veículo; - Acione
+          o freio de estacionamento; - Apague os faróis e desligue o rádio; - Não utilize equipamentos
+          que contenham chama; - Certifique-se que o funcionário do posto efetuou o aterramento elétrico
+          do veículo.'
+      - - Central de GNV
+        - '1'
+        - '- Proibido Fumar; - Perigo, gás a alta pressão; - Proibido acesso a pessoas estranhas; - Cuidado
+          partida automática.'
+      - - Válvula de bloqueio geral
+        - '1'
+        - “Uso em caso de emergência”
 notas:
 - 'Fonte indicada na página: Instrução Normativa nº 021/DAT/CBMSC – Modificada.'
 estado: verificada
@@ -60,13 +86,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
-  celulas:
-  - linha: 3
-    coluna: 2
-    a: “Uso em caso de emergência”
-    b: “Uso em caso de emergen̂ cia”
-    estado: verificada
-    score: 98.2
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

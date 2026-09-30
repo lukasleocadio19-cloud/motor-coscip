@@ -48,6 +48,141 @@ caminhos:
     - - Área Operacional e de Apoio a Produção
       - '15'
       - '200'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 41.06
+      - 56.9
+      - 284.28
+      - 572.78
+      linhas:
+      - - 6 MEDIDAS DE SEGURANÇA CONTRA INCÊNDIO E
+      - - PÂNICO PARA OS CANTEIROS DE OBRAS
+      - - 6.1 As medidas de segurança contra incêndio e pânico
+      - - requeridas para os canteiros de obras são as
+      - - previstas no Decreto Estadual nº 42/2018 – COSCIP.
+      - - 6.2 Para os canteiros de obras também serão exigidos
+      - - Brigadista Voluntário de Incêndio conforme esta NT.
+      - - 6.3 Aparelhos extintores de incêndio
+      - - 6.3.1 Para os canteiros de obras deverão cumprir os
+      - - requisitos da NT 2-01 – Sistema de proteção por
+      - - extintores de incêndio, devendo ainda ser observada a
+      - - utilização de extintores portáteis de acordo com as
+      - - áreas (vivência, de apoio administrativo e operacional
+      - - e de apoio a produção), no aspecto de distância
+      - - máxima a ser percorrida e área máxima a ser
+      - - protegida por unidade extintora, conforme Tabela 1.
+      - - 6.3.2 Se os aparelhos extintores de incêndio tiverem
+      - - classificação da capacidade extintora de mais de uma
+      - - letra, devem ser considerados como atendendo aos
+      - - requisitos de cada classe.
+      - - 6.3.3 Para a proteção por extintores de incêndio em
+      - - instalações de posto de abastecimento, líquidos
+      - - inflamáveis e combustíveis, gás liquefeito de petróleo
+      - - (GLP) e gás natural (GN) devem ser seguidas as
+      - - Notas Técnicas NT 4-06 – Postos de serviços e
+      - - abstecimento de veículos, NT 3-06 – Armazenagem de
+      - - líquidos inflamáveis e combustíveis e NT 3-02 – Gás
+      - - (GLP e GN) – Uso Predial, respectivamente.
+      - - 6.3.4 Para a proteção por extintores de incêndio em
+      - - instalações especiais, tais como (casa de força
+      - - elétrica, caldeiras ou vasos de pressão, sala de
+      - - transformadores, sites de telefonia, grupo moto-
+      - - gerador e congêneres), deverão ser dimensionados
+      - - extintores de incêndio de acordo com as Notas
+      - - Técnicas NT 3-04 – Subestações elétricas, NT 3-05 –
+      - - Caldeiras e vasos de pressão, NT 3-03 –
+      - - Motogeradores de energia em edificações e áreas de
+      - - risco.
+      - - 6.3.5 Quantidade de extintores de incêndio
+    - bbox:
+      - 304.2
+      - 56.9
+      - 547.42
+      - 632.81
+      linhas:
+      - - 6.3.5.2 As áreas destinadas a estocagem de materiais
+      - - incombustíveis no canteiro de obras ficarão isentas da
+      - - exigência de aparelhos extintores de incêndio.
+      - - 6.4 Sinalização de segurança
+      - - 6.4.1 Para os canteiros de obras deverão cumprir os
+      - - requisitos da NT 2-05 – Sinalização de segurança
+      - - contra incêndio e pânico.
+      - - 6.5 Brigadista voluntário de incêndio (BVI)
+      - - 6.5.1 Para canteiros de obras com metragem superior
+      - - a 1.500 m2 de área total construída (ATC) será exigido
+      - - brigadista voluntário de incêndio (BVI).
+      - - 6.5.2 Para o dimensionamento da quantidade de
+      - - brigadistas voluntários de incêndio, por turno de
+      - - 'trabalho, segue-se as exigências desta seção:'
+      - - a) o cálculo da quantidade de brigadistas voluntários
+      - - de incêndio será de 10% da população fixa por turno
+      - - de trabalho;
+      - - b) adota-se como critério de arredondamento o
+      - - primeiro número inteiro superior.
+      - - 6.5.3 Para a formação, treinamento e reciclagem dos
+      - - brigadistas voluntários de incêndio, adota-se os
+      - - critérios da NT 2-11 – Brigadas de incêndio.
+      - - 6.6 Plano de emergência contra incêndio e pânico
+      - - 6.6.1 Para elaboração e aplicação do plano de
+      - - emergência contra incêndio e pânico (PECIP) para os
+      - - canteiros de obras adota-se os critérios da NT 2-10 –
+      - - Plano de Emergência Contra Incêndio e Pânico.
+      - - 6.7 Sistema de alarme de incêndio
+      - - 6.7.1 O sistema de alarme de incêndio será do tipo
+      - - manual, quanto ao dimensionamento e aplicação,
+      - - deve atender os parâmetros da NT 2-07 – Sistema de
+      - - detecção e alarme de incêndio.
+      - - 6.7.2 Nesse caso especifico, o sistema de alarme
+      - - 'manual será composto apenas de:'
+      - - '- central (quadro geral de supervisão e alarme);'
+      - - '- acionadores manuais;'
+      - - '- fonte de alimentação;'
+      - - '- avisadores sonoros.'
+      - - '6.7.3 As exigências de instalação serão:'
+    - bbox: &id001
+      - 48.53
+      - 648.28
+      - 276.84
+      - 770.17
+      linhas:
+      - - Tipologia de área
+        - ''
+        - Distância
+        - ''
+        - ''
+        - Área máxima
+        - ''
+      - - null
+        - null
+        - máxima (m)
+        - null
+        - null
+        - (m2)
+        - null
+      - - Área de Vivência
+        - '25'
+        - null
+        - null
+        - '300'
+        - null
+        - null
+      - - Área de Apoio Administrativo
+        - '20'
+        - null
+        - null
+        - '250'
+        - null
+        - null
+      - - Área Operacional e de Apoio a Produção
+        - '15'
+        - null
+        - null
+        - '200'
+        - null
+        - null
 notas:
 - 'Fonte indicada na página: CBMERJ.'
 estado: verificada
@@ -55,6 +190,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 2
+  candidatos_na_pagina: 3
+  bbox: *id001
+  texto: verificada

@@ -127,6 +127,144 @@ caminhos:
     - - 16”
       - 406,4
       - '342'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 106.71
+      - 113.76
+      - 481.76
+      - 366.14
+      linhas:
+      - - ''
+        - Calibre nominal do tubo de
+        - null
+        - null
+        - null
+        - ''
+        - Distância – tubo de lançamento (m)
+        - Distância – tubo de lançamento inclinado (m)
+      - - null
+        - lançamento
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - polegadas
+        - ''
+        - ''
+        - milímetros
+        - ''
+        - null
+        - null
+      - - < 3”
+        - null
+        - null
+        - < 76,2
+        - null
+        - null
+        - '43'
+        - '29'
+      - - 3”
+        - null
+        - null
+        - 76,2
+        - null
+        - null
+        - '64'
+        - '43'
+      - - 4”
+        - null
+        - null
+        - 101,6
+        - null
+        - null
+        - '85'
+        - '58'
+      - - 5”
+        - null
+        - null
+        - 127,0
+        - null
+        - null
+        - '107'
+        - '70'
+      - - 6”
+        - null
+        - null
+        - 152,4
+        - null
+        - null
+        - '128'
+        - '85'
+      - - 7”
+        - null
+        - null
+        - 177,8
+        - null
+        - null
+        - '149'
+        - '98'
+      - - 8”
+        - null
+        - null
+        - 203,2
+        - null
+        - null
+        - '171'
+        - '113'
+      - - 9”
+        - null
+        - null
+        - 228,6
+        - null
+        - null
+        - '193'
+        - ''
+      - - 10”
+        - null
+        - null
+        - 254,0
+        - null
+        - null
+        - '214'
+        - null
+      - - 12”
+        - null
+        - null
+        - 304,8
+        - null
+        - null
+        - '256'
+        - null
+      - - 16”
+        - null
+        - null
+        - 406,4
+        - null
+        - null
+        - '342'
+        - null
+    - bbox:
+      - 242.45
+      - 123.14
+      - 356.59
+      - 153.14
+      linhas:
+      - - Distância – tubo de
+      - - lançamento (m)
+    - bbox:
+      - 367.39
+      - 123.14
+      - 476.37
+      - 153.14
+      linhas:
+      - - Distância – tubo de
+      - - lançamento inclinado (m)
 notas:
 - 'Células da coluna "inclinado" de 9" a 16" em cinza (não se aplica) na página: em branco na tabela.'
 - 'Obs. da tabela: Para aplicar as distâncias reduzidas indicadas na coluna "tubo de lançamento inclinado",
@@ -139,6 +277,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 3
+  bbox: *id001
+  texto: verificada

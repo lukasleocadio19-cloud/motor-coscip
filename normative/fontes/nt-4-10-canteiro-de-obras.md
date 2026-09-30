@@ -252,7 +252,7 @@ c) o sistema deverá ter duas fontes de alimentação elétrica. A principal é 
 | Área de Apoio Administrativo | 20 | 250 |
 | Área Operacional e de Apoio a Produção | 15 | 200 |
 
-Fonte: NT 4-10, página 4, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-10, página 4, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: CBMERJ.
 <!-- /tabela-conferida: Tabela 1 p4 -->
 

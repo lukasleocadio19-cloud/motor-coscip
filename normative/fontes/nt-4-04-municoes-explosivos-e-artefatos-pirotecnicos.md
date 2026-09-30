@@ -450,7 +450,7 @@ Tabela 2 - Distanciamentos de segurança para iniciadores
 | 136.001 | 181.400 | 150 | 150 | 150 | 100 |
 | 181.401 | 226.800 | 180 | 180 | 180 | 120 |
 
-Fonte: NT 4-04, página 8, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-04, página 8, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: R 105 – Exército Brasileiro.
 Observações da tabela:
 1) a quantidade de 226.800 kg é a máxima permitida em um mesmo local;
@@ -472,7 +472,7 @@ Observações da tabela:
 | 4.501 | 6.800 | 500 | 300 | 150 | 90 |
 | 6.801 | 9.000 | 530 | 320 | 160 | 90 |
 
-Fonte: NT 4-04, página 8, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-04, página 8, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: R 105 – Exército Brasileiro.
 Observações da tabela:
 1) a quantidade de 9.000 kg é a máxima permitida em um mesmo local;
@@ -590,7 +590,7 @@ Tabela 3 - Distanciamentos de segurança para explosivos
 | 90.801 | 102.150 | 640 | 380 | 760 | 380 |
 | 102.151 | 113.500 | 660 | 390 | 780 | 410 |
 
-Fonte: NT 4-04, página 9, Tabela 3 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-04, página 9, Tabela 3 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: R 105 – Exército Brasileiro.
 Observações da tabela:
 1) a quantidade de 113.500 kg é a máxima permitida em um mesmo local;
@@ -667,7 +667,7 @@ perigo de fogo e pequeno risco de explosão
 | 68021 | 90.700 | 999 | 500 | 250 | 167 |
 | 90701 | 113.370 | 1.076 | 538 | 269 | 179 |
 
-Fonte: NT 4-04, página 10, Tabela 4 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-04, página 10, Tabela 4 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: R 105 – Exército Brasileiro.
 Observações da tabela:
 1) a quantidade de 113.370 kg é a máxima permitida em um mesmo local;
@@ -730,7 +730,7 @@ Fonte: REGT/02 - Exército Brasileiro. Observações: (a) Nome genérico, usual 
 | Bolas crepitantes | Pequeno dispositivo de papel contendo composição pirotécnica e iniciador | Emissão de centelhas e pequenos estampidos | Dragon eggs, crackling ball, croque |
 | Bateria | Conjunto de bombas de solo | Estampidos | Bateria de tiros |
 
-Fonte: NT 4-04, página 11, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-04, página 11, Tabela do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 Observações da tabela:
 (a) Nome genérico, usual no Brasil, embora sem autopropulsão.
 (b) Conjunto integrado por tubo de lançamento e bomba aérea com carga de projeção, com diâmetro interno superior a 50 mm.

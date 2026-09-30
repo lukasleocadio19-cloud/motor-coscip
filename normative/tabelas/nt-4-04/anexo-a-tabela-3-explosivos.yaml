@@ -571,6 +571,496 @@ caminhos:
       - '390'
       - '780'
       - '410'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 82.35
+      - 79.34
+      - 520.27
+      - 600.17
+      linhas:
+      - - ''
+        - Peso Líquido
+        - null
+        - ''
+        - ''
+        - Distâncias Mínimas (m)
+        - null
+        - null
+        - null
+        - ''
+      - - Kg
+        - null
+        - null
+        - null
+        - Edif. Habitados
+        - null
+        - Ferrovias
+        - Rodovias
+        - Entre Depósitos
+        - null
+      - - De
+        - null
+        - Até
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - '0'
+        - null
+        - '20'
+        - null
+        - '90'
+        - null
+        - '15'
+        - '30'
+        - '20'
+        - null
+      - - '21'
+        - null
+        - '50'
+        - null
+        - '120'
+        - null
+        - '25'
+        - '45'
+        - '30'
+        - null
+      - - '51'
+        - null
+        - '90'
+        - null
+        - '145'
+        - null
+        - '35'
+        - '70'
+        - '30'
+        - null
+      - - '91'
+        - null
+        - '140'
+        - null
+        - '170'
+        - null
+        - '50'
+        - '100'
+        - '30'
+        - null
+      - - '141'
+        - null
+        - '170'
+        - null
+        - '180'
+        - null
+        - '60'
+        - '115'
+        - '40'
+        - null
+      - - '171'
+        - null
+        - '230'
+        - null
+        - '200'
+        - null
+        - '70'
+        - '135'
+        - '40'
+        - null
+      - - '231'
+        - null
+        - '270'
+        - null
+        - '210'
+        - null
+        - '75'
+        - '145'
+        - '40'
+        - null
+      - - '271'
+        - null
+        - '320'
+        - null
+        - '220'
+        - null
+        - '80'
+        - '160'
+        - '40'
+        - null
+      - - '321'
+        - null
+        - '360'
+        - null
+        - '230'
+        - null
+        - '85'
+        - '165'
+        - '40'
+        - null
+      - - '361'
+        - null
+        - '410'
+        - null
+        - '240'
+        - null
+        - '90'
+        - '180'
+        - '44'
+        - null
+      - - '411'
+        - null
+        - '460'
+        - null
+        - '250'
+        - null
+        - '95'
+        - '185'
+        - '50'
+        - null
+      - - '461'
+        - null
+        - '680'
+        - null
+        - '285'
+        - null
+        - '100'
+        - '195'
+        - '60'
+        - null
+      - - '681'
+        - null
+        - '910'
+        - null
+        - '310'
+        - null
+        - '110'
+        - '220'
+        - '60'
+        - null
+      - - '911'
+        - null
+        - '1.350'
+        - null
+        - '355'
+        - null
+        - '120'
+        - '235'
+        - '70'
+        - null
+      - - '1.351'
+        - null
+        - '1.720'
+        - null
+        - '385'
+        - null
+        - '130'
+        - '255'
+        - '70'
+        - null
+      - - '1.721'
+        - null
+        - '2.270'
+        - null
+        - '420'
+        - null
+        - '135'
+        - '270'
+        - '80'
+        - null
+      - - '2.271'
+        - null
+        - '2.720'
+        - null
+        - '445'
+        - null
+        - '145'
+        - '285'
+        - '80'
+        - null
+      - - '2.721'
+        - null
+        - '3.180'
+        - null
+        - '470'
+        - null
+        - '150'
+        - '295'
+        - '90'
+        - null
+      - - '3.181'
+        - null
+        - '3.630'
+        - null
+        - '490'
+        - null
+        - '150'
+        - '300'
+        - '90'
+        - null
+      - - '3.631'
+        - null
+        - '4.090'
+        - null
+        - '510'
+        - null
+        - '155'
+        - '310'
+        - '100'
+        - null
+      - - '4.091'
+        - null
+        - '4.540'
+        - null
+        - '530'
+        - null
+        - '160'
+        - '315'
+        - '100'
+        - null
+      - - '4.541'
+        - null
+        - '6.810'
+        - null
+        - '545'
+        - null
+        - '160'
+        - '325'
+        - '110'
+        - null
+      - - '6.811'
+        - null
+        - '9.080'
+        - null
+        - '595'
+        - null
+        - '175'
+        - '355'
+        - '120'
+        - null
+      - - '9.081'
+        - null
+        - '11.350'
+        - null
+        - '610'
+        - null
+        - '190'
+        - '385'
+        - '130'
+        - null
+      - - '11.351'
+        - null
+        - '13.620'
+        - null
+        - '610'
+        - null
+        - '205'
+        - '410'
+        - '140'
+        - null
+      - - '13.621'
+        - null
+        - '15.890'
+        - null
+        - '610'
+        - null
+        - '220'
+        - '435'
+        - '150'
+        - null
+      - - '15.891'
+        - null
+        - '18.160'
+        - null
+        - '610'
+        - null
+        - '230'
+        - '460'
+        - '160'
+        - null
+      - - '18.161'
+        - null
+        - '20.430'
+        - null
+        - '610'
+        - null
+        - '240'
+        - '485'
+        - '160'
+        - null
+      - - '20.431'
+        - null
+        - '22.700'
+        - null
+        - '610'
+        - null
+        - '255'
+        - '505'
+        - '170'
+        - null
+      - - '22.701'
+        - null
+        - '24.900'
+        - null
+        - '610'
+        - null
+        - '265'
+        - '525'
+        - '180'
+        - null
+      - - '24.971'
+        - null
+        - '27.240'
+        - null
+        - '610'
+        - null
+        - '275'
+        - '550'
+        - '180'
+        - null
+      - - '27.241'
+        - null
+        - '29.510'
+        - null
+        - '610'
+        - null
+        - '285'
+        - '565'
+        - '190'
+        - null
+      - - '29.511'
+        - null
+        - '31.780'
+        - null
+        - '610'
+        - null
+        - '295'
+        - '585'
+        - '190'
+        - null
+      - - '31.781'
+        - null
+        - '34.050'
+        - null
+        - '610'
+        - null
+        - '300'
+        - '600'
+        - '200'
+        - null
+      - - '34.051'
+        - null
+        - '36.320'
+        - null
+        - '610'
+        - null
+        - '310'
+        - '615'
+        - '210'
+        - null
+      - - '36.321'
+        - null
+        - '38.590'
+        - null
+        - '610'
+        - null
+        - '315'
+        - '625'
+        - '210'
+        - null
+      - - '38.591'
+        - null
+        - '40.860'
+        - null
+        - '610'
+        - null
+        - '320'
+        - '640'
+        - '220'
+        - null
+      - - '40.861'
+        - null
+        - '43.130'
+        - null
+        - '610'
+        - null
+        - '325'
+        - '645'
+        - '220'
+        - null
+      - - '43.131'
+        - null
+        - '45.400'
+        - null
+        - '610'
+        - null
+        - '330'
+        - '655'
+        - '230'
+        - null
+      - - '45.401'
+        - null
+        - '56.750'
+        - null
+        - '610'
+        - null
+        - '330'
+        - '660'
+        - '260'
+        - null
+      - - '56.751'
+        - null
+        - '68.100'
+        - null
+        - '610'
+        - null
+        - '345'
+        - '685'
+        - '290'
+        - null
+      - - '68.101'
+        - null
+        - '79.450'
+        - null
+        - '610'
+        - null
+        - '355'
+        - '710'
+        - '320'
+        - null
+      - - '79.451'
+        - null
+        - '90.800'
+        - null
+        - '620'
+        - null
+        - '370'
+        - '735'
+        - '350'
+        - null
+      - - '90.801'
+        - null
+        - '102.150'
+        - null
+        - '640'
+        - null
+        - '380'
+        - '760'
+        - '380'
+        - null
+      - - '102.151'
+        - null
+        - '113.500'
+        - null
+        - '660'
+        - null
+        - '390'
+        - '780'
+        - '410'
+        - null
 notas:
 - 'Fonte indicada na página: R 105 – Exército Brasileiro.'
 - 'Observações da tabela:'
@@ -584,6 +1074,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

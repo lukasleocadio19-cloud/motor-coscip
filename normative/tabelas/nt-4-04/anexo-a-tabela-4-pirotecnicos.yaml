@@ -295,6 +295,266 @@ caminhos:
       - '538'
       - '269'
       - '179'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 74.91
+      - 91.34
+      - 513.31
+      - 362.74
+      linhas:
+      - - ''
+        - Peso Líquido
+        - null
+        - ''
+        - ''
+        - Distâncias Mínimas (m)
+        - null
+        - null
+        - null
+        - ''
+      - - Kg
+        - null
+        - null
+        - null
+        - Edif. Habitados
+        - null
+        - Ferrovias
+        - Rodovias
+        - Entre Depósitos
+        - null
+      - - De
+        - null
+        - Até
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - '0'
+        - null
+        - '180'
+        - null
+        - '61'
+        - null
+        - '61'
+        - '31'
+        - '21'
+        - null
+      - - '181'
+        - null
+        - '270'
+        - null
+        - '64'
+        - null
+        - '61'
+        - '31'
+        - '21'
+        - null
+      - - '271'
+        - null
+        - '370'
+        - null
+        - '77'
+        - null
+        - '61'
+        - '31'
+        - '21'
+        - null
+      - - '371'
+        - null
+        - '450'
+        - null
+        - '89'
+        - null
+        - '61'
+        - '31'
+        - '21'
+        - null
+      - - '451'
+        - null
+        - '900'
+        - null
+        - '140'
+        - null
+        - '71'
+        - '36'
+        - '24'
+        - null
+      - - '901'
+        - null
+        - '1.360'
+        - null
+        - '181'
+        - null
+        - '91'
+        - '46'
+        - '30'
+        - null
+      - - '1361'
+        - null
+        - '1.810'
+        - null
+        - '215'
+        - null
+        - '108'
+        - '54'
+        - '36'
+        - null
+      - - '1811'
+        - null
+        - '2.260'
+        - null
+        - '244'
+        - null
+        - '122'
+        - '61'
+        - '41'
+        - null
+      - - '2261'
+        - null
+        - '2.720'
+        - null
+        - '269'
+        - null
+        - '135'
+        - '66'
+        - '45'
+        - null
+      - - '2721'
+        - null
+        - '3.720'
+        - null
+        - '311'
+        - null
+        - '156'
+        - '78'
+        - '82'
+        - null
+      - - '3721'
+        - null
+        - '4.530'
+        - null
+        - '345'
+        - null
+        - '173'
+        - '87'
+        - '58'
+        - null
+      - - '4531'
+        - null
+        - '6.800'
+        - null
+        - '407'
+        - null
+        - '204'
+        - '102'
+        - '68'
+        - null
+      - - '6801'
+        - null
+        - '9.070'
+        - null
+        - '455'
+        - null
+        - '228'
+        - '114'
+        - '76'
+        - null
+      - - '9071'
+        - null
+        - '13.600'
+        - null
+        - '526'
+        - null
+        - '264'
+        - '132'
+        - '88'
+        - null
+      - - '13601'
+        - null
+        - '18.140'
+        - null
+        - '581'
+        - null
+        - '291'
+        - '146'
+        - '97'
+        - null
+      - - '18141'
+        - null
+        - '22.670'
+        - null
+        - '628'
+        - null
+        - '314'
+        - '157'
+        - '105'
+        - null
+      - - '22671'
+        - null
+        - '27.210'
+        - null
+        - '668'
+        - null
+        - '334'
+        - '167'
+        - '111'
+        - null
+      - - '27211'
+        - null
+        - '36.280'
+        - null
+        - '735'
+        - null
+        - '368'
+        - '184'
+        - '123'
+        - null
+      - - '36281'
+        - null
+        - '45.350'
+        - null
+        - '793'
+        - null
+        - '397'
+        - '198'
+        - '132'
+        - null
+      - - '45351'
+        - null
+        - '68.020'
+        - null
+        - '907'
+        - null
+        - '454'
+        - '227'
+        - '151'
+        - null
+      - - '68021'
+        - null
+        - '90.700'
+        - null
+        - '999'
+        - null
+        - '500'
+        - '250'
+        - '167'
+        - null
+      - - '90701'
+        - null
+        - '113.370'
+        - null
+        - '1.076'
+        - null
+        - '538'
+        - '269'
+        - '179'
+        - null
 notas:
 - 'Fonte indicada na página: R 105 – Exército Brasileiro.'
 - 'Observações da tabela:'
@@ -308,6 +568,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

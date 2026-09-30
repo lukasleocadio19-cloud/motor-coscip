@@ -2920,7 +2920,7 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT3-07_2Edio_2023.pdf
   sha256_pdf: 85f786298c328a4f770b2788c4e7b07966b65cbd9374f1a8276bec1c98153fd9
-  sha256_md: ddea14d208ec2f0e1f61f0301913d783f4574fcac4fe0055cf9ea55e75788602
+  sha256_md: 24b75ba56ec2f06d579d87b4bca69e8a735182170f6258a0f856dba16bd4ef65
   data_captura: '2026-07-23'
   paginas: 6
   midia: nt-3-07
@@ -2961,7 +2961,7 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT4-01_2Edio_2023.pdf
   sha256_pdf: 1cb4c036d0b4ac64945dd66b209843d0ac14bc61fd66c065219ba7f1830938d6
-  sha256_md: fa27456fca835ebd07eb854df1d831321229483a31be6594dabeabaf84dba814
+  sha256_md: ee12875f25561f717886eb17fb58d862eff811680e8992aac04046bd444baeab
   data_captura: '2026-07-23'
   paginas: 5
   midia: nt-4-01
@@ -3040,7 +3040,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-04-Municoes-explosivos-e-artefatos-pirotecnicos-Fabricacao-armazenagem-e-comercio.pdf
   sha256_pdf: 4a60b8e260a3765210bab4f348c2b40ae4cfe7fd14c683d83875f2d68e9be3af
-  sha256_md: 34e099257d30bbb0893bbbb3c89eb1266aa536d79abc9923fcd1d9d9889431c6
+  sha256_md: 76542902538a1bfb42503ecb626d4ec86ffd1cae45c6548e3dc14f92a462deb1
   data_captura: '2026-07-23'
   paginas: 11
   midia: nt-4-04
@@ -3285,7 +3285,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-06-Postos-de-servicos-e-abastecimento-de-veiculos.pdf
   sha256_pdf: da02569719cdc9a437cf642d2a36368e08e7b8c988e88a1c2ff85bf4253ee29b
-  sha256_md: ddccbc0342e4d7bba291b580ec2f17f5193eb3a2aeb69d2b1f2204af96f09dbe
+  sha256_md: 07d22298fe01a133193155db74e9517a1c84abb5ff60cac1fea6178a734e7165
   data_captura: '2026-07-23'
   paginas: 7
   midia: nt-4-06
@@ -3414,7 +3414,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-09-Tuneis.pdf
   sha256_pdf: bea8f7902227b297338f0e78c459935df3a79f505eb1b02d54814a4997351fd2
-  sha256_md: c41fd69617fa7b41da6c165832b9fbbb744ecda4cc283c027c5a22adda577a73
+  sha256_md: c0b65ce19e79a78484bdb3f226f19777e20d61d54363f5fc574ac85d412f266d
   data_captura: '2026-07-23'
   paginas: 9
   midia: nt-4-09
@@ -3477,7 +3477,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-10-Canteiro-de-obras.pdf
   sha256_pdf: f928f7de4b06facda68fcdf110baef5fd3b915c377b9d888f37cbf5a51dc14c1
-  sha256_md: 2f44b141a04ef9447ffc5db967b264bafda91d478b7cfa8cd62eae85638bfeda
+  sha256_md: a4c9fa0b86934c5db4d3c1105429e6357593f241d790487d18a3cf672cd3d1cb
   data_captura: '2026-07-23'
   paginas: 5
   midia: nt-4-10
@@ -3650,7 +3650,7 @@ fontes:
   ato: Portaria CBMERJ nº 1317, de 10 de dezembro de 2025
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2025/12/NT_5-02_3Ed_2025.pdf
   sha256_pdf: eeff91b4e54b032a0e477c61d88747424a2bdcd1e01824f3503e69c63e97f346
-  sha256_md: 9b1818264341b39ca754ee2f4adfecbbc9a430e42f0b5dff3460d67644807c30
+  sha256_md: 0c3843ea4babb3edbd91450079870a1eef9145a21793ab7793339e8163ba1b38
   data_captura: '2026-07-23'
   paginas: 8
   midia: nt-5-02
@@ -3747,7 +3747,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT_5-04_alterada_pela_Portaria_1167_2022_1644255940_2022-02-07-1.pdf
   sha256_pdf: d243a23b3425827d77def2bef613397066a89dc48dc5a3c9cc8e8b46f3328b9d
-  sha256_md: 44e5f920aa108b2c5884471fcff4371199ce7ff36d3e35606e96aec783fe0f52
+  sha256_md: 8358e480263a52a603191addf26d150153b0cffc5081369f29e4d7b3a28e4270
   data_captura: '2026-07-23'
   paginas: 8
   midia: nt-5-04

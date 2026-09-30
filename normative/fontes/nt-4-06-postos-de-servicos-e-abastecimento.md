@@ -333,7 +333,7 @@ Fonte: Instrução Normativa nº 021/DAT/CBMSC - Modificada.
 | Central de GNV | 1 | - Proibido Fumar; - Perigo, gás a alta pressão; - Proibido acesso a pessoas estranhas; - Cuidado partida automática. |
 | Válvula de bloqueio geral | 1 | “Uso em caso de emergência” |
 
-Fonte: NT 4-06, página 7, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-06, página 7, Tabela do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: Instrução Normativa nº 021/DAT/CBMSC – Modificada.
 <!-- /tabela-conferida: Tabela do Anexo B p7 -->
 

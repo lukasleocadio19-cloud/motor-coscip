@@ -312,7 +312,7 @@ Fonte: CBMERJ.
 | Helipontos elevados | Acima de 4500 Kg | 01 (sobre rodas) | Espuma química de 6-A;10-B |
 | Helipontos elevados | Acima de 4500 Kg | 02 (sobre rodas)) | CO₂ de 10-B |
 
-Fonte: NT 3-07, página 6, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-07, página 6, Tabela do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: CBMERJ.
 <!-- /tabela-conferida: Tabela do Anexo A p6 -->
 

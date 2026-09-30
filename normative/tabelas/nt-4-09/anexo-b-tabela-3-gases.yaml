@@ -45,6 +45,51 @@ caminhos:
     - - Visibilidade
       - 0,005 m-1
       - 0,007 m-1
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 84.5
+      - 108.37
+      - 501.04
+      - 156.29
+      linhas:
+      - - Gases / Visibilidade
+        - ''
+        - Concentração (ppm)
+        - ''
+        - ''
+        - Concentração (ppm)
+        - ''
+      - - null
+        - null
+        - Nível de operação normal
+        - null
+        - null
+        - Nível de operação em congestionamento
+        - null
+      - - CO
+        - '70'
+        - null
+        - null
+        - '90'
+        - null
+        - null
+      - - NOx
+        - '1'
+        - null
+        - null
+        - '1'
+        - null
+        - null
+      - - Visibilidade
+        - 0,005 m-1
+        - null
+        - null
+        - 0,007 m-1
+        - null
+        - null
 notas:
 - Na linha Visibilidade os valores estão em m⁻¹ (coeficiente de extinção), não em ppm como diz o cabeçalho
   das colunas.
@@ -54,6 +99,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

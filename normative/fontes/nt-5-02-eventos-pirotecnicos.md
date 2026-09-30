@@ -531,7 +531,7 @@ Fonte: Lei n° 5390/2009, combinada com o REG/T 03 do Exército Brasileiro.
 | 12” | 304,8 | 256 |  |
 | 16” | 406,4 | 342 |  |
 
-Fonte: NT 5-02, página 8, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 5-02, página 8, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Células da coluna "inclinado" de 9" a 16" em cinza (não se aplica) na página: em branco na tabela.
 Obs. da tabela: Para aplicar as distâncias reduzidas indicadas na coluna "tubo de lançamento inclinado", os tubos de lançamento devem estar inclinados na direção oposta à área dos espectadores e a inclinação seguirá o previsto no REG/T 03 do Exército Brasileiro.
 Conferência aritmética: milímetros = 25,4 × polegadas em todas as linhas.

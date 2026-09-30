@@ -133,6 +133,160 @@ caminhos:
       - Espuma química de 6-A;10-B
     - - 02 (sobre rodas))
       - CO2 de 10-B
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 77.91
+      - 92.76
+      - 490.65
+      - 419.21
+      linhas:
+      - - ''
+        - Tipo de
+        - ''
+        - ''
+        - Resistência do piso da área
+        - ''
+        - Quantidade de extintores
+        - Capacidades extintoras
+      - - null
+        - Heliponto
+        - null
+        - null
+        - de pouso/decolagem
+        - null
+        - null
+        - null
+      - - Heliponto ao nível do solo
+        - null
+        - null
+        - Até 4500 Kg
+        - null
+        - null
+        - '02'
+        - Pó químico BC de 20-BC
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - '02'
+        - CO DE 2-B 2
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 01 (sobre rodas)
+        - Espuma química de 6-A;10-B
+      - - null
+        - null
+        - null
+        - Acima de 4500 Kg
+        - null
+        - null
+        - '04'
+        - Pó químico BC de 20-BC
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - '02'
+        - CO de 2-B 2
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 01 (sobre rodas)
+        - Espuma química de 6-A;10-B
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 01 (sobre rodas)
+        - Pó químico de 30-B;120-B
+      - - Helipontos elevados
+        - null
+        - null
+        - Até 4500 Kg
+        - null
+        - null
+        - '02'
+        - Pó químico de 20-BC
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - '02'
+        - CO de 2-B 2
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 01 (sobre rodas)
+        - Pó químico de 30-B;120-B
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 01 (sobre rodas)
+        - Espuma química de 6-A;10-B
+      - - null
+        - null
+        - null
+        - Acima de 4500 Kg
+        - null
+        - null
+        - '04'
+        - Pó químico BC de 20-BC
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - '02'
+        - CO de 2-B 2
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 01 (sobre rodas)
+        - Pó químico de 40-B;130-B
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 01 (sobre rodas)
+        - Espuma química de 6-A;10-B
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 02 (sobre rodas))
+        - CO de 10-B 2
 notas:
 - 'Fonte indicada na página: CBMERJ.'
 inconsistencias_da_fonte:
@@ -143,6 +297,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

@@ -169,6 +169,90 @@ caminhos:
       - Conjunto de bombas de solo
       - Estampidos
       - Bateria de tiros
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 74.92
+      - 80.54
+      - 522.42
+      - 698.11
+      linhas:
+      - - Nome
+        - Descrição
+        - Efeito principal
+        - Exemplos
+      - - Bomba aérea
+        - Artefato lançado por meio de tubos de lançamento e contendo carga de proje- ção, retardo, carga
+          de abertura, baladas e/ou tiros
+        - Ascensão seguida de efeitos diversos
+        - Bomba de polegadas, shell, shell-in-mortar, minas
+      - - Bomba de solo
+        - Tubo, de papel ou de plástico, contendo composição pirotécnica e iniciador
+        - Estampido
+        - Traque, estalo de riscar bomba numerada, banger, firecracker
+      - - Centelhador de tubo
+        - Tubo contendo composição pirotécnica
+        - Emissão de centelhas
+        - Vela, velinha, chuva, benga- la, cascata, estrela lume
+      - - Centelhador de vara
+        - Arame ou palito parcialmente coberto de composição pirotécnica
+        - Emissão de centelhas
+        - Chuva, chuvinha, estrela, estrelinha, sparkle
+      - - Conjunto de múltiplos tubos
+        - Montagem que inclui dois ou mais tipos de fogos de artifício, com um ou mais pontos de iniciação
+          e queima em se- quência, para apresentação em show
+        - Efeitos diversos
+        - Tortas, girândolas, cakes, letreiros, set pieces, kits, base de míssil
+      - - Estalo de salão
+        - Dispositivo contendo composição piro- técnica sensível a choque mecânico
+        - Estampido
+        - Traque de massa, estalinho, throwdown
+      - - Estopim
+        - Fio ou cordão, encapado ou desencapa- do, impregnado de composição pirotécni- ca
+        - Transmissão de chama com ou sem retardo
+        - Retardo, rastilho, safety fuse, quickmatch
+      - - Foguete (a)
+        - Tubo com carga de projeção, contendo baladas e/ou bombas aéreas
+        - Lançamento de baladas e/ou bombas aéreas de efeito sonoro e/ou visu- al
+        - 3 tiros, rabo de pavão, bou- quet de lágrimas, crakling, crepitante, bomba 12 x 1
+      - - Tubo de lançamento- Morteiro (b)
+        - Tubo com carga de projeção contendo bomba aérea singela
+        - Lançamento de bombas aéreas
+        - Nº 2, nº 3, nº 4, nº 5, nº 6, nº 7 e nº 8.
+      - - Fonte
+        - Tubo cônico ou cilíndrico contendo com- posição pirotécnica
+        - Emissão de centelhas e chamas coloridas
+        - Vulcão, sputnik, árvore de natal, fountain
+      - - Fumígeno
+        - Tubo contendo composição pirotécnica
+        - Emissão de fumaça
+        - Smoke
+      - - Giratório aéreo
+        - Tubo provido de hélice contendo compo- sição pirotécnica
+        - Ascensão em movimen- to giratório
+        - Avião, abelhinha, ovni, heli- cóptero, disco voador, coroa giratória
+      - - Giratório de solo
+        - Tubo cilíndrico ou em forma de espiral contendo composição pirotécnica
+        - Movimento giratório em torno de um ponto
+        - Peão, giroloco, roseta
+      - - Candela
+        - Tubo com diversas cargas de projeção contendo baladas e/ou bombas aéreas, montadas em alternância
+        - Lançamento de baladas e/ou bombas aéreas, em sequência.
+        - Vela romana, “roman can- dle”, pistola
+      - - Rojão
+        - Dispositivo autopropulsado, com meio de estabilização em voo
+        - Ascensão, seguida de efeitos diversos
+        - Rocket, cometa, cometinha cometa de apito, rojão com vara, rojão tipo míssil, fo- guete
+      - - Bolas crepitantes
+        - Pequeno dispositivo de papel contendo composição pirotécnica e iniciador
+        - Emissão de centelhas e pequenos estampidos
+        - Dragon eggs, crackling ball, croque
+      - - Bateria
+        - Conjunto de bombas de solo
+        - Estampidos
+        - Bateria de tiros
 notas:
 - 'Observações da tabela:'
 - (a) Nome genérico, usual no Brasil, embora sem autopropulsão.
@@ -182,13 +266,97 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
   celulas:
+  - linha: 1
+    coluna: 1
+    a: Artefato lançado por meio de tubos de lançamento e contendo carga de projeção, retardo, carga de
+      abertura, baladas e/ou tiros
+    b: Artefato lançado por meio de tubos de lançamento e contendo carga de proje- ção, retardo, carga
+      de abertura, baladas e/ou tiros
+    estado: verificada
+    score: 99.2
+  - linha: 3
+    coluna: 3
+    a: Vela, velinha, chuva, bengala, cascata, estrela lume
+    b: Vela, velinha, chuva, benga- la, cascata, estrela lume
+    estado: verificada
+    score: 97.9
+  - linha: 5
+    coluna: 1
+    a: Montagem que inclui dois ou mais tipos de fogos de artifício, com um ou mais pontos de iniciação
+      e queima em sequência, para apresentação em show
+    b: Montagem que inclui dois ou mais tipos de fogos de artifício, com um ou mais pontos de iniciação
+      e queima em se- quência, para apresentação em show
+    estado: verificada
+    score: 99.3
+  - linha: 6
+    coluna: 1
+    a: Dispositivo contendo composição pirotécnica sensível a choque mecânico
+    b: Dispositivo contendo composição piro- técnica sensível a choque mecânico
+    estado: verificada
+    score: 98.6
+  - linha: 7
+    coluna: 1
+    a: Fio ou cordão, encapado ou desencapado, impregnado de composição pirotécnica
+    b: Fio ou cordão, encapado ou desencapa- do, impregnado de composição pirotécni- ca
+    estado: verificada
+    score: 97.4
+  - linha: 8
+    coluna: 2
+    a: Lançamento de baladas e/ou bombas aéreas de efeito sonoro e/ou visual
+    b: Lançamento de baladas e/ou bombas aéreas de efeito sonoro e/ou visu- al
+    estado: verificada
+    score: 98.5
+  - linha: 8
+    coluna: 3
+    a: 3 tiros, rabo de pavão, bouquet de lágrimas, crakling, crepitante, bomba 12 x 1
+    b: 3 tiros, rabo de pavão, bou- quet de lágrimas, crakling, crepitante, bomba 12 x 1
+    estado: verificada
+    score: 98.6
   - linha: 9
     coluna: 0
     a: Tubo de lançamento-Morteiro (b)
-    b: Tubo de lançamentoMorteiro (b)
+    b: Tubo de lançamento- Morteiro (b)
     estado: verificada
     score: 98.4
+  - linha: 10
+    coluna: 1
+    a: Tubo cônico ou cilíndrico contendo composição pirotécnica
+    b: Tubo cônico ou cilíndrico contendo com- posição pirotécnica
+    estado: verificada
+    score: 98.3
+  - linha: 12
+    coluna: 1
+    a: Tubo provido de hélice contendo composição pirotécnica
+    b: Tubo provido de hélice contendo compo- sição pirotécnica
+    estado: verificada
+    score: 98.2
+  - linha: 12
+    coluna: 2
+    a: Ascensão em movimento giratório
+    b: Ascensão em movimen- to giratório
+    estado: verificada
+    score: 96.9
+  - linha: 12
+    coluna: 3
+    a: Avião, abelhinha, ovni, helicóptero, disco voador, coroa giratória
+    b: Avião, abelhinha, ovni, heli- cóptero, disco voador, coroa giratória
+    estado: verificada
+    score: 98.4
+  - linha: 14
+    coluna: 3
+    a: Vela romana, “roman candle”, pistola
+    b: Vela romana, “roman can- dle”, pistola
+    estado: verificada
+    score: 97.1
+  - linha: 15
+    coluna: 3
+    a: Rocket, cometa, cometinha cometa de apito, rojão com vara, rojão tipo míssil, foguete
+    b: Rocket, cometa, cometinha cometa de apito, rojão com vara, rojão tipo míssil, fo- guete
+    estado: verificada
+    score: 98.8

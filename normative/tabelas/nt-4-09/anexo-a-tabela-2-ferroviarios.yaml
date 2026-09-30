@@ -87,6 +87,167 @@ caminhos:
       - Superior a 5 lux no nível do piso acabado
       - '-'
       - '-'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 56.7
+      - 114.14
+      - 520.87
+      - 308.71
+      linhas:
+      - - ''
+        - Tipo
+        - ''
+        - ''
+        - Localização
+        - ''
+        - ''
+        - Posição
+        - ''
+        - ''
+        - Distanciamento máximo (m)
+      - - Placas de segurança (equipamentos de proteção contra incêndio e sinalização de alerta)
+        - null
+        - null
+        - Parede paralela ao sentido de circulação
+        - null
+        - null
+        - No máximo 1,80 m de altura do piso acabado
+        - null
+        - null
+        - '23'
+        - null
+      - - null
+        - null
+        - null
+        - Parede transversal ao sentido de circulação
+        - null
+        - null
+        - No mínimo 6 m de altura do nível do piso acabado
+        - null
+        - null
+        - Nos emboques do túnel rodoviário
+        - null
+      - - Sinalização de piso
+        - null
+        - null
+        - Próxima ao solo, por toda a extensão do túnel Do lado direito do sentido do tráfego ou na lateral
+          da saída de emergência
+        - null
+        - null
+        - Na borda do passeio, junto à pista
+        - null
+        - null
+        - Contínua, por extensão do túnel
+        - null
+      - - Placa de indicação da rota de fuga
+        - null
+        - null
+        - No mínimo a 600 mm e no máximo a 1,50 m do piso
+        - null
+        - null
+        - Na parede lateral do passeio
+        - null
+        - null
+        - Na saída de emergência e a cada 30 m
+        - null
+    - bbox: &id001
+      - 56.7
+      - 393.8
+      - 520.87
+      - 661.37
+      linhas:
+      - - Tipo
+        - Localização
+        - ''
+        - Posição / Nível de
+        - ''
+        - ''
+        - Altura mínima da
+        - ''
+        - ''
+        - Distanciamento
+        - ''
+      - - null
+        - null
+        - null
+        - iluminamento
+        - null
+        - null
+        - placa e caracteres
+        - null
+        - null
+        - máximo (m)
+        - null
+      - - Placas de segurança (equipamentos de proteção contra incêndio e sinalização de alerta)
+        - Parede paralela ao sentido de circulação
+        - No máximo 1,80 m de altura do piso acabado
+        - null
+        - null
+        - Placa com 250 mm Caracteres com 135 mm
+        - null
+        - null
+        - '30'
+        - null
+        - null
+      - - null
+        - Parede transversal ao sentido de circulação (secundária)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Sinalização de piso
+        - Próxima ao solo, por toda a extensão do túnel No limite entre a via ou faixa de rolamento e
+          a passarela de emergência
+        - No nível do piso acabado
+        - null
+        - null
+        - '-'
+        - null
+        - null
+        - '3'
+        - null
+        - null
+      - - Lâmpadas de balizamento
+        - Passagem de emergência
+        - Superior a 3 lux no nível do piso acabado
+        - null
+        - null
+        - '-'
+        - null
+        - null
+        - '-'
+        - null
+        - null
+      - - null
+        - Área plana
+        - Superior a 3 lux no nível do piso acabado
+        - null
+        - null
+        - '-'
+        - null
+        - null
+        - Máximo a cada 5 m
+        - null
+        - null
+      - - null
+        - 'Desnível: escadas ou passagens com obstáculos'
+        - Superior a 5 lux no nível do piso acabado
+        - null
+        - null
+        - '-'
+        - null
+        - null
+        - '-'
+        - null
+        - null
 notas:
 - 'Fonte indicada na página: ABNT NBR 15981:2011.'
 estado: verificada
@@ -94,6 +255,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 1
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

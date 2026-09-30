@@ -345,7 +345,7 @@ e) quando houver montagem de estrutura temporária com mais de um pavimento, no 
 | De 201 à 500 m² | Isento | 02 BC |
 | De 501 à 2.500 m² | 02 BC | 04 BC |
 
-Fonte: NT 5-04, página 6, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 5-04, página 6, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Obs. da tabela: BC (bombeiro civil).
 Fonte indicada na página: CBMERJ.
 Pelo item 6.1.6 a), para eventos que excedam a área da tabela deve-se adotar 01 Bombeiro Civil para cada 2.500 m² de ATC acrescida.
