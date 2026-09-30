@@ -9,7 +9,30 @@ pagina: 15
 fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
 conferida_em: '2026-09-29'
 forma:
-  comparar_por_coluna: true
+  linhas_cabecalho: 9
+  juntar_cabecalho: false
+  mesclar_linhas:
+  - - 2
+    - 3
+    - - 2
+      - 9
+  - - 1
+    - 2
+    - - 2
+      - 9
+  - - 0
+    - 1
+    - - 2
+      - 9
+  - - 6
+    - 7
+    - - 2
+  - - 5
+    - 6
+    - - 2
+  - - 4
+    - 5
+    - - 2
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -99,192 +122,63 @@ caminhos:
       tabela_na_pagina: 1
     linhas:
     - - Tanque de maior capacidade, em operação com líquidos m3
-      - ''
-      - Distância mínima até o limite de
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - Distância mínima do lado mais próximo de
-      - ''
-      - ''
-      - ''
-      - ''
-    - - ''
-      - ''
-      - propriedade, desde que na área
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - qualquer via de circulação interna ou qualquer
-      - ''
-      - ''
-      - ''
-      - ''
-    - - ''
-      - ''
-      - adjacente haja ou possa haver
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - edificação importante na mesma propriedade
-      - ''
-      - ''
-      - ''
-      - ''
-    - - ''
-      - ''
-      - construção (m)
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - (m)
-      - ''
-      - ''
-      - ''
-      - ''
-    - - ''
-      - ''
-      - Líquidos
-      - ''
-      - ''
+      - Distância mínima até o limite de propriedade, desde que na área adjacente haja ou possa haver
+        construção (m)
+      - Distância mínima do lado mais próximo de qualquer via de circulação interna ou qualquer edificação
+        importante na mesma propriedade (m)
+    - - Líquidos estáveis alívio de emergência
       - Líquidos instáveis alívio de emergência
-      - ''
-      - ''
       - Líquidos estáveis alívio de emergência
-      - ''
-      - ''
       - Líquidos instáveis alívio de emergência
-      - ''
-      - ''
-    - - ''
-      - ''
-      - estáveis alívio
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-    - - ''
-      - ''
-      - de
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-    - - ''
-      - ''
-      - emergência
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-      - ''
-    - - ''
-      - ≤17 KPa
-      - ''
-      - '>17 KPa'
-      - ''
-      - ≤17 KPa
-      - '>17 KPa'
-      - ''
-      - ≤17 KPa
-      - ''
+    - - ≤17 KPa
       - '>17 KPa'
       - ≤17 KPa
       - '>17 KPa'
-      - ''
+      - ≤17 KPa
+      - '>17 KPa'
+      - ≤17 KPa
+      - '>17 KPa'
     - - Até 46
       - 4,5
-      - ''
       - 7,5
-      - ''
       - 12,0
       - 18,0
-      - ''
       - 1,5
-      - ''
       - 3,0
       - 4,5
       - 6,0
-      - ''
     - - 46 a 114
       - 6,0
-      - ''
       - 9,0
-      - ''
       - 15,0
       - 24,0
-      - ''
       - 1,5
-      - ''
       - 3,0
       - 4,5
       - 6,0
-      - ''
     - - 114 a 190
       - 9,0
-      - ''
       - 13,5
-      - ''
       - 22,5
       - 36,0
-      - ''
       - 3,0
-      - ''
       - 4,5
       - 7,5
       - 12,0
-      - ''
     - - 190 a 380
       - 15,0
-      - ''
       - 22,5
-      - ''
       - 37,5
       - 60,0
-      - ''
       - 4,5
-      - ''
       - 7,5
       - 12,0
       - 18,0
-      - ''
   geometrica:
     metodo: pdfplumber 0.11.10, estratégia por linhas
     todas_da_pagina: true
     candidatos:
-    - bbox:
+    - bbox: &id001
       - 64.52
       - 98.53
       - 517.2
@@ -533,18 +427,16 @@ notas:
 - 'Fonte indicada na página: ABNT NBR 17505.'
 - 'Conferência: para cada lado e pressão, a distância para líquidos instáveis é maior ou igual à dos estáveis,
   e cresce com a capacidade.'
-- 'Sem segundo caminho: a página não tem grade desenhada que a extração geométrica reconheça, e a camada
-  de texto põe os cabeçalhos e os valores em colunas diferentes. Fica divergente para conferência humana
-  na imagem.'
 inconsistencias_da_fonte:
 - 'As faixas de capacidade ("Até 46", "46 a 114", "114 a 190", "190 a 380") se sobrepõem nos limites e
   param em 380 m³: a tabela não cobre tanques maiores.'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); a página não tem grade
-    desenhada que a extração geométrica reconheça
-  motivo: a camada de texto não tem as colunas da leitura visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

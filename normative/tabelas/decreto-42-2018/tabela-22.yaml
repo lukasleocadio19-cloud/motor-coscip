@@ -1085,3 +1085,18 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: verificada
+anexo3:
+  tabela: 22
+  blocos:
+  - divisoes:
+    - J-1
+    colunas: &id002
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  - divisoes:
+    - J-2
+    colunas: *id002

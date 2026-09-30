@@ -414,3 +414,9 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: verificada
+anexo3:
+  tabela: 25
+  referencia:
+    divisoes:
+    - M-1
+    criterio: extensão do túnel em metros

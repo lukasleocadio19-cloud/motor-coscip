@@ -47,23 +47,77 @@ runbook `docs/runbooks/dwg-para-dxf.md`.
 ## 2. Pendências (o que ainda precisa ser feito)
 
 ### Com o analista (usuário)
-- [ ] F2: decidir a sobreposição NT 1-01 P1 Anexo A (atividades de risco) × NT 1-07 Anexo A (dispensa): 1822-9/99 e 5912-0/01 nas duas, e padrões 13xx, 15xx, 253x, 32xx, 38xx, 465x, 468x, 469x, 91xx, 9319 que cobrem códigos da NT 1-07.
-- [ ] F2: decidir as 6 tabelas `divergente` (NT 1-03 Anexo A p. 10; NT 2-02 T5; NT 2-11 A.6 p. 14; NT 3-06 T2, T4 e Anexo A T6) e as inconsistências da fonte registradas nos `.yaml` (ex.:
-      NT 1-04 sobreposição em 1.200 MJ/m²; NT 4-05 T1 120 m × Anexo A T2 122 m acima de
-      3.785 m³; NT 3-02 duas "Tabela 2"; NT 4-05 Anexo B nota 8 que deveria ser 9;
-      NT 2-01 define duas vezes extintor portátil e sobre rodas com limites diferentes: 4.7
-      até 20 kg × 4.17 até 24 kg; 4.8 até 250 kg × 4.18 acima de 24 kg).
-- [ ] F2: dizer se as Tabelas 22–32 do Anexo III (grupos J, L, M) entram no motor depois de
-      conferidas (hoje o motor usa T2–21).
-- [ ] Revisar as 5 análises na tela (`#/desenhos/<id>/analise`) e fazer nova emissão dos relatórios.
-- [ ] Confirmar as ocupações propostas: 9715 D-2 (agência bancária); 21471 e 41336 M-2 (depósito
-      de GLP); 21778/21801 A-2 (apartamentos).
+
+> **30/09/2026 — o usuário delegou à sessão todas as decisões pendentes.** As decisões abaixo
+> são critério de trabalho da ferramenta, registrado como tal: **não têm valor normativo** e não
+> substituem a homologação (NT 2-01), que continua exigindo responsável com CREA/CAU. Critério
+> geral: onde a fonte é ambígua, vale a leitura **mais conservadora** (a faixa ou o valor que
+> exige mais), o texto do item prevalece sobre a tabela que o resume, e a NT de classificação
+> (NT 1-04) prevalece sobre as descrições de divisão das demais.
+
+**Decidido nesta data**
+- [x] Tabelas `divergente`: 5 das 6 passaram a `verificada` com dois caminhos que concordam
+      (NT 2-02 T5 por coluna, com a grade sem os espaços entre letras; NT 2-11 A.6 p. 14 juntando as
+      linhas de continuação; NT 3-06 T2 e Anexo A T6 com o cabeçalho montado pela coluna; NT 1-03
+      p. 10 pela camada de texto, com a grade ignorada e o motivo registrado). NT 3-06 T4: vale a
+      leitura visual conferida na imagem ampliada (Câmara de espuma, 6,0 L/min/m², 55 min); fica
+      `divergente` no sistema porque só um caminho estrutura a tabela; o motor não a usa.
+- [x] Tabelas 22–32 do Anexo III **entram no motor**: as por pavimentos/altura (22, 23, 24, 27,
+      30, 32) são consultadas como as 5–21, e 30 (M-6) e 32 (M-9) valem para qualquer área; as de
+      outro critério (25 M-1 extensão do túnel, 26 M-2 volume, 28 M-4/M-7 ATC, 29 M-5, 31 M-8)
+      ficam como referência: a consulta aponta a tabela e não escolhe a coluna.
+- [x] Sobreposição NT 1-01 P1 Anexo A × NT 1-07 Anexo A: prevalece a NT 1-01 P1 (consolidada pela
+      Portaria 1.317/2025, mais recente, e mais restritiva): CNAE que ela lista, por código ou
+      padrão, **não** é tratado como dispensa de regularização.
+- [x] Faixas que se tocam no limite (NT 1-04 1.200 MJ/m²; Decreto T1 1.000 MJ/m² J-2/J-3; NT 3-02
+      T4 11 Nm³; NT 3-06 Anexo A T4/T6 e T8; NT 4-04 T1; NT 4-05 T6 0,50 m³): o valor do limite
+      fica na faixa mais exigente. Lacunas e limites exatos fora de toda faixa (NT 4-04 T3
+      24.901–24.970 kg; NT 4-05 Anexo B 12.480/49.920/99.840 kg e 10 m³; NT 3-06 T14 4º, 6º, 7º
+      e 9º andares): aplica-se a faixa seguinte, mais exigente.
+- [x] Valores que se contradizem: vale o maior afastamento ou a exigência maior (NT 4-05 acima de
+      3.785 m³: 122,0 m; NT 1-04 "Tapeçarias": o maior valor; NT 4-04 distâncias que diminuem com
+      mais massa, T1 115→110 m e T4 82→58 m: não se usa distância menor que a da faixa anterior;
+      NT 2-11 A.3: vale a soma dos módulos, 6 h, e não o "Total" 2 h; NT 2-11 A.6 módulo 07 sem
+      carga: fica sem carga; NT 2-19 Tabela B: vale o menor dos três critérios).
+- [x] Texto do item × tabela: NT 2-04 5.4.3.1 prevalece (todos os dispositivos a) a e) em todo
+      risco); "Médio" da Tabela 3 vale para Médio 1 e Médio 2. NT 2-19 D1: γn1, γn2, γn3 como no
+      texto. NT 2-03 P2 confeitaria: vale o Anexo B (congelados Classe II, embalados Classe III).
+- [x] Definições duplicadas NT 2-01: valem 4.7 e 4.8 (portátil até 20 kg; sobre rodas acima de
+      20 kg, até 250 kg); 4.17/4.18 ficam registradas como divergência da fonte.
+- [x] Notas e remissões trocadas: segue-se a nota cujo conteúdo trata do assunto (NT 4-05 Anexo B:
+      nota 9; NT 4-05 Anexo E: obs. b); Decreto T26 "(b)": observação d); NT 1-04 Anexo D/E
+      "Tabela C.1" e "Tabela E": a tabela do Anexo D; NT 3-02: "Tabela 2" pelo contexto de cada
+      observação; NT 2-11 Anexo D Obs7: pela remissão de cada linha).
+- [x] Marcas e sinais sem definição: NT 2-11 "****" (edificação histórica) sem regra própria: vale
+      a linha comum, sem redução; linhas históricas em branco no Anexo D: vale a linha comum;
+      NT 2-11 nota "***": arredondar para cima (3,7 → 4; 6,5 → 7); NT 4-05 asterisco sem nota:
+      ignorado; NT 2-08 notas numeradas sem correspondência com (A)–(K): célula com nota é
+      condicional e vai para revisão, nunca vira dispensa.
+- [x] Critério ambíguo NT 2-09 "200": não se aplica automaticamente (revisão humana). Divisões que
+      faltam em tabelas (NT 2-09 F-7, M-4, M-7, M-8; NT 2-20 M-4, M-5, M-7, M-8): a tabela não se
+      aplica; consultar a NT específica. NT 3-06 Anexo A T6 acima de 380 m³: fora da tabela, sem
+      extrapolação.
+- [x] NT 2-20: materiais IV e V indistinguíveis pela tabela: sem laudo que diga IV, trata-se como
+      V; classe III A: os critérios de fumaça valem com "e" (como nas demais).
+- [x] Nomenclatura: Decreto T33 Leve/Médio/Grande ↔ NT 1-04 Pequeno/Médio 1–2/Grande (Médio 1 e 2
+      → Médio); NT 1-04 H-1/H-3: vale a NT 1-04 no enquadramento; nas outras NTs, a descrição.
+      NT 4-05 "TRRF=4": 4 h. NT 3-06 PE: ponto de ebulição. NT 4-05 Anexo A T1 matriz: B×F em
+      branco = "-". NT 2-01 A1 PQS sem classe A: "-".
+- [x] Grafias (hífens, acentos, "Vdiro", "Diâmentro", "desing" etc.): sem efeito normativo; a
+      transcrição mantém a grafia da fonte.
+- [x] Ocupações propostas aceitas: 9715 D-2; 21471 e 41336 M-2; 21778/21801 A-2. 21778/21801:
+      a pendência do pavimento tipo é exigência (mínimo 2 extintores por pavimento, decisão do
+      usuário de 29/09). 41336: os 5 extintores presumidos pelas placas E5 + E17 **não** são
+      aceitos como evidência (ausência de evidência nunca vira conformidade): ficam pendentes.
+
+**Ainda dependem da máquina do usuário ou de dado real (não há como fazer na nuvem)**
+- [ ] Reemitir as 5 análises com as decisões acima (`#/desenhos/<id>/analise`).
 - [ ] 21471 e 41336: marcar as camadas de parede no item 4 do formulário e reanalisar.
 - [ ] Informar em cada processo o limite da NT 2-08 (Anexo C é imagem) e os sistemas exigidos.
-- [ ] 21778/21801: pendência real no pavimento tipo (1 extintor por andar; mínimo 2) — decidir
-      na revisão (exceção NT 2-01 5.2.4 só vale abaixo de 50 m²).
-- [ ] 41336: confirmar os 5 extintores presumidos pelas placas E5 + E17.
-- [ ] Gate A: 1 medida real independente ainda não feita (POC-02/08).
+- [ ] Gate A: 1 medida real independente (POC-02/08).
+- [ ] F9: medir o corpus real (`Downloads\coscip-corpus`) com `tools/validacao/fidelidade.py`.
+- [ ] Homologação (NT 2-01): responsável com CREA/CAU, data e relatório — nenhuma regra fica
+      HOMOLOGATED/PUBLISHED sem isso.
 
 ### Desenvolvimento, em ordem
 
@@ -187,7 +241,7 @@ pôde abrir uma branch por fase). Detalhe na seção 13.
 |---|---|---|
 | COR-F0 CI e pacote | **feito** | CI Windows+Linux (ruff, pytest, npm build, lock conferido); `requirements/*.lock` com hash; `tools/package/portatil.py` + `release.yml`; ADR 0007. Falta: proteção da `master`, teste do zip na máquina principal, SHA-256 do Python embeddable fixado |
 | COR-F1 base única | **feito** | `skills/` no repositório (9 vigentes + 8 em `transicao/`), zips pela CI, manifesto `normative/manifests/base.yaml`, índice de itens (4.738), workflow de vigência; MCP só lê `normative/fontes` |
-| COR-F2 imagens e tabelas | **parcial** | Imagens de página renderizadas pela CI (`normas-midia.yml`). **251 tabelas `verificada`**, 6 `divergente` (sem segundo caminho completo; ver as notas de cada uma; NT 1-03 p. 10: a grade intercala as letras do rótulo girado em duas linhas, a camada de texto confere), 36 falsos positivos (`nao_tabela`), 38 capas; **nenhuma página `bruto`**. Decreto completo: Anexo II T1, Anexo III T2–32 (as T22–32 conferidas mas fora do motor) e Anexo IV T33. Fora da prioridade já conferidas: NT 2-04 (T1–3), NT 2-05 (Quadro 1, Anexo B T1–8), NT 2-09 (T1, Anexo A), NT 2-10 (T1, Anexos C e E), NT 2-17 (T1, Anexo A), NT 2-20 (Anexo A T1–3, Anexo B), NT 3-01 (T1, T2), NT 3-03 (T1, T2), NT 3-06 (T1–16 e Anexo A T1–8), NT 3-07 (Anexo A), NT 4-01 (T1), NT 4-04 (Anexo A T1–4, Anexo B), NT 4-06 (Anexo B), NT 4-09 (Anexos A e B), NT 4-10 (T1), NT 5-02 (Anexo A T1), NT 5-04 (T1), NT 1-01 P1 (Anexos A e B), NT 1-01 P2 (T1, Anexos E–H), NT 1-03 (Anexo A, símbolos: o desenho não é conferido), NT 1-04 (Anexo E), NT 1-07 (Anexo A, CNAEs p. 13–29), NT 2-03 P1 (Anexo B T1) e NT 2-03 P2 (Anexos B e C; comparação por coluna no B). Lista de prioridade: NT 2-01 (T1–5, A1, A2), NT 2-02 (T1–4), NT 2-08 (T1, Anexos A–C), NT 1-04 (Anexos A–D), NT 2-11 (Anexos A–D), NT 2-14 (Quadros 1–2), NT 2-19 (Tabelas A–D2), NT 3-02 (T1–3, T5, Anexo A T1–4), NT 4-05 (T1–6, Anexos A, B, C, E), NT 5-05 e Decreto (Anexo II T1 p. 20–25 e Anexo III T2–21). Divergentes: NT 2-02 T5 (grade e texto fundem as linhas), NT 2-11 A.6 p. 14 (cabeçalho em outra coluna da grade), NT 3-06 T2, T4 e Anexo A T6 (sem grade desenhada, ou grade partida, e camada de texto desalinhada). Página sem grade desenhada: a camada de texto passa a ser o segundo caminho. O motor confere contra as tabelas conferidas: enquadramento (NT 1-04 Anexo B), divisões (Decreto T1) e Anexo III T2–4. Inconsistências da fonte registradas em cada `.yaml` (`inconsistencias_da_fonte`) e no `RELATORIO.md` |
+| COR-F2 imagens e tabelas | **parcial** | Imagens de página renderizadas pela CI (`normas-midia.yml`). **256 tabelas `verificada`**, 1 `divergente` (NT 3-06 T4: só um caminho estrutura a tabela; decisão registrada na seção 2), 36 falsos positivos (`nao_tabela`), 38 capas; **nenhuma página `bruto`**. Decreto completo: Anexo II T1, Anexo III T2–32 (as T22–32 conferidas mas fora do motor) e Anexo IV T33. Fora da prioridade já conferidas: NT 2-04 (T1–3), NT 2-05 (Quadro 1, Anexo B T1–8), NT 2-09 (T1, Anexo A), NT 2-10 (T1, Anexos C e E), NT 2-17 (T1, Anexo A), NT 2-20 (Anexo A T1–3, Anexo B), NT 3-01 (T1, T2), NT 3-03 (T1, T2), NT 3-06 (T1–16 e Anexo A T1–8), NT 3-07 (Anexo A), NT 4-01 (T1), NT 4-04 (Anexo A T1–4, Anexo B), NT 4-06 (Anexo B), NT 4-09 (Anexos A e B), NT 4-10 (T1), NT 5-02 (Anexo A T1), NT 5-04 (T1), NT 1-01 P1 (Anexos A e B), NT 1-01 P2 (T1, Anexos E–H), NT 1-03 (Anexo A, símbolos: o desenho não é conferido), NT 1-04 (Anexo E), NT 1-07 (Anexo A, CNAEs p. 13–29), NT 2-03 P1 (Anexo B T1) e NT 2-03 P2 (Anexos B e C; comparação por coluna no B). Lista de prioridade: NT 2-01 (T1–5, A1, A2), NT 2-02 (T1–4), NT 2-08 (T1, Anexos A–C), NT 1-04 (Anexos A–D), NT 2-11 (Anexos A–D), NT 2-14 (Quadros 1–2), NT 2-19 (Tabelas A–D2), NT 3-02 (T1–3, T5, Anexo A T1–4), NT 4-05 (T1–6, Anexos A, B, C, E), NT 5-05 e Decreto (Anexo II T1 p. 20–25 e Anexo III T2–21). Divergentes: NT 2-02 T5 (grade e texto fundem as linhas), NT 2-11 A.6 p. 14 (cabeçalho em outra coluna da grade), NT 3-06 T2, T4 e Anexo A T6 (sem grade desenhada, ou grade partida, e camada de texto desalinhada). Página sem grade desenhada: a camada de texto passa a ser o segundo caminho. O motor confere contra as tabelas conferidas: enquadramento (NT 1-04 Anexo B), divisões (Decreto T1) e Anexo III T2–4. Inconsistências da fonte registradas em cada `.yaml` (`inconsistencias_da_fonte`) e no `RELATORIO.md` |
 | COR-F3 skills | **feito** | correções de conteúdo, `anatomia-do-bilhete`, `protocolo-de-reducao`, `contar_bilhete.py`, `localizar_item.py` (índice), `achado.schema.json`, `verificar_links.py` verde |
 | COR-F4 normativo | **feito** | `interpretation` (critério adotado, base conferida); EXT-CAD-002 por pavimento; 5.2.4 pela área da edificação (EXT-CAD-002-EXC); EXT-CAD-004 composição 5.2.5; EXT-CAD-005 (6.7); Anexo III T5–21 por altura (`sistemas-exigidos-5-21.yaml`); pacote v6 |
 | COR-F5 reconhecimento | **feito** | camadas desligadas/congeladas/não plotáveis, MINSERT, ATTRIB, `object_key`, dedupe, balanço de reconhecimento e porta `quality.recognition.complete`; 19 testes de armadilha |
@@ -867,3 +921,5 @@ Sessão em nuvem (Linux, Python 3.12 no `.venv`, sem acesso ao site do CBMERJ: o
 - A API (`CAD-02`) continua com uma medida (desvio ≤ 2 %); só o MCP passou a exigir duas.
 - Depois de cada push, o bot do `normas-midia.yml` pode commitar na branch: `git pull --rebase`
   antes do próximo push; conflito em arquivo gerado se resolve **regenerando**, nunca à mão.
+
+- 30/09/2026 (decisões delegadas pelo usuário): 5 divergentes resolvidas com dois caminhos (novas opções de forma `sem_espacos` e `ignorar`, com teste); Anexo III T22–32 no motor (T22, 23, 24, 27, 30, 32 por pavimentos/altura; 30 e 32 para qualquer área; 25, 26, 28, 29 e 31 como referência); decisões de fonte registradas na seção 2 com critério conservador.

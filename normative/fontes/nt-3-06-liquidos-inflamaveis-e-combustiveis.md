@@ -337,6 +337,19 @@ d) a capacidade volumétrica mínima descrita nas alíneas “a” e “b” de 
 | Tanques com diâmetro > 45 m, se for prevista bacia de contenção à distância | 1/6 da soma dos diâmetros dos tanques adjacentes |  |  | 1/4 da soma dos diâmetros dos tanques adjacentes |  |  | 1/6 da soma dos diâmetros dos tanques adjacentes |  |  |
 | Tanques com diâmetro > 45 m, se for previsto dique | 1/4 da soma dos diâmetros dos tanques adjacentes |  |  | 1/3 da soma dos diâmetros dos tanques adjacentes |  |  | 1/4 da soma dos diâmetros dos tanques adjacentes |  |  |
 
+<!-- tabela-conferida: Tabela 2 p5 -->
+### Tabela 2 — Espaçamento mínimo entre tanques de superfície para armazenamento de líquidos (costado a costado) (conferida)
+
+| Diâmetro do tanque | Teto flutuante ou selo flutuante | Teto fixo ou horizontais — líquidos classe I ou II | Teto fixo ou horizontais — líquidos classe IIIA |
+| --- | --- | --- | --- |
+| Todos os tanques com diâmetro ≤ 45 m | 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m | 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m | 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m |
+| Tanques com diâmetro > 45 m, se for prevista bacia de contenção à distância | 1/6 da soma dos diâmetros dos tanques adjacentes | 1/4 da soma dos diâmetros dos tanques adjacentes | 1/6 da soma dos diâmetros dos tanques adjacentes |
+| Tanques com diâmetro > 45 m, se for previsto dique | 1/4 da soma dos diâmetros dos tanques adjacentes | 1/3 da soma dos diâmetros dos tanques adjacentes | 1/4 da soma dos diâmetros dos tanques adjacentes |
+
+Fonte: NT 3-06, página 5, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 2 p5 -->
+
 ---
 
 ## Página 6
@@ -1437,6 +1450,21 @@ Fonte - ABNT NBR 17505.
 | De 10.001 a 20.000 l | Um extintor de pó 80-B e um extintor de pó sobre rodas 80-B e um extintor de espuma mecânica 10-B e um extintor de espuma mecânica sobre rodas 40-B ou Quatro extintores de pó 40-B e um extintor de pó sobre rodas 80-B e um extintor de espuma mecânica 10-B e Um extintor de espuma mecânica sobre rodas 40-B |
 | De 20.001 l a 100.000 l | Dois extintores de pó 80-B e dois extintores de pó sobre rodas 80-B e dois extintores de espuma mecânica 10-B e dois extintores de espuma mecânica sobre rodas 40-B ou três extintores de pó sobre rodas 80-B e dois extintores de espuma mecânica 10-B e dois extintores de espuma mecânica sobre rodas 40-B |
 | Superior a 100.000 l | Quatro extintores de pó sobre rodas 80-B e três extintores de espuma mecânica sobre rodas 40-B |
+
+<!-- tabela-conferida: Tabela 6 do Anexo A p15 -->
+### Tabela 6 do Anexo A — Localização de edificações com tanques de armazenamento em relação aos limites de propriedade, desde que na área adjacente haja ou possa haver construção, vias de circulação interna e a edificação próxima mais importante na mesma propriedade (conferida)
+
+| Tanque de maior capacidade (m³) | Limite de propriedade — líquidos estáveis — ≤17 KPa | Limite de propriedade — líquidos estáveis — >17 KPa | Limite de propriedade — líquidos instáveis — ≤17 KPa | Limite de propriedade — líquidos instáveis — >17 KPa | Via de circulação/edificação — líquidos estáveis — ≤17 KPa | Via de circulação/edificação — líquidos estáveis — >17 KPa | Via de circulação/edificação — líquidos instáveis — ≤17 KPa | Via de circulação/edificação — líquidos instáveis — >17 KPa |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Até 46 | 4,5 | 7,5 | 12,0 | 18,0 | 1,5 | 3,0 | 4,5 | 6,0 |
+| 46 a 114 | 6,0 | 9,0 | 15,0 | 24,0 | 1,5 | 3,0 | 4,5 | 6,0 |
+| 114 a 190 | 9,0 | 13,5 | 22,5 | 36,0 | 3,0 | 4,5 | 7,5 | 12,0 |
+| 190 a 380 | 15,0 | 22,5 | 37,5 | 60,0 | 4,5 | 7,5 | 12,0 | 18,0 |
+
+Fonte: NT 3-06, página 15, Tabela 6 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: ABNT NBR 17505.
+Conferência: para cada lado e pressão, a distância para líquidos instáveis é maior ou igual à dos estáveis, e cresce com a capacidade.
+<!-- /tabela-conferida: Tabela 6 do Anexo A p15 -->
 
 <!-- tabela-conferida: Tabela 7 do Anexo A p15 -->
 ### Tabela 7 do Anexo A — Proteção por extintores de incêndio para tanques (conferida)

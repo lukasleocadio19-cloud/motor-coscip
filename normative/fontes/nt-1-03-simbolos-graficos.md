@@ -445,6 +445,32 @@ A coluna da direita traz o desenho do símbolo; o desenho não é texto e não �
 |  |  | DAMPER CORTA-FOGO |  |
 |  | DAMPERS | DAMPER CORTA-FUMAÇA |  |
 
+<!-- tabela-conferida: Anexo A p10 -->
+### Anexo A — Simbologia para projeto de segurança contra incêndio e pânico (p. 10) (conferida)
+
+| Grupo | Subgrupo | Nome do símbolo | Símbolo gráfico (desenho: ver a imagem da página) |
+| --- | --- | --- | --- |
+|  |  | BARRA ANTIPÂNICO |  |
+| SISTEMAS PASSIVOS |  | PORTA CORTA-FOGO P-60 |  |
+| SISTEMAS PASSIVOS | ABERTURAS PROTEGIDAS | PORTA CORTA-FOGO P-90 |  |
+| SISTEMAS PASSIVOS | ABERTURAS PROTEGIDAS | PORTA CORTA-FOGO P-120 |  |
+| SISTEMAS PASSIVOS | ABERTURAS PROTEGIDAS | PAREDE CORTA-FOGO |  |
+| SISTEMAS PASSIVOS | VEDOS | PAREDE DE COMPARTIMENTAÇÃO |  |
+| SISTEMAS PASSIVOS | VEDOS | PAREDE COMUM |  |
+| SISTEMAS PASSIVOS | VEDOS | DIVISÓRIA |  |
+| SISTEMAS PASSIVOS | VEDOS | ELEVADOR |  |
+| SISTEMAS PASSIVOS | ELEVADORES | ELEVADOR DE EMERGÊNCIA |  |
+| SISTEMAS PASSIVOS | ELEVADORES | MONTACARGA |  |
+| SISTEMAS PASSIVOS | ELEVADORES | SHAFT PROTEGIDO |  |
+| SISTEMAS PASSIVOS | ELEVADORES | DAMPER CORTA-FOGO |  |
+| SISTEMAS PASSIVOS | DAMPERS | DAMPER CORTA-FUMAÇA |  |
+
+Fonte: NT 1-03, página 10, Anexo A; conferida em 2026-09-29 (visual + texto).
+A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem da página).
+As células vazias das duas primeiras colunas no alto da página continuam a tabela da página anterior.
+Na grade do PDF, o rótulo girado em duas linhas "ABERTURAS PROTEGIDAS" sai com as letras das duas linhas intercaladas ("PARBOETRETGIUDRAASS"); a camada de texto lê a célula certa. É a única célula que diverge.
+<!-- /tabela-conferida: Anexo A p10 -->
+
 ---
 
 ## Página 11

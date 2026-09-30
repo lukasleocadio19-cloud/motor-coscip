@@ -140,6 +140,8 @@ def compare_by_column(visual_rows: list[list[str | None]], raw_rows: list[list[s
     for k, j in enumerate(used):
         a, b = column(visual_rows, k), column(rows, j)
         na, nb = _sem_hifen(norm(a) or ""), _sem_hifen(norm(b) or "")
+        if forma.get("sem_espacos"):  # extração com espaço entre letras ("C la ssific a ç ã o")
+            na, nb = "".join(na.split()), "".join(nb.split())
         if na != nb:
             cells.append({"linha": 0, "coluna": k, "a": a[:200], "b": b[:200],
                           "estado": "divergente", "motivo": "texto da coluna diferente"})
@@ -149,7 +151,8 @@ def compare_by_column(visual_rows: list[list[str | None]], raw_rows: list[list[s
 
 FORMA_KEYS = ("faixa", "mesclar_linhas", "rotulos_quebrados", "linhas_cabecalho",
               "juntar_cabecalho", "descartar_linhas", "cabecalho_sem_repeticao",
-              "celulas_verticais", "subscrito_deslocado", "comparar_por_coluna")
+              "celulas_verticais", "subscrito_deslocado", "comparar_por_coluna",
+              "sem_espacos", "ignorar")
 
 
 def forma_of(table: dict[str, Any], path: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -202,7 +205,8 @@ def evaluate(table: dict[str, Any]) -> dict[str, Any]:
         return {"estado": "pendente_humano", "caminhos_comparados": have,
                 "motivo": "é preciso a leitura visual e um segundo caminho independente"}
     tries: list[tuple[dict[str, Any], int]] = []
-    if geo:
+    ignorada = geo and texto and geo_forma(table).get("ignorar")
+    if geo and not ignorada:
         forma = geo_forma(table)
         for i, c in enumerate(geo["candidatos"]):
             try:
@@ -231,7 +235,8 @@ def evaluate(table: dict[str, Any]) -> dict[str, Any]:
             out["texto"] = _compare_texto(table, visual, texto)["estado"]
     else:
         res = _compare_texto(table, visual, texto)
-        falta = ("a página não tem grade desenhada que a extração geométrica reconheça"
+        falta = (f"a grade do PDF não serve nesta tabela: {ignorada}" if ignorada
+                 else "a página não tem grade desenhada que a extração geométrica reconheça"
                  if geo else "falta a extração geométrica do PDF oficial")
         out = {"estado": res["estado"], "caminhos_comparados": ["visual", "texto"],
                "observacao": ("segundo caminho = camada de texto do PDF (seção 'Tabelas "

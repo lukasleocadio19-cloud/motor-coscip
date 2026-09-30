@@ -9,6 +9,61 @@ conferida_em: '2026-09-29'
 forma:
   linhas_cabecalho: 3
   juntar_cabecalho: false
+  mesclar_linhas:
+  - - 3
+    - 4
+  - - 4
+    - 5
+  - - 5
+    - 6
+  - - 7
+    - 8
+  - - 8
+    - 9
+  - - 9
+    - 10
+  - - 10
+    - 11
+  - - 11
+    - 12
+  - - 12
+    - 13
+  - - 13
+    - 14
+  - - 14
+    - 15
+  - - 15
+    - 16
+  - - 16
+    - 17
+  - - 17
+    - 18
+  - - 18
+    - 19
+  - - 19
+    - 20
+  - - 21
+    - 22
+  - - 22
+    - 23
+  - - 23
+    - 24
+  - - 25
+    - 26
+  - - 26
+    - 27
+  - - 27
+    - 28
+  - - 28
+    - 29
+  - - 30
+    - 31
+  - - 31
+    - 32
+  - - 32
+    - 33
+  - - 33
+    - 34
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -79,59 +134,40 @@ caminhos:
       - Objetivo
       - Carga Horária
     - - 01 Legislação Específica
-      - '- Conhecer a legislação que regulamenta'
+      - '- Conhecer a legislação que regulamenta os procedimentos de primeiros-socorros para o nível equivalente
+        a Bombeiro profissional civil.'
       - 30 min.
-    - - os procedimentos de primeiros-socorros
-    - - para o nível equivalente a Bombeiro
-    - - profissional civil.
     - - 02 Procedimentos Iniciais
-      - '- Conhecer os procedimentos para'
+      - '- Conhecer os procedimentos para avaliação da segurança do local, números de vítimas e os procedimentos
+        de biossegurança; - Conhecer os procedimentos para acionamento e comunicação protocolar com os
+        serviços públicos e privados de socorro de vítimas e ações para localização dos hospitais de referência
+        nas proximidades do local de trabalho; - Conhecer os procedimentos para o planejamento das ações
+        conforme definido previamente no plano de emergência da planta.'
       - 1 h.
-    - - avaliação da segurança do local,
-    - - números de vítimas e os procedimentos
-    - - de biossegurança;
-    - - '- Conhecer os procedimentos para'
-    - - acionamento e comunicação protocolar
-    - - com os serviços públicos e privados de
-    - - socorro de vítimas e ações para
-    - - localização dos hospitais de referência
-    - - nas proximidades do local de trabalho;
-    - - '- Conhecer os procedimentos para o'
-    - - planejamento das ações conforme
-    - - definido previamente no plano de
-    - - emergência da planta.
     - - 03 Avaliação Inicial
-      - '- Conhecer, avaliar e identificar os riscos'
+      - '- Conhecer, avaliar e identificar os riscos iminentes, os mecanismos de lesão, número de vítimas
+        e o exame físico sumário destas.'
       - 30 min.
       - Avaliar e reconhecer os riscos iminentes, os mecanismos de lesão número de vítimas e o exame físico
         destas.
       - 30 min.
-    - - iminentes, os mecanismos de lesão,
-    - - número de vítimas e o exame físico
-    - - sumário destas.
     - - 04 Vias Aéreas
-      - '- Conhecer os sinais e sintomas de'
+      - '- Conhecer os sinais e sintomas de obstruções de vias aéreas superiores em adultos, crianças
+        e bebês conscientes e inconscientes, e promover a desobstrução quando indicado.'
       - 30 min.
       - Promover a desobstrução utilizando a técnica adequada.
       - 1h.
-    - - obstruções de vias aéreas superiores em
-    - - adultos, crianças e bebês conscientes e
-    - - inconscientes, e promover a
-    - - desobstrução quando indicado.
     - - 05 SBV (Suporte Básico de Vida)
-      - '- Apresentar as técnicas do SBV para'
+      - '- Apresentar as técnicas do SBV para adultos, crianças e bebês; - Conhecer os equipamentos de
+        reanimação cardiorespiratória (DEA, pocketmask).'
       - 2h
       - Praticar o protocolo do SBV (Suporte Básico de Vida)
       - 2h.
-    - - adultos, crianças e bebês;
-    - - '- Conhecer os equipamentos de'
-    - - reanimação cardiorespiratória (DEA,
-    - - pocketmask).
   geometrica:
     metodo: pdfplumber 0.11.10, estratégia por linhas
     todas_da_pagina: true
     candidatos:
-    - bbox: &id001
+    - bbox:
       - 49.85
       - 56.63
       - 543.93
@@ -274,7 +310,7 @@ caminhos:
         - 2h
         - null
         - null
-    - bbox:
+    - bbox: &id001
       - 49.85
       - 403.27
       - 543.93
@@ -703,33 +739,13 @@ caminhos:
         - null
 notas:
 - 'Fonte indicada: ABNT NBR 14608. Continua na página 15 (módulos 06 a 15 e total).'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
-  candidato_geometrico: 0
-  candidatos_na_pagina: 2
+  candidato_geometrico: 1
+  candidatos_na_pagina: 1
   bbox: *id001
-  texto: divergente
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 1
-    - 2
-    - 5
-    - 3
-    - 3
-    - 5
-    - 5
-    - 5
-  - - 1
-    - 2
-    - 8
-    - 2
-    - 3
-    - 3
-    - 3
-    - 3
-    - 5
-    - 4
+  texto: verificada

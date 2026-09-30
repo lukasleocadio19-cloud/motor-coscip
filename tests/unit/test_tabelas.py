@@ -264,3 +264,29 @@ def test_sem_grade_desenhada_usa_a_camada_de_texto():
     res = tabelas.evaluate(table)
     assert res["estado"] == "verificada" and res["caminhos_comparados"] == ["visual", "texto"]
     assert "não tem grade desenhada" in res["observacao"]
+
+
+def test_grade_com_espaco_entre_letras_confere_sem_os_espacos():
+    visual = [["Risco", "Sucção"], ["1.A - Pequeno", '1 1/2"']]
+    grade = [["R isc o 1 .A - P e q u e n o", 'S u c ç ã o 1 1 /2 "']]
+    assert tabelas.compare_by_column(visual, grade, {})["estado"] == "divergente"
+    assert tabelas.compare_by_column(visual, grade, {"sem_espacos": True})["estado"] == "verificada"
+    trocada = [["R isc o 1 .A - P e q u e n o", 'S u c ç ã o 1 1 /4 "']]
+    res = tabelas.compare_by_column(visual, trocada, {"sem_espacos": True})
+    assert res["estado"] == "divergente"
+
+
+def test_grade_ignorada_usa_a_camada_de_texto_com_o_motivo():
+    visual = {"linhas_cabecalho": 1, "linhas": [["Nome"], ["ABERTURAS PROTEGIDAS"]]}
+    table = {"forma": {"linhas_cabecalho": 1},
+             "forma_geometrica": {"ignorar": "rótulo girado em duas linhas"},
+             "caminhos": {"visual": visual,
+                          "geometrica": {"candidatos": [{"linhas": [["Nome"], ["PARBOETRE"]]}]},
+                          "texto": {"origem": {"pagina": 1}, "linhas": [["Nome"],
+                                                                        ["ABERTURAS PROTEGIDAS"]]}}}
+    res = tabelas.evaluate(table)
+    assert res["estado"] == "verificada"
+    assert res["caminhos_comparados"] == ["visual", "texto"]
+    assert "rótulo girado em duas linhas" in res["observacao"]
+    table["forma_geometrica"] = {}
+    assert tabelas.evaluate(table)["estado"] == "divergente"  # sem ignorar, a grade decide

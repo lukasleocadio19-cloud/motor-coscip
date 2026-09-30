@@ -7,7 +7,25 @@ pagina: 5
 fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
 conferida_em: '2026-09-29'
 forma:
-  comparar_por_coluna: true
+  linhas_cabecalho: 5
+  juntar_cabecalho: false
+  mesclar_linhas:
+  - - 3
+    - 4
+    - - 2
+      - 5
+      - 8
+  - - 2
+    - 3
+    - - 2
+  - - 1
+    - 2
+    - - 2
+      - 5
+  - - 0
+    - 1
+    - - 2
+      - 5
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -47,90 +65,27 @@ caminhos:
       tabela_na_pagina: 1
     linhas:
     - - Diâmetro do tanque
-      - ''
-      - Tanques
-      - ''
-      - ''
-      - Tanques verticais com teto
-      - ''
-      - ''
-      - ''
-      - ''
-    - - ''
-      - ''
-      - com teto
-      - ''
-      - ''
-      - fixo ou
-      - ''
-      - ''
-      - ''
-      - ''
-    - - ''
-      - ''
-      - flutuante
-      - ''
-      - ''
-      - horizontais
-      - ''
-      - ''
-      - ''
-      - ''
-    - - ''
-      - ''
-      - ou selo
-      - ''
-      - ''
-      - Líquidos
-      - ''
-      - ''
-      - Líquidos
-      - ''
-    - - ''
-      - ''
-      - flutuante
-      - ''
-      - ''
-      - classe I ou II
-      - ''
-      - ''
-      - classe IIIA
-      - ''
+      - Tanques com teto flutuante ou selo flutuante
+      - Tanques verticais com teto fixo ou horizontais
+    - - Líquidos classe I ou II
+      - Líquidos classe IIIA
     - - Todos os tanques com diâmetro ≤ 45 m
       - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
-      - ''
-      - ''
       - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
-      - ''
-      - ''
       - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
-      - ''
-      - ''
     - - Tanques com diâmetro > 45 m, se for prevista bacia de contenção à distância
       - 1/6 da soma dos diâmetros dos tanques adjacentes
-      - ''
-      - ''
       - 1/4 da soma dos diâmetros dos tanques adjacentes
-      - ''
-      - ''
       - 1/6 da soma dos diâmetros dos tanques adjacentes
-      - ''
-      - ''
     - - Tanques com diâmetro > 45 m, se for previsto dique
       - 1/4 da soma dos diâmetros dos tanques adjacentes
-      - ''
-      - ''
       - 1/3 da soma dos diâmetros dos tanques adjacentes
-      - ''
-      - ''
       - 1/4 da soma dos diâmetros dos tanques adjacentes
-      - ''
-      - ''
   geometrica:
     metodo: pdfplumber 0.11.10, estratégia por linhas
     todas_da_pagina: true
     candidatos:
-    - bbox:
+    - bbox: &id001
       - 52.61
       - 132.44
       - 287.08
@@ -227,15 +182,13 @@ caminhos:
       - - tanque
 notas:
 - 'Fonte indicada na página: ABNT NBR 17505.'
-- 'Sem segundo caminho: a página não tem grade desenhada que a extração geométrica reconheça, e a camada
-  de texto põe os cabeçalhos e os valores em colunas diferentes. Fica divergente para conferência humana
-  na imagem.'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); a página não tem grade
-    desenhada que a extração geométrica reconheça
-  motivo: a camada de texto não tem as colunas da leitura visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

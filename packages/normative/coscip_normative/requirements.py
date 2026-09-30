@@ -200,8 +200,9 @@ HEIGHT_BANDS = ("Térrea", "2pav", "3pav", "4, 5 e 6pav", "Acima de 6pav com H �
 
 def verify_height_tables(data: dict, sources: dict[str, NormativeText],
                          failures: list[str]) -> dict:
-    """Confere as Tabelas 5–21 contra o texto ingerido: título na página, cada linha de medida
-    (rótulo + todas as células) igual a uma linha da tabela da página, colunas no padrão."""
+    """Confere as Tabelas 5–32 por pavimentos/altura contra o texto ingerido: título na página,
+    cada linha de medida (rótulo + todas as células) igual a uma linha da tabela da página,
+    colunas no padrão. As de outro critério (``reference_tables``) só têm o título conferido."""
     src = sources.get(data.get("source", {}).get("document", ""))
     errors: list[str] = []
     if not src or src.pdf_sha256 != data["source"].get("pdf_sha256"):
@@ -235,14 +236,31 @@ def verify_height_tables(data: dict, sources: dict[str, NormativeText],
         failures.extend(f"Anexo III / Tabela {t['table']}: {e}" for e in errs)
         errors.extend(errs)
         tables_out.append({**t, "verified": not errs})
+    refs_out = []
+    for r in data.get("reference_tables") or []:
+        page_text = " ".join(" ".join(_fold_cell(c) for c in row)
+                             for row in _page_rows(src, r["page"]))
+        ok = (_fold_cell(f"Tabela {r['table']}") in page_text
+              and _fold_cell(r["title"][:60]) in page_text)
+        if not ok:
+            failures.append(f"Anexo III / Tabela {r['table']}: título ausente na página")
+            errors.append(f"Tabela {r['table']}: título ausente")
+        dup = seen_divisions & set(r["divisoes"])
+        if dup:
+            failures.append(f"Anexo III / Tabela {r['table']}: divisão em mais de uma tabela: "
+                            f"{sorted(dup)}")
+            errors.append("divisão repetida")
+        seen_divisions |= set(r["divisoes"])
+        refs_out.append({**r, "verified": ok and not dup})
     failures.extend(e for e in errors if e.startswith("Anexo III 5–21"))
-    return {"source": data.get("source"), "tables": tables_out,
+    return {"source": data.get("source"), "tables": tables_out, "reference_tables": refs_out,
             "verified": not errors and bool(tables_out),
             "source_sha256": src.text_sha256 if src else None}
 
 
 def _height_band(floors: int, height: float) -> int:
-    """Coluna das Tabelas 5–21: Térrea, 2pav, 3pav, 4–6pav, >6pav com H ≤ 30 m, H > 30 m."""
+    """Coluna das Tabelas 5–32 por altura: Térrea, 2pav, 3pav, 4–6pav, >6pav com H ≤ 30 m,
+    H > 30 m."""
     if height > 30:
         return 5
     if floors <= 3:
@@ -252,7 +270,7 @@ def _height_band(floors: int, height: float) -> int:
 
 def _consult_height(height: dict | None, context: dict) -> dict:
     out = {"status": "UNAVAILABLE", "measures": [], "notes": [], "source": None,
-           "message": "Pacote sem as Tabelas 5–21 do Anexo III verificadas."}
+           "message": "Pacote sem as Tabelas 5–32 do Anexo III verificadas."}
     if height is None:  # pacote sem as tabelas: fora do que esta consulta cobre
         return {**out, "status": "OUT_OF_SCOPE",
                 "message": "Consultar tabelas específicas: ATC acima de 900 m² "
@@ -263,8 +281,18 @@ def _consult_height(height: dict | None, context: dict) -> dict:
     found = [(t, bi, b) for t in height["tables"] for bi, b in enumerate(t["blocks"])
              if occ in b["divisoes"]]
     if not found:
+        ref = next((r for r in height.get("reference_tables") or [] if occ in r["divisoes"]),
+                   None)
+        if ref:  # tabela conferida, mas a coluna depende de dado que o motor não recebe
+            return {**out, "status": "OUT_OF_SCOPE",
+                    "source": {"document": "Decreto 42/2018",
+                               "item": f"Anexo III, Tabela {ref['table']}",
+                               "page": ref["page"], "title": ref["title"]},
+                    "message": f"Divisão {occ}: Anexo III, Tabela {ref['table']} (coluna por "
+                               f"{ref['criterio']}); o motor não escolhe a coluna. Consultar a "
+                               "tabela e a NT específica."}
         return {**out, "status": "OUT_OF_SCOPE",
-                "message": "Divisão sem coluna nas Tabelas 5–21; consultar a NT específica."}
+                "message": "Divisão sem coluna nas Tabelas 5–32; consultar a NT específica."}
     table, bi, block = found[0]
     out.update(source={"document": "Decreto 42/2018", "item": f"Anexo III, Tabela {table['table']}",
                        "page": table["page"], "title": table["title"]},
@@ -317,7 +345,11 @@ def consult_requirements(table: dict | None, context: dict[str, Any]) -> dict:
             or context.get("single_occupancy") is not True):
         return {**out, "status": "REVIEW_REQUIRED",
                 "message": "Conferir isenções, agrupamentos ou ocupações múltiplas com o analista."}
-    if area > 900 or floors > 2:
+    height = table.get("height_tables") or {}
+    any_area = {d for t in height.get("tables") or [] for b in t["blocks"]
+                if b.get("qualquer_area") for d in b["divisoes"]}
+    any_area |= {d for r in height.get("reference_tables") or [] for d in r["divisoes"]}
+    if area > 900 or floors > 2 or occ in any_area:  # M-1, M-2, M-4–M-9: qualquer área
         if occ in {"A-2", "A-3"}:
             return _consult_residential(table.get("residential_table"), context)
         return _consult_height(table.get("height_tables"), context)

@@ -8,6 +8,7 @@ fonte_pdf_sha256: 175c79afcac17335da3d68aef49e4ec9cc88706ddd012ed49e0b2748bf8524
 conferida_em: '2026-09-29'
 forma:
   linhas_cabecalho: 1
+  comparar_por_coluna: true
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -81,25 +82,20 @@ caminhos:
 notas:
 - 'Na imagem o título é "Tabela 05"; o texto (5.15.8 f) a chama de Tabela 5. CP = canalização preventiva;
   RP = rede preventiva. Fonte indicada: CBMERJ.'
-- 'Divergência técnica, não de conteúdo conhecido: a camada de texto funde as linhas duas a duas e o pdfplumber
-  lê o PDF com espaçamento entre caracteres ("C la ssific a ç ã o") numa linha só. A leitura visual não
-  tem segundo caminho independente: conferir na imagem antes de usar.'
-estado: divergente
+- 'A camada de texto funde as linhas duas a duas e a grade do PDF lê cada coluna numa célula só, com espaço
+  entre as letras: a comparação é por coluna (texto e ordem de cada coluna), e na grade sem os espaços;
+  quais linhas cada valor ocupa vem da leitura visual.'
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
   candidato_geometrico: 0
   candidatos_na_pagina: 1
   bbox: *id001
-  texto: divergente
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 4
-    - 4
-    - 4
-    - 4
-    - 4
-    - 4
-  - - 4
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
+  texto: verificada
+forma_geometrica:
+  sem_espacos: true

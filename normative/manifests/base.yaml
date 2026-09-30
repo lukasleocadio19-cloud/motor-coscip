@@ -7,9 +7,9 @@ resumo:
   imagens_ausentes: 0
   tabelas_por_estado:
     capa: 38
-    divergente: 6
+    divergente: 1
     nao_tabela: 36
-    verificada: 251
+    verificada: 256
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -577,7 +577,7 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT1-03_2Edio_2023.pdf
   sha256_pdf: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
-  sha256_md: 67abd9c01ce0163f904a79b38180536c0cab9a747efd6da9d4d9259f3445dbc4
+  sha256_md: 9ff0ac010d2cf7471c83e63c37163f4e93c8582335eb5771c1b6859ec53f6a51
   data_captura: '2026-07-23'
   paginas: 12
   midia: nt-1-03
@@ -658,7 +658,7 @@ fontes:
   - pagina: 10
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p10.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 11
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p11.yaml
@@ -1084,7 +1084,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_2-02_alterada-pela-Portaria-1317_2025.pdf
   sha256_pdf: 175c79afcac17335da3d68aef49e4ec9cc88706ddd012ed49e0b2748bf8524e9
-  sha256_md: b25d562c3d13e9d4981457510475fdc8b025f1df51176cfbf5d03a9c22148ce9
+  sha256_md: fc5d2acf547e0d8d1ba635a18ffec9f7cfb13ad747c54cfd55400eb8fec2797e
   data_captura: '2026-07-23'
   paginas: 21
   midia: nt-2-02
@@ -1175,7 +1175,7 @@ fontes:
   - pagina: 13
     tabela: Tabela 5
     arquivo: normative/tabelas/nt-2-02/tabela-5-drenos-colares.yaml
-    estado: divergente
+    estado: verificada
 - arquivo: nt-2-03-parte-1-sprinklers-requisitos-gerais.md
   documento: NT 2-03 P1
   titulo: NT 2-03 - Parte 1 - Sistemas de chuveiros automáticos / sprinklers - Requisitos gerais
@@ -1891,7 +1891,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-11-Brigadas-de-incendio.pdf
   sha256_pdf: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
-  sha256_md: 49d92117eada4d2f26000db00ecd0ae7bf6423735f2b17b422a2723eda2a969f
+  sha256_md: f9aa8b03863355a4c429224f0e200cf9693ad008f4abc616d430dfeaf2422fd0
   data_captura: '2026-07-23'
   paginas: 26
   midia: nt-2-11
@@ -1986,7 +1986,7 @@ fontes:
   - pagina: 14
     tabela: Tabela 1 (A.6, página 14)
     arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a6-p14.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 15
     tabela: Tabela 1 (A.6, página 15)
     arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a6-p15.yaml
@@ -2910,7 +2910,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-06-Armazenagem-de-liquidos-inflamaveis-e-combustiveis.pdf
   sha256_pdf: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
-  sha256_md: 161a98836929e67cca8b6b564ac3be450f1e99ef37dd26b3c8b4024b29d97e95
+  sha256_md: 511a5040a8c1daf79e06fca14cc9ec9fa5ab2806c89abd5158ba9cdcb7456bd1
   data_captura: '2026-07-23'
   paginas: 16
   midia: nt-3-06
@@ -2989,7 +2989,7 @@ fontes:
   - pagina: 5
     tabela: Tabela 2
     arquivo: normative/tabelas/nt-3-06/tabela-2-espacamento-tanques.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 7
     tabela: Tabela 3
     arquivo: normative/tabelas/nt-3-06/tabela-3-espuma-tanques-verticais.yaml
@@ -3069,7 +3069,7 @@ fontes:
   - pagina: 15
     tabela: Tabela 6 do Anexo A
     arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-6-edificacoes.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 15
     tabela: Tabela 7 do Anexo A
     arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-7-extintores.yaml

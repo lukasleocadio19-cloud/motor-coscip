@@ -105,7 +105,7 @@ caminhos:
     metodo: pdfplumber 0.11.10, estratégia por linhas
     todas_da_pagina: true
     candidatos:
-    - bbox: &id001
+    - bbox:
       - 70.94
       - 56.88
       - 509.86
@@ -180,38 +180,14 @@ inconsistencias_da_fonte:
   a grade como está desenhada, e o agrupamento pretendido fica para o analista.'
 - '"BARRA ANTIPÂNICO", no alto da página, fica fora da célula "SISTEMAS PASSIVOS", com grupo e subgrupo
   vazios.'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
-  - geometrica
-  candidato_geometrico: 0
-  candidatos_na_pagina: 1
-  bbox: *id001
-  texto: verificada
-  celulas:
-  - linha: 1
-    coluna: 0
-    a: SISTEMAS PASSIVOS
-    b: SISTEMASPASSIVOS
-    estado: verificada
-    score: 97.0
-  - linha: 2
-    coluna: 0
-    a: ABERTURAS PROTEGIDAS
-    b: PARBOETRETGIUDRAASS
-    estado: divergente
-    score: 56.4
+  - texto
+  observacao: 'segundo caminho = camada de texto do PDF (seção ''Tabelas extraídas''); a grade do PDF
+    não serve nesta tabela: o rótulo girado em duas linhas "ABERTURAS PROTEGIDAS" sai com as letras das
+    duas linhas intercaladas'
 forma_geometrica:
-  celulas_verticais:
-  - - 1
-    - 0
-  - - 2
-    - 1
-  - - 5
-    - 1
-  - - 9
-    - 1
-  - - 13
-    - 1
+  ignorar: o rótulo girado em duas linhas "ABERTURAS PROTEGIDAS" sai com as letras das duas linhas intercaladas

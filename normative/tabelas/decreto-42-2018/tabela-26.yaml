@@ -674,3 +674,9 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: verificada
+anexo3:
+  tabela: 26
+  referencia:
+    divisoes:
+    - M-2
+    criterio: volume de líquidos ou gases, plataforma ou produtos acondicionados

@@ -42,7 +42,8 @@ class RulePackageDef:
     requirements: dict[str, Any] | None = None
     # NT 2-08, Anexo C: distâncias máximas até a saída, opcional.
     exit_distances: dict[str, Any] | None = None
-    # Anexo III, Tabelas 5 a 21 (ATC > 900 m² ou mais de 2 pavimentos), opcional.
+    # Anexo III, Tabelas 5 a 32 por pavimentos e altura (e as de outro critério, só como
+    # referência), opcional.
     requirements_height: dict[str, Any] | None = None
 
     @property
@@ -208,7 +209,7 @@ def verify_package(pkg: RulePackageDef, sources: dict[str, NormativeText]) -> di
     if pkg.requirements_height is not None:
         height_out = verify_height_tables(pkg.requirements_height, sources, failures)
         if requirements_out is not None:
-            # a consulta do Anexo III recebe as Tabelas 5–21 junto (mesmo relatório)
+            # a consulta do Anexo III recebe as Tabelas 5–32 junto (mesmo relatório)
             requirements_out["height_tables"] = height_out
             requirements_out["verified"] &= height_out["verified"]
     exit_out = (verify_exit_distances(pkg.exit_distances, sources, failures)

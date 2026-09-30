@@ -416,3 +416,10 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: verificada
+anexo3:
+  tabela: 28
+  referencia:
+    divisoes:
+    - M-4
+    - M-7
+    criterio: área total construída (M-4) ou qualquer área não coberta (M-7)

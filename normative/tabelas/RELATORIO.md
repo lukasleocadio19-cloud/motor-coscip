@@ -4,8 +4,8 @@ Gerado por `python -m tools.normas.tabelas relatorio`. Estado de cada tabela con
 
 | Estado | Tabelas |
 | --- | --- |
-| divergente | 6 |
-| verificada | 251 |
+| divergente | 1 |
+| verificada | 256 |
 
 Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale como segundo caminho só até a extração geométrica (`pdfplumber`, workflow `normas-midia.yml`) rodar sobre o PDF oficial conferido por hash.
 
@@ -69,7 +69,7 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 1-03 | Anexo A | 7 | verificada | visual + geometrica | 0 | 0 |
 | NT 1-03 | Anexo A | 8 | verificada | visual + geometrica | 0 | 0 |
 | NT 1-03 | Anexo A | 9 | verificada | visual + geometrica | 0 | 0 |
-| NT 1-03 | Anexo A | 10 | divergente | visual + geometrica | 1 | 2 |
+| NT 1-03 | Anexo A | 10 | verificada | visual + texto | 0 | 2 |
 | NT 1-03 | Anexo A | 11 | verificada | visual + geometrica | 0 | 1 |
 | NT 1-03 | Anexo A | 12 | verificada | visual + geometrica | 0 | 1 |
 | NT 1-04 | Tabela do Anexo A | 5 | verificada | visual + geometrica | 0 | 0 |
@@ -120,7 +120,7 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 2-02 | Tabela 2 | 6 | verificada | visual + geometrica | 0 | 1 |
 | NT 2-02 | Tabela 3 | 8 | verificada | visual + geometrica | 0 | 1 |
 | NT 2-02 | Tabela 4 | 12 | verificada | visual + geometrica | 0 | 0 |
-| NT 2-02 | Tabela 5 | 13 | divergente | visual + geometrica | 0 | 0 |
+| NT 2-02 | Tabela 5 | 13 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-03 P1 | Tabela 1 do Anexo B | 9 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-03 Parte 2 | Anexo B | 9 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-03 Parte 2 | Anexo B | 10 | verificada | visual + geometrica | 0 | 0 |
@@ -174,7 +174,7 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 2-11 | Tabela 1 (A.3) | 13 | verificada | visual + geometrica | 0 | 3 |
 | NT 2-11 | Tabela 1 (A.4) | 13 | verificada | visual + geometrica | 0 | 1 |
 | NT 2-11 | Tabela 1 (A.5) | 14 | verificada | visual + geometrica | 0 | 1 |
-| NT 2-11 | Tabela 1 (A.6, página 14) | 14 | divergente | visual + geometrica | 0 | 0 |
+| NT 2-11 | Tabela 1 (A.6, página 14) | 14 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-11 | Tabela 1 (A.6, página 15) | 15 | verificada | visual + geometrica | 0 | 2 |
 | NT 2-11 | Tabela 2 | 15 | verificada | visual + geometrica | 0 | 1 |
 | NT 2-11 | Tabela 1 (Anexo B) | 16 | verificada | visual + geometrica | 0 | 1 |
@@ -216,7 +216,7 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 3-03 | Tabela 1 | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-03 | Tabela 2 | 6 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 1 |
-| NT 3-06 | Tabela 2 | 5 | divergente | visual + texto | 0 | 0 |
+| NT 3-06 | Tabela 2 | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 3 | 7 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 4 | 7 | divergente | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 5 | 7 | verificada | visual + geometrica | 0 | 0 |
@@ -236,7 +236,7 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 3-06 | Tabela 3 do Anexo A | 14 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 4 do Anexo A | 14 | verificada | visual + geometrica | 0 | 1 |
 | NT 3-06 | Tabela 5 do Anexo A | 14 | verificada | visual + geometrica | 0 | 1 |
-| NT 3-06 | Tabela 6 do Anexo A | 15 | divergente | visual + texto | 0 | 1 |
+| NT 3-06 | Tabela 6 do Anexo A | 15 | verificada | visual + geometrica | 0 | 1 |
 | NT 3-06 | Tabela 7 do Anexo A | 15 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 8 do Anexo A | 16 | verificada | visual + geometrica | 0 | 1 |
 | NT 3-07 | Tabela do Anexo A | 6 | verificada | visual + geometrica | 0 | 2 |

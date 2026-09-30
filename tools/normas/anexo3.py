@@ -1,8 +1,11 @@
-"""Anexo III do Decreto 42/2018, Tabelas 5 a 21, como dado do pacote (plano de correção, F4.3).
+"""Anexo III do Decreto 42/2018, Tabelas 5 a 32, como dado do pacote (plano de correção, F4.3).
 
 Gera ``normative/base/sistemas-exigidos-5-21.yaml`` a partir das tabelas conferidas em
 ``normative/tabelas/decreto-42-2018/`` (leitura visual × camada de texto, estado calculado).
 Só entra tabela com estado ``verificada``; a linha de cada medida é a leitura visual.
+Entram as tabelas por pavimentos e altura (5 a 24, 27, 30 e 32; ``qualquer_area`` quando a
+tabela vale para qualquer área); as de outro critério (25, 26, 28, 29 e 31: extensão, volume,
+ATC) ficam como referência, sem cálculo, em ``reference_tables``.
 O pacote confere de novo cada linha contra o texto ingerido (``verify_height_tables``).
 
     python -m tools.normas.anexo3            # grava
@@ -52,11 +55,17 @@ def _measure(label: str) -> tuple[str, str, str | None]:
 
 
 def build() -> dict[str, Any]:
-    tables = []
+    tables, references = [], []
     for f in sorted(FOLDER.glob("tabela-*.yaml")):
         data = tabelas.load(f)
         if data["estado"] != "verificada" or "anexo3" not in data:
-            continue  # sem bloco ``anexo3``: tabela conferida fora das Tabelas 5 a 21
+            continue  # sem bloco ``anexo3``: tabela conferida fora do Anexo III por altura
+        if "referencia" in data["anexo3"]:  # outro critério de coluna: o motor só aponta
+            ref = data["anexo3"]["referencia"]
+            references.append({"table": data["anexo3"]["tabela"], "page": data["pagina"],
+                               "title": data["titulo"], "divisoes": ref["divisoes"],
+                               "criterio": ref["criterio"]})
+            continue
         cols = [c for b in data["anexo3"]["blocos"] for c in b["colunas"]]
         measures = []
         for row in data["caminhos"]["visual"]["linhas"]:
@@ -75,7 +84,7 @@ def build() -> dict[str, Any]:
         })
     return {
         "schema_version": "requirements-height/1.0",
-        "source": {"document": "Decreto 42/2018", "item": "Anexo III, Tabelas 5 a 21",
+        "source": {"document": "Decreto 42/2018", "item": "Anexo III, Tabelas 5 a 32",
                    "pdf_sha256": tables and tabelas.load(
                        FOLDER / "tabela-05.yaml")["fonte_pdf_sha256"] or None,
                    "url": URL},
@@ -83,6 +92,7 @@ def build() -> dict[str, Any]:
                  "Consulta indicativa, em rascunho: célula com nota (X1, X2…) é condicional e "
                  "traço não é dispensa global."),
         "tables": tables,
+        "reference_tables": references,
     }
 
 
@@ -91,7 +101,7 @@ def dump(data: dict[str, Any]) -> str:
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description="Anexo III, Tabelas 5 a 21 (F4.3)")
+    ap = argparse.ArgumentParser(description="Anexo III, Tabelas 5 a 32 (F4.3)")
     ap.add_argument("--conferir", action="store_true")
     args = ap.parse_args(argv)
     text = dump(build())

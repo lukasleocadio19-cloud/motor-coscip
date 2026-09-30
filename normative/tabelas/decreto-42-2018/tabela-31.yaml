@@ -108,3 +108,9 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: verificada
+anexo3:
+  tabela: 31
+  referencia:
+    divisoes:
+    - M-8
+    criterio: qualquer loteamento

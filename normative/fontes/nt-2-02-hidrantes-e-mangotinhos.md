@@ -886,6 +886,22 @@ Fonte: CBMERJ.
 | 1.B - Risco Pequeno CP 2.A - Risco Médio CP | 1 1/2" 3" | 1 1/4" 2 1/2" | 1/2" (opcional) 1/2" (opcional) |
 | 2.B - Risco Médio RP 3. - Risco Grande RP | 3" 4" | 3" 3" | 3/4" (opcional) 1"(obrigatório) |
 
+<!-- tabela-conferida: Tabela 5 p13 -->
+### Tabela 5 — Drenos e colares hidráulicos (conferida)
+
+| Classificação de Risco | Sucção | Recalque | Alívio |
+| --- | --- | --- | --- |
+| 1.A - Risco Pequeno - Mangotinho | 1 1/2" | 1 1/4" | 1/2" (opcional) |
+| 1.B - Risco Pequeno CP | 1 1/2" | 1 1/4" | 1/2" (opcional) |
+| 2.A - Risco Médio CP | 3" | 2 1/2" | 1/2" (opcional) |
+| 2.B - Risco Médio RP | 3" | 3" | 3/4" (opcional) |
+| 3. - Risco Grande RP | 4" | 3" | 1"(obrigatório) |
+
+Fonte: NT 2-02, página 13, Tabela 5; conferida em 2026-09-29 (visual + geometrica).
+Na imagem o título é "Tabela 05"; o texto (5.15.8 f) a chama de Tabela 5. CP = canalização preventiva; RP = rede preventiva. Fonte indicada: CBMERJ.
+A camada de texto funde as linhas duas a duas e a grade do PDF lê cada coluna numa célula só, com espaço entre as letras: a comparação é por coluna (texto e ordem de cada coluna), e na grade sem os espaços; quais linhas cada valor ocupa vem da leitura visual.
+<!-- /tabela-conferida: Tabela 5 p13 -->
+
 ---
 
 ## Página 14

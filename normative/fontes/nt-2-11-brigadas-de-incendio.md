@@ -806,6 +806,21 @@ Fonte indicada: ABNT NBR 14608.
 Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao total da linha "Total".
 <!-- /tabela-conferida: Tabela 1 (A.5) p14 -->
 
+<!-- tabela-conferida: Tabela 1 (A.6, página 14) p14 -->
+### Tabela 1 (A.6, página 14) — Currículos mínimos para a formação de BC — Primeiros socorros (A.6), módulos 01 a 05 (conferida)
+
+| Módulo | Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- | --- |
+| 01 Legislação Específica | - Conhecer a legislação que regulamenta os procedimentos de primeiros-socorros para o nível equivalente a Bombeiro profissional civil. | 30 min. |  |  |
+| 02 Procedimentos Iniciais | - Conhecer os procedimentos para avaliação da segurança do local, números de vítimas e os procedimentos de biossegurança; - Conhecer os procedimentos para acionamento e comunicação protocolar com os serviços públicos e privados de socorro de vítimas e ações para localização dos hospitais de referência nas proximidades do local de trabalho; - Conhecer os procedimentos para o planejamento das ações conforme definido previamente no plano de emergência da planta. | 1 h. |  |  |
+| 03 Avaliação Inicial | - Conhecer, avaliar e identificar os riscos iminentes, os mecanismos de lesão, número de vítimas e o exame físico sumário destas. | 30 min. | Avaliar e reconhecer os riscos iminentes, os mecanismos de lesão número de vítimas e o exame físico destas. | 30 min. |
+| 04 Vias Aéreas | - Conhecer os sinais e sintomas de obstruções de vias aéreas superiores em adultos, crianças e bebês conscientes e inconscientes, e promover a desobstrução quando indicado. | 30 min. | Promover a desobstrução utilizando a técnica adequada. | 1h. |
+| 05 SBV (Suporte Básico de Vida) | - Apresentar as técnicas do SBV para adultos, crianças e bebês; - Conhecer os equipamentos de reanimação cardiorespiratória (DEA, pocketmask). | 2h | Praticar o protocolo do SBV (Suporte Básico de Vida) | 2h. |
+
+Fonte: NT 2-11, página 14, Tabela 1 (A.6, página 14); conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada: ABNT NBR 14608. Continua na página 15 (módulos 06 a 15 e total).
+<!-- /tabela-conferida: Tabela 1 (A.6, página 14) p14 -->
+
 ---
 
 ## Página 15
