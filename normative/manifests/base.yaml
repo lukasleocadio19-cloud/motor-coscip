@@ -6,11 +6,11 @@ resumo:
   imagens_presentes: 527
   imagens_ausentes: 0
   tabelas_por_estado:
-    bruto: 121
+    bruto: 108
     capa: 38
     divergente: 3
-    nao_tabela: 15
-    verificada: 124
+    nao_tabela: 16
+    verificada: 136
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -19,7 +19,7 @@ fontes:
   ato: null
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/COSCIP_DEC_42-2018_COMPILADO.pdf
   sha256_pdf: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
-  sha256_md: 890dd4f9bf089c2bf69fd3dd7512a34b5d98b9bd4686c2bb8a63445fe76e6d1c
+  sha256_md: e76fe9011ae927931b824844fbcbc01106eabbfe49ca1f17fc014f40199c7f9a
   data_captura: '2026-07-23'
   paginas: 57
   midia: decreto-42-2018-coscip-compilado
@@ -182,7 +182,8 @@ fontes:
     sha256: 279cbd58f6c023b573d115d5ed6455188a4ff13ead2e76521d02bcce3f51d310
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: nao_tabela
+    motivo: preâmbulo do Decreto (CONSIDERANDO) e artigos 1º a 3º em texto corrido
   - pagina: 20
     tabela: Tabela 1 do Anexo II
     arquivo: normative/tabelas/decreto-42-2018/tabela-01-p20.yaml
@@ -288,29 +289,53 @@ fontes:
     arquivo: normative/tabelas/decreto-42-2018/tabela-21.yaml
     estado: verificada
   - pagina: 46
-    estado: bruto
+    tabela: Tabela 22
+    arquivo: normative/tabelas/decreto-42-2018/tabela-22.yaml
+    estado: verificada
   - pagina: 47
-    estado: bruto
+    tabela: Tabela 23
+    arquivo: normative/tabelas/decreto-42-2018/tabela-23.yaml
+    estado: verificada
   - pagina: 48
-    estado: bruto
+    tabela: Tabela 24
+    arquivo: normative/tabelas/decreto-42-2018/tabela-24.yaml
+    estado: verificada
   - pagina: 49
-    estado: bruto
+    tabela: Tabela 25
+    arquivo: normative/tabelas/decreto-42-2018/tabela-25.yaml
+    estado: verificada
   - pagina: 50
-    estado: bruto
+    tabela: Tabela 26
+    arquivo: normative/tabelas/decreto-42-2018/tabela-26.yaml
+    estado: verificada
   - pagina: 51
-    estado: bruto
+    tabela: Tabela 27
+    arquivo: normative/tabelas/decreto-42-2018/tabela-27.yaml
+    estado: verificada
   - pagina: 52
-    estado: bruto
+    tabela: Tabela 28
+    arquivo: normative/tabelas/decreto-42-2018/tabela-28.yaml
+    estado: verificada
   - pagina: 53
-    estado: bruto
+    tabela: Tabela 29
+    arquivo: normative/tabelas/decreto-42-2018/tabela-29.yaml
+    estado: verificada
   - pagina: 54
-    estado: bruto
+    tabela: Tabela 30
+    arquivo: normative/tabelas/decreto-42-2018/tabela-30.yaml
+    estado: verificada
   - pagina: 55
-    estado: bruto
+    tabela: Tabela 31
+    arquivo: normative/tabelas/decreto-42-2018/tabela-31.yaml
+    estado: verificada
   - pagina: 56
-    estado: bruto
+    tabela: Tabela 32
+    arquivo: normative/tabelas/decreto-42-2018/tabela-32.yaml
+    estado: verificada
   - pagina: 57
-    estado: bruto
+    tabela: Tabela 33
+    arquivo: normative/tabelas/decreto-42-2018/tabela-33.yaml
+    estado: verificada
 - arquivo: nt-1-01-parte-1-regularizacao.md
   documento: NT 1-01 P1
   titulo: NT 1-01 - Parte 1 - Procedimentos administrativos para regularização

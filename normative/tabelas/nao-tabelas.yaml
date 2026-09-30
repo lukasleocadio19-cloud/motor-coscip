@@ -82,3 +82,8 @@ paginas:
     imagem: media/nt-5-03/pagina-06.jpg
     motivo: itens 7.7.4 e 7.7.5 (guarda-corpos) em duas colunas de texto
     conferido_em: '2026-09-30'
+  - arquivo: decreto-42-2018-coscip-compilado.md
+    pagina: 1
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-01.jpg
+    motivo: preâmbulo do Decreto (CONSIDERANDO) e artigos 1º a 3º em texto corrido
+    conferido_em: '2026-09-30'

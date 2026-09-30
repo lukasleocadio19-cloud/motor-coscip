@@ -5,7 +5,7 @@ Gerado por `python -m tools.normas.tabelas relatorio`. Estado de cada tabela con
 | Estado | Tabelas |
 | --- | --- |
 | divergente | 3 |
-| verificada | 124 |
+| verificada | 136 |
 
 Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale como segundo caminho só até a extração geométrica (`pdfplumber`, workflow `normas-midia.yml`) rodar sobre o PDF oficial conferido por hash.
 
@@ -37,6 +37,18 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | Decreto 42/2018 | Tabela 19 | 43 | verificada | visual + geometrica | 0 | 0 |
 | Decreto 42/2018 | Tabela 20 | 44 | verificada | visual + geometrica | 0 | 0 |
 | Decreto 42/2018 | Tabela 21 | 45 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 22 | 46 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 23 | 47 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 24 | 48 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 25 | 49 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 26 | 50 | verificada | visual + texto | 0 | 1 |
+| Decreto 42/2018 | Tabela 27 | 51 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 28 | 52 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 29 | 53 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 30 | 54 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 31 | 55 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 32 | 56 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 33 | 57 | verificada | visual + texto | 0 | 1 |
 | NT 1-04 | Tabela do Anexo A | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 1-04 | Tabela do Anexo A | 6 | verificada | visual + geometrica | 0 | 0 |
 | NT 1-04 | Tabela do Anexo A | 7 | verificada | visual + geometrica | 0 | 0 |

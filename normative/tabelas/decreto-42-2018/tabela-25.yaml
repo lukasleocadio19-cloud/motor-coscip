@@ -1,0 +1,189 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 25
+titulo: Exigências para edificações e áreas de risco do grupo M (divisão M-1) com qualquer área ou número
+  de pavimentos
+pagina: 49
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 10
+  - 23
+  rotulos_quebrados: true
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-49.jpg
+    imagem_sha256: 3c73a03136a1d4fd54fe30b7072c3b301b2e6288ede1b86be54abb46b55bdf62
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Medidas de Segurança contra Incêndio e Pânico
+    - 'M-1 (Túneis rodoviários, metroviários e ferroviários), extensão em metros: Até 90'
+    - 'M-1 (Túneis rodoviários, metroviários e ferroviários), extensão em metros: Acima de 90 até 500'
+    - 'M-1 (Túneis rodoviários, metroviários e ferroviários), extensão em metros: Acima de 500 até 1000'
+    - 'M-1 (Túneis rodoviários, metroviários e ferroviários), extensão em metros: Acima de 1000 até 3000'
+    - 'M-1 (Túneis rodoviários, metroviários e ferroviários), extensão em metros: Acima de 3000'
+    linhas:
+    - - Extintores
+      - '-'
+      - X1
+      - X1
+      - X1
+      - X
+    - - Hidrantes e mangotinhos
+      - '-'
+      - X1
+      - X1
+      - X1
+      - X
+    - - Sinalização de segurança
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Iluminação de Emergência
+      - X2
+      - X2
+      - X
+      - X
+      - X
+    - - Detecção de Incêndio
+      - X2
+      - X2
+      - X
+      - X
+      - X
+    - - Saídas de Emergência
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Plano de emergência
+      - '-'
+      - X
+      - X
+      - X
+      - X
+    - - Ventilação e controle de gases e fumaça
+      - X2
+      - X
+      - X
+      - X
+      - X
+    - - Segurança Estrutural contra Incêndio
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Controle de Materiais de Acabamento
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Sistema de comunicação
+      - X2
+      - X2
+      - X
+      - X
+      - X
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 49
+      tabela_na_pagina: 1
+    linhas:
+    - - Extintores
+      - '-'
+      - X1
+      - X1
+      - X1
+      - X
+    - - Hidrantes e mangotinhos
+      - '-'
+      - X1
+      - X1
+      - X1
+      - X
+    - - Sinalização de segurança
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Iluminação de Emergência
+      - X2
+      - X2
+      - X
+      - X
+      - X
+    - - Detecção de Incêndio
+      - X2
+      - X2
+      - X
+      - X
+      - X
+    - - Saídas de Emergência
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Plano de emergência
+      - '-'
+      - X
+      - X
+      - X
+      - X
+    - - Ventilação e controle de gases e fumaça
+      - X2
+      - X
+      - X
+      - X
+      - X
+    - - Segurança Estrutural contra Incêndio
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Controle de Materiais de Acabamento
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Sistema de comunicação
+      - X2
+      - X2
+      - X
+      - X
+      - X
+notas:
+- 'Divisões e colunas: M-1 (Túneis rodoviários, metroviários e ferroviários), extensão em metros — Até
+  90, Acima de 90 até 500, Acima de 500 até 1000, Acima de 1000 até 3000, Acima de 3000.'
+- Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+- 'Observações específicas da tabela:'
+- 1- Exigido somente para túneis rodoviários.
+- 2- Exigido somente para túneis metroviários e ferroviários.
+- 'Observações gerais da tabela:'
+- a) As estações e terminais de passageiros devem atender as medidas de segurança contra incêndio e pânico
+  estabelecidas na Tabela 11 para F-4;
+- b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+- c) Atender às exigências e condições particulares das medidas de segurança contra incêndio para Túneis,
+  de acordo com a Nota Técnica específica;
+- d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

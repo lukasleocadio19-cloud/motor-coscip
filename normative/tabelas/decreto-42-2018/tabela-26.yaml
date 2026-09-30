@@ -1,0 +1,265 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 26
+titulo: Exigências para edificações e áreas de risco do grupo M (divisão M-2) com qualquer área ou número
+  de pavimentos
+pagina: 50
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 14
+  - 30
+  rotulos_quebrados: true
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-50.jpg
+    imagem_sha256: 0abbf0df8165aeed9938b518a40b23df84db18415a3be26ab31a165293b11136
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Medidas de Segurança contra Incêndio e Pânico
+    - 'M-2 (Líquidos ou gases inflamáveis ou combustíveis): Tanques ou cilindros e processos: líquidos
+      até 20 m³ ou gases até 10 m³ (b)'
+    - 'M-2 (Líquidos ou gases inflamáveis ou combustíveis): Tanques ou cilindros e processos: líquidos
+      acima de 20 m³ ou gases acima de 10 m³ (b)'
+    - 'M-2 (Líquidos ou gases inflamáveis ou combustíveis): Plataforma de carregamento e descarregamento'
+    - 'M-2 (Líquidos ou gases inflamáveis ou combustíveis): Produtos acondicionados: líquidos até 20 m³
+      ou gases até 12.480 kg'
+    - 'M-2 (Líquidos ou gases inflamáveis ou combustíveis): Produtos acondicionados: líquidos acima de
+      20 m³ ou gases acima de 12.480 kg'
+    linhas:
+    - - Extintores
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Hidrantes e mangotinhos
+      - '-'
+      - X
+      - X2
+      - X1
+      - X
+    - - Sinalização de segurança
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Iluminação de Emergência
+      - '-'
+      - '-'
+      - '-'
+      - X3
+      - X3
+    - - Alarme de Incêndio
+      - '-'
+      - X
+      - X
+      - '-'
+      - X
+    - - Detecção de Incêndio
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X
+    - - Saídas de Emergência
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+    - - Plano de emergência
+      - '-'
+      - X
+      - '-'
+      - '-'
+      - X
+    - - SPDA
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Hidrante urbano
+      - '-'
+      - '-'
+      - '-'
+      - X4
+      - X4
+    - - Acesso de viatura em edificações
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Compartimentação Vertical
+      - '-'
+      - '-'
+      - '-'
+      - X5
+      - X5
+    - - Segurança Estrutural contra Incêndio
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+    - - Controle de Materiais de Acabamento
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+    - - Sistema de Resfriamento
+      - '-'
+      - X
+      - X2
+      - '-'
+      - X
+    - - Sistema de Espuma
+      - '-'
+      - X2
+      - X2
+      - '-'
+      - X2
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 50
+      tabela_na_pagina: 1
+    linhas:
+    - - Extintores
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Hidrantes e mangotinhos
+      - '-'
+      - X
+      - X2
+      - X1
+      - X
+    - - Sinalização de segurança
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Iluminação de Emergência
+      - '-'
+      - '-'
+      - '-'
+      - X3
+      - X3
+    - - Alarme de Incêndio
+      - '-'
+      - X
+      - X
+      - '-'
+      - X
+    - - Detecção de Incêndio
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X
+    - - Saídas de Emergência
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+    - - Plano de emergência
+      - '-'
+      - X
+      - '-'
+      - '-'
+      - X
+    - - SPDA
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Hidrante urbano
+      - '-'
+      - '-'
+      - '-'
+      - X4
+      - X4
+    - - Acesso de viatura em edificações
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Compartimentação Vertical
+      - '-'
+      - '-'
+      - '-'
+      - X5
+      - X5
+    - - Segurança Estrutural contra Incêndio
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+    - - Controle de Materiais de Acabamento
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+    - - Sistema de Resfriamento
+      - '-'
+      - X
+      - X2
+      - '-'
+      - X
+    - - Sistema de Espuma
+      - '-'
+      - X2
+      - X2
+      - '-'
+      - X2
+notas:
+- 'Divisões e colunas: M-2 (Líquidos ou gases inflamáveis ou combustíveis) — Tanques ou cilindros e processos:
+  líquidos até 20 m³ ou gases até 10 m³ (b), Tanques ou cilindros e processos: líquidos acima de 20 m³
+  ou gases acima de 10 m³ (b), Plataforma de carregamento e descarregamento, Produtos acondicionados:
+  líquidos até 20 m³ ou gases até 12.480 kg, Produtos acondicionados: líquidos acima de 20 m³ ou gases
+  acima de 12.480 kg.'
+- Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+- 'Observações específicas da tabela:'
+- 1- Não exigido para edificações com área menor ou igual a 900m² e até 02 pavimentos.
+- 2- Somente para líquidos inflamáveis e combustíveis, conforme exigências da Nota Técnica específica.
+- 3- Luminárias à prova de explosão, nas áreas de risco.
+- 4- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+- 5- Para edificações com 04 ou mais pavimentos.
+- 'Observações gerais da tabela:'
+- a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições
+  da Seção II do Capítulo IV deste Código;
+- b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+- c) Devem ser verificadas as exigências quanto ao armazenamento e processamento (produção, manipulação
+  etc.) de líquidos inflamáveis e combustíveis; e manipulação, armazenamento, comercialização e utilização
+  de gás liquefeito de petróleo (GLP) e gás natural (GN), constante nas Notas Técnicas específicas;
+- d) Considera-se para efeito de gases inflamáveis a capacidade total do volume em água que o recipiente
+  pode comportar, expressa em m³ (metros cúbicos);
+- e) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+inconsistencias_da_fonte:
+- Os cabeçalhos de tanques e cilindros remetem a "(b)", mas a observação geral b) trata das instalações
+  elétricas; a que define o volume dos gases é a d).
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

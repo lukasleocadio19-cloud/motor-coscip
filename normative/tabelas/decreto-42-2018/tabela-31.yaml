@@ -1,0 +1,55 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 31
+titulo: Exigências para áreas de risco do grupo M (divisão M-8)
+pagina: 55
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 6
+  - 8
+  rotulos_quebrados: true
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-55.jpg
+    imagem_sha256: bbdaa203db121bbf070f5894175d22b6ccf878dd7b75b7eaf11ebbd866bbe451
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Medidas de Segurança contra Incêndio e Pânico
+    - 'M-8 (loteamentos): Qualquer loteamento'
+    linhas:
+    - - Hidrante urbano
+      - X1
+    - - Acesso de viatura em edificações
+      - X
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 55
+      tabela_na_pagina: 1
+    linhas:
+    - - Hidrante urbano
+      - X1
+    - - Acesso de viatura em edificações
+      - X
+notas:
+- 'Divisões e colunas: M-8 (loteamentos) — Qualquer loteamento.'
+- Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+- 'Observações específicas da tabela:'
+- 1- Será exigida a instalação de hidrantes urbanos em todos os loteamentos, em quantidade e localização
+  de forma atender a distância máxima para cada lote e requisitos estabelecidos em Nota Técnica específica.
+- 'Observações gerais da tabela:'
+- a) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+- b) Caso haja lotes edificados, o loteamento deve ser classificado como agrupamento de edificações.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
