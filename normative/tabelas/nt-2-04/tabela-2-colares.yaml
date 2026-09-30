@@ -61,6 +61,36 @@ caminhos:
       - 4"
       - 3"
       - 1"(obrigatório)
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 54.18
+      - 402.59
+      - 285.15
+      - 496.15
+      linhas:
+      - - Risco
+        - Sucção
+        - Recalque
+        - Alívio
+      - - Pequeno
+        - 1 1/2"
+        - 1 1/4"
+        - 1/2" (opcional)
+      - - Médio - 1
+        - 3"
+        - 2 1/2"
+        - 1/2" (opcional)
+      - - Médio - 2
+        - 3"
+        - 3"
+        - 3/4" (opcional)
+      - - Grande
+        - 4"
+        - 3"
+        - 1"(obrigatório)
 notas:
 - 'Fonte indicada na página: CBMERJ.'
 estado: verificada
@@ -68,6 +98,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

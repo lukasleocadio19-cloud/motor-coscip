@@ -60,6 +60,231 @@ caminhos:
         Contra Incêndio e Pânico do Estado do Rio de Janeiro?
     - - O sistema de exaustão mecânica das cozinhas está limpo, manutenido e operando?
     - - O sistema de supressão de incêndio da exaustão mecânica está operando?
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 64.05
+      - 68.59
+      - 506.38
+      - 338.48
+      linhas:
+      - - ''
+        - TABELA 2
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - ''
+        - HIDRANTES, CHUVEIROS AUTOMÁTICOS E BOMBAS DE INCÊNDIO
+        - ''
+        - ''
+        - SIM
+        - ''
+        - ''
+        - NÃO
+        - ''
+        - ''
+        - ISENTO
+        - ''
+      - - O sistema de bombas de incêndio está manutenido e operando?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - A rede de chuveiros automáticos está manutenida e operando?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - Os hidrantes estão prontos para uso, equipados com mangueiras e esguichos, e sinalizados?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - ''
+        - DETECÇÃO E ALARME DE INCÊNDIO
+        - ''
+        - ''
+        - SIM
+        - ''
+        - ''
+        - NÃO
+        - ''
+        - ''
+        - ISENTO
+        - ''
+      - - O sistema de detecção e alarme de incêndio está operando?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - O alarme de incêndio está operando?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - Os acionadores manuais (botoeiras) estão sinalizados, desobstruídos e operando?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - ''
+        - BRIGADA DE INCÊNDIO / PLANO DE EMERGÊNCIA (PECIP)
+        - ''
+        - ''
+        - SIM
+        - ''
+        - ''
+        - NÃO
+        - ''
+        - ''
+        - ISENTO
+        - ''
+      - - Existem pessoas treinadas para direcionar o público para a saída em caso de emergência e executar
+          outras ações definidas no plano de emergência contra incêndio e pânico (PECIP), conforme exigido
+          pelo CBMERJ?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - O plano de emergência contra incêndio e pânico está disponível para consulta?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+    - bbox: &id001
+      - 64.05
+      - 392.13
+      - 506.38
+      - 544.53
+      linhas:
+      - - ''
+        - TABELA 3
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - ''
+        - ITENS DE INSPEÇÃO
+        - ''
+        - ''
+        - SIM
+        - ''
+        - ''
+        - NÃO
+        - ''
+        - ''
+        - ISENTO
+        - ''
+      - - O Laudo de Exigências, Certificado de Aprovação e Certificado de Registro, emitidos pelo CBMERJ,
+          estão expostos junto aos acessos de entrada da edificação, em local visível, em quadro próprio,
+          e com iluminação adequada, conforme artigo 32 do Decreto Estadual nº 42/2018 – Código de Segurança
+          Contra Incêndio e Pânico do Estado do Rio de Janeiro?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - O sistema de exaustão mecânica das cozinhas está limpo, manutenido e operando?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - O sistema de supressão de incêndio da exaustão mecânica está operando?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
 notas:
 - 'Anexo E da NT 2-10: modelo da ficha de segurança pré-evento (formulário: as colunas SIM, NÃO e ISENTO
   são para preenchimento).'
@@ -71,6 +296,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 1
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

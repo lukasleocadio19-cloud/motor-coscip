@@ -296,7 +296,7 @@ b) no caso de tanques enterrados, deverá ser previsto o afastamento mínimo de 
 | Garagem elevada | 10.000 | - |
 | Pav.técnico/ ático | 10.000 | - |
 
-Fonte: NT 3-03, página 5, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-03, página 5, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: CBMERJ.
 Limites relacionados no texto: 6.2.3 (armazenamento no interior da edificação até 10.000 l, respeitado o máximo por pavimento da Tabela 1) e 6.2.4 (consumo diário + armazenamento até 13.000 l).
 <!-- /tabela-conferida: Tabela 1 p5 -->
@@ -373,7 +373,7 @@ b) nas salas destinadas ao bombeamento de óleo diesel, quando houver, deverá s
 | Acima de 1000 a 10000 | 20 |
 | Acima de 10000 a 30000 | 30 |
 
-Fonte: NT 3-03, página 6, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-03, página 6, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: CBMERJ.
 O item 8.2.2 confirma a primeira linha: salas com até 250 l de óleo diesel ficam isentas da proteção por LGE.
 <!-- /tabela-conferida: Tabela 2 p6 -->

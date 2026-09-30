@@ -37,6 +37,137 @@ caminhos:
       - '230'
     - - IIIB
       - '460'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 43.73
+      - 123.72
+      - 281.61
+      - 270.55
+      linhas:
+      - - Tipo de espuma
+        - ''
+        - Taxa
+        - ''
+        - ''
+        - Tempo
+        - ''
+        - Produto armazenado
+      - - null
+        - null
+        - mínima
+        - null
+        - null
+        - mínimo
+        - null
+        - null
+      - - null
+        - null
+        - de
+        - null
+        - null
+        - de
+        - null
+        - null
+      - - null
+        - null
+        - aplicação
+        - null
+        - null
+        - aplicação
+        - null
+        - null
+      - - null
+        - null
+        - (l/min/m²)
+        - null
+        - null
+        - (min)
+        - null
+        - null
+      - - Proteínica Fluorproteínica
+        - 6,5
+        - null
+        - null
+        - '15'
+        - null
+        - null
+        - hidrocarbonetos
+      - - AFFF e FFFP
+        - 4,1
+        - null
+        - null
+        - '15'
+        - null
+        - null
+        - hidrocarbonetos
+      - - Para solventes polares
+        - 6,0
+        - null
+        - null
+        - '15'
+        - null
+        - null
+        - Líquidos inflamáveis ou combustíveis que requeiram espuma para solventes polares
+    - bbox:
+      - 49.22
+      - 137.57
+      - 109.25
+      - 156.05
+      linhas:
+      - - Tipo de
+      - - espuma
+    - bbox:
+      - 218.26
+      - 137.57
+      - 276.36
+      - 156.05
+      linhas:
+      - - Produto
+      - - armazenado
+    - bbox:
+      - 316.02
+      - 538.67
+      - 535.54
+      - 644.09
+      linhas:
+      - - ''
+        - Classe dos líquidos
+        - Quantidade (l)
+      - - Líquidos inflamáveis
+        - IA
+        - '115'
+      - - null
+        - IB e IC
+        - '460'
+      - - null
+        - IA, IB, IC combinados
+        - '460'
+      - - Líquidos combustíveis
+        - II
+        - '460'
+      - - null
+        - IIIA
+        - '1265'
+      - - null
+        - IIIB
+        - '50600'
+    - bbox: &id001
+      - 316.02
+      - 682.15
+      - 535.54
+      - 741.79
+      linhas:
+      - - Classe dos líquidos
+        - Quantidade (l)
+      - - I e II
+        - '40'
+      - - IIIA
+        - '230'
+      - - IIIB
+        - '460'
 notas:
 - 'Fonte indicada na página: ABNT NBR 17505.'
 estado: verificada
@@ -44,6 +175,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 4
+  candidatos_na_pagina: 5
+  bbox: *id001
+  texto: verificada

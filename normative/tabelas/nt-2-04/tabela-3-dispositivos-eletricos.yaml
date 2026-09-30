@@ -84,6 +84,44 @@ caminhos:
       - '-'
       - '-'
       - X
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 62.01
+      - 579.68
+      - 277.34
+      - 706.42
+      linhas:
+      - - Dispositivos
+        - Riscos
+        - null
+        - null
+      - - elétricos
+        - Pequeno
+        - Médio
+        - Grande
+      - - Disjuntor
+        - X
+        - X
+        - X
+      - - Chave magnética e/ou soft-starter
+        - X
+        - X
+        - X
+      - - Chave reversora
+        - '-'
+        - X
+        - '-'
+      - - Pressostato
+        - X
+        - X
+        - X
+      - - Carregador flutuador
+        - '-'
+        - '-'
+        - X
 notas:
 - 'Fonte indicada na página: CBMERJ.'
 inconsistencias_da_fonte:
@@ -96,6 +134,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

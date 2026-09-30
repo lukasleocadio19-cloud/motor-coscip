@@ -294,7 +294,7 @@ e) plaqueta de identificação do fabricante.
 | Leiteira |  |  |  |
 | Cozedor de massas |  |  |  |
 
-Fonte: NT 3-01, página 5, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-01, página 5, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 A linha de cabeçalho (Leves, Moderados, Severos, Combustível sólido) repete-se no meio da tabela, como na página.
 Obs. da tabela: A classificação do sistema de exaustão, quanto a este tópico, deve ser feita pela presença dos equipamentos mais críticos sob o mesmo captor.
 Fonte indicada na página: ABNT NBR 14518.
@@ -320,7 +320,7 @@ Fonte indicada na página: ABNT NBR 14518.
 | Tipo III combustível sólido | Proteção passiva | Proteção passiva |
 | Tipo III combustível sólido | Extintor portátil | Extintor portátil |
 
-Fonte: NT 3-01, página 5, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-01, página 5, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
 A tabela continua no alto da coluna da direita (última linha do Tipo III e observação): ver "Tabela 2 (continuação)".
 Fonte indicada na página: ABNT NBR 14518.
 <!-- /tabela-conferida: Tabela 2 p5 -->
@@ -332,7 +332,7 @@ Fonte indicada na página: ABNT NBR 14518.
 | --- | --- | --- |
 |  | Requer sistema fixo de extinção de incêndio | Requer sistema fixo de extinção de incêndio |
 
-Fonte: NT 3-01, página 5, Tabela 2 (continuação); conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-01, página 5, Tabela 2 (continuação); conferida em 2026-09-29 (visual + geometrica).
 Na página a primeira célula desta linha está em branco: a linha pertence ao Tipo III (combustível sólido), cuja célula mesclada fica no pé da coluna da esquerda.
 Obs. da tabela: Os sistemas de exaustão que atenderem simultaneamente a equipamentos geradores e não geradores de vapores de óleo e/ou partículas de gordura serão classificados como do Tipo I.
 Fonte indicada na página: ABNT NBR 14518.

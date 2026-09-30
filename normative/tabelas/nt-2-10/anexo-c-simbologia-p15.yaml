@@ -60,6 +60,68 @@ caminhos:
     - - Vaso sob pressão
     - - Vaso sob pressão (caldeira)
     - - Produtos perigosos
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 63.86
+      - 57.57
+      - 500.92
+      - 738.96
+      linhas:
+      - - ''
+        - null
+        - null
+        - Risco de incêndio (materiais ou áreas com presença de produtos altamente inflamáveis)
+      - - ''
+        - null
+        - null
+        - Risco de explosão, presença de produtos (sólidos, gases ou vapores) com risco de explosão
+      - - ''
+        - null
+        - null
+        - Risco de corrosão (materiais ou áreas com presença de produtos corrosivos)
+      - - ''
+        - null
+        - null
+        - Risco de choque elétrico (instalações elétricas que ofereçam risco de choque)
+      - - ''
+        - null
+        - null
+        - Risco de radiação (materiais ou áreas com presença de produtos radioativos)
+      - - ''
+        - null
+        - null
+        - Risco de exposição a produtos tóxicos (materiais ou áreas com presença de produtos tóxicos)
+      - - ''
+        - null
+        - null
+        - Espaço confinado
+      - - ''
+        - null
+        - null
+        - Central de GLP
+      - - ''
+        - null
+        - null
+        - Vaso sob pressão
+      - - ''
+        - ''
+        - ''
+        - Vaso sob pressão (caldeira)
+      - - ''
+        - null
+        - null
+        - Produtos perigosos
+      - - 'Obs.: 1- O autor do plano de emergência deverá avaliar a necessidade de inclusão de outras
+          simbologias não representadas nesta tabela, em função das peculiaridades da edificação e da
+          inspeção realizada. Neste caso, as novas simbologias devem atender a coloração definida no item
+          5.2.6.15 desta NT. 2- Todas as simbologias utilizadas devem constar na legenda da planta de
+          emergência.'
+        - null
+        - null
+        - null
 notas:
 - A coluna de simbologia traz o desenho do símbolo (só na imagem da página); a célula fica em branco na
   tabela.
@@ -73,6 +135,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

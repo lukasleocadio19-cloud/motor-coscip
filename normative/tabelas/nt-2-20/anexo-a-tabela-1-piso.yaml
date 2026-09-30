@@ -161,6 +161,120 @@ caminhos:
       - '-'
       - FS ≥ 150 mm em 20s
       - '-'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 47.8
+      - 114.9
+      - 505.14
+      - 405.24
+      linhas:
+      - - Método de Ensaio
+        - null
+        - null
+        - null
+        - ISO 1182
+        - NBR 8660
+        - EN ISO 11925-2 (exposição de 15 s)
+        - ASTM E 662
+      - - ''
+        - Classe
+        - null
+        - ''
+        - null
+        - null
+        - null
+        - null
+      - - I
+        - null
+        - null
+        - null
+        - Incombustível ΔT≤ 30° C Δm ≤ 50% tf≤ 10s
+        - '-'
+        - '-'
+        - '-'
+      - - II
+        - null
+        - A
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 8,0 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 8,0 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm > 450
+      - - III
+        - null
+        - A
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 4,5 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 4,5 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm > 450
+      - - IV
+        - null
+        - A
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 3,0 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 3,0 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm > 450
+      - - V
+        - null
+        - A
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 3,0 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 3,0 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm > 450
+      - - VI
+        - null
+        - null
+        - null
+        - Combustível
+        - '-'
+        - FS ≥ 150 mm em 20s
+        - '-'
+    - bbox:
+      - 329.9
+      - 120.99
+      - 427.6
+      - 157.97
+      linhas:
+      - - EN ISO 11925-2
+      - - (exposição de 15 s)
 notas:
 - 'Legenda da tabela:'
 - Dm – Densidade óptica específica máxima corrigida.
@@ -179,6 +293,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

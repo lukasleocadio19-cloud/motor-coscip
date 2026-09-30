@@ -79,6 +79,76 @@ caminhos:
     - - Classe IIIB
       - PF≥93°C
       - '-'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 45.87
+      - 519.62
+      - 279.47
+      - 650.33
+      linhas:
+      - - Líquidos
+        - Ponto de fulgor
+        - ''
+        - Ponto de
+        - ''
+      - - null
+        - null
+        - null
+        - ebulição
+        - null
+      - - Inflamáveis
+        - null
+        - null
+        - null
+        - null
+      - - Classe I
+        - PF<37,8°C e PV<275,7 KPa
+        - ''
+        - null
+        - null
+      - - Classe IA
+        - PF<22,8°C
+        - PE<37,8°C
+        - null
+        - null
+      - - Classe IB
+        - PF<22,8°C
+        - PE ≥ 37,8°C
+        - null
+        - null
+      - - Classe IC
+        - 22,8°C≤PF<37,8°C
+        - '-'
+        - null
+        - null
+      - - Combustíveis
+        - null
+        - null
+        - null
+        - null
+      - - Classe II
+        - 37,8°C≤PF<60°C
+        - '-'
+        - null
+        - null
+      - - Classe IIIA
+        - 60°C≤PF<93°C
+        - '-'
+        - null
+        - null
+      - - Classe IIIB
+        - PF≥93°C
+        - '-'
+        - null
+        - null
+      - - PV é a pressão vapor PF é o ponto de fulgor
+        - null
+        - null
+        - null
+        - null
 notas:
 - 'Legenda da tabela: PV é a pressão vapor; PF é o ponto de fulgor.'
 - 'Fonte indicada na página: ABNT NBR 17505.'
@@ -89,6 +159,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

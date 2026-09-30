@@ -59,6 +59,60 @@ caminhos:
     - - Risco grande
       - '01'
       - '01'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 44.64
+      - 666.17
+      - 280.88
+      - 765.98
+      linhas:
+      - - Risco de incêndio da edificação (conforme NT 1-04)
+        - ''
+        - Quantidade mínima de
+        - null
+        - ''
+      - - null
+        - null
+        - exercícios
+        - null
+        - null
+      - - null
+        - null
+        - simulados ao ano
+        - null
+        - null
+      - - null
+        - Abandono parcial
+        - null
+        - Abandono total
+        - null
+      - - Risco pequeno
+        - '01'
+        - null
+        - '00'
+        - null
+      - - Risco médio 1 e 2
+        - '00'
+        - null
+        - '01'
+        - null
+      - - Risco grande
+        - '01'
+        - null
+        - '01'
+        - null
+    - bbox:
+      - 50.02
+      - 679.15
+      - 143.45
+      - 707.95
+      linhas:
+      - - Risco de incêndio
+      - - da edificação
+      - - (conforme NT 1-04)
 notas:
 - 'Fonte indicada na página: CBMERJ.'
 estado: verificada
@@ -66,6 +120,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

@@ -376,7 +376,7 @@ f) outros locais, de acordo com o PECIP e a natureza da ocupação da edificaç�
 | Risco médio 1 e 2 | 00 | 01 |
 | Risco grande | 01 | 01 |
 
-Fonte: NT 2-10, página 6, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-10, página 6, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: CBMERJ.
 <!-- /tabela-conferida: Tabela 1 p6 -->
 
@@ -811,7 +811,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  | Rota de saída alternativa |
 |  | Ponto de encontro |
 
-Fonte: NT 2-10, página 14, Tabela do Anexo C; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-10, página 14, Tabela do Anexo C; conferida em 2026-09-29 (visual + geometrica).
 A coluna de simbologia traz o desenho do símbolo (só na imagem da página); a célula fica em branco na tabela.
 Nos símbolos aparecem as siglas "HR" (hidrante de recalque), "CMI" e "CB".
 <!-- /tabela-conferida: Tabela do Anexo C p14 -->
@@ -858,7 +858,7 @@ Nos símbolos aparecem as siglas "HR" (hidrante de recalque), "CMI" e "CB".
 |  | Vaso sob pressão (caldeira) |
 |  | Produtos perigosos |
 
-Fonte: NT 2-10, página 15, Tabela do Anexo C; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-10, página 15, Tabela do Anexo C; conferida em 2026-09-29 (visual + geometrica).
 A coluna de simbologia traz o desenho do símbolo (só na imagem da página); a célula fica em branco na tabela.
 Obs. 1 da tabela: O autor do plano de emergência deverá avaliar a necessidade de inclusão de outras simbologias não representadas nesta tabela, em função das peculiaridades da edificação e da inspeção realizada. Neste caso, as novas simbologias devem atender a coloração definida no item 5.2.6.15 desta NT.
 Obs. 2 da tabela: Todas as simbologias utilizadas devem constar na legenda da planta de emergência.
@@ -973,7 +973,7 @@ página 1 de 2
 | A Placa informativa da lotação máxima permitida, conforme NT 2-05 – Sinalização de segurança contra incêndio e pânico está fixada no hall de acesso das entradas do público ou bilheterias? |  |  |
 | A pessoa responsável por garantir que nenhuma pessoa entre além da lotação máxima aprovada pelo CBMERJ, é: ____ |  |  |
 
-Fonte: NT 2-10, página 19, Tabela 1 do Anexo E; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-10, página 19, Tabela 1 do Anexo E; conferida em 2026-09-29 (visual + geometrica).
 Anexo E da NT 2-10: modelo da ficha de segurança pré-evento (formulário: as colunas SIM e NÃO são para preenchimento).
 Cabeçalho da ficha na página: Local, Bairro, Nome do estabelecimento, Fim a que se destina (ocupação), Data e Hora da inspeção.
 Texto abaixo da tabela: ATENÇÃO: Qualquer item marcado como "NÃO", na Tabela 1, deve ser resolvido antes que a edificação, estabelecimento ou evento sejam abertos ao público.
@@ -1044,7 +1044,7 @@ página 2 de 2
 | Existem pessoas treinadas para direcionar o público para a saída em caso de emergência e executar outras ações definidas no plano de emergência contra incêndio e pânico (PECIP), conforme exigido pelo CBMERJ? |  |  |  |
 | O plano de emergência contra incêndio e pânico está disponível para consulta? |  |  |  |
 
-Fonte: NT 2-10, página 20, Tabela 2 do Anexo E; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-10, página 20, Tabela 2 do Anexo E; conferida em 2026-09-29 (visual + geometrica).
 Anexo E da NT 2-10: modelo da ficha de segurança pré-evento (formulário: as colunas SIM, NÃO e ISENTO são para preenchimento).
 Texto abaixo da tabela: ATENÇÃO: Qualquer item, marcado como "NÃO", na Tabela 2, deve ser resolvido antes que a edificação, estabelecimento ou evento sejam abertos ao público.
 <!-- /tabela-conferida: Tabela 2 do Anexo E p20 -->
@@ -1060,7 +1060,7 @@ Texto abaixo da tabela: ATENÇÃO: Qualquer item, marcado como "NÃO", na Tabela
 | O sistema de exaustão mecânica das cozinhas está limpo, manutenido e operando? |  |  |  |
 | O sistema de supressão de incêndio da exaustão mecânica está operando? |  |  |  |
 
-Fonte: NT 2-10, página 20, Tabela 3 do Anexo E; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-10, página 20, Tabela 3 do Anexo E; conferida em 2026-09-29 (visual + geometrica).
 Anexo E da NT 2-10: modelo da ficha de segurança pré-evento (formulário: as colunas SIM, NÃO e ISENTO são para preenchimento).
 Texto abaixo da tabela: ATENÇÃO: Qualquer item, marcado como "NÃO", na Tabela 3, deve ser resolvido em até 24 h (vinte e quatro horas).
 Fim da ficha: Inspecionado e preenchido por (nome completo / identificação), Função, Assinatura.

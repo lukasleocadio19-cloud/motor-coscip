@@ -252,7 +252,7 @@ Fonte: CBMERJ.
 | Médio - 2 | 3/4" |
 | Grande | 1” |
 
-Fonte: NT 2-04, página 4, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-04, página 4, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: CBMERJ.
 Pelo item 5.1.6, a válvula de alívio (obrigatória no risco grande) tem o mesmo diâmetro mínimo do dreno; confere com a Tabela 2 (alívio 1" no risco grande).
 <!-- /tabela-conferida: Tabela 1 p4 -->
@@ -353,7 +353,7 @@ h) potência, em CV.
 | Médio - 2 | 3" | 3" | 3/4" (opcional) |
 | Grande | 4" | 3" | 1"(obrigatório) |
 
-Fonte: NT 2-04, página 5, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-04, página 5, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: CBMERJ.
 <!-- /tabela-conferida: Tabela 2 p5 -->
 
@@ -560,7 +560,7 @@ A - Válvula de Alívio (dispositivo hidráulico de abertura por pressão).
 | Pressostato | X | X | X |
 | Carregador flutuador | - | - | X |
 
-Fonte: NT 2-04, página 7, Tabela 3; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-04, página 7, Tabela 3; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: CBMERJ.
 <!-- /tabela-conferida: Tabela 3 p7 -->
 

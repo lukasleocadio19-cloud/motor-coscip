@@ -137,6 +137,100 @@ caminhos:
       - Combustível
       - Ip> 400
       - '-'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 55.0
+      - 77.85
+      - 512.36
+      - 372.1
+      linhas:
+      - - ''
+        - Método de Ensaio
+        - null
+        - ''
+        - ISO 1182
+        - NBR 9442
+        - ASTM E 662
+      - - ''
+        - Classe
+        - null
+        - ''
+        - null
+        - null
+        - null
+      - - I
+        - null
+        - null
+        - null
+        - Incombustível ΔT≤ 30° C Δm ≤ 50% tf≤ 10 s
+        - '-'
+        - '-'
+      - - II
+        - null
+        - A
+        - null
+        - Combustível
+        - Ip ≤ 25
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - Ip ≤ 25
+        - Dm > 450
+      - - III
+        - null
+        - A
+        - null
+        - Combustível
+        - 25 <Ip ≤ 75
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - 25 <Ip ≤ 75
+        - Dm > 450
+      - - IV
+        - null
+        - A
+        - null
+        - Combustível
+        - 75 <Ip ≤ 150
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - 75 <Ip ≤ 150
+        - Dm > 450
+      - - V
+        - null
+        - A
+        - null
+        - Combustível
+        - 150 <Ip ≤ 400
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - 150 <Ip ≤ 400
+        - Dm > 450
+      - - VI
+        - null
+        - null
+        - null
+        - Combustível
+        - Ip> 400
+        - '-'
 notas:
 - 'Legenda da tabela:'
 - Dm – Densidade óptica específica máxima corrigida.
@@ -150,6 +244,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

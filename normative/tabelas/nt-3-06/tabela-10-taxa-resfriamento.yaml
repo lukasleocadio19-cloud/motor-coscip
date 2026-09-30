@@ -41,6 +41,34 @@ caminhos:
       - '3'
     - - d > 12
       - '2'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.59
+      - 199.21
+      - 286.12
+      - 384.58
+      linhas:
+      - - Distância entre costados
+        - Taxa a, b
+      - - (m)
+        - (l/min/m²)
+      - - ''
+        - ''
+      - - d ≤ 8
+        - '5'
+      - - 8 < d ≤ 12
+        - '3'
+      - - d > 12
+        - '2'
+      - - 'Legenda: a) Para até dois tanques vizinhos: Taxa por metro quadrado de metade do somatório
+          das áreas do teto e costado dos tanques vizinhos. Para tanques de teto flutuante, não pode ser
+          considerada a área do teto. b) Para mais de dois tanques vizinhos: Taxa por metro quadrado de
+          um terço do somatório das áreas dos tetos e costados dos tanques vizinhos. Para tanques de teto
+          flutuante, não podem ser consideradas as áreas dos tetos.'
+        - null
 notas:
 - 'Legenda da tabela:'
 - 'a) Para até dois tanques vizinhos: Taxa por metro quadrado de metade do somatório das áreas do teto
@@ -49,11 +77,22 @@ notas:
   tetos e costados dos tanques vizinhos. Para tanques de teto flutuante, não podem ser consideradas as
   áreas dos tetos.'
 - 'Fonte indicada na página: ABNT NBR 17505.'
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 2
+    - 2
+    - 2
+    - 2
+  - - 2
+    - 2
+    - 2

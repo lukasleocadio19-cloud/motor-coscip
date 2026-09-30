@@ -41,6 +41,43 @@ caminhos:
       - 3/4"
     - - Grande
       - 1”
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 326.15
+      - 234.74
+      - 525.06
+      - 312.41
+      linhas:
+      - - Risco
+        - Diâmetro
+      - - Pequeno
+        - 1/2"
+      - - Médio - 1
+        - 1/2"
+      - - Médio - 2
+        - 3/4"
+      - - Grande
+        - 1”
+    - bbox:
+      - 41.16
+      - 641.74
+      - 284.33
+      - 776.74
+      linhas:
+      - - 5.1.3.2 Para sistemas de sprinklers, a serem
+      - - dimensionados conforme a NT 2-03 – Sistemas de
+      - - chuveiros automáticos/sprinklers, não será aceita a
+      - - instalação de bombas de incêndio com sucção nega-
+      - - tiva, ou seja, as bombas devem operar sempre afoga-
+      - - das.
+      - - 5.1.3.3 Nos conjuntos de bombeamento que operam
+      - - na condição de sucção negativa, o cálculo da pressão
+      - - de sucção positiva requerida (NPSH) poderá ser soli-
+      - - citado ao projetista com o objetivo de impedir a cavi-
+      - - tação das bombas.
 notas:
 - 'Fonte indicada na página: CBMERJ.'
 - Pelo item 5.1.6, a válvula de alívio (obrigatória no risco grande) tem o mesmo diâmetro mínimo do dreno;
@@ -50,6 +87,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

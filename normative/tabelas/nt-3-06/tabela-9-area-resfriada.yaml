@@ -36,6 +36,154 @@ caminhos:
       - Área do costado
     - - '>1'
       - Somatório de parte das áreas dos costados
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 42.03
+      - 402.2
+      - 283.3
+      - 671.95
+      linhas:
+      - - Tipo de tanque
+        - Classe do líquido
+        - Altura do tanque vertical ou altura da geratriz superior do tanque horizontal (m)
+        - Capacidade do tanque (m³)
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - ate 60
+        - De 60 a 120
+        - '>120'
+      - - Vertical ou horizontal
+        - I
+        - ≥ 9
+        - H ou CM
+        - ASP
+        - ASP
+      - - null
+        - null
+        - < 9
+        - H ou CM
+        - H ou CM
+        - H ou CM
+      - - null
+        - II
+        - ≥ 9
+        - H ou CM
+        - H ou CM
+        - ASP
+      - - null
+        - null
+        - < 9
+        - H ou CM
+        - H ou CM
+        - H ou CM
+      - - null
+        - IIIA
+        - ≥ 9
+        - Isento
+        - Isento
+        - ASP
+      - - null
+        - null
+        - < 9
+        - Isento
+        - Isento
+        - H ou CM
+      - - null
+        - IIIB
+        - ≥ 9
+        - Isento
+        - Isento
+        - Isento
+      - - null
+        - null
+        - < 9
+        - Isento
+        - Isento
+        - Isento
+      - - 'Legenda: H - mangueiras a partir de hidrantes; CM - canhão-monitor; ASP – aspersor.'
+        - null
+        - null
+        - null
+        - null
+        - null
+    - bbox:
+      - 132.77
+      - 410.52
+      - 171.43
+      - 488.28
+      linhas:
+      - - Altura do
+      - - tanque
+      - - vertical
+      - - ou altura
+      - - da geratriz
+      - - superior
+      - - do tanque
+      - - horizontal
+      - - (m)
+    - bbox:
+      - 182.47
+      - 419.4
+      - 278.04
+      - 436.62
+      linhas:
+      - - Capacidade do tanque
+      - - (m³)
+    - bbox:
+      - 90.77
+      - 436.62
+      - 121.73
+      - 462.36
+      linhas:
+      - - Classe
+      - - do
+      - - líquido
+    - bbox:
+      - 47.78
+      - 440.76
+      - 79.7
+      - 454.84
+      linhas:
+      - - Tipo de
+      - - tanque
+    - bbox:
+      - 182.47
+      - 467.16
+      - 207.43
+      - 484.44
+      linhas:
+      - - ate
+      - - '60'
+    - bbox:
+      - 218.5
+      - 467.16
+      - 242.5
+      - 484.44
+      linhas:
+      - - De 60
+      - - a 120
+    - bbox: &id001
+      - 312.63
+      - 700.63
+      - 539.08
+      - 778.78
+      linhas:
+      - - Número de tanques
+        - Área a ser resfriada
+      - - verticais vizinhos
+        - ''
+      - - '1'
+        - Área do costado
+      - - '>1'
+        - Somatório de parte das áreas dos costados
+      - - 'Legenda:'
+        - null
 notas:
 - 'Legenda da tabela (continua no alto da página 9):'
 - 'a) Para até dois tanques vizinhos: Taxa por metro quadrado de metade do somatório das áreas do teto
@@ -49,6 +197,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 7
+  candidatos_na_pagina: 8
+  bbox: *id001
+  texto: verificada

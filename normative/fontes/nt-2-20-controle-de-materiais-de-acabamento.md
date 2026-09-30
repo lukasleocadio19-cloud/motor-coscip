@@ -335,7 +335,7 @@ Fonte: ABNT NBR 15575:2013 - Edificações habitacionais - Desempenho.
 | V | B | Combustível | Fluxo crítico ≥ 3,0 kW/m² | FS ≤ 150 mm em 20s | Dm > 450 |
 | VI | VI | Combustível | - | FS ≥ 150 mm em 20s | - |
 
-Fonte: NT 2-20, página 6, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-20, página 6, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Legenda da tabela:
 Dm – Densidade óptica específica máxima corrigida.
 Fluxo crítico – Fluxo de energia radiante necessário à manutenção da frente de chama no corpo de prova.
@@ -391,7 +391,7 @@ Fonte: ABNT NBR 15575:2013 - Edificações habitacionais - Desempenho.
 | V | B | Combustível | 150 <Ip ≤ 400 | Dm > 450 |
 | VI | VI | Combustível | Ip> 400 | - |
 
-Fonte: NT 2-20, página 7, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-20, página 7, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Legenda da tabela:
 Dm – Densidade óptica específica máxima corrigida.
 Ip – Índice de propagação superficial da chama.
@@ -466,7 +466,7 @@ Fonte: ABNT NBR 15575:2013 - Edificações habitacionais - Desempenho.
 | V | B | Combustível | FIGRA > 750 W/s SMOGRA > 180 m²/s² ouTSP600s > 200m² | FS ≤ 150 mm em 20 s |
 | VI | VI | - | - | FS >150 mm em 20 s |
 
-Fonte: NT 2-20, página 8, Tabela 3 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-20, página 8, Tabela 3 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Legenda da tabela:
 FIGRA - Índice de taxa de desenvolvimento de calor.
 LFS - Propagação lateral da chama.
@@ -529,7 +529,7 @@ Fonte: ABNT NBR 15575:2013.
 | Grupo/ Divisão | B, D, E G, H, I-1, J-1, J-2 e M-9 | Classe I, II-A, III-A, ou IV-A | Classe I, II-A, ou III-A⁷ | Classe I, II-A |
 | Grupo/ Divisão | C, F, I-2, I-3, J-3, J-4, L, M-1, M-2, M-3 e M-6 | Classe I, II-A, III-A, ou IV-A | Classe I, II-A | Classe I, II-A |
 
-Fonte: NT 2-20, página 9, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-20, página 9, Tabela do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 Legenda das citações:
 1 - Como exemplo podem-se citar os cordões, rodapés e arremates;
 2 - Excluem-se as portas, janelas, cordões e outros acabamentos decorativos com área inferior a 20% da parede onde estão aplicados;

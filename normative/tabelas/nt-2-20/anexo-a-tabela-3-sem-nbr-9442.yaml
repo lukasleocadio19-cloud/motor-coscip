@@ -146,6 +146,112 @@ caminhos:
       - '-'
       - '-'
       - FS >150 mm em 20 s
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 47.8
+      - 83.7
+      - 505.14
+      - 580.01
+      linhas:
+      - - Método de Ensaio
+        - null
+        - null
+        - null
+        - ISO 1182
+        - EN 13823 (SBI)
+        - EM ISO 11925-2 (exposição = 30 s)
+      - - ''
+        - Classe
+        - null
+        - ''
+        - null
+        - null
+        - null
+      - - I
+        - null
+        - null
+        - null
+        - Incombustível ΔT≤ 30° C Δm ≤ 50% tf≤ 10 s
+        - '-'
+        - '-'
+      - - II
+        - null
+        - A
+        - null
+        - Combustível
+        - FIGRA ≤ 120 W/s LSF < canto do corpo de prova THR600S ≤ 7,5 MJ SMOGRA ≤ 180 m²/s² e TSP600s
+          ≤ 200m²
+        - FS ≤ 150 mm em 60 s
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - FIGRA ≤ 120 W/s LSF < canto do corpo de prova THR600S ≤ 7,5 MJ SMOGRA > 180 m²/s² ou TSP600s
+          > 200m²
+        - FS ≤ 150 mm em 60 s
+      - - III
+        - null
+        - A
+        - null
+        - Combustível
+        - FIGRA ≤ 250 W/s LSF < canto do corpo de prova THR600S ≤ 15 MJ SMOGRA ≤ 180 m²/s² ou TSP600s
+          ≤ 200m²
+        - FS ≤ 150 mm em 60 s
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - FIGRA ≤ 250 W/s LSF < canto do corpo de prova THR600S ≤ 15 MJ SMOGRA > 180 m²/s² ou TSP600s
+          > 200m²
+        - FS ≤ 150 mm em 60 s
+      - - IV
+        - null
+        - A
+        - null
+        - Combustível
+        - FIGRA ≤ 750 W/s SMOGRA ≤ 180 m²/s² e TSP600s ≤ 200m²
+        - FS ≤ 150 mm em 60 s
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - FIGRA ≤ 750 W/s SMOGRA > 180 m²/s² ou TSP600s > 200m²
+        - FS ≤ 150 mm em 60 s
+      - - V
+        - null
+        - A
+        - null
+        - Combustível
+        - FIGRA > 750 W/s SMOGRA ≤ 180 m²/s² e TSP600s ≤ 200m²
+        - FS ≤ 150 mm em 20 s
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - FIGRA > 750 W/s SMOGRA > 180 m²/s² ouTSP600s > 200m²
+        - FS ≤ 150 mm em 20 s
+      - - VI
+        - null
+        - null
+        - null
+        - '-'
+        - '-'
+        - FS >150 mm em 20 s
+    - bbox:
+      - 402.17
+      - 90.14
+      - 499.63
+      - 121.94
+      linhas:
+      - - EM ISO 11925-2
+      - - (exposição = 30 s)
 notas:
 - 'Legenda da tabela:'
 - FIGRA - Índice de taxa de desenvolvimento de calor.
@@ -170,6 +276,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

@@ -259,7 +259,7 @@ combustíveis
 | Classe IIIA | 60°C≤PF<93°C | - |
 | Classe IIIB | PF≥93°C | - |
 
-Fonte: NT 3-06, página 4, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 4, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Legenda da tabela: PV é a pressão vapor; PF é o ponto de fulgor.
 Fonte indicada na página: ABNT NBR 17505.
 <!-- /tabela-conferida: Tabela 1 p4 -->
@@ -548,7 +548,7 @@ c) aplicadores manuais.
 | --- | --- | --- | --- |
 | Câmara de espuma | 4,1 | 55 | 30 |
 
-Fonte: NT 3-06, página 7, Tabela 3; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 7, Tabela 3; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 <!-- /tabela-conferida: Tabela 3 p7 -->
 
@@ -564,7 +564,7 @@ Fonte indicada na página: ABNT NBR 17505.
 | 48 < D ≤ 54 | 5 |
 | 54 < D ≤ 60 | 6 |
 
-Fonte: NT 3-06, página 7, Tabela 5; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 7, Tabela 5; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 Pelo item 6.3.2.4, para tanques com diâmetro superior a 60 m deve ser instalada uma câmara de espuma a cada 465 m² ou fração de superfície adicional de líquido.
 <!-- /tabela-conferida: Tabela 5 p7 -->
@@ -577,7 +577,7 @@ Pelo item 6.3.2.4, para tanques com diâmetro superior a 60 m deve ser instalada
 | D ≤ 36 | 2 |
 | D > 36 | 3 |
 
-Fonte: NT 3-06, página 7, Tabela 6; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 7, Tabela 6; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 <!-- /tabela-conferida: Tabela 6 p7 -->
 
@@ -590,7 +590,7 @@ Fonte indicada na página: ABNT NBR 17505.
 | 10,5 < D ≤ 28,5 | 20 |
 | D > 28,5 | 30 |
 
-Fonte: NT 3-06, página 7, Tabela 7; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 7, Tabela 7; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 <!-- /tabela-conferida: Tabela 7 p7 -->
 
@@ -709,7 +709,7 @@ aspersores
 | Vertical ou horizontal | IIIB | ≥ 9 | Isento | Isento | Isento |
 | Vertical ou horizontal | IIIB | < 9 | Isento | Isento | Isento |
 
-Fonte: NT 3-06, página 8, Tabela 8; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 8, Tabela 8; conferida em 2026-09-29 (visual + geometrica).
 Legenda da tabela: H - mangueiras a partir de hidrantes; CM - canhão-monitor; ASP - aspersor.
 Pelo item 6.3.4.1.4, os casos de isenção da Tabela 8 se aplicam somente aos tanques isolados.
 Fonte indicada na página: ABNT NBR 17505.
@@ -723,7 +723,7 @@ Fonte indicada na página: ABNT NBR 17505.
 | 1 | Área do costado |
 | >1 | Somatório de parte das áreas dos costados |
 
-Fonte: NT 3-06, página 8, Tabela 9; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 8, Tabela 9; conferida em 2026-09-29 (visual + geometrica).
 Legenda da tabela (continua no alto da página 9):
 a) Para até dois tanques vizinhos: Taxa por metro quadrado de metade do somatório das áreas do teto e costado dos tanques vizinhos. Para tanques de teto flutuante, não pode ser considerada a área do teto.
 b) Para mais de dois tanques vizinhos: Taxa por metro quadrado de um terço do somatório das áreas dos tetos e costados dos tanques vizinhos. Para tanques de teto flutuante, não podem ser consideradas as áreas dos tetos.
@@ -815,22 +815,6 @@ Sistemas alternativos de proteção contra incêndios, podem ser utilizados, des
 | 8 < d ≤ 12 | 3 |
 | d > 12 | 2 |
 | Legenda: a) Para até dois tanques vizinhos: Taxa por metro quadrado de metade do somatório das áreas do teto e costado dos tanques vizinhos. Para tanques de teto flutuante, não pode ser considerada a área do teto. b) Para mais de dois tanques vizinhos: Taxa por metro quadrado de um terço do somatório das áreas dos tetos e costados dos tanques vizinhos. Para tanques de teto flutuante, não podem ser consideradas as áreas dos tetos. |  |
-
-<!-- tabela-conferida: Tabela 10 p9 -->
-### Tabela 10 — Taxa de resfriamento dos tanques vizinhos por canhões-monitores (fixos ou móveis) ou mangueiras a partir de hidrantes (conferida)
-
-| Distância entre costados (m) | Taxa a, b (l/min/m²) |
-| --- | --- |
-| d ≤ 8 | 5 |
-| 8 < d ≤ 12 | 3 |
-| d > 12 | 2 |
-
-Fonte: NT 3-06, página 9, Tabela 10; conferida em 2026-09-29 (visual + texto).
-Legenda da tabela:
-a) Para até dois tanques vizinhos: Taxa por metro quadrado de metade do somatório das áreas do teto e costado dos tanques vizinhos. Para tanques de teto flutuante, não pode ser considerada a área do teto.
-b) Para mais de dois tanques vizinhos: Taxa por metro quadrado de um terço do somatório das áreas dos tetos e costados dos tanques vizinhos. Para tanques de teto flutuante, não podem ser consideradas as áreas dos tetos.
-Fonte indicada na página: ABNT NBR 17505.
-<!-- /tabela-conferida: Tabela 10 p9 -->
 
 ---
 
@@ -957,7 +941,7 @@ Fonte - ABNT NBR 17505.
 | AFFF e FFFP | 4,1 | 15 | hidrocarbonetos |
 | Para solventes polares | 6,0 | 15 | Líquidos inflamáveis ou combustíveis que requeiram espuma para solventes polares |
 
-Fonte: NT 3-06, página 10, Tabela 11; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 10, Tabela 11; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 <!-- /tabela-conferida: Tabela 11 p10 -->
 
@@ -973,7 +957,7 @@ Fonte indicada na página: ABNT NBR 17505.
 | Líquidos combustíveis | IIIA | 1265 |
 | Líquidos combustíveis | IIIB | 50600 |
 
-Fonte: NT 3-06, página 10, Tabela 12; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 10, Tabela 12; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 O item 7.3.2 (logo abaixo da Tabela 13) trata do aumento dessas quantidades nas áreas controláveis de armazenamento; ver o texto do item.
 <!-- /tabela-conferida: Tabela 12 p10 -->
@@ -987,7 +971,7 @@ O item 7.3.2 (logo abaixo da Tabela 13) trata do aumento dessas quantidades nas 
 | IIIA | 230 |
 | IIIB | 460 |
 
-Fonte: NT 3-06, página 10, Tabela 13; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 10, Tabela 13; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 <!-- /tabela-conferida: Tabela 13 p10 -->
 
@@ -1105,7 +1089,7 @@ b) no mínimo um extintor portátil com capacidade extintora mínima de 40:B, de
 | 2° subsolo | 50 | 2 |
 | Abaixo do 2° subsolo | NP | NP |
 
-Fonte: NT 3-06, página 11, Tabela 14; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 11, Tabela 14; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 NP: não permitido (sigla sem legenda na página).
 <!-- /tabela-conferida: Tabela 14 p11 -->
@@ -1119,7 +1103,7 @@ NP: não permitido (sigla sem legenda na página).
 | Área entre 14m² e 45 m² | 120 |
 | Área maior que 45 m² | 240 |
 
-Fonte: NT 3-06, página 11, Tabela 15; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 11, Tabela 15; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 <!-- /tabela-conferida: Tabela 15 p11 -->
 
@@ -1132,7 +1116,7 @@ Fonte indicada na página: ABNT NBR 17505.
 | 120 | 90 |
 | 240 | 180 |
 
-Fonte: NT 3-06, página 11, Tabela 16; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 11, Tabela 16; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 <!-- /tabela-conferida: Tabela 16 p11 -->
 
@@ -1257,7 +1241,7 @@ Fonte - ABNT NBR 17505.
 | Tanque horizontal e vertical, sem solda fragilizada entre teto e costado, com dispositivo de alívio de emergência limitado a pressão de 17,20 KPa | 50% do valor estabelecido na Tabela 5 | 50% do valor estabelecido na Tabela 5 |
 | Qualquer tanque cuja pressão exceda 17,20 KPa | 1,50 vezes o valor da Tabela 5, mas não inferior a 7,50 m | 1,50 vezes o valor da Tabela 5, mas não inferior a 7,50 m |
 
-Fonte: NT 3-06, página 13, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 13, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 "Tabela 5" nesta tabela é a Tabela 5 do Anexo A (p. 14).
 <!-- /tabela-conferida: Tabela 1 do Anexo A p13 -->
@@ -1270,7 +1254,7 @@ Fonte indicada na página: ABNT NBR 17505.
 | Tanque vertical com teto flutuante ou selo flutuante (conforme ABNT NBR 7821) | Metade do diâmetro do tanque | 1/6 do diâmetro do tanque |
 | Tanque vertical com teto fixo, com solda fragilizada entre o teto e o costado (conforme ABNT NBR 7821) | Diâmetro do tanque | 1/3 do diâmetro do tanque |
 
-Fonte: NT 3-06, página 13, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 13, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 <!-- /tabela-conferida: Tabela 2 do Anexo A p13 -->
 
@@ -1348,7 +1332,7 @@ Fonte - ABNT NBR 17505.
 | Tanques horizontais e verticais com ventilação de alívio de emergência para limitar a pressão máxima até 17 KPa | O valor estabelecido na Tabela 5, mas não inferior a 7,50 m | 7,50 m |
 | Tanques horizontais e verticais com ventilação de alívio de emergência para permitir a pressão máxima acima de 17 KPa | 2 vezes o valor estabelecido pela Tabela 5, mas não inferior a 15 m | 15 m |
 
-Fonte: NT 3-06, página 14, Tabela 3 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 14, Tabela 3 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 <!-- /tabela-conferida: Tabela 3 do Anexo A p14 -->
 
@@ -1363,7 +1347,7 @@ Fonte indicada na página: ABNT NBR 17505.
 | De 190 a 380 | 4,5 | 3,0 |
 | Maior que 380 | 4,5 | 4,5 |
 
-Fonte: NT 3-06, página 14, Tabela 4 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 14, Tabela 4 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 <!-- /tabela-conferida: Tabela 4 do Anexo A p14 -->
 
@@ -1384,7 +1368,7 @@ Fonte indicada na página: ABNT NBR 17505.
 | >7571 a 11356 | 49,5 | 16,5 |
 | >11356 | 52,5 | 18,0 |
 
-Fonte: NT 3-06, página 14, Tabela 5 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 14, Tabela 5 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 Conferência: as duas distâncias crescem (ou ficam iguais) com a capacidade.
 <!-- /tabela-conferida: Tabela 5 do Anexo A p14 -->
@@ -1450,7 +1434,7 @@ Fonte - ABNT NBR 17505.
 | De 20.001 l a 100.000 l | Dois extintores de pó 80-B e dois extintores de pó sobre rodas 80-B e dois extintores de espuma mecânica 10-B e dois extintores de espuma mecânica sobre rodas 40-B ou três extintores de pó sobre rodas 80-B e dois extintores de espuma mecânica 10-B e dois extintores de espuma mecânica sobre rodas 40-B |
 | Superior a 100.000 l | Quatro extintores de pó sobre rodas 80-B e três extintores de espuma mecânica sobre rodas 40-B |
 
-Fonte: NT 3-06, página 15, Tabela 7 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 15, Tabela 7 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 <!-- /tabela-conferida: Tabela 7 do Anexo A p15 -->
 
@@ -1496,7 +1480,7 @@ Fonte - ABNT NBR 17505.
 | Com sistema de proteção automático | Quantidades máximas permitidas | 450 l | 28.500 l por área controlável de armazenamento: permitida, no máximo duas áreas controláveis, separadas por uma parede com isolamento de fogo de 60 min no mínimo | 100.000 l |
 | Com sistema de proteção automático | Capacidade máxima de armazenamento por unidade de área |  | 170 l/m² em área de armazenamento ou de exposição e passagens adjacentes | 100.000 l |
 
-Fonte: NT 3-06, página 16, Tabela 8 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 3-06, página 16, Tabela 8 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 17505.
 Conferência aritmética: com sistema automático os limites dobram (14.250 → 28.500 l; 85 → 170 l/m²); o de I A vai de 250 para 450 l e o de III B de 57.000 para 100.000 l.
 <!-- /tabela-conferida: Tabela 8 do Anexo A p16 -->

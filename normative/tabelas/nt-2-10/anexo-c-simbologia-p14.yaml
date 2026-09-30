@@ -76,6 +76,92 @@ caminhos:
     - - Rota de saída principal
     - - Rota de saída alternativa
     - - Ponto de encontro
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.87
+      - 75.73
+      - 493.91
+      - 779.35
+      linhas:
+      - - ''
+        - Simbologia na
+        - ''
+        - Descrição
+      - - null
+        - planta de emergência
+        - null
+        - null
+      - - ''
+        - null
+        - null
+        - Você está aqui (localização do observador)
+      - - ''
+        - null
+        - null
+        - Acionador manual de alarme de incêndio
+      - - ''
+        - null
+        - null
+        - Telefone de emergência
+      - - ''
+        - null
+        - null
+        - Extintor de incêndio
+      - - ''
+        - null
+        - null
+        - Caixa de incêndio, abrigo de mangueira e hidrante
+      - - ''
+        - null
+        - null
+        - Hidrante de incêndio
+      - - ''
+        - null
+        - null
+        - Hidrante urbano
+      - - ''
+        - null
+        - null
+        - Reserva técnica de incêndio
+      - - ''
+        - null
+        - null
+        - Hidrante de recalque
+      - - ''
+        - null
+        - null
+        - Casa de máquinas de incêndio (CMI)
+      - - ''
+        - null
+        - null
+        - Acesso para viaturas do CBMERJ
+      - - ''
+        - null
+        - null
+        - Acesso para guarnições do CBMERJ
+      - - ''
+        - null
+        - null
+        - Saída de emergência
+      - - ''
+        - null
+        - null
+        - Escada de emergência
+      - - ''
+        - null
+        - null
+        - Rota de saída principal
+      - - ''
+        - null
+        - null
+        - Rota de saída alternativa
+      - - ''
+        - null
+        - null
+        - Ponto de encontro
 notas:
 - A coluna de simbologia traz o desenho do símbolo (só na imagem da página); a célula fica em branco na
   tabela.
@@ -85,6 +171,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

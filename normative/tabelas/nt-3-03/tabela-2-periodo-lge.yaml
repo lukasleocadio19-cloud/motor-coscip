@@ -45,6 +45,58 @@ caminhos:
       - '20'
     - - Acima de 10000 a 30000
       - '30'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 307.99
+      - 69.06
+      - 543.32
+      - 150.38
+      linhas:
+      - - ''
+        - Capacidade do tanque
+        - ''
+        - ''
+        - Período de aplicação do LGE
+        - ''
+      - - null
+        - (litros)
+        - null
+        - null
+        - (min)
+        - null
+      - - Até 250
+        - null
+        - null
+        - Isento
+        - null
+        - null
+      - - Acima de 250 a 500
+        - null
+        - null
+        - '10'
+        - null
+        - null
+      - - Acima de 500 a 1000
+        - null
+        - null
+        - '15'
+        - null
+        - null
+      - - Acima de 1000 a 10000
+        - null
+        - null
+        - '20'
+        - null
+        - null
+      - - Acima de 10000 a 30000
+        - null
+        - null
+        - '30'
+        - null
+        - null
 notas:
 - 'Fonte indicada na página: CBMERJ.'
 - 'O item 8.2.2 confirma a primeira linha: salas com até 250 l de óleo diesel ficam isentas da proteção
@@ -54,6 +106,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

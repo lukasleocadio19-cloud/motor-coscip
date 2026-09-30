@@ -158,6 +158,255 @@ caminhos:
       - 7,5
       - 12,0
       - 18,0
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 64.52
+      - 98.53
+      - 517.2
+      - 269.83
+      linhas:
+      - - Tanque de maior capacidade, em operação com líquidos m3
+        - ''
+        - Distância mínima até o limite de
+        - null
+        - null
+        - null
+        - null
+        - ''
+        - ''
+        - Distância mínima do lado mais próximo de
+        - null
+        - null
+        - null
+        - ''
+      - - null
+        - null
+        - propriedade, desde que na área
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - qualquer via de circulação interna ou qualquer
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - adjacente haja ou possa haver
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - edificação importante na mesma propriedade
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - construção (m)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - (m)
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - Líquidos
+        - null
+        - ''
+        - Líquidos instáveis alívio de emergência
+        - null
+        - null
+        - Líquidos estáveis alívio de emergência
+        - null
+        - null
+        - Líquidos instáveis alívio de emergência
+        - null
+        - null
+      - - null
+        - null
+        - estáveis alívio
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - de
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - emergência
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ≤17 KPa
+        - null
+        - '>17 KPa'
+        - null
+        - ≤17 KPa
+        - '>17 KPa'
+        - null
+        - ≤17 KPa
+        - null
+        - '>17 KPa'
+        - ≤17 KPa
+        - '>17 KPa'
+        - null
+      - - Até 46
+        - 4,5
+        - null
+        - 7,5
+        - null
+        - 12,0
+        - 18,0
+        - null
+        - 1,5
+        - null
+        - 3,0
+        - 4,5
+        - 6,0
+        - null
+      - - 46 a 114
+        - 6,0
+        - null
+        - 9,0
+        - null
+        - 15,0
+        - 24,0
+        - null
+        - 1,5
+        - null
+        - 3,0
+        - 4,5
+        - 6,0
+        - null
+      - - 114 a 190
+        - 9,0
+        - null
+        - 13,5
+        - null
+        - 22,5
+        - 36,0
+        - null
+        - 3,0
+        - null
+        - 4,5
+        - 7,5
+        - 12,0
+        - null
+      - - 190 a 380
+        - 15,0
+        - null
+        - 22,5
+        - null
+        - 37,5
+        - 60,0
+        - null
+        - 4,5
+        - null
+        - 7,5
+        - 12,0
+        - 18,0
+        - null
+    - bbox:
+      - 231.94
+      - 152.45
+      - 299.16
+      - 188.69
+      linhas:
+      - - Líquidos
+      - - instáveis alívio
+      - - de emergência
+    - bbox:
+      - 309.96
+      - 152.45
+      - 386.06
+      - 188.69
+      linhas:
+      - - Líquidos estáveis
+      - - alívio de
+      - - emergência
+    - bbox:
+      - 396.89
+      - 158.93
+      - 511.18
+      - 183.65
+      linhas:
+      - - Líquidos instáveis alívio
+      - - de emergência
+    - bbox:
+      - 64.52
+      - 314.46
+      - 517.2
+      - 546.86
+      linhas:
+      - - Capacidade de
+        - Quantidade e capacidade extintora mínima
+      - - armazenamento
+        - ''
+      - - ''
+        - ''
+      - - Até 500 l
+        - Dois extintores de pó 20-B
+      - - De 501 l a 5.000 l
+        - Dois extintores de pó 40-B e um extintor de espuma mecânica 10-B
+      - - De 5.001 l a 10.000 l
+        - Dois extintores de pó 80-B e dois extintores de espuma mecânica 10-B ou um extintor de pó 40-B
+          e um extintor de pó sobre rodas 80-B e dois extintores de espuma mecânica 10-B
+      - - De 10.001 a 20.000 l
+        - Um extintor de pó 80-B e um extintor de pó sobre rodas 80-B e um extintor de espuma mecânica
+          10-B e um extintor de espuma mecânica sobre rodas 40-B ou Quatro extintores de pó 40-B e um
+          extintor de pó sobre rodas 80-B e um extintor de espuma mecânica 10-B e Um extintor de espuma
+          mecânica sobre rodas 40-B
+      - - De 20.001 l a 100.000 l
+        - Dois extintores de pó 80-B e dois extintores de pó sobre rodas 80-B e dois extintores de espuma
+          mecânica 10-B e dois extintores de espuma mecânica sobre rodas 40-B ou três extintores de pó
+          sobre rodas 80-B e dois extintores de espuma mecânica 10-B e dois extintores de espuma mecânica
+          sobre rodas 40-B
+      - - Superior a 100.000 l
+        - Quatro extintores de pó sobre rodas 80-B e três extintores de espuma mecânica sobre rodas 40-B
 notas:
 - 'Fonte indicada na página: ABNT NBR 17505.'
 - 'Conferência: para cada lado e pressão, a distância para líquidos instáveis é maior ou igual à dos estáveis,
@@ -165,33 +414,9 @@ notas:
 inconsistencias_da_fonte:
 - 'As faixas de capacidade ("Até 46", "46 a 114", "114 a 190", "190 a 380") se sobrepõem nos limites e
   param em 380 m³: a tabela não cobre tanques maiores.'
-estado: divergente
+estado: pendente_humano
 resultado:
-  estado: divergente
+  estado: pendente_humano
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 3
-    - 4
-    - 8
-    - 9
-    - 9
-    - 9
-    - 9
-  - - 3
-    - 2
-    - 2
-    - 2
-    - 4
-    - 1
-    - 1
-    - 1
-    - 8
-    - 9
-    - 9
-    - 9
-    - 9
+  motivo: nenhuma tabela geométrica encontrada na página

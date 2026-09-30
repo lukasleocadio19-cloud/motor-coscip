@@ -56,6 +56,126 @@ caminhos:
       - 4,1
       - '55'
       - '30'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 313.12
+      - 188.57
+      - 560.38
+      - 260.71
+      linhas:
+      - - Diâmetro do maior
+        - Número mínimo de aplicadores
+      - - tanque (D)
+        - manuais ou canhões-monitores de
+      - - m
+        - espuma
+      - - ''
+        - ''
+      - - D ≤ 36
+        - '2'
+      - - D > 36
+        - '3'
+    - bbox: &id001
+      - 52.48
+      - 197.03
+      - 283.8
+      - 290.78
+      linhas:
+      - - Tipo
+        - Taxa mínima de aplicação (L/min/m2)
+        - Tempo mínimo
+        - null
+      - - null
+        - null
+        - (min)
+        - null
+      - - null
+        - null
+        - ''
+        - null
+      - - null
+        - null
+        - Produtos
+        - null
+      - - null
+        - null
+        - ''
+        - null
+      - - null
+        - null
+        - Classe I
+        - Classe II
+      - - null
+        - null
+        - ''
+        - ''
+      - - Câmara de espuma
+        - 4,1
+        - '55'
+        - '30'
+    - bbox:
+      - 313.12
+      - 290.78
+      - 560.38
+      - 367.3
+      linhas:
+      - - Diâmetro do maior
+        - Tempo
+      - - tanque (D)
+        - min
+      - - m
+        - ''
+      - - D ≤ 10,5
+        - '10'
+      - - 10,5 < D ≤ 28,5
+        - '20'
+      - - D > 28,5
+        - '30'
+    - bbox:
+      - 116.37
+      - 327.1
+      - 190.05
+      - 374.02
+      linhas:
+      - - ''
+        - Taxa mínima de
+      - - null
+        - aplicação
+      - - null
+        - L/min/m²
+      - - 6,0
+        - null
+    - bbox:
+      - 199.99
+      - 327.1
+      - 274.2
+      - 345.7
+      linhas:
+      - - Tempo mínimo
+      - - min
+    - bbox:
+      - 52.48
+      - 576.58
+      - 283.8
+      - 682.03
+      linhas:
+      - - Diâmetro do tanque D (m)
+        - Número de câmaras de espuma
+      - - D ≤ 24
+        - '1'
+      - - 24 < D ≤ 36
+        - '2'
+      - - 36 < D ≤ 42
+        - '3'
+      - - 42 < D ≤ 48
+        - '4'
+      - - 48 < D ≤ 54
+        - '5'
+      - - 54 < D ≤ 60
+        - '6'
 notas:
 - 'Fonte indicada na página: ABNT NBR 17505.'
 estado: verificada
@@ -63,6 +183,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 1
+  candidatos_na_pagina: 6
+  bbox: *id001
+  texto: verificada

@@ -37,6 +37,24 @@ caminhos:
       - Médio (1 e 2)
     - - III
       - Grande
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 50.08
+      - 72.73
+      - 279.27
+      - 166.13
+      linhas:
+      - - Classificação
+        - Risco
+      - - I
+        - Pequeno
+      - - II
+        - Médio (1 e 2)
+      - - III
+        - Grande
 notas:
 - 'Texto abaixo da tabela: O critério para a definição do risco da edificação será de acordo com NT 1-04
   - Classificação das edificações quanto ao risco de incêndio.'
@@ -48,6 +66,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

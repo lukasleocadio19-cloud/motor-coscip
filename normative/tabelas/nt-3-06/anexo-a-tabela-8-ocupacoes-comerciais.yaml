@@ -69,6 +69,88 @@ caminhos:
       - 100.000 l
     - - Capacidade máxima de armazenamento por unidade de área
       - 170 l/m² em área de armazenamento ou de exposição e passagens adjacentes
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 57.03
+      - 88.9
+      - 496.04
+      - 345.7
+      linhas:
+      - - ''
+        - ''
+        - I A
+        - ''
+        - III B
+      - - null
+        - null
+        - null
+        - Classificação de líquidos
+        - null
+      - - Nível de
+        - Limites de
+        - (Somente
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - I B, I C, II e III A
+        - null
+      - - proteção
+        - estocagem
+        - no piso
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - (qualquer combinação)
+        - null
+      - - ''
+        - ''
+        - térreo)
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - ''
+        - null
+      - - ''
+        - ''
+        - ''
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - ''
+        - null
+      - - Sem sistema de proteção automática
+        - Quantidades máximas permitidas
+        - 250 l
+        - '14.250 l por área controlável de armazenamento: permitida, no máximo duas áreas edificadas
+          separadas por parede com isolamento de fogo por 60 min, no mínimo'
+        - 57.000 l
+      - - null
+        - Capacidade máxima de armazenamento por unidade de área
+        - ''
+        - 85 l/m² em áreas de armazenamento ou exposição e passagens adjacentes
+        - null
+      - - Com sistema de proteção automático
+        - Quantidades máximas permitidas
+        - 450 l
+        - '28.500 l por área controlável de armazenamento: permitida, no máximo duas áreas controláveis,
+          separadas por uma parede com isolamento de fogo de 60 min no mínimo'
+        - 100.000 l
+      - - null
+        - Capacidade máxima de armazenamento por unidade de área
+        - ''
+        - 170 l/m² em área de armazenamento ou de exposição e passagens adjacentes
+        - null
 notas:
 - 'Fonte indicada na página: ABNT NBR 17505.'
 - 'Conferência aritmética: com sistema automático os limites dobram (14.250 → 28.500 l; 85 → 170 l/m²);
@@ -81,6 +163,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

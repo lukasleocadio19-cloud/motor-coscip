@@ -225,7 +225,7 @@ d) possuam as laterais totalmente abertas, podendo ou não ter proteções later
 | II | Médio (1 e 2) |
 | III | Grande |
 
-Fonte: NT 2-17, página 4, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-17, página 4, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Texto abaixo da tabela: O critério para a definição do risco da edificação será de acordo com NT 1-04 - Classificação das edificações quanto ao risco de incêndio.
 <!-- /tabela-conferida: Tabela 1 p4 -->
 
@@ -283,7 +283,7 @@ Fonte: NFPA 80 A.
 | - | - | 80 | 2,6 | 2,95 | 3,31 | 3,70 | 4,13 | 4,61 | 5,12 | 5,68 | 6,28 | 6,91 | 7,57 | 8,24 | 8,89 | 9,51 | 10,0 | 10,5 | 10,8 |
 | - | - | 100 | 3,0 | 3,32 | 3,72 | 4,16 | 4,65 | 5,19 | 5,78 | 6,43 | 7,13 | 7,88 | 8,67 | 9,50 | 10,3 | 11,1 | 11,9 | 12,5 | 13,1 |
 
-Fonte: NT 2-17, página 5, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-17, página 5, Tabela do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Fórmula acima da tabela: D = α x (L ou H)* + 1,5 (*deve-se utilizar a menor medida).
 Conferência: α cresce (ou fica igual) ao longo de cada linha e de cima para baixo em cada coluna.
 Fonte indicada na página: NFPA 80 A.

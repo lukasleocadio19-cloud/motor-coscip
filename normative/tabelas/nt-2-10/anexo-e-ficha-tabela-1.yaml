@@ -115,6 +115,183 @@ caminhos:
         incêndio e pânico está fixada no hall de acesso das entradas do público ou bilheterias?
     - - 'A pessoa responsável por garantir que nenhuma pessoa entre além da lotação máxima aprovada pelo
         CBMERJ, é: _______________________________________________________'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 63.87
+      - 321.05
+      - 521.33
+      - 757.37
+      linhas:
+      - - ''
+        - TABELA 1
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - ''
+        - REGULARIZAÇÃO JUNTO AO CBMERJ
+        - ''
+        - ''
+        - SIM
+        - ''
+        - ''
+        - NÃO
+        - ''
+      - - 'O certificado de aprovação (CA) ou certificado de vistoria anual (CVA) está válido? Lotação
+          máxima aprovada: ____________________________________________ Validade do CA ou CVA: ______________________________________________'
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - ''
+        - SAÍDAS
+        - ''
+        - ''
+        - SIM
+        - ''
+        - ''
+        - NÃO
+        - ''
+      - - Todas as saídas de emergência e rotas de saída estão sinalizadas, iluminadas e desobstruídas?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - Todas as portas das saídas de emergência estão destrancadas e operando?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - O acesso do público ao exterior da edificação ou ao local de segurança está desobstruído?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - Toda a sinalização de segurança das rotas de saída está visível e iluminada?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - O sistema de iluminação de emergência está operando?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - ''
+        - EXTINTORES DE INCÊNDIO
+        - ''
+        - ''
+        - SIM
+        - ''
+        - ''
+        - NÃO
+        - ''
+      - - Os extintores estão disponíveis, visíveis, sinalizados e prontos para uso?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - Os extintores estão carregados e dentro do período de validade da recarga?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - ''
+        - ORIENTAÇÃO AO PÚBLICO
+        - ''
+        - ''
+        - SIM
+        - ''
+        - ''
+        - NÃO
+        - ''
+      - - Há sistema de voz disponível para anúncios de emergência?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - 'A pessoa responsável por anunciar ao público a necessidade de abandono, é: _____________________________________________________________________'
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - Os meios para orientação do público através de chamada oral ou filme de curta metragem, conforme
+          NT 2-10 – Plano de emergência contra incêndio e pânico (PECIP), estão disponíveis? A pessoa
+          responsável por esta orientação, antes do início de cada espetáculo, é______________________________________________________________________
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - A Placa informativa da lotação máxima permitida, conforme NT 2-05 – Sinalização de segurança
+          contra incêndio e pânico está fixada no hall de acesso das entradas do público ou bilheterias?
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - 'A pessoa responsável por garantir que nenhuma pessoa entre além da lotação máxima aprovada
+          pelo CBMERJ, é: _______________________________________________________'
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - ''
+        - null
+        - null
 notas:
 - 'Anexo E da NT 2-10: modelo da ficha de segurança pré-evento (formulário: as colunas SIM e NÃO são para
   preenchimento).'
@@ -127,6 +304,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

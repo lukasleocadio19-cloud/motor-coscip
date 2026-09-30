@@ -77,6 +77,99 @@ caminhos:
       - Classe I, II-A, III-A, ou IV-A
       - Classe I, II-A
       - Classe I, II-A
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.66
+      - 89.4
+      - 545.94
+      - 254.23
+      linhas:
+      - - ''
+        - null
+        - ''
+        - Finalidade do material
+        - null
+        - null
+        - null
+        - ''
+      - - null
+        - null
+        - ''
+        - ''
+        - ''
+        - Parede e Divisória (Acabamento²/ Revestimento)
+        - Teto, Forro e Cobertura (Acabamento/ Revestimento)
+        - null
+      - - null
+        - null
+        - null
+        - Piso
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - (Acabamento¹/ Revestimento)
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - null
+        - null
+      - - Grupo/ Divisão
+        - A-13, A-23, A-43, A-53, A-63
+        - Classe I, II-A, III-A, IV-A ou V-A5
+        - null
+        - null
+        - Classe I, II-A, III-A, ou IV-A6
+        - Classe I, II-A, ou III-A4
+        - null
+      - - null
+        - B, D, E G, H, I-1, J-1, J-2 e M-9
+        - Classe I, II-A, III-A, ou IV-A
+        - null
+        - null
+        - Classe I, II-A, ou III- A7
+        - Classe I, II-A
+        - null
+      - - null
+        - C, F, I-2, I-3, J-3, J-4, L, M-1, M-2, M-3 e M-6
+        - Classe I, II-A, III-A, ou IV-A
+        - null
+        - null
+        - Classe I, II-A
+        - Classe I, II-A
+        - null
+    - bbox:
+      - 471.55
+      - 116.9
+      - 540.46
+      - 153.65
+      linhas:
+      - - Teto, Forro e
+      - - Cobertura
+      - - (Acabamento/
+      - - Revestimento)
+    - bbox:
+      - 386.54
+      - 121.46
+      - 460.75
+      - 149.09
+      linhas:
+      - - Parede e Divisória
+      - - (Acabamento²/
+      - - Revestimento)
 notas:
 - 'Legenda das citações:'
 - 1 - Como exemplo podem-se citar os cordões, rodapés e arremates;
@@ -96,13 +189,15 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
   celulas:
   - linha: 3
     coluna: 2
     a: Classe I, II-A, ou III-A⁷
-    b: Classe I, II-A, ou IIIA7
+    b: Classe I, II-A, ou III- A7
     estado: verificada
-    score: 97.7
+    score: 97.8

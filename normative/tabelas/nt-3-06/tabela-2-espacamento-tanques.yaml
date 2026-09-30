@@ -71,28 +71,110 @@ caminhos:
       - 1/4 da soma dos diâmetros dos tanques adjacentes
       - 1/3 da soma dos diâmetros dos tanques adjacentes
       - 1/4 da soma dos diâmetros dos tanques adjacentes
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 52.61
+      - 132.44
+      - 287.08
+      - 433.08
+      linhas:
+      - - Diâmetro do tanque
+        - ''
+        - Tanques
+        - ''
+        - ''
+        - Tanques verticais com teto
+        - null
+        - null
+        - null
+        - ''
+      - - null
+        - null
+        - com teto
+        - null
+        - null
+        - fixo ou
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - flutuante
+        - null
+        - null
+        - horizontais
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - ou selo
+        - null
+        - ''
+        - Líquidos
+        - ''
+        - ''
+        - Líquidos
+        - ''
+      - - null
+        - null
+        - flutuante
+        - null
+        - null
+        - classe I ou II
+        - null
+        - null
+        - classe IIIA
+        - null
+      - - Todos os tanques com diâmetro ≤ 45 m
+        - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
+        - null
+        - null
+        - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
+        - null
+        - null
+        - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
+        - null
+        - null
+      - - Tanques com diâmetro > 45 m, se for prevista bacia de contenção à distância
+        - 1/6 da soma dos diâmetros dos tanques adjacentes
+        - null
+        - null
+        - 1/4 da soma dos diâmetros dos tanques adjacentes
+        - null
+        - null
+        - 1/6 da soma dos diâmetros dos tanques adjacentes
+        - null
+        - null
+      - - Tanques com diâmetro > 45 m, se for previsto dique
+        - 1/4 da soma dos diâmetros dos tanques adjacentes
+        - null
+        - null
+        - 1/3 da soma dos diâmetros dos tanques adjacentes
+        - null
+        - null
+        - 1/4 da soma dos diâmetros dos tanques adjacentes
+        - null
+        - null
+    - bbox:
+      - 58.1
+      - 144.91
+      - 96.77
+      - 173.02
+      linhas:
+      - - Diâmetro
+      - - do
+      - - tanque
 notas:
 - 'Fonte indicada na página: ABNT NBR 17505.'
-estado: divergente
+estado: pendente_humano
 resultado:
-  estado: divergente
+  estado: pendente_humano
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 3
-    - 2
-    - 4
-    - 4
-    - 4
-  - - 3
-    - 2
-    - 2
-    - 3
-    - 3
-    - 4
-    - 4
-    - 4
+  motivo: nenhuma tabela geométrica encontrada na página

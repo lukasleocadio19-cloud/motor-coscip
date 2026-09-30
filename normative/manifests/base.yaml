@@ -8,9 +8,10 @@ resumo:
   tabelas_por_estado:
     bruto: 77
     capa: 38
-    divergente: 5
+    divergente: 4
     nao_tabela: 19
-    verificada: 178
+    pendente_humano: 2
+    verificada: 177
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -1226,7 +1227,7 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT2-04_2Edio_2023.pdf
   sha256_pdf: 37837bf154bc5c517e2732e206e6d72e3e441591364182531614acad69fa5ed1
-  sha256_md: d4b1ef0f27ed71080a53f0827c6ce8721c142a4bb82ae3cf9be4e70e19e5e683
+  sha256_md: 1af13d170a0c27872dee1c584aa22d408aced8a6856a0396aedee7abaf304284
   data_captura: '2026-07-23'
   paginas: 10
   midia: nt-2-04
@@ -1651,7 +1652,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-10-Plano-de-emergencia-contra-incendio-e-panico-PECIP.pdf
   sha256_pdf: 4406f8268fbb577e70b4ba3367f3bcc0ab1d961da201005b855a34989290b84b
-  sha256_md: 3ad8cc8c77aca3e9cb79725dfc72a6b2461a1ae9f657e239c803a4a2730be9b0
+  sha256_md: 7a913d633e1212bc4f0918b2208c6c57dfe07ae7769bcc58e466f8aab74135eb
   data_captura: '2026-07-23'
   paginas: 20
   midia: nt-2-10
@@ -2215,7 +2216,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-17-Separacao-entre-edificacoes.pdf
   sha256_pdf: 83120c1cd247417d8c543db5db69752e45da5911f26f40205cba174e71d62db7
-  sha256_md: 759bf457c6b3be8520d82ced8a38b9ba7de0c978b05ed17dac15b9eee6d007d0
+  sha256_md: a50660060505746d108ad3931255a68b0400b0be5fa0237e4f6732e38079f063
   data_captura: '2026-07-23'
   paginas: 6
   midia: nt-2-17
@@ -2438,7 +2439,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-20-Controle-de-materiais-de-acabamento-e-de-revestimento.pdf
   sha256_pdf: 6fa8dffe9aa7d10fb27c845b40da733db84862ac9fc144ec3948e8db24e90d4d
-  sha256_md: 145d899eec3498bfbb4235e5b7ebc4ddb46a1f79f9c3e58e7bf456ab742ceaa7
+  sha256_md: b14529fded15eab68dbf1a82b8a5769ea6f13e51bfae64decb5fc932d94ee9d4
   data_captura: '2026-07-23'
   paginas: 9
   midia: nt-2-20
@@ -2505,7 +2506,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-01-Cozinha-profissional.pdf
   sha256_pdf: 39376c0411829f52c7e1c06a9dcde0f09528d2e5db87b4e3915d796783b2ebca
-  sha256_md: eacd4c589de192a10e270054c504924d269a9440ea5c795fbf6bdcb0823d8e7b
+  sha256_md: 3fb087600e2aaa00941c02a37edf35d2c37c41e75831272af6f794cf280a7a6f
   data_captura: '2026-07-23'
   paginas: 6
   midia: nt-3-01
@@ -2656,7 +2657,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_3-03_1Ed_2019_alterada_Portaria_1317_2025.pdf
   sha256_pdf: 181e7aa6c1341d3032421dde20512ea3e9c55b5588fbd188a1ab3eaa31b958de
-  sha256_md: d79d018d164c01e47af5b2f2a07a6e29a2d82488ebcabe846114c6bb1abd0352
+  sha256_md: 6593ab36d08c97bb91906cf3360947ee0a0d26e20e88ea065c9c22f039f35bb1
   data_captura: '2026-07-23'
   paginas: 6
   midia: nt-3-03
@@ -2745,7 +2746,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-06-Armazenagem-de-liquidos-inflamaveis-e-combustiveis.pdf
   sha256_pdf: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
-  sha256_md: 6a995275b1a65736ffcdbf59e0b345feb7a9e30d5d5086dcf29d52909d9afa9d
+  sha256_md: 9ba4d205c14805b23d6a6521e7563deb8c993fea6813311a6b82d04efd7ff1e3
   data_captura: '2026-07-23'
   paginas: 16
   midia: nt-3-06
@@ -2824,7 +2825,7 @@ fontes:
   - pagina: 5
     tabela: Tabela 2
     arquivo: normative/tabelas/nt-3-06/tabela-2-espacamento-tanques.yaml
-    estado: divergente
+    estado: pendente_humano
   - pagina: 7
     tabela: Tabela 3
     arquivo: normative/tabelas/nt-3-06/tabela-3-espuma-tanques-verticais.yaml
@@ -2856,7 +2857,7 @@ fontes:
   - pagina: 9
     tabela: Tabela 10
     arquivo: normative/tabelas/nt-3-06/tabela-10-taxa-resfriamento.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 10
     tabela: Tabela 11
     arquivo: normative/tabelas/nt-3-06/tabela-11-espuma-plataformas.yaml
@@ -2904,7 +2905,7 @@ fontes:
   - pagina: 15
     tabela: Tabela 6 do Anexo A
     arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-6-edificacoes.yaml
-    estado: divergente
+    estado: pendente_humano
   - pagina: 15
     tabela: Tabela 7 do Anexo A
     arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-7-extintores.yaml
