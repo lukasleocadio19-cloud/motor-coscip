@@ -1406,6 +1406,8 @@ As solicitações de análise de projeto de segurança contra incêndio e pânic
 
 ## Página 26
 
+![Representação visual da página 26](media/nt-1-01-parte-1/pagina-26.jpg)
+
 Tabela 1 - Unidades de atendimento na cidade do Rio de Janeiro
 
 Tabela 2 - Unidades de atendimento na cidade de Duque de Caxias

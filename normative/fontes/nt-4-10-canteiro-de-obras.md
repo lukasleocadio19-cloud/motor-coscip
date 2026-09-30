@@ -66,6 +66,8 @@ Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019
 
 ## Página 3
 
+![Representação visual da página 3](media/nt-4-10/pagina-03.jpg)
+
 Nota Técnicanº 4-10:2019 - Canteiro de obras
 
 ### 1 OBJETIVO
@@ -159,6 +161,8 @@ Para efeito desta Nota Técnica, além das definições constantes da NT 1-02 -T
 ---
 
 ## Página 4
+
+![Representação visual da página 4](media/nt-4-10/pagina-04.jpg)
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 

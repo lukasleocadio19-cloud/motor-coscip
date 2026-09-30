@@ -281,6 +281,8 @@ a) abandono orientado: tipo de abandono no qual alguns ocupantes da edificação
 
 ## Página 6
 
+![Representação visual da página 6](media/nt-2-10/pagina-06.jpg)
+
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 devem ser seguidas. Aplica-se às edificações com predomínio de população flutuante que desconhece o plano de abandono da edificação, tais como: edificações de reunião de público, de concentração de público (shoppings, lojas de departamentos, etc.) e residencial transitória;
@@ -832,6 +834,8 @@ Figura 03 - Exemplo de planta de emergência para quartos de hotéis
 
 ## Página 19
 
+![Representação visual da página 19](media/nt-2-10/pagina-19.jpg)
+
 ### ANEXO E - MODELO DA FICHA DE SEGURANÇA PRÉ-EVENTO
 
 ### CORPO DE BOMBEIROS MILITAR DO ESTADO DO RIO DE JANEIRO
@@ -884,6 +888,8 @@ página 1 de 2
 ---
 
 ## Página 20
+
+![Representação visual da página 20](media/nt-2-10/pagina-20.jpg)
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 

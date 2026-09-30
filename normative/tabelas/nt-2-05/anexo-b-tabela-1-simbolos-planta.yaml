@@ -1,0 +1,69 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-05
+arquivo: nt-2-05-sinalizacao.md
+tabela: Tabela 1 do Anexo B
+titulo: Símbolos para identificação em planta baixa
+pagina: 7
+fonte_pdf_sha256: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-05/pagina-07.jpg
+    imagem_sha256: 1c46aaacc97d092a09307161dda1c0801b34461fbbf8f6c1f76db8f540668f21
+    linhas_cabecalho: 1
+    linhas:
+    - - Nível
+      - Sinalização retangular
+      - Sinalização quadrada e triangular
+      - Sinalização circular
+    - - Superior
+      - CÓDIGO L/H (mm)
+      - CÓDIGO L (mm)
+      - CÓDIGO D (mm)
+    - - Intermediário
+      - CÓDIGO L/H (mm)
+      - CÓDIGO L (mm)
+      - CÓDIGO D (mm)
+    - - Inferior
+      - CÓDIGO L/H (mm)
+      - CÓDIGO L (mm)
+      - CÓDIGO D (mm)
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 7
+      tabela_na_pagina: 1
+    linhas:
+    - - Nível
+      - Sinalização retangular
+      - Sinalização quadrada e triangular
+      - Sinalização circular
+    - - Superior
+    - - Intermediário
+    - - Inferior
+notas:
+- 'As células são desenhos: o texto "CÓDIGO" sobre a dimensão vai dentro de um círculo (nível superior),
+  de um losango (intermediário) ou de um retângulo (inferior). A camada de texto do .md não traz o conteúdo
+  dos desenhos; o segundo caminho é a grade do PDF.'
+- 'Fonte indicada na página: ABNT NBR 16820.'
+estado: divergente
+resultado:
+  estado: divergente
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 4
+    - 4
+    - 4
+    - 4
+  - - 4
+    - 1
+    - 1
+    - 1

@@ -1303,6 +1303,8 @@ A página traz três colunas lado a lado (Tipo de material | Hi); cada uma é um
 
 ## Página 20
 
+![Representação visual da página 20](media/nt-1-04/pagina-20.jpg)
+
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 ### ANEXO E - EXEMPLO DE PLANILHA PARA CÁLCULO DA CARGA DE INCÊNDIO ESPECÍFICA

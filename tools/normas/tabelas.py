@@ -60,9 +60,10 @@ def norm(cell: str | None) -> str | None:
     """Forma de comparação: sem acento, minúscula, espaços únicos, OCR de acento solto."""
     if cell is None:
         return None
-    text = unicodedata.normalize("NFKD", str(cell).translate(_SYMBOL_PUA))
+    # "□" = glifo que a página não renderiza (a camada de texto o omite): não é conteúdo
+    text = unicodedata.normalize("NFKD", str(cell).translate(_SYMBOL_PUA).replace("□", " "))
     text = "".join(c for c in text if not unicodedata.combining(c))
-    text = text.replace(" ", " ").replace("–", "-").replace("—", "-").lower()
+    text = " ".join(text.replace("\xa0", " ").replace("–", "-").replace("—", "-").lower().split())
     text = re.sub(r"(?<=\w) (?=[a-z]\b)", "", text)  # "edificaco es" → "edificacoes"
     text = re.sub(r"(\d)\s*([m²%])", r"\1\2", text)  # "35,00 m" → "35,00m"
     text = re.sub(r"\s*:\s*", ":", text)  # "2-A : 10-B" → "2-a:10-b"

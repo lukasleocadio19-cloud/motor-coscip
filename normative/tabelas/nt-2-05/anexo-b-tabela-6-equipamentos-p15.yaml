@@ -1,0 +1,97 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-05
+arquivo: nt-2-05-sinalizacao.md
+tabela: Tabela 6 do Anexo B
+titulo: Sinalização de equipamentos (continuação, p. 15)
+pagina: 15
+fonte_pdf_sha256: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-05/pagina-15.jpg
+    imagem_sha256: 3025ff253b7a492e28e1e6c82cf48d26e92e50aff4861b21a53a8ffaa38dee86
+    linhas_cabecalho: 1
+    linhas:
+    - - Código
+      - Símbolo
+      - Significado
+      - Forma e cor
+      - Aplicação
+    - - E-7
+      - ''
+      - Abrigo de mangueira e hidrante
+      - 'Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente'
+      - 'Indicação do abrigo da mangueira de incêndio com ou sem hidrante no seu interior. Nível: superior'
+    - - E-8
+      - ''
+      - Hidrante de incêndio
+      - ^
+      - 'Indicação da localização do hidrante quando instalado fora do abrigo de mangueiras. Nível: superior'
+    - - E-9
+      - ''
+      - Conjunto de equipamentos de combate a incêndio
+      - ^
+      - 'Indicação de localização de um conjunto de equipamentos de combate a incêndio (hidrantes, abrigo
+        de mangueiras, mangotinho e extintores). Nível: superior'
+    - - E-10
+      - ''
+      - Válvula de controle do sistema de chuveiros automáticos
+      - ^
+      - 'Indicação da localização da válvula de controle do sistema de chuveiros automáticos. Nível: superior'
+    - - E-11
+      - ''
+      - Extintor de incêndio sobre rodas
+      - ^
+      - 'Indicação da localização de extintor de incêndio sobre rodas. Nível: superior'
+    - - E-12
+      - ''
+      - ''
+      - ^
+      - 'Indicação da localização da manta para o abafamento de chamas em pessoas. Nível: superior'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 15
+      tabela_na_pagina: 1
+    linhas:
+    - - Código
+      - Símbolo
+      - Significado
+      - Forma e cor
+      - Aplicação
+    - - E-7
+      - Abrigo de mangueira e hidrante
+      - 'Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente'
+      - 'Indicação do abrigo da mangueira de incêndio com ou sem hidrante no seu interior. Nível: superior'
+    - - E-8
+      - Hidrante de incêndio
+      - 'Indicação da localização do hidrante quando instalado fora do abrigo de mangueiras. Nível: superior'
+    - - E-9
+      - Conjunto de equipamentos de combate a incêndio
+      - 'Indicação de localização de um conjunto de equipamentos de combate a incêndio (hidrantes, abrigo
+        de mangueiras, mangotinho e extintores). Nível: superior'
+    - - E-10
+      - Válvula de controle do sistema de chuveiros automáticos
+      - 'Indicação da localização da válvula de controle do sistema de chuveiros automáticos. Nível: superior'
+    - - E-11
+      - Extintor de incêndio sobre rodas
+      - 'Indicação da localização de extintor de incêndio sobre rodas. Nível: superior'
+    - - E-12
+      - 'Indicação da localização da manta para o abafamento de chamas em pessoas. Nível: superior'
+notas:
+- A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela.
+  Célula de forma e cor mesclada entre linhas repete-se na publicação.
+- 'Fonte indicada na página: ABNT NBR 16820.'
+inconsistencias_da_fonte:
+- E-12 (manta para abafamento de chamas) está com a célula "Significado" em branco.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

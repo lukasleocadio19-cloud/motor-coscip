@@ -125,6 +125,8 @@ constantes da NT 1-02 - Terminologia de segurança contra incêndio e pânico, a
 
 ## Página 4
 
+![Representação visual da página 4](media/nt-3-01/pagina-04.jpg)
+
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 interna equivalentes aos dutos de aço.
@@ -186,6 +188,8 @@ do uso de sistema de extinção com dióxido de carbono (CO2).
 ---
 
 ## Página 5
+
+![Representação visual da página 5](media/nt-3-01/pagina-05.jpg)
 
 Tabela 1 - Classificação dos equipamentos de cocção
 

@@ -237,3 +237,8 @@ def test_comparacao_por_coluna_exige_o_mesmo_texto_na_mesma_ordem():
     assert ruim["estado"] == "divergente" and ruim["celulas"][0]["coluna"] == 1
     with pytest.raises(IndexError):  # grade com outra largura: outra tabela da página
         tabelas.compare_by_column(visual, [["a", "b"]], {})
+
+
+def test_glifo_nao_renderizado_nao_e_conteudo():
+    assert tabelas.compare_cell("100 □ 100", "100 100")["estado"] == "verificada"
+    assert tabelas.compare_cell("100 □ 100", "100 150")["estado"] == "divergente"

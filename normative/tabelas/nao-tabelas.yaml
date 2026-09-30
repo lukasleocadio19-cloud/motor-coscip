@@ -23,3 +23,62 @@ paginas:
     imagem: media/nt-4-05/pagina-04.jpg
     motivo: fim da alínea c) do item 5.1.6 ("válvulas de retenção instaladas na entrada de enchimento do recipiente") em duas colunas de texto
     conferido_em: '2026-09-29'
+  - arquivo: nt-2-01-extintores.md
+    pagina: 3
+    imagem: media/nt-2-01/pagina-03.jpg
+    motivo: item 4.18 (definição de extintor sobre rodas) em duas colunas de texto. Na mesma página a fonte define duas vezes os extintores, com limites diferentes (4.7 portátil até 20 kg × 4.17 até 24 kg; 4.8 sobre rodas até 250 kg × 4.18 acima de 24 kg)
+    conferido_em: '2026-09-30'
+  - arquivo: nt-2-09-pressurizacao-de-escada.md
+    pagina: 4
+    imagem: media/nt-2-09/pagina-04.jpg
+    motivo: alíneas e) e f) do item 5.1.2.1 (contrapeso e fechamento eletromagnético das portas corta-fogo)
+      em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-2-09-pressurizacao-de-escada.md
+    pagina: 6
+    imagem: media/nt-2-09/pagina-06.jpg
+    motivo: item 5.3.2.7.3 (acionadores manuais a no máximo 2 m da porta corta-fogo) em duas colunas de
+      texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-4-04-municoes-explosivos-e-artefatos-pirotecnicos.md
+    pagina: 3
+    imagem: media/nt-4-04/pagina-03.jpg
+    motivo: definição 4.1 (aceiro) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-4-06-postos-de-servicos-e-abastecimento.md
+    pagina: 3
+    imagem: media/nt-4-06/pagina-03.jpg
+    motivo: definição 4.3 (dique de contenção) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-4-06-postos-de-servicos-e-abastecimento.md
+    pagina: 5
+    imagem: media/nt-4-06/pagina-05.jpg
+    motivo: item 5.1.14.5 (isolamento acústico do compressor) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-4-07-garagens.md
+    pagina: 3
+    imagem: media/nt-4-07/pagina-03.jpg
+    motivo: definição 4.3 (estruturas verticais automatizadas) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-4-08-patios-para-armazenagens.md
+    pagina: 3
+    imagem: media/nt-4-08/pagina-03.jpg
+    motivo: definição 4.3 (carga a granel) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-5-02-eventos-pirotecnicos.md
+    pagina: 1
+    imagem: media/nt-5-02/pagina-01.jpg
+    motivo: capa da NT (título e brasão), sem tabela
+    conferido_em: '2026-09-30'
+  - arquivo: nt-5-02-eventos-pirotecnicos.md
+    pagina: 4
+    imagem: media/nt-5-02/pagina-04.jpg
+    motivo: definição 4.16 (fire machine) e alínea a) do item 7.1.2 em duas colunas de texto. Na mesma página,
+      a classificação dos fogos (5.1.3 Classe C "acima de 25 cg até 2,49 g"; 5.1.4 Classe D "mais de 2,50
+      g") deixa de fora o intervalo entre 2,49 g e 2,50 g
+    conferido_em: '2026-09-30'
+  - arquivo: nt-5-03-carros-alegoricos-trios-eletricos-e-carros-de-som.md
+    pagina: 6
+    imagem: media/nt-5-03/pagina-06.jpg
+    motivo: itens 7.7.4 e 7.7.5 (guarda-corpos) em duas colunas de texto
+    conferido_em: '2026-09-30'

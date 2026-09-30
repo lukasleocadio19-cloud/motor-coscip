@@ -88,6 +88,8 @@ A - Esquemas elétricos e hidráulicos
 
 ## Página 3
 
+![Representação visual da página 3](media/nt-2-04/pagina-03.jpg)
+
 ### 1 OBJETIVO
 
 Esta Nota Técnica (NT) estabelece princípios gerais para a elaboração de procedimentos para Segurança Contra Incêndio e Pânico no tocante a bombas de incêndio definindo os requisitos mínimos necessários para o dimensionamento, seleção e instalação de conjuntos de bombas centrífugas (bomba com motor elétrico ou à explosão) para sistemas hidráulicos de combate a incêndio conforme previsto no Decreto Estadual nº 42/2018 - Código de Segurança Contra Incêndio e Pânico do Estado do Rio de Janeiro (COSCIP).
@@ -176,6 +178,8 @@ específicas desta seção.
 
 ## Página 4
 
+![Representação visual da página 4](media/nt-2-04/pagina-04.jpg)
+
 4.18 Vazão da bomba (Q): volume de líquido impulsionado pela bomba, numa unidade de tempo, que atravessa seu bocal de saída.
 
 4.19 Vazão nominal (Qn): vazão para a qual a bomba é projetada e, consequentemente, apresenta o melhor rendimento quando nela trabalha.
@@ -241,6 +245,8 @@ Fonte: CBMERJ.
 ---
 
 ## Página 5
+
+![Representação visual da página 5](media/nt-2-04/pagina-05.jpg)
 
 enquanto a vazão de projeto da bomba jockey deverá ser de, no máximo, 20 l/min.
 
@@ -397,6 +403,8 @@ h) dispositivo tipo união ou flange na entrada e saída do fluxo d'água da bom
 ---
 
 ## Página 7
+
+![Representação visual da página 7](media/nt-2-04/pagina-07.jpg)
 
 5.4.2.2 Os conjuntos de pressurização para sistemas de combate a incêndio com sucção negativa deverão dispor dos seguintes dispositivos hidráulicos:
 

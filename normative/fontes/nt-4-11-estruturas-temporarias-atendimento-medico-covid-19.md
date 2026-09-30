@@ -85,6 +85,8 @@ http://www.cbmerj.rj.gov.br/notas-tecnicas
 
 ## Página 3
 
+![Representação visual da página 3](media/nt-4-11/pagina-03.jpg)
+
 ### 1 OBJETIVO
 
 Estabelecer medidas de segurança contra incêndio e pânico e definir os ritos processuais para regularização das estruturas temporárias de atendimento médico para enfrentamento da propagação do novo Coronavírus (SARS-CoV-2), vetor da Covid-19.

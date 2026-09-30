@@ -497,6 +497,22 @@ a) A área total a ser considerada na trajetória de escape do ar para fora de u
 | PCF dupla, para saída do espaço pressurizado | 2,10 x 0,89 (cada) | 3,28 |  |  | 0,060 |  |  |
 | Porta de elevador de emergência | 2,10 x 0,80 | - |  |  | 0,060 |  |  |
 
+<!-- tabela-conferida: Tabela 1 p7 -->
+### Tabela 1 — Áreas típicas de escape para três tipos de portas (conferida)
+
+| Tipo de PCF | Tamanho (m) | PCF aberta (m²) | PCF fechada (m²) |
+| --- | --- | --- | --- |
+| PCF simples, para acesso ao espaço pressurizado | 2,10 x 0,89 | 1,64 | 0,030 |
+| PCF simples, para saída do espaço pressurizado | 2,10 x 0,89 | 1,64 | 0,040 |
+| PCF dupla, para acesso ao espaço pressurizado | 2,10 x 0,89 (cada) | 3,28 | 0,045 |
+| PCF dupla, para saída do espaço pressurizado | 2,10 x 0,89 (cada) | 3,28 | 0,060 |
+| Porta de elevador de emergência | 2,10 x 0,80 | - | 0,060 |
+
+Fonte: NT 2-09, página 7, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 14880.
+Conferência aritmética: a área aberta da PCF dupla (3,28 m²) é o dobro da simples (1,64 m²).
+<!-- /tabela-conferida: Tabela 1 p7 -->
+
 ---
 
 ## Página 8
@@ -685,6 +701,38 @@ e) sistema de iluminação de emergência.
 |  |  | Acima de 30 |  |  |  |  |  | DUPLO |
 |  | I-2 I-3 | - |  |  |  |  |  | DUPLO |
 
+<!-- tabela-conferida: Tabela do Anexo A p10 -->
+### Tabela do Anexo A — Critérios para os sistemas de pressurização (grupos A a I) (conferida)
+
+| Ocupação/Uso | Divisão | Critério de Altura (metros) | Número de Portas Abertas | Número de Estágios |
+| --- | --- | --- | --- | --- |
+| Residencial | A-1 A-2 A-3 A-4 A-5 A-6 | Até 80 | 1 | ÚNICO |
+| Residencial | A-1 A-2 A-3 A-4 A-5 A-6 | Acima de 80 | 2 | DUPLO |
+| Serviço de hospedagem | B-1 B-2 | Até 30 | 2 | ÚNICO |
+| Serviço de hospedagem | B-1 B-2 | Acima de 30 | 2 | DUPLO |
+| Comercial | C-1 C-2 C-3 | Até 30 | 2 | DUPLO |
+| Comercial | C-1 C-2 C-3 | Acima de 30 | 2 | DUPLO |
+| Serviço profissional e institucional | D-1 D-2 D-3 D-4 D-5 | Até 30 | 2 | ÚNICO |
+| Serviço profissional e institucional | D-1 D-2 D-3 D-4 D-5 | Acima de 30 | 2 | DUPLO |
+| Escolar e cultura física | E-1 E-2 E-3 | Até 30 | 2 | ÚNICO |
+| Escolar e cultura física | E-1 E-2 E-3 | Acima de 30 | 2 | DUPLO |
+| Local de Reunião de Público | F-1 F-2 F-3 F-4 F-5 F-6 F-8 F-9 F-10 F-11 | Até 200 (A) | 2 | ÚNICO |
+| Local de Reunião de Público | F-1 F-2 F-3 F-4 F-5 F-6 F-8 F-9 F-10 F-11 | Acima de 200 (A) | 2 | DUPLO |
+| Serviço automotivo e assemelhado | G-1 G-2 G-3 G-4 G-5 G-6 | Até 30 | 2 | ÚNICO |
+| Serviço automotivo e assemelhado | G-1 G-2 G-3 G-4 G-5 G-6 | Acima de 30 | 2 | DUPLO |
+| Serviço de saúde | H-1 H-2 H-3 H-4 | Até 30 | 2 | ÚNICO |
+| Serviço de saúde | H-1 H-2 H-3 H-4 | Acima de 30 | 2 | DUPLO |
+| Industrial | I-1 | Até 30 | 2 | ÚNICO |
+| Industrial | I-1 | Acima de 30 | 2 | DUPLO |
+| Industrial | I-2 I-3 | - | 2 | DUPLO |
+
+Fonte: NT 2-09, página 10, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Células mescladas (ocupação, divisões, portas abertas, estágios) repetidas na publicação.
+Observações da tabela (p. 11):
+(A) Para as edificações classificadas nas ocupações Locais de Reunião de Público deverão ser avaliadas a capacidade populacional da edificação.
+(B) As edificações classificadas como M-9 (presídios e similares) deverão seguir os critérios estabelecidos na NT 4-02 – Edificações destinadas à restrição de liberdade.
+<!-- /tabela-conferida: Tabela do Anexo A p10 -->
+
 ---
 
 ## Página 11
@@ -712,3 +760,23 @@ Observações:
 | Especial | M-1 M-3 M-5 M-6 M-9 (B) | Até 30 |  |  | 2 |  |  | ÚNICO |
 |  |  | Acima de 30 |  |  |  |  |  | DUPLO |
 |  | M-2 | - |  |  |  |  |  | DUPLO |
+<!-- tabela-conferida: Tabela do Anexo A p11 -->
+### Tabela do Anexo A — Critérios para os sistemas de pressurização (grupos J, L e M) (conferida)
+
+| Ocupação/Uso | Divisão | Critério de Altura (metros) | Número de Portas Abertas | Número de Estágios |
+| --- | --- | --- | --- | --- |
+| Depósito | J-1 | Até 30 | 2 | ÚNICO |
+| Depósito | J-1 | Acima de 30 | 2 | DUPLO |
+| Depósito | J-2 J-3 J-4 | - | 2 | DUPLO |
+| Explosivos ou munições | L-1 L-2 L-3 | - | 2 | DUPLO |
+| Especial | M-1 M-3 M-5 M-6 M-9 (B) | Até 30 | 2 | ÚNICO |
+| Especial | M-1 M-3 M-5 M-6 M-9 (B) | Acima de 30 | 2 | DUPLO |
+| Especial | M-2 | - | 2 | DUPLO |
+
+Fonte: NT 2-09, página 11, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Observações da tabela:
+(A) Para as edificações classificadas nas ocupações Locais de Reunião de Público deverão ser avaliadas a capacidade populacional da edificação.
+(B) As edificações classificadas como M-9 (presídios e similares) deverão seguir os critérios estabelecidos na NT 4-02 – Edificações destinadas à restrição de liberdade.
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela do Anexo A p11 -->
+

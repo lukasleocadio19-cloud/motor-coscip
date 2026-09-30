@@ -2,15 +2,15 @@ schema_version: base-manifest/1.0
 gerado_por: tools/normas/manifesto.py (não editar à mão)
 resumo:
   fontes: 53
-  imagens_referenciadas: 492
+  imagens_referenciadas: 527
   imagens_presentes: 492
-  imagens_ausentes: 0
+  imagens_ausentes: 35
   tabelas_por_estado:
-    bruto: 148
+    bruto: 121
     capa: 38
-    divergente: 2
-    nao_tabela: 4
-    verificada: 108
+    divergente: 3
+    nao_tabela: 15
+    verificada: 124
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -318,7 +318,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_1-01_Parte1_alterada_Portaria_1317_2025.pdf
   sha256_pdf: ef60d4d275f294070a335b903b76a486afae0e8784ee128bcaa6c0d8432e5ca5
-  sha256_md: 3a4544e32603081dc0c6fa056a90d788db3462a8d5e9aba711f362bff1b01ad3
+  sha256_md: 628e3c033a70fca3c05c9e83c393aaee0628e76fd38849d012d63e444785f44e
   data_captura: '2026-07-23'
   paginas: 26
   midia: nt-1-01-parte-1
@@ -331,6 +331,10 @@ fontes:
     pagina: 24
     estado: presente
     sha256: 4dfe8bdf8afb52825a80ad880da4c0d402b9d5115345448f0e14288511910821
+  - caminho: media/nt-1-01-parte-1/pagina-26.jpg
+    pagina: 26
+    estado: ausente
+    sha256: null
   tabelas:
   - pagina: 1
     estado: capa
@@ -347,15 +351,59 @@ fontes:
   ato: Portaria CBMERJ nº 1.151, de 10 de maio de 2021
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT_1-01-Procedimentos-Administrativos-para-Regularizacao-e-Fiscalizacao-Parte-2-Fiscalizacao_2021_1620759470.pdf
   sha256_pdf: 01ffb41a7be61d731fd9997546980a430f6d49f9698fade87917101dedd9bef3
-  sha256_md: f8fba23d0104f72468d9fc92dc2e630f274576d479dd690a5dc7597b50331de9
+  sha256_md: a30cfecad22710cc6f4f08ab5bafd377b82513eeb65b14bb16e8aef4b223df09
   data_captura: '2026-07-23'
   paginas: 42
   midia: nt-1-01-parte-2
   imagens:
+  - caminho: media/nt-1-01-parte-2/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-1-01-parte-2/pagina-07.jpg
+    pagina: 7
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-1-01-parte-2/pagina-16.jpg
+    pagina: 16
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-1-01-parte-2/pagina-17.jpg
+    pagina: 17
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-1-01-parte-2/pagina-18.jpg
+    pagina: 18
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-1-01-parte-2/pagina-19.jpg
+    pagina: 19
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-1-01-parte-2/pagina-20.jpg
+    pagina: 20
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-1-01-parte-2/pagina-21.jpg
+    pagina: 21
+    estado: ausente
+    sha256: null
   - caminho: media/nt-1-01-parte-2/pagina-34.png
     pagina: 34
     estado: presente
     sha256: 5d8bcd9a0b6ce5b817545859fbbf27e7e03ad88322deccd92433082245596dec
+  - caminho: media/nt-1-01-parte-2/pagina-35.jpg
+    pagina: 35
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-1-01-parte-2/pagina-36.jpg
+    pagina: 36
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-1-01-parte-2/pagina-39.jpg
+    pagina: 39
+    estado: ausente
+    sha256: null
   - caminho: media/nt-1-01-parte-2/pagina-42.png
     pagina: 42
     estado: presente
@@ -396,7 +444,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-02-Terminologia-de-seguranca-contra-incendio-e-panico.pdf
   sha256_pdf: 3b24e09a6e117ded078a50af35595ad80b957267a0a286ed4bb759c6029cfbef
-  sha256_md: f43ada45b0226d745ffdcc94d8eb99da10f331f7ab9e5fc3a95d883529f9ad21
+  sha256_md: 95822ffd55e96deeff97879c1d75a039604ba3d29abb78faa8ce81d8587e5220
   data_captura: '2026-07-23'
   paginas: 30
   midia: nt-1-02
@@ -409,6 +457,26 @@ fontes:
     pagina: 2
     estado: presente
     sha256: d25f93cf2d8ad0565da7d2ab6a4adab62c8dfdfadf4767d3eecd8f11991cb079
+  - caminho: media/nt-1-02/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-1-02/pagina-08.jpg
+    pagina: 8
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-1-02/pagina-13.jpg
+    pagina: 13
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-1-02/pagina-15.jpg
+    pagina: 15
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-1-02/pagina-20.jpg
+    pagina: 20
+    estado: ausente
+    sha256: null
   tabelas:
   - pagina: 1
     estado: capa
@@ -508,7 +576,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-04-Classificacao-das-edificacoes-e-areas-de-risco-quanto-ao-risco-de-incendio.pdf
   sha256_pdf: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
-  sha256_md: 637b8a586bf538e1799a076811c4f0afd9b0b6a19014e7252a09c9378fe3c555
+  sha256_md: 1c4b8e5ed082e148916dbf388258b87e3cd063b57aa5040993575672cc42099f
   data_captura: '2026-07-23'
   paginas: 20
   midia: nt-1-04
@@ -573,6 +641,10 @@ fontes:
     pagina: 19
     estado: presente
     sha256: db01b307c7862e6d02de4f8409829db5ade6c3665773c62497598ca00576f9ab
+  - caminho: media/nt-1-04/pagina-20.jpg
+    pagina: 20
+    estado: ausente
+    sha256: null
   tabelas:
   - pagina: 1
     estado: capa
@@ -657,11 +729,15 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-05-Edificacoes-anteriores-Adequacao-ao-COSCIP.pdf
   sha256_pdf: b06f6b5aadc8afd9d76f319d165383991c26dad7b603062e3d34ebd3720df877
-  sha256_md: 9bb7af7cbdb9203824732f166af64f0554abd7ea325ef9c88d732ca1f3a85d40
+  sha256_md: 3f34a5165b74a913f97a4eee5789b7aaca7be8c425569ba8909aa5138282bcdd
   data_captura: '2026-07-23'
   paginas: 9
   midia: nt-1-05
-  imagens: []
+  imagens:
+  - caminho: media/nt-1-05/pagina-02.jpg
+    pagina: 2
+    estado: ausente
+    sha256: null
   tabelas:
   - pagina: 1
     estado: capa
@@ -829,7 +905,10 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 3
-    estado: bruto
+    estado: nao_tabela
+    motivo: item 4.18 (definição de extintor sobre rodas) em duas colunas de texto. Na mesma página a
+      fonte define duas vezes os extintores, com limites diferentes (4.7 portátil até 20 kg × 4.17 até
+      24 kg; 4.8 sobre rodas até 250 kg × 4.18 acima de 24 kg)
   - pagina: 4
     tabela: Tabela 1
     arquivo: normative/tabelas/nt-2-01/tabela-1-capacidade-portateis.yaml
@@ -964,11 +1043,23 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-03-Sistemas-de-chuveiros-automticos-sprinklers-Parte-1-Requisitos-gerais-2019-atualizada_1647374313.pdf
   sha256_pdf: 008f8743d8520eca54955e3aaaed82cf5cd49cefce1e8b095040fe2755536e9f
-  sha256_md: bbd708a62adc3bec58c36f52e3de4beb1a262bdd44d28d945f25d177caeb4a7f
+  sha256_md: 30d0cb5d2f56c9e768de8a193731d59e8a3dd407f57f4b79d5102a3d412cf702
   data_captura: '2026-07-23'
   paginas: 10
   midia: nt-2-03-parte-1
-  imagens: []
+  imagens:
+  - caminho: media/nt-2-03-parte-1/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-1/pagina-05.jpg
+    pagina: 5
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-03-parte-1/pagina-09.jpg
+    pagina: 9
+    estado: ausente
+    sha256: null
   tabelas:
   - pagina: 1
     estado: capa
@@ -1110,7 +1201,7 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT2-04_2Edio_2023.pdf
   sha256_pdf: 37837bf154bc5c517e2732e206e6d72e3e441591364182531614acad69fa5ed1
-  sha256_md: 2436cfb01affce28e1feff902a3866a94484734e9d84d80d94281d66cecdf621
+  sha256_md: f27b4082b4e679a523f7d47c5a14899c37dc18e42319bb71b02e8888a447a319
   data_captura: '2026-07-23'
   paginas: 10
   midia: nt-2-04
@@ -1119,6 +1210,22 @@ fontes:
     pagina: 1
     estado: presente
     sha256: 6e52c1a3d3d2529a7815a3771f1ec022eba8ffed7b55e09ed783a5183b7f7858
+  - caminho: media/nt-2-04/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-04/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-04/pagina-05.jpg
+    pagina: 5
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-04/pagina-07.jpg
+    pagina: 7
+    estado: ausente
+    sha256: null
   - caminho: media/nt-2-04/pagina-10.jpg
     pagina: 10
     estado: presente
@@ -1139,7 +1246,7 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT2-05_3Edio_2023.pdf
   sha256_pdf: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
-  sha256_md: 8d2690640a6cdb80e5f103f30906db64d70cf0ebab220902fd98ebe4d4d0ed36
+  sha256_md: 5bd7766dc8b616605c5ec886aedcf8fbb5a4b85aa7bfec88a15d7143e114ec84
   data_captura: '2026-07-23'
   paginas: 18
   midia: nt-2-05
@@ -1218,31 +1325,61 @@ fontes:
     sha256: c99ba88b4cbec026fce4aab116994eeee14a6bf6df8dc91dd73cd2ce3ba0400e
   tabelas:
   - pagina: 3
-    estado: bruto
+    tabela: Quadro 1
+    arquivo: normative/tabelas/nt-2-05/quadro-1-exigencias.yaml
+    estado: verificada
   - pagina: 7
-    estado: bruto
+    tabela: Tabela 1 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-1-simbolos-planta.yaml
+    estado: divergente
+  - pagina: 7
+    tabela: Tabela 2 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-2-cores.yaml
+    estado: verificada
   - pagina: 8
-    estado: bruto
+    tabela: Tabela 3 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-3-proibicao.yaml
+    estado: verificada
   - pagina: 9
-    estado: bruto
+    tabela: Tabela 4 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-4-alerta.yaml
+    estado: verificada
   - pagina: 10
-    estado: bruto
+    tabela: Tabela 5 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-5-orientacao-p10.yaml
+    estado: verificada
   - pagina: 11
-    estado: bruto
+    tabela: Tabela 5 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-5-orientacao-p11.yaml
+    estado: verificada
   - pagina: 12
-    estado: bruto
+    tabela: Tabela 5 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-5-orientacao-p12.yaml
+    estado: verificada
   - pagina: 13
-    estado: bruto
+    tabela: Tabela 5 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-5-orientacao-p13.yaml
+    estado: verificada
   - pagina: 14
-    estado: bruto
+    tabela: Tabela 6 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-6-equipamentos-p14.yaml
+    estado: verificada
   - pagina: 15
-    estado: bruto
+    tabela: Tabela 6 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-6-equipamentos-p15.yaml
+    estado: verificada
   - pagina: 16
-    estado: bruto
+    tabela: Tabela 6 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-6-equipamentos-p16.yaml
+    estado: verificada
   - pagina: 17
-    estado: bruto
+    tabela: Tabela 7 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-7-dimensoes.yaml
+    estado: verificada
   - pagina: 18
-    estado: bruto
+    tabela: Tabela 8 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-8-altura-letras.yaml
+    estado: verificada
 - arquivo: nt-2-06-iluminacao-de-emergencia.md
   documento: NT 2-06
   titulo: NT 2-06 - Iluminação de emergência
@@ -1405,7 +1542,7 @@ fontes:
   ato: Portaria CBMERJ nº 1280, de 20 de dezembro de 2025
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/12/NT_2_09_2Ed_2025.pdf
   sha256_pdf: 4298bc2245a5f83e8db9d1dc5065fe356f70a3762ba0b1797ea6c6a8fc92c23e
-  sha256_md: dee88b70c10d91b56c556998bc6fdac71b3b7b8d413b22282ec37718832e0cd4
+  sha256_md: 26d1ec6276f602abf533933477b4c5b040bcbac3c3aa07c708693afc77471391
   data_captura: '2026-07-23'
   paginas: 11
   midia: nt-2-09
@@ -1456,15 +1593,25 @@ fontes:
     sha256: a93b160f59121aee6b101d2f7ff00ea79e171db4c25e283db9d0af1bc0e864dd
   tabelas:
   - pagina: 4
-    estado: bruto
+    estado: nao_tabela
+    motivo: alíneas e) e f) do item 5.1.2.1 (contrapeso e fechamento eletromagnético das portas corta-fogo)
+      em duas colunas de texto
   - pagina: 6
-    estado: bruto
+    estado: nao_tabela
+    motivo: item 5.3.2.7.3 (acionadores manuais a no máximo 2 m da porta corta-fogo) em duas colunas de
+      texto
   - pagina: 7
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-2-09/tabela-1-areas-de-escape.yaml
+    estado: verificada
   - pagina: 10
-    estado: bruto
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-2-09/anexo-a-criterios-p10.yaml
+    estado: verificada
   - pagina: 11
-    estado: bruto
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-2-09/anexo-a-criterios-p11.yaml
+    estado: verificada
 - arquivo: nt-2-10-pecip.md
   documento: NT 2-10
   titulo: NT 2-10 - Plano de emergência contra incêndio e pânico - PECIP
@@ -1472,11 +1619,15 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-10-Plano-de-emergencia-contra-incendio-e-panico-PECIP.pdf
   sha256_pdf: 4406f8268fbb577e70b4ba3367f3bcc0ab1d961da201005b855a34989290b84b
-  sha256_md: 55b470210d9963dee4a2443e93adf64d9e544054744555cda07b5ec0fb46cf9a
+  sha256_md: b699041c98491684bebc7e534349bb57ab43c9ba93795ee24d14efdb93cfe818
   data_captura: '2026-07-23'
   paginas: 20
   midia: nt-2-10
   imagens:
+  - caminho: media/nt-2-10/pagina-06.jpg
+    pagina: 6
+    estado: ausente
+    sha256: null
   - caminho: media/nt-2-10/pagina-13.jpg
     pagina: 13
     estado: presente
@@ -1501,6 +1652,14 @@ fontes:
     pagina: 18
     estado: presente
     sha256: 0df4ec5ba1c44f67f70cb205941efca1f448306f2bcc2890f84e8fbf9cef271b
+  - caminho: media/nt-2-10/pagina-19.jpg
+    pagina: 19
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-2-10/pagina-20.jpg
+    pagina: 20
+    estado: ausente
+    sha256: null
   tabelas:
   - pagina: 1
     estado: capa
@@ -1695,11 +1854,15 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT2-13_2Edio_2023.pdf
   sha256_pdf: 7041b4808a1f7252223cc0386ba0188df7bbbfa20e45ff6dff3d84cbe7a2e3ae
-  sha256_md: d3164702269f76874944dc35e47833a85b61a9cf9cb9b9d87544139b358ccc83
+  sha256_md: 04b5ccad641c34a10d11effd304eca1bc8b271baaaa92e2ede8a834ca2265edc
   data_captura: '2026-07-23'
   paginas: 6
   midia: nt-2-13
   imagens:
+  - caminho: media/nt-2-13/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
   - caminho: media/nt-2-13/pagina-06.jpg
     pagina: 6
     estado: presente
@@ -2283,7 +2446,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-01-Cozinha-profissional.pdf
   sha256_pdf: 39376c0411829f52c7e1c06a9dcde0f09528d2e5db87b4e3915d796783b2ebca
-  sha256_md: e93216191015a9774e56e654388adb03a6d0a94683fa879b28ce0bc0a338f6a7
+  sha256_md: 265a974729a2d40b3a1023b2e0fc153740da43aaa0cc9ddfe01e8679eb202ed7
   data_captura: '2026-07-23'
   paginas: 6
   midia: nt-3-01
@@ -2296,6 +2459,14 @@ fontes:
     pagina: 2
     estado: presente
     sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-3-01/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-3-01/pagina-05.jpg
+    pagina: 5
+    estado: ausente
+    sha256: null
   tabelas:
   - pagina: 1
     estado: capa
@@ -2770,7 +2941,8 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 3
-    estado: bruto
+    estado: nao_tabela
+    motivo: definição 4.1 (aceiro) em duas colunas de texto
   - pagina: 8
     estado: bruto
   - pagina: 9
@@ -2986,9 +3158,11 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 3
-    estado: bruto
+    estado: nao_tabela
+    motivo: definição 4.3 (dique de contenção) em duas colunas de texto
   - pagina: 5
-    estado: bruto
+    estado: nao_tabela
+    motivo: item 5.1.14.5 (isolamento acústico do compressor) em duas colunas de texto
   - pagina: 7
     estado: bruto
 - arquivo: nt-4-07-garagens.md
@@ -3027,7 +3201,8 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 3
-    estado: bruto
+    estado: nao_tabela
+    motivo: definição 4.3 (estruturas verticais automatizadas) em duas colunas de texto
 - arquivo: nt-4-08-patios-para-armazenagens.md
   documento: NT 4-08
   titulo: NT 4-08 - Pátios para armazenagens diversas
@@ -3064,7 +3239,8 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 3
-    estado: bruto
+    estado: nao_tabela
+    motivo: definição 4.3 (carga a granel) em duas colunas de texto
 - arquivo: nt-4-09-tuneis.md
   documento: NT 4-09
   titulo: NT 4-09 - Túneis
@@ -3127,7 +3303,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-10-Canteiro-de-obras.pdf
   sha256_pdf: f928f7de4b06facda68fcdf110baef5fd3b915c377b9d888f37cbf5a51dc14c1
-  sha256_md: 14a046dc31756c5b22b63471bf592a12ede450b9ea5bc2dda5f265a7bf6d946f
+  sha256_md: 49dc3dcd48b85eaab7327a60ee847fa7dee7bd7c0807870a0f600c1bece5e4da
   data_captura: '2026-07-23'
   paginas: 5
   midia: nt-4-10
@@ -3136,6 +3312,14 @@ fontes:
     pagina: 2
     estado: presente
     sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-4-10/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
+  - caminho: media/nt-4-10/pagina-04.jpg
+    pagina: 4
+    estado: ausente
+    sha256: null
   tabelas:
   - pagina: 1
     estado: capa
@@ -3150,11 +3334,15 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT4-11_2Edio_2023.pdf
   sha256_pdf: 0961d030e6f7b06ffe7e3d9be7d09d3bc09389c83332c050208696e99b643495
-  sha256_md: 3a0ce7450997c199f715b8079eb589405deea2fac66eafb06d5a071bb2d49f38
+  sha256_md: 5a41bac5dbdef6c6cdd7368658ed9c51865632ef7b07fd9bdaa11ac6c88ea253
   data_captura: '2026-07-23'
   paginas: 5
   midia: nt-4-11
-  imagens: []
+  imagens:
+  - caminho: media/nt-4-11/pagina-03.jpg
+    pagina: 3
+    estado: ausente
+    sha256: null
   tabelas:
   - pagina: 3
     estado: bruto
@@ -3323,9 +3511,13 @@ fontes:
     sha256: 70911565d9e15bcc9d8d113c85d071703c37337429c7033d33856b1cfaf76bdf
   tabelas:
   - pagina: 1
-    estado: bruto
+    estado: nao_tabela
+    motivo: capa da NT (título e brasão), sem tabela
   - pagina: 4
-    estado: bruto
+    estado: nao_tabela
+    motivo: definição 4.16 (fire machine) e alínea a) do item 7.1.2 em duas colunas de texto. Na mesma
+      página, a classificação dos fogos (5.1.3 Classe C "acima de 25 cg até 2,49 g"; 5.1.4 Classe D "mais
+      de 2,50 g") deixa de fora o intervalo entre 2,49 g e 2,50 g
   - pagina: 8
     estado: bruto
 - arquivo: nt-5-03-carros-alegoricos-trios-eletricos-e-carros-de-som.md
@@ -3366,7 +3558,8 @@ fontes:
     sha256: c342798fd88858bd759dbc8492ab8e8c086f6a66fd678ffc94ec55bfc47fb6f4
   tabelas:
   - pagina: 6
-    estado: bruto
+    estado: nao_tabela
+    motivo: itens 7.7.4 e 7.7.5 (guarda-corpos) em duas colunas de texto
 - arquivo: nt-5-04-eventos-temporarios-de-reuniao-de-publico.md
   documento: NT 5-04
   titulo: NT 5-04 - Eventos temporários de reunião de público

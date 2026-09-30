@@ -87,6 +87,8 @@ Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019.
 
 ## Página 3
 
+![Representação visual da página 3](media/nt-1-02/pagina-03.jpg)
+
 ### 1 OBJETIVO
 
 Padronizar toda a terminologia referente à segurança contra incêndio e pânico no âmbito do Estado do Rio de Janeiro conforme previsto no Decreto Estadual nº 42/2018 - Código de Segurança Contra Incêndio e Pânico do Estado do Rio de Janeiro (COSCIP).
@@ -397,6 +399,8 @@ Camada de fumaça “smoke layer”: espessura acumulada de fumaça por uma barr
 
 ## Página 8
 
+![Representação visual da página 8](media/nt-1-02/pagina-08.jpg)
+
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Caminhão-tanque: caminhão equipado com um reservatório acoplado para transporte de óleo diesel até a edificação para o abastecimento dos reservatórios de diesel.
@@ -675,6 +679,8 @@ Duto de entrada de ar (DE): espaço vertical no interior da edificação, que co
 
 ## Página 13
 
+![Representação visual da página 13](media/nt-1-02/pagina-13.jpg)
+
 Duto de exaustão: utilizados como condutores de gases, vapores e demais efluentes oriundos da cocção, sendo construído em formato de prisma ou em formato cilíndrico, constituídos por materiais incombustíveis, tais como: chapa de aço carbono, aço inoxidável, ou qualquer outro material que venha a garantir os mesmos critérios de resistência mecânica ao fogo e à corrosão, estanqueidade e rugosidade interna equivalente aos dutos de aço.
 
 Duto de saída de ar (DS): espaço vertical no interior da edificação, que permite a saída, em qualquer pavimento, de gases e fumaça da antecâmara da escada para o ar livre, acima da cobertura da edificação.
@@ -800,6 +806,8 @@ Esguicho regulável básico: esguicho de jato regulável em que a vazão de lan�
 ---
 
 ## Página 15
+
+![Representação visual da página 15](media/nt-1-02/pagina-15.jpg)
 
 pressão determinada pelo ajuste da forma do jato.
 
@@ -1110,6 +1118,8 @@ Medidas de proteção ativa: aquelas acionadas somente por ocasião do incêndio
 ---
 
 ## Página 20
+
+![Representação visual da página 20](media/nt-1-02/pagina-20.jpg)
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 

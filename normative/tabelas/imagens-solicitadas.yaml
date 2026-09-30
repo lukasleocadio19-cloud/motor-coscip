@@ -3,10 +3,112 @@
 # o workflow normas-midia.yml renderiza a imagem do PDF oficial (hash conferido).
 schema_version: imagens-solicitadas/1.0
 paginas:
-  nt-1-04-classificacao-de-risco.md: [19]
-  nt-2-11-brigadas-de-incendio.md: [16]
-  nt-2-01-extintores.md: [3, 4, 5]
-  nt-2-02-hidrantes-e-mangotinhos.md: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-  decreto-42-2018-coscip-compilado.md: [1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,
-                                        33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46,
-                                        47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57]
+  nt-1-04-classificacao-de-risco.md:
+  - 19
+  - 20
+  nt-2-11-brigadas-de-incendio.md:
+  - 16
+  nt-2-01-extintores.md:
+  - 3
+  - 4
+  - 5
+  nt-2-02-hidrantes-e-mangotinhos.md:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  decreto-42-2018-coscip-compilado.md:
+  - 1
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+  - 54
+  - 55
+  - 56
+  - 57
+  nt-1-01-parte-1-regularizacao.md:
+  - 26
+  nt-1-01-parte-2-fiscalizacao.md:
+  - 4
+  - 7
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 35
+  - 36
+  - 39
+  nt-1-02-terminologia.md:
+  - 3
+  - 8
+  - 13
+  - 15
+  - 20
+  nt-1-05-edificacoes-anteriores.md:
+  - 2
+  nt-2-03-parte-1-sprinklers-requisitos-gerais.md:
+  - 4
+  - 5
+  - 9
+  nt-2-04-conjunto-de-pressurizacao.md:
+  - 3
+  - 4
+  - 5
+  - 7
+  nt-2-10-pecip.md:
+  - 6
+  - 19
+  - 20
+  nt-2-13-sistemas-fixos-de-gases.md:
+  - 4
+  nt-3-01-cozinha-profissional.md:
+  - 4
+  - 5
+  nt-4-10-canteiro-de-obras.md:
+  - 3
+  - 4
+  nt-4-11-estruturas-temporarias-atendimento-medico-covid-19.md:
+  - 3

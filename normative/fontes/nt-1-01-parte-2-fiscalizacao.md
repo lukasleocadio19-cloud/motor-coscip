@@ -173,6 +173,8 @@ p) Nota DGST 333/2003, publicada no Boletim da SEDEC/CBMERJ nº 145 de 06/08/200
 
 ## Página 4
 
+![Representação visual da página 4](media/nt-1-01-parte-2/pagina-04.jpg)
+
 q) Ofício SEDEC/ASSEJUR nº 0029, de 26 de janeiro de 2015 - Registro ASSEJUR 2097/2014;
 
 r) Despacho SEDEC/ASSEJUR nº 089, de 21 de março de 2019 - Processo Administrativo E-27/039/15/2019;
@@ -341,6 +343,8 @@ obrigatoriamente ter prioridade imediata em sua análise pelo Corpo de Bombeiros
 ---
 
 ## Página 7
+
+![Representação visual da página 7](media/nt-1-01-parte-2/pagina-07.jpg)
 
 consequente emissão de Laudo de Exigências, as Seções de Serviços Técnicos poderão lavrar a notificação prevista na alínea “a” do item 5.2.3.1 desta Nota Técnica, caso tal procedimento não tenha sido levado a termo.
 
@@ -859,6 +863,8 @@ Outrossim, informamos que o presente Certificado de Despacho não é Documento h
 
 ## Página 16
 
+![Representação visual da página 16](media/nt-1-01-parte-2/pagina-16.jpg)
+
 De acordo com o parágrafo único do Art. 53 do Decreto Estadual nº 42/2018 (COSCIP), a cessação da interdição só será efetivada após a emissão do AUTO DE DESINTERDIÇÃO”.
 
 5.6.3.5 Sempre que for lavrado o auto de desinterdição, a Organização de Bombeiro Militar (OBM) deverá oficiar, anexando cópia do referido auto, o Batalhão de Polícia Militar, à Delegacia de Polícia Civil, o Ministério Público e o setor de licenciamento da Prefeitura Municipal da área de circunscrição de onde a edificação ou área de risco estiver localizada no âmbito do Estado do Rio de Janeiro para providências julgadas cabíveis.
@@ -945,6 +951,8 @@ g) anexar qualquer documento que seja julgado necessário.
 ---
 
 ## Página 17
+
+![Representação visual da página 17](media/nt-1-01-parte-2/pagina-17.jpg)
 
 risco estiver localizada.
 
@@ -1047,6 +1055,8 @@ c) edificações ou áreas de risco que tenham sofrido alterações de layout, a
 ---
 
 ## Página 18
+
+![Representação visual da página 18](media/nt-1-01-parte-2/pagina-18.jpg)
 
 5.9.2 Das edificações ou áreas de risco sob administração pública Federal ou Municipal, bem como as de propriedade privada de interesse público/social.
 
@@ -1180,6 +1190,8 @@ c) edificações ou áreas de risco que tenham sofrido alterações de layout, a
 
 ## Página 19
 
+![Representação visual da página 19](media/nt-1-01-parte-2/pagina-19.jpg)
+
 6.1.3 A celebração do compromisso de ajustamento de conduta não anula a multa já aplicada, mas suspende o curso do procedimento regular de fiscalização que a originou, o qual somente poderá ser arquivado após o atendimento de todas as condições estabelecidas no respectivo processo.
 
 6.1.3.2 A recusa do compromitente em firmar o compromisso de ajustamento de conduta, após o requerimento, acarretará no indeferimento do processo e na continuação do procedimento regular de fiscalização.
@@ -1280,6 +1292,8 @@ ser designado um militar da Diretoria de Diversões Públicas (DDP) para fazer p
 ---
 
 ## Página 20
+
+![Representação visual da página 20](media/nt-1-01-parte-2/pagina-20.jpg)
 
 medidas de segurança contra incêndio e pânico previstas.
 
@@ -1396,6 +1410,8 @@ h) cópia do Laudo de Exigências e demais documentações expedidas pelo CBMERJ
 ---
 
 ## Página 21
+
+![Representação visual da página 21](media/nt-1-01-parte-2/pagina-21.jpg)
 
 área de risco tenha condições de receber a certificação final junto ao CBMERJ (Certificado de Aprovação e/ou Certificado de Vistoria Anual).
 
@@ -2360,6 +2376,8 @@ regularização, sob pena de aplicação de novo Auto de Interdição.
 
 ## Página 35
 
+![Representação visual da página 35](media/nt-1-01-parte-2/pagina-35.jpg)
+
 3 - EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS (ASSINALAR COM “X” OS AUTORIZADOS EM LAUDO DE EXIGÊNCIAS E OS EXISTENTES E DESCREVER OBRIGATORIAMENTE O ESTADO DE FUNCIONAMENTO DELES):
 
 4 - OUTRAS OBSERVAÇÕES E CONSIDERAÇÔES FINAIS: R:________________________________________________________________________________________________________________________ __________________________________________________________________________________________________________________________ __________________________________________________________________________________________________________________________ __________________________________________________________________________________________________________________________ __________________________________________________________________________________________________________________________ ________________________________________________________________________________________________________________.
@@ -2391,6 +2409,8 @@ __________________________________________________
 ---
 
 ## Página 36
+
+![Representação visual da página 36](media/nt-1-01-parte-2/pagina-36.jpg)
 
 ### ANEXO F - MODELO DO CRONOGRAMA DE EXECUÇÃO - COMPROMISSO DE AJUSTAMENTO DE CONDUTA
 
@@ -2565,6 +2585,8 @@ ter cumprido a exigência formulada pela Notificação nº (...).
 ---
 
 ## Página 39
+
+![Representação visual da página 39](media/nt-1-01-parte-2/pagina-39.jpg)
 
 O COMPROMITENTE recebeu o segundo Auto de Infração nº (...), expedido pelo CBMERJ em (...), por não
 

@@ -50,6 +50,8 @@ Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019.
 
 ## Página 2
 
+![Representação visual da página 2](media/nt-1-05/pagina-02.jpg)
+
 ### 1 OBJETIVO
 
 Estabelecer as medidas de segurança e proteção contra incêndio e pânico para as edificações e áreas de risco anteriores, comprovadamente construídas, licenciadas ou em processo de licenciamento para construção em data anterior à vigência do Decreto Estadual nº 42/2018 - Código de Segurança Contra Incêndio e Pânico do Estado do Rio de Janeiro (COSCIP).

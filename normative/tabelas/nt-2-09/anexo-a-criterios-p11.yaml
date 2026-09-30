@@ -1,0 +1,112 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-09
+arquivo: nt-2-09-pressurizacao-de-escada.md
+tabela: Tabela do Anexo A
+titulo: Critérios para os sistemas de pressurização (grupos J, L e M)
+pagina: 11
+fonte_pdf_sha256: 4298bc2245a5f83e8db9d1dc5065fe356f70a3762ba0b1797ea6c6a8fc92c23e
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-09/pagina-11.jpg
+    imagem_sha256: a93b160f59121aee6b101d2f7ff00ea79e171db4c25e283db9d0af1bc0e864dd
+    linhas_cabecalho: 1
+    linhas:
+    - - Ocupação/Uso
+      - Divisão
+      - Critério de Altura (metros)
+      - Número de Portas Abertas
+      - Número de Estágios
+    - - Depósito
+      - J-1
+      - Até 30
+      - '2'
+      - ÚNICO
+    - - ^
+      - ^
+      - Acima de 30
+      - ^
+      - DUPLO
+    - - ^
+      - J-2 J-3 J-4
+      - '-'
+      - ^
+      - DUPLO
+    - - Explosivos ou munições
+      - L-1 L-2 L-3
+      - '-'
+      - '2'
+      - DUPLO
+    - - Especial
+      - M-1 M-3 M-5 M-6 M-9 (B)
+      - Até 30
+      - '2'
+      - ÚNICO
+    - - ^
+      - ^
+      - Acima de 30
+      - ^
+      - DUPLO
+    - - ^
+      - M-2
+      - '-'
+      - ^
+      - DUPLO
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 11
+      tabela_na_pagina: 1
+    linhas:
+    - - Ocupação/Uso
+      - Divisão
+      - Critério de Altura (metros)
+      - Número de Portas Abertas
+      - Número de Estágios
+    - - Depósito
+      - J-1
+      - Até 30
+      - '2'
+      - ÚNICO
+    - - Acima de 30
+      - DUPLO
+    - - J-2 J-3 J-4
+      - '-'
+      - DUPLO
+    - - Explosivos ou munições
+      - L-1 L-2 L-3
+      - '-'
+      - '2'
+      - DUPLO
+    - - Especial
+      - M-1 M-3 M-5 M-6 M-9 (B)
+      - Até 30
+      - '2'
+      - ÚNICO
+    - - Acima de 30
+      - DUPLO
+    - - M-2
+      - '-'
+      - DUPLO
+notas:
+- 'Observações da tabela:'
+- (A) Para as edificações classificadas nas ocupações Locais de Reunião de Público deverão ser avaliadas
+  a capacidade populacional da edificação.
+- (B) As edificações classificadas como M-9 (presídios e similares) deverão seguir os critérios estabelecidos
+  na NT 4-02 – Edificações destinadas à restrição de liberdade.
+- 'Fonte indicada na página: CBMERJ.'
+inconsistencias_da_fonte:
+- 'No grupo F a coluna "Critério de Altura (metros)" traz "Até 200 (A)" / "Acima de 200 (A)", e a observação
+  (A) manda avaliar a capacidade populacional: a página não diz se 200 é altura em metros ou população.'
+- Não constam da tabela as divisões F-7, M-4, M-7 e M-8.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

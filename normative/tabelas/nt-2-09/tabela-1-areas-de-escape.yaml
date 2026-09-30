@@ -1,0 +1,82 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-09
+arquivo: nt-2-09-pressurizacao-de-escada.md
+tabela: Tabela 1
+titulo: Áreas típicas de escape para três tipos de portas
+pagina: 7
+fonte_pdf_sha256: 4298bc2245a5f83e8db9d1dc5065fe356f70a3762ba0b1797ea6c6a8fc92c23e
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-09/pagina-07.jpg
+    imagem_sha256: 40e8d1a0a4ccbb5de7af9467ed4dd475f43e9d0320f9597db47e751e6412bf1d
+    linhas_cabecalho: 1
+    linhas:
+    - - Tipo de PCF
+      - Tamanho (m)
+      - PCF aberta (m²)
+      - PCF fechada (m²)
+    - - PCF simples, para acesso ao espaço pressurizado
+      - 2,10 x 0,89
+      - 1,64
+      - 0,030
+    - - PCF simples, para saída do espaço pressurizado
+      - 2,10 x 0,89
+      - 1,64
+      - 0,040
+    - - PCF dupla, para acesso ao espaço pressurizado
+      - 2,10 x 0,89 (cada)
+      - 3,28
+      - 0,045
+    - - PCF dupla, para saída do espaço pressurizado
+      - 2,10 x 0,89 (cada)
+      - 3,28
+      - 0,060
+    - - Porta de elevador de emergência
+      - 2,10 x 0,80
+      - '-'
+      - 0,060
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 7
+      tabela_na_pagina: 1
+    linhas:
+    - - Tipo de PCF
+      - Tamanho (m)
+      - PCF aberta (m2)
+      - PCF fechada (m2)
+    - - PCF simples, para acesso ao espaço pressurizado
+      - 2,10 x 0,89
+      - 1,64
+      - 0,030
+    - - PCF simples, para saída do espaço pressurizado
+      - 2,10 x 0,89
+      - 1,64
+      - 0,040
+    - - PCF dupla, para acesso ao espaço pressurizado
+      - 2,10 x 0,89 (cada)
+      - 3,28
+      - 0,045
+    - - PCF dupla, para saída do espaço pressurizado
+      - 2,10 x 0,89 (cada)
+      - 3,28
+      - 0,060
+    - - Porta de elevador de emergência
+      - 2,10 x 0,80
+      - '-'
+      - 0,060
+notas:
+- 'Fonte indicada na página: ABNT NBR 14880.'
+- 'Conferência aritmética: a área aberta da PCF dupla (3,28 m²) é o dobro da simples (1,64 m²).'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
