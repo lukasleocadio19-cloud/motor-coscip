@@ -4,9 +4,8 @@ Gerado por `python -m tools.normas.tabelas relatorio`. Estado de cada tabela con
 
 | Estado | Tabelas |
 | --- | --- |
-| divergente | 4 |
-| pendente_humano | 2 |
-| verificada | 191 |
+| divergente | 5 |
+| verificada | 192 |
 
 Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale como segundo caminho só até a extração geométrica (`pdfplumber`, workflow `normas-midia.yml`) rodar sobre o PDF oficial conferido por hash.
 
@@ -157,7 +156,7 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 3-03 | Tabela 1 | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-03 | Tabela 2 | 6 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 1 |
-| NT 3-06 | Tabela 2 | 5 | pendente_humano | visual | 0 | 0 |
+| NT 3-06 | Tabela 2 | 5 | divergente | visual + texto | 0 | 0 |
 | NT 3-06 | Tabela 3 | 7 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 4 | 7 | divergente | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 5 | 7 | verificada | visual + geometrica | 0 | 0 |
@@ -165,7 +164,7 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 3-06 | Tabela 7 | 7 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 8 | 8 | verificada | visual + geometrica | 0 | 1 |
 | NT 3-06 | Tabela 9 | 8 | verificada | visual + geometrica | 0 | 0 |
-| NT 3-06 | Tabela 10 | 9 | divergente | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 10 | 9 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 11 | 10 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 12 | 10 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 13 | 10 | verificada | visual + geometrica | 0 | 0 |
@@ -177,7 +176,7 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 3-06 | Tabela 3 do Anexo A | 14 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 4 do Anexo A | 14 | verificada | visual + geometrica | 0 | 1 |
 | NT 3-06 | Tabela 5 do Anexo A | 14 | verificada | visual + geometrica | 0 | 1 |
-| NT 3-06 | Tabela 6 do Anexo A | 15 | pendente_humano | visual | 0 | 1 |
+| NT 3-06 | Tabela 6 do Anexo A | 15 | divergente | visual + texto | 0 | 1 |
 | NT 3-06 | Tabela 7 do Anexo A | 15 | verificada | visual + geometrica | 0 | 0 |
 | NT 3-06 | Tabela 8 do Anexo A | 16 | verificada | visual + geometrica | 0 | 1 |
 | NT 3-07 | Tabela do Anexo A | 6 | verificada | visual + texto | 0 | 2 |

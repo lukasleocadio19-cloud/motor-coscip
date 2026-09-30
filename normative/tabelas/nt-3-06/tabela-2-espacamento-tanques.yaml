@@ -47,30 +47,85 @@ caminhos:
       tabela_na_pagina: 1
     linhas:
     - - Diâmetro do tanque
+      - ''
       - Tanques
+      - ''
+      - ''
       - Tanques verticais com teto
-    - - com teto
+      - ''
+      - ''
+      - ''
+      - ''
+    - - ''
+      - ''
+      - com teto
+      - ''
+      - ''
       - fixo ou
-    - - flutuante
+      - ''
+      - ''
+      - ''
+      - ''
+    - - ''
+      - ''
+      - flutuante
+      - ''
+      - ''
       - horizontais
-    - - ou selo
+      - ''
+      - ''
+      - ''
+      - ''
+    - - ''
+      - ''
+      - ou selo
+      - ''
+      - ''
       - Líquidos
+      - ''
+      - ''
       - Líquidos
-    - - flutuante
+      - ''
+    - - ''
+      - ''
+      - flutuante
+      - ''
+      - ''
       - classe I ou II
+      - ''
+      - ''
       - classe IIIA
+      - ''
     - - Todos os tanques com diâmetro ≤ 45 m
       - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
+      - ''
+      - ''
       - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
+      - ''
+      - ''
       - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
+      - ''
+      - ''
     - - Tanques com diâmetro > 45 m, se for prevista bacia de contenção à distância
       - 1/6 da soma dos diâmetros dos tanques adjacentes
+      - ''
+      - ''
       - 1/4 da soma dos diâmetros dos tanques adjacentes
+      - ''
+      - ''
       - 1/6 da soma dos diâmetros dos tanques adjacentes
+      - ''
+      - ''
     - - Tanques com diâmetro > 45 m, se for previsto dique
       - 1/4 da soma dos diâmetros dos tanques adjacentes
+      - ''
+      - ''
       - 1/3 da soma dos diâmetros dos tanques adjacentes
+      - ''
+      - ''
       - 1/4 da soma dos diâmetros dos tanques adjacentes
+      - ''
+      - ''
   geometrica:
     metodo: pdfplumber 0.11.10, estratégia por linhas
     todas_da_pagina: true
@@ -172,9 +227,15 @@ caminhos:
       - - tanque
 notas:
 - 'Fonte indicada na página: ABNT NBR 17505.'
-estado: pendente_humano
+- 'Sem segundo caminho: a página não tem grade desenhada que a extração geométrica reconheça, e a camada
+  de texto põe os cabeçalhos e os valores em colunas diferentes. Fica divergente para conferência humana
+  na imagem.'
+estado: divergente
 resultado:
-  estado: pendente_humano
+  estado: divergente
   caminhos_comparados:
   - visual
-  motivo: nenhuma tabela geométrica encontrada na página
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); a página não tem grade
+    desenhada que a extração geométrica reconheça
+  motivo: a camada de texto não tem as colunas da leitura visual

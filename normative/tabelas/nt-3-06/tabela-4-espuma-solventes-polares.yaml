@@ -151,8 +151,9 @@ caminhos:
         - '6'
 notas:
 - 'Fonte indicada na página: ABNT NBR 17505.'
-- A camada de texto do .md perdeu a primeira e a última coluna desta tabela (só traz a taxa 6,0); o segundo
-  caminho é a grade do PDF.
+- 'Sem segundo caminho completo: a grade do PDF parte a tabela em pedaços (só a taxa 6,0 e "Tempo mínimo
+  min") e perde "Tipo", "Câmara de espuma" e "55"; a camada de texto também perde essas colunas. Fica
+  divergente para conferência humana na imagem.'
 estado: divergente
 resultado:
   estado: divergente

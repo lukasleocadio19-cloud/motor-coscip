@@ -8,10 +8,9 @@ resumo:
   tabelas_por_estado:
     bruto: 63
     capa: 38
-    divergente: 4
+    divergente: 5
     nao_tabela: 21
-    pendente_humano: 2
-    verificada: 191
+    verificada: 192
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -2746,7 +2745,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-06-Armazenagem-de-liquidos-inflamaveis-e-combustiveis.pdf
   sha256_pdf: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
-  sha256_md: 9ba4d205c14805b23d6a6521e7563deb8c993fea6813311a6b82d04efd7ff1e3
+  sha256_md: 161a98836929e67cca8b6b564ac3be450f1e99ef37dd26b3c8b4024b29d97e95
   data_captura: '2026-07-23'
   paginas: 16
   midia: nt-3-06
@@ -2825,7 +2824,7 @@ fontes:
   - pagina: 5
     tabela: Tabela 2
     arquivo: normative/tabelas/nt-3-06/tabela-2-espacamento-tanques.yaml
-    estado: pendente_humano
+    estado: divergente
   - pagina: 7
     tabela: Tabela 3
     arquivo: normative/tabelas/nt-3-06/tabela-3-espuma-tanques-verticais.yaml
@@ -2857,7 +2856,7 @@ fontes:
   - pagina: 9
     tabela: Tabela 10
     arquivo: normative/tabelas/nt-3-06/tabela-10-taxa-resfriamento.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 10
     tabela: Tabela 11
     arquivo: normative/tabelas/nt-3-06/tabela-11-espuma-plataformas.yaml
@@ -2905,7 +2904,7 @@ fontes:
   - pagina: 15
     tabela: Tabela 6 do Anexo A
     arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-6-edificacoes.yaml
-    estado: pendente_humano
+    estado: divergente
   - pagina: 15
     tabela: Tabela 7 do Anexo A
     arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-7-extintores.yaml

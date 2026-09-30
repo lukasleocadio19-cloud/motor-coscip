@@ -816,6 +816,22 @@ Sistemas alternativos de proteção contra incêndios, podem ser utilizados, des
 | d > 12 | 2 |
 | Legenda: a) Para até dois tanques vizinhos: Taxa por metro quadrado de metade do somatório das áreas do teto e costado dos tanques vizinhos. Para tanques de teto flutuante, não pode ser considerada a área do teto. b) Para mais de dois tanques vizinhos: Taxa por metro quadrado de um terço do somatório das áreas dos tetos e costados dos tanques vizinhos. Para tanques de teto flutuante, não podem ser consideradas as áreas dos tetos. |  |
 
+<!-- tabela-conferida: Tabela 10 p9 -->
+### Tabela 10 — Taxa de resfriamento dos tanques vizinhos por canhões-monitores (fixos ou móveis) ou mangueiras a partir de hidrantes (conferida)
+
+| Distância entre costados (m) | Taxa a, b (l/min/m²) |
+| --- | --- |
+| d ≤ 8 | 5 |
+| 8 < d ≤ 12 | 3 |
+| d > 12 | 2 |
+
+Fonte: NT 3-06, página 9, Tabela 10; conferida em 2026-09-29 (visual + geometrica).
+Legenda da tabela:
+a) Para até dois tanques vizinhos: Taxa por metro quadrado de metade do somatório das áreas do teto e costado dos tanques vizinhos. Para tanques de teto flutuante, não pode ser considerada a área do teto.
+b) Para mais de dois tanques vizinhos: Taxa por metro quadrado de um terço do somatório das áreas dos tetos e costados dos tanques vizinhos. Para tanques de teto flutuante, não podem ser consideradas as áreas dos tetos.
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 10 p9 -->
+
 ---
 
 ## Página 10

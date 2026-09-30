@@ -254,3 +254,13 @@ def test_subscrito_com_ancora():
                              {"linhas_cabecalho": 0, "subscrito_deslocado": ["CO:2"]})
     assert linha == ["CO2 de 2-B", "Pó 20-BC"]
     assert tabelas.compare_cell("CO₂ de 2-B", linha[0])["estado"] == "verificada"
+
+
+def test_sem_grade_desenhada_usa_a_camada_de_texto():
+    table = {"forma": {"linhas_cabecalho": 1},
+             "caminhos": {"visual": {"linhas": [["A", "B"], ["1", "2"]]},
+                          "geometrica": {"candidatos": []},
+                          "texto": {"linhas": [["A", "B"], ["1", "2"]]}}}
+    res = tabelas.evaluate(table)
+    assert res["estado"] == "verificada" and res["caminhos_comparados"] == ["visual", "texto"]
+    assert "não tem grade desenhada" in res["observacao"]

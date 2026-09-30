@@ -201,9 +201,9 @@ def evaluate(table: dict[str, Any]) -> dict[str, Any]:
         have = sorted(k for k, v in paths.items() if v)
         return {"estado": "pendente_humano", "caminhos_comparados": have,
                 "motivo": "é preciso a leitura visual e um segundo caminho independente"}
+    tries: list[tuple[dict[str, Any], int]] = []
     if geo:
         forma = geo_forma(table)
-        tries = []
         for i, c in enumerate(geo["candidatos"]):
             try:
                 if forma.get("comparar_por_coluna"):
@@ -213,9 +213,10 @@ def evaluate(table: dict[str, Any]) -> dict[str, Any]:
             except IndexError:  # a forma não cabe nesta candidata: outra tabela da página
                 continue
             tries.append((compare(compact(visual["linhas"]), shaped), i))
-        if not tries:
+        if not tries and not texto:
             return {"estado": "pendente_humano", "caminhos_comparados": ["visual"],
                     "motivo": "nenhuma tabela geométrica encontrada na página"}
+    if tries:
         res, idx = min(tries, key=lambda t: (ORDER[t[0]["estado"]],
                                              len([c for c in t[0]["celulas"]
                                                   if c["estado"] != "verificada"]), t[1]))
@@ -227,18 +228,31 @@ def evaluate(table: dict[str, Any]) -> dict[str, Any]:
                                  "coluna; quais linhas cada célula mesclada cobre vem só da "
                                  "leitura visual")
         if texto:
-            out["texto"] = compare(compact(visual["linhas"]), texto["linhas"])["estado"]
+            out["texto"] = _compare_texto(table, visual, texto)["estado"]
     else:
-        res = compare(compact(visual["linhas"]), texto["linhas"])
+        res = _compare_texto(table, visual, texto)
+        falta = ("a página não tem grade desenhada que a extração geométrica reconheça"
+                 if geo else "falta a extração geométrica do PDF oficial")
         out = {"estado": res["estado"], "caminhos_comparados": ["visual", "texto"],
                "observacao": ("segundo caminho = camada de texto do PDF (seção 'Tabelas "
-                              "extraídas'); falta a extração geométrica do PDF oficial")}
+                              f"extraídas'); {falta}")}
     for key in ("motivo", "forma"):
         if key in res:
             out[key] = res[key]
     if res["celulas"]:
         out["celulas"] = res["celulas"]
     return out
+
+
+def _compare_texto(table: dict[str, Any], visual: dict[str, Any],
+                   texto: dict[str, Any]) -> dict[str, Any]:
+    if forma_of(table, texto).get("comparar_por_coluna"):  # linhas brutas (texto_path)
+        try:
+            return compare_by_column(visual["linhas"], texto["linhas"], forma_of(table, texto))
+        except IndexError:
+            return {"estado": "divergente", "motivo": "a camada de texto não tem as colunas "
+                    "da leitura visual", "celulas": []}
+    return compare(compact(visual["linhas"]), texto["linhas"])
 
 
 # ---------------------------------------------------------------- caminho "texto" (.md)
@@ -357,7 +371,10 @@ def texto_path(md_text: str, origem: dict[str, Any],
                forma: dict[str, Any] | None = None) -> list[list[str]]:
     """Caminho "texto" calculado do ``.md`` (nunca digitado)."""
     rows = raw_table(md_text, int(origem["pagina"]), int(origem.get("tabela_na_pagina", 1)))
-    return shape(rows, forma if forma is not None else origem)
+    forma = forma if forma is not None else origem
+    if forma.get("comparar_por_coluna"):  # a comparação por coluna usa a grade bruta
+        return rows
+    return shape(rows, forma)
 
 
 # ---------------------------------------------------------------- arquivos

@@ -12,6 +12,10 @@ forma:
   - 0
   - 5
   linhas_cabecalho: 2
+forma_geometrica:
+  faixa:
+  - 0
+  - 6
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -77,9 +81,9 @@ notas:
   tetos e costados dos tanques vizinhos. Para tanques de teto flutuante, não podem ser consideradas as
   áreas dos tetos.'
 - 'Fonte indicada na página: ABNT NBR 17505.'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -87,12 +91,3 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: verificada
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 2
-    - 2
-    - 2
-    - 2
-  - - 2
-    - 2
-    - 2
