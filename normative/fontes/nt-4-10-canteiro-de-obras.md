@@ -243,6 +243,19 @@ c) o sistema deverá ter duas fontes de alimentação elétrica. A principal é 
 |  | Área Operacional e de Apoio a Produção | 15 |  |  | 200 |  |  |  |
 | Fonte: CBMERJ. |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 1 p4 -->
+### Tabela 1 — Distância e Área máxima por unidade extintora (conferida)
+
+| Tipologia de área | Distância máxima (m) | Área máxima (m²) |
+| --- | --- | --- |
+| Área de Vivência | 25 | 300 |
+| Área de Apoio Administrativo | 20 | 250 |
+| Área Operacional e de Apoio a Produção | 15 | 200 |
+
+Fonte: NT 4-10, página 4, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 1 p4 -->
+
 ---
 
 ## Página 5

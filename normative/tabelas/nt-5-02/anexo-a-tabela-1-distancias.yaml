@@ -1,0 +1,144 @@
+schema_version: tabela-conferida/1.0
+documento: NT 5-02
+arquivo: nt-5-02-eventos-pirotecnicos.md
+tabela: Tabela 1 do Anexo A
+titulo: Distância mínima entre o local do evento pirotécnico e os espectadores, edificações e veículos
+pagina: 8
+fonte_pdf_sha256: eeff91b4e54b032a0e477c61d88747424a2bdcd1e01824f3503e69c63e97f346
+conferida_em: '2026-09-29'
+forma:
+  mesclar_linhas:
+  - - 0
+    - 1
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-5-02/pagina-08.jpg
+    imagem_sha256: 70911565d9e15bcc9d8d113c85d071703c37337429c7033d33856b1cfaf76bdf
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Calibre (polegadas)
+    - Calibre (milímetros)
+    - Distância – tubo de lançamento (m)
+    - Distância – tubo de lançamento inclinado (m)
+    linhas:
+    - - Calibre nominal do tubo de lançamento
+      - <
+      - Distância – tubo de lançamento (m)
+      - Distância – tubo de lançamento inclinado (m)
+    - - polegadas
+      - milímetros
+      - ^
+      - ^
+    - - < 3”
+      - < 76,2
+      - '43'
+      - '29'
+    - - 3”
+      - 76,2
+      - '64'
+      - '43'
+    - - 4”
+      - 101,6
+      - '85'
+      - '58'
+    - - 5”
+      - 127,0
+      - '107'
+      - '70'
+    - - 6”
+      - 152,4
+      - '128'
+      - '85'
+    - - 7”
+      - 177,8
+      - '149'
+      - '98'
+    - - 8”
+      - 203,2
+      - '171'
+      - '113'
+    - - 9”
+      - 228,6
+      - '193'
+      - ''
+    - - 10”
+      - 254,0
+      - '214'
+      - ''
+    - - 12”
+      - 304,8
+      - '256'
+      - ''
+    - - 16”
+      - 406,4
+      - '342'
+      - ''
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 8
+      tabela_na_pagina: 1
+    linhas:
+    - - Calibre nominal do tubo de lançamento
+      - Distância - tubo de lançamento (m)
+      - Distância - tubo de lançamento inclinado (m)
+    - - polegadas
+      - milímetros
+    - - < 3”
+      - < 76,2
+      - '43'
+      - '29'
+    - - 3”
+      - 76,2
+      - '64'
+      - '43'
+    - - 4”
+      - 101,6
+      - '85'
+      - '58'
+    - - 5”
+      - 127,0
+      - '107'
+      - '70'
+    - - 6”
+      - 152,4
+      - '128'
+      - '85'
+    - - 7”
+      - 177,8
+      - '149'
+      - '98'
+    - - 8”
+      - 203,2
+      - '171'
+      - '113'
+    - - 9”
+      - 228,6
+      - '193'
+    - - 10”
+      - 254,0
+      - '214'
+    - - 12”
+      - 304,8
+      - '256'
+    - - 16”
+      - 406,4
+      - '342'
+notas:
+- 'Células da coluna "inclinado" de 9" a 16" em cinza (não se aplica) na página: em branco na tabela.'
+- 'Obs. da tabela: Para aplicar as distâncias reduzidas indicadas na coluna "tubo de lançamento inclinado",
+  os tubos de lançamento devem estar inclinados na direção oposta à área dos espectadores e a inclinação
+  seguirá o previsto no REG/T 03 do Exército Brasileiro.'
+- 'Conferência aritmética: milímetros = 25,4 × polegadas em todas as linhas.'
+- 'Fonte indicada na página: Lei nº 5390/2009, combinada com o REG/T 03 do Exército Brasileiro.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

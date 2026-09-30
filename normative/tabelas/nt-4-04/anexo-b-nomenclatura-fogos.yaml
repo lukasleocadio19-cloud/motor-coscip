@@ -1,0 +1,194 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-04
+arquivo: nt-4-04-municoes-explosivos-e-artefatos-pirotecnicos.md
+tabela: Tabela do Anexo B
+titulo: Tabela de nomenclatura de fogos de artifício
+pagina: 11
+fonte_pdf_sha256: 4a60b8e260a3765210bab4f348c2b40ae4cfe7fd14c683d83875f2d68e9be3af
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-04/pagina-11.jpg
+    imagem_sha256: c21edd5a438c4c52d37ec3098858c64bd3d2cb87d423ed320d19209d14b63e5d
+    linhas_cabecalho: 1
+    linhas:
+    - - Nome
+      - Descrição
+      - Efeito principal
+      - Exemplos
+    - - Bomba aérea
+      - Artefato lançado por meio de tubos de lançamento e contendo carga de projeção, retardo, carga
+        de abertura, baladas e/ou tiros
+      - Ascensão seguida de efeitos diversos
+      - Bomba de polegadas, shell, shell-in-mortar, minas
+    - - Bomba de solo
+      - Tubo, de papel ou de plástico, contendo composição pirotécnica e iniciador
+      - Estampido
+      - Traque, estalo de riscar bomba numerada, banger, firecracker
+    - - Centelhador de tubo
+      - Tubo contendo composição pirotécnica
+      - Emissão de centelhas
+      - Vela, velinha, chuva, bengala, cascata, estrela lume
+    - - Centelhador de vara
+      - Arame ou palito parcialmente coberto de composição pirotécnica
+      - Emissão de centelhas
+      - Chuva, chuvinha, estrela, estrelinha, sparkle
+    - - Conjunto de múltiplos tubos
+      - Montagem que inclui dois ou mais tipos de fogos de artifício, com um ou mais pontos de iniciação
+        e queima em sequência, para apresentação em show
+      - Efeitos diversos
+      - Tortas, girândolas, cakes, letreiros, set pieces, kits, base de míssil
+    - - Estalo de salão
+      - Dispositivo contendo composição pirotécnica sensível a choque mecânico
+      - Estampido
+      - Traque de massa, estalinho, throwdown
+    - - Estopim
+      - Fio ou cordão, encapado ou desencapado, impregnado de composição pirotécnica
+      - Transmissão de chama com ou sem retardo
+      - Retardo, rastilho, safety fuse, quickmatch
+    - - Foguete (a)
+      - Tubo com carga de projeção, contendo baladas e/ou bombas aéreas
+      - Lançamento de baladas e/ou bombas aéreas de efeito sonoro e/ou visual
+      - 3 tiros, rabo de pavão, bouquet de lágrimas, crakling, crepitante, bomba 12 x 1
+    - - Tubo de lançamento-Morteiro (b)
+      - Tubo com carga de projeção contendo bomba aérea singela
+      - Lançamento de bombas aéreas
+      - Nº 2, nº 3, nº 4, nº 5, nº 6, nº 7 e nº 8.
+    - - Fonte
+      - Tubo cônico ou cilíndrico contendo composição pirotécnica
+      - Emissão de centelhas e chamas coloridas
+      - Vulcão, sputnik, árvore de natal, fountain
+    - - Fumígeno
+      - Tubo contendo composição pirotécnica
+      - Emissão de fumaça
+      - Smoke
+    - - Giratório aéreo
+      - Tubo provido de hélice contendo composição pirotécnica
+      - Ascensão em movimento giratório
+      - Avião, abelhinha, ovni, helicóptero, disco voador, coroa giratória
+    - - Giratório de solo
+      - Tubo cilíndrico ou em forma de espiral contendo composição pirotécnica
+      - Movimento giratório em torno de um ponto
+      - Peão, giroloco, roseta
+    - - Candela
+      - Tubo com diversas cargas de projeção contendo baladas e/ou bombas aéreas, montadas em alternância
+      - Lançamento de baladas e/ou bombas aéreas, em sequência.
+      - Vela romana, “roman candle”, pistola
+    - - Rojão
+      - Dispositivo autopropulsado, com meio de estabilização em voo
+      - Ascensão, seguida de efeitos diversos
+      - Rocket, cometa, cometinha cometa de apito, rojão com vara, rojão tipo míssil, foguete
+    - - Bolas crepitantes
+      - Pequeno dispositivo de papel contendo composição pirotécnica e iniciador
+      - Emissão de centelhas e pequenos estampidos
+      - Dragon eggs, crackling ball, croque
+    - - Bateria
+      - Conjunto de bombas de solo
+      - Estampidos
+      - Bateria de tiros
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 11
+      tabela_na_pagina: 1
+    linhas:
+    - - Nome
+      - Descrição
+      - Efeito principal
+      - Exemplos
+    - - Bomba aérea
+      - Artefato lançado por meio de tubos de lançamento e contendo carga de projeção, retardo, carga
+        de abertura, baladas e/ou tiros
+      - Ascensão seguida de efeitos diversos
+      - Bomba de polegadas, shell, shell-in-mortar, minas
+    - - Bomba de solo
+      - Tubo, de papel ou de plástico, contendo composição pirotécnica e iniciador
+      - Estampido
+      - Traque, estalo de riscar bomba numerada, banger, firecracker
+    - - Centelhador de tubo
+      - Tubo contendo composição pirotécnica
+      - Emissão de centelhas
+      - Vela, velinha, chuva, bengala, cascata, estrela lume
+    - - Centelhador de vara
+      - Arame ou palito parcialmente coberto de composição pirotécnica
+      - Emissão de centelhas
+      - Chuva, chuvinha, estrela, estrelinha, sparkle
+    - - Conjunto de múltiplos tubos
+      - Montagem que inclui dois ou mais tipos de fogos de artifício, com um ou mais pontos de iniciação
+        e queima em sequência, para apresentação em show
+      - Efeitos diversos
+      - Tortas, girândolas, cakes, letreiros, set pieces, kits, base de míssil
+    - - Estalo de salão
+      - Dispositivo contendo composição pirotécnica sensível a choque mecânico
+      - Estampido
+      - Traque de massa, estalinho, throwdown
+    - - Estopim
+      - Fio ou cordão, encapado ou desencapado, impregnado de composição pirotécnica
+      - Transmissão de chama com ou sem retardo
+      - Retardo, rastilho, safety fuse, quickmatch
+    - - Foguete (a)
+      - Tubo com carga de projeção, contendo baladas e/ou bombas aéreas
+      - Lançamento de baladas e/ou bombas aéreas de efeito sonoro e/ou visual
+      - 3 tiros, rabo de pavão, bouquet de lágrimas, crakling, crepitante, bomba 12 x 1
+    - - Tubo de lançamentoMorteiro (b)
+      - Tubo com carga de projeção contendo bomba aérea singela
+      - Lançamento de bombas aéreas
+      - Nº 2, nº 3, nº 4, nº 5, nº 6, nº 7 e nº 8.
+    - - Fonte
+      - Tubo cônico ou cilíndrico contendo composição pirotécnica
+      - Emissão de centelhas e chamas coloridas
+      - Vulcão, sputnik, árvore de natal, fountain
+    - - Fumígeno
+      - Tubo contendo composição pirotécnica
+      - Emissão de fumaça
+      - Smoke
+    - - Giratório aéreo
+      - Tubo provido de hélice contendo composição pirotécnica
+      - Ascensão em movimento giratório
+      - Avião, abelhinha, ovni, helicóptero, disco voador, coroa giratória
+    - - Giratório de solo
+      - Tubo cilíndrico ou em forma de espiral contendo composição pirotécnica
+      - Movimento giratório em torno de um ponto
+      - Peão, giroloco, roseta
+    - - Candela
+      - Tubo com diversas cargas de projeção contendo baladas e/ou bombas aéreas, montadas em alternância
+      - Lançamento de baladas e/ou bombas aéreas, em sequência.
+      - Vela romana, “roman candle”, pistola
+    - - Rojão
+      - Dispositivo autopropulsado, com meio de estabilização em voo
+      - Ascensão, seguida de efeitos diversos
+      - Rocket, cometa, cometinha cometa de apito, rojão com vara, rojão tipo míssil, foguete
+    - - Bolas crepitantes
+      - Pequeno dispositivo de papel contendo composição pirotécnica e iniciador
+      - Emissão de centelhas e pequenos estampidos
+      - Dragon eggs, crackling ball, croque
+    - - Bateria
+      - Conjunto de bombas de solo
+      - Estampidos
+      - Bateria de tiros
+notas:
+- 'Observações da tabela:'
+- (a) Nome genérico, usual no Brasil, embora sem autopropulsão.
+- (b) Conjunto integrado por tubo de lançamento e bomba aérea com carga de projeção, com diâmetro interno
+  superior a 50 mm.
+- 'Fonte indicada na página: REGT/02 – Exército Brasileiro.'
+inconsistencias_da_fonte:
+- '"crakling" em Foguete (em Bolas crepitantes a mesma palavra aparece como "crackling").'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  celulas:
+  - linha: 9
+    coluna: 0
+    a: Tubo de lançamento-Morteiro (b)
+    b: Tubo de lançamentoMorteiro (b)
+    estado: verificada
+    score: 98.4

@@ -1,0 +1,148 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-07
+arquivo: nt-3-07-heliponto-e-heliporto.md
+tabela: Tabela do Anexo A
+titulo: Tabela de dimensionamento de extintores em helipontos
+pagina: 6
+fonte_pdf_sha256: 85f786298c328a4f770b2788c4e7b07966b65cbd9374f1a8276bec1c98153fd9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+  subscrito_deslocado:
+  - CO:2
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-07/pagina-06.jpg
+    imagem_sha256: c43b54ee778f2b3fd192e5b58a60825d43f10c2a6ade0ed8b3782f8c11d7b428
+    linhas_cabecalho: 1
+    linhas:
+    - - Tipo de Heliponto
+      - Resistência do piso da área de pouso/decolagem
+      - Quantidade de extintores
+      - Capacidades extintoras
+    - - Heliponto ao nível do solo
+      - Até 4500 Kg
+      - '02'
+      - Pó químico BC de 20-BC
+    - - ^
+      - ^
+      - '02'
+      - CO₂ DE 2-B
+    - - ^
+      - ^
+      - 01 (sobre rodas)
+      - Espuma química de 6-A;10-B
+    - - ^
+      - Acima de 4500 Kg
+      - '04'
+      - Pó químico BC de 20-BC
+    - - ^
+      - ^
+      - '02'
+      - CO₂ de 2-B
+    - - ^
+      - ^
+      - 01 (sobre rodas)
+      - Espuma química de 6-A;10-B
+    - - ^
+      - ^
+      - 01 (sobre rodas)
+      - Pó químico de 30-B;120-B
+    - - Helipontos elevados
+      - Até 4500 Kg
+      - '02'
+      - Pó químico de 20-BC
+    - - ^
+      - ^
+      - '02'
+      - CO₂ de 2-B
+    - - ^
+      - ^
+      - 01 (sobre rodas)
+      - Pó químico de 30-B;120-B
+    - - ^
+      - ^
+      - 01 (sobre rodas)
+      - Espuma química de 6-A;10-B
+    - - ^
+      - Acima de 4500 Kg
+      - '04'
+      - Pó químico BC de 20-BC
+    - - ^
+      - ^
+      - '02'
+      - CO₂ de 2-B
+    - - ^
+      - ^
+      - 01 (sobre rodas)
+      - Pó químico de 40-B;130-B
+    - - ^
+      - ^
+      - 01 (sobre rodas)
+      - Espuma química de 6-A;10-B
+    - - ^
+      - ^
+      - 02 (sobre rodas))
+      - CO₂ de 10-B
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 6
+      tabela_na_pagina: 1
+    linhas:
+    - - Tipo de Heliponto
+      - Resistência do piso da área de pouso/decolagem
+      - Quantidade de extintores
+      - Capacidades extintoras
+    - - Heliponto ao nível do solo
+      - Até 4500 Kg
+      - '02'
+      - Pó químico BC de 20-BC
+    - - '02'
+      - CO2 DE 2-B
+    - - 01 (sobre rodas)
+      - Espuma química de 6-A;10-B
+    - - Acima de 4500 Kg
+      - '04'
+      - Pó químico BC de 20-BC
+    - - '02'
+      - CO2 de 2-B
+    - - 01 (sobre rodas)
+      - Espuma química de 6-A;10-B
+    - - 01 (sobre rodas)
+      - Pó químico de 30-B;120-B
+    - - Helipontos elevados
+      - Até 4500 Kg
+      - '02'
+      - Pó químico de 20-BC
+    - - '02'
+      - CO2 de 2-B
+    - - 01 (sobre rodas)
+      - Pó químico de 30-B;120-B
+    - - 01 (sobre rodas)
+      - Espuma química de 6-A;10-B
+    - - Acima de 4500 Kg
+      - '04'
+      - Pó químico BC de 20-BC
+    - - '02'
+      - CO2 de 2-B
+    - - 01 (sobre rodas)
+      - Pó químico de 40-B;130-B
+    - - 01 (sobre rodas)
+      - Espuma química de 6-A;10-B
+    - - 02 (sobre rodas))
+      - CO2 de 10-B
+notas:
+- 'Fonte indicada na página: CBMERJ.'
+inconsistencias_da_fonte:
+- '"02 (sobre rodas))" com parêntese a mais na última linha.'
+- 'Heliponto ao nível do solo com piso até 4500 Kg: "CO₂ DE 2-B" (demais linhas: "CO₂ de 2-B").'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

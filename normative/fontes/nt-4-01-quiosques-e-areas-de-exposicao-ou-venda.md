@@ -182,6 +182,22 @@ Figura 3 - Área livre em frente ao elevador
 | Até 30,00 |  |  | 3,99 |
 | A cada 5,0 m ou fração adicionada a última distância. |  |  | Acréscimo de 10% da última largura. |
 
+<!-- tabela-conferida: Tabela 1 p4 -->
+### Tabela 1 — Dimensionamento de vão livre de passagem (conferida)
+
+| Distância entre o ponto de quiosque e a saída ou escada mais próxima (m) | Largura mínima do vão livre de passagem (m) |
+| --- | --- |
+| Até 15,00 | 3,00 |
+| Até 20,00 | 3,30 |
+| Até 25,00 | 3,63 |
+| Até 30,00 | 3,99 |
+| A cada 5,0 m ou fração adicionada a última distância. | Acréscimo de 10% da última largura. |
+
+Fonte: NT 4-01, página 4, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: CBMERJ.
+Conferência aritmética: cada largura é 10 % maior que a anterior, arredondada para baixo no centímetro (3,00 → 3,30 → 3,63 → 3,993 ≈ 3,99).
+<!-- /tabela-conferida: Tabela 1 p4 -->
+
 ---
 
 ## Página 5

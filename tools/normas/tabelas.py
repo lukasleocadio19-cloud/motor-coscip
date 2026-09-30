@@ -266,9 +266,14 @@ def raw_table(md_text: str, page: int, index: int = 1) -> list[list[str]]:
 
 
 def _subscrito(cell: str, sub: str) -> str:
+    """``sub`` = texto do subscrito, ou ``"âncora:subscrito"`` ("CO:2": o 2 volta após "CO")."""
+    anchor, _, sub = sub.rpartition(":")
     if not cell.endswith(" " + sub):
         return cell
     body = cell[: -len(sub) - 1]
+    if anchor:
+        k = body.find(anchor)
+        return body[: k + len(anchor)] + sub + body[k + len(anchor):] if k >= 0 else cell
     for k, ch in enumerate(body):
         if "\u0370" <= ch <= "\u03ff" or "\uf000" <= ch <= "\uf0ff":  # grego ou fonte Symbol
             return body[: k + 1] + sub + body[k + 1:]

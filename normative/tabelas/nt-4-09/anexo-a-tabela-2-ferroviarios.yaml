@@ -1,0 +1,99 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-09
+arquivo: nt-4-09-tuneis.md
+tabela: Tabela 2 do Anexo A
+titulo: Posicionamento da sinalização de segurança para túneis ferroviários e metroviários
+pagina: 8
+fonte_pdf_sha256: bea8f7902227b297338f0e78c459935df3a79f505eb1b02d54814a4997351fd2
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-09/pagina-08.jpg
+    imagem_sha256: 2f986f970ab38bbb18c4c3c764ce150f9a967015c4d43cc9f79745d4461cfbcb
+    linhas_cabecalho: 1
+    linhas:
+    - - Tipo
+      - Localização
+      - Posição / Nível de iluminamento
+      - Altura mínima da placa e caracteres
+      - Distanciamento máximo (m)
+    - - Placas de segurança (equipamentos de proteção contra incêndio e sinalização de alerta)
+      - Parede paralela ao sentido de circulação
+      - No máximo 1,80 m de altura do piso acabado
+      - Placa com 250 mm Caracteres com 135 mm
+      - '30'
+    - - ^
+      - Parede transversal ao sentido de circulação (secundária)
+      - ^
+      - ^
+      - ^
+    - - Sinalização de piso
+      - Próxima ao solo, por toda a extensão do túnel No limite entre a via ou faixa de rolamento e a
+        passarela de emergência
+      - No nível do piso acabado
+      - '-'
+      - '3'
+    - - Lâmpadas de balizamento
+      - Passagem de emergência
+      - Superior a 3 lux no nível do piso acabado
+      - '-'
+      - '-'
+    - - ^
+      - Área plana
+      - Superior a 3 lux no nível do piso acabado
+      - '-'
+      - Máximo a cada 5 m
+    - - ^
+      - 'Desnível: escadas ou passagens com obstáculos'
+      - Superior a 5 lux no nível do piso acabado
+      - '-'
+      - '-'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 8
+      tabela_na_pagina: 2
+    linhas:
+    - - Tipo
+      - Localização
+      - Posição / Nível de iluminamento
+      - Altura mínima da placa e caracteres
+      - Distanciamento máximo (m)
+    - - Placas de segurança (equipamentos de proteção contra incêndio e sinalização de alerta)
+      - Parede paralela ao sentido de circulação
+      - No máximo 1,80 m de altura do piso acabado
+      - Placa com 250 mm Caracteres com 135 mm
+      - '30'
+    - - Parede transversal ao sentido de circulação (secundária)
+    - - Sinalização de piso
+      - Próxima ao solo, por toda a extensão do túnel No limite entre a via ou faixa de rolamento e a
+        passarela de emergência
+      - No nível do piso acabado
+      - '-'
+      - '3'
+    - - Lâmpadas de balizamento
+      - Passagem de emergência
+      - Superior a 3 lux no nível do piso acabado
+      - '-'
+      - '-'
+    - - Área plana
+      - Superior a 3 lux no nível do piso acabado
+      - '-'
+      - Máximo a cada 5 m
+    - - 'Desnível: escadas ou passagens com obstáculos'
+      - Superior a 5 lux no nível do piso acabado
+      - '-'
+      - '-'
+notas:
+- 'Fonte indicada na página: ABNT NBR 15981:2011.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

@@ -1,0 +1,185 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-04
+arquivo: nt-4-04-municoes-explosivos-e-artefatos-pirotecnicos.md
+tabela: Tabela 1 do Anexo A
+titulo: Distanciamentos de segurança para pólvora química e para produtos químicos utilizados na fabricação
+  de explosivos
+pagina: 8
+fonte_pdf_sha256: 4a60b8e260a3765210bab4f348c2b40ae4cfe7fd14c683d83875f2d68e9be3af
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 3
+  - 14
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-04/pagina-08.jpg
+    imagem_sha256: 246877a10722eb901d4c6dfeaba9e5cf04e050e6512963acb64d51b038d76e8e
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Peso líquido de (kg)
+    - Peso líquido até (kg)
+    - Edif. Habitados (m)
+    - Ferrovias (m)
+    - Rodovias (m)
+    - Entre Depósitos (m)
+    linhas:
+    - - '0'
+      - '450'
+      - '25'
+      - '25'
+      - '25'
+      - '15'
+    - - '451'
+      - '2.250'
+      - '35'
+      - '35'
+      - '35'
+      - '25'
+    - - '2.251'
+      - '4.500'
+      - '45'
+      - '45'
+      - '45'
+      - '30'
+    - - '4.501'
+      - '9.000'
+      - '60'
+      - '60'
+      - '60'
+      - '40'
+    - - '9.001'
+      - '18.100'
+      - '70'
+      - '70'
+      - '70'
+      - '50'
+    - - '18.001'
+      - '31.750'
+      - '80'
+      - '80'
+      - '80'
+      - '55'
+    - - '31.751'
+      - '45.350'
+      - '90'
+      - '90'
+      - '90'
+      - '60'
+    - - '45.351'
+      - '90.700'
+      - '115'
+      - '115'
+      - '115'
+      - '75'
+    - - '90.701'
+      - '136.000'
+      - '110'
+      - '110'
+      - '110'
+      - '75'
+    - - '136.001'
+      - '181.400'
+      - '150'
+      - '150'
+      - '150'
+      - '100'
+    - - '181.401'
+      - '226.800'
+      - '180'
+      - '180'
+      - '180'
+      - '120'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 8
+      tabela_na_pagina: 1
+    linhas:
+    - - '0'
+      - '450'
+      - '25'
+      - '25'
+      - '25'
+      - '15'
+    - - '451'
+      - '2.250'
+      - '35'
+      - '35'
+      - '35'
+      - '25'
+    - - '2.251'
+      - '4.500'
+      - '45'
+      - '45'
+      - '45'
+      - '30'
+    - - '4.501'
+      - '9.000'
+      - '60'
+      - '60'
+      - '60'
+      - '40'
+    - - '9.001'
+      - '18.100'
+      - '70'
+      - '70'
+      - '70'
+      - '50'
+    - - '18.001'
+      - '31.750'
+      - '80'
+      - '80'
+      - '80'
+      - '55'
+    - - '31.751'
+      - '45.350'
+      - '90'
+      - '90'
+      - '90'
+      - '60'
+    - - '45.351'
+      - '90.700'
+      - '115'
+      - '115'
+      - '115'
+      - '75'
+    - - '90.701'
+      - '136.000'
+      - '110'
+      - '110'
+      - '110'
+      - '75'
+    - - '136.001'
+      - '181.400'
+      - '150'
+      - '150'
+      - '150'
+      - '100'
+    - - '181.401'
+      - '226.800'
+      - '180'
+      - '180'
+      - '180'
+      - '120'
+notas:
+- 'Fonte indicada na página: R 105 – Exército Brasileiro.'
+- 'Observações da tabela:'
+- 1) a quantidade de 226.800 kg é a máxima permitida em um mesmo local;
+- 2) a quantidade máxima permitida, em um mesmo local, de nitrato de amônio, grau agrícola, destinado
+  à fabricação de fertilizantes, e as condições de armazenamento serão estabelecidas em legislação complementar.
+inconsistencias_da_fonte:
+- 'Faixas sobrepostas: a linha "9.001 a 18.100" é seguida por "18.001 a 31.750" (18.001 a 18.100 kg estão
+  nas duas).'
+- As distâncias diminuem de 115 m (45.351 a 90.700 kg) para 110 m (90.701 a 136.000 kg) em edificações
+  habitadas, ferrovias e rodovias.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

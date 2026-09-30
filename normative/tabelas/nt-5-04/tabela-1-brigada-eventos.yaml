@@ -1,0 +1,60 @@
+schema_version: tabela-conferida/1.0
+documento: NT 5-04
+arquivo: nt-5-04-eventos-temporarios-de-reuniao-de-publico.md
+tabela: Tabela 1
+titulo: Dimensionamento de brigada de incêndio em eventos temporários de reunião de público
+pagina: 6
+fonte_pdf_sha256: d243a23b3425827d77def2bef613397066a89dc48dc5a3c9cc8e8b46f3328b9d
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-5-04/pagina-06.jpg
+    imagem_sha256: 08acfe4a28b4e46808c1547c2550a0187dfbfa995bf6092cd83455fe4918af04
+    linhas_cabecalho: 1
+    linhas:
+    - - Área total construída (ATC) (m²)
+      - Edificação permanente
+      - Estrutura temporária
+    - - Até 200 m²
+      - Isento
+      - Isento
+    - - De 201 à 500 m²
+      - Isento
+      - 02 BC
+    - - De 501 à 2.500 m²
+      - 02 BC
+      - 04 BC
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 6
+      tabela_na_pagina: 1
+    linhas:
+    - - Área total construída (ATC) (m²)
+      - Edificação permanente
+      - Estrutura temporária
+    - - Até 200 m²
+      - Isento
+      - Isento
+    - - De 201 à 500 m²
+      - Isento
+      - 02 BC
+    - - De 501 à 2.500 m²
+      - 02 BC
+      - 04 BC
+notas:
+- 'Obs. da tabela: BC (bombeiro civil).'
+- 'Fonte indicada na página: CBMERJ.'
+- Pelo item 6.1.6 a), para eventos que excedam a área da tabela deve-se adotar 01 Bombeiro Civil para
+  cada 2.500 m² de ATC acrescida.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

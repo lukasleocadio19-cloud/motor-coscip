@@ -454,6 +454,36 @@ Fonte: ABNT NBR 15981:2011.
 |  | Área plana | Superior a 3 lux no nível do piso acabado |  |  | - |  |  | Máximo a cada 5 m |  |  |
 |  | Desnível: escadas ou passagens com obstáculos | Superior a 5 lux no nível do piso acabado |  |  | - |  |  | - |  |  |
 
+<!-- tabela-conferida: Tabela 1 do Anexo A p8 -->
+### Tabela 1 do Anexo A — Posicionamento da sinalização de segurança para túneis rodoviários (conferida)
+
+| Tipo | Localização | Posição | Distanciamento máximo (m) |
+| --- | --- | --- | --- |
+| Placas de segurança (equipamentos de proteção contra incêndio e sinalização de alerta) | Parede paralela ao sentido de circulação | No máximo 1,80 m de altura do piso acabado | 23 |
+| Placas de segurança (equipamentos de proteção contra incêndio e sinalização de alerta) | Parede transversal ao sentido de circulação | No mínimo 6 m de altura do nível do piso acabado | Nos emboques do túnel rodoviário |
+| Sinalização de piso | Próxima ao solo, por toda a extensão do túnel Do lado direito do sentido do tráfego ou na lateral da saída de emergência | Na borda do passeio, junto à pista | Contínua, por extensão do túnel |
+| Placa de indicação da rota de fuga | No mínimo a 600 mm e no máximo a 1,50 m do piso | Na parede lateral do passeio | Na saída de emergência e a cada 30 m |
+
+Fonte: NT 4-09, página 8, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 15981:2011.
+<!-- /tabela-conferida: Tabela 1 do Anexo A p8 -->
+
+<!-- tabela-conferida: Tabela 2 do Anexo A p8 -->
+### Tabela 2 do Anexo A — Posicionamento da sinalização de segurança para túneis ferroviários e metroviários (conferida)
+
+| Tipo | Localização | Posição / Nível de iluminamento | Altura mínima da placa e caracteres | Distanciamento máximo (m) |
+| --- | --- | --- | --- | --- |
+| Placas de segurança (equipamentos de proteção contra incêndio e sinalização de alerta) | Parede paralela ao sentido de circulação | No máximo 1,80 m de altura do piso acabado | Placa com 250 mm Caracteres com 135 mm | 30 |
+| Placas de segurança (equipamentos de proteção contra incêndio e sinalização de alerta) | Parede transversal ao sentido de circulação (secundária) | No máximo 1,80 m de altura do piso acabado | Placa com 250 mm Caracteres com 135 mm | 30 |
+| Sinalização de piso | Próxima ao solo, por toda a extensão do túnel No limite entre a via ou faixa de rolamento e a passarela de emergência | No nível do piso acabado | - | 3 |
+| Lâmpadas de balizamento | Passagem de emergência | Superior a 3 lux no nível do piso acabado | - | - |
+| Lâmpadas de balizamento | Área plana | Superior a 3 lux no nível do piso acabado | - | Máximo a cada 5 m |
+| Lâmpadas de balizamento | Desnível: escadas ou passagens com obstáculos | Superior a 5 lux no nível do piso acabado | - | - |
+
+Fonte: NT 4-09, página 8, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 15981:2011.
+<!-- /tabela-conferida: Tabela 2 do Anexo A p8 -->
+
 ---
 
 ## Página 9
@@ -475,3 +505,17 @@ Fonte: ABNT NBR 15661:2012.
 | CO | 70 |  |  | 90 |  |  |
 | NOx | 1 |  |  | 1 |  |  |
 | Visibilidade | 0,005 m-1 |  |  | 0,007 m-1 |  |  |
+<!-- tabela-conferida: Tabela 3 do Anexo B p9 -->
+### Tabela 3 do Anexo B — Valores-limites de concentração para CO/NOx e de visibilidade em túnel (conferida)
+
+| Gases / Visibilidade | Concentração (ppm) Nível de operação normal | Concentração (ppm) Nível de operação em congestionamento |
+| --- | --- | --- |
+| CO | 70 | 90 |
+| NOx | 1 | 1 |
+| Visibilidade | 0,005 m-1 | 0,007 m-1 |
+
+Fonte: NT 4-09, página 9, Tabela 3 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Na linha Visibilidade os valores estão em m⁻¹ (coeficiente de extinção), não em ppm como diz o cabeçalho das colunas.
+Fonte indicada na página: ABNT NBR 15661:2012.
+<!-- /tabela-conferida: Tabela 3 do Anexo B p9 -->
+

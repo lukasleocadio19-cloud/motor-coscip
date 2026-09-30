@@ -102,3 +102,13 @@ paginas:
     imagem: media/nt-3-01/pagina-04.jpg
     motivo: definição 4.11 (efluentes) em duas colunas de texto
     conferido_em: '2026-09-30'
+  - arquivo: nt-4-10-canteiro-de-obras.md
+    pagina: 3
+    imagem: media/nt-4-10/pagina-03.jpg
+    motivo: definições 4.2, 4.6, 4.7 e 4.8 em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-4-11-estruturas-temporarias-atendimento-medico-covid-19.md
+    pagina: 3
+    imagem: media/nt-4-11/pagina-03.jpg
+    motivo: referências normativas a) a n) do item 3 em duas colunas de texto
+    conferido_em: '2026-09-30'

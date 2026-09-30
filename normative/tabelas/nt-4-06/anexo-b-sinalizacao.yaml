@@ -1,0 +1,72 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-06
+arquivo: nt-4-06-postos-de-servicos-e-abastecimento.md
+tabela: Tabela do Anexo B
+titulo: Tabela de sinalização
+pagina: 7
+fonte_pdf_sha256: da02569719cdc9a437cf642d2a36368e08e7b8c988e88a1c2ff85bf4253ee29b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-06/pagina-07.jpg
+    imagem_sha256: dec81f199aa8c6adad117aaf84b11851cf1400e7a1840585c0dd869e39e7a62e
+    linhas_cabecalho: 1
+    linhas:
+    - - Local
+      - Quantidade
+      - Legenda
+    - - Bombas de Abastecimento
+      - 1 por ponto
+      - '- Proibido abastecimento por pessoas não autorizadas; - Desligue o motor do veículo; - Acione
+        o freio de estacionamento; - Apague os faróis e desligue o rádio; - Não utilize equipamentos que
+        contenham chama; - Certifique-se que o funcionário do posto efetuou o aterramento elétrico do
+        veículo.'
+    - - Central de GNV
+      - '1'
+      - '- Proibido Fumar; - Perigo, gás a alta pressão; - Proibido acesso a pessoas estranhas; - Cuidado
+        partida automática.'
+    - - Válvula de bloqueio geral
+      - '1'
+      - “Uso em caso de emergência”
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 7
+      tabela_na_pagina: 1
+    linhas:
+    - - Local
+      - Quantidade
+      - Legenda
+    - - Bombas de Abastecimento
+      - 1 por ponto
+      - '- Proibido abastecimento por pessoas não autorizadas; - Desligue o motor do veículo; - Acione
+        o freio de estacionamento; - Apague os faróis e desligue o rádio; - Não utilize equipamentos que
+        contenham chama; - Certifique-se que o funcionário do posto efetuou o aterramento elétrico do
+        veículo.'
+    - - Central de GNV
+      - '1'
+      - '- Proibido Fumar; - Perigo, gás a alta pressão; - Proibido acesso a pessoas estranhas; - Cuidado
+        partida automática.'
+    - - Válvula de bloqueio geral
+      - '1'
+      - “Uso em caso de emergen̂ cia”
+notas:
+- 'Fonte indicada na página: Instrução Normativa nº 021/DAT/CBMSC – Modificada.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  celulas:
+  - linha: 3
+    coluna: 2
+    a: “Uso em caso de emergência”
+    b: “Uso em caso de emergen̂ cia”
+    estado: verificada
+    score: 98.2

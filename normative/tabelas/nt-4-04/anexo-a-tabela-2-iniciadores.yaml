@@ -1,0 +1,153 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-04
+arquivo: nt-4-04-municoes-explosivos-e-artefatos-pirotecnicos.md
+tabela: Tabela 2 do Anexo A
+titulo: Distanciamentos de segurança para iniciadores
+pagina: 8
+fonte_pdf_sha256: 4a60b8e260a3765210bab4f348c2b40ae4cfe7fd14c683d83875f2d68e9be3af
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 3
+  - 12
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-04/pagina-08.jpg
+    imagem_sha256: 246877a10722eb901d4c6dfeaba9e5cf04e050e6512963acb64d51b038d76e8e
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Peso líquido de (kg)
+    - Peso líquido até (kg)
+    - Edif. Habitados (m)
+    - Ferrovias (m)
+    - Rodovias (m)
+    - Entre Depósitos (m)
+    linhas:
+    - - '0'
+      - '20'
+      - '75'
+      - '45'
+      - '22'
+      - '20'
+    - - '21'
+      - '100'
+      - '140'
+      - '90'
+      - '43'
+      - '30'
+    - - '101'
+      - '200'
+      - '220'
+      - '135'
+      - '70'
+      - '45'
+    - - '201'
+      - '500'
+      - '260'
+      - '160'
+      - '80'
+      - '65'
+    - - '501'
+      - '900'
+      - '300'
+      - '180'
+      - '95'
+      - '90'
+    - - '901'
+      - '2.200'
+      - '370'
+      - '220'
+      - '110'
+      - '90'
+    - - '2.201'
+      - '4.500'
+      - '460'
+      - '280'
+      - '140'
+      - '90'
+    - - '4.501'
+      - '6.800'
+      - '500'
+      - '300'
+      - '150'
+      - '90'
+    - - '6.801'
+      - '9.000'
+      - '530'
+      - '320'
+      - '160'
+      - '90'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 8
+      tabela_na_pagina: 2
+    linhas:
+    - - '0'
+      - '20'
+      - '75'
+      - '45'
+      - '22'
+      - '20'
+    - - '21'
+      - '100'
+      - '140'
+      - '90'
+      - '43'
+      - '30'
+    - - '101'
+      - '200'
+      - '220'
+      - '135'
+      - '70'
+      - '45'
+    - - '201'
+      - '500'
+      - '260'
+      - '160'
+      - '80'
+      - '65'
+    - - '501'
+      - '900'
+      - '300'
+      - '180'
+      - '95'
+      - '90'
+    - - '901'
+      - '2.200'
+      - '370'
+      - '220'
+      - '110'
+      - '90'
+    - - '2.201'
+      - '4.500'
+      - '460'
+      - '280'
+      - '140'
+      - '90'
+    - - '4.501'
+      - '6.800'
+      - '500'
+      - '300'
+      - '150'
+      - '90'
+    - - '6.801'
+      - '9.000'
+      - '530'
+      - '320'
+      - '160'
+      - '90'
+notas:
+- 'Fonte indicada na página: R 105 – Exército Brasileiro.'
+- 'Observações da tabela:'
+- 1) a quantidade de 9.000 kg é a máxima permitida em um mesmo local;
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

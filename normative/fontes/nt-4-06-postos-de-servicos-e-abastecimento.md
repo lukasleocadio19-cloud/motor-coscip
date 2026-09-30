@@ -324,3 +324,16 @@ Fonte: Instrução Normativa nº 021/DAT/CBMSC - Modificada.
 | Bombas de Abastecimento | 1 por ponto | - Proibido abastecimento por pessoas não autorizadas; - Desligue o motor do veículo; - Acione o freio de estacionamento; - Apague os faróis e desligue o rádio; - Não utilize equipamentos que contenham chama; - Certifique-se que o funcionário do posto efetuou o aterramento elétrico do veículo. |
 | Central de GNV | 1 | - Proibido Fumar; - Perigo, gás a alta pressão; - Proibido acesso a pessoas estranhas; - Cuidado partida automática. |
 | Válvula de bloqueio geral | 1 | “Uso em caso de emergen̂ cia” |
+<!-- tabela-conferida: Tabela do Anexo B p7 -->
+### Tabela do Anexo B — Tabela de sinalização (conferida)
+
+| Local | Quantidade | Legenda |
+| --- | --- | --- |
+| Bombas de Abastecimento | 1 por ponto | - Proibido abastecimento por pessoas não autorizadas; - Desligue o motor do veículo; - Acione o freio de estacionamento; - Apague os faróis e desligue o rádio; - Não utilize equipamentos que contenham chama; - Certifique-se que o funcionário do posto efetuou o aterramento elétrico do veículo. |
+| Central de GNV | 1 | - Proibido Fumar; - Perigo, gás a alta pressão; - Proibido acesso a pessoas estranhas; - Cuidado partida automática. |
+| Válvula de bloqueio geral | 1 | “Uso em caso de emergência” |
+
+Fonte: NT 4-06, página 7, Tabela do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: Instrução Normativa nº 021/DAT/CBMSC – Modificada.
+<!-- /tabela-conferida: Tabela do Anexo B p7 -->
+

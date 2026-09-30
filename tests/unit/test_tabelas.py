@@ -247,3 +247,10 @@ def test_glifo_nao_renderizado_nao_e_conteudo():
 def test_linha_de_preenchimento_nao_conta_o_tamanho():
     res = tabelas.compare_cell("Validade: ____", "Validade: _______________")
     assert res["estado"] == "verificada"
+
+
+def test_subscrito_com_ancora():
+    (linha,) = tabelas.shape([["CO de 2-B 2", "Pó 20-BC"]],
+                             {"linhas_cabecalho": 0, "subscrito_deslocado": ["CO:2"]})
+    assert linha == ["CO2 de 2-B", "Pó 20-BC"]
+    assert tabelas.compare_cell("CO₂ de 2-B", linha[0])["estado"] == "verificada"

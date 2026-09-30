@@ -336,6 +336,21 @@ e) quando houver montagem de estrutura temporária com mais de um pavimento, no 
 | De 201 à 500 m² |  |  | Isento | 02 BC |
 | De 501 à 2.500 m² |  |  | 02 BC | 04 BC |
 
+<!-- tabela-conferida: Tabela 1 p6 -->
+### Tabela 1 — Dimensionamento de brigada de incêndio em eventos temporários de reunião de público (conferida)
+
+| Área total construída (ATC) (m²) | Edificação permanente | Estrutura temporária |
+| --- | --- | --- |
+| Até 200 m² | Isento | Isento |
+| De 201 à 500 m² | Isento | 02 BC |
+| De 501 à 2.500 m² | 02 BC | 04 BC |
+
+Fonte: NT 5-04, página 6, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Obs. da tabela: BC (bombeiro civil).
+Fonte indicada na página: CBMERJ.
+Pelo item 6.1.6 a), para eventos que excedam a área da tabela deve-se adotar 01 Bombeiro Civil para cada 2.500 m² de ATC acrescida.
+<!-- /tabela-conferida: Tabela 1 p6 -->
+
 ---
 
 ## Página 7

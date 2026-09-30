@@ -1,0 +1,60 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-10
+arquivo: nt-4-10-canteiro-de-obras.md
+tabela: Tabela 1
+titulo: Distância e Área máxima por unidade extintora
+pagina: 4
+fonte_pdf_sha256: f928f7de4b06facda68fcdf110baef5fd3b915c377b9d888f37cbf5a51dc14c1
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 0
+  - 5
+  linhas_cabecalho: 2
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-10/pagina-04.jpg
+    imagem_sha256: d25eb1453c9abe4348a70795c1826df0cb12858aca93bc7f0e7e3b8b3fcd5e96
+    linhas_cabecalho: 1
+    linhas:
+    - - Tipologia de área
+      - Distância máxima (m)
+      - Área máxima (m²)
+    - - Área de Vivência
+      - '25'
+      - '300'
+    - - Área de Apoio Administrativo
+      - '20'
+      - '250'
+    - - Área Operacional e de Apoio a Produção
+      - '15'
+      - '200'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 4
+      tabela_na_pagina: 1
+    linhas:
+    - - Tipologia de área
+      - Distância máxima (m)
+      - Área máxima (m2)
+    - - Área de Vivência
+      - '25'
+      - '300'
+    - - Área de Apoio Administrativo
+      - '20'
+      - '250'
+    - - Área Operacional e de Apoio a Produção
+      - '15'
+      - '200'
+notas:
+- 'Fonte indicada na página: CBMERJ.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
