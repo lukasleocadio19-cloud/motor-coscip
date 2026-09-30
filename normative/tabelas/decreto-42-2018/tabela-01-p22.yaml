@@ -131,6 +131,91 @@ caminhos:
       - Clubes sociais e diversão
       - Clubes sociais, bilhares, boliche, salões de baile, restaurantes com atividades de diversões públicas,
         zoológicos, aquários, parque de diversões (edificação permanente), e assemelhados.
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.69
+      - 72.77
+      - 552.84
+      - 583.1
+      linhas:
+      - - ''
+        - Ocupação/Uso
+        - ''
+        - ''
+        - ''
+      - - Grupo
+        - null
+        - Divisão
+        - Descrição
+        - Definição e exemplos
+      - - ''
+        - null
+        - ''
+        - ''
+        - ''
+      - - F
+        - Local de Reunião de Público
+        - F-1
+        - Local onde há objeto de valor inestimável
+        - Museus, centro de documentos históricos, galerias de arte, arquivos, bibliotecas e asse- melhados
+      - - null
+        - null
+        - F-2
+        - Local religioso e velório
+        - Igrejas, capelas, sinagogas, mesquitas, templos, cemitérios, crematórios, necrotérios, salas
+          de funerais e assemelhados
+      - - null
+        - null
+        - F-3
+        - Centro esportivo e de exibições
+        - Arenas em geral, estádios, ginásios, piscinas, rodeios, autódromos, sambódromo, jóquei clube,
+          pista de patinação e assemelhados. Todos com arquibancadas.
+      - - null
+        - null
+        - F-4
+        - Estação e terminal de passageiro
+        - Estações rodoferroviárias e marítimas, portos, marina, metrô, aeroportos, helipontos, teleféricos,
+          estações de transbordo em geral e assemelhados
+      - - null
+        - null
+        - F-5
+        - Arte cênica e auditório
+        - Teatros em geral, cinemas, óperas, auditórios de estúdios de rádio e televisão, auditórios em
+          geral e assemelhados
+      - - null
+        - null
+        - F-6
+        - Boates e casas de show
+        - Boates, danceterias, discotecas, centro de convenções, e assemelhados
+      - - null
+        - null
+        - F-7
+        - Instalações temporá- rias
+        - Circos, parques temático, parque de diver- sões, feiras, eventos de foodtruck e asseme- lhados
+      - - null
+        - null
+        - F-8
+        - Local para refeição
+        - Restaurantes, lanchonetes, bares, cafés, refeitórios, cantinas e assemelhados
+      - - null
+        - null
+        - F-9
+        - Recreação pública
+        - Parques recreativos (sem atividade de diversões públicas) e assemelhados
+      - - null
+        - null
+        - F-10
+        - Exposição de animais
+        - Locais para exposição agropecuária e assemelhados. Edificações permanentes
+      - - null
+        - null
+        - F-11
+        - Clubes sociais e diversão
+        - Clubes sociais, bilhares, boliche, salões de baile, restaurantes com atividades de diversões
+          públicas, zoológicos, aquários, parque de diversões (edificação permanente), e assemelhados.
 notas:
 - Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
 estado: verificada
@@ -138,6 +223,27 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 1
+    coluna: 4
+    a: Museus, centro de documentos históricos, galerias de arte, arquivos, bibliotecas e assemelhados
+    b: Museus, centro de documentos históricos, galerias de arte, arquivos, bibliotecas e asse- melhados
+    estado: verificada
+    score: 98.9
+  - linha: 7
+    coluna: 1
+    a: Instalações temporárias
+    b: Instalações temporá- rias
+    estado: verificada
+    score: 95.8
+  - linha: 7
+    coluna: 2
+    a: Circos, parques temático, parque de diversões, feiras, eventos de foodtruck e assemelhados
+    b: Circos, parques temático, parque de diver- sões, feiras, eventos de foodtruck e asseme- lhados
+    estado: verificada
+    score: 97.7

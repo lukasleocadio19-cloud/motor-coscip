@@ -3,8 +3,8 @@ gerado_por: tools/normas/manifesto.py (não editar à mão)
 resumo:
   fontes: 53
   imagens_referenciadas: 492
-  imagens_presentes: 479
-  imagens_ausentes: 13
+  imagens_presentes: 492
+  imagens_ausentes: 0
   tabelas_por_estado:
     bruto: 148
     capa: 38
@@ -19,15 +19,15 @@ fontes:
   ato: null
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/COSCIP_DEC_42-2018_COMPILADO.pdf
   sha256_pdf: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
-  sha256_md: a152c9d4074a404ed8093abfb2fdd265372f4bdbdb8625e72816cf0b3b0cc76c
+  sha256_md: 890dd4f9bf089c2bf69fd3dd7512a34b5d98b9bd4686c2bb8a63445fe76e6d1c
   data_captura: '2026-07-23'
   paginas: 57
   midia: decreto-42-2018-coscip-compilado
   imagens:
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-01.jpg
     pagina: 1
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 024232bd255906093ae523efb2ed038db821c3865a703f9616ba5a4a5e9d1c12
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-20.jpg
     pagina: 20
     estado: presente
@@ -134,52 +134,52 @@ fontes:
     sha256: c412c420b73d7bb6a2591457e763ca66bfaade66b624da494ce7dd59cd539c4c
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-46.jpg
     pagina: 46
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 342cd6aeaea4035753cbc8b01b41517c301fd29c20423e5a6e49877c8584ddc1
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-47.jpg
     pagina: 47
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 35a81d749c06d10851e05aac5f56cd1f8c1b7f74f5b1ebbcf91d994fc9a6e058
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-48.jpg
     pagina: 48
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 23a20bb8524dffc82e2aa13caa6d991769bcd4411f09f4f7c6d2881d902aa627
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-49.jpg
     pagina: 49
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 3c73a03136a1d4fd54fe30b7072c3b301b2e6288ede1b86be54abb46b55bdf62
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-50.jpg
     pagina: 50
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 0abbf0df8165aeed9938b518a40b23df84db18415a3be26ab31a165293b11136
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-51.jpg
     pagina: 51
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 4a725edf1a74f1b5f208535b838b4cb2b85d57d4696e5cb55fe665e603946834
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-52.jpg
     pagina: 52
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 34f93ebd1e3f0688e7decbad38962f271d1997e5c570a97a541f5d1f6e8b35b2
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-53.jpg
     pagina: 53
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: f3d3c3deee3d81d303cda99e11b2c64fbb7b8c23eaac4db41a312b536a767cd3
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-54.jpg
     pagina: 54
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: bf89f13cbd60447aff99f0b92fb91dc3d7fd5da7e5cdb4214ad1c2bdd4c830e9
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-55.jpg
     pagina: 55
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: bbdaa203db121bbf070f5894175d22b6ccf878dd7b75b7eaf11ebbd866bbe451
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-56.jpg
     pagina: 56
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 97d605cd1ceab501eec0838d1c5d3c041013d5fdf95d9429a938d8249f322b66
   - caminho: media/decreto-42-2018-coscip-compilado/pagina-57.jpg
     pagina: 57
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 279cbd58f6c023b573d115d5ed6455188a4ff13ead2e76521d02bcce3f51d310
   tabelas:
   - pagina: 1
     estado: bruto
@@ -2786,7 +2786,7 @@ fontes:
   ato: Portaria CBMERJ n° 1179, de 11 de abril de 2022
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT-4-05-Gas-GLPGN-Manipulacao-armazenamento-e-comercializacao-2022.pdf
   sha256_pdf: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
-  sha256_md: b1bedee056c9a73b656979372e1c94b81f97a295407f8d058e397ecf9d7b78c4
+  sha256_md: f0c7745462695281ac0e70ef502bea78e34805de4b2877d35da1dc2a00427e7a
   data_captura: '2026-07-23'
   paginas: 23
   midia: nt-4-05

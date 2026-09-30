@@ -117,6 +117,70 @@ caminhos:
       - Locais de ensino e/ou práticas de artes marciais, natação, ginástica (artística, dança, musculação
         e outros) esportes coletivos (tênis, futebol e outros que não estejam incluídos em F-3), sauna,
         casas de fisioterapia e assemelhados. Sem arquibancadas.
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.71
+      - 91.81
+      - 552.82
+      - 606.38
+      linhas:
+      - - Grupo
+        - Ocupação/Uso
+        - Divisão
+        - Descrição
+        - Definição e exemplos
+      - - D
+        - Serviço profissional e institucional
+        - D-1
+        - Local para prestação de serviço profissional ou condução de negó- cios
+        - Escritórios administrativos ou técnicos, insti- tuições financeiras (exceto as classificadas
+          em D-2), cabeleireiros, centros profissionais e assemelhados, repartições públicas (exceto as
+          classificadas em D-5).
+      - - null
+        - null
+        - D-2
+        - Agências bancárias
+        - Agências bancárias e assemelhados
+      - - null
+        - null
+        - D-3
+        - Serviços de manutenção e reparação (exceto os classificados em G-4)
+        - Lavanderias, assistência técnica, reparação e manutenção de aparelhos eletrodomésticos, chaveiros,
+          serviços de pintura, pintura de letreiros, serviços de limpeza e outros.
+      - - null
+        - null
+        - D-4
+        - Laboratórios de análises clínicas e assemelhados
+        - Laboratórios de análises clínicas sem internação e assemelhados. Laboratórios ambientais, fotográficos
+          e assemelhados.
+      - - null
+        - null
+        - D-5
+        - Edificação pública das forças armadas, policiais e militares estaduais
+        - Quartéis, delegacias, postos policiais, grupamentos e assemelhados
+      - - E
+        - Escolar e cultura física
+        - E-1
+        - Escolar em geral
+        - Pré-escola (creches, escolas maternais, jardins de infância). Escolas de educação básica, ensino
+          fundamental e médio, educação de jovens e adultos, ensino superior, ensino técnico e assemelhados.
+          Escolas profissionais em geral.
+      - - null
+        - null
+        - E-2
+        - Escolar especial
+        - Escolas de artes e artesanato, de línguas, de cultura geral, de cultura estrangeira, escolas
+          religiosas e assemelhados
+      - - null
+        - null
+        - E-3
+        - Espaço para cultura física
+        - Locais de ensino e/ou práticas de artes marciais, natação, ginástica (artística, dança, musculação
+          e outros) esportes coletivos (tênis, futebol e outros que não estejam incluídos em F-3), sauna,
+          casas de fisioterapia e assemelhados. Sem arquibancadas.
 notas:
 - Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
 estado: verificada
@@ -124,6 +188,25 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 1
+    coluna: 3
+    a: Local para prestação de serviço profissional ou condução de negócios
+    b: Local para prestação de serviço profissional ou condução de negó- cios
+    estado: verificada
+    score: 98.6
+  - linha: 1
+    coluna: 4
+    a: Escritórios administrativos ou técnicos, instituições financeiras (exceto as classificadas em D-2),
+      cabeleireiros, centros profissionais e assemelhados, repartições públicas (exceto as classificadas
+      em D-5).
+    b: Escritórios administrativos ou técnicos, insti- tuições financeiras (exceto as classificadas em
+      D-2), cabeleireiros, centros profissionais e assemelhados, repartições públicas (exceto as classificadas
+      em D-5).
+    estado: verificada
+    score: 99.5

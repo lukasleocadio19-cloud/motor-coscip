@@ -1153,7 +1153,7 @@ Fonte: ABNT NBR 15600.
 | Produtos tóxicos e perigosos | 6 | 3 | 6 | 3 | 6 | 3 | 6 | 3 | 6 | 3 | 6 | 3 |
 | Fontes de ignição/ Chama aberta | 7,5 | 1 | 7,5 | 1 | 7,5 | 2,5 | 7,5 | 2,5 | 10 | 5 | 10 | 5 |
 
-Fonte: NT 4-05, página 18, Tabela 2 do Anexo C; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-05, página 18, Tabela 2 do Anexo C; conferida em 2026-09-29 (visual + geometrica).
 Afastamentos em metros. "0/3" e "1/3": ver a observação e) (até 200 m³ com grade, 3 m).
 Observações da tabela:
 a) As Distâncias mínimas dos afastamentos são determinadas em função da capacidade total da estocagem e do tipo de fronteira encontrada (parede comum ou grade, ou parede de TRRF=4);
@@ -1269,7 +1269,7 @@ Fonte: CBMERJ.
 | --- | --- | --- | --- | --- | --- |
 | 0 | 3 | 0 | 1 | 1,5 | 6 |
 
-Fonte: NT 4-05, página 23, Tabela 1 do Anexo E; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-05, página 23, Tabela 1 do Anexo E; conferida em 2026-09-29 (visual + geometrica).
 Afastamentos em metros (cabeçalho geral da tabela: "Afastamentos (m)").
 Observações da tabela:
 a) Esta tabela se aplica exclusivamente ao armazenamento de recipientes transportáveis, para substituição em empilhadeiras e outros veículos movidos a GLP, que atenda aos requisitos estabelecidos em 5.3.1.

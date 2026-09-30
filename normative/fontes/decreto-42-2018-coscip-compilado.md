@@ -852,7 +852,7 @@ Tabela 1: Classificação das edificações e áreas de risco quanto à ocupaç�
 | C | Comercial | C-3 | Shopping centers | Centro de compras em geral (shopping centers) |
 | C | Comercial | C-4 | Quiosque | Ponto de venda localizado no mall de centro comercial e de centro de compras em geral (shopping centers) |
 
-Fonte: Decreto 42/2018, página 20, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 20, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + geometrica).
 Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
 <!-- /tabela-conferida: Tabela 1 do Anexo II p20 -->
 
@@ -893,7 +893,7 @@ Tabela 1 - Continuação
 | E | Escolar e cultura física | E-2 | Escolar especial | Escolas de artes e artesanato, de línguas, de cultura geral, de cultura estrangeira, escolas religiosas e assemelhados |
 | E | Escolar e cultura física | E-3 | Espaço para cultura física | Locais de ensino e/ou práticas de artes marciais, natação, ginástica (artística, dança, musculação e outros) esportes coletivos (tênis, futebol e outros que não estejam incluídos em F-3), sauna, casas de fisioterapia e assemelhados. Sem arquibancadas. |
 
-Fonte: Decreto 42/2018, página 21, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 21, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + geometrica).
 Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
 <!-- /tabela-conferida: Tabela 1 do Anexo II p21 -->
 
@@ -942,7 +942,7 @@ Tabela 1 - Continuação
 | F | Local de Reunião de Público | F-10 | Exposição de animais | Locais para exposição agropecuária e assemelhados. Edificações permanentes |
 | F | Local de Reunião de Público | F-11 | Clubes sociais e diversão | Clubes sociais, bilhares, boliche, salões de baile, restaurantes com atividades de diversões públicas, zoológicos, aquários, parque de diversões (edificação permanente), e assemelhados. |
 
-Fonte: Decreto 42/2018, página 22, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 22, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + geometrica).
 Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
 <!-- /tabela-conferida: Tabela 1 do Anexo II p22 -->
 
@@ -989,7 +989,7 @@ Tabela 1 - Continuação
 | H | Serviço de saúde | H-3 | Hospital e assemelhados | Hospitais, casa de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos de atendimento de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital psiquiátrico. |
 | H | Serviço de saúde | H-4 | Clínica e consultório médico, odontológico e assemelhados | Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados. Todos sem internação. |
 
-Fonte: Decreto 42/2018, página 23, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 23, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + geometrica).
 Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
 <!-- /tabela-conferida: Tabela 1 do Anexo II p23 -->
 
@@ -1112,7 +1112,7 @@ Tabela 1 - Continuação
 | M | Especial | M-8 | Loteamento | Loteamento - é a divisão de glebas em lotes destinados à edificação, com aberturas de novas vias de circulação ou de logradouros públicos ou privados |
 | M | Especial | M-9 | Local onde a liberdade das pessoas sofre restrição | Manicômios, reformatórios, prisões em geral (casa de detenção, penitenciárias, presídios) e instituições assemelhadas, todos com celas |
 
-Fonte: Decreto 42/2018, página 25, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 25, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + geometrica).
 Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
 <!-- /tabela-conferida: Tabela 1 do Anexo II p25 -->
 

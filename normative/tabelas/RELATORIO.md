@@ -11,12 +11,12 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 
 | Documento | Tabela | Pág. | Estado | Caminhos | Células a decidir | Inconsistências da fonte |
 | --- | --- | --- | --- | --- | --- | --- |
-| Decreto 42/2018 | Tabela 1 do Anexo II | 20 | verificada | visual + texto | 0 | 0 |
-| Decreto 42/2018 | Tabela 1 do Anexo II | 21 | verificada | visual + texto | 0 | 0 |
-| Decreto 42/2018 | Tabela 1 do Anexo II | 22 | verificada | visual + texto | 0 | 0 |
-| Decreto 42/2018 | Tabela 1 do Anexo II | 23 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 1 do Anexo II | 20 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 1 do Anexo II | 21 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 1 do Anexo II | 22 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 1 do Anexo II | 23 | verificada | visual + geometrica | 0 | 0 |
 | Decreto 42/2018 | Tabela 1 do Anexo II | 24 | verificada | visual + geometrica | 0 | 1 |
-| Decreto 42/2018 | Tabela 1 do Anexo II | 25 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 1 do Anexo II | 25 | verificada | visual + geometrica | 0 | 0 |
 | Decreto 42/2018 | Tabela 2 | 26 | verificada | visual + geometrica | 0 | 0 |
 | Decreto 42/2018 | Tabela 3 | 27 | verificada | visual + geometrica | 0 | 0 |
 | Decreto 42/2018 | Tabela 4 | 28 | verificada | visual + geometrica | 0 | 0 |
@@ -117,7 +117,7 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 4-05 | Tabela 1 do Anexo B | 15 | verificada | visual + geometrica | 0 | 3 |
 | NT 4-05 | Tabela 2 do Anexo B | 16 | verificada | visual + geometrica | 0 | 3 |
 | NT 4-05 | Tabela 1 do Anexo C | 17 | verificada | visual + geometrica | 0 | 0 |
-| NT 4-05 | Tabela 2 do Anexo C | 18 | verificada | visual + texto | 0 | 1 |
-| NT 4-05 | Tabela 1 do Anexo E | 23 | verificada | visual + texto | 0 | 1 |
+| NT 4-05 | Tabela 2 do Anexo C | 18 | verificada | visual + geometrica | 0 | 1 |
+| NT 4-05 | Tabela 1 do Anexo E | 23 | verificada | visual + geometrica | 0 | 1 |
 | NT 5-05 | Tabela 1 | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 5-05 | Tabela do Anexo C | 10 | verificada | visual + geometrica | 0 | 1 |
