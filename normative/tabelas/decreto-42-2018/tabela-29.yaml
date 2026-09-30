@@ -84,6 +84,106 @@ caminhos:
       - X
     - - Controle de Pós
       - X
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.87
+      - 53.53
+      - 552.57
+      - 485.01
+      linhas:
+      - - Tabela 29 – Exigências para edificações e áreas de risco do grupo M (divisão M-5) qualquer área
+          ou altura
+        - null
+      - - Grupo de ocupação e uso
+        - GRUPO M – ESPECIAIS
+      - - Divisão
+        - M-5 (Silos)
+      - - Medidas de Segurança contra Incêndio e Pânico
+        - Independente da área ou altura
+      - - Extintores
+        - X
+      - - ''
+        - ''
+      - - Hidrantes e mangotinhos
+        - X1
+      - - ''
+        - ''
+      - - Chuveiros automáticos
+        - X1
+      - - ''
+        - ''
+      - - Sinalização de segurança
+        - X
+      - - ''
+        - ''
+      - - Iluminação de Emergência
+        - X2
+      - - ''
+        - ''
+      - - Alarme de Incêndio
+        - X
+      - - ''
+        - ''
+      - - Saídas de Emergência
+        - X
+      - - ''
+        - ''
+      - - Plano de emergência
+        - X3
+      - - ''
+        - ''
+      - - SPDA
+        - X
+      - - ''
+        - ''
+      - - Hidrante urbano
+        - X4
+      - - ''
+        - ''
+      - - Acesso de viatura em edificações
+        - X
+      - - ''
+        - ''
+      - - Controle de Temperatura
+        - X
+      - - ''
+        - ''
+      - - Controle de Fontes de Ignição
+        - X
+      - - ''
+        - ''
+      - - Controle de Pós
+        - X
+      - - ''
+        - ''
+      - - ''
+        - null
+      - - 'OBSERVAÇÕES ESPECÍFICAS:'
+        - null
+      - - 1- Observar regras e condições particulares para essa medida nas Notas Técnicas específicas.
+        - null
+      - - 2- Somente para as áreas de circulação.
+        - null
+      - - 3- Áreas de risco que possuam mais de um depósito de silagem.
+        - null
+      - - 4- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+        - null
+      - - ''
+        - null
+      - - 'OBSERVAÇÕES GERAIS:'
+        - null
+      - - a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar
+          as prescrições da Seção II
+        - null
+      - - do Capítulo IV deste Código;
+        - null
+      - - b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+        - null
+      - - c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+        - null
 notas:
 - 'Divisões e colunas: M-5 (Silos) — Independente da área ou altura.'
 - Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
@@ -97,11 +197,36 @@ notas:
   da Seção II do Capítulo IV deste Código;
 - b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
 - c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+  - - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2

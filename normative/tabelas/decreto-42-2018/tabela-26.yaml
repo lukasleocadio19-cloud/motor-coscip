@@ -229,6 +229,411 @@ caminhos:
       - X2
       - '-'
       - X2
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.88
+      - 53.48
+      - 552.53
+      - 649.32
+      linhas:
+      - - Tabela 26 – Exigências para edificações e áreas de risco do grupo M (divisão M-2) com qualquer
+          área
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ou número de pavimentos
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Grupo de ocupação e uso
+        - GRUPO M – ESPECIAIS
+        - null
+        - null
+        - null
+        - null
+      - - Divisão
+        - M-2 (Líquidos ou gases inflamáveis ou combustíveis)
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - Tanques ou cilindros e
+        - null
+        - ''
+        - ''
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Produtos acondicionados
+        - null
+      - - null
+        - processos
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Plataforma de
+        - ''
+        - null
+      - - Medidas de Segurança contra Incêndio
+        - Líquidos até
+        - Líquidos acima
+        - null
+        - Líquidos até
+        - Líquidos acima
+      - - null
+        - null
+        - null
+        - carregamento e
+        - null
+        - null
+      - - e Pânico
+        - 20 m³ ou
+        - de 20 m³ ou
+        - null
+        - 20 m³ ou
+        - de 20 m³ ou
+      - - null
+        - null
+        - null
+        - descarregamento
+        - null
+        - null
+      - - ''
+        - gases até
+        - gases acima
+        - null
+        - gases até
+        - gases acima de
+      - - null
+        - null
+        - null
+        - ''
+        - null
+        - null
+      - - null
+        - 10 m³ (b)
+        - de 10 m³ (b)
+        - null
+        - 12.480 kg
+        - 12.480 kg
+      - - Extintores
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrantes e mangotinhos
+        - '-'
+        - X
+        - X2
+        - X1
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Sinalização de segurança
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Iluminação de Emergência
+        - '-'
+        - '-'
+        - '-'
+        - X3
+        - X3
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Alarme de Incêndio
+        - '-'
+        - X
+        - X
+        - '-'
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Detecção de Incêndio
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Saídas de Emergência
+        - '-'
+        - '-'
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Plano de emergência
+        - '-'
+        - X
+        - '-'
+        - '-'
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - SPDA
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrante urbano
+        - '-'
+        - '-'
+        - '-'
+        - X4
+        - X4
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Acesso de viatura em edificações
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Compartimentação Vertical
+        - '-'
+        - '-'
+        - '-'
+        - X5
+        - X5
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Segurança Estrutural contra Incêndio
+        - '-'
+        - '-'
+        - '-'
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Controle de Materiais de Acabamento
+        - '-'
+        - '-'
+        - '-'
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Sistema de Resfriamento
+        - '-'
+        - X
+        - X2
+        - '-'
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Sistema de Espuma
+        - '-'
+        - X2
+        - X2
+        - '-'
+        - X2
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 'OBSERVAÇÕES ESPECÍFICAS:'
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 1- Não exigido para edificações com área menor ou igual a 900m² e até 02 pavimentos.
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 2- Somente para líquidos inflamáveis e combustíveis, conforme exigências da Nota Técnica específica.
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 3- Luminárias à prova de explosão, nas áreas de risco.
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 4- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 5- Para edificações com 04 ou mais pavimentos.
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 'OBSERVAÇÕES GERAIS:'
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar
+          as prescrições da Seção II
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - do Capítulo IV deste Código;
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - c) Devem ser verificadas as exigências quanto ao armazenamento e processamento (produção, manipulação
+          etc.) de
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - líquidos inflamáveis e combustíveis; e manipulação, armazenamento, comercialização e utilização
+          de gás liquefeito de
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - petróleo (GLP) e gás natural (GN), constante nas Notas Técnicas específicas;
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - d) Considera-se para efeito de gases inflamáveis a capacidade total do volume em água que o
+          recipiente pode comportar,
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - expressa em m³ (metros cúbicos);
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - e) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+        - null
+        - null
+        - null
+        - null
+        - null
 notas:
 - 'Divisões e colunas: M-2 (Líquidos ou gases inflamáveis ou combustíveis) — Tanques ou cilindros e processos:
   líquidos até 20 m³ ou gases até 10 m³ (b), Tanques ou cilindros e processos: líquidos acima de 20 m³
@@ -255,11 +660,40 @@ notas:
 inconsistencias_da_fonte:
 - Os cabeçalhos de tanques e cilindros remetem a "(b)", mas a observação geral b) trata das instalações
   elétricas; a que define o volume dos gases é a d).
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+  - - 4
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6

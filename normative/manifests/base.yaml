@@ -8,9 +8,9 @@ resumo:
   tabelas_por_estado:
     bruto: 108
     capa: 38
-    divergente: 3
+    divergente: 14
     nao_tabela: 16
-    verificada: 136
+    verificada: 125
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -19,7 +19,7 @@ fontes:
   ato: null
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/COSCIP_DEC_42-2018_COMPILADO.pdf
   sha256_pdf: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
-  sha256_md: e76fe9011ae927931b824844fbcbc01106eabbfe49ca1f17fc014f40199c7f9a
+  sha256_md: 38f61ea5632faaa641057cf40e7c9970a9120adfbcfe54e3b63ea0cb8ebf9cda
   data_captura: '2026-07-23'
   paginas: 57
   midia: decreto-42-2018-coscip-compilado
@@ -291,47 +291,47 @@ fontes:
   - pagina: 46
     tabela: Tabela 22
     arquivo: normative/tabelas/decreto-42-2018/tabela-22.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 47
     tabela: Tabela 23
     arquivo: normative/tabelas/decreto-42-2018/tabela-23.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 48
     tabela: Tabela 24
     arquivo: normative/tabelas/decreto-42-2018/tabela-24.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 49
     tabela: Tabela 25
     arquivo: normative/tabelas/decreto-42-2018/tabela-25.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 50
     tabela: Tabela 26
     arquivo: normative/tabelas/decreto-42-2018/tabela-26.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 51
     tabela: Tabela 27
     arquivo: normative/tabelas/decreto-42-2018/tabela-27.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 52
     tabela: Tabela 28
     arquivo: normative/tabelas/decreto-42-2018/tabela-28.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 53
     tabela: Tabela 29
     arquivo: normative/tabelas/decreto-42-2018/tabela-29.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 54
     tabela: Tabela 30
     arquivo: normative/tabelas/decreto-42-2018/tabela-30.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 55
     tabela: Tabela 31
     arquivo: normative/tabelas/decreto-42-2018/tabela-31.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 56
     tabela: Tabela 32
     arquivo: normative/tabelas/decreto-42-2018/tabela-32.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 57
     tabela: Tabela 33
     arquivo: normative/tabelas/decreto-42-2018/tabela-33.yaml

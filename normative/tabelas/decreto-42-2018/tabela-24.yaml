@@ -258,6 +258,530 @@ caminhos:
       - X
       - X
       - X
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.92
+      - 53.48
+      - 552.49
+      - 754.45
+      linhas:
+      - - Tabela 24 – Exigências para edificações do grupo L (divisão L-1) com área superior a 900m2
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ou superior a 02 pavimentos
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Grupo de ocupação e uso
+        - GRUPO L – EXPLOSIVOS E MUNIÇÕES
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Divisão
+        - L-1 (comércio de fogos de artifício,..)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - Classificação quanto ao nº de pavimentos e à altura (em metros)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - Acima de
+        - ''
+      - - Medidas de Segurança contra Incêndio e Pânico
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - Térrea
+        - 2pav
+        - 3pav
+        - 4, 5 e 6pav
+        - 6pav com
+        - H > 30m
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - H ≤ 30m
+        - ''
+      - - Extintores
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrantes e mangotinhos
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Chuveiros automáticos
+        - X1
+        - X1
+        - X1
+        - X1
+        - X1
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Sinalização de segurança
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Iluminação de Emergência
+        - X2
+        - X2
+        - X2
+        - X2
+        - X2
+        - X2
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Alarme de Incêndio
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Detecção de Incêndio
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Saídas de Emergência
+        - X
+        - X3
+        - X3
+        - X4
+        - X4, 5
+        - X4, 5, 6
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Plano de emergência
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - SPDA
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Controle de fumaça
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X7
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrante urbano
+        - X8
+        - X8
+        - X8
+        - X8
+        - X8
+        - X8
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Acesso de viatura em edificações
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Compartimentação Vertical
+        - '-'
+        - '-'
+        - '-'
+        - X9
+        - X10
+        - X11
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Segurança Estrutural contra Incêndio
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Controle de Materiais de Acabamento
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 'OBSERVAÇÕES ESPECÍFICAS:'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 1- Exigido para as edificações que possuam mais de 1.500m² em qualquer de seus pavimentos ou
+          mais de 3.000m² de
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ATC.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 2- Somente para as áreas acessíveis ao público (área de vendas) e rotas de escape. Não deve
+          ser instalada no interior
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - das áreas de depósito e armazenamento de fogos de artifício e artefatos pirotécnicos.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 5- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir
+          no mínimo duas
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - escadas de emergência.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 6- Deve haver Elevador de Emergência para altura maior que 60m.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 7- Exigido acima de 60m de altura.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 8- Exigido apenas para edificações com mais de 1.500m² de ATC.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 9- Pode ser substituída por sistema de detecção de incêndio e chuveiros automáticos, exceto
+          para as compartimentações
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - das fachadas e selagens dos shafts e dutos de instalações.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 10- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros
+          automáticos, exceto para as
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - compartimentações das fachadas e selagens dos shafts e dutos de instalações.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 11- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros
+          automáticos, até 90 metros
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - de altura, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 'OBSERVAÇÕES GERAIS:'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar
+          as prescrições da Seção II
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - do Capítulo IV deste Código;
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - c) As atividades de fabricação, utilização, armazenagem, depósito e comércio de explosivos e
+          munições devem obedecer
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ao disposto na legislação específica e regulamentações do Exército Brasileiro;
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - d) Atender às exigências e condições particulares das medidas de segurança contra incêndio para
+          as edificações
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - destinadas a fabricação, armazenagem e comércio de munições, explosivos e artefatos pirotécnicos,
+          estabelecidas na
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Nota Técnica específica;
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - e) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
 notas:
 - 'Divisões e colunas: L-1 (comércio de fogos de artifício,..) — Térrea, 2pav, 3pav, 4, 5 e 6pav, Acima
   de 6pav com H ≤ 30m, H > 30m.'
@@ -291,11 +815,40 @@ notas:
   destinadas a fabricação, armazenagem e comércio de munições, explosivos e artefatos pirotécnicos, estabelecidas
   na Nota Técnica específica;
 - e) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 7
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7
+  - - 1
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7
+    - 7

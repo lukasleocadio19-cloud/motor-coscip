@@ -165,6 +165,227 @@ caminhos:
       - X
       - X
       - X
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.81
+      - 53.48
+      - 552.64
+      - 482.47
+      linhas:
+      - - Tabela 25 – Exigências para edificações e áreas de risco do grupo M (divisão M-1) com qualquer
+          área
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ou número de pavimentos
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Grupo de ocupação e uso
+        - GRUPO M – ESPECIAIS
+        - null
+        - null
+        - null
+        - null
+      - - Divisão
+        - M-1 (Túneis rodoviários, metroviários e ferroviários)
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - Extensão em metros (m)
+        - null
+        - null
+        - null
+        - null
+      - - Medidas de Segurança contra Incêndio e
+        - ''
+        - ''
+        - ''
+        - Acima de
+        - ''
+      - - null
+        - null
+        - Acima de 90
+        - Acima de 500
+        - null
+        - Acima de
+      - - Pânico
+        - Até 90
+        - null
+        - null
+        - '1000'
+        - null
+      - - null
+        - null
+        - até 500
+        - até 1000
+        - null
+        - '3000'
+      - - ''
+        - ''
+        - null
+        - null
+        - até 3000
+        - null
+      - - null
+        - null
+        - ''
+        - ''
+        - null
+        - ''
+      - - Extintores
+        - '-'
+        - X1
+        - X1
+        - X1
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrantes e mangotinhos
+        - '-'
+        - X1
+        - X1
+        - X1
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Sinalização de segurança
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Iluminação de Emergência
+        - X2
+        - X2
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Detecção de Incêndio
+        - X2
+        - X2
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Saídas de Emergência
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Plano de emergência
+        - '-'
+        - X
+        - X
+        - X
+        - X
+      - - Ventilação e controle de gases
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - null
+        - X2
+        - X
+        - X
+        - X
+        - X
+      - - e fumaça
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Segurança Estrutural contra Incêndio
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Controle de Materiais de Acabamento
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Sistema de comunicação
+        - X2
+        - X2
+        - X
+        - X
+        - X
+      - - 'OBSERVAÇÕES ESPECÍFICAS: 1- Exigido somente para túneis rodoviários. 2- Exigido somente para
+          túneis metroviários e ferroviários. OBSERVAÇÕES GERAIS: a) As estações e terminais de passageiros
+          devem atender as medidas de segurança contra incêndio e pânico estabelecidas na Tabela 11 para
+          F-4; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+          c) Atender às exigências e condições particulares das medidas de segurança contra incêndio para
+          Túneis, de acordo com a Nota Técnica específica; d) Observar ainda as exigências para os riscos
+          específicos das respectivas Notas Técnicas.'
+        - null
+        - null
+        - null
+        - null
+        - null
 notas:
 - 'Divisões e colunas: M-1 (Túneis rodoviários, metroviários e ferroviários), extensão em metros — Até
   90, Acima de 90 até 500, Acima de 500 até 1000, Acima de 1000 até 3000, Acima de 3000.'
@@ -179,11 +400,32 @@ notas:
 - c) Atender às exigências e condições particulares das medidas de segurança contra incêndio para Túneis,
   de acordo com a Nota Técnica específica;
 - d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+  - - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6

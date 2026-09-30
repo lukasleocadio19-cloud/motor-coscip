@@ -36,6 +36,55 @@ caminhos:
       - X1
     - - Acesso de viatura em edificações
       - X
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.9
+      - 53.53
+      - 552.54
+      - 242.2
+      linhas:
+      - - Tabela 31 – Exigências para áreas de risco do grupo M (divisão M-8)
+        - null
+      - - Grupo de ocupação e uso
+        - GRUPO M – ESPECIAIS
+      - - Divisão
+        - M-8 (loteamentos)
+      - - Medidas de Segurança contra Incêndio e
+        - ''
+      - - null
+        - Qualquer loteamento
+      - - Pânico
+        - null
+      - - null
+        - ''
+      - - Hidrante urbano
+        - X1
+      - - ''
+        - ''
+      - - Acesso de viatura em edificações
+        - X
+      - - ''
+        - ''
+      - - ''
+        - null
+      - - 'OBSERVAÇÕES ESPECÍFICAS:'
+        - null
+      - - 1- Será exigida a instalação de hidrantes urbanos em todos os loteamentos, em quantidade e localização
+          de forma atender
+        - null
+      - - a distância máxima para cada lote e requisitos estabelecidos em Nota Técnica específica.
+        - null
+      - - ''
+        - null
+      - - 'OBSERVAÇÕES GERAIS:'
+        - null
+      - - a) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+        - null
+      - - b) Caso haja lotes edificados, o loteamento deve ser classificado como agrupamento de edificações.
+        - null
 notas:
 - 'Divisões e colunas: M-8 (loteamentos) — Qualquer loteamento.'
 - Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
@@ -45,11 +94,18 @@ notas:
 - 'Observações gerais da tabela:'
 - a) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
 - b) Caso haja lotes edificados, o loteamento deve ser classificado como agrupamento de edificações.
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 2
+    - 2
+  - - 2
