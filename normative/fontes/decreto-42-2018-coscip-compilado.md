@@ -1053,6 +1053,26 @@ Tabela 1 - Continuação
 |  |  | L-3 |  | Depósito de material explosivo ou munições |
 |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 1 do Anexo II p24 -->
+### Tabela 1 do Anexo II — Classificação das edificações e áreas de risco quanto à ocupação (continuação, p. 24) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| I | Industrial | I-1 | Industrial 1 | Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são classificadas como Risco Médio 1 conforme Nota Técnica específica. |
+| I | Industrial | I-2 | Industrial 2 | Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são classificadas como Risco Médio 2 conforme Nota Técnica específica. |
+| I | Industrial | I-3 | Industrial 3 | Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são classificadas como Risco Grande conforme Nota Técnica específica. |
+| J | Depósito | J-1 | Depósitos de material incombustível | Edificações sem processo industrial que armazenam tijolos, pedras, areias, cimentos, metais e outros materiais incombustíveis, todos sem embalagem. |
+| J | Depósito | J-2 | Todo tipo de Depósito | Depósitos com carga de incêndio até 1.000 MJ/m², conforme Nota Técnica específica. |
+| J | Depósito | J-3 | Todo tipo de Depósito | Depósitos com carga de incêndio entre 1.000 e 1.200 MJ/m², conforme Nota Técnica específica. |
+| J | Depósito | J-4 | Todo tipo de Depósito | Depósitos onde a carga de incêndio ultrapassa a 1.200 MJ/m², conforme Nota Técnica específica. |
+| L | Explosivos ou munições | L-1 | Comércio | Comércio em geral de fogos de artifício, munições e assemelhados |
+| L | Explosivos ou munições | L-2 | Indústria | Indústria de material explosivo ou munições |
+| L | Explosivos ou munições | L-3 | Depósito | Depósito de material explosivo ou munições |
+
+Fonte: Decreto 42/2018, página 24, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + geometrica).
+Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+<!-- /tabela-conferida: Tabela 1 do Anexo II p24 -->
+
 ---
 
 ## Página 25
@@ -1150,7 +1170,7 @@ Grupo e ocupação/uso mesclados verticalmente na página; na publicação repet
 | Controle de Materiais de Acabamento | - | X | - | X | X | X | - | - | X | - | X |
 | Controle de fumaça | - | - | - | - | - | X3, 4 | - | - | - | - | - |
 
-Fonte: Decreto 42/2018, página 26, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 26, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
 Cabeçalho: Grupo / Divisão de ocupação e uso (grupos A, D, E, G; B; C; F; H; I, J, M3; L1). Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
 Observações específicas da tabela:
 1- Não serão exigidas as medidas de segurança contra incêndio e pânico para as torres de comunicação (M-3) onde não haja edificação.
@@ -1232,7 +1252,7 @@ Redação dada pelo Decreto nº 46.925, de 05.2.2020 (indicação na página).
 | Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
 | Controle de Materiais de Acabamento | - | - | - | X8 | X8 | X8 | - | - | - | X8 | X8 | X8 |
 
-Fonte: Decreto 42/2018, página 27, Tabela 3; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 27, Tabela 3; conferida em 2026-09-29 (visual + geometrica).
 Grupo A – Residencial; divisões A-2 e A-3, cada uma com a classificação quanto ao nº de pavimentos e à altura (em metros). Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
 Observações específicas da tabela:
 1- Exigido apenas para as edificações com ATC superior a 600m².
@@ -1295,7 +1315,7 @@ d) Observar ainda as exigências para os riscos específicos das respectivas Not
 | Hidrante urbano | - | X | X |
 | Acesso de viatura em edificações | X | X | X |
 
-Fonte: Decreto 42/2018, página 28, Tabela 4; conferida em 2026-09-29 (visual + texto).
+Fonte: Decreto 42/2018, página 28, Tabela 4; conferida em 2026-09-29 (visual + geometrica).
 Grupo A – Residencial; A-4 classificada quanto ao nº de edificações ou lotes, A-5 quanto ao nº de edificações.
 Observações específicas da tabela:
 1- As edificações residenciais privativas unifamiliares (A-1) que compõem o agrupamento da divisão A-4, quando analisadas individualmente, ficam isentas da exigência de medidas de segurança contra incêndio e pânico nos termos do artigo 4º deste Código.

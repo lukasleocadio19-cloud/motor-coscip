@@ -1101,7 +1101,7 @@ Fonte: ABNT NBR 15514 - Adaptado, combinado com a Lei Estadual nº 4945/06.
 | Bombas de combustíveis, descarga de motores a explosão não instalada em veículos e outras fontes de ignição (m) | 1,5 | 3,0 | 3,0 | 3,0 | 3,0 | 3,0 | 3,0 | 3,0 |
 | Locais de reunião de público (1) (m) | 7,5 | 7,5 | 10,0 | 10,0 | 15,0 | 15,0 | 20,0 | 30,0 |
 
-Fonte: NT 4-05, página 17, Tabela 1 do Anexo C; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 4-05, página 17, Tabela 1 do Anexo C; conferida em 2026-09-29 (visual + geometrica).
 Legenda da tabela:
 - Classe IVA: Pertencente à Classe IV estabelecida na Lei Estadual nº 4945/06, e equivalente à Classe IV definida na ABNT NBR 15514:2020.
 - Classe IVB: Pertencente à Classe IV estabelecida na Lei Estadual nº 4945/06, e equivalente à Classe V definida na ABNT NBR 15514:2020.

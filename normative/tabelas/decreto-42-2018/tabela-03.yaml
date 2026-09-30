@@ -13,6 +13,10 @@ forma:
   - 28
   rotulos_quebrados: true
   linhas_cabecalho: 0
+forma_geometrica:
+  faixa:
+  - 12
+  - 31
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -378,6 +382,445 @@ caminhos:
       - X8
       - X8
       - X8
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.82
+      - 53.48
+      - 552.64
+      - 632.74
+      linhas:
+      - - Tabela 3 – Exigências para edificações do grupo A (divisões A-2 e A-3) com área superior a 900m²
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ou superior a 02 pavimentos
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Grupo de ocupação e uso
+        - GRUPO A – RESIDENCIAL
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Divisão
+        - A-2
+        - null
+        - null
+        - null
+        - null
+        - null
+        - A-3
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - Classificação quanto ao nº de pavimentos
+        - null
+        - null
+        - null
+        - null
+        - null
+        - Classificação quanto ao nº de pavimentos e
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - e à altura (em metros)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - à altura (em metros)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Medidas de Segurança
+        - ''
+        - ''
+        - ''
+        - ''
+        - Acima
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - Acima de
+        - ''
+      - - contra Incêndio e Pânico
+        - null
+        - null
+        - null
+        - 4 e
+        - de 5pav
+        - H >
+        - null
+        - null
+        - null
+        - 4, 5 e
+        - 6pav
+        - null
+      - - null
+        - Térrea
+        - 2pav
+        - 3pav
+        - null
+        - null
+        - null
+        - Térrea
+        - 2pav
+        - 3pav
+        - null
+        - null
+        - H > 30m
+      - - ''
+        - null
+        - null
+        - null
+        - 5pav
+        - com
+        - 30m
+        - null
+        - null
+        - null
+        - 6pav
+        - com
+        - null
+      - - null
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+        - null
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - ''
+        - H ≤ 30m
+        - ''
+        - null
+        - null
+        - null
+        - ''
+        - H ≤ 30m
+        - null
+      - - Extintores
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - Hidrantes e mangotinhos
+        - X
+        - X
+        - X2
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X1
+        - X
+        - X
+        - X
+      - - Chuveiros automáticos
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X
+      - - Sinalização de segurança
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - Iluminação de Emergência
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - Alarme de Incêndio
+        - X
+        - X
+        - X2
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X1
+        - X
+        - X
+        - X
+      - - Detecção de Incêndio
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X
+        - X
+        - X
+      - - Saídas de Emergência
+        - X
+        - X3
+        - X3
+        - X3
+        - X4
+        - X4, 5, 6
+        - X
+        - X3
+        - X3
+        - X4, 9
+        - X4, 9
+        - X4, 9, 10
+      - - Hidrante urbano
+        - X7
+        - X7
+        - X7
+        - X7
+        - X7
+        - X7
+        - X7
+        - X7
+        - X7
+        - X7
+        - X7
+        - X7
+      - - Acesso de viatura em
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - null
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - edificações
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Compartimentação Vertical
+        - '-'
+        - '-'
+        - '-'
+        - X
+        - X
+        - X
+        - '-'
+        - '-'
+        - '-'
+        - X
+        - X
+        - X
+      - - Segurança Estrutural contra
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - null
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - Incêndio
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Controle de Materiais de Acabamento
+        - '-'
+        - '-'
+        - '-'
+        - X8
+        - X8
+        - X8
+        - '-'
+        - '-'
+        - '-'
+        - X8
+        - X8
+        - X8
+      - - 'OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com ATC superior a 600m². 2-
+          Exigido apenas para as edificações com ATC superior a 900m². 3- A escada de emergência da edificação
+          deve ser do tipo Não Enclausurada, conforme NT específica. 4- A escada de emergência da edificação
+          deve ser do tipo Enclausurada, conforme NT específica. 5- Deve haver, no mínimo, 02 escadas
+          de emergência para edificações com 25 ou mais pavimentos. 6- Deve haver Elevador de Emergência
+          para altura maior que 80m. 7- Exigido apenas para as edificações com ATC igual ou superior a
+          1.500m². 8- Aplica-se somente às áreas comuns da edificação. 9- As edificações da Divisão A-3
+          com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas
+          escadas de emergência. 10- Deve haver Elevador de Emergência para altura maior que 60m. OBSERVAÇÕES
+          GERAIS: a) As edificações da Divisão A-1 ficam isentas de exigência de medidas preventiva nos
+          termos do artigo 4º deste Código; b) No cômputo do número de pavimentos e definição da altura
+          e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; c)
+          As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; d) Observar
+          ainda as exigências para os riscos específicos das respectivas Notas Técnicas.'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
 notas:
 - Grupo A – Residencial; divisões A-2 e A-3, cada uma com a classificação quanto ao nº de pavimentos e
   à altura (em metros). Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
@@ -405,6 +848,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

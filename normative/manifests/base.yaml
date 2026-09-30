@@ -8,9 +8,9 @@ resumo:
   tabelas_por_estado:
     bruto: 148
     capa: 38
-    divergente: 3
+    divergente: 2
     nao_tabela: 4
-    verificada: 107
+    verificada: 108
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -19,7 +19,7 @@ fontes:
   ato: null
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/COSCIP_DEC_42-2018_COMPILADO.pdf
   sha256_pdf: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
-  sha256_md: 58ea680a69b911c27afb84f7b35041e1510725663501436dfb267e3a0ed897a8
+  sha256_md: a152c9d4074a404ed8093abfb2fdd265372f4bdbdb8625e72816cf0b3b0cc76c
   data_captura: '2026-07-23'
   paginas: 57
   midia: decreto-42-2018-coscip-compilado
@@ -202,7 +202,7 @@ fontes:
   - pagina: 24
     tabela: Tabela 1 do Anexo II
     arquivo: normative/tabelas/decreto-42-2018/tabela-01-p24.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 25
     tabela: Tabela 1 do Anexo II
     arquivo: normative/tabelas/decreto-42-2018/tabela-01-p25.yaml
@@ -2786,7 +2786,7 @@ fontes:
   ato: Portaria CBMERJ n° 1179, de 11 de abril de 2022
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT-4-05-Gas-GLPGN-Manipulacao-armazenamento-e-comercializacao-2022.pdf
   sha256_pdf: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
-  sha256_md: 364b9663559399b8ecbec2cdf2f30943f6b501fe66adff90c74e9c8abcf77e9a
+  sha256_md: b1bedee056c9a73b656979372e1c94b81f97a295407f8d058e397ecf9d7b78c4
   data_captura: '2026-07-23'
   paginas: 23
   midia: nt-4-05

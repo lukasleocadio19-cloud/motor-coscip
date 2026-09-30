@@ -4,8 +4,8 @@ Gerado por `python -m tools.normas.tabelas relatorio`. Estado de cada tabela con
 
 | Estado | Tabelas |
 | --- | --- |
-| divergente | 3 |
-| verificada | 107 |
+| divergente | 2 |
+| verificada | 108 |
 
 Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale como segundo caminho só até a extração geométrica (`pdfplumber`, workflow `normas-midia.yml`) rodar sobre o PDF oficial conferido por hash.
 
@@ -15,11 +15,11 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | Decreto 42/2018 | Tabela 1 do Anexo II | 21 | verificada | visual + texto | 0 | 0 |
 | Decreto 42/2018 | Tabela 1 do Anexo II | 22 | verificada | visual + texto | 0 | 0 |
 | Decreto 42/2018 | Tabela 1 do Anexo II | 23 | verificada | visual + texto | 0 | 0 |
-| Decreto 42/2018 | Tabela 1 do Anexo II | 24 | divergente | visual + texto | 0 | 1 |
+| Decreto 42/2018 | Tabela 1 do Anexo II | 24 | verificada | visual + geometrica | 0 | 1 |
 | Decreto 42/2018 | Tabela 1 do Anexo II | 25 | verificada | visual + texto | 0 | 0 |
-| Decreto 42/2018 | Tabela 2 | 26 | verificada | visual + texto | 0 | 0 |
-| Decreto 42/2018 | Tabela 3 | 27 | verificada | visual + texto | 0 | 0 |
-| Decreto 42/2018 | Tabela 4 | 28 | verificada | visual + texto | 0 | 0 |
+| Decreto 42/2018 | Tabela 2 | 26 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 3 | 27 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 4 | 28 | verificada | visual + geometrica | 0 | 0 |
 | Decreto 42/2018 | Tabela 5 | 29 | verificada | visual + geometrica | 0 | 0 |
 | Decreto 42/2018 | Tabela 6 | 30 | verificada | visual + geometrica | 0 | 0 |
 | Decreto 42/2018 | Tabela 7 | 31 | verificada | visual + geometrica | 0 | 0 |
@@ -116,7 +116,7 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 4-05 | Tabela 2 do Anexo A | 14 | verificada | visual + geometrica | 0 | 1 |
 | NT 4-05 | Tabela 1 do Anexo B | 15 | verificada | visual + geometrica | 0 | 3 |
 | NT 4-05 | Tabela 2 do Anexo B | 16 | verificada | visual + geometrica | 0 | 3 |
-| NT 4-05 | Tabela 1 do Anexo C | 17 | verificada | visual + texto | 0 | 0 |
+| NT 4-05 | Tabela 1 do Anexo C | 17 | verificada | visual + geometrica | 0 | 0 |
 | NT 4-05 | Tabela 2 do Anexo C | 18 | verificada | visual + texto | 0 | 1 |
 | NT 4-05 | Tabela 1 do Anexo E | 23 | verificada | visual + texto | 0 | 1 |
 | NT 5-05 | Tabela 1 | 5 | verificada | visual + geometrica | 0 | 0 |
