@@ -1,0 +1,49 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 15
+titulo: Classificação de resistência ao fogo para áreas de armazenamento de líquidos no interior de edificações
+pagina: 11
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-11.jpg
+    imagem_sha256: d163625ce5e135572e4c3f64e8195e715f61950ae0f9b1fa2180c768eeee2f25
+    linhas_cabecalho: 1
+    linhas:
+    - - Armazenamento interno
+      - Tempo requerido de resistência ao fogo para paredes, tetos e pisos (min)
+    - - Área menor que 14 m²
+      - '60'
+    - - Área entre 14m² e 45 m²
+      - '120'
+    - - Área maior que 45 m²
+      - '240'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 11
+      tabela_na_pagina: 2
+    linhas:
+    - - Armazenamento interno
+      - Tempo requerido de resistência ao fogo para paredes, tetos e pisos (min)
+    - - Área menor que 14 m²
+      - '60'
+    - - Área entre 14m² e 45 m²
+      - '120'
+    - - Área maior que 45 m²
+      - '240'
+notas:
+- 'Fonte indicada na página: ABNT NBR 17505.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

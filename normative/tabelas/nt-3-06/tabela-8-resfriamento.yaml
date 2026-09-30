@@ -1,0 +1,153 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 8
+titulo: Sistemas de resfriamento para tanques verticais ou horizontais
+pagina: 8
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 0
+  - 10
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-08.jpg
+    imagem_sha256: ac4daa600f8d0c7291680d812f55ad67fa1cae3c5dc56d7e845b7bf7c24e626d
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Tipo de tanque
+    - Classe do líquido
+    - Altura (m)
+    - Capacidade até 60 m³
+    - De 60 a 120 m³
+    - '> 120 m³'
+    linhas:
+    - - Tipo de tanque
+      - Classe do líquido
+      - Altura do tanque vertical ou altura da geratriz superior do tanque horizontal (m)
+      - Capacidade do tanque (m³)
+      - <
+      - <
+    - - ^
+      - ^
+      - ^
+      - ate 60
+      - De 60 a 120
+      - '>120'
+    - - Vertical ou horizontal
+      - I
+      - ≥ 9
+      - H ou CM
+      - ASP
+      - ASP
+    - - ^
+      - ^
+      - < 9
+      - H ou CM
+      - H ou CM
+      - H ou CM
+    - - ^
+      - II
+      - ≥ 9
+      - H ou CM
+      - H ou CM
+      - ASP
+    - - ^
+      - ^
+      - < 9
+      - H ou CM
+      - H ou CM
+      - H ou CM
+    - - ^
+      - IIIA
+      - ≥ 9
+      - Isento
+      - Isento
+      - ASP
+    - - ^
+      - ^
+      - < 9
+      - Isento
+      - Isento
+      - H ou CM
+    - - ^
+      - IIIB
+      - ≥ 9
+      - Isento
+      - Isento
+      - Isento
+    - - ^
+      - ^
+      - < 9
+      - Isento
+      - Isento
+      - Isento
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 8
+      tabela_na_pagina: 1
+    linhas:
+    - - Tipo de tanque
+      - Classe do líquido
+      - Altura do tanque vertical ou altura da geratriz superior do tanque horizontal (m)
+      - Capacidade do tanque (m³)
+    - - ate 60
+      - De 60 a 120
+      - '>120'
+    - - Vertical ou horizontal
+      - I
+      - ≥ 9
+      - H ou CM
+      - ASP
+      - ASP
+    - - < 9
+      - H ou CM
+      - H ou CM
+      - H ou CM
+    - - II
+      - ≥ 9
+      - H ou CM
+      - H ou CM
+      - ASP
+    - - < 9
+      - H ou CM
+      - H ou CM
+      - H ou CM
+    - - IIIA
+      - ≥ 9
+      - Isento
+      - Isento
+      - ASP
+    - - < 9
+      - Isento
+      - Isento
+      - H ou CM
+    - - IIIB
+      - ≥ 9
+      - Isento
+      - Isento
+      - Isento
+    - - < 9
+      - Isento
+      - Isento
+      - Isento
+notas:
+- 'Legenda da tabela: H - mangueiras a partir de hidrantes; CM - canhão-monitor; ASP - aspersor.'
+- Pelo item 6.3.4.1.4, os casos de isenção da Tabela 8 se aplicam somente aos tanques isolados.
+- 'Fonte indicada na página: ABNT NBR 17505.'
+inconsistencias_da_fonte:
+- 'As faixas de capacidade se tocam: "ate 60" e "De 60 a 120" incluem 60 m³; "De 60 a 120" e ">120" não
+  deixam lacuna, mas 60 fica nas duas primeiras.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

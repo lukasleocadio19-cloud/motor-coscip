@@ -1,0 +1,54 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 9
+titulo: Área a ser resfriada dos tanques vizinhos por aspersores
+pagina: 8
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 0
+  - 4
+  linhas_cabecalho: 2
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-08.jpg
+    imagem_sha256: ac4daa600f8d0c7291680d812f55ad67fa1cae3c5dc56d7e845b7bf7c24e626d
+    linhas_cabecalho: 1
+    linhas:
+    - - Número de tanques verticais vizinhos
+      - Área a ser resfriada
+    - - '1'
+      - Área do costado
+    - - '>1'
+      - Somatório de parte das áreas dos costados
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 8
+      tabela_na_pagina: 2
+    linhas:
+    - - Número de tanques verticais vizinhos
+      - Área a ser resfriada
+    - - '1'
+      - Área do costado
+    - - '>1'
+      - Somatório de parte das áreas dos costados
+notas:
+- 'Legenda da tabela (continua no alto da página 9):'
+- 'a) Para até dois tanques vizinhos: Taxa por metro quadrado de metade do somatório das áreas do teto
+  e costado dos tanques vizinhos. Para tanques de teto flutuante, não pode ser considerada a área do teto.'
+- 'b) Para mais de dois tanques vizinhos: Taxa por metro quadrado de um terço do somatório das áreas dos
+  tetos e costados dos tanques vizinhos. Para tanques de teto flutuante, não podem ser consideradas as
+  áreas dos tetos.'
+- 'Fonte indicada na página: ABNT NBR 17505.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

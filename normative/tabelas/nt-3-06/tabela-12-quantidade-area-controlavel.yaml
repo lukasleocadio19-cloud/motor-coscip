@@ -1,0 +1,72 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 12
+titulo: Quantidade máxima permitida de líquidos inflamáveis e combustíveis por área controlável de armazenamento
+pagina: 10
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-10.jpg
+    imagem_sha256: 8d720884baa5782de57c8bff5246e9e49e29d5f9b75e65d6eef4964935dd6592
+    linhas_cabecalho: 1
+    linhas:
+    - - ''
+      - Classe dos líquidos
+      - Quantidade (l)
+    - - Líquidos inflamáveis
+      - IA
+      - '115'
+    - - ^
+      - IB e IC
+      - '460'
+    - - ^
+      - IA, IB, IC combinados
+      - '460'
+    - - Líquidos combustíveis
+      - II
+      - '460'
+    - - ^
+      - IIIA
+      - '1265'
+    - - ^
+      - IIIB
+      - '50600'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 10
+      tabela_na_pagina: 2
+    linhas:
+    - - Classe dos líquidos
+      - Quantidade (l)
+    - - Líquidos inflamáveis
+      - IA
+      - '115'
+    - - IB e IC
+      - '460'
+    - - IA, IB, IC combinados
+      - '460'
+    - - Líquidos combustíveis
+      - II
+      - '460'
+    - - IIIA
+      - '1265'
+    - - IIIB
+      - '50600'
+notas:
+- 'Fonte indicada na página: ABNT NBR 17505.'
+- O item 7.3.2 (logo abaixo da Tabela 13) trata do aumento dessas quantidades nas áreas controláveis de
+  armazenamento; ver o texto do item.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

@@ -1,0 +1,68 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 3
+titulo: Taxa de aplicação e tempo de espuma em tanques verticais
+pagina: 7
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  mesclar_linhas:
+  - - 0
+    - 1
+  linhas_cabecalho: 3
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-07.jpg
+    imagem_sha256: 92409814c0fe1494773cb937961f8da01bab50e93481d840a44c4126c00bcc52
+    linhas_cabecalho: 3
+    cabecalho_publicado:
+    - Tipo
+    - Taxa mínima de aplicação (L/min/m²)
+    - Tempo mínimo (min) — classe I
+    - Tempo mínimo (min) — classe II
+    linhas:
+    - - Tipo
+      - Taxa mínima de aplicação (L/min/m2)
+      - Tempo mínimo (min)
+      - <
+    - - ^
+      - ^
+      - Produtos
+      - <
+    - - ^
+      - ^
+      - Classe I
+      - Classe II
+    - - Câmara de espuma
+      - 4,1
+      - '55'
+      - '30'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 7
+      tabela_na_pagina: 2
+    linhas:
+    - - Tipo
+      - Taxa mínima de aplicação (L/min/m2)
+      - Tempo mínimo (min)
+    - - Produtos
+    - - Classe I
+      - Classe II
+    - - Câmara de espuma
+      - 4,1
+      - '55'
+      - '30'
+notas:
+- 'Fonte indicada na página: ABNT NBR 17505.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

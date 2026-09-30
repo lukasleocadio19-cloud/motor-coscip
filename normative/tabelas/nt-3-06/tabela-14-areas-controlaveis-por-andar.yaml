@@ -1,0 +1,98 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 14
+titulo: Volume máximo permitido e número de áreas controláveis de armazenamento
+pagina: 11
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 4
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-11.jpg
+    imagem_sha256: d163625ce5e135572e4c3f64e8195e715f61950ae0f9b1fa2180c768eeee2f25
+    linhas_cabecalho: 1
+    linhas:
+    - - Andar
+      - Quantidade máxima permitida %
+      - Número de áreas controláveis de armazenamento por andar
+    - - '> 9'
+      - '5'
+      - '1'
+    - - '> 7 e < 9'
+      - '5'
+      - '2'
+    - - '> 4 e < 6'
+      - 12,5
+      - '2'
+    - - '3'
+      - '50'
+      - '2'
+    - - '2'
+      - '75'
+      - '3'
+    - - '1'
+      - '100'
+      - '4'
+    - - 1° subsolo
+      - '75'
+      - '3'
+    - - 2° subsolo
+      - '50'
+      - '2'
+    - - Abaixo do 2° subsolo
+      - NP
+      - NP
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 11
+      tabela_na_pagina: 1
+    linhas:
+    - - Andar
+      - Quantidade máxima permitida %
+      - Número de áreas controláveis de armazenamento por andar
+    - - 9
+      - '5'
+      - '1'
+    - - 7 e 9
+      - '5'
+      - '2'
+    - - '> 4 e < 6'
+      - 12,5
+      - '2'
+    - - '3'
+      - '50'
+      - '2'
+    - - '2'
+      - '75'
+      - '3'
+    - - '1'
+      - '100'
+      - '4'
+    - - 1° subsolo
+      - '75'
+      - '3'
+    - - 2° subsolo
+      - '50'
+      - '2'
+    - - Abaixo do 2° subsolo
+      - NP
+      - NP
+notas:
+- 'Fonte indicada na página: ABNT NBR 17505.'
+- 'NP: não permitido (sigla sem legenda na página).'
+inconsistencias_da_fonte:
+- As faixas de andar deixam de fora o 4º, o 6º, o 7º e o 9º andares ("> 9", "> 7 e < 9", "> 4 e < 6",
+  3, 2, 1).
+- A sigla NP não é definida na página.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

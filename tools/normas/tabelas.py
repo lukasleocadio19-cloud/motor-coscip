@@ -52,7 +52,7 @@ _END = "<!-- /tabela-conferida: {id} -->"
 # Fonte Symbol do PDF extraída como área de uso privado (U+F0xx = código Symbol xx).
 _SYMBOL_GREEK = "αβχδεφγηιϕκλμνοπθρστυϖωξψζ"  # códigos Symbol 0x61 a 0x7A
 _SYMBOL_PUA = str.maketrans({0xF03C: "<", 0xF03E: ">", 0xF03D: "=", 0xF0A3: "≤", 0xF0B3: "≥",
-                             0xF0B1: "±", 0xF0B4: "×", 0xF0B0: "°", 0xF02D: "-",
+                             0xF0B1: "±", 0xF0B4: "×", 0xF0B0: "°", 0xF02D: "-", 0xF020: " ",
                              **{0xF061 + i: ch for i, ch in enumerate(_SYMBOL_GREEK)}})
 
 

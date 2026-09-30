@@ -244,6 +244,26 @@ combustíveis
 | Classe IIIB | PF≥93°C | - |  |  |
 | PV é a pressão vapor PF é o ponto de fulgor |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 1 p4 -->
+### Tabela 1 — Classificação dos líquidos inflamáveis e combustíveis (conferida)
+
+| Líquidos | Ponto de fulgor | Ponto de ebulição |
+| --- | --- | --- |
+| Inflamáveis | Inflamáveis | Inflamáveis |
+| Classe I | PF<37,8°C e PV<275,7 KPa |  |
+| Classe IA | PF<22,8°C | PE<37,8°C |
+| Classe IB | PF<22,8°C | PE ≥ 37,8°C |
+| Classe IC | 22,8°C≤PF<37,8°C | - |
+| Combustíveis | Combustíveis | Combustíveis |
+| Classe II | 37,8°C≤PF<60°C | - |
+| Classe IIIA | 60°C≤PF<93°C | - |
+| Classe IIIB | PF≥93°C | - |
+
+Fonte: NT 3-06, página 4, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Legenda da tabela: PV é a pressão vapor; PF é o ponto de fulgor.
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 1 p4 -->
+
 ---
 
 ## Página 5
@@ -521,6 +541,59 @@ c) aplicadores manuais.
 | 48 < D ≤ 54 | 5 |
 | 54 < D ≤ 60 | 6 |
 
+<!-- tabela-conferida: Tabela 3 p7 -->
+### Tabela 3 — Taxa de aplicação e tempo de espuma em tanques verticais (conferida)
+
+| Tipo | Taxa mínima de aplicação (L/min/m²) | Tempo mínimo (min) — classe I | Tempo mínimo (min) — classe II |
+| --- | --- | --- | --- |
+| Câmara de espuma | 4,1 | 55 | 30 |
+
+Fonte: NT 3-06, página 7, Tabela 3; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 3 p7 -->
+
+<!-- tabela-conferida: Tabela 5 p7 -->
+### Tabela 5 — Número mínimo de câmaras de espuma por tanque (conferida)
+
+| Diâmetro do tanque D (m) | Número de câmaras de espuma |
+| --- | --- |
+| D ≤ 24 | 1 |
+| 24 < D ≤ 36 | 2 |
+| 36 < D ≤ 42 | 3 |
+| 42 < D ≤ 48 | 4 |
+| 48 < D ≤ 54 | 5 |
+| 54 < D ≤ 60 | 6 |
+
+Fonte: NT 3-06, página 7, Tabela 5; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+Pelo item 6.3.2.4, para tanques com diâmetro superior a 60 m deve ser instalada uma câmara de espuma a cada 465 m² ou fração de superfície adicional de líquido.
+<!-- /tabela-conferida: Tabela 5 p7 -->
+
+<!-- tabela-conferida: Tabela 6 p7 -->
+### Tabela 6 — Número mínimo de aplicadores manuais ou canhões-monitores de espuma (bacias com tanques verticais) (conferida)
+
+| Diâmetro do maior tanque (D) m | Número mínimo de aplicadores manuais ou canhões-monitores de espuma |
+| --- | --- |
+| D ≤ 36 | 2 |
+| D > 36 | 3 |
+
+Fonte: NT 3-06, página 7, Tabela 6; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 6 p7 -->
+
+<!-- tabela-conferida: Tabela 7 p7 -->
+### Tabela 7 — Tempo de aplicação (bacias com tanques verticais) (conferida)
+
+| Diâmetro do maior tanque (D) m | Tempo min |
+| --- | --- |
+| D ≤ 10,5 | 10 |
+| 10,5 < D ≤ 28,5 | 20 |
+| D > 28,5 | 30 |
+
+Fonte: NT 3-06, página 7, Tabela 7; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 7 p7 -->
+
 ---
 
 ## Página 8
@@ -622,6 +695,41 @@ aspersores
 | >1 | Somatório de parte das áreas dos costados |
 | Legenda: |  |
 
+<!-- tabela-conferida: Tabela 8 p8 -->
+### Tabela 8 — Sistemas de resfriamento para tanques verticais ou horizontais (conferida)
+
+| Tipo de tanque | Classe do líquido | Altura (m) | Capacidade até 60 m³ | De 60 a 120 m³ | > 120 m³ |
+| --- | --- | --- | --- | --- | --- |
+| Vertical ou horizontal | I | ≥ 9 | H ou CM | ASP | ASP |
+| Vertical ou horizontal | I | < 9 | H ou CM | H ou CM | H ou CM |
+| Vertical ou horizontal | II | ≥ 9 | H ou CM | H ou CM | ASP |
+| Vertical ou horizontal | II | < 9 | H ou CM | H ou CM | H ou CM |
+| Vertical ou horizontal | IIIA | ≥ 9 | Isento | Isento | ASP |
+| Vertical ou horizontal | IIIA | < 9 | Isento | Isento | H ou CM |
+| Vertical ou horizontal | IIIB | ≥ 9 | Isento | Isento | Isento |
+| Vertical ou horizontal | IIIB | < 9 | Isento | Isento | Isento |
+
+Fonte: NT 3-06, página 8, Tabela 8; conferida em 2026-09-29 (visual + texto).
+Legenda da tabela: H - mangueiras a partir de hidrantes; CM - canhão-monitor; ASP - aspersor.
+Pelo item 6.3.4.1.4, os casos de isenção da Tabela 8 se aplicam somente aos tanques isolados.
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 8 p8 -->
+
+<!-- tabela-conferida: Tabela 9 p8 -->
+### Tabela 9 — Área a ser resfriada dos tanques vizinhos por aspersores (conferida)
+
+| Número de tanques verticais vizinhos | Área a ser resfriada |
+| --- | --- |
+| 1 | Área do costado |
+| >1 | Somatório de parte das áreas dos costados |
+
+Fonte: NT 3-06, página 8, Tabela 9; conferida em 2026-09-29 (visual + texto).
+Legenda da tabela (continua no alto da página 9):
+a) Para até dois tanques vizinhos: Taxa por metro quadrado de metade do somatório das áreas do teto e costado dos tanques vizinhos. Para tanques de teto flutuante, não pode ser considerada a área do teto.
+b) Para mais de dois tanques vizinhos: Taxa por metro quadrado de um terço do somatório das áreas dos tetos e costados dos tanques vizinhos. Para tanques de teto flutuante, não podem ser consideradas as áreas dos tetos.
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 9 p8 -->
+
 ---
 
 ## Página 9
@@ -707,6 +815,22 @@ Sistemas alternativos de proteção contra incêndios, podem ser utilizados, des
 | 8 < d ≤ 12 | 3 |
 | d > 12 | 2 |
 | Legenda: a) Para até dois tanques vizinhos: Taxa por metro quadrado de metade do somatório das áreas do teto e costado dos tanques vizinhos. Para tanques de teto flutuante, não pode ser considerada a área do teto. b) Para mais de dois tanques vizinhos: Taxa por metro quadrado de um terço do somatório das áreas dos tetos e costados dos tanques vizinhos. Para tanques de teto flutuante, não podem ser consideradas as áreas dos tetos. |  |
+
+<!-- tabela-conferida: Tabela 10 p9 -->
+### Tabela 10 — Taxa de resfriamento dos tanques vizinhos por canhões-monitores (fixos ou móveis) ou mangueiras a partir de hidrantes (conferida)
+
+| Distância entre costados (m) | Taxa a, b (l/min/m²) |
+| --- | --- |
+| d ≤ 8 | 5 |
+| 8 < d ≤ 12 | 3 |
+| d > 12 | 2 |
+
+Fonte: NT 3-06, página 9, Tabela 10; conferida em 2026-09-29 (visual + texto).
+Legenda da tabela:
+a) Para até dois tanques vizinhos: Taxa por metro quadrado de metade do somatório das áreas do teto e costado dos tanques vizinhos. Para tanques de teto flutuante, não pode ser considerada a área do teto.
+b) Para mais de dois tanques vizinhos: Taxa por metro quadrado de um terço do somatório das áreas dos tetos e costados dos tanques vizinhos. Para tanques de teto flutuante, não podem ser consideradas as áreas dos tetos.
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 10 p9 -->
 
 ---
 
@@ -824,6 +948,49 @@ Fonte - ABNT NBR 17505.
 | IIIA | 230 |
 | IIIB | 460 |
 
+<!-- tabela-conferida: Tabela 11 p10 -->
+### Tabela 11 — Taxas de aplicação de espuma e tempos para plataformas de carregamento e/ou descarregamento de caminhões-tanque e/ou vagões-tanque (conferida)
+
+| Tipo de espuma | Taxa mínima de aplicação (l/min/m²) | Tempo mínimo de aplicação (min) | Produto armazenado |
+| --- | --- | --- | --- |
+| Proteínica Fluorproteínica | 6,5 | 15 | hidrocarbonetos |
+| AFFF e FFFP | 4,1 | 15 | hidrocarbonetos |
+| Para solventes polares | 6,0 | 15 | Líquidos inflamáveis ou combustíveis que requeiram espuma para solventes polares |
+
+Fonte: NT 3-06, página 10, Tabela 11; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 11 p10 -->
+
+<!-- tabela-conferida: Tabela 12 p10 -->
+### Tabela 12 — Quantidade máxima permitida de líquidos inflamáveis e combustíveis por área controlável de armazenamento (conferida)
+
+|  | Classe dos líquidos | Quantidade (l) |
+| --- | --- | --- |
+| Líquidos inflamáveis | IA | 115 |
+| Líquidos inflamáveis | IB e IC | 460 |
+| Líquidos inflamáveis | IA, IB, IC combinados | 460 |
+| Líquidos combustíveis | II | 460 |
+| Líquidos combustíveis | IIIA | 1265 |
+| Líquidos combustíveis | IIIB | 50600 |
+
+Fonte: NT 3-06, página 10, Tabela 12; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+O item 7.3.2 (logo abaixo da Tabela 13) trata do aumento dessas quantidades nas áreas controláveis de armazenamento; ver o texto do item.
+<!-- /tabela-conferida: Tabela 12 p10 -->
+
+<!-- tabela-conferida: Tabela 13 p10 -->
+### Tabela 13 — Quantidade máxima permitida – Limites para ocupações especiais (conferida)
+
+| Classe dos líquidos | Quantidade (l) |
+| --- | --- |
+| I e II | 40 |
+| IIIA | 230 |
+| IIIB | 460 |
+
+Fonte: NT 3-06, página 10, Tabela 13; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 13 p10 -->
+
 ---
 
 ## Página 11
@@ -922,6 +1089,52 @@ b) no mínimo um extintor portátil com capacidade extintora mínima de 40:B, de
 | 60 | 60 |
 | 120 | 90 |
 | 240 | 180 |
+
+<!-- tabela-conferida: Tabela 14 p11 -->
+### Tabela 14 — Volume máximo permitido e número de áreas controláveis de armazenamento (conferida)
+
+| Andar | Quantidade máxima permitida % | Número de áreas controláveis de armazenamento por andar |
+| --- | --- | --- |
+| > 9 | 5 | 1 |
+| > 7 e < 9 | 5 | 2 |
+| > 4 e < 6 | 12,5 | 2 |
+| 3 | 50 | 2 |
+| 2 | 75 | 3 |
+| 1 | 100 | 4 |
+| 1° subsolo | 75 | 3 |
+| 2° subsolo | 50 | 2 |
+| Abaixo do 2° subsolo | NP | NP |
+
+Fonte: NT 3-06, página 11, Tabela 14; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+NP: não permitido (sigla sem legenda na página).
+<!-- /tabela-conferida: Tabela 14 p11 -->
+
+<!-- tabela-conferida: Tabela 15 p11 -->
+### Tabela 15 — Classificação de resistência ao fogo para áreas de armazenamento de líquidos no interior de edificações (conferida)
+
+| Armazenamento interno | Tempo requerido de resistência ao fogo para paredes, tetos e pisos (min) |
+| --- | --- |
+| Área menor que 14 m² | 60 |
+| Área entre 14m² e 45 m² | 120 |
+| Área maior que 45 m² | 240 |
+
+Fonte: NT 3-06, página 11, Tabela 15; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 15 p11 -->
+
+<!-- tabela-conferida: Tabela 16 p11 -->
+### Tabela 16 — Tempo requerido de resistência ao fogo para portas corta-fogo (conferida)
+
+| Tempo requerido de resistência ao fogo pela parede (min) | Tempo requerido de resistência ao fogo pela porta corta-fogo (min) |
+| --- | --- |
+| 60 | 60 |
+| 120 | 90 |
+| 240 | 180 |
+
+Fonte: NT 3-06, página 11, Tabela 16; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 16 p11 -->
 
 ---
 
@@ -1033,6 +1246,34 @@ Fonte - ABNT NBR 17505.
 | Tanque vertical com teto flutuante ou selo flutuante (conforme ABNT NBR 7821) | Metade do diâmetro do tanque |  |  | 1/6 do diâmetro do tanque |  |  |
 | Tanque vertical com teto fixo, com solda fragilizada entre o teto e o costado (conforme ABNT NBR 7821) | Diâmetro do tanque |  |  | 1/3 do diâmetro do tanque |  |  |
 
+<!-- tabela-conferida: Tabela 1 do Anexo A p13 -->
+### Tabela 1 do Anexo A — Localização de tanques de superfície para armazenamento de líquidos estáveis (classes I, II e III A) (conferida)
+
+| Tipo de tanque | Distância mínima até o limite de propriedade, desde que na área adjacente haja ou possa haver construção, inclusive no lado oposto da via pública, nunca inferior a 1,50 m | Distância mínima ao lado mais próximo de qualquer via de circulação interna ou qualquer edificação importante na mesma propriedade, nunca inferior a 1,50 m |
+| --- | --- | --- |
+| Com teto flutuante ou selo flutuante (conforme ABNT NBR 7821) com dispositivo de alívio de emergência limitado a pressão de 17,20 KPa | Metade do diâmetro do Tanque | 1/6 do diâmetro do tanque |
+| Tanque vertical com teto fixo, com solda fragilizada entre o teto e o costado (conforme ABNT NBR 7821) com dispositivo de alívio de emergência limitado a pressão de 17,20 KPa e com diâmetro menor ou igual a 45 m | Metade do diâmetro do tanque | 1/6 do diâmetro do tanque |
+| Tanque vertical com teto fixo, com solda fragilizada entre o teto e o costado (conforme ABNT NBR 7821) com dispositivo de alívio de emergência limitado a pressão de 17,2 KPa e com diâmetro maior que 45 m | Diâmetro do tanque | 1/3 do diâmetro do tanque |
+| Tanque horizontal e vertical, sem solda fragilizada entre teto e costado, com dispositivo de alívio de emergência limitado a pressão de 17,20 KPa | 50% do valor estabelecido na Tabela 5 | 50% do valor estabelecido na Tabela 5 |
+| Qualquer tanque cuja pressão exceda 17,20 KPa | 1,50 vezes o valor da Tabela 5, mas não inferior a 7,50 m | 1,50 vezes o valor da Tabela 5, mas não inferior a 7,50 m |
+
+Fonte: NT 3-06, página 13, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+"Tabela 5" nesta tabela é a Tabela 5 do Anexo A (p. 14).
+<!-- /tabela-conferida: Tabela 1 do Anexo A p13 -->
+
+<!-- tabela-conferida: Tabela 2 do Anexo A p13 -->
+### Tabela 2 do Anexo A — Localização de tanques de superfície para armazenamento de líquidos sujeitos à ebulição turbilhonar (conferida)
+
+| Tipo de tanque | Distância mínima até o limite de propriedade, desde que na área adjacente haja ou possa haver construção, inclusive no lado oposto da via pública, nunca inferior a 1,50 m | Distância mínima ao lado mais próximo de qualquer via de circulação interna ou qualquer edificação importante na mesma propriedade, nunca inferior a 1,50 m |
+| --- | --- | --- |
+| Tanque vertical com teto flutuante ou selo flutuante (conforme ABNT NBR 7821) | Metade do diâmetro do tanque | 1/6 do diâmetro do tanque |
+| Tanque vertical com teto fixo, com solda fragilizada entre o teto e o costado (conforme ABNT NBR 7821) | Diâmetro do tanque | 1/3 do diâmetro do tanque |
+
+Fonte: NT 3-06, página 13, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 2 do Anexo A p13 -->
+
 ---
 
 ## Página 14
@@ -1099,6 +1340,55 @@ Fonte - ABNT NBR 17505.
 | >7571 a 11356 | 49,5 |  |  | 16,5 |  |  |
 | >11356 | 52,5 |  |  | 18,0 |  |  |
 
+<!-- tabela-conferida: Tabela 3 do Anexo A p14 -->
+### Tabela 3 do Anexo A — Localização de tanques de superfície para armazenamento de líquidos instáveis (conferida)
+
+| Tipo de tanque | Distância mínima até o limite de propriedade, desde que na área adjacente haja ou possa haver construção, inclusive no lado oposto da via pública | Distância mínima ao lado mais próximo de qualquer via de circulação interna ou qualquer edificação importante na mesma propriedade |
+| --- | --- | --- |
+| Tanques horizontais e verticais com ventilação de alívio de emergência para limitar a pressão máxima até 17 KPa | O valor estabelecido na Tabela 5, mas não inferior a 7,50 m | 7,50 m |
+| Tanques horizontais e verticais com ventilação de alívio de emergência para permitir a pressão máxima acima de 17 KPa | 2 vezes o valor estabelecido pela Tabela 5, mas não inferior a 15 m | 15 m |
+
+Fonte: NT 3-06, página 14, Tabela 3 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 3 do Anexo A p14 -->
+
+<!-- tabela-conferida: Tabela 4 do Anexo A p14 -->
+### Tabela 4 do Anexo A — Localização de tanques de superfície para armazenamento de líquidos de classe III B (conferida)
+
+| Capacidade do tanque (m³) | Distância mínima até o limite da propriedade (m) | Distância mínima do lado mais próximo de qualquer via de circulação interna ou qualquer edificação importante na mesma propriedade (m) |
+| --- | --- | --- |
+| Até 46 | 1,5 | 1,5 |
+| De 46 a 114 | 3,0 | 1,5 |
+| De 114 a 190 | 3,0 | 3,0 |
+| De 190 a 380 | 4,5 | 3,0 |
+| Maior que 380 | 4,5 | 4,5 |
+
+Fonte: NT 3-06, página 14, Tabela 4 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 4 do Anexo A p14 -->
+
+<!-- tabela-conferida: Tabela 5 do Anexo A p14 -->
+### Tabela 5 do Anexo A — Tabela de referência para ser utilizada nas Tabelas 1, 2 e 3 (quando citada nelas) (conferida)
+
+| Capacidade do tanque (m³) | Distância mínima até o limite da propriedade, desde que na área adjacente haja ou possa haver construção, inclusive no lado oposto da via pública (m) | Distância mínima do lado mais próximo de qualquer via de circulação interna ou qualquer edificação importante na mesma propriedade (m) |
+| --- | --- | --- |
+| Até 1 | 1,5 | 1,5 |
+| > 1 a 3 | 3,0 | 1,5 |
+| > 3 a 45 | 4,5 | 1,5 |
+| > 45 a 113 | 6,0 | 1,5 |
+| >113 a 189 | 9,0 | 3,0 |
+| >189 a 378 | 15,0 | 4,5 |
+| >378 a 1893 | 24,0 | 7,5 |
+| >1893 a 3785 | 30,0 | 10,5 |
+| >3785 a 7571 | 40,5 | 13.5 |
+| >7571 a 11356 | 49,5 | 16,5 |
+| >11356 | 52,5 | 18,0 |
+
+Fonte: NT 3-06, página 14, Tabela 5 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+Conferência: as duas distâncias crescem (ou ficam iguais) com a capacidade.
+<!-- /tabela-conferida: Tabela 5 do Anexo A p14 -->
+
 ---
 
 ## Página 15
@@ -1148,6 +1438,22 @@ Fonte - ABNT NBR 17505.
 | De 20.001 l a 100.000 l | Dois extintores de pó 80-B e dois extintores de pó sobre rodas 80-B e dois extintores de espuma mecânica 10-B e dois extintores de espuma mecânica sobre rodas 40-B ou três extintores de pó sobre rodas 80-B e dois extintores de espuma mecânica 10-B e dois extintores de espuma mecânica sobre rodas 40-B |
 | Superior a 100.000 l | Quatro extintores de pó sobre rodas 80-B e três extintores de espuma mecânica sobre rodas 40-B |
 
+<!-- tabela-conferida: Tabela 7 do Anexo A p15 -->
+### Tabela 7 do Anexo A — Proteção por extintores de incêndio para tanques (conferida)
+
+| Capacidade de armazenamento | Quantidade e capacidade extintora mínima |
+| --- | --- |
+| Até 500 l | Dois extintores de pó 20-B |
+| De 501 l a 5.000 l | Dois extintores de pó 40-B e um extintor de espuma mecânica 10-B |
+| De 5.001 l a 10.000 l | Dois extintores de pó 80-B e dois extintores de espuma mecânica 10-B ou um extintor de pó 40-B e um extintor de pó sobre rodas 80-B e dois extintores de espuma mecânica 10-B |
+| De 10.001 a 20.000 l | Um extintor de pó 80-B e um extintor de pó sobre rodas 80-B e um extintor de espuma mecânica 10-B e um extintor de espuma mecânica sobre rodas 40-B ou Quatro extintores de pó 40-B e um extintor de pó sobre rodas 80-B e um extintor de espuma mecânica 10-B e Um extintor de espuma mecânica sobre rodas 40-B |
+| De 20.001 l a 100.000 l | Dois extintores de pó 80-B e dois extintores de pó sobre rodas 80-B e dois extintores de espuma mecânica 10-B e dois extintores de espuma mecânica sobre rodas 40-B ou três extintores de pó sobre rodas 80-B e dois extintores de espuma mecânica 10-B e dois extintores de espuma mecânica sobre rodas 40-B |
+| Superior a 100.000 l | Quatro extintores de pó sobre rodas 80-B e três extintores de espuma mecânica sobre rodas 40-B |
+
+Fonte: NT 3-06, página 15, Tabela 7 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+<!-- /tabela-conferida: Tabela 7 do Anexo A p15 -->
+
 ---
 
 ## Página 16
@@ -1180,3 +1486,18 @@ Fonte - ABNT NBR 17505.
 |  | Capacidade máxima de armazenamento por unidade de área |  | 85 l/m² em áreas de armazenamento ou exposição e passagens adjacentes |  |
 | Com sistema de proteção automático | Quantidades máximas permitidas | 450 l | 28.500 l por área controlável de armazenamento: permitida, no máximo duas áreas controláveis, separadas por uma parede com isolamento de fogo de 60 min no mínimo | 100.000 l |
 |  | Capacidade máxima de armazenamento por unidade de área |  | 170 l/m² em área de armazenamento ou de exposição e passagens adjacentes |  |
+<!-- tabela-conferida: Tabela 8 do Anexo A p16 -->
+### Tabela 8 do Anexo A — Quantidades máximas permitidas para armazenamento e exposição em ocupações comerciais (conferida)
+
+| Nível de proteção | Limites de estocagem | I A (Somente no piso térreo) | Classificação de líquidos I B, I C, II e III A (qualquer combinação) | III B |
+| --- | --- | --- | --- | --- |
+| Sem sistema de proteção automática | Quantidades máximas permitidas | 250 l | 14.250 l por área controlável de armazenamento: permitida, no máximo duas áreas edificadas separadas por parede com isolamento de fogo por 60 min, no mínimo | 57.000 l |
+| Sem sistema de proteção automática | Capacidade máxima de armazenamento por unidade de área |  | 85 l/m² em áreas de armazenamento ou exposição e passagens adjacentes | 57.000 l |
+| Com sistema de proteção automático | Quantidades máximas permitidas | 450 l | 28.500 l por área controlável de armazenamento: permitida, no máximo duas áreas controláveis, separadas por uma parede com isolamento de fogo de 60 min no mínimo | 100.000 l |
+| Com sistema de proteção automático | Capacidade máxima de armazenamento por unidade de área |  | 170 l/m² em área de armazenamento ou de exposição e passagens adjacentes | 100.000 l |
+
+Fonte: NT 3-06, página 16, Tabela 8 do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: ABNT NBR 17505.
+Conferência aritmética: com sistema automático os limites dobram (14.250 → 28.500 l; 85 → 170 l/m²); o de I A vai de 250 para 450 l e o de III B de 57.000 para 100.000 l.
+<!-- /tabela-conferida: Tabela 8 do Anexo A p16 -->
+

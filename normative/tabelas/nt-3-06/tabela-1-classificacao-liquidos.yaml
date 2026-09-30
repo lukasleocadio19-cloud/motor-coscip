@@ -1,0 +1,94 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 1
+titulo: Classificação dos líquidos inflamáveis e combustíveis
+pagina: 4
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 0
+  - 11
+  linhas_cabecalho: 2
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-04.jpg
+    imagem_sha256: 01a51c92b91fd8a96a04f2ec497cb70ae549e19f75571db88e58ae75766c74a6
+    linhas_cabecalho: 1
+    linhas:
+    - - Líquidos
+      - Ponto de fulgor
+      - Ponto de ebulição
+    - - Inflamáveis
+      - <
+      - <
+    - - Classe I
+      - PF<37,8°C e PV<275,7 KPa
+      - ''
+    - - Classe IA
+      - PF<22,8°C
+      - PE<37,8°C
+    - - Classe IB
+      - PF<22,8°C
+      - PE ≥ 37,8°C
+    - - Classe IC
+      - 22,8°C≤PF<37,8°C
+      - '-'
+    - - Combustíveis
+      - <
+      - <
+    - - Classe II
+      - 37,8°C≤PF<60°C
+      - '-'
+    - - Classe IIIA
+      - 60°C≤PF<93°C
+      - '-'
+    - - Classe IIIB
+      - PF≥93°C
+      - '-'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 4
+      tabela_na_pagina: 1
+    linhas:
+    - - Líquidos
+      - Ponto de fulgor
+      - Ponto de ebulição
+    - - Inflamáveis
+    - - Classe I
+      - PF<37,8°C e PV<275,7 KPa
+    - - Classe IA
+      - PF<22,8°C
+      - PE<37,8°C
+    - - Classe IB
+      - PF<22,8°C
+      - PE ≥ 37,8°C
+    - - Classe IC
+      - 22,8°C≤PF<37,8°C
+      - '-'
+    - - Combustíveis
+    - - Classe II
+      - 37,8°C≤PF<60°C
+      - '-'
+    - - Classe IIIA
+      - 60°C≤PF<93°C
+      - '-'
+    - - Classe IIIB
+      - PF≥93°C
+      - '-'
+notas:
+- 'Legenda da tabela: PV é a pressão vapor; PF é o ponto de fulgor.'
+- 'Fonte indicada na página: ABNT NBR 17505.'
+inconsistencias_da_fonte:
+- A legenda não define PE (ponto de ebulição), usado nas classes IA e IB.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

@@ -6,11 +6,11 @@ resumo:
   imagens_presentes: 527
   imagens_ausentes: 0
   tabelas_por_estado:
-    bruto: 92
+    bruto: 77
     capa: 38
-    divergente: 2
-    nao_tabela: 18
-    verificada: 152
+    divergente: 5
+    nao_tabela: 19
+    verificada: 178
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -2505,7 +2505,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-01-Cozinha-profissional.pdf
   sha256_pdf: 39376c0411829f52c7e1c06a9dcde0f09528d2e5db87b4e3915d796783b2ebca
-  sha256_md: 265a974729a2d40b3a1023b2e0fc153740da43aaa0cc9ddfe01e8679eb202ed7
+  sha256_md: eacd4c589de192a10e270054c504924d269a9440ea5c795fbf6bdcb0823d8e7b
   data_captura: '2026-07-23'
   paginas: 6
   midia: nt-3-01
@@ -2530,9 +2530,20 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 4
-    estado: bruto
+    estado: nao_tabela
+    motivo: definição 4.11 (efluentes) em duas colunas de texto
   - pagina: 5
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-3-01/tabela-1-equipamentos-coccao.yaml
+    estado: verificada
+  - pagina: 5
+    tabela: Tabela 2 (continuação)
+    arquivo: normative/tabelas/nt-3-01/tabela-2-exaustao-continuacao.yaml
+    estado: verificada
+  - pagina: 5
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-3-01/tabela-2-exaustao.yaml
+    estado: verificada
 - arquivo: nt-3-02-gas-glp-gn-uso-em-edificacoes.md
   documento: NT 3-02
   titulo: NT 3-02 - Gás (GLP-GN) - Uso em edificações e áreas de risco
@@ -2645,7 +2656,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_3-03_1Ed_2019_alterada_Portaria_1317_2025.pdf
   sha256_pdf: 181e7aa6c1341d3032421dde20512ea3e9c55b5588fbd188a1ab3eaa31b958de
-  sha256_md: bcad08e244eb486e66d947dccd0ebb617ae8aa26bffd2c9d6e2859458ec8d6b7
+  sha256_md: d79d018d164c01e47af5b2f2a07a6e29a2d82488ebcabe846114c6bb1abd0352
   data_captura: '2026-07-23'
   paginas: 6
   midia: nt-3-03
@@ -2678,9 +2689,13 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 5
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-3-03/tabela-1-volume-por-pavimento.yaml
+    estado: verificada
   - pagina: 6
-    estado: bruto
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-3-03/tabela-2-periodo-lge.yaml
+    estado: verificada
 - arquivo: nt-3-04-subestacoes-eletricas.md
   documento: NT 3-04
   titulo: NT 3-04 - Subestações elétricas
@@ -2730,7 +2745,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-06-Armazenagem-de-liquidos-inflamaveis-e-combustiveis.pdf
   sha256_pdf: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
-  sha256_md: b7c2fe0a4f12be08313c6f6ecae11be26d500b88000b6d0a465ef4e4ea28ecc4
+  sha256_md: 6a995275b1a65736ffcdbf59e0b345feb7a9e30d5d5086dcf29d52909d9afa9d
   data_captura: '2026-07-23'
   paginas: 16
   midia: nt-3-06
@@ -2803,27 +2818,101 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 4
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-3-06/tabela-1-classificacao-liquidos.yaml
+    estado: verificada
   - pagina: 5
-    estado: bruto
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-3-06/tabela-2-espacamento-tanques.yaml
+    estado: divergente
   - pagina: 7
-    estado: bruto
+    tabela: Tabela 3
+    arquivo: normative/tabelas/nt-3-06/tabela-3-espuma-tanques-verticais.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Tabela 4
+    arquivo: normative/tabelas/nt-3-06/tabela-4-espuma-solventes-polares.yaml
+    estado: divergente
+  - pagina: 7
+    tabela: Tabela 5
+    arquivo: normative/tabelas/nt-3-06/tabela-5-camaras-espuma.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Tabela 6
+    arquivo: normative/tabelas/nt-3-06/tabela-6-aplicadores-manuais.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Tabela 7
+    arquivo: normative/tabelas/nt-3-06/tabela-7-tempo-aplicacao.yaml
+    estado: verificada
   - pagina: 8
-    estado: bruto
+    tabela: Tabela 8
+    arquivo: normative/tabelas/nt-3-06/tabela-8-resfriamento.yaml
+    estado: verificada
+  - pagina: 8
+    tabela: Tabela 9
+    arquivo: normative/tabelas/nt-3-06/tabela-9-area-resfriada.yaml
+    estado: verificada
   - pagina: 9
-    estado: bruto
+    tabela: Tabela 10
+    arquivo: normative/tabelas/nt-3-06/tabela-10-taxa-resfriamento.yaml
+    estado: verificada
   - pagina: 10
-    estado: bruto
+    tabela: Tabela 11
+    arquivo: normative/tabelas/nt-3-06/tabela-11-espuma-plataformas.yaml
+    estado: verificada
+  - pagina: 10
+    tabela: Tabela 12
+    arquivo: normative/tabelas/nt-3-06/tabela-12-quantidade-area-controlavel.yaml
+    estado: verificada
+  - pagina: 10
+    tabela: Tabela 13
+    arquivo: normative/tabelas/nt-3-06/tabela-13-ocupacoes-especiais.yaml
+    estado: verificada
   - pagina: 11
-    estado: bruto
+    tabela: Tabela 14
+    arquivo: normative/tabelas/nt-3-06/tabela-14-areas-controlaveis-por-andar.yaml
+    estado: verificada
+  - pagina: 11
+    tabela: Tabela 15
+    arquivo: normative/tabelas/nt-3-06/tabela-15-resistencia-areas.yaml
+    estado: verificada
+  - pagina: 11
+    tabela: Tabela 16
+    arquivo: normative/tabelas/nt-3-06/tabela-16-resistencia-portas.yaml
+    estado: verificada
   - pagina: 13
-    estado: bruto
+    tabela: Tabela 1 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-1-estaveis.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela 2 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-2-ebulicao-turbilhonar.yaml
+    estado: verificada
   - pagina: 14
-    estado: bruto
+    tabela: Tabela 3 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-3-instaveis.yaml
+    estado: verificada
+  - pagina: 14
+    tabela: Tabela 4 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-4-classe-iiib.yaml
+    estado: verificada
+  - pagina: 14
+    tabela: Tabela 5 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-5-referencia.yaml
+    estado: verificada
   - pagina: 15
-    estado: bruto
+    tabela: Tabela 6 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-6-edificacoes.yaml
+    estado: divergente
+  - pagina: 15
+    tabela: Tabela 7 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-7-extintores.yaml
+    estado: verificada
   - pagina: 16
-    estado: bruto
+    tabela: Tabela 8 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-8-ocupacoes-comerciais.yaml
+    estado: verificada
 - arquivo: nt-3-07-heliponto-e-heliporto.md
   documento: NT 3-07
   titulo: NT 3-07 - Heliponto e heliporto

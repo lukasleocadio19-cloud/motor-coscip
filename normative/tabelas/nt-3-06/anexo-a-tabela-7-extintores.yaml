@@ -1,0 +1,75 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 7 do Anexo A
+titulo: Proteção por extintores de incêndio para tanques
+pagina: 15
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-15.jpg
+    imagem_sha256: 864bef45ce9746e08e7a7993b56088906dee52d9fb7f37431620b1b80dadb691
+    linhas_cabecalho: 1
+    linhas:
+    - - Capacidade de armazenamento
+      - Quantidade e capacidade extintora mínima
+    - - Até 500 l
+      - Dois extintores de pó 20-B
+    - - De 501 l a 5.000 l
+      - Dois extintores de pó 40-B e um extintor de espuma mecânica 10-B
+    - - De 5.001 l a 10.000 l
+      - Dois extintores de pó 80-B e dois extintores de espuma mecânica 10-B ou um extintor de pó 40-B
+        e um extintor de pó sobre rodas 80-B e dois extintores de espuma mecânica 10-B
+    - - De 10.001 a 20.000 l
+      - Um extintor de pó 80-B e um extintor de pó sobre rodas 80-B e um extintor de espuma mecânica 10-B
+        e um extintor de espuma mecânica sobre rodas 40-B ou Quatro extintores de pó 40-B e um extintor
+        de pó sobre rodas 80-B e um extintor de espuma mecânica 10-B e Um extintor de espuma mecânica
+        sobre rodas 40-B
+    - - De 20.001 l a 100.000 l
+      - Dois extintores de pó 80-B e dois extintores de pó sobre rodas 80-B e dois extintores de espuma
+        mecânica 10-B e dois extintores de espuma mecânica sobre rodas 40-B ou três extintores de pó sobre
+        rodas 80-B e dois extintores de espuma mecânica 10-B e dois extintores de espuma mecânica sobre
+        rodas 40-B
+    - - Superior a 100.000 l
+      - Quatro extintores de pó sobre rodas 80-B e três extintores de espuma mecânica sobre rodas 40-B
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 15
+      tabela_na_pagina: 2
+    linhas:
+    - - Capacidade de armazenamento
+      - Quantidade e capacidade extintora mínima
+    - - Até 500 l
+      - Dois extintores de pó 20-B
+    - - De 501 l a 5.000 l
+      - Dois extintores de pó 40-B e um extintor de espuma mecânica 10-B
+    - - De 5.001 l a 10.000 l
+      - Dois extintores de pó 80-B e dois extintores de espuma mecânica 10-B ou um extintor de pó 40-B
+        e um extintor de pó sobre rodas 80-B e dois extintores de espuma mecânica 10-B
+    - - De 10.001 a 20.000 l
+      - Um extintor de pó 80-B e um extintor de pó sobre rodas 80-B e um extintor de espuma mecânica 10-B
+        e um extintor de espuma mecânica sobre rodas 40-B ou Quatro extintores de pó 40-B e um extintor
+        de pó sobre rodas 80-B e um extintor de espuma mecânica 10-B e Um extintor de espuma mecânica
+        sobre rodas 40-B
+    - - De 20.001 l a 100.000 l
+      - Dois extintores de pó 80-B e dois extintores de pó sobre rodas 80-B e dois extintores de espuma
+        mecânica 10-B e dois extintores de espuma mecânica sobre rodas 40-B ou três extintores de pó sobre
+        rodas 80-B e dois extintores de espuma mecânica 10-B e dois extintores de espuma mecânica sobre
+        rodas 40-B
+    - - Superior a 100.000 l
+      - Quatro extintores de pó sobre rodas 80-B e três extintores de espuma mecânica sobre rodas 40-B
+notas:
+- 'Fonte indicada na página: ABNT NBR 17505.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

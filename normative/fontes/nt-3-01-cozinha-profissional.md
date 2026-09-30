@@ -277,6 +277,67 @@ e) plaqueta de identificação do fabricante.
 |  |  |  | Proteção passiva |  |  | Proteção passiva |  |  |
 |  |  |  | Extintor portátil |  |  | Extintor portátil |  |  |
 
+<!-- tabela-conferida: Tabela 1 p5 -->
+### Tabela 1 — Classificação dos equipamentos de cocção (conferida)
+
+| Leves | Moderados | Severos | Combustível sólido |
+| --- | --- | --- | --- |
+| Banho-maria | Fogões | Charbroiler | Forno a lenha |
+| Caldeirão | Fritadeiras | Chapa de grelhados | Churrasqueira a carvão |
+| Forno elétrico/gás | Churrasqueira elétrica | Bifeteira |  |
+| Leves | Moderados | Severos | Combustível sólido |
+| Estufas | Churrasqueira a gás | Frigideira |  |
+| Forno de microondas | Fornos combinados |  |  |
+| Cafeteiras | Galeteria |  |  |
+| Lava-louças | Chapa quente |  |  |
+| Tostadeiras | Sanduicheira |  |  |
+| Leiteira |  |  |  |
+| Cozedor de massas |  |  |  |
+
+Fonte: NT 3-01, página 5, Tabela 1; conferida em 2026-09-29 (visual + texto).
+A linha de cabeçalho (Leves, Moderados, Severos, Combustível sólido) repete-se no meio da tabela, como na página.
+Obs. da tabela: A classificação do sistema de exaustão, quanto a este tópico, deve ser feita pela presença dos equipamentos mais críticos sob o mesmo captor.
+Fonte indicada na página: ABNT NBR 14518.
+<!-- /tabela-conferida: Tabela 1 p5 -->
+
+<!-- tabela-conferida: Tabela 2 p5 -->
+### Tabela 2 — Requisitos básicos do sistema de exaustão mecânica (conferida)
+
+| Sistema de exaustão | Edificação de economia única | Edificação de economia múltipla |
+| --- | --- | --- |
+| TIPO I moderado e severo | Requer damper corta-fogo | Requer damper corta-fogo |
+| TIPO I moderado e severo | Selagem de travessias | Selagem de travessias |
+| TIPO I moderado e severo | Proteção passiva | Proteção passiva |
+| TIPO I moderado e severo | Extintor portátil | Extintor portátil |
+| TIPO I moderado e severo | Dispensa de sistema fixo de extinção de incêndio | Requer sistema fixo de extinção de incêndio |
+| TIPO II leve | Dispensa damper corta-fogo | Requer damper corta-fogo |
+| TIPO II leve | Selagem de travessias | Selagem de travessias |
+| TIPO II leve | Dispensa proteção passiva | Dispensa proteção passiva |
+| TIPO II leve | Extintor portátil | Extintor portátil |
+| TIPO II leve | Dispensa de sistema fixo de extinção de incêndio | Dispensa de sistema fixo de extinção de incêndio |
+| Tipo III combustível sólido | Requer damper corta-fogo | Requer damper corta-fogo |
+| Tipo III combustível sólido | Selagem de travessias | Selagem de travessias |
+| Tipo III combustível sólido | Proteção passiva | Proteção passiva |
+| Tipo III combustível sólido | Extintor portátil | Extintor portátil |
+
+Fonte: NT 3-01, página 5, Tabela 2; conferida em 2026-09-29 (visual + texto).
+A tabela continua no alto da coluna da direita (última linha do Tipo III e observação): ver "Tabela 2 (continuação)".
+Fonte indicada na página: ABNT NBR 14518.
+<!-- /tabela-conferida: Tabela 2 p5 -->
+
+<!-- tabela-conferida: Tabela 2 (continuação) p5 -->
+### Tabela 2 (continuação) — Requisitos básicos do sistema de exaustão mecânica (continuação na coluna da direita) (conferida)
+
+| Sistema de exaustão | Edificação de economia única | Edificação de economia múltipla |
+| --- | --- | --- |
+|  | Requer sistema fixo de extinção de incêndio | Requer sistema fixo de extinção de incêndio |
+
+Fonte: NT 3-01, página 5, Tabela 2 (continuação); conferida em 2026-09-29 (visual + texto).
+Na página a primeira célula desta linha está em branco: a linha pertence ao Tipo III (combustível sólido), cuja célula mesclada fica no pé da coluna da esquerda.
+Obs. da tabela: Os sistemas de exaustão que atenderem simultaneamente a equipamentos geradores e não geradores de vapores de óleo e/ou partículas de gordura serão classificados como do Tipo I.
+Fonte indicada na página: ABNT NBR 14518.
+<!-- /tabela-conferida: Tabela 2 (continuação) p5 -->
+
 ---
 
 ## Página 6

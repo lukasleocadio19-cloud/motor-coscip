@@ -1,0 +1,112 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 5 do Anexo A
+titulo: Tabela de referência para ser utilizada nas Tabelas 1, 2 e 3 (quando citada nelas)
+pagina: 14
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 5
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-14.jpg
+    imagem_sha256: 07c27ace04fce0cbc8e403853bb1b39e3c7be28809d2c77cbd260e54d0d76cde
+    linhas_cabecalho: 1
+    linhas:
+    - - Capacidade do tanque (m³)
+      - Distância mínima até o limite da propriedade, desde que na área adjacente haja ou possa haver
+        construção, inclusive no lado oposto da via pública (m)
+      - Distância mínima do lado mais próximo de qualquer via de circulação interna ou qualquer edificação
+        importante na mesma propriedade (m)
+    - - Até 1
+      - 1,5
+      - 1,5
+    - - '> 1 a 3'
+      - 3,0
+      - 1,5
+    - - '> 3 a 45'
+      - 4,5
+      - 1,5
+    - - '> 45 a 113'
+      - 6,0
+      - 1,5
+    - - '>113 a 189'
+      - 9,0
+      - 3,0
+    - - '>189 a 378'
+      - 15,0
+      - 4,5
+    - - '>378 a 1893'
+      - 24,0
+      - 7,5
+    - - '>1893 a 3785'
+      - 30,0
+      - 10,5
+    - - '>3785 a 7571'
+      - 40,5
+      - '13.5'
+    - - '>7571 a 11356'
+      - 49,5
+      - 16,5
+    - - '>11356'
+      - 52,5
+      - 18,0
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 14
+      tabela_na_pagina: 3
+    linhas:
+    - - Capacidade do tanque (m³)
+      - Distância mínima até o limite da propriedade, desde que na área adjacente haja ou possa haver
+        construção, inclusive no lado oposto da via pública (m)
+      - Distância mínima do lado mais próximo de qualquer via de circulação interna ou qualquer edificação
+        importante na mesma propriedade (m)
+    - - Até 1
+      - 1,5
+      - 1,5
+    - - '> 1 a 3'
+      - 3,0
+      - 1,5
+    - - '> 3 a 45'
+      - 4,5
+      - 1,5
+    - - '> 45 a 113'
+      - 6,0
+      - 1,5
+    - - '>113 a 189'
+      - 9,0
+      - 3,0
+    - - '>189 a 378'
+      - 15,0
+      - 4,5
+    - - '>378 a 1893'
+      - 24,0
+      - 7,5
+    - - '>1893 a 3785'
+      - 30,0
+      - 10,5
+    - - '>3785 a 7571'
+      - 40,5
+      - '13.5'
+    - - '>7571 a 11356'
+      - 49,5
+      - 16,5
+    - - '>11356'
+      - 52,5
+      - 18,0
+notas:
+- 'Fonte indicada na página: ABNT NBR 17505.'
+- 'Conferência: as duas distâncias crescem (ou ficam iguais) com a capacidade.'
+inconsistencias_da_fonte:
+- '"13.5" com ponto decimal na faixa >3785 a 7571 (as demais células usam vírgula: 13,5).'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

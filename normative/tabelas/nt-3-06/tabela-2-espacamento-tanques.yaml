@@ -1,0 +1,98 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 2
+titulo: Espaçamento mínimo entre tanques de superfície para armazenamento de líquidos (costado a costado)
+pagina: 5
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  comparar_por_coluna: true
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-05.jpg
+    imagem_sha256: 7b0b728cbe25e16c27b64e963d2dd7c0c2d827c83096533337d77194cd855849
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Diâmetro do tanque
+    - Teto flutuante ou selo flutuante
+    - Teto fixo ou horizontais — líquidos classe I ou II
+    - Teto fixo ou horizontais — líquidos classe IIIA
+    linhas:
+    - - Diâmetro do tanque
+      - Tanques com teto flutuante ou selo flutuante
+      - Tanques verticais com teto fixo ou horizontais
+      - <
+    - - ^
+      - ^
+      - Líquidos classe I ou II
+      - Líquidos classe IIIA
+    - - Todos os tanques com diâmetro ≤ 45 m
+      - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
+      - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
+      - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
+    - - Tanques com diâmetro > 45 m, se for prevista bacia de contenção à distância
+      - 1/6 da soma dos diâmetros dos tanques adjacentes
+      - 1/4 da soma dos diâmetros dos tanques adjacentes
+      - 1/6 da soma dos diâmetros dos tanques adjacentes
+    - - Tanques com diâmetro > 45 m, se for previsto dique
+      - 1/4 da soma dos diâmetros dos tanques adjacentes
+      - 1/3 da soma dos diâmetros dos tanques adjacentes
+      - 1/4 da soma dos diâmetros dos tanques adjacentes
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 5
+      tabela_na_pagina: 1
+    linhas:
+    - - Diâmetro do tanque
+      - Tanques
+      - Tanques verticais com teto
+    - - com teto
+      - fixo ou
+    - - flutuante
+      - horizontais
+    - - ou selo
+      - Líquidos
+      - Líquidos
+    - - flutuante
+      - classe I ou II
+      - classe IIIA
+    - - Todos os tanques com diâmetro ≤ 45 m
+      - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
+      - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
+      - 1/6 da soma dos diâmetros do tanque principal e do seu adjacente, mas não inferior a 1,0 m
+    - - Tanques com diâmetro > 45 m, se for prevista bacia de contenção à distância
+      - 1/6 da soma dos diâmetros dos tanques adjacentes
+      - 1/4 da soma dos diâmetros dos tanques adjacentes
+      - 1/6 da soma dos diâmetros dos tanques adjacentes
+    - - Tanques com diâmetro > 45 m, se for previsto dique
+      - 1/4 da soma dos diâmetros dos tanques adjacentes
+      - 1/3 da soma dos diâmetros dos tanques adjacentes
+      - 1/4 da soma dos diâmetros dos tanques adjacentes
+notas:
+- 'Fonte indicada na página: ABNT NBR 17505.'
+estado: divergente
+resultado:
+  estado: divergente
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 3
+    - 2
+    - 4
+    - 4
+    - 4
+  - - 3
+    - 2
+    - 2
+    - 3
+    - 3
+    - 4
+    - 4
+    - 4

@@ -1,0 +1,197 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 6 do Anexo A
+titulo: Localização de edificações com tanques de armazenamento em relação aos limites de propriedade,
+  desde que na área adjacente haja ou possa haver construção, vias de circulação interna e a edificação
+  próxima mais importante na mesma propriedade
+pagina: 15
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  comparar_por_coluna: true
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-15.jpg
+    imagem_sha256: 864bef45ce9746e08e7a7993b56088906dee52d9fb7f37431620b1b80dadb691
+    linhas_cabecalho: 3
+    cabecalho_publicado:
+    - Tanque de maior capacidade (m³)
+    - Limite de propriedade — líquidos estáveis — ≤17 KPa
+    - Limite de propriedade — líquidos estáveis — >17 KPa
+    - Limite de propriedade — líquidos instáveis — ≤17 KPa
+    - Limite de propriedade — líquidos instáveis — >17 KPa
+    - Via de circulação/edificação — líquidos estáveis — ≤17 KPa
+    - Via de circulação/edificação — líquidos estáveis — >17 KPa
+    - Via de circulação/edificação — líquidos instáveis — ≤17 KPa
+    - Via de circulação/edificação — líquidos instáveis — >17 KPa
+    linhas:
+    - - Tanque de maior capacidade, em operação com líquidos m³
+      - Distância mínima até o limite de propriedade, desde que na área adjacente haja ou possa haver
+        construção (m)
+      - <
+      - <
+      - <
+      - Distância mínima do lado mais próximo de qualquer via de circulação interna ou qualquer edificação
+        importante na mesma propriedade (m)
+      - <
+      - <
+      - <
+    - - ^
+      - Líquidos estáveis alívio de emergência
+      - <
+      - Líquidos instáveis alívio de emergência
+      - <
+      - Líquidos estáveis alívio de emergência
+      - <
+      - Líquidos instáveis alívio de emergência
+      - <
+    - - ^
+      - ≤17 KPa
+      - '>17 KPa'
+      - ≤17 KPa
+      - '>17 KPa'
+      - ≤17 KPa
+      - '>17 KPa'
+      - ≤17 KPa
+      - '>17 KPa'
+    - - Até 46
+      - 4,5
+      - 7,5
+      - 12,0
+      - 18,0
+      - 1,5
+      - 3,0
+      - 4,5
+      - 6,0
+    - - 46 a 114
+      - 6,0
+      - 9,0
+      - 15,0
+      - 24,0
+      - 1,5
+      - 3,0
+      - 4,5
+      - 6,0
+    - - 114 a 190
+      - 9,0
+      - 13,5
+      - 22,5
+      - 36,0
+      - 3,0
+      - 4,5
+      - 7,5
+      - 12,0
+    - - 190 a 380
+      - 15,0
+      - 22,5
+      - 37,5
+      - 60,0
+      - 4,5
+      - 7,5
+      - 12,0
+      - 18,0
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 15
+      tabela_na_pagina: 1
+    linhas:
+    - - Tanque de maior capacidade, em operação com líquidos m3
+      - Distância mínima até o limite de
+      - Distância mínima do lado mais próximo de
+    - - propriedade, desde que na área
+      - qualquer via de circulação interna ou qualquer
+    - - adjacente haja ou possa haver
+      - edificação importante na mesma propriedade
+    - - construção (m)
+      - (m)
+    - - Líquidos
+      - Líquidos instáveis alívio de emergência
+      - Líquidos estáveis alívio de emergência
+      - Líquidos instáveis alívio de emergência
+    - - estáveis alívio
+    - - de
+    - - emergência
+    - - ≤17 KPa
+      - '>17 KPa'
+      - ≤17 KPa
+      - '>17 KPa'
+      - ≤17 KPa
+      - '>17 KPa'
+      - ≤17 KPa
+      - '>17 KPa'
+    - - Até 46
+      - 4,5
+      - 7,5
+      - 12,0
+      - 18,0
+      - 1,5
+      - 3,0
+      - 4,5
+      - 6,0
+    - - 46 a 114
+      - 6,0
+      - 9,0
+      - 15,0
+      - 24,0
+      - 1,5
+      - 3,0
+      - 4,5
+      - 6,0
+    - - 114 a 190
+      - 9,0
+      - 13,5
+      - 22,5
+      - 36,0
+      - 3,0
+      - 4,5
+      - 7,5
+      - 12,0
+    - - 190 a 380
+      - 15,0
+      - 22,5
+      - 37,5
+      - 60,0
+      - 4,5
+      - 7,5
+      - 12,0
+      - 18,0
+notas:
+- 'Fonte indicada na página: ABNT NBR 17505.'
+- 'Conferência: para cada lado e pressão, a distância para líquidos instáveis é maior ou igual à dos estáveis,
+  e cresce com a capacidade.'
+inconsistencias_da_fonte:
+- 'As faixas de capacidade ("Até 46", "46 a 114", "114 a 190", "190 a 380") se sobrepõem nos limites e
+  param em 380 m³: a tabela não cobre tanques maiores.'
+estado: divergente
+resultado:
+  estado: divergente
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 3
+    - 4
+    - 8
+    - 9
+    - 9
+    - 9
+    - 9
+  - - 3
+    - 2
+    - 2
+    - 2
+    - 4
+    - 1
+    - 1
+    - 1
+    - 8
+    - 9
+    - 9
+    - 9
+    - 9
