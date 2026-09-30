@@ -367,6 +367,19 @@ f) outros locais, de acordo com o PECIP e a natureza da ocupação da edificaç�
 | Risco médio 1 e 2 | 00 |  | 01 |  |
 | Risco grande | 01 |  | 01 |  |
 
+<!-- tabela-conferida: Tabela 1 p6 -->
+### Tabela 1 — Quantidade de exercícios simulados anuais (conferida)
+
+| Risco de incêndio da edificação (conforme NT 1-04) | Exercícios simulados ao ano — abandono parcial | Exercícios simulados ao ano — abandono total |
+| --- | --- | --- |
+| Risco pequeno | 01 | 00 |
+| Risco médio 1 e 2 | 00 | 01 |
+| Risco grande | 01 | 01 |
+
+Fonte: NT 2-10, página 6, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 1 p6 -->
+
 ---
 
 ## Página 7
@@ -775,6 +788,34 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  |  | Rota de saída alternativa |
 |  |  |  | Ponto de encontro |
 
+<!-- tabela-conferida: Tabela do Anexo C p14 -->
+### Tabela do Anexo C — Simbologia de segurança para utilização em plantas de emergência (p. 14) (conferida)
+
+| Simbologia na planta de emergência | Descrição |
+| --- | --- |
+|  | Você está aqui (localização do observador) |
+|  | Acionador manual de alarme de incêndio |
+|  | Telefone de emergência |
+|  | Extintor de incêndio |
+|  | Caixa de incêndio, abrigo de mangueira e hidrante |
+|  | Hidrante de incêndio |
+|  | Hidrante urbano |
+|  | Reserva técnica de incêndio |
+|  | Hidrante de recalque |
+|  | Casa de máquinas de incêndio (CMI) |
+|  | Acesso para viaturas do CBMERJ |
+|  | Acesso para guarnições do CBMERJ |
+|  | Saída de emergência |
+|  | Escada de emergência |
+|  | Rota de saída principal |
+|  | Rota de saída alternativa |
+|  | Ponto de encontro |
+
+Fonte: NT 2-10, página 14, Tabela do Anexo C; conferida em 2026-09-29 (visual + texto).
+A coluna de simbologia traz o desenho do símbolo (só na imagem da página); a célula fica em branco na tabela.
+Nos símbolos aparecem as siglas "HR" (hidrante de recalque), "CMI" e "CB".
+<!-- /tabela-conferida: Tabela do Anexo C p14 -->
+
 ---
 
 ## Página 15
@@ -799,6 +840,29 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  | Vaso sob pressão (caldeira) |
 |  | Produtos perigosos |
 | Obs.: 1- O autor do plano de emergência deverá avaliar a necessidade de inclusão de outras simbologias não representadas nesta tabela, em função das peculiaridades da edificação e da inspeção realizada. Neste caso, as novas simbologias devem atender a coloração definida no item 5.2.6.15 desta NT. 2- Todas as simbologias utilizadas devem constar na legenda da planta de emergência. |  |
+
+<!-- tabela-conferida: Tabela do Anexo C p15 -->
+### Tabela do Anexo C — Simbologia de segurança para utilização em plantas de emergência (continuação, p. 15) (conferida)
+
+| Simbologia na planta de emergência | Descrição |
+| --- | --- |
+|  | Risco de incêndio (materiais ou áreas com presença de produtos altamente inflamáveis) |
+|  | Risco de explosão, presença de produtos (sólidos, gases ou vapores) com risco de explosão |
+|  | Risco de corrosão (materiais ou áreas com presença de produtos corrosivos) |
+|  | Risco de choque elétrico (instalações elétricas que ofereçam risco de choque) |
+|  | Risco de radiação (materiais ou áreas com presença de produtos radioativos) |
+|  | Risco de exposição a produtos tóxicos (materiais ou áreas com presença de produtos tóxicos) |
+|  | Espaço confinado |
+|  | Central de GLP |
+|  | Vaso sob pressão |
+|  | Vaso sob pressão (caldeira) |
+|  | Produtos perigosos |
+
+Fonte: NT 2-10, página 15, Tabela do Anexo C; conferida em 2026-09-29 (visual + texto).
+A coluna de simbologia traz o desenho do símbolo (só na imagem da página); a célula fica em branco na tabela.
+Obs. 1 da tabela: O autor do plano de emergência deverá avaliar a necessidade de inclusão de outras simbologias não representadas nesta tabela, em função das peculiaridades da edificação e da inspeção realizada. Neste caso, as novas simbologias devem atender a coloração definida no item 5.2.6.15 desta NT.
+Obs. 2 da tabela: Todas as simbologias utilizadas devem constar na legenda da planta de emergência.
+<!-- /tabela-conferida: Tabela do Anexo C p15 -->
 
 ---
 
@@ -885,6 +949,36 @@ página 1 de 2
 | A Placa informativa da lotação máxima permitida, conforme NT 2-05 - Sinalização de segurança contra incêndio e pânico está fixada no hall de acesso das entradas do público ou bilheterias? |  |  |  |  |  |  |  |  |
 | A pessoa responsável por garantir que nenhuma pessoa entre além da lotação máxima aprovada pelo CBMERJ, é: _______________________________________________________ |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 1 do Anexo E p19 -->
+### Tabela 1 do Anexo E — Ficha de segurança contra incêndio e pânico pré-evento — Tabela 1 (conferida)
+
+| Item | SIM | NÃO |
+| --- | --- | --- |
+| TABELA 1 | TABELA 1 | TABELA 1 |
+| REGULARIZAÇÃO JUNTO AO CBMERJ | SIM | NÃO |
+| O certificado de aprovação (CA) ou certificado de vistoria anual (CVA) está válido? Lotação máxima aprovada: ____ Validade do CA ou CVA: ____ |  |  |
+| SAÍDAS | SIM | NÃO |
+| Todas as saídas de emergência e rotas de saída estão sinalizadas, iluminadas e desobstruídas? |  |  |
+| Todas as portas das saídas de emergência estão destrancadas e operando? |  |  |
+| O acesso do público ao exterior da edificação ou ao local de segurança está desobstruído? |  |  |
+| Toda a sinalização de segurança das rotas de saída está visível e iluminada? |  |  |
+| O sistema de iluminação de emergência está operando? |  |  |
+| EXTINTORES DE INCÊNDIO | SIM | NÃO |
+| Os extintores estão disponíveis, visíveis, sinalizados e prontos para uso? |  |  |
+| Os extintores estão carregados e dentro do período de validade da recarga? |  |  |
+| ORIENTAÇÃO AO PÚBLICO | SIM | NÃO |
+| Há sistema de voz disponível para anúncios de emergência? |  |  |
+| A pessoa responsável por anunciar ao público a necessidade de abandono, é: ____ |  |  |
+| Os meios para orientação do público através de chamada oral ou filme de curta metragem, conforme NT 2-10 – Plano de emergência contra incêndio e pânico (PECIP), estão disponíveis? A pessoa responsável por esta orientação, antes do início de cada espetáculo, é____ |  |  |
+| A Placa informativa da lotação máxima permitida, conforme NT 2-05 – Sinalização de segurança contra incêndio e pânico está fixada no hall de acesso das entradas do público ou bilheterias? |  |  |
+| A pessoa responsável por garantir que nenhuma pessoa entre além da lotação máxima aprovada pelo CBMERJ, é: ____ |  |  |
+
+Fonte: NT 2-10, página 19, Tabela 1 do Anexo E; conferida em 2026-09-29 (visual + texto).
+Anexo E da NT 2-10: modelo da ficha de segurança pré-evento (formulário: as colunas SIM e NÃO são para preenchimento).
+Cabeçalho da ficha na página: Local, Bairro, Nome do estabelecimento, Fim a que se destina (ocupação), Data e Hora da inspeção.
+Texto abaixo da tabela: ATENÇÃO: Qualquer item marcado como "NÃO", na Tabela 1, deve ser resolvido antes que a edificação, estabelecimento ou evento sejam abertos ao público.
+<!-- /tabela-conferida: Tabela 1 do Anexo E p19 -->
+
 ---
 
 ## Página 20
@@ -932,3 +1026,43 @@ página 2 de 2
 | O Laudo de Exigências, Certificado de Aprovação e Certificado de Registro, emitidos pelo CBMERJ, estão expostos junto aos acessos de entrada da edificação, em local visível, em quadro próprio, e com iluminação adequada, conforme artigo 32 do Decreto Estadual nº 42/2018 - Código de Segurança Contra Incêndio e Pânico do Estado do Rio de Janeiro? |  |  |  |  |  |  |  |  |  |  |  |
 | O sistema de exaustão mecânica das cozinhas está limpo, manutenido e operando? |  |  |  |  |  |  |  |  |  |  |  |
 | O sistema de supressão de incêndio da exaustão mecânica está operando? |  |  |  |  |  |  |  |  |  |  |  |
+<!-- tabela-conferida: Tabela 2 do Anexo E p20 -->
+### Tabela 2 do Anexo E — Ficha de segurança contra incêndio e pânico pré-evento — Tabela 2 (conferida)
+
+| Item | SIM | NÃO | ISENTO |
+| --- | --- | --- | --- |
+| TABELA 2 | TABELA 2 | TABELA 2 | TABELA 2 |
+| HIDRANTES, CHUVEIROS AUTOMÁTICOS E BOMBAS DE INCÊNDIO | SIM | NÃO | ISENTO |
+| O sistema de bombas de incêndio está manutenido e operando? |  |  |  |
+| A rede de chuveiros automáticos está manutenida e operando? |  |  |  |
+| Os hidrantes estão prontos para uso, equipados com mangueiras e esguichos, e sinalizados? |  |  |  |
+| DETECÇÃO E ALARME DE INCÊNDIO | SIM | NÃO | ISENTO |
+| O sistema de detecção e alarme de incêndio está operando? |  |  |  |
+| O alarme de incêndio está operando? |  |  |  |
+| Os acionadores manuais (botoeiras) estão sinalizados, desobstruídos e operando? |  |  |  |
+| BRIGADA DE INCÊNDIO / PLANO DE EMERGÊNCIA (PECIP) | SIM | NÃO | ISENTO |
+| Existem pessoas treinadas para direcionar o público para a saída em caso de emergência e executar outras ações definidas no plano de emergência contra incêndio e pânico (PECIP), conforme exigido pelo CBMERJ? |  |  |  |
+| O plano de emergência contra incêndio e pânico está disponível para consulta? |  |  |  |
+
+Fonte: NT 2-10, página 20, Tabela 2 do Anexo E; conferida em 2026-09-29 (visual + texto).
+Anexo E da NT 2-10: modelo da ficha de segurança pré-evento (formulário: as colunas SIM, NÃO e ISENTO são para preenchimento).
+Texto abaixo da tabela: ATENÇÃO: Qualquer item, marcado como "NÃO", na Tabela 2, deve ser resolvido antes que a edificação, estabelecimento ou evento sejam abertos ao público.
+<!-- /tabela-conferida: Tabela 2 do Anexo E p20 -->
+
+<!-- tabela-conferida: Tabela 3 do Anexo E p20 -->
+### Tabela 3 do Anexo E — Ficha de segurança contra incêndio e pânico pré-evento — Tabela 3 (conferida)
+
+| Item | SIM | NÃO | ISENTO |
+| --- | --- | --- | --- |
+| TABELA 3 | TABELA 3 | TABELA 3 | TABELA 3 |
+| ITENS DE INSPEÇÃO | SIM | NÃO | ISENTO |
+| O Laudo de Exigências, Certificado de Aprovação e Certificado de Registro, emitidos pelo CBMERJ, estão expostos junto aos acessos de entrada da edificação, em local visível, em quadro próprio, e com iluminação adequada, conforme artigo 32 do Decreto Estadual nº 42/2018 – Código de Segurança Contra Incêndio e Pânico do Estado do Rio de Janeiro? |  |  |  |
+| O sistema de exaustão mecânica das cozinhas está limpo, manutenido e operando? |  |  |  |
+| O sistema de supressão de incêndio da exaustão mecânica está operando? |  |  |  |
+
+Fonte: NT 2-10, página 20, Tabela 3 do Anexo E; conferida em 2026-09-29 (visual + texto).
+Anexo E da NT 2-10: modelo da ficha de segurança pré-evento (formulário: as colunas SIM, NÃO e ISENTO são para preenchimento).
+Texto abaixo da tabela: ATENÇÃO: Qualquer item, marcado como "NÃO", na Tabela 3, deve ser resolvido em até 24 h (vinte e quatro horas).
+Fim da ficha: Inspecionado e preenchido por (nome completo / identificação), Função, Assinatura.
+<!-- /tabela-conferida: Tabela 3 do Anexo E p20 -->
+

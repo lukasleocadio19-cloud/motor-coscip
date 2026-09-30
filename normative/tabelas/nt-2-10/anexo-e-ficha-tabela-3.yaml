@@ -1,0 +1,76 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-10
+arquivo: nt-2-10-pecip.md
+tabela: Tabela 3 do Anexo E
+titulo: Ficha de segurança contra incêndio e pânico pré-evento — Tabela 3
+pagina: 20
+fonte_pdf_sha256: 4406f8268fbb577e70b4ba3367f3bcc0ab1d961da201005b855a34989290b84b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-10/pagina-20.jpg
+    imagem_sha256: 8e2803e03c6785debd51a3db2fafc165c098c2bca012e393371ceceb1e434b91
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Item
+    - SIM
+    - NÃO
+    - ISENTO
+    linhas:
+    - - TABELA 3
+      - <
+      - <
+      - <
+    - - ITENS DE INSPEÇÃO
+      - SIM
+      - NÃO
+      - ISENTO
+    - - O Laudo de Exigências, Certificado de Aprovação e Certificado de Registro, emitidos pelo CBMERJ,
+        estão expostos junto aos acessos de entrada da edificação, em local visível, em quadro próprio,
+        e com iluminação adequada, conforme artigo 32 do Decreto Estadual nº 42/2018 – Código de Segurança
+        Contra Incêndio e Pânico do Estado do Rio de Janeiro?
+      - ''
+      - ''
+      - ''
+    - - O sistema de exaustão mecânica das cozinhas está limpo, manutenido e operando?
+      - ''
+      - ''
+      - ''
+    - - O sistema de supressão de incêndio da exaustão mecânica está operando?
+      - ''
+      - ''
+      - ''
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 20
+      tabela_na_pagina: 2
+    linhas:
+    - - TABELA 3
+    - - ITENS DE INSPEÇÃO
+      - SIM
+      - NÃO
+      - ISENTO
+    - - O Laudo de Exigências, Certificado de Aprovação e Certificado de Registro, emitidos pelo CBMERJ,
+        estão expostos junto aos acessos de entrada da edificação, em local visível, em quadro próprio,
+        e com iluminação adequada, conforme artigo 32 do Decreto Estadual nº 42/2018 - Código de Segurança
+        Contra Incêndio e Pânico do Estado do Rio de Janeiro?
+    - - O sistema de exaustão mecânica das cozinhas está limpo, manutenido e operando?
+    - - O sistema de supressão de incêndio da exaustão mecânica está operando?
+notas:
+- 'Anexo E da NT 2-10: modelo da ficha de segurança pré-evento (formulário: as colunas SIM, NÃO e ISENTO
+  são para preenchimento).'
+- 'Texto abaixo da tabela: ATENÇÃO: Qualquer item, marcado como "NÃO", na Tabela 3, deve ser resolvido
+  em até 24 h (vinte e quatro horas).'
+- 'Fim da ficha: Inspecionado e preenchido por (nome completo / identificação), Função, Assinatura.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

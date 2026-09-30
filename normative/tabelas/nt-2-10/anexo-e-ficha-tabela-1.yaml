@@ -1,0 +1,132 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-10
+arquivo: nt-2-10-pecip.md
+tabela: Tabela 1 do Anexo E
+titulo: Ficha de segurança contra incêndio e pânico pré-evento — Tabela 1
+pagina: 19
+fonte_pdf_sha256: 4406f8268fbb577e70b4ba3367f3bcc0ab1d961da201005b855a34989290b84b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-10/pagina-19.jpg
+    imagem_sha256: c4e71d4d367d6b57c8b27331a88a301fb164b2fa60db60f219e6378045db6a33
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Item
+    - SIM
+    - NÃO
+    linhas:
+    - - TABELA 1
+      - <
+      - <
+    - - REGULARIZAÇÃO JUNTO AO CBMERJ
+      - SIM
+      - NÃO
+    - - 'O certificado de aprovação (CA) ou certificado de vistoria anual (CVA) está válido? Lotação máxima
+        aprovada: ____ Validade do CA ou CVA: ____'
+      - ''
+      - ''
+    - - SAÍDAS
+      - SIM
+      - NÃO
+    - - Todas as saídas de emergência e rotas de saída estão sinalizadas, iluminadas e desobstruídas?
+      - ''
+      - ''
+    - - Todas as portas das saídas de emergência estão destrancadas e operando?
+      - ''
+      - ''
+    - - O acesso do público ao exterior da edificação ou ao local de segurança está desobstruído?
+      - ''
+      - ''
+    - - Toda a sinalização de segurança das rotas de saída está visível e iluminada?
+      - ''
+      - ''
+    - - O sistema de iluminação de emergência está operando?
+      - ''
+      - ''
+    - - EXTINTORES DE INCÊNDIO
+      - SIM
+      - NÃO
+    - - Os extintores estão disponíveis, visíveis, sinalizados e prontos para uso?
+      - ''
+      - ''
+    - - Os extintores estão carregados e dentro do período de validade da recarga?
+      - ''
+      - ''
+    - - ORIENTAÇÃO AO PÚBLICO
+      - SIM
+      - NÃO
+    - - Há sistema de voz disponível para anúncios de emergência?
+      - ''
+      - ''
+    - - 'A pessoa responsável por anunciar ao público a necessidade de abandono, é: ____'
+      - ''
+      - ''
+    - - Os meios para orientação do público através de chamada oral ou filme de curta metragem, conforme
+        NT 2-10 – Plano de emergência contra incêndio e pânico (PECIP), estão disponíveis? A pessoa responsável
+        por esta orientação, antes do início de cada espetáculo, é____
+      - ''
+      - ''
+    - - A Placa informativa da lotação máxima permitida, conforme NT 2-05 – Sinalização de segurança contra
+        incêndio e pânico está fixada no hall de acesso das entradas do público ou bilheterias?
+      - ''
+      - ''
+    - - 'A pessoa responsável por garantir que nenhuma pessoa entre além da lotação máxima aprovada pelo
+        CBMERJ, é: ____'
+      - ''
+      - ''
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 19
+      tabela_na_pagina: 1
+    linhas:
+    - - TABELA 1
+    - - REGULARIZAÇÃO JUNTO AO CBMERJ
+      - SIM
+      - NÃO
+    - - 'O certificado de aprovação (CA) ou certificado de vistoria anual (CVA) está válido? Lotação máxima
+        aprovada: ____________________________________________ Validade do CA ou CVA: ______________________________________________'
+    - - SAÍDAS
+      - SIM
+      - NÃO
+    - - Todas as saídas de emergência e rotas de saída estão sinalizadas, iluminadas e desobstruídas?
+    - - Todas as portas das saídas de emergência estão destrancadas e operando?
+    - - O acesso do público ao exterior da edificação ou ao local de segurança está desobstruído?
+    - - Toda a sinalização de segurança das rotas de saída está visível e iluminada?
+    - - O sistema de iluminação de emergência está operando?
+    - - EXTINTORES DE INCÊNDIO
+      - SIM
+      - NÃO
+    - - Os extintores estão disponíveis, visíveis, sinalizados e prontos para uso?
+    - - Os extintores estão carregados e dentro do período de validade da recarga?
+    - - ORIENTAÇÃO AO PÚBLICO
+      - SIM
+      - NÃO
+    - - Há sistema de voz disponível para anúncios de emergência?
+    - - 'A pessoa responsável por anunciar ao público a necessidade de abandono, é: _____________________________________________________________________'
+    - - Os meios para orientação do público através de chamada oral ou filme de curta metragem, conforme
+        NT 2-10 - Plano de emergência contra incêndio e pânico (PECIP), estão disponíveis? A pessoa responsável
+        por esta orientação, antes do início de cada espetáculo, é ______________________________________________________________________
+    - - A Placa informativa da lotação máxima permitida, conforme NT 2-05 - Sinalização de segurança contra
+        incêndio e pânico está fixada no hall de acesso das entradas do público ou bilheterias?
+    - - 'A pessoa responsável por garantir que nenhuma pessoa entre além da lotação máxima aprovada pelo
+        CBMERJ, é: _______________________________________________________'
+notas:
+- 'Anexo E da NT 2-10: modelo da ficha de segurança pré-evento (formulário: as colunas SIM e NÃO são para
+  preenchimento).'
+- 'Cabeçalho da ficha na página: Local, Bairro, Nome do estabelecimento, Fim a que se destina (ocupação),
+  Data e Hora da inspeção.'
+- 'Texto abaixo da tabela: ATENÇÃO: Qualquer item marcado como "NÃO", na Tabela 1, deve ser resolvido
+  antes que a edificação, estabelecimento ou evento sejam abertos ao público.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

@@ -397,6 +397,20 @@ Fonte: ABNT NBR 16820.
 | RGB | R255 G0 B23 | R255 G255 B0 | R0 G61 B0 | R0 G0 B0 | - |
 | Nota 1: O padrão de cores básico é o Munsell Book of Colors®. Nota 2: As cores Pantone® foram convertidas do sistema Munsell Book of Colors®. Nota 3: Os valores das tabelas CMYK e RGB para impressão gráfica foram convertidos do sistema Pantone®. |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 1 do Anexo B p7 -->
+### Tabela 1 do Anexo B — Símbolos para identificação em planta baixa (conferida)
+
+| Nível | Sinalização retangular | Sinalização quadrada e triangular | Sinalização circular |
+| --- | --- | --- | --- |
+| Superior |  |  |  |
+| Intermediário |  |  |  |
+| Inferior |  |  |  |
+
+Fonte: NT 2-05, página 7, Tabela 1 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
+As células de sinalização são desenhos, sem texto no PDF: em branco na tabela. Pela leitura visual (só um caminho, não conferido), cada desenho traz "CÓDIGO" sobre a dimensão — "L/H (mm)" na retangular, "L (mm)" na quadrada e triangular, "D (mm)" na circular — dentro de um círculo (nível superior), de um losango (intermediário) ou de um retângulo (inferior).
+Fonte indicada na página: ABNT NBR 16820.
+<!-- /tabela-conferida: Tabela 1 do Anexo B p7 -->
+
 <!-- tabela-conferida: Tabela 2 do Anexo B p7 -->
 ### Tabela 2 do Anexo B — Cores de segurança e contraste (conferida)
 

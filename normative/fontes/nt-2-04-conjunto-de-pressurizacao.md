@@ -242,6 +242,21 @@ Fonte: CBMERJ.
 | Médio - 2 | 3/4" |
 | Grande | 1” |
 
+<!-- tabela-conferida: Tabela 1 p4 -->
+### Tabela 1 — Diâmetro mínimo dos drenos (conferida)
+
+| Risco | Diâmetro |
+| --- | --- |
+| Pequeno | 1/2" |
+| Médio - 1 | 1/2" |
+| Médio - 2 | 3/4" |
+| Grande | 1” |
+
+Fonte: NT 2-04, página 4, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: CBMERJ.
+Pelo item 5.1.6, a válvula de alívio (obrigatória no risco grande) tem o mesmo diâmetro mínimo do dreno; confere com a Tabela 2 (alívio 1" no risco grande).
+<!-- /tabela-conferida: Tabela 1 p4 -->
+
 ---
 
 ## Página 5
@@ -327,6 +342,20 @@ h) potência, em CV.
 | Médio - 1 | 3" | 2 1/2" | 1/2" (opcional) |
 | Médio - 2 | 3" | 3" | 3/4" (opcional) |
 | Grande | 4" | 3" | 1"(obrigatório) |
+
+<!-- tabela-conferida: Tabela 2 p5 -->
+### Tabela 2 — Diâmetros dos colares hidráulicos (conferida)
+
+| Risco | Sucção | Recalque | Alívio |
+| --- | --- | --- | --- |
+| Pequeno | 1 1/2" | 1 1/4" | 1/2" (opcional) |
+| Médio - 1 | 3" | 2 1/2" | 1/2" (opcional) |
+| Médio - 2 | 3" | 3" | 3/4" (opcional) |
+| Grande | 4" | 3" | 1"(obrigatório) |
+
+Fonte: NT 2-04, página 5, Tabela 2; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 2 p5 -->
 
 ---
 
@@ -519,6 +548,21 @@ A - Válvula de Alívio (dispositivo hidráulico de abertura por pressão).
 | Chave reversora | - | X | - |
 | Pressostato | X | X | X |
 | Carregador flutuador | - | - | X |
+
+<!-- tabela-conferida: Tabela 3 p7 -->
+### Tabela 3 — Dispositivos elétricos do conjunto de pressurização (conferida)
+
+| Dispositivos elétricos | Risco pequeno | Risco médio | Risco grande |
+| --- | --- | --- | --- |
+| Disjuntor | X | X | X |
+| Chave magnética e/ou soft-starter | X | X | X |
+| Chave reversora | - | X | - |
+| Pressostato | X | X | X |
+| Carregador flutuador | - | - | X |
+
+Fonte: NT 2-04, página 7, Tabela 3; conferida em 2026-09-29 (visual + texto).
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 3 p7 -->
 
 ---
 

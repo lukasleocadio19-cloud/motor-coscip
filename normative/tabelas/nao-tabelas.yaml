@@ -87,3 +87,13 @@ paginas:
     imagem: media/decreto-42-2018-coscip-compilado/pagina-01.jpg
     motivo: preâmbulo do Decreto (CONSIDERANDO) e artigos 1º a 3º em texto corrido
     conferido_em: '2026-09-30'
+  - arquivo: nt-2-04-conjunto-de-pressurizacao.md
+    pagina: 3
+    imagem: media/nt-2-04/pagina-03.jpg
+    motivo: definições 4.2, 4.8 e 4.12 (bomba afogada, cavitação, NPSH) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-2-13-sistemas-fixos-de-gases.md
+    pagina: 4
+    imagem: media/nt-2-13/pagina-04.jpg
+    motivo: definição 4.16 (Protocolo de Montreal) em duas colunas de texto
+    conferido_em: '2026-09-30'

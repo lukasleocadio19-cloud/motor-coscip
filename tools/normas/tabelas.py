@@ -64,6 +64,7 @@ def norm(cell: str | None) -> str | None:
     text = unicodedata.normalize("NFKD", str(cell).translate(_SYMBOL_PUA).replace("□", " "))
     text = "".join(c for c in text if not unicodedata.combining(c))
     text = " ".join(text.replace("\xa0", " ").replace("–", "-").replace("—", "-").lower().split())
+    text = re.sub(r"\s*_+\s*", " _ ", text)  # linha de preencher: o tamanho não conta
     text = re.sub(r"(?<=\w) (?=[a-z]\b)", "", text)  # "edificaco es" → "edificacoes"
     text = re.sub(r"(\d)\s*([m²%])", r"\1\2", text)  # "35,00 m" → "35,00m"
     text = re.sub(r"\s*:\s*", ":", text)  # "2-A : 10-B" → "2-a:10-b"

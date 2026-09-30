@@ -1,0 +1,90 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-10
+arquivo: nt-2-10-pecip.md
+tabela: Tabela do Anexo C
+titulo: Simbologia de segurança para utilização em plantas de emergência (p. 14)
+pagina: 14
+fonte_pdf_sha256: 4406f8268fbb577e70b4ba3367f3bcc0ab1d961da201005b855a34989290b84b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-10/pagina-14.jpg
+    imagem_sha256: 5a573c4741f07e4b18680faaab6f4ef522922a17c21c684d18bb637fec17823a
+    linhas_cabecalho: 1
+    linhas:
+    - - Simbologia na planta de emergência
+      - Descrição
+    - - ''
+      - Você está aqui (localização do observador)
+    - - ''
+      - Acionador manual de alarme de incêndio
+    - - ''
+      - Telefone de emergência
+    - - ''
+      - Extintor de incêndio
+    - - ''
+      - Caixa de incêndio, abrigo de mangueira e hidrante
+    - - ''
+      - Hidrante de incêndio
+    - - ''
+      - Hidrante urbano
+    - - ''
+      - Reserva técnica de incêndio
+    - - ''
+      - Hidrante de recalque
+    - - ''
+      - Casa de máquinas de incêndio (CMI)
+    - - ''
+      - Acesso para viaturas do CBMERJ
+    - - ''
+      - Acesso para guarnições do CBMERJ
+    - - ''
+      - Saída de emergência
+    - - ''
+      - Escada de emergência
+    - - ''
+      - Rota de saída principal
+    - - ''
+      - Rota de saída alternativa
+    - - ''
+      - Ponto de encontro
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 14
+      tabela_na_pagina: 1
+    linhas:
+    - - Simbologia na planta de emergência
+      - Descrição
+    - - Você está aqui (localização do observador)
+    - - Acionador manual de alarme de incêndio
+    - - Telefone de emergência
+    - - Extintor de incêndio
+    - - Caixa de incêndio, abrigo de mangueira e hidrante
+    - - Hidrante de incêndio
+    - - Hidrante urbano
+    - - Reserva técnica de incêndio
+    - - Hidrante de recalque
+    - - Casa de máquinas de incêndio (CMI)
+    - - Acesso para viaturas do CBMERJ
+    - - Acesso para guarnições do CBMERJ
+    - - Saída de emergência
+    - - Escada de emergência
+    - - Rota de saída principal
+    - - Rota de saída alternativa
+    - - Ponto de encontro
+notas:
+- A coluna de simbologia traz o desenho do símbolo (só na imagem da página); a célula fica em branco na
+  tabela.
+- Nos símbolos aparecem as siglas "HR" (hidrante de recalque), "CMI" e "CB".
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

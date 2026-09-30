@@ -6,11 +6,11 @@ resumo:
   imagens_presentes: 527
   imagens_ausentes: 0
   tabelas_por_estado:
-    bruto: 108
+    bruto: 92
     capa: 38
-    divergente: 14
-    nao_tabela: 16
-    verificada: 125
+    divergente: 13
+    nao_tabela: 18
+    verificada: 141
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -1226,7 +1226,7 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT2-04_2Edio_2023.pdf
   sha256_pdf: 37837bf154bc5c517e2732e206e6d72e3e441591364182531614acad69fa5ed1
-  sha256_md: f27b4082b4e679a523f7d47c5a14899c37dc18e42319bb71b02e8888a447a319
+  sha256_md: d4b1ef0f27ed71080a53f0827c6ce8721c142a4bb82ae3cf9be4e70e19e5e683
   data_captura: '2026-07-23'
   paginas: 10
   midia: nt-2-04
@@ -1257,13 +1257,20 @@ fontes:
     sha256: f5d41b32a021d423b732d876a2c39189205c7d5bdfa048ea803b0c4b3b5c12ec
   tabelas:
   - pagina: 3
-    estado: bruto
+    estado: nao_tabela
+    motivo: definições 4.2, 4.8 e 4.12 (bomba afogada, cavitação, NPSH) em duas colunas de texto
   - pagina: 4
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-2-04/tabela-1-drenos.yaml
+    estado: verificada
   - pagina: 5
-    estado: bruto
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-2-04/tabela-2-colares.yaml
+    estado: verificada
   - pagina: 7
-    estado: bruto
+    tabela: Tabela 3
+    arquivo: normative/tabelas/nt-2-04/tabela-3-dispositivos-eletricos.yaml
+    estado: verificada
 - arquivo: nt-2-05-sinalizacao.md
   documento: NT 2-05
   titulo: NT 2-05 - Sinalização de segurança contra incêndio e pânico
@@ -1271,7 +1278,7 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT2-05_3Edio_2023.pdf
   sha256_pdf: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
-  sha256_md: c0419c89379aa6a73af3b67c0cdef8fe04e18484ecc1a226f683dcf868b64634
+  sha256_md: 8e5dc6568603d954f5f5627f02df5566e9cebd7ac99d632542c90b92c9e63e6a
   data_captura: '2026-07-23'
   paginas: 18
   midia: nt-2-05
@@ -1356,7 +1363,7 @@ fontes:
   - pagina: 7
     tabela: Tabela 1 do Anexo B
     arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-1-simbolos-planta.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 7
     tabela: Tabela 2 do Anexo B
     arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-2-cores.yaml
@@ -1644,7 +1651,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-10-Plano-de-emergencia-contra-incendio-e-panico-PECIP.pdf
   sha256_pdf: 4406f8268fbb577e70b4ba3367f3bcc0ab1d961da201005b855a34989290b84b
-  sha256_md: b699041c98491684bebc7e534349bb57ab43c9ba93795ee24d14efdb93cfe818
+  sha256_md: 3ad8cc8c77aca3e9cb79725dfc72a6b2461a1ae9f657e239c803a4a2730be9b0
   data_captura: '2026-07-23'
   paginas: 20
   midia: nt-2-10
@@ -1689,15 +1696,29 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 6
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-2-10/tabela-1-exercicios-simulados.yaml
+    estado: verificada
   - pagina: 14
-    estado: bruto
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-10/anexo-c-simbologia-p14.yaml
+    estado: verificada
   - pagina: 15
-    estado: bruto
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-10/anexo-c-simbologia-p15.yaml
+    estado: verificada
   - pagina: 19
-    estado: bruto
+    tabela: Tabela 1 do Anexo E
+    arquivo: normative/tabelas/nt-2-10/anexo-e-ficha-tabela-1.yaml
+    estado: verificada
   - pagina: 20
-    estado: bruto
+    tabela: Tabela 2 do Anexo E
+    arquivo: normative/tabelas/nt-2-10/anexo-e-ficha-tabela-2.yaml
+    estado: verificada
+  - pagina: 20
+    tabela: Tabela 3 do Anexo E
+    arquivo: normative/tabelas/nt-2-10/anexo-e-ficha-tabela-3.yaml
+    estado: verificada
 - arquivo: nt-2-11-brigadas-de-incendio.md
   documento: NT 2-11
   titulo: NT 2-11 - Brigadas de incêndio
@@ -1894,7 +1915,8 @@ fontes:
     sha256: e8f757d5c57baaaa3deff088babf2a0df298352b75fbb6d3a0af30cf9c4af2af
   tabelas:
   - pagina: 4
-    estado: bruto
+    estado: nao_tabela
+    motivo: definição 4.16 (Protocolo de Montreal) em duas colunas de texto
 - arquivo: nt-2-14-controle-de-fumaca.md
   documento: NT 2-14
   titulo: NT 2-14 - Controle de fumaça
@@ -2193,7 +2215,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-17-Separacao-entre-edificacoes.pdf
   sha256_pdf: 83120c1cd247417d8c543db5db69752e45da5911f26f40205cba174e71d62db7
-  sha256_md: 95ca36695f05628936af882027703ea2b00e49ad34e0a0b53711ffaf700c6744
+  sha256_md: 759bf457c6b3be8520d82ced8a38b9ba7de0c978b05ed17dac15b9eee6d007d0
   data_captura: '2026-07-23'
   paginas: 6
   midia: nt-2-17
@@ -2226,9 +2248,13 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 4
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-2-17/tabela-1-classificacao-risco.yaml
+    estado: verificada
   - pagina: 5
-    estado: bruto
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-2-17/anexo-a-indice-distancias.yaml
+    estado: verificada
 - arquivo: nt-2-18-compartimentacao.md
   documento: NT 2-18
   titulo: NT 2-18 - Compartimentação horizontal e vertical
@@ -2412,7 +2438,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-20-Controle-de-materiais-de-acabamento-e-de-revestimento.pdf
   sha256_pdf: 6fa8dffe9aa7d10fb27c845b40da733db84862ac9fc144ec3948e8db24e90d4d
-  sha256_md: 56ad84b8cfb2104854ccdd4330dd5b1a135ced3f579ba46827880fef367c90bc
+  sha256_md: 145d899eec3498bfbb4235e5b7ebc4ddb46a1f79f9c3e58e7bf456ab742ceaa7
   data_captura: '2026-07-23'
   paginas: 9
   midia: nt-2-20
@@ -2457,13 +2483,21 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 6
-    estado: bruto
+    tabela: Tabela 1 do Anexo A
+    arquivo: normative/tabelas/nt-2-20/anexo-a-tabela-1-piso.yaml
+    estado: verificada
   - pagina: 7
-    estado: bruto
+    tabela: Tabela 2 do Anexo A
+    arquivo: normative/tabelas/nt-2-20/anexo-a-tabela-2-exceto-piso.yaml
+    estado: verificada
   - pagina: 8
-    estado: bruto
+    tabela: Tabela 3 do Anexo A
+    arquivo: normative/tabelas/nt-2-20/anexo-a-tabela-3-sem-nbr-9442.yaml
+    estado: verificada
   - pagina: 9
-    estado: bruto
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-2-20/anexo-b-utilizacao.yaml
+    estado: verificada
 - arquivo: nt-3-01-cozinha-profissional.md
   documento: NT 3-01
   titulo: NT 3-01 - Cozinha profissional

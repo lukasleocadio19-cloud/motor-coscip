@@ -20,17 +20,17 @@ caminhos:
       - Sinalização quadrada e triangular
       - Sinalização circular
     - - Superior
-      - CÓDIGO L/H (mm)
-      - CÓDIGO L (mm)
-      - CÓDIGO D (mm)
+      - ''
+      - ''
+      - ''
     - - Intermediário
-      - CÓDIGO L/H (mm)
-      - CÓDIGO L (mm)
-      - CÓDIGO D (mm)
+      - ''
+      - ''
+      - ''
     - - Inferior
-      - CÓDIGO L/H (mm)
-      - CÓDIGO L (mm)
-      - CÓDIGO D (mm)
+      - ''
+      - ''
+      - ''
   texto:
     metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
     origem:
@@ -121,27 +121,18 @@ caminhos:
         - null
         - null
 notas:
-- 'As células são desenhos: o texto "CÓDIGO" sobre a dimensão vai dentro de um círculo (nível superior),
-  de um losango (intermediário) ou de um retângulo (inferior). A camada de texto do .md não traz o conteúdo
-  dos desenhos; o segundo caminho é a grade do PDF.'
+- 'As células de sinalização são desenhos, sem texto no PDF: em branco na tabela. Pela leitura visual
+  (só um caminho, não conferido), cada desenho traz "CÓDIGO" sobre a dimensão — "L/H (mm)" na retangular,
+  "L (mm)" na quadrada e triangular, "D (mm)" na circular — dentro de um círculo (nível superior), de
+  um losango (intermediário) ou de um retângulo (inferior).'
 - 'Fonte indicada na página: ABNT NBR 16820.'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
   candidato_geometrico: 0
   candidatos_na_pagina: 2
   bbox: *id001
-  texto: divergente
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 4
-    - 4
-    - 4
-    - 4
-  - - 4
-    - 1
-    - 1
-    - 1
+  texto: verificada

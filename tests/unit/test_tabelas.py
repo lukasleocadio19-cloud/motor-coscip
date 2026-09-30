@@ -242,3 +242,8 @@ def test_comparacao_por_coluna_exige_o_mesmo_texto_na_mesma_ordem():
 def test_glifo_nao_renderizado_nao_e_conteudo():
     assert tabelas.compare_cell("100 □ 100", "100 100")["estado"] == "verificada"
     assert tabelas.compare_cell("100 □ 100", "100 150")["estado"] == "divergente"
+
+
+def test_linha_de_preenchimento_nao_conta_o_tamanho():
+    res = tabelas.compare_cell("Validade: ____", "Validade: _______________")
+    assert res["estado"] == "verificada"

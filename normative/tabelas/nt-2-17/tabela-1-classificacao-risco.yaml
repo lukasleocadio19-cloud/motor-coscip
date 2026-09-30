@@ -1,0 +1,53 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-17
+arquivo: nt-2-17-separacao-entre-edificacoes.md
+tabela: Tabela 1
+titulo: Classificação de Risco
+pagina: 4
+fonte_pdf_sha256: 83120c1cd247417d8c543db5db69752e45da5911f26f40205cba174e71d62db7
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-17/pagina-04.jpg
+    imagem_sha256: 22fb9ba21dbdf177f392d4cfa9d26e3841821863c92ebc4e1234c77dc4f697ee
+    linhas_cabecalho: 1
+    linhas:
+    - - Classificação
+      - Risco
+    - - I
+      - Pequeno
+    - - II
+      - Médio (1 e 2)
+    - - III
+      - Grande
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 4
+      tabela_na_pagina: 1
+    linhas:
+    - - Classificação
+      - Risco
+    - - I
+      - Pequeno
+    - - II
+      - Médio (1 e 2)
+    - - III
+      - Grande
+notas:
+- 'Texto abaixo da tabela: O critério para a definição do risco da edificação será de acordo com NT 1-04
+  - Classificação das edificações quanto ao risco de incêndio.'
+inconsistencias_da_fonte:
+- Na mesma página, o item sobre fachadas irregulares está numerado "6.2.2.2" dentro da seção 5.2.2 (seria
+  5.2.2.2).
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
