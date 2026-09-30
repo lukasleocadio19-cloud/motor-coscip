@@ -2,7 +2,7 @@ schema_version: tabela-conferida/1.0
 documento: NT 1-03
 arquivo: nt-1-03-simbolos-graficos.md
 tabela: Anexo A
-titulo: Simbologia para projeto de segurança contra incêndio e pânico
+titulo: Simbologia para projeto de segurança contra incêndio e pânico (p. 4)
 pagina: 4
 fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
 conferida_em: '2026-09-29'
@@ -151,9 +151,9 @@ notas:
 - A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
   da página).
 - 'Fonte: CBMERJ.'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -161,22 +161,11 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: verificada
-  celulas:
-  - linha: 0
-    coluna: 0
-    a: EXTINTORES
-    b: S E R O T N I T X E
-    estado: divergente
-    score: 50.0
-  - linha: 0
-    coluna: 1
-    a: PORTÁTEIS
-    b: S I E T Á T R O P
-    estado: divergente
-    score: 33.3
-  - linha: 6
-    coluna: 0
-    a: SOBRERODAS
-    b: S A D O R E R B O S
-    estado: divergente
-    score: 70.0
+forma_geometrica:
+  celulas_verticais:
+  - - 0
+    - 0
+  - - 0
+    - 1
+  - - 6
+    - 1

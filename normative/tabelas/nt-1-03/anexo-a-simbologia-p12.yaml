@@ -2,7 +2,7 @@ schema_version: tabela-conferida/1.0
 documento: NT 1-03
 arquivo: nt-1-03-simbolos-graficos.md
 tabela: Anexo A
-titulo: Simbologia para projeto de segurança contra incêndio e pânico
+titulo: Simbologia para projeto de segurança contra incêndio e pânico (p. 12)
 pagina: 12
 fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
 conferida_em: '2026-09-29'
@@ -135,9 +135,9 @@ notas:
 - 'Fonte: CBMERJ.'
 inconsistencias_da_fonte:
 - '"DIÂMENTRO" (grafia da fonte) por "diâmetro".'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -149,18 +149,14 @@ resultado:
   - linha: 0
     coluna: 0
     a: ROTAS DE FUGA
-    b: A G U F E D S A T O R
-    estado: divergente
-    score: 25.0
-  - linha: 0
-    coluna: 1
-    a: DIRECIONAMENTO
-    b: O T N E M A N O IC E R ID
-    estado: divergente
-    score: 33.3
-  - linha: 2
-    coluna: 0
-    a: OUTROS
-    b: S O R T U O
-    estado: divergente
-    score: 50.0
+    b: ROTASDEFUGA
+    estado: verificada
+    score: 91.7
+forma_geometrica:
+  celulas_verticais:
+  - - 0
+    - 0
+  - - 0
+    - 1
+  - - 2
+    - 0

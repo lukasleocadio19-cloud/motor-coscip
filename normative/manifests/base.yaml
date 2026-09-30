@@ -7,9 +7,9 @@ resumo:
   imagens_ausentes: 0
   tabelas_por_estado:
     capa: 38
-    divergente: 15
+    divergente: 6
     nao_tabela: 36
-    verificada: 242
+    verificada: 251
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -401,7 +401,7 @@ fontes:
   ato: Portaria CBMERJ nº 1.151, de 10 de maio de 2021
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT_1-01-Procedimentos-Administrativos-para-Regularizacao-e-Fiscalizacao-Parte-2-Fiscalizacao_2021_1620759470.pdf
   sha256_pdf: 01ffb41a7be61d731fd9997546980a430f6d49f9698fade87917101dedd9bef3
-  sha256_md: 284999ebe585c9e6268cc0a9692bec6ee051915721d4f081baba1a8ecf45fe30
+  sha256_md: 2a66bd111522bff8cb4271b5a7b27b429f43caadc92adcbfa5bd11f1b8f66f67
   data_captura: '2026-07-23'
   paginas: 42
   midia: nt-1-01-parte-2
@@ -504,7 +504,7 @@ fontes:
   - pagina: 39
     tabela: Cronograma da cláusula sexta do Anexo G
     arquivo: normative/tabelas/nt-1-01-parte-2/anexo-g-cronograma-tac.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 42
     tabela: Anexo H
     arquivo: normative/tabelas/nt-1-01-parte-2/anexo-h-multas-tac.yaml
@@ -577,7 +577,7 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT1-03_2Edio_2023.pdf
   sha256_pdf: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
-  sha256_md: 50a6ca75666351081b264b63e86030508c2740bde4d820590da37f066362bf94
+  sha256_md: 67abd9c01ce0163f904a79b38180536c0cab9a747efd6da9d4d9259f3445dbc4
   data_captura: '2026-07-23'
   paginas: 12
   midia: nt-1-03
@@ -634,27 +634,27 @@ fontes:
   - pagina: 4
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p04.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 5
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p05.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 6
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p06.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 7
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p07.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 8
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p08.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 9
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p09.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 10
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p10.yaml
@@ -662,11 +662,11 @@ fontes:
   - pagina: 11
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p11.yaml
-    estado: divergente
+    estado: verificada
   - pagina: 12
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p12.yaml
-    estado: divergente
+    estado: verificada
 - arquivo: nt-1-04-classificacao-de-risco.md
   documento: NT 1-04
   titulo: NT 1-04 - Classificação das edificações e áreas de risco quanto ao risco de incêndio

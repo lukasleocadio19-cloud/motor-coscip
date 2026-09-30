@@ -2,7 +2,7 @@ schema_version: tabela-conferida/1.0
 documento: NT 1-03
 arquivo: nt-1-03-simbolos-graficos.md
 tabela: Anexo A
-titulo: Simbologia para projeto de segurança contra incêndio e pânico
+titulo: Simbologia para projeto de segurança contra incêndio e pânico (p. 6)
 pagina: 6
 fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
 conferida_em: '2026-09-29'
@@ -152,9 +152,9 @@ notas:
 - As células vazias das duas primeiras colunas no alto da página continuam a tabela da página anterior.
 - Na primeira coluna, as duas últimas linhas ficam numa célula vazia própria.
 - 'Fonte: CBMERJ.'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -166,12 +166,18 @@ resultado:
   - linha: 2
     coluna: 0
     a: GÁS CARBÔNICO
-    b: O C I N Ô B R A C S Á G
-    estado: divergente
-    score: 24.0
+    b: GÁSCARBÔNICO
+    estado: verificada
+    score: 96.0
   - linha: 5
     coluna: 0
     a: SISTEMA DE ESPUMA
-    b: A M U P S E E D A M E T S I S
-    estado: divergente
-    score: 31.2
+    b: SISTEMADEESPUMA
+    estado: verificada
+    score: 93.8
+forma_geometrica:
+  celulas_verticais:
+  - - 2
+    - 1
+  - - 5
+    - 1

@@ -2,7 +2,7 @@ schema_version: tabela-conferida/1.0
 documento: NT 1-03
 arquivo: nt-1-03-simbolos-graficos.md
 tabela: Anexo A
-titulo: Simbologia para projeto de segurança contra incêndio e pânico
+titulo: Simbologia para projeto de segurança contra incêndio e pânico (p. 11)
 pagina: 11
 fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
 conferida_em: '2026-09-29'
@@ -127,9 +127,9 @@ notas:
 inconsistencias_da_fonte:
 - '"VENTILADOR OU EXAUSTOR PARA CONTROLE DE FUMAÇA" fica fora da célula "CONTROLE DE FUMAÇA" (subgrupo
   vazio, como a linha de cima), que começa na linha seguinte.'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -147,6 +147,10 @@ resultado:
   - linha: 2
     coluna: 0
     a: CONTROLE DE FUMAÇA
-    b: A Ç A M U F E D E L O R T N O C
-    estado: divergente
-    score: 29.4
+    b: CONTROLEDEFUMAÇA
+    estado: verificada
+    score: 94.1
+forma_geometrica:
+  celulas_verticais:
+  - - 2
+    - 1

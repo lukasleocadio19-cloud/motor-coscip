@@ -2,7 +2,7 @@ schema_version: tabela-conferida/1.0
 documento: NT 1-03
 arquivo: nt-1-03-simbolos-graficos.md
 tabela: Anexo A
-titulo: Simbologia para projeto de segurança contra incêndio e pânico
+titulo: Simbologia para projeto de segurança contra incêndio e pânico (p. 5)
 pagina: 5
 fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
 conferida_em: '2026-09-29'
@@ -178,9 +178,9 @@ notas:
 - A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
   da página).
 - A tabela continua na página 6.
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -192,18 +192,20 @@ resultado:
   - linha: 0
     coluna: 0
     a: SISTEMA FIXO DE EXTINÇÃO
-    b: O Ã Ç N I T X E E D O X I F A M E T S I S
-    estado: divergente
-    score: 35.6
+    b: SISTEMAFIXODEEXTINÇÃO
+    estado: verificada
+    score: 93.3
   - linha: 0
     coluna: 1
     a: SISTEMA DE HIDRANTES
-    b: S E T N A R D I H E D A M E T S I S
-    estado: divergente
-    score: 47.4
-  - linha: 9
-    coluna: 0
-    a: SPRINKLERS
-    b: S R E L K N I R P S
-    estado: divergente
-    score: 50.0
+    b: SISTEMADEHIDRANTES
+    estado: verificada
+    score: 94.7
+forma_geometrica:
+  celulas_verticais:
+  - - 0
+    - 0
+  - - 0
+    - 1
+  - - 9
+    - 1

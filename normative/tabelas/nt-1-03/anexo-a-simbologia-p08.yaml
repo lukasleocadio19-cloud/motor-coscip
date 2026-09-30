@@ -2,7 +2,7 @@ schema_version: tabela-conferida/1.0
 documento: NT 1-03
 arquivo: nt-1-03-simbolos-graficos.md
 tabela: Anexo A
-titulo: Simbologia para projeto de segurança contra incêndio e pânico
+titulo: Simbologia para projeto de segurança contra incêndio e pânico (p. 8)
 pagina: 8
 fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
 conferida_em: '2026-09-29'
@@ -133,9 +133,9 @@ caminhos:
 notas:
 - A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
   da página).
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -147,24 +147,28 @@ resultado:
   - linha: 0
     coluna: 0
     a: VASOS E TANQUES (CONT.)
-    b: ) . T N O C ( S E U Q N A T E S O S A V
-    estado: divergente
-    score: 30.4
-  - linha: 0
-    coluna: 1
-    a: TANQUES
-    b: S E U Q N A T
-    estado: divergente
-    score: 14.3
+    b: VASOSETANQUES(CONT.)
+    estado: verificada
+    score: 95.2
   - linha: 3
     coluna: 0
     a: SISTEMA ELÉTRICO
-    b: O C I R T É L E A M E T S I S
-    estado: divergente
-    score: 45.2
+    b: SISTEMAELÉTRICO
+    estado: verificada
+    score: 96.8
   - linha: 6
     coluna: 0
     a: SISTEMA DE ALARME
-    b: E M R A L A E D A M E T S I S
-    estado: divergente
-    score: 43.8
+    b: SISTEMADEALARME
+    estado: verificada
+    score: 93.8
+forma_geometrica:
+  celulas_verticais:
+  - - 0
+    - 0
+  - - 0
+    - 1
+  - - 3
+    - 0
+  - - 6
+    - 0

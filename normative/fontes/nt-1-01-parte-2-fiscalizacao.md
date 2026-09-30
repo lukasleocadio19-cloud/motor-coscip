@@ -2740,6 +2740,24 @@ e que já possuam o Certificado de Aprovação.
 |  |  |  |  |  |
 | 6.3 Para obtenção da Certificação Final, devem ser cumpridas além das obrigações previstas nesta cláusula, as exigências determinadas pelo CBMERJ. 6.4 Quando houver necessidade de emissão de Laudo de Exigências que contemple exigências não previstas na tabela acima ou até isenção de exigências inseridas nesta tabela, o COMPROMITENTE deverá solicitar aditamento do TAC, prevendo as devidas atualizações. CLÁUSULA SÉTIMA - DA FISCALIZAÇÃO |  |  |  |  |
 
+<!-- tabela-conferida: Cronograma da cláusula sexta do Anexo G p39 -->
+### Cronograma da cláusula sexta do Anexo G — Cronograma para a efetiva regularização (modelo do Termo de Ajustamento de Conduta) (conferida)
+
+| Exigências / medidas de segurança | Início | Conclusão |
+| --- | --- | --- |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA) | / / | / / |
+
+Fonte: NT 1-01 Parte 2, página 39, Cronograma da cláusula sexta do Anexo G; conferida em 2026-09-29 (visual + geometrica).
+Modelo: "(...)" e "/ /" são campos para preenchimento.
+A extração lê a moldura da página inteira como tabela; só as linhas do cronograma entram na comparação.
+<!-- /tabela-conferida: Cronograma da cláusula sexta do Anexo G p39 -->
+
 ---
 
 ## Página 40

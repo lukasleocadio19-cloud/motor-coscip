@@ -4,8 +4,8 @@ Gerado por `python -m tools.normas.tabelas relatorio`. Estado de cada tabela con
 
 | Estado | Tabelas |
 | --- | --- |
-| divergente | 15 |
-| verificada | 242 |
+| divergente | 6 |
+| verificada | 251 |
 
 Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale como segundo caminho só até a extração geométrica (`pdfplumber`, workflow `normas-midia.yml`) rodar sobre o PDF oficial conferido por hash.
 
@@ -61,17 +61,17 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 1-01 Parte 2 | Anexo E, item 2 | 34 | verificada | visual + geometrica | 0 | 1 |
 | NT 1-01 Parte 2 | Anexo E, item 3 | 35 | verificada | visual + geometrica | 0 | 0 |
 | NT 1-01 Parte 2 | Anexo F | 36 | verificada | visual + geometrica | 0 | 0 |
-| NT 1-01 Parte 2 | Cronograma da cláusula sexta do Anexo G | 39 | divergente | visual + geometrica | 0 | 0 |
+| NT 1-01 Parte 2 | Cronograma da cláusula sexta do Anexo G | 39 | verificada | visual + geometrica | 0 | 0 |
 | NT 1-01 Parte 2 | Anexo H | 42 | verificada | visual + geometrica | 0 | 0 |
-| NT 1-03 | Anexo A | 4 | divergente | visual + geometrica | 3 | 0 |
-| NT 1-03 | Anexo A | 5 | divergente | visual + geometrica | 3 | 0 |
-| NT 1-03 | Anexo A | 6 | divergente | visual + geometrica | 2 | 0 |
-| NT 1-03 | Anexo A | 7 | divergente | visual + geometrica | 4 | 0 |
-| NT 1-03 | Anexo A | 8 | divergente | visual + geometrica | 4 | 0 |
-| NT 1-03 | Anexo A | 9 | divergente | visual + geometrica | 1 | 0 |
-| NT 1-03 | Anexo A | 10 | divergente | visual + geometrica | 5 | 2 |
-| NT 1-03 | Anexo A | 11 | divergente | visual + geometrica | 1 | 1 |
-| NT 1-03 | Anexo A | 12 | divergente | visual + geometrica | 3 | 1 |
+| NT 1-03 | Anexo A | 4 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-03 | Anexo A | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-03 | Anexo A | 6 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-03 | Anexo A | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-03 | Anexo A | 8 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-03 | Anexo A | 9 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-03 | Anexo A | 10 | divergente | visual + geometrica | 1 | 2 |
+| NT 1-03 | Anexo A | 11 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-03 | Anexo A | 12 | verificada | visual + geometrica | 0 | 1 |
 | NT 1-04 | Tabela do Anexo A | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 1-04 | Tabela do Anexo A | 6 | verificada | visual + geometrica | 0 | 0 |
 | NT 1-04 | Tabela do Anexo A | 7 | verificada | visual + geometrica | 0 | 0 |

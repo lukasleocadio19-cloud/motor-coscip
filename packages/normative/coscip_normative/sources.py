@@ -33,6 +33,8 @@ _ANNEX = re.compile(r"^(?:#{1,6}\s*)?ANEXO\s+([IVX]{1,5}|[A-Z])\b", re.M | re.I)
 # Artigos de decretos/leis ("Art. 15 -", "Art. 4º -"), inclusive no meio da linha.
 _ARTICLE = re.compile(r"\bArt\.\s*(\d{1,3})\s*[ºo°]?\s*[-–—]")
 _DOC_FROM_NAME = re.compile(r"nt[-_ ]?(\d)[-_ ](\d{2})", re.I)
+# Bloco de tabela conferida (F2) publicado no .md: é cópia de uma tabela da página, não abre item
+_CONFERRED = re.compile(r"<!-- tabela-conferida: .*? -->.*?<!-- /tabela-conferida: .*? -->", re.S)
 
 
 class SourceError(ValueError):
@@ -126,7 +128,12 @@ def _index(body: str, offset: int) -> dict[str, list[Item]]:
         anchors.append((m.start(), m.group(1), "SECTION"))
     for m in _TABLE.finditer(body):
         anchors.append((m.start(), f"Tabela {m.group(1).upper()}", "TABLE"))
+    conferred = [(m.start(), m.end()) for m in _CONFERRED.finditer(body)]
     for m in _ANNEX.finditer(body):
+        # o título do bloco conferido ("### Anexo A — ...") não é um novo anexo: se fosse,
+        # cortaria o anexo verdadeiro na primeira página conferida
+        if any(a <= m.start() < b for a, b in conferred):
+            continue
         anchors.append((m.start(), f"Anexo {m.group(1).upper()}", "ANNEX"))
     for m in _ARTICLE.finditer(body):
         anchors.append((m.start(), f"Art. {m.group(1)}", "ARTICLE"))

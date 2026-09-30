@@ -2,7 +2,7 @@ schema_version: tabela-conferida/1.0
 documento: NT 1-03
 arquivo: nt-1-03-simbolos-graficos.md
 tabela: Anexo A
-titulo: Simbologia para projeto de segurança contra incêndio e pânico
+titulo: Simbologia para projeto de segurança contra incêndio e pânico (p. 7)
 pagina: 7
 fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
 conferida_em: '2026-09-29'
@@ -143,9 +143,9 @@ notas:
 - A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
   da página).
 - 'Fonte: CBMERJ.'
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -157,24 +157,22 @@ resultado:
   - linha: 0
     coluna: 0
     a: SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA
-    b: A I C N Ê G R E M E E D O Ã Ç A N I M U L I E D A M E T S I S
-    estado: divergente
-    score: 33.3
+    b: SISTEMADEILUMINAÇÃODEEMERGÊNCIA
+    estado: verificada
+    score: 93.9
   - linha: 6
     coluna: 0
     a: VASOS E TANQUES
-    b: S E U Q N A T E S O S A V
-    estado: divergente
-    score: 37.0
-  - linha: 6
-    coluna: 1
-    a: GLP
-    b: P L G
-    estado: divergente
-    score: 33.3
-  - linha: 8
-    coluna: 0
-    a: TANQUES
-    b: S E U Q N A T
-    estado: divergente
-    score: 14.3
+    b: VASOSETANQUES
+    estado: verificada
+    score: 96.3
+forma_geometrica:
+  celulas_verticais:
+  - - 0
+    - 0
+  - - 6
+    - 0
+  - - 6
+    - 1
+  - - 8
+    - 1

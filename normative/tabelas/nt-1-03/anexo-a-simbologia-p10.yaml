@@ -2,7 +2,7 @@ schema_version: tabela-conferida/1.0
 documento: NT 1-03
 arquivo: nt-1-03-simbolos-graficos.md
 tabela: Anexo A
-titulo: Simbologia para projeto de segurança contra incêndio e pânico
+titulo: Simbologia para projeto de segurança contra incêndio e pânico (p. 10)
 pagina: 10
 fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
 conferida_em: '2026-09-29'
@@ -171,6 +171,8 @@ notas:
 - A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
   da página).
 - As células vazias das duas primeiras colunas no alto da página continuam a tabela da página anterior.
+- Na grade do PDF, o rótulo girado em duas linhas "ABERTURAS PROTEGIDAS" sai com as letras das duas linhas
+  intercaladas ("PARBOETRETGIUDRAASS"); a camada de texto lê a célula certa. É a única célula que diverge.
 inconsistencias_da_fonte:
 - 'Na grade desenhada, as células de subgrupo não coincidem com os nomes: "ABERTURAS PROTEGIDAS" cobre
   P-90, P-120 e "Parede corta-fogo" (a P-60 fica numa célula vazia); "VEDOS" cobre também "Elevador";
@@ -192,30 +194,24 @@ resultado:
   - linha: 1
     coluna: 0
     a: SISTEMAS PASSIVOS
-    b: S O V I S S A P S A M E T S I S
-    estado: divergente
-    score: 54.5
+    b: SISTEMASPASSIVOS
+    estado: verificada
+    score: 97.0
   - linha: 2
     coluna: 0
     a: ABERTURAS PROTEGIDAS
-    b: S S AA RD UI G TE RT EO BR AP
+    b: PARBOETRETGIUDRAASS
     estado: divergente
-    score: 34.0
-  - linha: 5
-    coluna: 0
-    a: VEDOS
-    b: S O D E V
-    estado: divergente
-    score: 20.0
-  - linha: 9
-    coluna: 0
-    a: ELEVADORES
-    b: S E R O D A V E L E
-    estado: divergente
-    score: 30.0
-  - linha: 13
-    coluna: 0
-    a: DAMPERS
-    b: S R E P M A D
-    estado: divergente
-    score: 14.3
+    score: 56.4
+forma_geometrica:
+  celulas_verticais:
+  - - 1
+    - 0
+  - - 2
+    - 1
+  - - 5
+    - 1
+  - - 9
+    - 1
+  - - 13
+    - 1
