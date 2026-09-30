@@ -85,6 +85,54 @@ caminhos:
     - - E-6
       - Mangotinho
       - 'Indicação de localização do mangotinho. Nível: superior'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.6
+      - 70.56
+      - 535.54
+      - 737.86
+      linhas:
+      - - Código
+        - Símbolo
+        - Significado
+        - Forma e cor
+        - Aplicação
+      - - E-1
+        - ''
+        - Alarme sonoro
+        - 'Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente'
+        - 'Indicação do local de instalação do alarme de incêndio. Nível: superior'
+      - - E-2
+        - ''
+        - Comando manual de alarme de incêndio
+        - 'Forma: retangular Fundo: vermelha Pictograma: fotoluminescente'
+        - 'Ponto de acionamento de alarme de incêndio ou bomba de incêndio. Deve ser sempre acompanha-
+          da de uma mensagem escrita, designando o equipamento acionado por aquele disposi- tivo. Nível:
+          intermediário'
+      - - E-3
+        - ''
+        - Comando manual de bomba de incêndio
+        - null
+        - null
+      - - E-4
+        - ''
+        - Telefone ou interfone de emergência
+        - 'Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente'
+        - 'Indicação da posição do in- terfone para comunicação de situações de emergência a uma central.
+          Nível: superior'
+      - - E-5
+        - ''
+        - Extintor de incêndio
+        - null
+        - 'Indicação de localização dos extintores de incêndio. Nível: superior'
+      - - E-6
+        - ''
+        - Mangotinho
+        - null
+        - 'Indicação de localização do mangotinho. Nível: superior'
 notas:
 - A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela.
   Célula de forma e cor mesclada entre linhas repete-se na publicação.
@@ -96,6 +144,25 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 2
+    coluna: 3
+    a: 'Ponto de acionamento de alarme de incêndio ou bomba de incêndio. Deve ser sempre acompanhada de
+      uma mensagem escrita, designando o equipamento acionado por aquele dispositivo. Nível: intermediário'
+    b: 'Ponto de acionamento de alarme de incêndio ou bomba de incêndio. Deve ser sempre acompanha- da
+      de uma mensagem escrita, designando o equipamento acionado por aquele disposi- tivo. Nível: intermediário'
+    estado: verificada
+    score: 99.0
+  - linha: 4
+    coluna: 3
+    a: 'Indicação da posição do interfone para comunicação de situações de emergência a uma central. Nível:
+      superior'
+    b: 'Indicação da posição do in- terfone para comunicação de situações de emergência a uma central.
+      Nível: superior'
+    estado: verificada
+    score: 99.1

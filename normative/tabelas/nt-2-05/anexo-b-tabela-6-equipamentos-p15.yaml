@@ -81,6 +81,54 @@ caminhos:
       - 'Indicação da localização de extintor de incêndio sobre rodas. Nível: superior'
     - - E-12
       - 'Indicação da localização da manta para o abafamento de chamas em pessoas. Nível: superior'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 49.56
+      - 70.92
+      - 542.38
+      - 704.02
+      linhas:
+      - - Código
+        - Símbolo
+        - Significado
+        - Forma e cor
+        - Aplicação
+      - - E-7
+        - ''
+        - Abrigo de mangueira e hidrante
+        - 'Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente'
+        - 'Indicação do abrigo da mangueira de incêndio com ou sem hidrante no seu interior. Nível: superior'
+      - - E-8
+        - ''
+        - Hidrante de incêndio
+        - null
+        - 'Indicação da localização do hidrante quando instalado fora do abrigo de mangueiras. Nível:
+          superior'
+      - - E-9
+        - ''
+        - Conjunto de equipamentos de combate a incêndio
+        - null
+        - 'Indicação de localização de um conjunto de equipamentos de combate a incêndio (hidrantes, abrigo
+          de mangueiras, mangotinho e extintores). Nível: superior'
+      - - E-10
+        - ''
+        - Válvula de controle do sistema de chuveiros automáticos
+        - null
+        - 'Indicação da localização da válvula de controle do sistema de chuveiros automáticos. Nível:
+          superior'
+      - - E-11
+        - ''
+        - Extintor de incêndio sobre rodas
+        - null
+        - 'Indicação da localização de extintor de incêndio sobre rodas. Nível: superior'
+      - - E-12
+        - ''
+        - ''
+        - null
+        - 'Indicação da localização da manta para o abafamento de chamas em pessoas. Nível: superior'
 notas:
 - A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela.
   Célula de forma e cor mesclada entre linhas repete-se na publicação.
@@ -92,6 +140,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

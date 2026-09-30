@@ -91,6 +91,97 @@ caminhos:
     - - M-2
       - '-'
       - DUPLO
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 88.84
+      - 57.03
+      - 513.92
+      - 328.25
+      linhas:
+      - - Ocupação/Uso
+        - Divisão
+        - ''
+        - Critério de
+        - ''
+        - ''
+        - Número de
+        - ''
+        - Número de Estágios
+      - - null
+        - null
+        - null
+        - Altura (metros)
+        - null
+        - null
+        - Portas Abertas
+        - null
+        - null
+      - - Depósito
+        - J-1
+        - Até 30
+        - null
+        - null
+        - '2'
+        - null
+        - null
+        - ÚNICO
+      - - null
+        - null
+        - Acima de 30
+        - null
+        - null
+        - null
+        - null
+        - null
+        - DUPLO
+      - - null
+        - J-2 J-3 J-4
+        - '-'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - DUPLO
+      - - Explosivos ou munições
+        - L-1 L-2 L-3
+        - '-'
+        - null
+        - null
+        - '2'
+        - null
+        - null
+        - DUPLO
+      - - Especial
+        - M-1 M-3 M-5 M-6 M-9 (B)
+        - Até 30
+        - null
+        - null
+        - '2'
+        - null
+        - null
+        - ÚNICO
+      - - null
+        - null
+        - Acima de 30
+        - null
+        - null
+        - null
+        - null
+        - null
+        - DUPLO
+      - - null
+        - M-2
+        - '-'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - DUPLO
 notas:
 - 'Observações da tabela:'
 - (A) Para as edificações classificadas nas ocupações Locais de Reunião de Público deverão ser avaliadas
@@ -107,6 +198,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

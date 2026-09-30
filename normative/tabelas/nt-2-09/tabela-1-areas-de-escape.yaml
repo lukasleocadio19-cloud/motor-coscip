@@ -69,6 +69,88 @@ caminhos:
       - 2,10 x 0,80
       - '-'
       - 0,060
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 312.67
+      - 240.08
+      - 553.52
+      - 531.07
+      linhas:
+      - - Tipo de PCF
+        - Tamanho (m)
+        - ''
+        - PCF
+        - ''
+        - ''
+        - PCF
+        - ''
+      - - null
+        - null
+        - null
+        - aberta
+        - null
+        - null
+        - fechada
+        - null
+      - - null
+        - null
+        - null
+        - (m2)
+        - null
+        - null
+        - (m2)
+        - null
+      - - PCF simples, para acesso ao espaço pressurizado
+        - 2,10 x 0,89
+        - 1,64
+        - null
+        - null
+        - 0,030
+        - null
+        - null
+      - - PCF simples, para saída do espaço pressurizado
+        - 2,10 x 0,89
+        - 1,64
+        - null
+        - null
+        - 0,040
+        - null
+        - null
+      - - PCF dupla, para acesso ao espaço pressurizado
+        - 2,10 x 0,89 (cada)
+        - 3,28
+        - null
+        - null
+        - 0,045
+        - null
+        - null
+      - - PCF dupla, para saída do espaço pressurizado
+        - 2,10 x 0,89 (cada)
+        - 3,28
+        - null
+        - null
+        - 0,060
+        - null
+        - null
+      - - Porta de elevador de emergência
+        - 2,10 x 0,80
+        - '-'
+        - null
+        - null
+        - 0,060
+        - null
+        - null
+    - bbox:
+      - 394.63
+      - 246.29
+      - 448.87
+      - 276.29
+      linhas:
+      - - Tamanho
+      - - (m)
 notas:
 - 'Fonte indicada na página: ABNT NBR 14880.'
 - 'Conferência aritmética: a área aberta da PCF dupla (3,28 m²) é o dobro da simples (1,64 m²).'
@@ -77,6 +159,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

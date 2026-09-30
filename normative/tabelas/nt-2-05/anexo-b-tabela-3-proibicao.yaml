@@ -82,6 +82,51 @@ caminhos:
       - 'Forma: circular Fundo: branca Pictograma: preta Faixa circular e barra diametral: vermelha'
       - 'Em locais sujeitos a depósito de mercadorias onde a obstrução possa apresentar perigo de acesso
         às saídas de emergência, rotas de fuga, equipamentos de combate a incêndio. Nível: superior'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.6
+      - 70.8
+      - 534.82
+      - 710.98
+      linhas:
+      - - Código
+        - Símbolo
+        - Significado
+        - Forma e cor
+        - Aplicação
+      - - P-1
+        - ''
+        - Proibido fumar
+        - 'Forma: circular Fundo: branca Pictograma: preta Faixa circular e barra diametral: vermelha'
+        - 'Todo local onde o fumo possa aumentar o risco de incêndio. Nível: Superior'
+      - - P-2
+        - ''
+        - Proibido produzir chama
+        - null
+        - 'Todo local onde a utilização de chama possa aumentar o risco de incêndio. Nível: Superior'
+      - - P-3
+        - ''
+        - Proibido utilizar água para apagar o fogo
+        - null
+        - 'Qualquer situação onde o uso de água seja impróprio para extinguir o fogo. Nível: superior'
+      - - P-4
+        - ''
+        - Proibido utilizar elevador em caso de incêndio
+        - 'Forma: circular Fundo: fotoluminescente Pictograma: preta Faixa circular e barra diametral:
+          vermelha'
+        - 'Os elevadores devem possuir sinalização específica composta por símbolo e mensagem de texto,
+          afixada próximo ao botão de chamada e ao lado das portas dos elevadores, devendo ser fotoluminescente,
+          instalada ao nível superior ou intermediário, excetuando-se os elevadores de emergência. Nível:
+          intermediário'
+      - - P-5
+        - ''
+        - Proibido obstruir este local
+        - 'Forma: circular Fundo: branca Pictograma: preta Faixa circular e barra diametral: vermelha'
+        - 'Em locais sujeitos a depósito de mercadorias onde a obstrução possa apresentar perigo de acesso
+          às saídas de emergên- cia, rotas de fuga, equipamen- tos de combate a incêndio. Nível: superior'
 notas:
 - A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela.
   Célula de forma e cor mesclada entre linhas repete-se na publicação.
@@ -92,6 +137,17 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 5
+    coluna: 3
+    a: 'Em locais sujeitos a depósito de mercadorias onde a obstrução possa apresentar perigo de acesso
+      às saídas de emergência, rotas de fuga, equipamentos de combate a incêndio. Nível: superior'
+    b: 'Em locais sujeitos a depósito de mercadorias onde a obstrução possa apresentar perigo de acesso
+      às saídas de emergên- cia, rotas de fuga, equipamen- tos de combate a incêndio. Nível: superior'
+    estado: verificada
+    score: 98.9

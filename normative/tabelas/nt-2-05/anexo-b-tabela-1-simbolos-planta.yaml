@@ -44,6 +44,82 @@ caminhos:
     - - Superior
     - - Intermediário
     - - Inferior
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 49.56
+      - 91.46
+      - 526.18
+      - 315.65
+      linhas:
+      - - Nível
+        - Sinalização retangular
+        - Sinalização quadrada e triangular
+        - Sinalização circular
+      - - Superior
+        - ''
+        - ''
+        - ''
+      - - Intermediário
+        - ''
+        - ''
+        - ''
+      - - Inferior
+        - ''
+        - ''
+        - ''
+    - bbox:
+      - 49.56
+      - 371.45
+      - 542.62
+      - 561.91
+      linhas:
+      - - Referência
+        - Denominação das cores
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - Vermelha
+        - Amarela
+        - Verde
+        - Preta
+        - Branca
+      - - Munsell Book of Colors®
+        - 5R 4/14
+        - 5Y 8/12
+        - 2.5G ¾
+        - N 1.0/
+        - N 9.5/
+      - - Pantone®
+        - 485C
+        - 108C
+        - 350C
+        - 419C
+        - –
+      - - CMYK
+        - C0 M100 Y91 K0
+        - C0 M9 Y94 K0
+        - C79 M0 Y87 K76
+        - C0 M0 Y0 K100
+        - –
+      - - RGB
+        - R255 G0 B23
+        - R255 G255 B0
+        - R0 G61 B0
+        - R0 G0 B0
+        - –
+      - - 'Nota 1: O padrão de cores básico é o Munsell Book of Colors®. Nota 2: As cores Pantone® foram
+          convertidas do sistema Munsell Book of Colors®. Nota 3: Os valores das tabelas CMYK e RGB para
+          impressão gráfica foram convertidos do sistema Pantone®.'
+        - null
+        - null
+        - null
+        - null
+        - null
 notas:
 - 'As células são desenhos: o texto "CÓDIGO" sobre a dimensão vai dentro de um círculo (nível superior),
   de um losango (intermediário) ou de um retângulo (inferior). A camada de texto do .md não traz o conteúdo
@@ -54,9 +130,11 @@ resultado:
   estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: divergente
   motivo: número de linhas/colunas diferente
   forma:
   - - 4

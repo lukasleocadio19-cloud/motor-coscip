@@ -508,7 +508,7 @@ a) A área total a ser considerada na trajetória de escape do ar para fora de u
 | PCF dupla, para saída do espaço pressurizado | 2,10 x 0,89 (cada) | 3,28 | 0,060 |
 | Porta de elevador de emergência | 2,10 x 0,80 | - | 0,060 |
 
-Fonte: NT 2-09, página 7, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-09, página 7, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: ABNT NBR 14880.
 Conferência aritmética: a área aberta da PCF dupla (3,28 m²) é o dobro da simples (1,64 m²).
 <!-- /tabela-conferida: Tabela 1 p7 -->
@@ -726,7 +726,7 @@ e) sistema de iluminação de emergência.
 | Industrial | I-1 | Acima de 30 | 2 | DUPLO |
 | Industrial | I-2 I-3 | - | 2 | DUPLO |
 
-Fonte: NT 2-09, página 10, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-09, página 10, Tabela do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Células mescladas (ocupação, divisões, portas abertas, estágios) repetidas na publicação.
 Observações da tabela (p. 11):
 (A) Para as edificações classificadas nas ocupações Locais de Reunião de Público deverão ser avaliadas a capacidade populacional da edificação.
@@ -773,7 +773,7 @@ Observações:
 | Especial | M-1 M-3 M-5 M-6 M-9 (B) | Acima de 30 | 2 | DUPLO |
 | Especial | M-2 | - | 2 | DUPLO |
 
-Fonte: NT 2-09, página 11, Tabela do Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-09, página 11, Tabela do Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Observações da tabela:
 (A) Para as edificações classificadas nas ocupações Locais de Reunião de Público deverão ser avaliadas a capacidade populacional da edificação.
 (B) As edificações classificadas como M-9 (presídios e similares) deverão seguir os critérios estabelecidos na NT 4-02 – Edificações destinadas à restrição de liberdade.

@@ -3,8 +3,8 @@ gerado_por: tools/normas/manifesto.py (não editar à mão)
 resumo:
   fontes: 53
   imagens_referenciadas: 527
-  imagens_presentes: 492
-  imagens_ausentes: 35
+  imagens_presentes: 527
+  imagens_ausentes: 0
   tabelas_por_estado:
     bruto: 121
     capa: 38
@@ -333,8 +333,8 @@ fontes:
     sha256: 4dfe8bdf8afb52825a80ad880da4c0d402b9d5115345448f0e14288511910821
   - caminho: media/nt-1-01-parte-1/pagina-26.jpg
     pagina: 26
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 7510cc102623b0a9877b91be92e32d0566786b0cb567f784956c611fe20b80c3
   tabelas:
   - pagina: 1
     estado: capa
@@ -358,52 +358,52 @@ fontes:
   imagens:
   - caminho: media/nt-1-01-parte-2/pagina-04.jpg
     pagina: 4
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 86c1ef16f5f6c7d4268e5eb2ffb744270c73050328297e5a132320642e446176
   - caminho: media/nt-1-01-parte-2/pagina-07.jpg
     pagina: 7
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: b55914c27686cdc81c6f8e7056c6b0e62a7e60510d8e0ddd24b14d8b2c7f7de8
   - caminho: media/nt-1-01-parte-2/pagina-16.jpg
     pagina: 16
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: a319605599e47458b63f3e5be167d051995212b8d5607d16cc531647c60f8e23
   - caminho: media/nt-1-01-parte-2/pagina-17.jpg
     pagina: 17
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 7f1ec9628a18f6d644953f30d00cf9cd63a73faf5aa8b0a280fbd390198392fe
   - caminho: media/nt-1-01-parte-2/pagina-18.jpg
     pagina: 18
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: b3526d7cccf395d0d35f99fa2e8e102332ca298f50f9d918e311a8f150753252
   - caminho: media/nt-1-01-parte-2/pagina-19.jpg
     pagina: 19
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: ddea1545ca8f8d55da1ef71313c3bcae14928b11d2eba9d4a3c6f271bb99ddca
   - caminho: media/nt-1-01-parte-2/pagina-20.jpg
     pagina: 20
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: fbfaa8eb322f58402e786a50df8ac1427a6034025697f78bfd4ba99fca74faf5
   - caminho: media/nt-1-01-parte-2/pagina-21.jpg
     pagina: 21
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: f8e1447fa976a3a88c4c9fa044eba532088c48283cd2b831124dd6b4189886b8
   - caminho: media/nt-1-01-parte-2/pagina-34.png
     pagina: 34
     estado: presente
     sha256: 5d8bcd9a0b6ce5b817545859fbbf27e7e03ad88322deccd92433082245596dec
   - caminho: media/nt-1-01-parte-2/pagina-35.jpg
     pagina: 35
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 4ccd48c733d7eb5b3b7d8f90fa7b56005a4051e9087309cb88e6359a813a84ac
   - caminho: media/nt-1-01-parte-2/pagina-36.jpg
     pagina: 36
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 1c4cce5d0e9166a32c8389988b26a516704eb47930f6821cddb6f895ef84942a
   - caminho: media/nt-1-01-parte-2/pagina-39.jpg
     pagina: 39
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: f8e313af8be6fac28a032cf20b88f1853842d496fc59f00ab07b71f0a82e8429
   - caminho: media/nt-1-01-parte-2/pagina-42.png
     pagina: 42
     estado: presente
@@ -459,24 +459,24 @@ fontes:
     sha256: d25f93cf2d8ad0565da7d2ab6a4adab62c8dfdfadf4767d3eecd8f11991cb079
   - caminho: media/nt-1-02/pagina-03.jpg
     pagina: 3
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 894b158b024ef404fd13c8934a8c29f0eb3bc35630ad01a0f99d5d6c838e09ee
   - caminho: media/nt-1-02/pagina-08.jpg
     pagina: 8
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: d1e8e7da6dcc31853732e02e86746b2644542ad7bc6c43703142e11841015c75
   - caminho: media/nt-1-02/pagina-13.jpg
     pagina: 13
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 95c56e58ba2cfad1491a71e9de8d93dd1860b1f453d0e781d2743144402174ab
   - caminho: media/nt-1-02/pagina-15.jpg
     pagina: 15
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 02a2f264d00643f2423bad3767fc3f8fdcd8216bd5e0305f3e9367fca4949c39
   - caminho: media/nt-1-02/pagina-20.jpg
     pagina: 20
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 5a195e7ddcb49886d1f1f29fad54006a08bbdf8b0ac27e261fd384ed58a2a176
   tabelas:
   - pagina: 1
     estado: capa
@@ -643,8 +643,8 @@ fontes:
     sha256: db01b307c7862e6d02de4f8409829db5ade6c3665773c62497598ca00576f9ab
   - caminho: media/nt-1-04/pagina-20.jpg
     pagina: 20
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 84edd38853cad171226f056b14734f8e69795d57ae8fd6f763288c7be66015b8
   tabelas:
   - pagina: 1
     estado: capa
@@ -736,8 +736,8 @@ fontes:
   imagens:
   - caminho: media/nt-1-05/pagina-02.jpg
     pagina: 2
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: b5d840ae27ef53363d347c28fd34f3eda568f6cfbd9865352d49232d7bb3ff5f
   tabelas:
   - pagina: 1
     estado: capa
@@ -1050,16 +1050,16 @@ fontes:
   imagens:
   - caminho: media/nt-2-03-parte-1/pagina-04.jpg
     pagina: 4
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 0db8a7870fa4f6caabf7d67ea33b883faa2d14c929b0115c9830d1da3c98d7fd
   - caminho: media/nt-2-03-parte-1/pagina-05.jpg
     pagina: 5
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 4d60d7c28f3aeb3fbb7fde3470ba4d39f4ed5afd0117c4e9c608a040e35ae002
   - caminho: media/nt-2-03-parte-1/pagina-09.jpg
     pagina: 9
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 3f53af00c6409795bff2a6c7f49ea5320891f2eab6241f492bc88662e63fc0e1
   tabelas:
   - pagina: 1
     estado: capa
@@ -1212,20 +1212,20 @@ fontes:
     sha256: 6e52c1a3d3d2529a7815a3771f1ec022eba8ffed7b55e09ed783a5183b7f7858
   - caminho: media/nt-2-04/pagina-03.jpg
     pagina: 3
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 3d83d55435aa1e80d084cea455a245668fbe2641d7147ecdeb00aa31000be0ec
   - caminho: media/nt-2-04/pagina-04.jpg
     pagina: 4
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 496415bc906e42380426c592c91e9d9afe521f21918b73fa754bc02accd7a9f7
   - caminho: media/nt-2-04/pagina-05.jpg
     pagina: 5
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 95919cc5cc1ac499be4832cecb96c9ecebc1fdda09742e8fc09f5a4044d4651d
   - caminho: media/nt-2-04/pagina-07.jpg
     pagina: 7
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 28705de74477d4c51d6aa552a1d3bc8ba2c9b7d10fcff576c64bde2d6a857a86
   - caminho: media/nt-2-04/pagina-10.jpg
     pagina: 10
     estado: presente
@@ -1246,7 +1246,7 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT2-05_3Edio_2023.pdf
   sha256_pdf: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
-  sha256_md: 5bd7766dc8b616605c5ec886aedcf8fbb5a4b85aa7bfec88a15d7143e114ec84
+  sha256_md: c0419c89379aa6a73af3b67c0cdef8fe04e18484ecc1a226f683dcf868b64634
   data_captura: '2026-07-23'
   paginas: 18
   midia: nt-2-05
@@ -1542,7 +1542,7 @@ fontes:
   ato: Portaria CBMERJ nº 1280, de 20 de dezembro de 2025
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/12/NT_2_09_2Ed_2025.pdf
   sha256_pdf: 4298bc2245a5f83e8db9d1dc5065fe356f70a3762ba0b1797ea6c6a8fc92c23e
-  sha256_md: 26d1ec6276f602abf533933477b4c5b040bcbac3c3aa07c708693afc77471391
+  sha256_md: 6e4fa65db3805e1b191b5eae3d859815cf40273997a0ca61dbcb289e27ff2de3
   data_captura: '2026-07-23'
   paginas: 11
   midia: nt-2-09
@@ -1626,8 +1626,8 @@ fontes:
   imagens:
   - caminho: media/nt-2-10/pagina-06.jpg
     pagina: 6
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 83f1ca8c2ccf5baf1d012ff34579a7c4f5f1c871d7f354082c1dcff048bea6a3
   - caminho: media/nt-2-10/pagina-13.jpg
     pagina: 13
     estado: presente
@@ -1654,12 +1654,12 @@ fontes:
     sha256: 0df4ec5ba1c44f67f70cb205941efca1f448306f2bcc2890f84e8fbf9cef271b
   - caminho: media/nt-2-10/pagina-19.jpg
     pagina: 19
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: c4e71d4d367d6b57c8b27331a88a301fb164b2fa60db60f219e6378045db6a33
   - caminho: media/nt-2-10/pagina-20.jpg
     pagina: 20
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 8e2803e03c6785debd51a3db2fafc165c098c2bca012e393371ceceb1e434b91
   tabelas:
   - pagina: 1
     estado: capa
@@ -1861,8 +1861,8 @@ fontes:
   imagens:
   - caminho: media/nt-2-13/pagina-04.jpg
     pagina: 4
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: bd6eda6a495dee5d7c3193c2bc39f7a57ace463802b7120fd82b603c84b6d7aa
   - caminho: media/nt-2-13/pagina-06.jpg
     pagina: 6
     estado: presente
@@ -2461,12 +2461,12 @@ fontes:
     sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
   - caminho: media/nt-3-01/pagina-04.jpg
     pagina: 4
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: aee369fb6b10b6c97c49b74f26d1260baeecb3983c38c43a0b7ab8aeb0390034
   - caminho: media/nt-3-01/pagina-05.jpg
     pagina: 5
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: d3299eb14009f75fa9f97aca3f76cd0c9bcd2a5938571ed381e27b6e2bce5465
   tabelas:
   - pagina: 1
     estado: capa
@@ -3314,12 +3314,12 @@ fontes:
     sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
   - caminho: media/nt-4-10/pagina-03.jpg
     pagina: 3
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: 880d73fec9d35b2a2d0342e8722dc870f1ab3e3130794f9cf0020bc406c4a9d4
   - caminho: media/nt-4-10/pagina-04.jpg
     pagina: 4
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: d25eb1453c9abe4348a70795c1826df0cb12858aca93bc7f0e7e3b8b3fcd5e96
   tabelas:
   - pagina: 1
     estado: capa
@@ -3341,8 +3341,8 @@ fontes:
   imagens:
   - caminho: media/nt-4-11/pagina-03.jpg
     pagina: 3
-    estado: ausente
-    sha256: null
+    estado: presente
+    sha256: db3d03ee898871942b2218de6cdee64c3370e0dfd14e996e4703b644b4773518
   tabelas:
   - pagina: 3
     estado: bruto

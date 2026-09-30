@@ -192,6 +192,205 @@ caminhos:
     - - I-2 I-3
       - '-'
       - DUPLO
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 81.63
+      - 96.48
+      - 506.73
+      - 775.56
+      linhas:
+      - - Ocupação/Uso
+        - Divisão
+        - ''
+        - Critério de
+        - ''
+        - ''
+        - Número de
+        - ''
+        - Número de Estágios
+      - - null
+        - null
+        - null
+        - Altura (metros)
+        - null
+        - null
+        - Portas Abertas
+        - null
+        - null
+      - - Residencial
+        - A-1 A-2 A-3 A-4 A-5 A- 6
+        - Até 80
+        - null
+        - null
+        - '1'
+        - null
+        - null
+        - ÚNICO
+      - - null
+        - null
+        - Acima de 80
+        - null
+        - null
+        - '2'
+        - null
+        - null
+        - DUPLO
+      - - Serviço de hospedagem
+        - B-1 B-2
+        - Até 30
+        - null
+        - null
+        - '2'
+        - null
+        - null
+        - ÚNICO
+      - - null
+        - null
+        - Acima de 30
+        - null
+        - null
+        - null
+        - null
+        - null
+        - DUPLO
+      - - Comercial
+        - C-1 C-2 C-3
+        - Até 30
+        - null
+        - null
+        - '2'
+        - null
+        - null
+        - DUPLO
+      - - null
+        - null
+        - Acima de 30
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Serviço profissional e institucional
+        - D-1 D-2 D-3 D-4 D-5
+        - Até 30
+        - null
+        - null
+        - '2'
+        - null
+        - null
+        - ÚNICO
+      - - null
+        - null
+        - Acima de 30
+        - null
+        - null
+        - null
+        - null
+        - null
+        - DUPLO
+      - - Escolar e cultura física
+        - E-1 E-2 E-3
+        - Até 30
+        - null
+        - null
+        - '2'
+        - null
+        - null
+        - ÚNICO
+      - - null
+        - null
+        - Acima de 30
+        - null
+        - null
+        - null
+        - null
+        - null
+        - DUPLO
+      - - Local de Reunião de Público
+        - F-1 F-2 F-3 F-4 F-5 F-6 F-8 F-9 F-10 F-11
+        - Até 200 (A)
+        - null
+        - null
+        - '2'
+        - null
+        - null
+        - ÚNICO
+      - - null
+        - null
+        - Acima de 200 (A)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - DUPLO
+      - - Serviço automotivo e assemelhado
+        - G-1 G-2 G-3 G-4 G-5 G-6
+        - Até 30
+        - null
+        - null
+        - '2'
+        - null
+        - null
+        - ÚNICO
+      - - null
+        - null
+        - Acima de 30
+        - null
+        - null
+        - null
+        - null
+        - null
+        - DUPLO
+      - - Serviço de saúde
+        - H-1 H-2 H-3 H-4
+        - Até 30
+        - null
+        - null
+        - '2'
+        - null
+        - null
+        - ÚNICO
+      - - null
+        - null
+        - Acima de 30
+        - null
+        - null
+        - null
+        - null
+        - null
+        - DUPLO
+      - - Industrial
+        - I-1
+        - Até 30
+        - null
+        - null
+        - '2'
+        - null
+        - null
+        - ÚNICO
+      - - null
+        - null
+        - Acima de 30
+        - null
+        - null
+        - null
+        - null
+        - null
+        - DUPLO
+      - - null
+        - I-2 I-3
+        - '-'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - DUPLO
 notas:
 - Células mescladas (ocupação, divisões, portas abertas, estágios) repetidas na publicação.
 - 'Observações da tabela (p. 11):'
@@ -208,6 +407,15 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 1
+    coluna: 1
+    a: A-1 A-2 A-3 A-4 A-5 A-6
+    b: A-1 A-2 A-3 A-4 A-5 A- 6
+    estado: verificada
+    score: 97.3

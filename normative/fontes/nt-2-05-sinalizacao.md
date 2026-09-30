@@ -208,7 +208,7 @@ Obs. 2: Deverá ser adotada, conforme cada caso, nas centrais de GLP, salas de g
 | A-2 (Residencial privativa multifamiliar) e A-5 (Agrupamento residencial privativo multifamiliar) | Exigido (Vide obs. 3) | Exigido (Vide obs. 2) |
 | Demais edificações | Exigido (Vide obs. 4) | Exigido (Vide obs. 2) |
 
-Fonte: NT 2-05, página 3, Quadro 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-05, página 3, Quadro 1; conferida em 2026-09-29 (visual + geometrica).
 Fonte indicada na página: CBMERJ.
 Obs. 1: Deverá ser adotada nas áreas comuns, por exemplo: salão de festas, centro social e administração. As observações 2 a 4 continuam na página 4 do texto.
 <!-- /tabela-conferida: Quadro 1 p3 -->
@@ -407,7 +407,7 @@ Fonte: ABNT NBR 16820.
 | CMYK | C0 M100 Y91 K0 | C0 M9 Y94 K0 | C79 M0 Y87 K76 | C0 M0 Y0 K100 | – |
 | RGB | R255 G0 B23 | R255 G255 B0 | R0 G61 B0 | R0 G0 B0 | – |
 
-Fonte: NT 2-05, página 7, Tabela 2 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-05, página 7, Tabela 2 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 Verde em Munsell está escrito "2.5G ¾" (fração tipográfica de 3/4).
 Nota 1: O padrão de cores básico é o Munsell Book of Colors®.
 Nota 2: As cores Pantone® foram convertidas do sistema Munsell Book of Colors®.
@@ -447,7 +447,7 @@ Fonte: ABNT NBR 16820.
 | P-4 |  | Proibido utilizar elevador em caso de incêndio | Forma: circular Fundo: fotoluminescente Pictograma: preta Faixa circular e barra diametral: vermelha | Os elevadores devem possuir sinalização específica composta por símbolo e mensagem de texto, afixada próximo ao botão de chamada e ao lado das portas dos elevadores, devendo ser fotoluminescente, instalada ao nível superior ou intermediário, excetuando-se os elevadores de emergência. Nível: intermediário |
 | P-5 |  | Proibido obstruir este local | Forma: circular Fundo: branca Pictograma: preta Faixa circular e barra diametral: vermelha | Em locais sujeitos a depósito de mercadorias onde a obstrução possa apresentar perigo de acesso às saídas de emergência, rotas de fuga, equipamentos de combate a incêndio. Nível: superior |
 
-Fonte: NT 2-05, página 8, Tabela 3 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-05, página 8, Tabela 3 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela. Célula de forma e cor mesclada entre linhas repete-se na publicação.
 O sinal P-4 traz também a mensagem "PROIBIDO UTILIZAR O ELEVADOR EM CASO DE INCÊNDIO".
 Fonte indicada na página: ABNT NBR 16820.
@@ -489,7 +489,7 @@ Fonte: ABNT NBR 16820.
 | A-6 |  | Cuidado, risco de radiação | Forma: triangular Fundo: fotoluminescente Pictograma: preta Faixa triangular: preta | Próximo a materiais ou áreas com presença de produtos radioativos. Nível: superior ou intermediário |
 | A-7 |  | Cuidado, risco de exposição a produtos tóxicos | Forma: triangular Fundo: fotoluminescente Pictograma: preta Faixa triangular: preta | Próximo a materiais ou áreas com presença de produtos tóxicos. Nível: superior ou intermediário |
 
-Fonte: NT 2-05, página 9, Tabela 4 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-05, página 9, Tabela 4 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela. Célula de forma e cor mesclada entre linhas repete-se na publicação.
 Fonte indicada na página: ABNT NBR 16820.
 <!-- /tabela-conferida: Tabela 4 do Anexo B p9 -->
@@ -532,7 +532,7 @@ Fonte: ABNT NBR 16820.
 | S-7 |  | Orientação do sentido da saída de emergência | Forma: retangular Fundo: verde Pictograma: fotoluminescente | a) indicação do sentido do acesso a uma saída que não esteja aparente; b) indicação do sentido de uma saída por rampas; c) indicação do sentido da saída na direção vertical (subindo ou descendo). Nível: superior |
 | S-8 |  | Orientação do sentido da escada de emergência | Forma: retangular Fundo: verde Pictograma: fotoluminescente | Indicação do sentido de fuga no interior das escadas. Indica direita ou esquerda, descendo ou subindo. O desenho indicativo deve ser posicionado de acordo com o sentido a ser sinalizado. Nível: superior |
 
-Fonte: NT 2-05, página 10, Tabela 5 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-05, página 10, Tabela 5 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela. Célula de forma e cor mesclada entre linhas repete-se na publicação.
 A tabela continua na página 11.
 Fonte indicada na página: ABNT NBR 16820.
@@ -578,7 +578,7 @@ Fonte: ABNT NBR 16820.
 | S-15-D |  | Orientação do sentido de saídas de emergência acessíveis | Forma: retangular Fundo: verde Pictograma: fotoluminescente | Indicação da saída de emergência para PcD, ou acesso à área de resgate. Nível: superior |
 | S-15-E |  | Orientação do sentido de saídas de emergência acessíveis | Forma: retangular Fundo: verde Pictograma: fotoluminescente | Indicação da saída de emergência para PcD, ou acesso à área de resgate. Nível: superior |
 
-Fonte: NT 2-05, página 11, Tabela 5 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-05, página 11, Tabela 5 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela. Célula de forma e cor mesclada entre linhas repete-se na publicação.
 Fonte indicada na página: ABNT NBR 16820.
 <!-- /tabela-conferida: Tabela 5 do Anexo B p11 -->
@@ -617,7 +617,7 @@ Fonte: ABNT NBR 16820.
 | S-19 |  | Instruções para porta corta-fogo | Forma: retangular Fundo: verde Texto: fotoluminescente Altura mínima da letra: 16 mm | Indicação de manutenção da porta corta-fogo constantemente fechada. Nível: intermediário |
 | S-20 |  | Instruções para porta corta-fogo | Forma: retangular Fundo: verde Texto: fotoluminescente Altura mínima da letra: 16 mm | Indicação de manutenção da porta corta-fogo nos casos específicos indicados na ABNT NBR 11742. Nível: intermediário |
 
-Fonte: NT 2-05, página 12, Tabela 5 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-05, página 12, Tabela 5 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela. Célula de forma e cor mesclada entre linhas repete-se na publicação.
 Na S-17 a página mostra um glifo que não foi renderizado (□) entre "1º + SS" e "1º SS", provavelmente uma seta; a camada de texto o omite.
 Mensagens dos sinais: S-17 "20º" e "1ºSS"; S-18 "APERTE E EMPURRE"; S-19 "PORTA CORTA-FOGO É OBRIGATÓRIO MANTER FECHADA"; S-20 "PORTA CORTA-FOGO".
@@ -654,7 +654,7 @@ Fonte: ABNT NBR 16820.
 | S-23 |  | Elevador de emergência | Forma: retangular Fundo: verde Pictograma: fotoluminescente | Sinalização específica para elevadores de emergência. Nível: intermediário |
 | S-24 |  | Ponto de encontro | Forma: quadrada ou retangular Fundo: verde Pictograma: fotoluminescente | Sinalização específica para ponto de encontro de agrupamento. Nível: superior |
 
-Fonte: NT 2-05, página 13, Tabela 5 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-05, página 13, Tabela 5 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela. Célula de forma e cor mesclada entre linhas repete-se na publicação.
 Mensagens dos sinais: S-23 "ELEVADOR DE EMERGÊNCIA"; S-24 "PONTO DE ENCONTRO".
 Fonte indicada na página: ABNT NBR 16820.
@@ -694,7 +694,7 @@ Fonte: ABNT NBR 16820.
 | E-5 |  | Extintor de incêndio | Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente | Indicação de localização dos extintores de incêndio. Nível: superior |
 | E-6 |  | Mangotinho | Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente | Indicação de localização do mangotinho. Nível: superior |
 
-Fonte: NT 2-05, página 14, Tabela 6 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-05, página 14, Tabela 6 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela. Célula de forma e cor mesclada entre linhas repete-se na publicação.
 Mensagens dos sinais: E-2 "ALARME DE INCÊNDIO"; E-3 "BOMBA DE INCÊNDIO". A tabela continua na página 15.
 Fonte indicada na página: ABNT NBR 16820.
@@ -734,7 +734,7 @@ Fonte: ABNT NBR 16820.
 | E-11 |  | Extintor de incêndio sobre rodas | Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente | Indicação da localização de extintor de incêndio sobre rodas. Nível: superior |
 | E-12 |  |  | Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente | Indicação da localização da manta para o abafamento de chamas em pessoas. Nível: superior |
 
-Fonte: NT 2-05, página 15, Tabela 6 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-05, página 15, Tabela 6 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela. Célula de forma e cor mesclada entre linhas repete-se na publicação.
 Fonte indicada na página: ABNT NBR 16820.
 <!-- /tabela-conferida: Tabela 6 do Anexo B p15 -->
@@ -771,7 +771,7 @@ Fonte: ABNT NBR 16820.
 | E-16 |  | Seta diagonal à direita, indicativa de localização dos equipamentos de combate a incêndio ou alarme | Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente | Complementação da indicação da localização dos equipamentos de combate a incêndio ou alarme. Utilizadas em conjunto com a sinalização do equipamento a ser indicado, em casos onde o equipamento esteja oculto. Deve sempre ser acompanhado do símbolo do(s) equipamento(s) que estiver(em) oculto(s). Nível: superior |
 | E-17 |  | Sinalização de solo para equipamentos de combate a incêndio (hidrante e extintores) | Forma: quadrada (1,00 m □ 1,00 m) Fundo: vermelha (0,70 m □ 0,70 m) Borda: amarela (largura □ 0,15 m) | Usado para indicar a localização dos equipamentos de combate a incêndio, para evitar a sua obstrução. Nível: solo |
 
-Fonte: NT 2-05, página 16, Tabela 6 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-05, página 16, Tabela 6 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela. Célula de forma e cor mesclada entre linhas repete-se na publicação.
 Na E-17 a página mostra glifos não renderizados (□) entre as medidas, provavelmente "×" e "="; a camada de texto os omite.
 Fonte indicada na página: ABNT NBR 16820.
@@ -816,7 +816,7 @@ Fonte: ABNT NBR 16820.
 | Orientação, salvamento e equipamentos |  | Medida em milímetros (L □ H) | 200 □ 100 | 240 □ 120 | 300 □ 150 | 400 □ 200 | 600 □ 300 | 700 □ 350 | 1 000 □ 500 |
 | Orientação, salvamento e equipamentos |  | Distância de visualização em metros | 6,3 m | 7,6 m | 9,5 m | 12,6 m | 19 m | 22,1 m | 31,6 m |
 
-Fonte: NT 2-05, página 17, Tabela 7 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-05, página 17, Tabela 7 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 A coluna Forma geométrica traz desenhos (círculo com D, triângulo com L, quadrado com L, retângulo com L e H), só na imagem da página.
 Os □ são glifos não renderizados na página, provavelmente "×" ("100 × 100"); a camada de texto os omite.
 NOTA da tabela: As dimensões utilizadas são exemplos de algumas medidas encontradas no mercado brasileiro. Outras dimensões podem ser utilizadas, sempre levando em consideração o cálculo de distância máxima de visualização.
@@ -876,7 +876,7 @@ Fonte: ABNT NBR 16820.
 | 225 | 27 | 1 500 | 180 |
 | 250 | 30 | 1 000 | 120 |
 
-Fonte: NT 2-05, página 18, Tabela 8 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 2-05, página 18, Tabela 8 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 Texto da página abaixo da tabela: Todas as palavras e sentenças devem apresentar letras em caixa alta utilizando fonte Univers 65 ou Helvetica Bold, não sendo admitido qualquer tipo de distorção da fonte.
 Conferência aritmética: a distância é ≈ 0,12 × a altura (30 mm → 4 m arredonda para cima).
 Fonte indicada na página: ABNT NBR 16820.

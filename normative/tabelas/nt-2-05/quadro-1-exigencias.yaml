@@ -45,6 +45,54 @@ caminhos:
     - - Demais edificações
       - Exigido (Vide obs. 4)
       - Exigido (Vide obs. 2)
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 320.26
+      - 546.09
+      - 545.35
+      - 724.3
+      linhas:
+      - - Edificações
+        - ''
+        - Orientação e
+        - ''
+        - Proibição / alerta
+      - - null
+        - null
+        - salvamento /
+        - null
+        - null
+      - - null
+        - null
+        - equipamentos
+        - null
+        - null
+      - - A-4 (Agrupamento residencial unifamiliar)
+        - Exigido (Vide obs. 1)
+        - null
+        - null
+        - Exigido (Vide obs. 2)
+      - - A-2 (Residencial privativa multifamiliar) e A-5 (Agrupamento residencial privativo multifamiliar)
+        - Exigido (Vide obs. 3)
+        - null
+        - null
+        - Exigido (Vide obs. 2)
+      - - Demais edificações
+        - Exigido (Vide obs. 4)
+        - null
+        - null
+        - Exigido (Vide obs. 2)
+    - bbox:
+      - 494.02
+      - 552.31
+      - 539.98
+      - 576.31
+      linhas:
+      - - Proibição /
+      - - alerta
 notas:
 - 'Fonte indicada na página: CBMERJ.'
 - 'Obs. 1: Deverá ser adotada nas áreas comuns, por exemplo: salão de festas, centro social e administração.
@@ -54,6 +102,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

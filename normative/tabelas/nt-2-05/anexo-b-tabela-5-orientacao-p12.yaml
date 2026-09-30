@@ -94,6 +94,57 @@ caminhos:
       - 'Forma: retangular Fundo: verde Texto: fotoluminescente Altura mínima da letra: 16 mm'
       - 'Indicação de manutenção da porta corta-fogo nos casos específicos indicados na ABNT NBR 11742.
         Nível: intermediário'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.6
+      - 70.56
+      - 535.54
+      - 695.5
+      linhas:
+      - - Código
+        - Símbolo
+        - Significado
+        - Forma e cor
+        - Aplicação
+      - - S-16-D
+        - ''
+        - Orientação do sentido de saídas de emergência acessíveis
+        - 'Forma: retangular Fundo: verde Pictograma e texto: fotoluminescente Mensagem “SAÍDA” com pictograma
+          e/ou seta direcional, com altura de letra superior a 50 mm.'
+        - 'Indicação da saída de emergência para PcD, ou acesso à área de resgate, utilizada com complementação
+          do pictograma fotoluminescente (seta ou imagem, ou ambos) Nível: superior'
+      - - S16-E
+        - ''
+        - null
+        - null
+        - null
+      - - S-17
+        - ''
+        - Número do pavimento
+        - 'Forma: retangular ou quadrada Fundo: verde Texto: fotoluminescente Mensagem indicando número
+          do pavimento, pode se formar pela associação de duas sinalizações (por exemplo:1º + SS 1º SS),
+          se necessário'
+        - 'Indicação do pavimento, no interior da escada (patamar). Altura de instalação: Nível: superior'
+      - - S-18
+        - ''
+        - Instrução de abertura de porta por barra antipânico
+        - 'Forma: quadrada ou retangular Fundo: verde Pictograma e texto: fotoluminescente'
+        - 'Indicação da forma de acionamento da barra antipânico instalada. Pode ser complementada pela
+          mensagem “aperte e empurre”. Altura de instalação: Imediatamente acima da barra antipânico'
+      - - S-19
+        - ''
+        - Instruções para porta corta-fogo
+        - 'Forma: retangular Fundo: verde Texto: fotoluminescente Altura mínima da letra: 16 mm'
+        - 'Indicação de manutenção da porta corta-fogo constantemente fechada. Nível: intermediário'
+      - - S-20
+        - ''
+        - Instruções para porta corta-fogo
+        - 'Forma: retangular Fundo: verde Texto: fotoluminescente Altura mínima da letra: 16 mm'
+        - 'Indicação de manutenção da porta corta-fogo nos casos específicos indicados na ABNT NBR 11742.
+          Nível: intermediário'
 notas:
 - A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela.
   Célula de forma e cor mesclada entre linhas repete-se na publicação.
@@ -110,6 +161,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

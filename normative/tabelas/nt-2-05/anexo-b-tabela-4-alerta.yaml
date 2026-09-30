@@ -94,6 +94,59 @@ caminhos:
     - - A-7
       - Cuidado, risco de exposição a produtos tóxicos
       - 'Próximo a materiais ou áreas com presença de produtos tóxicos. Nível: superior ou intermediário'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 49.56
+      - 70.8
+      - 542.98
+      - 748.3
+      linhas:
+      - - Código
+        - Símbolo
+        - Significado
+        - Forma e cor
+        - Aplicação
+      - - A-1
+        - ''
+        - Alerta geral
+        - 'Forma: triangular Fundo: fotoluminescente Pictograma: preta Faixa triangular: preta'
+        - 'Toda vez que não houver símbolo específico de alerta, deve ser utilizado sempre acompanhado
+          de mensagem escrita específica. Nível: superior ou intermediário'
+      - - A-2
+        - ''
+        - Cuidado, risco de incêndio
+        - null
+        - 'Próximo a materiais ou áreas com presença de produtos altamente inflamáveis. Nível: superior
+          ou intermediário'
+      - - A-3
+        - ''
+        - Cuidado, risco de explosão
+        - null
+        - 'Próximo a materiais ou áreas com presença de produtos (sólidos, gases ou vapores) com risco
+          de explosão. Nível: superior ou intermediário'
+      - - A-4
+        - ''
+        - Cuidado, risco de corrosão
+        - null
+        - 'Próximo a materiais ou áreas com presença de produtos corrosivos. Nível: superior ou intermediário'
+      - - A-5
+        - ''
+        - Cuidado, risco de choque elétrico
+        - null
+        - 'Próximo a instalações elétricas que ofereçam risco de choque. Nível: superior ou intermediário'
+      - - A-6
+        - ''
+        - Cuidado, risco de radiação
+        - null
+        - 'Próximo a materiais ou áreas com presença de produtos radioativos. Nível: superior ou intermediário'
+      - - A-7
+        - ''
+        - Cuidado, risco de exposição a produtos tóxicos
+        - null
+        - 'Próximo a materiais ou áreas com presença de produtos tóxicos. Nível: superior ou intermediário'
 notas:
 - A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela.
   Célula de forma e cor mesclada entre linhas repete-se na publicação.
@@ -103,6 +156,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
