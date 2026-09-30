@@ -1,0 +1,231 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 19
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  mesclar_linhas:
+  - - 8
+    - 9
+  - - 12
+    - 13
+  - - 14
+    - 15
+  - - 16
+    - 17
+  - - 20
+    - 21
+  - - 22
+    - 23
+  - - 26
+    - 27
+  descartar_linhas:
+  - 7
+  - 10
+  - 15
+  - 19
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-19.png
+    imagem_sha256: a62e67bf4b59a9f69933c1b6d20eb0ba7964a7877c3d1036e8f710d1153dcc37
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 4541-2/02
+      - Comércio por atacado de peças e acessórios para motocicletas e motonetas
+    - - 4541-2/06
+      - Comércio a varejo de peças e acessórios novos para motocicletas e motonetas
+    - - 4541-2/07
+      - Comércio a varejo de peças e acessórios usados para motocicletas e motonetas
+    - - 4542-1/01
+      - Representantes comerciais e agentes do comércio de motocicletas e motonetas, peças e acessórios
+    - - 4542-1/02
+      - Comércio sob consignação de motocicletas e motonetas
+    - - 4543-9/00
+      - Manutenção e reparação de motocicletas e motonetas
+    - - 4611-7/00
+      - Representantes comerciais e agentes do comércio de matérias-primas agrícolas e animais vivos
+    - - 4612-5/00
+      - Representantes comerciais e agentes do comércio de combustíveis, minerais, produtos siderúrgicos
+        e químicos
+    - - 4613-3/00
+      - Representantes comerciais e agentes do comércio de madeira, material de construção e ferragens
+    - - 4614-1/00
+      - Representantes comerciais e agentes do comércio de máquinas, equipamentos, embarcações e aeronaves
+    - - 4615-0/00
+      - Representantes comerciais e agentes do comércio de eletrodomésticos, móveis e artigos de uso doméstico
+    - - 4616-8/00
+      - Representantes comerciais e agentes do comércio de têxteis, vestuário, calçados e artigos de viagem
+    - - 4617-6/00
+      - Representantes comerciais e agentes do comércio de produtos alimentícios, bebidas e fumo
+    - - 4618-4/01
+      - Representantes comerciais e agentes do comércio de medicamentos, cosméticos e produtos de perfumaria
+    - - 4618-4/02
+      - Representantes comerciais e agentes do comércio de instrumentos e materiais odonto-médico hospitalares
+    - - 4618-4/03
+      - Representantes comerciais e agentes do comércio de jornais, revistas e outras publicações
+    - - 4618-4/99
+      - Outros representantes comerciais e agentes do comércio especializado em produtos não especificados
+        anteriormente
+    - - 4619-2/00
+      - Representantes comerciais e agentes do comércio de mercadorias em geral não especializado
+    - - 4631-1/00
+      - Comércio atacadista de leite e laticínios
+    - - 4633-8/01
+      - Comércio atacadista de frutas, verduras, raízes, tubérculos, hortaliças e legumes frescos
+    - - 4633-8/02
+      - Comércio atacadista de aves vivas e ovos
+    - - 4633-8/03
+      - Comércio atacadista de coelhos e outros pequenos animais vivos para alimentação
+    - - 4634-6/01
+      - Comércio atacadista de carnes bovinas e suínas e derivados
+    - - 4634-6/02
+      - Comércio atacadista de aves abatidas e derivados
+    - - 4634-6/03
+      - Comércio atacadista de pescados e frutos do mar
+    - - 4634-6/99
+      - Comércio atacadista de carnes e derivados de outros animais
+    - - 4635-4/01
+      - Comércio atacadista de água mineral
+    - - 4635-4/02
+      - Comércio atacadista de cerveja, chope e refrigerante
+    - - 4637-1/02
+      - Comércio atacadista de açúcar
+    - - 4637-1/04
+      - Comércio atacadista de pães, bolos, biscoitos e similares
+    - - 4637-1/05
+      - Comércio atacadista de massas alimentícias
+    - - 4637-1/06
+      - Comércio atacadista de sorvetes
+    - - 4637-1/07
+      - Comércio atacadista de chocolates, confeitos, balas, bombons e semelhantes
+    - - 4641-9/01
+      - Comércio atacadista de tecidos
+    - - 4641-9/02
+      - Comércio atacadista de artigos de cama, mesa e banho
+    - - 4641-9/03
+      - Comércio atacadista de artigos de armarinho
+    - - 4642-7/01
+      - Comércio atacadista de artigos do vestuário e acessórios, exceto profissionais e de segurança
+    - - 4642-7/02
+      - Comércio atacadista de roupas e acessórios para uso profissional e de segurança do trabalho
+    - - 4643-5/01
+      - Comércio atacadista de calçados
+    - - 4643-5/02
+      - Comércio atacadista de bolsas, malas e artigos de viagem
+    - - 4644-3/01
+      - Comércio atacadista de medicamentos e drogas de uso humano
+    - - 4644-3/02
+      - Comércio atacadista de medicamentos e drogas de uso veterinário
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 19
+      tabela_na_pagina: 1
+    linhas:
+    - - 4541-2/02
+      - Comércio por atacado de peças e acessórios para motocicletas e motonetas
+    - - 4541-2/06
+      - Comércio a varejo de peças e acessórios novos para motocicletas e motonetas
+    - - 4541-2/07
+      - Comércio a varejo de peças e acessórios usados para motocicletas e motonetas
+    - - 4542-1/01
+      - Representantes comerciais e agentes do comércio de motocicletas e motonetas, peças e acessórios
+    - - 4542-1/02
+      - Comércio sob consignação de motocicletas e motonetas
+    - - 4543-9/00
+      - Manutenção e reparação de motocicletas e motonetas
+    - - 4611-7/00
+      - Representantes comerciais e agentes do comércio de matérias-primas agrícolas e animais vivos
+    - - 4612-5/00
+      - Representantes comerciais e agentes do comércio de combustíveis, minerais, produtos siderúrgicos
+        e químicos
+    - - 4613-3/00
+      - Representantes comerciais e agentes do comércio de madeira, material de construção e ferragens
+    - - 4614-1/00
+      - Representantes comerciais e agentes do comércio de máquinas, equipamentos, embarcações e aeronaves
+    - - 4615-0/00
+      - Representantes comerciais e agentes do comércio de eletrodomésticos, móveis e artigos de uso doméstico
+    - - 4616-8/00
+      - Representantes comerciais e agentes do comércio de têxteis, vestuário, calçados e artigos de viagem
+    - - 4617-6/00
+      - Representantes comerciais e agentes do comércio de produtos alimentícios, bebidas e fumo
+    - - 4618-4/01
+      - Representantes comerciais e agentes do comércio de medicamentos, cosméticos e produtos de perfumaria
+    - - 4618-4/02
+      - Representantes comerciais e agentes do comércio de instrumentos e materiais odonto-médico hospitalares
+    - - 4618-4/03
+      - Representantes comerciais e agentes do comércio de jornais, revistas e outras publicações
+    - - 4618-4/99
+      - Outros representantes comerciais e agentes do comércio especializado em produtos não especificados
+        anteriormente
+    - - 4619-2/00
+      - Representantes comerciais e agentes do comércio de mercadorias em geral não especializado
+    - - 4631-1/00
+      - Comércio atacadista de leite e laticínios
+    - - 4633-8/01
+      - Comércio atacadista de frutas, verduras, raízes, tubérculos, hortaliças e legumes frescos
+    - - 4633-8/02
+      - Comércio atacadista de aves vivas e ovos
+    - - 4633-8/03
+      - Comércio atacadista de coelhos e outros pequenos animais vivos para alimentação
+    - - 4634-6/01
+      - Comércio atacadista de carnes bovinas e suínas e derivados
+    - - 4634-6/02
+      - Comércio atacadista de aves abatidas e derivados
+    - - 4634-6/03
+      - Comércio atacadista de pescados e frutos do mar
+    - - 4634-6/99
+      - Comércio atacadista de carnes e derivados de outros animais
+    - - 4635-4/01
+      - Comércio atacadista de água mineral
+    - - 4635-4/02
+      - Comércio atacadista de cerveja, chope e refrigerante
+    - - 4637-1/02
+      - Comércio atacadista de açúcar
+    - - 4637-1/04
+      - Comércio atacadista de pães, bolos, biscoitos e similares
+    - - 4637-1/05
+      - Comércio atacadista de massas alimentícias
+    - - 4637-1/06
+      - Comércio atacadista de sorvetes
+    - - 4637-1/07
+      - Comércio atacadista de chocolates, confeitos, balas, bombons e semelhantes
+    - - 4641-9/01
+      - Comércio atacadista de tecidos
+    - - 4641-9/02
+      - Comércio atacadista de artigos de cama, mesa e banho
+    - - 4641-9/03
+      - Comércio atacadista de artigos de armarinho
+    - - 4642-7/01
+      - Comércio atacadista de artigos do vestuário e acessórios, exceto profissionais e de segurança
+    - - 4642-7/02
+      - Comércio atacadista de roupas e acessórios para uso profissional e de segurança do trabalho
+    - - 4643-5/01
+      - Comércio atacadista de calçados
+    - - 4643-5/02
+      - Comércio atacadista de bolsas, malas e artigos de viagem
+    - - 4644-3/01
+      - Comércio atacadista de medicamentos e drogas de uso humano
+    - - 4644-3/02
+      - Comércio atacadista de medicamentos e drogas de uso veterinário
+notas:
+- Continuação da tabela da página 18.
+- A tabela continua na página 20.
+- A camada de texto parte as descrições de duas linhas e repete 4 descrição(ões) numa linha vazia; a comparação
+  junta as partes e descarta as repetições.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

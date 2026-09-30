@@ -1,0 +1,98 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-03
+arquivo: nt-1-03-simbolos-graficos.md
+tabela: Anexo A
+titulo: Simbologia para projeto de segurança contra incêndio e pânico
+pagina: 11
+fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-03/pagina-11.png
+    imagem_sha256: 87477ee5f1d4fc2def302b4d03c5b5fb4b2ee93548102f14f01bf7445ef9e0df
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Grupo
+    - Subgrupo
+    - Nome do símbolo
+    - 'Símbolo gráfico (desenho: ver a imagem da página)'
+    linhas:
+    - - ''
+      - ''
+      - DAMPER CORTA-FOGO E CORTA-FUMAÇA
+      - ''
+    - - ^
+      - ^
+      - VENTILADOR OU EXAUSTOR PARA CONTROLE DE FUMAÇA
+      - ''
+    - - ^
+      - CONTROLE DE FUMAÇA
+      - ACIONADOR MANUAL (EXAUSTÃO OU VENTILAÇÃO)
+      - ''
+    - - ^
+      - ^
+      - DAMPER DE SOBREPRESSÃO
+      - ''
+    - - ^
+      - ^
+      - VENEZIANA DE ENTRADA DE AR COM FILTRO
+      - ''
+    - - ^
+      - ^
+      - VENEZIANA DE ENTRADA DE AR JUNTO AO PISO
+      - ''
+    - - ^
+      - ^
+      - VENEZIANA DE ENTRADA DE AR JUNTO AO TETO
+      - ''
+    - - ^
+      - ^
+      - GRELHA COM DISPOSITIVO DE AJUSTE E BALANCEAMENTO
+      - ''
+    - - ^
+      - ^
+      - DIMENSÕES DA VENEZIANA E ALTURA DO PISO
+      - ''
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 11
+      tabela_na_pagina: 1
+    linhas:
+    - - DAMPER CORTA-FOGO E CORTAFUMAÇA
+    - - VENTILADOR OU EXAUSTOR PARA CONTROLE DE FUMAÇA
+    - - CONTROLE DE FUMAÇA
+      - ACIONADOR MANUAL (EXAUSTÃO OU VENTILAÇÃO)
+    - - DAMPER DE SOBREPRESSÃO
+    - - VENEZIANA DE ENTRADA DE AR COM FILTRO
+    - - VENEZIANA DE ENTRADA DE AR JUNTO AO PISO
+    - - VENEZIANA DE ENTRADA DE AR JUNTO AO TETO
+    - - GRELHA COM DISPOSITIVO DE AJUSTE E BALANCEAMENTO
+    - - DIMENSÕES DA VENEZIANA E ALTURA DO PISO
+notas:
+- A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
+  da página).
+- As células vazias das duas primeiras colunas no alto da página continuam a tabela da página anterior.
+- O símbolo de "Dimensões da veneziana e altura do piso" é o desenho "Largura x Altura (Veneziana)" sobre
+  "Altura do piso", separados por um traço.
+inconsistencias_da_fonte:
+- '"VENTILADOR OU EXAUSTOR PARA CONTROLE DE FUMAÇA" fica fora da célula "CONTROLE DE FUMAÇA" (subgrupo
+  vazio, como a linha de cima), que começa na linha seguinte.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  celulas:
+  - linha: 0
+    coluna: 0
+    a: DAMPER CORTA-FOGO E CORTA-FUMAÇA
+    b: DAMPER CORTA-FOGO E CORTAFUMAÇA
+    estado: verificada
+    score: 98.4

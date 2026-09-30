@@ -1,0 +1,44 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 Parte 2
+arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+tabela: Anexo C (Classe I)
+titulo: Exemplos das mercadorias – Classe I (continuação)
+pagina: 16
+fonte_pdf_sha256: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-2/pagina-16.jpg
+    imagem_sha256: 10d3f63cf47e9acb5e24faccf4bfaa893ab8aff6f5b207fe34da16e5dd77fb0d
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Exemplos – Classe I
+    linhas:
+    - - '- Recipientes plásticos'
+    - - Motores - Elétricos
+    - - Amêndoas - Em latas, em caixas de papelão
+    - - Tintas Latas, em caixas de papelão - À base de água (látex)
+    - - Recipientes plásticos - Líquidos ou semilíquidos incombustíveis em recipientes plásticos com capacidade
+        menor que 5 gal (18,9 L)
+    - - Aves e derivados - Em latas, em caixas de papelão - Congelada, embalagem sem plástico e sem cera
+    - - Sal Em sacos
+    - - Melaço Em tambores metálicos
+    - - Transformadores Secos ou com óleo isolante
+    - - Arame Arame sem capa em carretéis de metal em estrados de madeira
+notas:
+- Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
+- Continuação da tabela da Classe I da página 15; é a primeira das duas tabelas da página.
+- 'A camada de texto não reconhece esta tabela: o segundo caminho é a grade do PDF (extração geométrica).'
+- 'FONTE: IT-24/2018 - CBPMESP.'
+- '* A maioria das baterias tem gabinete de polipropileno. Se armazenadas vazias devem ser tratadas como
+  plástico Grupo A. Baterias para caminhões, mesmo quando cheias, devem ser consideradas plástico Grupo
+  A por causa das paredes mais espessas.'
+estado: pendente_humano
+resultado:
+  estado: pendente_humano
+  caminhos_comparados:
+  - visual
+  motivo: é preciso a leitura visual e um segundo caminho independente

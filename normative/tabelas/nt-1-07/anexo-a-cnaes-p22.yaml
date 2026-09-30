@@ -1,0 +1,233 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 22
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  mesclar_linhas:
+  - - 2
+    - 3
+  - - 4
+    - 5
+  - - 13
+    - 14
+  - - 17
+    - 18
+  - - 22
+    - 23
+  descartar_linhas:
+  - 1
+  - 10
+  - 13
+  - 17
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-22.png
+    imagem_sha256: ed3a837c6149640fa957ba784a617c60fe36acbba3a7c3256e7dffcd922caae9
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 4921-3/01
+      - Transporte rodoviário coletivo de passageiros, com itinerário fixo, municipal
+    - - 4921-3/02
+      - Transporte rodoviário coletivo de passageiros, com itinerário fixo, intermunicipal em região metropolitana
+    - - 4922-1/01
+      - Transporte rodoviário coletivo de passageiros, com itinerário fixo, intermunicipal, exceto em
+        região metropolitana
+    - - 4922-1/02
+      - Transporte rodoviário coletivo de passageiros, com itinerário fixo, interestadual
+    - - 4922-1/03
+      - Transporte rodoviário coletivo de passageiros, com itinerário fixo, internacional
+    - - 4923-0/01
+      - Serviço de táxi
+    - - 4923-0/02
+      - Serviço de transporte de passageiros - locação de automóveis com motorista
+    - - 4924-8/00
+      - Transporte escolar
+    - - 4929-9/01
+      - Transporte rodoviário coletivo de passageiros, sob regime de fretamento, municipal
+    - - 4929-9/02
+      - Transporte rodoviário coletivo de passageiros, sob regime de fretamento, intermunicipal, interestadual
+        e internacional
+    - - 4929-9/03
+      - Organização de excursões em veículos rodoviários próprios, municipal
+    - - 4929-9/04
+      - Organização de excursões em veículos rodoviários próprios, intermunicipal, interestadual e internacional
+    - - 4929-9/99
+      - Outros transportes rodoviários de passageiros não especificados anteriormente
+    - - 4930-2/01
+      - Transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal
+    - - 4930-2/02
+      - Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual
+        e internacional
+    - - 4930-2/04
+      - Transporte rodoviário de mudanças
+    - - 5212-5/00
+      - Carga e descarga
+    - - 5221-4/00
+      - Concessionárias de rodovias, pontes, túneis e serviços relacionados
+    - - 5229-0/01
+      - Serviços de apoio ao transporte por táxi, inclusive centrais de chamada
+    - - 5229-0/02
+      - Serviços de reboque de veículos
+    - - 5229-0/99
+      - Outras atividades auxiliares dos transportes terrestres não especificadas anteriormente
+    - - 5231-1/01
+      - Administração da infraestrutura portuária
+    - - 5231-1/02
+      - Atividades do Operador Portuário
+    - - 5231-1/03
+      - Gestão de terminais aquaviários
+    - - 5232-0/00
+      - Atividades de agenciamento marítimo
+    - - 5239-7/01
+      - Serviços de praticagem
+    - - 5250-8/01
+      - Comissaria de despachos
+    - - 5250-8/02
+      - Atividades de despachantes aduaneiros
+    - - 5250-8/03
+      - Agenciamento de cargas, exceto para o transporte marítimo
+    - - 5250-8/04
+      - Organização logística do transporte de carga
+    - - 5250-8/05
+      - Operador de transporte multimodal - OTM
+    - - 5310-5/01
+      - Atividades do Correio Nacional
+    - - 5310-5/02
+      - Atividades de franqueadas e permissionárias do Correio Nacional
+    - - 5320-2/01
+      - Serviços de malote não realizados pelo Correio Nacional
+    - - 5320-2/02
+      - Serviços de entrega rápida
+    - - 5590-6/02
+      - Campings
+    - - 5612-1/00
+      - Serviços ambulantes de alimentação
+    - - 5620-1/02
+      - Serviços de alimentação para eventos e recepções - bufê
+    - - 5811-5/00
+      - Edição de livros
+    - - 5812-3/01
+      - Edição de jornais diários
+    - - 5812-3/02
+      - Edição de jornais não diários
+    - - 5813-1/00
+      - Edição de revistas
+    - - 5819-1/00
+      - Edição de cadastros, listas e outros produtos gráficos
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 22
+      tabela_na_pagina: 1
+    linhas:
+    - - 4921-3/01
+      - Transporte rodoviário coletivo de passageiros, com itinerário fixo, municipal
+    - - 4921-3/02
+      - Transporte rodoviário coletivo de passageiros, com itinerário fixo, intermunicipal em região metropolitana
+    - - 4922-1/01
+      - Transporte rodoviário coletivo de passageiros, com itinerário fixo, intermunicipal, exceto em
+        região metropolitana
+    - - 4922-1/02
+      - Transporte rodoviário coletivo de passageiros, com itinerário fixo, interestadual
+    - - 4922-1/03
+      - Transporte rodoviário coletivo de passageiros, com itinerário fixo, internacional
+    - - 4923-0/01
+      - Serviço de táxi
+    - - 4923-0/02
+      - Serviço de transporte de passageiros - locação de automóveis com motorista
+    - - 4924-8/00
+      - Transporte escolar
+    - - 4929-9/01
+      - Transporte rodoviário coletivo de passageiros, sob regime de fretamento, municipal
+    - - 4929-9/02
+      - Transporte rodoviário coletivo de passageiros, sob regime de fretamento, intermunicipal, interestadual
+        e internacional
+    - - 4929-9/03
+      - Organização de excursões em veículos rodoviários próprios, municipal
+    - - 4929-9/04
+      - Organização de excursões em veículos rodoviários próprios, intermunicipal, interestadual e internacional
+    - - 4929-9/99
+      - Outros transportes rodoviários de passageiros não especificados anteriormente
+    - - 4930-2/01
+      - Transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal
+    - - 4930-2/02
+      - Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual
+        e internacional
+    - - 4930-2/04
+      - Transporte rodoviário de mudanças
+    - - 5212-5/00
+      - Carga e descarga
+    - - 5221-4/00
+      - Concessionárias de rodovias, pontes, túneis e serviços relacionados
+    - - 5229-0/01
+      - Serviços de apoio ao transporte por táxi, inclusive centrais de chamada
+    - - 5229-0/02
+      - Serviços de reboque de veículos
+    - - 5229-0/99
+      - Outras atividades auxiliares dos transportes terrestres não especificadas anteriormente
+    - - 5231-1/01
+      - Administração da infraestrutura portuária
+    - - 5231-1/02
+      - Atividades do Operador Portuário
+    - - 5231-1/03
+      - Gestão de terminais aquaviários
+    - - 5232-0/00
+      - Atividades de agenciamento marítimo
+    - - 5239-7/01
+      - Serviços de praticagem
+    - - 5250-8/01
+      - Comissaria de despachos
+    - - 5250-8/02
+      - Atividades de despachantes aduaneiros
+    - - 5250-8/03
+      - Agenciamento de cargas, exceto para o transporte marítimo
+    - - 5250-8/04
+      - Organização logística do transporte de carga
+    - - 5250-8/05
+      - Operador de transporte multimodal - OTM
+    - - 5310-5/01
+      - Atividades do Correio Nacional
+    - - 5310-5/02
+      - Atividades de franqueadas e permissionárias do Correio Nacional
+    - - 5320-2/01
+      - Serviços de malote não realizados pelo Correio Nacional
+    - - 5320-2/02
+      - Serviços de entrega rápida
+    - - 5590-6/02
+      - Campings
+    - - 5612-1/00
+      - Serviços ambulantes de alimentação
+    - - 5620-1/02
+      - Serviços de alimentação para eventos e recepções - bufê
+    - - 5811-5/00
+      - Edição de livros
+    - - 5812-3/01
+      - Edição de jornais diários
+    - - 5812-3/02
+      - Edição de jornais não diários
+    - - 5813-1/00
+      - Edição de revistas
+    - - 5819-1/00
+      - Edição de cadastros, listas e outros produtos gráficos
+notas:
+- Continuação da tabela da página 21.
+- A tabela continua na página 23.
+- A camada de texto parte as descrições de duas linhas e repete 4 descrição(ões) numa linha vazia; a comparação
+  junta as partes e descarta as repetições.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

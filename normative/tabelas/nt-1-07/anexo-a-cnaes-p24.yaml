@@ -1,0 +1,213 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 24
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-24.png
+    imagem_sha256: 4479944787dca1a2ef8a68c5d032ecea3f9d25920b9a50310de3d28da434d2ab
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 6435-2/02
+      - Associações de poupança e empréstimo
+    - - 6435-2/03
+      - Companhias hipotecárias
+    - - 6436-1/00
+      - Sociedades de crédito, financiamento e investimento - financeiras
+    - - 6437-9/00
+      - Sociedades de crédito ao microempreendedor
+    - - 6438-7/01
+      - Bancos de câmbio
+    - - 6438-7/99
+      - Outras instituições de intermediação não monetária não especificadas anteriormente
+    - - 6440-9/00
+      - Arrendamento mercantil
+    - - 6450-6/00
+      - Sociedades de capitalização
+    - - 6461-1/00
+      - Holdings de instituições financeiras
+    - - 6462-0/00
+      - Holdings de instituições não financeiras
+    - - 6463-8/00
+      - Outras sociedades de participação, exceto holdings
+    - - 6470-1/01
+      - Fundos de investimento, exceto previdenciários e imobiliários
+    - - 6470-1/02
+      - Fundos de investimento previdenciários
+    - - 6470-1/03
+      - Fundos de investimento imobiliários
+    - - 6491-3/00
+      - Sociedades de fomento mercantil - factoring
+    - - 6492-1/00
+      - Securitização de créditos
+    - - 6493-0/00
+      - Administração de consórcios para aquisição de bens e direitos
+    - - 6499-9/01
+      - Clubes de investimento
+    - - 6499-9/02
+      - Sociedades de investimento
+    - - 6499-9/03
+      - Fundo garantidor de crédito
+    - - 6499-9/04
+      - Caixas de financiamento de corporações
+    - - 6499-9/05
+      - Concessão de crédito pelas OSCIP
+    - - 6499-9/99
+      - Outras atividades de serviços financeiros não especificadas anteriormente
+    - - 6511-1/01
+      - Sociedade seguradora de seguros vida
+    - - 6511-1/02
+      - Planos de auxílio-funeral
+    - - 6512-0/00
+      - Sociedade seguradora de seguros não vida
+    - - 6520-1/00
+      - Sociedade seguradora de seguros-saúde
+    - - 6530-8/00
+      - Resseguros
+    - - 6541-3/00
+      - Previdência complementar fechada
+    - - 6542-1/00
+      - Previdência complementar aberta
+    - - 6550-2/00
+      - Planos de saúde
+    - - 6611-8/01
+      - Bolsa de valores
+    - - 6611-8/02
+      - Bolsa de mercadorias
+    - - 6611-8/03
+      - Bolsa de mercadorias e futuros
+    - - 6611-8/04
+      - Administração de mercados de balcão organizados
+    - - 6612-6/01
+      - Corretoras de títulos e valores mobiliários
+    - - 6612-6/02
+      - Distribuidoras de títulos e valores mobiliários
+    - - 6612-6/03
+      - Corretoras de câmbio
+    - - 6612-6/04
+      - Corretoras de contratos de mercadorias
+    - - 6612-6/05
+      - Agentes de investimentos em aplicações financeiras
+    - - 6613-4/00
+      - Administração de cartões de crédito
+    - - 6619-3/01
+      - Serviços de liquidação e custódia
+    - - 6619-3/02
+      - Correspondentes de instituições financeiras
+    - - 6619-3/03
+      - Representações de bancos estrangeiros
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 24
+      tabela_na_pagina: 1
+    linhas:
+    - - 6435-2/02
+      - Associações de poupança e empréstimo
+    - - 6435-2/03
+      - Companhias hipotecárias
+    - - 6436-1/00
+      - Sociedades de crédito, financiamento e investimento - financeiras
+    - - 6437-9/00
+      - Sociedades de crédito ao microempreendedor
+    - - 6438-7/01
+      - Bancos de câmbio
+    - - 6438-7/99
+      - Outras instituições de intermediação não monetária não especificadas anteriormente
+    - - 6440-9/00
+      - Arrendamento mercantil
+    - - 6450-6/00
+      - Sociedades de capitalização
+    - - 6461-1/00
+      - Holdings de instituições financeiras
+    - - 6462-0/00
+      - Holdings de instituições não financeiras
+    - - 6463-8/00
+      - Outras sociedades de participação, exceto holdings
+    - - 6470-1/01
+      - Fundos de investimento, exceto previdenciários e imobiliários
+    - - 6470-1/02
+      - Fundos de investimento previdenciários
+    - - 6470-1/03
+      - Fundos de investimento imobiliários
+    - - 6491-3/00
+      - Sociedades de fomento mercantil - factoring
+    - - 6492-1/00
+      - Securitização de créditos
+    - - 6493-0/00
+      - Administração de consórcios para aquisição de bens e direitos
+    - - 6499-9/01
+      - Clubes de investimento
+    - - 6499-9/02
+      - Sociedades de investimento
+    - - 6499-9/03
+      - Fundo garantidor de crédito
+    - - 6499-9/04
+      - Caixas de financiamento de corporações
+    - - 6499-9/05
+      - Concessão de crédito pelas OSCIP
+    - - 6499-9/99
+      - Outras atividades de serviços financeiros não especificadas anteriormente
+    - - 6511-1/01
+      - Sociedade seguradora de seguros vida
+    - - 6511-1/02
+      - Planos de auxílio-funeral
+    - - 6512-0/00
+      - Sociedade seguradora de seguros não vida
+    - - 6520-1/00
+      - Sociedade seguradora de seguros-saúde
+    - - 6530-8/00
+      - Resseguros
+    - - 6541-3/00
+      - Previdência complementar fechada
+    - - 6542-1/00
+      - Previdência complementar aberta
+    - - 6550-2/00
+      - Planos de saúde
+    - - 6611-8/01
+      - Bolsa de valores
+    - - 6611-8/02
+      - Bolsa de mercadorias
+    - - 6611-8/03
+      - Bolsa de mercadorias e futuros
+    - - 6611-8/04
+      - Administração de mercados de balcão organizados
+    - - 6612-6/01
+      - Corretoras de títulos e valores mobiliários
+    - - 6612-6/02
+      - Distribuidoras de títulos e valores mobiliários
+    - - 6612-6/03
+      - Corretoras de câmbio
+    - - 6612-6/04
+      - Corretoras de contratos de mercadorias
+    - - 6612-6/05
+      - Agentes de investimentos em aplicações financeiras
+    - - 6613-4/00
+      - Administração de cartões de crédito
+    - - 6619-3/01
+      - Serviços de liquidação e custódia
+    - - 6619-3/02
+      - Correspondentes de instituições financeiras
+    - - 6619-3/03
+      - Representações de bancos estrangeiros
+notas:
+- Continuação da tabela da página 23.
+- A tabela continua na página 25.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

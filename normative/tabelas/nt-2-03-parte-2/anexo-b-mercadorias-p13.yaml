@@ -1,0 +1,190 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 Parte 2
+arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+tabela: Anexo B
+titulo: Classificação das mercadorias – exemplos
+pagina: 13
+fonte_pdf_sha256: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  comparar_por_coluna: true
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-2/pagina-13.jpg
+    imagem_sha256: 805d2cfa82a1ba1083c4fcce1e353598ced4b2320f05e011856f2142a8b0fbda
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Mercadoria
+    - Classe
+    linhas:
+    - - '- Líquidos ou semilíquidos (ketchup, por exemplo) incombustíveis em recipientes plásticos'
+      - ''
+    - - com paredes de espessura maior que ¼ pol. (6,4 mm) e volumes maiores que
+      - ''
+    - - 5 gal (18,9 L)
+      - Plástico Grupo A
+    - - Poliuretano
+      - ''
+    - - '- Expandido, com ou sem caixas de papelão'
+      - Plástico Grupo A
+    - - Aves e derivados
+      - ''
+    - - '- Em latas, em caixas de papelão'
+      - Classe I
+    - - '- Congelada, embalagem sem plástico e sem cera'
+      - Classe I
+    - - '- Congeladas (em bandejas de papel ou de plástico expandido)'
+      - Classe II
+    - - Pós
+      - ''
+    - - Materiais combustíveis comuns – fluem livremente
+      - ''
+    - - '- Em sacos de papel (por exemplo, farinha, açúcar)'
+      - Classe II
+    - - PVA (álcool polivinílico), Resinas
+      - ''
+    - - PVC (cloreto de polivinila)
+      - ''
+    - - '- Flexível (por exemplo, coberturas de cabos, folhas plastificadas)'
+      - Classe III
+    - - '- Rígido (por exemplo, tubos e conexões)'
+      - Classe III
+    - - '- Resinas em sacos'
+      - Classe III
+    - - Trapos
+      - ''
+    - - Em fardos
+      - ''
+    - - '- Fibras naturais'
+      - Classe III
+    - - '- Fibras sintéticas'
+      - Classe IV
+    - - Borracha
+      - ''
+    - - '- Natural, blocos em caixas de papelão'
+      - Classe IV
+    - - '- Sintético'
+      - Plástico Grupo A
+    - - Sal
+      - ''
+    - - '- Em sacos'
+      - Classe I
+    - - '- Embalado, em caixas de papelão'
+      - Classe II
+    - - Telhas tipo Shingles
+      - ''
+    - - '- Fibra de vidro revestida com asfalto'
+      - Classe III
+    - - '- Feltro impregnado com asfalto'
+      - Classe IV
+    - - Amortecedores
+      - ''
+    - - '- Cobertura metálica'
+      - Classe II
+    - - '- Cobertura plástica'
+      - Classe III
+    - - Livros e revistas inacabados
+      - ''
+    - - Livros e revistas
+      - ''
+    - - '- Pilha sólida sobre palete'
+      - Classe II
+    - - Esquis
+      - ''
+    - - '- Madeira'
+      - Classe III
+    - - '- Alma de espuma'
+      - Classe IV
+    - - Bonecos de pelúcia
+      - ''
+    - - '- Espuma ou sintético'
+      - Plástico Grupo A
+    - - Melaço
+      - ''
+    - - '- Em tambores metálicos'
+      - Classe I
+    - - '- Barricas de madeira'
+      - Classe II
+    - - Têxteis
+      - ''
+    - - '- Vestimentas ou produtos têxteis de fibras naturais'
+      - Classe III
+    - - Sintéticos (exceto raiom e náilon) - mistura 50/50 ou menos
+      - ''
+    - - '- Linha, em carretéis de madeira ou papel'
+      - Classe III
+    - - '- Tecidos'
+      - Classe III
+    - - '- Linha, em carretéis plásticos'
+      - Classe IV
+    - - '- Fibras em fardos'
+      - Plástico Grupo A
+    - - Sintéticos (exceto raiom e náilon) - mistura maior que 50/50
+      - ''
+    - - '- Linha, em carretéis de madeira ou papel'
+      - Classe IV
+    - - '- Tecidos'
+      - Classe IV
+    - - '- Fibras em fardos'
+      - Plástico Grupo A
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 13
+      tabela_na_pagina: 1
+    linhas:
+    - - '- Líquidos ou semilíquidos (ketchup, por exemplo) incombustíveis em recipientes plásticos com
+        paredes de espessura maior que ¼ pol. (6,4 mm) e volumes maiores que 5 gal (18,9 L)'
+      - Plástico Grupo A
+    - - Poliuretano - Expandido, com ou sem caixas de papelão
+      - Plástico Grupo A
+    - - Aves e derivados - Em latas, em caixas de papelão - Congelada, embalagem sem plástico e sem cera
+        - Congeladas (em bandejas de papel ou de plástico expandido)
+      - Classe I Classe I Classe II
+    - - Pós Materiais combustíveis comuns - fluem livremente - Em sacos de papel (por exemplo, farinha,
+        açúcar)
+      - Classe II
+    - - PVA (álcool polivinílico), Resinas PVC (cloreto de polivinila) - Flexível (por exemplo, coberturas
+        de cabos, folhas plastificadas) - Rígido (por exemplo, tubos e conexões) - Resinas em sacos
+      - Classe III Classe III Classe III
+    - - Trapos Em fardos - Fibras naturais - Fibras sintéticas
+      - Classe III Classe IV
+    - - Borracha - Natural, blocos em caixas de papelão - Sintético
+      - Classe IV Plástico Grupo A
+    - - Sal - Em sacos - Embalado, em caixas de papelão
+      - Classe I Classe II
+    - - Telhas tipo Shingles - Fibra de vidro revestida com asfalto - Feltro impregnado com asfalto
+      - Classe III Classe IV
+    - - Amortecedores - Cobertura metálica - Cobertura plástica
+      - Classe II Classe III
+    - - Livros e revistas inacabados Livros e revistas - Pilha sólida sobre palete
+      - Classe II
+    - - Esquis - Madeira - Alma de espuma
+      - Classe III Classe IV
+    - - Bonecos de pelúcia - Espuma ou sintético
+      - Plástico Grupo A
+    - - Melaço - Em tambores metálicos - Barricas de madeira
+      - Classe I Classe II
+    - - Têxteis - Vestimentas ou produtos têxteis de fibras naturais
+      - Classe III
+    - - Sintéticos (exceto raiom e náilon) - mistura 50/50 ou menos - Linha, em carretéis de madeira ou
+        papel - Tecidos - Linha, em carretéis plásticos - Fibras em fardos
+      - Classe III Classe III Classe IV Plástico Grupo A
+    - - Sintéticos (exceto raiom e náilon) - mistura maior que 50/50 - Linha, em carretéis de madeira
+        ou papel - Tecidos - Fibras em fardos
+      - Classe IV Classe IV Plástico Grupo A
+notas:
+- Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na
+  linha em que a página a alinha.
+- A primeira linha continua o registro "Recipientes plásticos (exceto PET)" da página 12.
+- As notas numeradas estão ao pé da tabela, na página 14.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

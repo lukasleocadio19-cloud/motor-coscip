@@ -1,0 +1,53 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 Parte 2
+arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+tabela: Anexo C (Classe II)
+titulo: Exemplos das mercadorias – Classe II (continuação)
+pagina: 17
+fonte_pdf_sha256: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-2/pagina-17.jpg
+    imagem_sha256: b8cca844c79ca804417a17087d7ea898e9d1f1b057e73511b22dba34a77d1cda
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Exemplos – Classe II
+    linhas:
+    - - Carnes e derivados - Congelada, recipientes de papel encerado - Congelada, bandejas de plástico
+        expandido
+    - - Remédios Pílulas, pós - Frascos de vidro, em caixas de papelão
+    - - Líquidos incombustíveis - Frascos de vidro, em caixas de papelão
+    - - Filme fotográfico Filmes para cinema ou em rolos grandes dentro de latas de policarbonato, polietileno
+        ou metal; em sacos de polietileno em caixas de papelão.
+    - - Recipientes plásticos Líquidos ou semilíquidos (como ketchup) em recipientes plásticos com paredes
+        de espessura de ¼ pol. (6,4 mm) ou menor e com capacidades maiores que 5 gal (18,9 L)
+    - - Aves e derivados Congeladas (em bandejas de papel ou de plástico expandido)
+    - - Pós (materiais combustíveis comuns – fluem livremente) Em sacos de papel (por exemplo, farinha,
+        açúcar)
+    - - Sal Embalados, em caixas de papelão
+    - - Amortecedores Cobertura metálica
+    - - Livros e revistas inacabados Livros e revistas - Pilha sólida sobre palete
+    - - Melaço Barricas de madeira
+    - - Arame - Arame sem capa em carretéis de madeira ou papelão em estrados de madeira - Arame sem capa
+        em carretéis de metal, madeira ou papelão em caixas de papelão sobre estrados de madeira - Arame
+        com capa simples ou múltipla de PVC em carretéis de metal sobre estrados de madeira - Cabo com
+        isolamento de (PVC) em grandes carretéis de madeira ou metal sobre estrados de madeira
+    - - Produtos de madeira Pilhas sólidas - Madeira, compensado, aglomerado, placa de papelão prensado
+        (extremidades e arestas lisas)
+notas:
+- Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
+- Continuação da tabela da Classe II da página 16; é a primeira das duas tabelas da página.
+- 'A camada de texto não reconhece esta tabela: o segundo caminho é a grade do PDF (extração geométrica).'
+- 'FONTE: IT-24/2018 - CBPMESP.'
+- '* Produto em embalagem laminada com plástico em caixa de papelão corrugado. Se embalado em metal laminado,
+  pode ser considerado Classe I.'
+estado: pendente_humano
+resultado:
+  estado: pendente_humano
+  caminhos_comparados:
+  - visual
+  motivo: é preciso a leitura visual e um segundo caminho independente

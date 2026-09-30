@@ -1,0 +1,54 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 Parte 2
+arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+tabela: Anexo C (Classe III)
+titulo: Exemplos das mercadorias – Classe III (continuação)
+pagina: 18
+fonte_pdf_sha256: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-2/pagina-18.jpg
+    imagem_sha256: ac302be7a6b1f307fc911957dc2ff8e2921ecd419cede3a88b6bcbb0770a20a6
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Exemplos – Classe III
+    linhas:
+    - - Cereais matinais Embalados, em caixas de papelão
+    - - Carvão (vegetal) Em sacos - Padrão
+    - - Queijo - Embalado, em caixas de papelão - Discos, em caixas de papelão
+    - - Goma de mascar Embalados, em caixas de papelão
+    - - Chocolate Embalados, em caixas de papelão
+    - - Tecido Com ou sem caixas de papelão - Fibras naturais, viscose
+    - - Produtos de cacau Embalados, em caixas de papelão
+    - - Café Embalados, em caixas de papelão
+    - - Café em grão Em sacos
+    - - Algodão Embalados, em caixas de papelão
+    - - Fraldas Algodão, linho
+    - - Comidas secas Embalados, em caixas de papelão
+    - - Peixe ou produtos derivados Congelado - Em bandejas plásticas, em caixas de papelão
+    - - Comidas congeladas Bandejas plásticas
+    - - Móveis Madeira - Sem cobertura de plásticos ou estofamento de espuma plástica
+    - - Grãos – embalados em caixas de papelão - Cevada - Arroz - Aveia
+    - - Margarina Até 50% de óleo (em recipientes de papel ou plástico)
+    - - Colchões
+    - - Molas
+    - - Amêndoas - Embaladas, em caixas de papelão - Em sacos
+    - - Produtos de papel Livros, revistas, papéis de carta e envelopes, recipientes de papel para comida
+        revestidas de plástico, jornais, jogos de tabuleiro, produtos de papel tissue em caixas de papelão.
+    - - Papel, bobinas Em porta-paletes ou empilhado deitado – Peso médio ou pesado
+    - - Filme fotográfico - Filme de 35 mm em cartuchos de metal em latas de polietileno em caixas de
+        papelão - Papel, em folhas, em sacos de polietileno, em caixas de papelão
+notas:
+- Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
+- Continuação da tabela da Classe III da página 17; segue na página 19.
+- 'A camada de texto não reconhece esta tabela: o segundo caminho é a grade do PDF (extração geométrica).'
+estado: pendente_humano
+resultado:
+  estado: pendente_humano
+  caminhos_comparados:
+  - visual
+  motivo: é preciso a leitura visual e um segundo caminho independente

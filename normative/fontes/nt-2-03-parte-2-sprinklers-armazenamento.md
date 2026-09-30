@@ -445,6 +445,69 @@ estireno);
 | Pão -Embrulhado, em caixas de papelão |  |  | Classe III |  |  |
 | Manteiga -Margarina |  |  | Classe III |  |  |
 
+<!-- tabela-conferida: Anexo B p9 -->
+### Anexo B — Classificação das mercadorias – exemplos (conferida)
+
+| Mercadoria | Classe |
+| --- | --- |
+| Aerossóis |  |
+| Com e sem caixas de papelão |  |
+| - Nível 1 | Classe III |
+| Bebidas alcoólicas |  |
+| Com e sem caixas de papelão |  |
+| - Até 20% de álcool em recipientes de metal, vidro ou cerâmica | Classe I |
+| - Até 20% de álcool em recipientes de madeira | Classe II |
+| Munições |  |
+| Armas leves, armas de caça |  |
+| - Embaladas, em caixas de papelão | Classe IV |
+| Aparelhos elétricos grandes (Linha branca: fogões, geladeiras) |  |
+| - Sem embalagem, sem quantidades significativas de plástico no exterior | Classe I |
+| - Em caixas de papelão corrugado, sem quantidades significativas de plástico | Classe II |
+| Produtos de confeitaria |  |
+| Biscoitos, bolos e tortas |  |
+| - Congelados, em caixas de papelão¹ | Classe II |
+| - Embalados, em caixas de papelão | Classe III |
+| Pilhas e baterias |  |
+| Pilhas secas (sem lítio ou metais exóticos similares) |  |
+| - Embaladas, em caixas de papelão | Classe I |
+| - Em blísters, em caixas de papelão | Classe II |
+| Automotivas |  |
+| - Cheias² | Classe I |
+| p/ caminhões ou maiores |  |
+| - Vazias ou cheias² | Plástico Grupo A |
+| Feijão |  |
+| Seco |  |
+| - Embalado, em caixas de papelão | Classe III |
+| Garrafas e frascos |  |
+| Vazias, em caixas de papelão |  |
+| - Vidro | Classe I |
+| - PET (polietileno tereftalato) | Classe IV |
+| Cheio com pós incombustíveis |  |
+| - PET | Classe II |
+| - Vidro, em caixas de papelão | Classe I |
+| - Plástico, em caixas de papelão [menos que 1 gal (3,8 L)] | Classe IV |
+| - Plástico, sem caixas de papelão (exceto PET), qualquer tamanho | Plástico Grupo A |
+| - Plástico, em caixas de papelão ou exposto [maior que 1 gal (3,8 L)] | Plástico Grupo A |
+| - Plástico, engradados sólidos de plástico | Plástico Grupo A |
+| - Plástico, engradados abertos de plástico | Plástico Grupo A |
+| Cheios com líquidos incombustíveis |  |
+| - Vidro, em caixas de papelão | Classe I |
+| - Plástico, em caixas de papelão [menos que 5 gal. (18,9 L)] | Classe I |
+| - Plástico, engradados de plástico sólidos ou abertos3 | Plástico Grupo A |
+| - Plástico, PET | Classe I |
+| Caixas, engradados |  |
+| - Vazias, de madeira, com paredes sólidas | Classe II |
+| - Vazias, madeira, de tábuas espaçadas⁴ | Fora do escopo |
+| Pão |  |
+| -Embrulhado, em caixas de papelão | Classe III |
+| Manteiga |  |
+| -Margarina | Classe III |
+
+Fonte: NT 2-03 Parte 2, página 9, Anexo B; conferida em 2026-09-29 (visual + texto).
+Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na linha em que a página a alinha.
+As notas numeradas estão ao pé da tabela, na página 14.
+<!-- /tabela-conferida: Anexo B p9 -->
+
 ---
 
 ## Página 10
@@ -478,6 +541,72 @@ estireno);
 | Comidas secas -Embaladas, em caixas de papelão | Classe III |
 | Fertilizantes Em sacos - Fosfatos - Nitratos | Classe I Classe II |
 
+<!-- tabela-conferida: Anexo B p10 -->
+### Anexo B — Classificação das mercadorias – exemplos (conferida)
+
+| Mercadoria | Classe |
+| --- | --- |
+| Velas |  |
+| Embaladas, em caixas de papelão |  |
+| - Tratar como plástico expandido | Plástico Grupo A |
+| Balas |  |
+| -Embaladas, em caixas de papelão | Classe III |
+| Comidas enlatadas |  |
+| -Em caixas de papelão comuns | Classe I |
+| Latas |  |
+| Metal |  |
+| - Vazias | Classe I |
+| Carpetes (placas modulares) |  |
+| -Em caixas de papelão | Plástico Grupo A |
+| Caixas de papelão |  |
+| Corrugadas |  |
+| - Desmontadas (em pilhas organizadas) | Classe III |
+| - Parcialmente montadas | Classe IV |
+| Revestidas com cera, parede simples | Plástico Grupo A |
+| Cimento |  |
+| -Em sacos | Classe I |
+| Cereais matinais |  |
+| Embalados, em caixas de papelão | Classe III |
+| Carvão (vegetal) |  |
+| Em sacos |  |
+| - Padrão | Classe III |
+| Queijo |  |
+| - Embalado, em caixas de papelão | Classe III |
+| - Discos, em caixas de papelão | Classe III |
+| Goma de mascar |  |
+| -Embalada, em caixas de papelão | Classe III |
+| Chocolate |  |
+| -Embalado, em caixas de papelão | Classe III |
+| Tecido |  |
+| Com ou sem caixas de papelão |  |
+| - Fibras naturais, viscose | Classe III |
+| - Sintéticos⁵ | Classe IV |
+| Produtos de cacau |  |
+| -Embalado, em caixas de papelão | Classe III |
+| Café |  |
+| - Em latas, em caixas de papelão | Classe I |
+| - Embalado, em caixas de papelão | Classe III |
+| Café em grão |  |
+| -Em sacos | Classe III |
+| Algodão |  |
+| -Embalado, em caixas de papelão | Classe III |
+| Fraldas |  |
+| - Algodão, linho | Classe III |
+| - Descartáveis, com plástico e material não-tecido (em caixas de papelão) | Classe IV |
+| - Descartáveis, com plástico e material não-tecido (sem caixas de papelão), |  |
+| embaladas em plástico | Plástico Grupo A |
+| Comidas secas |  |
+| -Embaladas, em caixas de papelão | Classe III |
+| Fertilizantes |  |
+| Em sacos |  |
+| - Fosfatos | Classe I |
+| - Nitratos | Classe II |
+
+Fonte: NT 2-03 Parte 2, página 10, Anexo B; conferida em 2026-09-29 (visual + texto).
+Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na linha em que a página a alinha.
+As notas numeradas estão ao pé da tabela, na página 14.
+<!-- /tabela-conferida: Anexo B p10 -->
+
 ---
 
 ## Página 11
@@ -508,6 +637,71 @@ estireno);
 | Margarina - Até 50% de óleo (em recipientes de papel ou plástico) - Entre 50 e 80% de óleo (em qualquer embalagem) | Classe III Plástico Grupo A |
 | Fósforos Embalados, em caixas de papelão - Papel - Madeira | Classe IV Plástico Grupo A |
 
+<!-- tabela-conferida: Anexo B p11 -->
+### Anexo B — Classificação das mercadorias – exemplos (conferida)
+
+| Mercadoria | Classe |
+| --- | --- |
+| Isolamento de fibra de vidro |  |
+| - Rolos de mantas laminadas com papel em um dos lados, em sacos ou não | Classe IV |
+| Arquivos |  |
+| Metal |  |
+| - Caixa de papelão | Classe I |
+| Peixe ou produtos derivados |  |
+| Congelado |  |
+| - Embalagem sem plásticos e sem cera | Classe I |
+| - Em caixas de papel com cera, dentro de caixas de papelão | Classe II |
+| - Em caixas de madeira ou barricas | Classe II |
+| - Em bandejas plásticas, em caixas de papelão | Classe III |
+| Enlatado |  |
+| - Em caixas de papelão | Classe I |
+| Comidas congeladas |  |
+| Embalagem sem plásticos e sem cera | Classe I |
+| - Em caixas de papel com cera, dentro de caixas de papelão | Classe II |
+| - Bandejas plásticas | Classe III |
+| Frutas |  |
+| Frescas |  |
+| - Em recipientes e bandejas, exceto de plástico | Classe I |
+| - Com divisórias de madeira | Classe I |
+| Móveis Madeira |  |
+| - Sem cobertura de plásticos ou estofamento de espuma plástica | Classe III |
+| - Com cobertura plástica | Classe IV |
+| - Com estofamento de espuma plástica | Plástico Grupo A |
+| Grãos – Embalados em caixas de papelão |  |
+| - Cevada | Classe III |
+| - Arroz | Classe III |
+| - Aveia | Classe III |
+| -Sorvete | Classe I |
+| -Produtos de couro | Classe III |
+| Couros e Peles |  |
+| -Em fardos | Classe II |
+| Luminárias |  |
+| Não feitas de plástico |  |
+| - Em caixas de papelão | Classe II |
+| Isqueiros |  |
+| Butano |  |
+| - Em blísters, em caixas de papelão | Plástico Grupo A |
+| - A granel em caixas grandes (Aerossol Nível 3) | Fora do escopo |
+| Bebidas alcoólicas (destiladas) |  |
+| Teor alcoólico de 50% ou menos, 1 gal (3,8 L) ou menos, em caixas de papelão |  |
+| - Vidro (paletizado)⁶ | Classe IV |
+| - Garrafas plásticas | Classe IV |
+| Mármore |  |
+| Artificial, pias e tampos |  |
+| - Em caixas de papelão, em engradados | Classe II |
+| Margarina |  |
+| - Até 50% de óleo (em recipientes de papel ou plástico) | Classe III |
+| - Entre 50 e 80% de óleo (em qualquer embalagem) | Plástico Grupo A |
+| Fósforos |  |
+| Embalados, em caixas de papelão |  |
+| - Papel | Classe IV |
+| - Madeira | Plástico Grupo A |
+
+Fonte: NT 2-03 Parte 2, página 11, Anexo B; conferida em 2026-09-29 (visual + texto).
+Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na linha em que a página a alinha.
+As notas numeradas estão ao pé da tabela, na página 14.
+<!-- /tabela-conferida: Anexo B p11 -->
+
 ---
 
 ## Página 12
@@ -534,6 +728,72 @@ estireno);
 | Remédios Pílulas, pós - Frascos de vidro, em caixas de papelão - Frascos de plástico, em caixas de papelão Líquidos não inflamáveis - Frascos de vidro, em caixas de papelão | Classe II Classe IV Classe II |
 | Filme fotográfico - Filme para cinema ou rolos grandes de filme em latas de policarbonato, polietileno ou metal, dentro de sacos de polietileno, em caixas de papelão - Filmes de 35 mm em cartuchos de metal em latas de polietileno em caixas de papelão - Papel, em folhas, dentro de sacos de polietileno, em caixas de papelão - Rolos em cartuchos de policarbonato, embrulhados a granel, dentro de caixas de papelão | Classe II Classe III Classe III Classe IV |
 | Recipientes plásticos (exceto PET) - Líquidos ou semilíquidos incombustíveis em recipientes plásticos menores que 5 gal (18,9 L) - Líquidos ou semilíquidos (ketchup, por exemplo) incombustíveis em recipientes plásticos com paredes de espessura menor ou igual a ¼ pol. (6,4 mm) e volumes maiores que 5 gal (18,9 L) | Classe I Classe II |
+
+<!-- tabela-conferida: Anexo B p12 -->
+### Anexo B — Classificação das mercadorias – exemplos (conferida)
+
+| Mercadoria | Classe |
+| --- | --- |
+| Colchões |  |
+| - De molas | Classe III |
+| - Espuma (produto final) | Plástico Grupo A |
+| Carnes e derivados |  |
+| - A granel | Classe I |
+| - Em latas, em caixas de papelão | Classe I |
+| - Congelada, embalagem sem plástico e sem cera | Classe I |
+| - Congelada, recipientes de papel encerado | Classe II |
+| - Congelada, bandejas de plástico expandido | Classe II |
+| Mesas de escritório de metal |  |
+| - Com tampos e acabamento em plástico | Classe I |
+| Leite |  |
+| - Recipientes de papel não encerado | Classe I |
+| - Recipientes de papel encerado | Classe I |
+| - Recipientes plásticos | Classe I |
+| - Recipientes em engradados plásticos | Plástico Grupo A |
+| Motores |  |
+| - Elétricos | Classe I |
+| Esmalte para unhas |  |
+| - Frascos de vidro de 1-oz a 2-oz (29,6-ml a 59,1-ml), em caixas de papelão | Classe IV |
+| - Frascos de plástico de 1-oz a 2-oz (29,6-ml a 59,1-ml), em caixas de papelão | Plástico Grupo A |
+| Nozes, amêndoas e similares |  |
+| - Em latas, em caixas de papelão | Classe I |
+| - Embaladas, em caixas de papelão | Classe III |
+| - Em sacos | Classe III |
+| Tintas |  |
+| Latas, em caixas de papelão |  |
+| - À base de água (látex) | Classe I |
+| - À base de óleo | Classe IV |
+| Produtos de papel |  |
+| - Livros, revistas, papéis de carta e envelopes, embalagens de papel revestido com |  |
+| plástico para alimentos, jornais, jogos de tabuleiros ou papel tissue em caixas de papelão | Classe III |
+| - Produtos de papel tissue, sem caixas de papelão e embalados em plástico | Plástico Grupo A |
+| Papel, bobinas |  |
+| -Em porta-paletes ou empilhados deitados- Peso médio ou pesado | Classe III |
+| -Em porta-paletes - Peso leve | Classe IV |
+| -Papel, revestido com cera embalado, em caixas de papelão | Classe IV |
+| Remédios |  |
+| Pílulas, pós |  |
+| - Frascos de vidro, em caixas de papelão | Classe II |
+| - Frascos de plástico, em caixas de papelão | Classe IV |
+| Líquidos não inflamáveis |  |
+| - Frascos de vidro, em caixas de papelão | Classe II |
+| Filme fotográfico |  |
+| - Filme para cinema ou rolos grandes de filme em latas de policarbonato, polietileno ou |  |
+| metal, dentro de sacos de polietileno, em caixas de papelão | Classe II |
+| - Filmes de 35 mm em cartuchos de metal em latas de polietileno em caixas de papelão | Classe III |
+| - Papel, em folhas, dentro de sacos de polietileno, em caixas de papelão | Classe III |
+| - Rolos em cartuchos de policarbonato, embrulhados a granel, dentro de caixas de papelão | Classe IV |
+| Recipientes plásticos (exceto PET) |  |
+| - Líquidos ou semilíquidos incombustíveis em recipientes plásticos menores que |  |
+| 5 gal (18,9 L) | Classe I |
+| - Líquidos ou semilíquidos (ketchup, por exemplo) incombustíveis em recipientes plásticos |  |
+| com paredes de espessura menor ou igual a ¼ pol. (6,4 mm) e volumes maiores que |  |
+| 5 gal (18,9 L) | Classe II |
+
+Fonte: NT 2-03 Parte 2, página 12, Anexo B; conferida em 2026-09-29 (visual + texto).
+Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na linha em que a página a alinha.
+As notas numeradas estão ao pé da tabela, na página 14.
+<!-- /tabela-conferida: Anexo B p12 -->
 
 ---
 
@@ -564,6 +824,73 @@ estireno);
 | Têxteis - Vestimentas ou produtos têxteis de fibras naturais | Classe III |
 | Sintéticos (exceto raiom e náilon) - mistura 50/50 ou menos - Linha, em carretéis de madeira ou papel - Tecidos - Linha, em carretéis plásticos - Fibras em fardos | Classe III Classe III Classe IV Plástico Grupo A |
 | Sintéticos (exceto raiom e náilon) - mistura maior que 50/50 - Linha, em carretéis de madeira ou papel - Tecidos - Fibras em fardos | Classe IV Classe IV Plástico Grupo A |
+
+<!-- tabela-conferida: Anexo B p13 -->
+### Anexo B — Classificação das mercadorias – exemplos (conferida)
+
+| Mercadoria | Classe |
+| --- | --- |
+| - Líquidos ou semilíquidos (ketchup, por exemplo) incombustíveis em recipientes plásticos |  |
+| com paredes de espessura maior que ¼ pol. (6,4 mm) e volumes maiores que |  |
+| 5 gal (18,9 L) | Plástico Grupo A |
+| Poliuretano |  |
+| - Expandido, com ou sem caixas de papelão | Plástico Grupo A |
+| Aves e derivados |  |
+| - Em latas, em caixas de papelão | Classe I |
+| - Congelada, embalagem sem plástico e sem cera | Classe I |
+| - Congeladas (em bandejas de papel ou de plástico expandido) | Classe II |
+| Pós |  |
+| Materiais combustíveis comuns – fluem livremente |  |
+| - Em sacos de papel (por exemplo, farinha, açúcar) | Classe II |
+| PVA (álcool polivinílico), Resinas |  |
+| PVC (cloreto de polivinila) |  |
+| - Flexível (por exemplo, coberturas de cabos, folhas plastificadas) | Classe III |
+| - Rígido (por exemplo, tubos e conexões) | Classe III |
+| - Resinas em sacos | Classe III |
+| Trapos |  |
+| Em fardos |  |
+| - Fibras naturais | Classe III |
+| - Fibras sintéticas | Classe IV |
+| Borracha |  |
+| - Natural, blocos em caixas de papelão | Classe IV |
+| - Sintético | Plástico Grupo A |
+| Sal |  |
+| - Em sacos | Classe I |
+| - Embalado, em caixas de papelão | Classe II |
+| Telhas tipo Shingles |  |
+| - Fibra de vidro revestida com asfalto | Classe III |
+| - Feltro impregnado com asfalto | Classe IV |
+| Amortecedores |  |
+| - Cobertura metálica | Classe II |
+| - Cobertura plástica | Classe III |
+| Livros e revistas inacabados |  |
+| Livros e revistas |  |
+| - Pilha sólida sobre palete | Classe II |
+| Esquis |  |
+| - Madeira | Classe III |
+| - Alma de espuma | Classe IV |
+| Bonecos de pelúcia |  |
+| - Espuma ou sintético | Plástico Grupo A |
+| Melaço |  |
+| - Em tambores metálicos | Classe I |
+| - Barricas de madeira | Classe II |
+| Têxteis |  |
+| - Vestimentas ou produtos têxteis de fibras naturais | Classe III |
+| Sintéticos (exceto raiom e náilon) - mistura 50/50 ou menos |  |
+| - Linha, em carretéis de madeira ou papel | Classe III |
+| - Tecidos | Classe III |
+| - Linha, em carretéis plásticos | Classe IV |
+| - Fibras em fardos | Plástico Grupo A |
+| Sintéticos (exceto raiom e náilon) - mistura maior que 50/50 |  |
+| - Linha, em carretéis de madeira ou papel | Classe IV |
+| - Tecidos | Classe IV |
+| - Fibras em fardos | Plástico Grupo A |
+
+Fonte: NT 2-03 Parte 2, página 13, Anexo B; conferida em 2026-09-29 (visual + texto).
+Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na linha em que a página a alinha.
+A primeira linha continua o registro "Recipientes plásticos (exceto PET)" da página 12.
+As notas numeradas estão ao pé da tabela, na página 14.
+<!-- /tabela-conferida: Anexo B p13 -->
 
 ---
 
@@ -601,6 +928,66 @@ estireno);
 | Arame - Cabo com isolamento de (PVC) em grandes carretéis de madeira ou metal sobre estrados de madeira - Arame sem capa em carretéis de plástico em caixas de papelão sobre estrados de madeira - Arame com capa simples ou múltipla de PVC em carretéis de plástico em caixas de papelão sobre estrados de madeira - Cabos simples, múltiplos ou de potência (PVC) em carretéis grandes de plástico - Armazenagem em grandes quantidades de carretéis de plástico vazios | Classe II Classe IV Classe IV Classe IV Plástico Grupo A |
 | Produtos de Madeira - Pilhas sólidas - madeira, compensado, aglomerado, placa de papelão prensado (extremidades e arestas lisas) - Carretéis (vazios) - Palitos, pegadores, cabides, em caixas de papelão - Portas, janelas, armários e móveis - Moldes | Classe II Classe III Classe III Classe III Classe IV |
 
+<!-- tabela-conferida: Anexo B p14 -->
+### Anexo B — Classificação das mercadorias – exemplos (conferida)
+
+| Mercadoria | Classe |
+| --- | --- |
+| - Linha, em carretéis plásticos | Plástico Grupo A |
+| Raiom e náilon |  |
+| - Fibras em fardos | Classe IV |
+| - Linha, em carretéis de madeira ou papel | Classe IV |
+| - Tecidos | Classe IV |
+| - Linha, em carretéis plásticos | Plástico Grupo A |
+| Produtos de tabaco |  |
+| - Em caixas de cartão | Classe III |
+| Transformadores |  |
+| - Secos ou com óleo isolante | Classe I |
+| Tecidos revestidos com resinas vinílicas |  |
+| - Em caixas de papelão | Plástico Grupo A |
+| Pisos vinílicos |  |
+| - Placas em caixas de papelão | Classe IV |
+| - Em rolos | Plástico Grupo A |
+| Papel revestido com cera |  |
+| Copos, pratos |  |
+| - Em caixas ou embalados em caixas de papelão (ênfase no método de embalagem) | Classe IV |
+| - A granel em caixas de papelão grandes | Plástico Grupo A |
+| Cera |  |
+| - Parafina, blocos, em caixas de papelão | Plástico Grupo A |
+| Arame |  |
+| - Arame sem capa em carretéis de metal em estrados de madeira | Classe I |
+| - Arame sem capa em carretéis de madeira ou papelão em estrados de madeira | Classe II |
+| - Arame sem capa em carretéis de metal, madeira ou papelão em caixas de papelão |  |
+| sobre estrados de madeira | Classe II |
+| - Arame com capa simples ou múltipla de PVC e, carretéis de metal sobre estrados de madeira | Classe II |
+| Arame |  |
+| - Cabo com isolamento de (PVC) em grandes carretéis de madeira ou metal sobre |  |
+| estrados de madeira | Classe II |
+| - Arame sem capa em carretéis de plástico em caixas de papelão sobre estrados de madeira | Classe IV |
+| - Arame com capa simples ou múltipla de PVC em carretéis de plástico em caixas de |  |
+| papelão sobre estrados de madeira | Classe IV |
+| - Cabos simples, múltiplos ou de potência (PVC) em carretéis grandes de plástico | Classe IV |
+| - Armazenagem em grandes quantidades de carretéis de plástico vazios | Plástico Grupo A |
+| Produtos de Madeira |  |
+| - Pilhas sólidas – madeira, compensado, aglomerado, placa de papelão prensado |  |
+| (extremidades e arestas lisas) | Classe II |
+| - Carretéis (vazios) | Classe III |
+| - Palitos, pegadores, cabides, em caixas de papelão | Classe III |
+| - Portas, janelas, armários e móveis | Classe III |
+| - Moldes | Classe IV |
+
+Fonte: NT 2-03 Parte 2, página 14, Anexo B; conferida em 2026-09-29 (visual + texto).
+Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na linha em que a página a alinha.
+A primeira linha continua o registro "Sintéticos (exceto raiom e náilon) - mistura maior que 50/50" da página 13.
+FONTE: IT-24/2018 - CBPMESP.
+1. Produto em embalagem laminada com plástico em caixa de papelão corrugado. Se embalado em metal laminado, este pode ser considerado na Classe I;
+2. A maioria das baterias tem gabinete de polipropileno. Se armazenadas vazias devem ser tratadas como plástico Grupo A. Baterias para caminhões, mesmo quando cheias, devem ser consideradas plástico Grupo A por causa das paredes mais espessas;
+3. À medida que as aberturas em engradados plásticos aumentam, o produto comporta-se mais como Classe III. Da mesma maneira, à medida que as aberturas tornam-se menores, o produto comporta-se mais como plástico;
+4. Estes itens devem ser tratados como paletes vazios;
+5. Testes mostram claramente que um material sintético ou uma mistura com materiais sintéticos é considerado superior a Classe III;
+6. Quando bebidas alcoólicas destiladas são armazenadas em recipientes de vidro em porta-paletes, estas devem ser consideradas Classe III; quando paletizadas, devem ser consideradas Classe IV.
+<!-- /tabela-conferida: Anexo B p14 -->
+
 ---
 
 ## Página 15
@@ -629,6 +1016,32 @@ estireno);
 | Sorvete |  |  |
 | Carnes e derivados - A granel - Em latas, em caixas de papelão - Congelada, embalagem sem plástico e sem cera Mesas de escritório de metal - Com tampos e acabamento em plástico |  |  |
 | Leite - Recipientes de papel não revestidos com cera - Recipientes de papel revestidos com cera |  |  |
+
+<!-- tabela-conferida: Anexo C (Classe I) p15 -->
+### Anexo C (Classe I) — Exemplos das mercadorias – Classe I (conferida)
+
+| Exemplos de mercadorias Classe I |
+| --- |
+| Bebidas alcoólicas Com e sem caixas de papelão - Até 20% de álcool em recipientes de metal, vidro ou cerâmica |
+| Aparelhos elétricos grandes (Linha branca: fogões, geladeiras) Sem embalagem, sem quantidades significativas de plástico no exterior |
+| Pilhas e baterias Pilhas secas (sem lítio ou metais exóticos similares) - Embaladas, em caixas de papelão Automotivas - Cheias* |
+| Garrafas e frascos Vazias, em caixas de papelão - Vidro Cheios com líquidos incombustíveis -Vidro, em caixas de papelão -Plástico, em caixas de papelão [menos que 5 gal. (18,9 L)] -Plástico, PET Cheio com pós incombustíveis - Vidro, em caixas de papelão |
+| Comidas enlatadas Em caixas de papelão comuns Latas Metal - Vazias |
+| Cimento Em sacos |
+| Café Em latas, em caixas de papelão |
+| Fertilizantes Em sacos - Fosfatos |
+| Arquivos Metal - Caixa de papelão |
+| Peixe ou produtos derivados Congelado - Embalagem não laminada com plástico ou cera Enlatado - Em caixas de papelão |
+| Comidas congeladas Embalagem não laminada com plástico ou cera |
+| Frutas Frescas - Em recipientes e bandejas, exceto de plástico - Com divisórias de madeira |
+| Sorvete |
+| Carnes e derivados - A granel - Em latas, em caixas de papelão - Congelada, embalagem sem plástico e sem cera Mesas de escritório de metal - Com tampos e acabamento em plástico |
+| Leite - Recipientes de papel não revestidos com cera - Recipientes de papel revestidos com cera |
+
+Fonte: NT 2-03 Parte 2, página 15, Anexo C (Classe I); conferida em 2026-09-29 (visual + texto).
+Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
+A tabela da Classe I continua no alto da página 16.
+<!-- /tabela-conferida: Anexo C (Classe I) p15 -->
 
 ---
 
@@ -676,6 +1089,28 @@ Arame Arame sem capa em carretéis de metal em estrados de madeira
 | Couros e peles Em fardos |  |  |
 | Luminárias Não feitas de plástico - Em caixas de papelão |  |  |
 | Mármore Artificial, pias e tampos - Em caixas de papelão, em engradados |  |  |
+
+<!-- tabela-conferida: Anexo C (Classe II) p16 -->
+### Anexo C (Classe II) — Exemplos das mercadorias – Classe II (conferida)
+
+| Exemplos de mercadorias Classe II |
+| --- |
+| Bebidas alcoólicas Até 20% de álcool em recipientes de madeira |
+| Aparelhos elétricos grandes (por exemplo, fogões) - Em caixas de papelão corrugado, (sem quantidades significativas de plástico) |
+| Produtos de confeitaria Biscoitos, bolos e tortas - Embaladas, em caixas de papelão |
+| Pilhas e baterias Pilhas secas (sem lítio ou metais exóticos similares) em embalagens blíster em caixas de papelão |
+| Garrafas e frascos Cheio com pós incombustíveis - PET Caixas, engradados Vazias, de madeira, com paredes sólidas |
+| Fertilizantes Em sacos - Nitratos |
+| Peixe ou produtos derivados Congelado - Em caixas de papel com cera, dentro de caixas de papelão - Em caixas de madeira ou barricas |
+| Comidas congeladas Em caixas de papel com cera, dentro de caixas de papelão |
+| Couros e peles Em fardos |
+| Luminárias Não feitas de plástico - Em caixas de papelão |
+| Mármore Artificial, pias e tampos - Em caixas de papelão, em engradados |
+
+Fonte: NT 2-03 Parte 2, página 16, Anexo C (Classe II); conferida em 2026-09-29 (visual + texto).
+Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
+A tabela da Classe II continua no alto da página 17.
+<!-- /tabela-conferida: Anexo C (Classe II) p16 -->
 
 ---
 
@@ -725,6 +1160,24 @@ Produtos de madeira Pilhas sólidas - Madeira, compensado, aglomerado, placa de 
 | Manteiga Margarina |  |  |
 | Balas Embalados, em caixas de papelão |  |  |
 | Caixas de papelão Corrugadas - Desmontadas (em pilhas organizadas) |  |  |
+
+<!-- tabela-conferida: Anexo C (Classe III) p17 -->
+### Anexo C (Classe III) — Exemplos das mercadorias – Classe III (conferida)
+
+| Exemplos de mercadorias Classe III |
+| --- |
+| Aerossóis Com e sem caixas de papelão - Nível 1 |
+| Produtos de confeitaria Biscoitos, bolos e tortas - Embalados, em caixas de papelão |
+| Feijão Seco - Embalado, em caixas de papelão |
+| Pão Embrulhado, em caixas de papelão |
+| Manteiga Margarina |
+| Balas Embalados, em caixas de papelão |
+| Caixas de papelão Corrugadas - Desmontadas (em pilhas organizadas) |
+
+Fonte: NT 2-03 Parte 2, página 17, Anexo C (Classe III); conferida em 2026-09-29 (visual + texto).
+Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
+A tabela da Classe III continua nas páginas 18 e 19.
+<!-- /tabela-conferida: Anexo C (Classe III) p17 -->
 
 ---
 
@@ -818,6 +1271,27 @@ Produtos de madeira - Carretéis (vazios) - Palitos, pegadores, cabides, em caix
 | Fósforos Embalados, em caixas de papelão - Papel |  |  |
 | Esmalte para unhas |  |  |
 
+<!-- tabela-conferida: Anexo C (Classe IV) p19 -->
+### Anexo C (Classe IV) — Exemplos das mercadorias – Classe IV (conferida)
+
+| Exemplos de mercadorias Classe IV |
+| --- |
+| Munições Armas leves, armas de caça - Embaladas, em caixas de papelão |
+| Garrafas e frascos Vazias, em caixas de papelão - PET (polietileno tereftalato) Cheio com pós incombustíveis - Plástico, em caixas de papelão [menos que 1 gal (3,8 L)] |
+| Caixas de papelão Corrugadas - Parcialmente montadas |
+| Tecido Com ou sem caixas de papelão - Sintéticos¹ |
+| Fraldas - Descartáveis, com plástico e material não-tecido (em caixas de papelão) |
+| Isolamento de fibra de vidro - Rolos de mantas laminadas com papel em um dos lados, em sacos ou não |
+| Móveis Madeira - Com cobertura plástica |
+| Bebidas alcoólicas (destiladas) Teor alcoólico de 50% ou menos, 1 gal (3,8 L) ou menos, em caixas de papelão - Vidro (paletizado)² - Garrafas plásticas |
+| Fósforos Embalados, em caixas de papelão - Papel |
+| Esmalte para unhas |
+
+Fonte: NT 2-03 Parte 2, página 19, Anexo C (Classe IV); conferida em 2026-09-29 (visual + texto).
+Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
+A tabela da Classe IV continua na página 20, onde estão as notas 1 e 2.
+<!-- /tabela-conferida: Anexo C (Classe IV) p19 -->
+
 ---
 
 ## Página 20
@@ -898,6 +1372,38 @@ Produtos de madeira Moldes
 | Bonecos de pelúcia Espuma ou sintético |  |  |
 | Têxteis Sintéticos (exceto raiom e náilon) - Mistura 50/50 ou menos - Fibras em fardos |  |  |
 | Sintéticos (exceto raiom e náilon) - mistura maior que 50/50 - Fibras em fardos - Linha, em carretéis plásticos |  |  |
+
+<!-- tabela-conferida: Anexo C (Plásticos Grupo A) p21 -->
+### Anexo C (Plásticos Grupo A) — Exemplos das mercadorias – Plásticos Grupo A (conferida)
+
+| Exemplos de plásticos Grupo A |
+| --- |
+| Baterias Caminhões ou maiores - Vazias ou cheias1 |
+| Garrafas e frascos Vazias, em caixas de papelão - Plástico (exceto PET), qualquer tamanho Cheios com líquidos incombustíveis - Plástico, engradados de plástico sólidos ou abertos Cheio com pós incombustíveis - Plástico, em caixas de papelão ou exposto [maior que 1 gal (3,8 L)] - Plástico, engradados sólidos de plástico - Plástico, engradados abertos de plástico |
+| Velas Embalados, em caixas de papelão – Tratar como plástico expandido |
+| Carpetes (placas modulares) Em caixas de papelão |
+| Caixas de papelão Revestidas com cera, parede simples |
+| Fraldas Descartáveis, com plástico e material não-tecido (sem caixas de papelão), embaladas em plástico |
+| Móveis Madeira - Com estofamento de espuma plástica |
+| Isqueiros Butano - Em blísters, em caixas de papelão |
+| Margarina - Entre 50 e 80% de óleo (em qualquer embalagem) |
+| Fósforos Embalados, em caixas de papelão - Madeira |
+| Colchões Espuma (produto final) |
+| Leite Recipientes em engradados plásticos |
+| Esmalte para unhas Frascos de plástico de 1-oz a 2-oz (29,6-ml a 59,1-ml), em caixas de papelão |
+| Produtos de papel |
+| Produtos de papel tissue, sem caixas de papelão e embrulhados em plástico |
+| Recipientes plásticos - Sólidos combustíveis e incombustíveis em recipientes plásticos e recipientes plásticos vazios Líquidos ou semilíquidos (como ketchup) em recipientes plásticos com paredes de espessura maior que ¼ pol. (6,4 mm) com capacidades maiores que 5 gal (18,9 L) |
+| Poliuretano Com e sem caixas de papelão |
+| Borracha Sintético |
+| Bonecos de pelúcia Espuma ou sintético |
+| Têxteis Sintéticos (exceto raiom e náilon) - Mistura 50/50 ou menos – Fibras em fardos |
+| Sintéticos (exceto raiom e náilon) - mistura maior que 50/50 - Fibras em fardos - Linha, em carretéis plásticos |
+
+Fonte: NT 2-03 Parte 2, página 21, Anexo C (Plásticos Grupo A); conferida em 2026-09-29 (visual + texto).
+Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
+A tabela continua na página 22, onde estão as notas 1 e 2 ("cheias1", sem sobrescrito na página).
+<!-- /tabela-conferida: Anexo C (Plásticos Grupo A) p21 -->
 
 ---
 

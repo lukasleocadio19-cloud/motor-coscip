@@ -1,0 +1,41 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 Parte 2
+arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+tabela: Anexo C (Classe III)
+titulo: Exemplos das mercadorias – Classe III (continuação)
+pagina: 19
+fonte_pdf_sha256: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-2/pagina-19.jpg
+    imagem_sha256: 3e9dc4cbd710110c5c011fd339ec2f1a989d4f26024db42b48828330acaec374
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Exemplos – Classe III
+    linhas:
+    - - PVC (cloreto de polivinila) - Flexível (por exemplo, coberturas de cabos, folhas plastificadas)
+        - Rígido (por exemplo, tubos e conexões) - Resinas em sacos
+    - - Trapos Em fardos - Fibras naturais
+    - - Telhas tipo shingles Fibra de vidro revestida com asfalto
+    - - Amortecedores Cobertura plástica
+    - - Esquis Madeira
+    - - Têxteis Vestimentas ou produtos têxteis de fibras naturais Sintéticos (exceto raiom e náilon)
+        mistura 50/50 ou menos - Linha, em carretéis de madeira ou papel - Tecidos
+    - - Produtos de tabaco Em caixas de cartão
+    - - Produtos de madeira - Carretéis (vazios) - Palitos, pegadores, cabides, em caixas de papelão -
+        Portas, janelas, armários e móveis
+notas:
+- Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
+- Continuação da tabela da Classe III da página 18; é a primeira das duas tabelas da página.
+- 'A camada de texto não reconhece esta tabela: o segundo caminho é a grade do PDF (extração geométrica).'
+- 'FONTE: IT-24/2018 - CBPMESP.'
+estado: pendente_humano
+resultado:
+  estado: pendente_humano
+  caminhos_comparados:
+  - visual
+  motivo: é preciso a leitura visual e um segundo caminho independente

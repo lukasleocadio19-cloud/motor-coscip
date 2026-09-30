@@ -5,7 +5,8 @@ Gerado por `python -m tools.normas.tabelas relatorio`. Estado de cada tabela con
 | Estado | Tabelas |
 | --- | --- |
 | divergente | 5 |
-| verificada | 192 |
+| pendente_humano | 7 |
+| verificada | 245 |
 
 Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale como segundo caminho só até a extração geométrica (`pdfplumber`, workflow `normas-midia.yml`) rodar sobre o PDF oficial conferido por hash.
 
@@ -49,6 +50,29 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | Decreto 42/2018 | Tabela 31 | 55 | verificada | visual + geometrica | 0 | 0 |
 | Decreto 42/2018 | Tabela 32 | 56 | verificada | visual + geometrica | 0 | 0 |
 | Decreto 42/2018 | Tabela 33 | 57 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-01 Parte 1 | Anexo A | 23 | verificada | visual + texto | 0 | 1 |
+| NT 1-01 Parte 1 | Anexo A | 24 | verificada | visual + texto | 0 | 3 |
+| NT 1-01 Parte 1 | Tabela 1 do Anexo B | 26 | verificada | visual + texto | 0 | 0 |
+| NT 1-01 Parte 1 | Tabela 2 do Anexo B | 26 | verificada | visual + texto | 0 | 0 |
+| NT 1-01 Parte 1 | Tabela 3 do Anexo B | 26 | verificada | visual + texto | 0 | 0 |
+| NT 1-01 Parte 1 | Tabela 4 do Anexo B | 26 | verificada | visual + texto | 0 | 0 |
+| NT 1-01 Parte 1 | Tabela 5 do Anexo B | 26 | verificada | visual + texto | 0 | 0 |
+| NT 1-01 Parte 1 | Tabela 6 do Anexo B | 26 | pendente_humano | visual | 0 | 0 |
+| NT 1-01 Parte 2 | Tabela 1 | 7 | verificada | visual + texto | 0 | 0 |
+| NT 1-01 Parte 2 | Anexo E, item 2 | 34 | verificada | visual + texto | 0 | 1 |
+| NT 1-01 Parte 2 | Anexo E, item 3 | 35 | verificada | visual + texto | 0 | 0 |
+| NT 1-01 Parte 2 | Anexo F | 36 | verificada | visual + texto | 0 | 0 |
+| NT 1-01 Parte 2 | Cronograma da cláusula sexta do Anexo G | 39 | verificada | visual + texto | 0 | 0 |
+| NT 1-01 Parte 2 | Anexo H | 42 | verificada | visual + texto | 0 | 0 |
+| NT 1-03 | Anexo A | 4 | verificada | visual + texto | 0 | 0 |
+| NT 1-03 | Anexo A | 5 | verificada | visual + texto | 0 | 0 |
+| NT 1-03 | Anexo A | 6 | verificada | visual + texto | 0 | 0 |
+| NT 1-03 | Anexo A | 7 | verificada | visual + texto | 0 | 0 |
+| NT 1-03 | Anexo A | 8 | verificada | visual + texto | 0 | 0 |
+| NT 1-03 | Anexo A | 9 | verificada | visual + texto | 0 | 0 |
+| NT 1-03 | Anexo A | 10 | verificada | visual + texto | 0 | 2 |
+| NT 1-03 | Anexo A | 11 | verificada | visual + texto | 0 | 1 |
+| NT 1-03 | Anexo A | 12 | verificada | visual + texto | 0 | 1 |
 | NT 1-04 | Tabela do Anexo A | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 1-04 | Tabela do Anexo A | 6 | verificada | visual + geometrica | 0 | 0 |
 | NT 1-04 | Tabela do Anexo A | 7 | verificada | visual + geometrica | 0 | 0 |
@@ -67,6 +91,25 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 1-04 | Tabela do Anexo D (1/3) | 19 | verificada | visual + geometrica | 0 | 1 |
 | NT 1-04 | Tabela do Anexo D (2/3) | 19 | verificada | visual + geometrica | 0 | 2 |
 | NT 1-04 | Tabela do Anexo D (3/3) | 19 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-04 | Tabela do Anexo E (materiais) | 20 | verificada | visual + texto | 0 | 1 |
+| NT 1-04 | Tabela do Anexo E (totais) | 20 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 13 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 14 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 15 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 16 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 17 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 18 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 19 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 20 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 21 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 22 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 23 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 24 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 25 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 26 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 27 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 28 | verificada | visual + texto | 0 | 0 |
+| NT 1-07 | Anexo A | 29 | verificada | visual + texto | 0 | 0 |
 | NT 2-01 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 2 | 4 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-01 | Tabela 3 | 5 | verificada | visual + geometrica | 0 | 0 |
@@ -79,6 +122,24 @@ Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale co
 | NT 2-02 | Tabela 3 | 8 | verificada | visual + geometrica | 0 | 1 |
 | NT 2-02 | Tabela 4 | 12 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-02 | Tabela 5 | 13 | divergente | visual + geometrica | 0 | 0 |
+| NT 2-03 P1 | Tabela 1 do Anexo B | 9 | verificada | visual + texto | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo B | 9 | verificada | visual + texto | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo B | 10 | verificada | visual + texto | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo B | 11 | verificada | visual + texto | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo B | 12 | verificada | visual + texto | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo B | 13 | verificada | visual + texto | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo B | 14 | verificada | visual + texto | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe I) | 15 | verificada | visual + texto | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe I) | 16 | pendente_humano | visual | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe II) | 16 | verificada | visual + texto | 0 | 1 |
+| NT 2-03 Parte 2 | Anexo C (Classe II) | 17 | pendente_humano | visual | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe III) | 17 | verificada | visual + texto | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe III) | 18 | pendente_humano | visual | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe III) | 19 | pendente_humano | visual | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe IV) | 19 | verificada | visual + texto | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe IV) | 20 | pendente_humano | visual | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Plásticos Grupo A) | 21 | verificada | visual + texto | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Plásticos Grupo A) | 22 | pendente_humano | visual | 0 | 1 |
 | NT 2-04 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-04 | Tabela 2 | 5 | verificada | visual + geometrica | 0 | 0 |
 | NT 2-04 | Tabela 3 | 7 | verificada | visual + geometrica | 0 | 2 |

@@ -1338,3 +1338,43 @@ Observações: 1 - Constante da Tabela E 2 - Massa total de cada material multip
 |  | Carga de incêndio específica do pavimento4 |  |  |
 |  | qfi = ∑ MiHi |  |  |
 |  | Af |  |  |
+<!-- tabela-conferida: Tabela do Anexo E (materiais) p20 -->
+### Tabela do Anexo E (materiais) — Exemplo de planilha para cálculo da carga de incêndio específica — materiais por compartimento (conferida)
+
+| Tipo do material existente na edificação por compartimento | Massa total de cada material Mi - (kg) | Potencial calorífico específico¹ Hi - (MJ/kg) | Potencial calorífico por material² Mi x Hi = qi (MJ) |
+| --- | --- | --- | --- |
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
+
+Fonte: NT 1-04, página 20, Tabela do Anexo E (materiais); conferida em 2026-09-29 (visual + texto).
+Anexo E da NT 1-04: modelo de planilha (as linhas 1 a 7 são para preenchimento). Texto acima da tabela: "(Esse modelo deve ser utilizado apenas para depósito)".
+Observações da página:
+1 – Constante da Tabela E
+2 – Massa total de cada material multiplicado pelo potencial calorífico específico
+3 – Somatória de todos os potenciais caloríficos considerados
+4 – Total do potencial calorífico do pavimento dividido pela Área do piso do pavimento = (qfi)
+<!-- /tabela-conferida: Tabela do Anexo E (materiais) p20 -->
+
+<!-- tabela-conferida: Tabela do Anexo E (totais) p20 -->
+### Tabela do Anexo E (totais) — Exemplo de planilha para cálculo da carga de incêndio específica — totais do pavimento (conferida)
+
+| Linha da planilha |
+| --- |
+| Total do potencial calorífico do pavimento³ - qi (MJ) ∑ MiHi |
+| Área do piso do pavimento Af (m²) |
+| Carga de incêndio específica do pavimento4 qfi = ∑ MiHi / Af |
+
+Fonte: NT 1-04, página 20, Tabela do Anexo E (totais); conferida em 2026-09-29 (visual + texto).
+As células de valor (coluna da direita) são para preenchimento.
+Observações da página:
+1 – Constante da Tabela E
+2 – Massa total de cada material multiplicado pelo potencial calorífico específico
+3 – Somatória de todos os potenciais caloríficos considerados
+4 – Total do potencial calorífico do pavimento dividido pela Área do piso do pavimento = (qfi)
+<!-- /tabela-conferida: Tabela do Anexo E (totais) p20 -->
+

@@ -1,0 +1,95 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-03
+arquivo: nt-1-03-simbolos-graficos.md
+tabela: Anexo A
+titulo: Simbologia para projeto de segurança contra incêndio e pânico
+pagina: 9
+fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-03/pagina-09.png
+    imagem_sha256: 8a21d4bc5ac52ea1b7669f74c2ff73ee52b3e98d1ed3feb0502ef72bde20cfd2
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Grupo
+    - Subgrupo
+    - Nome do símbolo
+    - 'Símbolo gráfico (desenho: ver a imagem da página)'
+    linhas:
+    - - SISTEMA DE DETECÇÃO
+      - ''
+      - DETECTOR TÉRMICO
+      - ''
+    - - ^
+      - ^
+      - DETECTOR TERMOVELOCIMÉTRICO
+      - ''
+    - - ^
+      - ^
+      - DETECTOR DE FUMAÇA
+      - ''
+    - - ^
+      - ^
+      - DETECTOR MULTISENSOR
+      - ''
+    - - ^
+      - ^
+      - DETECTOR DE CHAMA
+      - ''
+    - - ^
+      - ^
+      - DETECTOR NO ENTREFORRO
+      - ''
+    - - ^
+      - ^
+      - DETECTOR NO ENTREPISO
+      - ''
+    - - ^
+      - ^
+      - DETECTOR NA PAREDE
+      - ''
+    - - ^
+      - ^
+      - PROTEÇÃO CONTRA INTEMPÉRIES
+      - ''
+    - - ^
+      - ^
+      - ACIONADOR MANUAL
+      - ''
+    - - ^
+      - ^
+      - CENTRAL
+      - ''
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 9
+      tabela_na_pagina: 1
+    linhas:
+    - - SISTEMA DE DETECÇÃO
+      - DETECTOR TÉRMICO
+    - - DETECTOR TERMOVELOCIMÉTRICO
+    - - DETECTOR DE FUMAÇA
+    - - DETECTOR MULTISENSOR
+    - - DETECTOR DE CHAMA
+    - - DETECTOR NO ENTREFORRO
+    - - DETECTOR NO ENTREPISO
+    - - DETECTOR NA PAREDE
+    - - PROTEÇÃO CONTRA INTEMPÉRIES
+    - - ACIONADOR MANUAL
+    - - CENTRAL
+notas:
+- A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
+  da página).
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

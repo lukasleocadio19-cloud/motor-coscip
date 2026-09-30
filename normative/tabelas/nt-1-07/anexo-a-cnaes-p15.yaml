@@ -1,0 +1,213 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 15
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-15.png
+    imagem_sha256: 9a5ced6ec59d520cbc3be4e0592bc215dca94caa709bd89a9d92482a7f4a36c1
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 0210-1/06
+      - Cultivo de mudas em viveiros florestais
+    - - 0210-1/07
+      - Extração de madeira em florestas plantadas
+    - - 0210-1/08
+      - Produção de carvão vegetal - florestas plantadas
+    - - 0210-1/09
+      - Produção de casca de acácia-negra - florestas plantadas
+    - - 0210-1/99
+      - Produção de produtos não madeireiros não especificados anteriormente em florestas plantadas
+    - - 0220-9/01
+      - Extração de madeira em florestas nativas
+    - - 0220-9/02
+      - Produção de carvão vegetal - florestas nativas
+    - - 0220-9/03
+      - Coleta de castanha-do-pará em florestas nativas
+    - - 0220-9/04
+      - Coleta de látex em florestas nativas
+    - - 0220-9/05
+      - Coleta de palmito em florestas nativas
+    - - 0220-9/06
+      - Conservação de florestas nativas
+    - - 0220-9/99
+      - Coleta de produtos não madeireiros não especificados anteriormente em florestas nativas
+    - - 0230-6/00
+      - Atividades de apoio à produção florestal
+    - - 0311-6/01
+      - Pesca de peixes em água salgada
+    - - 0311-6/02
+      - Pesca de crustáceos e moluscos em água salgada
+    - - 0311-6/03
+      - Coleta de outros produtos marinhos
+    - - 0311-6/04
+      - Atividades de apoio à pesca em água salgada
+    - - 0312-4/01
+      - Pesca de peixes em água doce
+    - - 0312-4/02
+      - Pesca de crustáceos e moluscos em água doce
+    - - 0312-4/03
+      - Coleta de outros produtos aquáticos de água doce
+    - - 0312-4/04
+      - Atividades de apoio à pesca em água doce
+    - - 0321-3/01
+      - Criação de peixes em água salgada e salobra
+    - - 0321-3/02
+      - Criação de camarões em água salgada e salobra
+    - - 0321-3/03
+      - Criação de ostras e mexilhões em água salgada e salobra
+    - - 0321-3/04
+      - Criação de peixes ornamentais em água salgada e salobra
+    - - 0321-3/05
+      - Atividades de apoio à aquicultura em água salgada e salobra
+    - - 0321-3/99
+      - Cultivos e semicultivos da aquicultura em água salgada e salobra não especificados anteriormente
+    - - 0322-1/01
+      - Criação de peixes em água doce
+    - - 0322-1/02
+      - Criação de camarões em água doce
+    - - 0322-1/03
+      - Criação de ostras e mexilhões em água doce
+    - - 0322-1/04
+      - Criação de peixes ornamentais em água doce
+    - - 0322-1/05
+      - Ranicultura
+    - - 0322-1/06
+      - Criação de jacaré
+    - - 0322-1/07
+      - Atividades de apoio à aquicultura em água doce
+    - - 0322-1/99
+      - Cultivos e semicultivos da aquicultura em água doce não especificados anteriormente
+    - - 1011-2/05
+      - Matadouro - abate de reses sob contrato, exceto abate de suínos
+    - - 1012-1/01
+      - Abate de aves
+    - - 1012-1/02
+      - Abate de pequenos animais
+    - - 1012-1/04
+      - Matadouro - abate de suínos sob contrato
+    - - 1013-9/01
+      - Fabricação de produtos de carne
+    - - 1013-9/02
+      - Preparação de subprodutos do abate
+    - - 1020-1/01
+      - Preservação de peixes, crustáceos e moluscos
+    - - 1020-1/02
+      - Fabricação de conservas de peixes, crustáceos e moluscos
+    - - 1031-7/00
+      - Fabricação de conservas de frutas
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 15
+      tabela_na_pagina: 1
+    linhas:
+    - - 0210-1/06
+      - Cultivo de mudas em viveiros florestais
+    - - 0210-1/07
+      - Extração de madeira em florestas plantadas
+    - - 0210-1/08
+      - Produção de carvão vegetal - florestas plantadas
+    - - 0210-1/09
+      - Produção de casca de acácia-negra - florestas plantadas
+    - - 0210-1/99
+      - Produção de produtos não madeireiros não especificados anteriormente em florestas plantadas
+    - - 0220-9/01
+      - Extração de madeira em florestas nativas
+    - - 0220-9/02
+      - Produção de carvão vegetal - florestas nativas
+    - - 0220-9/03
+      - Coleta de castanha-do-pará em florestas nativas
+    - - 0220-9/04
+      - Coleta de látex em florestas nativas
+    - - 0220-9/05
+      - Coleta de palmito em florestas nativas
+    - - 0220-9/06
+      - Conservação de florestas nativas
+    - - 0220-9/99
+      - Coleta de produtos não madeireiros não especificados anteriormente em florestas nativas
+    - - 0230-6/00
+      - Atividades de apoio à produção florestal
+    - - 0311-6/01
+      - Pesca de peixes em água salgada
+    - - 0311-6/02
+      - Pesca de crustáceos e moluscos em água salgada
+    - - 0311-6/03
+      - Coleta de outros produtos marinhos
+    - - 0311-6/04
+      - Atividades de apoio à pesca em água salgada
+    - - 0312-4/01
+      - Pesca de peixes em água doce
+    - - 0312-4/02
+      - Pesca de crustáceos e moluscos em água doce
+    - - 0312-4/03
+      - Coleta de outros produtos aquáticos de água doce
+    - - 0312-4/04
+      - Atividades de apoio à pesca em água doce
+    - - 0321-3/01
+      - Criação de peixes em água salgada e salobra
+    - - 0321-3/02
+      - Criação de camarões em água salgada e salobra
+    - - 0321-3/03
+      - Criação de ostras e mexilhões em água salgada e salobra
+    - - 0321-3/04
+      - Criação de peixes ornamentais em água salgada e salobra
+    - - 0321-3/05
+      - Atividades de apoio à aquicultura em água salgada e salobra
+    - - 0321-3/99
+      - Cultivos e semicultivos da aquicultura em água salgada e salobra não especificados anteriormente
+    - - 0322-1/01
+      - Criação de peixes em água doce
+    - - 0322-1/02
+      - Criação de camarões em água doce
+    - - 0322-1/03
+      - Criação de ostras e mexilhões em água doce
+    - - 0322-1/04
+      - Criação de peixes ornamentais em água doce
+    - - 0322-1/05
+      - Ranicultura
+    - - 0322-1/06
+      - Criação de jacaré
+    - - 0322-1/07
+      - Atividades de apoio à aquicultura em água doce
+    - - 0322-1/99
+      - Cultivos e semicultivos da aquicultura em água doce não especificados anteriormente
+    - - 1011-2/05
+      - Matadouro - abate de reses sob contrato, exceto abate de suínos
+    - - 1012-1/01
+      - Abate de aves
+    - - 1012-1/02
+      - Abate de pequenos animais
+    - - 1012-1/04
+      - Matadouro - abate de suínos sob contrato
+    - - 1013-9/01
+      - Fabricação de produtos de carne
+    - - 1013-9/02
+      - Preparação de subprodutos do abate
+    - - 1020-1/01
+      - Preservação de peixes, crustáceos e moluscos
+    - - 1020-1/02
+      - Fabricação de conservas de peixes, crustáceos e moluscos
+    - - 1031-7/00
+      - Fabricação de conservas de frutas
+notas:
+- Continuação da tabela da página 14.
+- A tabela continua na página 16.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

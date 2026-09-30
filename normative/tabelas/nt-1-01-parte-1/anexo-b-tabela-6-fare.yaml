@@ -1,0 +1,29 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-01 Parte 1
+arquivo: nt-1-01-parte-1-regularizacao.md
+tabela: Tabela 6 do Anexo B
+titulo: Unidade com atendimento de FARE
+pagina: 26
+fonte_pdf_sha256: ef60d4d275f294070a335b903b76a486afae0e8784ee128bcaa6c0d8432e5ca5
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-01-parte-1/pagina-26.jpg
+    imagem_sha256: 7510cc102623b0a9877b91be92e32d0566786b0cb567f784956c611fe20b80c3
+    linhas_cabecalho: 1
+    linhas:
+    - - Unidade
+      - Endereço
+    - - 1ºGSE – Catete
+      - Praça São Salvador, 4, Catete, Rio de Janeiro
+notas:
+- 'A camada de texto não reconhece esta tabela: o segundo caminho é a grade do PDF (extração geométrica).'
+estado: pendente_humano
+resultado:
+  estado: pendente_humano
+  caminhos_comparados:
+  - visual
+  motivo: é preciso a leitura visual e um segundo caminho independente

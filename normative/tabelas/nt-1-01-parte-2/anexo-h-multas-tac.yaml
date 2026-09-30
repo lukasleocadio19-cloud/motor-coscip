@@ -1,0 +1,335 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-01 Parte 2
+arquivo: nt-1-01-parte-2-fiscalizacao.md
+tabela: Anexo H
+titulo: Tabela das multas previstas no Termo de Ajustamento de Conduta (TAC)
+pagina: 42
+fonte_pdf_sha256: 01ffb41a7be61d731fd9997546980a430f6d49f9698fade87917101dedd9bef3
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-01-parte-2/pagina-42.png
+    imagem_sha256: 609d8fe74facba3659de1f5d4357a733f7a202e48a53799bd29803587e7f6505
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Classificação quanto ao risco de incêndio
+    - Prazo de vigência do TAC (anos)
+    - 'Área total construída: até 900m²'
+    - Até 1.500m²
+    - Até 5.000m²
+    - Até 10.000m²
+    - Mais de 10.000m²
+    linhas:
+    - - Classificação quanto ao risco de incêndio
+      - Prazo de vigência do TAC (anos)
+      - Área total construída (m²)
+      - <
+      - <
+      - <
+      - <
+    - - ^
+      - ^
+      - Até 900m²
+      - Até 1.500m²
+      - Até 5.000m²
+      - Até 10.000m²
+      - Mais de 10.000m²
+    - - Risco Leve
+      - Até 1 ano
+      - 1.600 UFIR-RJ
+      - 2.400 UFIR-RJ
+      - 16.000 UFIR-RJ
+      - 80.000 UFIR-RJ
+      - 200.000 UFIR-RJ
+    - - ^
+      - Até 3 anos
+      - 2.400 UFIR-RJ
+      - 3.600 UFIR-RJ
+      - 24.000 UFIR-RJ
+      - 120.000 UFIR-RJ
+      - 300.000 UFIR-RJ
+    - - ^
+      - Até 5 anos
+      - 3.200 UFIR-RJ
+      - 4.800 UFIR-RJ
+      - 32.000 UFIR-RJ
+      - 160.000 UFIR-RJ
+      - 400.000 UFIR-RJ
+    - - Risco Médio
+      - Até 1 ano
+      - 3.200 UFIR-RJ
+      - 4.800 UFIR-RJ
+      - 32.000 UFIR-RJ
+      - 160.000 UFIR-RJ
+      - 400.000 UFIR-RJ
+    - - ^
+      - Até 3 anos
+      - 4.800 UFIR-RJ
+      - 7.200 UFIR-RJ
+      - 48.000 UFIR-RJ
+      - 240.000 UFIR-RJ
+      - 600.000 UFIR-RJ
+    - - ^
+      - Até 5 anos
+      - 6.400 UFIR-RJ
+      - 9.600 UFIR-RJ
+      - 64.000 UFIR-RJ
+      - 320.000 UFIR-RJ
+      - 800.000 UFIR-RJ
+    - - Risco Grande
+      - Até 1 ano
+      - 6.400 UFIR-RJ
+      - 9.600 UFIR-RJ
+      - 64.000 UFIR-RJ
+      - 320.000 UFIR-RJ
+      - 800.000 UFIR-RJ
+    - - ^
+      - Até 3 anos
+      - 9.600 UFIR-RJ
+      - 14.400 UFIR-RJ
+      - 96.000 UFIR-RJ
+      - 480.000 UFIR-RJ
+      - 1.200.000 UFIR-RJ
+    - - ^
+      - Até 5 anos
+      - 12.800 UFIR-RJ
+      - 19.200 UFIR-RJ
+      - 128.000 UFIR-RJ
+      - 640.000 UFIR-RJ
+      - 1.600.000 UFIR-RJ
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 42
+      tabela_na_pagina: 1
+    linhas:
+    - - Classificação quanto ao risco de incêndio
+      - Prazo de vigência do TAC (anos)
+      - Área total construída (m²)
+    - - Até 900m2
+      - Até 1.500m2
+      - Até 5.000m2
+      - Até 10.000m2
+      - Mais de 10.000m2
+    - - Risco Leve
+      - Até 1 ano
+      - 1.600 UFIRRJ
+      - 2.400 UFIRRJ
+      - 16.000 UFIRRJ
+      - 80.000 UFIRRJ
+      - 200.000 UFIR-RJ
+    - - Até 3 anos
+      - 2.400 UFIRRJ
+      - 3.600 UFIRRJ
+      - 24.000 UFIRRJ
+      - 120.000 UFIR-RJ
+      - 300.000 UFIR-RJ
+    - - Até 5 anos
+      - 3.200 UFIRRJ
+      - 4.800 UFIRRJ
+      - 32.000 UFIRRJ
+      - 160.000 UFIR-RJ
+      - 400.000 UFIR-RJ
+    - - Risco Médio
+      - Até 1 ano
+      - 3.200 UFIRRJ
+      - 4.800 UFIRRJ
+      - 32.000 UFIRRJ
+      - 160.000 UFIR-RJ
+      - 400.000 UFIR-RJ
+    - - Até 3 anos
+      - 4.800 UFIR-RJ
+      - 7.200 UFIRRJ
+      - 48.000 UFIRRJ
+      - 240.000 UFIR-RJ
+      - 600.000 UFIR-RJ
+    - - Até 5 anos
+      - 6.400 UFIRRJ
+      - 9.600 UFIRRJ
+      - 64.000 UFIRRJ
+      - 320.000 UFIR-RJ
+      - 800.000 UFIR-RJ
+    - - Risco Grande
+      - Até 1 ano
+      - 6.400 UFIRRJ
+      - 9.600 UFIRRJ
+      - 64.000 UFIRRJ
+      - 320.000 UFIR-RJ
+      - 800.000 UFIR-RJ
+    - - Até 3 anos
+      - 9.600 UFIR-RJ
+      - 14.400 UFIR-RJ
+      - 96.000 UFIRRJ
+      - 480.000 UFIR-RJ
+      - 1.200.000 UFIRRJ
+    - - Até 5 anos
+      - 12.800 UFIR-RJ
+      - 19.200 UFIR-RJ
+      - 128.000 UFIRRJ
+      - 640.000 UFIR-RJ
+      - 1.600.000 UFIRRJ
+notas:
+- '"UFIR-RJ" aparece quebrado em duas linhas em várias células ("UFIR-" / "RJ").'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
+  celulas:
+  - linha: 2
+    coluna: 2
+    a: 1.600 UFIR-RJ
+    b: 1.600 UFIRRJ
+    estado: verificada
+    score: 96.0
+  - linha: 2
+    coluna: 3
+    a: 2.400 UFIR-RJ
+    b: 2.400 UFIRRJ
+    estado: verificada
+    score: 96.0
+  - linha: 2
+    coluna: 4
+    a: 16.000 UFIR-RJ
+    b: 16.000 UFIRRJ
+    estado: verificada
+    score: 96.3
+  - linha: 2
+    coluna: 5
+    a: 80.000 UFIR-RJ
+    b: 80.000 UFIRRJ
+    estado: verificada
+    score: 96.3
+  - linha: 3
+    coluna: 1
+    a: 2.400 UFIR-RJ
+    b: 2.400 UFIRRJ
+    estado: verificada
+    score: 96.0
+  - linha: 3
+    coluna: 2
+    a: 3.600 UFIR-RJ
+    b: 3.600 UFIRRJ
+    estado: verificada
+    score: 96.0
+  - linha: 3
+    coluna: 3
+    a: 24.000 UFIR-RJ
+    b: 24.000 UFIRRJ
+    estado: verificada
+    score: 96.3
+  - linha: 4
+    coluna: 1
+    a: 3.200 UFIR-RJ
+    b: 3.200 UFIRRJ
+    estado: verificada
+    score: 96.0
+  - linha: 4
+    coluna: 2
+    a: 4.800 UFIR-RJ
+    b: 4.800 UFIRRJ
+    estado: verificada
+    score: 96.0
+  - linha: 4
+    coluna: 3
+    a: 32.000 UFIR-RJ
+    b: 32.000 UFIRRJ
+    estado: verificada
+    score: 96.3
+  - linha: 5
+    coluna: 2
+    a: 3.200 UFIR-RJ
+    b: 3.200 UFIRRJ
+    estado: verificada
+    score: 96.0
+  - linha: 5
+    coluna: 3
+    a: 4.800 UFIR-RJ
+    b: 4.800 UFIRRJ
+    estado: verificada
+    score: 96.0
+  - linha: 5
+    coluna: 4
+    a: 32.000 UFIR-RJ
+    b: 32.000 UFIRRJ
+    estado: verificada
+    score: 96.3
+  - linha: 6
+    coluna: 2
+    a: 7.200 UFIR-RJ
+    b: 7.200 UFIRRJ
+    estado: verificada
+    score: 96.0
+  - linha: 6
+    coluna: 3
+    a: 48.000 UFIR-RJ
+    b: 48.000 UFIRRJ
+    estado: verificada
+    score: 96.3
+  - linha: 7
+    coluna: 1
+    a: 6.400 UFIR-RJ
+    b: 6.400 UFIRRJ
+    estado: verificada
+    score: 96.0
+  - linha: 7
+    coluna: 2
+    a: 9.600 UFIR-RJ
+    b: 9.600 UFIRRJ
+    estado: verificada
+    score: 96.0
+  - linha: 7
+    coluna: 3
+    a: 64.000 UFIR-RJ
+    b: 64.000 UFIRRJ
+    estado: verificada
+    score: 96.3
+  - linha: 8
+    coluna: 2
+    a: 6.400 UFIR-RJ
+    b: 6.400 UFIRRJ
+    estado: verificada
+    score: 96.0
+  - linha: 8
+    coluna: 3
+    a: 9.600 UFIR-RJ
+    b: 9.600 UFIRRJ
+    estado: verificada
+    score: 96.0
+  - linha: 8
+    coluna: 4
+    a: 64.000 UFIR-RJ
+    b: 64.000 UFIRRJ
+    estado: verificada
+    score: 96.3
+  - linha: 9
+    coluna: 3
+    a: 96.000 UFIR-RJ
+    b: 96.000 UFIRRJ
+    estado: verificada
+    score: 96.3
+  - linha: 9
+    coluna: 5
+    a: 1.200.000 UFIR-RJ
+    b: 1.200.000 UFIRRJ
+    estado: verificada
+    score: 97.0
+  - linha: 10
+    coluna: 3
+    a: 128.000 UFIR-RJ
+    b: 128.000 UFIRRJ
+    estado: verificada
+    score: 96.6
+  - linha: 10
+    coluna: 5
+    a: 1.600.000 UFIR-RJ
+    b: 1.600.000 UFIRRJ
+    estado: verificada
+    score: 97.0

@@ -1,0 +1,226 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 Parte 2
+arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+tabela: Anexo B
+titulo: Classificação das mercadorias – exemplos
+pagina: 9
+fonte_pdf_sha256: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  comparar_por_coluna: true
+  faixa:
+  - 1
+  - null
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-2/pagina-09.jpg
+    imagem_sha256: 764be2c837624162d6c196a8f6437227f4bdc2a2b657bf4914119f69da4eba8e
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Mercadoria
+    - Classe
+    linhas:
+    - - Aerossóis
+      - ''
+    - - Com e sem caixas de papelão
+      - ''
+    - - '- Nível 1'
+      - Classe III
+    - - Bebidas alcoólicas
+      - ''
+    - - Com e sem caixas de papelão
+      - ''
+    - - '- Até 20% de álcool em recipientes de metal, vidro ou cerâmica'
+      - Classe I
+    - - '- Até 20% de álcool em recipientes de madeira'
+      - Classe II
+    - - Munições
+      - ''
+    - - Armas leves, armas de caça
+      - ''
+    - - '- Embaladas, em caixas de papelão'
+      - Classe IV
+    - - 'Aparelhos elétricos grandes (Linha branca: fogões, geladeiras)'
+      - ''
+    - - '- Sem embalagem, sem quantidades significativas de plástico no exterior'
+      - Classe I
+    - - '- Em caixas de papelão corrugado, sem quantidades significativas de plástico'
+      - Classe II
+    - - Produtos de confeitaria
+      - ''
+    - - Biscoitos, bolos e tortas
+      - ''
+    - - '- Congelados, em caixas de papelão¹'
+      - Classe II
+    - - '- Embalados, em caixas de papelão'
+      - Classe III
+    - - Pilhas e baterias
+      - ''
+    - - Pilhas secas (sem lítio ou metais exóticos similares)
+      - ''
+    - - '- Embaladas, em caixas de papelão'
+      - Classe I
+    - - '- Em blísters, em caixas de papelão'
+      - Classe II
+    - - Automotivas
+      - ''
+    - - '- Cheias²'
+      - Classe I
+    - - p/ caminhões ou maiores
+      - ''
+    - - '- Vazias ou cheias²'
+      - Plástico Grupo A
+    - - Feijão
+      - ''
+    - - Seco
+      - ''
+    - - '- Embalado, em caixas de papelão'
+      - Classe III
+    - - Garrafas e frascos
+      - ''
+    - - Vazias, em caixas de papelão
+      - ''
+    - - '- Vidro'
+      - Classe I
+    - - '- PET (polietileno tereftalato)'
+      - Classe IV
+    - - Cheio com pós incombustíveis
+      - ''
+    - - '- PET'
+      - Classe II
+    - - '- Vidro, em caixas de papelão'
+      - Classe I
+    - - '- Plástico, em caixas de papelão [menos que 1 gal (3,8 L)]'
+      - Classe IV
+    - - '- Plástico, sem caixas de papelão (exceto PET), qualquer tamanho'
+      - Plástico Grupo A
+    - - '- Plástico, em caixas de papelão ou exposto [maior que 1 gal (3,8 L)]'
+      - Plástico Grupo A
+    - - '- Plástico, engradados sólidos de plástico'
+      - Plástico Grupo A
+    - - '- Plástico, engradados abertos de plástico'
+      - Plástico Grupo A
+    - - Cheios com líquidos incombustíveis
+      - ''
+    - - '- Vidro, em caixas de papelão'
+      - Classe I
+    - - '- Plástico, em caixas de papelão [menos que 5 gal. (18,9 L)]'
+      - Classe I
+    - - '- Plástico, engradados de plástico sólidos ou abertos3'
+      - Plástico Grupo A
+    - - '- Plástico, PET'
+      - Classe I
+    - - Caixas, engradados
+      - ''
+    - - '- Vazias, de madeira, com paredes sólidas'
+      - Classe II
+    - - '- Vazias, madeira, de tábuas espaçadas⁴'
+      - Fora do escopo
+    - - Pão
+      - ''
+    - - -Embrulhado, em caixas de papelão
+      - Classe III
+    - - Manteiga
+      - ''
+    - - -Margarina
+      - Classe III
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 9
+      tabela_na_pagina: 1
+    linhas:
+    - - ''
+      - Mercadoria
+      - ''
+      - ''
+      - Classe
+      - ''
+    - - Aerossóis Com e sem caixas de papelão - Nível 1
+      - ''
+      - ''
+      - Classe III
+      - ''
+      - ''
+    - - Bebidas alcoólicas Com e sem caixas de papelão - Até 20% de álcool em recipientes de metal, vidro
+        ou cerâmica - Até 20% de álcool em recipientes de madeira
+      - ''
+      - ''
+      - Classe I Classe II
+      - ''
+      - ''
+    - - Munições Armas leves, armas de caça - Embaladas, em caixas de papelão
+      - ''
+      - ''
+      - Classe IV
+      - ''
+      - ''
+    - - 'Aparelhos elétricos grandes (Linha branca: fogões, geladeiras) - Sem embalagem, sem quantidades
+        significativas de plástico no exterior - Em caixas de papelão corrugado, sem quantidades significativas
+        de plástico'
+      - ''
+      - ''
+      - Classe I Classe II
+      - ''
+      - ''
+    - - Produtos de confeitaria Biscoitos, bolos e tortas - Congelados, em caixas de papelão1 - Embalados,
+        em caixas de papelão
+      - ''
+      - ''
+      - Classe II Classe III
+      - ''
+      - ''
+    - - Pilhas e baterias Pilhas secas (sem lítio ou metais exóticos similares) - Embaladas, em caixas
+        de papelão - Em blísters, em caixas de papelão Automotivas - Cheias2 p/ caminhões ou maiores -
+        Vazias ou cheias2
+      - ''
+      - ''
+      - Classe I Classe II Classe I Plástico Grupo A
+      - ''
+      - ''
+    - - Feijão Seco - Embalado, em caixas de papelão
+      - ''
+      - ''
+      - Classe III
+      - ''
+      - ''
+    - - Garrafas e frascos Vazias, em caixas de papelão - Vidro - PET (polietileno tereftalato) Cheio
+        com pós incombustíveis - PET - Vidro, em caixas de papelão - Plástico, em caixas de papelão [menos
+        que 1 gal (3,8 L)] - Plástico, sem caixas de papelão (exceto PET), qualquer tamanho - Plástico,
+        em caixas de papelão ou exposto [maior que 1 gal (3,8 L)] - Plástico, engradados sólidos de plástico
+        - Plástico, engradados abertos de plástico Cheios com líquidos incombustíveis - Vidro, em caixas
+        de papelão - Plástico, em caixas de papelão [menos que 5 gal. (18,9 L)] - Plástico, engradados
+        de plástico sólidos ou abertos3 - Plástico, PET Caixas, engradados - Vazias, de madeira, com paredes
+        sólidas - Vazias, madeira, de tábuas espaçadas4
+      - ''
+      - ''
+      - Classe I Classe IV Classe II Classe I Classe IV Plástico Grupo A Plástico Grupo A Plástico Grupo
+        A Plástico Grupo A Classe I Classe I Plástico Grupo A Classe I Classe II Fora do escopo
+      - ''
+      - ''
+    - - Pão -Embrulhado, em caixas de papelão
+      - ''
+      - ''
+      - Classe III
+      - ''
+      - ''
+    - - Manteiga -Margarina
+      - ''
+      - ''
+      - Classe III
+      - ''
+      - ''
+notas:
+- Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na
+  linha em que a página a alinha.
+- As notas numeradas estão ao pé da tabela, na página 14.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

@@ -213,6 +213,20 @@ RTI = Q x t Onde: RTI - Reserva técnica de incêndio em litros (L); Q - Vazão 
 | Ordinário Grupo 1 e 2 | 30 |  |  |
 | Extraordinário Grupo 1 e 2 | 60 |  |  |
 
+<!-- tabela-conferida: Tabela 1 do Anexo B p9 -->
+### Tabela 1 do Anexo B — Duração da reserva de água (RTI) (conferida)
+
+| Categoria de Risco | Duração - t (min) |
+| --- | --- |
+| Leve | 30 |
+| Ordinário Grupo 1 e 2 | 30 |
+| Extraordinário Grupo 1 e 2 | 60 |
+
+Fonte: NT 2-03 P1, página 9, Tabela 1 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fórmula abaixo da tabela: RTI = Q x t, onde RTI – Reserva técnica de incêndio em litros (L); Q – Vazão em litros por minuto (L/min); t – Tempo de duração da reserva de água em minutos (min).
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 1 do Anexo B p9 -->
+
 ---
 
 ## Página 10

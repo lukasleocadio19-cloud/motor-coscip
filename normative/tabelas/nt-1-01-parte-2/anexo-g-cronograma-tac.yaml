@@ -1,0 +1,94 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-01 Parte 2
+arquivo: nt-1-01-parte-2-fiscalizacao.md
+tabela: Cronograma da cláusula sexta do Anexo G
+titulo: Cronograma para a efetiva regularização (modelo do Termo de Ajustamento de Conduta)
+pagina: 39
+fonte_pdf_sha256: 01ffb41a7be61d731fd9997546980a430f6d49f9698fade87917101dedd9bef3
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+  faixa:
+  - 0
+  - 13
+  mesclar_linhas:
+  - - 1
+    - 2
+  - - 7
+    - 8
+  - - 9
+    - 10
+  - - 11
+    - 12
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-01-parte-2/pagina-39.jpg
+    imagem_sha256: f8e313af8be6fac28a032cf20b88f1853842d496fc59f00ab07b71f0a82e8429
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Exigências / medidas de segurança
+    - Início
+    - Conclusão
+    linhas:
+    - - CRONOGRAMA PARA A EFETIVA REGULARIZAÇÃO
+      - <
+      - <
+    - - EXIGÊNCIAS / MEDIDAS DE SEGURANÇA
+      - INÍCIO
+      - CONCLUSÃO
+    - &id001
+      - (...)
+      - / /
+      - / /
+    - *id001
+    - *id001
+    - *id001
+    - *id001
+    - *id001
+    - - Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA)
+      - / /
+      - / /
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 39
+      tabela_na_pagina: 1
+    linhas:
+    - - CRONOGRAMA PARA A EFETIVA REGULARIZAÇÃO
+    - - EXIGÊNCIAS / MEDIDAS DE SEGURANÇA
+      - INÍCIO
+      - CONCLUSÃO
+    - - (...)
+      - / /
+      - / /
+    - - (...)
+      - / /
+      - / /
+    - - (...)
+      - / /
+      - / /
+    - - (...)
+      - / /
+      - / /
+    - - (...)
+      - / /
+      - / /
+    - - (...)
+      - / /
+      - / /
+    - - Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA)
+      - / /
+      - / /
+notas:
+- 'Modelo: "(...)" e "/ /" são campos para preenchimento.'
+- A extração lê a moldura da página inteira como tabela; só as linhas do cronograma entram na comparação.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

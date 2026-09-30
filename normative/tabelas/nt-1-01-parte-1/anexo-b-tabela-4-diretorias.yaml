@@ -1,0 +1,44 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-01 Parte 1
+arquivo: nt-1-01-parte-1-regularizacao.md
+tabela: Tabela 4 do Anexo B
+titulo: Diretorias relacionadas aos serviços técnicos
+pagina: 26
+fonte_pdf_sha256: ef60d4d275f294070a335b903b76a486afae0e8784ee128bcaa6c0d8432e5ca5
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-01-parte-1/pagina-26.jpg
+    imagem_sha256: 7510cc102623b0a9877b91be92e32d0566786b0cb567f784956c611fe20b80c3
+    linhas_cabecalho: 1
+    linhas:
+    - - Diretoria
+      - Endereço
+    - - DGST – Diretoria Geral de Serviços Técnicos
+      - Praça da República, 39, Centro, Rio de Janeiro
+    - - DDP – Diretoria de Diversões Públicas
+      - Rua do Senado, 22, Centro, Rio de Janeiro
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 26
+      tabela_na_pagina: 4
+    linhas:
+    - - Diretoria
+      - Endereço
+    - - DGST - Diretoria Geral de Serviços Técnicos
+      - Praça da República, 39, Centro, Rio de Janeiro
+    - - DDP - Diretoria de Diversões Públicas
+      - Rua do Senado, 22, Centro, Rio de Janeiro
+notas: []
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

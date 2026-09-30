@@ -389,6 +389,21 @@ f) para regularização de eventos temporários de reunião de público, deverá
 | Da Tabela 03 à 32 do Anexo III do Decreto Estadual nº 42/2018 - COSCIP, que não possui isenção de Chuveiros Automáticos tipo Sprinklers | 120 |  |  |
 | Sob administração pública | 180 |  |  |
 
+<!-- tabela-conferida: Tabela 1 p7 -->
+### Tabela 1 — Prazos para cumprimento de exigências constantes nas notificações descritas nesta alínea (conferida)
+
+| Tipo de Edificação ou Área de Risco | Prazo em dias corridos |
+| --- | --- |
+| Da Tabela 02 do Anexo III do Decreto Estadual nº 42/2018 – COSCIP | 60 |
+| Da Tabela 03 à 32 do Anexo III do Decreto Estadual nº 42/2018 – COSCIP, que possui isenção de Chuveiros Automáticos tipo Sprinklers | 90 |
+| Da Tabela 03 à 32 do Anexo III do Decreto Estadual nº 42/2018 – COSCIP, que não possui isenção de Chuveiros Automáticos tipo Sprinklers | 120 |
+| Sob administração pública | 180 |
+
+Fonte: NT 1-01 Parte 2, página 7, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Tabela da alínea a) do item 5.2.3.1 (notificação para edificação ou área de risco que não esteja isenta ou dispensada de regularização e não possua Certificado de Aprovação válido).
+Fonte: CBMERJ.
+<!-- /tabela-conferida: Tabela 1 p7 -->
+
 ---
 
 ## Página 8
@@ -2372,6 +2387,39 @@ regularização, sob pena de aplicação de novo Auto de Interdição.
 | 2.21 CONTROLE DE FUMAÇA |  |  |  |
 | 2.22 OUTROS: |  |  |  |
 
+<!-- tabela-conferida: Anexo E, item 2 p34 -->
+### Anexo E, item 2 — Dispositivos preventivos e meios complementares (modelo de relatório das condições de segurança) (conferida)
+
+| DISPOSITIVOS PREVENTIVOS | EXIGIDO | EXISTENTE | ESTADO DE FUNCIONAMENTO |
+| --- | --- | --- | --- |
+| 2.1 HIDRANTE(S) DE RECALQUE |  |  |  |
+| 2.2 HIDRANTE(S) URBANO(S) DO TIPO COLUNA |  |  |  |
+| 2.3 CANALIZAÇÃO OU REDE PREVENTIVA |  |  |  |
+| 2.4 HIDRANTES OU MANGOTINHOS |  |  |  |
+| 2.5 CHUVEIROS AUTOMÁTICOS |  |  |  |
+| 2.6 PCF NOS VÃOS DAS ESCADAS OU DAS RAMPAS |  |  |  |
+| 2.7 EXTINTORES |  |  |  |
+| 2.8 BOMBAS DE INCÊNDIO |  |  |  |
+| 2.9 SPDA |  |  |  |
+| 2.10 SISTEMA DE DETECÇÃO |  |  |  |
+| 2.11 SINALIZAÇÃO DE SEGURANÇA |  |  |  |
+| 2.12 SAÍDA DE EMERGÊNCIA |  |  |  |
+| 2.13 ILUMINAÇÃO DE EMERGÊNCIA |  |  |  |
+| 2.14 ALARME DE INCÊNDIO |  |  |  |
+| 2.15 PLANO DE EMERGÊNCIA |  |  |  |
+| 2.16 BRIGADA DE INCÊNDIO |  |  |  |
+| 2.17 CONTROLE DE MATERIAIS DE ACABAMENTO |  |  |  |
+| 2.18 SEGURANÇA ESTRUTURAL CONTRA INCÊNDIO |  |  |  |
+| 2.19 COMPARTIMENTAÇÃO VERTICAL |  |  |  |
+| 22.20 ACESSO DE VIATURA EM EDIFICAÇÕES |  |  |  |
+| 2.21 CONTROLE DE FUMAÇA |  |  |  |
+| 2.22 OUTROS: |  |  |  |
+
+Fonte: NT 1-01 Parte 2, página 34, Anexo E, item 2; conferida em 2026-09-29 (visual + texto).
+Título do quadro na página: "2 – DISPOSITIVOS PREVENTIVOS E MEIOS COMPLEMENTARES (ASSINALAR COM “X” OS EXIGIDOS E OS EXISTENTES E DESCREVER OBRIGATORIAMENTE O ESTADO DE FUNCIONAMENTO DELES)".
+As colunas EXIGIDO, EXISTENTE e ESTADO DE FUNCIONAMENTO são para preenchimento.
+<!-- /tabela-conferida: Anexo E, item 2 p34 -->
+
 ---
 
 ## Página 35
@@ -2405,6 +2453,27 @@ __________________________________________________
 | 3.8 ESTRUTURA(S) METÁLICA(S) |  |  |  |
 | 3.9 CALDEIRA(S) OU VASOS DE PRESSÃO |  |  |  |
 | 3.10 OUTROS: |  |  |  |
+
+<!-- tabela-conferida: Anexo E, item 3 p35 -->
+### Anexo E, item 3 — Equipamentos, instalações e sistemas especiais (modelo de relatório das condições de segurança) (conferida)
+
+| EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS | AUTORIZADO | EXISTENTE | ESTADO DE FUNCIONAMENTO |
+| --- | --- | --- | --- |
+| 3.1 SISTEMA DE CONDICIONAMENTO DE AR |  |  |  |
+| 3.2 SISTEMA DE EXAUSTÃO MECÂNICA |  |  |  |
+| 3.3 INSTALAÇÕES DE GÁS CANALIZADO DE RUA |  |  |  |
+| 3.4 CENTRAL DE RECIPIENTE(S) DE GÁS LIQUEFEITO DE PETRÓLEO |  |  |  |
+| 3.5 LÍQUIDOS INFLAMÁVEIS |  |  |  |
+| 3.6 GERADOR(ES) |  |  |  |
+| 3.7 MONTA-CARGA |  |  |  |
+| 3.8 ESTRUTURA(S) METÁLICA(S) |  |  |  |
+| 3.9 CALDEIRA(S) OU VASOS DE PRESSÃO |  |  |  |
+| 3.10 OUTROS: |  |  |  |
+
+Fonte: NT 1-01 Parte 2, página 35, Anexo E, item 3; conferida em 2026-09-29 (visual + texto).
+Título do quadro na página: "3 – EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS (ASSINALAR COM “X” OS AUTORIZADOS EM LAUDO DE EXIGÊNCIAS E OS EXISTENTES E DESCREVER OBRIGATORIAMENTE O ESTADO DE FUNCIONAMENTO DELES)".
+As colunas AUTORIZADO, EXISTENTE e ESTADO DE FUNCIONAMENTO são para preenchimento.
+<!-- /tabela-conferida: Anexo E, item 3 p35 -->
 
 ---
 
@@ -2449,6 +2518,24 @@ __________________________________________________
 | (...) |  | / / | / / |  |
 | (...) |  | / / | / / |  |
 | Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA) |  | / / | / / |  |
+
+<!-- tabela-conferida: Anexo F p36 -->
+### Anexo F — Modelo do cronograma de execução – Compromisso de Ajustamento de Conduta (cronograma para a efetiva regularização) (conferida)
+
+| Exigências / medidas de segurança | Início | Conclusão |
+| --- | --- | --- |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA) | / / | / / |
+
+Fonte: NT 1-01 Parte 2, página 36, Anexo F; conferida em 2026-09-29 (visual + texto).
+Modelo: "(...)" e "/ /" são campos para preenchimento.
+OBS: Deverão ser descritas todas as etapas do processo com data de início e término, onde ao final OBRIGATORIAMENTE deverá estar prevista a legalização plena da edificação ou área de risco.
+<!-- /tabela-conferida: Anexo F p36 -->
 
 ---
 
@@ -2653,6 +2740,24 @@ e que já possuam o Certificado de Aprovação.
 |  |  |  |  |  |
 | 6.3 Para obtenção da Certificação Final, devem ser cumpridas além das obrigações previstas nesta cláusula, as exigências determinadas pelo CBMERJ. 6.4 Quando houver necessidade de emissão de Laudo de Exigências que contemple exigências não previstas na tabela acima ou até isenção de exigências inseridas nesta tabela, o COMPROMITENTE deverá solicitar aditamento do TAC, prevendo as devidas atualizações. CLÁUSULA SÉTIMA - DA FISCALIZAÇÃO |  |  |  |  |
 
+<!-- tabela-conferida: Cronograma da cláusula sexta do Anexo G p39 -->
+### Cronograma da cláusula sexta do Anexo G — Cronograma para a efetiva regularização (modelo do Termo de Ajustamento de Conduta) (conferida)
+
+| Exigências / medidas de segurança | Início | Conclusão |
+| --- | --- | --- |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA) | / / | / / |
+
+Fonte: NT 1-01 Parte 2, página 39, Cronograma da cláusula sexta do Anexo G; conferida em 2026-09-29 (visual + texto).
+Modelo: "(...)" e "/ /" são campos para preenchimento.
+A extração lê a moldura da página inteira como tabela; só as linhas do cronograma entram na comparação.
+<!-- /tabela-conferida: Cronograma da cláusula sexta do Anexo G p39 -->
+
 ---
 
 ## Página 40
@@ -2788,3 +2893,22 @@ campos previstos como Diretoria-Geral de Serviços Técnicos (DGST) deverão ser
 | Risco Grande | Até 1 ano | 6.400 UFIRRJ | 9.600 UFIRRJ | 64.000 UFIRRJ | 320.000 UFIR-RJ | 800.000 UFIR-RJ |
 |  | Até 3 anos | 9.600 UFIR-RJ | 14.400 UFIR-RJ | 96.000 UFIRRJ | 480.000 UFIR-RJ | 1.200.000 UFIRRJ |
 |  | Até 5 anos | 12.800 UFIR-RJ | 19.200 UFIR-RJ | 128.000 UFIRRJ | 640.000 UFIR-RJ | 1.600.000 UFIRRJ |
+<!-- tabela-conferida: Anexo H p42 -->
+### Anexo H — Tabela das multas previstas no Termo de Ajustamento de Conduta (TAC) (conferida)
+
+| Classificação quanto ao risco de incêndio | Prazo de vigência do TAC (anos) | Área total construída: até 900m² | Até 1.500m² | Até 5.000m² | Até 10.000m² | Mais de 10.000m² |
+| --- | --- | --- | --- | --- | --- | --- |
+| Risco Leve | Até 1 ano | 1.600 UFIR-RJ | 2.400 UFIR-RJ | 16.000 UFIR-RJ | 80.000 UFIR-RJ | 200.000 UFIR-RJ |
+| Risco Leve | Até 3 anos | 2.400 UFIR-RJ | 3.600 UFIR-RJ | 24.000 UFIR-RJ | 120.000 UFIR-RJ | 300.000 UFIR-RJ |
+| Risco Leve | Até 5 anos | 3.200 UFIR-RJ | 4.800 UFIR-RJ | 32.000 UFIR-RJ | 160.000 UFIR-RJ | 400.000 UFIR-RJ |
+| Risco Médio | Até 1 ano | 3.200 UFIR-RJ | 4.800 UFIR-RJ | 32.000 UFIR-RJ | 160.000 UFIR-RJ | 400.000 UFIR-RJ |
+| Risco Médio | Até 3 anos | 4.800 UFIR-RJ | 7.200 UFIR-RJ | 48.000 UFIR-RJ | 240.000 UFIR-RJ | 600.000 UFIR-RJ |
+| Risco Médio | Até 5 anos | 6.400 UFIR-RJ | 9.600 UFIR-RJ | 64.000 UFIR-RJ | 320.000 UFIR-RJ | 800.000 UFIR-RJ |
+| Risco Grande | Até 1 ano | 6.400 UFIR-RJ | 9.600 UFIR-RJ | 64.000 UFIR-RJ | 320.000 UFIR-RJ | 800.000 UFIR-RJ |
+| Risco Grande | Até 3 anos | 9.600 UFIR-RJ | 14.400 UFIR-RJ | 96.000 UFIR-RJ | 480.000 UFIR-RJ | 1.200.000 UFIR-RJ |
+| Risco Grande | Até 5 anos | 12.800 UFIR-RJ | 19.200 UFIR-RJ | 128.000 UFIR-RJ | 640.000 UFIR-RJ | 1.600.000 UFIR-RJ |
+
+Fonte: NT 1-01 Parte 2, página 42, Anexo H; conferida em 2026-09-29 (visual + texto).
+"UFIR-RJ" aparece quebrado em duas linhas em várias células ("UFIR-" / "RJ").
+<!-- /tabela-conferida: Anexo H p42 -->
+

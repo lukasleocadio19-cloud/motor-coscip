@@ -1,0 +1,213 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 14
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-14.png
+    imagem_sha256: 8b762401878c61ec5e543025278b1825c1f8db23837dbcabeb4dfa58c575308b
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 0135-1/00
+      - Cultivo de cacau
+    - - 0139-3/01
+      - Cultivo de chá-da-índia
+    - - 0139-3/02
+      - Cultivo de erva-mate
+    - - 0139-3/03
+      - Cultivo de pimenta-do-reino
+    - - 0139-3/04
+      - Cultivo de plantas para condimento, exceto pimenta-do-reino
+    - - 0139-3/05
+      - Cultivo de dendê
+    - - 0139-3/06
+      - Cultivo de seringueira
+    - - 0139-3/99
+      - Cultivo de outras plantas de lavoura permanente não especificadas anteriormente
+    - - 0141-5/01
+      - Produção de sementes certificadas, exceto de forrageiras para pasto
+    - - 0141-5/02
+      - Produção de sementes certificadas de forrageiras para formação de pasto
+    - - 0142-3/00
+      - Produção de mudas e outras formas de propagação vegetal, certificadas
+    - - 0151-2/01
+      - Criação de bovinos para corte
+    - - 0151-2/02
+      - Criação de bovinos para leite
+    - - 0151-2/03
+      - Criação de bovinos, exceto para corte e leite
+    - - 0152-1/01
+      - Criação de bufalinos
+    - - 0152-1/02
+      - Criação de equinos
+    - - 0152-1/03
+      - Criação de asininos e muares
+    - - 0153-9/01
+      - Criação de caprinos
+    - - 0153-9/02
+      - Criação de ovinos, inclusive para produção de lã
+    - - 0154-7/00
+      - Criação de suínos
+    - - 0155-5/01
+      - Criação de frangos para corte
+    - - 0155-5/02
+      - Produção de pintos de um dia
+    - - 0155-5/03
+      - Criação de outros galináceos, exceto para corte
+    - - 0155-5/04
+      - Criação de aves, exceto galináceos
+    - - 0155-5/05
+      - Produção de ovos
+    - - 0159-8/01
+      - Apicultura
+    - - 0159-8/02
+      - Criação de animais de estimação
+    - - 0159-8/03
+      - Criação de escargô
+    - - 0159-8/04
+      - Criação de bicho-da-seda
+    - - 0159-8/99
+      - Criação de outros animais não especificados anteriormente
+    - - 0161-0/02
+      - Serviço de poda de árvores para lavouras
+    - - 0161-0/03
+      - Serviço de preparação de terreno, cultivo e colheita
+    - - 0161-0/99
+      - Atividades de apoio à agricultura não especificadas anteriormente
+    - - 0162-8/01
+      - Serviço de inseminação artificial em animais
+    - - 0162-8/02
+      - Serviço de tosquiamento de ovinos
+    - - 0162-8/03
+      - Serviço de manejo de animais
+    - - 0162-8/99
+      - Atividades de apoio à pecuária não especificadas anteriormente
+    - - 0163-6/00
+      - Atividades de pós-colheita
+    - - 0170-9/00
+      - Caça e serviços relacionados
+    - - 0210-1/01
+      - Cultivo de eucalipto
+    - - 0210-1/02
+      - Cultivo de acácia-negra
+    - - 0210-1/03
+      - Cultivo de pinus
+    - - 0210-1/04
+      - Cultivo de teca
+    - - 0210-1/05
+      - Cultivo de espécies madeireiras, exceto eucalipto, acácia-negra, pinus e teca
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 14
+      tabela_na_pagina: 1
+    linhas:
+    - - 0135-1/00
+      - Cultivo de cacau
+    - - 0139-3/01
+      - Cultivo de chá-da-índia
+    - - 0139-3/02
+      - Cultivo de erva-mate
+    - - 0139-3/03
+      - Cultivo de pimenta-do-reino
+    - - 0139-3/04
+      - Cultivo de plantas para condimento, exceto pimenta-do-reino
+    - - 0139-3/05
+      - Cultivo de dendê
+    - - 0139-3/06
+      - Cultivo de seringueira
+    - - 0139-3/99
+      - Cultivo de outras plantas de lavoura permanente não especificadas anteriormente
+    - - 0141-5/01
+      - Produção de sementes certificadas, exceto de forrageiras para pasto
+    - - 0141-5/02
+      - Produção de sementes certificadas de forrageiras para formação de pasto
+    - - 0142-3/00
+      - Produção de mudas e outras formas de propagação vegetal, certificadas
+    - - 0151-2/01
+      - Criação de bovinos para corte
+    - - 0151-2/02
+      - Criação de bovinos para leite
+    - - 0151-2/03
+      - Criação de bovinos, exceto para corte e leite
+    - - 0152-1/01
+      - Criação de bufalinos
+    - - 0152-1/02
+      - Criação de equinos
+    - - 0152-1/03
+      - Criação de asininos e muares
+    - - 0153-9/01
+      - Criação de caprinos
+    - - 0153-9/02
+      - Criação de ovinos, inclusive para produção de lã
+    - - 0154-7/00
+      - Criação de suínos
+    - - 0155-5/01
+      - Criação de frangos para corte
+    - - 0155-5/02
+      - Produção de pintos de um dia
+    - - 0155-5/03
+      - Criação de outros galináceos, exceto para corte
+    - - 0155-5/04
+      - Criação de aves, exceto galináceos
+    - - 0155-5/05
+      - Produção de ovos
+    - - 0159-8/01
+      - Apicultura
+    - - 0159-8/02
+      - Criação de animais de estimação
+    - - 0159-8/03
+      - Criação de escargô
+    - - 0159-8/04
+      - Criação de bicho-da-seda
+    - - 0159-8/99
+      - Criação de outros animais não especificados anteriormente
+    - - 0161-0/02
+      - Serviço de poda de árvores para lavouras
+    - - 0161-0/03
+      - Serviço de preparação de terreno, cultivo e colheita
+    - - 0161-0/99
+      - Atividades de apoio à agricultura não especificadas anteriormente
+    - - 0162-8/01
+      - Serviço de inseminação artificial em animais
+    - - 0162-8/02
+      - Serviço de tosquiamento de ovinos
+    - - 0162-8/03
+      - Serviço de manejo de animais
+    - - 0162-8/99
+      - Atividades de apoio à pecuária não especificadas anteriormente
+    - - 0163-6/00
+      - Atividades de pós-colheita
+    - - 0170-9/00
+      - Caça e serviços relacionados
+    - - 0210-1/01
+      - Cultivo de eucalipto
+    - - 0210-1/02
+      - Cultivo de acácia-negra
+    - - 0210-1/03
+      - Cultivo de pinus
+    - - 0210-1/04
+      - Cultivo de teca
+    - - 0210-1/05
+      - Cultivo de espécies madeireiras, exceto eucalipto, acácia-negra, pinus e teca
+notas:
+- Continuação da tabela da página 13.
+- A tabela continua na página 15.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

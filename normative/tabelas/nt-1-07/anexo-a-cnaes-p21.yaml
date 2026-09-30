@@ -1,0 +1,222 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 21
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  mesclar_linhas:
+  - - 17
+    - 18
+  descartar_linhas:
+  - 16
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-21.png
+    imagem_sha256: 4ab71371a0bbcee2f2999a525a02f877e7745f0812b1dd7a33b8c72d565f4f7c
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 4744-0/02
+      - Comércio varejista de madeira e artefatos
+    - - 4744-0/03
+      - Comércio varejista de materiais hidráulicos
+    - - 4744-0/04
+      - Comércio varejista de cal, areia, pedra britada, tijolos e telhas
+    - - 4744-0/06
+      - Comércio varejista de pedras para revestimento
+    - - 4744-0/99
+      - Comércio varejista de materiais de construção em geral
+    - - 4751-2/01
+      - Comércio varejista especializado de equipamentos e suprimentos de informática
+    - - 4751-2/02
+      - Recarga de cartuchos para equipamentos de informática
+    - - 4752-1/00
+      - Comércio varejista especializado de equipamentos de telefonia e comunicação
+    - - 4753-9/00
+      - Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo
+    - - 4754-7/01
+      - Comércio varejista de móveis
+    - - 4754-7/02
+      - Comércio varejista de artigos de colchoaria
+    - - 4754-7/03
+      - Comércio varejista de artigos de iluminação
+    - - 4755-5/01
+      - Comércio varejista de tecidos
+    - - 4755-5/02
+      - Comercio varejista de artigos de armarinho
+    - - 4755-5/03
+      - Comercio varejista de artigos de cama, mesa e banho
+    - - 4756-3/00
+      - Comércio varejista especializado de instrumentos musicais e acessórios
+    - - 4757-1/00
+      - Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para uso
+        doméstico, exceto informática e comunicação
+    - - 4759-8/01
+      - Comércio varejista de artigos de tapeçaria, cortinas e persianas
+    - - 4759-8/99
+      - Comércio varejista de outros artigos de uso doméstico não especificados anteriormente
+    - - 4761-0/01
+      - Comércio varejista de livros
+    - - 4761-0/02
+      - Comércio varejista de jornais e revistas
+    - - 4761-0/03
+      - Comércio varejista de artigos de papelaria
+    - - 4762-8/00
+      - Comércio varejista de discos, CDs, DVDs e fitas
+    - - 4763-6/01
+      - Comércio varejista de brinquedos e artigos recreativos
+    - - 4763-6/02
+      - Comércio varejista de artigos esportivos
+    - - 4763-6/03
+      - Comércio varejista de bicicletas e triciclos; peças e acessórios
+    - - 4763-6/04
+      - Comércio varejista de artigos de caça, pesca e camping
+    - - 4771-7/04
+      - Comércio varejista de medicamentos veterinários
+    - - 4772-5/00
+      - Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal
+    - - 4773-3/00
+      - Comércio varejista de artigos médicos e ortopédicos
+    - - 4774-1/00
+      - Comércio varejista de artigos de óptica
+    - - 4781-4/00
+      - Comércio varejista de artigos do vestuário e acessórios
+    - - 4782-2/01
+      - Comércio varejista de calçados
+    - - 4782-2/02
+      - Comércio varejista de artigos de viagem
+    - - 4783-1/01
+      - Comércio varejista de artigos de joalheria
+    - - 4783-1/02
+      - Comércio varejista de artigos de relojoaria
+    - - 4785-7/01
+      - Comércio varejista de antiguidades
+    - - 4785-7/99
+      - Comércio varejista de outros artigos usados
+    - - 4789-0/01
+      - Comércio varejista de suvenires, bijuterias e artesanatos
+    - - 4789-0/02
+      - Comércio varejista de plantas e flores naturais
+    - - 4789-0/03
+      - Comércio varejista de objetos de arte
+    - - 4789-0/04
+      - Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação
+    - - 4789-0/07
+      - Comércio varejista de equipamentos para escritório
+    - - 4789-0/08
+      - Comércio varejista de artigos fotográficos e para filmagem
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 21
+      tabela_na_pagina: 1
+    linhas:
+    - - 4744-0/02
+      - Comércio varejista de madeira e artefatos
+    - - 4744-0/03
+      - Comércio varejista de materiais hidráulicos
+    - - 4744-0/04
+      - Comércio varejista de cal, areia, pedra britada, tijolos e telhas
+    - - 4744-0/06
+      - Comércio varejista de pedras para revestimento
+    - - 4744-0/99
+      - Comércio varejista de materiais de construção em geral
+    - - 4751-2/01
+      - Comércio varejista especializado de equipamentos e suprimentos de informática
+    - - 4751-2/02
+      - Recarga de cartuchos para equipamentos de informática
+    - - 4752-1/00
+      - Comércio varejista especializado de equipamentos de telefonia e comunicação
+    - - 4753-9/00
+      - Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo
+    - - 4754-7/01
+      - Comércio varejista de móveis
+    - - 4754-7/02
+      - Comércio varejista de artigos de colchoaria
+    - - 4754-7/03
+      - Comércio varejista de artigos de iluminação
+    - - 4755-5/01
+      - Comércio varejista de tecidos
+    - - 4755-5/02
+      - Comercio varejista de artigos de armarinho
+    - - 4755-5/03
+      - Comercio varejista de artigos de cama, mesa e banho
+    - - 4756-3/00
+      - Comércio varejista especializado de instrumentos musicais e acessórios
+    - - 4757-1/00
+      - Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para uso
+        doméstico, exceto informática e comunicação
+    - - 4759-8/01
+      - Comércio varejista de artigos de tapeçaria, cortinas e persianas
+    - - 4759-8/99
+      - Comércio varejista de outros artigos de uso doméstico não especificados anteriormente
+    - - 4761-0/01
+      - Comércio varejista de livros
+    - - 4761-0/02
+      - Comércio varejista de jornais e revistas
+    - - 4761-0/03
+      - Comércio varejista de artigos de papelaria
+    - - 4762-8/00
+      - Comércio varejista de discos, CDs, DVDs e fitas
+    - - 4763-6/01
+      - Comércio varejista de brinquedos e artigos recreativos
+    - - 4763-6/02
+      - Comércio varejista de artigos esportivos
+    - - 4763-6/03
+      - Comércio varejista de bicicletas e triciclos; peças e acessórios
+    - - 4763-6/04
+      - Comércio varejista de artigos de caça, pesca e camping
+    - - 4771-7/04
+      - Comércio varejista de medicamentos veterinários
+    - - 4772-5/00
+      - Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal
+    - - 4773-3/00
+      - Comércio varejista de artigos médicos e ortopédicos
+    - - 4774-1/00
+      - Comércio varejista de artigos de óptica
+    - - 4781-4/00
+      - Comércio varejista de artigos do vestuário e acessórios
+    - - 4782-2/01
+      - Comércio varejista de calçados
+    - - 4782-2/02
+      - Comércio varejista de artigos de viagem
+    - - 4783-1/01
+      - Comércio varejista de artigos de joalheria
+    - - 4783-1/02
+      - Comércio varejista de artigos de relojoaria
+    - - 4785-7/01
+      - Comércio varejista de antiguidades
+    - - 4785-7/99
+      - Comércio varejista de outros artigos usados
+    - - 4789-0/01
+      - Comércio varejista de suvenires, bijuterias e artesanatos
+    - - 4789-0/02
+      - Comércio varejista de plantas e flores naturais
+    - - 4789-0/03
+      - Comércio varejista de objetos de arte
+    - - 4789-0/04
+      - Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação
+    - - 4789-0/07
+      - Comércio varejista de equipamentos para escritório
+    - - 4789-0/08
+      - Comércio varejista de artigos fotográficos e para filmagem
+notas:
+- Continuação da tabela da página 20.
+- A tabela continua na página 22.
+- A camada de texto parte as descrições de duas linhas e repete 1 descrição(ões) numa linha vazia; a comparação
+  junta as partes e descarta as repetições.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

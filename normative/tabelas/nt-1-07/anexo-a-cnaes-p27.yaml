@@ -1,0 +1,223 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 27
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  mesclar_linhas:
+  - - 2
+    - 3
+  - - 16
+    - 17
+  descartar_linhas:
+  - 1
+  - 14
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-27.png
+    imagem_sha256: 4615b493da5d4acc0a7544189d7defa6693a00ee02a3dc54c20554387e6ed2bf
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 8219-9/01
+      - Fotocópias
+    - - 8219-9/99
+      - Preparação de documentos e serviços especializados de apoio administrativo não especificados anteriormente
+    - - 8220-2/00
+      - Atividades de teleatendimento
+    - - 8230-0/01
+      - Serviços de organização de feiras, congressos, exposições e festas
+    - - 8291-1/00
+      - Atividades de cobrança e informações cadastrais
+    - - 8292-0/00
+      - Envasamento e empacotamento sob contrato
+    - - 8299-7/01
+      - Medição de consumo de energia elétrica, gás e água
+    - - 8299-7/02
+      - Emissão de vales-alimentação, vales-transporte e similares
+    - - 8299-7/03
+      - Serviços de gravação de carimbos, exceto confecção
+    - - 8299-7/04
+      - Leiloeiros independentes
+    - - 8299-7/05
+      - Serviços de levantamento de fundos sob contrato
+    - - 8299-7/06
+      - Casas lotéricas
+    - - 8299-7/07
+      - Salas de acesso à Internet
+    - - 8299-7/99
+      - Outras atividades de serviços prestados principalmente às empresas não especificadas anteriormente
+    - - 8411-6/00
+      - Administração pública em geral
+    - - 8412-4/00
+      - Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais
+    - - 8413-2/00
+      - Regulação das atividades econômicas
+    - - 8421-3/00
+      - Relações exteriores
+    - - 8422-1/00
+      - Defesa
+    - - 8423-0/00
+      - Justiça
+    - - 8424-8/00
+      - Segurança e ordem pública
+    - - 8425-6/00
+      - Defesa Civil
+    - - 8430-2/00
+      - Seguridade social obrigatória
+    - - 8531-7/00
+      - Educação superior – graduação
+    - - 8532-5/00
+      - Educação superior - graduação e pós-graduação
+    - - 8533-3/00
+      - Educação superior - pós-graduação e extensão
+    - - 8541-4/00
+      - Educação profissional de nível técnico
+    - - 8542-2/00
+      - Educação profissional de nível tecnológico
+    - - 8550-3/01
+      - Administração de caixas escolares
+    - - 8550-3/02
+      - Atividades de apoio à educação, exceto caixas escolares
+    - - 8591-1/00
+      - Ensino de esportes
+    - - 8592-9/01
+      - Ensino de dança
+    - - 8592-9/02
+      - Ensino de artes cênicas, exceto dança
+    - - 8592-9/03
+      - Ensino de música
+    - - 8592-9/99
+      - Ensino de arte e cultura não especificado anteriormente
+    - - 8593-7/00
+      - Ensino de idiomas
+    - - 8599-6/01
+      - Formação de condutores
+    - - 8599-6/02
+      - Cursos de pilotagem
+    - - 8599-6/03
+      - Treinamento em informática
+    - - 8599-6/04
+      - Treinamento em desenvolvimento profissional e gerencial
+    - - 8599-6/05
+      - Cursos preparatórios para concursos
+    - - 8599-6/99
+      - Outras atividades de ensino não especificadas anteriormente
+    - - 8621-6/01
+      - UTI móvel
+    - - 8621-6/02
+      - Serviços móveis de atendimento a urgências, exceto por UTI móvel
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 27
+      tabela_na_pagina: 1
+    linhas:
+    - - 8219-9/01
+      - Fotocópias
+    - - 8219-9/99
+      - Preparação de documentos e serviços especializados de apoio administrativo não especificados anteriormente
+    - - 8220-2/00
+      - Atividades de teleatendimento
+    - - 8230-0/01
+      - Serviços de organização de feiras, congressos, exposições e festas
+    - - 8291-1/00
+      - Atividades de cobrança e informações cadastrais
+    - - 8292-0/00
+      - Envasamento e empacotamento sob contrato
+    - - 8299-7/01
+      - Medição de consumo de energia elétrica, gás e água
+    - - 8299-7/02
+      - Emissão de vales-alimentação, vales-transporte e similares
+    - - 8299-7/03
+      - Serviços de gravação de carimbos, exceto confecção
+    - - 8299-7/04
+      - Leiloeiros independentes
+    - - 8299-7/05
+      - Serviços de levantamento de fundos sob contrato
+    - - 8299-7/06
+      - Casas lotéricas
+    - - 8299-7/07
+      - Salas de acesso à Internet
+    - - 8299-7/99
+      - Outras atividades de serviços prestados principalmente às empresas não especificadas anteriormente
+    - - 8411-6/00
+      - Administração pública em geral
+    - - 8412-4/00
+      - Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais
+    - - 8413-2/00
+      - Regulação das atividades econômicas
+    - - 8421-3/00
+      - Relações exteriores
+    - - 8422-1/00
+      - Defesa
+    - - 8423-0/00
+      - Justiça
+    - - 8424-8/00
+      - Segurança e ordem pública
+    - - 8425-6/00
+      - Defesa Civil
+    - - 8430-2/00
+      - Seguridade social obrigatória
+    - - 8531-7/00
+      - Educação superior - graduação
+    - - 8532-5/00
+      - Educação superior - graduação e pós-graduação
+    - - 8533-3/00
+      - Educação superior - pós-graduação e extensão
+    - - 8541-4/00
+      - Educação profissional de nível técnico
+    - - 8542-2/00
+      - Educação profissional de nível tecnológico
+    - - 8550-3/01
+      - Administração de caixas escolares
+    - - 8550-3/02
+      - Atividades de apoio à educação, exceto caixas escolares
+    - - 8591-1/00
+      - Ensino de esportes
+    - - 8592-9/01
+      - Ensino de dança
+    - - 8592-9/02
+      - Ensino de artes cênicas, exceto dança
+    - - 8592-9/03
+      - Ensino de música
+    - - 8592-9/99
+      - Ensino de arte e cultura não especificado anteriormente
+    - - 8593-7/00
+      - Ensino de idiomas
+    - - 8599-6/01
+      - Formação de condutores
+    - - 8599-6/02
+      - Cursos de pilotagem
+    - - 8599-6/03
+      - Treinamento em informática
+    - - 8599-6/04
+      - Treinamento em desenvolvimento profissional e gerencial
+    - - 8599-6/05
+      - Cursos preparatórios para concursos
+    - - 8599-6/99
+      - Outras atividades de ensino não especificadas anteriormente
+    - - 8621-6/01
+      - UTI móvel
+    - - 8621-6/02
+      - Serviços móveis de atendimento a urgências, exceto por UTI móvel
+notas:
+- Continuação da tabela da página 26.
+- A tabela continua na página 28.
+- A camada de texto parte as descrições de duas linhas e repete 2 descrição(ões) numa linha vazia; a comparação
+  junta as partes e descarta as repetições.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

@@ -1,0 +1,104 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-01 Parte 1
+arquivo: nt-1-01-parte-1-regularizacao.md
+tabela: Tabela 3 do Anexo B
+titulo: Unidades de atendimento nas demais cidades
+pagina: 26
+fonte_pdf_sha256: ef60d4d275f294070a335b903b76a486afae0e8784ee128bcaa6c0d8432e5ca5
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-01-parte-1/pagina-26.jpg
+    imagem_sha256: 7510cc102623b0a9877b91be92e32d0566786b0cb567f784956c611fe20b80c3
+    linhas_cabecalho: 1
+    linhas:
+    - - Unidade
+      - Endereço
+    - - 2ºGSFMA – Magé
+      - Estrada do Contorno, Km 24, Iriri, Magé
+    - - 3ºGBM – Niterói
+      - Rua Marquês de Paraná, 134, Centro, Niterói
+    - - 4ºGBM - Nova Iguaçu
+      - Avenida Governador Roberto da Silveira, 1221, Posse, Nova Iguaçu
+    - - 5ºGBM - Campos dos Goytacazes
+      - Avenida Rui Barbosa, 1027, Centro, Campos dos Goytacazes
+    - - 6ºGBM - Nova Friburgo
+      - Praça da Bandeira, 1027, Centro, Nova Friburgo
+    - - 7ºGBM - Barra Mansa
+      - Avenida Homero Leite, 352, Saudade, Barra Mansa
+    - - 9ºGBM – Macaé
+      - Rua Alfredo Becker, 290, Centro, Macaé
+    - - 10ºGBM - Angra dos Reis
+      - Rua Lídia Coutinho, s/n, Balneário, Angra dos Reis
+    - - 15ºGBM – Petrópolis
+      - Avenida Barão do Rio Branco, 1957, Quarteirão Brasileiro, Petrópolis
+    - - 16ºGBM – Teresópolis
+      - Rua Guandu, 680, Pimenteiras, Teresópolis
+    - - 18ºGBM - Cabo Frio
+      - Avenida Nilo Peçanha, 256, Centro, Cabo Frio
+    - - 20ºGBM - São Gonçalo
+      - Avenida São Miguel, 44, São Miguel, São Gonçalo
+    - - 21ºGBM – Itaperuna
+      - Avenida Santos Dumont, 40, Padre Humberto Lindelauf, Itaperuna
+    - - 22ºGBM - Volta Redonda
+      - Rua Governador Luiz Monteiro Portela, 346, Aterrado, Volta Redonda
+    - - 23ºGBM – Resende
+      - Avenida Marcílio Dias, 550, Jardim Jalisco, Resende
+    - - 26ºGBM – Paraty
+      - Avenida Roberto Silveira, s/n, Paraty
+    - - 27ºGBM – Araruama
+      - RJ 124, Km 36, Rio do Limão, Araruama
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 26
+      tabela_na_pagina: 3
+    linhas:
+    - - Unidade
+      - Endereço
+    - - 2ºGSFMA - Magé
+      - Estrada do Contorno, Km 24, Iriri, Magé
+    - - 3ºGBM - Niterói
+      - Rua Marquês de Paraná, 134, Centro, Niterói
+    - - 4ºGBM - Nova Iguaçu
+      - Avenida Governador Roberto da Silveira, 1221, Posse, Nova Iguaçu
+    - - 5ºGBM - Campos dos Goytacazes
+      - Avenida Rui Barbosa, 1027, Centro, Campos dos Goytacazes
+    - - 6ºGBM - Nova Friburgo
+      - Praça da Bandeira, 1027, Centro, Nova Friburgo
+    - - 7ºGBM - Barra Mansa
+      - Avenida Homero Leite, 352, Saudade, Barra Mansa
+    - - 9ºGBM - Macaé
+      - Rua Alfredo Becker, 290, Centro, Macaé
+    - - 10ºGBM - Angra dos Reis
+      - Rua Lídia Coutinho, s/n, Balneário, Angra dos Reis
+    - - 15ºGBM - Petrópolis
+      - Avenida Barão do Rio Branco, 1957, Quarteirão Brasileiro, Petrópolis
+    - - 16ºGBM - Teresópolis
+      - Rua Guandu, 680, Pimenteiras, Teresópolis
+    - - 18ºGBM - Cabo Frio
+      - Avenida Nilo Peçanha, 256, Centro, Cabo Frio
+    - - 20ºGBM - São Gonçalo
+      - Avenida São Miguel, 44, São Miguel, São Gonçalo
+    - - 21ºGBM - Itaperuna
+      - Avenida Santos Dumont, 40, Padre Humberto Lindelauf, Itaperuna
+    - - 22ºGBM - Volta Redonda
+      - Rua Governador Luiz Monteiro Portela, 346, Aterrado, Volta Redonda
+    - - 23ºGBM - Resende
+      - Avenida Marcílio Dias, 550, Jardim Jalisco, Resende
+    - - 26ºGBM - Paraty
+      - Avenida Roberto Silveira, s/n, Paraty
+    - - 27ºGBM - Araruama
+      - RJ 124, Km 36, Rio do Limão, Araruama
+notas: []
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

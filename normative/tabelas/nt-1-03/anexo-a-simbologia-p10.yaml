@@ -1,0 +1,122 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-03
+arquivo: nt-1-03-simbolos-graficos.md
+tabela: Anexo A
+titulo: Simbologia para projeto de segurança contra incêndio e pânico
+pagina: 10
+fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-03/pagina-10.png
+    imagem_sha256: 6970844f9e1354577d032fb60886d0b90fbc2efe6ee1fb7453e61e15f2ca35fb
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Grupo
+    - Subgrupo
+    - Nome do símbolo
+    - 'Símbolo gráfico (desenho: ver a imagem da página)'
+    linhas:
+    - - ''
+      - ''
+      - BARRA ANTIPÂNICO
+      - ''
+    - - SISTEMAS PASSIVOS
+      - ''
+      - PORTA CORTA-FOGO P-60
+      - ''
+    - - ^
+      - ABERTURAS PROTEGIDAS
+      - PORTA CORTA-FOGO P-90
+      - ''
+    - - ^
+      - ^
+      - PORTA CORTA-FOGO P-120
+      - ''
+    - - ^
+      - ^
+      - PAREDE CORTA-FOGO
+      - ''
+    - - ^
+      - VEDOS
+      - PAREDE DE COMPARTIMENTAÇÃO
+      - ''
+    - - ^
+      - ^
+      - PAREDE COMUM
+      - ''
+    - - ^
+      - ^
+      - DIVISÓRIA
+      - ''
+    - - ^
+      - ^
+      - ELEVADOR
+      - ''
+    - - ^
+      - ELEVADORES
+      - ELEVADOR DE EMERGÊNCIA
+      - ''
+    - - ^
+      - ^
+      - MONTACARGA
+      - ''
+    - - ^
+      - ^
+      - SHAFT PROTEGIDO
+      - ''
+    - - ^
+      - ^
+      - DAMPER CORTA-FOGO
+      - ''
+    - - ^
+      - DAMPERS
+      - DAMPER CORTA-FUMAÇA
+      - ''
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 10
+      tabela_na_pagina: 1
+    linhas:
+    - - BARRA ANTIPÂNICO
+    - - SISTEMAS PASSIVOS
+      - PORTA CORTA-FOGO P-60
+    - - ABERTURAS PROTEGIDAS
+      - PORTA CORTA-FOGO P-90
+    - - PORTA CORTA-FOGO P-120
+    - - PAREDE CORTA-FOGO
+    - - VEDOS
+      - PAREDE DE COMPARTIMENTAÇÃO
+    - - PAREDE COMUM
+    - - DIVISÓRIA
+    - - ELEVADOR
+    - - ELEVADORES
+      - ELEVADOR DE EMERGÊNCIA
+    - - MONTACARGA
+    - - SHAFT PROTEGIDO
+    - - DAMPER CORTA-FOGO
+    - - DAMPERS
+      - DAMPER CORTA-FUMAÇA
+notas:
+- A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
+  da página).
+- As células vazias das duas primeiras colunas no alto da página continuam a tabela da página anterior.
+inconsistencias_da_fonte:
+- 'Na grade desenhada, as células de subgrupo não coincidem com os nomes: "ABERTURAS PROTEGIDAS" cobre
+  P-90, P-120 e "Parede corta-fogo" (a P-60 fica numa célula vazia); "VEDOS" cobre também "Elevador";
+  "ELEVADORES" cobre também "Damper corta-fogo". As mesclas parecem deslocadas uma linha; a leitura segue
+  a grade como está desenhada, e o agrupamento pretendido fica para o analista.'
+- '"BARRA ANTIPÂNICO", no alto da página, fica fora da célula "SISTEMAS PASSIVOS", com grupo e subgrupo
+  vazios.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

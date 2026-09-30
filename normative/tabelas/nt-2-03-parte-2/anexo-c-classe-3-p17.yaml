@@ -1,0 +1,50 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 Parte 2
+arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+tabela: Anexo C (Classe III)
+titulo: Exemplos das mercadorias – Classe III
+pagina: 17
+fonte_pdf_sha256: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-2/pagina-17.jpg
+    imagem_sha256: b8cca844c79ca804417a17087d7ea898e9d1f1b057e73511b22dba34a77d1cda
+    linhas_cabecalho: 1
+    linhas:
+    - - Exemplos de mercadorias Classe III
+    - - Aerossóis Com e sem caixas de papelão - Nível 1
+    - - Produtos de confeitaria Biscoitos, bolos e tortas - Embalados, em caixas de papelão
+    - - Feijão Seco - Embalado, em caixas de papelão
+    - - Pão Embrulhado, em caixas de papelão
+    - - Manteiga Margarina
+    - - Balas Embalados, em caixas de papelão
+    - - Caixas de papelão Corrugadas - Desmontadas (em pilhas organizadas)
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 17
+      tabela_na_pagina: 1
+    linhas:
+    - - Exemplos de mercadorias Classe III
+    - - Aerossóis Com e sem caixas de papelão - Nível 1
+    - - Produtos de confeitaria Biscoitos, bolos e tortas - Embalados, em caixas de papelão
+    - - Feijão Seco - Embalado, em caixas de papelão
+    - - Pão Embrulhado, em caixas de papelão
+    - - Manteiga Margarina
+    - - Balas Embalados, em caixas de papelão
+    - - Caixas de papelão Corrugadas - Desmontadas (em pilhas organizadas)
+notas:
+- Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
+- A tabela da Classe III continua nas páginas 18 e 19.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

@@ -1,0 +1,95 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-03
+arquivo: nt-1-03-simbolos-graficos.md
+tabela: Anexo A
+titulo: Simbologia para projeto de segurança contra incêndio e pânico
+pagina: 12
+fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-03/pagina-12.png
+    imagem_sha256: d4dab043904cc3acad1c4273c877f5779e21266bca93f3dd404f20f713fe1f41
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Grupo
+    - Subgrupo
+    - Nome do símbolo
+    - 'Símbolo gráfico (desenho: ver a imagem da página)'
+    linhas:
+    - - ROTAS DE FUGA
+      - DIRECIONAMENTO
+      - DIREÇÃO DO FLUXO
+      - ''
+    - - ^
+      - ^
+      - SAÍDA FINAL
+      - ''
+    - - OUTROS
+      - ''
+      - REGISTRO
+      - ''
+    - - ^
+      - ^
+      - TANQUE DE PRESSÃO
+      - ''
+    - - ^
+      - ^
+      - MANÔMETRO
+      - ''
+    - - ^
+      - ^
+      - PRESSOSTATO
+      - ''
+    - - ^
+      - ^
+      - TUBO QUE SOBE
+      - ''
+    - - ^
+      - ^
+      - TUBO QUE DESCE
+      - ''
+    - - ^
+      - ^
+      - TUBO QUE PASSA
+      - ''
+    - - ^
+      - ^
+      - REPRESENTAÇÃO DO DIÂMENTRO DA CANALIZAÇÃO
+      - ''
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 12
+      tabela_na_pagina: 1
+    linhas:
+    - - ROTAS DE FUGA
+      - DIRECIONAMENTO
+      - DIREÇÃO DO FLUXO
+    - - SAÍDA FINAL
+    - - OUTROS
+      - REGISTRO
+    - - TANQUE DE PRESSÃO
+    - - MANÔMETRO
+    - - PRESSOSTATO
+    - - TUBO QUE SOBE
+    - - TUBO QUE DESCE
+    - - TUBO QUE PASSA
+    - - REPRESENTAÇÃO DO DIÂMENTRO DA CANALIZAÇÃO
+notas:
+- A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
+  da página).
+- 'Fonte: CBMERJ.'
+inconsistencias_da_fonte:
+- '"DIÂMENTRO" (grafia da fonte) por "diâmetro".'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial

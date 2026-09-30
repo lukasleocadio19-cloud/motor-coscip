@@ -6,11 +6,11 @@ resumo:
   imagens_presentes: 527
   imagens_ausentes: 0
   tabelas_por_estado:
-    bruto: 63
     capa: 38
     divergente: 5
-    nao_tabela: 21
-    verificada: 192
+    nao_tabela: 36
+    pendente_humano: 7
+    verificada: 245
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -343,7 +343,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_1-01_Parte1_alterada_Portaria_1317_2025.pdf
   sha256_pdf: ef60d4d275f294070a335b903b76a486afae0e8784ee128bcaa6c0d8432e5ca5
-  sha256_md: 628e3c033a70fca3c05c9e83c393aaee0628e76fd38849d012d63e444785f44e
+  sha256_md: 1801f67af14ea52301407a17383b358209e69b30fbc3a50db9b5ffded560e997
   data_captura: '2026-07-23'
   paginas: 26
   midia: nt-1-01-parte-1
@@ -364,11 +364,37 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 23
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-a-atividades-p23.yaml
+    estado: verificada
   - pagina: 24
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-a-atividades-p24.yaml
+    estado: verificada
   - pagina: 26
-    estado: bruto
+    tabela: Tabela 1 do Anexo B
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-b-tabela-1-unidades-rio.yaml
+    estado: verificada
+  - pagina: 26
+    tabela: Tabela 2 do Anexo B
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-b-tabela-2-unidades-caxias.yaml
+    estado: verificada
+  - pagina: 26
+    tabela: Tabela 3 do Anexo B
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-b-tabela-3-unidades-demais.yaml
+    estado: verificada
+  - pagina: 26
+    tabela: Tabela 4 do Anexo B
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-b-tabela-4-diretorias.yaml
+    estado: verificada
+  - pagina: 26
+    tabela: Tabela 5 do Anexo B
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-b-tabela-5-estadios.yaml
+    estado: verificada
+  - pagina: 26
+    tabela: Tabela 6 do Anexo B
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-b-tabela-6-fare.yaml
+    estado: pendente_humano
 - arquivo: nt-1-01-parte-2-fiscalizacao.md
   documento: NT 1-01 P2
   titulo: NT 1-01 - Parte 2 - Procedimentos administrativos para fiscalização
@@ -376,7 +402,7 @@ fontes:
   ato: Portaria CBMERJ nº 1.151, de 10 de maio de 2021
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT_1-01-Procedimentos-Administrativos-para-Regularizacao-e-Fiscalizacao-Parte-2-Fiscalizacao_2021_1620759470.pdf
   sha256_pdf: 01ffb41a7be61d731fd9997546980a430f6d49f9698fade87917101dedd9bef3
-  sha256_md: a30cfecad22710cc6f4f08ab5bafd377b82513eeb65b14bb16e8aef4b223df09
+  sha256_md: 80b951bc447338b40d9377c11b3e0a4bf808045d4189de9d0eb53c9d5fc66890
   data_captura: '2026-07-23'
   paginas: 42
   midia: nt-1-01-parte-2
@@ -437,31 +463,53 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 4
-    estado: bruto
+    estado: nao_tabela
+    motivo: fim da seção 3 (referências), definições 4.1 a 4.16 e início da seção 5 em duas colunas de
+      texto
   - pagina: 7
-    estado: bruto
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-1-01-parte-2/tabela-1-prazos-notificacao.yaml
+    estado: verificada
   - pagina: 16
-    estado: bruto
+    estado: nao_tabela
+    motivo: itens 5.6.3 a 5.7.3 (desinterdição e cassação de certificados) em duas colunas de texto
   - pagina: 17
-    estado: bruto
+    estado: nao_tabela
+    motivo: itens 5.7.4 a 5.9.2 (cassação, transição e fiscalização de edificações públicas) em duas colunas
+      de texto
   - pagina: 18
-    estado: bruto
+    estado: nao_tabela
+    motivo: itens 5.9.1.3 a 6.1.2.2 (interdição e início do compromisso de ajustamento de conduta) em
+      duas colunas de texto
   - pagina: 19
-    estado: bruto
+    estado: nao_tabela
+    motivo: itens 6.1.2.2 a 6.1.8 (compromisso de ajustamento de conduta) em duas colunas de texto
   - pagina: 20
-    estado: bruto
+    estado: nao_tabela
+    motivo: itens 6.1.8 a 6.4.1 (aplicação e abertura do processo de compromisso) em duas colunas de texto
   - pagina: 21
-    estado: bruto
+    estado: nao_tabela
+    motivo: itens 6.4.1 a 6.6.5 (cronograma, minuta e análise do TAC) em duas colunas de texto
   - pagina: 34
-    estado: bruto
+    tabela: Anexo E, item 2
+    arquivo: normative/tabelas/nt-1-01-parte-2/anexo-e-dispositivos-preventivos.yaml
+    estado: verificada
   - pagina: 35
-    estado: bruto
+    tabela: Anexo E, item 3
+    arquivo: normative/tabelas/nt-1-01-parte-2/anexo-e-equipamentos-especiais.yaml
+    estado: verificada
   - pagina: 36
-    estado: bruto
+    tabela: Anexo F
+    arquivo: normative/tabelas/nt-1-01-parte-2/anexo-f-cronograma.yaml
+    estado: verificada
   - pagina: 39
-    estado: bruto
+    tabela: Cronograma da cláusula sexta do Anexo G
+    arquivo: normative/tabelas/nt-1-01-parte-2/anexo-g-cronograma-tac.yaml
+    estado: verificada
   - pagina: 42
-    estado: bruto
+    tabela: Anexo H
+    arquivo: normative/tabelas/nt-1-01-parte-2/anexo-h-multas-tac.yaml
+    estado: verificada
 - arquivo: nt-1-02-terminologia.md
   documento: NT 1-02
   titulo: NT 1-02 - Terminologia de segurança contra incêndio e pânico
@@ -506,15 +554,23 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 3
-    estado: bruto
+    estado: nao_tabela
+    motivo: glossário do item 4 (definição de Aceiro) em duas colunas de texto
   - pagina: 8
-    estado: bruto
+    estado: nao_tabela
+    motivo: glossário do item 4 (definição de Carga a granel) em duas colunas de texto
   - pagina: 13
-    estado: bruto
+    estado: nao_tabela
+    motivo: glossário do item 4 (definição de Efluentes) em duas colunas de texto. Na mesma página a fonte
+      define duas vezes "Edificação térrea" com critérios diferentes (mezaninos com soma menor que a metade
+      da área do piso × jirau ou mezanino conforme o artigo 11 do Decreto 42/2018)
   - pagina: 15
-    estado: bruto
+    estado: nao_tabela
+    motivo: glossário do item 4 (definição de Estruturas verticais automatizadas de estacionamento) em
+      duas colunas de texto
   - pagina: 20
-    estado: bruto
+    estado: nao_tabela
+    motivo: glossário do item 4 (definição de Motogerador cabinado) em duas colunas de texto
 - arquivo: nt-1-03-simbolos-graficos.md
   documento: NT 1-03
   titulo: NT 1-03 - Símbolos gráficos para projetos de segurança contra incêndio e pânico
@@ -522,7 +578,7 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT1-03_2Edio_2023.pdf
   sha256_pdf: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
-  sha256_md: 50a6ca75666351081b264b63e86030508c2740bde4d820590da37f066362bf94
+  sha256_md: f611d71e706c2f349d0bb0c6f7e50d5c39d979ae51ce1972d5201fb8225998ba
   data_captura: '2026-07-23'
   paginas: 12
   midia: nt-1-03
@@ -577,23 +633,41 @@ fontes:
     sha256: d4dab043904cc3acad1c4273c877f5779e21266bca93f3dd404f20f713fe1f41
   tabelas:
   - pagina: 4
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p04.yaml
+    estado: verificada
   - pagina: 5
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p05.yaml
+    estado: verificada
   - pagina: 6
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p06.yaml
+    estado: verificada
   - pagina: 7
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p07.yaml
+    estado: verificada
   - pagina: 8
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p08.yaml
+    estado: verificada
   - pagina: 9
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p09.yaml
+    estado: verificada
   - pagina: 10
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p10.yaml
+    estado: verificada
   - pagina: 11
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p11.yaml
+    estado: verificada
   - pagina: 12
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p12.yaml
+    estado: verificada
 - arquivo: nt-1-04-classificacao-de-risco.md
   documento: NT 1-04
   titulo: NT 1-04 - Classificação das edificações e áreas de risco quanto ao risco de incêndio
@@ -601,7 +675,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-04-Classificacao-das-edificacoes-e-areas-de-risco-quanto-ao-risco-de-incendio.pdf
   sha256_pdf: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
-  sha256_md: 1c4b8e5ed082e148916dbf388258b87e3cd063b57aa5040993575672cc42099f
+  sha256_md: e1353458d92389584ad3be0b3530431edc3c9d3b178a31d7dd66cea05252a9fd
   data_captura: '2026-07-23'
   paginas: 20
   midia: nt-1-04
@@ -746,7 +820,13 @@ fontes:
     arquivo: normative/tabelas/nt-1-04/anexo-d-hi-parte-3.yaml
     estado: verificada
   - pagina: 20
-    estado: bruto
+    tabela: Tabela do Anexo E (materiais)
+    arquivo: normative/tabelas/nt-1-04/anexo-e-planilha-materiais.yaml
+    estado: verificada
+  - pagina: 20
+    tabela: Tabela do Anexo E (totais)
+    arquivo: normative/tabelas/nt-1-04/anexo-e-planilha-totais.yaml
+    estado: verificada
 - arquivo: nt-1-05-edificacoes-anteriores.md
   documento: NT 1-05
   titulo: NT 1-05 - Edificações anteriores - Adequação ao COSCIP
@@ -767,7 +847,9 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 2
-    estado: bruto
+    estado: nao_tabela
+    motivo: item 2.2 e a lista de exemplos da alínea c) (A-2 e A-5, A-6, B-1 e B-2, H-2 e H-3, H-1 e H-4,
+      grupos F, G, L e M, grupos C, D, E, I, J e F-8) em texto corrido; a lista não é tabela
 - arquivo: nt-1-06-adequacao-normativa.md
   documento: NT 1-06
   titulo: NT 1-06 - Processo administrativo em tramitação por adequação normativa
@@ -788,7 +870,7 @@ fontes:
   ato: Portaria CBMERJ nº 1109, de 20 de maio de 2020
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-07-Atividades-economicas-de-baixo-risco-2020.pdf
   sha256_pdf: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
-  sha256_md: 021ca9780ad4bab51f177b68f9eef0b16a12be3967ff6ca837a7d409f7984c5c
+  sha256_md: 46bfc38c136816083aedce81a3a5b21d277110a92503c774d5604a67bb2d9f67
   data_captura: '2026-07-23'
   paginas: 29
   midia: nt-1-07
@@ -865,39 +947,73 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 13
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p13.yaml
+    estado: verificada
   - pagina: 14
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p14.yaml
+    estado: verificada
   - pagina: 15
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p15.yaml
+    estado: verificada
   - pagina: 16
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p16.yaml
+    estado: verificada
   - pagina: 17
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p17.yaml
+    estado: verificada
   - pagina: 18
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p18.yaml
+    estado: verificada
   - pagina: 19
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p19.yaml
+    estado: verificada
   - pagina: 20
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p20.yaml
+    estado: verificada
   - pagina: 21
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p21.yaml
+    estado: verificada
   - pagina: 22
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p22.yaml
+    estado: verificada
   - pagina: 23
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p23.yaml
+    estado: verificada
   - pagina: 24
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p24.yaml
+    estado: verificada
   - pagina: 25
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p25.yaml
+    estado: verificada
   - pagina: 26
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p26.yaml
+    estado: verificada
   - pagina: 27
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p27.yaml
+    estado: verificada
   - pagina: 28
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p28.yaml
+    estado: verificada
   - pagina: 29
-    estado: bruto
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p29.yaml
+    estado: verificada
 - arquivo: nt-2-01-extintores.md
   documento: NT 2-01
   titulo: NT 2-01 - Sistema de proteção por extintores de incêndio
@@ -1068,7 +1184,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-03-Sistemas-de-chuveiros-automticos-sprinklers-Parte-1-Requisitos-gerais-2019-atualizada_1647374313.pdf
   sha256_pdf: 008f8743d8520eca54955e3aaaed82cf5cd49cefce1e8b095040fe2755536e9f
-  sha256_md: 30d0cb5d2f56c9e768de8a193731d59e8a3dd407f57f4b79d5102a3d412cf702
+  sha256_md: 182c69e4d68c3256165398b0bb86e65a34116834689aeccf8e6cca34fce63751
   data_captura: '2026-07-23'
   paginas: 10
   midia: nt-2-03-parte-1
@@ -1089,11 +1205,15 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 4
-    estado: bruto
+    estado: nao_tabela
+    motivo: item 5.2.7 (sistemas fixos de gases como alternativa) em duas colunas de texto
   - pagina: 5
-    estado: bruto
+    estado: nao_tabela
+    motivo: continuação do item 5.2.7 em duas colunas de texto
   - pagina: 9
-    estado: bruto
+    tabela: Tabela 1 do Anexo B
+    arquivo: normative/tabelas/nt-2-03-parte-1/anexo-b-tabela-1-rti.yaml
+    estado: verificada
 - arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
   documento: NT 2-03 P2
   titulo: NT 2-03 - Parte 2 - Sistemas de chuveiros automáticos / sprinklers - Áreas de armazenamento
@@ -1101,7 +1221,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-03-sprinklers-Parte-2-Minuta-das-alteracoes_1604941555.pdf
   sha256_pdf: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
-  sha256_md: 1403fcd830976784c67ee17130c428b97e7769f00a211ae814984fc48ab8d6b9
+  sha256_md: 7eefe576dd4c5d5a4aa9c8fcddcc0f2d05c3aaf285b554756da7896b89a1c686
   data_captura: '2026-07-23'
   paginas: 22
   midia: nt-2-03-parte-2
@@ -1198,27 +1318,73 @@ fontes:
   - pagina: 1
     estado: capa
   - pagina: 9
-    estado: bruto
+    tabela: Anexo B
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-b-mercadorias-p09.yaml
+    estado: verificada
   - pagina: 10
-    estado: bruto
+    tabela: Anexo B
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-b-mercadorias-p10.yaml
+    estado: verificada
   - pagina: 11
-    estado: bruto
+    tabela: Anexo B
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-b-mercadorias-p11.yaml
+    estado: verificada
   - pagina: 12
-    estado: bruto
+    tabela: Anexo B
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-b-mercadorias-p12.yaml
+    estado: verificada
   - pagina: 13
-    estado: bruto
+    tabela: Anexo B
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-b-mercadorias-p13.yaml
+    estado: verificada
   - pagina: 14
-    estado: bruto
+    tabela: Anexo B
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-b-mercadorias-p14.yaml
+    estado: verificada
   - pagina: 15
-    estado: bruto
+    tabela: Anexo C (Classe I)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-1-p15.yaml
+    estado: verificada
   - pagina: 16
-    estado: bruto
+    tabela: Anexo C (Classe I)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-1-p16.yaml
+    estado: pendente_humano
+  - pagina: 16
+    tabela: Anexo C (Classe II)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-2-p16.yaml
+    estado: verificada
   - pagina: 17
-    estado: bruto
+    tabela: Anexo C (Classe II)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-2-p17.yaml
+    estado: pendente_humano
+  - pagina: 17
+    tabela: Anexo C (Classe III)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-3-p17.yaml
+    estado: verificada
+  - pagina: 18
+    tabela: Anexo C (Classe III)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-3-p18.yaml
+    estado: pendente_humano
   - pagina: 19
-    estado: bruto
+    tabela: Anexo C (Classe III)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-3-p19.yaml
+    estado: pendente_humano
+  - pagina: 19
+    tabela: Anexo C (Classe IV)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-4-p19.yaml
+    estado: verificada
+  - pagina: 20
+    tabela: Anexo C (Classe IV)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-4-p20.yaml
+    estado: pendente_humano
   - pagina: 21
-    estado: bruto
+    tabela: Anexo C (Plásticos Grupo A)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-plasticos-grupo-a-p21.yaml
+    estado: verificada
+  - pagina: 22
+    tabela: Anexo C (Plásticos Grupo A)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-plasticos-grupo-a-p22.yaml
+    estado: pendente_humano
 - arquivo: nt-2-04-conjunto-de-pressurizacao.md
   documento: NT 2-04
   titulo: NT 2-04 - Conjunto de pressurização para sistemas de combate a incêndio

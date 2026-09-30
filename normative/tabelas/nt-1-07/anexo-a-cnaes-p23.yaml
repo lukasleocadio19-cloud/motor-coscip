@@ -1,0 +1,228 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 23
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  mesclar_linhas:
+  - - 2
+    - 3
+  - - 7
+    - 8
+  descartar_linhas:
+  - 1
+  - 5
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-23.png
+    imagem_sha256: 189a84a904fc638bde80e5f5883a9716bdf5c31ee4d52e637de5f31c9bf5a472
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 5911-1/02
+      - Produção de filmes para publicidade
+    - - 5911-1/99
+      - Atividades de produção cinematográfica, de vídeos e de programas de televisão não especificadas
+        anteriormente
+    - - 5912-0/01
+      - Serviços de dublagem
+    - - 5912-0/02
+      - Serviços de mixagem sonora em produção audiovisual
+    - - 5912-0/99
+      - Atividades de pós-produção cinematográfica, de vídeos e de programas de televisão não especificadas
+        anteriormente
+    - - 5920-1/00
+      - Atividades de gravação de som e de edição de música
+    - - 6010-1/00
+      - Atividades de rádio
+    - - 6110-8/01
+      - Serviços de telefonia fixa comutada - STFC
+    - - 6110-8/02
+      - Serviços de redes de transporte de telecomunicações - SRTT
+    - - 6110-8/03
+      - Serviços de comunicação multimídia - SCM
+    - - 6110-8/99
+      - Serviços de telecomunicações por fio não especificados anteriormente
+    - - 6120-5/01
+      - Telefonia móvel celular
+    - - 6120-5/02
+      - Serviço móvel especializado - SME
+    - - 6120-5/99
+      - Serviços de telecomunicações sem fio não especificados anteriormente
+    - - 6130-2/00
+      - Telecomunicações por satélite
+    - - 6141-8/00
+      - Operadoras de televisão por assinatura por cabo
+    - - 6142-6/00
+      - Operadoras de televisão por assinatura por micro-ondas
+    - - 6143-4/00
+      - Operadoras de televisão por assinatura por satélite
+    - - 6190-6/01
+      - Provedores de acesso às redes de comunicações
+    - - 6190-6/02
+      - Provedores de voz sobre protocolo Internet - VOIP
+    - - 6190-6/99
+      - Outras atividades de telecomunicações não especificadas anteriormente
+    - - 6201-5/01
+      - Desenvolvimento de programas de computador sob encomenda
+    - - 6201-5/02
+      - Web desing
+    - - 6202-3/00
+      - Desenvolvimento e licenciamento de programas de computador customizáveis
+    - - 6203-1/00
+      - Desenvolvimento e licenciamento de programas de computador não customizáveis
+    - - 6204-0/00
+      - Consultoria em tecnologia da informação
+    - - 6209-1/00
+      - Suporte técnico, manutenção e outros serviços em tecnologia da informação
+    - - 6311-9/00
+      - Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na Internet
+    - - 6319-4/00
+      - Portais, provedores de conteúdo e outros serviços de informação na Internet
+    - - 6391-7/00
+      - Agências de notícias
+    - - 6399-2/00
+      - Outras atividades de prestação de serviços de informação não especificadas anteriormente
+    - - 6410-7/00
+      - Banco Central
+    - - 6421-2/00
+      - Bancos comerciais
+    - - 6422-1/00
+      - Bancos múltiplos, com carteira comercial
+    - - 6423-9/00
+      - Caixas econômicas
+    - - 6424-7/01
+      - Bancos cooperativos
+    - - 6424-7/02
+      - Cooperativas centrais de crédito
+    - - 6424-7/03
+      - Cooperativas de crédito mútuo
+    - - 6424-7/04
+      - Cooperativas de crédito rural
+    - - 6431-0/00
+      - Bancos múltiplos, sem carteira comercial
+    - - 6432-8/00
+      - Bancos de investimento
+    - - 6433-6/00
+      - Bancos de desenvolvimento
+    - - 6434-4/00
+      - Agências de fomento
+    - - 6435-2/01
+      - Sociedades de crédito imobiliário
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 23
+      tabela_na_pagina: 1
+    linhas:
+    - - 5911-1/02
+      - Produção de filmes para publicidade
+    - - 5911-1/99
+      - Atividades de produção cinematográfica, de vídeos e de programas de televisão não especificadas
+        anteriormente
+    - - 5912-0/01
+      - Serviços de dublagem
+    - - 5912-0/02
+      - Serviços de mixagem sonora em produção audiovisual
+    - - 5912-0/99
+      - Atividades de pós-produção cinematográfica, de vídeos e de programas de televisão não especificadas
+        anteriormente
+    - - 5920-1/00
+      - Atividades de gravação de som e de edição de música
+    - - 6010-1/00
+      - Atividades de rádio
+    - - 6110-8/01
+      - Serviços de telefonia fixa comutada - STFC
+    - - 6110-8/02
+      - Serviços de redes de transporte de telecomunicações - SRTT
+    - - 6110-8/03
+      - Serviços de comunicação multimídia - SCM
+    - - 6110-8/99
+      - Serviços de telecomunicações por fio não especificados anteriormente
+    - - 6120-5/01
+      - Telefonia móvel celular
+    - - 6120-5/02
+      - Serviço móvel especializado - SME
+    - - 6120-5/99
+      - Serviços de telecomunicações sem fio não especificados anteriormente
+    - - 6130-2/00
+      - Telecomunicações por satélite
+    - - 6141-8/00
+      - Operadoras de televisão por assinatura por cabo
+    - - 6142-6/00
+      - Operadoras de televisão por assinatura por micro-ondas
+    - - 6143-4/00
+      - Operadoras de televisão por assinatura por satélite
+    - - 6190-6/01
+      - Provedores de acesso às redes de comunicações
+    - - 6190-6/02
+      - Provedores de voz sobre protocolo Internet - VOIP
+    - - 6190-6/99
+      - Outras atividades de telecomunicações não especificadas anteriormente
+    - - 6201-5/01
+      - Desenvolvimento de programas de computador sob encomenda
+    - - 6201-5/02
+      - Web desing
+    - - 6202-3/00
+      - Desenvolvimento e licenciamento de programas de computador customizáveis
+    - - 6203-1/00
+      - Desenvolvimento e licenciamento de programas de computador não customizáveis
+    - - 6204-0/00
+      - Consultoria em tecnologia da informação
+    - - 6209-1/00
+      - Suporte técnico, manutenção e outros serviços em tecnologia da informação
+    - - 6311-9/00
+      - Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na Internet
+    - - 6319-4/00
+      - Portais, provedores de conteúdo e outros serviços de informação na Internet
+    - - 6391-7/00
+      - Agências de notícias
+    - - 6399-2/00
+      - Outras atividades de prestação de serviços de informação não especificadas anteriormente
+    - - 6410-7/00
+      - Banco Central
+    - - 6421-2/00
+      - Bancos comerciais
+    - - 6422-1/00
+      - Bancos múltiplos, com carteira comercial
+    - - 6423-9/00
+      - Caixas econômicas
+    - - 6424-7/01
+      - Bancos cooperativos
+    - - 6424-7/02
+      - Cooperativas centrais de crédito
+    - - 6424-7/03
+      - Cooperativas de crédito mútuo
+    - - 6424-7/04
+      - Cooperativas de crédito rural
+    - - 6431-0/00
+      - Bancos múltiplos, sem carteira comercial
+    - - 6432-8/00
+      - Bancos de investimento
+    - - 6433-6/00
+      - Bancos de desenvolvimento
+    - - 6434-4/00
+      - Agências de fomento
+    - - 6435-2/01
+      - Sociedades de crédito imobiliário
+notas:
+- Continuação da tabela da página 22.
+- A tabela continua na página 24.
+- '"Web desing" é grafia da fonte (por "Web design").'
+- A camada de texto parte as descrições de duas linhas e repete 2 descrição(ões) numa linha vazia; a comparação
+  junta as partes e descarta as repetições.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - texto
+  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
+    do PDF oficial
