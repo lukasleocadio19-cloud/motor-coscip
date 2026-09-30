@@ -37,6 +37,67 @@ caminhos:
     - - Manteiga Margarina
     - - Balas Embalados, em caixas de papelão
     - - Caixas de papelão Corrugadas - Desmontadas (em pilhas organizadas)
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 67.61
+      - 56.88
+      - 534.43
+      - 459.55
+      linhas:
+      - - Carnes e derivados - Congelada, recipientes de papel encerado - Congelada, bandejas de plástico
+          expandido
+      - - Remédios Pílulas, pós - Frascos de vidro, em caixas de papelão
+      - - Líquidos incombustíveis - Frascos de vidro, em caixas de papelão
+      - - Filme fotográfico Filmes para cinema ou em rolos grandes dentro de latas de policarbonato, polietileno
+          ou metal; em sacos de polietileno em caixas de papelão.
+      - - Recipientes plásticos Líquidos ou semilíquidos (como ketchup) em recipientes plásticos com paredes
+          de espessura de ¼ pol. (6,4 mm) ou menor e com capacidades maiores que 5 gal (18,9 L)
+      - - Aves e derivados Congeladas (em bandejas de papel ou de plástico expandido)
+      - - Pós (materiais combustíveis comuns – fluem livremente) Em sacos de papel (por exemplo, farinha,
+          açúcar)
+      - - Sal Embalados, em caixas de papelão
+      - - Amortecedores Cobertura metálica
+      - - Livros e revistas inacabados Livros e revistas - Pilha sólida sobre palete
+      - - Melaço Barricas de madeira
+      - - Arame - Arame sem capa em carretéis de madeira ou papelão em estrados de madeira - Arame sem
+          capa em carretéis de metal, madeira ou papelão em caixas de papelão sobre estrados de madeira
+          - Arame com capa simples ou múltipla de PVC em carretéis de metal sobre estrados de madeira
+          - Cabo com isolamento de (PVC) em grandes carretéis de madeira ou metal sobre estrados de madeira
+      - - Produtos de madeira Pilhas sólidas - Madeira, compensado, aglomerado, placa de papelão prensado
+          (extremidades e arestas lisas)
+    - bbox: &id001
+      - 67.61
+      - 508.33
+      - 534.43
+      - 728.26
+      linhas:
+      - - ''
+        - Exemplos de mercadorias Classe III
+        - ''
+      - - Aerossóis Com e sem caixas de papelão - Nível 1
+        - null
+        - null
+      - - Produtos de confeitaria Biscoitos, bolos e tortas - Embalados, em caixas de papelão
+        - null
+        - null
+      - - Feijão Seco - Embalado, em caixas de papelão
+        - null
+        - null
+      - - Pão Embrulhado, em caixas de papelão
+        - null
+        - null
+      - - Manteiga Margarina
+        - null
+        - null
+      - - Balas Embalados, em caixas de papelão
+        - null
+        - null
+      - - Caixas de papelão Corrugadas - Desmontadas (em pilhas organizadas)
+        - null
+        - null
 notas:
 - Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
 - A tabela da Classe III continua nas páginas 18 e 19.
@@ -45,6 +106,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 1
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

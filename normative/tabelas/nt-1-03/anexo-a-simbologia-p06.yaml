@@ -88,17 +88,90 @@ caminhos:
     - - CANHÃO MONITOR SISTEMA DE RESFRIAMENTO
     - - LÍQUIDO GERADOR DE ESPUMA
     - - ESGUICHO LANÇADOR DE ESPUMA
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 63.98
+      - 56.88
+      - 495.46
+      - 666.22
+      linhas:
+      - - ''
+        - ''
+        - PAINEL DE COMANDO DO SISTEMA DE SPRINKLERS
+        - ''
+      - - null
+        - null
+        - VÁLVULA DE GOVERNO E ALARME - VGA
+        - ''
+      - - null
+        - O C I N Ô B R A C S Á G
+        - BATERIA DE CILINDROS DE CO2
+        - ''
+      - - null
+        - null
+        - ACIONADOR MANUAL DO SISTEMA DE CO2
+        - ''
+      - - null
+        - null
+        - BATERIA DE HALON
+        - ''
+      - - null
+        - A M U P S E E D A M E T S I S
+        - TANQUE ATMOSFÉRICO DE ESPUMA
+        - ''
+      - - null
+        - null
+        - ESTAÇÃO FIXA DE EMULSIONAMENTO
+        - ''
+      - - null
+        - null
+        - ESTAÇÃO MÓVEL DE EMULSIONAMENTO
+        - ''
+      - - null
+        - null
+        - CANHÃO MONITOR PORTÁTIL SISTEMA DE ESPUMA
+        - ''
+      - - null
+        - null
+        - CANHÃO MONITOR SISTEMA DE RESFRIAMENTO
+        - ''
+      - - ''
+        - null
+        - LÍQUIDO GERADOR DE ESPUMA
+        - ''
+      - - null
+        - null
+        - ESGUICHO LANÇADOR DE ESPUMA
+        - ''
 notas:
 - A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
   da página).
 - As células vazias das duas primeiras colunas no alto da página continuam a tabela da página anterior.
 - Na primeira coluna, as duas últimas linhas ficam numa célula vazia própria.
 - 'Fonte: CBMERJ.'
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 2
+    coluna: 0
+    a: GÁS CARBÔNICO
+    b: O C I N Ô B R A C S Á G
+    estado: divergente
+    score: 24.0
+  - linha: 5
+    coluna: 0
+    a: SISTEMA DE ESPUMA
+    b: A M U P S E E D A M E T S I S
+    estado: divergente
+    score: 31.2

@@ -77,12 +77,306 @@ caminhos:
       - Avenida Ayrton Senna, 2001, Barra da Tijuca
     - - GOCG - Centro
       - Praça da República, 35, Centro
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 48.34
+      - 72.27
+      - 505.66
+      - 246.98
+      linhas:
+      - - ''
+        - Unidade
+        - ''
+        - ''
+        - Endereço
+        - ''
+      - - 1ºGBM – Humaitá
+        - null
+        - null
+        - Rua do Humaitá, 126, Humaitá
+        - null
+        - null
+      - - 2ºGBM – Méier
+        - null
+        - null
+        - Rua Aristides Caire, 56, Méier
+        - null
+        - null
+      - - 8ºGBM – Campinho
+        - null
+        - null
+        - Rua Domingos Lopes, 336, Campinho
+        - null
+        - null
+      - - 11ºGBM - Vila Isabel
+        - null
+        - null
+        - Rua Oito de Dezembro, 456, Vila Isabel
+        - null
+        - null
+      - - 12ºGBM – Jacarepaguá
+        - null
+        - null
+        - Rua Henriqueta, 99, Jacarepaguá
+        - null
+        - null
+      - - 13ºGBM - Campo Grande
+        - null
+        - null
+        - Avenida Cesário de Melo, 3226, Campo Grande
+        - null
+        - null
+      - - 17ºGBM – Copacabana
+        - null
+        - null
+        - Rua Xavier da Silveira, 120, Copacabana
+        - null
+        - null
+      - - 19ºGBM - Ilha do Governador
+        - null
+        - null
+        - Estrada do Galeão, s/n, Ilha do Governador
+        - null
+        - null
+      - - 24ºGBM – Irajá
+        - null
+        - null
+        - Avenida Brasil, 19001, Irajá
+        - null
+        - null
+      - - 25ºGBM – Gávea
+        - null
+        - null
+        - Rua Major Rubens Vaz, 194, Gávea
+        - null
+        - null
+      - - 28ºGBM – Penha
+        - null
+        - null
+        - Avenida Nossa Senhora da Penha, 25, Penha
+        - null
+        - null
+      - - GBS – Barra da Tijuca
+        - null
+        - null
+        - Avenida Ayrton Senna, 2001, Barra da Tijuca
+        - null
+        - null
+      - - GOCG – Centro
+        - null
+        - null
+        - Praça da República, 35, Centro
+        - null
+        - null
+    - bbox:
+      - 48.34
+      - 276.14
+      - 505.66
+      - 313.37
+      linhas:
+      - - ''
+        - Unidade
+        - ''
+        - ''
+        - Endereço
+        - ''
+      - - 14ºGBM - Duque de Caxias
+        - null
+        - null
+        - Rua Doutor Manoel Teles, 1767, Prainha
+        - null
+        - null
+      - - GOPP – Campos Elíseos
+        - null
+        - null
+        - Rodovia Washington Luiz, Km 113, Campos Elíseos
+        - null
+        - null
+    - bbox:
+      - 48.34
+      - 342.5
+      - 505.66
+      - 567.19
+      linhas:
+      - - ''
+        - Unidade
+        - ''
+        - ''
+        - Endereço
+        - ''
+      - - 2ºGSFMA – Magé
+        - null
+        - null
+        - Estrada do Contorno, Km 24, Iriri, Magé
+        - null
+        - null
+      - - 3ºGBM – Niterói
+        - null
+        - null
+        - Rua Marquês de Paraná, 134, Centro, Niterói
+        - null
+        - null
+      - - 4ºGBM - Nova Iguaçu
+        - null
+        - null
+        - Avenida Governador Roberto da Silveira, 1221, Posse, Nova Iguaçu
+        - null
+        - null
+      - - 5ºGBM - Campos dos Goytacazes
+        - null
+        - null
+        - Avenida Rui Barbosa, 1027, Centro, Campos dos Goytacazes
+        - null
+        - null
+      - - 6ºGBM - Nova Friburgo
+        - null
+        - null
+        - Praça da Bandeira, 1027, Centro, Nova Friburgo
+        - null
+        - null
+      - - 7ºGBM - Barra Mansa
+        - null
+        - null
+        - Avenida Homero Leite, 352, Saudade, Barra Mansa
+        - null
+        - null
+      - - 9ºGBM – Macaé
+        - null
+        - null
+        - Rua Alfredo Becker, 290, Centro, Macaé
+        - null
+        - null
+      - - 10ºGBM - Angra dos Reis
+        - null
+        - null
+        - Rua Lídia Coutinho, s/n, Balneário, Angra dos Reis
+        - null
+        - null
+      - - 15ºGBM – Petrópolis
+        - null
+        - null
+        - Avenida Barão do Rio Branco, 1957, Quarteirão Brasileiro, Petrópolis
+        - null
+        - null
+      - - 16ºGBM – Teresópolis
+        - null
+        - null
+        - Rua Guandu, 680, Pimenteiras, Teresópolis
+        - null
+        - null
+      - - 18ºGBM - Cabo Frio
+        - null
+        - null
+        - Avenida Nilo Peçanha, 256, Centro, Cabo Frio
+        - null
+        - null
+      - - 20ºGBM - São Gonçalo
+        - null
+        - null
+        - Avenida São Miguel, 44, São Miguel, São Gonçalo
+        - null
+        - null
+      - - 21ºGBM – Itaperuna
+        - null
+        - null
+        - Avenida Santos Dumont, 40, Padre Humberto Lindelauf, Itaperuna
+        - null
+        - null
+      - - 22ºGBM - Volta Redonda
+        - null
+        - null
+        - Rua Governador Luiz Monteiro Portela, 346, Aterrado, Volta Redonda
+        - null
+        - null
+      - - 23ºGBM – Resende
+        - null
+        - null
+        - Avenida Marcílio Dias, 550, Jardim Jalisco, Resende
+        - null
+        - null
+      - - 26ºGBM – Paraty
+        - null
+        - null
+        - Avenida Roberto Silveira, s/n, Paraty
+        - null
+        - null
+      - - 27ºGBM – Araruama
+        - null
+        - null
+        - RJ 124, Km 36, Rio do Limão, Araruama
+        - null
+        - null
+    - bbox:
+      - 48.34
+      - 596.44
+      - 505.66
+      - 633.58
+      linhas:
+      - - ''
+        - Diretoria
+        - ''
+        - ''
+        - Endereço
+        - ''
+      - - DGST – Diretoria Geral de Serviços Técnicos
+        - null
+        - null
+        - Praça da República, 39, Centro, Rio de Janeiro
+        - null
+        - null
+      - - DDP – Diretoria de Diversões Públicas
+        - null
+        - null
+        - Rua do Senado, 22, Centro, Rio de Janeiro
+        - null
+        - null
+    - bbox:
+      - 48.34
+      - 662.77
+      - 505.66
+      - 687.46
+      linhas:
+      - - ''
+        - Unidade
+        - ''
+        - ''
+        - Endereço
+        - ''
+      - - GPREVE - Prevenção em Estádios
+        - null
+        - null
+        - Rua Aristides Caire, 56, Méier, Rio de Janeiro
+        - null
+        - null
+    - bbox:
+      - 48.34
+      - 724.27
+      - 512.67
+      - 748.9
+      linhas:
+      - - ''
+        - Unidade
+        - ''
+        - ''
+        - Endereço
+        - ''
+      - - 1ºGSE – Catete
+        - null
+        - null
+        - Praça São Salvador, 4, Catete, Rio de Janeiro
+        - null
+        - null
 notas: []
 estado: verificada
 resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 6
+  bbox: *id001
+  texto: verificada

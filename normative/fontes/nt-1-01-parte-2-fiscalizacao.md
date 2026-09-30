@@ -399,7 +399,7 @@ f) para regularização de eventos temporários de reunião de público, deverá
 | Da Tabela 03 à 32 do Anexo III do Decreto Estadual nº 42/2018 – COSCIP, que não possui isenção de Chuveiros Automáticos tipo Sprinklers | 120 |
 | Sob administração pública | 180 |
 
-Fonte: NT 1-01 Parte 2, página 7, Tabela 1; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-01 Parte 2, página 7, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
 Tabela da alínea a) do item 5.2.3.1 (notificação para edificação ou área de risco que não esteja isenta ou dispensada de regularização e não possua Certificado de Aprovação válido).
 Fonte: CBMERJ.
 <!-- /tabela-conferida: Tabela 1 p7 -->
@@ -2415,7 +2415,7 @@ regularização, sob pena de aplicação de novo Auto de Interdição.
 | 2.21 CONTROLE DE FUMAÇA |  |  |  |
 | 2.22 OUTROS: |  |  |  |
 
-Fonte: NT 1-01 Parte 2, página 34, Anexo E, item 2; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-01 Parte 2, página 34, Anexo E, item 2; conferida em 2026-09-29 (visual + geometrica).
 Título do quadro na página: "2 – DISPOSITIVOS PREVENTIVOS E MEIOS COMPLEMENTARES (ASSINALAR COM “X” OS EXIGIDOS E OS EXISTENTES E DESCREVER OBRIGATORIAMENTE O ESTADO DE FUNCIONAMENTO DELES)".
 As colunas EXIGIDO, EXISTENTE e ESTADO DE FUNCIONAMENTO são para preenchimento.
 <!-- /tabela-conferida: Anexo E, item 2 p34 -->
@@ -2470,7 +2470,7 @@ __________________________________________________
 | 3.9 CALDEIRA(S) OU VASOS DE PRESSÃO |  |  |  |
 | 3.10 OUTROS: |  |  |  |
 
-Fonte: NT 1-01 Parte 2, página 35, Anexo E, item 3; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-01 Parte 2, página 35, Anexo E, item 3; conferida em 2026-09-29 (visual + geometrica).
 Título do quadro na página: "3 – EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS (ASSINALAR COM “X” OS AUTORIZADOS EM LAUDO DE EXIGÊNCIAS E OS EXISTENTES E DESCREVER OBRIGATORIAMENTE O ESTADO DE FUNCIONAMENTO DELES)".
 As colunas AUTORIZADO, EXISTENTE e ESTADO DE FUNCIONAMENTO são para preenchimento.
 <!-- /tabela-conferida: Anexo E, item 3 p35 -->
@@ -2532,7 +2532,7 @@ __________________________________________________
 | (...) | / / | / / |
 | Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA) | / / | / / |
 
-Fonte: NT 1-01 Parte 2, página 36, Anexo F; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-01 Parte 2, página 36, Anexo F; conferida em 2026-09-29 (visual + geometrica).
 Modelo: "(...)" e "/ /" são campos para preenchimento.
 OBS: Deverão ser descritas todas as etapas do processo com data de início e término, onde ao final OBRIGATORIAMENTE deverá estar prevista a legalização plena da edificação ou área de risco.
 <!-- /tabela-conferida: Anexo F p36 -->
@@ -2740,24 +2740,6 @@ e que já possuam o Certificado de Aprovação.
 |  |  |  |  |  |
 | 6.3 Para obtenção da Certificação Final, devem ser cumpridas além das obrigações previstas nesta cláusula, as exigências determinadas pelo CBMERJ. 6.4 Quando houver necessidade de emissão de Laudo de Exigências que contemple exigências não previstas na tabela acima ou até isenção de exigências inseridas nesta tabela, o COMPROMITENTE deverá solicitar aditamento do TAC, prevendo as devidas atualizações. CLÁUSULA SÉTIMA - DA FISCALIZAÇÃO |  |  |  |  |
 
-<!-- tabela-conferida: Cronograma da cláusula sexta do Anexo G p39 -->
-### Cronograma da cláusula sexta do Anexo G — Cronograma para a efetiva regularização (modelo do Termo de Ajustamento de Conduta) (conferida)
-
-| Exigências / medidas de segurança | Início | Conclusão |
-| --- | --- | --- |
-| (...) | / / | / / |
-| (...) | / / | / / |
-| (...) | / / | / / |
-| (...) | / / | / / |
-| (...) | / / | / / |
-| (...) | / / | / / |
-| Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA) | / / | / / |
-
-Fonte: NT 1-01 Parte 2, página 39, Cronograma da cláusula sexta do Anexo G; conferida em 2026-09-29 (visual + texto).
-Modelo: "(...)" e "/ /" são campos para preenchimento.
-A extração lê a moldura da página inteira como tabela; só as linhas do cronograma entram na comparação.
-<!-- /tabela-conferida: Cronograma da cláusula sexta do Anexo G p39 -->
-
 ---
 
 ## Página 40
@@ -2908,7 +2890,7 @@ campos previstos como Diretoria-Geral de Serviços Técnicos (DGST) deverão ser
 | Risco Grande | Até 3 anos | 9.600 UFIR-RJ | 14.400 UFIR-RJ | 96.000 UFIR-RJ | 480.000 UFIR-RJ | 1.200.000 UFIR-RJ |
 | Risco Grande | Até 5 anos | 12.800 UFIR-RJ | 19.200 UFIR-RJ | 128.000 UFIR-RJ | 640.000 UFIR-RJ | 1.600.000 UFIR-RJ |
 
-Fonte: NT 1-01 Parte 2, página 42, Anexo H; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-01 Parte 2, página 42, Anexo H; conferida em 2026-09-29 (visual + geometrica).
 "UFIR-RJ" aparece quebrado em duas linhas em várias células ("UFIR-" / "RJ").
 <!-- /tabela-conferida: Anexo H p42 -->
 

@@ -7,10 +7,9 @@ resumo:
   imagens_ausentes: 0
   tabelas_por_estado:
     capa: 38
-    divergente: 5
+    divergente: 15
     nao_tabela: 36
-    pendente_humano: 7
-    verificada: 245
+    verificada: 242
 fontes:
 - arquivo: decreto-42-2018-coscip-compilado.md
   documento: Decreto 42/2018
@@ -343,7 +342,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_1-01_Parte1_alterada_Portaria_1317_2025.pdf
   sha256_pdf: ef60d4d275f294070a335b903b76a486afae0e8784ee128bcaa6c0d8432e5ca5
-  sha256_md: 1801f67af14ea52301407a17383b358209e69b30fbc3a50db9b5ffded560e997
+  sha256_md: b398c15700e85141175188635ba45454f6c74f9f3f5db9855eb38b20d7143970
   data_captura: '2026-07-23'
   paginas: 26
   midia: nt-1-01-parte-1
@@ -394,7 +393,7 @@ fontes:
   - pagina: 26
     tabela: Tabela 6 do Anexo B
     arquivo: normative/tabelas/nt-1-01-parte-1/anexo-b-tabela-6-fare.yaml
-    estado: pendente_humano
+    estado: verificada
 - arquivo: nt-1-01-parte-2-fiscalizacao.md
   documento: NT 1-01 P2
   titulo: NT 1-01 - Parte 2 - Procedimentos administrativos para fiscalização
@@ -402,7 +401,7 @@ fontes:
   ato: Portaria CBMERJ nº 1.151, de 10 de maio de 2021
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT_1-01-Procedimentos-Administrativos-para-Regularizacao-e-Fiscalizacao-Parte-2-Fiscalizacao_2021_1620759470.pdf
   sha256_pdf: 01ffb41a7be61d731fd9997546980a430f6d49f9698fade87917101dedd9bef3
-  sha256_md: 80b951bc447338b40d9377c11b3e0a4bf808045d4189de9d0eb53c9d5fc66890
+  sha256_md: 284999ebe585c9e6268cc0a9692bec6ee051915721d4f081baba1a8ecf45fe30
   data_captura: '2026-07-23'
   paginas: 42
   midia: nt-1-01-parte-2
@@ -505,7 +504,7 @@ fontes:
   - pagina: 39
     tabela: Cronograma da cláusula sexta do Anexo G
     arquivo: normative/tabelas/nt-1-01-parte-2/anexo-g-cronograma-tac.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 42
     tabela: Anexo H
     arquivo: normative/tabelas/nt-1-01-parte-2/anexo-h-multas-tac.yaml
@@ -578,7 +577,7 @@ fontes:
   ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT1-03_2Edio_2023.pdf
   sha256_pdf: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
-  sha256_md: f611d71e706c2f349d0bb0c6f7e50d5c39d979ae51ce1972d5201fb8225998ba
+  sha256_md: 50a6ca75666351081b264b63e86030508c2740bde4d820590da37f066362bf94
   data_captura: '2026-07-23'
   paginas: 12
   midia: nt-1-03
@@ -635,39 +634,39 @@ fontes:
   - pagina: 4
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p04.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 5
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p05.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 6
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p06.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 7
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p07.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 8
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p08.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 9
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p09.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 10
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p10.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 11
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p11.yaml
-    estado: verificada
+    estado: divergente
   - pagina: 12
     tabela: Anexo A
     arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p12.yaml
-    estado: verificada
+    estado: divergente
 - arquivo: nt-1-04-classificacao-de-risco.md
   documento: NT 1-04
   titulo: NT 1-04 - Classificação das edificações e áreas de risco quanto ao risco de incêndio
@@ -675,7 +674,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-04-Classificacao-das-edificacoes-e-areas-de-risco-quanto-ao-risco-de-incendio.pdf
   sha256_pdf: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
-  sha256_md: e1353458d92389584ad3be0b3530431edc3c9d3b178a31d7dd66cea05252a9fd
+  sha256_md: e521b78ed8cce1ee6ff994647cf36c9e9142beb3f184b3d70df77405d48a2371
   data_captura: '2026-07-23'
   paginas: 20
   midia: nt-1-04
@@ -870,7 +869,7 @@ fontes:
   ato: Portaria CBMERJ nº 1109, de 20 de maio de 2020
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-07-Atividades-economicas-de-baixo-risco-2020.pdf
   sha256_pdf: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
-  sha256_md: 46bfc38c136816083aedce81a3a5b21d277110a92503c774d5604a67bb2d9f67
+  sha256_md: d5e8d13582a79569c97b5fe46f2957cbcd9ca4770876dfc05cc8d921781a3ae4
   data_captura: '2026-07-23'
   paginas: 29
   midia: nt-1-07
@@ -1184,7 +1183,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-03-Sistemas-de-chuveiros-automticos-sprinklers-Parte-1-Requisitos-gerais-2019-atualizada_1647374313.pdf
   sha256_pdf: 008f8743d8520eca54955e3aaaed82cf5cd49cefce1e8b095040fe2755536e9f
-  sha256_md: 182c69e4d68c3256165398b0bb86e65a34116834689aeccf8e6cca34fce63751
+  sha256_md: 4a5eb40219b2a5adcaf4b0c9bcd41370e3728d3f2cc3448f88bb1201bdbc0c5c
   data_captura: '2026-07-23'
   paginas: 10
   midia: nt-2-03-parte-1
@@ -1221,7 +1220,7 @@ fontes:
   ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
   url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-03-sprinklers-Parte-2-Minuta-das-alteracoes_1604941555.pdf
   sha256_pdf: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
-  sha256_md: 7eefe576dd4c5d5a4aa9c8fcddcc0f2d05c3aaf285b554756da7896b89a1c686
+  sha256_md: e110370fcfcde1421ba2571f0e003da0096a3991559e9c09c99557847152f577
   data_captura: '2026-07-23'
   paginas: 22
   midia: nt-2-03-parte-2
@@ -1348,7 +1347,7 @@ fontes:
   - pagina: 16
     tabela: Anexo C (Classe I)
     arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-1-p16.yaml
-    estado: pendente_humano
+    estado: verificada
   - pagina: 16
     tabela: Anexo C (Classe II)
     arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-2-p16.yaml
@@ -1356,7 +1355,7 @@ fontes:
   - pagina: 17
     tabela: Anexo C (Classe II)
     arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-2-p17.yaml
-    estado: pendente_humano
+    estado: verificada
   - pagina: 17
     tabela: Anexo C (Classe III)
     arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-3-p17.yaml
@@ -1364,11 +1363,11 @@ fontes:
   - pagina: 18
     tabela: Anexo C (Classe III)
     arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-3-p18.yaml
-    estado: pendente_humano
+    estado: verificada
   - pagina: 19
     tabela: Anexo C (Classe III)
     arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-3-p19.yaml
-    estado: pendente_humano
+    estado: verificada
   - pagina: 19
     tabela: Anexo C (Classe IV)
     arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-4-p19.yaml
@@ -1376,7 +1375,7 @@ fontes:
   - pagina: 20
     tabela: Anexo C (Classe IV)
     arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-4-p20.yaml
-    estado: pendente_humano
+    estado: verificada
   - pagina: 21
     tabela: Anexo C (Plásticos Grupo A)
     arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-plasticos-grupo-a-p21.yaml
@@ -1384,7 +1383,7 @@ fontes:
   - pagina: 22
     tabela: Anexo C (Plásticos Grupo A)
     arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-plasticos-grupo-a-p22.yaml
-    estado: pendente_humano
+    estado: verificada
 - arquivo: nt-2-04-conjunto-de-pressurizacao.md
   documento: NT 2-04
   titulo: NT 2-04 - Conjunto de pressurização para sistemas de combate a incêndio

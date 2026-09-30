@@ -142,6 +142,49 @@ caminhos:
         (extremidades e arestas lisas) - Carretéis (vazios) - Palitos, pegadores, cabides, em caixas de
         papelão - Portas, janelas, armários e móveis - Moldes
       - Classe II Classe III Classe III Classe III Classe IV
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.76
+      - 56.88
+      - 538.9
+      - 566.47
+      linhas:
+      - - '- Linha, em carretéis plásticos'
+        - Plástico Grupo A
+      - - Raiom e náilon - Fibras em fardos - Linha, em carretéis de madeira ou papel - Tecidos - Linha,
+          em carretéis plásticos
+        - Classe IV Classe IV Classe IV Plástico Grupo A
+      - - Produtos de tabaco - Em caixas de cartão
+        - Classe III
+      - - Transformadores - Secos ou com óleo isolante
+        - Classe I
+      - - Tecidos revestidos com resinas vinílicas - Em caixas de papelão
+        - Plástico Grupo A
+      - - Pisos vinílicos - Placas em caixas de papelão - Em rolos
+        - Classe IV Plástico Grupo A
+      - - Papel revestido com cera Copos, pratos - Em caixas ou embalados em caixas de papelão (ênfase
+          no método de embalagem) - A granel em caixas de papelão grandes
+        - Classe IV Plástico Grupo A
+      - - Cera - Parafina, blocos, em caixas de papelão
+        - Plástico Grupo A
+      - - Arame - Arame sem capa em carretéis de metal em estrados de madeira - Arame sem capa em carretéis
+          de madeira ou papelão em estrados de madeira - Arame sem capa em carretéis de metal, madeira
+          ou papelão em caixas de papelão sobre estrados de madeira - Arame com capa simples ou múltipla
+          de PVC e, carretéis de metal sobre estrados de madeira
+        - Classe I Classe II Classe II Classe II
+      - - Arame - Cabo com isolamento de (PVC) em grandes carretéis de madeira ou metal sobre estrados
+          de madeira - Arame sem capa em carretéis de plástico em caixas de papelão sobre estrados de
+          madeira - Arame com capa simples ou múltipla de PVC em carretéis de plástico em caixas de papelão
+          sobre estrados de madeira - Cabos simples, múltiplos ou de potência (PVC) em carretéis grandes
+          de plástico - Armazenagem em grandes quantidades de carretéis de plástico vazios
+        - Classe II Classe IV Classe IV Classe IV Plástico Grupo A
+      - - Produtos de Madeira - Pilhas sólidas – madeira, compensado, aglomerado, placa de papelão prensado
+          (extremidades e arestas lisas) - Carretéis (vazios) - Palitos, pegadores, cabides, em caixas
+          de papelão - Portas, janelas, armários e móveis - Moldes
+        - Classe II Classe III Classe III Classe III Classe IV
 notas:
 - Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na
   linha em que a página a alinha.
@@ -166,6 +209,10 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
+  texto: verificada

@@ -212,6 +212,96 @@ caminhos:
       - Classe III
       - ''
       - ''
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 63.76
+      - 78.06
+      - 545.85
+      - 719.5
+      linhas:
+      - - ''
+        - Mercadoria
+        - ''
+        - ''
+        - Classe
+        - ''
+      - - Aerossóis Com e sem caixas de papelão - Nível 1
+        - null
+        - null
+        - Classe III
+        - null
+        - null
+      - - Bebidas alcoólicas Com e sem caixas de papelão - Até 20% de álcool em recipientes de metal,
+          vidro ou cerâmica - Até 20% de álcool em recipientes de madeira
+        - null
+        - null
+        - Classe I Classe II
+        - null
+        - null
+      - - Munições Armas leves, armas de caça - Embaladas, em caixas de papelão
+        - null
+        - null
+        - Classe IV
+        - null
+        - null
+      - - 'Aparelhos elétricos grandes (Linha branca: fogões, geladeiras) - Sem embalagem, sem quantidades
+          significativas de plástico no exterior - Em caixas de papelão corrugado, sem quantidades significativas
+          de plástico'
+        - null
+        - null
+        - Classe I Classe II
+        - null
+        - null
+      - - Produtos de confeitaria Biscoitos, bolos e tortas - Congelados, em caixas de papelão1 - Embalados,
+          em caixas de papelão
+        - null
+        - null
+        - Classe II Classe III
+        - null
+        - null
+      - - Pilhas e baterias Pilhas secas (sem lítio ou metais exóticos similares) - Embaladas, em caixas
+          de papelão - Em blísters, em caixas de papelão Automotivas - Cheias2 p/ caminhões ou maiores
+          - Vazias ou cheias2
+        - null
+        - null
+        - Classe I Classe II Classe I Plástico Grupo A
+        - null
+        - null
+      - - Feijão Seco - Embalado, em caixas de papelão
+        - null
+        - null
+        - Classe III
+        - null
+        - null
+      - - Garrafas e frascos Vazias, em caixas de papelão - Vidro - PET (polietileno tereftalato) Cheio
+          com pós incombustíveis - PET - Vidro, em caixas de papelão - Plástico, em caixas de papelão
+          [menos que 1 gal (3,8 L)] - Plástico, sem caixas de papelão (exceto PET), qualquer tamanho -
+          Plástico, em caixas de papelão ou exposto [maior que 1 gal (3,8 L)] - Plástico, engradados sólidos
+          de plástico - Plástico, engradados abertos de plástico Cheios com líquidos incombustíveis -
+          Vidro, em caixas de papelão - Plástico, em caixas de papelão [menos que 5 gal. (18,9 L)] - Plástico,
+          engradados de plástico sólidos ou abertos3 - Plástico, PET Caixas, engradados - Vazias, de madeira,
+          com paredes sólidas - Vazias, madeira, de tábuas espaçadas4
+        - null
+        - null
+        - Classe I Classe IV Classe II Classe I Classe IV Plástico Grupo A Plástico Grupo A Plástico Grupo
+          A Plástico Grupo A Classe I Classe I Plástico Grupo A Classe I Classe II Fora do escopo
+        - null
+        - null
+      - - Pão -Embrulhado, em caixas de papelão
+        - null
+        - null
+        - Classe III
+        - null
+        - null
+      - - Manteiga -Margarina
+        - null
+        - null
+        - Classe III
+        - null
+        - null
 notas:
 - Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na
   linha em que a página a alinha.
@@ -221,6 +311,10 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
+  texto: verificada

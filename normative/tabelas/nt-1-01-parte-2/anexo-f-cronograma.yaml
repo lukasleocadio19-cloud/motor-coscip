@@ -70,6 +70,61 @@ caminhos:
     - - Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA)
       - / /
       - / /
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id002
+      - 77.08
+      - 415.87
+      - 511.29
+      - 614.14
+      linhas:
+      - - ''
+        - CRONOGRAMA PARA A EFETIVA REGULARIZAÇÃO
+        - null
+        - null
+        - ''
+      - - EXIGÊNCIAS / MEDIDAS DE SEGURANÇA
+        - null
+        - INÍCIO
+        - CONCLUSÃO
+        - null
+      - - (...)
+        - null
+        - / /
+        - / /
+        - null
+      - - (...)
+        - null
+        - / /
+        - / /
+        - null
+      - - (...)
+        - null
+        - / /
+        - / /
+        - null
+      - - (...)
+        - null
+        - / /
+        - / /
+        - null
+      - - (...)
+        - null
+        - / /
+        - / /
+        - null
+      - - (...)
+        - null
+        - / /
+        - / /
+        - null
+      - - Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA)
+        - null
+        - / /
+        - / /
+        - null
 notas:
 - 'Modelo: "(...)" e "/ /" são campos para preenchimento.'
 - 'OBS: Deverão ser descritas todas as etapas do processo com data de início e término, onde ao final
@@ -79,6 +134,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id002
+  texto: verificada

@@ -67,6 +67,71 @@ caminhos:
     - - Carnes e derivados - A granel - Em latas, em caixas de papelão - Congelada, embalagem sem plástico
         e sem cera Mesas de escritório de metal - Com tampos e acabamento em plástico
     - - Leite - Recipientes de papel não revestidos com cera - Recipientes de papel revestidos com cera
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 67.11
+      - 88.1
+      - 534.93
+      - 720.1
+      linhas:
+      - - ''
+        - Exemplos de mercadorias Classe I
+        - ''
+      - - Bebidas alcoólicas Com e sem caixas de papelão - Até 20% de álcool em recipientes de metal,
+          vidro ou cerâmica
+        - null
+        - null
+      - - 'Aparelhos elétricos grandes (Linha branca: fogões, geladeiras) Sem embalagem, sem quantidades
+          significativas de plástico no exterior'
+        - null
+        - null
+      - - Pilhas e baterias Pilhas secas (sem lítio ou metais exóticos similares) - Embaladas, em caixas
+          de papelão Automotivas - Cheias*
+        - null
+        - null
+      - - Garrafas e frascos Vazias, em caixas de papelão - Vidro Cheios com líquidos incombustíveis -
+          Vidro, em caixas de papelão - Plástico, em caixas de papelão [menos que 5 gal. (18,9 L)] - Plástico,
+          PET Cheio com pós incombustíveis - Vidro, em caixas de papelão
+        - null
+        - null
+      - - Comidas enlatadas Em caixas de papelão comuns Latas Metal - Vazias
+        - null
+        - null
+      - - Cimento Em sacos
+        - null
+        - null
+      - - Café Em latas, em caixas de papelão
+        - null
+        - null
+      - - Fertilizantes Em sacos - Fosfatos
+        - null
+        - null
+      - - Arquivos Metal - Caixa de papelão
+        - null
+        - null
+      - - Peixe ou produtos derivados Congelado - Embalagem não laminada com plástico ou cera Enlatado
+          - Em caixas de papelão
+        - null
+        - null
+      - - Comidas congeladas Embalagem não laminada com plástico ou cera
+        - null
+        - null
+      - - Frutas Frescas - Em recipientes e bandejas, exceto de plástico - Com divisórias de madeira
+        - null
+        - null
+      - - Sorvete
+        - null
+        - null
+      - - Carnes e derivados - A granel - Em latas, em caixas de papelão - Congelada, embalagem sem plástico
+          e sem cera Mesas de escritório de metal - Com tampos e acabamento em plástico
+        - null
+        - null
+      - - Leite - Recipientes de papel não revestidos com cera - Recipientes de papel revestidos com cera
+        - null
+        - null
 notas:
 - Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
 - A tabela da Classe I continua no alto da página 16.
@@ -75,9 +140,11 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
   celulas:
   - linha: 4
     coluna: 0

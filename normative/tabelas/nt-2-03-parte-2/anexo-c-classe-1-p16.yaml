@@ -28,6 +28,74 @@ caminhos:
     - - Melaço Em tambores metálicos
     - - Transformadores Secos ou com óleo isolante
     - - Arame Arame sem capa em carretéis de metal em estrados de madeira
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 60.19
+      - 56.88
+      - 527.91
+      - 301.97
+      linhas:
+      - - '- Recipientes plásticos'
+      - - Motores - Elétricos
+      - - Amêndoas - Em latas, em caixas de papelão
+      - - Tintas Latas, em caixas de papelão - À base de água (látex)
+      - - Recipientes plásticos - Líquidos ou semilíquidos incombustíveis em recipientes plásticos com
+          capacidade menor que 5 gal (18,9 L)
+      - - Aves e derivados - Em latas, em caixas de papelão - Congelada, embalagem sem plástico e sem
+          cera
+      - - Sal Em sacos
+      - - Melaço Em tambores metálicos
+      - - Transformadores Secos ou com óleo isolante
+      - - Arame Arame sem capa em carretéis de metal em estrados de madeira
+    - bbox:
+      - 60.19
+      - 350.81
+      - 527.91
+      - 728.74
+      linhas:
+      - - ''
+        - Exemplos de mercadorias Classe II
+        - ''
+      - - Bebidas alcoólicas Até 20% de álcool em recipientes de madeira
+        - null
+        - null
+      - - Aparelhos elétricos grandes (por exemplo, fogões) - Em caixas de papelão corrugado, (sem quantidades
+          significativas de plástico)
+        - null
+        - null
+      - - Produtos de confeitaria Biscoitos, bolos e tortas - Embaladas, em caixas de papelão
+        - null
+        - null
+      - - Pilhas e baterias Pilhas secas (sem lítio ou metais exóticos similares) em embalagens blíster
+          em caixas de papelão
+        - null
+        - null
+      - - Garrafas e frascos Cheio com pós incombustíveis - PET Caixas, engradados Vazias, de madeira,
+          com paredes sólidas
+        - null
+        - null
+      - - Fertilizantes Em sacos - Nitratos
+        - null
+        - null
+      - - Peixe ou produtos derivados Congelado - Em caixas de papel com cera, dentro de caixas de papelão
+          - Em caixas de madeira ou barricas
+        - null
+        - null
+      - - Comidas congeladas Em caixas de papel com cera, dentro de caixas de papelão
+        - null
+        - null
+      - - Couros e peles Em fardos
+        - null
+        - null
+      - - Luminárias Não feitas de plástico - Em caixas de papelão
+        - null
+        - null
+      - - Mármore Artificial, pias e tampos - Em caixas de papelão, em engradados
+        - null
+        - null
 notas:
 - Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
 - Continuação da tabela da Classe I da página 15; é a primeira das duas tabelas da página.
@@ -36,9 +104,12 @@ notas:
 - '* A maioria das baterias tem gabinete de polipropileno. Se armazenadas vazias devem ser tratadas como
   plástico Grupo A. Baterias para caminhões, mesmo quando cheias, devem ser consideradas plástico Grupo
   A por causa das paredes mais espessas.'
-estado: pendente_humano
+estado: verificada
 resultado:
-  estado: pendente_humano
+  estado: verificada
   caminhos_comparados:
   - visual
-  motivo: é preciso a leitura visual e um segundo caminho independente
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001

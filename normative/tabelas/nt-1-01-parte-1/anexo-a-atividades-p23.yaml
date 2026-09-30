@@ -311,6 +311,162 @@ caminhos:
       - Fabricação de artigos de cutelaria, de serralheria e ferramentas
     - - 259x-x/xx
       - Fabricação de produtos de metal não especificados anteriormente
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 49.8
+      - 77.64
+      - 544.42
+      - 776.86
+      linhas:
+      - - CNAE
+        - Descrição
+      - - 0161-0/01
+        - Serviço de pulverização e controle de pragas agrí colas
+      - - 05xx-x/xx
+        - Extração de carvão mineral
+      - - 06xx-x/xx
+        - Extração de petróleo e gás natural
+      - - 07xx-x/xx
+        - Extração de minerais metálicos
+      - - 08xx-x/xx
+        - Extração de minerais não metálicos
+      - - 09xx-x/xx
+        - Atividades de apoio a extração minerais
+      - - 1041-4/00
+        - Fabricação de óleos vegetais em bruto, exceto óleo de milho
+      - - 1042-2/00
+        - Fabricação de óleos vegetais refinados, exceto óleo de milho
+      - - 1043-1/00
+        - Fabricação de margarina e outras gorduras vegetais e de óleos não-comestíveis de animais
+      - - 1061-9/01
+        - Beneficiamento de arroz
+      - - 1061-9/02
+        - Fabricação de produtos do arroz
+      - - 1062-7/00
+        - Moagem de trigo e fabricação de derivados
+      - - 1063-5/00
+        - Fabricação de farinha de mandioca e derivados
+      - - 1064-3/00
+        - Fabricação de farinha de milho e derivados, exceto óleos de milho
+      - - 1065-1/01
+        - Fabricação de amidos e féculas de vegetais
+      - - 1065-1/02
+        - Fabricação de óleo de milho em bruto
+      - - 1065-1/03
+        - Fabricação de óleo de milho refinado
+      - - 1066-0/00
+        - Fabricação de alimentos para animais
+      - - 1069-4/00
+        - Moagem e fabricação de produtos de origem vegetal não especificados anteriormente
+      - - 1071-6/00
+        - Fabricação de açúcar em bruto
+      - - 1072-4/01
+        - Fabricação de açúcar de cana refinado
+      - - 1072-4/02
+        - Fabricação de açúcar de cereais (dextrose) e de beterraba
+      - - 1081-3/01
+        - Beneficiamento de café
+      - - 1081-3/02
+        - Torrefação e moagem de café
+      - - 1091-1/01
+        - Fabricação de produtos de panificação industrial
+      - - 1099-6/02
+        - Fabricação de pós alimentícios
+      - - 1099-6/05
+        - Fabricação de produtos para infusão (chá, mate, etc.)
+      - - 1099-6/99
+        - Fabricação de outros produtos alimentícios não especificados anteriormente
+      - - 1111-9/01
+        - Fabricação de aguardente de cana-de-açúcar
+      - - 1111-9/02
+        - Fabricação de outras aguardentes e bebidas destiladas
+      - - 12xx-x/xx
+        - Fabricação de produtos de fumo
+      - - 13xx-x/xx
+        - Fabricação de produtos têxteis
+      - - 15xx-x/xx
+        - Preparação de couros e fabricação de artefatos de couro, artigos para viagem e calçados
+      - - 16xx-x/xx
+        - Fabricação de produtos de madeira
+      - - 17xx-x/xx
+        - Fabricação de celulose, papel e produtos de papel
+      - - 1811-3/01
+        - Impressão de jornais
+      - - 1811-3/02
+        - Impressão de livros, revistas e outras publicações periódicas
+      - - 1812-1/00
+        - Impressão de material de segurança
+      - - 1813-0/01
+        - Impressão de material para uso publicitário
+      - - 1813-0/99
+        - Impressão de material para outros usos
+      - - 1821-1/00
+        - Serviços de pré-impressão
+      - - 1822-9/99
+        - Serviços de acabamentos gráficos, exceto encadernação e plastificação
+      - - 19xx-x/xx
+        - Fabricação de coque, de produtos derivados do petróleo e de bicombustí veis
+      - - 20xx-x/xx
+        - Fabricação de produtos quí micos
+      - - 21xx-x/xx
+        - Fabricação de produtos farmoquí micos e farmacêuticos
+      - - 22xx-x/xx
+        - Fabricação de produtos de borracha e de material plástico
+      - - 2311-7/00
+        - Fabricação de vidro plano e de segurança
+      - - 2312-5/00
+        - Fabricação de embalagens de vidro
+      - - 2320-6/00
+        - Fabricação de cimento
+      - - 2330-3/01
+        - Fabricação de estruturas pré-moldadas de concreto armado, em série e sob encomenda
+      - - 2330-3/02
+        - Fabricação de artefatos de cimento para uso na construção
+      - - 2330-3/03
+        - Fabricação de artefatos de fibrocimento para uso na construção
+      - - 2330-3/04
+        - Fabricação de casas pré-moldadas de concreto
+      - - 2330-3/05
+        - Preparação de massa de concreto e argamassa para construção
+      - - 2330-3/99
+        - Fabricação de outros artefatos e produtos de concreto, cimento, fibrocimento, gesso e materiais
+          semelhantes
+      - - 2341-9/00
+        - Fabricação de produtos cerâmicos refratários
+      - - 2342-7/01
+        - Fabricação de azulejos e pisos
+      - - 2342-7/02
+        - Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e
+          pisos
+      - - 2349-4/01
+        - Fabricação de material sanitário de cerâmica
+      - - 2349-4/99
+        - Fabricação de produtos cerâmicos não-refratários não especificados anteriormente
+      - - 2391-5/01
+        - Britamento de pedras, exceto associado à extração
+      - - 2392-1/02
+        - Fabricação de abrasivos
+      - - 2392-3/00
+        - Fabricação de cal e gesso
+      - - 2399-1/99
+        - Fabricação de outros produtos de minerais não metálicos não especificados anteriormente
+      - - 24xx-x/xx
+        - Metalurgia
+      - - 2513-6/00
+        - Fabricação de obras de caldeiraria pesada
+      - - 2521-7/00
+        - Fabricação de tanques, reservatórios metálicos e caldeiras para aquecimento central
+      - - 2522-5/00
+        - Fabricação de caldeiras geradoras de vapor, exceto para aquecimento central e para veículos
+      - - 253x-x/xx
+        - Forjaria, estamparia, metalurgia do pó e serviços de tratamento de metais
+      - - 254x-x/xx
+        - Fabricação de artigos de cutelaria, de serralheria e ferramentas
+      - - 259x-x/xx
+        - Fabricação de produtos de metal não especificados anteriormente
 notas:
 - O hífen dentro de palavras ("agrí-colas", "quí-micos", "veí-culos") está na página; a leitura o mantém.
 - A tabela continua na página 24.
@@ -326,6 +482,33 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 1
+    coluna: 1
+    a: Serviço de pulverização e controle de pragas agrí-colas
+    b: Serviço de pulverização e controle de pragas agrí colas
+    estado: verificada
+    score: 98.1
+  - linha: 43
+    coluna: 1
+    a: Fabricação de coque, de produtos derivados do petróleo e de bicombustí-veis
+    b: Fabricação de coque, de produtos derivados do petróleo e de bicombustí veis
+    estado: verificada
+    score: 98.6
+  - linha: 44
+    coluna: 1
+    a: Fabricação de produtos quí-micos
+    b: Fabricação de produtos quí micos
+    estado: verificada
+    score: 96.9
+  - linha: 45
+    coluna: 1
+    a: Fabricação de produtos farmoquí-micos e farmacêuticos
+    b: Fabricação de produtos farmoquí micos e farmacêuticos
+    estado: verificada
+    score: 98.1

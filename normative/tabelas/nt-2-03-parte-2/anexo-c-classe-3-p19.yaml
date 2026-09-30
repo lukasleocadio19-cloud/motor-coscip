@@ -28,14 +28,80 @@ caminhos:
     - - Produtos de tabaco Em caixas de cartão
     - - Produtos de madeira - Carretéis (vazios) - Palitos, pegadores, cabides, em caixas de papelão -
         Portas, janelas, armários e móveis
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 67.56
+      - 56.88
+      - 534.49
+      - 361.01
+      linhas:
+      - - PVC (cloreto de polivinila) - Flexível (por exemplo, coberturas de cabos, folhas plastificadas)
+          - Rígido (por exemplo, tubos e conexões) - Resinas em sacos
+      - - Trapos Em fardos - Fibras naturais
+      - - Telhas tipo shingles Fibra de vidro revestida com asfalto
+      - - Amortecedores Cobertura plástica
+      - - Esquis Madeira
+      - - Têxteis Vestimentas ou produtos têxteis de fibras naturais Sintéticos (exceto raiom e náilon)
+          mistura 50/50 ou menos - Linha, em carretéis de madeira ou papel - Tecidos
+      - - Produtos de tabaco Em caixas de cartão
+      - - Produtos de madeira - Carretéis (vazios) - Palitos, pegadores, cabides, em caixas de papelão
+          - Portas, janelas, armários e móveis
+    - bbox:
+      - 67.56
+      - 385.85
+      - 534.49
+      - 727.3
+      linhas:
+      - - ''
+        - Exemplos de mercadorias Classe IV
+        - ''
+      - - Munições Armas leves, armas de caça - Embaladas, em caixas de papelão
+        - null
+        - null
+      - - Garrafas e frascos Vazias, em caixas de papelão - PET (polietileno tereftalato) Cheio com pós
+          incombustíveis - Plástico, em caixas de papelão [menos que 1 gal (3,8 L)]
+        - null
+        - null
+      - - Caixas de papelão Corrugadas - Parcialmente montadas
+        - null
+        - null
+      - - Tecido Com ou sem caixas de papelão - Sintéticos1
+        - null
+        - null
+      - - Fraldas - Descartáveis, com plástico e material não-tecido (em caixas de papelão)
+        - null
+        - null
+      - - Isolamento de fibra de vidro - Rolos de mantas laminadas com papel em um dos lados, em sacos
+          ou não
+        - null
+        - null
+      - - Móveis Madeira - Com cobertura plástica
+        - null
+        - null
+      - - Bebidas alcoólicas (destiladas) Teor alcoólico de 50% ou menos, 1 gal (3,8 L) ou menos, em caixas
+          de papelão - Vidro (paletizado)2 - Garrafas plásticas
+        - null
+        - null
+      - - Fósforos Embalados, em caixas de papelão - Papel
+        - null
+        - null
+      - - Esmalte para unhas
+        - null
+        - null
 notas:
 - Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
 - Continuação da tabela da Classe III da página 18; é a primeira das duas tabelas da página.
 - 'A camada de texto não reconhece esta tabela: o segundo caminho é a grade do PDF (extração geométrica).'
 - 'FONTE: IT-24/2018 - CBPMESP.'
-estado: pendente_humano
+estado: verificada
 resultado:
-  estado: pendente_humano
+  estado: verificada
   caminhos_comparados:
   - visual
-  motivo: é preciso a leitura visual e um segundo caminho independente
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001

@@ -104,15 +104,106 @@ caminhos:
     - - REGISTRO DE RECALQUE PARA SISTEMA DE SPRINKLERS
     - - BOMBA PARA SISTEMA DE SPRINKLERS
     - - RESERVA TÉCNICA PARA SISTEMA DE SPRINKLERS
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 70.94
+      - 56.88
+      - 502.42
+      - 789.0
+      linhas:
+      - - O Ã Ç N I T X E E D O X I F A M E T S I S
+        - S E T N A R D I H E D A M E T S I S
+        - HIDRANTE DUPLO
+        - ''
+      - - null
+        - null
+        - HIDRANTE SIMPLES
+        - ''
+      - - null
+        - null
+        - HIDRANTE URBANO
+        - ''
+      - - null
+        - null
+        - HIDRANTE URBANO SUBTERRÂNEO
+        - ''
+      - - null
+        - null
+        - BOMBA DE INCÊNDIO
+        - ''
+      - - null
+        - null
+        - RESERVA TÉCNICA DE INCÊNDIO
+        - ''
+      - - null
+        - null
+        - REGISTRO DE RECALQUE
+        - ''
+      - - null
+        - null
+        - REGISTRO DE RECALQUE COM VÁLVULA DE RETENÇÃO
+        - ''
+      - - null
+        - null
+        - ACIONADOR BOMBA INCÊNDIO
+        - ''
+      - - null
+        - S R E L K N I R P S
+        - BICO DE SPRINKLER PARA CIMA
+        - ''
+      - - null
+        - null
+        - BICO DE SPRINKLER PENDENTE
+        - ''
+      - - null
+        - null
+        - BICO DE SPRINKLER LATERAL
+        - ''
+      - - null
+        - null
+        - REGISTRO DE RECALQUE PARA SISTEMA DE SPRINKLERS
+        - ''
+      - - null
+        - null
+        - BOMBA PARA SISTEMA DE SPRINKLERS
+        - ''
+      - - null
+        - null
+        - RESERVA TÉCNICA PARA SISTEMA DE SPRINKLERS
+        - ''
 notas:
 - A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
   da página).
 - A tabela continua na página 6.
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 0
+    coluna: 0
+    a: SISTEMA FIXO DE EXTINÇÃO
+    b: O Ã Ç N I T X E E D O X I F A M E T S I S
+    estado: divergente
+    score: 35.6
+  - linha: 0
+    coluna: 1
+    a: SISTEMA DE HIDRANTES
+    b: S E T N A R D I H E D A M E T S I S
+    estado: divergente
+    score: 47.4
+  - linha: 9
+    coluna: 0
+    a: SPRINKLERS
+    b: S R E L K N I R P S
+    estado: divergente
+    score: 50.0

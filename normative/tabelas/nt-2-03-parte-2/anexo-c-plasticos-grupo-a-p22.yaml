@@ -23,6 +23,22 @@ caminhos:
     - - Papel revestido com cera Copos, pratos - A granel em caixas de papelão grandes
     - - Cera Parafina, blocos, em caixas de papelão
     - - Arame Armazenagem em grandes quantidades de carretéis de plástico vazios
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 60.12
+      - 56.88
+      - 527.98
+      - 216.02
+      linhas:
+      - - Raiom e náilon - Linha, em carretéis plásticos
+      - - Tecidos resistidos com resinas vinílicas Em caixas de papelão
+      - - Pisos vinílicos Em rolos
+      - - Papel revestido com cera Copos, pratos - A granel em caixas de papelão grandes
+      - - Cera Parafina, blocos, em caixas de papelão
+      - - Arame Armazenagem em grandes quantidades de carretéis de plástico vazios
 notas:
 - Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
 - Continuação da tabela de plásticos Grupo A da página 21.
@@ -37,9 +53,12 @@ notas:
 inconsistencias_da_fonte:
 - '"Tecidos resistidos com resinas vinílicas"; o Anexo B (p. 14) grafa "Tecidos revestidos com resinas
   vinílicas".'
-estado: pendente_humano
+estado: verificada
 resultado:
-  estado: pendente_humano
+  estado: verificada
   caminhos_comparados:
   - visual
-  motivo: é preciso a leitura visual e um segundo caminho independente
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001

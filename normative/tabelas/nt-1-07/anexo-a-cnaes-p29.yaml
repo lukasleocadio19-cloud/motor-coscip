@@ -171,6 +171,164 @@ caminhos:
       - Outras atividades de serviços pessoais não especificadas anteriormente
     - - 9700-5/00
       - Serviços domésticos
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.76
+      - 57.0
+      - 548.66
+      - 630.58
+      linhas:
+      - - 9319-1/01
+        - Produção e promoção de eventos esportivos
+        - null
+        - null
+      - - 9411-1/00
+        - Atividades de organizações associativas patronais e empresariais
+        - null
+        - null
+      - - 9412-0/01
+        - Atividades de fiscalização profissional
+        - null
+        - null
+      - - 9412-0/99
+        - Outras atividades associativas profissionais
+        - null
+        - null
+      - - 9420-1/00
+        - Atividades de organizações sindicais
+        - null
+        - null
+      - - 9430-8/00
+        - Atividades de associações de defesa de direitos sociais
+        - null
+        - null
+      - - 9492-8/00
+        - Atividades de organizações políticas
+        - null
+        - null
+      - - 9493-6/00
+        - Atividades de organizações associativas ligadas à cultura e à arte
+        - null
+        - null
+      - - 9499-5/00
+        - Atividades associativas não especificadas anteriormente
+        - null
+        - null
+      - - 9511-8/00
+        - Reparação e manutenção de computadores e de equipamentos periféricos
+        - null
+        - null
+      - - 9512-6/00
+        - Reparação e manutenção de equipamentos de comunicação
+        - null
+        - null
+      - - 9521-5/00
+        - Reparação e manutenção de equipamentos eletroeletrônicos de uso pessoal e doméstico
+        - null
+        - null
+      - - 9529-1/01
+        - Reparação de calçados, bolsas e artigos de viagem
+        - null
+        - null
+      - - 9529-1/02
+        - Chaveiros
+        - null
+        - null
+      - - 9529-1/03
+        - Reparação de relógios
+        - null
+        - null
+      - - 9529-1/04
+        - Reparação de bicicletas, triciclos e outros veículos não motorizados
+        - null
+        - null
+      - - 9529-1/05
+        - Reparação de artigos do mobiliário
+        - null
+        - null
+      - - null
+        - null
+        - Reparação de artigos do mobiliário
+        - null
+      - - 9529-1/99
+        - ''
+        - Reparação e manutenção de outros objetos e equipamentos pessoais e domésticos não
+        - ''
+      - - null
+        - null
+        - especificados anteriormente
+        - null
+      - - 9601-7/02
+        - Tinturarias
+        - null
+        - null
+      - - 9601-7/03
+        - Toalheiros
+        - null
+        - null
+      - - 9602-5/01
+        - Cabeleireiros, manicure e pedicure
+        - null
+        - null
+      - - 9602-5/02
+        - Atividades de estética e outros serviços de cuidados com a beleza
+        - null
+        - null
+      - - 9603-3/01
+        - Gestão e manutenção de cemitérios
+        - null
+        - null
+      - - 9603-3/03
+        - Serviços de sepultamento
+        - null
+        - null
+      - - 9603-3/04
+        - Serviços de funerárias
+        - null
+        - null
+      - - 9603-3/05
+        - Serviços de somatoconservação
+        - null
+        - null
+      - - 9603-3/99
+        - Atividades funerárias e serviços relacionados não especificados anteriormente
+        - null
+        - null
+      - - 9609-2/02
+        - Agências matrimoniais
+        - null
+        - null
+      - - 9609-2/04
+        - Exploração de máquinas de serviços pessoais acionadas por moeda
+        - null
+        - null
+      - - 9609-2/05
+        - Atividades de sauna e banhos
+        - null
+        - null
+      - - 9609-2/06
+        - Serviços de tatuagem e colocação de piercing
+        - null
+        - null
+      - - 9609-2/07
+        - Alojamento de animais domésticos
+        - null
+        - null
+      - - 9609-2/08
+        - Higiene e embelezamento de animais domésticos
+        - null
+        - null
+      - - 9609-2/99
+        - Outras atividades de serviços pessoais não especificadas anteriormente
+        - null
+        - null
+      - - 9700-5/00
+        - Serviços domésticos
+        - null
+        - null
 notas:
 - Continuação da tabela da página 28.
 - A camada de texto parte as descrições de duas linhas e repete 1 descrição(ões) numa linha vazia; a comparação
@@ -180,6 +338,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

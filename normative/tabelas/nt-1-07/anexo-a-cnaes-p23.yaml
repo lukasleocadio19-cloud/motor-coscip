@@ -212,6 +212,208 @@ caminhos:
       - Agências de fomento
     - - 6435-2/01
       - Sociedades de crédito imobiliário
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.76
+      - 57.0
+      - 548.66
+      - 781.8
+      linhas:
+      - - 5911-1/02
+        - Produção de filmes para publicidade
+        - null
+        - null
+      - - null
+        - null
+        - Produção de filmes para publicidade
+        - null
+      - - 5911-1/99
+        - ''
+        - Atividades de produção cinematográfica, de vídeos e de programas de televisão não especificadas
+        - ''
+      - - null
+        - null
+        - anteriormente
+        - null
+      - - 5912-0/01
+        - Serviços de dublagem
+        - null
+        - null
+      - - 5912-0/02
+        - Serviços de mixagem sonora em produção audiovisual
+        - null
+        - null
+      - - null
+        - null
+        - Serviços de mixagem sonora em produção audiovisual
+        - null
+      - - 5912-0/99
+        - ''
+        - Atividades de pós-produção cinematográfica, de vídeos e de programas de televisão não
+        - ''
+      - - null
+        - null
+        - especificadas anteriormente
+        - null
+      - - 5920-1/00
+        - Atividades de gravação de som e de edição de música
+        - null
+        - null
+      - - 6010-1/00
+        - Atividades de rádio
+        - null
+        - null
+      - - 6110-8/01
+        - Serviços de telefonia fixa comutada - STFC
+        - null
+        - null
+      - - 6110-8/02
+        - Serviços de redes de transporte de telecomunicações - SRTT
+        - null
+        - null
+      - - 6110-8/03
+        - Serviços de comunicação multimídia - SCM
+        - null
+        - null
+      - - 6110-8/99
+        - Serviços de telecomunicações por fio não especificados anteriormente
+        - null
+        - null
+      - - 6120-5/01
+        - Telefonia móvel celular
+        - null
+        - null
+      - - 6120-5/02
+        - Serviço móvel especializado - SME
+        - null
+        - null
+      - - 6120-5/99
+        - Serviços de telecomunicações sem fio não especificados anteriormente
+        - null
+        - null
+      - - 6130-2/00
+        - Telecomunicações por satélite
+        - null
+        - null
+      - - 6141-8/00
+        - Operadoras de televisão por assinatura por cabo
+        - null
+        - null
+      - - 6142-6/00
+        - Operadoras de televisão por assinatura por micro-ondas
+        - null
+        - null
+      - - 6143-4/00
+        - Operadoras de televisão por assinatura por satélite
+        - null
+        - null
+      - - 6190-6/01
+        - Provedores de acesso às redes de comunicações
+        - null
+        - null
+      - - 6190-6/02
+        - Provedores de voz sobre protocolo Internet - VOIP
+        - null
+        - null
+      - - 6190-6/99
+        - Outras atividades de telecomunicações não especificadas anteriormente
+        - null
+        - null
+      - - 6201-5/01
+        - Desenvolvimento de programas de computador sob encomenda
+        - null
+        - null
+      - - 6201-5/02
+        - Web desing
+        - null
+        - null
+      - - 6202-3/00
+        - Desenvolvimento e licenciamento de programas de computador customizáveis
+        - null
+        - null
+      - - 6203-1/00
+        - Desenvolvimento e licenciamento de programas de computador não customizáveis
+        - null
+        - null
+      - - 6204-0/00
+        - Consultoria em tecnologia da informação
+        - null
+        - null
+      - - 6209-1/00
+        - Suporte técnico, manutenção e outros serviços em tecnologia da informação
+        - null
+        - null
+      - - 6311-9/00
+        - Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na Internet
+        - null
+        - null
+      - - 6319-4/00
+        - Portais, provedores de conteúdo e outros serviços de informação na Internet
+        - null
+        - null
+      - - 6391-7/00
+        - Agências de notícias
+        - null
+        - null
+      - - 6399-2/00
+        - Outras atividades de prestação de serviços de informação não especificadas anteriormente
+        - null
+        - null
+      - - 6410-7/00
+        - Banco Central
+        - null
+        - null
+      - - 6421-2/00
+        - Bancos comerciais
+        - null
+        - null
+      - - 6422-1/00
+        - Bancos múltiplos, com carteira comercial
+        - null
+        - null
+      - - 6423-9/00
+        - Caixas econômicas
+        - null
+        - null
+      - - 6424-7/01
+        - Bancos cooperativos
+        - null
+        - null
+      - - 6424-7/02
+        - Cooperativas centrais de crédito
+        - null
+        - null
+      - - 6424-7/03
+        - Cooperativas de crédito mútuo
+        - null
+        - null
+      - - 6424-7/04
+        - Cooperativas de crédito rural
+        - null
+        - null
+      - - 6431-0/00
+        - Bancos múltiplos, sem carteira comercial
+        - null
+        - null
+      - - 6432-8/00
+        - Bancos de investimento
+        - null
+        - null
+      - - 6433-6/00
+        - Bancos de desenvolvimento
+        - null
+        - null
+      - - 6434-4/00
+        - Agências de fomento
+        - null
+        - null
+      - - 6435-2/01
+        - Sociedades de crédito imobiliário
+        - null
+        - null
 notas:
 - Continuação da tabela da página 22.
 - A tabela continua na página 24.
@@ -223,6 +425,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

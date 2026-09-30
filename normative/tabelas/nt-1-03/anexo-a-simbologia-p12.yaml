@@ -79,17 +79,88 @@ caminhos:
     - - TUBO QUE DESCE
     - - TUBO QUE PASSA
     - - REPRESENTAÇÃO DO DIÂMENTRO DA CANALIZAÇÃO
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 78.02
+      - 56.88
+      - 516.58
+      - 599.98
+      linhas:
+      - - A G U F E D S A T O R
+        - O T N E M A N O IC E R ID
+        - DIREÇÃO DO FLUXO
+        - ''
+      - - null
+        - null
+        - SAÍDA FINAL
+        - ''
+      - - S O R T U O
+        - ''
+        - REGISTRO
+        - ''
+      - - null
+        - null
+        - TANQUE DE PRESSÃO
+        - ''
+      - - null
+        - null
+        - MANÔMETRO
+        - ''
+      - - null
+        - null
+        - PRESSOSTATO
+        - ''
+      - - null
+        - null
+        - TUBO QUE SOBE
+        - ''
+      - - null
+        - null
+        - TUBO QUE DESCE
+        - ''
+      - - null
+        - null
+        - TUBO QUE PASSA
+        - ''
+      - - null
+        - null
+        - REPRESENTAÇÃO DO DIÂMENTRO DA CANALIZAÇÃO
+        - ''
 notas:
 - A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
   da página).
 - 'Fonte: CBMERJ.'
 inconsistencias_da_fonte:
 - '"DIÂMENTRO" (grafia da fonte) por "diâmetro".'
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 0
+    coluna: 0
+    a: ROTAS DE FUGA
+    b: A G U F E D S A T O R
+    estado: divergente
+    score: 25.0
+  - linha: 0
+    coluna: 1
+    a: DIRECIONAMENTO
+    b: O T N E M A N O IC E R ID
+    estado: divergente
+    score: 33.3
+  - linha: 2
+    coluna: 0
+    a: OUTROS
+    b: S O R T U O
+    estado: divergente
+    score: 50.0

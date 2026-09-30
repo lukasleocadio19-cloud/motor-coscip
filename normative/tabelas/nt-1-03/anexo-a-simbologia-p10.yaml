@@ -101,6 +101,72 @@ caminhos:
     - - DAMPER CORTA-FOGO
     - - DAMPERS
       - DAMPER CORTA-FUMAÇA
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 70.94
+      - 56.88
+      - 509.86
+      - 780.12
+      linhas:
+      - - ''
+        - ''
+        - BARRA ANTIPÂNICO
+        - ''
+      - - S O V I S S A P S A M E T S I S
+        - ''
+        - PORTA CORTA-FOGO P-60
+        - ''
+      - - null
+        - S S AA RD UI G TE RT EO BR AP
+        - PORTA CORTA-FOGO P-90
+        - ''
+      - - null
+        - null
+        - PORTA CORTA-FOGO P-120
+        - ''
+      - - null
+        - null
+        - PAREDE CORTA-FOGO
+        - ''
+      - - null
+        - S O D E V
+        - PAREDE DE COMPARTIMENTAÇÃO
+        - ''
+      - - null
+        - null
+        - PAREDE COMUM
+        - ''
+      - - null
+        - null
+        - DIVISÓRIA
+        - ''
+      - - null
+        - null
+        - ELEVADOR
+        - ''
+      - - null
+        - S E R O D A V E L E
+        - ELEVADOR DE EMERGÊNCIA
+        - ''
+      - - null
+        - null
+        - MONTACARGA
+        - ''
+      - - null
+        - null
+        - SHAFT PROTEGIDO
+        - ''
+      - - null
+        - null
+        - DAMPER CORTA-FOGO
+        - ''
+      - - null
+        - S R E P M A D
+        - DAMPER CORTA-FUMAÇA
+        - ''
 notas:
 - A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
   da página).
@@ -112,11 +178,44 @@ inconsistencias_da_fonte:
   a grade como está desenhada, e o agrupamento pretendido fica para o analista.'
 - '"BARRA ANTIPÂNICO", no alto da página, fica fora da célula "SISTEMAS PASSIVOS", com grupo e subgrupo
   vazios.'
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 1
+    coluna: 0
+    a: SISTEMAS PASSIVOS
+    b: S O V I S S A P S A M E T S I S
+    estado: divergente
+    score: 54.5
+  - linha: 2
+    coluna: 0
+    a: ABERTURAS PROTEGIDAS
+    b: S S AA RD UI G TE RT EO BR AP
+    estado: divergente
+    score: 34.0
+  - linha: 5
+    coluna: 0
+    a: VEDOS
+    b: S O D E V
+    estado: divergente
+    score: 20.0
+  - linha: 9
+    coluna: 0
+    a: ELEVADORES
+    b: S E R O D A V E L E
+    estado: divergente
+    score: 30.0
+  - linha: 13
+    coluna: 0
+    a: DAMPERS
+    b: S R E P M A D
+    estado: divergente
+    score: 14.3

@@ -89,15 +89,94 @@ caminhos:
     - - EXTINTOR DE PÓ BC
     - - EXTINTOR DE PÓ ABC
     - - EXTINTOR DE PÓ D
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 78.02
+      - 89.66
+      - 503.26
+      - 751.9
+      linhas:
+      - - S E R O T N I T X E
+        - S I E T Á T R O P
+        - EXTINTOR DE GÁS CARBÔNICO - CO2
+        - ''
+      - - null
+        - null
+        - EXTINTOR DE ÁGUA PRESSURIZADA – AP
+        - ''
+      - - null
+        - null
+        - EXTINTOR DE ESPUMA MECÂNICA
+        - ''
+      - - null
+        - null
+        - EXTINTOR DE PÓ BC
+        - ''
+      - - null
+        - null
+        - EXTINTOR DE PÓ ABC
+        - ''
+      - - null
+        - null
+        - EXTINTOR DE PÓ D
+        - ''
+      - - null
+        - S A D O R E R B O S
+        - EXTINTOR DE GÁS CARBÔNICO - CO2
+        - ''
+      - - null
+        - null
+        - EXTINTOR DE ÁGUA PRESSURIZADA – AP
+        - ''
+      - - null
+        - null
+        - EXTINTOR DE ESPUMA MECÂNICA
+        - ''
+      - - null
+        - null
+        - EXTINTOR DE PÓ BC
+        - ''
+      - - null
+        - null
+        - EXTINTOR DE PÓ ABC
+        - ''
+      - - null
+        - null
+        - EXTINTOR DE PÓ D
+        - ''
 notas:
 - A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
   da página).
 - 'Fonte: CBMERJ.'
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 0
+    coluna: 0
+    a: EXTINTORES
+    b: S E R O T N I T X E
+    estado: divergente
+    score: 50.0
+  - linha: 0
+    coluna: 1
+    a: PORTÁTEIS
+    b: S I E T Á T R O P
+    estado: divergente
+    score: 33.3
+  - linha: 6
+    coluna: 0
+    a: SOBRERODAS
+    b: S A D O R E R B O S
+    estado: divergente
+    score: 70.0

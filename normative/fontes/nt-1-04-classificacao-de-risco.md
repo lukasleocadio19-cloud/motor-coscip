@@ -1351,7 +1351,7 @@ Observações: 1 - Constante da Tabela E 2 - Massa total de cada material multip
 | 6 |  |  |  |
 | 7 |  |  |  |
 
-Fonte: NT 1-04, página 20, Tabela do Anexo E (materiais); conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 20, Tabela do Anexo E (materiais); conferida em 2026-09-29 (visual + geometrica).
 Anexo E da NT 1-04: modelo de planilha (as linhas 1 a 7 são para preenchimento). Texto acima da tabela: "(Esse modelo deve ser utilizado apenas para depósito)".
 Observações da página:
 1 – Constante da Tabela E
@@ -1369,7 +1369,7 @@ Observações da página:
 | Área do piso do pavimento Af (m²) |
 | Carga de incêndio específica do pavimento4 qfi = ∑ MiHi / Af |
 
-Fonte: NT 1-04, página 20, Tabela do Anexo E (totais); conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-04, página 20, Tabela do Anexo E (totais); conferida em 2026-09-29 (visual + geometrica).
 As células de valor (coluna da direita) são para preenchimento.
 Observações da página:
 1 – Constante da Tabela E

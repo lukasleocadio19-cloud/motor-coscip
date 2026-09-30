@@ -79,6 +79,60 @@ caminhos:
     - - 3.8 ESTRUTURA(S) METÁLICA(S)
     - - 3.9 CALDEIRA(S) OU VASOS DE PRESSÃO
     - - '3.10 OUTROS:'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.4
+      - 91.58
+      - 549.24
+      - 487.63
+      linhas:
+      - - EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS
+        - AUTORIZADO
+        - EXISTENTE
+        - ESTADO DE FUNCIONAMENTO
+      - - 3.1 SISTEMA DE CONDICIONAMENTO DE AR
+        - ''
+        - ''
+        - ''
+      - - 3.2 SISTEMA DE EXAUSTÃO MECÂNICA
+        - ''
+        - ''
+        - ''
+      - - 3.3 INSTALAÇÕES DE GÁS CANALIZADO DE RUA
+        - ''
+        - ''
+        - ''
+      - - 3.4 CENTRAL DE RECIPIENTE(S) DE GÁS LIQUEFEITO DE PETRÓLEO
+        - ''
+        - ''
+        - ''
+      - - 3.5 LÍQUIDOS INFLAMÁVEIS
+        - ''
+        - ''
+        - ''
+      - - 3.6 GERADOR(ES)
+        - ''
+        - ''
+        - ''
+      - - 3.7 MONTA-CARGA
+        - ''
+        - ''
+        - ''
+      - - 3.8 ESTRUTURA(S) METÁLICA(S)
+        - ''
+        - ''
+        - ''
+      - - 3.9 CALDEIRA(S) OU VASOS DE PRESSÃO
+        - ''
+        - ''
+        - ''
+      - - '3.10 OUTROS:'
+        - ''
+        - ''
+        - ''
 notas:
 - 'Título do quadro na página: "3 – EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS (ASSINALAR COM “X”
   OS AUTORIZADOS EM LAUDO DE EXIGÊNCIAS E OS EXISTENTES E DESCREVER OBRIGATORIAMENTE O ESTADO DE FUNCIONAMENTO
@@ -89,6 +143,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

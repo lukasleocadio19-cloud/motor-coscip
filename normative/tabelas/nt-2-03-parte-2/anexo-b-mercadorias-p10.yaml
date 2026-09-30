@@ -177,6 +177,58 @@ caminhos:
       - Classe III
     - - Fertilizantes Em sacos - Fosfatos - Nitratos
       - Classe I Classe II
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.76
+      - 56.88
+      - 538.9
+      - 727.06
+      linhas:
+      - - Velas Embaladas, em caixas de papelão - Tratar como plástico expandido
+        - Plástico Grupo A
+      - - Balas -Embaladas, em caixas de papelão
+        - Classe III
+      - - Comidas enlatadas -Em caixas de papelão comuns
+        - Classe I
+      - - Latas Metal - Vazias
+        - Classe I
+      - - Carpetes (placas modulares) -Em caixas de papelão
+        - Plástico Grupo A
+      - - Caixas de papelão Corrugadas - Desmontadas (em pilhas organizadas) - Parcialmente montadas Revestidas
+          com cera, parede simples
+        - Classe III Classe IV Plástico Grupo A
+      - - Cimento -Em sacos
+        - Classe I
+      - - Cereais matinais Embalados, em caixas de papelão
+        - Classe III
+      - - Carvão (vegetal) Em sacos - Padrão
+        - Classe III
+      - - Queijo - Embalado, em caixas de papelão - Discos, em caixas de papelão
+        - Classe III Classe III
+      - - Goma de mascar -Embalada, em caixas de papelão
+        - Classe III
+      - - Chocolate -Embalado, em caixas de papelão
+        - Classe III
+      - - Tecido Com ou sem caixas de papelão - Fibras naturais, viscose - Sintéticos5
+        - Classe III Classe IV
+      - - Produtos de cacau -Embalado, em caixas de papelão
+        - Classe III
+      - - Café - Em latas, em caixas de papelão - Embalado, em caixas de papelão
+        - Classe I Classe III
+      - - Café em grão -Em sacos
+        - Classe III
+      - - Algodão -Embalado, em caixas de papelão
+        - Classe III
+      - - Fraldas - Algodão, linho - Descartáveis, com plástico e material não-tecido (em caixas de papelão)
+          - Descartáveis, com plástico e material não-tecido (sem caixas de papelão), embaladas em plástico
+        - Classe III Classe IV Plástico Grupo A
+      - - Comidas secas -Embaladas, em caixas de papelão
+        - Classe III
+      - - Fertilizantes Em sacos - Fosfatos - Nitratos
+        - Classe I Classe II
 notas:
 - Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na
   linha em que a página a alinha.
@@ -186,6 +238,10 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
+  texto: verificada

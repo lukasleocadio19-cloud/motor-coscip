@@ -85,15 +85,96 @@ caminhos:
       - TANQUE HORIZONTAL ENTERRADO
     - - TANQUE HORIZONTAL SUPERFÍCIE
     - - TANQUE VERTICAL ENTERRADO
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 72.38
+      - 56.88
+      - 508.66
+      - 747.1
+      linhas:
+      - - A I C N Ê G R E M E E D O Ã Ç A N I M U L I E D A M E T S I S
+        - ''
+        - PONTO DE ILUMINAÇÃO DE EMERGÊNCIA
+        - ''
+      - - null
+        - null
+        - PONTO DE ILUMINAÇÃO DE EMERGÊNCIA TIPO BALIZAMENTO
+        - ''
+      - - null
+        - null
+        - PONTO DE ILUMINAÇÃO DE EMERGÊNCIA À PROVA DE EXPLOSÃO E PÓ
+        - ''
+      - - null
+        - null
+        - BATERIAS E ACUMULADORES DO SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA
+        - ''
+      - - null
+        - null
+        - CENTRAL DO SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA
+        - ''
+      - - null
+        - null
+        - GRUPO MOTOGERADOR
+        - ''
+      - - S E U Q N A T E S O S A V
+        - P L G
+        - CENTRAL DE GLP
+        - ''
+      - - null
+        - null
+        - VASO PRESSÃO
+        - ''
+      - - null
+        - S E U Q N A T
+        - TANQUE HORIZONTAL ENTERRADO
+        - ''
+      - - null
+        - null
+        - TANQUE HORIZONTAL SUPERFÍCIE
+        - ''
+      - - null
+        - null
+        - TANQUE VERTICAL ENTERRADO
+        - ''
 notas:
 - A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
   da página).
 - 'Fonte: CBMERJ.'
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 0
+    coluna: 0
+    a: SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA
+    b: A I C N Ê G R E M E E D O Ã Ç A N I M U L I E D A M E T S I S
+    estado: divergente
+    score: 33.3
+  - linha: 6
+    coluna: 0
+    a: VASOS E TANQUES
+    b: S E U Q N A T E S O S A V
+    estado: divergente
+    score: 37.0
+  - linha: 6
+    coluna: 1
+    a: GLP
+    b: P L G
+    estado: divergente
+    score: 33.3
+  - linha: 8
+    coluna: 0
+    a: TANQUES
+    b: S E U Q N A T
+    estado: divergente
+    score: 14.3

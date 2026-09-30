@@ -207,6 +207,201 @@ caminhos:
       - Comércio varejista de equipamentos para escritório
     - - 4789-0/08
       - Comércio varejista de artigos fotográficos e para filmagem
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.76
+      - 57.0
+      - 548.66
+      - 776.88
+      linhas:
+      - - 4744-0/02
+        - Comércio varejista de madeira e artefatos
+        - null
+        - null
+      - - 4744-0/03
+        - Comércio varejista de materiais hidráulicos
+        - null
+        - null
+      - - 4744-0/04
+        - Comércio varejista de cal, areia, pedra britada, tijolos e telhas
+        - null
+        - null
+      - - 4744-0/06
+        - Comércio varejista de pedras para revestimento
+        - null
+        - null
+      - - 4744-0/99
+        - Comércio varejista de materiais de construção em geral
+        - null
+        - null
+      - - 4751-2/01
+        - Comércio varejista especializado de equipamentos e suprimentos de informática
+        - null
+        - null
+      - - 4751-2/02
+        - Recarga de cartuchos para equipamentos de informática
+        - null
+        - null
+      - - 4752-1/00
+        - Comércio varejista especializado de equipamentos de telefonia e comunicação
+        - null
+        - null
+      - - 4753-9/00
+        - Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo
+        - null
+        - null
+      - - 4754-7/01
+        - Comércio varejista de móveis
+        - null
+        - null
+      - - 4754-7/02
+        - Comércio varejista de artigos de colchoaria
+        - null
+        - null
+      - - 4754-7/03
+        - Comércio varejista de artigos de iluminação
+        - null
+        - null
+      - - 4755-5/01
+        - Comércio varejista de tecidos
+        - null
+        - null
+      - - 4755-5/02
+        - Comercio varejista de artigos de armarinho
+        - null
+        - null
+      - - 4755-5/03
+        - Comercio varejista de artigos de cama, mesa e banho
+        - null
+        - null
+      - - 4756-3/00
+        - Comércio varejista especializado de instrumentos musicais e acessórios
+        - null
+        - null
+      - - null
+        - null
+        - Comércio varejista especializado de instrumentos musicais e acessórios
+        - null
+      - - 4757-1/00
+        - ''
+        - Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para
+          uso
+        - ''
+      - - null
+        - null
+        - doméstico, exceto informática e comunicação
+        - null
+      - - 4759-8/01
+        - Comércio varejista de artigos de tapeçaria, cortinas e persianas
+        - null
+        - null
+      - - 4759-8/99
+        - Comércio varejista de outros artigos de uso doméstico não especificados anteriormente
+        - null
+        - null
+      - - 4761-0/01
+        - Comércio varejista de livros
+        - null
+        - null
+      - - 4761-0/02
+        - Comércio varejista de jornais e revistas
+        - null
+        - null
+      - - 4761-0/03
+        - Comércio varejista de artigos de papelaria
+        - null
+        - null
+      - - 4762-8/00
+        - Comércio varejista de discos, CDs, DVDs e fitas
+        - null
+        - null
+      - - 4763-6/01
+        - Comércio varejista de brinquedos e artigos recreativos
+        - null
+        - null
+      - - 4763-6/02
+        - Comércio varejista de artigos esportivos
+        - null
+        - null
+      - - 4763-6/03
+        - Comércio varejista de bicicletas e triciclos; peças e acessórios
+        - null
+        - null
+      - - 4763-6/04
+        - Comércio varejista de artigos de caça, pesca e camping
+        - null
+        - null
+      - - 4771-7/04
+        - Comércio varejista de medicamentos veterinários
+        - null
+        - null
+      - - 4772-5/00
+        - Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal
+        - null
+        - null
+      - - 4773-3/00
+        - Comércio varejista de artigos médicos e ortopédicos
+        - null
+        - null
+      - - 4774-1/00
+        - Comércio varejista de artigos de óptica
+        - null
+        - null
+      - - 4781-4/00
+        - Comércio varejista de artigos do vestuário e acessórios
+        - null
+        - null
+      - - 4782-2/01
+        - Comércio varejista de calçados
+        - null
+        - null
+      - - 4782-2/02
+        - Comércio varejista de artigos de viagem
+        - null
+        - null
+      - - 4783-1/01
+        - Comércio varejista de artigos de joalheria
+        - null
+        - null
+      - - 4783-1/02
+        - Comércio varejista de artigos de relojoaria
+        - null
+        - null
+      - - 4785-7/01
+        - Comércio varejista de antiguidades
+        - null
+        - null
+      - - 4785-7/99
+        - Comércio varejista de outros artigos usados
+        - null
+        - null
+      - - 4789-0/01
+        - Comércio varejista de suvenires, bijuterias e artesanatos
+        - null
+        - null
+      - - 4789-0/02
+        - Comércio varejista de plantas e flores naturais
+        - null
+        - null
+      - - 4789-0/03
+        - Comércio varejista de objetos de arte
+        - null
+        - null
+      - - 4789-0/04
+        - Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação
+        - null
+        - null
+      - - 4789-0/07
+        - Comércio varejista de equipamentos para escritório
+        - null
+        - null
+      - - 4789-0/08
+        - Comércio varejista de artigos fotográficos e para filmagem
+        - null
+        - null
 notas:
 - Continuação da tabela da página 20.
 - A tabela continua na página 22.
@@ -217,6 +412,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

@@ -41,6 +41,41 @@ caminhos:
         - Arame com capa simples ou múltipla de PVC em carretéis de plástico em caixas de papelão sobre
         estrados de madeira - Cabos simples, múltiplos ou de potência (PVC) em carretéis grandes de plástico
     - - Produtos de madeira Moldes
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 60.12
+      - 56.88
+      - 527.98
+      - 606.1
+      linhas:
+      - - Frascos de vidro de 1-oz a 2-oz (29,6-ml a 59,1-ml), em caixas de papelão
+      - - Tintas Latas, em caixas de papelão - À base de óleo
+      - - Papel, bobinas Em porta-paletes - Peso leve
+      - - Papel, recoberto com cera Embaladas, em caixas de papelão
+      - - Remédios Pílulas, pós - Frascos de vidro, em caixas de papelão
+      - - Filme fotográfico - Rolos em cartuchos de policarbonato, embalados em grandes quantidades em
+          caixas de papelão
+      - - PVA (álcool polivinílico), resinas Em sacos
+      - - Trapos Em fardos - Fibras sintéticas
+      - - Borracha Natural, blocos em caixas de papelão
+      - - Telhas tipo Shingles
+      - - Feltro impregnado com asfalto
+      - - Esquis Alma de espuma
+      - - Têxteis Sintéticos (exceto raiom e náilon) mistura 50/50 ou menos - Linha, em carretéis plásticos
+          Sintéticos (exceto raiom e náilon) - mistura maior que 50/50 - Linha, em carretéis de madeira
+          ou papel - Tecidos
+      - - Raiom e náilon - Fibras em fardos - Linha, em carretéis de madeira ou papel - Tecidos
+      - - Pisos Vinílicos Placas em caixas de papelão
+      - - Papel revestido com cera Copos, pratos - Em caixas ou embalados em caixas de papelão (ênfase
+          no método de embalagem)
+      - - Arame - Arame sem capa em carretéis de plástico em caixas de papelão sobre estrados de madeira
+          - Arame com capa simples ou múltipla de PVC em carretéis de plástico em caixas de papelão sobre
+          estrados de madeira - Cabos simples, múltiplos ou de potência (PVC) em carretéis grandes de
+          plástico
+      - - Produtos de madeira Moldes
 notas:
 - Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
 - Continuação da tabela da Classe IV da página 19.
@@ -50,9 +85,12 @@ notas:
   superior a Classe III.
 - 2 Quando bebidas alcoólicas destiladas são armazenadas em recipientes de vidro em porta-paletes, estas
   devem ser consideradas na Classe III; quando paletizadas, estas devem ser consideradas na Classe IV.
-estado: pendente_humano
+estado: verificada
 resultado:
-  estado: pendente_humano
+  estado: verificada
   caminhos_comparados:
   - visual
-  motivo: é preciso a leitura visual e um segundo caminho independente
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001

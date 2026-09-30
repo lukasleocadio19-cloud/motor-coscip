@@ -1385,7 +1385,7 @@ nome completo e função.
 | 254x-x/xx | Fabricação de artigos de cutelaria, de serralheria e ferramentas |
 | 259x-x/xx | Fabricação de produtos de metal não especificados anteriormente |
 
-Fonte: NT 1-01 Parte 1, página 23, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-01 Parte 1, página 23, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 O hífen dentro de palavras ("agrí-colas", "quí-micos", "veí-culos") está na página; a leitura o mantém.
 A tabela continua na página 24.
 <!-- /tabela-conferida: Anexo A p23 -->
@@ -1543,7 +1543,7 @@ A tabela continua na página 24.
 | 9491-0/00 | Atividades de organizações religiosas ou filosóficas |
 | 9603-3/02 | Serviços de cremação |
 
-Fonte: NT 1-01 Parte 1, página 24, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-01 Parte 1, página 24, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 23 (o cabeçalho não se repete).
 O hífen dentro de palavras ("agrí-colas", "quí-micos", "veí-culos") está na página; a leitura o mantém.
 Nota: a letra "x" no CNAE significa que qualquer algarismo dentro do valor representa alto risco. Seguem alguns exemplos:
@@ -1669,7 +1669,7 @@ Tabela 6 - Unidade com atendimento de FARE
 | GBS – Barra da Tijuca | Avenida Ayrton Senna, 2001, Barra da Tijuca |
 | GOCG – Centro | Praça da República, 35, Centro |
 
-Fonte: NT 1-01 Parte 1, página 26, Tabela 1 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-01 Parte 1, página 26, Tabela 1 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 <!-- /tabela-conferida: Tabela 1 do Anexo B p26 -->
 
 <!-- tabela-conferida: Tabela 2 do Anexo B p26 -->
@@ -1680,7 +1680,7 @@ Fonte: NT 1-01 Parte 1, página 26, Tabela 1 do Anexo B; conferida em 2026-09-29
 | 14ºGBM - Duque de Caxias | Rua Doutor Manoel Teles, 1767, Prainha |
 | GOPP – Campos Elíseos | Rodovia Washington Luiz, Km 113, Campos Elíseos |
 
-Fonte: NT 1-01 Parte 1, página 26, Tabela 2 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-01 Parte 1, página 26, Tabela 2 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 <!-- /tabela-conferida: Tabela 2 do Anexo B p26 -->
 
 <!-- tabela-conferida: Tabela 3 do Anexo B p26 -->
@@ -1706,7 +1706,7 @@ Fonte: NT 1-01 Parte 1, página 26, Tabela 2 do Anexo B; conferida em 2026-09-29
 | 26ºGBM – Paraty | Avenida Roberto Silveira, s/n, Paraty |
 | 27ºGBM – Araruama | RJ 124, Km 36, Rio do Limão, Araruama |
 
-Fonte: NT 1-01 Parte 1, página 26, Tabela 3 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-01 Parte 1, página 26, Tabela 3 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 <!-- /tabela-conferida: Tabela 3 do Anexo B p26 -->
 
 <!-- tabela-conferida: Tabela 4 do Anexo B p26 -->
@@ -1717,7 +1717,7 @@ Fonte: NT 1-01 Parte 1, página 26, Tabela 3 do Anexo B; conferida em 2026-09-29
 | DGST – Diretoria Geral de Serviços Técnicos | Praça da República, 39, Centro, Rio de Janeiro |
 | DDP – Diretoria de Diversões Públicas | Rua do Senado, 22, Centro, Rio de Janeiro |
 
-Fonte: NT 1-01 Parte 1, página 26, Tabela 4 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-01 Parte 1, página 26, Tabela 4 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 <!-- /tabela-conferida: Tabela 4 do Anexo B p26 -->
 
 <!-- tabela-conferida: Tabela 5 do Anexo B p26 -->
@@ -1727,6 +1727,17 @@ Fonte: NT 1-01 Parte 1, página 26, Tabela 4 do Anexo B; conferida em 2026-09-29
 | --- | --- |
 | GPREVE - Prevenção em Estádios | Rua Aristides Caire, 56, Méier, Rio de Janeiro |
 
-Fonte: NT 1-01 Parte 1, página 26, Tabela 5 do Anexo B; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-01 Parte 1, página 26, Tabela 5 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
 <!-- /tabela-conferida: Tabela 5 do Anexo B p26 -->
+
+<!-- tabela-conferida: Tabela 6 do Anexo B p26 -->
+### Tabela 6 do Anexo B — Unidade com atendimento de FARE (conferida)
+
+| Unidade | Endereço |
+| --- | --- |
+| 1ºGSE – Catete | Praça São Salvador, 4, Catete, Rio de Janeiro |
+
+Fonte: NT 1-01 Parte 1, página 26, Tabela 6 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
+A camada de texto não reconhece esta tabela: o segundo caminho é a grade do PDF (extração geométrica).
+<!-- /tabela-conferida: Tabela 6 do Anexo B p26 -->
 

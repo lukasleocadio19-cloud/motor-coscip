@@ -42,13 +42,51 @@ caminhos:
     - - Papel, bobinas Em porta-paletes ou empilhado deitado – Peso médio ou pesado
     - - Filme fotográfico - Filme de 35 mm em cartuchos de metal em latas de polietileno em caixas de
         papelão - Papel, em folhas, em sacos de polietileno, em caixas de papelão
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 61.2
+      - 56.88
+      - 526.9
+      - 728.5
+      linhas:
+      - - Cereais matinais Embalados, em caixas de papelão
+      - - Carvão (vegetal) Em sacos - Padrão
+      - - Queijo - Embalado, em caixas de papelão - Discos, em caixas de papelão
+      - - Goma de mascar Embalados, em caixas de papelão
+      - - Chocolate Embalados, em caixas de papelão
+      - - Tecido Com ou sem caixas de papelão - Fibras naturais, viscose
+      - - Produtos de cacau Embalados, em caixas de papelão
+      - - Café Embalados, em caixas de papelão
+      - - Café em grão Em sacos
+      - - Algodão Embalados, em caixas de papelão
+      - - Fraldas Algodão, linho
+      - - Comidas secas Embalados, em caixas de papelão
+      - - Peixe ou produtos derivados Congelado - Em bandejas plásticas, em caixas de papelão
+      - - Comidas congeladas Bandejas plásticas
+      - - Móveis Madeira - Sem cobertura de plásticos ou estofamento de espuma plástica
+      - - Grãos – embalados em caixas de papelão - Cevada - Arroz - Aveia
+      - - Margarina Até 50% de óleo (em recipientes de papel ou plástico)
+      - - Colchões
+      - - Molas
+      - - Amêndoas - Embaladas, em caixas de papelão - Em sacos
+      - - Produtos de papel Livros, revistas, papéis de carta e envelopes, recipientes de papel para comida
+          revestidas de plástico, jornais, jogos de tabuleiro, produtos de papel tissue em caixas de papelão.
+      - - Papel, bobinas Em porta-paletes ou empilhado deitado – Peso médio ou pesado
+      - - Filme fotográfico - Filme de 35 mm em cartuchos de metal em latas de polietileno em caixas de
+          papelão - Papel, em folhas, em sacos de polietileno, em caixas de papelão
 notas:
 - Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
 - Continuação da tabela da Classe III da página 17; segue na página 19.
 - 'A camada de texto não reconhece esta tabela: o segundo caminho é a grade do PDF (extração geométrica).'
-estado: pendente_humano
+estado: verificada
 resultado:
-  estado: pendente_humano
+  estado: verificada
   caminhos_comparados:
   - visual
-  motivo: é preciso a leitura visual e um segundo caminho independente
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001

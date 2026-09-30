@@ -175,6 +175,58 @@ caminhos:
       - Classe III Plástico Grupo A
     - - Fósforos Embalados, em caixas de papelão - Papel - Madeira
       - Classe IV Plástico Grupo A
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 63.74
+      - 56.88
+      - 545.86
+      - 725.5
+      linhas:
+      - - Isolamento de fibra de vidro - Rolos de mantas laminadas com papel em um dos lados, em sacos
+          ou não
+        - Classe IV
+      - - Arquivos Metal - Caixa de papelão
+        - Classe I
+      - - Peixe ou produtos derivados Congelado - Embalagem sem plásticos e sem cera - Em caixas de papel
+          com cera, dentro de caixas de papelão - Em caixas de madeira ou barricas - Em bandejas plásticas,
+          em caixas de papelão
+        - Classe I Classe II Classe II Classe III
+      - - Enlatado - Em caixas de papelão
+        - Classe I
+      - - Comidas congeladas Embalagem sem plásticos e sem cera - Em caixas de papel com cera, dentro
+          de caixas de papelão - Bandejas plásticas
+        - Classe I Classe II Classe III
+      - - Frutas Frescas - Em recipientes e bandejas, exceto de plástico - Com divisórias de madeira
+        - Classe I Classe I
+      - - Móveis Madeira - Sem cobertura de plásticos ou estofamento de espuma plástica - Com cobertura
+          plástica - Com estofamento de espuma plástica
+        - Classe III Classe IV Plástico Grupo A
+      - - Grãos – Embalados em caixas de papelão - Cevada - Arroz - Aveia
+        - Classe III Classe III Classe III
+      - - -Sorvete
+        - Classe I
+      - - -Produtos de couro
+        - Classe III
+      - - Couros e Peles -Em fardos
+        - Classe II
+      - - Luminárias Não feitas de plástico - Em caixas de papelão
+        - Classe II
+      - - Isqueiros Butano - Em blísters, em caixas de papelão - A granel em caixas grandes (Aerossol
+          Nível 3)
+        - Plástico Grupo A Fora do escopo
+      - - Bebidas alcoólicas (destiladas) Teor alcoólico de 50% ou menos, 1 gal (3,8 L) ou menos, em caixas
+          de papelão - Vidro (paletizado)6 - Garrafas plásticas
+        - Classe IV Classe IV
+      - - Mármore Artificial, pias e tampos - Em caixas de papelão, em engradados
+        - Classe II
+      - - Margarina - Até 50% de óleo (em recipientes de papel ou plástico) - Entre 50 e 80% de óleo (em
+          qualquer embalagem)
+        - Classe III Plástico Grupo A
+      - - Fósforos Embalados, em caixas de papelão - Papel - Madeira
+        - Classe IV Plástico Grupo A
 notas:
 - Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na
   linha em que a página a alinha.
@@ -184,6 +236,10 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
+  texto: verificada

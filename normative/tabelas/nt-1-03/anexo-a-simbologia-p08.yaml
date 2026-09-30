@@ -80,14 +80,91 @@ caminhos:
     - - AVISADOR AUDIOVISUAL
     - - AVISADOR SONORO MECÂNICO
     - - AVISADOR VISUAL
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 70.94
+      - 56.88
+      - 509.86
+      - 767.04
+      linhas:
+      - - ) . T N O C ( S E U Q N A T E S O S A V
+        - S E U Q N A T
+        - TANQUE VERTICAL SUPERFÍCIE
+        - ''
+      - - null
+        - null
+        - TANQUE HORIZONTAL SEMIENTERRADO
+        - ''
+      - - null
+        - null
+        - TANQUE VERTICAL SEMIENTERRADO
+        - ''
+      - - O C I R T É L E A M E T S I S
+        - ''
+        - CHAVE ELÉTRICA SECUNDÁRIA
+        - ''
+      - - null
+        - null
+        - CHAVE ELÉTRICA PRINCIPAL
+        - ''
+      - - null
+        - null
+        - QUADRO DE DISTRIBUIÇÃO DE LUZ
+        - ''
+      - - E M R A L A E D A M E T S I S
+        - ''
+        - AVISADOR SONORO ELETRÔNICO
+        - ''
+      - - null
+        - null
+        - AVISADOR AUDIOVISUAL
+        - ''
+      - - null
+        - null
+        - AVISADOR SONORO MECÂNICO
+        - ''
+      - - null
+        - null
+        - AVISADOR VISUAL
+        - ''
 notas:
 - A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
   da página).
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 0
+    coluna: 0
+    a: VASOS E TANQUES (CONT.)
+    b: ) . T N O C ( S E U Q N A T E S O S A V
+    estado: divergente
+    score: 30.4
+  - linha: 0
+    coluna: 1
+    a: TANQUES
+    b: S E U Q N A T
+    estado: divergente
+    score: 14.3
+  - linha: 3
+    coluna: 0
+    a: SISTEMA ELÉTRICO
+    b: O C I R T É L E A M E T S I S
+    estado: divergente
+    score: 45.2
+  - linha: 6
+    coluna: 0
+    a: SISTEMA DE ALARME
+    b: E M R A L A E D A M E T S I S
+    estado: divergente
+    score: 43.8

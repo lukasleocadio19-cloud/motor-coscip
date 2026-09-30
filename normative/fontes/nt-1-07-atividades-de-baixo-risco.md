@@ -748,7 +748,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 0133-4/99 | Cultivo de frutas de lavoura permanente não especificadas anteriormente |
 | 0134-2/00 | Cultivo de café |
 
-Fonte: NT 1-07, página 13, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 13, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 A tabela continua na página 14.
 <!-- /tabela-conferida: Anexo A p13 -->
 
@@ -859,7 +859,7 @@ A tabela continua na página 14.
 | 0210-1/04 | Cultivo de teca |
 | 0210-1/05 | Cultivo de espécies madeireiras, exceto eucalipto, acácia-negra, pinus e teca |
 
-Fonte: NT 1-07, página 14, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 14, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 13.
 A tabela continua na página 15.
 <!-- /tabela-conferida: Anexo A p14 -->
@@ -971,7 +971,7 @@ A tabela continua na página 15.
 | 1020-1/02 | Fabricação de conservas de peixes, crustáceos e moluscos |
 | 1031-7/00 | Fabricação de conservas de frutas |
 
-Fonte: NT 1-07, página 15, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 15, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 14.
 A tabela continua na página 16.
 <!-- /tabela-conferida: Anexo A p15 -->
@@ -1083,7 +1083,7 @@ A tabela continua na página 16.
 | 2391-5/02 | Aparelhamento de pedras para construção, exceto associado à extração |
 | 2391-5/03 | Aparelhamento de placas e execução de trabalhos em mármore, granito, ardósia e outras pedras |
 
-Fonte: NT 1-07, página 16, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 16, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 15.
 A tabela continua na página 17.
 <!-- /tabela-conferida: Anexo A p16 -->
@@ -1203,7 +1203,7 @@ A tabela continua na página 17.
 | 3831-9/99 | Recuperação de materiais metálicos, exceto alumínio |
 | 3832-7/00 | Recuperação de materiais plásticos |
 
-Fonte: NT 1-07, página 17, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 17, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 16.
 A tabela continua na página 18.
 A camada de texto parte as descrições de duas linhas em duas linhas e repete três descrições (3314-7/06, 3314-7/16, 3314-7/22) numa linha vazia; a comparação junta as partes e descarta as repetições.
@@ -1322,7 +1322,7 @@ A camada de texto parte as descrições de duas linhas em duas linhas e repete t
 | 4530-7/05 | Comércio a varejo de pneumáticos e câmaras-de-ar |
 | 4530-7/06 | Representantes comerciais e agentes do comércio de peças e acessórios novos e usados para veículos automotores |
 
-Fonte: NT 1-07, página 18, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 18, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 17.
 A tabela continua na página 19.
 A camada de texto parte as descrições de duas linhas e repete 4 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
@@ -1442,7 +1442,7 @@ A camada de texto parte as descrições de duas linhas e repete 4 descrição(õ
 | 4644-3/01 | Comércio atacadista de medicamentos e drogas de uso humano |
 | 4644-3/02 | Comércio atacadista de medicamentos e drogas de uso veterinário |
 
-Fonte: NT 1-07, página 19, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 19, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 18.
 A tabela continua na página 20.
 A camada de texto parte as descrições de duas linhas e repete 4 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
@@ -1560,7 +1560,7 @@ A camada de texto parte as descrições de duas linhas e repete 4 descrição(õ
 | 4743-1/00 | Comércio varejista de vidros |
 | 4744-0/01 | Comércio varejista de ferragens e ferramentas |
 
-Fonte: NT 1-07, página 20, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 20, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 19.
 A tabela continua na página 21.
 A camada de texto parte as descrições de duas linhas e repete 3 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
@@ -1675,7 +1675,7 @@ A camada de texto parte as descrições de duas linhas e repete 3 descrição(õ
 | 4789-0/07 | Comércio varejista de equipamentos para escritório |
 | 4789-0/08 | Comércio varejista de artigos fotográficos e para filmagem |
 
-Fonte: NT 1-07, página 21, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 21, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 20.
 A tabela continua na página 22.
 A camada de texto parte as descrições de duas linhas e repete 1 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
@@ -1795,7 +1795,7 @@ A camada de texto parte as descrições de duas linhas e repete 1 descrição(õ
 | 5813-1/00 | Edição de revistas |
 | 5819-1/00 | Edição de cadastros, listas e outros produtos gráficos |
 
-Fonte: NT 1-07, página 22, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 22, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 21.
 A tabela continua na página 23.
 A camada de texto parte as descrições de duas linhas e repete 4 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
@@ -1912,7 +1912,7 @@ A camada de texto parte as descrições de duas linhas e repete 4 descrição(õ
 | 6434-4/00 | Agências de fomento |
 | 6435-2/01 | Sociedades de crédito imobiliário |
 
-Fonte: NT 1-07, página 23, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 23, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 22.
 A tabela continua na página 24.
 "Web desing" é grafia da fonte (por "Web design").
@@ -2026,7 +2026,7 @@ A camada de texto parte as descrições de duas linhas e repete 2 descrição(õ
 | 6619-3/02 | Correspondentes de instituições financeiras |
 | 6619-3/03 | Representações de bancos estrangeiros |
 
-Fonte: NT 1-07, página 24, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 24, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 23.
 A tabela continua na página 25.
 <!-- /tabela-conferida: Anexo A p24 -->
@@ -2140,7 +2140,7 @@ A tabela continua na página 25.
 | 7420-0/01 | Atividades de produção de fotografias, exceto aérea e submarina |
 | 7420-0/02 | Atividades de produção de fotografias aéreas e submarinas |
 
-Fonte: NT 1-07, página 25, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 25, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 24.
 A tabela continua na página 26.
 "Desing" (7410-2/03 e 7410-2/99) é grafia da fonte (por "design").
@@ -2256,7 +2256,7 @@ A camada de texto parte as descrições de duas linhas e repete 1 descrição(õ
 | 8130-3/00 | Atividades paisagísticas |
 | 8211-3/00 | Serviços combinados de escritório e apoio administrativo |
 
-Fonte: NT 1-07, página 26, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 26, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 25.
 A tabela continua na página 27.
 A camada de texto parte as descrições de duas linhas e repete 1 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
@@ -2373,7 +2373,7 @@ A camada de texto parte as descrições de duas linhas e repete 1 descrição(õ
 | 8621-6/01 | UTI móvel |
 | 8621-6/02 | Serviços móveis de atendimento a urgências, exceto por UTI móvel |
 
-Fonte: NT 1-07, página 27, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 27, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 26.
 A tabela continua na página 28.
 A camada de texto parte as descrições de duas linhas e repete 2 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
@@ -2488,7 +2488,7 @@ A camada de texto parte as descrições de duas linhas e repete 2 descrição(õ
 | 9102-3/02 | Restauração e conservação de lugares e prédios históricos |
 | 9313-1/00 | Atividades de condicionamento físico |
 
-Fonte: NT 1-07, página 28, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 28, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 27.
 A tabela continua na página 29.
 A camada de texto parte as descrições de duas linhas e repete 1 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
@@ -2584,7 +2584,7 @@ A camada de texto parte as descrições de duas linhas e repete 1 descrição(õ
 | 9609-2/99 | Outras atividades de serviços pessoais não especificadas anteriormente |
 | 9700-5/00 | Serviços domésticos |
 
-Fonte: NT 1-07, página 29, Anexo A; conferida em 2026-09-29 (visual + texto).
+Fonte: NT 1-07, página 29, Anexo A; conferida em 2026-09-29 (visual + geometrica).
 Continuação da tabela da página 28.
 A camada de texto parte as descrições de duas linhas e repete 1 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
 <!-- /tabela-conferida: Anexo A p29 -->

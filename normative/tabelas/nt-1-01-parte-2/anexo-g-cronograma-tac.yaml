@@ -81,14 +81,137 @@ caminhos:
     - - Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA)
       - / /
       - / /
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id002
+      - 85.66
+      - 426.55
+      - 516.92
+      - 652.33
+      linhas:
+      - - ''
+        - null
+        - null
+      - - CRONOGRAMA PARA A EFETIVA REGULARIZAÇÃO
+        - null
+        - null
+      - - ''
+        - INÍCIO
+        - ''
+      - - EXIGÊNCIAS / MEDIDAS DE SEGURANÇA
+        - null
+        - CONCLUSÃO
+      - - (...)
+        - / /
+        - ''
+      - - null
+        - null
+        - / /
+      - - ''
+        - null
+        - null
+      - - null
+        - null
+        - ''
+      - - (...)
+        - / /
+        - ''
+      - - null
+        - null
+        - / /
+      - - ''
+        - null
+        - null
+      - - null
+        - null
+        - ''
+      - - (...)
+        - / /
+        - ''
+      - - null
+        - null
+        - / /
+      - - ''
+        - null
+        - null
+      - - null
+        - null
+        - ''
+      - - (...)
+        - / /
+        - ''
+      - - null
+        - null
+        - / /
+      - - ''
+        - null
+        - null
+      - - null
+        - null
+        - ''
+      - - ''
+        - / /
+        - ''
+      - - (...)
+        - null
+        - / /
+      - - ''
+        - null
+        - ''
+      - - ''
+        - / /
+        - ''
+      - - (...)
+        - null
+        - / /
+      - - ''
+        - null
+        - ''
+      - - ''
+        - / /
+        - ''
+      - - Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA)
+        - null
+        - null
+      - - null
+        - null
+        - / /
+      - - null
+        - null
+        - ''
+      - - ''
+        - null
+        - null
 notas:
 - 'Modelo: "(...)" e "/ /" são campos para preenchimento.'
 - A extração lê a moldura da página inteira como tabela; só as linhas do cronograma entram na comparação.
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id002
+  texto: verificada
+  motivo: número de linhas/colunas diferente
+  forma:
+  - - 1
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+  - - 2
+    - 2
+    - 2
+    - 1
+    - 2
+    - 1
+    - 2

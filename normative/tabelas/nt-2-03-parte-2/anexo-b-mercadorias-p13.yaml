@@ -175,6 +175,56 @@ caminhos:
     - - Sintéticos (exceto raiom e náilon) - mistura maior que 50/50 - Linha, em carretéis de madeira
         ou papel - Tecidos - Fibras em fardos
       - Classe IV Classe IV Plástico Grupo A
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 63.74
+      - 56.88
+      - 545.86
+      - 725.5
+      linhas:
+      - - '- Líquidos ou semilíquidos (ketchup, por exemplo) incombustíveis em recipientes plásticos com
+          paredes de espessura maior que ¼ pol. (6,4 mm) e volumes maiores que 5 gal (18,9 L)'
+        - Plástico Grupo A
+      - - Poliuretano - Expandido, com ou sem caixas de papelão
+        - Plástico Grupo A
+      - - Aves e derivados - Em latas, em caixas de papelão - Congelada, embalagem sem plástico e sem
+          cera - Congeladas (em bandejas de papel ou de plástico expandido)
+        - Classe I Classe I Classe II
+      - - Pós Materiais combustíveis comuns – fluem livremente - Em sacos de papel (por exemplo, farinha,
+          açúcar)
+        - Classe II
+      - - PVA (álcool polivinílico), Resinas PVC (cloreto de polivinila) - Flexível (por exemplo, coberturas
+          de cabos, folhas plastificadas) - Rígido (por exemplo, tubos e conexões) - Resinas em sacos
+        - Classe III Classe III Classe III
+      - - Trapos Em fardos - Fibras naturais - Fibras sintéticas
+        - Classe III Classe IV
+      - - Borracha - Natural, blocos em caixas de papelão - Sintético
+        - Classe IV Plástico Grupo A
+      - - Sal - Em sacos - Embalado, em caixas de papelão
+        - Classe I Classe II
+      - - Telhas tipo Shingles - Fibra de vidro revestida com asfalto - Feltro impregnado com asfalto
+        - Classe III Classe IV
+      - - Amortecedores - Cobertura metálica - Cobertura plástica
+        - Classe II Classe III
+      - - Livros e revistas inacabados Livros e revistas - Pilha sólida sobre palete
+        - Classe II
+      - - Esquis - Madeira - Alma de espuma
+        - Classe III Classe IV
+      - - Bonecos de pelúcia - Espuma ou sintético
+        - Plástico Grupo A
+      - - Melaço - Em tambores metálicos - Barricas de madeira
+        - Classe I Classe II
+      - - Têxteis - Vestimentas ou produtos têxteis de fibras naturais
+        - Classe III
+      - - Sintéticos (exceto raiom e náilon) - mistura 50/50 ou menos - Linha, em carretéis de madeira
+          ou papel - Tecidos - Linha, em carretéis plásticos - Fibras em fardos
+        - Classe III Classe III Classe IV Plástico Grupo A
+      - - Sintéticos (exceto raiom e náilon) - mistura maior que 50/50 - Linha, em carretéis de madeira
+          ou papel - Tecidos - Fibras em fardos
+        - Classe IV Classe IV Plástico Grupo A
 notas:
 - Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na
   linha em que a página a alinha.
@@ -185,6 +235,10 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
+  texto: verificada

@@ -157,29 +157,6 @@ Fonte: CBMERJ.
 |  |  | EXTINTOR DE PÓ ABC |  |
 |  |  | EXTINTOR DE PÓ D |  |
 
-<!-- tabela-conferida: Anexo A p4 -->
-### Anexo A — Simbologia para projeto de segurança contra incêndio e pânico (conferida)
-
-| Grupo | Subgrupo | Nome do símbolo | Símbolo gráfico (desenho: ver a imagem da página) |
-| --- | --- | --- | --- |
-| EXTINTORES | PORTÁTEIS | EXTINTOR DE GÁS CARBÔNICO - CO₂ |  |
-| EXTINTORES | PORTÁTEIS | EXTINTOR DE ÁGUA PRESSURIZADA – AP |  |
-| EXTINTORES | PORTÁTEIS | EXTINTOR DE ESPUMA MECÂNICA |  |
-| EXTINTORES | PORTÁTEIS | EXTINTOR DE PÓ BC |  |
-| EXTINTORES | PORTÁTEIS | EXTINTOR DE PÓ ABC |  |
-| EXTINTORES | PORTÁTEIS | EXTINTOR DE PÓ D |  |
-| EXTINTORES | SOBRERODAS | EXTINTOR DE GÁS CARBÔNICO - CO₂ |  |
-| EXTINTORES | SOBRERODAS | EXTINTOR DE ÁGUA PRESSURIZADA – AP |  |
-| EXTINTORES | SOBRERODAS | EXTINTOR DE ESPUMA MECÂNICA |  |
-| EXTINTORES | SOBRERODAS | EXTINTOR DE PÓ BC |  |
-| EXTINTORES | SOBRERODAS | EXTINTOR DE PÓ ABC |  |
-| EXTINTORES | SOBRERODAS | EXTINTOR DE PÓ D |  |
-
-Fonte: NT 1-03, página 4, Anexo A; conferida em 2026-09-29 (visual + texto).
-A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem da página).
-Fonte: CBMERJ.
-<!-- /tabela-conferida: Anexo A p4 -->
-
 ---
 
 ## Página 5
@@ -208,32 +185,6 @@ Fonte: CBMERJ.
 |  |  | BOMBA PARA SISTEMA DE SPRINKLERS |  |
 |  |  | RESERVA TÉCNICA PARA SISTEMA DE SPRINKLERS |  |
 
-<!-- tabela-conferida: Anexo A p5 -->
-### Anexo A — Simbologia para projeto de segurança contra incêndio e pânico (conferida)
-
-| Grupo | Subgrupo | Nome do símbolo | Símbolo gráfico (desenho: ver a imagem da página) |
-| --- | --- | --- | --- |
-| SISTEMA FIXO DE EXTINÇÃO | SISTEMA DE HIDRANTES | HIDRANTE DUPLO |  |
-| SISTEMA FIXO DE EXTINÇÃO | SISTEMA DE HIDRANTES | HIDRANTE SIMPLES |  |
-| SISTEMA FIXO DE EXTINÇÃO | SISTEMA DE HIDRANTES | HIDRANTE URBANO |  |
-| SISTEMA FIXO DE EXTINÇÃO | SISTEMA DE HIDRANTES | HIDRANTE URBANO SUBTERRÂNEO |  |
-| SISTEMA FIXO DE EXTINÇÃO | SISTEMA DE HIDRANTES | BOMBA DE INCÊNDIO |  |
-| SISTEMA FIXO DE EXTINÇÃO | SISTEMA DE HIDRANTES | RESERVA TÉCNICA DE INCÊNDIO |  |
-| SISTEMA FIXO DE EXTINÇÃO | SISTEMA DE HIDRANTES | REGISTRO DE RECALQUE |  |
-| SISTEMA FIXO DE EXTINÇÃO | SISTEMA DE HIDRANTES | REGISTRO DE RECALQUE COM VÁLVULA DE RETENÇÃO |  |
-| SISTEMA FIXO DE EXTINÇÃO | SISTEMA DE HIDRANTES | ACIONADOR BOMBA INCÊNDIO |  |
-| SISTEMA FIXO DE EXTINÇÃO | SPRINKLERS | BICO DE SPRINKLER PARA CIMA |  |
-| SISTEMA FIXO DE EXTINÇÃO | SPRINKLERS | BICO DE SPRINKLER PENDENTE |  |
-| SISTEMA FIXO DE EXTINÇÃO | SPRINKLERS | BICO DE SPRINKLER LATERAL |  |
-| SISTEMA FIXO DE EXTINÇÃO | SPRINKLERS | REGISTRO DE RECALQUE PARA SISTEMA DE SPRINKLERS |  |
-| SISTEMA FIXO DE EXTINÇÃO | SPRINKLERS | BOMBA PARA SISTEMA DE SPRINKLERS |  |
-| SISTEMA FIXO DE EXTINÇÃO | SPRINKLERS | RESERVA TÉCNICA PARA SISTEMA DE SPRINKLERS |  |
-
-Fonte: NT 1-03, página 5, Anexo A; conferida em 2026-09-29 (visual + texto).
-A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem da página).
-A tabela continua na página 6.
-<!-- /tabela-conferida: Anexo A p5 -->
-
 ---
 
 ## Página 6
@@ -259,31 +210,6 @@ Fonte: CBMERJ.
 |  |  | LÍQUIDO GERADOR DE ESPUMA |  |
 |  |  | ESGUICHO LANÇADOR DE ESPUMA |  |
 
-<!-- tabela-conferida: Anexo A p6 -->
-### Anexo A — Simbologia para projeto de segurança contra incêndio e pânico (conferida)
-
-| Grupo | Subgrupo | Nome do símbolo | Símbolo gráfico (desenho: ver a imagem da página) |
-| --- | --- | --- | --- |
-|  |  | PAINEL DE COMANDO DO SISTEMA DE SPRINKLERS |  |
-|  |  | VÁLVULA DE GOVERNO E ALARME - VGA |  |
-|  | GÁS CARBÔNICO | BATERIA DE CILINDROS DE CO₂ |  |
-|  | GÁS CARBÔNICO | ACIONADOR MANUAL DO SISTEMA DE CO₂ |  |
-|  | GÁS CARBÔNICO | BATERIA DE HALON |  |
-|  | SISTEMA DE ESPUMA | TANQUE ATMOSFÉRICO DE ESPUMA |  |
-|  | SISTEMA DE ESPUMA | ESTAÇÃO FIXA DE EMULSIONAMENTO |  |
-|  | SISTEMA DE ESPUMA | ESTAÇÃO MÓVEL DE EMULSIONAMENTO |  |
-|  | SISTEMA DE ESPUMA | CANHÃO MONITOR PORTÁTIL SISTEMA DE ESPUMA |  |
-|  | SISTEMA DE ESPUMA | CANHÃO MONITOR SISTEMA DE RESFRIAMENTO |  |
-|  | SISTEMA DE ESPUMA | LÍQUIDO GERADOR DE ESPUMA |  |
-|  | SISTEMA DE ESPUMA | ESGUICHO LANÇADOR DE ESPUMA |  |
-
-Fonte: NT 1-03, página 6, Anexo A; conferida em 2026-09-29 (visual + texto).
-A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem da página).
-As células vazias das duas primeiras colunas no alto da página continuam a tabela da página anterior.
-Na primeira coluna, as duas últimas linhas ficam numa célula vazia própria.
-Fonte: CBMERJ.
-<!-- /tabela-conferida: Anexo A p6 -->
-
 ---
 
 ## Página 7
@@ -308,28 +234,6 @@ Fonte: CBMERJ.
 |  |  | TANQUE HORIZONTAL SUPERFÍCIE |  |
 |  |  | TANQUE VERTICAL ENTERRADO |  |
 
-<!-- tabela-conferida: Anexo A p7 -->
-### Anexo A — Simbologia para projeto de segurança contra incêndio e pânico (conferida)
-
-| Grupo | Subgrupo | Nome do símbolo | Símbolo gráfico (desenho: ver a imagem da página) |
-| --- | --- | --- | --- |
-| SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA |  | PONTO DE ILUMINAÇÃO DE EMERGÊNCIA |  |
-| SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA |  | PONTO DE ILUMINAÇÃO DE EMERGÊNCIA TIPO BALIZAMENTO |  |
-| SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA |  | PONTO DE ILUMINAÇÃO DE EMERGÊNCIA À PROVA DE EXPLOSÃO E PÓ |  |
-| SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA |  | BATERIAS E ACUMULADORES DO SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA |  |
-| SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA |  | CENTRAL DO SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA |  |
-| SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA |  | GRUPO MOTOGERADOR |  |
-| VASOS E TANQUES | GLP | CENTRAL DE GLP |  |
-| VASOS E TANQUES | GLP | VASO PRESSÃO |  |
-| VASOS E TANQUES | TANQUES | TANQUE HORIZONTAL ENTERRADO |  |
-| VASOS E TANQUES | TANQUES | TANQUE HORIZONTAL SUPERFÍCIE |  |
-| VASOS E TANQUES | TANQUES | TANQUE VERTICAL ENTERRADO |  |
-
-Fonte: NT 1-03, página 7, Anexo A; conferida em 2026-09-29 (visual + texto).
-A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem da página).
-Fonte: CBMERJ.
-<!-- /tabela-conferida: Anexo A p7 -->
-
 ---
 
 ## Página 8
@@ -352,26 +256,6 @@ Fonte: CBMERJ.
 |  |  | AVISADOR AUDIOVISUAL |  |
 |  |  | AVISADOR SONORO MECÂNICO |  |
 |  |  | AVISADOR VISUAL |  |
-
-<!-- tabela-conferida: Anexo A p8 -->
-### Anexo A — Simbologia para projeto de segurança contra incêndio e pânico (conferida)
-
-| Grupo | Subgrupo | Nome do símbolo | Símbolo gráfico (desenho: ver a imagem da página) |
-| --- | --- | --- | --- |
-| VASOS E TANQUES (CONT.) | TANQUES | TANQUE VERTICAL SUPERFÍCIE |  |
-| VASOS E TANQUES (CONT.) | TANQUES | TANQUE HORIZONTAL SEMIENTERRADO |  |
-| VASOS E TANQUES (CONT.) | TANQUES | TANQUE VERTICAL SEMIENTERRADO |  |
-| SISTEMA ELÉTRICO |  | CHAVE ELÉTRICA SECUNDÁRIA |  |
-| SISTEMA ELÉTRICO |  | CHAVE ELÉTRICA PRINCIPAL |  |
-| SISTEMA ELÉTRICO |  | QUADRO DE DISTRIBUIÇÃO DE LUZ |  |
-| SISTEMA DE ALARME |  | AVISADOR SONORO ELETRÔNICO |  |
-| SISTEMA DE ALARME |  | AVISADOR AUDIOVISUAL |  |
-| SISTEMA DE ALARME |  | AVISADOR SONORO MECÂNICO |  |
-| SISTEMA DE ALARME |  | AVISADOR VISUAL |  |
-
-Fonte: NT 1-03, página 8, Anexo A; conferida em 2026-09-29 (visual + texto).
-A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem da página).
-<!-- /tabela-conferida: Anexo A p8 -->
 
 ---
 
@@ -396,27 +280,6 @@ A coluna da direita traz o desenho do símbolo; o desenho não é texto e não �
 |  |  | PROTEÇÃO CONTRA INTEMPÉRIES |  |
 |  |  | ACIONADOR MANUAL |  |
 |  |  | CENTRAL |  |
-
-<!-- tabela-conferida: Anexo A p9 -->
-### Anexo A — Simbologia para projeto de segurança contra incêndio e pânico (conferida)
-
-| Grupo | Subgrupo | Nome do símbolo | Símbolo gráfico (desenho: ver a imagem da página) |
-| --- | --- | --- | --- |
-| SISTEMA DE DETECÇÃO |  | DETECTOR TÉRMICO |  |
-| SISTEMA DE DETECÇÃO |  | DETECTOR TERMOVELOCIMÉTRICO |  |
-| SISTEMA DE DETECÇÃO |  | DETECTOR DE FUMAÇA |  |
-| SISTEMA DE DETECÇÃO |  | DETECTOR MULTISENSOR |  |
-| SISTEMA DE DETECÇÃO |  | DETECTOR DE CHAMA |  |
-| SISTEMA DE DETECÇÃO |  | DETECTOR NO ENTREFORRO |  |
-| SISTEMA DE DETECÇÃO |  | DETECTOR NO ENTREPISO |  |
-| SISTEMA DE DETECÇÃO |  | DETECTOR NA PAREDE |  |
-| SISTEMA DE DETECÇÃO |  | PROTEÇÃO CONTRA INTEMPÉRIES |  |
-| SISTEMA DE DETECÇÃO |  | ACIONADOR MANUAL |  |
-| SISTEMA DE DETECÇÃO |  | CENTRAL |  |
-
-Fonte: NT 1-03, página 9, Anexo A; conferida em 2026-09-29 (visual + texto).
-A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem da página).
-<!-- /tabela-conferida: Anexo A p9 -->
 
 ---
 
@@ -445,31 +308,6 @@ A coluna da direita traz o desenho do símbolo; o desenho não é texto e não �
 |  |  | DAMPER CORTA-FOGO |  |
 |  | DAMPERS | DAMPER CORTA-FUMAÇA |  |
 
-<!-- tabela-conferida: Anexo A p10 -->
-### Anexo A — Simbologia para projeto de segurança contra incêndio e pânico (conferida)
-
-| Grupo | Subgrupo | Nome do símbolo | Símbolo gráfico (desenho: ver a imagem da página) |
-| --- | --- | --- | --- |
-|  |  | BARRA ANTIPÂNICO |  |
-| SISTEMAS PASSIVOS |  | PORTA CORTA-FOGO P-60 |  |
-| SISTEMAS PASSIVOS | ABERTURAS PROTEGIDAS | PORTA CORTA-FOGO P-90 |  |
-| SISTEMAS PASSIVOS | ABERTURAS PROTEGIDAS | PORTA CORTA-FOGO P-120 |  |
-| SISTEMAS PASSIVOS | ABERTURAS PROTEGIDAS | PAREDE CORTA-FOGO |  |
-| SISTEMAS PASSIVOS | VEDOS | PAREDE DE COMPARTIMENTAÇÃO |  |
-| SISTEMAS PASSIVOS | VEDOS | PAREDE COMUM |  |
-| SISTEMAS PASSIVOS | VEDOS | DIVISÓRIA |  |
-| SISTEMAS PASSIVOS | VEDOS | ELEVADOR |  |
-| SISTEMAS PASSIVOS | ELEVADORES | ELEVADOR DE EMERGÊNCIA |  |
-| SISTEMAS PASSIVOS | ELEVADORES | MONTACARGA |  |
-| SISTEMAS PASSIVOS | ELEVADORES | SHAFT PROTEGIDO |  |
-| SISTEMAS PASSIVOS | ELEVADORES | DAMPER CORTA-FOGO |  |
-| SISTEMAS PASSIVOS | DAMPERS | DAMPER CORTA-FUMAÇA |  |
-
-Fonte: NT 1-03, página 10, Anexo A; conferida em 2026-09-29 (visual + texto).
-A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem da página).
-As células vazias das duas primeiras colunas no alto da página continuam a tabela da página anterior.
-<!-- /tabela-conferida: Anexo A p10 -->
-
 ---
 
 ## Página 11
@@ -491,27 +329,6 @@ As células vazias das duas primeiras colunas no alto da página continuam a tab
 |  |  | VENEZIANA DE ENTRADA DE AR JUNTO AO TETO |  |
 |  |  | GRELHA COM DISPOSITIVO DE AJUSTE E BALANCEAMENTO |  |
 |  |  | DIMENSÕES DA VENEZIANA E ALTURA DO PISO |  |
-
-<!-- tabela-conferida: Anexo A p11 -->
-### Anexo A — Simbologia para projeto de segurança contra incêndio e pânico (conferida)
-
-| Grupo | Subgrupo | Nome do símbolo | Símbolo gráfico (desenho: ver a imagem da página) |
-| --- | --- | --- | --- |
-|  |  | DAMPER CORTA-FOGO E CORTA-FUMAÇA |  |
-|  |  | VENTILADOR OU EXAUSTOR PARA CONTROLE DE FUMAÇA |  |
-|  | CONTROLE DE FUMAÇA | ACIONADOR MANUAL (EXAUSTÃO OU VENTILAÇÃO) |  |
-|  | CONTROLE DE FUMAÇA | DAMPER DE SOBREPRESSÃO |  |
-|  | CONTROLE DE FUMAÇA | VENEZIANA DE ENTRADA DE AR COM FILTRO |  |
-|  | CONTROLE DE FUMAÇA | VENEZIANA DE ENTRADA DE AR JUNTO AO PISO |  |
-|  | CONTROLE DE FUMAÇA | VENEZIANA DE ENTRADA DE AR JUNTO AO TETO |  |
-|  | CONTROLE DE FUMAÇA | GRELHA COM DISPOSITIVO DE AJUSTE E BALANCEAMENTO |  |
-|  | CONTROLE DE FUMAÇA | DIMENSÕES DA VENEZIANA E ALTURA DO PISO |  |
-
-Fonte: NT 1-03, página 11, Anexo A; conferida em 2026-09-29 (visual + texto).
-A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem da página).
-As células vazias das duas primeiras colunas no alto da página continuam a tabela da página anterior.
-O símbolo de "Dimensões da veneziana e altura do piso" é o desenho "Largura x Altura (Veneziana)" sobre "Altura do piso", separados por um traço.
-<!-- /tabela-conferida: Anexo A p11 -->
 
 ---
 
@@ -535,24 +352,3 @@ Fonte: CBMERJ.
 |  |  | TUBO QUE DESCE |  |
 |  |  | TUBO QUE PASSA |  |
 |  |  | REPRESENTAÇÃO DO DIÂMENTRO DA CANALIZAÇÃO |  |
-<!-- tabela-conferida: Anexo A p12 -->
-### Anexo A — Simbologia para projeto de segurança contra incêndio e pânico (conferida)
-
-| Grupo | Subgrupo | Nome do símbolo | Símbolo gráfico (desenho: ver a imagem da página) |
-| --- | --- | --- | --- |
-| ROTAS DE FUGA | DIRECIONAMENTO | DIREÇÃO DO FLUXO |  |
-| ROTAS DE FUGA | DIRECIONAMENTO | SAÍDA FINAL |  |
-| OUTROS |  | REGISTRO |  |
-| OUTROS |  | TANQUE DE PRESSÃO |  |
-| OUTROS |  | MANÔMETRO |  |
-| OUTROS |  | PRESSOSTATO |  |
-| OUTROS |  | TUBO QUE SOBE |  |
-| OUTROS |  | TUBO QUE DESCE |  |
-| OUTROS |  | TUBO QUE PASSA |  |
-| OUTROS |  | REPRESENTAÇÃO DO DIÂMENTRO DA CANALIZAÇÃO |  |
-
-Fonte: NT 1-03, página 12, Anexo A; conferida em 2026-09-29 (visual + texto).
-A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem da página).
-Fonte: CBMERJ.
-<!-- /tabela-conferida: Anexo A p12 -->
-

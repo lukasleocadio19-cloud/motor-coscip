@@ -178,6 +178,59 @@ caminhos:
         recipientes plásticos com paredes de espessura menor ou igual a ¼ pol. (6,4 mm) e volumes maiores
         que 5 gal (18,9 L)
       - Classe I Classe II
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.76
+      - 56.88
+      - 538.9
+      - 724.06
+      linhas:
+      - - Colchões - De molas - Espuma (produto final)
+        - Classe III Plástico Grupo A
+      - - Carnes e derivados - A granel - Em latas, em caixas de papelão - Congelada, embalagem sem plástico
+          e sem cera - Congelada, recipientes de papel encerado - Congelada, bandejas de plástico expandido
+        - Classe I Classe I Classe I Classe II Classe II
+      - - Mesas de escritório de metal - Com tampos e acabamento em plástico
+        - Classe I
+      - - Leite - Recipientes de papel não encerado - Recipientes de papel encerado - Recipientes plásticos
+          - Recipientes em engradados plásticos
+        - Classe I Classe I Classe I Plástico Grupo A
+      - - Motores - Elétricos
+        - Classe I
+      - - Esmalte para unhas - Frascos de vidro de 1-oz a 2-oz (29,6-ml a 59,1-ml), em caixas de papelão
+          - Frascos de plástico de 1-oz a 2-oz (29,6-ml a 59,1-ml), em caixas de papelão
+        - Classe IV Plástico Grupo A
+      - - Nozes, amêndoas e similares - Em latas, em caixas de papelão - Embaladas, em caixas de papelão
+          - Em sacos
+        - Classe I Classe III Classe III
+      - - Tintas Latas, em caixas de papelão - À base de água (látex) - À base de óleo
+        - Classe I Classe IV
+      - - Produtos de papel - Livros, revistas, papéis de carta e envelopes, embalagens de papel revestido
+          com plástico para alimentos, jornais, jogos de tabuleiros ou papel tissue em caixas de papelão
+          - Produtos de papel tissue, sem caixas de papelão e embalados em plástico
+        - Classe III Plástico Grupo A
+      - - Papel, bobinas -Em porta-paletes ou empilhados deitados- Peso médio ou pesado -Em porta-paletes
+          - Peso leve
+        - Classe III Classe IV
+      - - -Papel, revestido com cera embalado, em caixas de papelão
+        - Classe IV
+      - - Remédios Pílulas, pós - Frascos de vidro, em caixas de papelão - Frascos de plástico, em caixas
+          de papelão Líquidos não inflamáveis - Frascos de vidro, em caixas de papelão
+        - Classe II Classe IV Classe II
+      - - Filme fotográfico - Filme para cinema ou rolos grandes de filme em latas de policarbonato, polietileno
+          ou metal, dentro de sacos de polietileno, em caixas de papelão - Filmes de 35 mm em cartuchos
+          de metal em latas de polietileno em caixas de papelão - Papel, em folhas, dentro de sacos de
+          polietileno, em caixas de papelão - Rolos em cartuchos de policarbonato, embrulhados a granel,
+          dentro de caixas de papelão
+        - Classe II Classe III Classe III Classe IV
+      - - Recipientes plásticos (exceto PET) - Líquidos ou semilíquidos incombustíveis em recipientes
+          plásticos menores que 5 gal (18,9 L) - Líquidos ou semilíquidos (ketchup, por exemplo) incombustíveis
+          em recipientes plásticos com paredes de espessura menor ou igual a ¼ pol. (6,4 mm) e volumes
+          maiores que 5 gal (18,9 L)
+        - Classe I Classe II
 notas:
 - Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na
   linha em que a página a alinha.
@@ -187,6 +240,10 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
+  texto: verificada

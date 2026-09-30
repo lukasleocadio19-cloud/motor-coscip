@@ -79,6 +79,89 @@ caminhos:
     - - Têxteis Sintéticos (exceto raiom e náilon) - Mistura 50/50 ou menos - Fibras em fardos
     - - Sintéticos (exceto raiom e náilon) - mistura maior que 50/50 - Fibras em fardos - Linha, em carretéis
         plásticos
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 67.11
+      - 57.06
+      - 534.93
+      - 728.02
+      linhas:
+      - - ''
+        - Exemplos de plásticos Grupo A
+        - ''
+      - - Baterias Caminhões ou maiores - Vazias ou cheias1
+        - null
+        - null
+      - - Garrafas e frascos Vazias, em caixas de papelão - Plástico (exceto PET), qualquer tamanho Cheios
+          com líquidos incombustíveis - Plástico, engradados de plástico sólidos ou abertos Cheio com
+          pós incombustíveis - Plástico, em caixas de papelão ou exposto [maior que 1 gal (3,8 L)] - Plástico,
+          engradados sólidos de plástico - Plástico, engradados abertos de plástico
+        - null
+        - null
+      - - Velas Embalados, em caixas de papelão – Tratar como plástico expandido
+        - null
+        - null
+      - - Carpetes (placas modulares) Em caixas de papelão
+        - null
+        - null
+      - - Caixas de papelão Revestidas com cera, parede simples
+        - null
+        - null
+      - - Fraldas Descartáveis, com plástico e material não-tecido (sem caixas de papelão), embaladas
+          em plástico
+        - null
+        - null
+      - - Móveis Madeira - Com estofamento de espuma plástica
+        - null
+        - null
+      - - Isqueiros Butano - Em blísters, em caixas de papelão
+        - null
+        - null
+      - - Margarina - Entre 50 e 80% de óleo (em qualquer embalagem)
+        - null
+        - null
+      - - Fósforos Embalados, em caixas de papelão - Madeira
+        - null
+        - null
+      - - Colchões Espuma (produto final)
+        - null
+        - null
+      - - Leite Recipientes em engradados plásticos
+        - null
+        - null
+      - - Esmalte para unhas Frascos de plástico de 1-oz a 2-oz (29,6-ml a 59,1-ml), em caixas de papelão
+        - null
+        - null
+      - - Produtos de papel
+        - null
+        - null
+      - - Produtos de papel tissue, sem caixas de papelão e embrulhados em plástico
+        - null
+        - null
+      - - Recipientes plásticos - Sólidos combustíveis e incombustíveis em recipientes plásticos e recipientes
+          plásticos vazios Líquidos ou semilíquidos (como ketchup) em recipientes plásticos com paredes
+          de espessura maior que ¼ pol. (6,4 mm) com capacidades maiores que 5 gal (18,9 L)
+        - null
+        - null
+      - - Poliuretano Com e sem caixas de papelão
+        - null
+        - null
+      - - Borracha Sintético
+        - null
+        - null
+      - - Bonecos de pelúcia Espuma ou sintético
+        - null
+        - null
+      - - Têxteis Sintéticos (exceto raiom e náilon) - Mistura 50/50 ou menos – Fibras em fardos
+        - null
+        - null
+      - - Sintéticos (exceto raiom e náilon) - mistura maior que 50/50 - Fibras em fardos - Linha, em
+          carretéis plásticos
+        - null
+        - null
 notas:
 - Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
 - A tabela continua na página 22, onde estão as notas 1 e 2 ("cheias1", sem sobrescrito na página).
@@ -87,6 +170,8 @@ resultado:
   estado: verificada
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

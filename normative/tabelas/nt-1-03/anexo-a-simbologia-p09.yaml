@@ -82,14 +82,77 @@ caminhos:
     - - PROTEÇÃO CONTRA INTEMPÉRIES
     - - ACIONADOR MANUAL
     - - CENTRAL
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 77.9
+      - 56.88
+      - 516.82
+      - 785.04
+      linhas:
+      - - O Ã Ç C E T E D E D A M E T S IS
+        - ''
+        - DETECTOR TÉRMICO
+        - ''
+      - - null
+        - null
+        - DETECTOR TERMOVELOCIMÉTRICO
+        - ''
+      - - null
+        - null
+        - DETECTOR DE FUMAÇA
+        - ''
+      - - null
+        - null
+        - DETECTOR MULTISENSOR
+        - ''
+      - - null
+        - null
+        - DETECTOR DE CHAMA
+        - ''
+      - - null
+        - null
+        - DETECTOR NO ENTREFORRO
+        - ''
+      - - null
+        - null
+        - DETECTOR NO ENTREPISO
+        - ''
+      - - null
+        - null
+        - DETECTOR NA PAREDE
+        - ''
+      - - null
+        - null
+        - PROTEÇÃO CONTRA INTEMPÉRIES
+        - ''
+      - - null
+        - null
+        - ACIONADOR MANUAL
+        - ''
+      - - null
+        - null
+        - CENTRAL
+        - ''
 notas:
 - A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
   da página).
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 0
+    coluna: 0
+    a: SISTEMA DE DETECÇÃO
+    b: O Ã Ç C E T E D E D A M E T S IS
+    estado: divergente
+    score: 37.8

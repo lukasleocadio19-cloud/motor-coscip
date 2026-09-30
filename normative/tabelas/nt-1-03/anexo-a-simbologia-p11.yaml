@@ -72,6 +72,52 @@ caminhos:
     - - VENEZIANA DE ENTRADA DE AR JUNTO AO TETO
     - - GRELHA COM DISPOSITIVO DE AJUSTE E BALANCEAMENTO
     - - DIMENSÕES DA VENEZIANA E ALTURA DO PISO
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 77.9
+      - 56.88
+      - 516.82
+      - 603.1
+      linhas:
+      - - ''
+        - ''
+        - DAMPER CORTA-FOGO E CORTA- FUMAÇA
+        - ''
+      - - null
+        - null
+        - VENTILADOR OU EXAUSTOR PARA CONTROLE DE FUMAÇA
+        - ''
+      - - null
+        - A Ç A M U F E D E L O R T N O C
+        - ACIONADOR MANUAL (EXAUSTÃO OU VENTILAÇÃO)
+        - ''
+      - - null
+        - null
+        - DAMPER DE SOBREPRESSÃO
+        - ''
+      - - null
+        - null
+        - VENEZIANA DE ENTRADA DE AR COM FILTRO
+        - ''
+      - - null
+        - null
+        - VENEZIANA DE ENTRADA DE AR JUNTO AO PISO
+        - ''
+      - - null
+        - null
+        - VENEZIANA DE ENTRADA DE AR JUNTO AO TETO
+        - ''
+      - - null
+        - null
+        - GRELHA COM DISPOSITIVO DE AJUSTE E BALANCEAMENTO
+        - ''
+      - - null
+        - null
+        - DIMENSÕES DA VENEZIANA E ALTURA DO PISO
+        - ''
 notas:
 - A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
   da página).
@@ -81,18 +127,26 @@ notas:
 inconsistencias_da_fonte:
 - '"VENTILADOR OU EXAUSTOR PARA CONTROLE DE FUMAÇA" fica fora da célula "CONTROLE DE FUMAÇA" (subgrupo
   vazio, como a linha de cima), que começa na linha seguinte.'
-estado: verificada
+estado: divergente
 resultado:
-  estado: verificada
+  estado: divergente
   caminhos_comparados:
   - visual
-  - texto
-  observacao: segundo caminho = camada de texto do PDF (seção 'Tabelas extraídas'); falta a extração geométrica
-    do PDF oficial
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
   celulas:
   - linha: 0
     coluna: 0
     a: DAMPER CORTA-FOGO E CORTA-FUMAÇA
-    b: DAMPER CORTA-FOGO E CORTAFUMAÇA
+    b: DAMPER CORTA-FOGO E CORTA- FUMAÇA
     estado: verificada
     score: 98.4
+  - linha: 2
+    coluna: 0
+    a: CONTROLE DE FUMAÇA
+    b: A Ç A M U F E D E L O R T N O C
+    estado: divergente
+    score: 29.4
