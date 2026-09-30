@@ -12,6 +12,10 @@ forma:
   - 22
   rotulos_quebrados: true
   linhas_cabecalho: 0
+forma_geometrica:
+  faixa:
+  - 7
+  - 36
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -547,9 +551,9 @@ notas:
 - c) Para as edificações destinadas à restrição de liberdade, observar os requisitos de segurança contra
   incêndio e pânico e as medidas alternativas estabelecidos em Nota Técnica específica;
 - d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -557,28 +561,3 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: verificada
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 7
-    - 7
-    - 7
-    - 7
-    - 7
-    - 7
-    - 7
-    - 7
-    - 7
-    - 7
-    - 7
-    - 7
-    - 7
-    - 7
-    - 7
-  - - 7
-    - 7
-    - 7
-    - 7
-    - 7
-    - 7
-    - 7
-    - 7

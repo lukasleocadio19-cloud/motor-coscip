@@ -13,6 +13,10 @@ forma:
   - 31
   rotulos_quebrados: true
   linhas_cabecalho: 0
+forma_geometrica:
+  faixa:
+  - 13
+  - 44
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -1071,9 +1075,9 @@ notas:
   da Seção II do Capítulo IV deste Código;
 - b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
 - c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -1081,29 +1085,3 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: verificada
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 13
-    - 13
-    - 13
-    - 13
-    - 13
-    - 13
-    - 13
-    - 13
-    - 13
-    - 13
-    - 13
-    - 13
-    - 13
-    - 13
-    - 13
-  - - 13
-    - 13
-    - 13
-    - 13
-    - 13
-    - 13
-    - 13
-    - 13
-    - 13

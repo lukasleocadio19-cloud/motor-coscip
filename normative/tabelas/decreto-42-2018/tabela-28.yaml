@@ -13,6 +13,10 @@ forma:
   - 19
   rotulos_quebrados: true
   linhas_cabecalho: 0
+forma_geometrica:
+  faixa:
+  - 13
+  - 30
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -402,9 +406,9 @@ notas:
 - e) Quando houver edificação (construção) dentro do terreno das áreas de riscos, deve-se também verificar
   as exigências particulares para cada ocupação;
 - f) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -412,17 +416,3 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: verificada
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 5
-    - 5
-    - 5
-    - 5
-    - 5
-    - 5
-    - 5
-    - 5
-  - - 2
-    - 5
-    - 5
-    - 5

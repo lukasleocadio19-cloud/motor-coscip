@@ -12,6 +12,10 @@ forma:
   - 8
   rotulos_quebrados: true
   linhas_cabecalho: 0
+forma_geometrica:
+  faixa:
+  - 7
+  - 12
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -94,9 +98,9 @@ notas:
 - 'Observações gerais da tabela:'
 - a) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
 - b) Caso haja lotes edificados, o loteamento deve ser classificado como agrupamento de edificações.
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -104,8 +108,3 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: verificada
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 2
-    - 2
-  - - 2

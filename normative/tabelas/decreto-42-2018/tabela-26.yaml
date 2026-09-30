@@ -13,6 +13,10 @@ forma:
   - 30
   rotulos_quebrados: true
   linhas_cabecalho: 0
+forma_geometrica:
+  faixa:
+  - 15
+  - 48
 caminhos:
   visual:
     metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
@@ -660,9 +664,9 @@ notas:
 inconsistencias_da_fonte:
 - Os cabeçalhos de tanques e cilindros remetem a "(b)", mas a observação geral b) trata das instalações
   elétricas; a que define o volume dos gases é a d).
-estado: divergente
+estado: verificada
 resultado:
-  estado: divergente
+  estado: verificada
   caminhos_comparados:
   - visual
   - geometrica
@@ -670,30 +674,3 @@ resultado:
   candidatos_na_pagina: 1
   bbox: *id001
   texto: verificada
-  motivo: número de linhas/colunas diferente
-  forma:
-  - - 6
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
-  - - 4
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
-    - 6
