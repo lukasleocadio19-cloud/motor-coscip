@@ -1,0 +1,163 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-05
+arquivo: nt-2-05-sinalizacao.md
+tabela: Tabela 4 do Anexo B
+titulo: Sinalização de alerta
+pagina: 9
+fonte_pdf_sha256: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-05/pagina-09.jpg
+    imagem_sha256: d0bee873f5b318ba7bb450f427d76e556a5fb4eb9c42f0f555c360ed50c5e5e7
+    linhas_cabecalho: 1
+    linhas:
+    - - Código
+      - Símbolo
+      - Significado
+      - Forma e cor
+      - Aplicação
+    - - A-1
+      - ''
+      - Alerta geral
+      - 'Forma: triangular Fundo: fotoluminescente Pictograma: preta Faixa triangular: preta'
+      - 'Toda vez que não houver símbolo específico de alerta, deve ser utilizado sempre acompanhado de
+        mensagem escrita específica. Nível: superior ou intermediário'
+    - - A-2
+      - ''
+      - Cuidado, risco de incêndio
+      - ^
+      - 'Próximo a materiais ou áreas com presença de produtos altamente inflamáveis. Nível: superior
+        ou intermediário'
+    - - A-3
+      - ''
+      - Cuidado, risco de explosão
+      - ^
+      - 'Próximo a materiais ou áreas com presença de produtos (sólidos, gases ou vapores) com risco de
+        explosão. Nível: superior ou intermediário'
+    - - A-4
+      - ''
+      - Cuidado, risco de corrosão
+      - ^
+      - 'Próximo a materiais ou áreas com presença de produtos corrosivos. Nível: superior ou intermediário'
+    - - A-5
+      - ''
+      - Cuidado, risco de choque elétrico
+      - ^
+      - 'Próximo a instalações elétricas que ofereçam risco de choque. Nível: superior ou intermediário'
+    - - A-6
+      - ''
+      - Cuidado, risco de radiação
+      - ^
+      - 'Próximo a materiais ou áreas com presença de produtos radioativos. Nível: superior ou intermediário'
+    - - A-7
+      - ''
+      - Cuidado, risco de exposição a produtos tóxicos
+      - ^
+      - 'Próximo a materiais ou áreas com presença de produtos tóxicos. Nível: superior ou intermediário'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 9
+      tabela_na_pagina: 1
+    linhas:
+    - - Código
+      - Símbolo
+      - Significado
+      - Forma e cor
+      - Aplicação
+    - - A-1
+      - Alerta geral
+      - 'Forma: triangular Fundo: fotoluminescente Pictograma: preta Faixa triangular: preta'
+      - 'Toda vez que não houver símbolo específico de alerta, deve ser utilizado sempre acompanhado de
+        mensagem escrita específica. Nível: superior ou intermediário'
+    - - A-2
+      - Cuidado, risco de incêndio
+      - 'Próximo a materiais ou áreas com presença de produtos altamente inflamáveis. Nível: superior
+        ou intermediário'
+    - - A-3
+      - Cuidado, risco de explosão
+      - 'Próximo a materiais ou áreas com presença de produtos (sólidos, gases ou vapores) com risco de
+        explosão. Nível: superior ou intermediário'
+    - - A-4
+      - Cuidado, risco de corrosão
+      - 'Próximo a materiais ou áreas com presença de produtos corrosivos. Nível: superior ou intermediário'
+    - - A-5
+      - Cuidado, risco de choque elétrico
+      - 'Próximo a instalações elétricas que ofereçam risco de choque. Nível: superior ou intermediário'
+    - - A-6
+      - Cuidado, risco de radiação
+      - 'Próximo a materiais ou áreas com presença de produtos radioativos. Nível: superior ou intermediário'
+    - - A-7
+      - Cuidado, risco de exposição a produtos tóxicos
+      - 'Próximo a materiais ou áreas com presença de produtos tóxicos. Nível: superior ou intermediário'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 49.56
+      - 70.8
+      - 542.98
+      - 748.3
+      linhas:
+      - - Código
+        - Símbolo
+        - Significado
+        - Forma e cor
+        - Aplicação
+      - - A-1
+        - ''
+        - Alerta geral
+        - 'Forma: triangular Fundo: fotoluminescente Pictograma: preta Faixa triangular: preta'
+        - 'Toda vez que não houver símbolo específico de alerta, deve ser utilizado sempre acompanhado
+          de mensagem escrita específica. Nível: superior ou intermediário'
+      - - A-2
+        - ''
+        - Cuidado, risco de incêndio
+        - null
+        - 'Próximo a materiais ou áreas com presença de produtos altamente inflamáveis. Nível: superior
+          ou intermediário'
+      - - A-3
+        - ''
+        - Cuidado, risco de explosão
+        - null
+        - 'Próximo a materiais ou áreas com presença de produtos (sólidos, gases ou vapores) com risco
+          de explosão. Nível: superior ou intermediário'
+      - - A-4
+        - ''
+        - Cuidado, risco de corrosão
+        - null
+        - 'Próximo a materiais ou áreas com presença de produtos corrosivos. Nível: superior ou intermediário'
+      - - A-5
+        - ''
+        - Cuidado, risco de choque elétrico
+        - null
+        - 'Próximo a instalações elétricas que ofereçam risco de choque. Nível: superior ou intermediário'
+      - - A-6
+        - ''
+        - Cuidado, risco de radiação
+        - null
+        - 'Próximo a materiais ou áreas com presença de produtos radioativos. Nível: superior ou intermediário'
+      - - A-7
+        - ''
+        - Cuidado, risco de exposição a produtos tóxicos
+        - null
+        - 'Próximo a materiais ou áreas com presença de produtos tóxicos. Nível: superior ou intermediário'
+notas:
+- A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela.
+  Célula de forma e cor mesclada entre linhas repete-se na publicação.
+- 'Fonte indicada na página: ABNT NBR 16820.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

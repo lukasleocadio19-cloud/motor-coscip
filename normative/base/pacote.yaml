@@ -6,12 +6,13 @@
 schema_version: package/1.0
 id: CBMERJ-PLANTA-G2
 name: CBMERJ — conferência automática de planta (Grupo 2) — rascunho
-version: 5
+version: 6
 jurisdiction: CBMERJ-RJ
 publication_state: DRAFT
 symbols: simbolos.yaml
 classification: enquadramento.yaml
 requirements: sistemas-exigidos.yaml
+requirements_height: sistemas-exigidos-5-21.yaml
 exit_distances: distancias-saida.yaml
 rules:
   - regras/NT201_EXT_DISTANCIA.yaml
@@ -76,7 +77,10 @@ coverage:
     item: Anexo C
     quote: ["DISTÂNCIAS MÁXIMAS A SEREM PERCORRIDAS"]
     topic: Limites de distância até a saída por ocupação
-    reason: Tabela do Anexo C está como imagem na base; o analista informa o limite aplicável.
+    reason: >-
+      O Anexo C é dado conferido do pacote (distancias-saida.yaml, desde a v5); a medição
+      automática depende do leiaute, dos chuveiros/detectores e do número de saídas informados
+      pelo analista, e o limite informado por ele prevalece com registro.
   - document: NT 2-08
     item: 5.3.2.4
     quote: ["número de saídas"]

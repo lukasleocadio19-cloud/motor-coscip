@@ -1,0 +1,1215 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-19
+arquivo: nt-2-19-seguranca-estrutural.md
+tabela: Tabela A
+titulo: Tempos Requeridos de Resistência ao Fogo (TRRF) em minutos
+pagina: 9
+fonte_pdf_sha256: 29a57e10630596f21a7e914197a2ae021c3e78b9a399b2d16799ac9bba1390fe
+conferida_em: '2026-09-29'
+forma:
+  mesclar_linhas:
+  - - 0
+    - 1
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-19/pagina-09.jpg
+    imagem_sha256: f110538d3d5847e037995eed42020492adaa05c5b1e34c3a71ef7ff717c5e9ae
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Grupo
+    - Ocupação/Uso
+    - Divisão
+    - Subsolo — Classe S2 hs>10m
+    - Subsolo — Classe S1 hs≤10m
+    - Altura — Classe P1 h ≤6m
+    - Altura — Classe P2 6m<h≤12m
+    - Altura — Classe P3 12m<h≤23m
+    - Altura — Classe P4 23m<h≤30m
+    - Altura — Classe P5 30m<h≤ 80m
+    - Altura — Classe P6 80m<h≤120m
+    - Altura — Classe P7 120<h≤150 m
+    - Altura — Classe P8 150m<h≤250 m
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Profundidade do Subsolo (hs)
+      - Altura da edificação (h)
+    - - Classe S2 hs>10m
+      - Classe S1 hs≤10m
+      - Classe P1 h ≤6m
+      - Classe P2 6m<h≤12m
+      - Classe P3 12m<h≤23m
+      - Classe P4 23m<h≤30m
+      - Classe P5 30m<h≤ 80m
+      - Classe P6 80m<h≤120m
+      - Classe P7 120<h≤150 m
+      - Classe P8 150m<h≤250 m
+    - - A
+      - Residencial
+      - A-1 a A-3 e A-6
+      - '90'
+      - '60'
+      - '30'
+      - '30'
+      - '60'
+      - '90'
+      - '120'
+      - '120'
+      - '150'
+      - '180'
+    - - B
+      - Serviços de hospedagem
+      - B-1 e B-2
+      - '90'
+      - '60'
+      - '30'
+      - 60 (30)
+      - '60'
+      - '90'
+      - '120'
+      - '150'
+      - '180'
+      - '180'
+    - - C
+      - Comercial varejista
+      - C-1
+      - '90'
+      - '60'
+      - 60 (30)
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '150'
+      - '150'
+      - '180'
+    - - ^
+      - ^
+      - C-2 e C-3
+      - '90'
+      - '60'
+      - '60'
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '150'
+      - '150'
+      - '180'
+    - - D
+      - Serviços profissionais, pessoais e técnicos
+      - D-1 a D-4
+      - '90'
+      - '60'
+      - '30'
+      - 60 (30)
+      - '60'
+      - '90'
+      - '120'
+      - '120'
+      - '150'
+      - '180'
+    - - E
+      - Educacional e cultura física
+      - E-1 a E-6
+      - '90'
+      - '60'
+      - '30'
+      - '30'
+      - '60'
+      - '90'
+      - '120'
+      - '120'
+      - '150'
+      - '180'
+    - - F
+      - Locais de reunião de público
+      - F-1, F-2, F-5, F-6, F-8, F-10 e F-11
+      - '90'
+      - '60'
+      - 60 (30)
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '150'
+      - '180'
+      - '-'
+    - - ^
+      - ^
+      - F-3, F-4 e F-7
+      - '90'
+      - '60'
+      - ver item 5.3.3
+      - <
+      - '30'
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '-'
+    - - ^
+      - ^
+      - F-9
+      - '90'
+      - '60'
+      - '30'
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+    - - G
+      - Serviços automotivos
+      - G-1 e G-2 não abertos lateralmente e G-3 a G-5
+      - '90'
+      - 60 (30)
+      - '30'
+      - 60 (30)
+      - '60'
+      - '90'
+      - '120'
+      - '120'
+      - '150'
+      - '180'
+    - - ^
+      - ^
+      - G-1 e G-2 Abertos lateralmente
+      - '90'
+      - 60 (30)
+      - '30'
+      - '30'
+      - '30'
+      - '30'
+      - '60'
+      - '120'
+      - '120'
+      - '150'
+    - - H
+      - Serviços de saúde e institucionais
+      - H-1 e H-4
+      - '90'
+      - '60'
+      - '30'
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '150'
+      - '180'
+      - '180'
+    - - ^
+      - ^
+      - H-2 e H-3
+      - '90'
+      - '60'
+      - '30'
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '150'
+      - '180'
+      - '180'
+    - - I
+      - Industrial
+      - I-1
+      - 90 (60)
+      - 60 (30)
+      - '30'
+      - '30'
+      - '30'
+      - '60'
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+    - - ^
+      - ^
+      - I-2
+      - '120'
+      - '90'
+      - '30'
+      - '30'
+      - 60 (30)
+      - '90'
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+    - - ^
+      - ^
+      - I-3
+      - '120'
+      - '90'
+      - 60 (30)
+      - 60 (30)
+      - 90 (60)
+      - 120 (90)
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+    - - J
+      - Depósitos
+      - J-1
+      - '60'
+      - '30'
+      - ver item 5.3.4
+      - <
+      - '30'
+      - '30'
+      - '60'
+      - '-'
+      - '-'
+      - '-'
+    - - ^
+      - ^
+      - J-2
+      - '90'
+      - 60 (30)
+      - '60'
+      - '60'
+      - '60'
+      - '60'
+      - '60'
+      - '-'
+      - '-'
+      - '-'
+    - - ^
+      - ^
+      - J-3
+      - '90'
+      - 60 (30)
+      - '60'
+      - '60'
+      - '60'
+      - 120 (90)
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+    - - ^
+      - ^
+      - J-4
+      - '120'
+      - '90'
+      - '60'
+      - '60'
+      - 90 (60)
+      - 120 (90)
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+    - - L
+      - Explosivos
+      - L-1, L-2 e L-3
+      - '120'
+      - '120'
+      - '120'
+      - '-'
+      - <
+      - <
+      - <
+      - '-'
+      - '-'
+      - '-'
+    - - M
+      - Especial
+      - M-1
+      - '150'
+      - '150'
+      - '150'
+      - '-'
+      - <
+      - <
+      - <
+      - '-'
+      - '-'
+      - '-'
+    - - ^
+      - ^
+      - M-2
+      - '-'
+      - '-'
+      - '120'
+      - '120'
+      - '-'
+      - <
+      - <
+      - '-'
+      - '-'
+      - '-'
+    - - ^
+      - ^
+      - M-5
+      - '120'
+      - '90'
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+    - - ^
+      - ^
+      - M-3
+      - '120'
+      - '90'
+      - '90'
+      - '90'
+      - '120'
+      - '120'
+      - '120'
+      - '120'
+      - '150'
+      - '-'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 9
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Profundidade do Subsolo (hs)
+      - Altura da edificação (h)
+    - - Classe S2 hs10m
+      - Classe S1 hs10m
+      - Classe P1 h 6m
+      - Classe P2 6mh12m
+      - Classe P3 12mh23m
+      - Classe P4 23mh30m
+      - Classe P5 30mh 80m
+      - Classe P6 80m<h≤120m
+      - Classe P7 120<h150 m
+      - Classe P8 150m<h250 m
+    - - A
+      - Residencial
+      - A-1 a A-3 e A-6
+      - '90'
+      - '60'
+      - '30'
+      - '30'
+      - '60'
+      - '90'
+      - '120'
+      - '120'
+      - '150'
+      - '180'
+    - - B
+      - Serviços de hospedagem
+      - B-1 e B-2
+      - '90'
+      - '60'
+      - '30'
+      - 60 (30)
+      - '60'
+      - '90'
+      - '120'
+      - '150'
+      - '180'
+      - '180'
+    - - C
+      - Comercial varejista
+      - C-1
+      - '90'
+      - '60'
+      - 60 (30)
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '150'
+      - '150'
+      - '180'
+    - - C-2 e C-3
+      - '90'
+      - '60'
+      - '60'
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '150'
+      - '150'
+      - '180'
+    - - D
+      - Serviços profissionais, pessoais e técnicos
+      - D-1 a D-4
+      - '90'
+      - '60'
+      - '30'
+      - 60 (30)
+      - '60'
+      - '90'
+      - '120'
+      - '120'
+      - '150'
+      - '180'
+    - - E
+      - Educacional e cultura física
+      - E-1 a E-6
+      - '90'
+      - '60'
+      - '30'
+      - '30'
+      - '60'
+      - '90'
+      - '120'
+      - '120'
+      - '150'
+      - '180'
+    - - F
+      - Locais de reunião de público
+      - F-1, F-2, F-5, F-6, F-8, F-10 e F-11
+      - '90'
+      - '60'
+      - 60 (30)
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '150'
+      - '180'
+      - '-'
+    - - F-3, F-4 e F-7
+      - '90'
+      - '60'
+      - ver item 5.3.3
+      - '30'
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '-'
+    - - F-9
+      - '90'
+      - '60'
+      - '30'
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+    - - G
+      - Serviços automotivos
+      - G-1 e G-2 não abertos lateralmente e G-3 a G-5
+      - '90'
+      - 60 (30)
+      - '30'
+      - 60 (30)
+      - '60'
+      - '90'
+      - '120'
+      - '120'
+      - '150'
+      - '180'
+    - - G-1 e G-2 Abertos lateralmente
+      - '90'
+      - 60 (30)
+      - '30'
+      - '30'
+      - '30'
+      - '30'
+      - '60'
+      - '120'
+      - '120'
+      - '150'
+    - - H
+      - Serviços de saúde e institucionais
+      - H-1 e H-4
+      - '90'
+      - '60'
+      - '30'
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '150'
+      - '180'
+      - '180'
+    - - H-2 e H-3
+      - '90'
+      - '60'
+      - '30'
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '150'
+      - '180'
+      - '180'
+    - - I
+      - Industrial
+      - I-1
+      - 90 (60)
+      - 60 (30)
+      - '30'
+      - '30'
+      - '30'
+      - '60'
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+    - - I-2
+      - '120'
+      - '90'
+      - '30'
+      - '30'
+      - 60 (30)
+      - '90'
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+    - - I-3
+      - '120'
+      - '90'
+      - 60 (30)
+      - 60 (30)
+      - 90 (60)
+      - 120 (90)
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+    - - J
+      - Depósitos
+      - J-1
+      - '60'
+      - '30'
+      - ver item 5.3.4
+      - '30'
+      - '30'
+      - '60'
+      - '-'
+      - '-'
+      - '-'
+    - - J-2
+      - '90'
+      - 60 (30)
+      - '60'
+      - '60'
+      - '60'
+      - '60'
+      - '60'
+      - '-'
+      - '-'
+      - '-'
+    - - J-3
+      - '90'
+      - 60 (30)
+      - '60'
+      - '60'
+      - '60'
+      - 120 (90)
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+    - - J-4
+      - '120'
+      - '90'
+      - '60'
+      - '60'
+      - 90 (60)
+      - 120 (90)
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+    - - L
+      - Explosivos
+      - L-1, L-2 e L-3
+      - '120'
+      - '120'
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+    - - M
+      - Especial
+      - M-1
+      - '150'
+      - '150'
+      - '150'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+    - - M-2
+      - '-'
+      - '-'
+      - '120'
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+    - - M-5
+      - '120'
+      - '90'
+      - '60'
+      - '60'
+      - '90'
+      - '120'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+    - - M-3
+      - '120'
+      - '90'
+      - '90'
+      - '90'
+      - '120'
+      - '120'
+      - '120'
+      - '120'
+      - '150'
+      - '-'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 29.28
+      - 85.31
+      - 812.61
+      - 464.02
+      linhas:
+      - - Grupo
+        - Ocupação/Uso
+        - Divisão
+        - ''
+        - Profundidade do
+        - null
+        - ''
+        - Altura da edificação (h)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Subsolo (hs)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Classe S2 hs10m
+        - null
+        - Classe S1 hs10m
+        - null
+        - Classe P1 h 6m
+        - Classe P2 6mh12m
+        - Classe P3 12mh23m
+        - Classe P4 23mh30m
+        - Classe P5 30mh 80m
+        - Classe P6 80m<h≤120m
+        - Classe P7 120<h150 m
+        - Classe P8 150m<h250 m
+      - - A
+        - Residencial
+        - A-1 a A-3 e A-6
+        - '90'
+        - null
+        - '60'
+        - null
+        - '30'
+        - '30'
+        - '60'
+        - '90'
+        - '120'
+        - '120'
+        - '150'
+        - '180'
+      - - B
+        - Serviços de hospedagem
+        - B-1 e B-2
+        - '90'
+        - null
+        - '60'
+        - null
+        - '30'
+        - 60 (30)
+        - '60'
+        - '90'
+        - '120'
+        - '150'
+        - '180'
+        - '180'
+      - - C
+        - Comercial varejista
+        - C-1
+        - '90'
+        - null
+        - '60'
+        - null
+        - 60 (30)
+        - '60'
+        - '60'
+        - '90'
+        - '120'
+        - '150'
+        - '150'
+        - '180'
+      - - null
+        - null
+        - C-2 e C-3
+        - '90'
+        - null
+        - '60'
+        - null
+        - '60'
+        - '60'
+        - '60'
+        - '90'
+        - '120'
+        - '150'
+        - '150'
+        - '180'
+      - - D
+        - Serviços profissionais, pessoais e técnicos
+        - D-1 a D-4
+        - '90'
+        - null
+        - '60'
+        - null
+        - '30'
+        - 60 (30)
+        - '60'
+        - '90'
+        - '120'
+        - '120'
+        - '150'
+        - '180'
+      - - E
+        - Educacional e cultura física
+        - E-1 a E-6
+        - '90'
+        - null
+        - '60'
+        - null
+        - '30'
+        - '30'
+        - '60'
+        - '90'
+        - '120'
+        - '120'
+        - '150'
+        - '180'
+      - - F
+        - Locais de reunião de público
+        - F-1, F-2, F-5, F-6, F-8, F-10 e F-11
+        - '90'
+        - null
+        - '60'
+        - null
+        - 60 (30)
+        - '60'
+        - '60'
+        - '90'
+        - '120'
+        - '150'
+        - '180'
+        - '-'
+      - - null
+        - null
+        - F-3, F-4 e F-7
+        - '90'
+        - null
+        - '60'
+        - null
+        - ver item 5.3.3
+        - null
+        - '30'
+        - '60'
+        - '60'
+        - '90'
+        - '120'
+        - '-'
+      - - null
+        - null
+        - F-9
+        - '90'
+        - null
+        - '60'
+        - null
+        - '30'
+        - '60'
+        - '60'
+        - '90'
+        - '120'
+        - '-'
+        - '-'
+        - '-'
+      - - G
+        - Serviços automotivos
+        - G-1 e G-2 não abertos lateralmente e G-3 a G-5
+        - '90'
+        - null
+        - 60 (30)
+        - null
+        - '30'
+        - 60 (30)
+        - '60'
+        - '90'
+        - '120'
+        - '120'
+        - '150'
+        - '180'
+      - - null
+        - null
+        - G-1 e G-2 Abertos lateralmente
+        - '90'
+        - null
+        - 60 (30)
+        - null
+        - '30'
+        - '30'
+        - '30'
+        - '30'
+        - '60'
+        - '120'
+        - '120'
+        - '150'
+      - - H
+        - Serviços de saúde e institucionais
+        - H-1 e H-4
+        - '90'
+        - null
+        - '60'
+        - null
+        - '30'
+        - '60'
+        - '60'
+        - '90'
+        - '120'
+        - '150'
+        - '180'
+        - '180'
+      - - null
+        - null
+        - H-2 e H-3
+        - '90'
+        - null
+        - '60'
+        - null
+        - '30'
+        - '60'
+        - '60'
+        - '90'
+        - '120'
+        - '150'
+        - '180'
+        - '180'
+      - - I
+        - Industrial
+        - I-1
+        - 90 (60)
+        - null
+        - 60 (30)
+        - null
+        - '30'
+        - '30'
+        - '30'
+        - '60'
+        - '120'
+        - '-'
+        - '-'
+        - '-'
+      - - null
+        - null
+        - I-2
+        - '120'
+        - null
+        - '90'
+        - null
+        - '30'
+        - '30'
+        - 60 (30)
+        - '90'
+        - '120'
+        - '-'
+        - '-'
+        - '-'
+      - - null
+        - null
+        - I-3
+        - '120'
+        - null
+        - '90'
+        - null
+        - 60 (30)
+        - 60 (30)
+        - 90 (60)
+        - 120 (90)
+        - '120'
+        - '-'
+        - '-'
+        - '-'
+      - - J
+        - Depósitos
+        - J-1
+        - '60'
+        - null
+        - '30'
+        - null
+        - ver item 5.3.4
+        - null
+        - '30'
+        - '30'
+        - '60'
+        - '-'
+        - '-'
+        - '-'
+      - - null
+        - null
+        - J-2
+        - '90'
+        - null
+        - 60 (30)
+        - null
+        - '60'
+        - '60'
+        - '60'
+        - '60'
+        - '60'
+        - '-'
+        - '-'
+        - '-'
+      - - null
+        - null
+        - J-3
+        - '90'
+        - null
+        - 60 (30)
+        - null
+        - '60'
+        - '60'
+        - '60'
+        - 120 (90)
+        - '120'
+        - '-'
+        - '-'
+        - '-'
+      - - null
+        - null
+        - J-4
+        - '120'
+        - null
+        - '90'
+        - null
+        - '60'
+        - '60'
+        - 90 (60)
+        - 120 (90)
+        - '120'
+        - '-'
+        - '-'
+        - '-'
+      - - L
+        - Explosivos
+        - L-1, L-2 e L-3
+        - '120'
+        - null
+        - '120'
+        - null
+        - '120'
+        - '-'
+        - null
+        - null
+        - null
+        - '-'
+        - '-'
+        - '-'
+      - - M
+        - Especial
+        - M-1
+        - '150'
+        - null
+        - '150'
+        - null
+        - '150'
+        - '-'
+        - null
+        - null
+        - null
+        - '-'
+        - '-'
+        - '-'
+      - - null
+        - null
+        - M-2
+        - '-'
+        - null
+        - '-'
+        - null
+        - '120'
+        - '120'
+        - '-'
+        - null
+        - null
+        - '-'
+        - '-'
+        - '-'
+      - - null
+        - null
+        - M-5
+        - '120'
+        - null
+        - '90'
+        - null
+        - '60'
+        - '60'
+        - '90'
+        - '120'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+      - - null
+        - null
+        - M-3
+        - '120'
+        - null
+        - '90'
+        - null
+        - '90'
+        - '90'
+        - '120'
+        - '120'
+        - '120'
+        - '120'
+        - '150'
+        - '-'
+    - bbox:
+      - 242.78
+      - 113.68
+      - 286.24
+      - 131.4
+      linhas:
+      - - Classe S2
+      - - hs10m
+    - bbox:
+      - 297.05
+      - 113.68
+      - 333.29
+      - 131.4
+      linhas:
+      - - Classe S1
+      - - hs10m
+    - bbox:
+      - 342.49
+      - 113.68
+      - 382.01
+      - 131.4
+      linhas:
+      - - Classe P1
+      - - h 6m
+    - bbox:
+      - 392.81
+      - 113.68
+      - 431.57
+      - 131.4
+      linhas:
+      - - Classe P2
+      - - 6mh12m
+    - bbox:
+      - 442.37
+      - 113.68
+      - 488.35
+      - 131.4
+      linhas:
+      - - Classe P3
+      - - 12mh23m
+    - bbox:
+      - 499.15
+      - 113.68
+      - 544.99
+      - 131.4
+      linhas:
+      - - Classe P4
+      - - 23mh30m
+    - bbox:
+      - 555.79
+      - 113.68
+      - 608.83
+      - 131.4
+      linhas:
+      - - Classe P5
+      - - 30mh 80m
+    - bbox:
+      - 619.63
+      - 113.68
+      - 672.57
+      - 131.4
+      linhas:
+      - - Classe P6
+      - - 80m<h≤120m
+    - bbox:
+      - 683.38
+      - 113.68
+      - 736.42
+      - 131.4
+      linhas:
+      - - Classe P7
+      - - 120<h150 m
+    - bbox:
+      - 747.22
+      - 113.68
+      - 807.86
+      - 131.4
+      linhas:
+      - - Classe P8
+      - - 150m<h250 m
+notas:
+- 'Anexo A da NT 2-19. "^" = mesclada com a de cima; "<" = mesclada com a da esquerda ("ver item 5.3.3",
+  "ver item 5.3.4" e "-" que abrangem várias classes). Valores entre parênteses: observação 3 (pavimentos
+  de até 900 m² com compartimentação vertical).'
+- 'A camada de texto perdeu os sinais das classes ("6mh12m", "hs10m"); a leitura visual os restitui: S2
+  hs>10m, S1 hs≤10m, P1 h≤6m, P2 6m<h≤12m, P3 12m<h≤23m, P4 23m<h≤30m, P5 30m<h≤80m, P6 80m<h≤120m, P7
+  120<h≤150 m, P8 150m<h≤250 m.'
+- 'Observações 1 a 6 abaixo da tabela: ver o texto da página 9. Fonte indicada: CBMERJ.'
+inconsistencias_da_fonte:
+- Classe P7 escrita "120<h≤150 m" (sem "m" depois de 120), diferente das demais classes.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 11
+  bbox: *id001
+  texto: verificada

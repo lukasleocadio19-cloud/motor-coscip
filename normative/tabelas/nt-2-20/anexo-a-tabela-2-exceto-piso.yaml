@@ -1,0 +1,251 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-20
+arquivo: nt-2-20-controle-de-materiais-de-acabamento.md
+tabela: Tabela 2 do Anexo A
+titulo: Classificação dos materiais (exceto revestimentos de piso)
+pagina: 7
+fonte_pdf_sha256: 6fa8dffe9aa7d10fb27c845b40da733db84862ac9fc144ec3948e8db24e90d4d
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-20/pagina-07.jpg
+    imagem_sha256: 3446a2d853829a19e8dac708dbe206a540e5184cc646043a687bac6c40b12805
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Classe
+    - Subclasse
+    - ISO 1182
+    - NBR 9442
+    - ASTM E 662
+    linhas:
+    - - Método de Ensaio
+      - <
+      - ISO 1182
+      - NBR 9442
+      - ASTM E 662
+    - - Classe
+      - <
+      - ^
+      - ^
+      - ^
+    - - I
+      - <
+      - Incombustível ΔT≤ 30° C Δm ≤ 50% tf≤ 10 s
+      - '-'
+      - '-'
+    - - II
+      - A
+      - Combustível
+      - Ip ≤ 25
+      - Dm ≤ 450
+    - - ^
+      - B
+      - Combustível
+      - Ip ≤ 25
+      - Dm > 450
+    - - III
+      - A
+      - Combustível
+      - 25 <Ip ≤ 75
+      - Dm ≤ 450
+    - - ^
+      - B
+      - Combustível
+      - 25 <Ip ≤ 75
+      - Dm > 450
+    - - IV
+      - A
+      - Combustível
+      - 75 <Ip ≤ 150
+      - Dm ≤ 450
+    - - ^
+      - B
+      - Combustível
+      - 75 <Ip ≤ 150
+      - Dm > 450
+    - - V
+      - A
+      - Combustível
+      - 150 <Ip ≤ 400
+      - Dm ≤ 450
+    - - ^
+      - B
+      - Combustível
+      - 150 <Ip ≤ 400
+      - Dm > 450
+    - - VI
+      - <
+      - Combustível
+      - Ip> 400
+      - '-'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 7
+      tabela_na_pagina: 1
+    linhas:
+    - - Método de Ensaio
+      - ISO 1182
+      - NBR 9442
+      - ASTM E 662
+    - - Classe
+    - - I
+      - Incombustível ΔT≤ 30° C Δm ≤ 50% tf≤ 10 s
+      - '-'
+      - '-'
+    - - II
+      - A
+      - Combustível
+      - Ip ≤ 25
+      - Dm ≤ 450
+    - - B
+      - Combustível
+      - Ip ≤ 25
+      - Dm > 450
+    - - III
+      - A
+      - Combustível
+      - 25 <Ip ≤ 75
+      - Dm ≤ 450
+    - - B
+      - Combustível
+      - 25 <Ip ≤ 75
+      - Dm > 450
+    - - IV
+      - A
+      - Combustível
+      - 75 <Ip ≤ 150
+      - Dm ≤ 450
+    - - B
+      - Combustível
+      - 75 <Ip ≤ 150
+      - Dm > 450
+    - - V
+      - A
+      - Combustível
+      - 150 <Ip ≤ 400
+      - Dm ≤ 450
+    - - B
+      - Combustível
+      - 150 <Ip ≤ 400
+      - Dm > 450
+    - - VI
+      - Combustível
+      - Ip> 400
+      - '-'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 55.0
+      - 77.85
+      - 512.36
+      - 372.1
+      linhas:
+      - - ''
+        - Método de Ensaio
+        - null
+        - ''
+        - ISO 1182
+        - NBR 9442
+        - ASTM E 662
+      - - ''
+        - Classe
+        - null
+        - ''
+        - null
+        - null
+        - null
+      - - I
+        - null
+        - null
+        - null
+        - Incombustível ΔT≤ 30° C Δm ≤ 50% tf≤ 10 s
+        - '-'
+        - '-'
+      - - II
+        - null
+        - A
+        - null
+        - Combustível
+        - Ip ≤ 25
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - Ip ≤ 25
+        - Dm > 450
+      - - III
+        - null
+        - A
+        - null
+        - Combustível
+        - 25 <Ip ≤ 75
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - 25 <Ip ≤ 75
+        - Dm > 450
+      - - IV
+        - null
+        - A
+        - null
+        - Combustível
+        - 75 <Ip ≤ 150
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - 75 <Ip ≤ 150
+        - Dm > 450
+      - - V
+        - null
+        - A
+        - null
+        - Combustível
+        - 150 <Ip ≤ 400
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - 150 <Ip ≤ 400
+        - Dm > 450
+      - - VI
+        - null
+        - null
+        - null
+        - Combustível
+        - Ip> 400
+        - '-'
+notas:
+- 'Legenda da tabela:'
+- Dm – Densidade óptica específica máxima corrigida.
+- Ip – Índice de propagação superficial da chama.
+- tf – Tempo de flamejamento do corpo de prova.
+- ΔT – Variação de temperatura no interior do forno.
+- Δm – Variação de massa do corpo de prova.
+- 'Fonte indicada na página: ABNT NBR 15575:2013 - Edificações habitacionais – Desempenho.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

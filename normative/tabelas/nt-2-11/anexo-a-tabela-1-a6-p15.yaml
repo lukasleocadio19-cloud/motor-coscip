@@ -1,0 +1,395 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela 1 (A.6, página 15)
+titulo: Currículos mínimos para a formação de BC — Primeiros socorros (A.6), módulos 06 a 15
+pagina: 15
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-15.jpg
+    imagem_sha256: 4cadcf01f9e18c4d8a97a9f93f95dc46c69e814c7a24bdffa84a98e02986c23d
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Módulo
+    - Parte teórica — objetivo
+    - Parte teórica — carga horária
+    - Parte prática — objetivo
+    - Parte prática — carga horária
+    linhas:
+    - - 06 Estado de Choque
+      - '- Conhecer os sinais e sintomas do estado de choque e aplicar as técnicas básicas de tratamento.'
+      - 30 min.
+      - Aplicar as técnicas de cuidados básicos do estado de choque.
+      - 30 min.
+    - - 07 Hemorragias
+      - '- Conhecer as técnicas de hemostasia.'
+      - 30 min.
+      - Aplicar as técnicas de compressão direta e utilização de torniquete.
+      - ''
+    - - 08 Fraturas
+      - '- Reconhecer as fraturas abertas e fechadas e aplicar as técnicas de imobilização.'
+      - 30 min.
+      - Aplicar técnica de imobilização.
+      - 30 min.
+    - - 09 Ferimentos
+      - '- Identificar os tipos de ferimentos e aplicar os cuidados iniciais.'
+      - 30 min.
+      - Aplicar as técnicas de limpeza e bandagens.
+      - 30 min.
+    - - 10 Queimaduras
+      - '- Conhecer os tipos (térmicas, químicas e elétricas) e os graus (primeiro, segundo e terceiro)
+        das queimaduras e aplicar as técnicas e procedimentos básicos de socorro de queimaduras.'
+      - 30 min.
+      - ''
+      - ''
+    - - 11 mergências Clinicas
+      - '- Reconhecer AVC (Acidente Vascular Cerebral), convulsões, dispnéias, IAM (Infarto Agudo do Miocárdio).'
+      - 2h
+      - Aplicar as técnicas de atendimento básico.
+      - 1h
+    - - 12 Transporte de vitimas
+      - '- Conhecer as técnicas de transporte de vítimas clínicas e traumáticas com suspeita de lesão
+        na coluna vertebral e aplicar as técnicas de transporte de vítimas.'
+      - 1h
+      - Aplicar as técnicas de transporte de vítimas.
+      - 1h
+    - - 13 Pessoa com mobilidade reduzida
+      - '- Conhecer as técnicas de abordagem, cuidados e condução de acordo com o plano de emergência
+        da planta.'
+      - 30 min.
+      - ''
+      - ''
+    - - 14 Protocolo com incidente com múltiplas vítimas
+      - '- Conhecer as ações de avaliação, zoneamento, balizamento, triagem e método start para acidentes
+        e incidentes que envolvam múltiplas vítimas.'
+      - 1h
+      - Aplicar na prática as técnicas que envolvam múltiplas vítimas.
+      - 1h
+    - - 15 Psicologia em emergências
+      - '- Reconhecer o agravo emocional das pessoas em situações de emergências e a administração do
+        estresse após incidentes críticos para os profissionais de emergência.'
+      - 30 min.
+      - ''
+      - ''
+    - - ''
+      - Total
+      - 12h
+      - Total
+      - 08h
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 15
+      tabela_na_pagina: 1
+    linhas:
+    - - 06 Estado de Choque
+      - '- Conhecer os sinais e sintomas do estado de choque e aplicar as técnicas básicas de tratamento.'
+      - 30 min.
+      - Aplicar as técnicas de cuidados básicos do estado de choque.
+      - 30 min.
+    - - 07 Hemorragias
+      - '- Conhecer as técnicas de hemostasia.'
+      - 30 min.
+      - Aplicar as técnicas de compressão direta e utilização de torniquete.
+    - - 08 Fraturas
+      - '- Reconhecer as fraturas abertas e fechadas e aplicar as técnicas de imobilização.'
+      - 30 min.
+      - Aplicar técnica de imobilização.
+      - 30 min.
+    - - 09 Ferimentos
+      - '- Identificar os tipos de ferimentos e aplicar os cuidados iniciais.'
+      - 30 min.
+      - Aplicar as técnicas de limpeza e bandagens.
+      - 30 min.
+    - - 10 Queimaduras
+      - '- Conhecer os tipos (térmicas, químicas e elétricas) e os graus (primeiro, segundo e terceiro)
+        das queimaduras e aplicar as técnicas e procedimentos básicos de socorro de queimaduras.'
+      - 30 min.
+    - - 11 mergências Clinicas
+      - '- Reconhecer AVC (Acidente Vascular Cerebral), convulsões, dispnéias, IAM (Infarto Agudo do Miocárdio).'
+      - 2h
+      - Aplicar as técnicas de atendimento básico.
+      - 1h
+    - - 12 Transporte de vitimas
+      - '- Conhecer as técnicas de transporte de vítimas clínicas e traumáticas com suspeita de lesão
+        na coluna vertebral e aplicar as técnicas de transporte de vítimas.'
+      - 1h
+      - Aplicar as técnicas de transporte de vítimas.
+      - 1h
+    - - 13 Pessoa com mobilidade reduzida
+      - '- Conhecer as técnicas de abordagem, cuidados e condução de acordo com o plano de emergência
+        da planta.'
+      - 30 min.
+    - - 14 Protocolo com incidente com múltiplas vítimas
+      - '- Conhecer as ações de avaliação, zoneamento, balizamento, triagem e método start para acidentes
+        e incidentes que envolvam múltiplas vítimas.'
+      - 1h
+      - Aplicar na prática as técnicas que envolvam múltiplas vítimas.
+      - 1h
+    - - 15 Psicologia em emergências
+      - '- Reconhecer o agravo emocional das pessoas em situações de emergências e a administração do
+        estresse após incidentes críticos para os profissionais de emergência.'
+      - 30 min.
+    - - Total
+      - 12h
+      - Total
+      - 08h
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.85
+      - 56.83
+      - 550.98
+      - 455.7
+      linhas:
+      - - 06 Estado de Choque
+        - '- Conhecer os sinais e sintomas do estado de choque e aplicar as técnicas básicas de tratamento.'
+        - 30 min.
+        - Aplicar as técnicas de cuidados básicos do estado de choque.
+        - 30 min.
+      - - 07 Hemorragias
+        - '- Conhecer as técnicas de hemostasia.'
+        - 30 min.
+        - Aplicar as técnicas de compressão direta e utilização de torniquete.
+        - ''
+      - - 08 Fraturas
+        - '- Reconhecer as fraturas abertas e fechadas e aplicar as técnicas de imobilização.'
+        - 30 min.
+        - Aplicar técnica de imobilização.
+        - 30 min.
+      - - 09 Ferimentos
+        - '- Identificar os tipos de ferimentos e aplicar os cuidados iniciais.'
+        - 30 min.
+        - Aplicar as técnicas de limpeza e bandagens.
+        - 30 min.
+      - - 10 Queimaduras
+        - '- Conhecer os tipos (térmicas, químicas e elétricas) e os graus (primeiro, segundo e terceiro)
+          das queimaduras e aplicar as técnicas e procedimentos básicos de socorro de queimaduras.'
+        - 30 min.
+        - ''
+        - ''
+      - - 11 mergências Clinicas
+        - '- Reconhecer AVC (Acidente Vascular Cerebral), convulsões, dispnéias, IAM (Infarto Agudo do
+          Miocárdio).'
+        - 2h
+        - Aplicar as técnicas de atendimento básico.
+        - 1h
+      - - 12 Transporte de vitimas
+        - '- Conhecer as técnicas de transporte de vítimas clínicas e traumáticas com suspeita de lesão
+          na coluna vertebral e aplicar as técnicas de transporte de vítimas.'
+        - 1h
+        - Aplicar as técnicas de transporte de vítimas.
+        - 1h
+      - - 13 Pessoa com mobilidade reduzida
+        - '- Conhecer as técnicas de abordagem, cuidados e condução de acordo com o plano de emergência
+          da planta.'
+        - 30 min.
+        - ''
+        - ''
+      - - 14 Protocolo com incidente com múltiplas vítimas
+        - '- Conhecer as ações de avaliação, zoneamento, balizamento, triagem e método start para acidentes
+          e incidentes que envolvam múltiplas vítimas.'
+        - 1h
+        - Aplicar na prática as técnicas que envolvam múltiplas vítimas.
+        - 1h
+      - - 15 Psicologia em emergências
+        - '- Reconhecer o agravo emocional das pessoas em situações de emergências e a administração do
+          estresse após incidentes críticos para os profissionais de emergência.'
+        - 30 min.
+        - ''
+        - ''
+      - - ''
+        - Total
+        - 12h
+        - Total
+        - 08h
+    - bbox:
+      - 56.85
+      - 495.27
+      - 545.94
+      - 758.98
+      linhas:
+      - - ''
+        - PREVENÇÃO E COMBATE A INCÊNDIO
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - ''
+        - Parte teórica
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - Parte prática
+        - null
+        - ''
+      - - Objetivo
+        - null
+        - null
+        - Carga horária
+        - null
+        - null
+        - Objetivo
+        - null
+        - Carga Horária
+        - null
+      - - '- Consolidar os Itens: 01, 02 e 03 da tabela A.1'
+        - null
+        - null
+        - 2h
+        - null
+        - null
+        - '- Consolidar os Itens 4 e 5 da tabela A.1'
+        - null
+        - 2h
+        - null
+      - - ''
+        - EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - ''
+        - Parte teórica
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - Parte prática
+        - null
+        - ''
+      - - Objetivo
+        - null
+        - null
+        - Carga horária
+        - null
+        - null
+        - Objetivo
+        - null
+        - Carga Horária
+        - null
+      - - '- Consolidar os Itens: 01 e 02 da tabela A.2'
+        - null
+        - null
+        - 2h
+        - null
+        - null
+        - '- Consolidar os Itens 1 da Tabela A.2'
+        - null
+        - 2h
+        - null
+      - - ''
+        - SALVAMENTO TERRESTRE/ EPI E EPR
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - ''
+        - Parte teórica
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - Parte prática
+        - null
+        - ''
+      - - Objetivo
+        - null
+        - null
+        - Carga horária
+        - null
+        - null
+        - Objetivo
+        - null
+        - Carga Horária
+        - null
+      - - '- Consolidar os Itens: 01 e 02 da tabela A.3 - Consolidar os Itens: 01 e 04 da tabela A.4'
+        - null
+        - null
+        - 4h
+        - null
+        - null
+        - '- Consolidar os Itens: 01 e 02 da tabela A.3 - Consolidar o Iten4 da Tabela A.4'
+        - null
+        - 4h
+        - null
+      - - ''
+        - PRIMEIROS SOCORROS
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - ''
+        - Parte teórica
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - Parte prática
+        - null
+        - ''
+      - - Objetivo
+        - null
+        - null
+        - Carga horária
+        - null
+        - null
+        - Objetivo
+        - null
+        - Carga Horária
+        - null
+      - - '- Consolidar os Itens: 01 a 12 da tabela A.6'
+        - null
+        - null
+        - 4h
+        - null
+        - null
+        - '- Consolidar os Itens: 01, 03, 04, 05 e 09 da tabela A.6'
+        - null
+        - 4h
+        - null
+notas:
+- Continuação da página 14.
+- 'Conferência aritmética (além dos dois caminhos): os módulos 01 a 15 (páginas 14 e 15) somam 12h na
+  parte teórica e 8h na prática, iguais aos totais.'
+inconsistencias_da_fonte:
+- Módulo 07 (Hemorragias) tem objetivo prático sem carga horária; o total prático (08h) fecha sem ele.
+- '"11 mergências Clinicas" (Emergências Clínicas) e "Transporte de vitimas": grafia da NT.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

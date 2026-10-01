@@ -1,0 +1,712 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela 1 (A.5)
+titulo: Currículos mínimos para a formação de BC — Produtos perigosos (A.5)
+pagina: 14
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  mesclar_linhas:
+  - - 2
+    - 3
+  linhas_cabecalho: 3
+  juntar_cabecalho: false
+  cabecalho_sem_repeticao: true
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-14.jpg
+    imagem_sha256: 85ad12cad2c6817de8c30c03ec3c3a9b53b5da25fab196bbf049a32e1a5a7186
+    linhas_cabecalho: 3
+    cabecalho_publicado:
+    - Módulo
+    - Parte teórica — objetivo
+    - Parte teórica — carga horária
+    - Parte prática — objetivo
+    - Parte prática — carga horária
+    linhas:
+    - - PRODUTOS PERIGOSOS – A.5
+    - - Parte teórica
+      - Parte prática
+    - - Módulo
+      - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - 01 Legislação
+      - '- Conhecer a legislação que regulamenta a identificação, transporte, armazenagem, manipulação
+        e as emergências envolvendo produtos perigosos.'
+      - 1h
+      - ''
+      - ''
+    - - 02 Conceitos
+      - '- Conhecer as classes de riscos, os sistemas de identificação, painel de segurança, rótulo de
+        risco, ficha de emergência e FISPQ.'
+      - 1h
+      - ''
+      - ''
+    - - 03 Guia de procedimentos de emergência
+      - '- Conhecer e saber consultar o manual de emergências com produtos perigosos da ABIQUIM/PRÓ-QUÍMICA.'
+      - 2h
+      - ''
+      - ''
+    - - 04 EPI e EPR
+      - '- Conhecer e demonstrar na prática o conhecimento dos equipamentos de proteção individual e respiratória
+        nível A, B e C específicos para atendimento a produtos perigosos.'
+      - 1h
+      - ''
+      - ''
+    - - 05 Ações Operacionais
+      - '- Conhecer o sistema de organização da área do sinistro em zonas de segurança, apoio de acesso
+        limitado (quente, morna e fria); - Conhecer os equipamentos e métodos de contenção e confinamento
+        de derramamento de produtos perigosos.'
+      - 1h
+      - '- Demonstrar na prática a aplicação e utilização de barreiras de contenção, absorção, mantas
+        absorventes, matérias adsorventes e absorventes orgânicos; - Demonstrar na prática as técnicas
+        de resgate de vítimas contaminadas e descontaminação de vítimas e ambientes.'
+      - 2h
+    - - ''
+      - Total
+      - 6h
+      - Total
+      - 2h
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 14
+      tabela_na_pagina: 1
+    linhas:
+    - - PRODUTOS PERIGOSOS - A.5
+    - - Parte teórica
+      - Parte prática
+    - - Módulo
+      - Objetivo
+      - Carga horária
+      - Objetivo
+      - Carga Horária
+    - - 01 Legislação
+      - '- Conhecer a legislação que regulamenta a identificação, transporte, armazenagem, manipulação
+        e as emergências envolvendo produtos perigosos.'
+      - 1h
+    - - 02 Conceitos
+      - '- Conhecer as classes de riscos, os sistemas de identificação, painel de segurança, rótulo de
+        risco, ficha de emergência e FISPQ.'
+      - 1h
+    - - 03 Guia de procediment os de emergência
+      - '- Conhecer e saber consultar o manual de emergências com produtos perigosos da ABIQUIM/PRÓ-QUÍMICA.'
+      - 2h
+    - - 04 EPI e EPR
+      - '- Conhecer e demonstrar na prática o conhecimento dos equipamentos de proteção individual e respiratória
+        nível A, B e C específicos para atendimento a produtos perigosos.'
+      - 1h
+    - - 05 Ações Operacionai s
+      - '- Conhecer o sistema de organização da área do sinistro em zonas de segurança, apoio de acesso
+        limitado (quente, morna e fria); - Conhecer os equipamentos e métodos de contenção e confinamento
+        de derramamento de produtos perigosos.'
+      - 1h
+      - '- Demonstrar na prática a aplicação e utilização de barreiras de contenção, absorção, mantas
+        absorventes, matérias adsorventes e absorventes orgânicos; - Demonstrar na prática as técnicas
+        de resgate de vítimas contaminadas e descontaminação de vítimas e ambientes.'
+      - 2h
+    - - Total
+      - 6h
+      - Total
+      - 2h
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 49.85
+      - 56.63
+      - 543.93
+      - 392.08
+      linhas:
+      - - ''
+        - PRODUTOS PERIGOSOS – A.5
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - ''
+        - Parte teórica
+        - null
+        - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - Parte prática
+        - null
+        - null
+        - ''
+      - - Módulo
+        - Módulo
+        - Objetivo
+        - Objetivo
+        - null
+        - ''
+        - Carga
+        - ''
+        - Objetivo
+        - Objetivo
+        - ''
+        - Carga
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - horária
+        - null
+        - null
+        - null
+        - null
+        - Horária
+        - null
+      - - 01 Legislação
+        - null
+        - '- Conhecer a legislação que regulamenta a identificação, transporte, armazenagem, manipulação
+          e as emergências envolvendo produtos perigosos.'
+        - null
+        - null
+        - 1h
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+        - null
+      - - 02 Conceitos
+        - null
+        - '- Conhecer as classes de riscos, os sistemas de identificação, painel de segurança, rótulo
+          de risco, ficha de emergência e FISPQ.'
+        - null
+        - null
+        - 1h
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+        - null
+      - - 03 Guia de procediment os de emergência
+        - null
+        - '- Conhecer e saber consultar o manual de emergências com produtos perigosos da ABIQUIM/PRÓ-QUÍMICA.'
+        - null
+        - null
+        - 2h
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+        - null
+      - - 04 EPI e EPR
+        - null
+        - '- Conhecer e demonstrar na prática o conhecimento dos equipamentos de proteção individual e
+          respiratória nível A, B e C específicos para atendimento a produtos perigosos.'
+        - null
+        - null
+        - 1h
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+        - null
+      - - 05 Ações Operacionai s
+        - null
+        - '- Conhecer o sistema de organização da área do sinistro em zonas de segurança, apoio de acesso
+          limitado (quente, morna e fria); - Conhecer os equipamentos e métodos de contenção e confinamento
+          de derramamento de produtos perigosos.'
+        - null
+        - null
+        - 1h
+        - null
+        - null
+        - '- Demonstrar na prática a aplicação e utilização de barreiras de contenção, absorção, mantas
+          absorventes, matérias adsorventes e absorventes orgânicos; - Demonstrar na prática as técnicas
+          de resgate de vítimas contaminadas e descontaminação de vítimas e ambientes.'
+        - null
+        - 2h
+        - null
+        - null
+      - - ''
+        - null
+        - Total
+        - null
+        - null
+        - 6h
+        - null
+        - null
+        - Total
+        - null
+        - 2h
+        - null
+        - null
+    - bbox:
+      - 49.85
+      - 403.27
+      - 543.93
+      - 779.54
+      linhas:
+      - - ''
+        - PRIMEIROS SOCORROS – A.6
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - ''
+        - Parte teórica
+        - null
+        - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - Parte prática
+        - null
+        - ''
+      - - Módulo
+        - null
+        - Objetivo
+        - null
+        - null
+        - Carga horária
+        - null
+        - null
+        - Objetivo
+        - null
+        - Carga Horária
+        - null
+      - - 01 Legislação Específica
+        - null
+        - ''
+        - '- Conhecer a legislação que regulamenta'
+        - ''
+        - 30 min.
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+      - - null
+        - null
+        - null
+        - os procedimentos de primeiros-socorros
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - para o nível equivalente a Bombeiro
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - profissional civil.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 02 Procedimentos Iniciais
+        - null
+        - ''
+        - '- Conhecer os procedimentos para'
+        - ''
+        - 1 h.
+        - null
+        - null
+        - ''
+        - null
+        - ''
+        - null
+      - - null
+        - null
+        - null
+        - avaliação da segurança do local,
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - números de vítimas e os procedimentos
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - de biossegurança;
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '- Conhecer os procedimentos para'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - acionamento e comunicação protocolar
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - com os serviços públicos e privados de
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - socorro de vítimas e ações para
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - localização dos hospitais de referência
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - nas proximidades do local de trabalho;
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '- Conhecer os procedimentos para o'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - planejamento das ações conforme
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - definido previamente no plano de
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - emergência da planta.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 03 Avaliação Inicial
+        - null
+        - ''
+        - '- Conhecer, avaliar e identificar os riscos'
+        - ''
+        - 30 min.
+        - null
+        - null
+        - Avaliar e reconhecer os riscos iminentes, os mecanismos de lesão número de vítimas e o exame
+          físico destas.
+        - null
+        - 30 min.
+        - null
+      - - null
+        - null
+        - null
+        - iminentes, os mecanismos de lesão,
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - número de vítimas e o exame físico
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - sumário destas.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 04 Vias Aéreas
+        - null
+        - ''
+        - '- Conhecer os sinais e sintomas de'
+        - ''
+        - 30 min.
+        - null
+        - null
+        - Promover a desobstrução utilizando a técnica adequada.
+        - null
+        - 1h.
+        - null
+      - - null
+        - null
+        - null
+        - obstruções de vias aéreas superiores em
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - adultos, crianças e bebês conscientes e
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - inconscientes, e promover a
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - desobstrução quando indicado.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 05 SBV (Suporte Básico de Vida)
+        - null
+        - ''
+        - '- Apresentar as técnicas do SBV para'
+        - ''
+        - 2h
+        - null
+        - null
+        - Praticar o protocolo do SBV (Suporte Básico de Vida)
+        - null
+        - 2h.
+        - null
+      - - null
+        - null
+        - null
+        - adultos, crianças e bebês;
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - '- Conhecer os equipamentos de'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - reanimação cardiorespiratória (DEA,
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - pocketmask).
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+notas:
+- 'Fonte indicada: ABNT NBR 14608.'
+- 'Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao
+  total da linha "Total".'
+inconsistencias_da_fonte:
+- 'Módulo 05 (parte prática): "matérias adsorventes" (materiais).'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 5
+    coluna: 0
+    a: 03 Guia de procedimentos de emergência
+    b: 03 Guia de procediment os de emergência
+    estado: verificada
+    score: 98.7

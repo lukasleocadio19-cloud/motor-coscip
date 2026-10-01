@@ -1,0 +1,408 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-01
+arquivo: nt-2-01-extintores.md
+tabela: Tabela 5
+titulo: Classes do fogo e distâncias máximas a serem percorridas
+pagina: 5
+fonte_pdf_sha256: f2e6db5a1fbc6fd43919d45461214c0d839e69d7a07c669a43b71ffa895381e3
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 10
+  - 12
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-01/pagina-05.jpg
+    imagem_sha256: 81e0b3e19cca95e6a70952474d85cd847ea3b748b14ccec1fc62666626e14592
+    linhas:
+    - - Classe do Fogo
+      - Distância Máxima a ser Percorrida (metros)
+    - - K
+      - '10'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 5
+      tabela_na_pagina: 2
+    linhas:
+    - - Classe do Fogo
+      - Distância Máxima a ser Percorrida (metros)
+    - - K
+      - '10'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 49.78
+      - 56.64
+      - 299.66
+      - 297.05
+      linhas:
+      - - entendimento, vide Anexo A.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Tabela 3 – Determinação da unidade extintora mínima,
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - área e distância a serem percorridas para o
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - dimensionamento de extintores de incêndio para classes A,
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - B e C.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Extintor / risco
+        - null
+        - ''
+        - Risco
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - null
+        - null
+        - Pequeno
+        - null
+        - ''
+        - Médio
+        - ''
+        - Grande
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - 1 e 2
+        - null
+        - null
+        - null
+      - - Área máxima protegida por 01 (uma) unidade extintora
+        - ''
+        - 250 m²
+        - null
+        - 150 m²
+        - null
+        - null
+        - 100 m²
+        - null
+      - - Distância máxima percorrida
+        - ''
+        - 20 m
+        - null
+        - 15 m
+        - null
+        - null
+        - 10 m
+        - null
+      - - 'Fonte: CBMERJ.'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 6.1.1.1 As capacidades extintoras mínimas dos
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - extintores de incêndio deverão atender as tabelas 1 e
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - '2.'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 6.1.1.2 Para o risco grande, a unidade extintora para
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - classe A deverá posuir capacidade extintora mínima
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 4A.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 6.1.2 Níveis mais elevados de capacidades extintoras
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - podem ser exigidos em razão do risco a ser protegido
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    - bbox: &id001
+      - 49.78
+      - 366.05
+      - 290.57
+      - 653.62
+      linhas:
+      - - 'a) fogo classe D: conforme Tabela 4;'
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Tabela 4 – Classes do fogo e distâncias máximas a
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - serem percorridas
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Classe do Fogo
+        - null
+        - null
+        - Distância Máxima a ser Percorrida (metros)
+        - null
+        - null
+      - - D
+        - null
+        - ''
+        - ''
+        - '23'
+        - ''
+      - - 'Fonte: NFPA 10.'
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 'b) fogo classe K: conforme Tabela 5 e para melhor'
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - entendimento, vide Anexo A;
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Tabela 5 – Classes do fogo e distâncias máximas a
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - serem percorridas
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Classe do Fogo
+        - null
+        - null
+        - Distância Máxima a ser Percorrida (metros)
+        - null
+        - null
+      - - K
+        - null
+        - ''
+        - ''
+        - '10'
+        - ''
+      - - 'Fonte: CBMERJ.'
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 6.2.2 Os extintores para a classe de incêndio K serão
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - dimensionados a critério do profissional autor do
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - projeto de segurança contra incêndio e pânico e
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - quando utilizados deverão atender a Tabela 5 e
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - obedecer ao constante da NT 3-01 – Cozinha
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Profissional.
+        - ''
+        - null
+        - null
+        - null
+        - null
+    - bbox:
+      - 311.69
+      - 387.31
+      - 553.97
+      - 434.96
+      linhas:
+      - - 6.10 Nos extintores de incêndio classificados para
+      - - Classe C, D e K, não há números usados em sua
+      - - quantificação. A eficácia relativa destes extintores de
+      - - incêndio para uso em combustíveis específicos é
+    - bbox:
+      - 131.96
+      - 411.29
+      - 283.93
+      - 427.63
+      linhas:
+      - - Distância Máxima a ser Percorrida
+      - - (metros)
+    - bbox:
+      - 311.69
+      - 500.71
+      - 553.97
+      - 617.4
+      linhas:
+      - - 6.12 Nas instalações industriais, depósitos, galpões,
+      - - oficinas e similares, com exceção das áreas
+      - - administrativas das referidas ocupações, deve ser
+      - - pintada de vermelho, com bordas amarelas, uma área
+      - - de piso sob o extintor, a fim de evitar que seu acesso
+      - - seja obstruído. Esta área deve ter, no mínimo, as
+      - - 'seguintes dimensões:'
+      - - 'a) área pintada de vermelho: 0,70 m x 0,70 m;'
+      - - 'b) bordas amarelas: 0,15 m de largura.'
+    - bbox:
+      - 131.96
+      - 525.01
+      - 283.93
+      - 541.42
+      linhas:
+      - - Distância Máxima a ser Percorrida
+      - - (metros)
+    - bbox:
+      - 311.69
+      - 672.64
+      - 553.97
+      - 731.76
+      linhas:
+      - - '7.2'
+        - Para efeito de regularização junto ao CBMERJ, o
+        - null
+      - - prazo de validade/garantia de funcionamento dos
+        - null
+        - null
+      - - extintores deve ser aquele estabelecido pelo
+        - null
+        - null
+      - - fabricante e/ou da empresa de manutenção certificada
+        - null
+        - null
+      - - pelo Sistema Brasileiro de Certificação.
+        - null
+        - ''
+notas:
+- 'Fonte: CBMERJ.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 1
+  candidatos_na_pagina: 7
+  bbox: *id001
+  texto: verificada

@@ -1,0 +1,8 @@
+{
+  "comentario": "Python embeddable oficial usado no pacote portátil (F0.3, ADR 0007). O workflow release.yml baixa a URL e recusa o arquivo se o SHA-256 não conferir. sha256 vazio = ainda não fixado: o workflow confere a assinatura Sigstore do python.org (identidade do gerente da versão 3.12), mostra o hash e falha, para que ele seja fixado aqui depois de conferido.",
+  "versao": "3.12.10",
+  "url": "https://www.python.org/ftp/python/3.12.10/python-3.12.10-embed-amd64.zip",
+  "sha256": "",
+  "sigstore_identidade": "thomas@python.org",
+  "sigstore_emissor": "https://accounts.google.com"
+}

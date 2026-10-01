@@ -1,0 +1,300 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-20
+arquivo: nt-2-20-controle-de-materiais-de-acabamento.md
+tabela: Tabela 1 do Anexo A
+titulo: Classificação dos materiais de revestimento de piso
+pagina: 6
+fonte_pdf_sha256: 6fa8dffe9aa7d10fb27c845b40da733db84862ac9fc144ec3948e8db24e90d4d
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-20/pagina-06.jpg
+    imagem_sha256: 18ac4a2b0ce142ea0b1ce1ff026513705217b609589fce40f1aa2967f67cfcf1
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Classe
+    - Subclasse
+    - ISO 1182
+    - NBR 8660
+    - EN ISO 11925-2 (exposição de 15 s)
+    - ASTM E 662
+    linhas:
+    - - Método de Ensaio
+      - <
+      - ISO 1182
+      - NBR 8660
+      - EN ISO 11925-2 (exposição de 15 s)
+      - ASTM E 662
+    - - Classe
+      - <
+      - ^
+      - ^
+      - ^
+      - ^
+    - - I
+      - <
+      - Incombustível ΔT≤ 30° C Δm ≤ 50% tf≤ 10s
+      - '-'
+      - '-'
+      - '-'
+    - - II
+      - A
+      - Combustível
+      - Fluxo crítico ≥ 8,0 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm ≤ 450
+    - - ^
+      - B
+      - Combustível
+      - Fluxo crítico ≥ 8,0 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm > 450
+    - - III
+      - A
+      - Combustível
+      - Fluxo crítico ≥ 4,5 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm ≤ 450
+    - - ^
+      - B
+      - Combustível
+      - Fluxo crítico ≥ 4,5 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm > 450
+    - - IV
+      - A
+      - Combustível
+      - Fluxo crítico ≥ 3,0 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm ≤ 450
+    - - ^
+      - B
+      - Combustível
+      - Fluxo crítico ≥ 3,0 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm > 450
+    - - V
+      - A
+      - Combustível
+      - Fluxo crítico ≥ 3,0 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm ≤ 450
+    - - ^
+      - B
+      - Combustível
+      - Fluxo crítico ≥ 3,0 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm > 450
+    - - VI
+      - <
+      - Combustível
+      - '-'
+      - FS ≥ 150 mm em 20s
+      - '-'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 6
+      tabela_na_pagina: 1
+    linhas:
+    - - Método de Ensaio
+      - ISO 1182
+      - NBR 8660
+      - EN ISO 11925-2 (exposição de 15 s)
+      - ASTM E 662
+    - - Classe
+    - - I
+      - Incombustível ΔT≤ 30° C Δm ≤ 50% tf≤ 10s
+      - '-'
+      - '-'
+      - '-'
+    - - II
+      - A
+      - Combustível
+      - Fluxo crítico ≥ 8,0 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm ≤ 450
+    - - B
+      - Combustível
+      - Fluxo crítico ≥ 8,0 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm > 450
+    - - III
+      - A
+      - Combustível
+      - Fluxo crítico ≥ 4,5 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm ≤ 450
+    - - B
+      - Combustível
+      - Fluxo crítico ≥ 4,5 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm > 450
+    - - IV
+      - A
+      - Combustível
+      - Fluxo crítico ≥ 3,0 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm ≤ 450
+    - - B
+      - Combustível
+      - Fluxo crítico ≥ 3,0 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm > 450
+    - - V
+      - A
+      - Combustível
+      - Fluxo crítico ≥ 3,0 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm ≤ 450
+    - - B
+      - Combustível
+      - Fluxo crítico ≥ 3,0 kW/m²
+      - FS ≤ 150 mm em 20s
+      - Dm > 450
+    - - VI
+      - Combustível
+      - '-'
+      - FS ≥ 150 mm em 20s
+      - '-'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 47.8
+      - 114.9
+      - 505.14
+      - 405.24
+      linhas:
+      - - Método de Ensaio
+        - null
+        - null
+        - null
+        - ISO 1182
+        - NBR 8660
+        - EN ISO 11925-2 (exposição de 15 s)
+        - ASTM E 662
+      - - ''
+        - Classe
+        - null
+        - ''
+        - null
+        - null
+        - null
+        - null
+      - - I
+        - null
+        - null
+        - null
+        - Incombustível ΔT≤ 30° C Δm ≤ 50% tf≤ 10s
+        - '-'
+        - '-'
+        - '-'
+      - - II
+        - null
+        - A
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 8,0 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 8,0 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm > 450
+      - - III
+        - null
+        - A
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 4,5 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 4,5 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm > 450
+      - - IV
+        - null
+        - A
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 3,0 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 3,0 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm > 450
+      - - V
+        - null
+        - A
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 3,0 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm ≤ 450
+      - - null
+        - null
+        - B
+        - null
+        - Combustível
+        - Fluxo crítico ≥ 3,0 kW/m²
+        - FS ≤ 150 mm em 20s
+        - Dm > 450
+      - - VI
+        - null
+        - null
+        - null
+        - Combustível
+        - '-'
+        - FS ≥ 150 mm em 20s
+        - '-'
+    - bbox:
+      - 329.9
+      - 120.99
+      - 427.6
+      - 157.97
+      linhas:
+      - - EN ISO 11925-2
+      - - (exposição de 15 s)
+notas:
+- 'Legenda da tabela:'
+- Dm – Densidade óptica específica máxima corrigida.
+- Fluxo crítico – Fluxo de energia radiante necessário à manutenção da frente de chama no corpo de prova.
+- FS – Tempo em que a frente da chama leva para atingir a marca de 150 mm indicada na face do material
+  ensaiado.
+- tf – Tempo de flamejamento do corpo de prova.
+- ΔT – Variação de temperatura no interior do forno.
+- Δm – Variação de massa do corpo de prova.
+- 'Fonte indicada na página: ABNT NBR 15575:2013 - Edificações habitacionais – Desempenho.'
+inconsistencias_da_fonte:
+- 'As classes IV e V têm critérios idênticos em todos os métodos (combustível; fluxo crítico ≥ 3,0 kW/m²;
+  FS ≤ 150 mm em 20s; Dm ≤ 450 / > 450): pela tabela não se distingue um material IV de um V.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

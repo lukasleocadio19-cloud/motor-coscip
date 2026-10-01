@@ -1,0 +1,101 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-02
+arquivo: nt-2-02-hidrantes-e-mangotinhos.md
+tabela: Tabela 5
+titulo: Drenos e colares hidráulicos
+pagina: 13
+fonte_pdf_sha256: 175c79afcac17335da3d68aef49e4ec9cc88706ddd012ed49e0b2748bf8524e9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+  comparar_por_coluna: true
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-02/pagina-13.jpg
+    imagem_sha256: 1f62d92a34cc6b96bfdfb068f7a368f9ecb6f09f094ceac65a4c41c397558e02
+    linhas_cabecalho: 1
+    linhas:
+    - - Classificação de Risco
+      - Sucção
+      - Recalque
+      - Alívio
+    - - 1.A - Risco Pequeno - Mangotinho
+      - 1 1/2"
+      - 1 1/4"
+      - 1/2" (opcional)
+    - - 1.B - Risco Pequeno CP
+      - 1 1/2"
+      - 1 1/4"
+      - 1/2" (opcional)
+    - - 2.A - Risco Médio CP
+      - 3"
+      - 2 1/2"
+      - 1/2" (opcional)
+    - - 2.B - Risco Médio RP
+      - 3"
+      - 3"
+      - 3/4" (opcional)
+    - - 3. - Risco Grande RP
+      - 4"
+      - 3"
+      - 1"(obrigatório)
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 13
+      tabela_na_pagina: 1
+    linhas:
+    - - Classificação de Risco
+      - Sucção
+      - Recalque
+      - Alívio
+    - - 1.A - Risco Pequeno - Mangotinho
+      - 1 1/2"
+      - 1 1/4"
+      - 1/2" (opcional)
+    - - 1.B - Risco Pequeno CP 2.A - Risco Médio CP
+      - 1 1/2" 3"
+      - 1 1/4" 2 1/2"
+      - 1/2" (opcional) 1/2" (opcional)
+    - - 2.B - Risco Médio RP 3. - Risco Grande RP
+      - 3" 4"
+      - 3" 3"
+      - 3/4" (opcional) 1"(obrigatório)
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 312.35
+      - 422.88
+      - 556.74
+      - 511.53
+      linhas:
+      - - C la ssific a ç ã o d e R isc o 1 .A - R isc o P e q u e n o - M a n g o tin h o 1 .B - R isc
+          o P e q u e n o C P 2 .A - R isc o M é d io C P 2 .B - R isc o M é d io R P 3 . - R isc o G
+          ra n d e R P
+        - S u c ç ã o 1 1 /2 " 1 1 /2 " 3 " 3 " 4 "
+        - R e c a lq u e 1 1 /4 " 1 1 /4 " 2 1 /2 " 3 " 3 "
+        - A lív io 1 /2 " (o p c io n a l) 1 /2 " (o p c io n a l) 1 /2 " (o p c io n a l) 3 /4 " (o p
+          c io n a l) 1 "(o b rig a tó rio )
+notas:
+- 'Na imagem o título é "Tabela 05"; o texto (5.15.8 f) a chama de Tabela 5. CP = canalização preventiva;
+  RP = rede preventiva. Fonte indicada: CBMERJ.'
+- 'A camada de texto funde as linhas duas a duas e a grade do PDF lê cada coluna numa célula só, com espaço
+  entre as letras: a comparação é por coluna (texto e ordem de cada coluna), e na grade sem os espaços;
+  quais linhas cada valor ocupa vem da leitura visual.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
+  texto: verificada
+forma_geometrica:
+  sem_espacos: true

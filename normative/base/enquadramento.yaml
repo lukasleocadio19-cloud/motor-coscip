@@ -25,8 +25,9 @@ risk_to_rules_source:
   - Grande
   - 1 e 2
 notes:
-- 'Divisões com merged_from: no PDF o risco está numa célula mesclada do grupo; conferido nas imagens
-  das páginas 11 e 12 da NT 1-04.'
+- 'Cada divisão é conferida na tabela do Anexo B publicada no texto (F2: leitura visual das páginas
+  11 a 16 x camada de texto, normative/tabelas/nt-1-04/anexo-b-p*.yaml), onde o risco das células
+  mescladas aparece em cada linha. tests/unit/test_tabelas.py confere divisão a divisão.'
 - 'Exceções da NT 1-04 que o motor não aplica sozinho (o analista confere): 5.6 a 5.8 depósitos pela carga
   de incêndio (sem carga declarada, risco grande); 5.9 mista A-6; 5.10 C-1 com mais de 500 L de inflamáveis;
   5.11 C-2 com estoque acima de 3,70 m; 5.13 I-2/I-3 por cálculo; 5.14 G-1 a G-3 com estacionamento coberto
@@ -71,7 +72,6 @@ divisions:
   group: Serviço de hospedagem
   description: Hotel residencial
   risk: MÉDIO 1
-  merged_from: B-1
   page: 11
 - id: C-1
   group: Comercial
@@ -111,25 +111,21 @@ divisions:
   group: Serviço profissional e institucional
   description: Agências bancárias
   risk: MÉDIO 1
-  merged_from: D-1
   page: 12
 - id: D-3
   group: Serviço profissional e institucional
   description: Serviços de manutenção e reparação (exceto os classificados em G-4)
   risk: MÉDIO 1
-  merged_from: D-1
   page: 12
 - id: D-4
   group: Serviço profissional e institucional
   description: Laboratórios de análises clínicas e assemelhados
   risk: MÉDIO 1
-  merged_from: D-1
   page: 12
 - id: D-5
   group: Serviço profissional e institucional
   description: Edificação pública das forças armadas, policiais e militares estaduais
   risk: MÉDIO 1
-  merged_from: D-1
   page: 12
 - id: E-1
   group: Escolar e cultura física
@@ -140,13 +136,11 @@ divisions:
   group: Escolar e cultura física
   description: Escolar especial
   risk: MÉDIO 1
-  merged_from: E-1
   page: 12
 - id: E-3
   group: Escolar e cultura física
   description: Espaço para cultura física
   risk: MÉDIO 1
-  merged_from: E-1
   page: 12
 - id: F-1
   group: Local de reunião de público
@@ -157,61 +151,51 @@ divisions:
   group: Local de reunião de público
   description: Local religioso e velório
   risk: MÉDIO 1
-  merged_from: F-1
   page: 12
 - id: F-3
   group: Local de reunião de público
   description: Centro esportivo e de exibições
   risk: MÉDIO 1
-  merged_from: F-1
   page: 12
 - id: F-4
   group: Local de reunião de público
   description: Estação e terminal de passageiro
   risk: MÉDIO 1
-  merged_from: F-1
   page: 12
 - id: F-5
   group: Local de reunião de público
   description: Arte cênica e auditório
   risk: MÉDIO 1
-  merged_from: F-1
   page: 12
 - id: F-6
   group: Local de reunião de público
   description: Boates e casas de show
   risk: MÉDIO 1
-  merged_from: F-1
   page: 12
 - id: F-7
   group: Local de reunião de público
   description: Instalações temporárias
   risk: MÉDIO 1
-  merged_from: F-1
   page: 12
 - id: F-8
   group: Local de reunião de público
   description: Local para refeição
   risk: MÉDIO 1
-  merged_from: F-1
   page: 12
 - id: F-9
   group: Local de reunião de público
   description: Recreação pública
   risk: MÉDIO 1
-  merged_from: F-1
   page: 12
 - id: F-10
   group: Local de reunião de público
   description: Exposição de animais
   risk: MÉDIO 1
-  merged_from: F-1
   page: 12
 - id: F-11
   group: Local de reunião de público
   description: Clubes sociais e diversão
   risk: MÉDIO 1
-  merged_from: F-1
   page: 12
 - id: G-1
   group: Serviço automotivo e assemelhado
@@ -222,19 +206,16 @@ divisions:
   group: Serviço automotivo e assemelhado
   description: Garagem com acesso de público e sem abastecimento
   risk: MÉDIO 1
-  merged_from: G-1
   page: 12
 - id: G-3
   group: Serviço automotivo e assemelhado
   description: Local dotado de abastecimento de combustível
   risk: MÉDIO 1
-  merged_from: G-1
   page: 12
 - id: G-4
   group: Serviço automotivo e assemelhado
   description: Serviço de conservação, manutenção e reparos
   risk: MÉDIO 1
-  merged_from: G-1
   page: 12
 - id: G-5
   group: Serviço automotivo e assemelhado
@@ -245,7 +226,6 @@ divisions:
   group: Serviço automotivo e assemelhado
   description: Galpão ou garagem náutica
   risk: MÉDIO 2
-  merged_from: G-5
   page: 12
 - id: H-1
   group: Serviço de saúde
@@ -257,21 +237,18 @@ divisions:
   description: Local para tratamento de dependentes de droga, álcool e assemelhados, todos sem celas,
     asilos, residências geriátricas
   risk: MÉDIO 1
-  merged_from: H-1
   page: 12
 - id: H-3
   group: Serviço de saúde
   description: Hospitais, casas de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos
     de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital psiquiátrico.
   risk: MÉDIO 1
-  merged_from: H-1
   page: 12
 - id: H-4
   group: Serviço de saúde
   description: Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados.
     Todos sem internação.
   risk: MÉDIO 1
-  merged_from: H-1
   page: 12
 - id: I-1
   group: Industrial

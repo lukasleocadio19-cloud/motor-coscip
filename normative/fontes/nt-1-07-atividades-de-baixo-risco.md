@@ -75,8 +75,7 @@ Aprovada pela Portaria CBMERJ nº 1109, de 20 de maio de 2020 (DOERJ nº 093, de
 
 A - Relação de CNAEs passíveis de dispensa de regularização
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -653,8 +652,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 ### ANEXO A - Relação de CNAEs passíveis de dispensa de regularização
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | CNAE | Descrição |
@@ -702,6 +700,58 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 0133-4/99 | Cultivo de frutas de lavoura permanente não especificadas anteriormente |
 | 0134-2/00 | Cultivo de café |
 
+<!-- tabela-conferida: Anexo A p13 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 0111-3/01 | Cultivo de arroz |
+| 0111-3/02 | Cultivo de milho |
+| 0111-3/03 | Cultivo de trigo |
+| 0111-3/99 | Cultivo de outros cereais não especificados anteriormente |
+| 0112-1/01 | Cultivo de algodão herbáceo |
+| 0112-1/02 | Cultivo de juta |
+| 0112-1/99 | Cultivo de outras fibras de lavoura temporária não especificadas anteriormente |
+| 0113-0/00 | Cultivo de cana-de-açúcar |
+| 0114-8/00 | Cultivo de fumo |
+| 0115-6/00 | Cultivo de soja |
+| 0116-4/01 | Cultivo de amendoim |
+| 0116-4/02 | Cultivo de girassol |
+| 0116-4/03 | Cultivo de mamona |
+| 0116-4/99 | Cultivo de outras oleaginosas de lavoura temporária não especificadas anteriormente |
+| 0119-9/01 | Cultivo de abacaxi |
+| 0119-9/02 | Cultivo de alho |
+| 0119-9/03 | Cultivo de batata-inglesa |
+| 0119-9/04 | Cultivo de cebola |
+| 0119-9/05 | Cultivo de feijão |
+| 0119-9/06 | Cultivo de mandioca |
+| 0119-9/07 | Cultivo de melão |
+| 0119-9/08 | Cultivo de melancia |
+| 0119-9/09 | Cultivo de tomate rasteiro |
+| 0119-9/99 | Cultivo de outras plantas de lavoura temporária não especificadas anteriormente |
+| 0121-1/01 | Horticultura, exceto morango |
+| 0121-1/02 | Cultivo de morango |
+| 0122-9/00 | Cultivo de flores e plantas ornamentais |
+| 0131-8/00 | Cultivo de laranja |
+| 0132-6/00 | Cultivo de uva |
+| 0133-4/01 | Cultivo de açaí |
+| 0133-4/02 | Cultivo de banana |
+| 0133-4/03 | Cultivo de caju |
+| 0133-4/04 | Cultivo de cítricos, exceto laranja |
+| 0133-4/05 | Cultivo de coco-da-baía |
+| 0133-4/06 | Cultivo de guaraná |
+| 0133-4/07 | Cultivo de maçã |
+| 0133-4/08 | Cultivo de mamão |
+| 0133-4/09 | Cultivo de maracujá |
+| 0133-4/10 | Cultivo de manga |
+| 0133-4/11 | Cultivo de pêssego |
+| 0133-4/99 | Cultivo de frutas de lavoura permanente não especificadas anteriormente |
+| 0134-2/00 | Cultivo de café |
+
+Fonte: NT 1-07, página 13, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+A tabela continua na página 14.
+<!-- /tabela-conferida: Anexo A p13 -->
+
 ---
 
 ## Página 14
@@ -710,8 +760,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 0135-1/00 | Cultivo de cacau |
@@ -760,6 +809,61 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 0210-1/04 | Cultivo de teca |
 | 0210-1/05 | Cultivo de espécies madeireiras, exceto eucalipto, acácia-negra, pinus e teca |
 
+<!-- tabela-conferida: Anexo A p14 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 0135-1/00 | Cultivo de cacau |
+| 0139-3/01 | Cultivo de chá-da-índia |
+| 0139-3/02 | Cultivo de erva-mate |
+| 0139-3/03 | Cultivo de pimenta-do-reino |
+| 0139-3/04 | Cultivo de plantas para condimento, exceto pimenta-do-reino |
+| 0139-3/05 | Cultivo de dendê |
+| 0139-3/06 | Cultivo de seringueira |
+| 0139-3/99 | Cultivo de outras plantas de lavoura permanente não especificadas anteriormente |
+| 0141-5/01 | Produção de sementes certificadas, exceto de forrageiras para pasto |
+| 0141-5/02 | Produção de sementes certificadas de forrageiras para formação de pasto |
+| 0142-3/00 | Produção de mudas e outras formas de propagação vegetal, certificadas |
+| 0151-2/01 | Criação de bovinos para corte |
+| 0151-2/02 | Criação de bovinos para leite |
+| 0151-2/03 | Criação de bovinos, exceto para corte e leite |
+| 0152-1/01 | Criação de bufalinos |
+| 0152-1/02 | Criação de equinos |
+| 0152-1/03 | Criação de asininos e muares |
+| 0153-9/01 | Criação de caprinos |
+| 0153-9/02 | Criação de ovinos, inclusive para produção de lã |
+| 0154-7/00 | Criação de suínos |
+| 0155-5/01 | Criação de frangos para corte |
+| 0155-5/02 | Produção de pintos de um dia |
+| 0155-5/03 | Criação de outros galináceos, exceto para corte |
+| 0155-5/04 | Criação de aves, exceto galináceos |
+| 0155-5/05 | Produção de ovos |
+| 0159-8/01 | Apicultura |
+| 0159-8/02 | Criação de animais de estimação |
+| 0159-8/03 | Criação de escargô |
+| 0159-8/04 | Criação de bicho-da-seda |
+| 0159-8/99 | Criação de outros animais não especificados anteriormente |
+| 0161-0/02 | Serviço de poda de árvores para lavouras |
+| 0161-0/03 | Serviço de preparação de terreno, cultivo e colheita |
+| 0161-0/99 | Atividades de apoio à agricultura não especificadas anteriormente |
+| 0162-8/01 | Serviço de inseminação artificial em animais |
+| 0162-8/02 | Serviço de tosquiamento de ovinos |
+| 0162-8/03 | Serviço de manejo de animais |
+| 0162-8/99 | Atividades de apoio à pecuária não especificadas anteriormente |
+| 0163-6/00 | Atividades de pós-colheita |
+| 0170-9/00 | Caça e serviços relacionados |
+| 0210-1/01 | Cultivo de eucalipto |
+| 0210-1/02 | Cultivo de acácia-negra |
+| 0210-1/03 | Cultivo de pinus |
+| 0210-1/04 | Cultivo de teca |
+| 0210-1/05 | Cultivo de espécies madeireiras, exceto eucalipto, acácia-negra, pinus e teca |
+
+Fonte: NT 1-07, página 14, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 13.
+A tabela continua na página 15.
+<!-- /tabela-conferida: Anexo A p14 -->
+
 ---
 
 ## Página 15
@@ -768,8 +872,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 0210-1/06 | Cultivo de mudas em viveiros florestais |
@@ -818,6 +921,61 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 1020-1/02 | Fabricação de conservas de peixes, crustáceos e moluscos |
 | 1031-7/00 | Fabricação de conservas de frutas |
 
+<!-- tabela-conferida: Anexo A p15 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 0210-1/06 | Cultivo de mudas em viveiros florestais |
+| 0210-1/07 | Extração de madeira em florestas plantadas |
+| 0210-1/08 | Produção de carvão vegetal - florestas plantadas |
+| 0210-1/09 | Produção de casca de acácia-negra - florestas plantadas |
+| 0210-1/99 | Produção de produtos não madeireiros não especificados anteriormente em florestas plantadas |
+| 0220-9/01 | Extração de madeira em florestas nativas |
+| 0220-9/02 | Produção de carvão vegetal - florestas nativas |
+| 0220-9/03 | Coleta de castanha-do-pará em florestas nativas |
+| 0220-9/04 | Coleta de látex em florestas nativas |
+| 0220-9/05 | Coleta de palmito em florestas nativas |
+| 0220-9/06 | Conservação de florestas nativas |
+| 0220-9/99 | Coleta de produtos não madeireiros não especificados anteriormente em florestas nativas |
+| 0230-6/00 | Atividades de apoio à produção florestal |
+| 0311-6/01 | Pesca de peixes em água salgada |
+| 0311-6/02 | Pesca de crustáceos e moluscos em água salgada |
+| 0311-6/03 | Coleta de outros produtos marinhos |
+| 0311-6/04 | Atividades de apoio à pesca em água salgada |
+| 0312-4/01 | Pesca de peixes em água doce |
+| 0312-4/02 | Pesca de crustáceos e moluscos em água doce |
+| 0312-4/03 | Coleta de outros produtos aquáticos de água doce |
+| 0312-4/04 | Atividades de apoio à pesca em água doce |
+| 0321-3/01 | Criação de peixes em água salgada e salobra |
+| 0321-3/02 | Criação de camarões em água salgada e salobra |
+| 0321-3/03 | Criação de ostras e mexilhões em água salgada e salobra |
+| 0321-3/04 | Criação de peixes ornamentais em água salgada e salobra |
+| 0321-3/05 | Atividades de apoio à aquicultura em água salgada e salobra |
+| 0321-3/99 | Cultivos e semicultivos da aquicultura em água salgada e salobra não especificados anteriormente |
+| 0322-1/01 | Criação de peixes em água doce |
+| 0322-1/02 | Criação de camarões em água doce |
+| 0322-1/03 | Criação de ostras e mexilhões em água doce |
+| 0322-1/04 | Criação de peixes ornamentais em água doce |
+| 0322-1/05 | Ranicultura |
+| 0322-1/06 | Criação de jacaré |
+| 0322-1/07 | Atividades de apoio à aquicultura em água doce |
+| 0322-1/99 | Cultivos e semicultivos da aquicultura em água doce não especificados anteriormente |
+| 1011-2/05 | Matadouro - abate de reses sob contrato, exceto abate de suínos |
+| 1012-1/01 | Abate de aves |
+| 1012-1/02 | Abate de pequenos animais |
+| 1012-1/04 | Matadouro - abate de suínos sob contrato |
+| 1013-9/01 | Fabricação de produtos de carne |
+| 1013-9/02 | Preparação de subprodutos do abate |
+| 1020-1/01 | Preservação de peixes, crustáceos e moluscos |
+| 1020-1/02 | Fabricação de conservas de peixes, crustáceos e moluscos |
+| 1031-7/00 | Fabricação de conservas de frutas |
+
+Fonte: NT 1-07, página 15, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 14.
+A tabela continua na página 16.
+<!-- /tabela-conferida: Anexo A p15 -->
+
 ---
 
 ## Página 16
@@ -826,8 +984,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 1032-5/01 | Fabricação de conservas de palmito |
@@ -876,6 +1033,61 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 2391-5/02 | Aparelhamento de pedras para construção, exceto associado à extração |
 | 2391-5/03 | Aparelhamento de placas e execução de trabalhos em mármore, granito, ardósia e outras pedras |
 
+<!-- tabela-conferida: Anexo A p16 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 1032-5/01 | Fabricação de conservas de palmito |
+| 1032-5/99 | Fabricação de conservas de legumes e outros vegetais, exceto palmito |
+| 1033-3/01 | Fabricação de sucos concentrados de frutas, hortaliças e legumes |
+| 1033-3/02 | Fabricação de sucos de frutas, hortaliças e legumes, exceto concentrados |
+| 1051-1/00 | Preparação do leite |
+| 1052-0/00 | Fabricação de laticínios |
+| 1053-8/00 | Fabricação de sorvetes e outros gelados comestíveis |
+| 1093-7/02 | Fabricação de frutas cristalizadas, balas e semelhantes |
+| 1094-5/00 | Fabricação de massas alimentícias |
+| 1095-3/00 | Fabricação de especiarias, molhos, temperos e condimentos |
+| 1099-6/01 | Fabricação de vinagres |
+| 1099-6/03 | Fabricação de fermentos e leveduras |
+| 1099-6/04 | Fabricação de gelo comum |
+| 1112-7/00 | Fabricação de vinho |
+| 1121-6/00 | Fabricação de águas envasadas |
+| 1122-4/01 | Fabricação de refrigerantes |
+| 1122-4/99 | Fabricação de outras bebidas não alcoólicas não especificadas anteriormente |
+| 1311-1/00 | Preparação e fiação de fibras de algodão |
+| 1312-0/00 | Preparação e fiação de fibras têxteis naturais, exceto algodão |
+| 1340-5/99 | Outros serviços de acabamento em fios, tecidos, artefatos têxteis e peças do vestuário |
+| 1351-1/00 | Fabricação de artefatos têxteis para uso doméstico |
+| 1354-5/00 | Fabricação de tecidos especiais, inclusive artefatos |
+| 1359-6/00 | Fabricação de outros produtos têxteis não especificados anteriormente |
+| 1411-8/01 | Confecção de roupas íntimas |
+| 1411-8/02 | Facção de roupas íntimas |
+| 1412-6/01 | Confecção de peças do vestuário, exceto roupas íntimas e as confeccionadas sob medida |
+| 1412-6/02 | Confecção, sob medida, de peças do vestuário, exceto roupas íntimas |
+| 1412-6/03 | Facção de peças do vestuário, exceto roupas íntimas |
+| 1413-4/01 | Confecção de roupas profissionais, exceto sob medida |
+| 1413-4/02 | Confecção, sob medida, de roupas profissionais |
+| 1413-4/03 | Facção de roupas profissionais |
+| 1414-2/00 | Fabricação de acessórios do vestuário, exceto para segurança e proteção |
+| 1421-5/00 | Fabricação de meias |
+| 1422-3/00 | Fabricação de artigos do vestuário, produzidos em malharias e tricotagens, exceto meias |
+| 1521-1/00 | Fabricação de artigos para viagem, bolsas e semelhantes de qualquer material |
+| 1529-7/00 | Fabricação de artefatos de couro não especificados anteriormente |
+| 1531-9/01 | Fabricação de calçados de couro |
+| 1822-9/01 | Serviços de encadernação e plastificação |
+| 1822-9/99 | Serviços de acabamentos gráficos, exceto encadernação e plastificação |
+| 1830-0/01 | Reprodução de som em qualquer suporte |
+| 1830-0/02 | Reprodução de vídeo em qualquer suporte |
+| 1830-0/03 | Reprodução de software em qualquer suporte |
+| 2391-5/02 | Aparelhamento de pedras para construção, exceto associado à extração |
+| 2391-5/03 | Aparelhamento de placas e execução de trabalhos em mármore, granito, ardósia e outras pedras |
+
+Fonte: NT 1-07, página 16, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 15.
+A tabela continua na página 17.
+<!-- /tabela-conferida: Anexo A p16 -->
+
 ---
 
 ## Página 17
@@ -884,8 +1096,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 2399-1/01 | Decoração, lapidação, gravação, vitrificação e outros trabalhos em cerâmica, louça, vidro e cristal |  |  |
@@ -944,6 +1155,60 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 3831-9/99 | Recuperação de materiais metálicos, exceto alumínio |  |  |
 | 3832-7/00 | Recuperação de materiais plásticos |  |  |
 
+<!-- tabela-conferida: Anexo A p17 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 2399-1/01 | Decoração, lapidação, gravação, vitrificação e outros trabalhos em cerâmica, louça, vidro e cristal |
+| 2539-0/02 | Serviços de tratamento e revestimento em metais |
+| 3250-7/06 | Serviços de prótese dentária |
+| 3250-7/07 | Fabricação de artigos ópticos |
+| 3291-4/00 | Fabricação de escovas, pincéis e vassouras |
+| 3312-1/02 | Manutenção e reparação de aparelhos e instrumentos de medida, teste e controle |
+| 3312-1/04 | Manutenção e reparação de equipamentos e instrumentos ópticos |
+| 3313-9/02 | Manutenção e reparação de baterias e acumuladores elétricos, exceto para veículos |
+| 3314-7/01 | Manutenção e reparação de máquinas motrizes não elétricas |
+| 3314-7/02 | Manutenção e reparação de equipamentos hidráulicos e pneumáticos, exceto válvulas |
+| 3314-7/03 | Manutenção e reparação de válvulas industriais |
+| 3314-7/04 | Manutenção e reparação de compressores |
+| 3314-7/06 | Manutenção e reparação de máquinas, aparelhos e equipamentos para instalações térmicas |
+| 3314-7/07 | Manutenção e reparação de máquinas e aparelhos de refrigeração e ventilação para uso industrial e comercial |
+| 3314-7/08 | Manutenção e reparação de máquinas, equipamentos e aparelhos para transporte e elevação de cargas |
+| 3314-7/09 | Manutenção e reparação de máquinas de escrever, calcular e de outros equipamentos não eletrônicos para escritório |
+| 3314-7/10 | Manutenção e reparação de máquinas e equipamentos para uso geral não especificados anteriormente |
+| 3314-7/11 | Manutenção e reparação de máquinas e equipamentos para agricultura e pecuária |
+| 3314-7/12 | Manutenção e reparação de tratores agrícolas |
+| 3314-7/13 | Manutenção e reparação de máquinas-ferramenta |
+| 3314-7/16 | Manutenção e reparação de tratores, exceto agrícolas |
+| 3314-7/17 | Manutenção e reparação de máquinas e equipamentos de terraplenagem, pavimentação e construção, exceto tratores |
+| 3314-7/19 | Manutenção e reparação de máquinas e equipamentos para as indústrias de alimentos, bebidas e fumo |
+| 3314-7/20 | Manutenção e reparação de máquinas e equipamentos para a indústria têxtil, do vestuário, do couro e calçados |
+| 3314-7/21 | Manutenção e reparação de máquinas e aparelhos para a indústria de celulose, papel e papelão e artefatos |
+| 3314-7/22 | Manutenção e reparação de máquinas e aparelhos para a indústria do plástico |
+| 3314-7/99 | Manutenção e reparação de outras máquinas e equipamentos para usos industriais não especificados anteriormente |
+| 3315-5/00 | Manutenção e reparação de veículos ferroviários |
+| 3316-3/01 | Manutenção e reparação de aeronaves, exceto a manutenção na pista |
+| 3316-3/02 | Manutenção de aeronaves na pista |
+| 3317-1/01 | Manutenção e reparação de embarcações e estruturas flutuantes |
+| 3317-1/02 | Manutenção e reparação de embarcações para esporte e lazer |
+| 3319-8/00 | Manutenção e reparação de equipamentos e produtos não especificados anteriormente |
+| 3321-0/00 | Instalação de máquinas e equipamentos industriais |
+| 3329-5/01 | Serviços de montagem de móveis de qualquer material |
+| 3329-5/99 | Instalação de outros equipamentos não especificados anteriormente |
+| 3600-6/01 | Captação, tratamento e distribuição de água |
+| 3600-6/02 | Distribuição de água por caminhões |
+| 3701-1/00 | Gestão de redes de esgoto |
+| 3702-9/00 | Atividades relacionadas a esgoto, exceto a gestão de redes |
+| 3831-9/99 | Recuperação de materiais metálicos, exceto alumínio |
+| 3832-7/00 | Recuperação de materiais plásticos |
+
+Fonte: NT 1-07, página 17, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 16.
+A tabela continua na página 18.
+A camada de texto parte as descrições de duas linhas em duas linhas e repete três descrições (3314-7/06, 3314-7/16, 3314-7/22) numa linha vazia; a comparação junta as partes e descarta as repetições.
+<!-- /tabela-conferida: Anexo A p17 -->
+
 ---
 
 ## Página 18
@@ -952,8 +1217,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 4110-7/00 | Incorporação de empreendimentos imobiliários |  |  |
@@ -1009,6 +1273,61 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 4530-7/06 |  | Representantes comerciais e agentes do comércio de peças e acessórios novos e usados para |  |
 |  |  | veículos automotores |  |
 
+<!-- tabela-conferida: Anexo A p18 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 4110-7/00 | Incorporação de empreendimentos imobiliários |
+| 4212-0/00 | Construção de obras de arte especiais |
+| 4213-8/00 | Obras de urbanização - ruas, praças e calçadas |
+| 4222-7/01 | Construção de redes de abastecimento de água, coleta de esgoto e construções correlatas, exceto obras de irrigação |
+| 4222-7/02 | Obras de irrigação |
+| 4223-5/00 | Construção de redes de transportes por dutos, exceto para água e esgoto |
+| 4292-8/01 | Montagem de estruturas metálicas |
+| 4311-8/02 | Preparação de canteiro e limpeza de terreno |
+| 4312-6/00 | Perfurações e sondagens |
+| 4313-4/00 | Obras de terraplenagem |
+| 4319-3/00 | Serviços de preparação do terreno não especificados anteriormente |
+| 4322-3/01 | Instalações hidráulicas, sanitárias e de gás |
+| 4322-3/02 | Instalação e manutenção de sistemas centrais de ar condicionado, de ventilação e refrigeração |
+| 4322-3/03 | Instalações de sistema de prevenção contra incêndio |
+| 4329-1/01 | Instalação de painéis publicitários |
+| 4329-1/02 | Instalação de equipamentos para orientação à navegação marítima, fluvial e lacustre |
+| 4329-1/03 | Instalação, manutenção e reparação de elevadores, escadas e esteiras rolantes |
+| 4329-1/04 | Montagem e instalação de sistemas e equipamentos de iluminação e sinalização em vias públicas, portos e aeroportos |
+| 4329-1/99 | Outras obras de instalações em construções não especificadas anteriormente |
+| 4330-4/01 | Impermeabilização em obras de engenharia civil |
+| 4330-4/02 | Instalação de portas, janelas, tetos, divisórias e armários embutidos de qualquer material |
+| 4330-4/03 | Obras de acabamento em gesso e estuque |
+| 4330-4/99 | Outras obras de acabamento da construção |
+| 4391-6/00 | Obras de fundações |
+| 4399-1/01 | Administração de obras |
+| 4399-1/02 | Montagem e desmontagem de andaimes e outras estruturas temporárias |
+| 4399-1/03 | Obras de alvenaria |
+| 4399-1/04 | Serviços de operação e fornecimento de equipamentos para transporte e elevação de cargas e pessoas para uso em obras |
+| 4399-1/05 | Perfuração e construção de poços de água |
+| 4399-1/99 | Serviços especializados para construção não especificados anteriormente |
+| 4512-9/01 | Representantes comerciais e agentes do comércio de veículos automotores |
+| 4520-0/01 | Serviços de manutenção e reparação mecânica de veículos automotores |
+| 4520-0/03 | Serviços de manutenção e reparação elétrica de veículos automotores |
+| 4520-0/04 | Serviços de alinhamento e balanceamento de veículos automotores |
+| 4520-0/05 | Serviços de lavagem, lubrificação e polimento de veículos automotores |
+| 4520-0/06 | Serviços de borracharia para veículos automotores |
+| 4520-0/07 | Serviços de instalação, manutenção e reparação de acessórios para veículos automotores |
+| 4530-7/01 | Comércio por atacado de peças e acessórios novos para veículos automotores |
+| 4530-7/02 | Comércio por atacado de pneumáticos e câmaras-de-ar |
+| 4530-7/03 | Comércio a varejo de peças e acessórios novos para veículos automotores |
+| 4530-7/04 | Comércio a varejo de peças e acessórios usados para veículos automotores |
+| 4530-7/05 | Comércio a varejo de pneumáticos e câmaras-de-ar |
+| 4530-7/06 | Representantes comerciais e agentes do comércio de peças e acessórios novos e usados para veículos automotores |
+
+Fonte: NT 1-07, página 18, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 17.
+A tabela continua na página 19.
+A camada de texto parte as descrições de duas linhas e repete 4 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
+<!-- /tabela-conferida: Anexo A p18 -->
+
 ---
 
 ## Página 19
@@ -1017,8 +1336,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 4541-2/02 | Comércio por atacado de peças e acessórios para motocicletas e motonetas |  |  |
@@ -1076,6 +1394,60 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 4644-3/01 | Comércio atacadista de medicamentos e drogas de uso humano |  |  |
 | 4644-3/02 | Comércio atacadista de medicamentos e drogas de uso veterinário |  |  |
 
+<!-- tabela-conferida: Anexo A p19 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 4541-2/02 | Comércio por atacado de peças e acessórios para motocicletas e motonetas |
+| 4541-2/06 | Comércio a varejo de peças e acessórios novos para motocicletas e motonetas |
+| 4541-2/07 | Comércio a varejo de peças e acessórios usados para motocicletas e motonetas |
+| 4542-1/01 | Representantes comerciais e agentes do comércio de motocicletas e motonetas, peças e acessórios |
+| 4542-1/02 | Comércio sob consignação de motocicletas e motonetas |
+| 4543-9/00 | Manutenção e reparação de motocicletas e motonetas |
+| 4611-7/00 | Representantes comerciais e agentes do comércio de matérias-primas agrícolas e animais vivos |
+| 4612-5/00 | Representantes comerciais e agentes do comércio de combustíveis, minerais, produtos siderúrgicos e químicos |
+| 4613-3/00 | Representantes comerciais e agentes do comércio de madeira, material de construção e ferragens |
+| 4614-1/00 | Representantes comerciais e agentes do comércio de máquinas, equipamentos, embarcações e aeronaves |
+| 4615-0/00 | Representantes comerciais e agentes do comércio de eletrodomésticos, móveis e artigos de uso doméstico |
+| 4616-8/00 | Representantes comerciais e agentes do comércio de têxteis, vestuário, calçados e artigos de viagem |
+| 4617-6/00 | Representantes comerciais e agentes do comércio de produtos alimentícios, bebidas e fumo |
+| 4618-4/01 | Representantes comerciais e agentes do comércio de medicamentos, cosméticos e produtos de perfumaria |
+| 4618-4/02 | Representantes comerciais e agentes do comércio de instrumentos e materiais odonto-médico hospitalares |
+| 4618-4/03 | Representantes comerciais e agentes do comércio de jornais, revistas e outras publicações |
+| 4618-4/99 | Outros representantes comerciais e agentes do comércio especializado em produtos não especificados anteriormente |
+| 4619-2/00 | Representantes comerciais e agentes do comércio de mercadorias em geral não especializado |
+| 4631-1/00 | Comércio atacadista de leite e laticínios |
+| 4633-8/01 | Comércio atacadista de frutas, verduras, raízes, tubérculos, hortaliças e legumes frescos |
+| 4633-8/02 | Comércio atacadista de aves vivas e ovos |
+| 4633-8/03 | Comércio atacadista de coelhos e outros pequenos animais vivos para alimentação |
+| 4634-6/01 | Comércio atacadista de carnes bovinas e suínas e derivados |
+| 4634-6/02 | Comércio atacadista de aves abatidas e derivados |
+| 4634-6/03 | Comércio atacadista de pescados e frutos do mar |
+| 4634-6/99 | Comércio atacadista de carnes e derivados de outros animais |
+| 4635-4/01 | Comércio atacadista de água mineral |
+| 4635-4/02 | Comércio atacadista de cerveja, chope e refrigerante |
+| 4637-1/02 | Comércio atacadista de açúcar |
+| 4637-1/04 | Comércio atacadista de pães, bolos, biscoitos e similares |
+| 4637-1/05 | Comércio atacadista de massas alimentícias |
+| 4637-1/06 | Comércio atacadista de sorvetes |
+| 4637-1/07 | Comércio atacadista de chocolates, confeitos, balas, bombons e semelhantes |
+| 4641-9/01 | Comércio atacadista de tecidos |
+| 4641-9/02 | Comércio atacadista de artigos de cama, mesa e banho |
+| 4641-9/03 | Comércio atacadista de artigos de armarinho |
+| 4642-7/01 | Comércio atacadista de artigos do vestuário e acessórios, exceto profissionais e de segurança |
+| 4642-7/02 | Comércio atacadista de roupas e acessórios para uso profissional e de segurança do trabalho |
+| 4643-5/01 | Comércio atacadista de calçados |
+| 4643-5/02 | Comércio atacadista de bolsas, malas e artigos de viagem |
+| 4644-3/01 | Comércio atacadista de medicamentos e drogas de uso humano |
+| 4644-3/02 | Comércio atacadista de medicamentos e drogas de uso veterinário |
+
+Fonte: NT 1-07, página 19, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 18.
+A tabela continua na página 20.
+A camada de texto parte as descrições de duas linhas e repete 4 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
+<!-- /tabela-conferida: Anexo A p19 -->
+
 ---
 
 ## Página 20
@@ -1084,8 +1456,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 4645-1/01 |  | Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, hospitalar e de |  |
@@ -1141,6 +1512,60 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 4743-1/00 | Comércio varejista de vidros |  |  |
 | 4744-0/01 | Comércio varejista de ferragens e ferramentas |  |  |
 
+<!-- tabela-conferida: Anexo A p20 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 4645-1/01 | Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, hospitalar e de laboratórios |
+| 4645-1/02 | Comércio atacadista de próteses e artigos de ortopedia |
+| 4645-1/03 | Comércio atacadista de produtos odontológicos |
+| 4646-0/02 | Comércio atacadista de produtos de higiene pessoal |
+| 4647-8/01 | Comércio atacadista de artigos de escritório e de papelaria |
+| 4647-8/02 | Comércio atacadista de livros, jornais e outras publicações |
+| 4649-4/02 | Comércio atacadista de aparelhos eletrônicos de uso pessoal e doméstico |
+| 4649-4/03 | Comércio atacadista de bicicletas, triciclos e outros veículos recreativos |
+| 4649-4/04 | Comércio atacadista de móveis e artigos de colchoaria |
+| 4649-4/05 | Comércio atacadista de artigos de tapeçaria; persianas e cortinas |
+| 4649-4/06 | Comércio atacadista de lustres, luminárias e abajures |
+| 4649-4/07 | Comércio atacadista de filmes, CDs, DVDs, fitas e discos |
+| 4649-4/08 | Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar |
+| 4649-4/09 | Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar, com atividade de fracionamento e acondicionamento associada |
+| 4649-4/10 | Comércio atacadista de jóias, relógios e bijuterias, inclusive pedras preciosas e semipreciosas lapidadas |
+| 4649-4/99 | Comércio atacadista de outros equipamentos e artigos de uso pessoal e doméstico não especificados anteriormente |
+| 4651-6/01 | Comércio atacadista de equipamentos de informática |
+| 4651-6/02 | Comércio atacadista de suprimentos para informática |
+| 4652-4/00 | Comércio atacadista de componentes eletrônicos e equipamentos de telefonia e comunicação |
+| 4686-9/01 | Comércio atacadista de papel e papelão em bruto |
+| 4686-9/02 | Comércio atacadista de embalagens |
+| 4687-7/03 | Comércio atacadista de resíduos e sucatas metálicos |
+| 4689-3/02 | Comércio atacadista de fios e fibras beneficiados |
+| 4691-5/00 | Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios |
+| 4692-3/00 | Comércio atacadista de mercadorias em geral, com predominância de insumos agropecuários |
+| 4712-1/00 | Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns |
+| 4713-0/02 | Lojas de variedades, exceto lojas de departamentos ou magazines |
+| 4713-0/04 | Lojas de departamentos ou magazines, exceto lojas francas (Duty free) |
+| 4713-0/05 | Lojas francas (Duty Free) de aeroportos, portos e em fronteiras terrestres |
+| 4721-1/02 | Padaria e confeitaria com predominância de revenda |
+| 4721-1/03 | Comércio varejista de laticínios e frios |
+| 4721-1/04 | Comércio varejista de doces, balas, bombons e semelhantes |
+| 4722-9/01 | Comércio varejista de carnes - açougues |
+| 4722-9/02 | Peixaria |
+| 4723-7/00 | Comércio varejista de bebidas |
+| 4724-5/00 | Comércio varejista de hortifrutigranjeiros |
+| 4729-6/01 | Tabacaria |
+| 4729-6/02 | Comércio varejista de mercadorias em lojas de conveniência |
+| 4729-6/99 | Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente |
+| 4742-3/00 | Comércio varejista de material elétrico |
+| 4743-1/00 | Comércio varejista de vidros |
+| 4744-0/01 | Comércio varejista de ferragens e ferramentas |
+
+Fonte: NT 1-07, página 20, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 19.
+A tabela continua na página 21.
+A camada de texto parte as descrições de duas linhas e repete 3 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
+<!-- /tabela-conferida: Anexo A p20 -->
+
 ---
 
 ## Página 21
@@ -1149,8 +1574,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 4744-0/02 | Comércio varejista de madeira e artefatos |  |  |
@@ -1201,6 +1625,62 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 4789-0/07 | Comércio varejista de equipamentos para escritório |  |  |
 | 4789-0/08 | Comércio varejista de artigos fotográficos e para filmagem |  |  |
 
+<!-- tabela-conferida: Anexo A p21 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 4744-0/02 | Comércio varejista de madeira e artefatos |
+| 4744-0/03 | Comércio varejista de materiais hidráulicos |
+| 4744-0/04 | Comércio varejista de cal, areia, pedra britada, tijolos e telhas |
+| 4744-0/06 | Comércio varejista de pedras para revestimento |
+| 4744-0/99 | Comércio varejista de materiais de construção em geral |
+| 4751-2/01 | Comércio varejista especializado de equipamentos e suprimentos de informática |
+| 4751-2/02 | Recarga de cartuchos para equipamentos de informática |
+| 4752-1/00 | Comércio varejista especializado de equipamentos de telefonia e comunicação |
+| 4753-9/00 | Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo |
+| 4754-7/01 | Comércio varejista de móveis |
+| 4754-7/02 | Comércio varejista de artigos de colchoaria |
+| 4754-7/03 | Comércio varejista de artigos de iluminação |
+| 4755-5/01 | Comércio varejista de tecidos |
+| 4755-5/02 | Comercio varejista de artigos de armarinho |
+| 4755-5/03 | Comercio varejista de artigos de cama, mesa e banho |
+| 4756-3/00 | Comércio varejista especializado de instrumentos musicais e acessórios |
+| 4757-1/00 | Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para uso doméstico, exceto informática e comunicação |
+| 4759-8/01 | Comércio varejista de artigos de tapeçaria, cortinas e persianas |
+| 4759-8/99 | Comércio varejista de outros artigos de uso doméstico não especificados anteriormente |
+| 4761-0/01 | Comércio varejista de livros |
+| 4761-0/02 | Comércio varejista de jornais e revistas |
+| 4761-0/03 | Comércio varejista de artigos de papelaria |
+| 4762-8/00 | Comércio varejista de discos, CDs, DVDs e fitas |
+| 4763-6/01 | Comércio varejista de brinquedos e artigos recreativos |
+| 4763-6/02 | Comércio varejista de artigos esportivos |
+| 4763-6/03 | Comércio varejista de bicicletas e triciclos; peças e acessórios |
+| 4763-6/04 | Comércio varejista de artigos de caça, pesca e camping |
+| 4771-7/04 | Comércio varejista de medicamentos veterinários |
+| 4772-5/00 | Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal |
+| 4773-3/00 | Comércio varejista de artigos médicos e ortopédicos |
+| 4774-1/00 | Comércio varejista de artigos de óptica |
+| 4781-4/00 | Comércio varejista de artigos do vestuário e acessórios |
+| 4782-2/01 | Comércio varejista de calçados |
+| 4782-2/02 | Comércio varejista de artigos de viagem |
+| 4783-1/01 | Comércio varejista de artigos de joalheria |
+| 4783-1/02 | Comércio varejista de artigos de relojoaria |
+| 4785-7/01 | Comércio varejista de antiguidades |
+| 4785-7/99 | Comércio varejista de outros artigos usados |
+| 4789-0/01 | Comércio varejista de suvenires, bijuterias e artesanatos |
+| 4789-0/02 | Comércio varejista de plantas e flores naturais |
+| 4789-0/03 | Comércio varejista de objetos de arte |
+| 4789-0/04 | Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação |
+| 4789-0/07 | Comércio varejista de equipamentos para escritório |
+| 4789-0/08 | Comércio varejista de artigos fotográficos e para filmagem |
+
+Fonte: NT 1-07, página 21, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 20.
+A tabela continua na página 22.
+A camada de texto parte as descrições de duas linhas e repete 1 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
+<!-- /tabela-conferida: Anexo A p21 -->
+
 ---
 
 ## Página 22
@@ -1209,8 +1689,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 4921-3/01 | Transporte rodoviário coletivo de passageiros, com itinerário fixo, municipal |  |  |
@@ -1267,6 +1746,61 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 5813-1/00 | Edição de revistas |  |  |
 | 5819-1/00 | Edição de cadastros, listas e outros produtos gráficos |  |  |
 
+<!-- tabela-conferida: Anexo A p22 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 4921-3/01 | Transporte rodoviário coletivo de passageiros, com itinerário fixo, municipal |
+| 4921-3/02 | Transporte rodoviário coletivo de passageiros, com itinerário fixo, intermunicipal em região metropolitana |
+| 4922-1/01 | Transporte rodoviário coletivo de passageiros, com itinerário fixo, intermunicipal, exceto em região metropolitana |
+| 4922-1/02 | Transporte rodoviário coletivo de passageiros, com itinerário fixo, interestadual |
+| 4922-1/03 | Transporte rodoviário coletivo de passageiros, com itinerário fixo, internacional |
+| 4923-0/01 | Serviço de táxi |
+| 4923-0/02 | Serviço de transporte de passageiros - locação de automóveis com motorista |
+| 4924-8/00 | Transporte escolar |
+| 4929-9/01 | Transporte rodoviário coletivo de passageiros, sob regime de fretamento, municipal |
+| 4929-9/02 | Transporte rodoviário coletivo de passageiros, sob regime de fretamento, intermunicipal, interestadual e internacional |
+| 4929-9/03 | Organização de excursões em veículos rodoviários próprios, municipal |
+| 4929-9/04 | Organização de excursões em veículos rodoviários próprios, intermunicipal, interestadual e internacional |
+| 4929-9/99 | Outros transportes rodoviários de passageiros não especificados anteriormente |
+| 4930-2/01 | Transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal |
+| 4930-2/02 | Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional |
+| 4930-2/04 | Transporte rodoviário de mudanças |
+| 5212-5/00 | Carga e descarga |
+| 5221-4/00 | Concessionárias de rodovias, pontes, túneis e serviços relacionados |
+| 5229-0/01 | Serviços de apoio ao transporte por táxi, inclusive centrais de chamada |
+| 5229-0/02 | Serviços de reboque de veículos |
+| 5229-0/99 | Outras atividades auxiliares dos transportes terrestres não especificadas anteriormente |
+| 5231-1/01 | Administração da infraestrutura portuária |
+| 5231-1/02 | Atividades do Operador Portuário |
+| 5231-1/03 | Gestão de terminais aquaviários |
+| 5232-0/00 | Atividades de agenciamento marítimo |
+| 5239-7/01 | Serviços de praticagem |
+| 5250-8/01 | Comissaria de despachos |
+| 5250-8/02 | Atividades de despachantes aduaneiros |
+| 5250-8/03 | Agenciamento de cargas, exceto para o transporte marítimo |
+| 5250-8/04 | Organização logística do transporte de carga |
+| 5250-8/05 | Operador de transporte multimodal - OTM |
+| 5310-5/01 | Atividades do Correio Nacional |
+| 5310-5/02 | Atividades de franqueadas e permissionárias do Correio Nacional |
+| 5320-2/01 | Serviços de malote não realizados pelo Correio Nacional |
+| 5320-2/02 | Serviços de entrega rápida |
+| 5590-6/02 | Campings |
+| 5612-1/00 | Serviços ambulantes de alimentação |
+| 5620-1/02 | Serviços de alimentação para eventos e recepções - bufê |
+| 5811-5/00 | Edição de livros |
+| 5812-3/01 | Edição de jornais diários |
+| 5812-3/02 | Edição de jornais não diários |
+| 5813-1/00 | Edição de revistas |
+| 5819-1/00 | Edição de cadastros, listas e outros produtos gráficos |
+
+Fonte: NT 1-07, página 22, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 21.
+A tabela continua na página 23.
+A camada de texto parte as descrições de duas linhas e repete 4 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
+<!-- /tabela-conferida: Anexo A p22 -->
+
 ---
 
 ## Página 23
@@ -1275,8 +1809,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 5911-1/02 | Produção de filmes para publicidade |  |  |
@@ -1329,6 +1862,63 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 6434-4/00 | Agências de fomento |  |  |
 | 6435-2/01 | Sociedades de crédito imobiliário |  |  |
 
+<!-- tabela-conferida: Anexo A p23 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 5911-1/02 | Produção de filmes para publicidade |
+| 5911-1/99 | Atividades de produção cinematográfica, de vídeos e de programas de televisão não especificadas anteriormente |
+| 5912-0/01 | Serviços de dublagem |
+| 5912-0/02 | Serviços de mixagem sonora em produção audiovisual |
+| 5912-0/99 | Atividades de pós-produção cinematográfica, de vídeos e de programas de televisão não especificadas anteriormente |
+| 5920-1/00 | Atividades de gravação de som e de edição de música |
+| 6010-1/00 | Atividades de rádio |
+| 6110-8/01 | Serviços de telefonia fixa comutada - STFC |
+| 6110-8/02 | Serviços de redes de transporte de telecomunicações - SRTT |
+| 6110-8/03 | Serviços de comunicação multimídia - SCM |
+| 6110-8/99 | Serviços de telecomunicações por fio não especificados anteriormente |
+| 6120-5/01 | Telefonia móvel celular |
+| 6120-5/02 | Serviço móvel especializado - SME |
+| 6120-5/99 | Serviços de telecomunicações sem fio não especificados anteriormente |
+| 6130-2/00 | Telecomunicações por satélite |
+| 6141-8/00 | Operadoras de televisão por assinatura por cabo |
+| 6142-6/00 | Operadoras de televisão por assinatura por micro-ondas |
+| 6143-4/00 | Operadoras de televisão por assinatura por satélite |
+| 6190-6/01 | Provedores de acesso às redes de comunicações |
+| 6190-6/02 | Provedores de voz sobre protocolo Internet - VOIP |
+| 6190-6/99 | Outras atividades de telecomunicações não especificadas anteriormente |
+| 6201-5/01 | Desenvolvimento de programas de computador sob encomenda |
+| 6201-5/02 | Web desing |
+| 6202-3/00 | Desenvolvimento e licenciamento de programas de computador customizáveis |
+| 6203-1/00 | Desenvolvimento e licenciamento de programas de computador não customizáveis |
+| 6204-0/00 | Consultoria em tecnologia da informação |
+| 6209-1/00 | Suporte técnico, manutenção e outros serviços em tecnologia da informação |
+| 6311-9/00 | Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na Internet |
+| 6319-4/00 | Portais, provedores de conteúdo e outros serviços de informação na Internet |
+| 6391-7/00 | Agências de notícias |
+| 6399-2/00 | Outras atividades de prestação de serviços de informação não especificadas anteriormente |
+| 6410-7/00 | Banco Central |
+| 6421-2/00 | Bancos comerciais |
+| 6422-1/00 | Bancos múltiplos, com carteira comercial |
+| 6423-9/00 | Caixas econômicas |
+| 6424-7/01 | Bancos cooperativos |
+| 6424-7/02 | Cooperativas centrais de crédito |
+| 6424-7/03 | Cooperativas de crédito mútuo |
+| 6424-7/04 | Cooperativas de crédito rural |
+| 6431-0/00 | Bancos múltiplos, sem carteira comercial |
+| 6432-8/00 | Bancos de investimento |
+| 6433-6/00 | Bancos de desenvolvimento |
+| 6434-4/00 | Agências de fomento |
+| 6435-2/01 | Sociedades de crédito imobiliário |
+
+Fonte: NT 1-07, página 23, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 22.
+A tabela continua na página 24.
+"Web desing" é grafia da fonte (por "Web design").
+A camada de texto parte as descrições de duas linhas e repete 2 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
+<!-- /tabela-conferida: Anexo A p23 -->
+
 ---
 
 ## Página 24
@@ -1337,8 +1927,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 6435-2/02 | Associações de poupança e empréstimo |
@@ -1387,6 +1976,61 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 6619-3/02 | Correspondentes de instituições financeiras |
 | 6619-3/03 | Representações de bancos estrangeiros |
 
+<!-- tabela-conferida: Anexo A p24 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 6435-2/02 | Associações de poupança e empréstimo |
+| 6435-2/03 | Companhias hipotecárias |
+| 6436-1/00 | Sociedades de crédito, financiamento e investimento - financeiras |
+| 6437-9/00 | Sociedades de crédito ao microempreendedor |
+| 6438-7/01 | Bancos de câmbio |
+| 6438-7/99 | Outras instituições de intermediação não monetária não especificadas anteriormente |
+| 6440-9/00 | Arrendamento mercantil |
+| 6450-6/00 | Sociedades de capitalização |
+| 6461-1/00 | Holdings de instituições financeiras |
+| 6462-0/00 | Holdings de instituições não financeiras |
+| 6463-8/00 | Outras sociedades de participação, exceto holdings |
+| 6470-1/01 | Fundos de investimento, exceto previdenciários e imobiliários |
+| 6470-1/02 | Fundos de investimento previdenciários |
+| 6470-1/03 | Fundos de investimento imobiliários |
+| 6491-3/00 | Sociedades de fomento mercantil - factoring |
+| 6492-1/00 | Securitização de créditos |
+| 6493-0/00 | Administração de consórcios para aquisição de bens e direitos |
+| 6499-9/01 | Clubes de investimento |
+| 6499-9/02 | Sociedades de investimento |
+| 6499-9/03 | Fundo garantidor de crédito |
+| 6499-9/04 | Caixas de financiamento de corporações |
+| 6499-9/05 | Concessão de crédito pelas OSCIP |
+| 6499-9/99 | Outras atividades de serviços financeiros não especificadas anteriormente |
+| 6511-1/01 | Sociedade seguradora de seguros vida |
+| 6511-1/02 | Planos de auxílio-funeral |
+| 6512-0/00 | Sociedade seguradora de seguros não vida |
+| 6520-1/00 | Sociedade seguradora de seguros-saúde |
+| 6530-8/00 | Resseguros |
+| 6541-3/00 | Previdência complementar fechada |
+| 6542-1/00 | Previdência complementar aberta |
+| 6550-2/00 | Planos de saúde |
+| 6611-8/01 | Bolsa de valores |
+| 6611-8/02 | Bolsa de mercadorias |
+| 6611-8/03 | Bolsa de mercadorias e futuros |
+| 6611-8/04 | Administração de mercados de balcão organizados |
+| 6612-6/01 | Corretoras de títulos e valores mobiliários |
+| 6612-6/02 | Distribuidoras de títulos e valores mobiliários |
+| 6612-6/03 | Corretoras de câmbio |
+| 6612-6/04 | Corretoras de contratos de mercadorias |
+| 6612-6/05 | Agentes de investimentos em aplicações financeiras |
+| 6613-4/00 | Administração de cartões de crédito |
+| 6619-3/01 | Serviços de liquidação e custódia |
+| 6619-3/02 | Correspondentes de instituições financeiras |
+| 6619-3/03 | Representações de bancos estrangeiros |
+
+Fonte: NT 1-07, página 24, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 23.
+A tabela continua na página 25.
+<!-- /tabela-conferida: Anexo A p24 -->
+
 ---
 
 ## Página 25
@@ -1395,8 +2039,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 6619-3/04 | Caixas eletrônicos |  |  |
@@ -1447,6 +2090,63 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 7420-0/01 | Atividades de produção de fotografias, exceto aérea e submarina |  |  |
 | 7420-0/02 | Atividades de produção de fotografias aéreas e submarinas |  |  |
 
+<!-- tabela-conferida: Anexo A p25 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 6619-3/04 | Caixas eletrônicos |
+| 6619-3/05 | Operadoras de cartões de débito |
+| 6619-3/99 | Outras atividades auxiliares dos serviços financeiros não especificadas anteriormente |
+| 6621-5/01 | Peritos e avaliadores de seguros |
+| 6621-5/02 | Auditoria e consultoria atuarial |
+| 6622-3/00 | Corretores e agentes de seguros, de planos de previdência complementar e de saúde |
+| 6629-1/00 | Atividades auxiliares dos seguros, da previdência complementar e dos planos de saúde não especificadas anteriormente |
+| 6630-4/00 | Atividades de administração de fundos por contrato ou comissão |
+| 6810-2/01 | Compra e venda de imóveis próprios |
+| 6810-2/02 | Aluguel de imóveis próprios |
+| 6810-2/03 | Loteamento de imóveis próprios |
+| 6821-8/01 | Corretagem na compra e venda e avaliação de imóveis |
+| 6821-8/02 | Corretagem no aluguel de imóveis |
+| 6822-6/00 | Gestão e administração da propriedade imobiliária |
+| 6911-7/01 | Serviços advocatícios |
+| 6911-7/02 | Atividades auxiliares da justiça |
+| 6911-7/03 | Agente de propriedade industrial |
+| 6912-5/00 | Cartórios |
+| 6920-6/01 | Atividades de contabilidade |
+| 6920-6/02 | Atividades de consultoria e auditoria contábil e tributária |
+| 7020-4/00 | Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica |
+| 7111-1/00 | Serviços de arquitetura |
+| 7112-0/00 | Serviços de engenharia |
+| 7119-7/01 | Serviços de cartografia, topografia e geodésia |
+| 7119-7/02 | Atividades de estudos geológicos |
+| 7119-7/03 | Serviços de desenho técnico relacionados à arquitetura e engenharia |
+| 7119-7/04 | Serviços de perícia técnica relacionados à segurança do trabalho |
+| 7119-7/99 | Atividades técnicas relacionadas à engenharia e arquitetura não especificadas anteriormente |
+| 7120-1/00 | Testes e análises técnicas |
+| 7210-0/00 | Pesquisa e desenvolvimento experimental em ciências físicas e naturais |
+| 7220-7/00 | Pesquisa e desenvolvimento experimental em ciências sociais e humanas |
+| 7311-4/00 | Agências de publicidade |
+| 7312-2/00 | Agenciamento de espaços para publicidade, exceto em veículos de comunicação |
+| 7319-0/01 | Criação de estandes para feiras e exposições |
+| 7319-0/02 | Promoção de vendas |
+| 7319-0/03 | Marketing direto |
+| 7319-0/04 | Consultoria em publicidade |
+| 7319-0/99 | Outras atividades de publicidade não especificadas anteriormente |
+| 7320-3/00 | Pesquisas de mercado e de opinião pública |
+| 7410-2/02 | Design de interiores |
+| 7410-2/03 | Desing de produto |
+| 7410-2/99 | Atividades de desing não especificadas anteriormente |
+| 7420-0/01 | Atividades de produção de fotografias, exceto aérea e submarina |
+| 7420-0/02 | Atividades de produção de fotografias aéreas e submarinas |
+
+Fonte: NT 1-07, página 25, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 24.
+A tabela continua na página 26.
+"Desing" (7410-2/03 e 7410-2/99) é grafia da fonte (por "design").
+A camada de texto parte as descrições de duas linhas e repete 1 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
+<!-- /tabela-conferida: Anexo A p25 -->
+
 ---
 
 ## Página 26
@@ -1455,8 +2155,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 7420-0/03 | Laboratórios fotográficos |  |  |
@@ -1507,6 +2206,62 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 8130-3/00 | Atividades paisagísticas |  |  |
 | 8211-3/00 | Serviços combinados de escritório e apoio administrativo |  |  |
 
+<!-- tabela-conferida: Anexo A p26 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 7420-0/03 | Laboratórios fotográficos |
+| 7420-0/04 | Filmagem de festas e eventos |
+| 7420-0/05 | Serviços de microfilmagem |
+| 7490-1/01 | Serviços de tradução, interpretação e similares |
+| 7490-1/02 | Escafandria e mergulho |
+| 7490-1/03 | Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias |
+| 7490-1/04 | Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários |
+| 7490-1/05 | Agenciamento de profissionais para atividades esportivas, culturais e artísticas |
+| 7490-1/99 | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente |
+| 7500-1/00 | Atividades veterinárias |
+| 7711-0/00 | Locação de automóveis sem condutor |
+| 7721-7/00 | Aluguel de equipamentos recreativos e esportivos |
+| 7722-5/00 | Aluguel de fitas de vídeo, DVDs e similares |
+| 7723-3/00 | Aluguel de objetos do vestuário, jóias e acessórios |
+| 7729-2/01 | Aluguel de aparelhos de jogos eletrônicos |
+| 7729-2/02 | Aluguel de móveis, utensílios e aparelhos de uso doméstico e pessoal; instrumentos musicais |
+| 7729-2/03 | Aluguel de material médico |
+| 7729-2/99 | Aluguel de outros objetos pessoais e domésticos não especificados anteriormente |
+| 7731-4/00 | Aluguel de máquinas e equipamentos agrícolas sem operador |
+| 7732-2/01 | Aluguel de máquinas e equipamentos para construção sem operador, exceto andaimes |
+| 7732-2/02 | Aluguel de andaimes |
+| 7733-1/00 | Aluguel de máquinas e equipamentos para escritório |
+| 7739-0/01 | Aluguel de máquinas e equipamentos para extração de minérios e petróleo, sem operador |
+| 7739-0/02 | Aluguel de equipamentos científicos, médicos e hospitalares, sem operador |
+| 7739-0/03 | Aluguel de palcos, coberturas e outras estruturas de uso temporário, exceto andaimes |
+| 7739-0/99 | Aluguel de outras máquinas e equipamentos comerciais e industriais não especificados anteriormente, sem operador |
+| 7740-3/00 | Gestão de ativos intangíveis não financeiros |
+| 7810-8/00 | Seleção e agenciamento de mão de obra |
+| 7820-5/00 | Locação de mão de obra temporária |
+| 7830-2/00 | Fornecimento e gestão de recursos humanos para terceiros |
+| 7911-2/00 | Agências de viagens |
+| 7912-1/00 | Operadores turísticos |
+| 7990-2/00 | Serviços de reservas e outros serviços de turismo não especificados anteriormente |
+| 8011-1/01 | Atividades de vigilância e segurança privada |
+| 8011-1/02 | Serviços de adestramento de cães de guarda |
+| 8012-9/00 | Atividades de transporte de valores |
+| 8020-0/01 | Atividades de monitoramento de sistemas de segurança eletrônico |
+| 8020-0/02 | Outras atividades de serviços de segurança |
+| 8030-7/00 | Atividades de investigação particular |
+| 8111-7/00 | Serviços combinados para apoio a edifícios, exceto condomínios prediais |
+| 8121-4/00 | Limpeza em prédios e em domicílios |
+| 8129-0/00 | Atividades de limpeza não especificadas anteriormente |
+| 8130-3/00 | Atividades paisagísticas |
+| 8211-3/00 | Serviços combinados de escritório e apoio administrativo |
+
+Fonte: NT 1-07, página 26, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 25.
+A tabela continua na página 27.
+A camada de texto parte as descrições de duas linhas e repete 1 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
+<!-- /tabela-conferida: Anexo A p26 -->
+
 ---
 
 ## Página 27
@@ -1515,8 +2270,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 8219-9/01 | Fotocópias |  |  |
@@ -1569,6 +2323,62 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 8621-6/01 | UTI móvel |  |  |
 | 8621-6/02 | Serviços móveis de atendimento a urgências, exceto por UTI móvel |  |  |
 
+<!-- tabela-conferida: Anexo A p27 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 8219-9/01 | Fotocópias |
+| 8219-9/99 | Preparação de documentos e serviços especializados de apoio administrativo não especificados anteriormente |
+| 8220-2/00 | Atividades de teleatendimento |
+| 8230-0/01 | Serviços de organização de feiras, congressos, exposições e festas |
+| 8291-1/00 | Atividades de cobrança e informações cadastrais |
+| 8292-0/00 | Envasamento e empacotamento sob contrato |
+| 8299-7/01 | Medição de consumo de energia elétrica, gás e água |
+| 8299-7/02 | Emissão de vales-alimentação, vales-transporte e similares |
+| 8299-7/03 | Serviços de gravação de carimbos, exceto confecção |
+| 8299-7/04 | Leiloeiros independentes |
+| 8299-7/05 | Serviços de levantamento de fundos sob contrato |
+| 8299-7/06 | Casas lotéricas |
+| 8299-7/07 | Salas de acesso à Internet |
+| 8299-7/99 | Outras atividades de serviços prestados principalmente às empresas não especificadas anteriormente |
+| 8411-6/00 | Administração pública em geral |
+| 8412-4/00 | Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais |
+| 8413-2/00 | Regulação das atividades econômicas |
+| 8421-3/00 | Relações exteriores |
+| 8422-1/00 | Defesa |
+| 8423-0/00 | Justiça |
+| 8424-8/00 | Segurança e ordem pública |
+| 8425-6/00 | Defesa Civil |
+| 8430-2/00 | Seguridade social obrigatória |
+| 8531-7/00 | Educação superior – graduação |
+| 8532-5/00 | Educação superior - graduação e pós-graduação |
+| 8533-3/00 | Educação superior - pós-graduação e extensão |
+| 8541-4/00 | Educação profissional de nível técnico |
+| 8542-2/00 | Educação profissional de nível tecnológico |
+| 8550-3/01 | Administração de caixas escolares |
+| 8550-3/02 | Atividades de apoio à educação, exceto caixas escolares |
+| 8591-1/00 | Ensino de esportes |
+| 8592-9/01 | Ensino de dança |
+| 8592-9/02 | Ensino de artes cênicas, exceto dança |
+| 8592-9/03 | Ensino de música |
+| 8592-9/99 | Ensino de arte e cultura não especificado anteriormente |
+| 8593-7/00 | Ensino de idiomas |
+| 8599-6/01 | Formação de condutores |
+| 8599-6/02 | Cursos de pilotagem |
+| 8599-6/03 | Treinamento em informática |
+| 8599-6/04 | Treinamento em desenvolvimento profissional e gerencial |
+| 8599-6/05 | Cursos preparatórios para concursos |
+| 8599-6/99 | Outras atividades de ensino não especificadas anteriormente |
+| 8621-6/01 | UTI móvel |
+| 8621-6/02 | Serviços móveis de atendimento a urgências, exceto por UTI móvel |
+
+Fonte: NT 1-07, página 27, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 26.
+A tabela continua na página 28.
+A camada de texto parte as descrições de duas linhas e repete 2 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
+<!-- /tabela-conferida: Anexo A p27 -->
+
 ---
 
 ## Página 28
@@ -1577,8 +2387,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 8622-4/00 | Serviços de remoção de pacientes, exceto os serviços móveis de atendimento a urgências |  |  |
@@ -1629,6 +2438,62 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 9102-3/02 | Restauração e conservação de lugares e prédios históricos |  |  |
 | 9313-1/00 | Atividades de condicionamento físico |  |  |
 
+<!-- tabela-conferida: Anexo A p28 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 8622-4/00 | Serviços de remoção de pacientes, exceto os serviços móveis de atendimento a urgências |
+| 8630-5/02 | Atividade médica ambulatorial com recursos para realização de exames complementares |
+| 8630-5/03 | Atividade médica ambulatorial restrita a consultas |
+| 8630-5/04 | Atividade odontológica |
+| 8630-5/06 | Serviços de vacinação e imunização humana |
+| 8630-5/07 | Atividades de reprodução humana assistida |
+| 8630-5/99 | Atividades de atenção ambulatorial não especificadas anteriormente |
+| 8640-2/01 | Laboratórios de anatomia patológica e citológica |
+| 8640-2/02 | Laboratórios clínicos |
+| 8640-2/03 | Serviços de diálise e nefrologia |
+| 8640-2/04 | Serviços de tomografia |
+| 8640-2/05 | Serviços de diagnóstico por imagem com uso de radiação ionizante, exceto tomografia |
+| 8640-2/06 | Serviços de ressonância magnética |
+| 8640-2/07 | Serviços de diagnóstico por imagem sem uso de radiação ionizante, exceto ressonância magnética |
+| 8640-2/08 | Serviços de diagnóstico por registro gráfico - ECG, EEG e outros exames análogos |
+| 8640-2/09 | Serviços de diagnóstico por métodos ópticos - endoscopia e outros exames análogos |
+| 8640-2/12 | Serviços de hemoterapia |
+| 8640-2/13 | Serviços de litotripsia |
+| 8640-2/14 | Serviços de bancos de células e tecidos humanos |
+| 8640-2/99 | Atividades de serviços de complementação diagnóstica e terapêutica não especificadas anteriormente |
+| 8650-0/01 | Atividades de enfermagem |
+| 8650-0/02 | Atividades de profissionais da nutrição |
+| 8650-0/03 | Atividades de psicologia e psicanálise |
+| 8650-0/04 | Atividades de fisioterapia |
+| 8650-0/05 | Atividades de terapia ocupacional |
+| 8650-0/06 | Atividades de fonoaudiologia |
+| 8650-0/07 | Atividades de terapia de nutrição enteral e parenteral |
+| 8650-0/99 | Atividades de profissionais da área de saúde não especificadas anteriormente |
+| 8660-7/00 | Atividades de apoio à gestão de saúde |
+| 8690-9/01 | Atividades de práticas integrativas e complementares em saúde humana |
+| 8690-9/02 | Atividades de bancos de leite humano |
+| 8690-9/03 | Atividades de acupuntura |
+| 8690-9/04 | Atividades de podologia |
+| 8690-9/99 | Outras atividades de atenção à saúde humana não especificadas anteriormente |
+| 8712-3/00 | Atividades de fornecimento de infraestrutura de apoio e assistência a paciente no domicílio |
+| 8730-1/99 | Atividades de assistência social prestadas em residências coletivas e particulares não especificadas anteriormente |
+| 8800-6/00 | Serviços de assistência social sem alojamento |
+| 9001-9/02 | Produção musical |
+| 9001-9/06 | Atividades de sonorização e de iluminação |
+| 9001-9/99 | Artes cênicas, espetáculos e atividades complementares não especificados anteriormente |
+| 9002-7/01 | Atividades de artistas plásticos, jornalistas independentes e escritores |
+| 9002-7/02 | Restauração de obras de arte |
+| 9102-3/02 | Restauração e conservação de lugares e prédios históricos |
+| 9313-1/00 | Atividades de condicionamento físico |
+
+Fonte: NT 1-07, página 28, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 27.
+A tabela continua na página 29.
+A camada de texto parte as descrições de duas linhas e repete 1 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
+<!-- /tabela-conferida: Anexo A p28 -->
+
 ---
 
 ## Página 29
@@ -1637,8 +2502,7 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 9319-1/01 | Produção e promoção de eventos esportivos |  |  |
@@ -1679,3 +2543,49 @@ devem ter corrimão intermediário, no máximo, a cada 1,80 m. Os lanços determ
 | 9609-2/08 | Higiene e embelezamento de animais domésticos |  |  |
 | 9609-2/99 | Outras atividades de serviços pessoais não especificadas anteriormente |  |  |
 | 9700-5/00 | Serviços domésticos |  |  |
+<!-- tabela-conferida: Anexo A p29 -->
+### Anexo A — Relação de CNAEs passíveis de dispensa de regularização (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 9319-1/01 | Produção e promoção de eventos esportivos |
+| 9411-1/00 | Atividades de organizações associativas patronais e empresariais |
+| 9412-0/01 | Atividades de fiscalização profissional |
+| 9412-0/99 | Outras atividades associativas profissionais |
+| 9420-1/00 | Atividades de organizações sindicais |
+| 9430-8/00 | Atividades de associações de defesa de direitos sociais |
+| 9492-8/00 | Atividades de organizações políticas |
+| 9493-6/00 | Atividades de organizações associativas ligadas à cultura e à arte |
+| 9499-5/00 | Atividades associativas não especificadas anteriormente |
+| 9511-8/00 | Reparação e manutenção de computadores e de equipamentos periféricos |
+| 9512-6/00 | Reparação e manutenção de equipamentos de comunicação |
+| 9521-5/00 | Reparação e manutenção de equipamentos eletroeletrônicos de uso pessoal e doméstico |
+| 9529-1/01 | Reparação de calçados, bolsas e artigos de viagem |
+| 9529-1/02 | Chaveiros |
+| 9529-1/03 | Reparação de relógios |
+| 9529-1/04 | Reparação de bicicletas, triciclos e outros veículos não motorizados |
+| 9529-1/05 | Reparação de artigos do mobiliário |
+| 9529-1/99 | Reparação e manutenção de outros objetos e equipamentos pessoais e domésticos não especificados anteriormente |
+| 9601-7/02 | Tinturarias |
+| 9601-7/03 | Toalheiros |
+| 9602-5/01 | Cabeleireiros, manicure e pedicure |
+| 9602-5/02 | Atividades de estética e outros serviços de cuidados com a beleza |
+| 9603-3/01 | Gestão e manutenção de cemitérios |
+| 9603-3/03 | Serviços de sepultamento |
+| 9603-3/04 | Serviços de funerárias |
+| 9603-3/05 | Serviços de somatoconservação |
+| 9603-3/99 | Atividades funerárias e serviços relacionados não especificados anteriormente |
+| 9609-2/02 | Agências matrimoniais |
+| 9609-2/04 | Exploração de máquinas de serviços pessoais acionadas por moeda |
+| 9609-2/05 | Atividades de sauna e banhos |
+| 9609-2/06 | Serviços de tatuagem e colocação de piercing |
+| 9609-2/07 | Alojamento de animais domésticos |
+| 9609-2/08 | Higiene e embelezamento de animais domésticos |
+| 9609-2/99 | Outras atividades de serviços pessoais não especificadas anteriormente |
+| 9700-5/00 | Serviços domésticos |
+
+Fonte: NT 1-07, página 29, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 28.
+A camada de texto parte as descrições de duas linhas e repete 1 descrição(ões) numa linha vazia; a comparação junta as partes e descarta as repetições.
+<!-- /tabela-conferida: Anexo A p29 -->
+

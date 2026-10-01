@@ -46,7 +46,8 @@ def _analyze(tmp_path: Path, *, floors=None, risk="PEQUENO"):
     return run(AnalysisInput(
         dxf=dxf, scale_to_m=1.0, dictionary=parse_dictionary(pkg.symbols),
         rules=[RuleBinding(r) for r in pkg.rules],
-        context={"risk_class": risk, "unifamiliar": False}, floors=floors))
+        context={"risk_class": risk, "unifamiliar": False, "building_area_m2": 360},
+        floors=floors))
 
 
 def _findings(analysis, process_id="p-sintetico"):
@@ -89,7 +90,9 @@ def test_percurso_vira_medida_auditavel(terreo):
     (dist,) = floor.evidence.for_field("extinguisher_walk_distance_m")
     assert 11.0 < dist.normalized_value < 13.5
     assert dist.unit == "m" and dist.uncertainty_abs > 0
-    assert dist.algorithm == "grid_dijkstra_16" and dist.algorithm_version
+    assert dist.algorithm == "visibility_graph_bnb" and dist.algorithm_version
+    assert set(dist.uncertainty_budget) >= {"metodo", "amostragem", "posicao_do_simbolo",
+                                            "unidade_escala", "modelagem_de_parede", "total"}
     assert dist.locator.bbox is not None  # ponto mais distante no desenho
     assert floor.facts["quality.walls_detected"] is True
 
@@ -110,7 +113,7 @@ def test_analise_real_produz_achados_de_extintor(terreo):
     assert minimo.measured.value == 2.0
     distancia = _by(achados, "EXT-CAD-003-PEQUENO")
     assert distancia.compliance_status is ComplianceStatus.COMPLIANT
-    assert distancia.measured.algorithm == "grid_dijkstra_16"
+    assert distancia.measured.algorithm == "visibility_graph_bnb"
     assert distancia.measured.geometry_snapshot_hash == terreo["drawing"]["sha256"]
     assert distancia.evidence_ids == ("cad:floor-floor-00:extinguisher_walk_distance_m",)
 

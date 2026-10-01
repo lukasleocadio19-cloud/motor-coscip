@@ -1,0 +1,776 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela do Anexo C
+titulo: Dimensionamento para brigadista voluntário de incêndio (BVI), página 17
+pagina: 17
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+  juntar_cabecalho: false
+forma_geometrica:
+  faixa:
+  - 0
+  - 51
+  mesclar_linhas:
+  - - 0
+    - 2
+    - - 0
+      - 1
+      - 3
+  - - 1
+    - 2
+    - - 4
+  - - 6
+    - 7
+  - - 9
+    - 10
+  - - 12
+    - 13
+  - - 15
+    - 16
+  - - 18
+    - 19
+  - - 21
+    - 22
+  - - 24
+    - 25
+  - - 27
+    - 28
+  - - 30
+    - 31
+  - - 33
+    - 34
+  - - 36
+    - 37
+  - - 39
+    - 40
+  - - 42
+    - 43
+  - - 45
+    - 46
+  - - 47
+    - 48
+  - - 49
+    - 50
+  linhas_cabecalho: 5
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-17.jpg
+    imagem_sha256: f22f2d939070a32c74d15c416370364c028a46288afd420b1904a62f968c4fab
+    linhas_cabecalho: 3
+    cabecalho_publicado:
+    - Grupo
+    - Ocupação/Uso
+    - Divisão
+    - Descrição
+    - BVI — 1 a 20 funcionários por turno
+    - BVI — acima de 20 funcionários por turno
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Composição da Brigada de Incêndio Voluntária *
+    - - Funcionários por turno (incluindo terceirizados)
+    - - 1 A 20
+      - Acima de 20
+    - - A
+      - Residencial
+      - A-1
+      - Residencial privativa unifamiliar
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - A-2
+      - Residencial privativa multifamiliar
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - A-3
+      - Residencial coletiva
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - A-4
+      - Agrupamento residencial privativa unifamiliar
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - A-5
+      - Agrupamento residencial privativa multifamiliar
+      - '1'
+      - 10 % da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '1'
+      - 10 % da população fixa***
+    - - B
+      - Serviços de hospedagem
+      - B-1
+      - Residencial transitório
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - B-2
+      - Residencial com serviço
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - C
+      - Comercial
+      - C-1
+      - Comercial 1
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - C-2
+      - Comercial 2
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - C-3
+      - Shopping centers
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - D
+      - Serviço profissional e institucional
+      - D-1
+      - Local para prestação de serviço profissional ou condução de negócios
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - D-2
+      - Clínica médica e laboratório de análises técnicas
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - D-3
+      - Serviços de manutenção e reparação (exceto os classificados em G-5)
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - D-4
+      - Edificação pública
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - D-5
+      - Edificações destinadas à restrição de liberdade
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 17
+      tabela_na_pagina: 1
+    linhas:
+    - - Divisão
+      - Composição da Brigada de Incêndio Voluntária *
+    - - Funcionários por turno
+    - - Grupo
+      - Ocupação/Uso
+      - Descrição
+      - (incluindo terceirizados)
+    - - 1 A 20
+      - Acima de 20
+    - - A
+      - Residencial
+      - A-1
+      - Residencial privativa unifamiliar
+      - Não exigível
+    - - Edificação histórica com isenção de
+      - Não exigível
+    - - canalização ****
+    - - A-2
+      - Residencial privativa multifamiliar
+      - Não exigível
+    - - Edificação histórica com isenção de
+      - Não exigível
+    - - canalização ****
+    - - A-3
+      - Residencial coletiva
+      - Não exigível
+    - - Edificação histórica com isenção de
+      - Não exigível
+    - - canalização ****
+    - - A-4
+      - Agrupamento residencial privativa unifamiliar
+      - Não exigível
+    - - Edificação histórica com isenção de
+      - Não exigível
+    - - canalização ****
+    - - A-5
+      - Agrupamento residencial privativa multifamiliar
+      - '1'
+      - 10 % da população fixa***
+    - - Edificação histórica com isenção de
+      - '1'
+      - 10 % da população fixa***
+    - - canalização ****
+    - - B
+      - Serviços de hospedagem
+      - B-1
+      - Residencial transitório
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de
+      - '2'
+      - 10% da população fixa***
+    - - canalização ****
+    - - B-2
+      - Residencial com serviço
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de
+      - '2'
+      - 10% da população fixa***
+    - - canalização ****
+    - - C
+      - Comercial
+      - C-1
+      - Comercial 1
+      - Não exigível
+    - - Edificação histórica com isenção de
+      - Não exigível
+    - - canalização ****
+    - - C-2
+      - Comercial 2
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de
+      - '2'
+      - 10% da população fixa***
+    - - canalização ****
+    - - C-3
+      - Shopping centers
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de
+      - '2'
+      - 10% da população fixa***
+    - - canalização ****
+    - - D
+      - Serviço profissional e institucional
+      - D-1
+      - Local para prestação de serviço profissional ou condução de negócios
+      - Não exigível
+    - - Edificação histórica com isenção de
+      - Não exigível
+    - - canalização ****
+    - - D-2
+      - Clínica médica e laboratório de análises técnicas
+      - Não exigível
+    - - Edificação histórica com isenção de
+      - Não exigível
+    - - canalização ****
+    - - D-3
+      - Serviços de manutenção e reparação (exceto os classificados em G-5)
+      - Não exigível
+    - - Edificação histórica com isenção de
+      - Não exigível
+    - - canalização ****
+    - - D-4
+      - Edificação pública
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de
+      - '2'
+      - 10% da população fixa***
+    - - canalização ****
+    - - D-5
+      - Edificações destinadas à restrição
+      - '2'
+      - 10% da população fixa***
+    - - de liberdade
+    - - Edificação histórica com isenção de
+      - '2'
+      - 10% da população fixa***
+    - - canalização ****
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 48.77
+      - 78.07
+      - 555.88
+      - 725.92
+      linhas:
+      - - ''
+        - ''
+        - Divisão
+        - ''
+        - Composição da Brigada de Incêndio Voluntária *
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Funcionários por turno
+        - null
+        - null
+      - - Grupo
+        - Ocupação/Uso
+        - null
+        - Descrição
+        - (incluindo terceirizados)
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - 1 A 20
+        - null
+        - Acima de 20
+      - - A
+        - Residencial
+        - A-1
+        - Residencial privativa unifamiliar
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - A-2
+        - Residencial privativa multifamiliar
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - A-3
+        - Residencial coletiva
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - A-4
+        - Agrupamento residencial privativa unifamiliar
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - A-5
+        - Agrupamento residencial privativa multifamiliar
+        - '1'
+        - null
+        - 10 % da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - ''
+        - '1'
+        - 10 % da população fixa***
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - B
+        - Serviços de hospedagem
+        - B-1
+        - Residencial transitório
+        - '2'
+        - null
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - ''
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - B-2
+        - Residencial com serviço
+        - '2'
+        - null
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - ''
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - C
+        - Comercial
+        - C-1
+        - Comercial 1
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - C-2
+        - Comercial 2
+        - '2'
+        - null
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - ''
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - C-3
+        - Shopping centers
+        - '2'
+        - null
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - ''
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - D
+        - Serviço profissional e institucional
+        - D-1
+        - Local para prestação de serviço profissional ou condução de negócios
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - D-2
+        - Clínica médica e laboratório de análises técnicas
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - D-3
+        - Serviços de manutenção e reparação (exceto os classificados em G-5)
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - Não exigível
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - D-4
+        - Edificação pública
+        - '2'
+        - null
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - ''
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - D-5
+        - Edificações destinadas à restrição
+        - '2'
+        - null
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - de liberdade
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de
+        - '2'
+        - null
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - canalização ****
+        - null
+        - null
+        - null
+notas:
+- 'Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<"
+  = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas
+  "Edificação histórica…" em fundo amarelo na imagem.'
+- 'Divergência técnica, não de conteúdo conhecido: a camada de texto quebra os rótulos longos em linhas
+  e o pdfplumber separa as células de várias linhas (e reposiciona as mescladas do cabeçalho). A leitura
+  visual não tem segundo caminho independente: conferir na imagem antes de usar.'
+inconsistencias_da_fonte:
+- A marca "****" (edificação histórica com isenção de canalização) é usada em todas as linhas destacadas,
+  mas o quadro de notas da página 21 só define "*" e "***".
+- 'As descrições das divisões diferem das da NT 1-04 (ex.: D-2 "Clínica médica e laboratório de análises
+  técnicas" aqui, "Agências bancárias" na NT 1-04; D-3 remete a G-5 aqui e a G-4 na NT 1-04).'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: divergente

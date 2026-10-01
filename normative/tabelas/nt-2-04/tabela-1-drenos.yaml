@@ -1,0 +1,94 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-04
+arquivo: nt-2-04-conjunto-de-pressurizacao.md
+tabela: Tabela 1
+titulo: Diâmetro mínimo dos drenos
+pagina: 4
+fonte_pdf_sha256: 37837bf154bc5c517e2732e206e6d72e3e441591364182531614acad69fa5ed1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-04/pagina-04.jpg
+    imagem_sha256: 496415bc906e42380426c592c91e9d9afe521f21918b73fa754bc02accd7a9f7
+    linhas_cabecalho: 1
+    linhas:
+    - - Risco
+      - Diâmetro
+    - - Pequeno
+      - 1/2"
+    - - Médio - 1
+      - 1/2"
+    - - Médio - 2
+      - 3/4"
+    - - Grande
+      - 1”
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 4
+      tabela_na_pagina: 1
+    linhas:
+    - - Risco
+      - Diâmetro
+    - - Pequeno
+      - 1/2"
+    - - Médio - 1
+      - 1/2"
+    - - Médio - 2
+      - 3/4"
+    - - Grande
+      - 1”
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 326.15
+      - 234.74
+      - 525.06
+      - 312.41
+      linhas:
+      - - Risco
+        - Diâmetro
+      - - Pequeno
+        - 1/2"
+      - - Médio - 1
+        - 1/2"
+      - - Médio - 2
+        - 3/4"
+      - - Grande
+        - 1”
+    - bbox:
+      - 41.16
+      - 641.74
+      - 284.33
+      - 776.74
+      linhas:
+      - - 5.1.3.2 Para sistemas de sprinklers, a serem
+      - - dimensionados conforme a NT 2-03 – Sistemas de
+      - - chuveiros automáticos/sprinklers, não será aceita a
+      - - instalação de bombas de incêndio com sucção nega-
+      - - tiva, ou seja, as bombas devem operar sempre afoga-
+      - - das.
+      - - 5.1.3.3 Nos conjuntos de bombeamento que operam
+      - - na condição de sucção negativa, o cálculo da pressão
+      - - de sucção positiva requerida (NPSH) poderá ser soli-
+      - - citado ao projetista com o objetivo de impedir a cavi-
+      - - tação das bombas.
+notas:
+- 'Fonte indicada na página: CBMERJ.'
+- Pelo item 5.1.6, a válvula de alívio (obrigatória no risco grande) tem o mesmo diâmetro mínimo do dreno;
+  confere com a Tabela 2 (alívio 1" no risco grande).
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

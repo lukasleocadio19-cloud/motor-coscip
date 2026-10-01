@@ -37,11 +37,15 @@ class EvidenceLocator(_Strict):
     layer: str | None = None
     floor_id: str | None = None
     table_row: str | None = None
+    # Objeto físico a que a evidência se refere (F5.2): a mesma coisa vista por fontes
+    # diferentes tem o mesmo ``object_key`` e conta uma vez só (F6).
+    object_key: str | None = None
 
     @property
     def is_empty(self) -> bool:
+        # object_key identifica o objeto, não diz ONDE o fato está: não localiza sozinho
         return not any(getattr(self, name) is not None
-                       for name in type(self).model_fields)
+                       for name in type(self).model_fields if name != "object_key")
 
     def describe(self) -> str:
         parts = []
@@ -84,6 +88,8 @@ class Evidence(_Strict):
     extraction_schema: str | None = None
     algorithm: str | None = None
     algorithm_version: str | None = None
+    # Parcelas da incerteza de uma medida geométrica, cada uma com origem (F7.3).
+    uncertainty_budget: dict[str, Any] | None = None
     quality_gate: str | None = None
     semantic_validation: str | None = None
     confidence: float | None = Field(default=None, ge=0, le=1)

@@ -1,0 +1,109 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-05
+arquivo: nt-2-05-sinalizacao.md
+tabela: Quadro 1
+titulo: Demonstrativo de exigências
+pagina: 3
+fonte_pdf_sha256: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-05/pagina-03.jpg
+    imagem_sha256: d8f473105f43788dc055ca0d2bd00f87dcb3b54576702e641747ace8ecd70138
+    linhas_cabecalho: 1
+    linhas:
+    - - Edificações
+      - Orientação e salvamento / equipamentos
+      - Proibição / alerta
+    - - A-4 (Agrupamento residencial unifamiliar)
+      - Exigido (Vide obs. 1)
+      - Exigido (Vide obs. 2)
+    - - A-2 (Residencial privativa multifamiliar) e A-5 (Agrupamento residencial privativo multifamiliar)
+      - Exigido (Vide obs. 3)
+      - Exigido (Vide obs. 2)
+    - - Demais edificações
+      - Exigido (Vide obs. 4)
+      - Exigido (Vide obs. 2)
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 3
+      tabela_na_pagina: 1
+    linhas:
+    - - Edificações
+      - Orientação e salvamento / equipamentos
+      - Proibição / alerta
+    - - A-4 (Agrupamento residencial unifamiliar)
+      - Exigido (Vide obs. 1)
+      - Exigido (Vide obs. 2)
+    - - A-2 (Residencial privativa multifamiliar) e A-5 (Agrupamento residencial privativo multifamiliar)
+      - Exigido (Vide obs. 3)
+      - Exigido (Vide obs. 2)
+    - - Demais edificações
+      - Exigido (Vide obs. 4)
+      - Exigido (Vide obs. 2)
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 320.26
+      - 546.09
+      - 545.35
+      - 724.3
+      linhas:
+      - - Edificações
+        - ''
+        - Orientação e
+        - ''
+        - Proibição / alerta
+      - - null
+        - null
+        - salvamento /
+        - null
+        - null
+      - - null
+        - null
+        - equipamentos
+        - null
+        - null
+      - - A-4 (Agrupamento residencial unifamiliar)
+        - Exigido (Vide obs. 1)
+        - null
+        - null
+        - Exigido (Vide obs. 2)
+      - - A-2 (Residencial privativa multifamiliar) e A-5 (Agrupamento residencial privativo multifamiliar)
+        - Exigido (Vide obs. 3)
+        - null
+        - null
+        - Exigido (Vide obs. 2)
+      - - Demais edificações
+        - Exigido (Vide obs. 4)
+        - null
+        - null
+        - Exigido (Vide obs. 2)
+    - bbox:
+      - 494.02
+      - 552.31
+      - 539.98
+      - 576.31
+      linhas:
+      - - Proibição /
+      - - alerta
+notas:
+- 'Fonte indicada na página: CBMERJ.'
+- 'Obs. 1: Deverá ser adotada nas áreas comuns, por exemplo: salão de festas, centro social e administração.
+  As observações 2 a 4 continuam na página 4 do texto.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

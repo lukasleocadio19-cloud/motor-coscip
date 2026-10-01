@@ -1,0 +1,241 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-09
+arquivo: nt-4-09-tuneis.md
+tabela: Tabela 1 do Anexo A
+titulo: Posicionamento da sinalização de segurança para túneis rodoviários
+pagina: 8
+fonte_pdf_sha256: bea8f7902227b297338f0e78c459935df3a79f505eb1b02d54814a4997351fd2
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-09/pagina-08.jpg
+    imagem_sha256: 2f986f970ab38bbb18c4c3c764ce150f9a967015c4d43cc9f79745d4461cfbcb
+    linhas_cabecalho: 1
+    linhas:
+    - - Tipo
+      - Localização
+      - Posição
+      - Distanciamento máximo (m)
+    - - Placas de segurança (equipamentos de proteção contra incêndio e sinalização de alerta)
+      - Parede paralela ao sentido de circulação
+      - No máximo 1,80 m de altura do piso acabado
+      - '23'
+    - - ^
+      - Parede transversal ao sentido de circulação
+      - No mínimo 6 m de altura do nível do piso acabado
+      - Nos emboques do túnel rodoviário
+    - - Sinalização de piso
+      - Próxima ao solo, por toda a extensão do túnel Do lado direito do sentido do tráfego ou na lateral
+        da saída de emergência
+      - Na borda do passeio, junto à pista
+      - Contínua, por extensão do túnel
+    - - Placa de indicação da rota de fuga
+      - No mínimo a 600 mm e no máximo a 1,50 m do piso
+      - Na parede lateral do passeio
+      - Na saída de emergência e a cada 30 m
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 8
+      tabela_na_pagina: 1
+    linhas:
+    - - Tipo
+      - Localização
+      - Posição
+      - Distanciamento máximo (m)
+    - - Placas de segurança (equipamentos de proteção contra incêndio e sinalização de alerta)
+      - Parede paralela ao sentido de circulação
+      - No máximo 1,80 m de altura do piso acabado
+      - '23'
+    - - Parede transversal ao sentido de circulação
+      - No mínimo 6 m de altura do nível do piso acabado
+      - Nos emboques do túnel rodoviário
+    - - Sinalização de piso
+      - Próxima ao solo, por toda a extensão do túnel Do lado direito do sentido do tráfego ou na lateral
+        da saída de emergência
+      - Na borda do passeio, junto à pista
+      - Contínua, por extensão do túnel
+    - - Placa de indicação da rota de fuga
+      - No mínimo a 600 mm e no máximo a 1,50 m do piso
+      - Na parede lateral do passeio
+      - Na saída de emergência e a cada 30 m
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.7
+      - 114.14
+      - 520.87
+      - 308.71
+      linhas:
+      - - ''
+        - Tipo
+        - ''
+        - ''
+        - Localização
+        - ''
+        - ''
+        - Posição
+        - ''
+        - ''
+        - Distanciamento máximo (m)
+      - - Placas de segurança (equipamentos de proteção contra incêndio e sinalização de alerta)
+        - null
+        - null
+        - Parede paralela ao sentido de circulação
+        - null
+        - null
+        - No máximo 1,80 m de altura do piso acabado
+        - null
+        - null
+        - '23'
+        - null
+      - - null
+        - null
+        - null
+        - Parede transversal ao sentido de circulação
+        - null
+        - null
+        - No mínimo 6 m de altura do nível do piso acabado
+        - null
+        - null
+        - Nos emboques do túnel rodoviário
+        - null
+      - - Sinalização de piso
+        - null
+        - null
+        - Próxima ao solo, por toda a extensão do túnel Do lado direito do sentido do tráfego ou na lateral
+          da saída de emergência
+        - null
+        - null
+        - Na borda do passeio, junto à pista
+        - null
+        - null
+        - Contínua, por extensão do túnel
+        - null
+      - - Placa de indicação da rota de fuga
+        - null
+        - null
+        - No mínimo a 600 mm e no máximo a 1,50 m do piso
+        - null
+        - null
+        - Na parede lateral do passeio
+        - null
+        - null
+        - Na saída de emergência e a cada 30 m
+        - null
+    - bbox:
+      - 56.7
+      - 393.8
+      - 520.87
+      - 661.37
+      linhas:
+      - - Tipo
+        - Localização
+        - ''
+        - Posição / Nível de
+        - ''
+        - ''
+        - Altura mínima da
+        - ''
+        - ''
+        - Distanciamento
+        - ''
+      - - null
+        - null
+        - null
+        - iluminamento
+        - null
+        - null
+        - placa e caracteres
+        - null
+        - null
+        - máximo (m)
+        - null
+      - - Placas de segurança (equipamentos de proteção contra incêndio e sinalização de alerta)
+        - Parede paralela ao sentido de circulação
+        - No máximo 1,80 m de altura do piso acabado
+        - null
+        - null
+        - Placa com 250 mm Caracteres com 135 mm
+        - null
+        - null
+        - '30'
+        - null
+        - null
+      - - null
+        - Parede transversal ao sentido de circulação (secundária)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Sinalização de piso
+        - Próxima ao solo, por toda a extensão do túnel No limite entre a via ou faixa de rolamento e
+          a passarela de emergência
+        - No nível do piso acabado
+        - null
+        - null
+        - '-'
+        - null
+        - null
+        - '3'
+        - null
+        - null
+      - - Lâmpadas de balizamento
+        - Passagem de emergência
+        - Superior a 3 lux no nível do piso acabado
+        - null
+        - null
+        - '-'
+        - null
+        - null
+        - '-'
+        - null
+        - null
+      - - null
+        - Área plana
+        - Superior a 3 lux no nível do piso acabado
+        - null
+        - null
+        - '-'
+        - null
+        - null
+        - Máximo a cada 5 m
+        - null
+        - null
+      - - null
+        - 'Desnível: escadas ou passagens com obstáculos'
+        - Superior a 5 lux no nível do piso acabado
+        - null
+        - null
+        - '-'
+        - null
+        - null
+        - '-'
+        - null
+        - null
+notas:
+- 'Fonte indicada na página: ABNT NBR 15981:2011.'
+inconsistencias_da_fonte:
+- Na placa de indicação da rota de fuga, a altura ("No mínimo a 600 mm e no máximo a 1,50 m do piso")
+  está na coluna Localização e o local ("Na parede lateral do passeio") na coluna Posição, invertidos
+  em relação às demais linhas.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

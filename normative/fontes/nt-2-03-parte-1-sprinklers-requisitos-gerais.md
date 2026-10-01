@@ -38,8 +38,7 @@ ANEXOS A - Termos de compromisso B - Reserva técnica para incêndio (R.T.I.) C 
 
 Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019 (DOERJ nº 167, de 04.09.2019). Alterada pela Portaria CBMERJ nº 1120, de 22 de setembro de 2020 (DOERJ nº 179, de 28.09.2020).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -70,14 +69,15 @@ possua contato direto com o exterior da edificação. 4.3 Chuveiro automático d
 
 ## Página 4
 
+![Representação visual da página 4](media/nt-2-03-parte-1/pagina-04.jpg)
+
 operação, tabelas e demais parâmetros técnicos devem seguir os critérios contidos na norma técnica considerada. 5.1.2 Os projetistas e os instaladores das canalizações de chuveiros automáticos devem ter atenção especial às eventuais obstruções à descarga dos bicos de sprinklers, atendendo sempre aos requisitos estabelecidos na NBR-10897. 5.2 Requisitos básicos para a instalação de chuveiros automáticos 5.2.1 Nas edificações sujeitas à exigência de canalização de chuveiros automáticos, este sistema deverá abranger toda a área da edificação, exceto nas ocupações residenciais privativas das Divisões A-2, A- 5 e A-6 da Tabela 1 do Decreto Estadual nº 42/2018 - COSCIP, que seguirão os critérios estabelecidos na subseção abaixo, e demais exceções relacionadas nesta NT. 5.2.1.1 Nas ocupações residenciais privativas, sujeitas à exigência de canalização de chuveiros automáticos, deverão ser instalados bicos de sprinklers nas áreas de uso comum de todos os pavimentos, incluindo subsolos e estacionamentos, exceto nas áreas permanentemente abertas dos pavimentos de uso comum. 5.2.2 Em edificações com classificação distinta das Divisões A-2, A-5 e A-6 da Tabela 1 do Decreto Estadual nº 42/2018 - COSCIP, a instalação de chuveiros automáticos no interior da residência do zelador será dispensada, desde que a mesma seja localizada na cobertura. 5.2.3 A instalação de chuveiros automáticos será dispensada em banheiros, lavatórios e lavabos, cabendo tal exigência para vestiários, bem como para subestações, salas de medidores e de PC de energia elétrica, desde que estes três últimos ambientes possuam área interna máxima de 20 m². 5.2.3 A instalação de chuveiros automáticos será dispensada em banheiros, lavatórios e lavabos, cabendo tal exigência para vestiários. Além disso, será dispensada para subestações, salas de medidores e de PC de energia elétrica, desde que estes ambientes possuam área interna máxima de 20 m². (Redação dada pela Portaria CBMERJ nº 1120, de 22.9.2020) 5.2.3.1 Também será dispensada a instalação de chuveiros automáticos no interior de câmaras frigoríficas que operem com temperaturas inferiores a 5º C e que possuam área interna máxima de 12 m². 5.2.3.1.1 Caso exista mais de uma câmara frigorífica que atenda as condições estabelecidas no subitem anterior, as mesmas estarão dispensadas da instalação de chuveiros automáticos, desde que estes ambientes cumpram os requisitos de compartimentação estabelecidos na NT 2-18 - Compartimentação horizontal e vertical. 5.2.4 Serão isentos do sistema de chuveiros automáticos as varandas permanentemente abertas. 5.2.4.1 O material de acabamento e revestimento das varandas deverá ser incombustível.
 
 5.2.4.2 Deverá ser apresentado, em planta, um Termo de Compromisso, seguindo o modelo estabelecido no Quadro 1 do Anexo A, onde seja declarado pelo responsável pelo uso dos ambientes conjugados às varandas, que não será realizado nenhum fechamento parcial ou total nas aberturas das mesmas, nem alteradas as suas características construtivas. 5.2.5 A critério do projetista, a instalação de chuveiros automáticos poderá ser substituída pela instalação de detectores de incêndio, ligados ao sistema de alarme do prédio ou ao alarme do sistema de chuveiros automáticos, nos seguintes ambientes: a) subestações, salas de medidores e de PC de energia elétrica com área interna superior a 20 m², além de casa de máquinas de elevadores e casa de máquinas de incêndio que não possuam bombas com motor à explosão, todos com área máxima de 40 m², desde que exista compartimentação equivalente a 30 min de TRRF (tempo requerido de resistência ao fogo) entre os mesmos e os ambientes adjacentes; b) centros de processamento de dados (CPD) com área máxima de 20 m², desde que exista compartimentação equivalente a 30 min de TRRF entre os mesmos e os ambientes adjacentes; e c) salas destinadas a abrigar equipamentos de radiologia, tais como: ressonância nuclear magnética e tomografia computadorizada, equipamentos de medicina nuclear e radioterapia, desde que exista compartimentação equivalente a 30 min de TRRF entre os mesmos e os ambientes adjacentes. 5.2.6 As áreas de entreforro estarão sujeitas à instalação de chuveiros automáticos, respeitadas as condições de isenção previstas na NBR-10897. 5.2.6.1 Quando não houver a previsão da instalação de chuveiros automáticos no interior de áreas de entreforro, deverá ser apresentado, em planta, um Termo de Compromisso, seguindo o modelo estabelecido no Quadro 2 do Anexo A, onde seja declarado pelo projetista e pelo responsável pelo uso da edificação, que tanto o forro, quanto os materiais contidos em seu interior serão incombustíveis ou possuirão coeficiente de propagação de chama igual ou inferior a 25.
 
 5.2.6.1 Quando não houver a previsão da instalação de chuveiros automáticos no interior de áreas de entreforro, deverá ser apresentado, em planta, um Termo de Compromisso, seguindo o modelo estabelecido no Quadro 2 do Anexo A, onde seja declarado pelo projetista e pelo responsável pelo uso da edificação, que tanto o forro, quanto os materiais contidos em seu interior serão incombustíveis ou possuirão coeficiente de propagação de chama igual ou inferior a 25 conforme norma ABNT NBR 9442. (Redação dada pela Portaria CBMERJ nº 1120, de 22.9.2020) 5.2.7 Será aceita, como alternativa aos chuveiros automáticos, a instalação de sistemas fixos de gases por inundação total em partes da edificação (ambientes), ressalvadas as restrições de emprego e
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 5.2.7 | Será aceita, como alternativa aos chuveiros |
@@ -90,12 +90,13 @@ operação, tabelas e demais parâmetros técnicos devem seguir os critérios co
 
 ## Página 5
 
+![Representação visual da página 5](media/nt-2-03-parte-1/pagina-05.jpg)
+
 os requisitos estabelecidos na NT 2-13 - Sistemas fixos de gases para combate a incêndio. 5.2.8 Na aplicação dos requisitos de compartimentação horizontal previstos nas tabelas do Anexo III do Decreto Estadual nº 42/2018 - COSCIP para fins de dispensa da adoção de chuveiros automáticos, tais medidas poderão ser substituídas por compartimentação vertical quando as áreas sujeitas a segregação se situarem em níveis diferentes. (Incluído pela Portaria CBMERJ nº 1120, de 22.9.2020) 5.3 Dos chuveiros automáticos, tubulações, conexões e mangotes 5.3.1 Serão aceitos nas redes de chuveiros automáticos tubos de condução não enterrados constituídos em aço, cobre e CPVC (policloreto de vinila clorado), sendo este último aceito somente para ocupações enquadradas no Risco Leve e que disponham exclusivamente de bicos de sprinklers de resposta rápida (FR), desde que cumpridos os requisitos estabelecidos na NBR-10897 e nas respectivas normas por ela citadas. 5.3.2 Serão aceitos nas redes de chuveiros automáticos tubos de condução enterrados constituídos em aço, ferro dúctil, cobre e PEAD (polietileno de alta densidade), desde que cumpridos os requisitos estabelecidos na NBR-10897 e nas respectivas normas por ela citadas, ressaltando que as tubulações de PEAD deverão ser enterradas a uma profundidade mínima de 0,90 m, em locais onde não houver trânsito de veículos, e 1,20 m, em locais onde houver trânsito de veículos. 5.3.3 Serão aceitos acoplamentos mecânicos (rígidos e flexíveis), conexões de tubos com pontas ranhuradas (grooved fittings) e mangotes flexíveis em aço inoxidável para instalação direta dos chuveiros automáticos, desde que estes resistam às pressões máximas de operação e de ensaio hidrostático previstas na NBR-10897 e sejam certificados, de acordo com norma específica, por organismo certificador de produto (OCP) acreditado pelo INMETRO ou, ainda, na ausência de certificação nacional, possuam certificação internacional concedida por laboratório de entidade ou instituição de reconhecida competência técnica. No caso dos mangotes flexíveis, os mesmos também deverão possuir diâmetro interno mínimo de 25 mm (1”). 5.3.4 Serão aceitos chuveiros automáticos que resistam às pressões máximas de operação e de ensaio hidrostático previstas na NBR-10897 e sejam certificados, de acordo com a NBR-16400, por organismo certificador de produto (OCP) acreditado pelo INMETRO ou, ainda, na ausência de certificação nacional, possuam certificação internacional concedida por laboratório de entidade ou instituição de reconhecida competência técnica. 5.4 Reserva técnica de incêndio (RTI) para rede de sprinklers 5.4.1 A reserva técnica de incêndio para a rede de sprinklers deverá ser definida em função do tempo de
 
 operação do sistema, de acordo com a(s) classificação(ões) de risco da edificação, conforme previsto no Tabela 1 do Anexo B. 5.4.2 Nos casos de edificações que possuam mais de um tipo de classificação de risco, a reserva técnica de incêndio deverá ser calculada em função da vazão e do tempo de funcionamento do maior risco. 5.4.3 Nos casos em que hidrantes e mangotinhos sejam instalados em conjunto com o sistema de chuveiros automáticos, as vazões e pressões mínimas exigidas na NT 2-02 - Sistemas de hidrantes e de mangotinhos para combate a incêndio, devem ser garantidas, sendo somadas as reservas efetivas de água para o combate a incêndios por sprinklers, atendendo aos requisitos técnicos previstos nesta NT e na NT 2-02 - Sistemas de hidrantes e de mangotinhos para combate a incêndio. 5.4.4 Nos casos em que a RTI e o volume de água do abastecimento predial diário forem contidos em um único reservatório e a RTI for superior a 70% do volume deste reservatório, deverá ser apresentado o cálculo do volume mínimo de abastecimento predial diário, de acordo com o Código de Obras do Município correspondente, atestando que o volume total do reservatório projetado está adequado. 5.4.5 Nos casos em que a RTI e o volume de água do abastecimento predial diário forem contidos em reservatórios distintos, o posicionamento e o volume de ambos devem ser indicados no projeto e, se for o caso, deverá ser apresentado o cálculo do volume mínimo de abastecimento predial diário, de acordo com o Código de Obras do Município correspondente, atestando que o volume do reservatório projetado está adequado. 5.5 Requisitos para instalação de dispositivos de bloqueio, controle, ensaio e alarme 5.5.1 Nas edificações constituídas de múltiplos pavimentos, com exceção das classificadas nos Grupos C, F, I, J, L e nas Divisões G1, G-4, G-5, G-6, M-1, M-2 e M-6 da Tabela 1 do Decreto Estadual nº 42/2018 - COSCIP, será aceita a instalação de comandos secundários (conexão setorial de dreno, ensaio e alarme - floor control valve) na saída da respectiva prumada em cada pavimento, em substituição às válvulas de governo e alarme, desde que não sejam ultrapassados os limites de área estabelecidos pela NBR-10897 para cada coluna de alimentação. 5.5.2 Nas edificações classificadas no Risco Pequeno, conforme previsto na NT 1-04 - Classificação das edificações quanto ao risco de incêndio, nos pavimentos exclusivamente residenciais, os drenos poderão ser instalados sem a adoção de dispositivos de controle, visor de fluxo e alarme, não excluindo os demais requisitos da NBR-10897. 5.5.2.1 Nas edificações relacionadas no item anterior também será admitida a utilização de prumada vertical única para o sistema de hidrantes ou mangotinhos e para rede de chuveiros automáticos, devendo ser observado o diâmetro mínimo de 2 ½” (63 mm).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | os requisitos estabelecidos na NT 2-13 - Sistemas |  |
@@ -192,6 +193,8 @@ _______________________________________________________________
 
 ## Página 9
 
+![Representação visual da página 9](media/nt-2-03-parte-1/pagina-09.jpg)
+
 ### ANEXO B - RESERVA TÉCNICA PARA INCÊNDIO (RTI)
 
 Tabela 1 - Duração da reserva de água (RTI)
@@ -200,8 +203,7 @@ Extraordinário Grupo 1 e 2 60 Fonte: CBMERJ.
 
 RTI = Q x t Onde: RTI - Reserva técnica de incêndio em litros (L); Q - Vazão em litros por minuto (L/min); t - Tempo de duração da reserva de água em minutos (min).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Categoria de Risco |  | Duração - |  |
@@ -210,6 +212,20 @@ RTI = Q x t Onde: RTI - Reserva técnica de incêndio em litros (L); Q - Vazão 
 | Leve | 30 |  |  |
 | Ordinário Grupo 1 e 2 | 30 |  |  |
 | Extraordinário Grupo 1 e 2 | 60 |  |  |
+
+<!-- tabela-conferida: Tabela 1 do Anexo B p9 -->
+### Tabela 1 do Anexo B — Duração da reserva de água (RTI) (conferida)
+
+| Categoria de Risco | Duração - t (min) |
+| --- | --- |
+| Leve | 30 |
+| Ordinário Grupo 1 e 2 | 30 |
+| Extraordinário Grupo 1 e 2 | 60 |
+
+Fonte: NT 2-03 P1, página 9, Tabela 1 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
+Fórmula abaixo da tabela: RTI = Q x t, onde RTI – Reserva técnica de incêndio em litros (L); Q – Vazão em litros por minuto (L/min); t – Tempo de duração da reserva de água em minutos (min).
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 1 do Anexo B p9 -->
 
 ---
 

@@ -1,0 +1,103 @@
+# CI do Motor CAD/COSCIP (plano de correção, F0.1).
+# Windows é a plataforma principal; Linux detecta dependência de plataforma.
+# A CI nunca procura as skills: os textos vêm de normative/fontes.
+name: CI
+
+on:
+  push:
+    branches: [master, "fase/**", "claude/**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  testes:
+    name: testes (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    env:
+      COSCIP_NORMAS_DIR: ${{ github.workspace }}/normative/fontes
+      PYTHONIOENCODING: utf-8
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements/dev.lock
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+
+      - name: Dependências Python (lock com hash)
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --require-hashes -r requirements/dev.lock
+          python -m pip install -e . --no-deps
+
+      - name: Lock confere com o pyproject
+        if: runner.os == 'Linux'
+        run: |
+          python -m pip install uv==0.12.20
+          python tools/ci/check_lock.py
+
+      - name: ruff
+        run: ruff check . --no-cache
+
+      - name: pytest
+        run: >-
+          python -m pytest -p no:cacheprovider
+          --basetemp "${{ runner.temp }}/pytest"
+          --junitxml "${{ runner.temp }}/junit-${{ matrix.os }}.xml"
+
+      - name: Determinismo (hash da saída da análise)
+        run: python -m tools.ci.determinismo --out "${{ runner.temp }}/determinismo-${{ runner.os }}.json"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: determinismo-${{ runner.os }}
+          path: ${{ runner.temp }}/determinismo-${{ runner.os }}.json
+
+      - name: Interface (npm ci + build)
+        run: |
+          npm ci
+          npm run build
+
+      - name: Relatório do pytest
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: junit-${{ matrix.os }}
+          path: ${{ runner.temp }}/junit-${{ matrix.os }}.xml
+          if-no-files-found: ignore
+
+  # F7.4: mesma entrada ⇒ mesmo analysis.json em Windows e Linux.
+  determinismo:
+    name: determinismo (Windows × Linux)
+    needs: testes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: determinismo-*
+          path: hashes
+          merge-multiple: true
+      - name: Hashes iguais nos dois sistemas
+        run: python -m tools.ci.determinismo --comparar hashes/determinismo-Linux.json hashes/determinismo-Windows.json

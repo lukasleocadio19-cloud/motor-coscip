@@ -1,0 +1,146 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-03
+arquivo: nt-3-03-motogeradores.md
+tabela: Tabela 1
+titulo: Volume máximo de armazenamento por pavimento
+pagina: 5
+fonte_pdf_sha256: 181e7aa6c1341d3032421dde20512ea3e9c55b5588fbd188a1ab3eaa31b958de
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 4
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-03/pagina-05.jpg
+    imagem_sha256: 41eccd843347df0545100a67b3a803a49116fbbf6e0526f0b2b9f43ab50ce743
+    linhas_cabecalho: 1
+    linhas:
+    - - Pavimento
+      - Capacidade do tanque de superfície (litros)
+      - Capacidade do tanque enterrado (litros)
+    - - Subsolo
+      - '6.000'
+      - '8.000'
+    - - Semi enterrado
+      - '8.000'
+      - '10.000'
+    - - Térreo
+      - '8.000'
+      - '10.000'
+    - - Garagem elevada
+      - '10.000'
+      - '-'
+    - - Pav.técnico/ ático
+      - '10.000'
+      - '-'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 5
+      tabela_na_pagina: 1
+    linhas:
+    - - Pavimento
+      - Capacidade do tanque de superfície (litros)
+      - Capacidade do tanque enterrado (litros)
+    - - Subsolo
+      - '6.000'
+      - '8.000'
+    - - Semi enterrado
+      - '8.000'
+      - '10.000'
+    - - Térreo
+      - '8.000'
+      - '10.000'
+    - - Garagem elevada
+      - '10.000'
+      - '-'
+    - - Pav.técnico/ ático
+      - '10.000'
+      - '-'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 49.94
+      - 537.11
+      - 289.47
+      - 636.82
+      linhas:
+      - - Pavimento
+        - ''
+        - Capacidade do
+        - ''
+        - ''
+        - Capacidade do
+        - ''
+      - - null
+        - null
+        - tanque de
+        - null
+        - null
+        - tanque
+        - null
+      - - null
+        - null
+        - superfície
+        - null
+        - null
+        - enterrado
+        - null
+      - - null
+        - null
+        - (litros)
+        - null
+        - null
+        - (litros)
+        - null
+      - - Subsolo
+        - '6.000'
+        - null
+        - null
+        - '8.000'
+        - null
+        - null
+      - - Semi enterrado
+        - '8.000'
+        - null
+        - null
+        - '10.000'
+        - null
+        - null
+      - - Térreo
+        - '8.000'
+        - null
+        - null
+        - '10.000'
+        - null
+        - null
+      - - Garagem elevada
+        - '10.000'
+        - null
+        - null
+        - '-'
+        - null
+        - null
+      - - Pav.técnico/ ático
+        - '10.000'
+        - null
+        - null
+        - '-'
+        - null
+        - null
+notas:
+- 'Fonte indicada na página: CBMERJ.'
+- 'Limites relacionados no texto: 6.2.3 (armazenamento no interior da edificação até 10.000 l, respeitado
+  o máximo por pavimento da Tabela 1) e 6.2.4 (consumo diário + armazenamento até 13.000 l).'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

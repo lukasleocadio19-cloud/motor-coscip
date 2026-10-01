@@ -54,8 +54,7 @@ Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019 (DOERJ nº 167, 
 
 Alterada pela Portaria CBMERJ nº 1109, de 20 de maio de 2020 (DOERJ nº 093, de 26.05.2020). Alterada pela Portaria CBMERJ nº 1167, de 02 de fevereiro de 2022 (DOERJ nº 023, de 04.02.2022).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -326,8 +325,7 @@ e) quando houver montagem de estrutura temporária com mais de um pavimento, no 
 
 6.2.7 As catracas deverão ser dimensionadas para atender a todo o público e a seu acesso em um tempo máximo de 1 hora. Para este cálculo deverá ser considerada uma capacidade máxima de 660 pessoas por catraca por hora.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Área total |  | Edificação permanente | Estrutura temporária |
@@ -337,6 +335,21 @@ e) quando houver montagem de estrutura temporária com mais de um pavimento, no 
 | Até 200 m² |  |  | Isento | Isento |
 | De 201 à 500 m² |  |  | Isento | 02 BC |
 | De 501 à 2.500 m² |  |  | 02 BC | 04 BC |
+
+<!-- tabela-conferida: Tabela 1 p6 -->
+### Tabela 1 — Dimensionamento de brigada de incêndio em eventos temporários de reunião de público (conferida)
+
+| Área total construída (ATC) (m²) | Edificação permanente | Estrutura temporária |
+| --- | --- | --- |
+| Até 200 m² | Isento | Isento |
+| De 201 à 500 m² | Isento | 02 BC |
+| De 501 à 2.500 m² | 02 BC | 04 BC |
+
+Fonte: NT 5-04, página 6, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
+Obs. da tabela: BC (bombeiro civil).
+Fonte indicada na página: CBMERJ.
+Pelo item 6.1.6 a), para eventos que excedam a área da tabela deve-se adotar 01 Bombeiro Civil para cada 2.500 m² de ATC acrescida.
+<!-- /tabela-conferida: Tabela 1 p6 -->
 
 ---
 

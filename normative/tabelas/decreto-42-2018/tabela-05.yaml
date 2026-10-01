@@ -1,0 +1,570 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 5
+titulo: Exigências para edificações do grupo A (divisão A-6) com área superior a 900m² ou superior a 02
+  pavimentos
+pagina: 29
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 8
+  - 23
+  rotulos_quebrados: true
+  linhas_cabecalho: 0
+forma_geometrica:
+  faixa:
+  - 8
+  - 37
+anexo3:
+  tabela: 5
+  blocos:
+  - divisoes:
+    - A-6
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026); nota
+      sobrescrita escrita como algarismo após o X ("X¹" → "X1")
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-29.jpg
+    imagem_sha256: c1366bab942109b7812cc1f1fe84672d24ed4c6a020caa068c25a6ece23c773b
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Medidas de Segurança contra Incêndio e Pânico
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+    linhas:
+    - - Extintores
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Hidrantes e mangotinhos
+      - X
+      - X
+      - X1
+      - X
+      - X
+      - X
+    - - Chuveiros automáticos
+      - X2
+      - X2
+      - X2
+      - X2
+      - X2
+      - X
+    - - Sinalização de segurança
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Iluminação de Emergência
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Alarme de Incêndio
+      - X
+      - X
+      - X1
+      - X
+      - X
+      - X
+    - - Detecção de Incêndio
+      - X3
+      - X3
+      - X3
+      - X3
+      - X3
+      - X3
+    - - Saídas de Emergência
+      - X
+      - X4
+      - X4
+      - X5
+      - X6
+      - X6, 7
+    - - Plano de emergência
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X
+    - - Controle de fumaça
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X8
+    - - Hidrante urbano
+      - X9
+      - X9
+      - X9
+      - X9
+      - X9
+      - X9
+    - - Acesso de viatura em edificações
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Compartimentação Vertical
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+    - - Segurança Estrutural contra Incêndio
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Controle de Materiais de Acabamento
+      - X10
+      - X10
+      - X10
+      - X11
+      - X11
+      - X11
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF), só o corpo da tabela
+    origem:
+      pagina: 29
+      tabela_na_pagina: 1
+    linhas:
+    - - Extintores
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Hidrantes e mangotinhos
+      - X
+      - X
+      - X1
+      - X
+      - X
+      - X
+    - - Chuveiros automáticos
+      - X2
+      - X2
+      - X2
+      - X2
+      - X2
+      - X
+    - - Sinalização de segurança
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Iluminação de Emergência
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Alarme de Incêndio
+      - X
+      - X
+      - X1
+      - X
+      - X
+      - X
+    - - Detecção de Incêndio
+      - X3
+      - X3
+      - X3
+      - X3
+      - X3
+      - X3
+    - - Saídas de Emergência
+      - X
+      - X4
+      - X4
+      - X5
+      - X6
+      - X6, 7
+    - - Plano de emergência
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X
+    - - Controle de fumaça
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - X8
+    - - Hidrante urbano
+      - X9
+      - X9
+      - X9
+      - X9
+      - X9
+      - X9
+    - - Acesso de viatura em edificações
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Compartimentação Vertical
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+    - - Segurança Estrutural contra Incêndio
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Controle de Materiais de Acabamento
+      - X10
+      - X10
+      - X10
+      - X11
+      - X11
+      - X11
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.81
+      - 53.48
+      - 552.65
+      - 685.3
+      linhas:
+      - - Tabela 5 – Exigências para edificações do grupo A (divisão A-6) com área superior a 900m²
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ou superior a 02 pavimentos
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Grupo de ocupação e uso
+        - GRUPO A – RESIDENCIAL
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Divisão
+        - A-6
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - Classificação quanto ao nº de pavimentos e à altura (em metros)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Medidas de Segurança contra Incêndio e
+        - ''
+        - ''
+        - ''
+        - ''
+        - Acima de
+        - ''
+      - - Pânico
+        - Térrea
+        - 2pav
+        - 3pav
+        - 4, 5 e 6pav
+        - 6pav com
+        - H > 30m
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - H ≤ 30m
+        - ''
+      - - Extintores
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrantes e mangotinhos
+        - X
+        - X
+        - X1
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Chuveiros automáticos
+        - X2
+        - X2
+        - X2
+        - X2
+        - X2
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Sinalização de segurança
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Iluminação de Emergência
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Alarme de Incêndio
+        - X
+        - X
+        - X1
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Detecção de Incêndio
+        - X3
+        - X3
+        - X3
+        - X3
+        - X3
+        - X3
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Saídas de Emergência
+        - X
+        - X4
+        - X4
+        - X5
+        - X6
+        - X6, 7
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Plano de emergência
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Controle de fumaça
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - X8
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrante urbano
+        - X9
+        - X9
+        - X9
+        - X9
+        - X9
+        - X9
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Acesso de viatura em edificações
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Compartimentação Vertical
+        - '-'
+        - '-'
+        - '-'
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Segurança Estrutural contra Incêndio
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Controle de Materiais de Acabamento
+        - X10
+        - X10
+        - X10
+        - X11
+        - X11
+        - X11
+      - - 'OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com ATC superior a 600m². 2-
+          Exigido para loja com mais de 1.500m² por pavimento ou mais de 3.000m² de área total, que desenvolva
+          a atividade de supermercado (C-1) ou loja de departamento (C-1). Nestes casos, a rede de chuveiros
+          automáticos deverá ser instalada em toda a área comercial da edificação mista (A-6). 3- Exigido
+          somente para as áreas de depósito superiores a 900m². 4- A escada de emergência da edificação
+          deve ser do tipo Não Enclausurada, conforme NT específica. 5- A escada de emergência da edificação
+          deve ser do tipo Enclausurada, conforme NT específica. As edificações com 04 pavimentos e comércio
+          somente no térreo poderão adotar escada de emergência do tipo Não Enclausurada, conforme NT
+          específica. 6- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme
+          NT específica. As edificações com 25 ou mais pavimentos, qualquer que seja a área construída,
+          devem possuir no mínimo duas escadas de emergência. 7- Deve haver Elevador de Emergência para
+          altura maior que 80m. 8- Exigido acima de 60m de altura. 9- Exigido apenas para as edificações
+          com ATC igual ou superior a 1.500m². 10- Aplica-se somente às áreas comerciais da edificação.
+          11- Aplica-se somente às áreas comerciais e todas as áreas comuns da edificação. OBSERVAÇÕES
+          GERAIS: a) As edificações da Divisão A-1 ficam isentas de exigência de medidas preventiva nos
+          termos do artigo 4º deste Código; b) No cômputo do número de pavimentos e definição da altura
+          e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; c)
+          As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; d) Observar
+          ainda as exigências para os riscos específicos das respectivas Notas Técnicas.'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+notas:
+- As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as
+  células com a nota correspondente.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

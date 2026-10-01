@@ -139,14 +139,35 @@ def test_fluxo_completo_com_unidade_errada_no_cabecalho(srv, planta_mm):
     erro, _, texts, _ = call(srv, "analisar_planta", planta_id=pid)
     assert erro and "confirmar_unidade" in texts[0]
 
-    # Parede inferior de 14 m: na escala provisória (metros) ela mede 14 000.
-    erro, _, texts, _ = call(srv, "confirmar_unidade", planta_id=pid, ponto_a=[0, 0],
-                             ponto_b=[14000, 0], medida_real_m=15.0,
-                             justificativa="cota da parede inferior informada pelo usuário")
+    # Parede inferior de 14 m e parede esquerda de 12 m: na escala provisória (metros) elas
+    # medem 14 000 e 12 000. F7.3: são exigidas duas referências independentes.
+    base = [0, 0], [14000, 0]
+    lateral = [0, 0], [0, 12000]
+    just = "cotas das paredes inferior e esquerda informadas pelo usuário"
+
+    def ref(a, b, m):
+        return {"ponto_a": a, "ponto_b": b, "medida_real_m": m}
+
+    erro, _, texts, _ = call(srv, "confirmar_unidade", planta_id=pid,
+                             referencias=[ref(*base, 14.0)], justificativa=just)
+    assert erro and "duas medidas" in texts[0]
+    erro, _, texts, _ = call(srv, "confirmar_unidade", planta_id=pid,
+                             referencias=[ref(*base, 14.0), ref([0, 150], [14000, 150], 14.0)],
+                             justificativa=just)
+    assert erro and "paralelas" in texts[0]
+    erro, _, texts, _ = call(srv, "confirmar_unidade", planta_id=pid,
+                             referencias=[ref(*base, 14.0), ref(*lateral, 12.1)],
+                             justificativa=just)
+    assert erro and "discordam" in texts[0]  # 0,8 % entre as duas: cota errada bloqueia
+    erro, _, texts, _ = call(srv, "confirmar_unidade", planta_id=pid,
+                             referencias=[ref(*base, 15.0), ref(*lateral, 12 * 15 / 14)],
+                             justificativa=just)
     assert erro and "não bate" in texts[0]  # 15/14 não é unidade padrão
-    erro, conf, _, _ = call(srv, "confirmar_unidade", planta_id=pid, ponto_a=[0, 0],
-                            ponto_b=[14000, 0], medida_real_m=14.0,
-                            justificativa="cota da parede inferior informada pelo usuário")
+    erro, conf, _, _ = call(srv, "confirmar_unidade", planta_id=pid,
+                            referencias=[ref(*base, 14.0), ref(*lateral, 12.0)],
+                            justificativa=just)
+    assert conf["confirmado"]["angulo_entre_referencias_graus"] == 90.0
+    assert conf["confirmado"]["desvio_entre_referencias"] == 0.0
     assert not erro and conf["confirmado"]["unidade"] == "mm" and conf["escala_mudou"]
 
     erro, simb, _, _ = call(srv, "listar_simbolos", planta_id=pid, classe="EXTINTOR")
@@ -164,13 +185,14 @@ def test_fluxo_completo_com_unidade_errada_no_cabecalho(srv, planta_mm):
 
     erro, rel, _, _ = call(srv, "analisar_planta", planta_id=pid,
                            contexto={"occupancy": "D-2", "exits_confirmed": True,
-                                     "layout_defined": True})
+                                     "building_area_m2": 360, "layout_defined": True})
     assert not erro, rel
     assert rel["enquadramento"]["risco"] is None  # NT 1-04 não está nesta base de teste
     (terreo,) = rel["pavimentos"]
     assert terreo["paredes"]["detectadas"] and 320 < terreo["area_util_m2"] < 350
     assert 11 < terreo["maior_percurso_m"]["extinguisher"]["valor"] < 13.5
-    assert "Mínimo de duas unidades extintoras por pavimento (Térreo)" in rel["sem_pendencia"]
+    assert ("Mínimo de duas unidades extintoras por pavimento (critério adotado) (Térreo)"
+            in rel["sem_pendencia"])
     fora = rel["checks_nao_verificados_por_citacao"]
     assert "HID-CAD-001" in fora and "HID-CAD-002" in fora  # NT 2-02 ausente → e dependente
     assert "EXT-CAD-001" not in fora

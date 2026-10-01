@@ -1,0 +1,104 @@
+schema_version: tabela-conferida/1.0
+documento: NT 5-05
+arquivo: nt-5-05-atendimento-medico-para-eventos.md
+tabela: Tabela 1
+titulo: Código Emolumento
+pagina: 5
+fonte_pdf_sha256: 54345183121ed1b645442a50f3b7a2ae982a0144cf1a3b6ce4498fe460aa0da6
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-5-05/pagina-05.jpg
+    imagem_sha256: 1c8c9301f90bb38d0c411c918adcb1e9bb2803bcda70c46ca1dbc53f9ebc5d87
+    linhas:
+    - - Público
+      - Código DAEM
+    - - 1.000 até 5.000
+      - '931'
+    - - 5.001 até 20.000
+      - '932'
+    - - 20.001 até 30.000
+      - '933'
+    - - 30.001 até 40.000
+      - '934'
+    - - 40.001 em diante
+      - '935'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF), sem células vazias
+    origem:
+      pagina: 5
+      tabela_na_pagina: 1
+    linhas:
+    - - Público
+      - Código DAEM
+    - - 1.000 até 5.000
+      - '931'
+    - - 5.001 até 20.000
+      - '932'
+    - - 20.001 até 30.000
+      - '933'
+    - - 30.001 até 40.000
+      - '934'
+    - - 40.001 em diante
+      - '935'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 59.78
+      - 192.17
+      - 279.92
+      - 278.95
+      linhas:
+      - - ''
+        - Público
+        - ''
+        - ''
+        - Código DAEM
+        - ''
+      - - 1.000 até 5.000
+        - null
+        - null
+        - '931'
+        - null
+        - null
+      - - 5.001 até 20.000
+        - null
+        - null
+        - '932'
+        - null
+        - null
+      - - 20.001 até 30.000
+        - null
+        - null
+        - '933'
+        - null
+        - null
+      - - 30.001 até 40.000
+        - null
+        - null
+        - '934'
+        - null
+        - null
+      - - 40.001 em diante
+        - null
+        - null
+        - '935'
+        - null
+        - null
+notas:
+- 'Fonte: FUNESBOM.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

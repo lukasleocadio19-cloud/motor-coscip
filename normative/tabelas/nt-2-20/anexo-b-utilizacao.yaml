@@ -1,0 +1,203 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-20
+arquivo: nt-2-20-controle-de-materiais-de-acabamento.md
+tabela: Tabela do Anexo B
+titulo: Utilização dos materiais conforme a classificação da edificação
+pagina: 9
+fonte_pdf_sha256: 6fa8dffe9aa7d10fb27c845b40da733db84862ac9fc144ec3948e8db24e90d4d
+conferida_em: '2026-09-29'
+forma:
+  mesclar_linhas:
+  - - 1
+    - 2
+    - - 3
+  - - 2
+    - 3
+    - - 3
+  linhas_cabecalho: 4
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-20/pagina-09.jpg
+    imagem_sha256: 5dc11302b6e88e8f4966d8c6343e04b265fc377ee01c7e749092f475606edc94
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Grupo/ Divisão
+    - Divisões
+    - Piso (acabamento/revestimento)
+    - Parede e divisória (acabamento/revestimento)
+    - Teto, forro e cobertura (acabamento/revestimento)
+    linhas:
+    - - ''
+      - ''
+      - Finalidade do material
+      - <
+      - <
+    - - ''
+      - ''
+      - Piso (Acabamento¹/ Revestimento)
+      - Parede e Divisória (Acabamento²/ Revestimento)
+      - Teto, Forro e Cobertura (Acabamento/ Revestimento)
+    - - Grupo/ Divisão
+      - A-1³, A-2³, A-4³, A-5³, A-6³
+      - Classe I, II-A, III-A, IV-A ou V-A⁵
+      - Classe I, II-A, III-A, ou IV-A⁶
+      - Classe I, II-A, ou III-A⁴
+    - - ^
+      - B, D, E G, H, I-1, J-1, J-2 e M-9
+      - Classe I, II-A, III-A, ou IV-A
+      - Classe I, II-A, ou III-A⁷
+      - Classe I, II-A
+    - - ^
+      - C, F, I-2, I-3, J-3, J-4, L, M-1, M-2, M-3 e M-6
+      - Classe I, II-A, III-A, ou IV-A
+      - Classe I, II-A
+      - Classe I, II-A
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 9
+      tabela_na_pagina: 1
+    linhas:
+    - - Finalidade do material
+    - - Piso (Acabamento¹/ Revestimento)
+      - Parede e Divisória (Acabamento²/ Revestimento)
+      - Teto, Forro e Cobertura (Acabamento/ Revestimento)
+    - - Grupo/ Divisão
+      - A-13, A-23, A-43, A-53, A-63
+      - Classe I, II-A, III-A, IV-A ou V-A5
+      - Classe I, II-A, III-A, ou IV-A6
+      - Classe I, II-A, ou III-A4
+    - - B, D, E G, H, I-1, J-1, J-2 e M-9
+      - Classe I, II-A, III-A, ou IV-A
+      - Classe I, II-A, ou IIIA7
+      - Classe I, II-A
+    - - C, F, I-2, I-3, J-3, J-4, L, M-1, M-2, M-3 e M-6
+      - Classe I, II-A, III-A, ou IV-A
+      - Classe I, II-A
+      - Classe I, II-A
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.66
+      - 89.4
+      - 545.94
+      - 254.23
+      linhas:
+      - - ''
+        - null
+        - ''
+        - Finalidade do material
+        - null
+        - null
+        - null
+        - ''
+      - - null
+        - null
+        - ''
+        - ''
+        - ''
+        - Parede e Divisória (Acabamento²/ Revestimento)
+        - Teto, Forro e Cobertura (Acabamento/ Revestimento)
+        - null
+      - - null
+        - null
+        - null
+        - Piso
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - (Acabamento¹/ Revestimento)
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - null
+        - null
+      - - Grupo/ Divisão
+        - A-13, A-23, A-43, A-53, A-63
+        - Classe I, II-A, III-A, IV-A ou V-A5
+        - null
+        - null
+        - Classe I, II-A, III-A, ou IV-A6
+        - Classe I, II-A, ou III-A4
+        - null
+      - - null
+        - B, D, E G, H, I-1, J-1, J-2 e M-9
+        - Classe I, II-A, III-A, ou IV-A
+        - null
+        - null
+        - Classe I, II-A, ou III- A7
+        - Classe I, II-A
+        - null
+      - - null
+        - C, F, I-2, I-3, J-3, J-4, L, M-1, M-2, M-3 e M-6
+        - Classe I, II-A, III-A, ou IV-A
+        - null
+        - null
+        - Classe I, II-A
+        - Classe I, II-A
+        - null
+    - bbox:
+      - 471.55
+      - 116.9
+      - 540.46
+      - 153.65
+      linhas:
+      - - Teto, Forro e
+      - - Cobertura
+      - - (Acabamento/
+      - - Revestimento)
+    - bbox:
+      - 386.54
+      - 121.46
+      - 460.75
+      - 149.09
+      linhas:
+      - - Parede e Divisória
+      - - (Acabamento²/
+      - - Revestimento)
+notas:
+- 'Legenda das citações:'
+- 1 - Como exemplo podem-se citar os cordões, rodapés e arremates;
+- 2 - Excluem-se as portas, janelas, cordões e outros acabamentos decorativos com área inferior a 20%
+  da parede onde estão aplicados;
+- 3 - Aplica-se somente às áreas comuns das edificações;
+- 4 - Exceto para cozinhas que deverão se enquadrar na Classe I ou II-A;
+- 5 - Exceto para revestimentos que deverão se enquadrar na Classe I, II-A, III-A ou IV-A;
+- 6 - Exceto para revestimentos que deverão se enquadrar na Classe I, II-A ou III-A;
+- 7 - Exceto para revestimentos que deverão se enquadrar na Classe I ou II-A.
+- 'Fonte indicada na página: ABNT NBR 15575:2013.'
+inconsistencias_da_fonte:
+- Não constam da tabela as divisões M-4, M-5, M-7 e M-8.
+- '"B, D, E G, H" sem vírgula entre E e G.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 3
+    coluna: 2
+    a: Classe I, II-A, ou III-A⁷
+    b: Classe I, II-A, ou III- A7
+    estado: verificada
+    score: 97.8

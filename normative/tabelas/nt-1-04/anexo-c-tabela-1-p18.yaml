@@ -1,0 +1,815 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-04
+arquivo: nt-1-04-classificacao-de-risco.md
+tabela: Tabela 1
+titulo: Carga de incêndio relativa à altura de armazenamento (Depósitos), página 18
+pagina: 18
+fonte_pdf_sha256: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+  juntar_cabecalho: false
+  descartar_linhas:
+  - 35
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-04/pagina-18.png
+    imagem_sha256: ac505b94486827cfa6ec1fc80ec2cc96463520cc0260c2591ce56382e97764a1
+    linhas_cabecalho: 3
+    cabecalho_publicado:
+    - Tipo de material
+    - qfi (MJ/m²) — altura 1 m
+    - qfi (MJ/m²) — altura 2 m
+    - qfi (MJ/m²) — altura 4 m
+    - qfi (MJ/m²) — altura 6 m
+    - qfi (MJ/m²) — altura 8 m
+    - qfi (MJ/m²) — altura 10 m
+    linhas:
+    - - Carga de Incêndio (qfi) em MJ/m²
+    - - Tipo de material
+      - Altura de armazenamento (em metros)
+    - - '1'
+      - '2'
+      - '4'
+      - '6'
+      - '8'
+      - '10'
+    - - Material de escritório
+      - '585'
+      - '1170'
+      - '2340'
+      - '3510'
+      - '4680'
+      - '5850'
+    - - Medicamentos, embalagem
+      - '360'
+      - '720'
+      - '1440'
+      - '2160'
+      - '2880'
+      - '3600'
+    - - Depósitos de mercadorias incombustíveis em pilhas de caixas de plástico
+      - '90'
+      - '180'
+      - '360'
+      - '540'
+      - '720'
+      - '900'
+    - - Móveis de madeira
+      - '360'
+      - '720'
+      - '1440'
+      - '2160'
+      - '2880'
+      - '3600'
+    - - Móveis, estofados sem espuma sintética
+      - '180'
+      - '360'
+      - '720'
+      - '1080'
+      - '1440'
+      - '1800'
+    - - Painel de madeira aglomerada
+      - '3015'
+      - '6030'
+      - '12060'
+      - '18090'
+      - '24120'
+      - '30150'
+    - - Papel
+      - '3780'
+      - '7560'
+      - '15120'
+      - '22680'
+      - '30240'
+      - '37800'
+    - - Papel prensado
+      - '945'
+      - '1890'
+      - '3780'
+      - '5670'
+      - '7560'
+      - '9450'
+    - - Papelaria, estoque
+      - '495'
+      - '990'
+      - '1980'
+      - '2970'
+      - '3960'
+      - '4950'
+    - - Produtos farmacêuticos, estoque
+      - '360'
+      - '720'
+      - '1440'
+      - '2160'
+      - '2880'
+      - '3600'
+    - - Peças automotivas
+      - '360'
+      - '720'
+      - '1440'
+      - '2160'
+      - '2880'
+      - '3600'
+    - - Perfumaria, artigos de
+      - '225'
+      - '450'
+      - '900'
+      - '1350'
+      - '1800'
+      - '2250'
+    - - Pneus
+      - '810'
+      - '1620'
+      - '3240'
+      - '4860'
+      - '6480'
+      - '8100'
+    - - Portas de madeira
+      - '810'
+      - '1620'
+      - '3240'
+      - '4860'
+      - '6480'
+      - '8100'
+    - - Produtos químicos combustíveis
+      - '450'
+      - '900'
+      - '1800'
+      - '2700'
+      - '3600'
+      - '4500'
+    - - Queijos
+      - '1125'
+      - '2250'
+      - '4500'
+      - '6750'
+      - '9000'
+      - '11250'
+    - - Resinas sintéticas
+      - '1890'
+      - '3780'
+      - '7560'
+      - '11340'
+      - '15120'
+      - '18900'
+    - - Resinas sintéticas, placas de
+      - '1530'
+      - '3060'
+      - '6120'
+      - '9180'
+      - '12240'
+      - '15300'
+    - - Sabão
+      - '1890'
+      - '3780'
+      - '7560'
+      - '11340'
+      - '15120'
+      - '18900'
+    - - Sacos de papel
+      - '5670'
+      - '11340'
+      - '22680'
+      - '34020'
+      - '45360'
+      - '56700'
+    - - Sacos de plástico
+      - '11340'
+      - '22680'
+      - '45360'
+      - '68040'
+      - '90720'
+      - '113400'
+    - - Tabaco em bruto
+      - '765'
+      - '1530'
+      - '3060'
+      - '4590'
+      - '6120'
+      - '7650'
+    - - Tabaco, artigos de
+      - '945'
+      - '1890'
+      - '3780'
+      - '5670'
+      - '7560'
+      - '9450'
+    - - Tapeçarias
+      - '765'
+      - '1530'
+      - '3060'
+      - '4590'
+      - '6120'
+      - '7650'
+    - - Tapeçarias
+      - '900'
+      - '1800'
+      - '3600'
+      - '5400'
+      - '7200'
+      - '9000'
+    - - Tecidos sintéticos
+      - '585'
+      - '1170'
+      - '2340'
+      - '3510'
+      - '4680'
+      - '5850'
+    - - Tecidos, fardos de algodão
+      - '585'
+      - '1170'
+      - '2340'
+      - '3510'
+      - '4680'
+      - '5850'
+    - - Tecidos, seda artificial
+      - '450'
+      - '900'
+      - '1800'
+      - '2700'
+      - '3600'
+      - '4500'
+    - - Toldos ou lonas
+      - '450'
+      - '900'
+      - '1800'
+      - '2700'
+      - '3600'
+      - '4500'
+    - - Velas de cera
+      - '10080'
+      - '20160'
+      - '40320'
+      - '60480'
+      - '80640'
+      - '100800'
+    - - Vernizes
+      - '1125'
+      - '2250'
+      - '4500'
+      - '6750'
+      - '9000'
+      - '11250'
+    - - Vernizes de cera
+      - '2250'
+      - '4500'
+      - '9000'
+      - '13500'
+      - '18000'
+      - '22500'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 18
+      tabela_na_pagina: 1
+    linhas:
+    - - Carga de Incêndio (qfi) em MJ/m2
+    - - Tipo de material
+      - Altura de armazenamento (em metros)
+    - - '1'
+      - '2'
+      - '4'
+      - '6'
+      - '8'
+      - '10'
+    - - Material de escritório
+      - '585'
+      - '1170'
+      - '2340'
+      - '3510'
+      - '4680'
+      - '5850'
+    - - Medicamentos, embalagem
+      - '360'
+      - '720'
+      - '1440'
+      - '2160'
+      - '2880'
+      - '3600'
+    - - Depósitos de mercadorias incombustíveis em pilhas de caixas de plástico
+      - '90'
+      - '180'
+      - '360'
+      - '540'
+      - '720'
+      - '900'
+    - - Móveis de madeira
+      - '360'
+      - '720'
+      - '1440'
+      - '2160'
+      - '2880'
+      - '3600'
+    - - Móveis, estofados sem espuma sintética
+      - '180'
+      - '360'
+      - '720'
+      - '1080'
+      - '1440'
+      - '1800'
+    - - Painel de madeira aglomerada
+      - '3015'
+      - '6030'
+      - '12060'
+      - '18090'
+      - '24120'
+      - '30150'
+    - - Papel
+      - '3780'
+      - '7560'
+      - '15120'
+      - '22680'
+      - '30240'
+      - '37800'
+    - - Papel prensado
+      - '945'
+      - '1890'
+      - '3780'
+      - '5670'
+      - '7560'
+      - '9450'
+    - - Papelaria, estoque
+      - '495'
+      - '990'
+      - '1980'
+      - '2970'
+      - '3960'
+      - '4950'
+    - - Produtos farmacêuticos, estoque
+      - '360'
+      - '720'
+      - '1440'
+      - '2160'
+      - '2880'
+      - '3600'
+    - - Peças automotivas
+      - '360'
+      - '720'
+      - '1440'
+      - '2160'
+      - '2880'
+      - '3600'
+    - - Perfumaria, artigos de
+      - '225'
+      - '450'
+      - '900'
+      - '1350'
+      - '1800'
+      - '2250'
+    - - Pneus
+      - '810'
+      - '1620'
+      - '3240'
+      - '4860'
+      - '6480'
+      - '8100'
+    - - Portas de madeira
+      - '810'
+      - '1620'
+      - '3240'
+      - '4860'
+      - '6480'
+      - '8100'
+    - - Produtos químicos combustíveis
+      - '450'
+      - '900'
+      - '1800'
+      - '2700'
+      - '3600'
+      - '4500'
+    - - Queijos
+      - '1125'
+      - '2250'
+      - '4500'
+      - '6750'
+      - '9000'
+      - '11250'
+    - - Resinas sintéticas
+      - '1890'
+      - '3780'
+      - '7560'
+      - '11340'
+      - '15120'
+      - '18900'
+    - - Resinas sintéticas, placas de
+      - '1530'
+      - '3060'
+      - '6120'
+      - '9180'
+      - '12240'
+      - '15300'
+    - - Sabão
+      - '1890'
+      - '3780'
+      - '7560'
+      - '11340'
+      - '15120'
+      - '18900'
+    - - Sacos de papel
+      - '5670'
+      - '11340'
+      - '22680'
+      - '34020'
+      - '45360'
+      - '56700'
+    - - Sacos de plástico
+      - '11340'
+      - '22680'
+      - '45360'
+      - '68040'
+      - '90720'
+      - '113400'
+    - - Tabaco em bruto
+      - '765'
+      - '1530'
+      - '3060'
+      - '4590'
+      - '6120'
+      - '7650'
+    - - Tabaco, artigos de
+      - '945'
+      - '1890'
+      - '3780'
+      - '5670'
+      - '7560'
+      - '9450'
+    - - Tapeçarias
+      - '765'
+      - '1530'
+      - '3060'
+      - '4590'
+      - '6120'
+      - '7650'
+    - - Tapeçarias
+      - '900'
+      - '1800'
+      - '3600'
+      - '5400'
+      - '7200'
+      - '9000'
+    - - Tecidos sintéticos
+      - '585'
+      - '1170'
+      - '2340'
+      - '3510'
+      - '4680'
+      - '5850'
+    - - Tecidos, fardos de algodão
+      - '585'
+      - '1170'
+      - '2340'
+      - '3510'
+      - '4680'
+      - '5850'
+    - - Tecidos, seda artificial
+      - '450'
+      - '900'
+      - '1800'
+      - '2700'
+      - '3600'
+      - '4500'
+    - - Toldos ou lonas
+      - '450'
+      - '900'
+      - '1800'
+      - '2700'
+      - '3600'
+      - '4500'
+    - - Velas de cera
+      - '10080'
+      - '20160'
+      - '40320'
+      - '60480'
+      - '80640'
+      - '100800'
+    - - Vernizes
+      - '1125'
+      - '2250'
+      - '4500'
+      - '6750'
+      - '9000'
+      - '11250'
+    - - Vernizes de cera
+      - '2250'
+      - '4500'
+      - '9000'
+      - '13500'
+      - '18000'
+      - '22500'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 60.43
+      - 57.05
+      - 528.34
+      - 483.7
+      linhas:
+      - - ''
+        - Carga de Incêndio (qfi) em MJ/m2
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Tipo de material
+        - Altura de armazenamento (em metros)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - '1'
+        - '2'
+        - '4'
+        - '6'
+        - '8'
+        - '10'
+      - - Material de escritório
+        - '585'
+        - '1170'
+        - '2340'
+        - '3510'
+        - '4680'
+        - '5850'
+      - - Medicamentos, embalagem
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Depósitos de mercadorias incombustíveis em pilhas de caixas de plástico
+        - '90'
+        - '180'
+        - '360'
+        - '540'
+        - '720'
+        - '900'
+      - - Móveis de madeira
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Móveis, estofados sem espuma sintética
+        - '180'
+        - '360'
+        - '720'
+        - '1080'
+        - '1440'
+        - '1800'
+      - - Painel de madeira aglomerada
+        - '3015'
+        - '6030'
+        - '12060'
+        - '18090'
+        - '24120'
+        - '30150'
+      - - Papel
+        - '3780'
+        - '7560'
+        - '15120'
+        - '22680'
+        - '30240'
+        - '37800'
+      - - Papel prensado
+        - '945'
+        - '1890'
+        - '3780'
+        - '5670'
+        - '7560'
+        - '9450'
+      - - Papelaria, estoque
+        - '495'
+        - '990'
+        - '1980'
+        - '2970'
+        - '3960'
+        - '4950'
+      - - Produtos farmacêuticos, estoque
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Peças automotivas
+        - '360'
+        - '720'
+        - '1440'
+        - '2160'
+        - '2880'
+        - '3600'
+      - - Perfumaria, artigos de
+        - '225'
+        - '450'
+        - '900'
+        - '1350'
+        - '1800'
+        - '2250'
+      - - Pneus
+        - '810'
+        - '1620'
+        - '3240'
+        - '4860'
+        - '6480'
+        - '8100'
+      - - Portas de madeira
+        - '810'
+        - '1620'
+        - '3240'
+        - '4860'
+        - '6480'
+        - '8100'
+      - - Produtos químicos combustíveis
+        - '450'
+        - '900'
+        - '1800'
+        - '2700'
+        - '3600'
+        - '4500'
+      - - Queijos
+        - '1125'
+        - '2250'
+        - '4500'
+        - '6750'
+        - '9000'
+        - '11250'
+      - - Resinas sintéticas
+        - '1890'
+        - '3780'
+        - '7560'
+        - '11340'
+        - '15120'
+        - '18900'
+      - - Resinas sintéticas, placas de
+        - '1530'
+        - '3060'
+        - '6120'
+        - '9180'
+        - '12240'
+        - '15300'
+      - - Sabão
+        - '1890'
+        - '3780'
+        - '7560'
+        - '11340'
+        - '15120'
+        - '18900'
+      - - Sacos de papel
+        - '5670'
+        - '11340'
+        - '22680'
+        - '34020'
+        - '45360'
+        - '56700'
+      - - Sacos de plástico
+        - '11340'
+        - '22680'
+        - '45360'
+        - '68040'
+        - '90720'
+        - '113400'
+      - - Tabaco em bruto
+        - '765'
+        - '1530'
+        - '3060'
+        - '4590'
+        - '6120'
+        - '7650'
+      - - Tabaco, artigos de
+        - '945'
+        - '1890'
+        - '3780'
+        - '5670'
+        - '7560'
+        - '9450'
+      - - Tapeçarias
+        - '765'
+        - '1530'
+        - '3060'
+        - '4590'
+        - '6120'
+        - '7650'
+      - - Tapeçarias
+        - '900'
+        - '1800'
+        - '3600'
+        - '5400'
+        - '7200'
+        - '9000'
+      - - Tecidos sintéticos
+        - '585'
+        - '1170'
+        - '2340'
+        - '3510'
+        - '4680'
+        - '5850'
+      - - Tecidos, fardos de algodão
+        - '585'
+        - '1170'
+        - '2340'
+        - '3510'
+        - '4680'
+        - '5850'
+      - - Tecidos, seda artificial
+        - '450'
+        - '900'
+        - '1800'
+        - '2700'
+        - '3600'
+        - '4500'
+      - - Toldos ou lonas
+        - '450'
+        - '900'
+        - '1800'
+        - '2700'
+        - '3600'
+        - '4500'
+      - - Velas de cera
+        - '10080'
+        - '20160'
+        - '40320'
+        - '60480'
+        - '80640'
+        - '100800'
+      - - Vernizes
+        - '1125'
+        - '2250'
+        - '4500'
+        - '6750'
+        - '9000'
+        - '11250'
+      - - Vernizes de cera
+        - '2250'
+        - '4500'
+        - '9000'
+        - '13500'
+        - '18000'
+        - '22500'
+      - - 'Obsservações: a) Pode haver interpolação entre os valores. b) A carga incêndio para depósitos
+          apresentada nesta tabela pode ser substituída pelo método determinístico (Anexo E)'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    - bbox:
+      - 60.43
+      - 548.09
+      - 528.34
+      - 648.35
+      linhas:
+      - - ''
+        - Risco
+        - ''
+        - ''
+        - Carga de incêndio específica (Mj/m²)
+        - ''
+      - - Médio 1
+        - null
+        - null
+        - qfi ≤ 1000 MJ/m²
+        - null
+        - null
+      - - Médio 2
+        - null
+        - null
+        - 1000 < qfi ≤ 1200 MJ/m²
+        - null
+        - null
+      - - Grande
+        - null
+        - null
+        - qfi ≥1200 MJ/m²
+        - null
+        - null
+notas:
+- 'Continuação da Tabela 1 do Anexo C. Fonte indicada: ABNT NBR 14432.'
+- 'Conferência aritmética (além dos dois caminhos): em cada linha a carga é proporcional à altura de armazenamento
+  (valor em 2 m ÷ 2 × altura, arredondado).'
+- 'Observações da tabela (fora da comparação): a) pode haver interpolação entre os valores; b) a carga
+  de incêndio para depósitos desta tabela pode ser substituída pelo método determinístico.'
+inconsistencias_da_fonte:
+- '"Tapeçarias" aparece duas vezes com valores diferentes (765…7650 e 900…9000): a NT não diz qual usar.'
+- A linha "Depósitos de mercadorias incombustíveis em pilhas de caixas de plástico" repete a da página
+  17 (mesmos valores).
+- A observação b) remete ao método determinístico como "Anexo E"; o método determinístico é o Anexo D
+  (o Anexo E é o exemplo de planilha). No texto também está "Obsservações".
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

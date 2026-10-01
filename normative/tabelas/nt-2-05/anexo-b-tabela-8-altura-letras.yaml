@@ -1,0 +1,241 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-05
+arquivo: nt-2-05-sinalizacao.md
+tabela: Tabela 8 do Anexo B
+titulo: Altura mínima das letras em placas de sinalização em função da distância de leitura
+pagina: 18
+fonte_pdf_sha256: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 4
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-05/pagina-18.jpg
+    imagem_sha256: c99ba88b4cbec026fce4aab116994eeee14a6bf6df8dc91dd73cd2ce3ba0400e
+    linhas_cabecalho: 1
+    linhas:
+    - - Altura mínima mm
+      - Distância de leituracom maior impacto m
+      - Altura mínima mm
+      - Distância de leituracom maior impacto m
+    - - '30'
+      - '4'
+      - '300'
+      - '36'
+    - - '50'
+      - '6'
+      - '350'
+      - '42'
+    - - '65'
+      - '8'
+      - '400'
+      - '48'
+    - - '75'
+      - '9'
+      - '500'
+      - '60'
+    - - '85'
+      - '10'
+      - '600'
+      - '72'
+    - - '100'
+      - '12'
+      - '700'
+      - '84'
+    - - '135'
+      - '16'
+      - '750'
+      - '90'
+    - - '150'
+      - '18'
+      - '800'
+      - '96'
+    - - '200'
+      - '24'
+      - '900'
+      - '108'
+    - - '210'
+      - '25'
+      - 1 000
+      - '120'
+    - - '225'
+      - '27'
+      - 1 500
+      - '180'
+    - - '250'
+      - '30'
+      - 1 000
+      - '120'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 18
+      tabela_na_pagina: 1
+    linhas:
+    - - Altura mínima mm
+      - Distância de leitura com maior impacto m
+      - Altura mínima mm
+      - Distância de leitura com maior impacto m
+    - - '30'
+      - '4'
+      - '300'
+      - '36'
+    - - '50'
+      - '6'
+      - '350'
+      - '42'
+    - - '65'
+      - '8'
+      - '400'
+      - '48'
+    - - '75'
+      - '9'
+      - '500'
+      - '60'
+    - - '85'
+      - '10'
+      - '600'
+      - '72'
+    - - '100'
+      - '12'
+      - '700'
+      - '84'
+    - - '135'
+      - '16'
+      - '750'
+      - '90'
+    - - '150'
+      - '18'
+      - '800'
+      - '96'
+    - - '200'
+      - '24'
+      - '900'
+      - '108'
+    - - '210'
+      - '25'
+      - 1 000
+      - '120'
+    - - '225'
+      - '27'
+      - 1 500
+      - '180'
+    - - '250'
+      - '30'
+      - 1 000
+      - '120'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.62
+      - 71.43
+      - 536.14
+      - 367.37
+      linhas:
+      - - Altura mínima
+        - Distância de leitura com
+        - Altura mínima
+        - Distância de leitura com maior impacto m
+      - - null
+        - maior impacto
+        - null
+        - null
+      - - mm
+        - null
+        - mm
+        - null
+      - - null
+        - m
+        - null
+        - null
+      - - ''
+        - null
+        - ''
+        - null
+      - - null
+        - ''
+        - null
+        - null
+      - - '30'
+        - '4'
+        - '300'
+        - '36'
+      - - '50'
+        - '6'
+        - '350'
+        - '42'
+      - - '65'
+        - '8'
+        - '400'
+        - '48'
+      - - '75'
+        - '9'
+        - '500'
+        - '60'
+      - - '85'
+        - '10'
+        - '600'
+        - '72'
+      - - '100'
+        - '12'
+        - '700'
+        - '84'
+      - - '135'
+        - '16'
+        - '750'
+        - '90'
+      - - '150'
+        - '18'
+        - '800'
+        - '96'
+      - - '200'
+        - '24'
+        - '900'
+        - '108'
+      - - '210'
+        - '25'
+        - 1 000
+        - '120'
+      - - '225'
+        - '27'
+        - 1 500
+        - '180'
+      - - '250'
+        - '30'
+        - 1 000
+        - '120'
+notas:
+- 'Texto da página abaixo da tabela: Todas as palavras e sentenças devem apresentar letras em caixa alta
+  utilizando fonte Univers 65 ou Helvetica Bold, não sendo admitido qualquer tipo de distorção da fonte.'
+- 'Conferência aritmética: a distância é ≈ 0,12 × a altura (30 mm → 4 m arredonda para cima).'
+- 'Fonte indicada na página: ABNT NBR 16820.'
+inconsistencias_da_fonte:
+- A última linha da segunda coluna repete "1 000 mm → 120 m" depois de "1 500 mm → 180 m" (a sequência
+  crescente faria esperar um valor acima de 1 500).
+- Cabeçalho "Distância de leituracom" sem espaço.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 0
+    coluna: 1
+    a: Distância de leituracom maior impacto m
+    b: Distância de leitura com maior impacto m
+    estado: verificada
+    score: 98.7
+  - linha: 0
+    coluna: 3
+    a: Distância de leituracom maior impacto m
+    b: Distância de leitura com maior impacto m
+    estado: verificada
+    score: 98.7

@@ -1,0 +1,183 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-03
+arquivo: nt-1-03-simbolos-graficos.md
+tabela: Anexo A
+titulo: Simbologia para projeto de segurança contra incêndio e pânico (p. 6)
+pagina: 6
+fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-03/pagina-06.png
+    imagem_sha256: 61b209f46626130651e51f86aea408475f96916348a43d3f04a97e7fdbc7bbea
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Grupo
+    - Subgrupo
+    - Nome do símbolo
+    - 'Símbolo gráfico (desenho: ver a imagem da página)'
+    linhas:
+    - - ''
+      - ''
+      - PAINEL DE COMANDO DO SISTEMA DE SPRINKLERS
+      - ''
+    - - ^
+      - ^
+      - VÁLVULA DE GOVERNO E ALARME - VGA
+      - ''
+    - - ^
+      - GÁS CARBÔNICO
+      - BATERIA DE CILINDROS DE CO₂
+      - ''
+    - - ^
+      - ^
+      - ACIONADOR MANUAL DO SISTEMA DE CO₂
+      - ''
+    - - ^
+      - ^
+      - BATERIA DE HALON
+      - ''
+    - - ^
+      - SISTEMA DE ESPUMA
+      - TANQUE ATMOSFÉRICO DE ESPUMA
+      - ''
+    - - ^
+      - ^
+      - ESTAÇÃO FIXA DE EMULSIONAMENTO
+      - ''
+    - - ^
+      - ^
+      - ESTAÇÃO MÓVEL DE EMULSIONAMENTO
+      - ''
+    - - ^
+      - ^
+      - CANHÃO MONITOR PORTÁTIL SISTEMA DE ESPUMA
+      - ''
+    - - ^
+      - ^
+      - CANHÃO MONITOR SISTEMA DE RESFRIAMENTO
+      - ''
+    - - ''
+      - ^
+      - LÍQUIDO GERADOR DE ESPUMA
+      - ''
+    - - ^
+      - ^
+      - ESGUICHO LANÇADOR DE ESPUMA
+      - ''
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 6
+      tabela_na_pagina: 1
+    linhas:
+    - - PAINEL DE COMANDO DO SISTEMA DE SPRINKLERS
+    - - VÁLVULA DE GOVERNO E ALARME - VGA
+    - - GÁS CARBÔNICO
+      - BATERIA DE CILINDROS DE CO2
+    - - ACIONADOR MANUAL DO SISTEMA DE CO2
+    - - BATERIA DE HALON
+    - - SISTEMA DE ESPUMA
+      - TANQUE ATMOSFÉRICO DE ESPUMA
+    - - ESTAÇÃO FIXA DE EMULSIONAMENTO
+    - - ESTAÇÃO MÓVEL DE EMULSIONAMENTO
+    - - CANHÃO MONITOR PORTÁTIL SISTEMA DE ESPUMA
+    - - CANHÃO MONITOR SISTEMA DE RESFRIAMENTO
+    - - LÍQUIDO GERADOR DE ESPUMA
+    - - ESGUICHO LANÇADOR DE ESPUMA
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 63.98
+      - 56.88
+      - 495.46
+      - 666.22
+      linhas:
+      - - ''
+        - ''
+        - PAINEL DE COMANDO DO SISTEMA DE SPRINKLERS
+        - ''
+      - - null
+        - null
+        - VÁLVULA DE GOVERNO E ALARME - VGA
+        - ''
+      - - null
+        - O C I N Ô B R A C S Á G
+        - BATERIA DE CILINDROS DE CO2
+        - ''
+      - - null
+        - null
+        - ACIONADOR MANUAL DO SISTEMA DE CO2
+        - ''
+      - - null
+        - null
+        - BATERIA DE HALON
+        - ''
+      - - null
+        - A M U P S E E D A M E T S I S
+        - TANQUE ATMOSFÉRICO DE ESPUMA
+        - ''
+      - - null
+        - null
+        - ESTAÇÃO FIXA DE EMULSIONAMENTO
+        - ''
+      - - null
+        - null
+        - ESTAÇÃO MÓVEL DE EMULSIONAMENTO
+        - ''
+      - - null
+        - null
+        - CANHÃO MONITOR PORTÁTIL SISTEMA DE ESPUMA
+        - ''
+      - - null
+        - null
+        - CANHÃO MONITOR SISTEMA DE RESFRIAMENTO
+        - ''
+      - - ''
+        - null
+        - LÍQUIDO GERADOR DE ESPUMA
+        - ''
+      - - null
+        - null
+        - ESGUICHO LANÇADOR DE ESPUMA
+        - ''
+notas:
+- A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
+  da página).
+- As células vazias das duas primeiras colunas no alto da página continuam a tabela da página anterior.
+- Na primeira coluna, as duas últimas linhas ficam numa célula vazia própria.
+- 'Fonte: CBMERJ.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 2
+    coluna: 0
+    a: GÁS CARBÔNICO
+    b: GÁSCARBÔNICO
+    estado: verificada
+    score: 96.0
+  - linha: 5
+    coluna: 0
+    a: SISTEMA DE ESPUMA
+    b: SISTEMADEESPUMA
+    estado: verificada
+    score: 93.8
+forma_geometrica:
+  celulas_verticais:
+  - - 2
+    - 1
+  - - 5
+    - 1

@@ -1,0 +1,233 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 33
+titulo: Valores de multas previstas no TAC em função da área total construída (ATC) e risco de incêndio
+  dos imóveis, estabelecimentos e áreas de risco
+pagina: 57
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 1
+  - 7
+  mesclar_linhas:
+  - - 3
+    - 4
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-57.jpg
+    imagem_sha256: 279cbd58f6c023b573d115d5ed6455188a4ff13ead2e76521d02bcce3f51d310
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Risco
+    - ATC Até 900m²
+    - ATC Até 1.500m²
+    - ATC Até 5.000m²
+    - ATC Até 10.000m²
+    - ATC Mais de 10.000m²
+    linhas:
+    - - Risco
+      - ATC
+      - <
+      - <
+      - <
+      - <
+    - - ^
+      - Até 900m²
+      - Até 1.500m²
+      - Até 5.000m²
+      - Até 10.000m²
+      - Mais de 10.000m²
+    - - Risco Leve
+      - 1.600 a 3.200 UFIR-RJ
+      - 2.400 a 4.800 UFIR-RJ
+      - 16.000 a 32.000 UFIR-RJ
+      - 80.000 a 160.000 UFIR-RJ
+      - 200.000 a 400.000 UFIR-RJ
+    - - Risco Médio
+      - 3.200 a 6.400 UFIR-RJ
+      - 4.800 a 9.600 UFIR-RJ
+      - 32.000 a 64.000 UFIR-RJ
+      - 160.000 a 320.000 UFIR-RJ
+      - 400.000 a 800.000 UFIR-RJ
+    - - Risco Grande
+      - 6.400 a 12.800 UFIR-RJ
+      - 9.600 a 19.200 UFIR-RJ
+      - 64.000 a 128.000 UFIR-RJ
+      - 320.000 a 640.000 UFIR-RJ
+      - 800.000 a 1.600.000 UFIR-RJ
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 57
+      tabela_na_pagina: 1
+    linhas:
+    - - Risco
+      - ATC
+    - - Até 900m2
+      - Até 1.500m2
+      - Até 5.000m2
+      - Até 10.000m2
+      - Mais de 10.000m2
+    - - Risco Leve
+      - 1.600 a 3.200 UFIR-RJ
+      - 2.400 a 4.800 UFIR-RJ
+      - 16.000 a 32.000 UFIR-RJ
+      - 80.000 a 160.000 UFIR-RJ
+      - 200.000 a 400.000 UFIR-RJ
+    - - Risco Médio
+      - 3.200 a 6.400 UFIR-RJ
+      - 4.800 a 9.600 UFIR-RJ
+      - 32.000 a 64.000 UFIR-RJ
+      - 160.000 a 320.000 UFIR-RJ
+      - 400.000 a 800.000 UFIR-RJ
+    - - Risco Grande
+      - 6.400 a 12.800 UFIR-RJ
+      - 9.600 a 19.200 UFIR-RJ
+      - 64.000 a 128.000 UFIR-RJ
+      - 320.000 a 640.000 UFIR-RJ
+      - 800.000 a 1.600.000 UFIR-RJ
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.71
+      - 102.66
+      - 552.78
+      - 254.37
+      linhas:
+      - - Tabela 33 – Valores de multas previstas no TAC em função da área total construída (ATC) e risco
+          de incêndio dos imóveis, estabelecimentos e áreas de risco
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Risco
+        - ''
+        - ATC
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - null
+        - ''
+        - Até 900m2
+        - ''
+        - ''
+        - Até 1.500m2
+        - ''
+        - ''
+        - Até 5.000m2
+        - ''
+        - ''
+        - Até 10.000m2
+        - ''
+        - ''
+        - Mais de 10.000m2
+        - ''
+      - - Risco Leve
+        - 1.600 a 3.200 UFIR-RJ
+        - null
+        - null
+        - 2.400 a 4.800 UFIR-RJ
+        - null
+        - null
+        - 16.000 a 32.000 UFIR-RJ
+        - null
+        - null
+        - 80.000 a 160.000 UFIR-RJ
+        - null
+        - null
+        - 200.000 a 400.000 UFIR-RJ
+        - null
+        - null
+      - - Risco Médio
+        - ''
+        - 3.200 a 6.400
+        - ''
+        - ''
+        - 4.800 a 9.600
+        - ''
+        - ''
+        - 32.000 a 64.000
+        - ''
+        - ''
+        - 160.000 a 320.000
+        - ''
+        - ''
+        - 400.000 a 800.000
+        - ''
+      - - null
+        - null
+        - UFIR-RJ
+        - null
+        - null
+        - UFIR-RJ
+        - null
+        - null
+        - UFIR-RJ
+        - null
+        - null
+        - UFIR-RJ
+        - null
+        - null
+        - UFIR-RJ
+        - null
+      - - Risco Grande
+        - 6.400 a 12.800 UFIR-RJ
+        - null
+        - null
+        - 9.600 a 19.200 UFIR-RJ
+        - null
+        - null
+        - 64.000 a 128.000 UFIR-RJ
+        - null
+        - null
+        - 320.000 a 640.000 UFIR-RJ
+        - null
+        - null
+        - 800.000 a 1.600.000 UFIR-RJ
+        - null
+        - null
+notas:
+- Anexo IV do Decreto (valores das multas previstas no Termo de Ajustamento de Conduta).
+- 'Conferência aritmética: em cada faixa de ATC o risco médio é o dobro do leve e o grande o dobro do
+  médio, e o máximo de cada intervalo é o dobro do mínimo.'
+inconsistencias_da_fonte:
+- A tabela usa "Risco Leve", "Risco Médio" e "Risco Grande"; a classificação de risco da NT 1-04 usa Pequeno,
+  Médio 1, Médio 2 e Grande.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

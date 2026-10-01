@@ -1,0 +1,5425 @@
+schema_version: requirements-height/1.0
+source:
+  document: Decreto 42/2018
+  item: Anexo III, Tabelas 5 a 32
+  pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/COSCIP_DEC_42-2018_COMPILADO.pdf
+note: 'Gerado por tools/normas/anexo3.py das tabelas conferidas (não editar). Consulta indicativa, em
+  rascunho: célula com nota (X1, X2…) é condicional e traço não é dispensa global.'
+tables:
+- table: 5
+  page: 29
+  title: Exigências para edificações do grupo A (divisão A-6) com área superior a 900m² ou superior a
+    02 pavimentos
+  blocks:
+  - divisoes:
+    - A-6
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - X2
+    - X2
+    - X2
+    - X2
+    - X2
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - X3
+    - X3
+    - X3
+    - X3
+    - X3
+    - X3
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X4
+    - X4
+    - X5
+    - X6
+    - X6, 7
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X8
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X10
+    - X10
+    - X10
+    - X11
+    - X11
+    - X11
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-05.yaml
+    file_sha256: eb420641bb8a052a605079c5185259b73a556e59ff303ff7bad011b5d3d12405
+- table: 6
+  page: 30
+  title: Exigências para edificações do grupo B com área superior a 900 m² ou superior a 02 pavimentos
+  blocks:
+  - divisoes:
+    - B-1
+    - B-2
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X2
+    - X
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - '-'
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X3
+    - X3
+    - X4
+    - X4, 5
+    - X4, 5, 6
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X7
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X9
+    - X9
+    - X10
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-06.yaml
+    file_sha256: 54819b4f9fc147ffc5c60daac1be67b836cfe5f666c36a8f0aebfe3dd1ccbb7b
+- table: 7
+  page: 31
+  title: Exigências para edificações do grupo C com área superior a 900 m² ou superior a 02 pavimentos
+  blocks:
+  - divisoes:
+    - C-1
+    - C-2
+    - C-3
+    - C-4
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - X2
+    - X2
+    - X2
+    - X2
+    - X2
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - X3
+    - X3
+    - X3
+    - X3
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X4
+    - X4
+    - X5
+    - X5, 6
+    - X5, 6, 7
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - X8
+    - X8
+    - X8
+    - X8
+    - X
+    - X
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X9
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X10
+    - X10
+    - X10
+    - X10
+    - X10
+    - X10
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X11, 12
+    - X13
+    - X14
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-07.yaml
+    file_sha256: 5a8849f922877f81b4042b50df675d4928497a7439cce19449f6390b5bc531b1
+- table: 8
+  page: 32
+  title: Exigências para edificações do grupo D com área superior a 900 m² ou superior a 02 pavimentos.
+  blocks:
+  - divisoes:
+    - D-1
+    - D-2
+    - D-3
+    - D-4
+    - D-5
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X2
+    - X2
+    - X3
+    - X3, 4
+    - X3, 4, 5
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X6
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X6
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X8, 9
+    - X10
+    - X11
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-08.yaml
+    file_sha256: 8fefaf835cb351bc5af71da16a8bbf6105ef8adb31d1dbfc55b954b510eff01e
+- table: 9
+  page: 33
+  title: Exigências para edificações do grupo E com área superior a 900 m² ou superior a 02 pavimentos
+  blocks:
+  - divisoes:
+    - E-1
+    - E-2
+    - E-3
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X2
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X3
+    - X3
+    - X4, 5
+    - X4, 6
+    - X4, 6, 7
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X8
+    - X
+    - X
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X9
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X10
+    - X10
+    - X10
+    - X10
+    - X10
+    - X10
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X11
+    - X11
+    - X12
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-09.yaml
+    file_sha256: 25f284af7cb82ed23e5f9f073fccdea78db0bc6934d8b3c915f43ffac006427a
+- table: 10
+  page: 34
+  title: Exigências para edificações do grupo F (divisões F-1 e F-2) com área superior a 900 m2 ou superior
+    a 02 pavimentos
+  blocks:
+  - divisoes:
+    - F-1
+    colunas: &id001
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  - divisoes:
+    - F-2
+    colunas: *id001
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X2
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - X3
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X4
+    - X4
+    - X5
+    - X5, 6
+    - X5, 6,13
+    - X
+    - X4
+    - X4
+    - X5
+    - X5, 6
+    - X5, 6, 13
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X7
+    - X7
+    - X7
+    - X7
+    - X
+    - X
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X8
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X8
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X10
+    - X11
+    - X12
+    - '-'
+    - '-'
+    - '-'
+    - X14
+    - X11
+    - X12
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-10.yaml
+    file_sha256: e08801ab644c993956ada48df61d51b579fba20b0c75328345a03888bd4ac87d
+- table: 11
+  page: 35
+  title: Exigências para edificações do grupo F (divisões F-3, F-4 e F-9) com área superior a 900m2 ou
+    superior a 02 pavimentos
+  blocks:
+  - divisoes:
+    - F-3
+    - F-9
+    colunas: &id002
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  - divisoes:
+    - F-4
+    colunas: *id002
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X2
+    - X13
+    - X13
+    - X13
+    - X13
+    - X13
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X3
+    - X3
+    - X3
+    - X3
+    - X3
+    - X3
+    - X
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X4
+    - X4
+    - X5
+    - X5, 6
+    - X 5 ,6 ,7
+    - X
+    - X4
+    - X4
+    - X5
+    - X5, 6
+    - X 5, 6, 7
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - X8
+    - X8
+    - X8
+    - X
+    - X
+    - X
+    - X14
+    - X14
+    - X14
+    - X
+    - X
+    - X
+  - id: spda
+    label: SPDA
+    label_note: null
+    source_label: SPDA
+    cells:
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X10
+    - '-'
+    - X15
+    - X15
+    - X15
+    - X15
+    - X10, 15
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X11
+    - X11
+    - X11
+    - X11
+    - X11
+    - X11
+    - X11
+    - X11
+    - X11
+    - X11
+    - X11
+    - X11
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X12
+    - X12
+    - X12
+    - '-'
+    - '-'
+    - '-'
+    - X12
+    - X12
+    - X12
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-11.yaml
+    file_sha256: defae668fcda4f4741e1340c0f9faae8fead837018ce5ea6c03360ccbd86d4d3
+- table: 12
+  page: 36
+  title: Exigências para edificações do grupo F (divisões F-5, F-8 e F-11) com área superior a 900 m2
+    ou superior a 02 pavimentos.
+  blocks:
+  - divisoes:
+    - F-5
+    - F-11
+    colunas: &id003
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  - divisoes:
+    - F-8
+    colunas: *id003
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - X2
+    - X2
+    - X2
+    - X
+    - X
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X3
+    - X3
+    - X4
+    - X4, 5
+    - X4, 5, 6
+    - X
+    - X3
+    - X3
+    - X4
+    - X4, 5
+    - X4, 5, 6
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X8
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X8
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X10
+    - X10
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - X10
+    - X10
+    - X
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-12.yaml
+    file_sha256: cc8e4524d95d4c9e23de37a5fd21592d2e4340373ddf35a8880266652d7d3e4b
+- table: 13
+  page: 37
+  title: Exigências para edificações do grupo F (divisões F-7 e F-10) com área superior a 900m2 ou superior
+    a 02 pavimentos
+  blocks:
+  - divisoes:
+    - F-7
+    colunas: &id004
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  - divisoes:
+    - F-10
+    colunas: *id004
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X2
+    - X
+    - X3
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X2
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X2
+    - X
+    - X3
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X4
+    - X4
+    - X5
+    - X5, 6
+    - X5, 6, 7
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - X1
+    - X1
+    - X1
+    - X1
+    - X1
+    - X1
+    - X1
+    - X1
+    - X1
+    - X1
+    - X1
+    - X1
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X8
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X10
+    - X10
+    - X
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X2
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-13.yaml
+    file_sha256: 477f8b801f396e65fe3859b34b12a488e29fabf7cce04a007ca18132a48cdf01
+- table: 14
+  page: 38
+  title: Exigências para edificações do grupo F (divisão F-6) com área superior a 900m2 ou superior a
+    02 pavimentos
+  blocks:
+  - divisoes:
+    - F-6
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - X1
+    - X1
+    - X1
+    - X1
+    - X1
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X2
+    - X2
+    - X3
+    - X3, 4
+    - X3, 4, 5
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - X6
+    - X6
+    - X6
+    - X
+    - X
+    - X
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - X7, 8
+    - X7, 8
+    - X7, 8
+    - X7, 8
+    - X7, 8
+    - X
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X10
+    - X10
+    - X
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-14.yaml
+    file_sha256: 5e90838dddf97d1d0d92913128b047a2e66427d2ca65b0216bfc079196f9436f
+- table: 15
+  page: 39
+  title: Exigências para edificações do grupo G (divisões G-1 e G-2) com área superior a 900m2 ou superior
+    a 02 pavimentos.
+  blocks:
+  - divisoes:
+    - G-1
+    - G-2
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: '11'
+    source_label: Extintores11
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: '11'
+    source_label: Hidrantes e mangotinhos11
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: '11'
+    source_label: Chuveiros automáticos 11
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X1
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: '11'
+    source_label: Sinalização de segurança 11
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: '11'
+    source_label: Iluminação de Emergência 11
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: '11'
+    source_label: Alarme de Incêndio 11
+    cells:
+    - X2
+    - X2
+    - X2
+    - X2
+    - X2
+    - X2
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: '11'
+    source_label: Detecção de Incêndio 11
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X3
+    - X3
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: '11'
+    source_label: Saídas de Emergência 11
+    cells:
+    - X
+    - X4
+    - X4
+    - X5
+    - X5
+    - X 5, 6, 7
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: '11'
+    source_label: Controle de fumaça 11
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X8
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: '11'
+    source_label: Compartimentação Vertical 11
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X10
+    - X10
+    - X10
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-15.yaml
+    file_sha256: 201ffa4271636c4a262a90b9de97c056c679e29774451b26e6596f28035a4ccd
+- table: 16
+  page: 40
+  title: Exigências para edificações do grupo G (divisões G-3 e G-4) com área superior a 900 m2 ou superior
+    a 02 pavimentos.
+  blocks:
+  - divisoes:
+    - G-3
+    colunas: &id005
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  - divisoes:
+    - G-4
+    colunas: *id005
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X1
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X2
+    - X2
+    - X2
+    - X2
+    - X2
+    - X2
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X3
+    - X3
+    - X
+    - X11
+    - X11
+    - X11
+    - X11
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X4
+    - X4
+    - X5
+    - X5, 6
+    - X 5, 6, 7
+    - X
+    - X4
+    - X4
+    - X5
+    - X5, 6
+    - X 5, 6, 7
+  - id: spda
+    label: SPDA
+    label_note: null
+    source_label: SPDA
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X8
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X8
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X10
+    - X10
+    - X10
+    - '-'
+    - '-'
+    - '-'
+    - X10
+    - X10
+    - X10
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-16.yaml
+    file_sha256: a74973c0b985e8b4dbc6a082886f584b303ae5147f1b9b9c7bd3d73040f8e513
+- table: 17
+  page: 41
+  title: Exigências para edificações do grupo G (divisões G-5 e G-6) com área superior a 900 m2 ou superior
+    a 02 pavimentos
+  blocks:
+  - divisoes:
+    - G-5
+    colunas: &id006
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  - divisoes:
+    - G-6
+    colunas: *id006
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X1
+    - X1
+    - X1
+    - X1
+    - X1
+    - X1
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X2
+    - X2
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X2,9
+    - X2, 9
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - X3
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X3, 9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X4
+    - X4
+    - X5
+    - X5
+    - X5
+    - X
+    - X4, 9
+    - X4, 9
+    - X5, 9
+    - X5, 9
+    - X5, 9
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - X3
+    - X3
+    - X3
+    - X3
+    - X
+    - X
+    - X3
+    - X3
+    - X3
+    - X3
+    - X3
+    - X3
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X6
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - X
+    - X
+    - X
+    - X
+    - X
+    - '-'
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: foam
+    label: Sistema de espuma
+    label_note: null
+    source_label: Sistema de espuma
+    cells:
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-17.yaml
+    file_sha256: aec422383f287773b48682a4e999e5613cbe42172feab7e9be99dd1fdf2a8651
+- table: 18
+  page: 42
+  title: Exigências para edificações do grupo H (divisões H-1 e H-2) com área superior a 900 m2 ou superior
+    a 02 pavimentos
+  blocks:
+  - divisoes:
+    - H-1
+    colunas: &id007
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  - divisoes:
+    - H-2
+    colunas: *id007
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X2
+    - X2
+    - X3
+    - X3, 4
+    - X3, 4, 5
+    - X
+    - X2
+    - X3
+    - X3
+    - X3, 4
+    - X3, 4, 5
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X11
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X6
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X6
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X8
+    - X9
+    - X10
+    - '-'
+    - '-'
+    - '-'
+    - X8
+    - X9
+    - X10
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-18.yaml
+    file_sha256: 679f8e706bd99b2fa46965db57a49498a118a6cddc3e0fcd9bae81606c2b7ba9
+- table: 19
+  page: 43
+  title: Exigências para edificações do grupo H (divisões H-3 e H-4) com área superior a 900 m2 ou superior
+    a 02 pavimentos
+  blocks:
+  - divisoes:
+    - H-3
+    colunas: &id008
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  - divisoes:
+    - H-4
+    colunas: *id008
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X12
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X1
+    - X1
+    - X1
+    - X1
+    - X1
+    - X1
+    - X
+    - X
+    - X12
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - X2
+    - X2
+    - X2
+    - X
+    - X
+    - X
+    - X13
+    - X13
+    - X13
+    - X13
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X3
+    - X4
+    - X4, 6
+    - X 4, 5, 6
+    - X 4, 5, 6
+    - X
+    - X3
+    - X3
+    - X4
+    - X 4, 5
+    - X 4, 5, 14
+  - id: stair_pressurization
+    label: Pressurização de escada de emergência, elevador de emergência, antecâmaras e áreas de refúgio
+    label_note: null
+    source_label: Pressurização de escada de emergência, elevador de emergência, antecâmaras e áreas de
+      refúgio
+    cells:
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+  - id: spda
+    label: SPDA
+    label_note: null
+    source_label: SPDA
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X7
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X7
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - X9
+    - X10
+    - X10
+    - X11
+    - '-'
+    - '-'
+    - '-'
+    - X15, 16
+    - X10
+    - X11
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-19.yaml
+    file_sha256: 279ed7a900bb9da042cc73fb617b537351c6c6dd4213f4b8b2a7c81679dc724b
+- table: 20
+  page: 44
+  title: Exigências para edificações do grupo I (divisões I-1 e I-2) com área superior a 900m2 ou superior
+    a 02 pavimentos
+  blocks:
+  - divisoes:
+    - I-1
+    colunas: &id009
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  - divisoes:
+    - I-2
+    colunas: *id009
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - X2, 3
+    - X2, 3
+    - X2, 3
+    - X2, 3
+    - X2, 3
+    - X2, 3
+    - X2
+    - X2
+    - X2
+    - X2
+    - X
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X4
+    - X4
+    - X5
+    - X5, 6
+    - X5, 6, 7
+    - X
+    - X4
+    - X4
+    - X5
+    - X5, 6
+    - X5, 6, 7
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X8
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X8
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+    - X9
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-20.yaml
+    file_sha256: 5b82079c3dccb24eef41c4e76c3dd457fff1a4d00e1b6d9f3893cdd63cd36419
+- table: 21
+  page: 45
+  title: Exigências para edificações do grupo I (divisão I-3) com área superior a 900m2 ou superior a
+    02 pavimentos.
+  blocks:
+  - divisoes:
+    - I-3
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - X1
+    - X1
+    - X1
+    - X
+    - X
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X2
+    - X2
+    - X3
+    - X3, 4
+    - X3, 4, 5
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X6
+    - X6
+    - X6
+    - X6
+    - X6
+    - X6
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-21.yaml
+    file_sha256: ec4bf8e944160a813c46e3ee256c15a2a3c92b353e144bce42d8532541aa6f1f
+- table: 22
+  page: 46
+  title: Exigências para edificações do grupo J (divisões J-1 e J-2) com área superior a 900m² ou superior
+    a 02 pavimentos
+  blocks:
+  - divisoes:
+    - J-1
+    colunas: &id010
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  - divisoes:
+    - J-2
+    colunas: *id010
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X2
+    - X2
+    - X2
+    - X2
+    - X2
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X1
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X3
+    - X3
+    - X4
+    - X4, 5
+    - X4, 5, 6
+    - X
+    - X3
+    - X3
+    - X4
+    - X4, 5
+    - X4, 5, 6
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X7
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X7
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X9
+    - X9
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - X10
+    - X10
+    - X
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - '-'
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-22.yaml
+    file_sha256: 0aefc70ec3516fdca2c74f8f297bef9eb5a9b0b597a1edd5a595c9b65d94a964
+- table: 23
+  page: 47
+  title: Exigências para edificações do grupo J (divisões J-3 e J-4) com área superior a 900m² ou superior
+    a 02 pavimentos
+  blocks:
+  - divisoes:
+    - J-3
+    colunas: &id011
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  - divisoes:
+    - J-4
+    colunas: *id011
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - X1
+    - X1
+    - X1
+    - X1
+    - X
+    - X
+    - X1
+    - X1
+    - X1
+    - X
+    - X
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X2
+    - X2
+    - X3
+    - X3, 4
+    - X3, 4, 5
+    - X
+    - X2
+    - X2
+    - X3
+    - X3, 4
+    - X3, 4, 5
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X6
+    - X6
+    - X6
+    - X6
+    - X6
+    - X6
+    - X6
+    - X6
+    - X6
+    - X6
+    - X6
+    - X6
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X7
+    - X7
+    - X
+    - '-'
+    - '-'
+    - '-'
+    - X7
+    - X7
+    - X
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-23.yaml
+    file_sha256: ea102d51ce07b712f580fec25e36492c9290918c3b312ed77e95ed8a052a06d5
+- table: 24
+  page: 48
+  title: Exigências para edificações do grupo L (divisão L-1) com área superior a 900m² ou superior a
+    02 pavimentos
+  blocks:
+  - divisoes:
+    - L-1
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - X1
+    - X1
+    - X1
+    - X1
+    - X1
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X2
+    - X2
+    - X2
+    - X2
+    - X2
+    - X2
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X3
+    - X3
+    - X4
+    - X4, 5
+    - X4, 5, 6
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: spda
+    label: SPDA
+    label_note: null
+    source_label: SPDA
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X7
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+    - X8
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X9
+    - X10
+    - X11
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-24.yaml
+    file_sha256: bcb8a1fa3a37b8583eb8dc6adbb9d1e901f244b59ada4dcb63bdc22da37028c1
+- table: 27
+  page: 51
+  title: Exigências para edificações do grupo M (divisão M-3) com área superior a 900m² ou superior a
+    02 pavimentos
+  blocks:
+  - divisoes:
+    - M-3
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X1
+    - X1
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X2
+    - X2
+    - X3
+    - X3, 4
+    - X3, 4
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X5
+    - X5
+    - X5
+    - X5
+    - X5
+    - X5
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-27.yaml
+    file_sha256: cdd039acd4fff0bdc115b2b796fe9aa7bfb7b33b436d9e9923c6d3a5a6076d2a
+- table: 30
+  page: 54
+  title: Exigências para edificações e áreas de risco do grupo M (divisão M-6) com qualquer área ou número
+    de pavimentos
+  blocks:
+  - divisoes:
+    - M-6
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+    qualquer_area: true
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X1
+    - X1
+    - X
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X2
+    - X2
+    - X2
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X3
+    - X3
+    - X4
+    - X4
+    - X4
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - X1
+    - X1
+    - X1
+    - X
+    - X
+    - X
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X5
+    - X5
+    - X5
+    - X5
+    - X5
+    - X5
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X1
+    - X1
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X1
+    - X1
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-30.yaml
+    file_sha256: 17edd36d64b5cc99d5711f3903e3bf0c8eb854eb543870e9a2d62fa101e35dac
+- table: 32
+  page: 56
+  title: Exigências para edificações do grupo M (divisão M-9) com qualquer área ou número de pavimentos
+  blocks:
+  - divisoes:
+    - M-9
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m
+    qualquer_area: true
+  measures:
+  - id: extinguishers
+    label: Extintores
+    label_note: null
+    source_label: Extintores
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: hydrants
+    label: Hidrantes e mangotinhos
+    label_note: null
+    source_label: Hidrantes e mangotinhos
+    cells:
+    - X1
+    - X1
+    - X
+    - X
+    - X
+    - X
+  - id: sprinklers
+    label: Chuveiros automáticos
+    label_note: null
+    source_label: Chuveiros automáticos
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X
+  - id: signage
+    label: Sinalização de segurança
+    label_note: null
+    source_label: Sinalização de segurança
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: lighting
+    label: Iluminação de Emergência
+    label_note: null
+    source_label: Iluminação de Emergência
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  - id: alarm
+    label: Alarme de Incêndio
+    label_note: null
+    source_label: Alarme de Incêndio
+    cells:
+    - X1
+    - X1
+    - X
+    - X
+    - X
+    - X
+  - id: detection
+    label: Detecção de Incêndio
+    label_note: null
+    source_label: Detecção de Incêndio
+    cells:
+    - '-'
+    - X1, 2
+    - X2
+    - X2
+    - X
+    - X
+  - id: exits
+    label: Saídas de Emergência
+    label_note: null
+    source_label: Saídas de Emergência
+    cells:
+    - X
+    - X3
+    - X3
+    - X4
+    - X4
+    - X4, 5
+  - id: emergency_plan
+    label: Plano de emergência
+    label_note: null
+    source_label: Plano de emergência
+    cells:
+    - X1
+    - X1
+    - X
+    - X
+    - X
+    - X
+  - id: smoke_control
+    label: Controle de fumaça
+    label_note: null
+    source_label: Controle de fumaça
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - '-'
+    - X6
+  - id: urban_hydrant
+    label: Hidrante urbano
+    label_note: null
+    source_label: Hidrante urbano
+    cells:
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+    - X7
+  - id: vehicle_access
+    label: Acesso de viatura em edificações
+    label_note: null
+    source_label: Acesso de viatura em edificações
+    cells:
+    - X1
+    - X1
+    - X
+    - X
+    - X
+    - X
+  - id: vertical_compartmentation
+    label: Compartimentação Vertical
+    label_note: null
+    source_label: Compartimentação Vertical
+    cells:
+    - '-'
+    - '-'
+    - '-'
+    - X
+    - X
+    - X
+  - id: structural_safety
+    label: Segurança Estrutural contra Incêndio
+    label_note: null
+    source_label: Segurança Estrutural contra Incêndio
+    cells:
+    - X1
+    - X1
+    - X
+    - X
+    - X
+    - X
+  - id: finishing_materials
+    label: Controle de Materiais de Acabamento
+    label_note: null
+    source_label: Controle de Materiais de Acabamento
+    cells:
+    - X
+    - X
+    - X
+    - X
+    - X
+    - X
+  verification:
+    state: verificada
+    paths:
+    - visual
+    - geometrica
+    file: normative/tabelas/decreto-42-2018/tabela-32.yaml
+    file_sha256: eb535ba7f5b3dd799f803236ed0140c6ef16846b4d94576fb6b983d00c0fa371
+reference_tables:
+- table: 25
+  page: 49
+  title: Exigências para edificações e áreas de risco do grupo M (divisão M-1) com qualquer área ou número
+    de pavimentos
+  divisoes:
+  - M-1
+  criterio: extensão do túnel em metros
+- table: 26
+  page: 50
+  title: Exigências para edificações e áreas de risco do grupo M (divisão M-2) com qualquer área ou número
+    de pavimentos
+  divisoes:
+  - M-2
+  criterio: volume de líquidos ou gases, plataforma ou produtos acondicionados
+- table: 28
+  page: 52
+  title: Exigências para edificações e áreas de risco do grupo M (divisões M-4 e M-7) com qualquer área
+    ou número de pavimentos
+  divisoes:
+  - M-4
+  - M-7
+  criterio: área total construída (M-4) ou qualquer área não coberta (M-7)
+- table: 29
+  page: 53
+  title: Exigências para edificações e áreas de risco do grupo M (divisão M-5) qualquer área ou altura
+  divisoes:
+  - M-5
+  criterio: independente da área ou altura
+- table: 31
+  page: 55
+  title: Exigências para áreas de risco do grupo M (divisão M-8)
+  divisoes:
+  - M-8
+  criterio: qualquer loteamento

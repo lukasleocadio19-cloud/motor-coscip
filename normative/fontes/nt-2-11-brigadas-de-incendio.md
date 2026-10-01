@@ -76,8 +76,7 @@ C - Dimensionamento para Brigadista Voluntário de
 
 Incêndio - BVI D - Dimensionamento para Bombeiro Civil - BC
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -596,8 +595,7 @@ b) suspensão temporária: notificação do descredenciamento temporário por es
 
 Tabela 1 - Currículos mínimos para a formação de BC (Fonte: ABNT NBR14608)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | PREVENÇÃO E COMBATE A INCÊNDIO - A.1 |  |  |  |  |  |  |  |  |  |
@@ -612,6 +610,23 @@ Tabela 1 - Currículos mínimos para a formação de BC (Fonte: ABNT NBR14608)
 |  |  | Total |  | 4h |  |  | Total |  | 8h |  |
 |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 1 (A.1) p11 -->
+### Tabela 1 (A.1) — Currículos mínimos para a formação de BC — Prevenção e combate a incêndio (A.1) (conferida)
+
+| Módulo | Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- | --- |
+| 01 Introdução | - Conhecer os objetivos e conceitos gerais do curso | 30 min. |  |  |
+| 02 Aspectos legais | - Conhecer os aspectos legais (normas, regulamentações e legislação em todas as esferas governamentais pertinentes) relacionados à responsabilidade do bombeiro profissional civil. | 30 min. |  |  |
+| 03 Teoria do fogo | - Conhecer os quatro elementos formadores da combustão, as formas de propagação do calor, as temperaturas do fogo, os métodos de extinção do fogo, classificação dos incêndios, os principais agentes extintores, unidade extintora e capacidade extintora, as fases do combate ao fogo, o Flashover, o Backdraft, o Bleve e o Boil Over. | 1h |  |  |
+| 04 Proteção Contra Incêndio | - Conhecer os conceitos gerais de prevenção, educação e proteção contra incêndio; noções de proteção passiva e proteção ativa: isolamento de risco, compartimentação vertical e horizontal; noções de resistência das estruturas e dos materiais ao fogo; - Conhecer os equipamentos fixos e portáteis de combate a incêndio, saídas de emergência, escalas de segurança, corredores e rotas de fuga, sistemas de iluminação de emergência, elevador de segurança, meios de aviso, detecção e alarme de incêndio e sinalização de emergência. | 1h | - Demonstrar os principais procedimentos para o funcionamento do sistema de meios de fuga: saídas de emergência, escadas de segurança, corredores e rotas de fuga; dos sistemas de iluminação de emergência; do elevador de segurança; dos meios de aviso detecção e alarme de incêndio; da sinalização de emergência. | 4h |
+| 05 Técnicas e Táticas de Combate a Incêndio | - Conhecer as principais técnicas de busca e exploração da área em sinistro, ventilação natural ou forçada (pressão negativa, venturi e positiva), entradas forçadas, resgate de vítimas, confinamento, isolamento, salvatagem, combate com emprego correto dos tipos de jato de água (neblina, cone de força e sólido), emprego, dimensionamento e técnicas de aplicação de espuma mecânica e rescaldo de incêndio; - Demonstrar a montagem de uma linha direta de combate a incêndio, a partir de um hidrante e/ou viatura, linha adutora e linha siamesa; - Demonstrar o uso da linha de água para ataque direto, ataque indireto e ataque combinado. | 1h | - Demonstrar as principais técnicas de busca e exploração da área em sinistro, ventilação natural ou forçada (pressão negativa, venturi e positiva), entradas forçadas, resgate de vítimas, confinamento, isolamento, salvatagem, combate com emprego correto dos tipos de jato de água (neblina, cone de força e sólido), emprego, dimensionamento e técnicas de aplicação de espuma mecânica e rescaldo de incêndio; - Demonstrar a montagem de uma linha direta de combate a incêndio, a partir de um hidrante e/ou viatura, linha adutora e linha siamesa; - Demonstrar o uso da linha de água para ataque direto, ataque indireto e ataque combinado. | 4h |
+|  | Total | 4h | Total | 8h |
+
+Fonte: NT 2-11, página 11, Tabela 1 (A.1); conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada: ABNT NBR 14608. Células em branco = sem parte prática no módulo.
+Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao total da linha "Total".
+<!-- /tabela-conferida: Tabela 1 (A.1) p11 -->
+
 ---
 
 ## Página 12
@@ -622,8 +637,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Total 4h Total 8h
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES - A.2 |  |  |  |  |  |  |  |  |  |  |  |
@@ -636,6 +650,21 @@ Total 4h Total 8h
 | 03 Equipament os Auxiliares |  | - Conhecer como transportar e armar uma escada prolongável. - Conhecer como operar no mínimo as seguintes ferramentas de corte, arrombamento e remoção (machado, machado-picareta, corta-a-frio, croque, alavanca simples, alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); - Conhecer e operar lanternas e refletores portáteis para iluminação; - Conhecer e utilizar na prática uma lona para salvatagem. |  |  | 1h |  |  | - Demonstrar na prática como transportar e armar uma escada prolongável; como operar ferramentas de corte, arrombamento e remoção (machado, machado-picareta, cortaa-frio, croque, alavanca simples, alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); como operar lanternas e refletores portáteis para iluminação; como usar uma lona para salvatagem. |  | 2h |  |  |
 |  |  | Total |  |  | 4h |  |  | Total |  | 8h |  |  |
 
+<!-- tabela-conferida: Tabela 1 (A.2) p12 -->
+### Tabela 1 (A.2) — Currículos mínimos para a formação de BC — Equipamentos de combate a incêndio e auxiliares (A.2) (conferida)
+
+| Módulo | Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- | --- |
+| 01 Equipamento de Operação Manual | - Conhecer os tipos e a operação de: extintores (portáteis e extintores sobre rodas, com carga de água, pó BC, CO2, etc.), hidrantes (predial, de coluna e subterrâneo), mangotinho, mangueiras de incêndio, chaves de mangueira (simples e mista), redutores, tampões e adaptadores para mangueiras e hidrantes, derivantes, válvula de recalque, passagem de nível, esguichos e proporcionadores de espuma (de linha e de sistema). | 2h | Demonstrar na prática os tipos e a operação de: extintores (portáteis e extintores sobre rodas, com carga de água, pó BC, CO2, etc.), hidrantes (predial, de coluna e subterrâneo), mangotinho, mangueiras de incêndio, chaves de mangueira (simples e mista), redutores, tampões e adaptadores para mangueiras e hidrantes, derivantes, válvula de recalque, passagem de nível, esguichos e proporcionadores de espuma (de linha e de sistema). | 2h |
+| 02 Equipamento de Sistema fixo e operação automática | - Conhecer os equipamentos e os principais procedimentos de emergência para o correto funcionamento de bombas (elétricas e a combustão), chuveiros automáticos (sprinklers) e sistemas fixos de combate a incêndio (com espuma mecânica, gases etc.). | 1h | - Demonstrar na prática os equipamentos e os principais procedimentos de emergência para o correto funcionamento de bombas (elétricas e a combustão), chuveiros automáticos (sprinklers) e sistemas fixos de combate a incêndio (com espuma mecânica, gases etc.). | 4h |
+| 03 Equipamentos Auxiliares | - Conhecer como transportar e armar uma escada prolongável. - Conhecer como operar no mínimo as seguintes ferramentas de corte, arrombamento e remoção (machado, machado-picareta, corta-a-frio, croque, alavanca simples, alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); - Conhecer e operar lanternas e refletores portáteis para iluminação; - Conhecer e utilizar na prática uma lona para salvatagem. | 1h | - Demonstrar na prática como transportar e armar uma escada prolongável; como operar ferramentas de corte, arrombamento e remoção (machado, machado-picareta, corta-a-frio, croque, alavanca simples, alavanca pé-de-cabra e ferramentas hidráulicas de corte e tração); como operar lanternas e refletores portáteis para iluminação; como usar uma lona para salvatagem. | 2h |
+|  | Total | 4h | Total | 8h |
+
+Fonte: NT 2-11, página 12, Tabela 1 (A.2); conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada: ABNT NBR 14608. Quebra de palavra da imagem ("Equipament / o", "corta- / a-frio") desfeita.
+Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao total da linha "Total".
+<!-- /tabela-conferida: Tabela 1 (A.2) p12 -->
+
 ---
 
 ## Página 13
@@ -644,8 +673,7 @@ Total 4h Total 8h
 
 Total 10h Total 6h
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | EPI e EPR - A.3 |  |  |  |  |  |  |  |  |  |  |  |
@@ -670,6 +698,35 @@ Total 10h Total 6h
 | 04 Resgate de Vítimas em Espaços Confinados |  | - Conhecer as normas, procedimentos e técnicas para resgate de vítimas em espaços confinados. |  |  | 6h |  |  | Utilizar os equipamentos para resgate de vítimas em espaços confinados. |  | 6h |  |  |
 |  |  | Total |  |  | 10h |  |  | Total |  | 6h |  |  |
 
+<!-- tabela-conferida: Tabela 1 (A.3) p13 -->
+### Tabela 1 (A.3) — Currículos mínimos para a formação de BC — EPI e EPR (A.3) (conferida)
+
+| Módulo | Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- | --- |
+| 01 EPI | - Conhecer os equipamentos de proteção individual para a proteção da cabeça, olhos e face, proteção auditiva, proteção respiratória, tronco, membros superiores, membros inferiores e corpo inteiro, em conformidade com as Normas Brasileiras específicas para combate a incêndio, nacionais e, na falta de Normas Brasileiras, adotar Normas Internacionais. | 2h | Vestir os EPIs | 2h |
+| 02 EPR | - Conhecer e saber a origem e os riscos de exposição a no mínimo os seguintes tipos de gases: asfixiantes – gás liquefeito de petróleo (GLP), gás metano (CH4), dióxido de carbono (CO2) e acetileno; gases tóxicos – monóxido de carbono (CO), sulfídrico (H2S) e cianídrico (HCN) e gases irritantes ou corrosivos – amônia (NH2) e cloro; - Conhecer as características de atmosfera insalubre por concentração de O2; - Conhecer a utilização e a higienização e limpeza dos seguintes equipamentos de proteção respiratória: máscaras filtrantes e conjunto de máscara autônoma de ar respirável e máscara dedicada para a vítima (carona); - Saber calcular a autonomia do conjunto de máscara autônoma. - Conhecer e saber identificar a finalidade dos impressos nos cilindros de ar respirável. | 4h | Demonstrar a utilização (montar o equipamento, equipar-se e deslocar-se com e sem vítima); Exercitar o calculo de autonomia do conjunto autônomo de respiração. | 4h |
+|  | Total | 2h | Total | 2h |
+
+Fonte: NT 2-11, página 13, Tabela 1 (A.3); conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada: ABNT NBR 14608.
+<!-- /tabela-conferida: Tabela 1 (A.3) p13 -->
+
+<!-- tabela-conferida: Tabela 1 (A.4) p13 -->
+### Tabela 1 (A.4) — Currículos mínimos para a formação de BC — Salvamento terrestre (A.4) (conferida)
+
+| Módulo | Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- | --- |
+| 01 Emergência em elevadores | - Conhecer os procedimentos básicos a serem adotados em emergências com elevadores. | 2h |  |  |
+| 02 Prevenção em Área de pouso de helicópteros | - Conhecer os principais riscos no pouso de helicóptero e conhecer e demonstrar os principais procedimentos de segurança para balizamento, embarque e desembarque de passageiros e procedimentos de controle em caso de emergência, envolvendo incêndio e resgate de vítimas. | 1h |  |  |
+| 03 Plano de Emergência | - Conhecer as principais recomendações de um plano de emergência, relativas a uma emergência contra incêndio, hostilidades em caso de ameaças de bombas e terrorismo, uma emergência de abando de área em uma planta. | 1h |  |  |
+| 04 Resgate de Vítimas em Espaços Confinados | - Conhecer as normas, procedimentos e técnicas para resgate de vítimas em espaços confinados. | 6h | Utilizar os equipamentos para resgate de vítimas em espaços confinados. | 6h |
+|  | Total | 10h | Total | 6h |
+
+Fonte: NT 2-11, página 13, Tabela 1 (A.4); conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada: ABNT NBR 14608.
+Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao total da linha "Total".
+<!-- /tabela-conferida: Tabela 1 (A.4) p13 -->
+
 ---
 
 ## Página 14
@@ -678,8 +735,7 @@ Total 10h Total 6h
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | PRODUTOS PERIGOSOS - A.5 |  |  |  |  |  |  |  |  |  |  |  |
@@ -733,6 +789,38 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  |  | reanimação cardiorespiratória (DEA, |  |  |  |  |  |  |  |  |
 |  |  |  | pocketmask). |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 1 (A.5) p14 -->
+### Tabela 1 (A.5) — Currículos mínimos para a formação de BC — Produtos perigosos (A.5) (conferida)
+
+| Módulo | Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- | --- |
+| 01 Legislação | - Conhecer a legislação que regulamenta a identificação, transporte, armazenagem, manipulação e as emergências envolvendo produtos perigosos. | 1h |  |  |
+| 02 Conceitos | - Conhecer as classes de riscos, os sistemas de identificação, painel de segurança, rótulo de risco, ficha de emergência e FISPQ. | 1h |  |  |
+| 03 Guia de procedimentos de emergência | - Conhecer e saber consultar o manual de emergências com produtos perigosos da ABIQUIM/PRÓ-QUÍMICA. | 2h |  |  |
+| 04 EPI e EPR | - Conhecer e demonstrar na prática o conhecimento dos equipamentos de proteção individual e respiratória nível A, B e C específicos para atendimento a produtos perigosos. | 1h |  |  |
+| 05 Ações Operacionais | - Conhecer o sistema de organização da área do sinistro em zonas de segurança, apoio de acesso limitado (quente, morna e fria); - Conhecer os equipamentos e métodos de contenção e confinamento de derramamento de produtos perigosos. | 1h | - Demonstrar na prática a aplicação e utilização de barreiras de contenção, absorção, mantas absorventes, matérias adsorventes e absorventes orgânicos; - Demonstrar na prática as técnicas de resgate de vítimas contaminadas e descontaminação de vítimas e ambientes. | 2h |
+|  | Total | 6h | Total | 2h |
+
+Fonte: NT 2-11, página 14, Tabela 1 (A.5); conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada: ABNT NBR 14608.
+Conferência aritmética (além dos dois caminhos): a soma das cargas horárias de cada parte é igual ao total da linha "Total".
+<!-- /tabela-conferida: Tabela 1 (A.5) p14 -->
+
+<!-- tabela-conferida: Tabela 1 (A.6, página 14) p14 -->
+### Tabela 1 (A.6, página 14) — Currículos mínimos para a formação de BC — Primeiros socorros (A.6), módulos 01 a 05 (conferida)
+
+| Módulo | Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- | --- |
+| 01 Legislação Específica | - Conhecer a legislação que regulamenta os procedimentos de primeiros-socorros para o nível equivalente a Bombeiro profissional civil. | 30 min. |  |  |
+| 02 Procedimentos Iniciais | - Conhecer os procedimentos para avaliação da segurança do local, números de vítimas e os procedimentos de biossegurança; - Conhecer os procedimentos para acionamento e comunicação protocolar com os serviços públicos e privados de socorro de vítimas e ações para localização dos hospitais de referência nas proximidades do local de trabalho; - Conhecer os procedimentos para o planejamento das ações conforme definido previamente no plano de emergência da planta. | 1 h. |  |  |
+| 03 Avaliação Inicial | - Conhecer, avaliar e identificar os riscos iminentes, os mecanismos de lesão, número de vítimas e o exame físico sumário destas. | 30 min. | Avaliar e reconhecer os riscos iminentes, os mecanismos de lesão número de vítimas e o exame físico destas. | 30 min. |
+| 04 Vias Aéreas | - Conhecer os sinais e sintomas de obstruções de vias aéreas superiores em adultos, crianças e bebês conscientes e inconscientes, e promover a desobstrução quando indicado. | 30 min. | Promover a desobstrução utilizando a técnica adequada. | 1h. |
+| 05 SBV (Suporte Básico de Vida) | - Apresentar as técnicas do SBV para adultos, crianças e bebês; - Conhecer os equipamentos de reanimação cardiorespiratória (DEA, pocketmask). | 2h | Praticar o protocolo do SBV (Suporte Básico de Vida) | 2h. |
+
+Fonte: NT 2-11, página 14, Tabela 1 (A.6, página 14); conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada: ABNT NBR 14608. Continua na página 15 (módulos 06 a 15 e total).
+<!-- /tabela-conferida: Tabela 1 (A.6, página 14) p14 -->
+
 ---
 
 ## Página 15
@@ -741,8 +829,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Tabela 2 - Currículo mínimo para atualização de BC
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 06 Estado de Choque | - Conhecer os sinais e sintomas do estado de choque e aplicar as técnicas básicas de tratamento. | 30 min. | Aplicar as técnicas de cuidados básicos do estado de choque. | 30 min. |
@@ -778,9 +865,59 @@ Tabela 2 - Currículo mínimo para atualização de BC
 | Objetivo |  |  | Carga horária |  |  | Objetivo |  | Carga Horária |  |
 | - Consolidar os Itens: 01 a 12 da tabela A.6 |  |  | 4h |  |  | - Consolidar os Itens: 01, 03, 04, 05 e 09 da tabela A.6 |  | 4h |  |
 
+<!-- tabela-conferida: Tabela 1 (A.6, página 15) p15 -->
+### Tabela 1 (A.6, página 15) — Currículos mínimos para a formação de BC — Primeiros socorros (A.6), módulos 06 a 15 (conferida)
+
+| Módulo | Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- | --- |
+| 06 Estado de Choque | - Conhecer os sinais e sintomas do estado de choque e aplicar as técnicas básicas de tratamento. | 30 min. | Aplicar as técnicas de cuidados básicos do estado de choque. | 30 min. |
+| 07 Hemorragias | - Conhecer as técnicas de hemostasia. | 30 min. | Aplicar as técnicas de compressão direta e utilização de torniquete. |  |
+| 08 Fraturas | - Reconhecer as fraturas abertas e fechadas e aplicar as técnicas de imobilização. | 30 min. | Aplicar técnica de imobilização. | 30 min. |
+| 09 Ferimentos | - Identificar os tipos de ferimentos e aplicar os cuidados iniciais. | 30 min. | Aplicar as técnicas de limpeza e bandagens. | 30 min. |
+| 10 Queimaduras | - Conhecer os tipos (térmicas, químicas e elétricas) e os graus (primeiro, segundo e terceiro) das queimaduras e aplicar as técnicas e procedimentos básicos de socorro de queimaduras. | 30 min. |  |  |
+| 11 mergências Clinicas | - Reconhecer AVC (Acidente Vascular Cerebral), convulsões, dispnéias, IAM (Infarto Agudo do Miocárdio). | 2h | Aplicar as técnicas de atendimento básico. | 1h |
+| 12 Transporte de vitimas | - Conhecer as técnicas de transporte de vítimas clínicas e traumáticas com suspeita de lesão na coluna vertebral e aplicar as técnicas de transporte de vítimas. | 1h | Aplicar as técnicas de transporte de vítimas. | 1h |
+| 13 Pessoa com mobilidade reduzida | - Conhecer as técnicas de abordagem, cuidados e condução de acordo com o plano de emergência da planta. | 30 min. |  |  |
+| 14 Protocolo com incidente com múltiplas vítimas | - Conhecer as ações de avaliação, zoneamento, balizamento, triagem e método start para acidentes e incidentes que envolvam múltiplas vítimas. | 1h | Aplicar na prática as técnicas que envolvam múltiplas vítimas. | 1h |
+| 15 Psicologia em emergências | - Reconhecer o agravo emocional das pessoas em situações de emergências e a administração do estresse após incidentes críticos para os profissionais de emergência. | 30 min. |  |  |
+|  | Total | 12h | Total | 08h |
+
+Fonte: NT 2-11, página 15, Tabela 1 (A.6, página 15); conferida em 2026-09-29 (visual + geometrica).
+Continuação da página 14.
+Conferência aritmética (além dos dois caminhos): os módulos 01 a 15 (páginas 14 e 15) somam 12h na parte teórica e 8h na prática, iguais aos totais.
+<!-- /tabela-conferida: Tabela 1 (A.6, página 15) p15 -->
+
+<!-- tabela-conferida: Tabela 2 p15 -->
+### Tabela 2 — Currículo mínimo para atualização de BC (conferida)
+
+| Parte teórica — objetivo | Parte teórica — carga horária | Parte prática — objetivo | Parte prática — carga horária |
+| --- | --- | --- | --- |
+| PREVENÇÃO E COMBATE A INCÊNDIO | PREVENÇÃO E COMBATE A INCÊNDIO | PREVENÇÃO E COMBATE A INCÊNDIO | PREVENÇÃO E COMBATE A INCÊNDIO |
+| Parte teórica | Parte teórica | Parte prática | Parte prática |
+| Objetivo | Carga horária | Objetivo | Carga Horária |
+| - Consolidar os Itens: 01, 02 e 03 da tabela A.1 | 2h | - Consolidar os Itens 4 e 5 da tabela A.1 | 2h |
+| EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES | EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES | EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES | EQUIPAMENTOS DE COMBATE A INCÊNDIO E AUXILIARES |
+| Parte teórica | Parte teórica | Parte prática | Parte prática |
+| Objetivo | Carga horária | Objetivo | Carga Horária |
+| - Consolidar os Itens: 01 e 02 da tabela A.2 | 2h | - Consolidar os Itens 1 da Tabela A.2 | 2h |
+| SALVAMENTO TERRESTRE/ EPI E EPR | SALVAMENTO TERRESTRE/ EPI E EPR | SALVAMENTO TERRESTRE/ EPI E EPR | SALVAMENTO TERRESTRE/ EPI E EPR |
+| Parte teórica | Parte teórica | Parte prática | Parte prática |
+| Objetivo | Carga horária | Objetivo | Carga Horária |
+| - Consolidar os Itens: 01 e 02 da tabela A.3 - Consolidar os Itens: 01 e 04 da tabela A.4 | 4h | - Consolidar os Itens: 01 e 02 da tabela A.3 - Consolidar o Iten4 da Tabela A.4 | 4h |
+| PRIMEIROS SOCORROS | PRIMEIROS SOCORROS | PRIMEIROS SOCORROS | PRIMEIROS SOCORROS |
+| Parte teórica | Parte teórica | Parte prática | Parte prática |
+| Objetivo | Carga horária | Objetivo | Carga Horária |
+| - Consolidar os Itens: 01 a 12 da tabela A.6 | 4h | - Consolidar os Itens: 01, 03, 04, 05 e 09 da tabela A.6 | 4h |
+
+Fonte: NT 2-11, página 15, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
+Quatro blocos (título, partes, cabeçalho e linha); "<" = mesclada com a da esquerda.
+<!-- /tabela-conferida: Tabela 2 p15 -->
+
 ---
 
 ## Página 16
+
+![Representação visual da página 16](media/nt-2-11/pagina-16.jpg)
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
@@ -792,8 +929,7 @@ noções básicas da ciência do fogo
 
 ### NOÇÕES DE PRIMEIROS SOCORROS
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Assunto - Teoria |  |  |  |  |
@@ -833,6 +969,57 @@ noções básicas da ciência do fogo
 | Emergências Clinicas/AVC/IAM/Convulsões |  |  |  |  |  |
 |  | Carga horária total |  |  | 4(quatro) horas |  |
 
+<!-- tabela-conferida: Tabela 1 (Anexo B) p16 -->
+### Tabela 1 (Anexo B) — Currículo mínimo para brigadista voluntário de incêndio — noções básicas da ciência do fogo (conferida)
+
+| Assunto | Carga horária |
+| --- | --- |
+| Assunto – Teoria | Assunto – Teoria |
+| Teoria do Fogo |  |
+| Propagação do Fogo |  |
+| Classes de Incêndio |  |
+| Prevenção de Incêndio |  |
+| Método de Extinção de Incêndio |  |
+| Agentes Extintores |  |
+| EPI (Equipamento de Proteção Individual) |  |
+| Equipamento Portátil de Combate a Incêndio |  |
+| Equipamento Fixo de Combate a Incêndio |  |
+| Escape de Pessoal |  |
+| Pessoa Com Mobilidade Reduzida |  |
+| Riscos Específicos da Planta |  |
+| Psicologia em emergências |  |
+| Carga horária | 8 (oito) horas |
+| Assunto – Prática | Assunto – Prática |
+| Maneabilidade com equipamentos |  |
+| Técnica de Extinção de Incêndio com equipamento portátil |  |
+| Técnica de Extinção de Incêndio com equipamento fixo |  |
+| Técnicas de entrada e saída do local de Incêndio |  |
+| Operação Simulada de Combate a Incêndio |  |
+| Carga horária | 4(quatro) horas |
+| Carga horária total | 12 (doze) horas |
+
+Fonte: NT 2-11, página 16, Tabela 1 (Anexo B); conferida em 2026-09-29 (visual + geometrica).
+Anexo B da NT 2-11 (formação de BVI). Conferência aritmética: 8 h (teoria) + 4 h (prática) = 12 h; com as 4 h de noções de primeiros socorros, as 16 h do título.
+<!-- /tabela-conferida: Tabela 1 (Anexo B) p16 -->
+
+<!-- tabela-conferida: Tabela 1 (Anexo B, primeiros socorros) p16 -->
+### Tabela 1 (Anexo B, primeiros socorros) — Noções de primeiros socorros (BVI) (conferida)
+
+| Assunto | Carga horária |
+| --- | --- |
+| Assunto – Teoria e Pratica | Assunto – Teoria e Pratica |
+| Avaliação Inicial |  |
+| Obstrução de Vias Aéreas Superiores |  |
+| RCP (Reanimação Cardiopulmonar) |  |
+| Hemorragias |  |
+| Transporte da Vítima |  |
+| Emergências Clinicas/AVC/IAM/Convulsões |  |
+| Carga horária total | 4(quatro) horas |
+
+Fonte: NT 2-11, página 16, Tabela 1 (Anexo B, primeiros socorros); conferida em 2026-09-29 (visual + geometrica).
+Segunda parte da Tabela 1 do Anexo B.
+<!-- /tabela-conferida: Tabela 1 (Anexo B, primeiros socorros) p16 -->
+
 ---
 
 ## Página 17
@@ -841,8 +1028,7 @@ noções básicas da ciência do fogo
 
 ### ANEXO C - DIMENSIONAMENTO PARA BRIGADISTA VOLUNTÁRIO DE INCÊNDIO - BVI
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | Divisão |  | Composição da Brigada de Incêndio Voluntária * |  |  |
@@ -898,6 +1084,47 @@ noções básicas da ciência do fogo
 |  |  |  | Edificação histórica com isenção de | 2 |  | 10% da população fixa*** |
 |  |  |  | canalização **** |  |  |  |
 
+<!-- tabela-conferida: Tabela do Anexo C p17 -->
+### Tabela do Anexo C — Dimensionamento para brigadista voluntário de incêndio (BVI), página 17 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BVI — 1 a 20 funcionários por turno | BVI — acima de 20 funcionários por turno |
+| --- | --- | --- | --- | --- | --- |
+| A | Residencial | A-1 | Residencial privativa unifamiliar | Não exigível | Não exigível |
+| A | Residencial | A-1 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| A | Residencial | A-2 | Residencial privativa multifamiliar | Não exigível | Não exigível |
+| A | Residencial | A-2 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| A | Residencial | A-3 | Residencial coletiva | Não exigível | Não exigível |
+| A | Residencial | A-3 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| A | Residencial | A-4 | Agrupamento residencial privativa unifamiliar | Não exigível | Não exigível |
+| A | Residencial | A-4 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| A | Residencial | A-5 | Agrupamento residencial privativa multifamiliar | 1 | 10 % da população fixa*** |
+| A | Residencial | A-5 | Edificação histórica com isenção de canalização **** | 1 | 10 % da população fixa*** |
+| B | Serviços de hospedagem | B-1 | Residencial transitório | 2 | 10% da população fixa*** |
+| B | Serviços de hospedagem | B-1 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| B | Serviços de hospedagem | B-2 | Residencial com serviço | 2 | 10% da população fixa*** |
+| B | Serviços de hospedagem | B-2 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| C | Comercial | C-1 | Comercial 1 | Não exigível | Não exigível |
+| C | Comercial | C-1 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| C | Comercial | C-2 | Comercial 2 | 2 | 10% da população fixa*** |
+| C | Comercial | C-2 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| C | Comercial | C-3 | Shopping centers | 2 | 10% da população fixa*** |
+| C | Comercial | C-3 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| D | Serviço profissional e institucional | D-1 | Local para prestação de serviço profissional ou condução de negócios | Não exigível | Não exigível |
+| D | Serviço profissional e institucional | D-1 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| D | Serviço profissional e institucional | D-2 | Clínica médica e laboratório de análises técnicas | Não exigível | Não exigível |
+| D | Serviço profissional e institucional | D-2 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| D | Serviço profissional e institucional | D-3 | Serviços de manutenção e reparação (exceto os classificados em G-5) | Não exigível | Não exigível |
+| D | Serviço profissional e institucional | D-3 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| D | Serviço profissional e institucional | D-4 | Edificação pública | 2 | 10% da população fixa*** |
+| D | Serviço profissional e institucional | D-4 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| D | Serviço profissional e institucional | D-5 | Edificações destinadas à restrição de liberdade | 2 | 10% da população fixa*** |
+| D | Serviço profissional e institucional | D-5 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+
+Fonte: NT 2-11, página 17, Tabela do Anexo C; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<" = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas "Edificação histórica…" em fundo amarelo na imagem.
+Divergência técnica, não de conteúdo conhecido: a camada de texto quebra os rótulos longos em linhas e o pdfplumber separa as células de várias linhas (e reposiciona as mescladas do cabeçalho). A leitura visual não tem segundo caminho independente: conferir na imagem antes de usar.
+<!-- /tabela-conferida: Tabela do Anexo C p17 -->
+
 ---
 
 ## Página 18
@@ -906,8 +1133,7 @@ noções básicas da ciência do fogo
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo |  | Divisão |  | Composição da Brigada de Incêndio Voluntária* |  |
@@ -945,6 +1171,46 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  | F-11 | Centro de exibição | 2 | 10% da população fixa*** |
 |  |  |  | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
 
+<!-- tabela-conferida: Tabela do Anexo C p18 -->
+### Tabela do Anexo C — Dimensionamento para brigadista voluntário de incêndio (BVI), página 18 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BVI — 1 a 20 funcionários por turno | BVI — acima de 20 funcionários por turno |
+| --- | --- | --- | --- | --- | --- |
+| E | Escolar e cultura física | E-1 | Escolar em geral | 2 | 10% da população fixa*** |
+| E | Escolar e cultura física | E-1 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| E | Escolar e cultura física | E-2 | Escolar especial | Não exigível | Não exigível |
+| E | Escolar e cultura física | E-2 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| E | Escolar e cultura física | E-3 | Espaço para cultura física | Não exigível | Não exigível |
+| E | Escolar e cultura física | E-3 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| E | Escolar e cultura física | E-4 | Escola para portadores de deficiências | 2 | 10% da população fixa*** |
+| E | Escolar e cultura física | E-4 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-1 | Local onde há objeto de valor inestimável | 2 | 30% da população fixa*** |
+| F | Local de Reunião de Público | F-1 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-2 | Local religioso e velório | Não exigível | Não exigível |
+| F | Local de Reunião de Público | F-2 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| F | Local de Reunião de Público | F-3 | Centro esportivo | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-3 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-4 | Estação e terminal de passageiro | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-4 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-5 | Arte cênica e auditório | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-5 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-6 | Local de Diversões Públicas | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-6 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-7 | Instalações temporárias | Vide NT 5-04 | Vide NT 5-04 |
+| F | Local de Reunião de Público | F-8 | Local para refeição | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-8 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-9 | Recreação pública | Não exigível | Não exigível |
+| F | Local de Reunião de Público | F-9 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| F | Local de Reunião de Público | F-10 | Exposição de objetos ou animais | Não exigível | Não exigível |
+| F | Local de Reunião de Público | F-10 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| F | Local de Reunião de Público | F-11 | Centro de exibição | 2 | 10% da população fixa*** |
+| F | Local de Reunião de Público | F-11 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+
+Fonte: NT 2-11, página 18, Tabela do Anexo C; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<" = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas "Edificação histórica…" em fundo amarelo na imagem.
+Divergência técnica, não de conteúdo conhecido: a camada de texto quebra os rótulos longos em linhas e o pdfplumber separa as células de várias linhas (e reposiciona as mescladas do cabeçalho). A leitura visual não tem segundo caminho independente: conferir na imagem antes de usar.
+<!-- /tabela-conferida: Tabela do Anexo C p18 -->
+
 ---
 
 ## Página 19
@@ -953,8 +1219,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | Divisão | Descrição |  | Composição da Brigada de Incêndio Voluntária* |  |  |
@@ -988,6 +1253,41 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  | I-3 | Industrial 3 |  | 2 |  | 10% da população fixa*** |
 |  |  |  | Edificação histórica com isenção de canalização **** |  | 2 |  | 10% da população fixa*** |
 
+<!-- tabela-conferida: Tabela do Anexo C p19 -->
+### Tabela do Anexo C — Dimensionamento para brigadista voluntário de incêndio (BVI), página 19 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BVI — 1 a 20 funcionários por turno | BVI — acima de 20 funcionários por turno |
+| --- | --- | --- | --- | --- | --- |
+| G | Serviço automotivo e assemelhado | G-1 | Garagem sem acesso de público | Não exigível | Não exigível |
+| G | Serviço automotivo e assemelhado | G-1 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| G | Serviço automotivo e assemelhado | G-2 | Garagem com acesso de público | Não exigível | Não exigível |
+| G | Serviço automotivo e assemelhado | G-2 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| G | Serviço automotivo e assemelhado | G-3 | Galpão garagem | Não exigível | Não exigível |
+| G | Serviço automotivo e assemelhado | G-3 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| G | Serviço automotivo e assemelhado | G-4 | Postos de combustível | 2 | 10% da população fixa*** |
+| G | Serviço automotivo e assemelhado | G-4 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| G | Serviço automotivo e assemelhado | G-5 | Serviço de conservação, manutenção e reparos | 2 | 10% da população fixa*** |
+| G | Serviço automotivo e assemelhado | G-5 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| G | Serviço automotivo e assemelhado | G-6 | Hangares | 2 | 10% da população fixa*** |
+| G | Serviço automotivo e assemelhado | G-6 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| H | Serviço de saúde | H-1 | Hospital e assemelhado | 2 | 10% da população fixa*** |
+| H | Serviço de saúde | H-1 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| H | Serviço de saúde | H-2 | Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais | 2 | 10% da população fixa*** |
+| H | Serviço de saúde | H-2 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| H | Serviço de saúde | H-3 | Hospital veterinário e assemelhados | 2 | 10% da população fixa*** |
+| H | Serviço de saúde | H-3 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| I | Industrial | I-1 | Industrial 1 | 2 | 10% da população fixa*** |
+| I | Industrial | I-1 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| I | Industrial | I-2 | Industrial 2 | 2 | 10% da população fixa*** |
+| I | Industrial | I-2 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| I | Industrial | I-3 | Industrial 3 | 2 | 10% da população fixa*** |
+| I | Industrial | I-3 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+
+Fonte: NT 2-11, página 19, Tabela do Anexo C; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<" = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas "Edificação histórica…" em fundo amarelo na imagem.
+Divergência técnica, não de conteúdo conhecido: a camada de texto quebra os rótulos longos em linhas e o pdfplumber separa as células de várias linhas (e reposiciona as mescladas do cabeçalho). A leitura visual não tem segundo caminho independente: conferir na imagem antes de usar.
+<!-- /tabela-conferida: Tabela do Anexo C p19 -->
+
 ---
 
 ## Página 20
@@ -996,8 +1296,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  | Descrição | Composição da Brigada de Incêndio Voluntária * |  |
@@ -1028,6 +1327,39 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  | M-4 | Loteamento e Pátios | Não exigível |  |
 |  |  |  | Edificação histórica com isenção de canalização **** | Não exigível |  |
 
+<!-- tabela-conferida: Tabela do Anexo C p20 -->
+### Tabela do Anexo C — Dimensionamento para brigadista voluntário de incêndio (BVI), página 20 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BVI — 1 a 20 funcionários por turno | BVI — acima de 20 funcionários por turno |
+| --- | --- | --- | --- | --- | --- |
+| J | Depósito | J-1 | Depósitos de material incombustível | 2 | 10% da população fixa*** |
+| J | Depósito | J-1 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| J | Depósito | J-2 | Todo tipo de Depósito | 2 | 10% da população fixa*** |
+| J | Depósito | J-2 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| J | Depósito | J-3 | Todo tipo de Depósito | 2 | 10% da população fixa*** |
+| J | Depósito | J-3 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| J | Depósito | J-4 | Todo tipo de Depósito | 2 | 10% da população fixa*** |
+| J | Depósito | J-4 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| L | Explosivos ou munições | L-1 | Comércio | 2 | 10% da população fixa*** |
+| L | Explosivos ou munições | L-1 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| L | Explosivos ou munições | L-2 | Indústria | 2 | 10% da população fixa*** |
+| L | Explosivos ou munições | L-2 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| L | Explosivos ou munições | L-3 | Depósito | 2 | 10% da população fixa*** |
+| L | Explosivos ou munições | L-3 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| M | Especial | M-1 | Túnel | Não exigível | Não exigível |
+| M | Especial | M-1 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| M | Especial | M-2 | Líquidos ou gases inflamáveis ou combustíveis | 2 | 10% da população fixa*** |
+| M | Especial | M-2 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| M | Especial | M-3 | Central de comunicação e energia | 2 | 10% da população fixa*** |
+| M | Especial | M-3 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| M | Especial | M-4 | Loteamento e Pátios | Não exigível | Não exigível |
+| M | Especial | M-4 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+
+Fonte: NT 2-11, página 20, Tabela do Anexo C; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<" = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas "Edificação histórica…" em fundo amarelo na imagem.
+Divergência técnica, não de conteúdo conhecido: a camada de texto quebra os rótulos longos em linhas e o pdfplumber separa as células de várias linhas (e reposiciona as mescladas do cabeçalho). A leitura visual não tem segundo caminho independente: conferir na imagem antes de usar.
+<!-- /tabela-conferida: Tabela do Anexo C p20 -->
+
 ---
 
 ## Página 21
@@ -1036,8 +1368,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Composição da Brigada de Incêndio Voluntária * |  |
@@ -1058,6 +1389,28 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 | * No eventual afastamento do funcionário que exerça a função de BVI, os responsáveis pelos imóveis, estabelecimentos ou áreas de risco deverão designar substituto devidamente capacitado como BVI. |  |  |  |  |  |
 | *** Para efeito do resultado do cálculo deverá ser utilizada a regra do arredondamento. Exemplo 1: nº de funcionários 23 x 0,10 = 2,3 BVI. Para efeito de aplicação prática será considerado o quantitativo de 2 BVI. Exemplo 2: nº de funcionários 37 x 0,10 = 3,7 BVI. Para efeito de aplicação prática será considerado o quantitativo de 3 BVI. Exemplo 3: nº de funcionários 65 x 0,10 = 6,5 BVI. Para efeito de aplicação prática será considerado o quantitativo de 6 BVI. Por conveniência e decisão do Plano de Emergência predial esse percentual poderá ser superado, se houver acordo entre o profissional responsável pelo plano e o proprietário. |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela do Anexo C p21 -->
+### Tabela do Anexo C — Dimensionamento para brigadista voluntário de incêndio (BVI), página 21 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BVI — 1 a 20 funcionários por turno | BVI — acima de 20 funcionários por turno |
+| --- | --- | --- | --- | --- | --- |
+| M | Especial | M-5 | Silos | 2 | 10% da população fixa*** |
+| M | Especial | M-5 | Edificação histórica com isenção de canalização **** | 2 | 10% da população fixa*** |
+| M | Especial | M-6 | Estrutura temporária | Vide NT 5-04 | Vide NT 5-04 |
+| M | Especial | M-6 | Edificação histórica com isenção de canalização **** | Vide NT 5-04 | Vide NT 5-04 |
+| M | Especial | M-7 | Edificação mista | Não exigível | Não exigível |
+| M | Especial | M-7 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| M | Especial | M-8 | Quiosque | Não exigível | Não exigível |
+| M | Especial | M-8 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+| M | Especial | M-9 | Áreas e atividades de exploração de recursos naturais | Não exigível | Não exigível |
+| M | Especial | M-9 | Edificação histórica com isenção de canalização **** | Não exigível | Não exigível |
+
+Fonte: NT 2-11, página 21, Tabela do Anexo C; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<" = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas "Edificação histórica…" em fundo amarelo na imagem.
+Quadro de notas abaixo da tabela (fora da comparação): "*" substituto capacitado no afastamento do BVI; "***" cálculo pela regra do arredondamento, com exemplos; o percentual pode ser superado por decisão do Plano de Emergência.
+Divergência técnica, não de conteúdo conhecido: a camada de texto quebra os rótulos longos em linhas e o pdfplumber separa as células de várias linhas (e reposiciona as mescladas do cabeçalho). A leitura visual não tem segundo caminho independente: conferir na imagem antes de usar.
+<!-- /tabela-conferida: Tabela do Anexo C p21 -->
+
 ---
 
 ## Página 22
@@ -1068,8 +1421,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 ### ANEXO D - DIMENSIONAMENTO PARA BOMBEIRO CIVIL - BC
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Composição da Brigada de Incêndio |  |  |
@@ -1109,6 +1461,46 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  | D-5 | Edificações destinadas à restrição de liberdade, | Obs6 |  |  |
 |  |  |  | Edificação histórica com isenção de canalização **** |  |  |  |
 
+<!-- tabela-conferida: Tabela do Anexo D p22 -->
+### Tabela do Anexo D — Dimensionamento para bombeiro civil (BC), página 22 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BC — 5.000 a 10.000 m² | BC — 10.000 a 30.000 m² | BC — acima de 30.000 m² |
+| --- | --- | --- | --- | --- | --- | --- |
+| A | Residencial | A-1 | Residencial privativa unifamiliar | Não exigível | Não exigível | Não exigível |
+| A | Residencial | A-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| A | Residencial | A-2 | Residencial privativa multifamiliar | Não exigível | Não exigível | Não exigível |
+| A | Residencial | A-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| A | Residencial | A-3 | Residencial coletiva | Não exigível | Não exigível | Obs1 |
+| A | Residencial | A-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| A | Residencial | A-4 | Agrupamento residencial privativa unifamiliar | Não exigível | Não exigível | Não exigível |
+| A | Residencial | A-4 | Edificação histórica com isenção de canalização **** |  |  |  |
+| A | Residencial | A-5 | Agrupamento residencial privativa multifamiliar | Não exigível | Não exigível | Obs1 |
+| A | Residencial | A-5 | Edificação histórica com isenção de canalização **** |  |  |  |
+| B | Serviços de hospedagem | B-1 | Residencial transitório | Não exigível | 1 | Obs3 |
+| B | Serviços de hospedagem | B-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| B | Serviços de hospedagem | B-2 | Residencial com serviço | Não exigível | 1 | Obs3 |
+| B | Serviços de hospedagem | B-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| C | Comercial | C-1 | Comercial 1 | Não exigível | 1 | Obs3 |
+| C | Comercial | C-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| C | Comercial | C-2 | Comercial 2 | 1 | 1 | Obs3 |
+| C | Comercial | C-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| C | Comercial | C-3 | Shopping centers | Não exigível | 1 | Obs2 |
+| C | Comercial | C-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| D | Serviço profissional e institucional | D-1 | Local para prestação de serviço profissional ou condução de negócios | Não exigível | 1 | Obs3 |
+| D | Serviço profissional e institucional | D-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| D | Serviço profissional e institucional | D-2 | Clínica médica e laboratório de análises técnicas | Não exigível | 1 | Obs3 |
+| D | Serviço profissional e institucional | D-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| D | Serviço profissional e institucional | D-3 | Serviços de manutenção e reparação (exceto os classificados em G-5) | Não exigível | 1 | Obs3 |
+| D | Serviço profissional e institucional | D-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| D | Serviço profissional e institucional | D-4 | Laboratórios de análises clínicas e assemelhados | Não exigível | 1 | Obs3 |
+| D | Serviço profissional e institucional | D-4 | Edificação histórica com isenção de canalização **** |  |  |  |
+| D | Serviço profissional e institucional | D-5 | Edificações destinadas à restrição de liberdade, | Obs6 | Obs6 | Obs6 |
+| D | Serviço profissional e institucional | D-5 | Edificação histórica com isenção de canalização **** |  |  |  |
+
+Fonte: NT 2-11, página 22, Tabela do Anexo D; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.: "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação histórica…" (fundo amarelo) não trazem valor em nenhuma faixa.
+<!-- /tabela-conferida: Tabela do Anexo D p22 -->
+
 ---
 
 ## Página 23
@@ -1117,8 +1509,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Composição da Brigada de Incêndio |  |  |  |
@@ -1158,6 +1549,45 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  | F-11 | Centro de exibição | 1 | 1 | Obs3 |  |
 |  |  |  | Edificação histórica com isenção de canalização **** |  |  |  |  |
 
+<!-- tabela-conferida: Tabela do Anexo D p23 -->
+### Tabela do Anexo D — Dimensionamento para bombeiro civil (BC), página 23 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BC — 5.000 a 10.000 m² | BC — 10.000 a 30.000 m² | BC — acima de 30.000 m² |
+| --- | --- | --- | --- | --- | --- | --- |
+| E | Escolar e cultura física | E-1 | Escolar em geral | Não exigível | 1 | Obs3 |
+| E | Escolar e cultura física | E-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| E | Escolar e cultura física | E-2 | Escolar especial | Não exigível | 1 | Obs3 |
+| E | Escolar e cultura física | E-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| E | Escolar e cultura física | E-3 | Espaço para cultura física | Não exigível | 1 | Obs3 |
+| E | Escolar e cultura física | E-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| E | Escolar e cultura física | E-4 | Escola para portadores de deficiências | Não exigível | 1 | Obs3 |
+| E | Escolar e cultura física | E-4 | Edificação histórica com isenção de canalização **** |  |  |  |
+| F | Local de Reunião de Público | F-1 | Local onde há objeto de valor inestimável | 1 | 2 | Obs3 |
+| F | Local de Reunião de Público | F-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| F | Local de Reunião de Público | F-2 | Local religioso e velório | 1 | 1 | Obs3 |
+| F | Local de Reunião de Público | F-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| F | Local de Reunião de Público | F-3 | Centro esportivo | 1 | 2 | Obs2 |
+| F | Local de Reunião de Público | F-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| F | Local de Reunião de Público | F-4 | Estação e terminal de passageiro | 1 | 2 | Obs2 |
+| F | Local de Reunião de Público | F-4 | Edificação histórica com isenção de canalização **** |  |  |  |
+| F | Local de Reunião de Público | F-5 | Arte cênica e auditório | 1 | 2 | Obs2 |
+| F | Local de Reunião de Público | F-5 | Edificação histórica com isenção de canalização **** |  |  |  |
+| F | Local de Reunião de Público | F-6 | Local de Diversões Públicas | 1 | 2 | Obs3 |
+| F | Local de Reunião de Público | F-6 | Edificação histórica com isenção de canalização **** |  |  |  |
+| F | Local de Reunião de Público | F-7 | Instalações temporárias |  | Vide NT 5-04 | Vide NT 5-04 |
+| F | Local de Reunião de Público | F-8 | Local para refeição | 1 | 2 | Obs3 |
+| F | Local de Reunião de Público | F-8 | Edificação histórica com isenção de canalização **** |  |  |  |
+| F | Local de Reunião de Público | F-9 | Recreação pública | Não exigível | 1 | Obs4 |
+| F | Local de Reunião de Público | F-9 | Edificação histórica com isenção de canalização **** |  |  |  |
+| F | Local de Reunião de Público | F-10 | Exposição de objetos ou animais | Não exigível | 1 | Obs4 |
+| F | Local de Reunião de Público | F-10 | Edificação histórica com isenção de canalização **** |  |  |  |
+| F | Local de Reunião de Público | F-11 | Centro de exibição | 1 | 1 | Obs3 |
+| F | Local de Reunião de Público | F-11 | Edificação histórica com isenção de canalização **** |  |  |  |
+
+Fonte: NT 2-11, página 23, Tabela do Anexo D; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.: "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação histórica…" (fundo amarelo) não trazem valor em nenhuma faixa.
+<!-- /tabela-conferida: Tabela do Anexo D p23 -->
+
 ---
 
 ## Página 24
@@ -1166,8 +1596,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão |  | Composição da Brigada de Incêndio | Composição da Brigada de Incêndio |  |  |
@@ -1226,6 +1655,41 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  |  | isenção de canalização |  |  |  |  |
 |  |  |  | **** |  |  |  |  |
 
+<!-- tabela-conferida: Tabela do Anexo D p24 -->
+### Tabela do Anexo D — Dimensionamento para bombeiro civil (BC), página 24 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BC — 5.000 a 10.000 m² | BC — 10.000 a 30.000 m² | BC — acima de 30.000 m² |
+| --- | --- | --- | --- | --- | --- | --- |
+| G | Serviço automotivo e assemelhado | G-1 | Garagem sem acesso de público | Não exigível | 1 | Obs4 |
+| G | Serviço automotivo e assemelhado | G-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| G | Serviço automotivo e assemelhado | G-2 | Garagem com acesso de público | Não exigível | 1 | Obs4 |
+| G | Serviço automotivo e assemelhado | G-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| G | Serviço automotivo e assemelhado | G-3 | Galpão garagem | Não exigível | 1 | Obs3 |
+| G | Serviço automotivo e assemelhado | G-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| G | Serviço automotivo e assemelhado | G-4 | Postos de combustível | Não exigível | 1 | Obs4 |
+| G | Serviço automotivo e assemelhado | G-4 | Edificação histórica com isenção de canalização **** |  |  |  |
+| G | Serviço automotivo e assemelhado | G-5 | Serviço de conservação, manutenção e reparos | Não exigível | 1 | Obs4 |
+| G | Serviço automotivo e assemelhado | G-5 | Edificação histórica com isenção de canalização **** |  |  |  |
+| G | Serviço automotivo e assemelhado | G-6 | Hangares | Não exigível | 1 | Obs5 |
+| G | Serviço automotivo e assemelhado | G-6 | Edificação histórica com isenção de canalização **** |  |  |  |
+| H | Serviço de saúde | H-1 | Hospital e assemelhado | 1 | 1 | Obs3 |
+| H | Serviço de saúde | H-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| H | Serviço de saúde | H-2 | Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais | Não exigível | 1 | Obs3 |
+| H | Serviço de saúde | H-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| H | Serviço de saúde | H-3 | Hospital veterinário e assemelhados | Não exigível | 1 | Obs4 |
+| H | Serviço de saúde | H-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| I | Industrial | I-1 | Industrial 1 | Não exigível | Não exigível | Obs4 |
+| I | Industrial | I-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| I | Industrial | I-2 | Industrial 2 | Não exigível | 1 | Obs4 |
+| I | Industrial | I-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| I | Industrial | I-3 | Industrial 3 | 1 | 2 | Obs3 |
+| I | Industrial | I-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+
+Fonte: NT 2-11, página 24, Tabela do Anexo D; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.: "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação histórica…" (fundo amarelo) não trazem valor em nenhuma faixa.
+Contra a camada de texto: "****" e o cabeçalho quebram em linhas extras (divergência de forma). Aguarda o caminho geométrico.
+<!-- /tabela-conferida: Tabela do Anexo D p24 -->
+
 ---
 
 ## Página 25
@@ -1234,8 +1698,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Composição da Brigada de Incêndio |  |  |  |  |
@@ -1269,6 +1732,38 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  |  | M-4 | Loteamento e Pátios | Não exigível |  | Não exigível | Obs1 |  |
 |  |  |  | Edificação histórica com isenção de canalização **** |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela do Anexo D p25 -->
+### Tabela do Anexo D — Dimensionamento para bombeiro civil (BC), página 25 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BC — 5.000 a 10.000 m² | BC — 10.000 a 30.000 m² | BC — acima de 30.000 m² |
+| --- | --- | --- | --- | --- | --- | --- |
+| J | Depósito | J-1 | Depósitos de material incombustível | Não exigível | Não exigível | Obs8 |
+| J | Depósito | J-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| J | Depósito | J-2 | Todo tipo de Depósito | Não exigível | Não exigível | Obs8 |
+| J | Depósito | J-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| J | Depósito | J-3 | Todo tipo de Depósito | 1 | 1 | Obs4 |
+| J | Depósito | J-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| J | Depósito | J-4 | Todo tipo de Depósito | 1 | 2 | Obs4 |
+| J | Depósito | J-4 | Edificação histórica com isenção de canalização **** |  |  |  |
+| L | Explosivos ou munições | L-1 | Comércio | 1 | 2 | Obs3 |
+| L | Explosivos ou munições | L-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| L | Explosivos ou munições | L-2 | Indústria | 1 | 2 | Obs3 |
+| L | Explosivos ou munições | L-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+|  |  | L-3 | Depósito | 1 | 2 | Obs3 |
+|  |  | L-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| M | Especial | M-1 | Túnel | Não exigível | Não exigível | Não exigível |
+| M | Especial | M-1 | Edificação histórica com isenção de canalização **** |  |  |  |
+| M | Especial | M-2 | Líquidos ou gases inflamáveis ou combustíveis | Não exigível | 1 | Obs4 |
+| M | Especial | M-2 | Edificação histórica com isenção de canalização **** |  |  |  |
+| M | Especial | M-3 | Central de comunicação e energia | Não exigível | 1 | Obs5 |
+| M | Especial | M-3 | Edificação histórica com isenção de canalização **** |  |  |  |
+| M | Especial | M-4 | Loteamento e Pátios | Não exigível | Não exigível | Obs1 |
+| M | Especial | M-4 | Edificação histórica com isenção de canalização **** |  |  |  |
+
+Fonte: NT 2-11, página 25, Tabela do Anexo D; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.: "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação histórica…" (fundo amarelo) não trazem valor em nenhuma faixa.
+<!-- /tabela-conferida: Tabela do Anexo D p25 -->
+
 ---
 
 ## Página 26
@@ -1277,8 +1772,7 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo |  | Ocupação/Uso | Divisão | Descrição | Composição da Brigada de Incêndio |  |  |  |  |  |  |  |  |  |
@@ -1314,3 +1808,25 @@ Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 |  | - No eventual afastamento do funcionário que exerça a função de BC, os responsáveis pelos imóveis, estabelecimentos ou áreas de risco |  |  |  |  |  |  |  |  |  |  |  |  |  |
 |  | deverão designar substituto devidamente capacitado como BC. |  |  |  |  |  |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+<!-- tabela-conferida: Tabela do Anexo D p26 -->
+### Tabela do Anexo D — Dimensionamento para bombeiro civil (BC), página 26 (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | BC — 5.000 a 10.000 m² | BC — 10.000 a 30.000 m² | BC — acima de 30.000 m² |
+| --- | --- | --- | --- | --- | --- | --- |
+| M | Especial | M-5 | Silos | Não exigível | Não exigível | Obs7 |
+| M | Especial | M-5 | Edificação histórica com isenção de canalização **** |  |  |  |
+| M | Especial | M-6 | Estrutura temporária | Vide NT 5-04 | Vide NT 5-04 | Vide NT 5-04 |
+| M | Especial | M-6 | Edificação histórica com isenção de canalização **** |  |  |  |
+| M | Especial | M-7 | Edificação mista | Não exigível | Não exigível | Não exigível |
+| M | Especial | M-7 | Edificação histórica com isenção de canalização **** |  |  |  |
+| M | Especial | M-8 | Quiosque | Não exigível | Não exigível | Não exigível |
+| M | Especial | M-8 | Edificação histórica com isenção de canalização **** |  |  |  |
+| M | Especial | M-9 | Áreas e atividades de exploração de recursos naturais | Não exigível | Não exigível | Não exigível |
+| M | Especial | M-9 | Edificação histórica com isenção de canalização **** |  |  |  |
+
+Fonte: NT 2-11, página 26, Tabela do Anexo D; conferida em 2026-09-29 (visual + geometrica).
+Leitura visual em grade completa: "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (ex.: "Não exigível" que abrange mais de uma faixa de área); "" = célula em branco. As linhas "Edificação histórica…" (fundo amarelo) não trazem valor em nenhuma faixa.
+Quadro de observações abaixo da tabela (fora da comparação): Obs1 a Obs8 (acréscimo de 1 BC por faixa de área; D-5 com treinamento de brigada voluntária), máximo de 08 BC salvo decisão do plano de emergência, substituto no afastamento.
+Contra a camada de texto: "****" e o cabeçalho quebram em linhas extras (divergência de forma). Aguarda o caminho geométrico.
+<!-- /tabela-conferida: Tabela do Anexo D p26 -->
+

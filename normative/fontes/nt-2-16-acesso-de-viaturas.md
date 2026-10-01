@@ -36,8 +36,7 @@ ANEXOS A - Exemplos de retornos e portão de acesso B - Fire Lane e desnível da
 
 Aprovada pela Portaria CBMERJ nº 1125, de 21 de outubro de 2020 (DOERJ nº 196, de 22.10.2020).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |

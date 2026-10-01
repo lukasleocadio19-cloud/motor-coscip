@@ -1,0 +1,378 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-02
+arquivo: nt-3-02-gas-glp-gn-uso-em-edificacoes.md
+tabela: Tabela 4 do Anexo A
+titulo: Afastamentos mínimos de segurança para estocagem de hidrogênio
+pagina: 13
+fonte_pdf_sha256: 8a44a1be179fd3e5c38d06b32f637226230702d48b6c3f8c0f8ae37add147950
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-02/pagina-13.jpg
+    imagem_sha256: e8983c63b44cbf0ee20c30304b7b30c6774b127cabed18a78d9e23658bc22659
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Capacidade total da central de GLP (m³)
+    - 'Hidrogênio: Até 11 Nm³'
+    - 'Hidrogênio: 11 a 85 Nm³'
+    - 'Hidrogênio: Acima de 85 Nm³'
+    linhas:
+    - - Capacidade total da central de GLP (m³)
+      - Capacidade máxima de hidrogênio possível de ser contida nos recipientes, em fase líquida e gasosa,
+        incluindo reservas de hidrogênio na fase gasosa (Nm³)
+      - <
+      - <
+    - - ^
+      - Até 11
+      - 11 a 85
+      - Acima de 85
+    - - Até 2
+      - '0'
+      - 3,0 m
+      - 7,5 m
+    - - Acima de 2
+      - '0'
+      - 7,5 m
+      - 15,0 m
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 13
+      tabela_na_pagina: 3
+    linhas:
+    - - Capacidade total da central de GLP (m³)
+      - Capacidade máxima de hidrogênio possível de ser contida nos recipientes, em fase líquida e gasosa,
+        incluindo reservas de hidrogênio na fase gasosa (Nm³)
+    - - Até 11
+      - 11 a 85
+      - Acima de 85
+    - - Até 2
+      - '0'
+      - 3,0 m
+      - 7,5 m
+    - - Acima de 2
+      - '0'
+      - 7,5 m
+      - 15,0 m
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 47.53
+      - 72.14
+      - 498.07
+      - 371.69
+      linhas:
+      - - ''
+        - Central de
+        - ''
+        - ''
+        - Divisa de
+        - ''
+        - 'Passeio público (obs.: b, d)'
+        - ''
+        - Quantidade total de recipientes transportáveis
+        - null
+        - null
+        - null
+        - ''
+      - - null
+        - capacidade
+        - null
+        - null
+        - propriedades
+        - null
+        - null
+        - P-45 (0,108 m³)
+        - null
+        - P-90 (0,216 m³)
+        - P-125 (0,300 m³)
+        - P-190 (0,450 m³)
+        - null
+      - - null
+        - volumétrica
+        - null
+        - null
+        - edificáveis /
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - total
+        - null
+        - null
+        - edificações
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - '(obs.: a)'
+        - null
+        - null
+        - '(obs.: c, d)'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Até 2,0 m³
+        - null
+        - null
+        - 0 m
+        - null
+        - null
+        - 3 m
+        - '18'
+        - null
+        - '9'
+        - '6'
+        - '4'
+        - null
+      - - 2,1 a 3,5 m³
+        - null
+        - null
+        - 1,5 m
+        - null
+        - null
+        - 3 m
+        - 19 a 32
+        - null
+        - 10 a 16
+        - 7 a 11
+        - 5 a 7
+        - null
+      - - 3,51 a 5,5 m³
+        - null
+        - null
+        - 3 m
+        - null
+        - null
+        - 3 m
+        - 33 a 50
+        - null
+        - 17 a 25
+        - 12 a 18
+        - 8 a 11
+        - null
+      - - 5,51 a 8,0 m³
+        - null
+        - null
+        - 7,5 m
+        - null
+        - null
+        - 3 m
+        - 51 a 74
+        - null
+        - 26 a 37
+        - 19 a 26
+        - 12 a 16
+        - null
+      - - Acima de 8 até 10 m³
+        - null
+        - null
+        - 15 m
+        - null
+        - null
+        - 15 m
+        - 75 a 92 máximo
+        - null
+        - 38 a 46 máximo
+        - 27 a 33 máximo
+        - 17 a 22 máximo
+        - null
+      - - a Centrais com capacidade acima do limite estabelecido na Tabela 2 devem ser analisadas por
+          órgãos competentes considerando situações temporárias e se em caso definitivas com as devidas
+          medidas mitigadoras compensatórias definidas b Afastamento não aplicável para centrais GLP instaladas
+          em nicho conforme item 5.7.2 desta NT. c Caso o local destinado à instalação da central que
+          utilize recipientes transportáveis não permita os afastamentos acima, a central pode ser subdividida
+          com a utilização de paredes divisórias resistentes ao fogo com TRRF mínimo de 120 min, material
+          aprovado conforme ABNT NBR 10636, com comprimento e altura de dimensões superiores ao recipiente.
+          Neste caso, deve se adotar o afastamento mínimo referente à capacidade total de cada subdivisão
+          da central de GLP. d Para recipientes contidos em abrigos, com paredes laterais e cobertura
+          resistente ao fogo com TRRF = 2 h, interpondo-se entre os recipientes e o ponto considerado,
+          a distância pode ser reduzida à metade.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    - bbox:
+      - 198.77
+      - 87.59
+      - 258.89
+      - 124.46
+      linhas:
+      - - Passeio
+      - - público
+      - - '(obs.: b, d)'
+    - bbox:
+      - 270.55
+      - 99.43
+      - 322.61
+      - 124.46
+      linhas:
+      - - P-45
+      - - (0,108 m³)
+    - bbox:
+      - 333.43
+      - 99.43
+      - 379.27
+      - 124.46
+      linhas:
+      - - P-90
+      - - (0,216 m³)
+    - bbox:
+      - 390.07
+      - 99.43
+      - 436.03
+      - 124.46
+      linhas:
+      - - P-125
+      - - (0,300 m³)
+    - bbox:
+      - 446.83
+      - 99.43
+      - 492.7
+      - 124.46
+      linhas:
+      - - P-190
+      - - (0,450 m³)
+    - bbox:
+      - 75.29
+      - 417.27
+      - 470.47
+      - 500.71
+      linhas:
+      - - Capacidade total da Central de GLP (m³)
+        - ''
+        - Capacidade máxima de oxigênio possível de ser contida nos recipientes,
+        - null
+        - null
+        - ''
+      - - null
+        - null
+        - em fase líquida e gasosa, incluindo reservas de oxigênio na fase gasosa
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - (Nm³)
+        - null
+        - null
+        - null
+      - - null
+        - Até 11
+        - null
+        - 11,1 a 566
+        - Acima de 566
+        - null
+      - - Até 5,5
+        - '0'
+        - null
+        - 6,0 m
+        - 7,5 m
+        - null
+      - - Acima de 5,5
+        - '0'
+        - null
+        - 6,0 m
+        - 15,0 m
+        - null
+    - bbox:
+      - 80.66
+      - 435.77
+      - 167.66
+      - 451.54
+      linhas:
+      - - Capacidade total da
+      - - Central de GLP (m³)
+    - bbox: &id001
+      - 75.29
+      - 546.29
+      - 470.47
+      - 632.38
+      linhas:
+      - - Capacidade total da central de GLP (m³)
+        - ''
+        - Capacidade máxima de hidrogênio possível de ser contida nos recipientes,
+        - null
+        - null
+        - ''
+      - - null
+        - null
+        - em fase líquida e gasosa, incluindo reservas de hidrogênio na fase gasosa
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - (Nm³)
+        - null
+        - null
+        - null
+      - - null
+        - Até 11
+        - null
+        - 11 a 85
+        - Acima de 85
+        - null
+      - - Até 2
+        - '0'
+        - null
+        - 3,0 m
+        - 7,5 m
+        - null
+      - - Acima de 2
+        - '0'
+        - null
+        - 7,5 m
+        - 15,0 m
+        - null
+    - bbox:
+      - 80.66
+      - 566.79
+      - 167.66
+      - 580.54
+      linhas:
+      - - Capacidade total da
+      - - central de GLP (m³)
+notas:
+- 'Fonte indicada na página: ABNT NBR 13523:2019, adaptado por CBMERJ.'
+inconsistencias_da_fonte:
+- 'As faixas de hidrogênio se sobrepõem em 11 Nm³: "Até 11" e "11 a 85" incluem 11. Na Tabela 3 (oxigênio)
+  a faixa seguinte começa em 11,1.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 8
+  candidatos_na_pagina: 10
+  bbox: *id001
+  texto: verificada

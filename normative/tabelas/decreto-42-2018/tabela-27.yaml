@@ -1,0 +1,648 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 27
+titulo: Exigências para edificações do grupo M (divisão M-3) com área superior a 900m² ou superior a 02
+  pavimentos
+pagina: 51
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 8
+  - 22
+  rotulos_quebrados: true
+  linhas_cabecalho: 0
+forma_geometrica:
+  faixa:
+  - 8
+  - 37
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-51.jpg
+    imagem_sha256: 4a725edf1a74f1b5f208535b838b4cb2b85d57d4696e5cb55fe665e603946834
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Medidas de Segurança contra Incêndio e Pânico
+    - 'M-3 (Central de comunicação): Térrea'
+    - 'M-3 (Central de comunicação): 2pav'
+    - 'M-3 (Central de comunicação): 3pav'
+    - 'M-3 (Central de comunicação): 4, 5 e 6pav'
+    - 'M-3 (Central de comunicação): Acima de 6pav com H ≤ 30m'
+    - 'M-3 (Central de comunicação): H > 30m'
+    linhas:
+    - - Extintores
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Hidrantes e mangotinhos
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Chuveiros automáticos
+      - '-'
+      - '-'
+      - '-'
+      - X1
+      - X1
+      - X
+    - - Sinalização de segurança
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Iluminação de Emergência
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Alarme de Incêndio
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Detecção de Incêndio
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+      - X
+    - - Saídas de Emergência
+      - X
+      - X2
+      - X2
+      - X3
+      - X3, 4
+      - X3, 4
+    - - Plano de emergência
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+    - - Hidrante urbano
+      - X5
+      - X5
+      - X5
+      - X5
+      - X5
+      - X5
+    - - Acesso de viatura em edificações
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Compartimentação Vertical
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+    - - Segurança Estrutural contra Incêndio
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Controle de Materiais de Acabamento
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 51
+      tabela_na_pagina: 1
+    linhas:
+    - - Extintores
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Hidrantes e mangotinhos
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Chuveiros automáticos
+      - '-'
+      - '-'
+      - '-'
+      - X1
+      - X1
+      - X
+    - - Sinalização de segurança
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Iluminação de Emergência
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Alarme de Incêndio
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Detecção de Incêndio
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+      - X
+    - - Saídas de Emergência
+      - X
+      - X2
+      - X2
+      - X3
+      - X3, 4
+      - X3, 4
+    - - Plano de emergência
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+    - - Hidrante urbano
+      - X5
+      - X5
+      - X5
+      - X5
+      - X5
+      - X5
+    - - Acesso de viatura em edificações
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Compartimentação Vertical
+      - '-'
+      - '-'
+      - '-'
+      - X
+      - X
+      - X
+    - - Segurança Estrutural contra Incêndio
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    - - Controle de Materiais de Acabamento
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.88
+      - 53.48
+      - 552.55
+      - 564.22
+      linhas:
+      - - Tabela 27 – Exigências para edificações do grupo M (divisão M-3) com área superior a 900m2
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ou superior a 02 pavimentos
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Grupo de ocupação e uso
+        - GRUPO M – ESPECIAIS
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Divisão
+        - M-3 (Central de comunicação)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - Classificação quanto ao nº de pavimentos e à altura (em metros)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Medidas de Segurança contra Incêndio e
+        - ''
+        - ''
+        - ''
+        - ''
+        - Acima de
+        - ''
+      - - Pânico
+        - Térrea
+        - 2pav
+        - 3pav
+        - 4, 5 e 6pav
+        - 6pav com
+        - H > 30m
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - H ≤ 30m
+        - ''
+      - - Extintores
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrantes e mangotinhos
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Chuveiros automáticos
+        - '-'
+        - '-'
+        - '-'
+        - X1
+        - X1
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Sinalização de segurança
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Iluminação de Emergência
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Alarme de Incêndio
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Detecção de Incêndio
+        - '-'
+        - '-'
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Saídas de Emergência
+        - X
+        - X2
+        - X2
+        - X3
+        - X3, 4
+        - X3, 4
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Plano de emergência
+        - '-'
+        - '-'
+        - '-'
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrante urbano
+        - X5
+        - X5
+        - X5
+        - X5
+        - X5
+        - X5
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Acesso de viatura em edificações
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Compartimentação Vertical
+        - '-'
+        - '-'
+        - '-'
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Segurança Estrutural contra Incêndio
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Controle de Materiais de Acabamento
+        - X
+        - X
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 'OBSERVAÇÕES ESPECÍFICAS:'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 1- O sistema de chuveiros automáticos para a divisão M-3 pode ser substituído por sistema fixo
+          de gases para combate a
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - incêndio, através de supressão total do ambiente, dimensionado conforme requisitos estabelecidos
+          em NT do CBMERJ.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 2- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 3- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 4- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir
+          no mínimo duas
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - escadas de emergência.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 5- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 'OBSERVAÇÕES GERAIS:'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar
+          as prescrições da Seção II
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - do Capítulo IV deste Código;
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+notas:
+- 'Divisões e colunas: M-3 (Central de comunicação) — Térrea, 2pav, 3pav, 4, 5 e 6pav, Acima de 6pav com
+  H ≤ 30m, H > 30m.'
+- Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+- Redação dada pelo Decreto nº 46.925, de 05.2.2020 (indicação na página).
+- 'Observações específicas da tabela:'
+- 1- O sistema de chuveiros automáticos para a divisão M-3 pode ser substituído por sistema fixo de gases
+  para combate a incêndio, através de supressão total do ambiente, dimensionado conforme requisitos estabelecidos
+  em NT do CBMERJ.
+- 2- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica.
+- 3- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.
+- 4- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo
+  duas escadas de emergência.
+- 5- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+- 'Observações gerais da tabela:'
+- a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições
+  da Seção II do Capítulo IV deste Código;
+- b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+- c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+anexo3:
+  tabela: 27
+  blocos:
+  - divisoes:
+    - M-3
+    colunas:
+    - Térrea
+    - 2pav
+    - 3pav
+    - 4, 5 e 6pav
+    - Acima de 6pav com H ≤ 30m
+    - H > 30m

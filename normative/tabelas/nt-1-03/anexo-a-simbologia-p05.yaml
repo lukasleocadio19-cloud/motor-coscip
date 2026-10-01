@@ -1,0 +1,211 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-03
+arquivo: nt-1-03-simbolos-graficos.md
+tabela: Anexo A
+titulo: Simbologia para projeto de segurança contra incêndio e pânico (p. 5)
+pagina: 5
+fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-03/pagina-05.png
+    imagem_sha256: f2288ff03a61207101d9d741e84dd0580bded0f492e7dbff9224e59a5f921ff6
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Grupo
+    - Subgrupo
+    - Nome do símbolo
+    - 'Símbolo gráfico (desenho: ver a imagem da página)'
+    linhas:
+    - - SISTEMA FIXO DE EXTINÇÃO
+      - SISTEMA DE HIDRANTES
+      - HIDRANTE DUPLO
+      - ''
+    - - ^
+      - ^
+      - HIDRANTE SIMPLES
+      - ''
+    - - ^
+      - ^
+      - HIDRANTE URBANO
+      - ''
+    - - ^
+      - ^
+      - HIDRANTE URBANO SUBTERRÂNEO
+      - ''
+    - - ^
+      - ^
+      - BOMBA DE INCÊNDIO
+      - ''
+    - - ^
+      - ^
+      - RESERVA TÉCNICA DE INCÊNDIO
+      - ''
+    - - ^
+      - ^
+      - REGISTRO DE RECALQUE
+      - ''
+    - - ^
+      - ^
+      - REGISTRO DE RECALQUE COM VÁLVULA DE RETENÇÃO
+      - ''
+    - - ^
+      - ^
+      - ACIONADOR BOMBA INCÊNDIO
+      - ''
+    - - ^
+      - SPRINKLERS
+      - BICO DE SPRINKLER PARA CIMA
+      - ''
+    - - ^
+      - ^
+      - BICO DE SPRINKLER PENDENTE
+      - ''
+    - - ^
+      - ^
+      - BICO DE SPRINKLER LATERAL
+      - ''
+    - - ^
+      - ^
+      - REGISTRO DE RECALQUE PARA SISTEMA DE SPRINKLERS
+      - ''
+    - - ^
+      - ^
+      - BOMBA PARA SISTEMA DE SPRINKLERS
+      - ''
+    - - ^
+      - ^
+      - RESERVA TÉCNICA PARA SISTEMA DE SPRINKLERS
+      - ''
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 5
+      tabela_na_pagina: 1
+    linhas:
+    - - SISTEMA FIXO DE EXTINÇÃO
+      - SISTEMA DE HIDRANTES
+      - HIDRANTE DUPLO
+    - - HIDRANTE SIMPLES
+    - - HIDRANTE URBANO
+    - - HIDRANTE URBANO SUBTERRÂNEO
+    - - BOMBA DE INCÊNDIO
+    - - RESERVA TÉCNICA DE INCÊNDIO
+    - - REGISTRO DE RECALQUE
+    - - REGISTRO DE RECALQUE COM VÁLVULA DE RETENÇÃO
+    - - ACIONADOR BOMBA INCÊNDIO
+    - - SPRINKLERS
+      - BICO DE SPRINKLER PARA CIMA
+    - - BICO DE SPRINKLER PENDENTE
+    - - BICO DE SPRINKLER LATERAL
+    - - REGISTRO DE RECALQUE PARA SISTEMA DE SPRINKLERS
+    - - BOMBA PARA SISTEMA DE SPRINKLERS
+    - - RESERVA TÉCNICA PARA SISTEMA DE SPRINKLERS
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 70.94
+      - 56.88
+      - 502.42
+      - 789.0
+      linhas:
+      - - O Ã Ç N I T X E E D O X I F A M E T S I S
+        - S E T N A R D I H E D A M E T S I S
+        - HIDRANTE DUPLO
+        - ''
+      - - null
+        - null
+        - HIDRANTE SIMPLES
+        - ''
+      - - null
+        - null
+        - HIDRANTE URBANO
+        - ''
+      - - null
+        - null
+        - HIDRANTE URBANO SUBTERRÂNEO
+        - ''
+      - - null
+        - null
+        - BOMBA DE INCÊNDIO
+        - ''
+      - - null
+        - null
+        - RESERVA TÉCNICA DE INCÊNDIO
+        - ''
+      - - null
+        - null
+        - REGISTRO DE RECALQUE
+        - ''
+      - - null
+        - null
+        - REGISTRO DE RECALQUE COM VÁLVULA DE RETENÇÃO
+        - ''
+      - - null
+        - null
+        - ACIONADOR BOMBA INCÊNDIO
+        - ''
+      - - null
+        - S R E L K N I R P S
+        - BICO DE SPRINKLER PARA CIMA
+        - ''
+      - - null
+        - null
+        - BICO DE SPRINKLER PENDENTE
+        - ''
+      - - null
+        - null
+        - BICO DE SPRINKLER LATERAL
+        - ''
+      - - null
+        - null
+        - REGISTRO DE RECALQUE PARA SISTEMA DE SPRINKLERS
+        - ''
+      - - null
+        - null
+        - BOMBA PARA SISTEMA DE SPRINKLERS
+        - ''
+      - - null
+        - null
+        - RESERVA TÉCNICA PARA SISTEMA DE SPRINKLERS
+        - ''
+notas:
+- A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
+  da página).
+- A tabela continua na página 6.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 0
+    coluna: 0
+    a: SISTEMA FIXO DE EXTINÇÃO
+    b: SISTEMAFIXODEEXTINÇÃO
+    estado: verificada
+    score: 93.3
+  - linha: 0
+    coluna: 1
+    a: SISTEMA DE HIDRANTES
+    b: SISTEMADEHIDRANTES
+    estado: verificada
+    score: 94.7
+forma_geometrica:
+  celulas_verticais:
+  - - 0
+    - 0
+  - - 0
+    - 1
+  - - 9
+    - 1

@@ -1,0 +1,128 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-05
+arquivo: nt-4-05-gas-manipulacao-armazenamento-e-comercializacao.md
+tabela: Tabela 5
+titulo: Empilhamento de recipientes transportáveis de GLP
+pagina: 8
+fonte_pdf_sha256: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 4
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-05/pagina-08.jpg
+    imagem_sha256: 9c803f8f8e8d71e0d0b52639a83725975d242fb3d4209c1b81b15eb72886184c
+    linhas_cabecalho: 1
+    linhas:
+    - - Massa líquida dos recipientes
+      - Recipientes Cheios
+      - Recipientes Vazios ou parcialmente utilizados
+    - - Inferior a 5 kg
+      - Altura máxima da pilha = 1,50 m
+      - Altura máxima da pilha =1,50 m
+    - - Igual ou superior a 5kg até inferior a 13kg
+      - Até 5 recipientes
+      - Até 5 recipientes
+    - - Igual a 13 kg
+      - Até 4 recipientes
+      - Até 5 recipientes
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 8
+      tabela_na_pagina: 1
+    linhas:
+    - - Massa líquida dos recipientes
+      - Recipientes Cheios
+      - Recipientes Vazios ou parcialmente utilizados
+    - - Inferior a 5 kg
+      - Altura máxima da pilha = 1,50 m
+      - Altura máxima da pilha =1,50 m
+    - - Igual ou superior a 5kg até inferior a 13kg
+      - Até 5 recipientes
+      - Até 5 recipientes
+    - - Igual a 13 kg
+      - Até 4 recipientes
+      - Até 5 recipientes
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.65
+      - 351.09
+      - 277.66
+      - 525.53
+      linhas:
+      - - Massa líquida dos recipientes
+        - Recipientes Cheios
+        - ''
+        - Recipientes
+        - ''
+      - - null
+        - null
+        - null
+        - Vazios ou
+        - null
+      - - null
+        - null
+        - null
+        - parcialmente
+        - null
+      - - null
+        - null
+        - null
+        - utilizados
+        - null
+      - - Inferior a 5 kg
+        - Altura máxima da pilha = 1,50 m
+        - Altura máxima da pilha =1,50 m
+        - null
+        - null
+      - - Igual ou superior a 5kg até inferior a 13kg
+        - Até 5 recipientes
+        - Até 5 recipientes
+        - null
+        - null
+      - - Igual a 13 kg
+        - Até 4 recipientes
+        - Até 5 recipientes
+        - null
+        - null
+    - bbox:
+      - 48.02
+      - 363.28
+      - 115.22
+      - 387.28
+      linhas:
+      - - Massa líquida
+      - - dos recipientes
+    - bbox:
+      - 126.05
+      - 363.28
+      - 195.45
+      - 387.28
+      linhas:
+      - - Recipientes
+      - - Cheios
+    - bbox:
+      - 126.05
+      - 408.9
+      - 195.45
+      - 432.9
+      linhas:
+      - - Altura máxima da
+      - - pilha = 1,50 m
+notas:
+- 'Fonte indicada na página: ABNT NBR 15514.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 4
+  bbox: *id001
+  texto: verificada

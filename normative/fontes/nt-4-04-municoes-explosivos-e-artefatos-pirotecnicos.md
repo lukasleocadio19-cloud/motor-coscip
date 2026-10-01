@@ -63,8 +63,7 @@ A - Tabelas de distanciamentos de segurança
 
 B - Tabela de nomenclaturas de fogos de artifício
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  | NOTA TÉCNICA |  | CBMERJ |  |
@@ -157,8 +156,7 @@ Para efeito desta Nota Técnica, além das definições constantes da NT 1-02 - 
 
 4.5 Barricada: um anteparo natural ou artificial tecnicamente adequado em tipo, dimensões e construção para limitar, de maneira objetiva, os efeitos de uma explosão eventual sobre as construções, rodovias, ferrovias, a ela adjacentes.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | m aceiro é uma abertura na vegetação |
@@ -400,8 +398,7 @@ produtos químicos utilizados na fabricação de explosivos
 
 Tabela 2 - Distanciamentos de segurança para iniciadores
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Peso Líquido |  |  | Distâncias Mínimas (m) |  |  |  |  |
@@ -436,6 +433,51 @@ Tabela 2 - Distanciamentos de segurança para iniciadores
 | 4.501 |  | 6.800 |  | 500 | 300 | 150 | 90 |  |
 | 6.801 |  | 9.000 |  | 530 | 320 | 160 | 90 |  |
 
+<!-- tabela-conferida: Tabela 1 do Anexo A p8 -->
+### Tabela 1 do Anexo A — Distanciamentos de segurança para pólvora química e para produtos químicos utilizados na fabricação de explosivos (conferida)
+
+| Peso líquido de (kg) | Peso líquido até (kg) | Edif. Habitados (m) | Ferrovias (m) | Rodovias (m) | Entre Depósitos (m) |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 450 | 25 | 25 | 25 | 15 |
+| 451 | 2.250 | 35 | 35 | 35 | 25 |
+| 2.251 | 4.500 | 45 | 45 | 45 | 30 |
+| 4.501 | 9.000 | 60 | 60 | 60 | 40 |
+| 9.001 | 18.100 | 70 | 70 | 70 | 50 |
+| 18.001 | 31.750 | 80 | 80 | 80 | 55 |
+| 31.751 | 45.350 | 90 | 90 | 90 | 60 |
+| 45.351 | 90.700 | 115 | 115 | 115 | 75 |
+| 90.701 | 136.000 | 110 | 110 | 110 | 75 |
+| 136.001 | 181.400 | 150 | 150 | 150 | 100 |
+| 181.401 | 226.800 | 180 | 180 | 180 | 120 |
+
+Fonte: NT 4-04, página 8, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: R 105 – Exército Brasileiro.
+Observações da tabela:
+1) a quantidade de 226.800 kg é a máxima permitida em um mesmo local;
+2) a quantidade máxima permitida, em um mesmo local, de nitrato de amônio, grau agrícola, destinado à fabricação de fertilizantes, e as condições de armazenamento serão estabelecidas em legislação complementar.
+<!-- /tabela-conferida: Tabela 1 do Anexo A p8 -->
+
+<!-- tabela-conferida: Tabela 2 do Anexo A p8 -->
+### Tabela 2 do Anexo A — Distanciamentos de segurança para iniciadores (conferida)
+
+| Peso líquido de (kg) | Peso líquido até (kg) | Edif. Habitados (m) | Ferrovias (m) | Rodovias (m) | Entre Depósitos (m) |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 20 | 75 | 45 | 22 | 20 |
+| 21 | 100 | 140 | 90 | 43 | 30 |
+| 101 | 200 | 220 | 135 | 70 | 45 |
+| 201 | 500 | 260 | 160 | 80 | 65 |
+| 501 | 900 | 300 | 180 | 95 | 90 |
+| 901 | 2.200 | 370 | 220 | 110 | 90 |
+| 2.201 | 4.500 | 460 | 280 | 140 | 90 |
+| 4.501 | 6.800 | 500 | 300 | 150 | 90 |
+| 6.801 | 9.000 | 530 | 320 | 160 | 90 |
+
+Fonte: NT 4-04, página 8, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: R 105 – Exército Brasileiro.
+Observações da tabela:
+1) a quantidade de 9.000 kg é a máxima permitida em um mesmo local;
+<!-- /tabela-conferida: Tabela 2 do Anexo A p8 -->
+
 ---
 
 ## Página 9
@@ -444,8 +486,7 @@ Tabela 2 - Distanciamentos de segurança para iniciadores
 
 Tabela 3 - Distanciamentos de segurança para explosivos
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Peso Líquido |  |  |  | Distâncias Mínimas (m) |  |  |  |  |
@@ -498,6 +539,64 @@ Tabela 3 - Distanciamentos de segurança para explosivos
 | 90.801 |  | 102.150 |  | 640 |  | 380 | 760 | 380 |  |
 | 102.151 |  | 113.500 |  | 660 |  | 390 | 780 | 410 |  |
 
+<!-- tabela-conferida: Tabela 3 do Anexo A p9 -->
+### Tabela 3 do Anexo A — Distanciamentos de segurança para explosivos (conferida)
+
+| Peso líquido de (kg) | Peso líquido até (kg) | Edif. Habitados (m) | Ferrovias (m) | Rodovias (m) | Entre Depósitos (m) |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 20 | 90 | 15 | 30 | 20 |
+| 21 | 50 | 120 | 25 | 45 | 30 |
+| 51 | 90 | 145 | 35 | 70 | 30 |
+| 91 | 140 | 170 | 50 | 100 | 30 |
+| 141 | 170 | 180 | 60 | 115 | 40 |
+| 171 | 230 | 200 | 70 | 135 | 40 |
+| 231 | 270 | 210 | 75 | 145 | 40 |
+| 271 | 320 | 220 | 80 | 160 | 40 |
+| 321 | 360 | 230 | 85 | 165 | 40 |
+| 361 | 410 | 240 | 90 | 180 | 44 |
+| 411 | 460 | 250 | 95 | 185 | 50 |
+| 461 | 680 | 285 | 100 | 195 | 60 |
+| 681 | 910 | 310 | 110 | 220 | 60 |
+| 911 | 1.350 | 355 | 120 | 235 | 70 |
+| 1.351 | 1.720 | 385 | 130 | 255 | 70 |
+| 1.721 | 2.270 | 420 | 135 | 270 | 80 |
+| 2.271 | 2.720 | 445 | 145 | 285 | 80 |
+| 2.721 | 3.180 | 470 | 150 | 295 | 90 |
+| 3.181 | 3.630 | 490 | 150 | 300 | 90 |
+| 3.631 | 4.090 | 510 | 155 | 310 | 100 |
+| 4.091 | 4.540 | 530 | 160 | 315 | 100 |
+| 4.541 | 6.810 | 545 | 160 | 325 | 110 |
+| 6.811 | 9.080 | 595 | 175 | 355 | 120 |
+| 9.081 | 11.350 | 610 | 190 | 385 | 130 |
+| 11.351 | 13.620 | 610 | 205 | 410 | 140 |
+| 13.621 | 15.890 | 610 | 220 | 435 | 150 |
+| 15.891 | 18.160 | 610 | 230 | 460 | 160 |
+| 18.161 | 20.430 | 610 | 240 | 485 | 160 |
+| 20.431 | 22.700 | 610 | 255 | 505 | 170 |
+| 22.701 | 24.900 | 610 | 265 | 525 | 180 |
+| 24.971 | 27.240 | 610 | 275 | 550 | 180 |
+| 27.241 | 29.510 | 610 | 285 | 565 | 190 |
+| 29.511 | 31.780 | 610 | 295 | 585 | 190 |
+| 31.781 | 34.050 | 610 | 300 | 600 | 200 |
+| 34.051 | 36.320 | 610 | 310 | 615 | 210 |
+| 36.321 | 38.590 | 610 | 315 | 625 | 210 |
+| 38.591 | 40.860 | 610 | 320 | 640 | 220 |
+| 40.861 | 43.130 | 610 | 325 | 645 | 220 |
+| 43.131 | 45.400 | 610 | 330 | 655 | 230 |
+| 45.401 | 56.750 | 610 | 330 | 660 | 260 |
+| 56.751 | 68.100 | 610 | 345 | 685 | 290 |
+| 68.101 | 79.450 | 610 | 355 | 710 | 320 |
+| 79.451 | 90.800 | 620 | 370 | 735 | 350 |
+| 90.801 | 102.150 | 640 | 380 | 760 | 380 |
+| 102.151 | 113.500 | 660 | 390 | 780 | 410 |
+
+Fonte: NT 4-04, página 9, Tabela 3 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: R 105 – Exército Brasileiro.
+Observações da tabela:
+1) a quantidade de 113.500 kg é a máxima permitida em um mesmo local;
+Conferência: nenhuma distância diminui com o aumento do peso.
+<!-- /tabela-conferida: Tabela 3 do Anexo A p9 -->
+
 ---
 
 ## Página 10
@@ -510,8 +609,7 @@ Tabela 4 - Distanciamentos de segurança para artefatos pirotécnicos -
 
 perigo de fogo e pequeno risco de explosão
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Peso Líquido |  |  |  | Distâncias Mínimas (m) |  |  |  |  |
@@ -541,6 +639,40 @@ perigo de fogo e pequeno risco de explosão
 | 68021 |  | 90.700 |  | 999 |  | 500 | 250 | 167 |  |
 | 90701 |  | 113.370 |  | 1.076 |  | 538 | 269 | 179 |  |
 
+<!-- tabela-conferida: Tabela 4 do Anexo A p10 -->
+### Tabela 4 do Anexo A — Distanciamentos de segurança para artefatos pirotécnicos – perigo de fogo e pequeno risco de explosão (conferida)
+
+| Peso líquido de (kg) | Peso líquido até (kg) | Edif. Habitados (m) | Ferrovias (m) | Rodovias (m) | Entre Depósitos (m) |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 180 | 61 | 61 | 31 | 21 |
+| 181 | 270 | 64 | 61 | 31 | 21 |
+| 271 | 370 | 77 | 61 | 31 | 21 |
+| 371 | 450 | 89 | 61 | 31 | 21 |
+| 451 | 900 | 140 | 71 | 36 | 24 |
+| 901 | 1.360 | 181 | 91 | 46 | 30 |
+| 1361 | 1.810 | 215 | 108 | 54 | 36 |
+| 1811 | 2.260 | 244 | 122 | 61 | 41 |
+| 2261 | 2.720 | 269 | 135 | 66 | 45 |
+| 2721 | 3.720 | 311 | 156 | 78 | 82 |
+| 3721 | 4.530 | 345 | 173 | 87 | 58 |
+| 4531 | 6.800 | 407 | 204 | 102 | 68 |
+| 6801 | 9.070 | 455 | 228 | 114 | 76 |
+| 9071 | 13.600 | 526 | 264 | 132 | 88 |
+| 13601 | 18.140 | 581 | 291 | 146 | 97 |
+| 18141 | 22.670 | 628 | 314 | 157 | 105 |
+| 22671 | 27.210 | 668 | 334 | 167 | 111 |
+| 27211 | 36.280 | 735 | 368 | 184 | 123 |
+| 36281 | 45.350 | 793 | 397 | 198 | 132 |
+| 45351 | 68.020 | 907 | 454 | 227 | 151 |
+| 68021 | 90.700 | 999 | 500 | 250 | 167 |
+| 90701 | 113.370 | 1.076 | 538 | 269 | 179 |
+
+Fonte: NT 4-04, página 10, Tabela 4 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: R 105 – Exército Brasileiro.
+Observações da tabela:
+1) a quantidade de 113.370 kg é a máxima permitida em um mesmo local;
+<!-- /tabela-conferida: Tabela 4 do Anexo A p10 -->
+
 ---
 
 ## Página 11
@@ -553,8 +685,7 @@ Fonte: REGT/02 - Exército Brasileiro. Observações: (a) Nome genérico, usual 
 
 50 mm.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Nome | Descrição | Efeito principal | Exemplos |
@@ -576,3 +707,33 @@ Fonte: REGT/02 - Exército Brasileiro. Observações: (a) Nome genérico, usual 
 | Rojão | Dispositivo autopropulsado, com meio de estabilização em voo | Ascensão, seguida de efeitos diversos | Rocket, cometa, cometinha cometa de apito, rojão com vara, rojão tipo míssil, foguete |
 | Bolas crepitantes | Pequeno dispositivo de papel contendo composição pirotécnica e iniciador | Emissão de centelhas e pequenos estampidos | Dragon eggs, crackling ball, croque |
 | Bateria | Conjunto de bombas de solo | Estampidos | Bateria de tiros |
+<!-- tabela-conferida: Tabela do Anexo B p11 -->
+### Tabela do Anexo B — Tabela de nomenclatura de fogos de artifício (conferida)
+
+| Nome | Descrição | Efeito principal | Exemplos |
+| --- | --- | --- | --- |
+| Bomba aérea | Artefato lançado por meio de tubos de lançamento e contendo carga de projeção, retardo, carga de abertura, baladas e/ou tiros | Ascensão seguida de efeitos diversos | Bomba de polegadas, shell, shell-in-mortar, minas |
+| Bomba de solo | Tubo, de papel ou de plástico, contendo composição pirotécnica e iniciador | Estampido | Traque, estalo de riscar bomba numerada, banger, firecracker |
+| Centelhador de tubo | Tubo contendo composição pirotécnica | Emissão de centelhas | Vela, velinha, chuva, bengala, cascata, estrela lume |
+| Centelhador de vara | Arame ou palito parcialmente coberto de composição pirotécnica | Emissão de centelhas | Chuva, chuvinha, estrela, estrelinha, sparkle |
+| Conjunto de múltiplos tubos | Montagem que inclui dois ou mais tipos de fogos de artifício, com um ou mais pontos de iniciação e queima em sequência, para apresentação em show | Efeitos diversos | Tortas, girândolas, cakes, letreiros, set pieces, kits, base de míssil |
+| Estalo de salão | Dispositivo contendo composição pirotécnica sensível a choque mecânico | Estampido | Traque de massa, estalinho, throwdown |
+| Estopim | Fio ou cordão, encapado ou desencapado, impregnado de composição pirotécnica | Transmissão de chama com ou sem retardo | Retardo, rastilho, safety fuse, quickmatch |
+| Foguete (a) | Tubo com carga de projeção, contendo baladas e/ou bombas aéreas | Lançamento de baladas e/ou bombas aéreas de efeito sonoro e/ou visual | 3 tiros, rabo de pavão, bouquet de lágrimas, crakling, crepitante, bomba 12 x 1 |
+| Tubo de lançamento-Morteiro (b) | Tubo com carga de projeção contendo bomba aérea singela | Lançamento de bombas aéreas | Nº 2, nº 3, nº 4, nº 5, nº 6, nº 7 e nº 8. |
+| Fonte | Tubo cônico ou cilíndrico contendo composição pirotécnica | Emissão de centelhas e chamas coloridas | Vulcão, sputnik, árvore de natal, fountain |
+| Fumígeno | Tubo contendo composição pirotécnica | Emissão de fumaça | Smoke |
+| Giratório aéreo | Tubo provido de hélice contendo composição pirotécnica | Ascensão em movimento giratório | Avião, abelhinha, ovni, helicóptero, disco voador, coroa giratória |
+| Giratório de solo | Tubo cilíndrico ou em forma de espiral contendo composição pirotécnica | Movimento giratório em torno de um ponto | Peão, giroloco, roseta |
+| Candela | Tubo com diversas cargas de projeção contendo baladas e/ou bombas aéreas, montadas em alternância | Lançamento de baladas e/ou bombas aéreas, em sequência. | Vela romana, “roman candle”, pistola |
+| Rojão | Dispositivo autopropulsado, com meio de estabilização em voo | Ascensão, seguida de efeitos diversos | Rocket, cometa, cometinha cometa de apito, rojão com vara, rojão tipo míssil, foguete |
+| Bolas crepitantes | Pequeno dispositivo de papel contendo composição pirotécnica e iniciador | Emissão de centelhas e pequenos estampidos | Dragon eggs, crackling ball, croque |
+| Bateria | Conjunto de bombas de solo | Estampidos | Bateria de tiros |
+
+Fonte: NT 4-04, página 11, Tabela do Anexo B; conferida em 2026-09-29 (visual + geometrica).
+Observações da tabela:
+(a) Nome genérico, usual no Brasil, embora sem autopropulsão.
+(b) Conjunto integrado por tubo de lançamento e bomba aérea com carga de projeção, com diâmetro interno superior a 50 mm.
+Fonte indicada na página: REGT/02 – Exército Brasileiro.
+<!-- /tabela-conferida: Tabela do Anexo B p11 -->
+

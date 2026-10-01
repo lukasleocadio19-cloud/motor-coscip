@@ -1,0 +1,246 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-02
+arquivo: nt-2-02-hidrantes-e-mangotinhos.md
+tabela: Tabela 1
+titulo: Classificação dos riscos
+pagina: 5
+fonte_pdf_sha256: 175c79afcac17335da3d68aef49e4ec9cc88706ddd012ed49e0b2748bf8524e9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 4
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-02/pagina-05.jpg
+    imagem_sha256: 8935b6f748c6aabe4757e37cd9947f14594c8e8d5c8e226bbe489fbe1fb27346
+    linhas_cabecalho: 1
+    cabecalho_publicado:
+    - Classificação de risco
+    - Esguicho — tipo
+    - Esguicho — diâmetro (mm)
+    - Mangueira — diâmetro (mm)
+    - Mangueira — comprimento máx. (m)
+    - Mangueira — tipo
+    - Hidrantes
+    - Pressão de trabalho (mca)
+    - Vazão (L/min)
+    linhas:
+    - - Classificação de Risco
+      - Esguicho Tipo
+      - Diâmetro (mm)
+      - Mangueira Diâmetro (mm)
+      - Comp. Máx. (m)
+      - Tipo
+      - Hidrantes
+      - Pressão de Trabalho (mca)
+      - Vazão (L/min)
+    - - Risco Pequeno - Mangotinho
+      - Regulável
+      - '25'
+      - '25'
+      - '30'
+      - Semi-rígida
+      - '1'
+      - '58'
+      - '100'
+    - - Risco Pequeno
+      - Regulável
+      - '38'
+      - '38'
+      - '30'
+      - Flexível
+      - '1'
+      - '10'
+      - '100'
+    - - Risco Médio 1
+      - Regulável
+      - '38'
+      - '38'
+      - '30'
+      - Flexível
+      - '1'
+      - '35'
+      - '200'
+    - - Risco Médio 2
+      - Regulável
+      - '38'
+      - '38'
+      - '30'
+      - Flexível
+      - '2'
+      - '35'
+      - '400'
+    - - Risco Grande
+      - Regulável
+      - '63'
+      - '63'
+      - '30'
+      - Flexível
+      - '2'
+      - '40'
+      - '1000'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 5
+      tabela_na_pagina: 1
+    linhas:
+    - - Classificação de Risco
+      - Esguicho Tipo
+      - Diâmetro (mm)
+      - Mangueira Diâmetro (mm)
+      - Comp. Máx. (m)
+      - Tipo
+      - Hidrantes
+      - Pressão de Trabalho (mca)
+      - Vazão (L/min)
+    - - Risco Pequeno - Mangotinho
+      - Regulável
+      - '25'
+      - '25'
+      - '30'
+      - Semi-rígida
+      - '1'
+      - '58'
+      - '100'
+    - - Risco Pequeno
+      - Regulável
+      - '38'
+      - '38'
+      - '30'
+      - Flexível
+      - '1'
+      - '10'
+      - '100'
+    - - Risco Médio 1
+      - Regulável
+      - '38'
+      - '38'
+      - '30'
+      - Flexível
+      - '1'
+      - '35'
+      - '200'
+    - - Risco Médio 2
+      - Regulável
+      - '38'
+      - '38'
+      - '30'
+      - Flexível
+      - '2'
+      - '35'
+      - '400'
+    - - Risco Grande
+      - Regulável
+      - '63'
+      - '63'
+      - '30'
+      - Flexível
+      - '2'
+      - '40'
+      - '1000'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 50.2
+      - 117.84
+      - 552.14
+      - 252.23
+      linhas:
+      - - Classificação
+        - Esguicho
+        - null
+        - Mangueira
+        - null
+        - null
+        - Hidrantes
+        - Pressão de
+        - Vazão
+      - - de Risco
+        - Tipo
+        - Diâmetro
+        - Diâmetro
+        - Comp.
+        - Tipo
+        - ''
+        - Trabalho
+        - (L/min)
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - (mca)
+        - ''
+      - - null
+        - ''
+        - (mm)
+        - (mm)
+        - Máx. (m)
+        - ''
+        - null
+        - ''
+        - null
+      - - Risco Pequeno - Mangotinho
+        - Regulável
+        - '25'
+        - '25'
+        - '30'
+        - Semi-rígida
+        - '1'
+        - '58'
+        - '100'
+      - - Risco Pequeno
+        - Regulável
+        - '38'
+        - '38'
+        - '30'
+        - Flexível
+        - '1'
+        - '10'
+        - '100'
+      - - Risco Médio 1
+        - Regulável
+        - '38'
+        - '38'
+        - '30'
+        - Flexível
+        - '1'
+        - '35'
+        - '200'
+      - - Risco Médio 2
+        - Regulável
+        - '38'
+        - '38'
+        - '30'
+        - Flexível
+        - '2'
+        - '35'
+        - '400'
+      - - Risco Grande
+        - Regulável
+        - '63'
+        - '63'
+        - '30'
+        - Flexível
+        - '2'
+        - '40'
+        - '1000'
+notas:
+- 'Na imagem: "Fonte: CBMERJ (Redação dada pela Portaria CBMERJ nº 1317, de 10/12/2025)". O cabeçalho
+  em dois níveis (Esguicho: tipo e diâmetro; Mangueira: diâmetro, comprimento e tipo) foi achatado por
+  coluna.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

@@ -1,0 +1,245 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 Parte 2
+arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+tabela: Anexo B
+titulo: Classificação das mercadorias – exemplos
+pagina: 11
+fonte_pdf_sha256: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  comparar_por_coluna: true
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-2/pagina-11.jpg
+    imagem_sha256: 9b345144a78acce2e0233b93453812b6657c0bc7c20b1919bc2fcdc76ea5423c
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Mercadoria
+    - Classe
+    linhas:
+    - - Isolamento de fibra de vidro
+      - ''
+    - - '- Rolos de mantas laminadas com papel em um dos lados, em sacos ou não'
+      - Classe IV
+    - - Arquivos
+      - ''
+    - - Metal
+      - ''
+    - - '- Caixa de papelão'
+      - Classe I
+    - - Peixe ou produtos derivados
+      - ''
+    - - Congelado
+      - ''
+    - - '- Embalagem sem plásticos e sem cera'
+      - Classe I
+    - - '- Em caixas de papel com cera, dentro de caixas de papelão'
+      - Classe II
+    - - '- Em caixas de madeira ou barricas'
+      - Classe II
+    - - '- Em bandejas plásticas, em caixas de papelão'
+      - Classe III
+    - - Enlatado
+      - ''
+    - - '- Em caixas de papelão'
+      - Classe I
+    - - Comidas congeladas
+      - ''
+    - - Embalagem sem plásticos e sem cera
+      - Classe I
+    - - '- Em caixas de papel com cera, dentro de caixas de papelão'
+      - Classe II
+    - - '- Bandejas plásticas'
+      - Classe III
+    - - Frutas
+      - ''
+    - - Frescas
+      - ''
+    - - '- Em recipientes e bandejas, exceto de plástico'
+      - Classe I
+    - - '- Com divisórias de madeira'
+      - Classe I
+    - - Móveis Madeira
+      - ''
+    - - '- Sem cobertura de plásticos ou estofamento de espuma plástica'
+      - Classe III
+    - - '- Com cobertura plástica'
+      - Classe IV
+    - - '- Com estofamento de espuma plástica'
+      - Plástico Grupo A
+    - - Grãos – Embalados em caixas de papelão
+      - ''
+    - - '- Cevada'
+      - Classe III
+    - - '- Arroz'
+      - Classe III
+    - - '- Aveia'
+      - Classe III
+    - - -Sorvete
+      - Classe I
+    - - -Produtos de couro
+      - Classe III
+    - - Couros e Peles
+      - ''
+    - - -Em fardos
+      - Classe II
+    - - Luminárias
+      - ''
+    - - Não feitas de plástico
+      - ''
+    - - '- Em caixas de papelão'
+      - Classe II
+    - - Isqueiros
+      - ''
+    - - Butano
+      - ''
+    - - '- Em blísters, em caixas de papelão'
+      - Plástico Grupo A
+    - - '- A granel em caixas grandes (Aerossol Nível 3)'
+      - Fora do escopo
+    - - Bebidas alcoólicas (destiladas)
+      - ''
+    - - Teor alcoólico de 50% ou menos, 1 gal (3,8 L) ou menos, em caixas de papelão
+      - ''
+    - - '- Vidro (paletizado)⁶'
+      - Classe IV
+    - - '- Garrafas plásticas'
+      - Classe IV
+    - - Mármore
+      - ''
+    - - Artificial, pias e tampos
+      - ''
+    - - '- Em caixas de papelão, em engradados'
+      - Classe II
+    - - Margarina
+      - ''
+    - - '- Até 50% de óleo (em recipientes de papel ou plástico)'
+      - Classe III
+    - - '- Entre 50 e 80% de óleo (em qualquer embalagem)'
+      - Plástico Grupo A
+    - - Fósforos
+      - ''
+    - - Embalados, em caixas de papelão
+      - ''
+    - - '- Papel'
+      - Classe IV
+    - - '- Madeira'
+      - Plástico Grupo A
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 11
+      tabela_na_pagina: 1
+    linhas:
+    - - Isolamento de fibra de vidro - Rolos de mantas laminadas com papel em um dos lados, em sacos ou
+        não
+      - Classe IV
+    - - Arquivos Metal - Caixa de papelão
+      - Classe I
+    - - Peixe ou produtos derivados Congelado - Embalagem sem plásticos e sem cera - Em caixas de papel
+        com cera, dentro de caixas de papelão - Em caixas de madeira ou barricas - Em bandejas plásticas,
+        em caixas de papelão
+      - Classe I Classe II Classe II Classe III
+    - - Enlatado - Em caixas de papelão
+      - Classe I
+    - - Comidas congeladas Embalagem sem plásticos e sem cera - Em caixas de papel com cera, dentro de
+        caixas de papelão - Bandejas plásticas
+      - Classe I Classe II Classe III
+    - - Frutas Frescas - Em recipientes e bandejas, exceto de plástico - Com divisórias de madeira
+      - Classe I Classe I
+    - - Móveis Madeira - Sem cobertura de plásticos ou estofamento de espuma plástica - Com cobertura
+        plástica - Com estofamento de espuma plástica
+      - Classe III Classe IV Plástico Grupo A
+    - - Grãos - Embalados em caixas de papelão - Cevada - Arroz - Aveia
+      - Classe III Classe III Classe III
+    - - -Sorvete
+      - Classe I
+    - - -Produtos de couro
+      - Classe III
+    - - Couros e Peles -Em fardos
+      - Classe II
+    - - Luminárias Não feitas de plástico - Em caixas de papelão
+      - Classe II
+    - - Isqueiros Butano - Em blísters, em caixas de papelão - A granel em caixas grandes (Aerossol Nível
+        3)
+      - Plástico Grupo A Fora do escopo
+    - - Bebidas alcoólicas (destiladas) Teor alcoólico de 50% ou menos, 1 gal (3,8 L) ou menos, em caixas
+        de papelão - Vidro (paletizado)6 - Garrafas plásticas
+      - Classe IV Classe IV
+    - - Mármore Artificial, pias e tampos - Em caixas de papelão, em engradados
+      - Classe II
+    - - Margarina - Até 50% de óleo (em recipientes de papel ou plástico) - Entre 50 e 80% de óleo (em
+        qualquer embalagem)
+      - Classe III Plástico Grupo A
+    - - Fósforos Embalados, em caixas de papelão - Papel - Madeira
+      - Classe IV Plástico Grupo A
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 63.74
+      - 56.88
+      - 545.86
+      - 725.5
+      linhas:
+      - - Isolamento de fibra de vidro - Rolos de mantas laminadas com papel em um dos lados, em sacos
+          ou não
+        - Classe IV
+      - - Arquivos Metal - Caixa de papelão
+        - Classe I
+      - - Peixe ou produtos derivados Congelado - Embalagem sem plásticos e sem cera - Em caixas de papel
+          com cera, dentro de caixas de papelão - Em caixas de madeira ou barricas - Em bandejas plásticas,
+          em caixas de papelão
+        - Classe I Classe II Classe II Classe III
+      - - Enlatado - Em caixas de papelão
+        - Classe I
+      - - Comidas congeladas Embalagem sem plásticos e sem cera - Em caixas de papel com cera, dentro
+          de caixas de papelão - Bandejas plásticas
+        - Classe I Classe II Classe III
+      - - Frutas Frescas - Em recipientes e bandejas, exceto de plástico - Com divisórias de madeira
+        - Classe I Classe I
+      - - Móveis Madeira - Sem cobertura de plásticos ou estofamento de espuma plástica - Com cobertura
+          plástica - Com estofamento de espuma plástica
+        - Classe III Classe IV Plástico Grupo A
+      - - Grãos – Embalados em caixas de papelão - Cevada - Arroz - Aveia
+        - Classe III Classe III Classe III
+      - - -Sorvete
+        - Classe I
+      - - -Produtos de couro
+        - Classe III
+      - - Couros e Peles -Em fardos
+        - Classe II
+      - - Luminárias Não feitas de plástico - Em caixas de papelão
+        - Classe II
+      - - Isqueiros Butano - Em blísters, em caixas de papelão - A granel em caixas grandes (Aerossol
+          Nível 3)
+        - Plástico Grupo A Fora do escopo
+      - - Bebidas alcoólicas (destiladas) Teor alcoólico de 50% ou menos, 1 gal (3,8 L) ou menos, em caixas
+          de papelão - Vidro (paletizado)6 - Garrafas plásticas
+        - Classe IV Classe IV
+      - - Mármore Artificial, pias e tampos - Em caixas de papelão, em engradados
+        - Classe II
+      - - Margarina - Até 50% de óleo (em recipientes de papel ou plástico) - Entre 50 e 80% de óleo (em
+          qualquer embalagem)
+        - Classe III Plástico Grupo A
+      - - Fósforos Embalados, em caixas de papelão - Papel - Madeira
+        - Classe IV Plástico Grupo A
+notas:
+- Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na
+  linha em que a página a alinha.
+- As notas numeradas estão ao pé da tabela, na página 14.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
+  texto: verificada

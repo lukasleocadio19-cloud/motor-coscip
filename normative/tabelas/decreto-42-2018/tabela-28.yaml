@@ -1,0 +1,425 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 28
+titulo: Exigências para edificações e áreas de risco do grupo M (divisões M-4 e M-7) com qualquer área
+  ou número de pavimentos
+pagina: 52
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 11
+  - 19
+  rotulos_quebrados: true
+  linhas_cabecalho: 0
+forma_geometrica:
+  faixa:
+  - 13
+  - 30
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-52.jpg
+    imagem_sha256: 34f93ebd1e3f0688e7decbad38962f271d1997e5c570a97a541f5d1f6e8b35b2
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Medidas de Segurança contra Incêndio e Pânico
+    - 'M-4 (Canteiro de obras,..): ATC ≤ 900 m²'
+    - 'M-4 (Canteiro de obras,..): 900 m² < ATC ≤ 1.500 m²'
+    - 'M-4 (Canteiro de obras,..): ATC > 1.500 m²'
+    - 'M-7 (Pátio de armazenagem): Qualquer área (não coberta) 5'
+    linhas:
+    - - Extintores
+      - X
+      - X
+      - X
+      - X
+    - - Sinalização de segurança
+      - X
+      - X
+      - X
+      - X
+    - - Alarme de Incêndio
+      - '-'
+      - '-'
+      - X1
+      - '-'
+    - - Saídas de Emergência
+      - X2
+      - X2
+      - X2
+      - X2
+    - - Plano de emergência
+      - '-'
+      - X
+      - X
+      - X
+    - - Hidrante urbano
+      - '-'
+      - '-'
+      - '-'
+      - X3
+    - - Acesso de viatura em edificações
+      - X
+      - X
+      - X
+      - X
+    - - Sistema de Espuma
+      - '-'
+      - '-'
+      - '-'
+      - X4
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 52
+      tabela_na_pagina: 1
+    linhas:
+    - - Extintores
+      - X
+      - X
+      - X
+      - X
+    - - Sinalização de segurança
+      - X
+      - X
+      - X
+      - X
+    - - Alarme de Incêndio
+      - '-'
+      - '-'
+      - X1
+      - '-'
+    - - Saídas de Emergência
+      - X2
+      - X2
+      - X2
+      - X2
+    - - Plano de emergência
+      - '-'
+      - X
+      - X
+      - X
+    - - Hidrante urbano
+      - '-'
+      - '-'
+      - '-'
+      - X3
+    - - Acesso de viatura em edificações
+      - X
+      - X
+      - X
+      - X
+    - - Sistema de Espuma
+      - '-'
+      - '-'
+      - '-'
+      - X4
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.92
+      - 53.48
+      - 552.48
+      - 517.66
+      linhas:
+      - - Tabela 28– Exigências para edificações e áreas de risco do grupo M (divisões M-4 e M-7) com
+          qualquer área
+        - null
+        - null
+        - null
+        - null
+      - - ou número de pavimentos
+        - null
+        - null
+        - null
+        - null
+      - - Grupo de ocupação e uso
+        - GRUPO M – ESPECIAIS
+        - null
+        - null
+        - null
+      - - ''
+        - ''
+        - null
+        - null
+        - M-7 (Pátio de
+      - - Divisão
+        - M-4 (Canteiro de obras,..)
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - armazenagem)
+      - - ''
+        - ''
+        - null
+        - null
+        - null
+      - - ''
+        - M-4
+        - null
+        - null
+        - M-7
+      - - Medidas de Segurança contra Incêndio e
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - 900 m² < ATC ≤
+        - ''
+        - Qualquer área
+      - - Pânico
+        - ATC ≤ 900 m²
+        - null
+        - ATC > 1.500 m²
+        - null
+      - - null
+        - null
+        - 1.500 m²
+        - null
+        - (não coberta) 5
+      - - ''
+        - ''
+        - null
+        - ''
+        - null
+      - - Extintores
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Sinalização de segurança
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Alarme de Incêndio
+        - '-'
+        - '-'
+        - X1
+        - '-'
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Saídas de Emergência
+        - X2
+        - X2
+        - X2
+        - X2
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Plano de emergência
+        - '-'
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Hidrante urbano
+        - '-'
+        - '-'
+        - '-'
+        - X3
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Acesso de viatura em edificações
+        - X
+        - X
+        - X
+        - X
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Sistema de Espuma
+        - '-'
+        - '-'
+        - '-'
+        - X4
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - ''
+        - null
+        - null
+        - null
+        - null
+      - - 'OBSERVAÇÕES ESPECÍFICAS:'
+        - null
+        - null
+        - null
+        - null
+      - - 1- Somente para áreas de depósito com materiais combustíveis com mais de 900m².
+        - null
+        - null
+        - null
+        - null
+      - - 2- Para M-4 aceitam-se as próprias saídas da edificação, podendo as escadas ser do tipo NE.
+          Para M-7 aceitam-se os
+        - null
+        - null
+        - null
+        - null
+      - - arruamentos entre as quadras de armazenamento, conforme Nota Técnica específica.
+        - null
+        - null
+        - null
+        - null
+      - - 3- Os pátios de armazenagem (M-7) devem possuir hidrante urbano ou fonte de água para captação
+          e utilização pelo
+        - null
+        - null
+        - null
+        - null
+      - - CBMERJ em caso de incêndio, conforme os requisitos estabelecidos em Nota Técnica específica.
+        - null
+        - null
+        - null
+        - null
+      - - 4- Quando houver armazenamento de tanque portátil (isotanque) contendo líquidos combustíveis
+          ou inflamáveis com
+        - null
+        - null
+        - null
+        - null
+      - - capacidade total acima de 20m³ (metros cúbicos).
+        - null
+        - null
+        - null
+        - null
+      - - 5- Para ocupações subsidiárias, verificar a proteção específica nos termos deste Código.
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - null
+        - null
+        - null
+        - null
+      - - 'OBSERVAÇÕES GERAIS:'
+        - null
+        - null
+        - null
+        - null
+      - - a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar
+          as prescrições da Seção II
+        - null
+        - null
+        - null
+        - null
+      - - do Capítulo IV deste Código;
+        - null
+        - null
+        - null
+        - null
+      - - b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+        - null
+        - null
+        - null
+        - null
+      - - c) Observar também as exigências previstas em normas técnicas específicas;
+        - null
+        - null
+        - null
+        - null
+      - - d) As áreas a serem consideradas para M-7 são as áreas dos terrenos abertos (lotes) onde há
+          estocagem de materiais ou
+        - null
+        - null
+        - null
+        - null
+      - - depósito de contêineres;
+        - null
+        - null
+        - null
+        - null
+      - - e) Quando houver edificação (construção) dentro do terreno das áreas de riscos, deve-se também
+          verificar as exigências
+        - null
+        - null
+        - null
+        - null
+      - - particulares para cada ocupação;
+        - null
+        - null
+        - null
+        - null
+      - - f) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+        - null
+        - null
+        - null
+        - null
+notas:
+- 'Divisões e colunas: M-4 (Canteiro de obras,..) — ATC ≤ 900 m², 900 m² < ATC ≤ 1.500 m², ATC > 1.500
+  m²; M-7 (Pátio de armazenagem) — Qualquer área (não coberta) 5.'
+- Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+- 'Observações específicas da tabela:'
+- 1- Somente para áreas de depósito com materiais combustíveis com mais de 900m².
+- 2- Para M-4 aceitam-se as próprias saídas da edificação, podendo as escadas ser do tipo NE. Para M-7
+  aceitam-se os arruamentos entre as quadras de armazenamento, conforme Nota Técnica específica.
+- 3- Os pátios de armazenagem (M-7) devem possuir hidrante urbano ou fonte de água para captação e utilização
+  pelo CBMERJ em caso de incêndio, conforme os requisitos estabelecidos em Nota Técnica específica.
+- 4- Quando houver armazenamento de tanque portátil (isotanque) contendo líquidos combustíveis ou inflamáveis
+  com capacidade total acima de 20m³ (metros cúbicos).
+- 5- Para ocupações subsidiárias, verificar a proteção específica nos termos deste Código.
+- 'Observações gerais da tabela:'
+- a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições
+  da Seção II do Capítulo IV deste Código;
+- b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+- c) Observar também as exigências previstas em normas técnicas específicas;
+- d) As áreas a serem consideradas para M-7 são as áreas dos terrenos abertos (lotes) onde há estocagem
+  de materiais ou depósito de contêineres;
+- e) Quando houver edificação (construção) dentro do terreno das áreas de riscos, deve-se também verificar
+  as exigências particulares para cada ocupação;
+- f) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+anexo3:
+  tabela: 28
+  referencia:
+    divisoes:
+    - M-4
+    - M-7
+    criterio: área total construída (M-4) ou qualquer área não coberta (M-7)

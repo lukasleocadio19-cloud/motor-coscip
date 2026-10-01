@@ -1,0 +1,91 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 P1
+arquivo: nt-2-03-parte-1-sprinklers-requisitos-gerais.md
+tabela: Tabela 1 do Anexo B
+titulo: Duração da reserva de água (RTI)
+pagina: 9
+fonte_pdf_sha256: 008f8743d8520eca54955e3aaaed82cf5cd49cefce1e8b095040fe2755536e9f
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-1/pagina-09.jpg
+    imagem_sha256: 3f53af00c6409795bff2a6c7f49ea5320891f2eab6241f492bc88662e63fc0e1
+    linhas_cabecalho: 1
+    linhas:
+    - - Categoria de Risco
+      - Duração - t (min)
+    - - Leve
+      - '30'
+    - - Ordinário Grupo 1 e 2
+      - '30'
+    - - Extraordinário Grupo 1 e 2
+      - '60'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 9
+      tabela_na_pagina: 1
+    linhas:
+    - - Categoria de Risco
+      - Duração - t (min)
+    - - Leve
+      - '30'
+    - - Ordinário Grupo 1 e 2
+      - '30'
+    - - Extraordinário Grupo 1 e 2
+      - '60'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 174.41
+      - 104.66
+      - 427.98
+      - 162.86
+      linhas:
+      - - Categoria de Risco
+        - ''
+        - Duração –
+        - ''
+      - - null
+        - null
+        - t (min)
+        - null
+      - - Leve
+        - '30'
+        - null
+        - null
+      - - Ordinário Grupo 1 e 2
+        - '30'
+        - null
+        - null
+      - - Extraordinário Grupo 1 e 2
+        - '60'
+        - null
+        - null
+    - bbox:
+      - 179.78
+      - 104.66
+      - 320.68
+      - 119.42
+      linhas:
+      - - ''
+      - - Categoria de Risco
+notas:
+- 'Fórmula abaixo da tabela: RTI = Q x t, onde RTI – Reserva técnica de incêndio em litros (L); Q – Vazão
+  em litros por minuto (L/min); t – Tempo de duração da reserva de água em minutos (min).'
+- 'Fonte indicada na página: CBMERJ.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

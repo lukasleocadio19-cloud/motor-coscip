@@ -38,7 +38,7 @@ def test_catalogo_real_carrega_e_e_deterministico():
     catalogo = load_catalog(CHECKS)
     outro = load_catalog(CHECKS)
     assert catalogo.publication_state == "DRAFT"
-    assert len(catalogo.checks) == 18
+    assert len(catalogo.checks) == 21
     assert catalogo.content_sha256 == outro.content_sha256
 
 

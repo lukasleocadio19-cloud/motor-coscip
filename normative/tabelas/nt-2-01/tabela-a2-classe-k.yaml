@@ -1,0 +1,334 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-01
+arquivo: nt-2-01-extintores.md
+tabela: Tabela A2
+titulo: Extintores Classe K
+pagina: 6
+fonte_pdf_sha256: f2e6db5a1fbc6fd43919d45461214c0d839e69d7a07c669a43b71ffa895381e3
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+forma_geometrica:
+  comparar_por_coluna: true
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-01/pagina-06.jpg
+    imagem_sha256: d2a12a90a745ecc087a14127ae6cba3b298663224174b544e0dff6f99dcb3577
+    linhas_cabecalho: 1
+    linhas:
+    - - Agente Extintor
+      - Classificação
+      - Modelo
+      - Classe K
+    - - Agente Classe K
+      - Portátil
+      - 3 l
+      - K
+    - - ^
+      - ^
+      - 6 l
+      - K
+    - - ^
+      - ^
+      - 10 l
+      - K
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 6
+      tabela_na_pagina: 2
+    linhas:
+    - - Agente Extintor
+      - Classificação
+      - Modelo
+      - Classe K
+    - - Portátil
+      - 3 l
+      - K
+    - - Agente Classe K
+      - 6 l
+      - K
+    - - 10 l
+      - K
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 42.71
+      - 56.64
+      - 524.62
+      - 143.42
+      linhas:
+      - - ANEXO A - CAPACIDADE EXTINTORA
+      - - Tabela A1 – Classificação dos extintores segundo o agente extintor, carga nominal e capacidade
+      - - extintora equivalente – Classes A, B e C
+      - - 'Observação: A Tabela A1 poderá ser utilizada para estimar a capacidade extintora equivalente
+          de extintores'
+      - - antigos, ou seja, que não possuem declaradas pelos respectivos fabricantes as suas capacidades
+          extintoras.
+      - - Extintores de tipificações diferentes poderão ser utilizados desde que sua capacidade extintora
+          seja
+    - bbox:
+      - 42.71
+      - 158.57
+      - 524.62
+      - 408.78
+      linhas:
+      - - Agente Extintor
+        - Classificação
+        - Modelo
+        - Classe A
+        - Classe B
+        - Classe C
+      - - ''
+        - Portátil
+        - 10 l
+        - 2-A
+        - '-'
+        - '-'
+      - - Água Pressurizada
+        - ''
+        - 75 l
+        - 10-A
+        - '-'
+        - '-'
+      - - ''
+        - Sobre Rodas
+        - 150 l
+        - 20-A
+        - '-'
+        - '-'
+      - - null
+        - ''
+        - null
+        - null
+        - null
+        - null
+      - - Espuma Mecânica
+        - Portátil
+        - 9 l
+        - 2-A
+        - 10-B
+        - '-'
+      - - ''
+        - ''
+        - 4 Kg
+        - '-'
+        - 2-B
+        - C
+      - - null
+        - Portátil
+        - 6 kg
+        - '-'
+        - 2-B
+        - C
+      - - Gás Carbônico (CO₂)
+        - ''
+        - 10 kg
+        - '-'
+        - 5-B
+        - C
+      - - ''
+        - Sobre Rodas
+        - 25 kg
+        - '-'
+        - 10-B
+        - C
+      - - null
+        - null
+        - 30 kg
+        - '-'
+        - 10-B
+        - C
+      - - null
+        - ''
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - 50 kg
+        - '-'
+        - 10-B
+        - C
+      - - ''
+        - ''
+        - 4 kg
+        - '-'
+        - 10-B
+        - C
+      - - null
+        - null
+        - 6 kg
+        - '-'
+        - 10-B
+        - C
+      - - null
+        - Portátil
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - 8 kg
+        - '-'
+        - 10-B
+        - C
+      - - PQS (Bicarbonato de
+        - ''
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - 12 kg
+        - ''
+        - 20-B
+        - C
+      - - Sódio)
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - 20 kg
+        - '-'
+        - 20-B
+        - C
+      - - ''
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - Sobre Rodas
+        - 50 kg
+        - '-'
+        - 30-B
+        - C
+      - - null
+        - ''
+        - 100 kg
+        - ''
+        - 40-B
+        - C
+      - - ''
+        - ''
+        - 4 kg
+        - 2-A
+        - 20-B
+        - C
+      - - ABC (Fosfato
+        - null
+        - 6 kg
+        - 3-A
+        - 20-B
+        - C
+      - - null
+        - Portátil
+        - null
+        - null
+        - null
+        - null
+      - - Monoamônico)
+        - null
+        - 8 kg
+        - 4-A
+        - 30-B
+        - C
+      - - null
+        - ''
+        - null
+        - null
+        - null
+        - null
+      - - ''
+        - null
+        - 12 kg
+        - 6-A
+        - 30-B
+        - C
+      - - ''
+        - ''
+        - 3 kg
+        - '-'
+        - 5-B
+        - C
+      - - Halogenado
+        - Portátil
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - 6 kg
+        - 1-A
+        - 10-B
+        - C
+      - - ''
+        - ''
+        - null
+        - null
+        - null
+        - null
+    - bbox:
+      - 42.71
+      - 456.91
+      - 524.62
+      - 483.91
+      linhas:
+      - - ''
+      - - Tabela A2 – Extintores Classe K
+    - bbox: &id001
+      - 42.71
+      - 487.23
+      - 524.62
+      - 532.7
+      linhas:
+      - - Agente Extintor
+        - Classificação
+        - Modelo
+        - Classe K
+      - - ''
+        - Portátil
+        - 3 l
+        - K
+      - - Agente Classe K
+        - null
+        - 6 l
+        - K
+      - - ''
+        - null
+        - 10 l
+        - K
+    - bbox:
+      - 42.71
+      - 536.0
+      - 524.62
+      - 563.02
+      linhas:
+      - - 'Fonte: NFPA 10.'
+      - - ''
+notas:
+- 'Fonte indicada: NFPA 10.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 3
+  candidatos_na_pagina: 1
+  bbox: *id001
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
+  texto: divergente

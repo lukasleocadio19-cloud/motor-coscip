@@ -5,7 +5,7 @@
 # v3: só com leiaute definido; sem leiaute vale a distância direta (SAI-CAD-003, 5.3.3.3).
 schema_version: checks/1.0
 id: SAI-CAD-002
-version: 3
+version: 5
 title: Distância a percorrer até a saída
 system: SAIDAS
 type: CAD_DISTANCE
@@ -27,9 +27,10 @@ question:
   field: exit_walk_distance_m
   required_fact: context.effective_exit_max_distance_m
   unit: m
-  accepted_evidence: [CAD]
+  accepted_evidence: [CAD, CALCULATION]  # medida calculada sobre a geometria do CAD
   quality_gate: quality.walls_detected
-  quality_gates: [context.exits_confirmed, quality.region_confirmed, quality.exit.complete]
+  quality_gates: [context.exits_confirmed, quality.region_confirmed, quality.exit.complete, quality.recognition.complete,
+                  quality.geometry.consistent]  # F7.2: vetorial × FMM
 normative_basis:
   - document: NT 2-08
     edition: 1ª edição - 2019; Portaria 1.317/2025

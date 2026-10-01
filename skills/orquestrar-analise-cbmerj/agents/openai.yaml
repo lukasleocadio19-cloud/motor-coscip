@@ -1,0 +1,11 @@
+interface:
+  display_name: "Orquestrador CBMERJ"
+  short_description: "Coordena rito, analista e módulos normativos do CBMERJ."
+  default_prompt: "Use $orquestrar-analise-cbmerj para orquestrar a análise completa deste processo."
+policy:
+  products:
+  - "chatgpt"
+  - "codex"
+  - "api"
+  - "atlas"
+  allow_implicit_invocation: true

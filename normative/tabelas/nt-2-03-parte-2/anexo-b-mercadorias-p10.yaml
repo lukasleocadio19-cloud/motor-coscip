@@ -1,0 +1,247 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 Parte 2
+arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+tabela: Anexo B
+titulo: Classificação das mercadorias – exemplos
+pagina: 10
+fonte_pdf_sha256: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  comparar_por_coluna: true
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-2/pagina-10.jpg
+    imagem_sha256: f931d54e4f469fec1dc406fc98680ff7f79965aa462c5e108501f10438422571
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Mercadoria
+    - Classe
+    linhas:
+    - - Velas
+      - ''
+    - - Embaladas, em caixas de papelão
+      - ''
+    - - '- Tratar como plástico expandido'
+      - Plástico Grupo A
+    - - Balas
+      - ''
+    - - -Embaladas, em caixas de papelão
+      - Classe III
+    - - Comidas enlatadas
+      - ''
+    - - -Em caixas de papelão comuns
+      - Classe I
+    - - Latas
+      - ''
+    - - Metal
+      - ''
+    - - '- Vazias'
+      - Classe I
+    - - Carpetes (placas modulares)
+      - ''
+    - - -Em caixas de papelão
+      - Plástico Grupo A
+    - - Caixas de papelão
+      - ''
+    - - Corrugadas
+      - ''
+    - - '- Desmontadas (em pilhas organizadas)'
+      - Classe III
+    - - '- Parcialmente montadas'
+      - Classe IV
+    - - Revestidas com cera, parede simples
+      - Plástico Grupo A
+    - - Cimento
+      - ''
+    - - -Em sacos
+      - Classe I
+    - - Cereais matinais
+      - ''
+    - - Embalados, em caixas de papelão
+      - Classe III
+    - - Carvão (vegetal)
+      - ''
+    - - Em sacos
+      - ''
+    - - '- Padrão'
+      - Classe III
+    - - Queijo
+      - ''
+    - - '- Embalado, em caixas de papelão'
+      - Classe III
+    - - '- Discos, em caixas de papelão'
+      - Classe III
+    - - Goma de mascar
+      - ''
+    - - -Embalada, em caixas de papelão
+      - Classe III
+    - - Chocolate
+      - ''
+    - - -Embalado, em caixas de papelão
+      - Classe III
+    - - Tecido
+      - ''
+    - - Com ou sem caixas de papelão
+      - ''
+    - - '- Fibras naturais, viscose'
+      - Classe III
+    - - '- Sintéticos⁵'
+      - Classe IV
+    - - Produtos de cacau
+      - ''
+    - - -Embalado, em caixas de papelão
+      - Classe III
+    - - Café
+      - ''
+    - - '- Em latas, em caixas de papelão'
+      - Classe I
+    - - '- Embalado, em caixas de papelão'
+      - Classe III
+    - - Café em grão
+      - ''
+    - - -Em sacos
+      - Classe III
+    - - Algodão
+      - ''
+    - - -Embalado, em caixas de papelão
+      - Classe III
+    - - Fraldas
+      - ''
+    - - '- Algodão, linho'
+      - Classe III
+    - - '- Descartáveis, com plástico e material não-tecido (em caixas de papelão)'
+      - Classe IV
+    - - '- Descartáveis, com plástico e material não-tecido (sem caixas de papelão),'
+      - ''
+    - - embaladas em plástico
+      - Plástico Grupo A
+    - - Comidas secas
+      - ''
+    - - -Embaladas, em caixas de papelão
+      - Classe III
+    - - Fertilizantes
+      - ''
+    - - Em sacos
+      - ''
+    - - '- Fosfatos'
+      - Classe I
+    - - '- Nitratos'
+      - Classe II
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 10
+      tabela_na_pagina: 1
+    linhas:
+    - - Velas Embaladas, em caixas de papelão - Tratar como plástico expandido
+      - Plástico Grupo A
+    - - Balas -Embaladas, em caixas de papelão
+      - Classe III
+    - - Comidas enlatadas -Em caixas de papelão comuns
+      - Classe I
+    - - Latas Metal - Vazias
+      - Classe I
+    - - Carpetes (placas modulares) -Em caixas de papelão
+      - Plástico Grupo A
+    - - Caixas de papelão Corrugadas - Desmontadas (em pilhas organizadas) - Parcialmente montadas Revestidas
+        com cera, parede simples
+      - Classe III Classe IV Plástico Grupo A
+    - - Cimento -Em sacos
+      - Classe I
+    - - Cereais matinais Embalados, em caixas de papelão
+      - Classe III
+    - - Carvão (vegetal) Em sacos - Padrão
+      - Classe III
+    - - Queijo - Embalado, em caixas de papelão - Discos, em caixas de papelão
+      - Classe III Classe III
+    - - Goma de mascar -Embalada, em caixas de papelão
+      - Classe III
+    - - Chocolate -Embalado, em caixas de papelão
+      - Classe III
+    - - Tecido Com ou sem caixas de papelão - Fibras naturais, viscose - Sintéticos5
+      - Classe III Classe IV
+    - - Produtos de cacau -Embalado, em caixas de papelão
+      - Classe III
+    - - Café - Em latas, em caixas de papelão - Embalado, em caixas de papelão
+      - Classe I Classe III
+    - - Café em grão -Em sacos
+      - Classe III
+    - - Algodão -Embalado, em caixas de papelão
+      - Classe III
+    - - Fraldas - Algodão, linho - Descartáveis, com plástico e material não-tecido (em caixas de papelão)
+        - Descartáveis, com plástico e material não-tecido (sem caixas de papelão), embaladas em plástico
+      - Classe III Classe IV Plástico Grupo A
+    - - Comidas secas -Embaladas, em caixas de papelão
+      - Classe III
+    - - Fertilizantes Em sacos - Fosfatos - Nitratos
+      - Classe I Classe II
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.76
+      - 56.88
+      - 538.9
+      - 727.06
+      linhas:
+      - - Velas Embaladas, em caixas de papelão - Tratar como plástico expandido
+        - Plástico Grupo A
+      - - Balas -Embaladas, em caixas de papelão
+        - Classe III
+      - - Comidas enlatadas -Em caixas de papelão comuns
+        - Classe I
+      - - Latas Metal - Vazias
+        - Classe I
+      - - Carpetes (placas modulares) -Em caixas de papelão
+        - Plástico Grupo A
+      - - Caixas de papelão Corrugadas - Desmontadas (em pilhas organizadas) - Parcialmente montadas Revestidas
+          com cera, parede simples
+        - Classe III Classe IV Plástico Grupo A
+      - - Cimento -Em sacos
+        - Classe I
+      - - Cereais matinais Embalados, em caixas de papelão
+        - Classe III
+      - - Carvão (vegetal) Em sacos - Padrão
+        - Classe III
+      - - Queijo - Embalado, em caixas de papelão - Discos, em caixas de papelão
+        - Classe III Classe III
+      - - Goma de mascar -Embalada, em caixas de papelão
+        - Classe III
+      - - Chocolate -Embalado, em caixas de papelão
+        - Classe III
+      - - Tecido Com ou sem caixas de papelão - Fibras naturais, viscose - Sintéticos5
+        - Classe III Classe IV
+      - - Produtos de cacau -Embalado, em caixas de papelão
+        - Classe III
+      - - Café - Em latas, em caixas de papelão - Embalado, em caixas de papelão
+        - Classe I Classe III
+      - - Café em grão -Em sacos
+        - Classe III
+      - - Algodão -Embalado, em caixas de papelão
+        - Classe III
+      - - Fraldas - Algodão, linho - Descartáveis, com plástico e material não-tecido (em caixas de papelão)
+          - Descartáveis, com plástico e material não-tecido (sem caixas de papelão), embaladas em plástico
+        - Classe III Classe IV Plástico Grupo A
+      - - Comidas secas -Embaladas, em caixas de papelão
+        - Classe III
+      - - Fertilizantes Em sacos - Fosfatos - Nitratos
+        - Classe I Classe II
+notas:
+- Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na
+  linha em que a página a alinha.
+- As notas numeradas estão ao pé da tabela, na página 14.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
+  texto: verificada

@@ -1,0 +1,160 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-08
+arquivo: nt-2-08-saidas-de-emergencia.md
+tabela: Tabela 1
+titulo: Inclinação máxima de segmentos de rampa
+pagina: 12
+fonte_pdf_sha256: c204bd957038c3c8dd18a62a89472161ae6e2cc5602dcb9075bef8bca3b34c5e
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 4
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-08/pagina-12.jpg
+    imagem_sha256: 23c591d25faee59d4644096f70d937f36a40f5881dfcf5066df62be3eb73aabc
+    linhas_cabecalho: 1
+    linhas:
+    - - Desníveis máximos de cada segmento de rampa h (m)
+      - Inclinação admissível em cada segmento de rampa (i %)
+      - Número máximo de segmentos de rampa
+    - - 1,50
+      - 5,00 (1:20)
+      - Sem limite
+    - - 1,00
+      - 5,00 (1:20) < i ≤ 6,25 (1:16)
+      - Sem limite
+    - - 0,80
+      - 6,25 (1:16) < i ≤ 8,33 (1:12)
+      - '15'
+    - - 0,20
+      - 8,33 (1:12) < i ≤ 10,0 (1:10)
+      - '4'
+    - - 0,075
+      - 10,0 (1:10) < i ≤ 12 (1:8,33)
+      - '1'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF), cabeçalho em 4 linhas
+    origem:
+      pagina: 12
+      tabela_na_pagina: 1
+    linhas:
+    - - Desníveis máximos de cada segmento de rampa h (m)
+      - Inclinação admissível em cada segmento de rampa (i %)
+      - Número máximo de segmentos de rampa
+    - - 1,50
+      - 5,00 (1:20)
+      - Sem limite
+    - - 1,00
+      - 5,00 (1:20) < i ≤ 6,25 (1:16)
+      - Sem limite
+    - - 0,80
+      - 6,25 (1:16) < i ≤ 8,33 (1:12)
+      - '15'
+    - - 0,20
+      - 8,33 (1:12) < i ≤ 10,0 (1:10)
+      - '4'
+    - - 0,075
+      - 10,0 (1:10) < i ≤ 12 (1:8,33)
+      - '1'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 312.69
+      - 144.98
+      - 560.83
+      - 266.69
+      linhas:
+      - - ''
+        - Desníveis
+        - ''
+        - Inclinação admissível em cada segmento de rampa ( i %)
+        - ''
+        - Número
+        - ''
+      - - null
+        - máximos de cada
+        - null
+        - null
+        - null
+        - máximo de
+        - null
+      - - null
+        - segmento de
+        - null
+        - null
+        - null
+        - segmentos
+        - null
+      - - null
+        - rampa h (m)
+        - null
+        - null
+        - null
+        - de rampa
+        - null
+      - - 1,50
+        - null
+        - null
+        - 5,00 (1:20)
+        - Sem limite
+        - null
+        - null
+      - - 1,00
+        - null
+        - null
+        - 5,00 (1:20) < i ≤ 6,25 (1:16)
+        - Sem limite
+        - null
+        - null
+      - - 0,80
+        - null
+        - null
+        - 6,25 (1:16) < i ≤ 8,33 (1:12)
+        - '15'
+        - null
+        - null
+      - - 0,20
+        - null
+        - null
+        - 8,33 (1:12) < i ≤ 10,0 (1:10)
+        - '4'
+        - null
+        - null
+      - - 0,075
+        - null
+        - null
+        - 10,0 (1:10) < i ≤ 12 (1:8,33)
+        - '1'
+        - null
+        - null
+    - bbox:
+      - 396.07
+      - 144.98
+      - 498.69
+      - 181.7
+      linhas:
+      - - Inclinação admissível em
+      - - cada segmento de rampa
+      - - ( i %)
+notas:
+- 'Fonte indicada na página: ABNT NBR 9050. Na imagem o cabeçalho da 2ª coluna é "( i %)".'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 0
+    coluna: 1
+    a: Inclinação admissível em cada segmento de rampa (i %)
+    b: Inclinação admissível em cada segmento de rampa ( i %)
+    estado: verificada
+    score: 99.1

@@ -1,0 +1,610 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-08
+arquivo: nt-2-08-saidas-de-emergencia.md
+tabela: Tabela do Anexo A
+titulo: Dados para o dimensionamento das saídas de emergência
+pagina: 18
+fonte_pdf_sha256: c204bd957038c3c8dd18a62a89472161ae6e2cc5602dcb9075bef8bca3b34c5e
+conferida_em: '2026-09-29'
+forma:
+  mesclar_linhas:
+  - - 1
+    - 2
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-08/pagina-18.jpg
+    imagem_sha256: fa0e4156162a37c10ca00f74bc56212644e4b50314d4d296b6907478dae8dde7
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Ocupação
+    - Divisão
+    - População (A)
+    - Capacidade da unidade de passagem (B) — Acesso e descargas
+    - Capacidade da unidade de passagem (B) — Escadas e rampas
+    - Capacidade da unidade de passagem (B) — Portas
+    linhas:
+    - - Ocupação
+      - Divisão
+      - População (A)
+      - Capacidade da Unidade de passagem (B)
+    - - Acesso e descargas
+      - Escadas e rampas
+      - Portas
+    - - Residencial
+      - A-1, A-2, A-4 e A-5
+      - Duas pessoas por dormitório (C)
+      - '60'
+      - '45'
+      - '100'
+    - - ^
+      - A-3
+      - Duas pessoas por dormitório e uma pessoa por 4 m² de área de alojamento (D)
+      - ^
+      - ^
+      - ^
+    - - Serviços de hospedagem
+      - '-'
+      - Uma pessoa por 15,00 m² de área (E) (G)
+      - ^
+      - ^
+      - ^
+    - - Comercial
+      - '-'
+      - Uma pessoa por 3,00 m² de área (E) (J)
+      - '100'
+      - '60'
+      - '100'
+    - - Serviço profissional e institucional
+      - D-1, D-2 e D-3
+      - Uma pessoa por 7,00 m² de área
+      - ^
+      - ^
+      - ^
+    - - ^
+      - D-4 e D-5
+      - Uma pessoa por 7,00 m² de área (D) +
+      - ^
+      - ^
+      - ^
+    - - Escolar e cultura física
+      - E-1, E-2 e E-3
+      - Uma pessoa por 1,50 m² de área de sala de aula (F)
+      - ^
+      - ^
+      - ^
+    - - ^
+      - E-4
+      - Uma pessoa por 1,50 m² de área de sala de aula (F)
+      - '30'
+      - '22'
+      - '30'
+    - - Local de Reunião de Público
+      - F-1, F-9 e F-10
+      - Uma pessoa por 3,00 m² de área
+      - '100'
+      - '75'
+      - '100'
+    - - ^
+      - F-2, F-5, F-8
+      - Uma pessoa por m² de área (E) (G)
+      - ^
+      - ^
+      - ^
+    - - ^
+      - F-3, F-6, F-7 e F-11
+      - Duas pessoas por m² de área (G) (K) (1:0,5 m²)
+      - ^
+      - ^
+      - ^
+    - - ^
+      - F-4
+      - Uma pessoa por 3,00 m² de área (E) (J) + (F)
+      - ^
+      - ^
+      - ^
+    - - Serviço automotivo e assemelhado
+      - G-1, G-2 e G-3
+      - Uma pessoa por 40 vagas de veículo
+      - '100'
+      - '60'
+      - '100'
+    - - ^
+      - G-4, G-5
+      - Uma pessoa por 20,00 m² de área (E)
+      - ^
+      - ^
+      - ^
+    - - ^
+      - G-6
+      - Uma pessoa por 40 m² de área (E)
+      - ^
+      - ^
+      - ^
+    - - Serviço de Saúde
+      - H-3
+      - Uma pessoa por 7,00 m² de área (E)
+      - '60'
+      - '45'
+      - '100'
+    - - ^
+      - H-2
+      - Duas pessoas por dormitório (c) e uma pessoa por 4 m² de área de alojamento (E)
+      - '30'
+      - '22'
+      - '30'
+    - - ^
+      - H-1
+      - Uma pessoa e meia por leito + uma pessoa por 7,00 m² de área de ambulatório (H)
+      - ^
+      - ^
+      - ^
+    - - Industrial
+      - '-'
+      - Uma pessoa por 10,00 m² de área
+      - '100'
+      - '60'
+      - '100'
+    - - Depósito
+      - '-'
+      - Uma pessoa por 30,00 m² de área (J)
+      - ^
+      - ^
+      - ^
+    - - Explosivos ou munições
+      - L-1
+      - Uma pessoa por 3,00 m² de área
+      - '100'
+      - '60'
+      - '100'
+    - - ^
+      - L-2, L-3
+      - Uma pessoa por 10,00 m² de área
+      - ^
+      - ^
+      - ^
+    - - Especial
+      - M-1
+      - +
+      - '100'
+      - '75'
+      - '100'
+    - - ^
+      - M-2, M-3, M-4, M-5, M-6
+      - Uma pessoa por 10,00 m² de área
+      - '100'
+      - '60'
+      - '100'
+    - - ^
+      - M-8
+      - Uma pessoa por 4,00 m² de área
+      - '60'
+      - '45'
+      - '100'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF), cabeçalho em 3 linhas
+    origem:
+      pagina: 18
+      tabela_na_pagina: 1
+    linhas:
+    - - Ocupação
+      - Divisão
+      - População (A)
+      - Capacidade da Unidade de passagem (B)
+    - - Acesso e descargas
+      - Escadas e rampas
+      - Portas
+    - - Residencial
+      - A-1, A-2, A-4 e A-5
+      - Duas pessoas por dormitório (C)
+      - '60'
+      - '45'
+      - '100'
+    - - A-3
+      - Duas pessoas por dormitório e uma pessoa por 4 m² de área de alojamento (D)
+    - - Serviços de hospedagem
+      - '-'
+      - Uma pessoa por 15,00 m² de área (E) (G)
+    - - Comercial
+      - '-'
+      - Uma pessoa por 3,00 m² de área (E) (J)
+      - '100'
+      - '60'
+      - '100'
+    - - Serviço profissional e institucional
+      - D-1, D-2 e D-3
+      - Uma pessoa por 7,00 m² de área
+    - - D-4 e D-5
+      - Uma pessoa por 7,00 m² de área (D) +
+    - - Escolar e cultura física
+      - E-1, E-2 e E-3
+      - Uma pessoa por 1,50 m² de área de sala de aula (F)
+    - - E-4
+      - Uma pessoa por 1,50 m² de área de sala de aula (F)
+      - '30'
+      - '22'
+      - '30'
+    - - Local de Reunião de Público
+      - F-1, F-9 e F-10
+      - Uma pessoa por 3,00 m² de área
+      - '100'
+      - '75'
+      - '100'
+    - - F-2, F-5, F-8
+      - Uma pessoa por m² de área (E) (G)
+    - - F-3, F-6, F-7 e F-11
+      - Duas pessoas por m² de área (G) (K) (1:0,5 m²)
+    - - F-4
+      - Uma pessoa por 3,00 m² de área (E) (J) + (F)
+    - - Serviço automotivo e assemelhado
+      - G-1, G-2 e G-3
+      - Uma pessoa por 40 vagas de veículo
+      - '100'
+      - '60'
+      - '100'
+    - - G-4, G-5
+      - Uma pessoa por 20,00 m² de área (E)
+    - - G-6
+      - Uma pessoa por 40 m² de área (E)
+    - - Serviço de Saúde
+      - H-3
+      - Uma pessoa por 7,00 m² de área (E)
+      - '60'
+      - '45'
+      - '100'
+    - - H-2
+      - Duas pessoas por dormitório (c) e uma pessoa por 4 m² de área de alojamento (E)
+      - '30'
+      - '22'
+      - '30'
+    - - H-1
+      - Uma pessoa e meia por leito + uma pessoa por 7,00 m² de área de ambulatório (H)
+    - - Industrial
+      - '-'
+      - Uma pessoa por 10,00 m² de área
+      - '100'
+      - '60'
+      - '100'
+    - - Depósito
+      - '-'
+      - Uma pessoa por 30,00 m² de área (J)
+    - - Explosivos ou munições
+      - L-1
+      - Uma pessoa por 3,00 m² de área
+      - '100'
+      - '60'
+      - '100'
+    - - L-2, L-3
+      - Uma pessoa por 10,00 m² de área
+    - - Especial
+      - M-1
+      - +
+      - '100'
+      - '75'
+      - '100'
+    - - M-2, M-3, M-4, M-5, M-6
+      - Uma pessoa por 10,00 m² de área
+      - '100'
+      - '60'
+      - '100'
+    - - M-8
+      - Uma pessoa por 4,00 m² de área
+      - '60'
+      - '45'
+      - '100'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 60.97
+      - 83.29
+      - 541.41
+      - 721.88
+      linhas:
+      - - Ocupação
+        - Divisão
+        - População (A)
+        - Capacidade da Unidade de passagem (B)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - ''
+        - Acesso e
+        - ''
+        - ''
+        - Escadas
+        - ''
+        - Portas
+      - - null
+        - null
+        - null
+        - null
+        - descargas
+        - null
+        - null
+        - e rampas
+        - null
+        - null
+      - - Residencial
+        - A-1, A-2, A-4 e A-5
+        - Duas pessoas por dormitório (C)
+        - '60'
+        - null
+        - null
+        - '45'
+        - null
+        - null
+        - '100'
+      - - null
+        - A-3
+        - Duas pessoas por dormitório e uma pessoa por 4 m² de área de alojamento (D)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Serviços de hospedagem
+        - '-'
+        - Uma pessoa por 15,00 m² de área (E) (G)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Comercial
+        - '-'
+        - Uma pessoa por 3,00 m² de área (E) (J)
+        - '100'
+        - null
+        - null
+        - '60'
+        - null
+        - null
+        - '100'
+      - - Serviço profissional e institucional
+        - D-1, D-2 e D-3
+        - Uma pessoa por 7,00 m² de área
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - D-4 e D-5
+        - Uma pessoa por 7,00 m² de área (D) +
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Escolar e cultura física
+        - E-1, E-2 e E-3
+        - Uma pessoa por 1,50 m² de área de sala de aula (F)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - E-4
+        - Uma pessoa por 1,50 m² de área de sala de aula (F)
+        - '30'
+        - null
+        - null
+        - '22'
+        - null
+        - null
+        - '30'
+      - - Local de Reunião de Público
+        - F-1, F-9 e F-10
+        - Uma pessoa por 3,00 m² de área
+        - '100'
+        - null
+        - null
+        - '75'
+        - null
+        - null
+        - '100'
+      - - null
+        - F-2, F-5, F-8
+        - Uma pessoa por m² de área (E) (G)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - F-3, F-6, F-7 e F-11
+        - Duas pessoas por m² de área (G) (K) (1:0,5 m²)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - F-4
+        - Uma pessoa por 3,00 m² de área (E) (J) + (F)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Serviço automotivo e assemelhado
+        - G-1, G-2 e G-3
+        - Uma pessoa por 40 vagas de veículo
+        - '100'
+        - null
+        - null
+        - '60'
+        - null
+        - null
+        - '100'
+      - - null
+        - G-4, G-5
+        - Uma pessoa por 20,00 m² de área (E)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - G-6
+        - Uma pessoa por 40 m² de área (E)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Serviço de Saúde
+        - H-3
+        - Uma pessoa por 7,00 m² de área (E)
+        - '60'
+        - null
+        - null
+        - '45'
+        - null
+        - null
+        - '100'
+      - - null
+        - H-2
+        - Duas pessoas por dormitório (c) e uma pessoa por 4 m² de área de alojamento (E)
+        - '30'
+        - null
+        - null
+        - '22'
+        - null
+        - null
+        - '30'
+      - - null
+        - H-1
+        - Uma pessoa e meia por leito + uma pessoa por 7,00 m² de área de ambulatório (H)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Industrial
+        - '-'
+        - Uma pessoa por 10,00 m² de área
+        - '100'
+        - null
+        - null
+        - '60'
+        - null
+        - null
+        - '100'
+      - - Depósito
+        - '-'
+        - Uma pessoa por 30,00 m² de área (J)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Explosivos ou munições
+        - L-1
+        - Uma pessoa por 3,00 m² de área
+        - '100'
+        - null
+        - null
+        - '60'
+        - null
+        - null
+        - '100'
+      - - null
+        - L-2, L-3
+        - Uma pessoa por 10,00 m² de área
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - Especial
+        - M-1
+        - +
+        - '100'
+        - null
+        - null
+        - '75'
+        - null
+        - null
+        - '100'
+      - - null
+        - M-2, M-3, M-4, M-5, M-6
+        - Uma pessoa por 10,00 m² de área
+        - '100'
+        - null
+        - null
+        - '60'
+        - null
+        - null
+        - '100'
+      - - null
+        - M-8
+        - Uma pessoa por 4,00 m² de área
+        - '60'
+        - null
+        - null
+        - '45'
+        - null
+        - null
+        - '100'
+    - bbox:
+      - 392.35
+      - 93.26
+      - 538.01
+      - 113.9
+      linhas:
+      - - Capacidade da Unidade de
+      - - passagem (B)
+notas:
+- 'Células mescladas ("^" na leitura visual): a capacidade da unidade de passagem vale para o bloco de
+  linhas indicado na imagem (ex.: 60/45/100 para Residencial e Serviços de hospedagem; 100/60/100 de Comercial
+  até E-1, E-2 e E-3). Na publicação, cada linha repete o valor do bloco.'
+- 'Observações (A) a (N) e a redução das unidades de passagem: ver o texto da página 19. "+" = consultar
+  normas específicas (observação I).'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

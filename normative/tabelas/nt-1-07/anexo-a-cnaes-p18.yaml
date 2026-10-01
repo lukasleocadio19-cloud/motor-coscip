@@ -1,0 +1,449 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 18
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  mesclar_linhas:
+  - - 4
+    - 5
+  - - 20
+    - 21
+  - - 32
+    - 33
+  - - 49
+    - 50
+  descartar_linhas:
+  - 3
+  - 18
+  - 29
+  - 45
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-18.png
+    imagem_sha256: 5711196f78584fc12ac3bc648f15b73ae0f2b11042d943451d6b789f02ed493e
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 4110-7/00
+      - Incorporação de empreendimentos imobiliários
+    - - 4212-0/00
+      - Construção de obras de arte especiais
+    - - 4213-8/00
+      - Obras de urbanização - ruas, praças e calçadas
+    - - 4222-7/01
+      - Construção de redes de abastecimento de água, coleta de esgoto e construções correlatas, exceto
+        obras de irrigação
+    - - 4222-7/02
+      - Obras de irrigação
+    - - 4223-5/00
+      - Construção de redes de transportes por dutos, exceto para água e esgoto
+    - - 4292-8/01
+      - Montagem de estruturas metálicas
+    - - 4311-8/02
+      - Preparação de canteiro e limpeza de terreno
+    - - 4312-6/00
+      - Perfurações e sondagens
+    - - 4313-4/00
+      - Obras de terraplenagem
+    - - 4319-3/00
+      - Serviços de preparação do terreno não especificados anteriormente
+    - - 4322-3/01
+      - Instalações hidráulicas, sanitárias e de gás
+    - - 4322-3/02
+      - Instalação e manutenção de sistemas centrais de ar condicionado, de ventilação e refrigeração
+    - - 4322-3/03
+      - Instalações de sistema de prevenção contra incêndio
+    - - 4329-1/01
+      - Instalação de painéis publicitários
+    - - 4329-1/02
+      - Instalação de equipamentos para orientação à navegação marítima, fluvial e lacustre
+    - - 4329-1/03
+      - Instalação, manutenção e reparação de elevadores, escadas e esteiras rolantes
+    - - 4329-1/04
+      - Montagem e instalação de sistemas e equipamentos de iluminação e sinalização em vias públicas,
+        portos e aeroportos
+    - - 4329-1/99
+      - Outras obras de instalações em construções não especificadas anteriormente
+    - - 4330-4/01
+      - Impermeabilização em obras de engenharia civil
+    - - 4330-4/02
+      - Instalação de portas, janelas, tetos, divisórias e armários embutidos de qualquer material
+    - - 4330-4/03
+      - Obras de acabamento em gesso e estuque
+    - - 4330-4/99
+      - Outras obras de acabamento da construção
+    - - 4391-6/00
+      - Obras de fundações
+    - - 4399-1/01
+      - Administração de obras
+    - - 4399-1/02
+      - Montagem e desmontagem de andaimes e outras estruturas temporárias
+    - - 4399-1/03
+      - Obras de alvenaria
+    - - 4399-1/04
+      - Serviços de operação e fornecimento de equipamentos para transporte e elevação de cargas e pessoas
+        para uso em obras
+    - - 4399-1/05
+      - Perfuração e construção de poços de água
+    - - 4399-1/99
+      - Serviços especializados para construção não especificados anteriormente
+    - - 4512-9/01
+      - Representantes comerciais e agentes do comércio de veículos automotores
+    - - 4520-0/01
+      - Serviços de manutenção e reparação mecânica de veículos automotores
+    - - 4520-0/03
+      - Serviços de manutenção e reparação elétrica de veículos automotores
+    - - 4520-0/04
+      - Serviços de alinhamento e balanceamento de veículos automotores
+    - - 4520-0/05
+      - Serviços de lavagem, lubrificação e polimento de veículos automotores
+    - - 4520-0/06
+      - Serviços de borracharia para veículos automotores
+    - - 4520-0/07
+      - Serviços de instalação, manutenção e reparação de acessórios para veículos automotores
+    - - 4530-7/01
+      - Comércio por atacado de peças e acessórios novos para veículos automotores
+    - - 4530-7/02
+      - Comércio por atacado de pneumáticos e câmaras-de-ar
+    - - 4530-7/03
+      - Comércio a varejo de peças e acessórios novos para veículos automotores
+    - - 4530-7/04
+      - Comércio a varejo de peças e acessórios usados para veículos automotores
+    - - 4530-7/05
+      - Comércio a varejo de pneumáticos e câmaras-de-ar
+    - - 4530-7/06
+      - Representantes comerciais e agentes do comércio de peças e acessórios novos e usados para veículos
+        automotores
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 18
+      tabela_na_pagina: 1
+    linhas:
+    - - 4110-7/00
+      - Incorporação de empreendimentos imobiliários
+    - - 4212-0/00
+      - Construção de obras de arte especiais
+    - - 4213-8/00
+      - Obras de urbanização - ruas, praças e calçadas
+    - - 4222-7/01
+      - Construção de redes de abastecimento de água, coleta de esgoto e construções correlatas, exceto
+        obras de irrigação
+    - - 4222-7/02
+      - Obras de irrigação
+    - - 4223-5/00
+      - Construção de redes de transportes por dutos, exceto para água e esgoto
+    - - 4292-8/01
+      - Montagem de estruturas metálicas
+    - - 4311-8/02
+      - Preparação de canteiro e limpeza de terreno
+    - - 4312-6/00
+      - Perfurações e sondagens
+    - - 4313-4/00
+      - Obras de terraplenagem
+    - - 4319-3/00
+      - Serviços de preparação do terreno não especificados anteriormente
+    - - 4322-3/01
+      - Instalações hidráulicas, sanitárias e de gás
+    - - 4322-3/02
+      - Instalação e manutenção de sistemas centrais de ar condicionado, de ventilação e refrigeração
+    - - 4322-3/03
+      - Instalações de sistema de prevenção contra incêndio
+    - - 4329-1/01
+      - Instalação de painéis publicitários
+    - - 4329-1/02
+      - Instalação de equipamentos para orientação à navegação marítima, fluvial e lacustre
+    - - 4329-1/03
+      - Instalação, manutenção e reparação de elevadores, escadas e esteiras rolantes
+    - - 4329-1/04
+      - Montagem e instalação de sistemas e equipamentos de iluminação e sinalização em vias públicas,
+        portos e aeroportos
+    - - 4329-1/99
+      - Outras obras de instalações em construções não especificadas anteriormente
+    - - 4330-4/01
+      - Impermeabilização em obras de engenharia civil
+    - - 4330-4/02
+      - Instalação de portas, janelas, tetos, divisórias e armários embutidos de qualquer material
+    - - 4330-4/03
+      - Obras de acabamento em gesso e estuque
+    - - 4330-4/99
+      - Outras obras de acabamento da construção
+    - - 4391-6/00
+      - Obras de fundações
+    - - 4399-1/01
+      - Administração de obras
+    - - 4399-1/02
+      - Montagem e desmontagem de andaimes e outras estruturas temporárias
+    - - 4399-1/03
+      - Obras de alvenaria
+    - - 4399-1/04
+      - Serviços de operação e fornecimento de equipamentos para transporte e elevação de cargas e pessoas
+        para uso em obras
+    - - 4399-1/05
+      - Perfuração e construção de poços de água
+    - - 4399-1/99
+      - Serviços especializados para construção não especificados anteriormente
+    - - 4512-9/01
+      - Representantes comerciais e agentes do comércio de veículos automotores
+    - - 4520-0/01
+      - Serviços de manutenção e reparação mecânica de veículos automotores
+    - - 4520-0/03
+      - Serviços de manutenção e reparação elétrica de veículos automotores
+    - - 4520-0/04
+      - Serviços de alinhamento e balanceamento de veículos automotores
+    - - 4520-0/05
+      - Serviços de lavagem, lubrificação e polimento de veículos automotores
+    - - 4520-0/06
+      - Serviços de borracharia para veículos automotores
+    - - 4520-0/07
+      - Serviços de instalação, manutenção e reparação de acessórios para veículos automotores
+    - - 4530-7/01
+      - Comércio por atacado de peças e acessórios novos para veículos automotores
+    - - 4530-7/02
+      - Comércio por atacado de pneumáticos e câmaras-de-ar
+    - - 4530-7/03
+      - Comércio a varejo de peças e acessórios novos para veículos automotores
+    - - 4530-7/04
+      - Comércio a varejo de peças e acessórios usados para veículos automotores
+    - - 4530-7/05
+      - Comércio a varejo de pneumáticos e câmaras-de-ar
+    - - 4530-7/06
+      - Representantes comerciais e agentes do comércio de peças e acessórios novos e usados para veículos
+        automotores
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 46.76
+      - 57.0
+      - 541.66
+      - 775.5
+      linhas:
+      - - 4110-7/00
+        - Incorporação de empreendimentos imobiliários
+        - null
+        - null
+      - - 4212-0/00
+        - Construção de obras de arte especiais
+        - null
+        - null
+      - - 4213-8/00
+        - Obras de urbanização - ruas, praças e calçadas
+        - null
+        - null
+      - - null
+        - null
+        - Obras de urbanização - ruas, praças e calçadas
+        - null
+      - - 4222-7/01
+        - ''
+        - Construção de redes de abastecimento de água, coleta de esgoto e construções correlatas, exceto
+        - ''
+      - - null
+        - null
+        - obras de irrigação
+        - null
+      - - 4222-7/02
+        - Obras de irrigação
+        - null
+        - null
+      - - 4223-5/00
+        - Construção de redes de transportes por dutos, exceto para água e esgoto
+        - null
+        - null
+      - - 4292-8/01
+        - Montagem de estruturas metálicas
+        - null
+        - null
+      - - 4311-8/02
+        - Preparação de canteiro e limpeza de terreno
+        - null
+        - null
+      - - 4312-6/00
+        - Perfurações e sondagens
+        - null
+        - null
+      - - 4313-4/00
+        - Obras de terraplenagem
+        - null
+        - null
+      - - 4319-3/00
+        - Serviços de preparação do terreno não especificados anteriormente
+        - null
+        - null
+      - - 4322-3/01
+        - Instalações hidráulicas, sanitárias e de gás
+        - null
+        - null
+      - - 4322-3/02
+        - Instalação e manutenção de sistemas centrais de ar condicionado, de ventilação e refrigeração
+        - null
+        - null
+      - - 4322-3/03
+        - Instalações de sistema de prevenção contra incêndio
+        - null
+        - null
+      - - 4329-1/01
+        - Instalação de painéis publicitários
+        - null
+        - null
+      - - 4329-1/02
+        - Instalação de equipamentos para orientação à navegação marítima, fluvial e lacustre
+        - null
+        - null
+      - - 4329-1/03
+        - Instalação, manutenção e reparação de elevadores, escadas e esteiras rolantes
+        - null
+        - null
+      - - null
+        - null
+        - Instalação, manutenção e reparação de elevadores, escadas e esteiras rolantes
+        - null
+      - - 4329-1/04
+        - ''
+        - Montagem e instalação de sistemas e equipamentos de iluminação e sinalização em vias públicas,
+        - ''
+      - - null
+        - null
+        - portos e aeroportos
+        - null
+      - - 4329-1/99
+        - Outras obras de instalações em construções não especificadas anteriormente
+        - null
+        - null
+      - - 4330-4/01
+        - Impermeabilização em obras de engenharia civil
+        - null
+        - null
+      - - 4330-4/02
+        - Instalação de portas, janelas, tetos, divisórias e armários embutidos de qualquer material
+        - null
+        - null
+      - - 4330-4/03
+        - Obras de acabamento em gesso e estuque
+        - null
+        - null
+      - - 4330-4/99
+        - Outras obras de acabamento da construção
+        - null
+        - null
+      - - 4391-6/00
+        - Obras de fundações
+        - null
+        - null
+      - - 4399-1/01
+        - Administração de obras
+        - null
+        - null
+      - - 4399-1/02
+        - Montagem e desmontagem de andaimes e outras estruturas temporárias
+        - null
+        - null
+      - - 4399-1/03
+        - Obras de alvenaria
+        - null
+        - null
+      - - null
+        - null
+        - Obras de alvenaria
+        - null
+      - - 4399-1/04
+        - ''
+        - Serviços de operação e fornecimento de equipamentos para transporte e elevação de cargas e
+        - ''
+      - - null
+        - null
+        - pessoas para uso em obras
+        - null
+      - - 4399-1/05
+        - Perfuração e construção de poços de água
+        - null
+        - null
+      - - 4399-1/99
+        - Serviços especializados para construção não especificados anteriormente
+        - null
+        - null
+      - - 4512-9/01
+        - Representantes comerciais e agentes do comércio de veículos automotores
+        - null
+        - null
+      - - 4520-0/01
+        - Serviços de manutenção e reparação mecânica de veículos automotores
+        - null
+        - null
+      - - 4520-0/03
+        - Serviços de manutenção e reparação elétrica de veículos automotores
+        - null
+        - null
+      - - 4520-0/04
+        - Serviços de alinhamento e balanceamento de veículos automotores
+        - null
+        - null
+      - - 4520-0/05
+        - Serviços de lavagem, lubrificação e polimento de veículos automotores
+        - null
+        - null
+      - - 4520-0/06
+        - Serviços de borracharia para veículos automotores
+        - null
+        - null
+      - - 4520-0/07
+        - Serviços de instalação, manutenção e reparação de acessórios para veículos automotores
+        - null
+        - null
+      - - 4530-7/01
+        - Comércio por atacado de peças e acessórios novos para veículos automotores
+        - null
+        - null
+      - - 4530-7/02
+        - Comércio por atacado de pneumáticos e câmaras-de-ar
+        - null
+        - null
+      - - 4530-7/03
+        - Comércio a varejo de peças e acessórios novos para veículos automotores
+        - null
+        - null
+      - - 4530-7/04
+        - Comércio a varejo de peças e acessórios usados para veículos automotores
+        - null
+        - null
+      - - 4530-7/05
+        - Comércio a varejo de pneumáticos e câmaras-de-ar
+        - null
+        - null
+      - - null
+        - null
+        - Comércio a varejo de pneumáticos e câmaras-de-ar
+        - null
+      - - 4530-7/06
+        - ''
+        - Representantes comerciais e agentes do comércio de peças e acessórios novos e usados para
+        - ''
+      - - null
+        - null
+        - veículos automotores
+        - null
+notas:
+- Continuação da tabela da página 17.
+- A tabela continua na página 19.
+- A camada de texto parte as descrições de duas linhas e repete 4 descrição(ões) numa linha vazia; a comparação
+  junta as partes e descarta as repetições.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

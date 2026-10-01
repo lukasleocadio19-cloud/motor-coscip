@@ -1,0 +1,158 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 Parte 2
+arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+tabela: Anexo C (Classe I)
+titulo: Exemplos das mercadorias – Classe I
+pagina: 15
+fonte_pdf_sha256: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-2/pagina-15.jpg
+    imagem_sha256: 7eac320b2abf7d934483a846c54dbbe2b865872b8ab0090ce1528984405cc96d
+    linhas_cabecalho: 1
+    linhas:
+    - - Exemplos de mercadorias Classe I
+    - - Bebidas alcoólicas Com e sem caixas de papelão - Até 20% de álcool em recipientes de metal, vidro
+        ou cerâmica
+    - - 'Aparelhos elétricos grandes (Linha branca: fogões, geladeiras) Sem embalagem, sem quantidades
+        significativas de plástico no exterior'
+    - - Pilhas e baterias Pilhas secas (sem lítio ou metais exóticos similares) - Embaladas, em caixas
+        de papelão Automotivas - Cheias*
+    - - Garrafas e frascos Vazias, em caixas de papelão - Vidro Cheios com líquidos incombustíveis -Vidro,
+        em caixas de papelão -Plástico, em caixas de papelão [menos que 5 gal. (18,9 L)] -Plástico, PET
+        Cheio com pós incombustíveis - Vidro, em caixas de papelão
+    - - Comidas enlatadas Em caixas de papelão comuns Latas Metal - Vazias
+    - - Cimento Em sacos
+    - - Café Em latas, em caixas de papelão
+    - - Fertilizantes Em sacos - Fosfatos
+    - - Arquivos Metal - Caixa de papelão
+    - - Peixe ou produtos derivados Congelado - Embalagem não laminada com plástico ou cera Enlatado -
+        Em caixas de papelão
+    - - Comidas congeladas Embalagem não laminada com plástico ou cera
+    - - Frutas Frescas - Em recipientes e bandejas, exceto de plástico - Com divisórias de madeira
+    - - Sorvete
+    - - Carnes e derivados - A granel - Em latas, em caixas de papelão - Congelada, embalagem sem plástico
+        e sem cera Mesas de escritório de metal - Com tampos e acabamento em plástico
+    - - Leite - Recipientes de papel não revestidos com cera - Recipientes de papel revestidos com cera
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 15
+      tabela_na_pagina: 1
+    linhas:
+    - - Exemplos de mercadorias Classe I
+    - - Bebidas alcoólicas Com e sem caixas de papelão - Até 20% de álcool em recipientes de metal, vidro
+        ou cerâmica
+    - - 'Aparelhos elétricos grandes (Linha branca: fogões, geladeiras) Sem embalagem, sem quantidades
+        significativas de plástico no exterior'
+    - - Pilhas e baterias Pilhas secas (sem lítio ou metais exóticos similares) - Embaladas, em caixas
+        de papelão Automotivas - Cheias*
+    - - Garrafas e frascos Vazias, em caixas de papelão - Vidro Cheios com líquidos incombustíveis - Vidro,
+        em caixas de papelão - Plástico, em caixas de papelão [menos que 5 gal. (18,9 L)] - Plástico,
+        PET Cheio com pós incombustíveis - Vidro, em caixas de papelão
+    - - Comidas enlatadas Em caixas de papelão comuns Latas Metal - Vazias
+    - - Cimento Em sacos
+    - - Café Em latas, em caixas de papelão
+    - - Fertilizantes Em sacos - Fosfatos
+    - - Arquivos Metal - Caixa de papelão
+    - - Peixe ou produtos derivados Congelado - Embalagem não laminada com plástico ou cera Enlatado -
+        Em caixas de papelão
+    - - Comidas congeladas Embalagem não laminada com plástico ou cera
+    - - Frutas Frescas - Em recipientes e bandejas, exceto de plástico - Com divisórias de madeira
+    - - Sorvete
+    - - Carnes e derivados - A granel - Em latas, em caixas de papelão - Congelada, embalagem sem plástico
+        e sem cera Mesas de escritório de metal - Com tampos e acabamento em plástico
+    - - Leite - Recipientes de papel não revestidos com cera - Recipientes de papel revestidos com cera
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 67.11
+      - 88.1
+      - 534.93
+      - 720.1
+      linhas:
+      - - ''
+        - Exemplos de mercadorias Classe I
+        - ''
+      - - Bebidas alcoólicas Com e sem caixas de papelão - Até 20% de álcool em recipientes de metal,
+          vidro ou cerâmica
+        - null
+        - null
+      - - 'Aparelhos elétricos grandes (Linha branca: fogões, geladeiras) Sem embalagem, sem quantidades
+          significativas de plástico no exterior'
+        - null
+        - null
+      - - Pilhas e baterias Pilhas secas (sem lítio ou metais exóticos similares) - Embaladas, em caixas
+          de papelão Automotivas - Cheias*
+        - null
+        - null
+      - - Garrafas e frascos Vazias, em caixas de papelão - Vidro Cheios com líquidos incombustíveis -
+          Vidro, em caixas de papelão - Plástico, em caixas de papelão [menos que 5 gal. (18,9 L)] - Plástico,
+          PET Cheio com pós incombustíveis - Vidro, em caixas de papelão
+        - null
+        - null
+      - - Comidas enlatadas Em caixas de papelão comuns Latas Metal - Vazias
+        - null
+        - null
+      - - Cimento Em sacos
+        - null
+        - null
+      - - Café Em latas, em caixas de papelão
+        - null
+        - null
+      - - Fertilizantes Em sacos - Fosfatos
+        - null
+        - null
+      - - Arquivos Metal - Caixa de papelão
+        - null
+        - null
+      - - Peixe ou produtos derivados Congelado - Embalagem não laminada com plástico ou cera Enlatado
+          - Em caixas de papelão
+        - null
+        - null
+      - - Comidas congeladas Embalagem não laminada com plástico ou cera
+        - null
+        - null
+      - - Frutas Frescas - Em recipientes e bandejas, exceto de plástico - Com divisórias de madeira
+        - null
+        - null
+      - - Sorvete
+        - null
+        - null
+      - - Carnes e derivados - A granel - Em latas, em caixas de papelão - Congelada, embalagem sem plástico
+          e sem cera Mesas de escritório de metal - Com tampos e acabamento em plástico
+        - null
+        - null
+      - - Leite - Recipientes de papel não revestidos com cera - Recipientes de papel revestidos com cera
+        - null
+        - null
+notas:
+- Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
+- A tabela da Classe I continua no alto da página 16.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 4
+    coluna: 0
+    a: Garrafas e frascos Vazias, em caixas de papelão - Vidro Cheios com líquidos incombustíveis -Vidro,
+      em caixas de papelão -Plástico, em caixas de papelão [menos que 5 gal. (18,9 L)] -Plástico, PET
+      Cheio com pós incombustíveis - Vidro, em caixas de papelão
+    b: Garrafas e frascos Vazias, em caixas de papelão - Vidro Cheios com líquidos incombustíveis - Vidro,
+      em caixas de papelão - Plástico, em caixas de papelão [menos que 5 gal. (18,9 L)] - Plástico, PET
+      Cheio com pós incombustíveis - Vidro, em caixas de papelão
+    estado: verificada
+    score: 99.4

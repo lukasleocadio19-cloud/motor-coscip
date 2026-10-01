@@ -1,0 +1,245 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 1 do Anexo A
+titulo: Localização de tanques de superfície para armazenamento de líquidos estáveis (classes I, II e
+  III A)
+pagina: 13
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 6
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-13.jpg
+    imagem_sha256: 2ffad39fbe2179ea7f23931db0cb48f64713e923a105bfd1475fb3a6f276993c
+    linhas_cabecalho: 1
+    linhas:
+    - - Tipo de tanque
+      - Distância mínima até o limite de propriedade, desde que na área adjacente haja ou possa haver
+        construção, inclusive no lado oposto da via pública, nunca inferior a 1,50 m
+      - Distância mínima ao lado mais próximo de qualquer via de circulação interna ou qualquer edificação
+        importante na mesma propriedade, nunca inferior a 1,50 m
+    - - Com teto flutuante ou selo flutuante (conforme ABNT NBR 7821) com dispositivo de alívio de emergência
+        limitado a pressão de 17,20 KPa
+      - Metade do diâmetro do Tanque
+      - 1/6 do diâmetro do tanque
+    - - Tanque vertical com teto fixo, com solda fragilizada entre o teto e o costado (conforme ABNT NBR
+        7821) com dispositivo de alívio de emergência limitado a pressão de 17,20 KPa e com diâmetro menor
+        ou igual a 45 m
+      - Metade do diâmetro do tanque
+      - 1/6 do diâmetro do tanque
+    - - Tanque vertical com teto fixo, com solda fragilizada entre o teto e o costado (conforme ABNT NBR
+        7821) com dispositivo de alívio de emergência limitado a pressão de 17,2 KPa e com diâmetro maior
+        que 45 m
+      - Diâmetro do tanque
+      - 1/3 do diâmetro do tanque
+    - - Tanque horizontal e vertical, sem solda fragilizada entre teto e costado, com dispositivo de alívio
+        de emergência limitado a pressão de 17,20 KPa
+      - 50% do valor estabelecido na Tabela 5
+      - 50% do valor estabelecido na Tabela 5
+    - - Qualquer tanque cuja pressão exceda 17,20 KPa
+      - 1,50 vezes o valor da Tabela 5, mas não inferior a 7,50 m
+      - 1,50 vezes o valor da Tabela 5, mas não inferior a 7,50 m
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 13
+      tabela_na_pagina: 1
+    linhas:
+    - - Tipo de tanque
+      - Distância mínima até o limite de propriedade, desde que na área adjacente haja ou possa haver
+        construção, inclusive no lado oposto da via pública, nunca inferior a 1,50 m
+      - Distância mínima ao lado mais próximo de qualquer via de circulação interna ou qualquer edificação
+        importante na mesma propriedade, nunca inferior a 1,50 m
+    - - Com teto flutuante ou selo flutuante (conforme ABNT NBR 7821) com dispositivo de alívio de emergência
+        limitado a pressão de 17,20 KPa
+      - Metade do diâmetro do Tanque
+      - 1/6 do diâmetro do tanque
+    - - Tanque vertical com teto fixo, com solda fragilizada entre o teto e o costado (conforme ABNT NBR
+        7821) com dispositivo de alívio de emergência limitado a pressão de 17,20 KPa e com diâmetro menor
+        ou igual a 45 m
+      - Metade do diâmetro do tanque
+      - 1/6 do diâmetro do tanque
+    - - Tanque vertical com teto fixo, com solda fragilizada entre o teto e o costado (conforme ABNT NBR
+        7821) com dispositivo de alívio de emergência limitado a pressão de 17,2 KPa e com diâmetro maior
+        que 45 m
+      - Diâmetro do tanque
+      - 1/3 do diâmetro do tanque
+    - - Tanque horizontal e vertical, sem solda fragilizada entre teto e costado, com dispositivo de alívio
+        de emergência limitado a pressão de 17,20 KPa
+      - 50% do valor estabelecido na Tabela 5
+      - 50% do valor estabelecido na Tabela 5
+    - - Qualquer tanque cuja pressão exceda 17,20 KPa
+      - 1,50 vezes o valor da Tabela 5, mas não inferior a 7,50 m
+      - 1,50 vezes o valor da Tabela 5, mas não inferior a 7,50 m
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 49.73
+      - 119.17
+      - 524.81
+      - 499.34
+      linhas:
+      - - Tipo de tanque
+        - ''
+        - Distância mínima até o limite de
+        - ''
+        - ''
+        - Distância mínima ao lado mais
+        - ''
+      - - null
+        - null
+        - propriedade, desde que na área
+        - null
+        - null
+        - próximo de qualquer via de
+        - null
+      - - null
+        - null
+        - adjacente haja ou possa haver
+        - null
+        - null
+        - circulação interna ou qualquer
+        - null
+      - - null
+        - null
+        - construção, inclusive no lado
+        - null
+        - null
+        - edificação importante na
+        - null
+      - - null
+        - null
+        - oposto da via pública, nunca
+        - null
+        - null
+        - mesma propriedade, nunca
+        - null
+      - - null
+        - null
+        - inferior a 1,50 m
+        - null
+        - null
+        - inferior a 1,50 m
+        - null
+      - - Com teto flutuante ou selo flutuante (conforme ABNT NBR 7821) com dispositivo de alívio de emergência
+          limitado a pressão de 17,20 KPa
+        - Metade do diâmetro do Tanque
+        - null
+        - null
+        - 1/6 do diâmetro do tanque
+        - null
+        - null
+      - - Tanque vertical com teto fixo, com solda fragilizada entre o teto e o costado (conforme ABNT
+          NBR 7821) com dispositivo de alívio de emergência limitado a pressão de 17,20 KPa e com diâmetro
+          menor ou igual a 45 m
+        - Metade do diâmetro do tanque
+        - null
+        - null
+        - 1/6 do diâmetro do tanque
+        - null
+        - null
+      - - Tanque vertical com teto fixo, com solda fragilizada entre o teto e o costado (conforme ABNT
+          NBR 7821) com dispositivo de alívio de emergência limitado a pressão de 17,2 KPa e com diâmetro
+          maior que 45 m
+        - Diâmetro do tanque
+        - null
+        - null
+        - 1/3 do diâmetro do tanque
+        - null
+        - null
+      - - Tanque horizontal e vertical, sem solda fragilizada entre teto e costado, com dispositivo de
+          alívio de emergência limitado a pressão de 17,20 KPa
+        - 50% do valor estabelecido na Tabela 5
+        - null
+        - null
+        - 50% do valor estabelecido na Tabela 5
+        - null
+        - null
+      - - Qualquer tanque cuja pressão exceda 17,20 KPa
+        - 1,50 vezes o valor da Tabela 5, mas não inferior a 7,50 m
+        - null
+        - null
+        - 1,50 vezes o valor da Tabela 5, mas não inferior a 7,50 m
+        - null
+        - null
+    - bbox:
+      - 49.73
+      - 553.21
+      - 524.81
+      - 724.27
+      linhas:
+      - - Tipo de tanque
+        - ''
+        - Distância mínima até o limite de
+        - ''
+        - ''
+        - Distância mínima ao lado mais
+        - ''
+      - - null
+        - null
+        - propriedade, desde que na área
+        - null
+        - null
+        - próximo de qualquer via de
+        - null
+      - - null
+        - null
+        - adjacente haja ou possa haver
+        - null
+        - null
+        - circulação interna ou qualquer
+        - null
+      - - null
+        - null
+        - construção, inclusive no lado
+        - null
+        - null
+        - edificação importante na
+        - null
+      - - null
+        - null
+        - oposto da via pública, nunca
+        - null
+        - null
+        - mesma propriedade, nunca
+        - null
+      - - null
+        - null
+        - inferior a 1,50 m
+        - null
+        - null
+        - inferior a 1,50 m
+        - null
+      - - Tanque vertical com teto flutuante ou selo flutuante (conforme ABNT NBR 7821)
+        - Metade do diâmetro do tanque
+        - null
+        - null
+        - 1/6 do diâmetro do tanque
+        - null
+        - null
+      - - Tanque vertical com teto fixo, com solda fragilizada entre o teto e o costado (conforme ABNT
+          NBR 7821)
+        - Diâmetro do tanque
+        - null
+        - null
+        - 1/3 do diâmetro do tanque
+        - null
+        - null
+notas:
+- 'Fonte indicada na página: ABNT NBR 17505.'
+- '"Tabela 5" nesta tabela é a Tabela 5 do Anexo A (p. 14).'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

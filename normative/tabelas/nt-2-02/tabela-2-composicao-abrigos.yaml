@@ -1,0 +1,100 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-02
+arquivo: nt-2-02-hidrantes-e-mangotinhos.md
+tabela: Tabela 2
+titulo: Composição dos abrigos
+pagina: 6
+fonte_pdf_sha256: 175c79afcac17335da3d68aef49e4ec9cc88706ddd012ed49e0b2748bf8524e9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-02/pagina-06.jpg
+    imagem_sha256: df2d7cdb45136f4b3f4eb3776f975b224f816713c6acb65484d55c89218cb417
+    linhas_cabecalho: 1
+    linhas:
+    - - Materiais
+      - Alvenaria de Tijolo
+      - Alumínio Anodizado
+      - Chapa Tratada
+      - Fibra de Vdiro
+      - Madeira
+    - - Abrigos
+      - X
+      - X
+      - X
+      - X
+      - ''
+    - - Portas Com moldura
+      - ''
+      - X
+      - X
+      - X
+      - X
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 6
+      tabela_na_pagina: 1
+    linhas:
+    - - Materiais
+      - Alvenaria de Tijolo
+      - Alumínio Anodizado
+      - Chapa Tratada
+      - Fibra de Vdiro
+      - Madeira
+    - - Abrigos
+      - X
+      - X
+      - X
+      - X
+    - - Portas Com moldura
+      - X
+      - X
+      - X
+      - X
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 304.95
+      - 573.29
+      - 545.23
+      - 638.86
+      linhas:
+      - - Materiais
+        - Alvenaria de Tijolo
+        - Alumínio Anodizado
+        - Chapa Tratada
+        - Fibra de Vdiro
+        - Madeira
+      - - Abrigos
+        - X
+        - X
+        - X
+        - X
+        - ''
+      - - Portas Com moldura
+        - ''
+        - X
+        - X
+        - X
+        - X
+notas:
+- 'Células em branco = fundo cinza na imagem (material não previsto para aquele elemento). Fonte indicada:
+  COSCIP.'
+inconsistencias_da_fonte:
+- '"Fibra de Vdiro" no cabeçalho (erro de digitação da NT, igual na imagem e no texto): fibra de vidro.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

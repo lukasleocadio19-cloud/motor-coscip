@@ -1,0 +1,345 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 1 do Anexo II
+titulo: Classificação das edificações e áreas de risco quanto à ocupação (continuação, p. 24)
+pagina: 24
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+forma_geometrica:
+  comparar_por_coluna: true
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-24.jpg
+    imagem_sha256: 2a8f86a74e9f69575f32aa323930e94c4acce8a3940995082fae8e7203293ab0
+    linhas_cabecalho: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Definição e exemplos
+    - - I
+      - Industrial
+      - I-1
+      - Industrial 1
+      - Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são
+        classificadas como Risco Médio 1 conforme Nota Técnica específica.
+    - - ^
+      - ^
+      - I-2
+      - Industrial 2
+      - Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são
+        classificadas como Risco Médio 2 conforme Nota Técnica específica.
+    - - ^
+      - ^
+      - I-3
+      - Industrial 3
+      - Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são
+        classificadas como Risco Grande conforme Nota Técnica específica.
+    - - J
+      - Depósito
+      - J-1
+      - Depósitos de material incombustível
+      - Edificações sem processo industrial que armazenam tijolos, pedras, areias, cimentos, metais e
+        outros materiais incombustíveis, todos sem embalagem.
+    - - ^
+      - ^
+      - J-2
+      - Todo tipo de Depósito
+      - Depósitos com carga de incêndio até 1.000 MJ/m², conforme Nota Técnica específica.
+    - - ^
+      - ^
+      - J-3
+      - Todo tipo de Depósito
+      - Depósitos com carga de incêndio entre 1.000 e 1.200 MJ/m², conforme Nota Técnica específica.
+    - - ^
+      - ^
+      - J-4
+      - Todo tipo de Depósito
+      - Depósitos onde a carga de incêndio ultrapassa a 1.200 MJ/m², conforme Nota Técnica específica.
+    - - L
+      - Explosivos ou munições
+      - L-1
+      - Comércio
+      - Comércio em geral de fogos de artifício, munições e assemelhados
+    - - ^
+      - ^
+      - L-2
+      - Indústria
+      - Indústria de material explosivo ou munições
+    - - ^
+      - ^
+      - L-3
+      - Depósito
+      - Depósito de material explosivo ou munições
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 24
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Definição e exemplos
+    - - I
+      - Industrial
+      - Industrial 1
+      - Edificações industriais que, em função das
+    - - atividades exercidas e dos materiais utilizados,
+    - - I-1
+    - - são classificadas como Risco Médio 1
+    - - conforme Nota Técnica específica.
+    - - Industrial 2
+      - Edificações industriais que, em função das ati-
+    - - vidades exercidas e dos materiais utilizados,
+    - - I-2
+    - - são classificadas como Risco Médio 2
+    - - conforme Nota Técnica específica.
+    - - Industrial 3
+      - Edificações industriais que, em função das ati-
+    - - vidades exercidas e dos materiais utilizados,
+    - - I-3
+    - - são classificadas como Risco Grande
+    - - conforme Nota Técnica específica.
+    - - J
+      - Depósitos de material incombustível
+      - Edificações sem processo industrial que ar-
+    - - mazenam tijolos, pedras, areias, cimentos,
+    - - J-1
+    - - metais e outros materiais incombustíveis,
+    - - todos sem embalagem.
+    - - Todo tipo de Depósito
+      - Depósitos com carga de incêndio até 1.000
+    - - J-2
+    - - MJ/m², conforme Nota Técnica específica.
+    - - Depósito
+      - Todo tipo de Depósito
+      - Depósitos com carga de incêndio entre 1.000
+    - - J-3
+      - e 1.200 MJ/m2, conforme Nota Técnica
+    - - específica.
+    - - Todo tipo de Depósito
+      - Depósitos onde a carga de incêndio ultrapassa
+    - - J-4
+      - a 1.200 MJ/m², conforme Nota Técnica
+    - - específica.
+    - - L
+      - Comércio
+      - Comércio em geral de fogos de artifício, muni-
+    - - L-1
+    - - ções e assemelhados
+    - - Explosivos ou munições
+      - Indústria
+    - - L-2
+      - Indústria de material explosivo ou munições
+    - - Depósito
+    - - L-3
+      - Depósito de material explosivo ou munições
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.86
+      - 72.77
+      - 552.04
+      - 529.49
+      linhas:
+      - - Grupo
+        - Ocupação/Uso
+        - Divisão
+        - Descrição
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - Definição e exemplos
+      - - null
+        - null
+        - null
+        - null
+        - ''
+      - - I
+        - Industrial
+        - I-1
+        - Industrial 1
+        - Edificações industriais que, em função das
+      - - null
+        - null
+        - null
+        - null
+        - atividades exercidas e dos materiais utilizados,
+      - - null
+        - null
+        - null
+        - null
+        - são classificadas como Risco Médio 1
+      - - null
+        - null
+        - null
+        - null
+        - conforme Nota Técnica específica.
+      - - null
+        - null
+        - I-2
+        - Industrial 2
+        - Edificações industriais que, em função das ati-
+      - - null
+        - null
+        - null
+        - null
+        - vidades exercidas e dos materiais utilizados,
+      - - null
+        - null
+        - null
+        - null
+        - são classificadas como Risco Médio 2
+      - - null
+        - null
+        - null
+        - null
+        - conforme Nota Técnica específica.
+      - - null
+        - null
+        - I-3
+        - Industrial 3
+        - Edificações industriais que, em função das ati-
+      - - null
+        - null
+        - null
+        - null
+        - vidades exercidas e dos materiais utilizados,
+      - - null
+        - null
+        - null
+        - null
+        - são classificadas como Risco Grande
+      - - null
+        - null
+        - null
+        - null
+        - conforme Nota Técnica específica.
+      - - J
+        - ''
+        - J-1
+        - Depósitos de material incombustível
+        - Edificações sem processo industrial que ar-
+      - - null
+        - null
+        - null
+        - null
+        - mazenam tijolos, pedras, areias, cimentos,
+      - - null
+        - null
+        - null
+        - null
+        - metais e outros materiais incombustíveis,
+      - - null
+        - null
+        - null
+        - null
+        - todos sem embalagem.
+      - - null
+        - null
+        - J-2
+        - Todo tipo de Depósito
+        - Depósitos com carga de incêndio até 1.000
+      - - null
+        - null
+        - null
+        - null
+        - MJ/m², conforme Nota Técnica específica.
+      - - null
+        - Depósito
+        - J-3
+        - Todo tipo de Depósito
+        - Depósitos com carga de incêndio entre 1.000
+      - - null
+        - null
+        - null
+        - null
+        - e 1.200 MJ/m2 , conforme Nota Técnica
+      - - null
+        - null
+        - null
+        - null
+        - específica.
+      - - null
+        - null
+        - J-4
+        - Todo tipo de Depósito
+        - Depósitos onde a carga de incêndio ultrapassa
+      - - null
+        - null
+        - null
+        - null
+        - a 1.200 MJ/m², conforme Nota Técnica
+      - - null
+        - null
+        - null
+        - null
+        - específica.
+      - - L
+        - ''
+        - L-1
+        - Comércio
+        - Comércio em geral de fogos de artifício, muni-
+      - - null
+        - null
+        - null
+        - null
+        - ções e assemelhados
+      - - null
+        - Explosivos ou munições
+        - L-2
+        - Indústria
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - Indústria de material explosivo ou munições
+      - - null
+        - null
+        - null
+        - null
+        - ''
+      - - null
+        - ''
+        - L-3
+        - Depósito
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - Depósito de material explosivo ou munições
+      - - null
+        - null
+        - null
+        - null
+        - ''
+notas:
+- Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+inconsistencias_da_fonte:
+- 'As faixas de carga de incêndio se tocam em 1.000 MJ/m²: J-2 "até 1.000" e J-3 "entre 1.000 e 1.200"
+  incluem 1.000.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
+  texto: divergente

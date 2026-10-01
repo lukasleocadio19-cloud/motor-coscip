@@ -1,0 +1,259 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-01 Parte 2
+arquivo: nt-1-01-parte-2-fiscalizacao.md
+tabela: Anexo E, item 2
+titulo: Dispositivos preventivos e meios complementares (modelo de relatório das condições de segurança)
+pagina: 34
+fonte_pdf_sha256: 01ffb41a7be61d731fd9997546980a430f6d49f9698fade87917101dedd9bef3
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-01-parte-2/pagina-34.png
+    imagem_sha256: 5d8bcd9a0b6ce5b817545859fbbf27e7e03ad88322deccd92433082245596dec
+    linhas_cabecalho: 1
+    linhas:
+    - - DISPOSITIVOS PREVENTIVOS
+      - EXIGIDO
+      - EXISTENTE
+      - ESTADO DE FUNCIONAMENTO
+    - - 2.1 HIDRANTE(S) DE RECALQUE
+      - ''
+      - ''
+      - ''
+    - - 2.2 HIDRANTE(S) URBANO(S) DO TIPO COLUNA
+      - ''
+      - ''
+      - ''
+    - - 2.3 CANALIZAÇÃO OU REDE PREVENTIVA
+      - ''
+      - ''
+      - ''
+    - - 2.4 HIDRANTES OU MANGOTINHOS
+      - ''
+      - ''
+      - ''
+    - - 2.5 CHUVEIROS AUTOMÁTICOS
+      - ''
+      - ''
+      - ''
+    - - 2.6 PCF NOS VÃOS DAS ESCADAS OU DAS RAMPAS
+      - ''
+      - ''
+      - ''
+    - - 2.7 EXTINTORES
+      - ''
+      - ''
+      - ''
+    - - 2.8 BOMBAS DE INCÊNDIO
+      - ''
+      - ''
+      - ''
+    - - 2.9 SPDA
+      - ''
+      - ''
+      - ''
+    - - 2.10 SISTEMA DE DETECÇÃO
+      - ''
+      - ''
+      - ''
+    - - 2.11 SINALIZAÇÃO DE SEGURANÇA
+      - ''
+      - ''
+      - ''
+    - - 2.12 SAÍDA DE EMERGÊNCIA
+      - ''
+      - ''
+      - ''
+    - - 2.13 ILUMINAÇÃO DE EMERGÊNCIA
+      - ''
+      - ''
+      - ''
+    - - 2.14 ALARME DE INCÊNDIO
+      - ''
+      - ''
+      - ''
+    - - 2.15 PLANO DE EMERGÊNCIA
+      - ''
+      - ''
+      - ''
+    - - 2.16 BRIGADA DE INCÊNDIO
+      - ''
+      - ''
+      - ''
+    - - 2.17 CONTROLE DE MATERIAIS DE ACABAMENTO
+      - ''
+      - ''
+      - ''
+    - - 2.18 SEGURANÇA ESTRUTURAL CONTRA INCÊNDIO
+      - ''
+      - ''
+      - ''
+    - - 2.19 COMPARTIMENTAÇÃO VERTICAL
+      - ''
+      - ''
+      - ''
+    - - 22.20 ACESSO DE VIATURA EM EDIFICAÇÕES
+      - ''
+      - ''
+      - ''
+    - - 2.21 CONTROLE DE FUMAÇA
+      - ''
+      - ''
+      - ''
+    - - '2.22 OUTROS:'
+      - ''
+      - ''
+      - ''
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 34
+      tabela_na_pagina: 1
+    linhas:
+    - - DISPOSITIVOS PREVENTIVOS
+      - EXIGIDO
+      - EXISTENTE
+      - ESTADO DE FUNCIONAMENTO
+    - - 2.1 HIDRANTE(S) DE RECALQUE
+    - - 2.2 HIDRANTE(S) URBANO(S) DO TIPO COLUNA
+    - - 2.3 CANALIZAÇÃO OU REDE PREVENTIVA
+    - - 2.4 HIDRANTES OU MANGOTINHOS
+    - - 2.5 CHUVEIROS AUTOMÁTICOS
+    - - 2.6 PCF NOS VÃOS DAS ESCADAS OU DAS RAMPAS
+    - - 2.7 EXTINTORES
+    - - 2.8 BOMBAS DE INCÊNDIO
+    - - 2.9 SPDA
+    - - 2.10 SISTEMA DE DETECÇÃO
+    - - 2.11 SINALIZAÇÃO DE SEGURANÇA
+    - - 2.12 SAÍDA DE EMERGÊNCIA
+    - - 2.13 ILUMINAÇÃO DE EMERGÊNCIA
+    - - 2.14 ALARME DE INCÊNDIO
+    - - 2.15 PLANO DE EMERGÊNCIA
+    - - 2.16 BRIGADA DE INCÊNDIO
+    - - 2.17 CONTROLE DE MATERIAIS DE ACABAMENTO
+    - - 2.18 SEGURANÇA ESTRUTURAL CONTRA INCÊNDIO
+    - - 2.19 COMPARTIMENTAÇÃO VERTICAL
+    - - 22.20 ACESSO DE VIATURA EM EDIFICAÇÕES
+    - - 2.21 CONTROLE DE FUMAÇA
+    - - '2.22 OUTROS:'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 38.64
+      - 91.58
+      - 549.72
+      - 783.48
+      linhas:
+      - - DISPOSITIVOS PREVENTIVOS
+        - EXIGIDO
+        - EXISTENTE
+        - ESTADO DE FUNCIONAMENTO
+      - - 2.1 HIDRANTE(S) DE RECALQUE
+        - ''
+        - ''
+        - ''
+      - - 2.2 HIDRANTE(S) URBANO(S) DO TIPO COLUNA
+        - ''
+        - ''
+        - ''
+      - - 2.3 CANALIZAÇÃO OU REDE PREVENTIVA
+        - ''
+        - ''
+        - ''
+      - - 2.4 HIDRANTES OU MANGOTINHOS
+        - ''
+        - ''
+        - ''
+      - - 2.5 CHUVEIROS AUTOMÁTICOS
+        - ''
+        - ''
+        - ''
+      - - 2.6 PCF NOS VÃOS DAS ESCADAS OU DAS RAMPAS
+        - ''
+        - ''
+        - ''
+      - - 2.7 EXTINTORES
+        - ''
+        - ''
+        - ''
+      - - 2.8 BOMBAS DE INCÊNDIO
+        - ''
+        - ''
+        - ''
+      - - 2.9 SPDA
+        - ''
+        - ''
+        - ''
+      - - 2.10 SISTEMA DE DETECÇÃO
+        - ''
+        - ''
+        - ''
+      - - 2.11 SINALIZAÇÃO DE SEGURANÇA
+        - ''
+        - ''
+        - ''
+      - - 2.12 SAÍDA DE EMERGÊNCIA
+        - ''
+        - ''
+        - ''
+      - - 2.13 ILUMINAÇÃO DE EMERGÊNCIA
+        - ''
+        - ''
+        - ''
+      - - 2.14 ALARME DE INCÊNDIO
+        - ''
+        - ''
+        - ''
+      - - 2.15 PLANO DE EMERGÊNCIA
+        - ''
+        - ''
+        - ''
+      - - 2.16 BRIGADA DE INCÊNDIO
+        - ''
+        - ''
+        - ''
+      - - 2.17 CONTROLE DE MATERIAIS DE ACABAMENTO
+        - ''
+        - ''
+        - ''
+      - - 2.18 SEGURANÇA ESTRUTURAL CONTRA INCÊNDIO
+        - ''
+        - ''
+        - ''
+      - - 2.19 COMPARTIMENTAÇÃO VERTICAL
+        - ''
+        - ''
+        - ''
+      - - 22.20 ACESSO DE VIATURA EM EDIFICAÇÕES
+        - ''
+        - ''
+        - ''
+      - - 2.21 CONTROLE DE FUMAÇA
+        - ''
+        - ''
+        - ''
+      - - '2.22 OUTROS:'
+        - ''
+        - ''
+        - ''
+notas:
+- 'Título do quadro na página: "2 – DISPOSITIVOS PREVENTIVOS E MEIOS COMPLEMENTARES (ASSINALAR COM “X”
+  OS EXIGIDOS E OS EXISTENTES E DESCREVER OBRIGATORIAMENTE O ESTADO DE FUNCIONAMENTO DELES)".'
+- As colunas EXIGIDO, EXISTENTE e ESTADO DE FUNCIONAMENTO são para preenchimento.
+inconsistencias_da_fonte:
+- O item de acesso de viatura está numerado "22.20" na sequência 2.19 – 2.21 (grafia da fonte).
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

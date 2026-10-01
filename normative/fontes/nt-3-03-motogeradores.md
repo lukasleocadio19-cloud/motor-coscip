@@ -50,8 +50,7 @@ metodo: "extração textual por blocos; tabelas convertidas para Markdown; marca
 
 Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019 (DOERJ nº 167, de 04/09/2019) Alterada pela Portaria CBMERJ nº 1317, de 10 de dezembro de 2025 (DOERJ nº 229, de 12/12/2025)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | NOTA TÉCNICA |  | CBMERJ |  |
@@ -272,8 +271,7 @@ a) no caso de tanques de superfície, deverá ser observado o afastamento mínim
 
 b) no caso de tanques enterrados, deverá ser previsto o afastamento mínimo de 4,00 m entre tanques e de 1,00 m entre o costado do tanque e a projeção de
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Pavimento |  | Capacidade do |  |  | Capacidade do |  |
@@ -286,6 +284,22 @@ b) no caso de tanques enterrados, deverá ser previsto o afastamento mínimo de 
 | Térreo | 8.000 |  |  | 10.000 |  |  |
 | Garagem elevada | 10.000 |  |  | - |  |  |
 | Pav.técnico/ ático | 10.000 |  |  | - |  |  |
+
+<!-- tabela-conferida: Tabela 1 p5 -->
+### Tabela 1 — Volume máximo de armazenamento por pavimento (conferida)
+
+| Pavimento | Capacidade do tanque de superfície (litros) | Capacidade do tanque enterrado (litros) |
+| --- | --- | --- |
+| Subsolo | 6.000 | 8.000 |
+| Semi enterrado | 8.000 | 10.000 |
+| Térreo | 8.000 | 10.000 |
+| Garagem elevada | 10.000 | - |
+| Pav.técnico/ ático | 10.000 | - |
+
+Fonte: NT 3-03, página 5, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: CBMERJ.
+Limites relacionados no texto: 6.2.3 (armazenamento no interior da edificação até 10.000 l, respeitado o máximo por pavimento da Tabela 1) e 6.2.4 (consumo diário + armazenamento até 13.000 l).
+<!-- /tabela-conferida: Tabela 1 p5 -->
 
 ---
 
@@ -337,8 +351,7 @@ a) nas salas que abrigam os motogeradores e os tanques de óleo diesel, deverão
 
 b) nas salas destinadas ao bombeamento de óleo diesel, quando houver, deverá ser prevista quantidade de extintores na proporção de 01 aparelho extintor do tipo pó químico ABC, com capacidade extintora mínima de 20-B:C.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Capacidade do tanque |  |  | Período de aplicação do LGE |  |
@@ -349,3 +362,19 @@ b) nas salas destinadas ao bombeamento de óleo diesel, quando houver, deverá s
 | Acima de 500 a 1000 |  |  | 15 |  |  |
 | Acima de 1000 a 10000 |  |  | 20 |  |  |
 | Acima de 10000 a 30000 |  |  | 30 |  |  |
+<!-- tabela-conferida: Tabela 2 p6 -->
+### Tabela 2 — Período de aplicação do LGE (conferida)
+
+| Capacidade do tanque (litros) | Período de aplicação do LGE (min) |
+| --- | --- |
+| Até 250 | Isento |
+| Acima de 250 a 500 | 10 |
+| Acima de 500 a 1000 | 15 |
+| Acima de 1000 a 10000 | 20 |
+| Acima de 10000 a 30000 | 30 |
+
+Fonte: NT 3-03, página 6, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: CBMERJ.
+O item 8.2.2 confirma a primeira linha: salas com até 250 l de óleo diesel ficam isentas da proteção por LGE.
+<!-- /tabela-conferida: Tabela 2 p6 -->
+

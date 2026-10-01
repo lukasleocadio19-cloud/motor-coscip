@@ -1,0 +1,451 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 20
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  mesclar_linhas:
+  - - 0
+    - 1
+  - - 15
+    - 16
+  - - 17
+    - 18
+  - - 19
+    - 20
+  - - 31
+    - 32
+  - - 46
+    - 47
+  descartar_linhas:
+  - 13
+  - 26
+  - 40
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-20.png
+    imagem_sha256: d8f7cc9a34689131034ccc8a6f63f74e5760b4ac9e7e9fd64b1a50914e0e635e
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 4645-1/01
+      - Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, hospitalar e de laboratórios
+    - - 4645-1/02
+      - Comércio atacadista de próteses e artigos de ortopedia
+    - - 4645-1/03
+      - Comércio atacadista de produtos odontológicos
+    - - 4646-0/02
+      - Comércio atacadista de produtos de higiene pessoal
+    - - 4647-8/01
+      - Comércio atacadista de artigos de escritório e de papelaria
+    - - 4647-8/02
+      - Comércio atacadista de livros, jornais e outras publicações
+    - - 4649-4/02
+      - Comércio atacadista de aparelhos eletrônicos de uso pessoal e doméstico
+    - - 4649-4/03
+      - Comércio atacadista de bicicletas, triciclos e outros veículos recreativos
+    - - 4649-4/04
+      - Comércio atacadista de móveis e artigos de colchoaria
+    - - 4649-4/05
+      - Comércio atacadista de artigos de tapeçaria; persianas e cortinas
+    - - 4649-4/06
+      - Comércio atacadista de lustres, luminárias e abajures
+    - - 4649-4/07
+      - Comércio atacadista de filmes, CDs, DVDs, fitas e discos
+    - - 4649-4/08
+      - Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar
+    - - 4649-4/09
+      - Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar, com atividade de
+        fracionamento e acondicionamento associada
+    - - 4649-4/10
+      - Comércio atacadista de jóias, relógios e bijuterias, inclusive pedras preciosas e semipreciosas
+        lapidadas
+    - - 4649-4/99
+      - Comércio atacadista de outros equipamentos e artigos de uso pessoal e doméstico não especificados
+        anteriormente
+    - - 4651-6/01
+      - Comércio atacadista de equipamentos de informática
+    - - 4651-6/02
+      - Comércio atacadista de suprimentos para informática
+    - - 4652-4/00
+      - Comércio atacadista de componentes eletrônicos e equipamentos de telefonia e comunicação
+    - - 4686-9/01
+      - Comércio atacadista de papel e papelão em bruto
+    - - 4686-9/02
+      - Comércio atacadista de embalagens
+    - - 4687-7/03
+      - Comércio atacadista de resíduos e sucatas metálicos
+    - - 4689-3/02
+      - Comércio atacadista de fios e fibras beneficiados
+    - - 4691-5/00
+      - Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios
+    - - 4692-3/00
+      - Comércio atacadista de mercadorias em geral, com predominância de insumos agropecuários
+    - - 4712-1/00
+      - Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados,
+        mercearias e armazéns
+    - - 4713-0/02
+      - Lojas de variedades, exceto lojas de departamentos ou magazines
+    - - 4713-0/04
+      - Lojas de departamentos ou magazines, exceto lojas francas (Duty free)
+    - - 4713-0/05
+      - Lojas francas (Duty Free) de aeroportos, portos e em fronteiras terrestres
+    - - 4721-1/02
+      - Padaria e confeitaria com predominância de revenda
+    - - 4721-1/03
+      - Comércio varejista de laticínios e frios
+    - - 4721-1/04
+      - Comércio varejista de doces, balas, bombons e semelhantes
+    - - 4722-9/01
+      - Comércio varejista de carnes - açougues
+    - - 4722-9/02
+      - Peixaria
+    - - 4723-7/00
+      - Comércio varejista de bebidas
+    - - 4724-5/00
+      - Comércio varejista de hortifrutigranjeiros
+    - - 4729-6/01
+      - Tabacaria
+    - - 4729-6/02
+      - Comércio varejista de mercadorias em lojas de conveniência
+    - - 4729-6/99
+      - Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios
+        não especificados anteriormente
+    - - 4742-3/00
+      - Comércio varejista de material elétrico
+    - - 4743-1/00
+      - Comércio varejista de vidros
+    - - 4744-0/01
+      - Comércio varejista de ferragens e ferramentas
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 20
+      tabela_na_pagina: 1
+    linhas:
+    - - 4645-1/01
+      - Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, hospitalar e de laboratórios
+    - - 4645-1/02
+      - Comércio atacadista de próteses e artigos de ortopedia
+    - - 4645-1/03
+      - Comércio atacadista de produtos odontológicos
+    - - 4646-0/02
+      - Comércio atacadista de produtos de higiene pessoal
+    - - 4647-8/01
+      - Comércio atacadista de artigos de escritório e de papelaria
+    - - 4647-8/02
+      - Comércio atacadista de livros, jornais e outras publicações
+    - - 4649-4/02
+      - Comércio atacadista de aparelhos eletrônicos de uso pessoal e doméstico
+    - - 4649-4/03
+      - Comércio atacadista de bicicletas, triciclos e outros veículos recreativos
+    - - 4649-4/04
+      - Comércio atacadista de móveis e artigos de colchoaria
+    - - 4649-4/05
+      - Comércio atacadista de artigos de tapeçaria; persianas e cortinas
+    - - 4649-4/06
+      - Comércio atacadista de lustres, luminárias e abajures
+    - - 4649-4/07
+      - Comércio atacadista de filmes, CDs, DVDs, fitas e discos
+    - - 4649-4/08
+      - Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar
+    - - 4649-4/09
+      - Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar, com atividade de
+        fracionamento e acondicionamento associada
+    - - 4649-4/10
+      - Comércio atacadista de jóias, relógios e bijuterias, inclusive pedras preciosas e semipreciosas
+        lapidadas
+    - - 4649-4/99
+      - Comércio atacadista de outros equipamentos e artigos de uso pessoal e doméstico não especificados
+        anteriormente
+    - - 4651-6/01
+      - Comércio atacadista de equipamentos de informática
+    - - 4651-6/02
+      - Comércio atacadista de suprimentos para informática
+    - - 4652-4/00
+      - Comércio atacadista de componentes eletrônicos e equipamentos de telefonia e comunicação
+    - - 4686-9/01
+      - Comércio atacadista de papel e papelão em bruto
+    - - 4686-9/02
+      - Comércio atacadista de embalagens
+    - - 4687-7/03
+      - Comércio atacadista de resíduos e sucatas metálicos
+    - - 4689-3/02
+      - Comércio atacadista de fios e fibras beneficiados
+    - - 4691-5/00
+      - Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios
+    - - 4692-3/00
+      - Comércio atacadista de mercadorias em geral, com predominância de insumos agropecuários
+    - - 4712-1/00
+      - Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados,
+        mercearias e armazéns
+    - - 4713-0/02
+      - Lojas de variedades, exceto lojas de departamentos ou magazines
+    - - 4713-0/04
+      - Lojas de departamentos ou magazines, exceto lojas francas (Duty free)
+    - - 4713-0/05
+      - Lojas francas (Duty Free) de aeroportos, portos e em fronteiras terrestres
+    - - 4721-1/02
+      - Padaria e confeitaria com predominância de revenda
+    - - 4721-1/03
+      - Comércio varejista de laticínios e frios
+    - - 4721-1/04
+      - Comércio varejista de doces, balas, bombons e semelhantes
+    - - 4722-9/01
+      - Comércio varejista de carnes - açougues
+    - - 4722-9/02
+      - Peixaria
+    - - 4723-7/00
+      - Comércio varejista de bebidas
+    - - 4724-5/00
+      - Comércio varejista de hortifrutigranjeiros
+    - - 4729-6/01
+      - Tabacaria
+    - - 4729-6/02
+      - Comércio varejista de mercadorias em lojas de conveniência
+    - - 4729-6/99
+      - Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios
+        não especificados anteriormente
+    - - 4742-3/00
+      - Comércio varejista de material elétrico
+    - - 4743-1/00
+      - Comércio varejista de vidros
+    - - 4744-0/01
+      - Comércio varejista de ferragens e ferramentas
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 46.76
+      - 57.03
+      - 541.66
+      - 769.14
+      linhas:
+      - - 4645-1/01
+        - ''
+        - Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, hospitalar e de
+        - ''
+      - - null
+        - null
+        - laboratórios
+        - null
+      - - 4645-1/02
+        - Comércio atacadista de próteses e artigos de ortopedia
+        - null
+        - null
+      - - 4645-1/03
+        - Comércio atacadista de produtos odontológicos
+        - null
+        - null
+      - - 4646-0/02
+        - Comércio atacadista de produtos de higiene pessoal
+        - null
+        - null
+      - - 4647-8/01
+        - Comércio atacadista de artigos de escritório e de papelaria
+        - null
+        - null
+      - - 4647-8/02
+        - Comércio atacadista de livros, jornais e outras publicações
+        - null
+        - null
+      - - 4649-4/02
+        - Comércio atacadista de aparelhos eletrônicos de uso pessoal e doméstico
+        - null
+        - null
+      - - 4649-4/03
+        - Comércio atacadista de bicicletas, triciclos e outros veículos recreativos
+        - null
+        - null
+      - - 4649-4/04
+        - Comércio atacadista de móveis e artigos de colchoaria
+        - null
+        - null
+      - - 4649-4/05
+        - Comércio atacadista de artigos de tapeçaria; persianas e cortinas
+        - null
+        - null
+      - - 4649-4/06
+        - Comércio atacadista de lustres, luminárias e abajures
+        - null
+        - null
+      - - 4649-4/07
+        - Comércio atacadista de filmes, CDs, DVDs, fitas e discos
+        - null
+        - null
+      - - 4649-4/08
+        - Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar
+        - null
+        - null
+      - - null
+        - null
+        - Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar
+        - null
+      - - 4649-4/09
+        - ''
+        - Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar, com atividade
+          de
+        - ''
+      - - null
+        - null
+        - fracionamento e acondicionamento associada
+        - null
+      - - 4649-4/10
+        - ''
+        - Comércio atacadista de jóias, relógios e bijuterias, inclusive pedras preciosas e semipreciosas
+        - ''
+      - - null
+        - null
+        - lapidadas
+        - null
+      - - 4649-4/99
+        - ''
+        - Comércio atacadista de outros equipamentos e artigos de uso pessoal e doméstico não
+        - ''
+      - - null
+        - null
+        - especificados anteriormente
+        - null
+      - - 4651-6/01
+        - Comércio atacadista de equipamentos de informática
+        - null
+        - null
+      - - 4651-6/02
+        - Comércio atacadista de suprimentos para informática
+        - null
+        - null
+      - - 4652-4/00
+        - Comércio atacadista de componentes eletrônicos e equipamentos de telefonia e comunicação
+        - null
+        - null
+      - - 4686-9/01
+        - Comércio atacadista de papel e papelão em bruto
+        - null
+        - null
+      - - 4686-9/02
+        - Comércio atacadista de embalagens
+        - null
+        - null
+      - - 4687-7/03
+        - Comércio atacadista de resíduos e sucatas metálicos
+        - null
+        - null
+      - - 4689-3/02
+        - Comércio atacadista de fios e fibras beneficiados
+        - null
+        - null
+      - - 4691-5/00
+        - Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios
+        - null
+        - null
+      - - 4692-3/00
+        - Comércio atacadista de mercadorias em geral, com predominância de insumos agropecuários
+        - null
+        - null
+      - - null
+        - null
+        - Comércio atacadista de mercadorias em geral, com predominância de insumos agropecuários
+        - null
+      - - 4712-1/00
+        - ''
+        - Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios -
+        - ''
+      - - null
+        - null
+        - minimercados, mercearias e armazéns
+        - null
+      - - 4713-0/02
+        - Lojas de variedades, exceto lojas de departamentos ou magazines
+        - null
+        - null
+      - - 4713-0/04
+        - Lojas de departamentos ou magazines, exceto lojas francas (Duty free)
+        - null
+        - null
+      - - 4713-0/05
+        - Lojas francas (Duty Free) de aeroportos, portos e em fronteiras terrestres
+        - null
+        - null
+      - - 4721-1/02
+        - Padaria e confeitaria com predominância de revenda
+        - null
+        - null
+      - - 4721-1/03
+        - Comércio varejista de laticínios e frios
+        - null
+        - null
+      - - 4721-1/04
+        - Comércio varejista de doces, balas, bombons e semelhantes
+        - null
+        - null
+      - - 4722-9/01
+        - Comércio varejista de carnes - açougues
+        - null
+        - null
+      - - 4722-9/02
+        - Peixaria
+        - null
+        - null
+      - - 4723-7/00
+        - Comércio varejista de bebidas
+        - null
+        - null
+      - - 4724-5/00
+        - Comércio varejista de hortifrutigranjeiros
+        - null
+        - null
+      - - 4729-6/01
+        - Tabacaria
+        - null
+        - null
+      - - 4729-6/02
+        - Comércio varejista de mercadorias em lojas de conveniência
+        - null
+        - null
+      - - null
+        - null
+        - Comércio varejista de mercadorias em lojas de conveniência
+        - null
+      - - 4729-6/99
+        - ''
+        - Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios
+        - ''
+      - - null
+        - null
+        - não especificados anteriormente
+        - null
+      - - 4742-3/00
+        - Comércio varejista de material elétrico
+        - null
+        - null
+      - - 4743-1/00
+        - Comércio varejista de vidros
+        - null
+        - null
+      - - 4744-0/01
+        - Comércio varejista de ferragens e ferramentas
+        - null
+        - null
+notas:
+- Continuação da tabela da página 19.
+- A tabela continua na página 21.
+- A camada de texto parte as descrições de duas linhas e repete 3 descrição(ões) numa linha vazia; a comparação
+  junta as partes e descarta as repetições.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

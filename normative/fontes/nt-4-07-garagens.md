@@ -43,8 +43,7 @@ metodo: "extração textual por blocos; tabelas convertidas para Markdown; marca
 
 Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -125,8 +124,7 @@ Para efeito desta Nota Técnica, além das definições constantes da NT 1-02 - 
 
 5.3.3 Para as edificações classificadas nas Divisões G-1, G-2 e G-3 que possuam até três pavimentos, a aplicação da exigência de detecção de incêndio prevista nas Tabelas 15 e 16 do Decreto Estadual nº 42/2018 - COSCIP só se dará quando a área destinada à guarda de veículos for superior a 900,00 m² por pavimento.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | em que o |

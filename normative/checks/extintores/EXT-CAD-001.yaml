@@ -17,7 +17,7 @@ applies_when:
 question:
   kind: presence
   field: extinguisher
-  accepted_evidence: [CAD, MEMORIAL, HUMANO]
+  accepted_evidence: [CAD, DOCUMENT, HUMAN]
   quality_gate: quality.extinguisher.not_presumed
   quality_gates: [quality.region_confirmed]
 normative_basis:

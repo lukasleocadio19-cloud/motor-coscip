@@ -1,0 +1,473 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 17
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  mesclar_linhas:
+  - - 14
+    - 15
+  - - 16
+    - 17
+  - - 18
+    - 19
+  - - 20
+    - 21
+  - - 27
+    - 28
+  - - 29
+    - 30
+  - - 31
+    - 32
+  - - 33
+    - 34
+  - - 37
+    - 38
+  descartar_linhas:
+  - 13
+  - 22
+  - 28
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-17.png
+    imagem_sha256: dc57cd310e735ce9403f0ee1695af1038b66f167cb792da23c5669ecb67adbcc
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 2399-1/01
+      - Decoração, lapidação, gravação, vitrificação e outros trabalhos em cerâmica, louça, vidro e cristal
+    - - 2539-0/02
+      - Serviços de tratamento e revestimento em metais
+    - - 3250-7/06
+      - Serviços de prótese dentária
+    - - 3250-7/07
+      - Fabricação de artigos ópticos
+    - - 3291-4/00
+      - Fabricação de escovas, pincéis e vassouras
+    - - 3312-1/02
+      - Manutenção e reparação de aparelhos e instrumentos de medida, teste e controle
+    - - 3312-1/04
+      - Manutenção e reparação de equipamentos e instrumentos ópticos
+    - - 3313-9/02
+      - Manutenção e reparação de baterias e acumuladores elétricos, exceto para veículos
+    - - 3314-7/01
+      - Manutenção e reparação de máquinas motrizes não elétricas
+    - - 3314-7/02
+      - Manutenção e reparação de equipamentos hidráulicos e pneumáticos, exceto válvulas
+    - - 3314-7/03
+      - Manutenção e reparação de válvulas industriais
+    - - 3314-7/04
+      - Manutenção e reparação de compressores
+    - - 3314-7/06
+      - Manutenção e reparação de máquinas, aparelhos e equipamentos para instalações térmicas
+    - - 3314-7/07
+      - Manutenção e reparação de máquinas e aparelhos de refrigeração e ventilação para uso industrial
+        e comercial
+    - - 3314-7/08
+      - Manutenção e reparação de máquinas, equipamentos e aparelhos para transporte e elevação de cargas
+    - - 3314-7/09
+      - Manutenção e reparação de máquinas de escrever, calcular e de outros equipamentos não eletrônicos
+        para escritório
+    - - 3314-7/10
+      - Manutenção e reparação de máquinas e equipamentos para uso geral não especificados anteriormente
+    - - 3314-7/11
+      - Manutenção e reparação de máquinas e equipamentos para agricultura e pecuária
+    - - 3314-7/12
+      - Manutenção e reparação de tratores agrícolas
+    - - 3314-7/13
+      - Manutenção e reparação de máquinas-ferramenta
+    - - 3314-7/16
+      - Manutenção e reparação de tratores, exceto agrícolas
+    - - 3314-7/17
+      - Manutenção e reparação de máquinas e equipamentos de terraplenagem, pavimentação e construção,
+        exceto tratores
+    - - 3314-7/19
+      - Manutenção e reparação de máquinas e equipamentos para as indústrias de alimentos, bebidas e fumo
+    - - 3314-7/20
+      - Manutenção e reparação de máquinas e equipamentos para a indústria têxtil, do vestuário, do couro
+        e calçados
+    - - 3314-7/21
+      - Manutenção e reparação de máquinas e aparelhos para a indústria de celulose, papel e papelão e
+        artefatos
+    - - 3314-7/22
+      - Manutenção e reparação de máquinas e aparelhos para a indústria do plástico
+    - - 3314-7/99
+      - Manutenção e reparação de outras máquinas e equipamentos para usos industriais não especificados
+        anteriormente
+    - - 3315-5/00
+      - Manutenção e reparação de veículos ferroviários
+    - - 3316-3/01
+      - Manutenção e reparação de aeronaves, exceto a manutenção na pista
+    - - 3316-3/02
+      - Manutenção de aeronaves na pista
+    - - 3317-1/01
+      - Manutenção e reparação de embarcações e estruturas flutuantes
+    - - 3317-1/02
+      - Manutenção e reparação de embarcações para esporte e lazer
+    - - 3319-8/00
+      - Manutenção e reparação de equipamentos e produtos não especificados anteriormente
+    - - 3321-0/00
+      - Instalação de máquinas e equipamentos industriais
+    - - 3329-5/01
+      - Serviços de montagem de móveis de qualquer material
+    - - 3329-5/99
+      - Instalação de outros equipamentos não especificados anteriormente
+    - - 3600-6/01
+      - Captação, tratamento e distribuição de água
+    - - 3600-6/02
+      - Distribuição de água por caminhões
+    - - 3701-1/00
+      - Gestão de redes de esgoto
+    - - 3702-9/00
+      - Atividades relacionadas a esgoto, exceto a gestão de redes
+    - - 3831-9/99
+      - Recuperação de materiais metálicos, exceto alumínio
+    - - 3832-7/00
+      - Recuperação de materiais plásticos
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 17
+      tabela_na_pagina: 1
+    linhas:
+    - - 2399-1/01
+      - Decoração, lapidação, gravação, vitrificação e outros trabalhos em cerâmica, louça, vidro e cristal
+    - - 2539-0/02
+      - Serviços de tratamento e revestimento em metais
+    - - 3250-7/06
+      - Serviços de prótese dentária
+    - - 3250-7/07
+      - Fabricação de artigos ópticos
+    - - 3291-4/00
+      - Fabricação de escovas, pincéis e vassouras
+    - - 3312-1/02
+      - Manutenção e reparação de aparelhos e instrumentos de medida, teste e controle
+    - - 3312-1/04
+      - Manutenção e reparação de equipamentos e instrumentos ópticos
+    - - 3313-9/02
+      - Manutenção e reparação de baterias e acumuladores elétricos, exceto para veículos
+    - - 3314-7/01
+      - Manutenção e reparação de máquinas motrizes não elétricas
+    - - 3314-7/02
+      - Manutenção e reparação de equipamentos hidráulicos e pneumáticos, exceto válvulas
+    - - 3314-7/03
+      - Manutenção e reparação de válvulas industriais
+    - - 3314-7/04
+      - Manutenção e reparação de compressores
+    - - 3314-7/06
+      - Manutenção e reparação de máquinas, aparelhos e equipamentos para instalações térmicas
+    - - 3314-7/07
+      - Manutenção e reparação de máquinas e aparelhos de refrigeração e ventilação para uso industrial
+        e comercial
+    - - 3314-7/08
+      - Manutenção e reparação de máquinas, equipamentos e aparelhos para transporte e elevação de cargas
+    - - 3314-7/09
+      - Manutenção e reparação de máquinas de escrever, calcular e de outros equipamentos não eletrônicos
+        para escritório
+    - - 3314-7/10
+      - Manutenção e reparação de máquinas e equipamentos para uso geral não especificados anteriormente
+    - - 3314-7/11
+      - Manutenção e reparação de máquinas e equipamentos para agricultura e pecuária
+    - - 3314-7/12
+      - Manutenção e reparação de tratores agrícolas
+    - - 3314-7/13
+      - Manutenção e reparação de máquinas-ferramenta
+    - - 3314-7/16
+      - Manutenção e reparação de tratores, exceto agrícolas
+    - - 3314-7/17
+      - Manutenção e reparação de máquinas e equipamentos de terraplenagem, pavimentação e construção,
+        exceto tratores
+    - - 3314-7/19
+      - Manutenção e reparação de máquinas e equipamentos para as indústrias de alimentos, bebidas e fumo
+    - - 3314-7/20
+      - Manutenção e reparação de máquinas e equipamentos para a indústria têxtil, do vestuário, do couro
+        e calçados
+    - - 3314-7/21
+      - Manutenção e reparação de máquinas e aparelhos para a indústria de celulose, papel e papelão e
+        artefatos
+    - - 3314-7/22
+      - Manutenção e reparação de máquinas e aparelhos para a indústria do plástico
+    - - 3314-7/99
+      - Manutenção e reparação de outras máquinas e equipamentos para usos industriais não especificados
+        anteriormente
+    - - 3315-5/00
+      - Manutenção e reparação de veículos ferroviários
+    - - 3316-3/01
+      - Manutenção e reparação de aeronaves, exceto a manutenção na pista
+    - - 3316-3/02
+      - Manutenção de aeronaves na pista
+    - - 3317-1/01
+      - Manutenção e reparação de embarcações e estruturas flutuantes
+    - - 3317-1/02
+      - Manutenção e reparação de embarcações para esporte e lazer
+    - - 3319-8/00
+      - Manutenção e reparação de equipamentos e produtos não especificados anteriormente
+    - - 3321-0/00
+      - Instalação de máquinas e equipamentos industriais
+    - - 3329-5/01
+      - Serviços de montagem de móveis de qualquer material
+    - - 3329-5/99
+      - Instalação de outros equipamentos não especificados anteriormente
+    - - 3600-6/01
+      - Captação, tratamento e distribuição de água
+    - - 3600-6/02
+      - Distribuição de água por caminhões
+    - - 3701-1/00
+      - Gestão de redes de esgoto
+    - - 3702-9/00
+      - Atividades relacionadas a esgoto, exceto a gestão de redes
+    - - 3831-9/99
+      - Recuperação de materiais metálicos, exceto alumínio
+    - - 3832-7/00
+      - Recuperação de materiais plásticos
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.76
+      - 57.0
+      - 548.66
+      - 783.96
+      linhas:
+      - - 2399-1/01
+        - Decoração, lapidação, gravação, vitrificação e outros trabalhos em cerâmica, louça, vidro e
+          cristal
+        - null
+        - null
+      - - 2539-0/02
+        - Serviços de tratamento e revestimento em metais
+        - null
+        - null
+      - - 3250-7/06
+        - Serviços de prótese dentária
+        - null
+        - null
+      - - 3250-7/07
+        - Fabricação de artigos ópticos
+        - null
+        - null
+      - - 3291-4/00
+        - Fabricação de escovas, pincéis e vassouras
+        - null
+        - null
+      - - 3312-1/02
+        - Manutenção e reparação de aparelhos e instrumentos de medida, teste e controle
+        - null
+        - null
+      - - 3312-1/04
+        - Manutenção e reparação de equipamentos e instrumentos ópticos
+        - null
+        - null
+      - - 3313-9/02
+        - Manutenção e reparação de baterias e acumuladores elétricos, exceto para veículos
+        - null
+        - null
+      - - 3314-7/01
+        - Manutenção e reparação de máquinas motrizes não elétricas
+        - null
+        - null
+      - - 3314-7/02
+        - Manutenção e reparação de equipamentos hidráulicos e pneumáticos, exceto válvulas
+        - null
+        - null
+      - - 3314-7/03
+        - Manutenção e reparação de válvulas industriais
+        - null
+        - null
+      - - 3314-7/04
+        - Manutenção e reparação de compressores
+        - null
+        - null
+      - - 3314-7/06
+        - Manutenção e reparação de máquinas, aparelhos e equipamentos para instalações térmicas
+        - null
+        - null
+      - - null
+        - null
+        - Manutenção e reparação de máquinas, aparelhos e equipamentos para instalações térmicas
+        - null
+      - - 3314-7/07
+        - ''
+        - Manutenção e reparação de máquinas e aparelhos de refrigeração e ventilação para uso industrial
+          e
+        - ''
+      - - null
+        - null
+        - comercial
+        - null
+      - - 3314-7/08
+        - ''
+        - Manutenção e reparação de máquinas, equipamentos e aparelhos para transporte e elevação de
+        - ''
+      - - null
+        - null
+        - cargas
+        - null
+      - - 3314-7/09
+        - ''
+        - Manutenção e reparação de máquinas de escrever, calcular e de outros equipamentos não
+        - ''
+      - - null
+        - null
+        - eletrônicos para escritório
+        - null
+      - - 3314-7/10
+        - ''
+        - Manutenção e reparação de máquinas e equipamentos para uso geral não especificados
+        - ''
+      - - null
+        - null
+        - anteriormente
+        - null
+      - - 3314-7/11
+        - Manutenção e reparação de máquinas e equipamentos para agricultura e pecuária
+        - null
+        - null
+      - - 3314-7/12
+        - Manutenção e reparação de tratores agrícolas
+        - null
+        - null
+      - - 3314-7/13
+        - Manutenção e reparação de máquinas-ferramenta
+        - null
+        - null
+      - - 3314-7/16
+        - Manutenção e reparação de tratores, exceto agrícolas
+        - null
+        - null
+      - - null
+        - null
+        - Manutenção e reparação de tratores, exceto agrícolas
+        - null
+      - - 3314-7/17
+        - ''
+        - Manutenção e reparação de máquinas e equipamentos de terraplenagem, pavimentação e
+        - ''
+      - - null
+        - null
+        - construção, exceto tratores
+        - null
+      - - 3314-7/19
+        - ''
+        - Manutenção e reparação de máquinas e equipamentos para as indústrias de alimentos, bebidas e
+        - ''
+      - - null
+        - null
+        - fumo
+        - null
+      - - 3314-7/20
+        - ''
+        - Manutenção e reparação de máquinas e equipamentos para a indústria têxtil, do vestuário, do
+        - ''
+      - - null
+        - null
+        - couro e calçados
+        - null
+      - - 3314-7/21
+        - ''
+        - Manutenção e reparação de máquinas e aparelhos para a indústria de celulose, papel e papelão
+          e
+        - ''
+      - - null
+        - null
+        - artefatos
+        - null
+      - - 3314-7/22
+        - Manutenção e reparação de máquinas e aparelhos para a indústria do plástico
+        - null
+        - null
+      - - null
+        - null
+        - Manutenção e reparação de máquinas e aparelhos para a indústria do plástico
+        - null
+      - - 3314-7/99
+        - ''
+        - Manutenção e reparação de outras máquinas e equipamentos para usos industriais não
+        - ''
+      - - null
+        - null
+        - especificados anteriormente
+        - null
+      - - 3315-5/00
+        - Manutenção e reparação de veículos ferroviários
+        - null
+        - null
+      - - 3316-3/01
+        - Manutenção e reparação de aeronaves, exceto a manutenção na pista
+        - null
+        - null
+      - - 3316-3/02
+        - Manutenção de aeronaves na pista
+        - null
+        - null
+      - - 3317-1/01
+        - Manutenção e reparação de embarcações e estruturas flutuantes
+        - null
+        - null
+      - - 3317-1/02
+        - Manutenção e reparação de embarcações para esporte e lazer
+        - null
+        - null
+      - - 3319-8/00
+        - Manutenção e reparação de equipamentos e produtos não especificados anteriormente
+        - null
+        - null
+      - - 3321-0/00
+        - Instalação de máquinas e equipamentos industriais
+        - null
+        - null
+      - - 3329-5/01
+        - Serviços de montagem de móveis de qualquer material
+        - null
+        - null
+      - - 3329-5/99
+        - Instalação de outros equipamentos não especificados anteriormente
+        - null
+        - null
+      - - 3600-6/01
+        - Captação, tratamento e distribuição de água
+        - null
+        - null
+      - - 3600-6/02
+        - Distribuição de água por caminhões
+        - null
+        - null
+      - - 3701-1/00
+        - Gestão de redes de esgoto
+        - null
+        - null
+      - - 3702-9/00
+        - Atividades relacionadas a esgoto, exceto a gestão de redes
+        - null
+        - null
+      - - 3831-9/99
+        - Recuperação de materiais metálicos, exceto alumínio
+        - null
+        - null
+      - - 3832-7/00
+        - Recuperação de materiais plásticos
+        - null
+        - null
+notas:
+- Continuação da tabela da página 16.
+- A tabela continua na página 18.
+- A camada de texto parte as descrições de duas linhas em duas linhas e repete três descrições (3314-7/06,
+  3314-7/16, 3314-7/22) numa linha vazia; a comparação junta as partes e descarta as repetições.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

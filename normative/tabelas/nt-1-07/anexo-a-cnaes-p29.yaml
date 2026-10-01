@@ -1,0 +1,345 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 29
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  mesclar_linhas:
+  - - 18
+    - 19
+  descartar_linhas:
+  - 17
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-29.png
+    imagem_sha256: 65f71fc852a8109a7683cf413a585f4862a47e9a34eb4ecae0a8ce17f6f40471
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 9319-1/01
+      - Produção e promoção de eventos esportivos
+    - - 9411-1/00
+      - Atividades de organizações associativas patronais e empresariais
+    - - 9412-0/01
+      - Atividades de fiscalização profissional
+    - - 9412-0/99
+      - Outras atividades associativas profissionais
+    - - 9420-1/00
+      - Atividades de organizações sindicais
+    - - 9430-8/00
+      - Atividades de associações de defesa de direitos sociais
+    - - 9492-8/00
+      - Atividades de organizações políticas
+    - - 9493-6/00
+      - Atividades de organizações associativas ligadas à cultura e à arte
+    - - 9499-5/00
+      - Atividades associativas não especificadas anteriormente
+    - - 9511-8/00
+      - Reparação e manutenção de computadores e de equipamentos periféricos
+    - - 9512-6/00
+      - Reparação e manutenção de equipamentos de comunicação
+    - - 9521-5/00
+      - Reparação e manutenção de equipamentos eletroeletrônicos de uso pessoal e doméstico
+    - - 9529-1/01
+      - Reparação de calçados, bolsas e artigos de viagem
+    - - 9529-1/02
+      - Chaveiros
+    - - 9529-1/03
+      - Reparação de relógios
+    - - 9529-1/04
+      - Reparação de bicicletas, triciclos e outros veículos não motorizados
+    - - 9529-1/05
+      - Reparação de artigos do mobiliário
+    - - 9529-1/99
+      - Reparação e manutenção de outros objetos e equipamentos pessoais e domésticos não especificados
+        anteriormente
+    - - 9601-7/02
+      - Tinturarias
+    - - 9601-7/03
+      - Toalheiros
+    - - 9602-5/01
+      - Cabeleireiros, manicure e pedicure
+    - - 9602-5/02
+      - Atividades de estética e outros serviços de cuidados com a beleza
+    - - 9603-3/01
+      - Gestão e manutenção de cemitérios
+    - - 9603-3/03
+      - Serviços de sepultamento
+    - - 9603-3/04
+      - Serviços de funerárias
+    - - 9603-3/05
+      - Serviços de somatoconservação
+    - - 9603-3/99
+      - Atividades funerárias e serviços relacionados não especificados anteriormente
+    - - 9609-2/02
+      - Agências matrimoniais
+    - - 9609-2/04
+      - Exploração de máquinas de serviços pessoais acionadas por moeda
+    - - 9609-2/05
+      - Atividades de sauna e banhos
+    - - 9609-2/06
+      - Serviços de tatuagem e colocação de piercing
+    - - 9609-2/07
+      - Alojamento de animais domésticos
+    - - 9609-2/08
+      - Higiene e embelezamento de animais domésticos
+    - - 9609-2/99
+      - Outras atividades de serviços pessoais não especificadas anteriormente
+    - - 9700-5/00
+      - Serviços domésticos
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 29
+      tabela_na_pagina: 1
+    linhas:
+    - - 9319-1/01
+      - Produção e promoção de eventos esportivos
+    - - 9411-1/00
+      - Atividades de organizações associativas patronais e empresariais
+    - - 9412-0/01
+      - Atividades de fiscalização profissional
+    - - 9412-0/99
+      - Outras atividades associativas profissionais
+    - - 9420-1/00
+      - Atividades de organizações sindicais
+    - - 9430-8/00
+      - Atividades de associações de defesa de direitos sociais
+    - - 9492-8/00
+      - Atividades de organizações políticas
+    - - 9493-6/00
+      - Atividades de organizações associativas ligadas à cultura e à arte
+    - - 9499-5/00
+      - Atividades associativas não especificadas anteriormente
+    - - 9511-8/00
+      - Reparação e manutenção de computadores e de equipamentos periféricos
+    - - 9512-6/00
+      - Reparação e manutenção de equipamentos de comunicação
+    - - 9521-5/00
+      - Reparação e manutenção de equipamentos eletroeletrônicos de uso pessoal e doméstico
+    - - 9529-1/01
+      - Reparação de calçados, bolsas e artigos de viagem
+    - - 9529-1/02
+      - Chaveiros
+    - - 9529-1/03
+      - Reparação de relógios
+    - - 9529-1/04
+      - Reparação de bicicletas, triciclos e outros veículos não motorizados
+    - - 9529-1/05
+      - Reparação de artigos do mobiliário
+    - - 9529-1/99
+      - Reparação e manutenção de outros objetos e equipamentos pessoais e domésticos não especificados
+        anteriormente
+    - - 9601-7/02
+      - Tinturarias
+    - - 9601-7/03
+      - Toalheiros
+    - - 9602-5/01
+      - Cabeleireiros, manicure e pedicure
+    - - 9602-5/02
+      - Atividades de estética e outros serviços de cuidados com a beleza
+    - - 9603-3/01
+      - Gestão e manutenção de cemitérios
+    - - 9603-3/03
+      - Serviços de sepultamento
+    - - 9603-3/04
+      - Serviços de funerárias
+    - - 9603-3/05
+      - Serviços de somatoconservação
+    - - 9603-3/99
+      - Atividades funerárias e serviços relacionados não especificados anteriormente
+    - - 9609-2/02
+      - Agências matrimoniais
+    - - 9609-2/04
+      - Exploração de máquinas de serviços pessoais acionadas por moeda
+    - - 9609-2/05
+      - Atividades de sauna e banhos
+    - - 9609-2/06
+      - Serviços de tatuagem e colocação de piercing
+    - - 9609-2/07
+      - Alojamento de animais domésticos
+    - - 9609-2/08
+      - Higiene e embelezamento de animais domésticos
+    - - 9609-2/99
+      - Outras atividades de serviços pessoais não especificadas anteriormente
+    - - 9700-5/00
+      - Serviços domésticos
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.76
+      - 57.0
+      - 548.66
+      - 630.58
+      linhas:
+      - - 9319-1/01
+        - Produção e promoção de eventos esportivos
+        - null
+        - null
+      - - 9411-1/00
+        - Atividades de organizações associativas patronais e empresariais
+        - null
+        - null
+      - - 9412-0/01
+        - Atividades de fiscalização profissional
+        - null
+        - null
+      - - 9412-0/99
+        - Outras atividades associativas profissionais
+        - null
+        - null
+      - - 9420-1/00
+        - Atividades de organizações sindicais
+        - null
+        - null
+      - - 9430-8/00
+        - Atividades de associações de defesa de direitos sociais
+        - null
+        - null
+      - - 9492-8/00
+        - Atividades de organizações políticas
+        - null
+        - null
+      - - 9493-6/00
+        - Atividades de organizações associativas ligadas à cultura e à arte
+        - null
+        - null
+      - - 9499-5/00
+        - Atividades associativas não especificadas anteriormente
+        - null
+        - null
+      - - 9511-8/00
+        - Reparação e manutenção de computadores e de equipamentos periféricos
+        - null
+        - null
+      - - 9512-6/00
+        - Reparação e manutenção de equipamentos de comunicação
+        - null
+        - null
+      - - 9521-5/00
+        - Reparação e manutenção de equipamentos eletroeletrônicos de uso pessoal e doméstico
+        - null
+        - null
+      - - 9529-1/01
+        - Reparação de calçados, bolsas e artigos de viagem
+        - null
+        - null
+      - - 9529-1/02
+        - Chaveiros
+        - null
+        - null
+      - - 9529-1/03
+        - Reparação de relógios
+        - null
+        - null
+      - - 9529-1/04
+        - Reparação de bicicletas, triciclos e outros veículos não motorizados
+        - null
+        - null
+      - - 9529-1/05
+        - Reparação de artigos do mobiliário
+        - null
+        - null
+      - - null
+        - null
+        - Reparação de artigos do mobiliário
+        - null
+      - - 9529-1/99
+        - ''
+        - Reparação e manutenção de outros objetos e equipamentos pessoais e domésticos não
+        - ''
+      - - null
+        - null
+        - especificados anteriormente
+        - null
+      - - 9601-7/02
+        - Tinturarias
+        - null
+        - null
+      - - 9601-7/03
+        - Toalheiros
+        - null
+        - null
+      - - 9602-5/01
+        - Cabeleireiros, manicure e pedicure
+        - null
+        - null
+      - - 9602-5/02
+        - Atividades de estética e outros serviços de cuidados com a beleza
+        - null
+        - null
+      - - 9603-3/01
+        - Gestão e manutenção de cemitérios
+        - null
+        - null
+      - - 9603-3/03
+        - Serviços de sepultamento
+        - null
+        - null
+      - - 9603-3/04
+        - Serviços de funerárias
+        - null
+        - null
+      - - 9603-3/05
+        - Serviços de somatoconservação
+        - null
+        - null
+      - - 9603-3/99
+        - Atividades funerárias e serviços relacionados não especificados anteriormente
+        - null
+        - null
+      - - 9609-2/02
+        - Agências matrimoniais
+        - null
+        - null
+      - - 9609-2/04
+        - Exploração de máquinas de serviços pessoais acionadas por moeda
+        - null
+        - null
+      - - 9609-2/05
+        - Atividades de sauna e banhos
+        - null
+        - null
+      - - 9609-2/06
+        - Serviços de tatuagem e colocação de piercing
+        - null
+        - null
+      - - 9609-2/07
+        - Alojamento de animais domésticos
+        - null
+        - null
+      - - 9609-2/08
+        - Higiene e embelezamento de animais domésticos
+        - null
+        - null
+      - - 9609-2/99
+        - Outras atividades de serviços pessoais não especificadas anteriormente
+        - null
+        - null
+      - - 9700-5/00
+        - Serviços domésticos
+        - null
+        - null
+notas:
+- Continuação da tabela da página 28.
+- A camada de texto parte as descrições de duas linhas e repete 1 descrição(ões) numa linha vazia; a comparação
+  junta as partes e descarta as repetições.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

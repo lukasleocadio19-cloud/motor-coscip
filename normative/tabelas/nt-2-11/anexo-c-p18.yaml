@@ -1,0 +1,560 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-11
+arquivo: nt-2-11-brigadas-de-incendio.md
+tabela: Tabela do Anexo C
+titulo: Dimensionamento para brigadista voluntário de incêndio (BVI), página 18
+pagina: 18
+fonte_pdf_sha256: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+  juntar_cabecalho: false
+forma_geometrica:
+  faixa:
+  - 0
+  - 33
+  mesclar_linhas:
+  - - 0
+    - 2
+    - - 1
+      - 3
+  - - 1
+    - 2
+    - - 4
+  linhas_cabecalho: 4
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-11/pagina-18.jpg
+    imagem_sha256: 4ebd23cff96c5508c857b7b87d4ccc3a28db6b7c7a825b858b1318716d62ca14
+    linhas_cabecalho: 3
+    cabecalho_publicado:
+    - Grupo
+    - Ocupação/Uso
+    - Divisão
+    - Descrição
+    - BVI — 1 a 20 funcionários por turno
+    - BVI — acima de 20 funcionários por turno
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Composição da Brigada de Incêndio Voluntária*
+    - - Funcionários por turno (incluindo terceirizados)
+    - - 1 A 20
+      - Acima de 20
+    - - E
+      - Escolar e cultura física
+      - E-1
+      - Escolar em geral
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - E-2
+      - Escolar especial
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - E-3
+      - Espaço para cultura física
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - E-4
+      - Escola para portadores de deficiências
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - F
+      - Local de Reunião de Público
+      - F-1
+      - Local onde há objeto de valor inestimável
+      - '2'
+      - 30% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - F-2
+      - Local religioso e velório
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - F-3
+      - Centro esportivo
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - F-4
+      - Estação e terminal de passageiro
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - F-5
+      - Arte cênica e auditório
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - F-6
+      - Local de Diversões Públicas
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - F-7
+      - Instalações temporárias
+      - Vide NT 5-04
+      - <
+    - - ^
+      - ^
+      - F-8
+      - Local para refeição
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - F-9
+      - Recreação pública
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - F-10
+      - Exposição de objetos ou animais
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - Não exigível
+      - <
+    - - ^
+      - ^
+      - F-11
+      - Centro de exibição
+      - '2'
+      - 10% da população fixa***
+    - - ^
+      - ^
+      - ^
+      - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 18
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Divisão
+      - Composição da Brigada de Incêndio Voluntária*
+    - - Funcionários por turno
+    - - Ocupação/Uso
+      - Descrição
+      - (incluindo terceirizados)
+    - - 1 A 20
+      - Acima de 20
+    - - E
+      - Escolar e cultura física
+      - E-1
+      - Escolar em geral
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - E-2
+      - Escolar especial
+      - Não exigível
+    - - Edificação histórica com isenção de canalização ****
+      - Não exigível
+    - - E-3
+      - Espaço para cultura física
+      - Não exigível
+    - - Edificação histórica com isenção de canalização ****
+      - Não exigível
+    - - E-4
+      - Escola para portadores de deficiências
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - F
+      - Local de Reunião de Público
+      - F-1
+      - Local onde há objeto de valor inestimável
+      - '2'
+      - 30% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - F-2
+      - Local religioso e velório
+      - Não exigível
+    - - Edificação histórica com isenção de canalização ****
+      - Não exigível
+    - - F-3
+      - Centro esportivo
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - F-4
+      - Estação e terminal de passageiro
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - F-5
+      - Arte cênica e auditório
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - F-6
+      - Local de Diversões Públicas
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - F-7
+      - Instalações temporárias
+      - Vide NT 5-04
+    - - F-8
+      - Local para refeição
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+    - - F-9
+      - Recreação pública
+      - Não exigível
+    - - Edificação histórica com isenção de canalização ****
+      - Não exigível
+    - - F-10
+      - Exposição de objetos ou animais
+      - Não exigível
+    - - Edificação histórica com isenção de canalização ****
+      - Não exigível
+    - - F-11
+      - Centro de exibição
+      - '2'
+      - 10% da população fixa***
+    - - Edificação histórica com isenção de canalização ****
+      - '2'
+      - 10% da população fixa***
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 39.32
+      - 57.28
+      - 548.04
+      - 656.92
+      linhas:
+      - - Grupo
+        - ''
+        - Divisão
+        - ''
+        - Composição da Brigada de Incêndio Voluntária*
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Funcionários por turno
+        - null
+      - - null
+        - Ocupação/Uso
+        - null
+        - Descrição
+        - (incluindo terceirizados)
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - 1 A 20
+        - Acima de 20
+      - - E
+        - Escolar e cultura física
+        - E-1
+        - Escolar em geral
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - E-2
+        - Escolar especial
+        - Não exigível
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - Não exigível
+        - null
+      - - null
+        - null
+        - E-3
+        - Espaço para cultura física
+        - Não exigível
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - Não exigível
+        - null
+      - - null
+        - null
+        - E-4
+        - Escola para portadores de deficiências
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - F
+        - Local de Reunião de Público
+        - F-1
+        - Local onde há objeto de valor inestimável
+        - '2'
+        - 30% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - F-2
+        - Local religioso e velório
+        - Não exigível
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - Não exigível
+        - null
+      - - null
+        - null
+        - F-3
+        - Centro esportivo
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - F-4
+        - Estação e terminal de passageiro
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - F-5
+        - Arte cênica e auditório
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - F-6
+        - Local de Diversões Públicas
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - F-7
+        - Instalações temporárias
+        - Vide NT 5-04
+        - null
+      - - null
+        - null
+        - F-8
+        - Local para refeição
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - F-9
+        - Recreação pública
+        - Não exigível
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - Não exigível
+        - null
+      - - null
+        - null
+        - F-10
+        - Exposição de objetos ou animais
+        - Não exigível
+        - null
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - Não exigível
+        - null
+      - - null
+        - null
+        - F-11
+        - Centro de exibição
+        - '2'
+        - 10% da população fixa***
+      - - null
+        - null
+        - null
+        - Edificação histórica com isenção de canalização ****
+        - '2'
+        - 10% da população fixa***
+notas:
+- 'Leitura visual em grade completa: "^" = célula mesclada com a de cima (grupo, ocupação, divisão); "<"
+  = célula mesclada com a da esquerda ("Não exigível" e "Vide NT 5-04" valem para as duas faixas). Linhas
+  "Edificação histórica…" em fundo amarelo na imagem.'
+- 'Divergência técnica, não de conteúdo conhecido: a camada de texto quebra os rótulos longos em linhas
+  e o pdfplumber separa as células de várias linhas (e reposiciona as mescladas do cabeçalho). A leitura
+  visual não tem segundo caminho independente: conferir na imagem antes de usar.'
+inconsistencias_da_fonte:
+- A marca "****" (edificação histórica com isenção de canalização) é usada em todas as linhas destacadas,
+  mas o quadro de notas da página 21 só define "*" e "***".
+- 'F-1: 30% da população fixa na linha comum e 10% na linha da edificação histórica (demais divisões:
+  10% nas duas).'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: divergente

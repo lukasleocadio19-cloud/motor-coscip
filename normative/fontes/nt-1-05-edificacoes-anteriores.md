@@ -37,8 +37,7 @@ ANEXO(S) A - MODELO PARA TERMO DE COMPROMISSO B - MODELO PARA TERMO DE COMPROMIS
 
 Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -50,6 +49,8 @@ Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019.
 ---
 
 ## Página 2
+
+![Representação visual da página 2](media/nt-1-05/pagina-02.jpg)
 
 ### 1 OBJETIVO
 
@@ -99,8 +100,7 @@ Para efeito desta Nota Técnica, além das definições constantes da NT 1-02 - 
 
 4.1 Anterioridade: condição em que a edificação é comprovadamente licenciada para construção, construída ou possuidora de documento de regularização do CBMERJ anterior à publicação do Decreto Estadual nº 42/2018 -
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 2.2 Ficam isentas das exigências contidas nesta NT |  |  |

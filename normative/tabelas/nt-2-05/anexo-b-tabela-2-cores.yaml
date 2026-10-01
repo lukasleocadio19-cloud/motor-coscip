@@ -1,0 +1,193 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-05
+arquivo: nt-2-05-sinalizacao.md
+tabela: Tabela 2 do Anexo B
+titulo: Cores de segurança e contraste
+pagina: 7
+fonte_pdf_sha256: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 0
+  - 6
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-05/pagina-07.jpg
+    imagem_sha256: 1c46aaacc97d092a09307161dda1c0801b34461fbbf8f6c1f76db8f540668f21
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Referência
+    - Vermelha
+    - Amarela
+    - Verde
+    - Preta
+    - Branca
+    linhas:
+    - - Referência
+      - Denominação das cores
+      - <
+      - <
+      - <
+      - <
+    - - ^
+      - Vermelha
+      - Amarela
+      - Verde
+      - Preta
+      - Branca
+    - - Munsell Book of Colors®
+      - 5R 4/14
+      - 5Y 8/12
+      - 2.5G ¾
+      - N 1.0/
+      - N 9.5/
+    - - Pantone®
+      - 485C
+      - 108C
+      - 350C
+      - 419C
+      - –
+    - - CMYK
+      - C0 M100 Y91 K0
+      - C0 M9 Y94 K0
+      - C79 M0 Y87 K76
+      - C0 M0 Y0 K100
+      - –
+    - - RGB
+      - R255 G0 B23
+      - R255 G255 B0
+      - R0 G61 B0
+      - R0 G0 B0
+      - –
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 7
+      tabela_na_pagina: 2
+    linhas:
+    - - Referência
+      - Denominação das cores
+    - - Vermelha
+      - Amarela
+      - Verde
+      - Preta
+      - Branca
+    - - Munsell Book of Colors®
+      - 5R 4/14
+      - 5Y 8/12
+      - 2.5G ¾
+      - N 1.0/
+      - N 9.5/
+    - - Pantone®
+      - 485C
+      - 108C
+      - 350C
+      - 419C
+      - '-'
+    - - CMYK
+      - C0 M100 Y91 K0
+      - C0 M9 Y94 K0
+      - C79 M0 Y87 K76
+      - C0 M0 Y0 K100
+      - '-'
+    - - RGB
+      - R255 G0 B23
+      - R255 G255 B0
+      - R0 G61 B0
+      - R0 G0 B0
+      - '-'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 49.56
+      - 91.46
+      - 526.18
+      - 315.65
+      linhas:
+      - - Nível
+        - Sinalização retangular
+        - Sinalização quadrada e triangular
+        - Sinalização circular
+      - - Superior
+        - ''
+        - ''
+        - ''
+      - - Intermediário
+        - ''
+        - ''
+        - ''
+      - - Inferior
+        - ''
+        - ''
+        - ''
+    - bbox: &id001
+      - 49.56
+      - 371.45
+      - 542.62
+      - 561.91
+      linhas:
+      - - Referência
+        - Denominação das cores
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - Vermelha
+        - Amarela
+        - Verde
+        - Preta
+        - Branca
+      - - Munsell Book of Colors®
+        - 5R 4/14
+        - 5Y 8/12
+        - 2.5G ¾
+        - N 1.0/
+        - N 9.5/
+      - - Pantone®
+        - 485C
+        - 108C
+        - 350C
+        - 419C
+        - –
+      - - CMYK
+        - C0 M100 Y91 K0
+        - C0 M9 Y94 K0
+        - C79 M0 Y87 K76
+        - C0 M0 Y0 K100
+        - –
+      - - RGB
+        - R255 G0 B23
+        - R255 G255 B0
+        - R0 G61 B0
+        - R0 G0 B0
+        - –
+      - - 'Nota 1: O padrão de cores básico é o Munsell Book of Colors®. Nota 2: As cores Pantone® foram
+          convertidas do sistema Munsell Book of Colors®. Nota 3: Os valores das tabelas CMYK e RGB para
+          impressão gráfica foram convertidos do sistema Pantone®.'
+        - null
+        - null
+        - null
+        - null
+        - null
+notas:
+- Verde em Munsell está escrito "2.5G ¾" (fração tipográfica de 3/4).
+- 'Nota 1: O padrão de cores básico é o Munsell Book of Colors®.'
+- 'Nota 2: As cores Pantone® foram convertidas do sistema Munsell Book of Colors®.'
+- 'Nota 3: Os valores das tabelas CMYK e RGB para impressão gráfica foram convertidos do sistema Pantone®.'
+- 'Fonte indicada na página: ABNT NBR 16820.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 1
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

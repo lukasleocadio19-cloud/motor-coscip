@@ -1,0 +1,178 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-03
+arquivo: nt-1-03-simbolos-graficos.md
+tabela: Anexo A
+titulo: Simbologia para projeto de segurança contra incêndio e pânico (p. 7)
+pagina: 7
+fonte_pdf_sha256: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-03/pagina-07.png
+    imagem_sha256: f6a7a3cfcec7341204d1dbd0ecb79805724187231c44b7c5978b21445ec1acf2
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Grupo
+    - Subgrupo
+    - Nome do símbolo
+    - 'Símbolo gráfico (desenho: ver a imagem da página)'
+    linhas:
+    - - SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA
+      - ''
+      - PONTO DE ILUMINAÇÃO DE EMERGÊNCIA
+      - ''
+    - - ^
+      - ^
+      - PONTO DE ILUMINAÇÃO DE EMERGÊNCIA TIPO BALIZAMENTO
+      - ''
+    - - ^
+      - ^
+      - PONTO DE ILUMINAÇÃO DE EMERGÊNCIA À PROVA DE EXPLOSÃO E PÓ
+      - ''
+    - - ^
+      - ^
+      - BATERIAS E ACUMULADORES DO SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA
+      - ''
+    - - ^
+      - ^
+      - CENTRAL DO SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA
+      - ''
+    - - ^
+      - ^
+      - GRUPO MOTOGERADOR
+      - ''
+    - - VASOS E TANQUES
+      - GLP
+      - CENTRAL DE GLP
+      - ''
+    - - ^
+      - ^
+      - VASO PRESSÃO
+      - ''
+    - - ^
+      - TANQUES
+      - TANQUE HORIZONTAL ENTERRADO
+      - ''
+    - - ^
+      - ^
+      - TANQUE HORIZONTAL SUPERFÍCIE
+      - ''
+    - - ^
+      - ^
+      - TANQUE VERTICAL ENTERRADO
+      - ''
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 7
+      tabela_na_pagina: 1
+    linhas:
+    - - SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA
+      - PONTO DE ILUMINAÇÃO DE EMERGÊNCIA
+    - - PONTO DE ILUMINAÇÃO DE EMERGÊNCIA TIPO BALIZAMENTO
+    - - PONTO DE ILUMINAÇÃO DE EMERGÊNCIA À PROVA DE EXPLOSÃO E PÓ
+    - - BATERIAS E ACUMULADORES DO SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA
+    - - CENTRAL DO SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA
+    - - GRUPO MOTOGERADOR
+    - - VASOS E TANQUES
+      - GLP
+      - CENTRAL DE GLP
+    - - VASO PRESSÃO
+    - - TANQUES
+      - TANQUE HORIZONTAL ENTERRADO
+    - - TANQUE HORIZONTAL SUPERFÍCIE
+    - - TANQUE VERTICAL ENTERRADO
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 72.38
+      - 56.88
+      - 508.66
+      - 747.1
+      linhas:
+      - - A I C N Ê G R E M E E D O Ã Ç A N I M U L I E D A M E T S I S
+        - ''
+        - PONTO DE ILUMINAÇÃO DE EMERGÊNCIA
+        - ''
+      - - null
+        - null
+        - PONTO DE ILUMINAÇÃO DE EMERGÊNCIA TIPO BALIZAMENTO
+        - ''
+      - - null
+        - null
+        - PONTO DE ILUMINAÇÃO DE EMERGÊNCIA À PROVA DE EXPLOSÃO E PÓ
+        - ''
+      - - null
+        - null
+        - BATERIAS E ACUMULADORES DO SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA
+        - ''
+      - - null
+        - null
+        - CENTRAL DO SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA
+        - ''
+      - - null
+        - null
+        - GRUPO MOTOGERADOR
+        - ''
+      - - S E U Q N A T E S O S A V
+        - P L G
+        - CENTRAL DE GLP
+        - ''
+      - - null
+        - null
+        - VASO PRESSÃO
+        - ''
+      - - null
+        - S E U Q N A T
+        - TANQUE HORIZONTAL ENTERRADO
+        - ''
+      - - null
+        - null
+        - TANQUE HORIZONTAL SUPERFÍCIE
+        - ''
+      - - null
+        - null
+        - TANQUE VERTICAL ENTERRADO
+        - ''
+notas:
+- A coluna da direita traz o desenho do símbolo; o desenho não é texto e não é conferido aqui (ver a imagem
+  da página).
+- 'Fonte: CBMERJ.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 0
+    coluna: 0
+    a: SISTEMA DE ILUMINAÇÃO DE EMERGÊNCIA
+    b: SISTEMADEILUMINAÇÃODEEMERGÊNCIA
+    estado: verificada
+    score: 93.9
+  - linha: 6
+    coluna: 0
+    a: VASOS E TANQUES
+    b: VASOSETANQUES
+    estado: verificada
+    score: 96.3
+forma_geometrica:
+  celulas_verticais:
+  - - 0
+    - 0
+  - - 6
+    - 0
+  - - 6
+    - 1
+  - - 8
+    - 1

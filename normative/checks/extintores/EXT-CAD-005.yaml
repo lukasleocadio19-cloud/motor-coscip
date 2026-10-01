@@ -1,0 +1,32 @@
+# RASCUNHO. NT 2-01 6.7: residencial multifamiliar — extintores na área de uso comum,
+# incluindo as circulações dos pavimentos. Confirmação humana até existir a região semântica
+# "circulação" no motor (plano de correção, F4.2).
+schema_version: checks/1.0
+id: EXT-CAD-005
+version: 1
+title: Extintores nas áreas de uso comum e circulações (multifamiliar)
+system: EXTINTORES
+type: MANUAL_CONFIRMATION
+scope: FLOOR
+severity: MAJOR
+publication_state: DRAFT
+production_eligible: false
+group_key: extintores/localizacao
+applies_when:
+  any:
+    - {fact: context.occupancy, operator: equals, value: A-2}
+    - {fact: context.occupancy, operator: equals, value: A-5}
+normative_basis:
+  - document: NT 2-01
+    edition: 2ª edição - 2020
+    item: "6.7"
+    quote: ["residenciais multifamiliares", "área de uso comum",
+            "circulações dos pavimentos destinados às unidades residenciais"]
+wording:
+  title: Conferir extintores nas áreas de uso comum e circulações
+  explanation: >-
+    Em edificação residencial multifamiliar, a NT 2-01 (item 6.7) cobra os extintores na área
+    de uso comum, incluindo as circulações dos pavimentos. O motor ainda não identifica a
+    circulação na planta: o analista confere se os extintores de cada pavimento estão nela.
+  required_action: >-
+    Conferir na planta que os extintores estão nas áreas de uso comum e nas circulações.

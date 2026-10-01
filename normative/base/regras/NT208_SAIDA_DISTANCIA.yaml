@@ -1,6 +1,6 @@
 # RASCUNHO redigido pelo assistente a partir do texto ingerido da NT 2-08. Sem homologação.
-# O limite vem do Anexo C, que na base está como IMAGEM: o analista informa o valor
-# (context.exit_max_distance_m). Saídas vêm de marcações/placas e exigem confirmação.
+# O limite vem do Anexo C, que desde o pacote v5 é dado conferido (distancias-saida.yaml);
+# nesta regra antiga o analista ainda informa o valor (context.exit_max_distance_m). Saídas vêm de marcações/placas e exigem confirmação.
 schema_version: rules/1.1
 id: NT208_SAIDA_DISTANCIA
 version: 1

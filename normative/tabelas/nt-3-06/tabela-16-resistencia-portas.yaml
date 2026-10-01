@@ -1,0 +1,162 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 16
+titulo: Tempo requerido de resistência ao fogo para portas corta-fogo
+pagina: 11
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 5
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-11.jpg
+    imagem_sha256: d163625ce5e135572e4c3f64e8195e715f61950ae0f9b1fa2180c768eeee2f25
+    linhas_cabecalho: 1
+    linhas:
+    - - Tempo requerido de resistência ao fogo pela parede (min)
+      - Tempo requerido de resistência ao fogo pela porta corta-fogo (min)
+    - - '60'
+      - '60'
+    - - '120'
+      - '90'
+    - - '240'
+      - '180'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 11
+      tabela_na_pagina: 3
+    linhas:
+    - - Tempo requerido de resistência ao fogo pela parede (min)
+      - Tempo requerido de resistência ao fogo pela porta corta- fogo (min)
+    - - '60'
+      - '60'
+    - - '120'
+      - '90'
+    - - '240'
+      - '180'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 59.84
+      - 277.23
+      - 279.75
+      - 482.04
+      linhas:
+      - - ''
+        - Quantidade
+        - Número de áreas controláveis de armazenamento por andar
+      - - null
+        - máxima
+        - null
+      - - Andar
+        - permitida
+        - null
+      - - ''
+        - '%'
+        - null
+      - - null
+        - ''
+        - null
+      - - 9
+        - '5'
+        - '1'
+      - - 7 e 9
+        - '5'
+        - '2'
+      - - '> 4 e < 6'
+        - 12,5
+        - '2'
+      - - '3'
+        - '50'
+        - '2'
+      - - '2'
+        - '75'
+        - '3'
+      - - '1'
+        - '100'
+        - '4'
+      - - 1° subsolo
+        - '75'
+        - '3'
+      - - 2° subsolo
+        - '50'
+        - '2'
+      - - Abaixo do 2° subsolo
+        - NP
+        - NP
+    - bbox:
+      - 53.39
+      - 519.14
+      - 286.19
+      - 589.85
+      linhas:
+      - - Armazenamento interno
+        - ''
+        - Tempo requerido de
+        - ''
+      - - null
+        - null
+        - resistência ao fogo para
+        - null
+      - - null
+        - null
+        - paredes, tetos e pisos (min)
+        - null
+      - - Área menor que 14 m²
+        - '60'
+        - null
+        - null
+      - - Área entre 14m² e 45 m²
+        - '120'
+        - null
+        - null
+      - - Área maior que 45 m²
+        - '240'
+        - null
+        - null
+    - bbox: &id001
+      - 53.39
+      - 628.13
+      - 286.19
+      - 724.75
+      linhas:
+      - - Tempo requerido de resistência ao fogo pela parede (min)
+        - Tempo requerido de
+      - - null
+        - resistência
+      - - null
+        - ao fogo pela porta corta-
+      - - null
+        - fogo
+      - - null
+        - (min)
+      - - '60'
+        - '60'
+      - - '120'
+        - '90'
+      - - '240'
+        - '180'
+notas:
+- 'Fonte indicada na página: ABNT NBR 17505.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 2
+  candidatos_na_pagina: 3
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 0
+    coluna: 1
+    a: Tempo requerido de resistência ao fogo pela porta corta-fogo (min)
+    b: Tempo requerido de resistência ao fogo pela porta corta- fogo (min)
+    estado: verificada
+    score: 99.2

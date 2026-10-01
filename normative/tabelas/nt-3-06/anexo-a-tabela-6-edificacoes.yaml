@@ -1,0 +1,442 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 6 do Anexo A
+titulo: Localização de edificações com tanques de armazenamento em relação aos limites de propriedade,
+  desde que na área adjacente haja ou possa haver construção, vias de circulação interna e a edificação
+  próxima mais importante na mesma propriedade
+pagina: 15
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 9
+  juntar_cabecalho: false
+  mesclar_linhas:
+  - - 2
+    - 3
+    - - 2
+      - 9
+  - - 1
+    - 2
+    - - 2
+      - 9
+  - - 0
+    - 1
+    - - 2
+      - 9
+  - - 6
+    - 7
+    - - 2
+  - - 5
+    - 6
+    - - 2
+  - - 4
+    - 5
+    - - 2
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-15.jpg
+    imagem_sha256: 864bef45ce9746e08e7a7993b56088906dee52d9fb7f37431620b1b80dadb691
+    linhas_cabecalho: 3
+    cabecalho_publicado:
+    - Tanque de maior capacidade (m³)
+    - Limite de propriedade — líquidos estáveis — ≤17 KPa
+    - Limite de propriedade — líquidos estáveis — >17 KPa
+    - Limite de propriedade — líquidos instáveis — ≤17 KPa
+    - Limite de propriedade — líquidos instáveis — >17 KPa
+    - Via de circulação/edificação — líquidos estáveis — ≤17 KPa
+    - Via de circulação/edificação — líquidos estáveis — >17 KPa
+    - Via de circulação/edificação — líquidos instáveis — ≤17 KPa
+    - Via de circulação/edificação — líquidos instáveis — >17 KPa
+    linhas:
+    - - Tanque de maior capacidade, em operação com líquidos m³
+      - Distância mínima até o limite de propriedade, desde que na área adjacente haja ou possa haver
+        construção (m)
+      - <
+      - <
+      - <
+      - Distância mínima do lado mais próximo de qualquer via de circulação interna ou qualquer edificação
+        importante na mesma propriedade (m)
+      - <
+      - <
+      - <
+    - - ^
+      - Líquidos estáveis alívio de emergência
+      - <
+      - Líquidos instáveis alívio de emergência
+      - <
+      - Líquidos estáveis alívio de emergência
+      - <
+      - Líquidos instáveis alívio de emergência
+      - <
+    - - ^
+      - ≤17 KPa
+      - '>17 KPa'
+      - ≤17 KPa
+      - '>17 KPa'
+      - ≤17 KPa
+      - '>17 KPa'
+      - ≤17 KPa
+      - '>17 KPa'
+    - - Até 46
+      - 4,5
+      - 7,5
+      - 12,0
+      - 18,0
+      - 1,5
+      - 3,0
+      - 4,5
+      - 6,0
+    - - 46 a 114
+      - 6,0
+      - 9,0
+      - 15,0
+      - 24,0
+      - 1,5
+      - 3,0
+      - 4,5
+      - 6,0
+    - - 114 a 190
+      - 9,0
+      - 13,5
+      - 22,5
+      - 36,0
+      - 3,0
+      - 4,5
+      - 7,5
+      - 12,0
+    - - 190 a 380
+      - 15,0
+      - 22,5
+      - 37,5
+      - 60,0
+      - 4,5
+      - 7,5
+      - 12,0
+      - 18,0
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 15
+      tabela_na_pagina: 1
+    linhas:
+    - - Tanque de maior capacidade, em operação com líquidos m3
+      - Distância mínima até o limite de propriedade, desde que na área adjacente haja ou possa haver
+        construção (m)
+      - Distância mínima do lado mais próximo de qualquer via de circulação interna ou qualquer edificação
+        importante na mesma propriedade (m)
+    - - Líquidos estáveis alívio de emergência
+      - Líquidos instáveis alívio de emergência
+      - Líquidos estáveis alívio de emergência
+      - Líquidos instáveis alívio de emergência
+    - - ≤17 KPa
+      - '>17 KPa'
+      - ≤17 KPa
+      - '>17 KPa'
+      - ≤17 KPa
+      - '>17 KPa'
+      - ≤17 KPa
+      - '>17 KPa'
+    - - Até 46
+      - 4,5
+      - 7,5
+      - 12,0
+      - 18,0
+      - 1,5
+      - 3,0
+      - 4,5
+      - 6,0
+    - - 46 a 114
+      - 6,0
+      - 9,0
+      - 15,0
+      - 24,0
+      - 1,5
+      - 3,0
+      - 4,5
+      - 6,0
+    - - 114 a 190
+      - 9,0
+      - 13,5
+      - 22,5
+      - 36,0
+      - 3,0
+      - 4,5
+      - 7,5
+      - 12,0
+    - - 190 a 380
+      - 15,0
+      - 22,5
+      - 37,5
+      - 60,0
+      - 4,5
+      - 7,5
+      - 12,0
+      - 18,0
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 64.52
+      - 98.53
+      - 517.2
+      - 269.83
+      linhas:
+      - - Tanque de maior capacidade, em operação com líquidos m3
+        - ''
+        - Distância mínima até o limite de
+        - null
+        - null
+        - null
+        - null
+        - ''
+        - ''
+        - Distância mínima do lado mais próximo de
+        - null
+        - null
+        - null
+        - ''
+      - - null
+        - null
+        - propriedade, desde que na área
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - qualquer via de circulação interna ou qualquer
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - adjacente haja ou possa haver
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - edificação importante na mesma propriedade
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - construção (m)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - (m)
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ''
+        - Líquidos
+        - null
+        - ''
+        - Líquidos instáveis alívio de emergência
+        - null
+        - null
+        - Líquidos estáveis alívio de emergência
+        - null
+        - null
+        - Líquidos instáveis alívio de emergência
+        - null
+        - null
+      - - null
+        - null
+        - estáveis alívio
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - de
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - emergência
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - ≤17 KPa
+        - null
+        - '>17 KPa'
+        - null
+        - ≤17 KPa
+        - '>17 KPa'
+        - null
+        - ≤17 KPa
+        - null
+        - '>17 KPa'
+        - ≤17 KPa
+        - '>17 KPa'
+        - null
+      - - Até 46
+        - 4,5
+        - null
+        - 7,5
+        - null
+        - 12,0
+        - 18,0
+        - null
+        - 1,5
+        - null
+        - 3,0
+        - 4,5
+        - 6,0
+        - null
+      - - 46 a 114
+        - 6,0
+        - null
+        - 9,0
+        - null
+        - 15,0
+        - 24,0
+        - null
+        - 1,5
+        - null
+        - 3,0
+        - 4,5
+        - 6,0
+        - null
+      - - 114 a 190
+        - 9,0
+        - null
+        - 13,5
+        - null
+        - 22,5
+        - 36,0
+        - null
+        - 3,0
+        - null
+        - 4,5
+        - 7,5
+        - 12,0
+        - null
+      - - 190 a 380
+        - 15,0
+        - null
+        - 22,5
+        - null
+        - 37,5
+        - 60,0
+        - null
+        - 4,5
+        - null
+        - 7,5
+        - 12,0
+        - 18,0
+        - null
+    - bbox:
+      - 231.94
+      - 152.45
+      - 299.16
+      - 188.69
+      linhas:
+      - - Líquidos
+      - - instáveis alívio
+      - - de emergência
+    - bbox:
+      - 309.96
+      - 152.45
+      - 386.06
+      - 188.69
+      linhas:
+      - - Líquidos estáveis
+      - - alívio de
+      - - emergência
+    - bbox:
+      - 396.89
+      - 158.93
+      - 511.18
+      - 183.65
+      linhas:
+      - - Líquidos instáveis alívio
+      - - de emergência
+    - bbox:
+      - 64.52
+      - 314.46
+      - 517.2
+      - 546.86
+      linhas:
+      - - Capacidade de
+        - Quantidade e capacidade extintora mínima
+      - - armazenamento
+        - ''
+      - - ''
+        - ''
+      - - Até 500 l
+        - Dois extintores de pó 20-B
+      - - De 501 l a 5.000 l
+        - Dois extintores de pó 40-B e um extintor de espuma mecânica 10-B
+      - - De 5.001 l a 10.000 l
+        - Dois extintores de pó 80-B e dois extintores de espuma mecânica 10-B ou um extintor de pó 40-B
+          e um extintor de pó sobre rodas 80-B e dois extintores de espuma mecânica 10-B
+      - - De 10.001 a 20.000 l
+        - Um extintor de pó 80-B e um extintor de pó sobre rodas 80-B e um extintor de espuma mecânica
+          10-B e um extintor de espuma mecânica sobre rodas 40-B ou Quatro extintores de pó 40-B e um
+          extintor de pó sobre rodas 80-B e um extintor de espuma mecânica 10-B e Um extintor de espuma
+          mecânica sobre rodas 40-B
+      - - De 20.001 l a 100.000 l
+        - Dois extintores de pó 80-B e dois extintores de pó sobre rodas 80-B e dois extintores de espuma
+          mecânica 10-B e dois extintores de espuma mecânica sobre rodas 40-B ou três extintores de pó
+          sobre rodas 80-B e dois extintores de espuma mecânica 10-B e dois extintores de espuma mecânica
+          sobre rodas 40-B
+      - - Superior a 100.000 l
+        - Quatro extintores de pó sobre rodas 80-B e três extintores de espuma mecânica sobre rodas 40-B
+notas:
+- 'Fonte indicada na página: ABNT NBR 17505.'
+- 'Conferência: para cada lado e pressão, a distância para líquidos instáveis é maior ou igual à dos estáveis,
+  e cresce com a capacidade.'
+inconsistencias_da_fonte:
+- 'As faixas de capacidade ("Até 46", "46 a 114", "114 a 190", "190 a 380") se sobrepõem nos limites e
+  param em 380 m³: a tabela não cobre tanques maiores.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

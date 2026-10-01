@@ -1,0 +1,170 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 8 do Anexo A
+titulo: Quantidades máximas permitidas para armazenamento e exposição em ocupações comerciais
+pagina: 16
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 7
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-16.jpg
+    imagem_sha256: c8ca885d2053a9291c7410b026f2252ac1a16a12c1156c114a9b872de1d24b92
+    linhas_cabecalho: 1
+    linhas:
+    - - Nível de proteção
+      - Limites de estocagem
+      - I A (Somente no piso térreo)
+      - Classificação de líquidos I B, I C, II e III A (qualquer combinação)
+      - III B
+    - - Sem sistema de proteção automática
+      - Quantidades máximas permitidas
+      - 250 l
+      - '14.250 l por área controlável de armazenamento: permitida, no máximo duas áreas edificadas separadas
+        por parede com isolamento de fogo por 60 min, no mínimo'
+      - 57.000 l
+    - - ^
+      - Capacidade máxima de armazenamento por unidade de área
+      - ''
+      - 85 l/m² em áreas de armazenamento ou exposição e passagens adjacentes
+      - ^
+    - - Com sistema de proteção automático
+      - Quantidades máximas permitidas
+      - 450 l
+      - '28.500 l por área controlável de armazenamento: permitida, no máximo duas áreas controláveis,
+        separadas por uma parede com isolamento de fogo de 60 min no mínimo'
+      - 100.000 l
+    - - ^
+      - Capacidade máxima de armazenamento por unidade de área
+      - ''
+      - 170 l/m² em área de armazenamento ou de exposição e passagens adjacentes
+      - ^
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 16
+      tabela_na_pagina: 1
+    linhas:
+    - - Nível de proteção
+      - Limites de estocagem
+      - I A (Somente no piso térreo)
+      - Classificação de líquidos I B, I C, II e III A (qualquer combinação)
+      - III B
+    - - Sem sistema de proteção automática
+      - Quantidades máximas permitidas
+      - 250 l
+      - '14.250 l por área controlável de armazenamento: permitida, no máximo duas áreas edificadas separadas
+        por parede com isolamento de fogo por 60 min, no mínimo'
+      - 57.000 l
+    - - Capacidade máxima de armazenamento por unidade de área
+      - 85 l/m² em áreas de armazenamento ou exposição e passagens adjacentes
+    - - Com sistema de proteção automático
+      - Quantidades máximas permitidas
+      - 450 l
+      - '28.500 l por área controlável de armazenamento: permitida, no máximo duas áreas controláveis,
+        separadas por uma parede com isolamento de fogo de 60 min no mínimo'
+      - 100.000 l
+    - - Capacidade máxima de armazenamento por unidade de área
+      - 170 l/m² em área de armazenamento ou de exposição e passagens adjacentes
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 57.03
+      - 88.9
+      - 496.04
+      - 345.7
+      linhas:
+      - - ''
+        - ''
+        - I A
+        - ''
+        - III B
+      - - null
+        - null
+        - null
+        - Classificação de líquidos
+        - null
+      - - Nível de
+        - Limites de
+        - (Somente
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - I B, I C, II e III A
+        - null
+      - - proteção
+        - estocagem
+        - no piso
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - (qualquer combinação)
+        - null
+      - - ''
+        - ''
+        - térreo)
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - ''
+        - null
+      - - ''
+        - ''
+        - ''
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - ''
+        - null
+      - - Sem sistema de proteção automática
+        - Quantidades máximas permitidas
+        - 250 l
+        - '14.250 l por área controlável de armazenamento: permitida, no máximo duas áreas edificadas
+          separadas por parede com isolamento de fogo por 60 min, no mínimo'
+        - 57.000 l
+      - - null
+        - Capacidade máxima de armazenamento por unidade de área
+        - ''
+        - 85 l/m² em áreas de armazenamento ou exposição e passagens adjacentes
+        - null
+      - - Com sistema de proteção automático
+        - Quantidades máximas permitidas
+        - 450 l
+        - '28.500 l por área controlável de armazenamento: permitida, no máximo duas áreas controláveis,
+          separadas por uma parede com isolamento de fogo de 60 min no mínimo'
+        - 100.000 l
+      - - null
+        - Capacidade máxima de armazenamento por unidade de área
+        - ''
+        - 170 l/m² em área de armazenamento ou de exposição e passagens adjacentes
+        - null
+notas:
+- 'Fonte indicada na página: ABNT NBR 17505.'
+- 'Conferência aritmética: com sistema automático os limites dobram (14.250 → 28.500 l; 85 → 170 l/m²);
+  o de I A vai de 250 para 450 l e o de III B de 57.000 para 100.000 l.'
+inconsistencias_da_fonte:
+- '"Sem sistema" limita a "duas áreas edificadas" e "com sistema" a "duas áreas controláveis": termos
+  diferentes para a mesma separação.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

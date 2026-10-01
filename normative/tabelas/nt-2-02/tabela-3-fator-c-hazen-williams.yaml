@@ -1,0 +1,82 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-02
+arquivo: nt-2-02-hidrantes-e-mangotinhos.md
+tabela: Tabela 3
+titulo: Fator "C" de Hazen-Williams
+pagina: 8
+fonte_pdf_sha256: 175c79afcac17335da3d68aef49e4ec9cc88706ddd012ed49e0b2748bf8524e9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+  descartar_linhas:
+  - 5
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-02/pagina-08.jpg
+    imagem_sha256: 19834e49603f04dad3a25f535f7c207749e9e851474c001aa600dc019ea46aa9
+    linhas_cabecalho: 1
+    linhas:
+    - - Tipo de Tubo
+      - Fator "C"
+    - - Ferro fundido ou dúctil sem revestimento interno
+      - '100'
+    - - Aço Preto (Sistema de tubo molhado)
+      - '120'
+    - - Galvanizado
+      - '120'
+    - - Cobre
+      - '150'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 8
+      tabela_na_pagina: 1
+    linhas:
+    - - Tipo de Tubo
+      - Fator "C"
+    - - Ferro fundido ou dúctil sem revestimento interno
+      - '100'
+    - - Aço Preto (Sistema de tubo molhado)
+      - '120'
+    - - Galvanizado
+      - '120'
+    - - Cobre
+      - '150'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 312.08
+      - 536.53
+      - 534.93
+      - 629.8
+      linhas:
+      - - Tipo de Tubo
+        - Fator "C"
+      - - Ferro fundido ou dúctil sem revestimento interno
+        - '100'
+      - - Aço Preto (Sistema de tubo molhado)
+        - '120'
+      - - Galvanizado
+        - '120'
+      - - Cobre
+        - '150'
+      - - NOTA - Os valores do fator "C" de Hazen Willians são válidos para tubos novos
+        - null
+notas:
+- 'Nota da tabela (fora da comparação): "Os valores do fator \"C\" de Hazen Willians são válidos para
+  tubos novos". Fonte indicada: NBR 13714.'
+inconsistencias_da_fonte:
+- '"Hazen Willians" na nota e em 5.7.6 (grafia correta: Hazen-Williams).'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

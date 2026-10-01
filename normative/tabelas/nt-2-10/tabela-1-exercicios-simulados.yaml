@@ -1,0 +1,127 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-10
+arquivo: nt-2-10-pecip.md
+tabela: Tabela 1
+titulo: Quantidade de exercícios simulados anuais
+pagina: 6
+fonte_pdf_sha256: 4406f8268fbb577e70b4ba3367f3bcc0ab1d961da201005b855a34989290b84b
+conferida_em: '2026-09-29'
+forma:
+  mesclar_linhas:
+  - - 0
+    - 1
+  - - 1
+    - 2
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-10/pagina-06.jpg
+    imagem_sha256: 83f1ca8c2ccf5baf1d012ff34579a7c4f5f1c871d7f354082c1dcff048bea6a3
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Risco de incêndio da edificação (conforme NT 1-04)
+    - Exercícios simulados ao ano — abandono parcial
+    - Exercícios simulados ao ano — abandono total
+    linhas:
+    - - Risco de incêndio da edificação (conforme NT 1-04)
+      - Quantidade mínima de exercícios simulados ao ano
+      - <
+    - - ^
+      - Abandono parcial
+      - Abandono total
+    - - Risco pequeno
+      - '01'
+      - '00'
+    - - Risco médio 1 e 2
+      - '00'
+      - '01'
+    - - Risco grande
+      - '01'
+      - '01'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 6
+      tabela_na_pagina: 1
+    linhas:
+    - - Risco de incêndio da edificação (conforme NT 1-04)
+      - Quantidade mínima de exercícios simulados ao ano
+    - - Abandono parcial
+      - Abandono total
+    - - Risco pequeno
+      - '01'
+      - '00'
+    - - Risco médio 1 e 2
+      - '00'
+      - '01'
+    - - Risco grande
+      - '01'
+      - '01'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 44.64
+      - 666.17
+      - 280.88
+      - 765.98
+      linhas:
+      - - Risco de incêndio da edificação (conforme NT 1-04)
+        - ''
+        - Quantidade mínima de
+        - null
+        - ''
+      - - null
+        - null
+        - exercícios
+        - null
+        - null
+      - - null
+        - null
+        - simulados ao ano
+        - null
+        - null
+      - - null
+        - Abandono parcial
+        - null
+        - Abandono total
+        - null
+      - - Risco pequeno
+        - '01'
+        - null
+        - '00'
+        - null
+      - - Risco médio 1 e 2
+        - '00'
+        - null
+        - '01'
+        - null
+      - - Risco grande
+        - '01'
+        - null
+        - '01'
+        - null
+    - bbox:
+      - 50.02
+      - 679.15
+      - 143.45
+      - 707.95
+      linhas:
+      - - Risco de incêndio
+      - - da edificação
+      - - (conforme NT 1-04)
+notas:
+- 'Fonte indicada na página: CBMERJ.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

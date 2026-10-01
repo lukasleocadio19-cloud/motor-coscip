@@ -1,7 +1,7 @@
 # RASCUNHO. Linha de mangueira alcança o ponto mais distante em até 30 m de percurso (fase 3).
 schema_version: checks/1.0
 id: HID-CAD-002
-version: 1
+version: 3
 title: Percurso da linha de mangueira até o ponto mais distante
 system: HIDRANTES
 type: CAD_DISTANCE
@@ -19,9 +19,10 @@ question:
   field: hydrant_walk_distance_m
   required_value: 30
   unit: m
-  accepted_evidence: [CAD]
+  accepted_evidence: [CAD, CALCULATION]  # medida calculada sobre a geometria do CAD
   quality_gate: quality.walls_detected
-  quality_gates: [quality.region_confirmed, quality.hydrant.complete]
+  quality_gates: [quality.region_confirmed, quality.hydrant.complete, quality.recognition.complete,
+                  quality.geometry.consistent]  # F7.2: vetorial × FMM
 normative_basis:
   - document: NT 2-02
     edition: 1ª edição - 2019; Portaria 1.317/2025

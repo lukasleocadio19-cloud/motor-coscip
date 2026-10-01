@@ -64,6 +64,10 @@ def _pred(p: Predicate, ctx: EvaluationContext) -> bool | None:
             return Decimal(str(v)) >= Decimal(str(p.value))
         case "lte":
             return Decimal(str(v)) <= Decimal(str(p.value))
+        case "gt":
+            return Decimal(str(v)) > Decimal(str(p.value))
+        case "lt":
+            return Decimal(str(v)) < Decimal(str(p.value))
     raise AssertionError(f"operador não compilado: {p.operator}")
 
 

@@ -45,8 +45,7 @@ metodo: "extração textual por blocos; tabelas convertidas para Markdown; marca
 
 Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -66,6 +65,8 @@ Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019
 ---
 
 ## Página 3
+
+![Representação visual da página 3](media/nt-4-10/pagina-03.jpg)
 
 Nota Técnicanº 4-10:2019 - Canteiro de obras
 
@@ -125,8 +126,7 @@ Para efeito desta Nota Técnica, além das definições constantes da NT 1-02 -T
 
 5.3 Os canteiros de obras deverão seguir as diretrizes da NT 1-01 - Procedimentos administrativos para regularização e fiscalização.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | que | desenvolvem as atividades de trabalho ligadas |  |
@@ -161,6 +161,8 @@ Para efeito desta Nota Técnica, além das definições constantes da NT 1-02 -T
 ---
 
 ## Página 4
+
+![Representação visual da página 4](media/nt-4-10/pagina-04.jpg)
 
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
@@ -230,8 +232,7 @@ b) os acionadores manuais devem ser posicionados nas proximidades das portas de 
 
 c) o sistema deverá ter duas fontes de alimentação elétrica. A principal é a rede do sistema elétrico da edificação, e a auxiliar é constituída por baterias,
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Tipologia de área |  | Distância |  |  | Área máxima |  |  |
@@ -241,6 +242,19 @@ c) o sistema deverá ter duas fontes de alimentação elétrica. A principal é 
 |  | Área de Apoio Administrativo | 20 |  |  | 250 |  |  |  |
 |  | Área Operacional e de Apoio a Produção | 15 |  |  | 200 |  |  |  |
 | Fonte: CBMERJ. |  |  |  |  |  |  |  |  |
+
+<!-- tabela-conferida: Tabela 1 p4 -->
+### Tabela 1 — Distância e Área máxima por unidade extintora (conferida)
+
+| Tipologia de área | Distância máxima (m) | Área máxima (m²) |
+| --- | --- | --- |
+| Área de Vivência | 25 | 300 |
+| Área de Apoio Administrativo | 20 | 250 |
+| Área Operacional e de Apoio a Produção | 15 | 200 |
+
+Fonte: NT 4-10, página 4, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 1 p4 -->
 
 ---
 

@@ -34,6 +34,7 @@ def _nt201_package(tmp: Path) -> Path:
     raw = yaml.safe_load((BASE / "pacote.yaml").read_text(encoding="utf-8"))
     raw["rules"] = [f"regras/{r}.yaml" for r in NT201_RULES]
     raw.pop("requirements", None)
+    raw.pop("requirements_height", None)  # Tabelas 5–21 do Decreto, ausente desta base
     raw.pop("exit_distances", None)  # cita a NT 2-08, ausente desta base
     raw.pop("classification", None)  # a tabela cita a NT 1-04, ausente desta base
     raw["coverage"] = [c for c in raw["coverage"] if c["document"] == "NT 2-01"
@@ -212,6 +213,18 @@ def _v2_findings_from_stored_analysis(env: Env, analysis_id: str, tmp: Path) -> 
     assert by_check["EXT-CAD-003-GRANDE"]["compliance_status"] == "NOT_APPLICABLE"
     ext = [e for e in out["evidence"] if e["field"] == "extinguisher"]
     assert len(ext) == 2 and all(e["locator"]["entity_handle"] for e in ext)
+    # F8: v2-findings --out carrega os mesmos achados no contrato comum das skills
+    import json
+
+    import jsonschema
+    root = Path(__file__).resolve().parents[2]
+    schema = json.loads((root / "skills" / "_comum" / "achado.schema.json").read_text("utf-8"))
+    assert len(out["achados"]) == len(out["findings"])
+    for achado in out["achados"]:
+        jsonschema.validate(achado, schema)
+    by_id = {a["id"]: a for a in out["achados"]}
+    for f in out["findings"]:
+        assert by_id[f["ref"]]["compliance_status"] == f["compliance_status"]
 
 
 def test_source_index_item_text_and_search(env):

@@ -268,8 +268,7 @@ f) existência de canal de comunicação fidedigno entre o heliponto e administr
 
 Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Tipo de |  |  | Resistência do piso da área |  | Quantidade de extintores | Capacidades extintoras |
@@ -291,3 +290,29 @@ Fonte: CBMERJ.
 |  |  |  |  |  |  | 01 (sobre rodas) | Pó químico de 40-B;130-B |
 |  |  |  |  |  |  | 01 (sobre rodas) | Espuma química de 6-A;10-B |
 |  |  |  |  |  |  | 02 (sobre rodas)) | CO de 10-B 2 |
+<!-- tabela-conferida: Tabela do Anexo A p6 -->
+### Tabela do Anexo A — Tabela de dimensionamento de extintores em helipontos (conferida)
+
+| Tipo de Heliponto | Resistência do piso da área de pouso/decolagem | Quantidade de extintores | Capacidades extintoras |
+| --- | --- | --- | --- |
+| Heliponto ao nível do solo | Até 4500 Kg | 02 | Pó químico BC de 20-BC |
+| Heliponto ao nível do solo | Até 4500 Kg | 02 | CO₂ DE 2-B |
+| Heliponto ao nível do solo | Até 4500 Kg | 01 (sobre rodas) | Espuma química de 6-A;10-B |
+| Heliponto ao nível do solo | Acima de 4500 Kg | 04 | Pó químico BC de 20-BC |
+| Heliponto ao nível do solo | Acima de 4500 Kg | 02 | CO₂ de 2-B |
+| Heliponto ao nível do solo | Acima de 4500 Kg | 01 (sobre rodas) | Espuma química de 6-A;10-B |
+| Heliponto ao nível do solo | Acima de 4500 Kg | 01 (sobre rodas) | Pó químico de 30-B;120-B |
+| Helipontos elevados | Até 4500 Kg | 02 | Pó químico de 20-BC |
+| Helipontos elevados | Até 4500 Kg | 02 | CO₂ de 2-B |
+| Helipontos elevados | Até 4500 Kg | 01 (sobre rodas) | Pó químico de 30-B;120-B |
+| Helipontos elevados | Até 4500 Kg | 01 (sobre rodas) | Espuma química de 6-A;10-B |
+| Helipontos elevados | Acima de 4500 Kg | 04 | Pó químico BC de 20-BC |
+| Helipontos elevados | Acima de 4500 Kg | 02 | CO₂ de 2-B |
+| Helipontos elevados | Acima de 4500 Kg | 01 (sobre rodas) | Pó químico de 40-B;130-B |
+| Helipontos elevados | Acima de 4500 Kg | 01 (sobre rodas) | Espuma química de 6-A;10-B |
+| Helipontos elevados | Acima de 4500 Kg | 02 (sobre rodas)) | CO₂ de 10-B |
+
+Fonte: NT 3-07, página 6, Tabela do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela do Anexo A p6 -->
+

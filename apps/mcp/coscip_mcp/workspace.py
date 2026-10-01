@@ -23,13 +23,14 @@ from typing import Any, Literal
 
 import numpy as np
 from coscip_findings import consolidate
+from coscip_findings.achado import to_achados
 from pydantic import BaseModel, ConfigDict, Field
 
 from coscip_analysis import AnalysisInput, parse_dictionary, run
 from coscip_analysis.analyze import FIRE_CLASSES
 from coscip_analysis.evidence import plant_evidence
 from coscip_analysis.plan import Plan, load_plan, sha256_file
-from coscip_analysis.symbols import Symbol, mark_legends, recognize
+from coscip_analysis.symbols import Symbol, mark_legends, recognition_ledger, recognize
 from coscip_cad import DxfReader
 from coscip_cad.dwg import DwgConversionError, dwg_to_dxf
 from coscip_cad.unit_evidence import suggest_unit
@@ -42,6 +43,9 @@ from coscip_normative.requirements import consult_requirements
 from coscip_normative.verification import compile_verification_plan, execute_plan
 
 UNIT_TOLERANCE = 0.02  # desvio máximo entre a medida e uma unidade padrão (CAD-02)
+# F7.3: duas medidas independentes; a escala de cada uma não pode divergir mais que 0,5 %.
+REFERENCE_AGREEMENT = 0.005
+REFERENCE_MIN_ANGLE_DEG = 30.0
 STANDARD_UNITS = {"m": 1.0, "dm": 0.1, "cm": 0.01, "mm": 0.001, "in": 0.0254, "ft": 0.3048}
 
 
@@ -69,6 +73,7 @@ class OpenDrawing:
     plan: Plan
     symbols: list[Symbol] = field(default_factory=list)
     unrecognized: list[dict[str, Any]] = field(default_factory=list)
+    ledger: dict[str, Any] = field(default_factory=dict)
     overrides: dict[str, str] = field(default_factory=dict)
     floors: list[dict[str, Any]] = field(default_factory=list)  # clip em unidades do desenho
     confirmation: dict[str, Any] | None = None
@@ -145,8 +150,10 @@ class Workspace:
         d.last_analysis = None
 
     def _recognize(self, d: OpenDrawing) -> None:
-        d.symbols, d.unrecognized = recognize(d.plan, dictionary(), d.overrides)
+        book: dict[str, Any] = {}
+        d.symbols, d.unrecognized = recognize(d.plan, dictionary(), d.overrides, ledger=book)
         mark_legends(d.symbols, d.plan, dictionary())
+        d.ledger = recognition_ledger(d.plan, d.symbols, dictionary(), book)
 
     def overview(self, d: OpenDrawing) -> dict[str, Any]:
         plan = d.plan
@@ -175,11 +182,12 @@ class Workspace:
             "camadas": layers[:40], "total_camadas": len(layers),
             "simbolos_por_classe": totals,
             "blocos_nao_reconhecidos": d.unrecognized[:25],
+            "balanco_reconhecimento": ledger_brief(d.ledger),
             "pavimentos_definidos": [f["name"] for f in d.floors],
             "avisos": d.warnings,
             "proximo_passo": ("ver_planta para enxergar o desenho; listar_textos e "
-                              "listar_simbolos para ler; confirmar_unidade com uma medida "
-                              "conhecida antes de analisar."),
+                              "listar_simbolos para ler; confirmar_unidade com duas medidas "
+                              "conhecidas, não paralelas, antes de analisar."),
         }
 
     # --- leitura ---------------------------------------------------------------------------
@@ -239,33 +247,73 @@ class Workspace:
 
     # --- unidade e pavimentos ---------------------------------------------------------------
 
-    def confirm_unit(self, drawing_id: str, a: list[float], b: list[float], real_m: float,
+    def confirm_unit(self, drawing_id: str, references: list[dict[str, Any]],
                      justification: str) -> dict[str, Any]:
+        """Escala por DUAS medidas de referência independentes (F7.3).
+
+        As medidas não podem ser paralelas (ângulo ≥ ``REFERENCE_MIN_ANGLE_DEG``) e a escala
+        que cada uma implica não pode divergir mais que ``REFERENCE_AGREEMENT``: uma cota
+        errada, ou um desenho com escalas diferentes por eixo, bloqueia a confirmação.
+        """
         d = self.get(drawing_id)
-        if real_m <= 0:
-            raise ToolError("a medida real precisa ser positiva")
         if len(justification.strip()) < 10:
             raise ToolError("justificativa obrigatória: de onde vem a medida (cota, "
                             "informação do usuário) e quem confirmou")
-        drawn = math.dist(a, b)
-        if drawn <= 0:
-            raise ToolError("os dois pontos coincidem")
-        implied = d.scale_to_m * real_m / drawn  # metros por unidade do desenho
-        unit, meters = min(STANDARD_UNITS.items(), key=lambda kv: abs(kv[1] - implied) / kv[1])
-        deviation = abs(meters - implied) / meters
+        if len(references) < 2:
+            raise ToolError("informe duas medidas de referência independentes (não paralelas),"
+                            " ex. uma cota horizontal e uma vertical")
+        refs = []
+        for i, r in enumerate(references, 1):
+            a, b, real_m = r.get("ponto_a"), r.get("ponto_b"), r.get("medida_real_m")
+            if not a or not b or real_m is None:
+                raise ToolError(f"referência {i}: informe ponto_a, ponto_b e medida_real_m")
+            if real_m <= 0:
+                raise ToolError(f"referência {i}: a medida real precisa ser positiva")
+            drawn = math.dist(a, b)
+            if drawn <= 0:
+                raise ToolError(f"referência {i}: os dois pontos coincidem")
+            refs.append({"a": a, "b": b, "real_m": float(real_m), "drawn": drawn,
+                         "implied": d.scale_to_m * real_m / drawn,
+                         "dir": ((b[0] - a[0]) / drawn, (b[1] - a[1]) / drawn)})
+        best = 0.0
+        for i, r in enumerate(refs):
+            for q in refs[i + 1:]:
+                sin = abs(r["dir"][0] * q["dir"][1] - r["dir"][1] * q["dir"][0])
+                best = max(best, math.degrees(math.asin(min(1.0, sin))))
+        if best < REFERENCE_MIN_ANGLE_DEG:
+            raise ToolError(f"as referências são paralelas (maior ângulo entre elas "
+                            f"{best:.1f}°); use medidas em direções diferentes (≥ "
+                            f"{REFERENCE_MIN_ANGLE_DEG:g}°), ex. uma horizontal e uma vertical")
+        implied = [r["implied"] for r in refs]
+        spread = (max(implied) - min(implied)) / min(implied)
+        if spread > REFERENCE_AGREEMENT:
+            raise ToolError(
+                f"as referências discordam entre si ({spread:.2%} > "
+                f"{REFERENCE_AGREEMENT:.1%}): implicam 1 unidade = "
+                + " / ".join(f"{v:.6g} m" for v in implied)
+                + ". Confira os pontos e as medidas; escala diferente por eixo não é aceita.")
+        mean = sum(implied) / len(implied)
+        unit, meters = min(STANDARD_UNITS.items(), key=lambda kv: abs(kv[1] - mean) / kv[1])
+        deviation = abs(meters - mean) / meters
         if deviation > UNIT_TOLERANCE:
             raise ToolError(
-                f"a medida implica 1 unidade = {implied:.6g} m, que não bate com nenhuma "
+                f"as medidas implicam 1 unidade = {mean:.6g} m, que não bate com nenhuma "
                 f"unidade padrão (mais perto: {unit}, desvio {deviation:.1%}). Confira os "
-                "pontos e a medida.")
-        units_a = [v / d.scale_to_m for v in a]
-        units_b = [v / d.scale_to_m for v in b]
+                "pontos e as medidas.")
         changed = meters != d.scale_to_m
-        d.scale_to_m, d.scale_source = meters, "confirmada por medida de referência"
-        d.confirmation = {"unidade": unit, "m_por_unidade": meters,
-                          "ponto_a_unidades": units_a, "ponto_b_unidades": units_b,
-                          "medida_real_m": real_m, "desvio": round(deviation, 4),
-                          "insunits_declarado": d.insunits_name, "justificativa": justification}
+        old = d.scale_to_m
+        d.scale_to_m, d.scale_source = meters, "confirmada por duas medidas de referência"
+        d.confirmation = {
+            "unidade": unit, "m_por_unidade": meters,
+            "referencias": [{"ponto_a_unidades": [v / old for v in r["a"]],
+                             "ponto_b_unidades": [v / old for v in r["b"]],
+                             "medida_real_m": r["real_m"],
+                             "m_por_unidade_implicado": round(r["implied"], 9)}
+                            for r in refs],
+            "desvio_entre_referencias": round(spread, 5),
+            "angulo_entre_referencias_graus": round(best, 1),
+            "desvio": round(deviation, 4),
+            "insunits_declarado": d.insunits_name, "justificativa": justification}
         if changed:
             self._load(d)
         return {"confirmado": d.confirmation, "escala_mudou": changed,
@@ -313,8 +361,9 @@ class Workspace:
                 wall_layers: list[str] | None) -> dict[str, Any]:
         d = self.get(drawing_id)
         if not d.confirmed:
-            raise ToolError("unidade não confirmada: peça ao usuário uma medida conhecida "
-                            "(cota, largura de porta) e use confirmar_unidade antes de analisar")
+            raise ToolError("unidade não confirmada: peça ao usuário duas medidas conhecidas "
+                            "em direções diferentes (cotas horizontal e vertical) e use "
+                            "confirmar_unidade antes de analisar")
         ctx_model = AnalysisContext.model_validate(context)
         base = norms.load_base()
         ctx = {k: v for k, v in ctx_model.model_dump().items() if v is not None}
@@ -377,6 +426,23 @@ def _derive_risk(ctx: dict[str, Any], table: dict[str, Any] | None) -> None:
                              f"{row['risk']}")
 
 
+def ledger_brief(ledger: dict[str, Any]) -> dict[str, Any]:
+    """Balanço de reconhecimento (F5.3) para a IA: completo? o que falta e por quê."""
+    if not ledger:
+        return {}
+    return {
+        "completo": ledger["complete"],
+        "insercoes": ledger["inserts"], "textos_curtos": ledger["short_texts"],
+        "nao_reconhecidos_em_camada_de_seguranca": ledger["unrecognized_in_safety_layers"],
+        "blocos_nao_reconhecidos": ledger["unrecognized_blocks"][:15],
+        "candidatos_extintor_sem_bloco": ledger["exploded_candidates"][:10],
+        "xrefs": ledger["xrefs"], "layouts_com_geometria": ledger["paper_space"],
+        "leitura": ("Completo = nenhum bloco não reconhecido em camada de segurança e nenhum "
+                    "XREF: só então contagem e distância podem concluir. Bloco de segurança "
+                    "não reconhecido: classificar_blocos com confirmação do usuário."),
+    }
+
+
 def _report(d: OpenDrawing, out: dict[str, Any], ctx: dict[str, Any], pe, result,  # noqa: ANN001
             base: norms.NormBase) -> dict[str, Any]:
     floors = []
@@ -395,7 +461,11 @@ def _report(d: OpenDrawing, out: dict[str, Any], ctx: dict[str, Any], pe, result
             "simbolos": region.get("counts"),
             "maior_percurso_m": {k: {"valor": c["max_travel_m"], "incerteza": c["uncertainty_m"],
                                      "ponto": c["worst_point"],
-                                     "area_nao_alcancada_m2": c["unreachable_m2"]}
+                                     "area_nao_alcancada_m2": c["unreachable_m2"],
+                                     "algoritmo": c.get("algorithm"),
+                                     "orcamento_incerteza": c.get("uncertainty_budget"),
+                                     "metodos_concordam": c.get("consistent"),
+                                     "metodos": c.get("methods")}
                                  for k, c in cov.items() if c.get("max_travel_m") is not None},
             "maior_distancia_direta_saida_m": ({"valor": cov["exit"]["max_direct_m"],
                                                 "incerteza": cov["exit"]["direct_uncertainty_m"]}
@@ -438,10 +508,19 @@ def _report(d: OpenDrawing, out: dict[str, Any], ctx: dict[str, Any], pe, result
             "divergencias_do_analista": list(pe.overrides),
         },
         "pavimentos": floors,
+        # GATE-0 da skill (F8): medida do motor só entra na matriz com unidade confirmada e
+        # balanço de reconhecimento completo.
+        "gate_0": {"unidade_confirmada": d.confirmed,
+                   "balanco_completo": out["recognition_ledger"]["complete"],
+                   "aberto": bool(d.confirmed and out["recognition_ledger"]["complete"])},
+        "balanco_reconhecimento": ledger_brief(out["recognition_ledger"]),
         "regioes_ignoradas": [{"regiao": n, "motivo": r} for n, r in pe.skipped_regions],
         "resumo": result.summary.as_dict(),
         "pendencias": pending,
         "sem_pendencia": ok,
+        # F8: os mesmos achados no contrato comum das skills (skills/_comum/achado.schema.json),
+        # para entrar na matriz consolidada sem tradução.
+        "achados": to_achados(result.findings, pe.evidence),
         "checks_nao_verificados_por_citacao": base.excluded_checks,
         "avisos_do_motor": out.get("warnings", []),
         "simbolos_fora_dos_pavimentos": len(out.get("symbols_outside_regions", [])),

@@ -254,3 +254,20 @@ def test_conflict_is_reported_without_overwriting_analyst_choice(table, sources)
     result = consult_requirements(t, context(occupancy="A-2", building_floors=3,
                                             building_height_m=9, requires_hydrants=False))
     assert result["conflicts"] == []  # X2 depende da condição de área da nota.
+
+
+def test_conferred_table_heading_does_not_cut_the_annex():
+    # o bloco conferido publicado ("### Anexo A — ... (conferida)") repete o nome do anexo;
+    # o anexo verdadeiro continua até o próximo anexo, com as páginas seguintes
+    from coscip_normative import verify_citation
+
+    md = ("---\ndocumento: NT 1-03\n---\n## Página 4\n\n### ANEXO A - SIMBOLOGIA\n\n"
+          "| EXTINTOR |\n\n"
+          "<!-- tabela-conferida: Anexo A p4 -->\n### Anexo A — Simbologia (conferida)\n\n"
+          "| EXTINTOR |\n<!-- /tabela-conferida: Anexo A p4 -->\n\n---\n\n## Página 5\n\n"
+          "| HIDRANTE SIMPLES |\n\n1.1 Item numerado\n")
+    src = parse_markdown(md.encode("utf-8"), "nt-1-03.md")
+    assert len(src.items["Anexo A"]) == 1
+    check = verify_citation({src.document: src}, "NT 1-03", "Anexo A",
+                            ("EXTINTOR", "HIDRANTE SIMPLES"))
+    assert check.verified, check.problem

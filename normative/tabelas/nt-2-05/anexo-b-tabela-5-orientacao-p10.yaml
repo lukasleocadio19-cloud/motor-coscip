@@ -1,0 +1,173 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-05
+arquivo: nt-2-05-sinalizacao.md
+tabela: Tabela 5 do Anexo B
+titulo: Sinalização de orientação e salvamento (p. 10)
+pagina: 10
+fonte_pdf_sha256: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-05/pagina-10.jpg
+    imagem_sha256: dea3f16c25123bd05c4ee4342e0abcfa324e7645fbb43a08c56b0dc9bddb4e8f
+    linhas_cabecalho: 1
+    linhas:
+    - - Código
+      - Símbolo
+      - Significado
+      - Forma e cor
+      - Aplicação
+    - - S-1
+      - ''
+      - Orientação do sentido da saída de emergência
+      - 'Forma: retangular Fundo: verde Pictograma: fotoluminescente'
+      - 'Indicação do sentido (esquerda ou direita) de uma saída de emergência Nível: superior'
+    - - S-2
+      - ''
+      - ^
+      - ^
+      - ^
+    - - S-3
+      - ''
+      - ^
+      - ^
+      - 'Indicação do sentido de uma saída de emergência ou afixada acima de uma porta para indicar a
+        continuidade da saída de emergência. Nível: superior'
+    - - S-4
+      - ''
+      - ^
+      - ^
+      - 'a) indicação do sentido do acesso a uma saída que não esteja aparente; b) indicação do sentido
+        de uma saída por rampas; c) indicação do sentido da saída na direção vertical (subindo ou descendo).
+        Nível: superior'
+    - - S-5
+      - ''
+      - ^
+      - ^
+      - ^
+    - - S-6
+      - ''
+      - ^
+      - ^
+      - ^
+    - - S-7
+      - ''
+      - ^
+      - ^
+      - ^
+    - - S-8
+      - ''
+      - Orientação do sentido da escada de emergência
+      - ^
+      - 'Indicação do sentido de fuga no interior das escadas. Indica direita ou esquerda, descendo ou
+        subindo. O desenho indicativo deve ser posicionado de acordo com o sentido a ser sinalizado. Nível:
+        superior'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 10
+      tabela_na_pagina: 1
+    linhas:
+    - - Código
+      - Símbolo
+      - Significado
+      - Forma e cor
+      - Aplicação
+    - - S-1
+      - Orientação do sentido da saída de emergência
+      - 'Forma: retangular Fundo: verde Pictograma: fotoluminescente'
+      - 'Indicação do sentido (esquerda ou direita) de uma saída de emergência Nível: superior'
+    - - S-2
+    - - S-3
+      - 'Indicação do sentido de uma saída de emergência ou afixada acima de uma porta para indicar a
+        continuidade da saída de emergência. Nível: superior'
+    - - S-4
+      - 'a) indicação do sentido do acesso a uma saída que não esteja aparente; b) indicação do sentido
+        de uma saída por rampas; c) indicação do sentido da saída na direção vertical (subindo ou descendo).
+        Nível: superior'
+    - - S-5
+    - - S-6
+    - - S-7
+    - - S-8
+      - Orientação do sentido da escada de emergência
+      - 'Indicação do sentido de fuga no interior das escadas. Indica direita ou esquerda, descendo ou
+        subindo. O desenho indicativo deve ser posicionado de acordo com o sentido a ser sinalizado. Nível:
+        superior'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.6
+      - 80.9
+      - 535.42
+      - 719.5
+      linhas:
+      - - Código
+        - Símbolo
+        - Significado
+        - Forma e cor
+        - Aplicação
+      - - S-1
+        - ''
+        - Orientação do sentido da saída de emergência
+        - 'Forma: retangular Fundo: verde Pictograma: fotoluminescente'
+        - 'Indicação do sentido (esquerda ou direita) de uma saída de emergência Nível: superior'
+      - - S-2
+        - ''
+        - null
+        - null
+        - null
+      - - S-3
+        - ''
+        - null
+        - null
+        - 'Indicação do sentido de uma saída de emergência ou afixada acima de uma porta para indicar
+          a continuidade da saída de emergência. Nível: superior'
+      - - S-4
+        - ''
+        - null
+        - null
+        - 'a) indicação do sentido do acesso a uma saída que não esteja aparente; b) indicação do sentido
+          de uma saída por rampas; c) indicação do sentido da saída na direção vertical (subindo ou descendo).
+          Nível: superior'
+      - - S-5
+        - ''
+        - null
+        - null
+        - null
+      - - S-6
+        - ''
+        - null
+        - null
+        - null
+      - - S-7
+        - ''
+        - null
+        - null
+        - null
+      - - S-8
+        - ''
+        - Orientação do sentido da escada de emergência
+        - null
+        - 'Indicação do sentido de fuga no interior das escadas. Indica direita ou esquerda, descendo
+          ou subindo. O desenho indicativo deve ser posicionado de acordo com o sentido a ser sinalizado.
+          Nível: superior'
+notas:
+- A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela.
+  Célula de forma e cor mesclada entre linhas repete-se na publicação.
+- A tabela continua na página 11.
+- 'Fonte indicada na página: ABNT NBR 16820.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

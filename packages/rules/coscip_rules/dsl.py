@@ -9,7 +9,8 @@ import yaml
 from pydantic import BaseModel, ConfigDict, Field, ValidationError
 
 # Conjunto fechado. Novas operações entram como funções versionadas e testadas.
-PREDICATE_OPERATORS = frozenset({"equals", "not_equals", "in", "gte", "lte", "is_known"})
+PREDICATE_OPERATORS = frozenset({"equals", "not_equals", "in", "gte", "lte", "gt", "lt",
+                                 "is_known"})
 CALCULATION_OPERATORS = frozenset({"minimum_with_uncertainty", "maximum_with_uncertainty"})
 OUTCOMES = frozenset({"MISSING_DATA", "REVIEW_REQUIRED"})
 
@@ -40,6 +41,48 @@ class Source(_Strict):
     page: int | None = None
     # rules/1.1: termos que precisam constar no trecho do item ingerido (verificação REG-01).
     quote: tuple[str, ...] = ()
+
+
+class Interpretation(_Strict):
+    """Critério adotado quando o texto da norma não diz literalmente o alcance que a regra
+    aplica (plano de correção, F4.1). ``verify_*`` confere a frase de cada ``basis``, não o
+    alcance: o alcance é **decisão registrada**, mostrada separada do texto da norma."""
+
+    scope: str  # ex.: POR_PAVIMENTO, DISTANCIA_DIRETA, PERCURSO_COMO_MANGUEIRA
+    basis: tuple[Source, ...]
+    decision: str
+    decided_by: str
+    decided_on: str  # AAAA-MM-DD
+
+    def as_dict(self) -> dict[str, Any]:
+        return {"scope": self.scope, "decision": self.decision, "decided_by": self.decided_by,
+                "decided_on": self.decided_on,
+                "basis": [{"document": b.document, "item": b.item} for b in self.basis]}
+
+
+class Homologation(_Strict):
+    """Homologação por responsável técnico (plano de correção, F9; REG-05/06). Sem ela, regra
+    e check **não saem de rascunho**: ``HOMOLOGATED``/``PUBLISHED`` exigem este registro, e o
+    relatório de validação que o sustenta fica em ``docs/validacao/AAAA-MM-DD.md``."""
+
+    responsible: str = Field(min_length=3)
+    registration: str = Field(min_length=3)  # CREA/CAU do responsável técnico
+    decided_on: str = Field(pattern=r"^\d{4}-\d{2}-\d{2}$")
+    report: str = Field(pattern=r"^docs/validacao/\d{4}-\d{2}-\d{2}\.md$")
+
+
+HOMOLOGATED_STATES = frozenset({"HOMOLOGATED", "PUBLISHED"})
+
+
+def homologation_problem(item_id: str, state: str, eligible: bool,
+                         homologation: Homologation | None) -> str | None:
+    """Motivo de recusa, ou ``None``. Vale para regra e para check."""
+    if state in HOMOLOGATED_STATES and homologation is None:
+        return (f"{item_id}: {state} exige homologação registrada (responsável técnico, "
+                "registro, data e relatório de validação)")
+    if eligible and state not in HOMOLOGATED_STATES:
+        return f"{item_id}: só regra/check homologado vai à produção (estado {state})"
+    return None
 
 
 class TableSpec(_Strict):
@@ -109,10 +152,15 @@ class RuleDefinition(_Strict):
     extra_sources: tuple[Source, ...] = ()
     # Fatos obtidos por associação heurística (ex.: placa próxima) não sustentam FAIL.
     fail_status: Literal["FAIL", "REVIEW_REQUIRED"] = "FAIL"
+    interpretation: Interpretation | None = None
+    homologation: Homologation | None = None
 
     @property
     def content_hash(self) -> str:
-        canonical = json.dumps(self.model_dump(mode="json"), sort_keys=True, ensure_ascii=False)
+        data = self.model_dump(mode="json")
+        if data.get("homologation") is None:  # campo do F9: ausente não muda o hash antigo
+            data.pop("homologation", None)
+        canonical = json.dumps(data, sort_keys=True, ensure_ascii=False)
         return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
 
 
@@ -143,6 +191,10 @@ def _check(rule: RuleDefinition) -> None:
         )
     if rule.production_eligible and rule.source.document.startswith("EXEMPLO"):
         raise RuleValidationError(f"{rule.id}: fonte de exemplo não pode ir à produção")
+    problem = homologation_problem(rule.id, rule.publication_state, rule.production_eligible,
+                                   rule.homologation)
+    if problem:
+        raise RuleValidationError(problem)
 
 
 def _check_required(rule_id: str, spec: RequiredSpec) -> None:

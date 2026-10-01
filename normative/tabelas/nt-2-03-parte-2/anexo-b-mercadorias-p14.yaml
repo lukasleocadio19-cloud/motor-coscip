@@ -1,0 +1,218 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 Parte 2
+arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+tabela: Anexo B
+titulo: Classificação das mercadorias – exemplos
+pagina: 14
+fonte_pdf_sha256: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  comparar_por_coluna: true
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-2/pagina-14.jpg
+    imagem_sha256: 3e2c8652ee1ceb65ddbc95b35bf77066e9f7acae1b7158cf9eebf79d41e66927
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Mercadoria
+    - Classe
+    linhas:
+    - - '- Linha, em carretéis plásticos'
+      - Plástico Grupo A
+    - - Raiom e náilon
+      - ''
+    - - '- Fibras em fardos'
+      - Classe IV
+    - - '- Linha, em carretéis de madeira ou papel'
+      - Classe IV
+    - - '- Tecidos'
+      - Classe IV
+    - - '- Linha, em carretéis plásticos'
+      - Plástico Grupo A
+    - - Produtos de tabaco
+      - ''
+    - - '- Em caixas de cartão'
+      - Classe III
+    - - Transformadores
+      - ''
+    - - '- Secos ou com óleo isolante'
+      - Classe I
+    - - Tecidos revestidos com resinas vinílicas
+      - ''
+    - - '- Em caixas de papelão'
+      - Plástico Grupo A
+    - - Pisos vinílicos
+      - ''
+    - - '- Placas em caixas de papelão'
+      - Classe IV
+    - - '- Em rolos'
+      - Plástico Grupo A
+    - - Papel revestido com cera
+      - ''
+    - - Copos, pratos
+      - ''
+    - - '- Em caixas ou embalados em caixas de papelão (ênfase no método de embalagem)'
+      - Classe IV
+    - - '- A granel em caixas de papelão grandes'
+      - Plástico Grupo A
+    - - Cera
+      - ''
+    - - '- Parafina, blocos, em caixas de papelão'
+      - Plástico Grupo A
+    - - Arame
+      - ''
+    - - '- Arame sem capa em carretéis de metal em estrados de madeira'
+      - Classe I
+    - - '- Arame sem capa em carretéis de madeira ou papelão em estrados de madeira'
+      - Classe II
+    - - '- Arame sem capa em carretéis de metal, madeira ou papelão em caixas de papelão'
+      - ''
+    - - sobre estrados de madeira
+      - Classe II
+    - - '- Arame com capa simples ou múltipla de PVC e, carretéis de metal sobre estrados de madeira'
+      - Classe II
+    - - Arame
+      - ''
+    - - '- Cabo com isolamento de (PVC) em grandes carretéis de madeira ou metal sobre'
+      - ''
+    - - estrados de madeira
+      - Classe II
+    - - '- Arame sem capa em carretéis de plástico em caixas de papelão sobre estrados de madeira'
+      - Classe IV
+    - - '- Arame com capa simples ou múltipla de PVC em carretéis de plástico em caixas de'
+      - ''
+    - - papelão sobre estrados de madeira
+      - Classe IV
+    - - '- Cabos simples, múltiplos ou de potência (PVC) em carretéis grandes de plástico'
+      - Classe IV
+    - - '- Armazenagem em grandes quantidades de carretéis de plástico vazios'
+      - Plástico Grupo A
+    - - Produtos de Madeira
+      - ''
+    - - '- Pilhas sólidas – madeira, compensado, aglomerado, placa de papelão prensado'
+      - ''
+    - - (extremidades e arestas lisas)
+      - Classe II
+    - - '- Carretéis (vazios)'
+      - Classe III
+    - - '- Palitos, pegadores, cabides, em caixas de papelão'
+      - Classe III
+    - - '- Portas, janelas, armários e móveis'
+      - Classe III
+    - - '- Moldes'
+      - Classe IV
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 14
+      tabela_na_pagina: 1
+    linhas:
+    - - '- Linha, em carretéis plásticos'
+      - Plástico Grupo A
+    - - Raiom e náilon - Fibras em fardos - Linha, em carretéis de madeira ou papel - Tecidos - Linha,
+        em carretéis plásticos
+      - Classe IV Classe IV Classe IV Plástico Grupo A
+    - - Produtos de tabaco - Em caixas de cartão
+      - Classe III
+    - - Transformadores - Secos ou com óleo isolante
+      - Classe I
+    - - Tecidos revestidos com resinas vinílicas - Em caixas de papelão
+      - Plástico Grupo A
+    - - Pisos vinílicos - Placas em caixas de papelão - Em rolos
+      - Classe IV Plástico Grupo A
+    - - Papel revestido com cera Copos, pratos - Em caixas ou embalados em caixas de papelão (ênfase no
+        método de embalagem) - A granel em caixas de papelão grandes
+      - Classe IV Plástico Grupo A
+    - - Cera - Parafina, blocos, em caixas de papelão
+      - Plástico Grupo A
+    - - Arame - Arame sem capa em carretéis de metal em estrados de madeira - Arame sem capa em carretéis
+        de madeira ou papelão em estrados de madeira - Arame sem capa em carretéis de metal, madeira ou
+        papelão em caixas de papelão sobre estrados de madeira - Arame com capa simples ou múltipla de
+        PVC e, carretéis de metal sobre estrados de madeira
+      - Classe I Classe II Classe II Classe II
+    - - Arame - Cabo com isolamento de (PVC) em grandes carretéis de madeira ou metal sobre estrados de
+        madeira - Arame sem capa em carretéis de plástico em caixas de papelão sobre estrados de madeira
+        - Arame com capa simples ou múltipla de PVC em carretéis de plástico em caixas de papelão sobre
+        estrados de madeira - Cabos simples, múltiplos ou de potência (PVC) em carretéis grandes de plástico
+        - Armazenagem em grandes quantidades de carretéis de plástico vazios
+      - Classe II Classe IV Classe IV Classe IV Plástico Grupo A
+    - - Produtos de Madeira - Pilhas sólidas - madeira, compensado, aglomerado, placa de papelão prensado
+        (extremidades e arestas lisas) - Carretéis (vazios) - Palitos, pegadores, cabides, em caixas de
+        papelão - Portas, janelas, armários e móveis - Moldes
+      - Classe II Classe III Classe III Classe III Classe IV
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.76
+      - 56.88
+      - 538.9
+      - 566.47
+      linhas:
+      - - '- Linha, em carretéis plásticos'
+        - Plástico Grupo A
+      - - Raiom e náilon - Fibras em fardos - Linha, em carretéis de madeira ou papel - Tecidos - Linha,
+          em carretéis plásticos
+        - Classe IV Classe IV Classe IV Plástico Grupo A
+      - - Produtos de tabaco - Em caixas de cartão
+        - Classe III
+      - - Transformadores - Secos ou com óleo isolante
+        - Classe I
+      - - Tecidos revestidos com resinas vinílicas - Em caixas de papelão
+        - Plástico Grupo A
+      - - Pisos vinílicos - Placas em caixas de papelão - Em rolos
+        - Classe IV Plástico Grupo A
+      - - Papel revestido com cera Copos, pratos - Em caixas ou embalados em caixas de papelão (ênfase
+          no método de embalagem) - A granel em caixas de papelão grandes
+        - Classe IV Plástico Grupo A
+      - - Cera - Parafina, blocos, em caixas de papelão
+        - Plástico Grupo A
+      - - Arame - Arame sem capa em carretéis de metal em estrados de madeira - Arame sem capa em carretéis
+          de madeira ou papelão em estrados de madeira - Arame sem capa em carretéis de metal, madeira
+          ou papelão em caixas de papelão sobre estrados de madeira - Arame com capa simples ou múltipla
+          de PVC e, carretéis de metal sobre estrados de madeira
+        - Classe I Classe II Classe II Classe II
+      - - Arame - Cabo com isolamento de (PVC) em grandes carretéis de madeira ou metal sobre estrados
+          de madeira - Arame sem capa em carretéis de plástico em caixas de papelão sobre estrados de
+          madeira - Arame com capa simples ou múltipla de PVC em carretéis de plástico em caixas de papelão
+          sobre estrados de madeira - Cabos simples, múltiplos ou de potência (PVC) em carretéis grandes
+          de plástico - Armazenagem em grandes quantidades de carretéis de plástico vazios
+        - Classe II Classe IV Classe IV Classe IV Plástico Grupo A
+      - - Produtos de Madeira - Pilhas sólidas – madeira, compensado, aglomerado, placa de papelão prensado
+          (extremidades e arestas lisas) - Carretéis (vazios) - Palitos, pegadores, cabides, em caixas
+          de papelão - Portas, janelas, armários e móveis - Moldes
+        - Classe II Classe III Classe III Classe III Classe IV
+notas:
+- Cada registro da tabela é um bloco de linhas; aqui vai uma linha do bloco por linha, com a classe na
+  linha em que a página a alinha.
+- A primeira linha continua o registro "Sintéticos (exceto raiom e náilon) - mistura maior que 50/50"
+  da página 13.
+- 'FONTE: IT-24/2018 - CBPMESP.'
+- 1. Produto em embalagem laminada com plástico em caixa de papelão corrugado. Se embalado em metal laminado,
+  este pode ser considerado na Classe I;
+- 2. A maioria das baterias tem gabinete de polipropileno. Se armazenadas vazias devem ser tratadas como
+  plástico Grupo A. Baterias para caminhões, mesmo quando cheias, devem ser consideradas plástico Grupo
+  A por causa das paredes mais espessas;
+- 3. À medida que as aberturas em engradados plásticos aumentam, o produto comporta-se mais como Classe
+  III. Da mesma maneira, à medida que as aberturas tornam-se menores, o produto comporta-se mais como
+  plástico;
+- 4. Estes itens devem ser tratados como paletes vazios;
+- 5. Testes mostram claramente que um material sintético ou uma mistura com materiais sintéticos é considerado
+  superior a Classe III;
+- 6. Quando bebidas alcoólicas destiladas são armazenadas em recipientes de vidro em porta-paletes, estas
+  devem ser consideradas Classe III; quando paletizadas, devem ser consideradas Classe IV.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  observacao: 'comparação por coluna: confere o texto e a ordem de cada coluna; quais linhas cada célula
+    mesclada cobre vem só da leitura visual'
+  texto: verificada

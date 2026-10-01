@@ -1,0 +1,461 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-04
+arquivo: nt-1-04-classificacao-de-risco.md
+tabela: Tabela do Anexo B
+titulo: Classificação quanto ao risco de incêndio (página 16)
+pagina: 16
+fonte_pdf_sha256: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-04/pagina-16.png
+    imagem_sha256: 4acecc50b4c76eecad10c70ba047922f3f2b50fa78855197d076165b94b000d7
+    linhas_cabecalho: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Risco
+    - - J
+      - Depósito
+      - J-1
+      - Edificações sem processo industrial que armazenam tijolos, pedras, areias, cimentos, metais e
+        outros materiais incombustíveis, todos sem embalagem.
+      - MÉDIO 1
+    - - ^
+      - ^
+      - J-2
+      - Depósitos com carga de incêndio até 1.000 MJ/m², conforme Anexo C ou Anexo D.
+      - MÉDIO 1
+    - - ^
+      - ^
+      - J-3
+      - Depósitos com carga de incêndio entre 1.000 e 1.200 MJ/m², conforme Anexo C ou Anexo D.
+      - MÉDIO 2
+    - - ^
+      - ^
+      - J-4
+      - Depósitos onde a carga de incêndio ultrapassa a 1.200 MJ/m², conforme Anexo C ou Anexo D. Edificação
+        de guarda móveis e self storage;
+      - GRANDE
+    - - L
+      - Explosivos ou munições
+      - L-1
+      - Comércio em geral de fogos de artifício, munições e assemelhados
+      - GRANDE
+    - - ^
+      - ^
+      - L-2
+      - Indústria de material explosivo, munições e fósforos
+      - GRANDE
+    - - ^
+      - ^
+      - L-3
+      - Depósito de material explosivo ou munições
+      - GRANDE
+    - - M
+      - Especial
+      - M-1
+      - Túnel
+      - GRANDE
+    - - ^
+      - ^
+      - M-2
+      - Líquidos ou gases inflamáveis ou combustíveis
+      - GRANDE
+    - - ^
+      - ^
+      - M-3
+      - Central de comunicação
+      - MÉDIO 1
+    - - ^
+      - ^
+      - M-4
+      - Estrutura temporária
+      - MÉDIO 1
+    - - ^
+      - ^
+      - M-5
+      - Silos
+      - GRANDE
+    - - ^
+      - ^
+      - M-6
+      - Energia
+      - MÉDIO 1
+    - - ^
+      - ^
+      - M-7
+      - Pátios de armazenagem
+      - MÉDIO 2
+    - - ^
+      - ^
+      - M-8
+      - Loteamento
+      - MÉDIO 1
+    - - ^
+      - ^
+      - M-9
+      - Local onde a liberdade das pessoas sofre restrição
+      - MÉDIO 1
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 16
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Risco
+    - - J
+      - Depósito
+      - J-1
+      - Edificações sem processo industrial que armazenam tijolos, pedras, areias, cimentos, metais e
+        outros materiais incombustíveis, todos sem embalagem.
+      - MÉDIO 1
+    - - J-2
+      - Depósitos com carga de incêndio até 1.000 MJ/m², conforme Anexo C ou Anexo D.
+      - MÉDIO 1
+    - - J-3
+      - Depósitos com carga de incêndio entre 1.000 e 1.200 MJ/m2, conforme Anexo C ou Anexo D.
+      - MÉDIO 2
+    - - J-4
+      - Depósitos onde a carga de incêndio ultrapassa a 1.200 MJ/m², conforme Anexo C ou Anexo D. Edificação
+        de guarda móveis e self storage;
+      - GRANDE
+    - - L
+      - Explosivos ou munições
+      - L-1
+      - Comércio em geral de fogos de artifício, munições e assemelhados
+      - GRANDE
+    - - L-2
+      - Indústria de material explosivo, munições e fósforos
+      - GRANDE
+    - - L-3
+      - Depósito de material explosivo ou munições
+      - GRANDE
+    - - M
+      - Especial
+      - M-1
+      - Túnel
+      - GRANDE
+    - - M-2
+      - Líquidos ou gases inflamáveis ou combustíveis
+      - GRANDE
+    - - M-3
+      - Central de comunicação
+      - MÉDIO 1
+    - - M-4
+      - Estrutura temporária
+      - MÉDIO 1
+    - - M-5
+      - Silos
+      - GRANDE
+    - - M-6
+      - Energia
+      - MÉDIO 1
+    - - M-7
+      - Pátios de armazenagem
+      - MÉDIO 2
+    - - M-8
+      - Loteamento
+      - MÉDIO 1
+    - - M-9
+      - Local onde a liberdade das pessoas sofre restrição
+      - MÉDIO 1
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 46.23
+      - 70.86
+      - 542.36
+      - 479.7
+      linhas:
+      - - ''
+        - Grupo
+        - ''
+        - ''
+        - Ocupação/Uso
+        - ''
+        - ''
+        - Divisão
+        - ''
+        - ''
+        - Descrição
+        - ''
+        - ''
+        - Risco
+        - ''
+      - - J
+        - null
+        - null
+        - Depósito
+        - null
+        - null
+        - J-1
+        - null
+        - null
+        - Edificações sem processo industrial que ar- mazenam tijolos, pedras, areias, cimentos, metais
+          e outros materiais incombustíveis, todos sem embalagem.
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - J-2
+        - null
+        - null
+        - Depósitos com carga de incêndio até 1.000 MJ/m², conforme Anexo C ou Anexo D.
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - J-3
+        - null
+        - null
+        - Depósitos com carga de incêndio entre 1.000 e 1.200 MJ/m2, conforme Anexo C ou Anexo D.
+        - null
+        - null
+        - MÉDIO 2
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - J-4
+        - null
+        - null
+        - Depósitos onde a carga de incêndio ultrapassa a 1.200 MJ/m², conforme Anexo C ou Anexo D. Edificação
+          de guarda móveis e self storage;
+        - null
+        - null
+        - GRANDE
+        - null
+        - null
+      - - L
+        - null
+        - null
+        - Explosivos ou munições
+        - null
+        - null
+        - L-1
+        - null
+        - null
+        - Comércio em geral de fogos de artifício, munições e assemelhados
+        - null
+        - null
+        - GRANDE
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - L-2
+        - null
+        - null
+        - Indústria de material explosivo, munições e fósforos
+        - null
+        - null
+        - GRANDE
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - L-3
+        - null
+        - null
+        - Depósito de material explosivo ou munições
+        - null
+        - null
+        - GRANDE
+        - null
+        - null
+      - - M
+        - null
+        - null
+        - Especial
+        - null
+        - null
+        - M-1
+        - null
+        - null
+        - Túnel
+        - null
+        - null
+        - GRANDE
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - M-2
+        - null
+        - null
+        - Líquidos ou gases inflamáveis ou combustíveis
+        - null
+        - null
+        - GRANDE
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - M-3
+        - null
+        - null
+        - Central de comunicação
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - M-4
+        - null
+        - null
+        - Estrutura temporária
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - M-5
+        - null
+        - null
+        - Silos
+        - null
+        - null
+        - GRANDE
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - M-6
+        - null
+        - null
+        - Energia
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - M-7
+        - null
+        - null
+        - Pátios de armazenagem
+        - null
+        - null
+        - MÉDIO 2
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - M-8
+        - null
+        - null
+        - Loteamento
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - M-9
+        - null
+        - null
+        - Local onde a liberdade das pessoas sofre restrição
+        - null
+        - null
+        - MÉDIO 1
+        - null
+        - null
+notas:
+- Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página.
+  "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação
+  cada linha repete o valor.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 1
+    coluna: 3
+    a: Edificações sem processo industrial que armazenam tijolos, pedras, areias, cimentos, metais e outros
+      materiais incombustíveis, todos sem embalagem.
+    b: Edificações sem processo industrial que ar- mazenam tijolos, pedras, areias, cimentos, metais e
+      outros materiais incombustíveis, todos sem embalagem.
+    estado: verificada
+    score: 99.3

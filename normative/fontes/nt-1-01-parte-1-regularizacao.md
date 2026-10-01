@@ -72,8 +72,7 @@ A - Relação das atividades não enquadradas no risco diferenciado
 
 B - Relação de unidades de atendimento
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -1232,8 +1231,7 @@ nome completo e função.
 
 ### ANEXO A - RELAÇÃO DAS ATIVIDADES NÃO ENQUADRADAS NO RISCO DIFERENCIADO
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | CNAE | Descrição |
@@ -1310,6 +1308,88 @@ nome completo e função.
 | 254x-x/xx | Fabricação de artigos de cutelaria, de serralheria e ferramentas |
 | 259x-x/xx | Fabricação de produtos de metal não especificados anteriormente |
 
+<!-- tabela-conferida: Anexo A p23 -->
+### Anexo A — Relação das atividades não enquadradas no risco diferenciado (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 0161-0/01 | Serviço de pulverização e controle de pragas agrí-colas |
+| 05xx-x/xx | Extração de carvão mineral |
+| 06xx-x/xx | Extração de petróleo e gás natural |
+| 07xx-x/xx | Extração de minerais metálicos |
+| 08xx-x/xx | Extração de minerais não metálicos |
+| 09xx-x/xx | Atividades de apoio a extração minerais |
+| 1041-4/00 | Fabricação de óleos vegetais em bruto, exceto óleo de milho |
+| 1042-2/00 | Fabricação de óleos vegetais refinados, exceto óleo de milho |
+| 1043-1/00 | Fabricação de margarina e outras gorduras vegetais e de óleos não-comestíveis de animais |
+| 1061-9/01 | Beneficiamento de arroz |
+| 1061-9/02 | Fabricação de produtos do arroz |
+| 1062-7/00 | Moagem de trigo e fabricação de derivados |
+| 1063-5/00 | Fabricação de farinha de mandioca e derivados |
+| 1064-3/00 | Fabricação de farinha de milho e derivados, exceto óleos de milho |
+| 1065-1/01 | Fabricação de amidos e féculas de vegetais |
+| 1065-1/02 | Fabricação de óleo de milho em bruto |
+| 1065-1/03 | Fabricação de óleo de milho refinado |
+| 1066-0/00 | Fabricação de alimentos para animais |
+| 1069-4/00 | Moagem e fabricação de produtos de origem vegetal não especificados anteriormente |
+| 1071-6/00 | Fabricação de açúcar em bruto |
+| 1072-4/01 | Fabricação de açúcar de cana refinado |
+| 1072-4/02 | Fabricação de açúcar de cereais (dextrose) e de beterraba |
+| 1081-3/01 | Beneficiamento de café |
+| 1081-3/02 | Torrefação e moagem de café |
+| 1091-1/01 | Fabricação de produtos de panificação industrial |
+| 1099-6/02 | Fabricação de pós alimentícios |
+| 1099-6/05 | Fabricação de produtos para infusão (chá, mate, etc.) |
+| 1099-6/99 | Fabricação de outros produtos alimentícios não especificados anteriormente |
+| 1111-9/01 | Fabricação de aguardente de cana-de-açúcar |
+| 1111-9/02 | Fabricação de outras aguardentes e bebidas destiladas |
+| 12xx-x/xx | Fabricação de produtos de fumo |
+| 13xx-x/xx | Fabricação de produtos têxteis |
+| 15xx-x/xx | Preparação de couros e fabricação de artefatos de couro, artigos para viagem e calçados |
+| 16xx-x/xx | Fabricação de produtos de madeira |
+| 17xx-x/xx | Fabricação de celulose, papel e produtos de papel |
+| 1811-3/01 | Impressão de jornais |
+| 1811-3/02 | Impressão de livros, revistas e outras publicações periódicas |
+| 1812-1/00 | Impressão de material de segurança |
+| 1813-0/01 | Impressão de material para uso publicitário |
+| 1813-0/99 | Impressão de material para outros usos |
+| 1821-1/00 | Serviços de pré-impressão |
+| 1822-9/99 | Serviços de acabamentos gráficos, exceto encadernação e plastificação |
+| 19xx-x/xx | Fabricação de coque, de produtos derivados do petróleo e de bicombustí-veis |
+| 20xx-x/xx | Fabricação de produtos quí-micos |
+| 21xx-x/xx | Fabricação de produtos farmoquí-micos e farmacêuticos |
+| 22xx-x/xx | Fabricação de produtos de borracha e de material plástico |
+| 2311-7/00 | Fabricação de vidro plano e de segurança |
+| 2312-5/00 | Fabricação de embalagens de vidro |
+| 2320-6/00 | Fabricação de cimento |
+| 2330-3/01 | Fabricação de estruturas pré-moldadas de concreto armado, em série e sob encomenda |
+| 2330-3/02 | Fabricação de artefatos de cimento para uso na construção |
+| 2330-3/03 | Fabricação de artefatos de fibrocimento para uso na construção |
+| 2330-3/04 | Fabricação de casas pré-moldadas de concreto |
+| 2330-3/05 | Preparação de massa de concreto e argamassa para construção |
+| 2330-3/99 | Fabricação de outros artefatos e produtos de concreto, cimento, fibrocimento, gesso e materiais semelhantes |
+| 2341-9/00 | Fabricação de produtos cerâmicos refratários |
+| 2342-7/01 | Fabricação de azulejos e pisos |
+| 2342-7/02 | Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos |
+| 2349-4/01 | Fabricação de material sanitário de cerâmica |
+| 2349-4/99 | Fabricação de produtos cerâmicos não-refratários não especificados anteriormente |
+| 2391-5/01 | Britamento de pedras, exceto associado à extração |
+| 2392-1/02 | Fabricação de abrasivos |
+| 2392-3/00 | Fabricação de cal e gesso |
+| 2399-1/99 | Fabricação de outros produtos de minerais não metálicos não especificados anteriormente |
+| 24xx-x/xx | Metalurgia |
+| 2513-6/00 | Fabricação de obras de caldeiraria pesada |
+| 2521-7/00 | Fabricação de tanques, reservatórios metálicos e caldeiras para aquecimento central |
+| 2522-5/00 | Fabricação de caldeiras geradoras de vapor, exceto para aquecimento central e para veículos |
+| 253x-x/xx | Forjaria, estamparia, metalurgia do pó e serviços de tratamento de metais |
+| 254x-x/xx | Fabricação de artigos de cutelaria, de serralheria e ferramentas |
+| 259x-x/xx | Fabricação de produtos de metal não especificados anteriormente |
+
+Fonte: NT 1-01 Parte 1, página 23, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+O hífen dentro de palavras ("agrí-colas", "quí-micos", "veí-culos") está na página; a leitura o mantém.
+A tabela continua na página 24.
+<!-- /tabela-conferida: Anexo A p23 -->
+
 ---
 
 ## Página 24
@@ -1318,8 +1398,7 @@ nome completo e função.
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 26xx-x/xx | Fabricação de equipamentos de informática, produtos eletrônicos e óptico |
@@ -1391,6 +1470,88 @@ nome completo e função.
 | 9491-0/00 | Atividades de organizações religiosas ou filosóficas |
 | 9603-3/02 | Serviços de cremação |
 
+<!-- tabela-conferida: Anexo A p24 -->
+### Anexo A — Relação das atividades não enquadradas no risco diferenciado (conferida)
+
+| CNAE | Descrição |
+| --- | --- |
+| 26xx-x/xx | Fabricação de equipamentos de informática, produtos eletrônicos e óptico |
+| 27xx-x/xx | Fabricação de máquinas, aparelhos e materiais elétricos |
+| 28xx-x/xx | Fabricação de máquinas e equipamentos |
+| 29xx-x/xx | Fabricação de veí-culos automotores, reboque e carrocerias |
+| 30xx-x/xx | Fabricação de outros equipamentos de transporte, exceto veí-culos automotores |
+| 31xx-x/xx | Fabricação de móveis |
+| 32xx-x/xx | Fabricação de produtos diversos |
+| 35xx-x/xx | Eletricidade, gás e outras utilidades |
+| 38xx-x/xx | Coleta, tratamento e disposição de resí-duos) recuperação de materiais |
+| 39xx-x/xx | Descontaminação e outros serviços de gestão de resí-duos |
+| 462x-x/xx | Comércio atacadista de matérias-primas agrí-colas e animais vivos |
+| 4632-0/01 | Comércio atacadista de cereais e leguminosas beneficiados |
+| 4632-0/02 | Comércio atacadista de farinhas, amidos e féculas |
+| 4632-0/03 | Comércio atacadista de cereais e leguminosas beneficiados, farinhas, amidos e féculas, com atividade de fracionamento e acondicionamento associada |
+| 4635-4/03 | Comércio atacadista de bebidas com atividade de fracionamento e acondicionamento associada |
+| 4635-4/99 | Comércio atacadista de bebidas não especificadas anteriormente |
+| 4636-2/01 | Comércio atacadista de fumo beneficiado |
+| 4636-2/02 | Comércio atacadista de cigarros, cigarrilhas e charutos |
+| 4637-1/01 | Comércio atacadista de café torrado, moído e solúvel |
+| 4637-1/03 | Comércio atacadista de óleos e gorduras |
+| 4637-1/99 | Comércio atacadista especializado em outros produtos alimentícios não especificados anteriormente |
+| 4639-7/01 | Comércio atacadista de produtos alimentícios em geral |
+| 4639-7/02 | Comércio atacadista de produtos alimentícios em geral, com atividade de fracionamento e acondicionamento associada |
+| 4646-0/01 | Comércio atacadista de cosméticos e produtos de perfumaria |
+| 4649-4/01 | Comércio atacadista de móveis e artigos de colchoaria |
+| 465x-x/xx | Comércio atacadista de equipamentos e produtos de tecnologias de informação e comunicação |
+| 466x-x/xx | Comércio atacadista de máquinas, aparelhos e equipamentos, exceto de tecnologias de informação e comunicação |
+| 467x-x/xx | Comércio atacadista de madeira, ferragens, ferramentas, material elétrico e material de construção |
+| 468x-x/xx | Comércio atacadista especializado em outros produtos |
+| 469x-x/xx | Comércio atacadista não-especificado |
+| 4711-3/01 | Comércio varejista de mercadorias em geral, com predominâncias de produtos alimentí-cios - hipermercados |
+| 4711-3/02 | Comércio varejista de mercadorias em geral, com predominâncias de produtos alimentí-cios - supermercados |
+| 4731-x/xx | Comércio varejista de combustí-veis para veí-culos |
+| 4741-x/xx | Comércio varejista de tintas e materiais para pintura |
+| 4784-x/xx | Comércio varejista de gás liquefeito de petróleo (GLP) |
+| 4789-0/06 | Comércio varejista de fogos de artifí-cio e artigos pirotécnicos |
+| 4789-0/09 | Comércio varejista de armas e munições |
+| 4930-2/03 | Transporte rodoviário de produtos perigosos |
+| 5211-7/xx | Armazenamento |
+| 5222-2/00 | Terminais rodoviários e ferroviários |
+| 5240-1/01 | Operação de aeroportos e campos de aterrisagem |
+| 582x-x/xx | Edição integrada í impressão de livros, jornais, revistas e outras publicações |
+| 5911-1/01 | Estúdios cinematográficos |
+| 5912-0/01 | Serviços de Dublagem |
+| 5913-8/00 | Distribuição cinematográfica, de vídeo e de programas de televisão |
+| 5914-6/00 | Atividades de exibição cinematográfica |
+| 602x-x/xx | Atividade de televisão |
+| 8122-2/00 | Imunização e controle de pragas urbanas |
+| 8230-0/02 | Casa de festas e eventos |
+| 8711-5/01 | Clínicas e residências geriátricas |
+| 8711-5/02 | Instituições de longa permanência para idosos |
+| 8711-5/05 | Condomínios residenciais para idosos |
+| 8730-1/01 | Orfanatos |
+| 8730-1/02 | Albergues assistenciais |
+| 9001-9/01 | Produção teatral |
+| 9001-9/03 | Produção de espetáculos de dança |
+| 9001-9/04 | Produção de espetáculos circenses, de marionetes e similares |
+| 9001-9/05 | Produção de espetáculos de rodeios, vaquejadas e similares |
+| 9003-5/xx | Gestão de espaço para artes cênicas, espetáculos e outras atividades artí-sticas |
+| 91xx-x/xx | Atividades ligadas ao patrimônio cultural e ambiental |
+| 92xx-x/xx | Atividades de exploração de jogos de azar e apostas |
+| 9311-x/xx | Gestão de instalações de esportes |
+| 9312-x/xx | Clubes sociais, esportivos e similares |
+| 9319-x/xx | Atividades esportivas não especificadas anteriormente |
+| 932x-x/xx | Atividades de recreação e lazer |
+| 9491-0/00 | Atividades de organizações religiosas ou filosóficas |
+| 9603-3/02 | Serviços de cremação |
+
+Fonte: NT 1-01 Parte 1, página 24, Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Continuação da tabela da página 23 (o cabeçalho não se repete).
+O hífen dentro de palavras ("agrí-colas", "quí-micos", "veí-culos") está na página; a leitura o mantém.
+Nota: a letra "x" no CNAE significa que qualquer algarismo dentro do valor representa alto risco. Seguem alguns exemplos:
+05xx-x/xx - todas as atividades com o início 05 representam alto risco;
+20xx-x/xx - todas as atividades com o início 20 representam alto risco;
+462x-x/xx - todas as atividades com o início 462 representam alto risco.
+<!-- /tabela-conferida: Anexo A p24 -->
+
 ---
 
 ## Página 25
@@ -1409,6 +1570,8 @@ As solicitações de análise de projeto de segurança contra incêndio e pânic
 
 ## Página 26
 
+![Representação visual da página 26](media/nt-1-01-parte-1/pagina-26.jpg)
+
 Tabela 1 - Unidades de atendimento na cidade do Rio de Janeiro
 
 Tabela 2 - Unidades de atendimento na cidade de Duque de Caxias
@@ -1421,8 +1584,7 @@ Tabela 5 - Unidade especializada em prevenção em estádios
 
 Tabela 6 - Unidade com atendimento de FARE
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Unidade |  |  | Endereço |  |
@@ -1488,3 +1650,94 @@ Tabela 6 - Unidade com atendimento de FARE
 |  | Unidade |  |  | Endereço |  |
 | --- | --- | --- | --- | --- | --- |
 | 1ºGSE - Catete |  |  | Praça São Salvador, 4, Catete, Rio de Janeiro |  |  |
+<!-- tabela-conferida: Tabela 1 do Anexo B p26 -->
+### Tabela 1 do Anexo B — Unidades de atendimento na cidade do Rio de Janeiro (conferida)
+
+| Unidade | Endereço |
+| --- | --- |
+| 1ºGBM – Humaitá | Rua do Humaitá, 126, Humaitá |
+| 2ºGBM – Méier | Rua Aristides Caire, 56, Méier |
+| 8ºGBM – Campinho | Rua Domingos Lopes, 336, Campinho |
+| 11ºGBM - Vila Isabel | Rua Oito de Dezembro, 456, Vila Isabel |
+| 12ºGBM – Jacarepaguá | Rua Henriqueta, 99, Jacarepaguá |
+| 13ºGBM - Campo Grande | Avenida Cesário de Melo, 3226, Campo Grande |
+| 17ºGBM – Copacabana | Rua Xavier da Silveira, 120, Copacabana |
+| 19ºGBM - Ilha do Governador | Estrada do Galeão, s/n, Ilha do Governador |
+| 24ºGBM – Irajá | Avenida Brasil, 19001, Irajá |
+| 25ºGBM – Gávea | Rua Major Rubens Vaz, 194, Gávea |
+| 28ºGBM – Penha | Avenida Nossa Senhora da Penha, 25, Penha |
+| GBS – Barra da Tijuca | Avenida Ayrton Senna, 2001, Barra da Tijuca |
+| GOCG – Centro | Praça da República, 35, Centro |
+
+Fonte: NT 1-01 Parte 1, página 26, Tabela 1 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
+<!-- /tabela-conferida: Tabela 1 do Anexo B p26 -->
+
+<!-- tabela-conferida: Tabela 2 do Anexo B p26 -->
+### Tabela 2 do Anexo B — Unidades de atendimento na cidade de Duque de Caxias (conferida)
+
+| Unidade | Endereço |
+| --- | --- |
+| 14ºGBM - Duque de Caxias | Rua Doutor Manoel Teles, 1767, Prainha |
+| GOPP – Campos Elíseos | Rodovia Washington Luiz, Km 113, Campos Elíseos |
+
+Fonte: NT 1-01 Parte 1, página 26, Tabela 2 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
+<!-- /tabela-conferida: Tabela 2 do Anexo B p26 -->
+
+<!-- tabela-conferida: Tabela 3 do Anexo B p26 -->
+### Tabela 3 do Anexo B — Unidades de atendimento nas demais cidades (conferida)
+
+| Unidade | Endereço |
+| --- | --- |
+| 2ºGSFMA – Magé | Estrada do Contorno, Km 24, Iriri, Magé |
+| 3ºGBM – Niterói | Rua Marquês de Paraná, 134, Centro, Niterói |
+| 4ºGBM - Nova Iguaçu | Avenida Governador Roberto da Silveira, 1221, Posse, Nova Iguaçu |
+| 5ºGBM - Campos dos Goytacazes | Avenida Rui Barbosa, 1027, Centro, Campos dos Goytacazes |
+| 6ºGBM - Nova Friburgo | Praça da Bandeira, 1027, Centro, Nova Friburgo |
+| 7ºGBM - Barra Mansa | Avenida Homero Leite, 352, Saudade, Barra Mansa |
+| 9ºGBM – Macaé | Rua Alfredo Becker, 290, Centro, Macaé |
+| 10ºGBM - Angra dos Reis | Rua Lídia Coutinho, s/n, Balneário, Angra dos Reis |
+| 15ºGBM – Petrópolis | Avenida Barão do Rio Branco, 1957, Quarteirão Brasileiro, Petrópolis |
+| 16ºGBM – Teresópolis | Rua Guandu, 680, Pimenteiras, Teresópolis |
+| 18ºGBM - Cabo Frio | Avenida Nilo Peçanha, 256, Centro, Cabo Frio |
+| 20ºGBM - São Gonçalo | Avenida São Miguel, 44, São Miguel, São Gonçalo |
+| 21ºGBM – Itaperuna | Avenida Santos Dumont, 40, Padre Humberto Lindelauf, Itaperuna |
+| 22ºGBM - Volta Redonda | Rua Governador Luiz Monteiro Portela, 346, Aterrado, Volta Redonda |
+| 23ºGBM – Resende | Avenida Marcílio Dias, 550, Jardim Jalisco, Resende |
+| 26ºGBM – Paraty | Avenida Roberto Silveira, s/n, Paraty |
+| 27ºGBM – Araruama | RJ 124, Km 36, Rio do Limão, Araruama |
+
+Fonte: NT 1-01 Parte 1, página 26, Tabela 3 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
+<!-- /tabela-conferida: Tabela 3 do Anexo B p26 -->
+
+<!-- tabela-conferida: Tabela 4 do Anexo B p26 -->
+### Tabela 4 do Anexo B — Diretorias relacionadas aos serviços técnicos (conferida)
+
+| Diretoria | Endereço |
+| --- | --- |
+| DGST – Diretoria Geral de Serviços Técnicos | Praça da República, 39, Centro, Rio de Janeiro |
+| DDP – Diretoria de Diversões Públicas | Rua do Senado, 22, Centro, Rio de Janeiro |
+
+Fonte: NT 1-01 Parte 1, página 26, Tabela 4 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
+<!-- /tabela-conferida: Tabela 4 do Anexo B p26 -->
+
+<!-- tabela-conferida: Tabela 5 do Anexo B p26 -->
+### Tabela 5 do Anexo B — Unidade especializada em prevenção em estádios (conferida)
+
+| Unidade | Endereço |
+| --- | --- |
+| GPREVE - Prevenção em Estádios | Rua Aristides Caire, 56, Méier, Rio de Janeiro |
+
+Fonte: NT 1-01 Parte 1, página 26, Tabela 5 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
+<!-- /tabela-conferida: Tabela 5 do Anexo B p26 -->
+
+<!-- tabela-conferida: Tabela 6 do Anexo B p26 -->
+### Tabela 6 do Anexo B — Unidade com atendimento de FARE (conferida)
+
+| Unidade | Endereço |
+| --- | --- |
+| 1ºGSE – Catete | Praça São Salvador, 4, Catete, Rio de Janeiro |
+
+Fonte: NT 1-01 Parte 1, página 26, Tabela 6 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
+A camada de texto não reconhece esta tabela: o segundo caminho é a grade do PDF (extração geométrica).
+<!-- /tabela-conferida: Tabela 6 do Anexo B p26 -->
+

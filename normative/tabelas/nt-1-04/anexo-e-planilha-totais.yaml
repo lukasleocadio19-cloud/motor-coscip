@@ -1,0 +1,205 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-04
+arquivo: nt-1-04-classificacao-de-risco.md
+tabela: Tabela do Anexo E (totais)
+titulo: Exemplo de planilha para cálculo da carga de incêndio específica — totais do pavimento
+pagina: 20
+fonte_pdf_sha256: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  mesclar_linhas:
+  - - 0
+    - 1
+  - - 3
+    - 4
+  - - 4
+    - 5
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-04/pagina-20.jpg
+    imagem_sha256: 84edd38853cad171226f056b14734f8e69795d57ae8fd6f763288c7be66015b8
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Linha da planilha
+    linhas:
+    - - Total do potencial calorífico do pavimento³ - qi (MJ) ∑ MiHi
+    - - Área do piso do pavimento Af (m²)
+    - - Carga de incêndio específica do pavimento4 qfi = ∑ MiHi / Af
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 20
+      tabela_na_pagina: 2
+    linhas:
+    - - Total do potencial calorífico do pavimento³ - qi (MJ) ∑ MiHi
+    - - Área do piso do pavimento Af (m²)
+    - - Carga de incêndio específica do pavimento4 qfi = ∑ MiHi Af
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 48.64
+      - 108.84
+      - 502.33
+      - 226.45
+      linhas:
+      - - Tipo do material existente na edificação por compartimento
+        - null
+        - Massa total de cada material Mi – (kg)
+        - ''
+        - Potencial
+        - ''
+        - Potencial calorífico por material² Mi x Hi = qi (MJ)
+      - - null
+        - null
+        - null
+        - null
+        - calorífico
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - específico¹
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - Hi – (MJ/kg)
+        - null
+        - null
+      - - '1'
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+        - ''
+      - - '2'
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+        - ''
+      - - '3'
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+        - ''
+      - - '4'
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+        - ''
+      - - '5'
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+        - ''
+      - - '6'
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+        - ''
+      - - '7'
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+        - ''
+    - bbox:
+      - 238.28
+      - 114.22
+      - 305.5
+      - 145.23
+      linhas:
+      - - Massa total de
+      - - cada material
+      - - Mi – (kg)
+    - bbox:
+      - 407.73
+      - 114.22
+      - 496.75
+      - 145.23
+      linhas:
+      - - Potencial calorífico
+      - - por material²
+      - - Mi x Hi = qi (MJ)
+    - bbox:
+      - 53.83
+      - 119.22
+      - 227.48
+      - 140.03
+      linhas:
+      - - Tipo do material existente na edificação
+      - - por compartimento
+    - bbox: &id001
+      - 115.29
+      - 240.97
+      - 416.53
+      - 362.61
+      linhas:
+      - - ''
+        - Total do potencial calorífico do pavimento³ – qi (MJ)
+        - ''
+        - ''
+      - - null
+        - ∑ MiHi
+        - null
+        - null
+      - - ''
+        - Área do piso do pavimento Af (m²)
+        - ''
+        - ''
+      - - ''
+        - Carga de incêndio específica do pavimento4
+        - ''
+        - ''
+      - - null
+        - qfi = ∑ MiHi
+        - null
+        - null
+      - - null
+        - Af
+        - null
+        - null
+notas:
+- As células de valor (coluna da direita) são para preenchimento.
+- 'Observações da página:'
+- 1 – Constante da Tabela E
+- 2 – Massa total de cada material multiplicado pelo potencial calorífico específico
+- 3 – Somatória de todos os potenciais caloríficos considerados
+- 4 – Total do potencial calorífico do pavimento dividido pela Área do piso do pavimento = (qfi)
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 4
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 2
+    coluna: 0
+    a: Carga de incêndio específica do pavimento4 qfi = ∑ MiHi / Af
+    b: Carga de incêndio específica do pavimento4 qfi = ∑ MiHi Af
+    estado: verificada
+    score: 98.3

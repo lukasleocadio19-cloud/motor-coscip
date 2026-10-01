@@ -45,8 +45,7 @@ metodo: "extração textual por blocos; tabelas convertidas para Markdown; marca
 
 Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  | NOTA |  |  | CBMERJ |  |
@@ -135,8 +134,7 @@ Para efeito desta Nota Técnica, além das definições constantes da NT 1-02 - 
 
 4.10 Quadra: área totalmente destinada ao armazenamento de cargas, desconsideradas as vias
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | toda carga homogênea, sem |

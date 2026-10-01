@@ -1,0 +1,153 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-05
+arquivo: nt-2-05-sinalizacao.md
+tabela: Tabela 3 do Anexo B
+titulo: Sinalização de proibição
+pagina: 8
+fonte_pdf_sha256: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-05/pagina-08.jpg
+    imagem_sha256: f6de40100d530f9bb9420ce1e9eae37345e2fea205f2156b5bd2bd8a4b72521b
+    linhas_cabecalho: 1
+    linhas:
+    - - Código
+      - Símbolo
+      - Significado
+      - Forma e cor
+      - Aplicação
+    - - P-1
+      - ''
+      - Proibido fumar
+      - 'Forma: circular Fundo: branca Pictograma: preta Faixa circular e barra diametral: vermelha'
+      - 'Todo local onde o fumo possa aumentar o risco de incêndio. Nível: Superior'
+    - - P-2
+      - ''
+      - Proibido produzir chama
+      - ^
+      - 'Todo local onde a utilização de chama possa aumentar o risco de incêndio. Nível: Superior'
+    - - P-3
+      - ''
+      - Proibido utilizar água para apagar o fogo
+      - ^
+      - 'Qualquer situação onde o uso de água seja impróprio para extinguir o fogo. Nível: superior'
+    - - P-4
+      - ''
+      - Proibido utilizar elevador em caso de incêndio
+      - 'Forma: circular Fundo: fotoluminescente Pictograma: preta Faixa circular e barra diametral: vermelha'
+      - 'Os elevadores devem possuir sinalização específica composta por símbolo e mensagem de texto,
+        afixada próximo ao botão de chamada e ao lado das portas dos elevadores, devendo ser fotoluminescente,
+        instalada ao nível superior ou intermediário, excetuando-se os elevadores de emergência. Nível:
+        intermediário'
+    - - P-5
+      - ''
+      - Proibido obstruir este local
+      - 'Forma: circular Fundo: branca Pictograma: preta Faixa circular e barra diametral: vermelha'
+      - 'Em locais sujeitos a depósito de mercadorias onde a obstrução possa apresentar perigo de acesso
+        às saídas de emergência, rotas de fuga, equipamentos de combate a incêndio. Nível: superior'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 8
+      tabela_na_pagina: 1
+    linhas:
+    - - Código
+      - Símbolo
+      - Significado
+      - Forma e cor
+      - Aplicação
+    - - P-1
+      - Proibido fumar
+      - 'Forma: circular Fundo: branca Pictograma: preta Faixa circular e barra diametral: vermelha'
+      - 'Todo local onde o fumo possa aumentar o risco de incêndio. Nível: Superior'
+    - - P-2
+      - Proibido produzir chama
+      - 'Todo local onde a utilização de chama possa aumentar o risco de incêndio. Nível: Superior'
+    - - P-3
+      - Proibido utilizar água para apagar o fogo
+      - 'Qualquer situação onde o uso de água seja impróprio para extinguir o fogo. Nível: superior'
+    - - P-4
+      - Proibido utilizar elevador em caso de incêndio
+      - 'Forma: circular Fundo: fotoluminescente Pictograma: preta Faixa circular e barra diametral: vermelha'
+      - 'Os elevadores devem possuir sinalização específica composta por símbolo e mensagem de texto,
+        afixada próximo ao botão de chamada e ao lado das portas dos elevadores, devendo ser fotoluminescente,
+        instalada ao nível superior ou intermediário, excetuando-se os elevadores de emergência. Nível:
+        intermediário'
+    - - P-5
+      - Proibido obstruir este local
+      - 'Forma: circular Fundo: branca Pictograma: preta Faixa circular e barra diametral: vermelha'
+      - 'Em locais sujeitos a depósito de mercadorias onde a obstrução possa apresentar perigo de acesso
+        às saídas de emergência, rotas de fuga, equipamentos de combate a incêndio. Nível: superior'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.6
+      - 70.8
+      - 534.82
+      - 710.98
+      linhas:
+      - - Código
+        - Símbolo
+        - Significado
+        - Forma e cor
+        - Aplicação
+      - - P-1
+        - ''
+        - Proibido fumar
+        - 'Forma: circular Fundo: branca Pictograma: preta Faixa circular e barra diametral: vermelha'
+        - 'Todo local onde o fumo possa aumentar o risco de incêndio. Nível: Superior'
+      - - P-2
+        - ''
+        - Proibido produzir chama
+        - null
+        - 'Todo local onde a utilização de chama possa aumentar o risco de incêndio. Nível: Superior'
+      - - P-3
+        - ''
+        - Proibido utilizar água para apagar o fogo
+        - null
+        - 'Qualquer situação onde o uso de água seja impróprio para extinguir o fogo. Nível: superior'
+      - - P-4
+        - ''
+        - Proibido utilizar elevador em caso de incêndio
+        - 'Forma: circular Fundo: fotoluminescente Pictograma: preta Faixa circular e barra diametral:
+          vermelha'
+        - 'Os elevadores devem possuir sinalização específica composta por símbolo e mensagem de texto,
+          afixada próximo ao botão de chamada e ao lado das portas dos elevadores, devendo ser fotoluminescente,
+          instalada ao nível superior ou intermediário, excetuando-se os elevadores de emergência. Nível:
+          intermediário'
+      - - P-5
+        - ''
+        - Proibido obstruir este local
+        - 'Forma: circular Fundo: branca Pictograma: preta Faixa circular e barra diametral: vermelha'
+        - 'Em locais sujeitos a depósito de mercadorias onde a obstrução possa apresentar perigo de acesso
+          às saídas de emergên- cia, rotas de fuga, equipamen- tos de combate a incêndio. Nível: superior'
+notas:
+- A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela.
+  Célula de forma e cor mesclada entre linhas repete-se na publicação.
+- O sinal P-4 traz também a mensagem "PROIBIDO UTILIZAR O ELEVADOR EM CASO DE INCÊNDIO".
+- 'Fonte indicada na página: ABNT NBR 16820.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 5
+    coluna: 3
+    a: 'Em locais sujeitos a depósito de mercadorias onde a obstrução possa apresentar perigo de acesso
+      às saídas de emergência, rotas de fuga, equipamentos de combate a incêndio. Nível: superior'
+    b: 'Em locais sujeitos a depósito de mercadorias onde a obstrução possa apresentar perigo de acesso
+      às saídas de emergên- cia, rotas de fuga, equipamen- tos de combate a incêndio. Nível: superior'
+    estado: verificada
+    score: 98.9

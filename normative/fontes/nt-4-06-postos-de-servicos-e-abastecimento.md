@@ -51,8 +51,7 @@ A - Ilha de Bombas
 
 B - Tabela de Sinalização
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  | NOTA |  |  | CBMERJ |  |
@@ -141,8 +140,7 @@ Para efeito desta Nota Técnica, além das definições constantes da NT1-02 - T
 
 4.8 Gás Natural Liquefeito (GNL): fluido no estado líquido em condições criogênicas, composto predominantemente de metano e que pode conter
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | contenção secundária que |
@@ -283,8 +281,7 @@ c) os tanques deverão possuir diques de contenção com as seguintes caracterí
 
  a área interna dos diques permanecerá livre e desimpedida, não se admitindo a existência de qualquer material estranho à mesma.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Existindo isolamento acústico para o |
@@ -319,8 +316,7 @@ Fonte: ABNT NBR 12236, modificada.
 
 Fonte: Instrução Normativa nº 021/DAT/CBMSC - Modificada.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Local | Quantidade | Legenda |
@@ -328,3 +324,16 @@ Fonte: Instrução Normativa nº 021/DAT/CBMSC - Modificada.
 | Bombas de Abastecimento | 1 por ponto | - Proibido abastecimento por pessoas não autorizadas; - Desligue o motor do veículo; - Acione o freio de estacionamento; - Apague os faróis e desligue o rádio; - Não utilize equipamentos que contenham chama; - Certifique-se que o funcionário do posto efetuou o aterramento elétrico do veículo. |
 | Central de GNV | 1 | - Proibido Fumar; - Perigo, gás a alta pressão; - Proibido acesso a pessoas estranhas; - Cuidado partida automática. |
 | Válvula de bloqueio geral | 1 | “Uso em caso de emergen̂ cia” |
+<!-- tabela-conferida: Tabela do Anexo B p7 -->
+### Tabela do Anexo B — Tabela de sinalização (conferida)
+
+| Local | Quantidade | Legenda |
+| --- | --- | --- |
+| Bombas de Abastecimento | 1 por ponto | - Proibido abastecimento por pessoas não autorizadas; - Desligue o motor do veículo; - Acione o freio de estacionamento; - Apague os faróis e desligue o rádio; - Não utilize equipamentos que contenham chama; - Certifique-se que o funcionário do posto efetuou o aterramento elétrico do veículo. |
+| Central de GNV | 1 | - Proibido Fumar; - Perigo, gás a alta pressão; - Proibido acesso a pessoas estranhas; - Cuidado partida automática. |
+| Válvula de bloqueio geral | 1 | “Uso em caso de emergência” |
+
+Fonte: NT 4-06, página 7, Tabela do Anexo B; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: Instrução Normativa nº 021/DAT/CBMSC – Modificada.
+<!-- /tabela-conferida: Tabela do Anexo B p7 -->
+

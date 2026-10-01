@@ -1,0 +1,396 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-01
+arquivo: nt-3-01-cozinha-profissional.md
+tabela: Tabela 1
+titulo: Classificação dos equipamentos de cocção
+pagina: 5
+fonte_pdf_sha256: 39376c0411829f52c7e1c06a9dcde0f09528d2e5db87b4e3915d796783b2ebca
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 0
+  - 14
+  mesclar_linhas:
+  - - 0
+    - 1
+  - - 5
+    - 6
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-01/pagina-05.jpg
+    imagem_sha256: d3299eb14009f75fa9f97aca3f76cd0c9bcd2a5938571ed381e27b6e2bce5465
+    linhas_cabecalho: 1
+    linhas:
+    - &id001
+      - Leves
+      - Moderados
+      - Severos
+      - Combustível sólido
+    - - Banho-maria
+      - Fogões
+      - Charbroiler
+      - Forno a lenha
+    - - Caldeirão
+      - Fritadeiras
+      - Chapa de grelhados
+      - Churrasqueira a carvão
+    - - Forno elétrico/gás
+      - Churrasqueira elétrica
+      - Bifeteira
+      - ''
+    - *id001
+    - - Estufas
+      - Churrasqueira a gás
+      - Frigideira
+      - ''
+    - - Forno de microondas
+      - Fornos combinados
+      - ''
+      - ''
+    - - Cafeteiras
+      - Galeteria
+      - ''
+      - ''
+    - - Lava-louças
+      - Chapa quente
+      - ''
+      - ''
+    - - Tostadeiras
+      - Sanduicheira
+      - ''
+      - ''
+    - - Leiteira
+      - ''
+      - ''
+      - ''
+    - - Cozedor de massas
+      - ''
+      - ''
+      - ''
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 5
+      tabela_na_pagina: 2
+    linhas:
+    - - Leves
+      - Moderados
+      - Severos
+      - Combustível sólido
+    - - Banhomaria
+      - Fogões
+      - Charbroiler
+      - Forno a lenha
+    - - Caldeirão
+      - Fritadeiras
+      - Chapa de grelhados
+      - Churrasqueira a carvão
+    - - Forno elétrico/gás
+      - Churrasqueira elétrica
+      - Bifeteira
+    - - Leves
+      - Moderados
+      - Severos
+      - Combustível sólido
+    - - Estufas
+      - Churrasqueira a gás
+      - Frigideira
+    - - Forno de microondas
+      - Fornos combinados
+    - - Cafeteiras
+      - Galeteria
+    - - Lava-louças
+      - Chapa quente
+    - - Tostadeiras
+      - Sanduicheira
+    - - Leiteira
+    - - Cozedor de massas
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 312.6
+      - 56.9
+      - 554.14
+      - 134.45
+      linhas:
+      - - ''
+        - Requer sistema fixo de extinção de incêndio
+        - Requer sistema fixo de extinção de incêndio
+      - - 'Obs.: Os sistemas de exaustão que atenderem simultaneamente a equipamentos geradores e não
+          geradores de vapores de óleo e/ou partículas de gordura serão classificados como do Tipo I.'
+        - null
+        - null
+    - bbox: &id002
+      - 49.72
+      - 72.14
+      - 290.66
+      - 354.58
+      linhas:
+      - - Leves
+        - Moderados
+        - Severos
+        - ''
+        - Combustível
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - sólido
+        - null
+      - - Banho- maria
+        - Fogões
+        - Charbroiler
+        - Forno a lenha
+        - null
+        - null
+      - - Caldeirão
+        - Fritadeiras
+        - Chapa de grelhados
+        - Churrasqueira a carvão
+        - null
+        - null
+      - - Forno elétrico/gás
+        - Churrasqueira elétrica
+        - Bifeteira
+        - ''
+        - null
+        - null
+      - - Leves
+        - Moderados
+        - Severos
+        - ''
+        - Combustível
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - sólido
+        - null
+      - - Estufas
+        - Churrasqueira a gás
+        - Frigideira
+        - ''
+        - null
+        - null
+      - - Forno de microondas
+        - Fornos combinados
+        - ''
+        - ''
+        - null
+        - null
+      - - Cafeteiras
+        - Galeteria
+        - ''
+        - ''
+        - null
+        - null
+      - - Lava-louças
+        - Chapa quente
+        - ''
+        - ''
+        - null
+        - null
+      - - Tostadeiras
+        - Sanduicheira
+        - ''
+        - ''
+        - null
+        - null
+      - - Leiteira
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+      - - Cozedor de massas
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+      - - 'Obs.: A classificação do sistema de exaustão, quanto a este tópico, deve ser feita pela presença
+          dos equipamentos mais críticos sob o mesmo captor.'
+        - null
+        - null
+        - null
+        - null
+        - null
+    - bbox:
+      - 49.72
+      - 394.78
+      - 290.66
+      - 757.9
+      linhas:
+      - - ''
+        - Sistema de
+        - ''
+        - ''
+        - Edificação de
+        - ''
+        - ''
+        - Edificação de
+        - ''
+      - - null
+        - exaustão
+        - null
+        - null
+        - economia única
+        - null
+        - null
+        - economia múltipla
+        - null
+      - - TIPO I moderado e severo
+        - null
+        - null
+        - Requer damper corta-fogo
+        - null
+        - null
+        - Requer damper corta-fogo
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Selagem de travessias
+        - null
+        - null
+        - Selagem de travessias
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Proteção passiva
+        - null
+        - null
+        - Proteção passiva
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Extintor portátil
+        - null
+        - null
+        - Extintor portátil
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Dispensa de sistema fixo de extinção de incêndio
+        - null
+        - null
+        - Requer sistema fixo de extinção de incêndio
+        - null
+        - null
+      - - TIPO II leve
+        - null
+        - null
+        - Dispensa damper corta-fogo
+        - null
+        - null
+        - Requer damper corta-fogo
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Selagem de travessias
+        - null
+        - null
+        - Selagem de travessias
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Dispensa proteção passiva
+        - null
+        - null
+        - Dispensa proteção passiva
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Extintor portátil
+        - null
+        - null
+        - Extintor portátil
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Dispensa de sistema fixo de extinção de incêndio
+        - null
+        - null
+        - Dispensa de sistema fixo de extinção de incêndio
+        - null
+        - null
+      - - Tipo III combustível sólido
+        - null
+        - null
+        - Requer damper corta-fogo
+        - null
+        - null
+        - Requer damper corta-fogo
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Selagem de travessias
+        - null
+        - null
+        - Selagem de travessias
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Proteção passiva
+        - null
+        - null
+        - Proteção passiva
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - Extintor portátil
+        - null
+        - null
+        - Extintor portátil
+        - null
+        - null
+notas:
+- A linha de cabeçalho (Leves, Moderados, Severos, Combustível sólido) repete-se no meio da tabela, como
+  na página.
+- 'Obs. da tabela: A classificação do sistema de exaustão, quanto a este tópico, deve ser feita pela presença
+  dos equipamentos mais críticos sob o mesmo captor.'
+- 'Fonte indicada na página: ABNT NBR 14518.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 1
+  candidatos_na_pagina: 2
+  bbox: *id002
+  texto: verificada
+  celulas:
+  - linha: 1
+    coluna: 0
+    a: Banho-maria
+    b: Banho- maria
+    estado: verificada
+    score: 95.7

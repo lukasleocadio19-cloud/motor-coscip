@@ -1,0 +1,212 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-05
+arquivo: nt-4-05-gas-manipulacao-armazenamento-e-comercializacao.md
+tabela: Tabela 1 do Anexo E
+titulo: Afastamentos mínimos de segurança para áreas de armazenamento de recipientes para substituição
+  de recipientes vazios em empilhadeiras e outros veículos movidos a GLP
+pagina: 23
+fonte_pdf_sha256: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 1
+  - 7
+  linhas_cabecalho: 5
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-05/pagina-23.jpg
+    imagem_sha256: 87f09ad38cc9576d5f274e6b9a02e637f4390748951b077c85e1a62cd69ad9aa
+    linhas_cabecalho: 1
+    linhas:
+    - - Divisas de propriedades edificáveis / edificações (vide obs. A)
+      - Passeio público
+      - Entre recipientes
+      - Aberturas abaixo da descarga da válvula de segurança
+      - Fontes de ignição e outras aberturas (portas, janelas, etc.) e materiais combustíveis (vide obs.
+        c)
+      - 'Produtos tóxicos, Perigosos inflamáveis e chama aberta (vide obs.: d, e)'
+    - - '0'
+      - '3'
+      - '0'
+      - '1'
+      - 1,5
+      - '6'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 23
+      tabela_na_pagina: 1
+    linhas:
+    - - Divisas de propriedades edificáveis / edificações (vide obs. A)
+      - Passeio público
+      - Entre recipientes
+      - Aberturas abaixo da descarga da válvula de segurança
+      - Fontes de ignição e outras aberturas (portas, janelas, etc.) e materiais combustíveis (vide obs.
+        c)
+      - 'Produtos tóxicos, Perigosos inflamáveis e chama aberta (vide obs.: d, e)'
+    - - '0'
+      - '3'
+      - '0'
+      - '1'
+      - 1,5
+      - '6'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 56.7
+      - 135.8
+      - 551.14
+      - 397.1
+      linhas:
+      - - ''
+        - Afastamentos (m)
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+      - - Divisas de propriedades edificáveis / edificações (vide obs. A)
+        - null
+        - Passeio público
+        - Entre recipientes
+        - Aberturas abaixo da descarga da válvula de segurança
+        - Fontes de ignição e outras aberturas (portas, janelas, etc.) e materiais combustíveis (vide
+          obs. c)
+        - ''
+        - Produtos tóxicos,
+        - ''
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - Perigosos
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - inflamáveis e
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - chama aberta
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - '(vide obs.: d, e)'
+        - null
+      - - '0'
+        - null
+        - '3'
+        - '0'
+        - '1'
+        - 1,5
+        - '6'
+        - null
+        - null
+      - - 'Observações: a Esta tabela se aplica exclusivamente ao armazenamento de recipientes transportáveis,
+          para substituição em empilhadeiras e outros veículos movidos a GLP, que atenda aos requisitos
+          estabelecidos em 5.3.1. b As distâncias de afastamento das edificações não consideram as projeções
+          de complementos ou partes destas, como telhados, balcões, marquises, quando não constituírem
+          áreas destinadas à ocupação ou estoque de materiais. c Para os recipientes transportáveis instalados
+          no interior de abrigos, com paredes e cobertura com TRRF mínimo de 02 (duas) horas, a distância
+          para fontes de ignição e outras aberturas (portas, janelas, etc) pode ser reduzida à metade,
+          nas direções protegi- das pelas paredes dos abrigos. d No caso de depósitos de oxigênio e hidrogênio,
+          os afastamentos devem ser conforme as tabelas específicas da NT 3-02 Gás (GLP/GN) – Uso predial.
+          e Para captação de ar forçado acima das válvulas dos recipientes, o afastamento mínimo de segurança
+          pode ser reduzido para 3 m.'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    - bbox:
+      - 358.13
+      - 158.82
+      - 453.75
+      - 227.85
+      linhas:
+      - - Fontes de ignição e
+      - - outras aberturas
+      - - (portas, janelas, etc.) e
+      - - materiais combustíveis
+      - - (vide obs. c)
+    - bbox:
+      - 62.02
+      - 174.67
+      - 163.04
+      - 218.2
+      linhas:
+      - - Divisas de propriedades
+      - - edificáveis / edificações
+      - - (vide obs. A)
+    - bbox:
+      - 223.48
+      - 174.67
+      - 269.28
+      - 206.47
+      linhas:
+      - - Entre
+      - - recipientes
+    - bbox:
+      - 280.1
+      - 174.67
+      - 347.3
+      - 218.2
+      linhas:
+      - - Aberturas abaixo da descarga da
+      - - válvula de
+      - - segurança
+notas:
+- 'Afastamentos em metros (cabeçalho geral da tabela: "Afastamentos (m)").'
+- 'Observações da tabela:'
+- a) Esta tabela se aplica exclusivamente ao armazenamento de recipientes transportáveis, para substituição
+  em empilhadeiras e outros veículos movidos a GLP, que atenda aos requisitos estabelecidos em 5.3.1.
+- b) As distâncias de afastamento das edificações não consideram as projeções de complementos ou partes
+  destas, como telhados, balcões, marquises, quando não constituírem áreas destinadas à ocupação ou estoque
+  de materiais.
+- c) Para os recipientes transportáveis instalados no interior de abrigos, com paredes e cobertura com
+  TRRF mínimo de 02 (duas) horas, a distância para fontes de ignição e outras aberturas (portas, janelas,
+  etc) pode ser reduzida à metade, nas direções protegidas pelas paredes dos abrigos.
+- d) No caso de depósitos de oxigênio e hidrogênio, os afastamentos devem ser conforme as tabelas específicas
+  da NT 3-02 Gás (GLP/GN) – Uso predial.
+- e) Para captação de ar forçado acima das válvulas dos recipientes, o afastamento mínimo de segurança
+  pode ser reduzido para 3 m.
+- 'Fonte indicada na página: CBMERJ.'
+inconsistencias_da_fonte:
+- A coluna de divisas/edificações remete à "obs. A" (maiúscula), mas as observações são a) a e); a a)
+  trata do alcance da tabela e a que trata do afastamento das edificações é a b).
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 5
+  bbox: *id001
+  texto: verificada

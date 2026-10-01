@@ -1,0 +1,168 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-05
+arquivo: nt-2-05-sinalizacao.md
+tabela: Tabela 5 do Anexo B
+titulo: Sinalização de orientação e salvamento (continuação, p. 12)
+pagina: 12
+fonte_pdf_sha256: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-05/pagina-12.jpg
+    imagem_sha256: 62453abe28ce06212fcf5070c1d43301509b03bc04ed6b582a91668d5cb6de21
+    linhas_cabecalho: 1
+    linhas:
+    - - Código
+      - Símbolo
+      - Significado
+      - Forma e cor
+      - Aplicação
+    - - S-16-D
+      - ''
+      - Orientação do sentido de saídas de emergência acessíveis
+      - 'Forma: retangular Fundo: verde Pictograma e texto: fotoluminescente Mensagem “SAÍDA” com pictograma
+        e/ou seta direcional, com altura de letra superior a 50 mm.'
+      - 'Indicação da saída de emergência para PcD, ou acesso à área de resgate, utilizada com complementação
+        do pictograma fotoluminescente (seta ou imagem, ou ambos) Nível: superior'
+    - - S16-E
+      - ''
+      - ^
+      - ^
+      - ^
+    - - S-17
+      - ''
+      - Número do pavimento
+      - 'Forma: retangular ou quadrada Fundo: verde Texto: fotoluminescente Mensagem indicando número
+        do pavimento, pode se formar pela associação de duas sinalizações (por exemplo:1º + SS □ 1º SS),se
+        necessário'
+      - 'Indicação do pavimento, no interior da escada (patamar). Altura de instalação: Nível: superior'
+    - - S-18
+      - ''
+      - Instrução de abertura de porta por barra antipânico
+      - 'Forma: quadrada ou retangular Fundo: verde Pictograma e texto: fotoluminescente'
+      - 'Indicação da forma de acionamento da barra antipânico instalada. Pode ser complementada pela
+        mensagem “aperte e empurre”. Altura de instalação: Imediatamente acima da barra antipânico'
+    - - S-19
+      - ''
+      - Instruções para porta corta-fogo
+      - 'Forma: retangular Fundo: verde Texto: fotoluminescente Altura mínima da letra: 16 mm'
+      - 'Indicação de manutenção da porta corta-fogo constantemente fechada. Nível: intermediário'
+    - - S-20
+      - ''
+      - Instruções para porta corta-fogo
+      - 'Forma: retangular Fundo: verde Texto: fotoluminescente Altura mínima da letra: 16 mm'
+      - 'Indicação de manutenção da porta corta-fogo nos casos específicos indicados na ABNT NBR 11742.
+        Nível: intermediário'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 12
+      tabela_na_pagina: 1
+    linhas:
+    - - Código
+      - Símbolo
+      - Significado
+      - Forma e cor
+      - Aplicação
+    - - S-16-D
+      - Orientação do sentido de saídas de emergência acessíveis
+      - 'Forma: retangular Fundo: verde Pictograma e texto: fotoluminescente Mensagem “SAÍDA” com pictograma
+        e/ou seta direcional, com altura de letra superior a 50 mm.'
+      - 'Indicação da saída de emergência para PcD, ou acesso à área de resgate, utilizada com complementação
+        do pictograma fotoluminescente (seta ou imagem, ou ambos) Nível: superior'
+    - - S16-E
+    - - S-17
+      - Número do pavimento
+      - 'Forma: retangular ou quadrada Fundo: verde Texto: fotoluminescente Mensagem indicando número
+        do pavimento, pode se formar pela associação de duas sinalizações (por exemplo:1º + SS 1º SS),
+        se necessário'
+      - 'Indicação do pavimento, no interior da escada (patamar). Altura de instalação: Nível: superior'
+    - - S-18
+      - Instrução de abertura de porta por barra antipânico
+      - 'Forma: quadrada ou retangular Fundo: verde Pictograma e texto: fotoluminescente'
+      - 'Indicação da forma de acionamento da barra antipânico instalada. Pode ser complementada pela
+        mensagem “aperte e empurre”. Altura de instalação: Imediatamente acima da barra antipânico'
+    - - S-19
+      - Instruções para porta corta-fogo
+      - 'Forma: retangular Fundo: verde Texto: fotoluminescente Altura mínima da letra: 16 mm'
+      - 'Indicação de manutenção da porta corta-fogo constantemente fechada. Nível: intermediário'
+    - - S-20
+      - Instruções para porta corta-fogo
+      - 'Forma: retangular Fundo: verde Texto: fotoluminescente Altura mínima da letra: 16 mm'
+      - 'Indicação de manutenção da porta corta-fogo nos casos específicos indicados na ABNT NBR 11742.
+        Nível: intermediário'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.6
+      - 70.56
+      - 535.54
+      - 695.5
+      linhas:
+      - - Código
+        - Símbolo
+        - Significado
+        - Forma e cor
+        - Aplicação
+      - - S-16-D
+        - ''
+        - Orientação do sentido de saídas de emergência acessíveis
+        - 'Forma: retangular Fundo: verde Pictograma e texto: fotoluminescente Mensagem “SAÍDA” com pictograma
+          e/ou seta direcional, com altura de letra superior a 50 mm.'
+        - 'Indicação da saída de emergência para PcD, ou acesso à área de resgate, utilizada com complementação
+          do pictograma fotoluminescente (seta ou imagem, ou ambos) Nível: superior'
+      - - S16-E
+        - ''
+        - null
+        - null
+        - null
+      - - S-17
+        - ''
+        - Número do pavimento
+        - 'Forma: retangular ou quadrada Fundo: verde Texto: fotoluminescente Mensagem indicando número
+          do pavimento, pode se formar pela associação de duas sinalizações (por exemplo:1º + SS 1º SS),
+          se necessário'
+        - 'Indicação do pavimento, no interior da escada (patamar). Altura de instalação: Nível: superior'
+      - - S-18
+        - ''
+        - Instrução de abertura de porta por barra antipânico
+        - 'Forma: quadrada ou retangular Fundo: verde Pictograma e texto: fotoluminescente'
+        - 'Indicação da forma de acionamento da barra antipânico instalada. Pode ser complementada pela
+          mensagem “aperte e empurre”. Altura de instalação: Imediatamente acima da barra antipânico'
+      - - S-19
+        - ''
+        - Instruções para porta corta-fogo
+        - 'Forma: retangular Fundo: verde Texto: fotoluminescente Altura mínima da letra: 16 mm'
+        - 'Indicação de manutenção da porta corta-fogo constantemente fechada. Nível: intermediário'
+      - - S-20
+        - ''
+        - Instruções para porta corta-fogo
+        - 'Forma: retangular Fundo: verde Texto: fotoluminescente Altura mínima da letra: 16 mm'
+        - 'Indicação de manutenção da porta corta-fogo nos casos específicos indicados na ABNT NBR 11742.
+          Nível: intermediário'
+notas:
+- A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela.
+  Célula de forma e cor mesclada entre linhas repete-se na publicação.
+- Na S-17 a página mostra um glifo que não foi renderizado (□) entre "1º + SS" e "1º SS", provavelmente
+  uma seta; a camada de texto o omite.
+- 'Mensagens dos sinais: S-17 "20º" e "1ºSS"; S-18 "APERTE E EMPURRE"; S-19 "PORTA CORTA-FOGO É OBRIGATÓRIO
+  MANTER FECHADA"; S-20 "PORTA CORTA-FOGO".'
+- 'Fonte indicada na página: ABNT NBR 16820.'
+inconsistencias_da_fonte:
+- Código "S16-E" sem o hífen dos demais ("S-16-D").
+- 'S-17: "Altura de instalação:" sem valor, seguida de "Nível: superior".'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

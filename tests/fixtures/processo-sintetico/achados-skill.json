@@ -1,0 +1,75 @@
+{
+  "processo": "SINT-0001/2026 (fictício)",
+  "nota": "Achados que a skill analisar-processo-cbmerj registraria lendo memorial-ficticio.md (teste F8). Fictício.",
+  "achados": [
+    {
+      "id": "LE-DOC-ART",
+      "origem": "skill",
+      "escopo": "processo",
+      "tema": "Documentação",
+      "fato": "ART ou RRT do projeto não consta no dossiê. O memorial lista os documentos que acompanham o processo e declara que não há ART nem RRT (memorial-ficticio.md, seção Documentos)",
+      "regra": {
+        "documento": "NT 1-01 P1",
+        "edicao": "1ª edição - 2019; consolidada com a Portaria CBMERJ nº 1.317/2025",
+        "item": "5.3.7",
+        "citacao": "apresentar cópia da Anotação de Responsabilidade Técnica (ART) ou Registro de Responsabilidade Técnica (RRT) referente ao projeto"
+      },
+      "evidencias": [
+        {"fonte_tipo": "DOCUMENT", "documento": "memorial-ficticio.md", "localizador": "seção Documentos que acompanham"}
+      ],
+      "compliance_status": "UNDETERMINED",
+      "evidence_status": "MISSING",
+      "review_status": "NOT_REQUIRED",
+      "severidade": "MAJOR",
+      "tipo": "DOCUMENT_MISSING",
+      "confianca": "ALTA",
+      "saneamento": "apresentar cópia da ART ou RRT referente ao projeto, assinada pelo contratante e pelo profissional contratado.",
+      "bloqueante": true
+    },
+    {
+      "id": "LE-MEM-001",
+      "origem": "skill",
+      "escopo": "processo",
+      "tema": "Memorial",
+      "fato": "Memorial descritivo apresentado. Consta do dossiê com o quadro de dispositivos preventivos (memorial-ficticio.md)",
+      "regra": {
+        "documento": "NT 1-01 P1",
+        "edicao": "1ª edição - 2019; consolidada com a Portaria CBMERJ nº 1.317/2025",
+        "item": "5.3.7",
+        "citacao": "apresentar memorial descritivo do projeto"
+      },
+      "evidencias": [
+        {"fonte_tipo": "DOCUMENT", "documento": "memorial-ficticio.md", "localizador": "página 1"}
+      ],
+      "compliance_status": "COMPLIANT",
+      "evidence_status": "SUFFICIENT",
+      "review_status": "NOT_REQUIRED",
+      "severidade": "MINOR",
+      "tipo": "NO_PENDING_ISSUE",
+      "confianca": "ALTA"
+    },
+    {
+      "id": "LE-MEM-EXT",
+      "origem": "skill",
+      "escopo": "Térreo",
+      "tema": "Extintores",
+      "fato": "Quadro de dispositivos diverge da planta. O memorial declara 3 extintores no térreo; a contagem da planta vetorial pelo motor é outra (ver EXT-CAD-002)",
+      "regra": {
+        "documento": "NT 1-01 P1",
+        "edicao": "1ª edição - 2019; consolidada com a Portaria CBMERJ nº 1.317/2025",
+        "item": "5.3.13",
+        "citacao": "O memorial descritivo deverá ser composto pelo quadro de dispositivos preventivos"
+      },
+      "evidencias": [
+        {"fonte_tipo": "DOCUMENT", "documento": "memorial-ficticio.md", "localizador": "Quadro de dispositivos preventivos", "valor": 3}
+      ],
+      "compliance_status": "UNDETERMINED",
+      "evidence_status": "CONFLICTING",
+      "review_status": "PENDING",
+      "severidade": "MINOR",
+      "tipo": "DIVERGENCE",
+      "confianca": "MEDIA",
+      "saneamento": "compatibilizar o quadro de dispositivos do memorial com a planta."
+    }
+  ]
+}

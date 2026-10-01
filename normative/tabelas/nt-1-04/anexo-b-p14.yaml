@@ -1,0 +1,200 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-04
+arquivo: nt-1-04-classificacao-de-risco.md
+tabela: Tabela do Anexo B
+titulo: Classificação quanto ao risco de incêndio (página 14)
+pagina: 14
+fonte_pdf_sha256: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-04/pagina-14.png
+    imagem_sha256: 49d9c8e6d4f2242989df7f39ea1386f705e372a322fdbec8820ee03ac90b1ea7
+    linhas_cabecalho: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Risco
+    - - I
+      - Industrial
+      - I-2
+      - 'Edificações industriais que fabricam: absorventes higiênicos; medicamentos; adubos e fertilizantes;
+        defensivos agrícolas; aparelhos de áudio e vídeo; equipamentos de medida; equipamentos de transmissão;
+        equipamentos elétricos; componentes eletrônicos; compressores; aparelhos elétricos; equipamentos
+        e informática; artigos de tabaco; transmissores de comunicação; aparelhos eletrodomésticos; aparelhos
+        fotográficos e cinematográficos; motocicletas; instrumentos cirúrgicos, odontológicos e laboratorial;
+        cigarros, cigarrilhas e charutos; aparelhos eletromédicos e eletroterapêuticos; aparelhos telefônicos;
+        hidráulicos e pneumáticos; fabricação de automóveis; aeronaves; motores para automóveis e turbinas;
+        de açúcar; estufas e fornos elétricos; vinho; cervejarias e chopes; fabricação de refrigerantes;
+        adesivos e selantes; aparelhos de ar condicionado; aparelhos e máquinas de refrigeração e ventilação;
+        desinfetantes; elastômeros; fios, cabos e condutores elétricos; embarcações; de locomotivas; fabricação
+        de produtos alimentícios; fabricação de farmoquímicos; fabricação de fogões, refrigeradores e
+        máquinas de lavar e secar; fornos industriais; fraldas descartáveis; gases industriais; produtos
+        de carne; frigorífico; fabricação de refrescos, xaropes; de sucos; letras, letreiros e placas;
+        transformadores, indutores, conversores, sincronizadores e semelhantes; margarina, óleos vegetais;
+        massas alimentícias; mastiques; painéis e letreiros luminosos; moagem e fabricação de derivados
+        de milho; pilhas, baterias e acumuladores elétricos; produtos adesivos; produtos químicos inorgânicos;
+        ração. (ver item 5.13).'
+      - MÉDIO 2
+    - - I
+      - Industrial
+      - I-3
+      - 'Edificações industriais que fabricam: caixotes barris ou pallets de madeira; carpintaria; coletam
+        resíduos perigosos; fabricam produtos químicos; bancos e estofados; vassouras; fabricação de lápis;
+        produtos graxos; produtos petroquímicos; laminados planos e tubulares de materiais plásticos;
+        escovas, pincéis e vassouras; tratamento e disposição de resíduos perigosos; extração de petróleo
+        e gás natural; embalagens de materiais plásticos; esquadrias de madeiras; artefatos de madeira;
+        marcenarias; artefatos de materiais plásticos; extração e beneficiamento de carvão; casas de madeiras
+        pré fabricadas; fabricação de álcool; tanoaria e embalagens de madeira; aguardente de cana de
+        açúcar; amido e féculas de vegetais; artefatos de cortiça, bambu, palha, vime; artigos de tapeçaria;
+        mobiliário com predominância de madeira; têxtil; artefatos de borracha; colas; extração e beneficiamento
+        de areias betuminosas; fabricação de armas de fogo e munição; beneficiamento e produtos de arroz;
+        fabricação de biocombustível; cloro e álcalis; colchões; combustíveis nucleares;'
+      - GRANDE
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 14
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Risco
+    - - I
+      - Industrial
+      - I-2
+      - 'Edificações industriais que fabricam: absorventes higiênicos; medicamentos; adubos e fertilizantes;
+        defensivos agrícolas; aparelhos de áudio e vídeo; equipamentos de medida; equipamentos de transmissão;
+        equipamentos elétricos; componentes eletrônicos; compressores; aparelhos elétricos; equipamentos
+        e informática; artigos de tabaco; transmissores de comunicação; aparelhos eletrodomésticos; aparelhos
+        fotográficos e cinematográficos; motocicletas; instrumentos cirúrgicos, odontológicos e laboratorial;
+        cigarros, cigarrilhas e charutos; aparelhos eletromédicos e eletroterapêuticos; aparelhos telefônicos;
+        hidráulicos e pneumáticos; fabricação de automóveis; aeronaves; motores para automóveis e turbinas;
+        de açúcar; estufas e fornos elétricos; vinho; cervejarias e chopes; fabricação de refrigerantes;
+        adesivos e selantes; aparelhos de ar condicionado; aparelhos e máquinas de refrigeração e ventilação;
+        desinfetantes; elastômeros; fios, cabos e condutores elétricos; embarcações; de locomotivas; fabricação
+        de produtos alimentícios; fabricação de farmoquímicos; fabricação de fogões, refrigeradores e
+        máquinas de lavar e secar; fornos industriais; fraldas descartáveis; gases industriais; produtos
+        de carne; frigorífico; fabricação de refrescos, xaropes; de sucos; letras, letreiros e placas;
+        transformadores, indutores, conversores, sincronizadores e semelhantes; margarina, óleos vegetais;
+        massas alimentícias; mastiques; painéis e letreiros luminosos; moagem e fabricação de derivados
+        de milho; pilhas, baterias e acumuladores elétricos; produtos adesivos; produtos químicos inorgânicos;
+        ração. (ver item 5.13).'
+      - MÉDIO 2
+    - - I
+      - Industrial
+      - I-3
+      - 'Edificações industriais que fabricam: caixotes barris ou pallets de madeira; carpintaria; coletam
+        resíduos perigosos; fabricam produtos químicos; bancos e estofados; vassouras; fabricação de lápis;
+        produtos graxos; produtos petroquímicos; laminados planos e tubulares de materiais plásticos;
+        escovas, pincéis e vassouras; tratamento e disposição de resíduos perigosos; extração de petróleo
+        e gás natural; embalagens de materiais plásticos; esquadrias de madeiras; artefatos de madeira;
+        marcenarias; artefatos de materiais plásticos; extração e beneficiamento de carvão; casas de madeiras
+        pré fabricadas; fabricação de álcool; tanoaria e embalagens de madeira; aguardente de cana de
+        açúcar; amido e féculas de vegetais; artefatos de cortiça, bambu, palha, vime; artigos de tapeçaria;
+        mobiliário com predominância de madeira; têxtil; artefatos de borracha; colas; extração e beneficiamento
+        de areias betuminosas; fabricação de armas de fogo e munição; beneficiamento e produtos de arroz;
+        fabricação de biocombustível; cloro e álcalis; colchões; combustíveis nucleares;'
+      - GRANDE
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 46.25
+      - 70.86
+      - 542.34
+      - 784.77
+      linhas:
+      - - ''
+        - Grupo
+        - ''
+        - ''
+        - Ocupação/Uso
+        - ''
+        - ''
+        - Divisão
+        - ''
+        - ''
+        - Descrição
+        - ''
+        - ''
+        - Risco
+        - ''
+      - - I
+        - null
+        - null
+        - Industrial
+        - null
+        - null
+        - I-2
+        - null
+        - null
+        - 'Edificações industriais que fabricam: absorventes higiênicos; medicamentos; adubos e fertilizantes;
+          defensivos agrícolas; aparelhos de áudio e vídeo; equipamentos de medida; equipamentos de transmissão;
+          equipamentos elétricos; componentes eletrônicos; compressores; aparelhos elétricos; equipamentos
+          e informática; artigos de tabaco; transmissores de comunicação; aparelhos eletrodomésticos;
+          aparelhos fotográficos e cinematográficos; motocicletas; instrumentos cirúrgicos, odontológicos
+          e laboratorial; cigarros, cigarrilhas e charutos; aparelhos eletromédicos e eletroterapêuticos;
+          aparelhos telefônicos; hidráulicos e pneumáticos; fabricação de automóveis; aeronaves; motores
+          para automóveis e turbinas; de açúcar; estufas e fornos elétricos; vinho; cervejarias e chopes;
+          fabricação de refrigerantes; adesivos e selantes; aparelhos de ar condicionado; aparelhos e
+          máquinas de refrigeração e ventilação; desinfetantes; elastômeros; fios, cabos e condutores
+          elétricos; embarcações; de locomotivas; fabricação de produtos alimentícios; fabricação de farmoquímicos;
+          fabricação de fogões, refrigeradores e máquinas de lavar e secar; fornos industriais; fraldas
+          descartáveis; gases industriais; produtos de carne; frigorífico; fabricação de refrescos, xaropes;
+          de sucos; letras, letreiros e placas; transformadores, indutores, conversores, sincronizadores
+          e semelhantes; margarina, óleos vegetais; massas alimentícias; mastiques; painéis e letreiros
+          luminosos; moagem e fabricação de derivados de milho; pilhas, baterias e acumuladores elétricos;
+          produtos adesivos; produtos químicos inorgânicos; ração. (ver item 5.13).'
+        - null
+        - null
+        - MÉDIO 2
+        - null
+        - null
+      - - I
+        - null
+        - null
+        - Industrial
+        - null
+        - null
+        - I-3
+        - null
+        - null
+        - 'Edificações industriais que fabricam: caixotes barris ou pallets de madeira; carpintaria; coletam
+          resíduos perigosos; fabricam produtos químicos; bancos e estofados; vassouras; fabricação de
+          lápis; produtos graxos; produtos petroquímicos; laminados planos e tubulares de materiais plásticos;
+          escovas, pincéis e vassouras; tratamento e disposição de resíduos perigosos; extração de petróleo
+          e gás natural; embalagens de materiais plásticos; esquadrias de madeiras; artefatos de madeira;
+          marcenarias; artefatos de materiais plásticos; extração e beneficiamento de carvão; casas de
+          madeiras pré fabricadas; fabricação de álcool; tanoaria e embalagens de madeira; aguardente
+          de cana de açúcar; amido e féculas de vegetais; artefatos de cortiça, bambu, palha, vime; artigos
+          de tapeçaria; mobiliário com predominância de madeira; têxtil; artefatos de borracha; colas;
+          extração e beneficiamento de areias betuminosas; fabricação de armas de fogo e munição; beneficiamento
+          e produtos de arroz; fabricação de biocombustível; cloro e álcalis; colchões; combustíveis nucleares;'
+        - null
+        - null
+        - GRANDE
+        - null
+        - null
+notas:
+- Classificação quanto ao risco de incêndio (NT 1-04, Anexo B), páginas 11 a 16; um arquivo por página.
+  "^" na leitura visual = célula mesclada com a de cima (grupo, ocupação ou risco do bloco); na publicação
+  cada linha repete o valor.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

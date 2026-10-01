@@ -1,0 +1,123 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-19
+arquivo: nt-2-19-seguranca-estrutural.md
+tabela: Tabela D2
+titulo: Risco de ativação
+pagina: 12
+fonte_pdf_sha256: 29a57e10630596f21a7e914197a2ae021c3e78b9a399b2d16799ac9bba1390fe
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-19/pagina-12.jpg
+    imagem_sha256: 39bd7e771ec4ca85db6e4baa65bdb5cbfeb1bc870f1c11fabab9fcb9e7f428ec
+    linhas_cabecalho: 1
+    linhas:
+    - - Valores de γs2
+      - Risco de ativação do incêndio
+      - Exemplos de ocupação
+    - - 0,85
+      - Pequena
+      - Escolas, galerias de arte, parques aquáticos, igrejas e museus
+    - - 1,0
+      - Normal
+      - Bibliotecas, cinemas, correios, consultórios médicos, escritórios, farmácias, frigoríficos, hotéis,
+        livrarias, hospitais, laboratórios fotográficos, indústrias de papel, oficinas elétricas ou mecânicas,
+        residências, restaurantes, teatros, depósitos em geral
+    - - 1,2
+      - Média
+      - Montagens de automóveis, hangares, indústrias mecânicas
+    - - 1,5
+      - Alta
+      - Laboratórios químicos, oficinas de pintura de automóveis
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 12
+      tabela_na_pagina: 2
+    linhas:
+    - - Valores de  s2
+      - Risco de ativação do incêndio
+      - Exemplos de ocupação
+    - - 0,85
+      - Pequena
+      - Escolas, galerias de arte, parques aquáticos, igrejas e museus
+    - - 1,0
+      - Normal
+      - Bibliotecas, cinemas, correios, consultórios médicos, escritórios, farmácias, frigoríficos, hotéis,
+        livrarias, hospitais, laboratórios fotográficos, indústrias de papel, oficinas elétricas ou mecânicas,
+        residências, restaurantes, teatros, depósitos em geral
+    - - 1,2
+      - Média
+      - Montagens de automóveis, hangares, indústrias mecânicas
+    - - 1,5
+      - Alta
+      - Laboratórios químicos, oficinas de pintura de automóveis
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 62.85
+      - 346.97
+      - 512.09
+      - 395.21
+      linhas:
+      - - ''
+        - Valores de  n
+        - null
+        - null
+        - ''
+      - - Existência de chuveiros automáticos
+        - null
+        - Brigada contra incêndio
+        - Existência de detecção automática
+        - null
+      - -  =0,60 n1
+        - null
+        -  = 0,90 n1
+        -  =0,90 n1
+        - null
+    - bbox: &id001
+      - 54.88
+      - 469.27
+      - 534.19
+      - 572.35
+      linhas:
+      - - Valores de  s2
+        - Risco de ativação do incêndio
+        - Exemplos de ocupação
+      - - 0,85
+        - Pequena
+        - Escolas, galerias de arte, parques aquáticos, igrejas e museus
+      - - 1,0
+        - Normal
+        - Bibliotecas, cinemas, correios, consultórios médicos, escritórios, farmácias, frigoríficos,
+          hotéis, livrarias, hospitais, laboratórios fotográficos, indústrias de papel, oficinas elétricas
+          ou mecânicas, residências, restaurantes, teatros, depósitos em geral
+      - - 1,2
+        - Média
+        - Montagens de automóveis, hangares, indústrias mecânicas
+      - - 1,5
+        - Alta
+        - Laboratórios químicos, oficinas de pintura de automóveis
+notas: []
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 1
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 0
+    coluna: 0
+    a: Valores de γs2
+    b: Valores de  s2
+    estado: verificada
+    score: 96.6

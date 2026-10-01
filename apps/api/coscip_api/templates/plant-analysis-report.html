@@ -113,6 +113,12 @@ Nenhuma aprovação ou reprovação é emitida por este documento.</div>
 <p class="mut">Sem símbolos de segurança contra incêndio (cortes, fachadas, situação, detalhes). Se alguma for planta de pavimento, recorte-a como pavimento e analise de novo.</p>
 <ul>{% for r in others %}<li>{{ r.name }} <small>(caixa {{ r.bbox_m|map('num')|join(' / ') }} m)</small></li>{% endfor %}</ul>{% endif %}
 
+{% set L = data.recognition_ledger %}{% if L %}<h2>Balanço de reconhecimento</h2>
+<p class="mut">Cada inserção de bloco e cada texto curto do desenho termina em exatamente um destino: reconhecido, ignorado (com o motivo) ou não reconhecido. {% if L.complete %}Balanço completo: nenhum bloco não reconhecido em camada de segurança e nenhum XREF.{% else %}<strong>Balanço incompleto</strong>: contagens e distâncias dos pavimentos afetados não concluem conformidade.{% endif %}</p>
+<table><thead><tr><th>Inserções ({{ L.inserts.total }})</th><th class="n">Qtde</th></tr></thead><tbody>{% for k, n in L.inserts.by_destination.items() %}<tr><td><small>{{ k }}</small></td><td class="n">{{ n }}</td></tr>{% endfor %}</tbody></table>
+<table><thead><tr><th>Textos curtos ({{ L.short_texts.total }})</th><th class="n">Qtde</th></tr></thead><tbody>{% for k, n in L.short_texts.by_destination.items() %}<tr><td><small>{{ k }}</small></td><td class="n">{{ n }}</td></tr>{% endfor %}</tbody></table>
+{% if L.exploded_candidates %}<p><strong>Possível extintor sem bloco</strong> (revisão): {% for c in L.exploded_candidates[:10] %}“{{ c.text }}” ({{ c.x }}, {{ c.y }}){% if not loop.last %}; {% endif %}{% endfor %}</p>{% endif %}
+{% if L.xrefs %}<p><strong>XREF não resolvido</strong>: {{ L.xrefs|join(', ') }} — enviar o pacote com os arquivos referenciados.</p>{% endif %}{% endif %}
 <h2>O que ficou de fora</h2>
 {% if data.symbols_outside_regions %}<h3>Símbolos fora das regiões analisadas ({{ data.symbols_outside_regions|length }})</h3><p><small>{% for s in data.symbols_outside_regions[:40] %}{{ class_labels.get(s.class, s.class) }} ({{ s.block or s.evidence }}, handle {{ s.handle }}){% if not loop.last %}; {% endif %}{% endfor %}</small></p>{% endif %}
 {% if data.legend_symbols %}<h3>Símbolos de legenda excluídos da contagem ({{ data.legend_symbols|length }})</h3><p><small>{% for s in data.legend_symbols[:40] %}{{ s.block or s.evidence }}{% if not loop.last %}; {% endif %}{% endfor %}</small></p>{% endif %}

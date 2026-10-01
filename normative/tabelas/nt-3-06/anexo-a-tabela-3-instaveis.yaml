@@ -1,0 +1,304 @@
+schema_version: tabela-conferida/1.0
+documento: NT 3-06
+arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+tabela: Tabela 3 do Anexo A
+titulo: Localização de tanques de superfície para armazenamento de líquidos instáveis
+pagina: 14
+fonte_pdf_sha256: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 5
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-3-06/pagina-14.jpg
+    imagem_sha256: 07c27ace04fce0cbc8e403853bb1b39e3c7be28809d2c77cbd260e54d0d76cde
+    linhas_cabecalho: 1
+    linhas:
+    - - Tipo de tanque
+      - Distância mínima até o limite de propriedade, desde que na área adjacente haja ou possa haver
+        construção, inclusive no lado oposto da via pública
+      - Distância mínima ao lado mais próximo de qualquer via de circulação interna ou qualquer edificação
+        importante na mesma propriedade
+    - - Tanques horizontais e verticais com ventilação de alívio de emergência para limitar a pressão
+        máxima até 17 KPa
+      - O valor estabelecido na Tabela 5, mas não inferior a 7,50 m
+      - 7,50 m
+    - - Tanques horizontais e verticais com ventilação de alívio de emergência para permitir a pressão
+        máxima acima de 17 KPa
+      - 2 vezes o valor estabelecido pela Tabela 5, mas não inferior a 15 m
+      - 15 m
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 14
+      tabela_na_pagina: 1
+    linhas:
+    - - Tipo de tanque
+      - Distância mínima até o limite de propriedade, desde que na área adjacente haja ou possa haver
+        construção, inclusive no lado oposto da via pública
+      - Distância mínima ao lado mais próximo de qualquer via de circulação interna ou qualquer edificação
+        importante na mesma propriedade
+    - - Tanques horizontais e verticais com ventilação de alívio de emergência para limitar a pressão
+        máxima até 17 KPa
+      - O valor estabelecido na Tabela 5, mas não inferior a 7,50 m
+      - 7,50 m
+    - - Tanques horizontais e verticais com ventilação de alívio de emergência para permitir a pressão
+        máxima acima de 17 KPa
+      - 2 vezes o valor estabelecido pela Tabela 5, mas não inferior a 15 m
+      - 15 m
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 49.42
+      - 77.76
+      - 483.79
+      - 264.31
+      linhas:
+      - - Tipo de tanque
+        - ''
+        - Distância mínima até o limite de
+        - ''
+        - ''
+        - Distância mínima ao lado mais
+        - ''
+      - - null
+        - null
+        - propriedade, desde que na área
+        - null
+        - null
+        - próximo de qualquer via de
+        - null
+      - - null
+        - null
+        - adjacente haja ou possa haver
+        - null
+        - null
+        - circulação interna ou qualquer
+        - null
+      - - null
+        - null
+        - construção, inclusive no lado
+        - null
+        - null
+        - edificação importante na
+        - null
+      - - null
+        - null
+        - oposto da via pública
+        - null
+        - null
+        - mesma propriedade
+        - null
+      - - Tanques horizontais e verticais com ventilação de alívio de emergência para limitar a pressão
+          máxima até 17 KPa
+        - O valor estabelecido na Tabela 5, mas não inferior a 7,50 m
+        - null
+        - null
+        - 7,50 m
+        - null
+        - null
+      - - Tanques horizontais e verticais com ventilação de alívio de emergência para permitir a pressão
+          máxima acima de 17 KPa
+        - 2 vezes o valor estabelecido pela Tabela 5, mas não inferior a 15 m
+        - null
+        - null
+        - 15 m
+        - null
+        - null
+    - bbox:
+      - 49.42
+      - 307.85
+      - 489.22
+      - 430.44
+      linhas:
+      - - Capacidade do tanque (m³)
+        - Distância mínima até o limite da propriedade (m)
+        - ''
+        - Distância mínima do lado mais
+        - ''
+      - - null
+        - null
+        - null
+        - próximo de qualquer via de
+        - null
+      - - null
+        - null
+        - null
+        - circulação interna ou qualquer
+        - null
+      - - null
+        - null
+        - null
+        - edificação importante na
+        - null
+      - - null
+        - null
+        - null
+        - mesma propriedade (m)
+        - null
+      - - Até 46
+        - 1,5
+        - 1,5
+        - null
+        - null
+      - - De 46 a 114
+        - 3,0
+        - 1,5
+        - null
+        - null
+      - - De 114 a 190
+        - 3,0
+        - 3,0
+        - null
+        - null
+      - - De 190 a 380
+        - 4,5
+        - 3,0
+        - null
+        - null
+      - - Maior que 380
+        - 4,5
+        - 4,5
+        - null
+        - null
+    - bbox:
+      - 189.67
+      - 322.18
+      - 334.24
+      - 351.7
+      linhas:
+      - - Distância mínima até o limite da
+      - - propriedade (m)
+    - bbox:
+      - 49.42
+      - 473.99
+      - 489.22
+      - 673.63
+      linhas:
+      - - Capacidade do tanque (m³)
+        - ''
+        - Distância mínima até o limite da
+        - ''
+        - ''
+        - Distância mínima do lado mais
+        - ''
+      - - null
+        - null
+        - propriedade, desde que na área
+        - null
+        - null
+        - próximo de qualquer via de
+        - null
+      - - null
+        - null
+        - adjacente haja ou possa haver
+        - null
+        - null
+        - circulação interna ou qualquer
+        - null
+      - - null
+        - null
+        - construção, inclusive no lado
+        - null
+        - null
+        - edificação importante na
+        - null
+      - - null
+        - null
+        - oposto da via pública (m)
+        - null
+        - null
+        - mesma propriedade (m)
+        - null
+      - - Até 1
+        - 1,5
+        - null
+        - null
+        - 1,5
+        - null
+        - null
+      - - '> 1 a 3'
+        - 3,0
+        - null
+        - null
+        - 1,5
+        - null
+        - null
+      - - '> 3 a 45'
+        - 4,5
+        - null
+        - null
+        - 1,5
+        - null
+        - null
+      - - '> 45 a 113'
+        - 6,0
+        - null
+        - null
+        - 1,5
+        - null
+        - null
+      - - '>113 a 189'
+        - 9,0
+        - null
+        - null
+        - 3,0
+        - null
+        - null
+      - - '>189 a 378'
+        - 15,0
+        - null
+        - null
+        - 4,5
+        - null
+        - null
+      - - '>378 a 1893'
+        - 24,0
+        - null
+        - null
+        - 7,5
+        - null
+        - null
+      - - '>1893 a 3785'
+        - 30,0
+        - null
+        - null
+        - 10,5
+        - null
+        - null
+      - - '>3785 a 7571'
+        - 40,5
+        - null
+        - null
+        - '13.5'
+        - null
+        - null
+      - - '>7571 a 11356'
+        - 49,5
+        - null
+        - null
+        - 16,5
+        - null
+        - null
+      - - '>11356'
+        - 52,5
+        - null
+        - null
+        - 18,0
+        - null
+        - null
+notas:
+- 'Fonte indicada na página: ABNT NBR 17505.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 4
+  bbox: *id001
+  texto: verificada

@@ -1,0 +1,12 @@
+interface:
+  display_name: CBMERJ Grupo 3
+  short_description: "Analisa riscos espec\xEDficos pelas NTs do Grupo 3."
+  default_prompt: "Use $cbmerj-grupo-3-riscos-especificos para analisar os riscos\
+    \ espec\xEDficos deste processo."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

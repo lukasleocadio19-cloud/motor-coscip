@@ -1,0 +1,419 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 25
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  mesclar_linhas:
+  - - 7
+    - 8
+  descartar_linhas:
+  - 6
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-25.png
+    imagem_sha256: 4a0c5425091aa6d68fa7fb6244d12aa8f37c5ff1df672f6468ae5f3ee721e61f
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 6619-3/04
+      - Caixas eletrônicos
+    - - 6619-3/05
+      - Operadoras de cartões de débito
+    - - 6619-3/99
+      - Outras atividades auxiliares dos serviços financeiros não especificadas anteriormente
+    - - 6621-5/01
+      - Peritos e avaliadores de seguros
+    - - 6621-5/02
+      - Auditoria e consultoria atuarial
+    - - 6622-3/00
+      - Corretores e agentes de seguros, de planos de previdência complementar e de saúde
+    - - 6629-1/00
+      - Atividades auxiliares dos seguros, da previdência complementar e dos planos de saúde não especificadas
+        anteriormente
+    - - 6630-4/00
+      - Atividades de administração de fundos por contrato ou comissão
+    - - 6810-2/01
+      - Compra e venda de imóveis próprios
+    - - 6810-2/02
+      - Aluguel de imóveis próprios
+    - - 6810-2/03
+      - Loteamento de imóveis próprios
+    - - 6821-8/01
+      - Corretagem na compra e venda e avaliação de imóveis
+    - - 6821-8/02
+      - Corretagem no aluguel de imóveis
+    - - 6822-6/00
+      - Gestão e administração da propriedade imobiliária
+    - - 6911-7/01
+      - Serviços advocatícios
+    - - 6911-7/02
+      - Atividades auxiliares da justiça
+    - - 6911-7/03
+      - Agente de propriedade industrial
+    - - 6912-5/00
+      - Cartórios
+    - - 6920-6/01
+      - Atividades de contabilidade
+    - - 6920-6/02
+      - Atividades de consultoria e auditoria contábil e tributária
+    - - 7020-4/00
+      - Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica
+    - - 7111-1/00
+      - Serviços de arquitetura
+    - - 7112-0/00
+      - Serviços de engenharia
+    - - 7119-7/01
+      - Serviços de cartografia, topografia e geodésia
+    - - 7119-7/02
+      - Atividades de estudos geológicos
+    - - 7119-7/03
+      - Serviços de desenho técnico relacionados à arquitetura e engenharia
+    - - 7119-7/04
+      - Serviços de perícia técnica relacionados à segurança do trabalho
+    - - 7119-7/99
+      - Atividades técnicas relacionadas à engenharia e arquitetura não especificadas anteriormente
+    - - 7120-1/00
+      - Testes e análises técnicas
+    - - 7210-0/00
+      - Pesquisa e desenvolvimento experimental em ciências físicas e naturais
+    - - 7220-7/00
+      - Pesquisa e desenvolvimento experimental em ciências sociais e humanas
+    - - 7311-4/00
+      - Agências de publicidade
+    - - 7312-2/00
+      - Agenciamento de espaços para publicidade, exceto em veículos de comunicação
+    - - 7319-0/01
+      - Criação de estandes para feiras e exposições
+    - - 7319-0/02
+      - Promoção de vendas
+    - - 7319-0/03
+      - Marketing direto
+    - - 7319-0/04
+      - Consultoria em publicidade
+    - - 7319-0/99
+      - Outras atividades de publicidade não especificadas anteriormente
+    - - 7320-3/00
+      - Pesquisas de mercado e de opinião pública
+    - - 7410-2/02
+      - Design de interiores
+    - - 7410-2/03
+      - Desing de produto
+    - - 7410-2/99
+      - Atividades de desing não especificadas anteriormente
+    - - 7420-0/01
+      - Atividades de produção de fotografias, exceto aérea e submarina
+    - - 7420-0/02
+      - Atividades de produção de fotografias aéreas e submarinas
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 25
+      tabela_na_pagina: 1
+    linhas:
+    - - 6619-3/04
+      - Caixas eletrônicos
+    - - 6619-3/05
+      - Operadoras de cartões de débito
+    - - 6619-3/99
+      - Outras atividades auxiliares dos serviços financeiros não especificadas anteriormente
+    - - 6621-5/01
+      - Peritos e avaliadores de seguros
+    - - 6621-5/02
+      - Auditoria e consultoria atuarial
+    - - 6622-3/00
+      - Corretores e agentes de seguros, de planos de previdência complementar e de saúde
+    - - 6629-1/00
+      - Atividades auxiliares dos seguros, da previdência complementar e dos planos de saúde não especificadas
+        anteriormente
+    - - 6630-4/00
+      - Atividades de administração de fundos por contrato ou comissão
+    - - 6810-2/01
+      - Compra e venda de imóveis próprios
+    - - 6810-2/02
+      - Aluguel de imóveis próprios
+    - - 6810-2/03
+      - Loteamento de imóveis próprios
+    - - 6821-8/01
+      - Corretagem na compra e venda e avaliação de imóveis
+    - - 6821-8/02
+      - Corretagem no aluguel de imóveis
+    - - 6822-6/00
+      - Gestão e administração da propriedade imobiliária
+    - - 6911-7/01
+      - Serviços advocatícios
+    - - 6911-7/02
+      - Atividades auxiliares da justiça
+    - - 6911-7/03
+      - Agente de propriedade industrial
+    - - 6912-5/00
+      - Cartórios
+    - - 6920-6/01
+      - Atividades de contabilidade
+    - - 6920-6/02
+      - Atividades de consultoria e auditoria contábil e tributária
+    - - 7020-4/00
+      - Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica
+    - - 7111-1/00
+      - Serviços de arquitetura
+    - - 7112-0/00
+      - Serviços de engenharia
+    - - 7119-7/01
+      - Serviços de cartografia, topografia e geodésia
+    - - 7119-7/02
+      - Atividades de estudos geológicos
+    - - 7119-7/03
+      - Serviços de desenho técnico relacionados à arquitetura e engenharia
+    - - 7119-7/04
+      - Serviços de perícia técnica relacionados à segurança do trabalho
+    - - 7119-7/99
+      - Atividades técnicas relacionadas à engenharia e arquitetura não especificadas anteriormente
+    - - 7120-1/00
+      - Testes e análises técnicas
+    - - 7210-0/00
+      - Pesquisa e desenvolvimento experimental em ciências físicas e naturais
+    - - 7220-7/00
+      - Pesquisa e desenvolvimento experimental em ciências sociais e humanas
+    - - 7311-4/00
+      - Agências de publicidade
+    - - 7312-2/00
+      - Agenciamento de espaços para publicidade, exceto em veículos de comunicação
+    - - 7319-0/01
+      - Criação de estandes para feiras e exposições
+    - - 7319-0/02
+      - Promoção de vendas
+    - - 7319-0/03
+      - Marketing direto
+    - - 7319-0/04
+      - Consultoria em publicidade
+    - - 7319-0/99
+      - Outras atividades de publicidade não especificadas anteriormente
+    - - 7320-3/00
+      - Pesquisas de mercado e de opinião pública
+    - - 7410-2/02
+      - Design de interiores
+    - - 7410-2/03
+      - Desing de produto
+    - - 7410-2/99
+      - Atividades de desing não especificadas anteriormente
+    - - 7420-0/01
+      - Atividades de produção de fotografias, exceto aérea e submarina
+    - - 7420-0/02
+      - Atividades de produção de fotografias aéreas e submarinas
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.76
+      - 57.0
+      - 548.66
+      - 776.88
+      linhas:
+      - - 6619-3/04
+        - Caixas eletrônicos
+        - null
+        - null
+      - - 6619-3/05
+        - Operadoras de cartões de débito
+        - null
+        - null
+      - - 6619-3/99
+        - Outras atividades auxiliares dos serviços financeiros não especificadas anteriormente
+        - null
+        - null
+      - - 6621-5/01
+        - Peritos e avaliadores de seguros
+        - null
+        - null
+      - - 6621-5/02
+        - Auditoria e consultoria atuarial
+        - null
+        - null
+      - - 6622-3/00
+        - Corretores e agentes de seguros, de planos de previdência complementar e de saúde
+        - null
+        - null
+      - - null
+        - null
+        - Corretores e agentes de seguros, de planos de previdência complementar e de saúde
+        - null
+      - - 6629-1/00
+        - ''
+        - Atividades auxiliares dos seguros, da previdência complementar e dos planos de saúde não
+        - ''
+      - - null
+        - null
+        - especificadas anteriormente
+        - null
+      - - 6630-4/00
+        - Atividades de administração de fundos por contrato ou comissão
+        - null
+        - null
+      - - 6810-2/01
+        - Compra e venda de imóveis próprios
+        - null
+        - null
+      - - 6810-2/02
+        - Aluguel de imóveis próprios
+        - null
+        - null
+      - - 6810-2/03
+        - Loteamento de imóveis próprios
+        - null
+        - null
+      - - 6821-8/01
+        - Corretagem na compra e venda e avaliação de imóveis
+        - null
+        - null
+      - - 6821-8/02
+        - Corretagem no aluguel de imóveis
+        - null
+        - null
+      - - 6822-6/00
+        - Gestão e administração da propriedade imobiliária
+        - null
+        - null
+      - - 6911-7/01
+        - Serviços advocatícios
+        - null
+        - null
+      - - 6911-7/02
+        - Atividades auxiliares da justiça
+        - null
+        - null
+      - - 6911-7/03
+        - Agente de propriedade industrial
+        - null
+        - null
+      - - 6912-5/00
+        - Cartórios
+        - null
+        - null
+      - - 6920-6/01
+        - Atividades de contabilidade
+        - null
+        - null
+      - - 6920-6/02
+        - Atividades de consultoria e auditoria contábil e tributária
+        - null
+        - null
+      - - 7020-4/00
+        - Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica
+        - null
+        - null
+      - - 7111-1/00
+        - Serviços de arquitetura
+        - null
+        - null
+      - - 7112-0/00
+        - Serviços de engenharia
+        - null
+        - null
+      - - 7119-7/01
+        - Serviços de cartografia, topografia e geodésia
+        - null
+        - null
+      - - 7119-7/02
+        - Atividades de estudos geológicos
+        - null
+        - null
+      - - 7119-7/03
+        - Serviços de desenho técnico relacionados à arquitetura e engenharia
+        - null
+        - null
+      - - 7119-7/04
+        - Serviços de perícia técnica relacionados à segurança do trabalho
+        - null
+        - null
+      - - 7119-7/99
+        - Atividades técnicas relacionadas à engenharia e arquitetura não especificadas anteriormente
+        - null
+        - null
+      - - 7120-1/00
+        - Testes e análises técnicas
+        - null
+        - null
+      - - 7210-0/00
+        - Pesquisa e desenvolvimento experimental em ciências físicas e naturais
+        - null
+        - null
+      - - 7220-7/00
+        - Pesquisa e desenvolvimento experimental em ciências sociais e humanas
+        - null
+        - null
+      - - 7311-4/00
+        - Agências de publicidade
+        - null
+        - null
+      - - 7312-2/00
+        - Agenciamento de espaços para publicidade, exceto em veículos de comunicação
+        - null
+        - null
+      - - 7319-0/01
+        - Criação de estandes para feiras e exposições
+        - null
+        - null
+      - - 7319-0/02
+        - Promoção de vendas
+        - null
+        - null
+      - - 7319-0/03
+        - Marketing direto
+        - null
+        - null
+      - - 7319-0/04
+        - Consultoria em publicidade
+        - null
+        - null
+      - - 7319-0/99
+        - Outras atividades de publicidade não especificadas anteriormente
+        - null
+        - null
+      - - 7320-3/00
+        - Pesquisas de mercado e de opinião pública
+        - null
+        - null
+      - - 7410-2/02
+        - Design de interiores
+        - null
+        - null
+      - - 7410-2/03
+        - Desing de produto
+        - null
+        - null
+      - - 7410-2/99
+        - Atividades de desing não especificadas anteriormente
+        - null
+        - null
+      - - 7420-0/01
+        - Atividades de produção de fotografias, exceto aérea e submarina
+        - null
+        - null
+      - - 7420-0/02
+        - Atividades de produção de fotografias aéreas e submarinas
+        - null
+        - null
+notas:
+- Continuação da tabela da página 24.
+- A tabela continua na página 26.
+- '"Desing" (7410-2/03 e 7410-2/99) é grafia da fonte (por "design").'
+- A camada de texto parte as descrições de duas linhas e repete 1 descrição(ões) numa linha vazia; a comparação
+  junta as partes e descarta as repetições.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

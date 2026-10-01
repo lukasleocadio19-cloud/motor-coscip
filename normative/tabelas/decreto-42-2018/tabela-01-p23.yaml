@@ -1,0 +1,263 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 1 do Anexo II
+titulo: Classificação das edificações e áreas de risco quanto à ocupação (continuação, p. 23)
+pagina: 23
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-23.jpg
+    imagem_sha256: 4d17250595be54733e52ad64d11d59f1b1423998b8f6e089458d70224ece69ac
+    linhas_cabecalho: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Definição e exemplos
+    - - G
+      - Serviço automotivo e assemelhado
+      - G-1
+      - Garagem sem acesso de público e sem abastecimento
+      - Garagens automáticas e garagens com manobristas.
+    - - ^
+      - ^
+      - G-2
+      - Garagem com acesso de público e sem abastecimento
+      - Garagens coletivas sem automação, em geral e sem abastecimento (exceto veículos de carga e coletivos)
+    - - ^
+      - ^
+      - G-3
+      - Local dotado de abastecimento de combustível
+      - Postos de abastecimento de combustíveis e serviço, garagens com abastecimento de combustível (exceto
+        veículos de carga e coletivos)
+    - - ^
+      - ^
+      - G-4
+      - Serviço de conservação, manutenção e reparos
+      - 'Oficinas de conserto de veículos. Borracharia (sem recauchutagem). Oficinas e garagens de veículos
+        de carga e coletivos (tais como: empresas de ônibus, transportadoras, etc). Garagens de máquinas
+        agrícolas e rodoviárias. Retificadoras de motores.'
+    - - ^
+      - ^
+      - G-5
+      - Hangar
+      - Abrigos para aeronaves com ou sem abastecimento
+    - - ^
+      - ^
+      - G-6
+      - Galpão ou garagem náutica
+      - Abrigos para embarcações com ou sem abastecimento. Estrutura náutica que combina áreas para guarda
+        de embarcações em terra ou sobre a água, cobertas ou não, e acessórios de acesso à água, podendo
+        incluir oficina para manutenção e reparo de embarcações e seus equipamentos.
+    - - H
+      - Serviço de saúde
+      - H-1
+      - Hospital veterinário e assemelhados
+      - Hospitais, clínicas e consultórios veterinários e assemelhados (inclui-se alojamento com ou sem
+        adestramento)
+    - - ^
+      - ^
+      - H-2
+      - Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais
+      - Tratamento de dependentes de drogas, álcool e assemelhados, todos sem celas, asilos, residências
+        geriátricas.
+    - - ^
+      - ^
+      - H-3
+      - Hospital e assemelhados
+      - Hospitais, casa de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos de
+        atendimento de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital
+        psiquiátrico.
+    - - ^
+      - ^
+      - H-4
+      - Clínica e consultório médico, odontológico e assemelhados
+      - Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados.
+        Todos sem internação.
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 23
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Definição e exemplos
+    - - G
+      - Serviço automotivo e assemelhado
+      - G-1
+      - Garagem sem acesso de público e sem abastecimento
+      - Garagens automáticas e garagens com manobristas.
+    - - G-2
+      - Garagem com acesso de público e sem abastecimento
+      - Garagens coletivas sem automação, em geral e sem abastecimento (exceto veículos de carga e coletivos)
+    - - G-3
+      - Local dotado de abastecimento de combustível
+      - Postos de abastecimento de combustíveis e serviço, garagens com abastecimento de combustível (exceto
+        veículos de carga e coletivos)
+    - - G-4
+      - Serviço de conservação, manutenção e reparos
+      - 'Oficinas de conserto de veículos. Borracharia (sem recauchutagem). Oficinas e garagens de veículos
+        de carga e coletivos (tais como: empresas de ônibus, transportadoras, etc). Garagens de máquinas
+        agrícolas e rodoviárias. Retificadoras de motores.'
+    - - G-5
+      - Hangar
+      - Abrigos para aeronaves com ou sem abastecimento
+    - - G-6
+      - Galpão ou garagem náutica
+      - Abrigos para embarcações com ou sem abastecimento. Estrutura náutica que combina áreas para guarda
+        de embarcações em terra ou sobre a água, cobertas ou não, e acessórios de acesso à água, podendo
+        incluir oficina para manutenção e reparo de embarcações e seus equipamentos.
+    - - H
+      - Serviço de saúde
+      - H-1
+      - Hospital veterinário e assemelhados
+      - Hospitais, clínicas e consultórios veterinários e assemelhados (inclui-se alojamento com ou sem
+        adestramento)
+    - - H-2
+      - Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais
+      - Tratamento de dependentes de drogas, álcool e assemelhados, todos sem celas, asilos, residências
+        geriátricas.
+    - - H-3
+      - Hospital e assemelhados
+      - Hospitais, casa de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos de
+        atendimento de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital
+        psiquiátrico.
+    - - H-4
+      - Clínica e consultório médico, odontológico e assemelhados
+      - Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados.
+        Todos sem internação.
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.7
+      - 72.77
+      - 552.83
+      - 665.69
+      linhas:
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Grupo
+        - Ocupação/Uso
+        - Divisão
+        - Descrição
+        - Definição e exemplos
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - G
+        - Serviço automotivo e assemelhado
+        - G-1
+        - Garagem sem acesso de público e sem abastecimento
+        - Garagens automáticas e garagens com manobristas.
+      - - null
+        - null
+        - G-2
+        - Garagem com acesso de público e sem abastecimento
+        - Garagens coletivas sem automação, em geral e sem abastecimento (exceto veículos de carga e coletivos)
+      - - null
+        - null
+        - G-3
+        - Local dotado de abastecimento de combustível
+        - Postos de abastecimento de combustíveis e serviço, garagens com abastecimento de combustível
+          (exceto veículos de carga e coletivos)
+      - - null
+        - null
+        - G-4
+        - Serviço de conserva- ção, manutenção e re- paros
+        - 'Oficinas de conserto de veículos. Borracharia (sem recauchutagem). Oficinas e garagens de veículos
+          de carga e coletivos (tais como: empresas de ônibus, transportadoras, etc). Garagens de máquinas
+          agrícolas e rodoviárias. Retificadoras de motores.'
+      - - null
+        - null
+        - G-5
+        - Hangar
+        - Abrigos para aeronaves com ou sem abas- tecimento
+      - - null
+        - null
+        - G-6
+        - Galpão ou garagem náutica
+        - Abrigos para embarcações com ou sem abas- tecimento. Estrutura náutica que combina áreas para
+          guarda de embarcações em terra ou sobre a água, cobertas ou não, e acessórios de acesso à água,
+          podendo incluir oficina para manutenção e reparo de embarcações e seus equipamentos.
+      - - H
+        - Serviço de saúde
+        - H-1
+        - Hospital veterinário e assemelhados
+        - Hospitais, clínicas e consultórios veterinários e assemelhados (inclui-se alojamento com ou
+          sem adestramento)
+      - - null
+        - null
+        - H-2
+        - Local onde pessoas re- querem cuidados espe- ciais por limitações físi- cas ou mentais
+        - Tratamento de dependentes de drogas, álcool e assemelhados, todos sem celas, asilos, residências
+          geriátricas.
+      - - null
+        - null
+        - H-3
+        - Hospital e assemelhados
+        - Hospitais, casa de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos de
+          atendimento de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital
+          psiquiátrico.
+      - - null
+        - null
+        - H-4
+        - Clínica e consultório médico, odontológico e assemelhados
+        - Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados.
+          Todos sem internação.
+notas:
+- Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 4
+    coluna: 1
+    a: Serviço de conservação, manutenção e reparos
+    b: Serviço de conserva- ção, manutenção e re- paros
+    estado: verificada
+    score: 95.5
+  - linha: 5
+    coluna: 2
+    a: Abrigos para aeronaves com ou sem abastecimento
+    b: Abrigos para aeronaves com ou sem abas- tecimento
+    estado: verificada
+    score: 97.9
+  - linha: 6
+    coluna: 2
+    a: Abrigos para embarcações com ou sem abastecimento. Estrutura náutica que combina áreas para guarda
+      de embarcações em terra ou sobre a água, cobertas ou não, e acessórios de acesso à água, podendo
+      incluir oficina para manutenção e reparo de embarcações e seus equipamentos.
+    b: Abrigos para embarcações com ou sem abas- tecimento. Estrutura náutica que combina áreas para guarda
+      de embarcações em terra ou sobre a água, cobertas ou não, e acessórios de acesso à água, podendo
+      incluir oficina para manutenção e reparo de embarcações e seus equipamentos.
+    estado: verificada
+    score: 99.6
+  - linha: 8
+    coluna: 1
+    a: Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais
+    b: Local onde pessoas re- querem cuidados espe- ciais por limitações físi- cas ou mentais
+    estado: verificada
+    score: 96.4

@@ -1,5 +1,7 @@
 # Motor CAD/COSCIP — versão local
 
+[![CI](https://github.com/lukasleocadio19-cloud/motor-coscip/actions/workflows/ci.yml/badge.svg)](https://github.com/lukasleocadio19-cloud/motor-coscip/actions/workflows/ci.yml)
+
 Aplicação para **um operador no próprio computador Windows**: entrada DXF, geometria,
 regras normativas, evidências e relatórios locais. IA por API é **opcional** e fica
 desligada até ser configurada. Plano de referência: [`docs/plano/00-plano-completo.html`](docs/plano/00-plano-completo.html) (v2.0, 19/09/2026).
@@ -15,6 +17,12 @@ desligada até ser configurada. Plano de referência: [`docs/plano/00-plano-comp
 > [`docs/proxima-sessao.md`](docs/proxima-sessao.md).
 
 ## Começar
+
+**Sem Python no computador:** baixe `MotorCoscip-<versão>-win64.zip` da página de Releases do
+GitHub, confira o `SHA256SUMS`, descompacte e rode `verificar.cmd`; depois `iniciar.cmd` (app)
+ou `mcp.cmd` (servidor MCP). Detalhes na [ADR 0007](docs/decisions/0007-pacote-portatil.md).
+
+Com Python 3.12 (desenvolvimento):
 
 ```powershell
 scripts\setup\setup.ps1      # .venv com Python 3.12, dependências e build da interface
@@ -45,7 +53,7 @@ para o Claude ler plantas DXF com precisão em vez de "olhar" a imagem:
 | `listar_textos` / `listar_simbolos` | dados exatos com posição, camada e handle |
 | `classificar_blocos` | ensina ao motor um bloco não reconhecido (confirmar com o usuário) |
 | `medir` | distância entre pontos |
-| `confirmar_unidade` | escala por medida de referência (obrigatória antes de analisar) |
+| `confirmar_unidade` | escala por duas medidas de referência não paralelas, desvio ≤ 0,5 % entre elas (obrigatória antes de analisar) |
 | `definir_pavimentos` | recortes por janela ou polígono |
 | `analisar_planta` | enquadramento (NT 1-04, Anexo III, Anexo C) + Plano de Verificação por pavimento |
 | `consultar_norma` | texto de item ou busca nas NTs e no Decreto |
@@ -103,8 +111,11 @@ docs/                  arquitetura, decisões, runbooks, compatibilidade, backlo
 
 ## Verificação
 
+A CI (`.github/workflows/ci.yml`) roda tudo abaixo em Windows e Linux a cada push, com as
+dependências do lock (`requirements/dev.lock`, com hash). Localmente:
+
 ```powershell
-.venv\Scripts\python -m pytest     # 71 testes: regras, geometria, DXF, fila, API, pipeline, backup
+.venv\Scripts\python -m pytest     # suíte completa (o número de testes está no relatório da CI)
 .venv\Scripts\ruff check .
 npm run build                      # tsc estrito + build estático
 ```

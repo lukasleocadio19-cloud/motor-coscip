@@ -77,8 +77,7 @@ D - Figuras referentes a afastamentos
 
 E - Afastamentos de segurança para armazenamento de recipientes transportáveis para substituição em empilhadeiras e outros veículos movidos a GLP
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -227,8 +226,7 @@ a) válvulas de bloqueio (válvulas de fechamento rápido com comando manual e �
 
 b) válvula de bloqueio por excesso de fluxo instalada na saída do recipiente que abastece uma tubulação;
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | entrada de |
@@ -278,8 +276,7 @@ Fonte: IT 28/2018 - CBPMESP - Adaptado.
 
 5.1.14 Os afastamentos entre os tanques com capacidade volumétrica maior ou igual a 8 m³ não
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Capacidade |  | Entre tanques (m) |  | Edificações e |  |
@@ -295,6 +292,25 @@ Fonte: IT 28/2018 - CBPMESP - Adaptado.
 | 454,01 a 757,00 |  |  | ¼ da soma dos diâmetros dos tanques adjacentes | 61,00 |  |  |
 | 757,01 a 3.785,00 |  |  | ¼ da soma dos diâmetros dos tanques adjacentes | 91,00 |  |  |
 | Maior que 3.785,01 |  |  | ¼ da soma dos diâmetros dos tanques adjacentes | 120,00 |  |  |
+
+<!-- tabela-conferida: Tabela 1 p5 -->
+### Tabela 1 — Afastamento mínimo de segurança para recipientes estacionários de GLP (conferida)
+
+| Capacidade volumétrica (m³) | Entre tanques (m) | Edificações e limites da propriedade (m) |
+| --- | --- | --- |
+| 0,50 a 2,00 | 0 | 1,50 |
+| 2,01 a 8,00 | 1 | 7,50 |
+| 8,01 a 120,00 | 1,50 | 15,00 |
+| 120,01 a 265,00 | ¼ da soma dos diâmetros dos tanques adjacentes | 23,00 |
+| 265,01 a 341,00 | ¼ da soma dos diâmetros dos tanques adjacentes | 30,00 |
+| 341,01 a 454,00 | ¼ da soma dos diâmetros dos tanques adjacentes | 38,00 |
+| 454,01 a 757,00 | ¼ da soma dos diâmetros dos tanques adjacentes | 61,00 |
+| 757,01 a 3.785,00 | ¼ da soma dos diâmetros dos tanques adjacentes | 91,00 |
+| Maior que 3.785,01 | ¼ da soma dos diâmetros dos tanques adjacentes | 120,00 |
+
+Fonte: NT 4-05, página 5, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: IT 28/2018 – CBPMESP – Adaptado.
+<!-- /tabela-conferida: Tabela 1 p5 -->
 
 ---
 
@@ -334,8 +350,7 @@ Fonte: ABNT NBR 15514 - Adaptado.
 
 Tabela 4 - Proteção por extintores para área de armazenamento de recipientes transportáveis de GLP
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Classe | Capacidade de Armazenamento (kg de GLP) |  |  | Capacidade de |  |
@@ -380,6 +395,61 @@ Tabela 4 - Proteção por extintores para área de armazenamento de recipientes 
 | VI | 10 | 40 - B:C |  |  |
 | Especial | 12 | 40 - B:C |  |  |
 | Obs.: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15 m para alcançar o equipamento. |  |  |  |  |
+
+<!-- tabela-conferida: Tabela 2 p6 -->
+### Tabela 2 — Proteção por extintores para área de bases de armazenamento de GLP em recipientes estacionários, envasamento e distribuição de GLP (conferida)
+
+| Capacidade volumétrica (m³) | Extintor portátil (quantidade e capacidade extintora) | Extintor sobre rodas (quantidade e capacidade extintora) |
+| --- | --- | --- |
+| Até 0,50 | 01 20-B:C | - |
+| 0,5 até 3,5 | 02 20-B:C | - |
+| 3,51 até 6,00 | 02 20-B:C | 01 80-B:C |
+| 6,01 até 10,00 | 04 20-B:C | 01 80-B:C |
+| Acima de 10,00 | 04 20-B:C | 01 120-B:C |
+
+Fonte: NT 4-05, página 6, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
+Obs.: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15 m para alcançar o equipamento.
+Fonte: IT 28 – CBPMESP.
+"Proteção por extintores" e "Quantidade e capacidade extintora" são células mescladas do cabeçalho.
+<!-- /tabela-conferida: Tabela 2 p6 -->
+
+<!-- tabela-conferida: Tabela 3 p6 -->
+### Tabela 3 — Classificação das áreas de armazenamento (conferida)
+
+| Classe | Capacidade de Armazenamento (kg de GLP) | Capacidade de Armazenamento (botijões 13 kg)¹ |
+| --- | --- | --- |
+| I | Até 520 | Até 40 |
+| II | Até 1560 | Até 120 |
+| III | Até 6240 | Até 480 |
+| IVA | Até 12480 | Até 960 |
+| IVB | Até 24960 | Até 1920 |
+| V | Até 49920 | Até 3840 |
+| VI | Até 99840 | Até 7680 |
+| Especial | Mais de 99840 | Mais de 7680 |
+
+Fonte: NT 4-05, página 6, Tabela 3; conferida em 2026-09-29 (visual + geometrica).
+Obs.: 1 - Apenas referência. A capacidade de armazenamento deve sempre ser medida em kg de GLP. 2 - Os pontos de venda no perímetro urbano ficam limitados a 10 unidades de botijões de 13 kg - Ver 5.2.6. 3 - Os pontos de venda no perímetro rural ficam limitados a 30 unidades de botijões de 13 kg - Ver 5.2.6. 4 - Os pontos de venda de recipientes de GLP em postos revendedores de combustíveis líquidos ficam limitados a 10 unidades de botijões de 13 kg - Ver 5.2.7. 5 - O(s) lote(s) pode(m) conter recipientes transportáveis de GLP cheios, parcialmente cheios e vazios, desde que atendida a quantidade de botijões permitida de acordo com a classe.
+Fonte: ABNT NBR 15514 – Adaptado.
+<!-- /tabela-conferida: Tabela 3 p6 -->
+
+<!-- tabela-conferida: Tabela 4 p6 -->
+### Tabela 4 — Proteção por extintores para área de armazenamento de recipientes transportáveis de GLP (conferida)
+
+| Classe | Quantidade | Capacidade Extintora |
+| --- | --- | --- |
+| I | 2 | 20 – B:C |
+| II | 3 | 20 – B:C |
+| III | 4 | 20 – B:C |
+| IVA | 4 | 40 – B:C |
+| IVB | 6 | 40 – B:C |
+| V | 8 | 40 – B:C |
+| VI | 10 | 40 – B:C |
+| Especial | 12 | 40 – B:C |
+
+Fonte: NT 4-05, página 6, Tabela 4; conferida em 2026-09-29 (visual + geometrica).
+Obs.: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15 m para alcançar o equipamento.
+Fonte: IT28 – CBPMESP.
+<!-- /tabela-conferida: Tabela 4 p6 -->
 
 ---
 
@@ -471,8 +541,7 @@ a) as áreas destinadas ao estacionamento deverão ter distância mínima de 3,0
 
 b) o armazenamento dos recipientes transportáveis de GLP, cheios, parcialmente utilizados e/ou vazios existentes no imóvel, tanto no(s) veículo(s) transportador(es) quanto na(s) área(s) de armazenamento, deve ter o seu somatório igual ou inferior à capacidade máxima total da(s) área(s) de armazenamento, em quilogramas de GLP, existente(s) no referido imóvel;
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Massa líquida dos recipientes | Recipientes Cheios |  | Recipientes |  |
@@ -483,6 +552,19 @@ b) o armazenamento dos recipientes transportáveis de GLP, cheios, parcialmente 
 | Inferior a 5 kg | Altura máxima da pilha = 1,50 m | Altura máxima da pilha =1,50 m |  |  |
 | Igual ou superior a 5kg até inferior a 13kg | Até 5 recipientes | Até 5 recipientes |  |  |
 | Igual a 13 kg | Até 4 recipientes | Até 5 recipientes |  |  |
+
+<!-- tabela-conferida: Tabela 5 p8 -->
+### Tabela 5 — Empilhamento de recipientes transportáveis de GLP (conferida)
+
+| Massa líquida dos recipientes | Recipientes Cheios | Recipientes Vazios ou parcialmente utilizados |
+| --- | --- | --- |
+| Inferior a 5 kg | Altura máxima da pilha = 1,50 m | Altura máxima da pilha =1,50 m |
+| Igual ou superior a 5kg até inferior a 13kg | Até 5 recipientes | Até 5 recipientes |
+| Igual a 13 kg | Até 4 recipientes | Até 5 recipientes |
+
+Fonte: NT 4-05, página 8, Tabela 5; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: ABNT NBR 15514.
+<!-- /tabela-conferida: Tabela 5 p8 -->
 
 ---
 
@@ -594,8 +676,7 @@ Fonte: CBMERJ.
 
 5.4.4 As edificações que possuem bases e estações de manipulação e distribuição de gás natural comprimido deverão possuir sistema de proteção contra descarga atmosférica (SPDA), conforme NT 2- 12 - Sistema de proteção contra descargas atmosféricas (SPDA).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Proteção por extintores |  |  |  |  |
@@ -609,6 +690,22 @@ Fonte: CBMERJ.
 | 6,01 até 10,00 | 04 20-B:C | 01 80-B:C |  |  |
 | Acima de 10,00 | 04 20-B:C | 01 120-B:C |  |  |
 | Obs.: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15m para alcançar o equipamento. |  |  |  |  |
+
+<!-- tabela-conferida: Tabela 6 p10 -->
+### Tabela 6 — Proteção por extintores Bases e Estações de manipulação e distribuição de GNC (conferida)
+
+| Capacidade volumétrica (m³) | Extintor portátil (quantidade e capacidade extintora) | Extintor sobre rodas (quantidade e capacidade extintora) |
+| --- | --- | --- |
+| Até 0,50 | 01 20-B:C | - |
+| 0,50 até 3,50 | 02 20-B:C | - |
+| 3,51 até 6,00 | 02 20-B:C | 01 80-B:C |
+| 6,01 até 10,00 | 04 20-B:C | 01 80-B:C |
+| Acima de 10,00 | 04 20-B:C | 01 120-B:C |
+
+Fonte: NT 4-05, página 10, Tabela 6; conferida em 2026-09-29 (visual + geometrica).
+Obs. da tabela: Os extintores devem ser distribuídos de tal forma que o operador não percorra mais de 15m para alcançar o equipamento.
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 6 p10 -->
 
 ---
 
@@ -728,8 +825,7 @@ Tabela 1 - Distância Mínima de segurança para armazenamento de GNC
 
 Fonte: ABNT NBR 15186.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Localização |  |  | Distâncias de segurança (m) |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -749,6 +845,34 @@ Fonte: ABNT NBR 15186.
 | Recipientes estacionários para decantação (d) | L | 0 |  | 0 | 0 | 7,5 | 0 | 7,5 | 7,5 | 15,0 | 15,0 | 15,0 | 15,0 | - |  |
 | Observações: a) Para a leitura desta tabela as letras maiúsculas têm o mesmo significado tanto na horizontal, quanto na vertical; b) Ver Tabela 1 desta NT. c) Ver na Tabela 2 deste anexo a indicação da distância de segurança recomendada à divisa de propriedade ou via pública para recipientes estacionários com capacidade volumétrica individual superior a 120 m³. d) Válido para recipientes estacionários para decantação até 10 m3. e) As distâncias mínimas de segurança não se aplicam aos recipientes novos ou requalificados sem uso. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 1 do Anexo A p13 -->
+### Tabela 1 do Anexo A — Distância Mínima de segurança para armazenamento de GNC (conferida)
+
+| Localização | Letra | A (m) | B (m) | C (m) | D (m) | E (m) | F (m) | G (m) | H (m) | I (m) | J (m) | K (m) | L (m) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Área de transferência | A | - | 3,0 | 7,5 | 7,5 | 7,5 | 6,0 | 15,0 | 15,0 | 15,0 | 15,0 | 15,0 | 0 |
+| Casa de bombas e compressores de GLP | B | 3,0 | - | 3,0 | 7,5 | 7,5 | - | 15,0 | 15,0 | 15,0 | 15,0 | 15,0 | 0 |
+| Área de armazenamento a granel - recipientes estacionários | C | 7,5 | 3,0 | b) | 7,5 | 15,0 | 7,5 | 15,0 | 15,0 | 15,0 | 15,0(c) | 15,0 (c) | 0 |
+| Área de armazenamento de recipientes transportáveis cheios, parcialmente utilizados ou vazios (e) | D | 7,5 | 7,5 | 7,5 | - | 1,5 | 6,0 | 7,5 | 7,5 | 7,5 | 7,5 | 7,5 | 7,5 |
+| Área de envasamento | E | 7,5 | 7,5 | 15,0 | 1,5 | - | 6,0 | 15,0 | 15,0 | 15,0 | 15,0 | 15,0 | 0 |
+| Área de estocagem de inflamáveis auxiliares | F | 6,0 |  | 7,5 | 6,0 | 6,0 | - | 6,0 | 6,0 | 6,0 | 6,0 | 6,0 | 7,5 |
+| Área de utilidades | G | 15,0 | 15,0 | 15,0 | 7,5 | 15,0 | 6,0 | - | 3,0 | 3,0 | 1,5 | 1,5 | 7,5 |
+| Área de apoio operacional | H | 15,0 | 15,0 | 15,0 | 7,5 | 15,0 | 6,0 | 3,0 | - | 3,0 | 1,5 | 1,5 | 15,0 |
+| Área administrativa | I | 15,0 | 15,0 | 15,0 | 7,5 | 15,0 | 6,0 | 3,0 | 3,0 | - | e) | e) | 15,0 |
+| Divisa de propriedade | J | 15,0 | 15,0 | 15,0 (c) | 7,5 | 15,0 | 6,0 | 1,5 | 1,5 | e) | - | e) | 15,0 |
+| Via pública (c) | K | 15,0 | 15,0 | 15,0 (c) | 7,5 | 15,0 | 6,0 | 1,5 | 1,5 | e) | e) | - | 15,0 |
+| Recipientes estacionários para decantação (d) | L | 0 | 0 | 0 | 7,5 | 0 | 7,5 | 7,5 | 15,0 | 15,0 | 15,0 | 15,0 | - |
+
+Fonte: NT 4-05, página 13, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Observações da tabela:
+a) Para a leitura desta tabela as letras maiúsculas têm o mesmo significado tanto na horizontal, quanto na vertical;
+b) Ver Tabela 1 desta NT.
+c) Ver na Tabela 2 deste anexo a indicação da distância de segurança recomendada à divisa de propriedade ou via pública para recipientes estacionários com capacidade volumétrica individual superior a 120 m³.
+d) Válido para recipientes estacionários para decantação até 10 m³.
+e) As distâncias mínimas de segurança não se aplicam aos recipientes novos ou requalificados sem uso.
+Fonte indicada na página: ABNT NBR 15186.
+<!-- /tabela-conferida: Tabela 1 do Anexo A p13 -->
+
 ---
 
 ## Página 14
@@ -761,8 +885,7 @@ capacidade volumétrica individual superior a 120 m³
 
 Fonte: ABNT NBR 15186.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Capacidade (m³) |  |  | Distância (m) |  |
@@ -774,6 +897,23 @@ Fonte: ABNT NBR 15186.
 | Maior que 757 a 3.785 |  |  | 91,0 |  |  |
 | Maior que 3.785 |  |  | 122,0 |  |  |
 | Observação: a) Ver na Tabela 1 deste anexo a indicação da distância de segurança recomendada à divisa de propriedade ou via pública para recipientes estacionários com capacidade volumétrica individual inferior a 120 m³. |  |  |  |  |  |
+
+<!-- tabela-conferida: Tabela 2 do Anexo A p14 -->
+### Tabela 2 do Anexo A — Distâncias mínimas de segurança ao limite da propriedade para os recipientes estacionários com capacidade volumétrica individual superior a 120 m³ (conferida)
+
+| Capacidade (m³) | Distância (m) |
+| --- | --- |
+| Maior que 120 a 265 | 23,0 |
+| Maior que 265 a 341 | 30,0 |
+| Maior que 341 a 454 | 38,0 |
+| Maior que 454 a 757 | 61,0 |
+| Maior que 757 a 3.785 | 91,0 |
+| Maior que 3.785 | 122,0 |
+
+Fonte: NT 4-05, página 14, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Observação da tabela: a) Ver na Tabela 1 deste anexo a indicação da distância de segurança recomendada à divisa de propriedade ou via pública para recipientes estacionários com capacidade volumétrica individual inferior a 120 m³.
+Fonte indicada na página: ABNT NBR 15186.
+<!-- /tabela-conferida: Tabela 2 do Anexo A p14 -->
 
 ---
 
@@ -789,8 +929,7 @@ Tabela 1 - Critérios de exigência de sistema fixo de resfriamento para recipie
 
 Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Hidrante | Mínimo | Diâmetro mínimo da tubulação |  | Canhão monitor |  |  | Tempo |
@@ -829,6 +968,21 @@ Fonte: CBMERJ.
 | 1) O alcance horizontal do jato compacto produzido pelas linhas manuais de resfriamento deve ser medido da saída do esguicho ao |  |  |  |  |  |  |  |  |
 | ponto de queda do jato, porém este alcance deve ser desconsiderado quando da aplicação de 6.5.1. |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 1 do Anexo B p15 -->
+### Tabela 1 do Anexo B — Critérios de exigência de sistema fixo de resfriamento para recipientes transportáveis (conferida)
+
+| Volume armazenado de GLP | Hidrante | Mínimo alcance horizontal do jato compacto (linha manual) ¹ | Diâmetro mínimo da tubulação | Pressão mínima no sistema de hidrantes (medida no esguicho) | Canhão monitor | Pressão mínima no canhão monitor | Funcionamento simultânea (para efeitos de cálculo) | Tempo |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Inferior a 12.480 kg | Não | - | - | - | Não | - | - | - |
+| Superior a 12.480 kg inferior a 49.920 kg | Simples | 15 m | 65 mm | 35 mca | Não | - | 2 linhas manuais | 30 mim |
+| Superior a 49.920 kg inferior a 99.840 kg | Duplo | 20 m | 75 mm | 40 mca | Sim | 56 mca | 2 linhas manuais e 01 canhão monitor | 45 min |
+| Superior a 99.840 kg * | Duplo | 20 m | 75 mm | 40 mca | Sim | 56 mca | 2 linhas manuais e 01 canhão monitor | 60 min |
+
+Fonte: NT 4-05, página 15, Tabela 1 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
+Nota 1 da tabela: O alcance horizontal do jato compacto produzido pelas linhas manuais de resfriamento deve ser medido da saída do esguicho ao ponto de queda do jato, porém este alcance deve ser desconsiderado quando da aplicação de 6.5.1.
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 1 do Anexo B p15 -->
+
 ---
 
 ## Página 16
@@ -839,8 +993,7 @@ Tabela 2 - Critérios de exigência de sistema fixo de resfriamento para recipie
 
 Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Capacidade de |  | Inferior a 10 m³ |  | Superior a 10 m³ |  |  | Superior a 20 |  |  | Superior a 60 |  | Superior a 120 m³ | Esferas |
@@ -862,6 +1015,40 @@ Fonte: CBMERJ.
 | Tempo |  |  | 30 mim | 40 mim |  |  | 60 mim |  |  | 120min |  |  | 180min | 180min |
 | Observações: 1) Essa tabela se aplica quando o somatório dos recipientes for maior que 15 m³ (alínea f de 5.1.6), todavia, para aplicação dos critérios é analisado a capacidade de armazenamento individual do recipiente. 2) Caso as baterias de recipientes de GLP com capacidade individual de, no máximo, 60 m³ estiverem com afastamentos de 15 m ou mais, entre si, podem ser consideradas isoladas. 3) Deve ser previsto resfriamento para a esfera submetida ao incêndio, bem como para as esferas e baterias de recipientes de GLP cuja distância entre costados seja inferior a 30 m. 4) Para recipientes de volume individual inferior a 200 m³ submetida ao incêndio, devem ser resfriados todos os recipientes, independentemente de sua capacidade volumétrica cuja distância, entre costados, seja inferior a 15 m. 5) Um ou mais recipientes de volume individual igual ou superior a 200 m³ devem ser considerados equivalentes a uma esfera. 6) Quando o suprimento de água sair da rede de incêndio da edificação/área de risco deve-se somar a maior vazão estabelecida, ao valor correspondente ao uso de dois canhões monitores fixos (vazão individual por canhões de 1.200 lpm). 7) A localização dos cilindros e esferas de GLP deve atender às normas técnicas oficiais. 8) O armazenamento de GLP em tanques subterrâneos não necessita de proteção contra incêndios por resfriamento. 9) O alcance horizontal do jato compacto produzido pelas linhas manuais de resfriamento deve ser medido da saída do esguicho ao ponto de queda do jato, porém este alcance deve ser desconsiderado quando da aplicação de 6.5.1. 10) Ver alínea “g” de 5.1.6. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 2 do Anexo B p16 -->
+### Tabela 2 do Anexo B — Critérios de exigência de sistema fixo de resfriamento para recipientes estacionários (conferida)
+
+| Capacidade de armazenamento individual | Inferior a 10 m³ | Superior a 10 m³ e igual ou inferior 20 m³ | Superior a 20 m³ e igual ou inferior 60 m³ | Superior a 60 m³ e igual ou inferior 120 m³ | Superior a 120 m³ | Esferas |
+| --- | --- | --- | --- | --- | --- | --- |
+| Hidrante simples | Sim | Não | Não | Não | Não | Não |
+| Hidrante duplo | Não | Sim | Sim | Sim | Sim | Sim |
+| Diâmetro mínimo da tubulação | 60mm | 75mm | 75mm | 75mm | 75mm | 75mm |
+| Pressão mínima no sistema de hidrantes (medida no esguicho) | 35mca | 40mca | 40mca | 40mca | 40mca | 40mca |
+| Mínimo alcance horizontal do jato compacto (linha manual) 8 | 15 m | 20 m | 20 m | 30 m | 30 m | 30 m |
+| Vazão sistema de hidrante | 200l/min | 400l/min | 400l/min | 1000l/min | 1000l/min | 1000l/min |
+| Canhão monitor | Não | Não | Sim | Sim (portátil) | Sim (portátil) | Sim (Auto oscilatório) |
+| Pressão mínima no canhão monitor | - | - | 56 mca | 56 mca | 56 mca | 56 mca |
+| Vazão canhão monitor | - | - | 800l/min | 800l/min | 800l/min | 800l/min |
+| Sistema com bicos aspersores | Não | Não | Não | Sim | Sim | Sim |
+| Taxa mínima dos Aspersores | - | - | - | 5lpm/m² | 5lpm/m² | 5lpm/m² |
+| Funcionamento simultâneo (para efeitos de cálculo) | 2 (duas) linhas manuais | 2 (duas)linhas manuais | 2 (duas)linhas manuais e 01 (um) canhão monitor | Demanda de água somente para os aspersores | Demanda de água somente para os aspersores | Demanda de água somente para os aspersores |
+| Tempo | 30 mim | 40 mim | 60 mim | 120min | 180min | 180min |
+
+Fonte: NT 4-05, página 16, Tabela 2 do Anexo B; conferida em 2026-09-29 (visual + geometrica).
+Observações da tabela:
+1) Essa tabela se aplica quando o somatório dos recipientes for maior que 15 m³ (alínea f de 5.1.6), todavia, para aplicação dos critérios é analisado a capacidade de armazenamento individual do recipiente.
+2) Caso as baterias de recipientes de GLP com capacidade individual de, no máximo, 60 m³ estiverem com afastamentos de 15 m ou mais, entre si, podem ser consideradas isoladas.
+3) Deve ser previsto resfriamento para a esfera submetida ao incêndio, bem como para as esferas e baterias de recipientes de GLP cuja distância entre costados seja inferior a 30 m.
+4) Para recipientes de volume individual inferior a 200 m³ submetida ao incêndio, devem ser resfriados todos os recipientes, independentemente de sua capacidade volumétrica cuja distância, entre costados, seja inferior a 15 m.
+5) Um ou mais recipientes de volume individual igual ou superior a 200 m³ devem ser considerados equivalentes a uma esfera.
+6) Quando o suprimento de água sair da rede de incêndio da edificação/área de risco deve-se somar a maior vazão estabelecida, ao valor correspondente ao uso de dois canhões monitores fixos (vazão individual por canhões de 1.200 lpm).
+7) A localização dos cilindros e esferas de GLP deve atender às normas técnicas oficiais.
+8) O armazenamento de GLP em tanques subterrâneos não necessita de proteção contra incêndios por resfriamento.
+9) O alcance horizontal do jato compacto produzido pelas linhas manuais de resfriamento deve ser medido da saída do esguicho ao ponto de queda do jato, porém este alcance deve ser desconsiderado quando da aplicação de 6.5.1.
+10) Ver alínea “g” de 5.1.6.
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 2 do Anexo B p16 -->
+
 ---
 
 ## Página 17
@@ -874,8 +1061,7 @@ Tabela 1 - Exigências e afastamentos de segurança para áreas de armazenamento
 
 Fonte: ABNT NBR 15514 - Adaptado, combinado com a Lei Estadual nº 4945/06.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  |  |  |  |  |  |
@@ -898,6 +1084,39 @@ Fonte: ABNT NBR 15514 - Adaptado, combinado com a Lei Estadual nº 4945/06.
 | Locais de reunião de público (1) (m) | 7,5 | 7,5 | 10,0 | 10,0 | 15,0 | 15,0 | 20,0 | 30,0 |
 | Legenda: - Classe IVA: Pertencente à Classe IV estabelecida na Lei Estadual nº 4945/06, e equivalente à Classe IV definida na ABNT NBR 15514:2020. - Classe IVB: Pertencente à Classe IV estabelecida na Lei Estadual nº 4945/06, e equivalente à Classe V definida na ABNT NBR 15514:2020. - Classe V: Correspondente à Classe V estabelecida na Lei Estadual nº 4945/06, e equivalente à Classe VI definida na ABNT NBR 15514:2020. - Classe VI: Correspondente à Classe VI estabelecida na Lei Estadual nº 4945/06, e equivalente à Classe VII definida na ABNT NBR 15514:2020. Observações: 1) Para fins da aplicação desta NT, considera-se local de reunião de público todas as edificações constantes no Grupo F, E1 e E2, H2 e H3, todas conforme as classificações constantes na Tabela 1 do Anexo II do Decreto Estadual nº 42 - COSCIP. 2) Com a construção de paredes resistentes a 120 min de fogo, as distâncias mínimas de segurança podem ser reduzidas pela metade, excetuando-se o distanciamento entre os lotes. 3) A distância da área de armazenamento às aberturas para captação de águas pluviais, canaletas, ralos, rebaixos ou similares deve ser de, no mínimo, 1,50 m. 4) Os veículos transportadores que necessitarem permanecer estacionados no interior do imóvel devem distar, no mínimo, 3 m dos limites da área de armazenamento. 5) Os afastamentos, inclusive para os Locais de reunião de público, escolar e cultura física e serviços de saúde, deverão serem demonstrados na planta de situação e localização |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 1 do Anexo C p17 -->
+### Tabela 1 do Anexo C — Exigências e afastamentos de segurança para áreas de armazenamento de recipientes transportáveis de GLP (conferida)
+
+| Exigências/Afastamentos | Classe I | Classe II | Classe III | Classe IVA | Classe IVB | Classe V | Classe VI | Especial |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Capacidade máxima (kg) | 520 | 1.560 | 6.240 | 12.480 | 24.960 | 49.920 | 99.840 | Mais de 99.840 |
+| Número de botijões - 13 Kg | 40 | 120 | 480 | 960 | 1.920 | 3.840 | 7.680 | Mais de 7680 |
+| Número mínimo de acessos à área de armazenamento | 1 | 1 | 1 | 2 | 2 | 2 | 2 | 2 |
+| Largura do corredor de circulação para depósitos abertos (m) | Não | Não | 1 | 1 | 1 | 1 | 1 | 1 |
+| Largura do corredor de circulação para depósitos cobertos (m) | Não | Não | 1,5 | 1,5 | 4 | 4 | 4 | 4 |
+| Obrigatoriedade de lotes de recipientes de GLP | Não | Não | Sim | Sim | Sim | Sim | Sim | Sim |
+| Construções Internas (m) | 1,0 | 2,0 | 3,0 | 3,0 | 3,0 | 3,0 | 3,0 | 3,0 |
+| Limites da propriedade (m) | 1,0 | 1,5 | 2,0 | 2,5 | 3,0 | 3,5 | 4,0 | 7,5 |
+| Equipamento e máquinas que produzam calor e/ou chama aberta (m) | 5,0 | 6,0 | 7,5 | 7,5 | 7,5 | 7,5 | 7,5 | 7,5 |
+| Bombas de combustíveis, descarga de motores a explosão não instalada em veículos e outras fontes de ignição (m) | 1,5 | 3,0 | 3,0 | 3,0 | 3,0 | 3,0 | 3,0 | 3,0 |
+| Locais de reunião de público (1) (m) | 7,5 | 7,5 | 10,0 | 10,0 | 15,0 | 15,0 | 20,0 | 30,0 |
+
+Fonte: NT 4-05, página 17, Tabela 1 do Anexo C; conferida em 2026-09-29 (visual + geometrica).
+Legenda da tabela:
+- Classe IVA: Pertencente à Classe IV estabelecida na Lei Estadual nº 4945/06, e equivalente à Classe IV definida na ABNT NBR 15514:2020.
+- Classe IVB: Pertencente à Classe IV estabelecida na Lei Estadual nº 4945/06, e equivalente à Classe V definida na ABNT NBR 15514:2020.
+- Classe V: Correspondente à Classe V estabelecida na Lei Estadual nº 4945/06, e equivalente à Classe VI definida na ABNT NBR 15514:2020.
+- Classe VI: Correspondente à Classe VI estabelecida na Lei Estadual nº 4945/06, e equivalente à Classe VII definida na ABNT NBR 15514:2020.
+Observações da tabela:
+1) Para fins da aplicação desta NT, considera-se local de reunião de público todas as edificações constantes no Grupo F, E1 e E2, H2 e H3, todas conforme as classificações constantes na Tabela 1 do Anexo II do Decreto Estadual nº 42 – COSCIP.
+2) Com a construção de paredes resistentes a 120 min de fogo, as distâncias mínimas de segurança podem ser reduzidas pela metade, excetuando-se o distanciamento entre os lotes.
+3) A distância da área de armazenamento às aberturas para captação de águas pluviais, canaletas, ralos, rebaixos ou similares deve ser de, no mínimo, 1,50 m.
+4) Os veículos transportadores que necessitarem permanecer estacionados no interior do imóvel devem distar, no mínimo, 3 m dos limites da área de armazenamento.
+5) Os afastamentos, inclusive para os Locais de reunião de público, escolar e cultura física e serviços de saúde, deverão serem demonstrados na planta de situação e localização
+Fonte indicada na página: ABNT NBR 15514 - Adaptado, combinado com a Lei Estadual nº 4945/06.
+Conferência aritmética: 13 kg × número de botijões = capacidade máxima em todas as classes (520 a 99.840 kg).
+<!-- /tabela-conferida: Tabela 1 do Anexo C p17 -->
+
 ---
 
 ## Página 18
@@ -908,8 +1127,7 @@ Tabela 2 - Afastamentos de quaisquer componentes de estação de armazenagem e d
 
 Fonte: ABNT NBR 15600.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Componente | Afastamentos (m) |  |  |  |  |  |  |  |  |  |  |  |
@@ -923,6 +1141,28 @@ Fonte: ABNT NBR 15600.
 | Produtos tóxicos e perigosos | 6 | 3 | 6 | 3 | 6 | 3 | 6 | 3 | 6 | 3 | 6 | 3 |
 | Fontes de ignição/ Chama aberta | 7,5 | 1 | 7,5 | 1 | 7,5 | 2,5 | 7,5 | 2,5 | 10 | 5 | 10 | 5 |
 | Observações: a) As Distâncias mínimas dos afastamentos são determinadas em função da capacidade total da estocagem e do tipo de fronteira encontrada (parede comum ou grade, ou parede de TRRF=4); b) Para a existência, na área adjacente a estocagem, de circulação de pessoas e/ou veículos, de aberturas ou janelas em qualquer construção ou de limite de propriedade, as distâncias mínimas de afastamentos apresentadas na tabela 2 são sempre entre a estocagem e as fronteiras físicas (parede comum ou grade, ou parede de TRRF=4) de separação; c) A parede TRRF=4 deve ter altura mínima de 2,0m e ultrapassar a estocagem em no mínimo 1,00 m das extremidades laterais. As distâncias de afastamentos devem obedecer à coluna de paredes TRRF=4; d) Para o caso das aberturas de edifícios adjacentes posicionadas em alturas superiores às das paredes corta-fogo, devem ser adotadas as distâncias para parede comum ou grades; e) Para capacidade volumétrica total de armazenamento de até 200 m3, caso a divisa de local público e/ou limite de propriedade seja com grade, a distância mínima para armazenamento deve ser 3 m; |  |  |  |  |  |  |  |  |  |  |  |  |
+
+<!-- tabela-conferida: Tabela 2 do Anexo C p18 -->
+### Tabela 2 do Anexo C — Afastamentos de quaisquer componentes de estação de armazenagem e descompressão de GNC (conferida)
+
+| Componente | Até 80 m³ — parede comum/grade | Até 80 m³ — parede com TRRF=4 | 81 a 200 m³ — parede comum/grade | 81 a 200 m³ — parede com TRRF=4 | 201 a 1200 m³ — parede comum/grade | 201 a 1200 m³ — parede com TRRF=4 | 1201 a 3000 m³ — parede comum/grade | 1201 a 3000 m³ — parede com TRRF=4 | 3001 a 10000 m³ — parede comum/grade | 3001 a 10000 m³ — parede com TRRF=4 | 10001 a 27000 m³ — parede comum/grade | 10001 a 27000 m³ — parede com TRRF=4 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Divisa de local público / Limite de propriedade | 0/3 | 0 | 1/3 | 0 | 3 | 1 | 4 | 1 | 6 | 2 | 10 | 2 |
+| Projeção vertical de aberturas (por exemplo, janelas, portas, dutos) | 3 | 1 | 3 | 1 | 3 | 1 | 4 | 1 | 8 | 2 | 10 | 2 |
+| Inflamáveis | 5 | 1 | 5 | 1 | 5 | 1 | 5 | 1 | 6 | 1 | 6 | 1 |
+| Produtos tóxicos e perigosos | 6 | 3 | 6 | 3 | 6 | 3 | 6 | 3 | 6 | 3 | 6 | 3 |
+| Fontes de ignição/ Chama aberta | 7,5 | 1 | 7,5 | 1 | 7,5 | 2,5 | 7,5 | 2,5 | 10 | 5 | 10 | 5 |
+
+Fonte: NT 4-05, página 18, Tabela 2 do Anexo C; conferida em 2026-09-29 (visual + geometrica).
+Afastamentos em metros. "0/3" e "1/3": ver a observação e) (até 200 m³ com grade, 3 m).
+Observações da tabela:
+a) As Distâncias mínimas dos afastamentos são determinadas em função da capacidade total da estocagem e do tipo de fronteira encontrada (parede comum ou grade, ou parede de TRRF=4);
+b) Para a existência, na área adjacente a estocagem, de circulação de pessoas e/ou veículos, de aberturas ou janelas em qualquer construção ou de limite de propriedade, as distâncias mínimas de afastamentos apresentadas na tabela 2 são sempre entre a estocagem e as fronteiras físicas (parede comum ou grade, ou parede de TRRF=4) de separação;
+c) A parede TRRF=4 deve ter altura mínima de 2,0m e ultrapassar a estocagem em no mínimo 1,00 m das extremidades laterais. As distâncias de afastamentos devem obedecer à coluna de paredes TRRF=4;
+d) Para o caso das aberturas de edifícios adjacentes posicionadas em alturas superiores às das paredes corta-fogo, devem ser adotadas as distâncias para parede comum ou grades;
+e) Para capacidade volumétrica total de armazenamento de até 200 m³, caso a divisa de local público e/ou limite de propriedade seja com grade, a distância mínima para armazenamento deve ser 3 m;
+Fonte indicada na página: ABNT NBR 15600.
+<!-- /tabela-conferida: Tabela 2 do Anexo C p18 -->
 
 ---
 
@@ -1010,8 +1250,7 @@ vazios em empilhadeiras e outros veículos movidos a GLP
 
 Fonte: CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Afastamentos (m) |  |  |  |  |  |  |  |
@@ -1023,3 +1262,21 @@ Fonte: CBMERJ.
 |  |  |  |  |  |  |  | (vide obs.: d, e) |  |
 | 0 |  | 3 | 0 | 1 | 1,5 | 6 |  |  |
 | Observações: a Esta tabela se aplica exclusivamente ao armazenamento de recipientes transportáveis, para substituição em empilhadeiras e outros veículos movidos a GLP, que atenda aos requisitos estabelecidos em 5.3.1. b As distâncias de afastamento das edificações não consideram as projeções de complementos ou partes destas, como telhados, balcões, marquises, quando não constituírem áreas destinadas à ocupação ou estoque de materiais. c Para os recipientes transportáveis instalados no interior de abrigos, com paredes e cobertura com TRRF mínimo de 02 (duas) horas, a distância para fontes de ignição e outras aberturas (portas, janelas, etc) pode ser reduzida à metade, nas direções protegidas pelas paredes dos abrigos. d No caso de depósitos de oxigênio e hidrogênio, os afastamentos devem ser conforme as tabelas específicas da NT 3-02 Gás (GLP/GN) - Uso predial. e Para captação de ar forçado acima das válvulas dos recipientes, o afastamento mínimo de segurança pode ser reduzido para 3 m. |  |  |  |  |  |  |  |  |
+<!-- tabela-conferida: Tabela 1 do Anexo E p23 -->
+### Tabela 1 do Anexo E — Afastamentos mínimos de segurança para áreas de armazenamento de recipientes para substituição de recipientes vazios em empilhadeiras e outros veículos movidos a GLP (conferida)
+
+| Divisas de propriedades edificáveis / edificações (vide obs. A) | Passeio público | Entre recipientes | Aberturas abaixo da descarga da válvula de segurança | Fontes de ignição e outras aberturas (portas, janelas, etc.) e materiais combustíveis (vide obs. c) | Produtos tóxicos, Perigosos inflamáveis e chama aberta (vide obs.: d, e) |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 3 | 0 | 1 | 1,5 | 6 |
+
+Fonte: NT 4-05, página 23, Tabela 1 do Anexo E; conferida em 2026-09-29 (visual + geometrica).
+Afastamentos em metros (cabeçalho geral da tabela: "Afastamentos (m)").
+Observações da tabela:
+a) Esta tabela se aplica exclusivamente ao armazenamento de recipientes transportáveis, para substituição em empilhadeiras e outros veículos movidos a GLP, que atenda aos requisitos estabelecidos em 5.3.1.
+b) As distâncias de afastamento das edificações não consideram as projeções de complementos ou partes destas, como telhados, balcões, marquises, quando não constituírem áreas destinadas à ocupação ou estoque de materiais.
+c) Para os recipientes transportáveis instalados no interior de abrigos, com paredes e cobertura com TRRF mínimo de 02 (duas) horas, a distância para fontes de ignição e outras aberturas (portas, janelas, etc) pode ser reduzida à metade, nas direções protegidas pelas paredes dos abrigos.
+d) No caso de depósitos de oxigênio e hidrogênio, os afastamentos devem ser conforme as tabelas específicas da NT 3-02 Gás (GLP/GN) – Uso predial.
+e) Para captação de ar forçado acima das válvulas dos recipientes, o afastamento mínimo de segurança pode ser reduzido para 3 m.
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 1 do Anexo E p23 -->
+

@@ -50,6 +50,8 @@ class MeasuredResult(_Strict):
     uncertainty_abs: float | None = Field(default=None, ge=0)
     algorithm: str | None = None
     algorithm_version: str | None = None
+    # Parcelas da incerteza (método, amostragem, posição do símbolo, escala, parede), F7.3.
+    uncertainty_budget: dict[str, Any] | None = None
     geometry_snapshot_hash: str | None = None
     quality_gate: str | None = None
 
@@ -79,6 +81,9 @@ class Finding(_Strict):
     measured: MeasuredResult | None = None
     evidence_ids: tuple[str, ...] = ()
     normative_citations: tuple[dict[str, Any], ...] = ()
+    # Critério adotado pelo analista (F4.1), separado do texto da norma: escopo, decisão,
+    # quem decidiu e quando. ``None`` = o check aplica a norma literalmente.
+    adopted_criterion: dict[str, Any] | None = None
     group_key: str = ""
 
     @property

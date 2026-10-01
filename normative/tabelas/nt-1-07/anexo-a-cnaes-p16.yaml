@@ -1,0 +1,313 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 16
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-16.png
+    imagem_sha256: 064a257c0af53c4be1e711a2601c9bc86eb09f10f53495d9ce9f5236c894262f
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 1032-5/01
+      - Fabricação de conservas de palmito
+    - - 1032-5/99
+      - Fabricação de conservas de legumes e outros vegetais, exceto palmito
+    - - 1033-3/01
+      - Fabricação de sucos concentrados de frutas, hortaliças e legumes
+    - - 1033-3/02
+      - Fabricação de sucos de frutas, hortaliças e legumes, exceto concentrados
+    - - 1051-1/00
+      - Preparação do leite
+    - - 1052-0/00
+      - Fabricação de laticínios
+    - - 1053-8/00
+      - Fabricação de sorvetes e outros gelados comestíveis
+    - - 1093-7/02
+      - Fabricação de frutas cristalizadas, balas e semelhantes
+    - - 1094-5/00
+      - Fabricação de massas alimentícias
+    - - 1095-3/00
+      - Fabricação de especiarias, molhos, temperos e condimentos
+    - - 1099-6/01
+      - Fabricação de vinagres
+    - - 1099-6/03
+      - Fabricação de fermentos e leveduras
+    - - 1099-6/04
+      - Fabricação de gelo comum
+    - - 1112-7/00
+      - Fabricação de vinho
+    - - 1121-6/00
+      - Fabricação de águas envasadas
+    - - 1122-4/01
+      - Fabricação de refrigerantes
+    - - 1122-4/99
+      - Fabricação de outras bebidas não alcoólicas não especificadas anteriormente
+    - - 1311-1/00
+      - Preparação e fiação de fibras de algodão
+    - - 1312-0/00
+      - Preparação e fiação de fibras têxteis naturais, exceto algodão
+    - - 1340-5/99
+      - Outros serviços de acabamento em fios, tecidos, artefatos têxteis e peças do vestuário
+    - - 1351-1/00
+      - Fabricação de artefatos têxteis para uso doméstico
+    - - 1354-5/00
+      - Fabricação de tecidos especiais, inclusive artefatos
+    - - 1359-6/00
+      - Fabricação de outros produtos têxteis não especificados anteriormente
+    - - 1411-8/01
+      - Confecção de roupas íntimas
+    - - 1411-8/02
+      - Facção de roupas íntimas
+    - - 1412-6/01
+      - Confecção de peças do vestuário, exceto roupas íntimas e as confeccionadas sob medida
+    - - 1412-6/02
+      - Confecção, sob medida, de peças do vestuário, exceto roupas íntimas
+    - - 1412-6/03
+      - Facção de peças do vestuário, exceto roupas íntimas
+    - - 1413-4/01
+      - Confecção de roupas profissionais, exceto sob medida
+    - - 1413-4/02
+      - Confecção, sob medida, de roupas profissionais
+    - - 1413-4/03
+      - Facção de roupas profissionais
+    - - 1414-2/00
+      - Fabricação de acessórios do vestuário, exceto para segurança e proteção
+    - - 1421-5/00
+      - Fabricação de meias
+    - - 1422-3/00
+      - Fabricação de artigos do vestuário, produzidos em malharias e tricotagens, exceto meias
+    - - 1521-1/00
+      - Fabricação de artigos para viagem, bolsas e semelhantes de qualquer material
+    - - 1529-7/00
+      - Fabricação de artefatos de couro não especificados anteriormente
+    - - 1531-9/01
+      - Fabricação de calçados de couro
+    - - 1822-9/01
+      - Serviços de encadernação e plastificação
+    - - 1822-9/99
+      - Serviços de acabamentos gráficos, exceto encadernação e plastificação
+    - - 1830-0/01
+      - Reprodução de som em qualquer suporte
+    - - 1830-0/02
+      - Reprodução de vídeo em qualquer suporte
+    - - 1830-0/03
+      - Reprodução de software em qualquer suporte
+    - - 2391-5/02
+      - Aparelhamento de pedras para construção, exceto associado à extração
+    - - 2391-5/03
+      - Aparelhamento de placas e execução de trabalhos em mármore, granito, ardósia e outras pedras
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 16
+      tabela_na_pagina: 1
+    linhas:
+    - - 1032-5/01
+      - Fabricação de conservas de palmito
+    - - 1032-5/99
+      - Fabricação de conservas de legumes e outros vegetais, exceto palmito
+    - - 1033-3/01
+      - Fabricação de sucos concentrados de frutas, hortaliças e legumes
+    - - 1033-3/02
+      - Fabricação de sucos de frutas, hortaliças e legumes, exceto concentrados
+    - - 1051-1/00
+      - Preparação do leite
+    - - 1052-0/00
+      - Fabricação de laticínios
+    - - 1053-8/00
+      - Fabricação de sorvetes e outros gelados comestíveis
+    - - 1093-7/02
+      - Fabricação de frutas cristalizadas, balas e semelhantes
+    - - 1094-5/00
+      - Fabricação de massas alimentícias
+    - - 1095-3/00
+      - Fabricação de especiarias, molhos, temperos e condimentos
+    - - 1099-6/01
+      - Fabricação de vinagres
+    - - 1099-6/03
+      - Fabricação de fermentos e leveduras
+    - - 1099-6/04
+      - Fabricação de gelo comum
+    - - 1112-7/00
+      - Fabricação de vinho
+    - - 1121-6/00
+      - Fabricação de águas envasadas
+    - - 1122-4/01
+      - Fabricação de refrigerantes
+    - - 1122-4/99
+      - Fabricação de outras bebidas não alcoólicas não especificadas anteriormente
+    - - 1311-1/00
+      - Preparação e fiação de fibras de algodão
+    - - 1312-0/00
+      - Preparação e fiação de fibras têxteis naturais, exceto algodão
+    - - 1340-5/99
+      - Outros serviços de acabamento em fios, tecidos, artefatos têxteis e peças do vestuário
+    - - 1351-1/00
+      - Fabricação de artefatos têxteis para uso doméstico
+    - - 1354-5/00
+      - Fabricação de tecidos especiais, inclusive artefatos
+    - - 1359-6/00
+      - Fabricação de outros produtos têxteis não especificados anteriormente
+    - - 1411-8/01
+      - Confecção de roupas íntimas
+    - - 1411-8/02
+      - Facção de roupas íntimas
+    - - 1412-6/01
+      - Confecção de peças do vestuário, exceto roupas íntimas e as confeccionadas sob medida
+    - - 1412-6/02
+      - Confecção, sob medida, de peças do vestuário, exceto roupas íntimas
+    - - 1412-6/03
+      - Facção de peças do vestuário, exceto roupas íntimas
+    - - 1413-4/01
+      - Confecção de roupas profissionais, exceto sob medida
+    - - 1413-4/02
+      - Confecção, sob medida, de roupas profissionais
+    - - 1413-4/03
+      - Facção de roupas profissionais
+    - - 1414-2/00
+      - Fabricação de acessórios do vestuário, exceto para segurança e proteção
+    - - 1421-5/00
+      - Fabricação de meias
+    - - 1422-3/00
+      - Fabricação de artigos do vestuário, produzidos em malharias e tricotagens, exceto meias
+    - - 1521-1/00
+      - Fabricação de artigos para viagem, bolsas e semelhantes de qualquer material
+    - - 1529-7/00
+      - Fabricação de artefatos de couro não especificados anteriormente
+    - - 1531-9/01
+      - Fabricação de calçados de couro
+    - - 1822-9/01
+      - Serviços de encadernação e plastificação
+    - - 1822-9/99
+      - Serviços de acabamentos gráficos, exceto encadernação e plastificação
+    - - 1830-0/01
+      - Reprodução de som em qualquer suporte
+    - - 1830-0/02
+      - Reprodução de vídeo em qualquer suporte
+    - - 1830-0/03
+      - Reprodução de software em qualquer suporte
+    - - 2391-5/02
+      - Aparelhamento de pedras para construção, exceto associado à extração
+    - - 2391-5/03
+      - Aparelhamento de placas e execução de trabalhos em mármore, granito, ardósia e outras pedras
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 46.76
+      - 57.0
+      - 541.66
+      - 771.96
+      linhas:
+      - - 1032-5/01
+        - Fabricação de conservas de palmito
+      - - 1032-5/99
+        - Fabricação de conservas de legumes e outros vegetais, exceto palmito
+      - - 1033-3/01
+        - Fabricação de sucos concentrados de frutas, hortaliças e legumes
+      - - 1033-3/02
+        - Fabricação de sucos de frutas, hortaliças e legumes, exceto concentrados
+      - - 1051-1/00
+        - Preparação do leite
+      - - 1052-0/00
+        - Fabricação de laticínios
+      - - 1053-8/00
+        - Fabricação de sorvetes e outros gelados comestíveis
+      - - 1093-7/02
+        - Fabricação de frutas cristalizadas, balas e semelhantes
+      - - 1094-5/00
+        - Fabricação de massas alimentícias
+      - - 1095-3/00
+        - Fabricação de especiarias, molhos, temperos e condimentos
+      - - 1099-6/01
+        - Fabricação de vinagres
+      - - 1099-6/03
+        - Fabricação de fermentos e leveduras
+      - - 1099-6/04
+        - Fabricação de gelo comum
+      - - 1112-7/00
+        - Fabricação de vinho
+      - - 1121-6/00
+        - Fabricação de águas envasadas
+      - - 1122-4/01
+        - Fabricação de refrigerantes
+      - - 1122-4/99
+        - Fabricação de outras bebidas não alcoólicas não especificadas anteriormente
+      - - 1311-1/00
+        - Preparação e fiação de fibras de algodão
+      - - 1312-0/00
+        - Preparação e fiação de fibras têxteis naturais, exceto algodão
+      - - 1340-5/99
+        - Outros serviços de acabamento em fios, tecidos, artefatos têxteis e peças do vestuário
+      - - 1351-1/00
+        - Fabricação de artefatos têxteis para uso doméstico
+      - - 1354-5/00
+        - Fabricação de tecidos especiais, inclusive artefatos
+      - - 1359-6/00
+        - Fabricação de outros produtos têxteis não especificados anteriormente
+      - - 1411-8/01
+        - Confecção de roupas íntimas
+      - - 1411-8/02
+        - Facção de roupas íntimas
+      - - 1412-6/01
+        - Confecção de peças do vestuário, exceto roupas íntimas e as confeccionadas sob medida
+      - - 1412-6/02
+        - Confecção, sob medida, de peças do vestuário, exceto roupas íntimas
+      - - 1412-6/03
+        - Facção de peças do vestuário, exceto roupas íntimas
+      - - 1413-4/01
+        - Confecção de roupas profissionais, exceto sob medida
+      - - 1413-4/02
+        - Confecção, sob medida, de roupas profissionais
+      - - 1413-4/03
+        - Facção de roupas profissionais
+      - - 1414-2/00
+        - Fabricação de acessórios do vestuário, exceto para segurança e proteção
+      - - 1421-5/00
+        - Fabricação de meias
+      - - 1422-3/00
+        - Fabricação de artigos do vestuário, produzidos em malharias e tricotagens, exceto meias
+      - - 1521-1/00
+        - Fabricação de artigos para viagem, bolsas e semelhantes de qualquer material
+      - - 1529-7/00
+        - Fabricação de artefatos de couro não especificados anteriormente
+      - - 1531-9/01
+        - Fabricação de calçados de couro
+      - - 1822-9/01
+        - Serviços de encadernação e plastificação
+      - - 1822-9/99
+        - Serviços de acabamentos gráficos, exceto encadernação e plastificação
+      - - 1830-0/01
+        - Reprodução de som em qualquer suporte
+      - - 1830-0/02
+        - Reprodução de vídeo em qualquer suporte
+      - - 1830-0/03
+        - Reprodução de software em qualquer suporte
+      - - 2391-5/02
+        - Aparelhamento de pedras para construção, exceto associado à extração
+      - - 2391-5/03
+        - Aparelhamento de placas e execução de trabalhos em mármore, granito, ardósia e outras pedras
+notas:
+- Continuação da tabela da página 15.
+- A tabela continua na página 17.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

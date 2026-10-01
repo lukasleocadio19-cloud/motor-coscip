@@ -40,8 +40,7 @@ E v e n t o s p i r o t é c n i c o s
 
 2 0 2 5
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | PROJETO DE REVISÃO/2025 NOTA TÉCNICA CBMERJ |  |
@@ -270,8 +269,7 @@ e) áreas de proteção ambiental.
 
 7.3 Excetuam-se dos distanciamentos previstos no item 7.2, os postos de abastecimento de combustíveis
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Fire machine: equipamento de efeitos especiais |
@@ -498,8 +496,7 @@ Obs.: Para aplicar as distâncias reduzidas indicadas na coluna "tubo de lançam
 
 Fonte: Lei n° 5390/2009, combinada com o REG/T 03 do Exército Brasileiro.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Calibre nominal do tubo de |  |  |  |  | Distância - tubo de lançamento (m) | Distância - tubo de lançamento inclinado (m) |
@@ -517,3 +514,27 @@ Fonte: Lei n° 5390/2009, combinada com o REG/T 03 do Exército Brasileiro.
 | 10” |  |  | 254,0 |  |  | 214 |  |
 | 12” |  |  | 304,8 |  |  | 256 |  |
 | 16” |  |  | 406,4 |  |  | 342 |  |
+<!-- tabela-conferida: Tabela 1 do Anexo A p8 -->
+### Tabela 1 do Anexo A — Distância mínima entre o local do evento pirotécnico e os espectadores, edificações e veículos (conferida)
+
+| Calibre (polegadas) | Calibre (milímetros) | Distância – tubo de lançamento (m) | Distância – tubo de lançamento inclinado (m) |
+| --- | --- | --- | --- |
+| < 3” | < 76,2 | 43 | 29 |
+| 3” | 76,2 | 64 | 43 |
+| 4” | 101,6 | 85 | 58 |
+| 5” | 127,0 | 107 | 70 |
+| 6” | 152,4 | 128 | 85 |
+| 7” | 177,8 | 149 | 98 |
+| 8” | 203,2 | 171 | 113 |
+| 9” | 228,6 | 193 |  |
+| 10” | 254,0 | 214 |  |
+| 12” | 304,8 | 256 |  |
+| 16” | 406,4 | 342 |  |
+
+Fonte: NT 5-02, página 8, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Células da coluna "inclinado" de 9" a 16" em cinza (não se aplica) na página: em branco na tabela.
+Obs. da tabela: Para aplicar as distâncias reduzidas indicadas na coluna "tubo de lançamento inclinado", os tubos de lançamento devem estar inclinados na direção oposta à área dos espectadores e a inclinação seguirá o previsto no REG/T 03 do Exército Brasileiro.
+Conferência aritmética: milímetros = 25,4 × polegadas em todas as linhas.
+Fonte indicada na página: Lei nº 5390/2009, combinada com o REG/T 03 do Exército Brasileiro.
+<!-- /tabela-conferida: Tabela 1 do Anexo A p8 -->
+

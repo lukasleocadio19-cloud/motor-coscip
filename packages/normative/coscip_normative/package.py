@@ -15,7 +15,7 @@ from typing import Any
 import yaml
 
 from coscip_normative.exit_distances import verify_exit_distances
-from coscip_normative.requirements import verify_requirements
+from coscip_normative.requirements import verify_height_tables, verify_requirements
 from coscip_normative.sources import NormativeText, verify_citation, verify_table_row
 from coscip_rules.dsl import RuleDefinition, check_dependency_cycles, parse_rule
 
@@ -42,6 +42,9 @@ class RulePackageDef:
     requirements: dict[str, Any] | None = None
     # NT 2-08, Anexo C: distâncias máximas até a saída, opcional.
     exit_distances: dict[str, Any] | None = None
+    # Anexo III, Tabelas 5 a 32 por pavimentos e altura (e as de outro critério, só como
+    # referência), opcional.
+    requirements_height: dict[str, Any] | None = None
 
     @property
     def content_sha256(self) -> str:
@@ -52,6 +55,7 @@ class RulePackageDef:
             "classification": self.classification,
             "requirements": self.requirements,
             "exit_distances": self.exit_distances,
+            "requirements_height": self.requirements_height,
         }, sort_keys=True, ensure_ascii=False)
         return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
 
@@ -109,6 +113,8 @@ def load_package(directory: str | Path) -> RulePackageDef:
                       if raw.get("requirements") else None),
         exit_distances=(_package_yaml(root, raw["exit_distances"])
                         if raw.get("exit_distances") else None),
+        requirements_height=(_package_yaml(root, raw["requirements_height"])
+                             if raw.get("requirements_height") else None),
     )
 
 
@@ -161,17 +167,21 @@ def verify_package(pkg: RulePackageDef, sources: dict[str, NormativeText]) -> di
     failures = []
     for rule in pkg.rules:
         checks = []
-        for src in (rule.source, *rule.extra_sources):
+        basis = rule.interpretation.basis if rule.interpretation else ()
+        for role, src in ([("source", s) for s in (rule.source, *rule.extra_sources)]
+                          + [("interpretation", s) for s in basis]):
             if src.document.startswith("EXEMPLO"):
                 continue
             c = verify_citation(sources, src.document, src.item, tuple(src.quote))
-            checks.append({**c.as_dict(), "edition_declared": src.edition})
+            checks.append({**c.as_dict(), "edition_declared": src.edition, "role": role})
             if not c.verified:
                 failures.append(f"{rule.id}: {src.document} {src.item} — {c.problem}"
                                 + (f" ({', '.join(c.missing_terms)})" if c.missing_terms else ""))
         rules_out.append({"id": rule.id, "version": rule.version, "title": rule.title,
                           "measure": rule.measure, "subject": rule.subject,
-                          "content_sha256": rule.content_hash, "citations": checks})
+                          "content_sha256": rule.content_hash, "citations": checks,
+                          "interpretation": (rule.interpretation.as_dict()
+                                             if rule.interpretation else None)})
     sym_src = pkg.symbols.get("source") or {}
     symbols_check = None
     if sym_src:
@@ -196,6 +206,12 @@ def verify_package(pkg: RulePackageDef, sources: dict[str, NormativeText]) -> di
                         if pkg.requirements is not None else None)
     if requirements_out and requirements_out.get("source"):
         used.add(requirements_out["source"]["document"])
+    if pkg.requirements_height is not None:
+        height_out = verify_height_tables(pkg.requirements_height, sources, failures)
+        if requirements_out is not None:
+            # a consulta do Anexo III recebe as Tabelas 5–32 junto (mesmo relatório)
+            requirements_out["height_tables"] = height_out
+            requirements_out["verified"] &= height_out["verified"]
     exit_out = (verify_exit_distances(pkg.exit_distances, sources, failures)
                 if pkg.exit_distances is not None else None)
     if exit_out and exit_out.get("source"):

@@ -1,0 +1,546 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-05
+arquivo: nt-4-05-gas-manipulacao-armazenamento-e-comercializacao.md
+tabela: Tabela 1 do Anexo B
+titulo: Critérios de exigência de sistema fixo de resfriamento para recipientes transportáveis
+pagina: 15
+fonte_pdf_sha256: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 0
+  - 27
+  mesclar_linhas:
+  - - 0
+    - 1
+  - - 1
+    - 2
+  - - 2
+    - 3
+  - - 3
+    - 4
+  - - 4
+    - 5
+  - - 5
+    - 6
+  - - 6
+    - 7
+  - - 7
+    - 8
+  - - 8
+    - 9
+  - - 9
+    - 10
+  - - 10
+    - 11
+  - - 11
+    - 12
+  - - 13
+    - 14
+  - - 15
+    - 16
+  - - 16
+    - 17
+  - - 17
+    - 18
+  - - 19
+    - 20
+  - - 20
+    - 21
+  - - 21
+    - 22
+  - - 22
+    - 23
+  - - 24
+    - 25
+  - - 25
+    - 26
+  linhas_cabecalho: 1
+forma_geometrica:
+  faixa:
+  - 0
+  - 31
+  mesclar_linhas:
+  - - 0
+    - 1
+  - - 1
+    - 2
+  - - 2
+    - 3
+  - - 3
+    - 4
+  - - 4
+    - 5
+  - - 5
+    - 6
+  - - 6
+    - 7
+  - - 7
+    - 8
+  - - 8
+    - 9
+  - - 9
+    - 10
+  - - 10
+    - 11
+  - - 11
+    - 12
+  - - 14
+    - 15
+  - - 15
+    - 16
+  - - 18
+    - 19
+  - - 19
+    - 20
+  - - 20
+    - 21
+  - - 22
+    - 23
+  - - 23
+    - 24
+  - - 24
+    - 25
+  - - 25
+    - 26
+  - - 28
+    - 29
+  - - 29
+    - 30
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-05/pagina-15.jpg
+    imagem_sha256: e8d9e1a1414faded45049844f30f8a11c36a018007c6c7e8b5bf79143cd3a26d
+    linhas_cabecalho: 1
+    linhas:
+    - - Volume armazenado de GLP
+      - Hidrante
+      - Mínimo alcance horizontal do jato compacto (linha manual) ¹
+      - Diâmetro mínimo da tubulação
+      - Pressão mínima no sistema de hidrantes (medida no esguicho)
+      - Canhão monitor
+      - Pressão mínima no canhão monitor
+      - Funcionamento simultânea (para efeitos de cálculo)
+      - Tempo
+    - - Inferior a 12.480 kg
+      - Não
+      - '-'
+      - '-'
+      - '-'
+      - Não
+      - '-'
+      - '-'
+      - '-'
+    - - Superior a 12.480 kg inferior a 49.920 kg
+      - Simples
+      - 15 m
+      - 65 mm
+      - 35 mca
+      - Não
+      - '-'
+      - 2 linhas manuais
+      - 30 mim
+    - - Superior a 49.920 kg inferior a 99.840 kg
+      - Duplo
+      - 20 m
+      - 75 mm
+      - 40 mca
+      - Sim
+      - 56 mca
+      - 2 linhas manuais e 01 canhão monitor
+      - 45 min
+    - - Superior a 99.840 kg *
+      - Duplo
+      - 20 m
+      - 75 mm
+      - 40 mca
+      - Sim
+      - 56 mca
+      - 2 linhas manuais e 01 canhão monitor
+      - 60 min
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 15
+      tabela_na_pagina: 1
+    linhas:
+    - - Volume armazenado de GLP
+      - Hidrante
+      - Mínimo alcance horizontal do jato compacto (linha manual) ¹
+      - Diâmetro mínimo da tubulação
+      - Pressão mínima no sistema de hidrantes (medida no esguicho)
+      - Canhão monitor
+      - Pressão mínima no canhão monitor
+      - Funcionamento simultânea (para efeitos de cálculo)
+      - Tempo
+    - - Inferior a 12.480 kg
+      - Não
+      - '-'
+      - Não
+      - '-'
+    - - Superior a 12.480 kg inferior a 49.920 kg
+      - Simples
+      - 15 m
+      - 65 mm
+      - 35 mca
+      - Não
+      - '-'
+      - 2 linhas manuais
+      - 30 mim
+    - - Superior a 49.920 kg inferior a 99.840 kg
+      - Duplo
+      - 20 m
+      - 75 mm
+      - 40 mca
+      - Sim
+      - 56 mca
+      - 2 linhas manuais e 01 canhão monitor
+      - 45 min
+    - - Superior a 99.840 kg *
+      - Duplo
+      - 20 m
+      - 75 mm
+      - 40 mca
+      - Sim
+      - 56 mca
+      - 2 linhas manuais e 01 canhão monitor
+      - 60 min
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 55.45
+      - 119.43
+      - 547.6
+      - 460.7
+      linhas:
+      - - ''
+        - Hidrante
+        - Mínimo
+        - Diâmetro mínimo da tubulação
+        - ''
+        - ''
+        - ''
+        - ''
+        - Tempo
+      - - null
+        - null
+        - null
+        - null
+        - Pressão
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - alcance
+        - null
+        - null
+        - null
+        - Pressão
+        - Funcionamento
+        - null
+      - - Volume
+        - null
+        - null
+        - null
+        - mínima no
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - horizontal
+        - null
+        - null
+        - Canhão
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - sistema de
+        - null
+        - mínima no
+        - simultânea (para
+        - null
+      - - armazenado
+        - null
+        - do jato
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - hidrantes
+        - monitor
+        - canhão
+        - efeitos de
+        - null
+      - - de GLP
+        - null
+        - compacto
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - (medida no
+        - null
+        - monitor
+        - cálculo)
+        - null
+      - - null
+        - null
+        - (linha
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - null
+      - - ''
+        - null
+        - null
+        - null
+        - esguicho)
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - manual) ¹
+        - null
+        - null
+        - null
+        - ''
+        - ''
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - ''
+        - null
+        - null
+        - null
+        - null
+      - - Inferior a
+        - Não
+        - ''
+        - '-'
+        - ''
+        - ''
+        - ''
+        - ''
+        - '-'
+      - - null
+        - null
+        - '-'
+        - null
+        - '-'
+        - Não
+        - '-'
+        - '-'
+        - null
+      - - 12.480 kg
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - ''
+        - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - null
+      - - Superior a
+        - Simples
+        - ''
+        - 65 mm
+        - ''
+        - ''
+        - ''
+        - ''
+        - 30 mim
+      - - 12.480 kg
+        - null
+        - 15 m
+        - null
+        - 35 mca
+        - Não
+        - '-'
+        - 2 linhas manuais
+        - null
+      - - inferior a
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - 49.920 kg
+        - null
+        - ''
+        - null
+        - ''
+        - ''
+        - ''
+        - ''
+        - null
+      - - Superior a
+        - Duplo
+        - ''
+        - 75 mm
+        - ''
+        - ''
+        - ''
+        - ''
+        - 45 min
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 2 linhas manuais e
+        - null
+      - - 49.920 kg
+        - null
+        - 20 m
+        - null
+        - 40 mca
+        - Sim
+        - 56 mca
+        - null
+        - null
+      - - inferior a
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 01 canhão monitor
+        - null
+      - - 99.840 kg
+        - null
+        - ''
+        - null
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - ''
+        - null
+      - - Superior a
+        - Duplo
+        - ''
+        - 75 mm
+        - ''
+        - ''
+        - ''
+        - 2 linhas manuais e
+        - 60 min
+      - - null
+        - null
+        - 20 m
+        - null
+        - 40 mca
+        - Sim
+        - 56 mca
+        - null
+        - null
+      - - 99.840 kg *
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 01 canhão monitor
+        - null
+      - - null
+        - null
+        - ''
+        - null
+        - ''
+        - ''
+        - ''
+        - null
+        - null
+      - - 1) O alcance horizontal do jato compacto produzido pelas linhas manuais de resfriamento deve
+          ser medido da saída do esguicho ao
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - ponto de queda do jato, porém este alcance deve ser desconsiderado quando da aplicação de 6.5.1.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+notas:
+- 'Nota 1 da tabela: O alcance horizontal do jato compacto produzido pelas linhas manuais de resfriamento
+  deve ser medido da saída do esguicho ao ponto de queda do jato, porém este alcance deve ser desconsiderado
+  quando da aplicação de 6.5.1.'
+- 'Fonte indicada na página: CBMERJ.'
+inconsistencias_da_fonte:
+- '"30 mim" na coluna Tempo (as outras linhas dizem "min").'
+- A última faixa tem um asterisco ("Superior a 99.840 kg *") que a página não define; a única nota da
+  tabela é a 1).
+- 'As faixas não incluem os limites: 12.480 kg, 49.920 kg e 99.840 kg exatos não estão em nenhuma linha
+  ("inferior a" / "superior a").'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: divergente

@@ -1,0 +1,147 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-05
+arquivo: nt-2-05-sinalizacao.md
+tabela: Tabela 6 do Anexo B
+titulo: Sinalização de equipamentos (conclusão, p. 16)
+pagina: 16
+fonte_pdf_sha256: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-05/pagina-16.jpg
+    imagem_sha256: fed1d21df60216415a4775daf7c4f96aa76de3191c9325c4735c98524ce02a1c
+    linhas_cabecalho: 1
+    linhas:
+    - - Código
+      - Símbolo
+      - Significado
+      - Forma e cor
+      - Aplicação
+    - - E-13
+      - ''
+      - Seta à esquerda, indicativa de localização dos equipamentos de combate a incêndio ou alarme
+      - 'Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente'
+      - 'Complementação da indicação da localização dos equipamentos de combate a incêndio ou alarme.
+        Utilizadas em conjunto com a sinalização do equipamento a ser indicado, em casos onde o equipamento
+        esteja oculto. Deve sempre ser acompanhado do símbolo do(s) equipamento(s) que estiver(em) oculto(s).
+        Nível: superior'
+    - - E-14
+      - ''
+      - Seta à direita, indicativa de localização dos equipamentos de combate a incêndio ou alarme
+      - ^
+      - ^
+    - - E-15
+      - ''
+      - Seta diagonal à esquerda, indicativa de localização dos equipamentos de combate a incêndio ou
+        alarme
+      - ^
+      - ^
+    - - E-16
+      - ''
+      - Seta diagonal à direita, indicativa de localização dos equipamentos de combate a incêndio ou alarme
+      - ^
+      - ^
+    - - E-17
+      - ''
+      - Sinalização de solo para equipamentos de combate a incêndio (hidrante e extintores)
+      - 'Forma: quadrada (1,00 m □ 1,00 m) Fundo: vermelha (0,70 m □ 0,70 m) Borda: amarela (largura □
+        0,15 m)'
+      - 'Usado para indicar a localização dos equipamentos de combate a incêndio, para evitar a sua obstrução.
+        Nível: solo'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 16
+      tabela_na_pagina: 1
+    linhas:
+    - - Código
+      - Símbolo
+      - Significado
+      - Forma e cor
+      - Aplicação
+    - - E-13
+      - Seta à esquerda, indicativa de localização dos equipamentos de combate a incêndio ou alarme
+      - 'Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente'
+      - 'Complementação da indicação da localização dos equipamentos de combate a incêndio ou alarme.
+        Utilizadas em conjunto com a sinalização do equipamento a ser indicado, em casos onde o equipamento
+        esteja oculto. Deve sempre ser acompanhado do símbolo do(s) equipamento(s) que estiver(em) oculto(s).
+        Nível: superior'
+    - - E-14
+      - Seta à direita, indicativa de localização dos equipamentos de combate a incêndio ou alarme
+    - - E-15
+      - Seta diagonal à esquerda, indicativa de localização dos equipamentos de combate a incêndio ou
+        alarme
+    - - E-16
+      - Seta diagonal à direita, indicativa de localização dos equipamentos de combate a incêndio ou alarme
+    - - E-17
+      - Sinalização de solo para equipamentos de combate a incêndio (hidrante e extintores)
+      - 'Forma: quadrada (1,00 m 1,00 m) Fundo: vermelha (0,70 m 0,70 m) Borda: amarela (largura 0,15
+        m)'
+      - 'Usado para indicar a localização dos equipamentos de combate a incêndio, para evitar a sua obstrução.
+        Nível: solo'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.6
+      - 70.56
+      - 535.3
+      - 662.86
+      linhas:
+      - - Código
+        - Símbolo
+        - Significado
+        - Forma e cor
+        - Aplicação
+      - - E-13
+        - ''
+        - Seta à esquerda, indicativa de localização dos equipamentos de combate a incêndio ou alarme
+        - 'Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente'
+        - 'Complementação da indicação da localização dos equipamentos de combate a incêndio ou alarme.
+          Utilizadas em conjunto com a sinalização do equipamento a ser indicado, em casos onde o equipamento
+          esteja oculto. Deve sempre ser acompanhado do símbolo do(s) equipamento(s) que estiver(em) oculto(s).
+          Nível: superior'
+      - - E-14
+        - ''
+        - Seta à direita, indicativa de localização dos equipamentos de combate a incêndio ou alarme
+        - null
+        - null
+      - - E-15
+        - ''
+        - Seta diagonal à esquerda, indicativa de localização dos equipamentos de combate a incêndio ou
+          alarme
+        - null
+        - null
+      - - E-16
+        - ''
+        - Seta diagonal à direita, indicativa de localização dos equipamentos de combate a incêndio ou
+          alarme
+        - null
+        - null
+      - - E-17
+        - ''
+        - Sinalização de solo para equipamentos de combate a incêndio (hidrante e extintores)
+        - 'Forma: quadrada (1,00 m 1,00 m) Fundo: vermelha (0,70 m 0,70 m) Borda: amarela (largura 0,15
+          m)'
+        - 'Usado para indicar a localização dos equipamentos de combate a incêndio, para evitar a sua
+          obstrução. Nível: solo'
+notas:
+- A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela.
+  Célula de forma e cor mesclada entre linhas repete-se na publicação.
+- Na E-17 a página mostra glifos não renderizados (□) entre as medidas, provavelmente "×" e "="; a camada
+  de texto os omite.
+- 'Fonte indicada na página: ABNT NBR 16820.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

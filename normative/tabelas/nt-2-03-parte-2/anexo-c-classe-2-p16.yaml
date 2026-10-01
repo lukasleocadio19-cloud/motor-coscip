@@ -1,0 +1,140 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 Parte 2
+arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+tabela: Anexo C (Classe II)
+titulo: Exemplos das mercadorias – Classe II
+pagina: 16
+fonte_pdf_sha256: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-2/pagina-16.jpg
+    imagem_sha256: 10d3f63cf47e9acb5e24faccf4bfaa893ab8aff6f5b207fe34da16e5dd77fb0d
+    linhas_cabecalho: 1
+    linhas:
+    - - Exemplos de mercadorias Classe II
+    - - Bebidas alcoólicas Até 20% de álcool em recipientes de madeira
+    - - Aparelhos elétricos grandes (por exemplo, fogões) - Em caixas de papelão corrugado, (sem quantidades
+        significativas de plástico)
+    - - Produtos de confeitaria Biscoitos, bolos e tortas - Embaladas, em caixas de papelão
+    - - Pilhas e baterias Pilhas secas (sem lítio ou metais exóticos similares) em embalagens blíster
+        em caixas de papelão
+    - - Garrafas e frascos Cheio com pós incombustíveis - PET Caixas, engradados Vazias, de madeira, com
+        paredes sólidas
+    - - Fertilizantes Em sacos - Nitratos
+    - - Peixe ou produtos derivados Congelado - Em caixas de papel com cera, dentro de caixas de papelão
+        - Em caixas de madeira ou barricas
+    - - Comidas congeladas Em caixas de papel com cera, dentro de caixas de papelão
+    - - Couros e peles Em fardos
+    - - Luminárias Não feitas de plástico - Em caixas de papelão
+    - - Mármore Artificial, pias e tampos - Em caixas de papelão, em engradados
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 16
+      tabela_na_pagina: 1
+    linhas:
+    - - Exemplos de mercadorias Classe II
+    - - Bebidas alcoólicas Até 20% de álcool em recipientes de madeira
+    - - Aparelhos elétricos grandes (por exemplo, fogões) - Em caixas de papelão corrugado, (sem quantidades
+        significativas de plástico)
+    - - Produtos de confeitaria Biscoitos, bolos e tortas - Embaladas, em caixas de papelão
+    - - Pilhas e baterias Pilhas secas (sem lítio ou metais exóticos similares) em embalagens blíster
+        em caixas de papelão
+    - - Garrafas e frascos Cheio com pós incombustíveis - PET Caixas, engradados Vazias, de madeira, com
+        paredes sólidas
+    - - Fertilizantes Em sacos - Nitratos
+    - - Peixe ou produtos derivados Congelado - Em caixas de papel com cera, dentro de caixas de papelão
+        - Em caixas de madeira ou barricas
+    - - Comidas congeladas Em caixas de papel com cera, dentro de caixas de papelão
+    - - Couros e peles Em fardos
+    - - Luminárias Não feitas de plástico - Em caixas de papelão
+    - - Mármore Artificial, pias e tampos - Em caixas de papelão, em engradados
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 60.19
+      - 56.88
+      - 527.91
+      - 301.97
+      linhas:
+      - - '- Recipientes plásticos'
+      - - Motores - Elétricos
+      - - Amêndoas - Em latas, em caixas de papelão
+      - - Tintas Latas, em caixas de papelão - À base de água (látex)
+      - - Recipientes plásticos - Líquidos ou semilíquidos incombustíveis em recipientes plásticos com
+          capacidade menor que 5 gal (18,9 L)
+      - - Aves e derivados - Em latas, em caixas de papelão - Congelada, embalagem sem plástico e sem
+          cera
+      - - Sal Em sacos
+      - - Melaço Em tambores metálicos
+      - - Transformadores Secos ou com óleo isolante
+      - - Arame Arame sem capa em carretéis de metal em estrados de madeira
+    - bbox: &id001
+      - 60.19
+      - 350.81
+      - 527.91
+      - 728.74
+      linhas:
+      - - ''
+        - Exemplos de mercadorias Classe II
+        - ''
+      - - Bebidas alcoólicas Até 20% de álcool em recipientes de madeira
+        - null
+        - null
+      - - Aparelhos elétricos grandes (por exemplo, fogões) - Em caixas de papelão corrugado, (sem quantidades
+          significativas de plástico)
+        - null
+        - null
+      - - Produtos de confeitaria Biscoitos, bolos e tortas - Embaladas, em caixas de papelão
+        - null
+        - null
+      - - Pilhas e baterias Pilhas secas (sem lítio ou metais exóticos similares) em embalagens blíster
+          em caixas de papelão
+        - null
+        - null
+      - - Garrafas e frascos Cheio com pós incombustíveis - PET Caixas, engradados Vazias, de madeira,
+          com paredes sólidas
+        - null
+        - null
+      - - Fertilizantes Em sacos - Nitratos
+        - null
+        - null
+      - - Peixe ou produtos derivados Congelado - Em caixas de papel com cera, dentro de caixas de papelão
+          - Em caixas de madeira ou barricas
+        - null
+        - null
+      - - Comidas congeladas Em caixas de papel com cera, dentro de caixas de papelão
+        - null
+        - null
+      - - Couros e peles Em fardos
+        - null
+        - null
+      - - Luminárias Não feitas de plástico - Em caixas de papelão
+        - null
+        - null
+      - - Mármore Artificial, pias e tampos - Em caixas de papelão, em engradados
+        - null
+        - null
+notas:
+- Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
+- A tabela da Classe II continua no alto da página 17.
+inconsistencias_da_fonte:
+- '"Produtos de confeitaria — Biscoitos, bolos e tortas — Embaladas, em caixas de papelão" está na Classe
+  II aqui e, como "Embalados, em caixas de papelão", na Classe III (p. 17). O Anexo B (p. 9) dá Classe
+  II para "Congelados, em caixas de papelão" e Classe III para "Embalados, em caixas de papelão".'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 1
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

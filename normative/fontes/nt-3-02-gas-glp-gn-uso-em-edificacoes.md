@@ -319,8 +319,7 @@ d) ter altura interna útil de 1,80 m, no mínimo;
 
 e) possuir um dos lados de maior dimensão totalmente aberto para acesso aos recipientes e ventilação. Esta
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Central |  | Cor da tubulação |  |  |  |  |
@@ -328,6 +327,18 @@ e) possuir um dos lados de maior dimensão totalmente aberto para acesso aos rec
 |  |  | Fase líquida |  |  | Fase vapor |  |
 | Recipiente Transportável | Laranja |  |  | Amarela |  |  |
 | Recipiente estacionário | Laranja ou branca com conexões em laranja |  |  | Amarela ou branca com conexões em amarelo |  |  |
+
+<!-- tabela-conferida: Tabela 1 p5 -->
+### Tabela 1 — Identificação da tubulação de GLP (conferida)
+
+| Central | Cor da tubulação — fase líquida | Cor da tubulação — fase vapor |
+| --- | --- | --- |
+| Recipiente Transportável | Laranja | Amarela |
+| Recipiente estacionário | Laranja ou branca com conexões em laranja | Amarela ou branca com conexões em amarelo |
+
+Fonte: NT 3-02, página 5, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: ABNT NBR 13523:2019.
+<!-- /tabela-conferida: Tabela 1 p5 -->
 
 ---
 
@@ -387,8 +398,7 @@ c) construção das estruturas com TRRF mínimo de 120 min, conforme NT 2-19 - S
 
 5.4.1 A central de GLP deve ser protegida por extintores de incêndio de capacidade extintora mínima de
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Capacidade do recipiente |  |  | Afastamento mínimo (d) |  |
@@ -397,6 +407,21 @@ c) construção das estruturas com TRRF mínimo de 120 min, conforme NT 2-19 - S
 | > 10 até 20 m³ |  |  | 1,5 m |  |  |
 | > 20 até 120 m³ |  |  | 3,0 m |  |  |
 | > 120 m³ |  |  | 7,5 m |  |  |
+
+<!-- tabela-conferida: Tabela 2 p6 -->
+### Tabela 2 — Afastamentos da cerca de proteção (conferida)
+
+| Capacidade do recipiente | Afastamento mínimo (d) |
+| --- | --- |
+| Até 10 m³ | 1,0 m |
+| > 10 até 20 m³ | 1,5 m |
+| > 20 até 120 m³ | 3,0 m |
+| > 120 m³ | 7,5 m |
+
+Fonte: NT 3-02, página 6, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: ABNT NBR 13523:2019.
+d = afastamento da cerca de proteção em relação ao recipiente (legenda da Figura 3).
+<!-- /tabela-conferida: Tabela 2 p6 -->
 
 ---
 
@@ -458,8 +483,7 @@ Figura 5 - Afastamento de segurança para central de
 
 GLP com interposição de parede resistente ao fogo.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Capacidade total da central (Kg) | Quantidade e capacidade extintora |  |
@@ -468,6 +492,20 @@ GLP com interposição de parede resistente ao fogo.
 | ≤ 270 | 01 (um) 20-B:C ou 01 (um) PQS-6 Kg | Não exigido |
 | > 270 a 1800 | 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg | Não exigido |
 | > 1800 | 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg | 01 (um) 80-B:C ou 01 (um) PQS-50 Kg |
+
+<!-- tabela-conferida: Tabela 3 p7 -->
+### Tabela 3 — Proteção por extintores para central de GLP (conferida)
+
+| Capacidade total da central (Kg) | Quantidade e capacidade extintora — Extintor Portátil | Quantidade e capacidade extintora — Extintor sobre rodas |
+| --- | --- | --- |
+| ≤ 270 | 01 (um) 20-B:C ou 01 (um) PQS-6 Kg | Não exigido |
+| > 270 a 1800 | 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg | Não exigido |
+| > 1800 | 02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg | 01 (um) 80-B:C ou 01 (um) PQS-50 Kg |
+
+Fonte: NT 3-02, página 7, Tabela 3; conferida em 2026-09-29 (visual + geometrica).
+Fonte: CBMERJ.
+"Quantidade e capacidade extintora" é célula mesclada sobre as colunas Extintor Portátil e Extintor sobre rodas.
+<!-- /tabela-conferida: Tabela 3 p7 -->
 
 ---
 
@@ -519,8 +557,7 @@ Fonte: ABNT NBR 13523:2019
 
 5.6.4 É vedada a instalação das tomadas para abastecimento em caixas ou galerias subterrâneas e próximas de depressões do solo, valetas para captação de
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Local |  | Afastamento |  |
@@ -530,6 +567,21 @@ Fonte: ABNT NBR 13523:2019
 | Aberturas das edificações (janelas, portas, tomadas de ar e similares). | 3,00 m |  |  |
 | Fonte de ignição e materiais de fácil combustão. | 3,00 m |  |  |
 | Reservatórios que contenham outros fluidos inflamáveis. | 6,00 m |  |  |
+
+<!-- tabela-conferida: Tabela 5 p8 -->
+### Tabela 5 — Afastamentos da tomada para abastecimento (conferida)
+
+| Local | Afastamento mínimo (d) |
+| --- | --- |
+| Ralos, rebaixos ou canaletas e veículos abastecedores. | 1,50 m |
+| Aberturas das edificações (janelas, portas, tomadas de ar e similares). | 3,00 m |
+| Fonte de ignição e materiais de fácil combustão. | 3,00 m |
+| Reservatórios que contenham outros fluidos inflamáveis. | 6,00 m |
+
+Fonte: NT 3-02, página 8, Tabela 5; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: ABNT NBR 13523:2019.
+Pelo item 5.6.3, com a tomada protegida por paredes e cobertura com TRRF = 120 min, os afastamentos podem ser reduzidos à metade nas direções com interposição das paredes.
+<!-- /tabela-conferida: Tabela 5 p8 -->
 
 ---
 
@@ -721,8 +773,7 @@ Tabela 1 - Afastamentos mínimos de segurança para recipientes transportáveis 
 
 Fonte: ABNT NBR 13523:2019, adaptado por CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Afastamentos de segurança (m) para recipientes transportáveis e estacionários (m) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -740,6 +791,39 @@ Fonte: ABNT NBR 13523:2019, adaptado por CBMERJ.
 | > 8 a 120 |  | 15 | 15 | 15 |  |  | 1,5 | 1,5 | - | 3 |  | - |  | 6 |  |
 | > 120 |  | 22,5 | 15 | 22,5 |  |  | ¼ da soma dos diâmetros dos recipientes adjacentes | 1,5 | - | 3 |  | - |  | 6 |  |
 | Observações: a Nos recipientes de superfície, as distâncias apresentadas são medidas a partir da superfície externa do recipiente mais próximo. A válvula de segurança dos recipientes estacionários deve estar fora das projeções da edificação, como telhados, balcões, marquises. b A distância para os recipientes enterrados/aterrados deve ser medida a partir da válvula de segurança, enchimento e indicador de nível máximo. Caso o recipiente esteja instalado em caixa de alvenaria, esta distância pode ser reduzida pela metade, respeitando um mínimo de 1,0 m do costado do recipiente para divisa de propriedades edificáveis/edificações. c As distâncias de afastamento das edificações não consideram as projeções de complementos ou partes destas, como telhados, balcões, marquises. d Para recipientes transportáveis devem ser atendidos os afastamentos mínimos em função da capacidade volumétrica total do agrupamento de recipientes, conforme a Tabela 2. e No caso de existência de duas ou mais centrais de GLP com recipientes transportáveis, estas devem distar entre si em no mínimo 7,5 m. Centrais de GLP com distância entre si inferior a 7,5 m serão consideradas como uma única central para a aplicação da Tabela 1 e Tabela 2. Exceto em edificações comerciais com centrais de GLP para atendimento individualizado à diversos estabelecimentos. Neste caso, poderá ser utilizada mais de uma central de GLP, em uma única área destinada para este fim, desde que, os recipientes estejam em abrigo resistente ao fogo com, no mínimo, TRRF 120 min, dispostos lado a lado e com afastamento mínimo considerando a capacidade total da somatória de todos os recipientes conforme Tabela 2, até no máximo 10 m³. f Para recipientes acima de 0,5 m³, o número máximo de recipientes deve ser igual a 6. Se mais que uma instalação como esta for feita, ela deve distar pelo menos 7,5 m da outra. g A distância de recipientes de superfície de capacidade individual de até 8 m³, para edificações/divisa de propriedade, pode ser reduzida à metade, desde que sejam instalados no máximo três recipientes com capacidade total de até 16 m³. Este recipiente ou conjunto de recipientes deve estar pelo menos 7,5 m distante de qualquer outro recipiente com capacidade individual maior que 0,5 m³. h Os recipientes de GLP não podem ser instalados dentro de bacias de contenção de outros combustíveis. i No caso de depósitos de oxigênio e hidrogênio, os afastamentos devem ser conforme as Tabelas 3 e 4, respectivamente. j Para os recipientes transportáveis instalados no interior de abrigos, com paredes e cobertura com, no mínimo, TRRF de 120 min, interpondo-se entre os recipientes e o ponto considerado, a distância pode ser reduzida à metade. k Distâncias não obrigatoriamente requeridas para situações em edificações existentes que possam ter instalações em nicho conforme item 5.7.2 desta NT. l Para recipientes transportáveis contidos em abrigos, com paredes laterais e cobertura de materiais incombustíveis certificados, que se interponha entre os recipientes e aberturas (portas e janelas), a distância pode ser reduzida à metade. m Para captação de ar forçado acima das válvulas dos recipientes, o afastamento mínimo de segurança pode ser reduzido para 3 m. n Para divisa de propriedade comprovadamente não edificável (por exemplo: margens de rios, faixa de segurança de redes elétricas de alta-tensão e de rodovias etc.), o afastamento mínimo de segurança para recipientes estacionários é equivalente à Tabela 2 (Afastamento da cerca de proteção) desta NT. o Os recipientes de superfície podem ser instalados ao longo do limite da propriedade e/ou passeio público, desde que exista uma parede resistente ao fogo conforme 5.5.4. Neste caso, o afastamento mínimo de segurança será medido ao redor da parede, conforme 5.5.2 e Figura 5. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+<!-- tabela-conferida: Tabela 1 do Anexo A p12 -->
+### Tabela 1 do Anexo A — Afastamentos mínimos de segurança para recipientes transportáveis e estacionários (conferida)
+
+| Capacidade individual do recipiente (m³) (vide obs.: h) | Divisas de propriedades edificáveis / edificações (vide obs.: d, f, n): superfície (obs.: a, c, e, o) | Divisas de propriedades edificáveis / edificações: enterrado/aterrado (obs.: b) | Passeio público (vide obs.: d, k, o) | Entre recipientes | Aberturas abaixo da descarga da válvula de segurança: abastecidos no local | Aberturas abaixo da descarga da válvula de segurança: trocáveis | Fontes de ignição e outras aberturas (portas, janelas, etc.) e materiais combustíveis (vide obs.: j): abastecidos no local | Fontes de ignição e outras aberturas e materiais combustíveis: trocáveis | Produtos tóxicos, perigosos inflamáveis e chama aberta (vide obs.: i, m) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ≤ 0,5 (obs. l) | 0 (obs.: g, j) | 3 | 3 (obs.: j) | 0 | 1 | 1 | 3 (obs.: k) | 1,5 (obs.: k) | 6 |
+| > 0,5 a 2 | 1,5 (obs.: g) | 3 | 3 | 0 | 1,5 | - | 3 | - | 6 |
+| > 2 a 5,5 | 3 (obs.: g) | 3 | 3 | 1 | 1,5 | - | 3 | - | 6 |
+| > 5,5 a 8 | 7,5 (obs.: g) | 3 | 7,5 | 1 | 1,5 | - | 3 | - | 6 |
+| > 8 a 120 | 15 | 15 | 15 | 1,5 | 1,5 | - | 3 | - | 6 |
+| > 120 | 22,5 | 15 | 22,5 | ¼ da soma dos diâmetros dos recipientes adjacentes | 1,5 | - | 3 | - | 6 |
+
+Fonte: NT 3-02, página 12, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Afastamentos de segurança em metros. Cabeçalho de dois níveis achatado na publicação ("grupo: subcoluna").
+Observações da tabela:
+a) Nos recipientes de superfície, as distâncias apresentadas são medidas a partir da superfície externa do recipiente mais próximo. A válvula de segurança dos recipientes estacionários deve estar fora das projeções da edificação, como telhados, balcões, marquises.
+b) A distância para os recipientes enterrados/aterrados deve ser medida a partir da válvula de segurança, enchimento e indicador de nível máximo. Caso o recipiente esteja instalado em caixa de alvenaria, esta distância pode ser reduzida pela metade, respeitando um mínimo de 1,0 m do costado do recipiente para divisa de propriedades edificáveis/edificações.
+c) As distâncias de afastamento das edificações não consideram as projeções de complementos ou partes destas, como telhados, balcões, marquises.
+d) Para recipientes transportáveis devem ser atendidos os afastamentos mínimos em função da capacidade volumétrica total do agrupamento de recipientes, conforme a Tabela 2.
+e) No caso de existência de duas ou mais centrais de GLP com recipientes transportáveis, estas devem distar entre si em no mínimo 7,5 m. Centrais de GLP com distância entre si inferior a 7,5 m serão consideradas como uma única central para a aplicação da Tabela 1 e Tabela 2. Exceto em edificações comerciais com centrais de GLP para atendimento individualizado à diversos estabelecimentos. Neste caso, poderá ser utilizada mais de uma central de GLP, em uma única área destinada para este fim, desde que, os recipientes estejam em abrigo resistente ao fogo com, no mínimo, TRRF 120 min, dispostos lado a lado e com afastamento mínimo considerando a capacidade total da somatória de todos os recipientes conforme Tabela 2, até no máximo 10 m³.
+f) Para recipientes acima de 0,5 m³, o número máximo de recipientes deve ser igual a 6. Se mais que uma instalação como esta for feita, ela deve distar pelo menos 7,5 m da outra.
+g) A distância de recipientes de superfície de capacidade individual de até 8 m³, para edificações/divisa de propriedade, pode ser reduzida à metade, desde que sejam instalados no máximo três recipientes com capacidade total de até 16 m³. Este recipiente ou conjunto de recipientes deve estar pelo menos 7,5 m distante de qualquer outro recipiente com capacidade individual maior que 0,5 m³.
+h) Os recipientes de GLP não podem ser instalados dentro de bacias de contenção de outros combustíveis.
+i) No caso de depósitos de oxigênio e hidrogênio, os afastamentos devem ser conforme as Tabelas 3 e 4, respectivamente.
+j) Para os recipientes transportáveis instalados no interior de abrigos, com paredes e cobertura com, no mínimo, TRRF de 120 min, interpondo-se entre os recipientes e o ponto considerado, a distância pode ser reduzida à metade.
+k) Distâncias não obrigatoriamente requeridas para situações em edificações existentes que possam ter instalações em nicho conforme item 5.7.2 desta NT.
+l) Para recipientes transportáveis contidos em abrigos, com paredes laterais e cobertura de materiais incombustíveis certificados, que se interponha entre os recipientes e aberturas (portas e janelas), a distância pode ser reduzida à metade.
+m) Para captação de ar forçado acima das válvulas dos recipientes, o afastamento mínimo de segurança pode ser reduzido para 3 m.
+n) Para divisa de propriedade comprovadamente não edificável (por exemplo: margens de rios, faixa de segurança de redes elétricas de alta-tensão e de rodovias etc.), o afastamento mínimo de segurança para recipientes estacionários é equivalente à Tabela 2 (Afastamento da cerca de proteção) desta NT.
+o) Os recipientes de superfície podem ser instalados ao longo do limite da propriedade e/ou passeio público, desde que exista uma parede resistente ao fogo conforme 5.5.4. Neste caso, o afastamento mínimo de segurança será medido ao redor da parede, conforme 5.5.2 e Figura 5.
+Fonte indicada na página: ABNT NBR 13523:2019, adaptado por CBMERJ.
+<!-- /tabela-conferida: Tabela 1 do Anexo A p12 -->
 
 ---
 
@@ -759,8 +843,7 @@ Tabela 4 - Afastamentos mínimos de segurança para estocagem de hidrogênio
 
 Fonte: ABNT NBR 13523:2019, adaptado por CBMERJ.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Central de |  |  | Divisa de |  | Passeio público (obs.: b, d) |  | Quantidade total de recipientes transportáveis |  |  |  |  |
@@ -795,6 +878,50 @@ Fonte: ABNT NBR 13523:2019, adaptado por CBMERJ.
 |  | Até 11 |  | 11 a 85 | Acima de 85 |  |
 | Até 2 | 0 |  | 3,0 m | 7,5 m |  |
 | Acima de 2 | 0 |  | 7,5 m | 15,0 m |  |
+
+<!-- tabela-conferida: Tabela 2 do Anexo A p13 -->
+### Tabela 2 do Anexo A — Afastamentos mínimos de segurança para agrupamento de recipientes transportáveis (conferida)
+
+| Central de capacidade volumétrica total (obs.: a) | Divisa de propriedades edificáveis / edificações (obs.: c, d) | Passeio público (obs.: b, d) | Quantidade total de recipientes transportáveis: P-45 (0,108 m³) | Quantidade total de recipientes transportáveis: P-90 (0,216 m³) | Quantidade total de recipientes transportáveis: P-125 (0,300 m³) | Quantidade total de recipientes transportáveis: P-190 (0,450 m³) |
+| --- | --- | --- | --- | --- | --- | --- |
+| Até 2,0 m³ | 0 m | 3 m | 18 | 9 | 6 | 4 |
+| 2,1 a 3,5 m³ | 1,5 m | 3 m | 19 a 32 | 10 a 16 | 7 a 11 | 5 a 7 |
+| 3,51 a 5,5 m³ | 3 m | 3 m | 33 a 50 | 17 a 25 | 12 a 18 | 8 a 11 |
+| 5,51 a 8,0 m³ | 7,5 m | 3 m | 51 a 74 | 26 a 37 | 19 a 26 | 12 a 16 |
+| Acima de 8 até 10 m³ | 15 m | 15 m | 75 a 92 máximo | 38 a 46 máximo | 27 a 33 máximo | 17 a 22 máximo |
+
+Fonte: NT 3-02, página 13, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Observações da tabela:
+a) Centrais com capacidade acima do limite estabelecido na Tabela 2 devem ser analisadas por órgãos competentes considerando situações temporárias e se em caso definitivas com as devidas medidas mitigadoras compensatórias definidas
+b) Afastamento não aplicável para centrais GLP instaladas em nicho conforme item 5.7.2 desta NT.
+c) Caso o local destinado à instalação da central que utilize recipientes transportáveis não permita os afastamentos acima, a central pode ser subdividida com a utilização de paredes divisórias resistentes ao fogo com TRRF mínimo de 120 min, material aprovado conforme ABNT NBR 10636, com comprimento e altura de dimensões superiores ao recipiente. Neste caso, deve se adotar o afastamento mínimo referente à capacidade total de cada subdivisão da central de GLP.
+d) Para recipientes contidos em abrigos, com paredes laterais e cobertura resistente ao fogo com TRRF = 2 h, interpondo-se entre os recipientes e o ponto considerado, a distância pode ser reduzida à metade.
+Fonte indicada na página: ABNT NBR 13523:2019.
+<!-- /tabela-conferida: Tabela 2 do Anexo A p13 -->
+
+<!-- tabela-conferida: Tabela 3 do Anexo A p13 -->
+### Tabela 3 do Anexo A — Afastamentos mínimos de segurança para estocagem de oxigênio (conferida)
+
+| Capacidade total da Central de GLP (m³) | Oxigênio: Até 11 Nm³ | Oxigênio: 11,1 a 566 Nm³ | Oxigênio: Acima de 566 Nm³ |
+| --- | --- | --- | --- |
+| Até 5,5 | 0 | 6,0 m | 7,5 m |
+| Acima de 5,5 | 0 | 6,0 m | 15,0 m |
+
+Fonte: NT 3-02, página 13, Tabela 3 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: ABNT NBR 13523:2019, adaptado por CBMERJ.
+<!-- /tabela-conferida: Tabela 3 do Anexo A p13 -->
+
+<!-- tabela-conferida: Tabela 4 do Anexo A p13 -->
+### Tabela 4 do Anexo A — Afastamentos mínimos de segurança para estocagem de hidrogênio (conferida)
+
+| Capacidade total da central de GLP (m³) | Hidrogênio: Até 11 Nm³ | Hidrogênio: 11 a 85 Nm³ | Hidrogênio: Acima de 85 Nm³ |
+| --- | --- | --- | --- |
+| Até 2 | 0 | 3,0 m | 7,5 m |
+| Acima de 2 | 0 | 7,5 m | 15,0 m |
+
+Fonte: NT 3-02, página 13, Tabela 4 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: ABNT NBR 13523:2019, adaptado por CBMERJ.
+<!-- /tabela-conferida: Tabela 4 do Anexo A p13 -->
 
 ---
 

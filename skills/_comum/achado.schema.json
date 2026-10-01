@@ -1,0 +1,266 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lukasleocadio19-cloud/motor-coscip/skills/_comum/achado.schema.json",
+  "title": "Achado de análise CBMERJ (skills e motor)",
+  "description": "Contrato comum de saída (plano de correção, F3.4). O mesmo vocabulário do Finding do motor (coscip_findings): os três status (compliance, evidence, review) nunca se fundem; ausência de evidência nunca vira conformidade; citação não localizada fica com item '[A CONFERIR]' e o achado não pode ser COMPLIANT. Enums conferidos por tests/unit/test_skills_conteudo.py contra coscip_cbm.enums; o motor converte o Finding com coscip_findings.achado.to_achado (F8).",
+  "type": "object",
+  "required": [
+    "id",
+    "origem",
+    "tema",
+    "fato",
+    "regra",
+    "compliance_status",
+    "evidence_status",
+    "review_status",
+    "severidade",
+    "tipo"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "único na matriz; do motor: <check>@<pavimento>"
+    },
+    "origem": {
+      "enum": [
+        "skill",
+        "motor"
+      ]
+    },
+    "check_id": {
+      "type": "string",
+      "description": "id do check do catálogo, quando vier do motor"
+    },
+    "escopo": {
+      "type": "string",
+      "description": "pavimento, bloco ou documento a que o achado se refere; vazio = processo"
+    },
+    "tema": {
+      "type": "string",
+      "description": "medida ou assunto (ex.: Extintores)"
+    },
+    "fato": {
+      "type": "string",
+      "description": "o que foi observado, com a fonte"
+    },
+    "regra": {
+      "$ref": "#/$defs/regra"
+    },
+    "outras_regras": {
+      "type": "array",
+      "description": "demais dispositivos citados pelo mesmo achado (o check pode ter mais de uma base)",
+      "items": {
+        "$ref": "#/$defs/regra"
+      }
+    },
+    "criterio_adotado": {
+      "type": "object",
+      "description": "interpretação registrada (F4.1): o texto da norma não diz literalmente o alcance aplicado",
+      "required": [
+        "decisao",
+        "decidido_por",
+        "decidido_em"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "escopo": {
+          "type": "string"
+        },
+        "decisao": {
+          "type": "string"
+        },
+        "decidido_por": {
+          "type": "string"
+        },
+        "decidido_em": {
+          "type": "string"
+        }
+      }
+    },
+    "evidencia_esperada": {
+      "type": "string"
+    },
+    "evidencias": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "fonte_tipo"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "fonte_tipo": {
+            "enum": [
+              "CAD",
+              "DOCUMENT",
+              "CALCULATION",
+              "NORMATIVE_TABLE",
+              "HUMAN"
+            ]
+          },
+          "documento": {
+            "type": "string",
+            "description": "arquivo, prancha, folha"
+          },
+          "localizador": {
+            "type": "string",
+            "description": "página, handle, camada, coordenada"
+          },
+          "valor": {},
+          "incerteza": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "medida": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "valor": {
+          "type": "number"
+        },
+        "unidade": {
+          "type": "string"
+        },
+        "incerteza": {
+          "type": "number"
+        },
+        "limite": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "algoritmo": {
+          "type": "string"
+        }
+      }
+    },
+    "compliance_status": {
+      "enum": [
+        "COMPLIANT",
+        "NON_COMPLIANT",
+        "NOT_APPLICABLE",
+        "UNDETERMINED"
+      ]
+    },
+    "evidence_status": {
+      "enum": [
+        "SUFFICIENT",
+        "PARTIAL",
+        "MISSING",
+        "CONFLICTING",
+        "UNVERIFIED"
+      ]
+    },
+    "review_status": {
+      "enum": [
+        "NOT_REQUIRED",
+        "PENDING",
+        "CONFIRMED",
+        "CONTESTED",
+        "DATA_REQUESTED"
+      ]
+    },
+    "severidade": {
+      "enum": [
+        "CRITICAL",
+        "MAJOR",
+        "MINOR",
+        "INFORMATIONAL"
+      ]
+    },
+    "tipo": {
+      "enum": [
+        "NON_COMPLIANT",
+        "DOCUMENT_INCOMPLETE",
+        "DOCUMENT_MISSING",
+        "DATA_MISSING",
+        "DIVERGENCE",
+        "NOT_VERIFIABLE",
+        "ANALYST_REVIEW",
+        "NO_PENDING_ISSUE"
+      ]
+    },
+    "confianca": {
+      "enum": [
+        "ALTA",
+        "MEDIA",
+        "BAIXA"
+      ],
+      "description": "confiança na leitura da evidência, não na conformidade"
+    },
+    "saneamento": {
+      "type": "string",
+      "description": "providência pedida (vira o 'Solicita-se' do bilhete)"
+    },
+    "bloqueante": {
+      "type": "boolean"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "compliance_status": {
+            "const": "COMPLIANT"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "evidence_status": {
+            "const": "SUFFICIENT"
+          },
+          "regra": {
+            "properties": {
+              "item": {
+                "not": {
+                  "const": "[A CONFERIR]"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "regra": {
+      "type": "object",
+      "required": [
+        "documento",
+        "item"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "documento": {
+          "type": "string",
+          "description": "NT x-yy ou Decreto 42/2018"
+        },
+        "edicao": {
+          "type": "string"
+        },
+        "item": {
+          "type": "string",
+          "description": "item, tabela, anexo ou artigo localizado; '[A CONFERIR]' se não localizado"
+        },
+        "pagina": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "citacao": {
+          "type": "string",
+          "description": "trecho literal conferido"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-05
+arquivo: nt-2-05-sinalizacao.md
+tabela: Tabela 5 do Anexo B
+titulo: Sinalização de orientação e salvamento (conclusão, p. 13)
+pagina: 13
+fonte_pdf_sha256: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-05/pagina-13.jpg
+    imagem_sha256: 0c88ee69677ffb25de5b122096293a69f94d993facb530f9ed4667517725148a
+    linhas_cabecalho: 1
+    linhas:
+    - - Código
+      - Símbolo
+      - Significado
+      - Forma e cor
+      - Aplicação
+    - - S-21
+      - ''
+      - Acesso a um dispositivo para abertura de uma porta de saída de emergência.
+      - 'Forma: quadrada Fundo: verde Pictograma: fotoluminescente Forma: quadrada Fundo: verde Pictograma:
+        fotoluminescente'
+      - 'Informação de como é realizada a abertura de uma porta de saída de emergência. Nível: intermediário'
+    - - S-22
+      - ''
+      - Mecanismo de abertura de porta de saída de emergência
+      - ^
+      - 'Informação de como é realizada a abertura de uma porta de saída de emergência. Nível: intermediário'
+    - - S-23
+      - ''
+      - Elevador de emergência
+      - 'Forma: retangular Fundo: verde Pictograma: fotoluminescente'
+      - 'Sinalização específica para elevadores de emergência. Nível: intermediário'
+    - - S-24
+      - ''
+      - Ponto de encontro
+      - 'Forma: quadrada ou retangular Fundo: verde Pictograma: fotoluminescente'
+      - 'Sinalização específica para ponto de encontro de agrupamento. Nível: superior'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 13
+      tabela_na_pagina: 1
+    linhas:
+    - - Código
+      - Símbolo
+      - Significado
+      - Forma e cor
+      - Aplicação
+    - - S-21
+      - Acesso a um dispositivo para abertura de uma porta de saída de emergência.
+      - 'Forma: quadrada Fundo: verde Pictograma: fotoluminescente Forma: quadrada Fundo: verde Pictograma:
+        fotoluminescente'
+      - 'Informação de como é realizada a abertura de uma porta de saída de emergência. Nível: intermediário'
+    - - S-22
+      - Mecanismo de abertura de porta de saída de emergência
+      - 'Informação de como é realizada a abertura de uma porta de saída de emergência. Nível: intermediário'
+    - - S-23
+      - Elevador de emergência
+      - 'Forma: retangular Fundo: verde Pictograma: fotoluminescente'
+      - 'Sinalização específica para elevadores de emergência. Nível: intermediário'
+    - - S-24
+      - Ponto de encontro
+      - 'Forma: quadrada ou retangular Fundo: verde Pictograma: fotoluminescente'
+      - 'Sinalização específica para ponto de encontro de agrupamento. Nível: superior'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 49.56
+      - 70.8
+      - 543.22
+      - 674.02
+      linhas:
+      - - Código
+        - Símbolo
+        - Significado
+        - Forma e cor
+        - Aplicação
+      - - S-21
+        - ''
+        - Acesso a um dispositivo para abertura de uma porta de saída de emergência.
+        - 'Forma: quadrada Fundo: verde Pictograma: fotoluminescente Forma: quadrada Fundo: verde Pictograma:
+          fotoluminescente'
+        - 'Informação de como é realizada a abertura de uma porta de saída de emergência. Nível: intermediário'
+      - - S-22
+        - ''
+        - Mecanismo de abertura de porta de saída de emergência
+        - null
+        - 'Informação de como é realizada a abertura de uma porta de saída de emergência. Nível: intermediário'
+      - - S-23
+        - ''
+        - Elevador de emergência
+        - 'Forma: retangular Fundo: verde Pictograma: fotoluminescente'
+        - 'Sinalização específica para elevadores de emergência. Nível: intermediário'
+      - - S-24
+        - ''
+        - Ponto de encontro
+        - 'Forma: quadrada ou retangular Fundo: verde Pictograma: fotoluminescente'
+        - 'Sinalização específica para ponto de encontro de agrupamento. Nível: superior'
+notas:
+- A coluna Símbolo traz o desenho do sinal (só na imagem da página); a célula fica em branco na tabela.
+  Célula de forma e cor mesclada entre linhas repete-se na publicação.
+- 'Mensagens dos sinais: S-23 "ELEVADOR DE EMERGÊNCIA"; S-24 "PONTO DE ENCONTRO".'
+- 'Fonte indicada na página: ABNT NBR 16820.'
+inconsistencias_da_fonte:
+- 'S-21 e S-22 têm a forma e cor numa única célula mesclada, com o texto "Forma: quadrada Fundo: verde
+  Pictograma: fotoluminescente" escrito duas vezes.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

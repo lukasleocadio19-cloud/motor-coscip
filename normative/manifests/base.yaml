@@ -1,0 +1,4040 @@
+schema_version: base-manifest/1.0
+gerado_por: tools/normas/manifesto.py (não editar à mão)
+resumo:
+  fontes: 53
+  imagens_referenciadas: 527
+  imagens_presentes: 527
+  imagens_ausentes: 0
+  tabelas_por_estado:
+    capa: 38
+    divergente: 1
+    nao_tabela: 36
+    verificada: 256
+fontes:
+- arquivo: decreto-42-2018-coscip-compilado.md
+  documento: Decreto 42/2018
+  titulo: Decreto Estadual nº 42, de 17 de dezembro de 2018 - COSCIP-RJ
+  edicao: Versão compilada com as alterações do Decreto nº 46.925/2020
+  ato: null
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/COSCIP_DEC_42-2018_COMPILADO.pdf
+  sha256_pdf: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+  sha256_md: 06fb7e4320c654ee3421addfcba6ffa9c2687e99609fd3f5a2dc1ff97202f5cc
+  data_captura: '2026-07-23'
+  paginas: 57
+  midia: decreto-42-2018-coscip-compilado
+  imagens:
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 024232bd255906093ae523efb2ed038db821c3865a703f9616ba5a4a5e9d1c12
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: 1cdfb1ab92e834ff4a36c7580b710a45318b1fdfc3473ae1363b19040837a1fa
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-21.jpg
+    pagina: 21
+    estado: presente
+    sha256: 62a2cbbee4e5911bf2f7eb4b50b1134ec3b2d046741c2f147b7616181321031a
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-22.jpg
+    pagina: 22
+    estado: presente
+    sha256: b8a678ae9741e8658d7b33f78f4b70c35885ef946d86b2ba51756b998abc3dbd
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-23.jpg
+    pagina: 23
+    estado: presente
+    sha256: 4d17250595be54733e52ad64d11d59f1b1423998b8f6e089458d70224ece69ac
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-24.jpg
+    pagina: 24
+    estado: presente
+    sha256: 2a8f86a74e9f69575f32aa323930e94c4acce8a3940995082fae8e7203293ab0
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-25.jpg
+    pagina: 25
+    estado: presente
+    sha256: c03c3c655a14eef5a7e5220fba62898c467170b409b16432dd86d41d3ff813cf
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-26.jpg
+    pagina: 26
+    estado: presente
+    sha256: aca77bdd91c5ddc92376f688ae050edcc4f327089bd5c6bf66f4e65ea8b05ac3
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-27.jpg
+    pagina: 27
+    estado: presente
+    sha256: 75ffe2fd613b9ecc97b0d8740e0607d29a86d83071c32c2dba60340f199578a9
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-28.jpg
+    pagina: 28
+    estado: presente
+    sha256: b8dd2e35ebb50eed02d9bce791e566c534468a5c0bd91b17eaabbd248bbec90c
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-29.jpg
+    pagina: 29
+    estado: presente
+    sha256: c1366bab942109b7812cc1f1fe84672d24ed4c6a020caa068c25a6ece23c773b
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-30.jpg
+    pagina: 30
+    estado: presente
+    sha256: 7c5bd88e66ea37a06f737e993197eb4cecad8e9e8de44e294d3c39aa4504297d
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-31.jpg
+    pagina: 31
+    estado: presente
+    sha256: f7984c1cd77c47b433f31a867a69875b5e8dde8a2b187d017badc69b7be01fb0
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-32.jpg
+    pagina: 32
+    estado: presente
+    sha256: 35ecc707d736be728f50c52380d07f9ff5dfe8d7dea2b3dbbca9f5582b5a203b
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-33.jpg
+    pagina: 33
+    estado: presente
+    sha256: c43aff31edb5f44ba162397cbe4ff623e4d429f8606a45c3bbd5e4fc908ba428
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-34.jpg
+    pagina: 34
+    estado: presente
+    sha256: 64b396040f217bed68932710626f94e2f59549225f24ece6d1f5bd124b48563e
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-35.jpg
+    pagina: 35
+    estado: presente
+    sha256: cf6e49c18b5a879e03ce096aafb5a9f1bae79f5d67c8b1962399cfb3cef759cd
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-36.jpg
+    pagina: 36
+    estado: presente
+    sha256: 3470fcafebe6ae475fdd40aa395274a9673b77ade40a78624b89742e20546aa8
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-37.jpg
+    pagina: 37
+    estado: presente
+    sha256: a0c22d027b6acd64b916033af65c375b42a6be2e8f5189e6579a170c6cd8f7ae
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-38.jpg
+    pagina: 38
+    estado: presente
+    sha256: a52b0503e808821a3f591b56768acc17f6fe1bd4a8af6f07e9e1ec7abef7272d
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-39.jpg
+    pagina: 39
+    estado: presente
+    sha256: fcbb907f0f71fdba774bd29f543f22faea87ce229c36d5ede7456f0593aac610
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-40.jpg
+    pagina: 40
+    estado: presente
+    sha256: d122b07312a3d23db6711db3e3fbc33e052ab8b7626407e3c7650a21655f869e
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-41.jpg
+    pagina: 41
+    estado: presente
+    sha256: 871766aaa53c2afe8443572212cae3da4a3f1087f63033948d051b587734aff0
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-42.jpg
+    pagina: 42
+    estado: presente
+    sha256: 1f2f641a4ab124cf30cf40b3d78c8e2c69f3a4d3aa2d28bc9117a1460fdc1285
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-43.jpg
+    pagina: 43
+    estado: presente
+    sha256: 488dec8ca85054332f98d1ddbf19d263dbeccc26f405380e0c9ee526c51767b7
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-44.jpg
+    pagina: 44
+    estado: presente
+    sha256: 92a2bb859e70fcad6d4b5c4f372fecb077e3dacc1f0ccad699042b50e5dfc545
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-45.jpg
+    pagina: 45
+    estado: presente
+    sha256: c412c420b73d7bb6a2591457e763ca66bfaade66b624da494ce7dd59cd539c4c
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-46.jpg
+    pagina: 46
+    estado: presente
+    sha256: 342cd6aeaea4035753cbc8b01b41517c301fd29c20423e5a6e49877c8584ddc1
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-47.jpg
+    pagina: 47
+    estado: presente
+    sha256: 35a81d749c06d10851e05aac5f56cd1f8c1b7f74f5b1ebbcf91d994fc9a6e058
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-48.jpg
+    pagina: 48
+    estado: presente
+    sha256: 23a20bb8524dffc82e2aa13caa6d991769bcd4411f09f4f7c6d2881d902aa627
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-49.jpg
+    pagina: 49
+    estado: presente
+    sha256: 3c73a03136a1d4fd54fe30b7072c3b301b2e6288ede1b86be54abb46b55bdf62
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-50.jpg
+    pagina: 50
+    estado: presente
+    sha256: 0abbf0df8165aeed9938b518a40b23df84db18415a3be26ab31a165293b11136
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-51.jpg
+    pagina: 51
+    estado: presente
+    sha256: 4a725edf1a74f1b5f208535b838b4cb2b85d57d4696e5cb55fe665e603946834
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-52.jpg
+    pagina: 52
+    estado: presente
+    sha256: 34f93ebd1e3f0688e7decbad38962f271d1997e5c570a97a541f5d1f6e8b35b2
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-53.jpg
+    pagina: 53
+    estado: presente
+    sha256: f3d3c3deee3d81d303cda99e11b2c64fbb7b8c23eaac4db41a312b536a767cd3
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-54.jpg
+    pagina: 54
+    estado: presente
+    sha256: bf89f13cbd60447aff99f0b92fb91dc3d7fd5da7e5cdb4214ad1c2bdd4c830e9
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-55.jpg
+    pagina: 55
+    estado: presente
+    sha256: bbdaa203db121bbf070f5894175d22b6ccf878dd7b75b7eaf11ebbd866bbe451
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-56.jpg
+    pagina: 56
+    estado: presente
+    sha256: 97d605cd1ceab501eec0838d1c5d3c041013d5fdf95d9429a938d8249f322b66
+  - caminho: media/decreto-42-2018-coscip-compilado/pagina-57.jpg
+    pagina: 57
+    estado: presente
+    sha256: 279cbd58f6c023b573d115d5ed6455188a4ff13ead2e76521d02bcce3f51d310
+  tabelas:
+  - pagina: 1
+    estado: nao_tabela
+    motivo: preâmbulo do Decreto (CONSIDERANDO) e artigos 1º a 3º em texto corrido
+  - pagina: 20
+    tabela: Tabela 1 do Anexo II
+    arquivo: normative/tabelas/decreto-42-2018/tabela-01-p20.yaml
+    estado: verificada
+  - pagina: 21
+    tabela: Tabela 1 do Anexo II
+    arquivo: normative/tabelas/decreto-42-2018/tabela-01-p21.yaml
+    estado: verificada
+  - pagina: 22
+    tabela: Tabela 1 do Anexo II
+    arquivo: normative/tabelas/decreto-42-2018/tabela-01-p22.yaml
+    estado: verificada
+  - pagina: 23
+    tabela: Tabela 1 do Anexo II
+    arquivo: normative/tabelas/decreto-42-2018/tabela-01-p23.yaml
+    estado: verificada
+  - pagina: 24
+    tabela: Tabela 1 do Anexo II
+    arquivo: normative/tabelas/decreto-42-2018/tabela-01-p24.yaml
+    estado: verificada
+  - pagina: 25
+    tabela: Tabela 1 do Anexo II
+    arquivo: normative/tabelas/decreto-42-2018/tabela-01-p25.yaml
+    estado: verificada
+  - pagina: 26
+    tabela: Tabela 2
+    arquivo: normative/tabelas/decreto-42-2018/tabela-02.yaml
+    estado: verificada
+  - pagina: 27
+    tabela: Tabela 3
+    arquivo: normative/tabelas/decreto-42-2018/tabela-03.yaml
+    estado: verificada
+  - pagina: 28
+    tabela: Tabela 4
+    arquivo: normative/tabelas/decreto-42-2018/tabela-04.yaml
+    estado: verificada
+  - pagina: 29
+    tabela: Tabela 5
+    arquivo: normative/tabelas/decreto-42-2018/tabela-05.yaml
+    estado: verificada
+  - pagina: 30
+    tabela: Tabela 6
+    arquivo: normative/tabelas/decreto-42-2018/tabela-06.yaml
+    estado: verificada
+  - pagina: 31
+    tabela: Tabela 7
+    arquivo: normative/tabelas/decreto-42-2018/tabela-07.yaml
+    estado: verificada
+  - pagina: 32
+    tabela: Tabela 8
+    arquivo: normative/tabelas/decreto-42-2018/tabela-08.yaml
+    estado: verificada
+  - pagina: 33
+    tabela: Tabela 9
+    arquivo: normative/tabelas/decreto-42-2018/tabela-09.yaml
+    estado: verificada
+  - pagina: 34
+    tabela: Tabela 10
+    arquivo: normative/tabelas/decreto-42-2018/tabela-10.yaml
+    estado: verificada
+  - pagina: 35
+    tabela: Tabela 11
+    arquivo: normative/tabelas/decreto-42-2018/tabela-11.yaml
+    estado: verificada
+  - pagina: 36
+    tabela: Tabela 12
+    arquivo: normative/tabelas/decreto-42-2018/tabela-12.yaml
+    estado: verificada
+  - pagina: 37
+    tabela: Tabela 13
+    arquivo: normative/tabelas/decreto-42-2018/tabela-13.yaml
+    estado: verificada
+  - pagina: 38
+    tabela: Tabela 14
+    arquivo: normative/tabelas/decreto-42-2018/tabela-14.yaml
+    estado: verificada
+  - pagina: 39
+    tabela: Tabela 15
+    arquivo: normative/tabelas/decreto-42-2018/tabela-15.yaml
+    estado: verificada
+  - pagina: 40
+    tabela: Tabela 16
+    arquivo: normative/tabelas/decreto-42-2018/tabela-16.yaml
+    estado: verificada
+  - pagina: 41
+    tabela: Tabela 17
+    arquivo: normative/tabelas/decreto-42-2018/tabela-17.yaml
+    estado: verificada
+  - pagina: 42
+    tabela: Tabela 18
+    arquivo: normative/tabelas/decreto-42-2018/tabela-18.yaml
+    estado: verificada
+  - pagina: 43
+    tabela: Tabela 19
+    arquivo: normative/tabelas/decreto-42-2018/tabela-19.yaml
+    estado: verificada
+  - pagina: 44
+    tabela: Tabela 20
+    arquivo: normative/tabelas/decreto-42-2018/tabela-20.yaml
+    estado: verificada
+  - pagina: 45
+    tabela: Tabela 21
+    arquivo: normative/tabelas/decreto-42-2018/tabela-21.yaml
+    estado: verificada
+  - pagina: 46
+    tabela: Tabela 22
+    arquivo: normative/tabelas/decreto-42-2018/tabela-22.yaml
+    estado: verificada
+  - pagina: 47
+    tabela: Tabela 23
+    arquivo: normative/tabelas/decreto-42-2018/tabela-23.yaml
+    estado: verificada
+  - pagina: 48
+    tabela: Tabela 24
+    arquivo: normative/tabelas/decreto-42-2018/tabela-24.yaml
+    estado: verificada
+  - pagina: 49
+    tabela: Tabela 25
+    arquivo: normative/tabelas/decreto-42-2018/tabela-25.yaml
+    estado: verificada
+  - pagina: 50
+    tabela: Tabela 26
+    arquivo: normative/tabelas/decreto-42-2018/tabela-26.yaml
+    estado: verificada
+  - pagina: 51
+    tabela: Tabela 27
+    arquivo: normative/tabelas/decreto-42-2018/tabela-27.yaml
+    estado: verificada
+  - pagina: 52
+    tabela: Tabela 28
+    arquivo: normative/tabelas/decreto-42-2018/tabela-28.yaml
+    estado: verificada
+  - pagina: 53
+    tabela: Tabela 29
+    arquivo: normative/tabelas/decreto-42-2018/tabela-29.yaml
+    estado: verificada
+  - pagina: 54
+    tabela: Tabela 30
+    arquivo: normative/tabelas/decreto-42-2018/tabela-30.yaml
+    estado: verificada
+  - pagina: 55
+    tabela: Tabela 31
+    arquivo: normative/tabelas/decreto-42-2018/tabela-31.yaml
+    estado: verificada
+  - pagina: 56
+    tabela: Tabela 32
+    arquivo: normative/tabelas/decreto-42-2018/tabela-32.yaml
+    estado: verificada
+  - pagina: 57
+    tabela: Tabela 33
+    arquivo: normative/tabelas/decreto-42-2018/tabela-33.yaml
+    estado: verificada
+- arquivo: nt-1-01-parte-1-regularizacao.md
+  documento: NT 1-01 P1
+  titulo: NT 1-01 - Parte 1 - Procedimentos administrativos para regularização
+  edicao: 1ª edição - 2019; consolidada com a Portaria CBMERJ nº 1.317/2025
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_1-01_Parte1_alterada_Portaria_1317_2025.pdf
+  sha256_pdf: ef60d4d275f294070a335b903b76a486afae0e8784ee128bcaa6c0d8432e5ca5
+  sha256_md: b398c15700e85141175188635ba45454f6c74f9f3f5db9855eb38b20d7143970
+  data_captura: '2026-07-23'
+  paginas: 26
+  midia: nt-1-01-parte-1
+  imagens:
+  - caminho: media/nt-1-01-parte-1/pagina-23.png
+    pagina: 23
+    estado: presente
+    sha256: ace4cee8a1f5969bc23b322c8b053044bb84d29f485b163a2a5e38106671aa99
+  - caminho: media/nt-1-01-parte-1/pagina-24.png
+    pagina: 24
+    estado: presente
+    sha256: 4dfe8bdf8afb52825a80ad880da4c0d402b9d5115345448f0e14288511910821
+  - caminho: media/nt-1-01-parte-1/pagina-26.jpg
+    pagina: 26
+    estado: presente
+    sha256: 7510cc102623b0a9877b91be92e32d0566786b0cb567f784956c611fe20b80c3
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 23
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-a-atividades-p23.yaml
+    estado: verificada
+  - pagina: 24
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-a-atividades-p24.yaml
+    estado: verificada
+  - pagina: 26
+    tabela: Tabela 1 do Anexo B
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-b-tabela-1-unidades-rio.yaml
+    estado: verificada
+  - pagina: 26
+    tabela: Tabela 2 do Anexo B
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-b-tabela-2-unidades-caxias.yaml
+    estado: verificada
+  - pagina: 26
+    tabela: Tabela 3 do Anexo B
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-b-tabela-3-unidades-demais.yaml
+    estado: verificada
+  - pagina: 26
+    tabela: Tabela 4 do Anexo B
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-b-tabela-4-diretorias.yaml
+    estado: verificada
+  - pagina: 26
+    tabela: Tabela 5 do Anexo B
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-b-tabela-5-estadios.yaml
+    estado: verificada
+  - pagina: 26
+    tabela: Tabela 6 do Anexo B
+    arquivo: normative/tabelas/nt-1-01-parte-1/anexo-b-tabela-6-fare.yaml
+    estado: verificada
+- arquivo: nt-1-01-parte-2-fiscalizacao.md
+  documento: NT 1-01 P2
+  titulo: NT 1-01 - Parte 2 - Procedimentos administrativos para fiscalização
+  edicao: 2ª edição - 2021
+  ato: Portaria CBMERJ nº 1.151, de 10 de maio de 2021
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT_1-01-Procedimentos-Administrativos-para-Regularizacao-e-Fiscalizacao-Parte-2-Fiscalizacao_2021_1620759470.pdf
+  sha256_pdf: 01ffb41a7be61d731fd9997546980a430f6d49f9698fade87917101dedd9bef3
+  sha256_md: 2a66bd111522bff8cb4271b5a7b27b429f43caadc92adcbfa5bd11f1b8f66f67
+  data_captura: '2026-07-23'
+  paginas: 42
+  midia: nt-1-01-parte-2
+  imagens:
+  - caminho: media/nt-1-01-parte-2/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 86c1ef16f5f6c7d4268e5eb2ffb744270c73050328297e5a132320642e446176
+  - caminho: media/nt-1-01-parte-2/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: b55914c27686cdc81c6f8e7056c6b0e62a7e60510d8e0ddd24b14d8b2c7f7de8
+  - caminho: media/nt-1-01-parte-2/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: a319605599e47458b63f3e5be167d051995212b8d5607d16cc531647c60f8e23
+  - caminho: media/nt-1-01-parte-2/pagina-17.jpg
+    pagina: 17
+    estado: presente
+    sha256: 7f1ec9628a18f6d644953f30d00cf9cd63a73faf5aa8b0a280fbd390198392fe
+  - caminho: media/nt-1-01-parte-2/pagina-18.jpg
+    pagina: 18
+    estado: presente
+    sha256: b3526d7cccf395d0d35f99fa2e8e102332ca298f50f9d918e311a8f150753252
+  - caminho: media/nt-1-01-parte-2/pagina-19.jpg
+    pagina: 19
+    estado: presente
+    sha256: ddea1545ca8f8d55da1ef71313c3bcae14928b11d2eba9d4a3c6f271bb99ddca
+  - caminho: media/nt-1-01-parte-2/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: fbfaa8eb322f58402e786a50df8ac1427a6034025697f78bfd4ba99fca74faf5
+  - caminho: media/nt-1-01-parte-2/pagina-21.jpg
+    pagina: 21
+    estado: presente
+    sha256: f8e1447fa976a3a88c4c9fa044eba532088c48283cd2b831124dd6b4189886b8
+  - caminho: media/nt-1-01-parte-2/pagina-34.png
+    pagina: 34
+    estado: presente
+    sha256: 5d8bcd9a0b6ce5b817545859fbbf27e7e03ad88322deccd92433082245596dec
+  - caminho: media/nt-1-01-parte-2/pagina-35.jpg
+    pagina: 35
+    estado: presente
+    sha256: 4ccd48c733d7eb5b3b7d8f90fa7b56005a4051e9087309cb88e6359a813a84ac
+  - caminho: media/nt-1-01-parte-2/pagina-36.jpg
+    pagina: 36
+    estado: presente
+    sha256: 1c4cce5d0e9166a32c8389988b26a516704eb47930f6821cddb6f895ef84942a
+  - caminho: media/nt-1-01-parte-2/pagina-39.jpg
+    pagina: 39
+    estado: presente
+    sha256: f8e313af8be6fac28a032cf20b88f1853842d496fc59f00ab07b71f0a82e8429
+  - caminho: media/nt-1-01-parte-2/pagina-42.png
+    pagina: 42
+    estado: presente
+    sha256: 609d8fe74facba3659de1f5d4357a733f7a202e48a53799bd29803587e7f6505
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 4
+    estado: nao_tabela
+    motivo: fim da seção 3 (referências), definições 4.1 a 4.16 e início da seção 5 em duas colunas de
+      texto
+  - pagina: 7
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-1-01-parte-2/tabela-1-prazos-notificacao.yaml
+    estado: verificada
+  - pagina: 16
+    estado: nao_tabela
+    motivo: itens 5.6.3 a 5.7.3 (desinterdição e cassação de certificados) em duas colunas de texto
+  - pagina: 17
+    estado: nao_tabela
+    motivo: itens 5.7.4 a 5.9.2 (cassação, transição e fiscalização de edificações públicas) em duas colunas
+      de texto
+  - pagina: 18
+    estado: nao_tabela
+    motivo: itens 5.9.1.3 a 6.1.2.2 (interdição e início do compromisso de ajustamento de conduta) em
+      duas colunas de texto
+  - pagina: 19
+    estado: nao_tabela
+    motivo: itens 6.1.2.2 a 6.1.8 (compromisso de ajustamento de conduta) em duas colunas de texto
+  - pagina: 20
+    estado: nao_tabela
+    motivo: itens 6.1.8 a 6.4.1 (aplicação e abertura do processo de compromisso) em duas colunas de texto
+  - pagina: 21
+    estado: nao_tabela
+    motivo: itens 6.4.1 a 6.6.5 (cronograma, minuta e análise do TAC) em duas colunas de texto
+  - pagina: 34
+    tabela: Anexo E, item 2
+    arquivo: normative/tabelas/nt-1-01-parte-2/anexo-e-dispositivos-preventivos.yaml
+    estado: verificada
+  - pagina: 35
+    tabela: Anexo E, item 3
+    arquivo: normative/tabelas/nt-1-01-parte-2/anexo-e-equipamentos-especiais.yaml
+    estado: verificada
+  - pagina: 36
+    tabela: Anexo F
+    arquivo: normative/tabelas/nt-1-01-parte-2/anexo-f-cronograma.yaml
+    estado: verificada
+  - pagina: 39
+    tabela: Cronograma da cláusula sexta do Anexo G
+    arquivo: normative/tabelas/nt-1-01-parte-2/anexo-g-cronograma-tac.yaml
+    estado: verificada
+  - pagina: 42
+    tabela: Anexo H
+    arquivo: normative/tabelas/nt-1-01-parte-2/anexo-h-multas-tac.yaml
+    estado: verificada
+- arquivo: nt-1-02-terminologia.md
+  documento: NT 1-02
+  titulo: NT 1-02 - Terminologia de segurança contra incêndio e pânico
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-02-Terminologia-de-seguranca-contra-incendio-e-panico.pdf
+  sha256_pdf: 3b24e09a6e117ded078a50af35595ad80b957267a0a286ed4bb759c6029cfbef
+  sha256_md: 95822ffd55e96deeff97879c1d75a039604ba3d29abb78faa8ce81d8587e5220
+  data_captura: '2026-07-23'
+  paginas: 30
+  midia: nt-1-02
+  imagens:
+  - caminho: media/nt-1-02/pagina-01.png
+    pagina: 1
+    estado: presente
+    sha256: 8395622c02688584fe92f1f8c0b14e576b1d5ee20c0688d08a6e2a6a2bac1af6
+  - caminho: media/nt-1-02/pagina-02.png
+    pagina: 2
+    estado: presente
+    sha256: d25f93cf2d8ad0565da7d2ab6a4adab62c8dfdfadf4767d3eecd8f11991cb079
+  - caminho: media/nt-1-02/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 894b158b024ef404fd13c8934a8c29f0eb3bc35630ad01a0f99d5d6c838e09ee
+  - caminho: media/nt-1-02/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: d1e8e7da6dcc31853732e02e86746b2644542ad7bc6c43703142e11841015c75
+  - caminho: media/nt-1-02/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: 95c56e58ba2cfad1491a71e9de8d93dd1860b1f453d0e781d2743144402174ab
+  - caminho: media/nt-1-02/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: 02a2f264d00643f2423bad3767fc3f8fdcd8216bd5e0305f3e9367fca4949c39
+  - caminho: media/nt-1-02/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: 5a195e7ddcb49886d1f1f29fad54006a08bbdf8b0ac27e261fd384ed58a2a176
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 3
+    estado: nao_tabela
+    motivo: glossário do item 4 (definição de Aceiro) em duas colunas de texto
+  - pagina: 8
+    estado: nao_tabela
+    motivo: glossário do item 4 (definição de Carga a granel) em duas colunas de texto
+  - pagina: 13
+    estado: nao_tabela
+    motivo: glossário do item 4 (definição de Efluentes) em duas colunas de texto. Na mesma página a fonte
+      define duas vezes "Edificação térrea" com critérios diferentes (mezaninos com soma menor que a metade
+      da área do piso × jirau ou mezanino conforme o artigo 11 do Decreto 42/2018)
+  - pagina: 15
+    estado: nao_tabela
+    motivo: glossário do item 4 (definição de Estruturas verticais automatizadas de estacionamento) em
+      duas colunas de texto
+  - pagina: 20
+    estado: nao_tabela
+    motivo: glossário do item 4 (definição de Motogerador cabinado) em duas colunas de texto
+- arquivo: nt-1-03-simbolos-graficos.md
+  documento: NT 1-03
+  titulo: NT 1-03 - Símbolos gráficos para projetos de segurança contra incêndio e pânico
+  edicao: 2ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT1-03_2Edio_2023.pdf
+  sha256_pdf: 5fb3a3f6bc981a7677d5d40372da0bcaee380f6b54b56b77e5f160ec6b48cac5
+  sha256_md: 9ff0ac010d2cf7471c83e63c37163f4e93c8582335eb5771c1b6859ec53f6a51
+  data_captura: '2026-07-23'
+  paginas: 12
+  midia: nt-1-03
+  imagens:
+  - caminho: media/nt-1-03/pagina-01.png
+    pagina: 1
+    estado: presente
+    sha256: 9c2e931b6be818407d3401952fc91aaf2c57d8c999bcd8ac5ba682be65f1fa18
+  - caminho: media/nt-1-03/pagina-02.png
+    pagina: 2
+    estado: presente
+    sha256: 0ef393834aec0dac41eddabe3c0db4dfe4ada767942eb7abe548a67882e60749
+  - caminho: media/nt-1-03/pagina-03.png
+    pagina: 3
+    estado: presente
+    sha256: 3882061e415642a8ff7768df17e4f7b043dd9b65b2f304de5e66d6ab941e0c6c
+  - caminho: media/nt-1-03/pagina-04.png
+    pagina: 4
+    estado: presente
+    sha256: 244634785b728719e26275ffa5b0ee12dec4d857f82ab6bb6fdfa3b7e152cb52
+  - caminho: media/nt-1-03/pagina-05.png
+    pagina: 5
+    estado: presente
+    sha256: f2288ff03a61207101d9d741e84dd0580bded0f492e7dbff9224e59a5f921ff6
+  - caminho: media/nt-1-03/pagina-06.png
+    pagina: 6
+    estado: presente
+    sha256: 61b209f46626130651e51f86aea408475f96916348a43d3f04a97e7fdbc7bbea
+  - caminho: media/nt-1-03/pagina-07.png
+    pagina: 7
+    estado: presente
+    sha256: f6a7a3cfcec7341204d1dbd0ecb79805724187231c44b7c5978b21445ec1acf2
+  - caminho: media/nt-1-03/pagina-08.png
+    pagina: 8
+    estado: presente
+    sha256: 97464e807d5881b36c0bddebe88e6311fa07689cb49dfd6be3a98b6a620252c2
+  - caminho: media/nt-1-03/pagina-09.png
+    pagina: 9
+    estado: presente
+    sha256: 8a21d4bc5ac52ea1b7669f74c2ff73ee52b3e98d1ed3feb0502ef72bde20cfd2
+  - caminho: media/nt-1-03/pagina-10.png
+    pagina: 10
+    estado: presente
+    sha256: 6970844f9e1354577d032fb60886d0b90fbc2efe6ee1fb7453e61e15f2ca35fb
+  - caminho: media/nt-1-03/pagina-11.png
+    pagina: 11
+    estado: presente
+    sha256: 87477ee5f1d4fc2def302b4d03c5b5fb4b2ee93548102f14f01bf7445ef9e0df
+  - caminho: media/nt-1-03/pagina-12.png
+    pagina: 12
+    estado: presente
+    sha256: d4dab043904cc3acad1c4273c877f5779e21266bca93f3dd404f20f713fe1f41
+  tabelas:
+  - pagina: 4
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p04.yaml
+    estado: verificada
+  - pagina: 5
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p05.yaml
+    estado: verificada
+  - pagina: 6
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p06.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p07.yaml
+    estado: verificada
+  - pagina: 8
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p08.yaml
+    estado: verificada
+  - pagina: 9
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p09.yaml
+    estado: verificada
+  - pagina: 10
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p10.yaml
+    estado: verificada
+  - pagina: 11
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p11.yaml
+    estado: verificada
+  - pagina: 12
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-03/anexo-a-simbologia-p12.yaml
+    estado: verificada
+- arquivo: nt-1-04-classificacao-de-risco.md
+  documento: NT 1-04
+  titulo: NT 1-04 - Classificação das edificações e áreas de risco quanto ao risco de incêndio
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-04-Classificacao-das-edificacoes-e-areas-de-risco-quanto-ao-risco-de-incendio.pdf
+  sha256_pdf: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+  sha256_md: e521b78ed8cce1ee6ff994647cf36c9e9142beb3f184b3d70df77405d48a2371
+  data_captura: '2026-07-23'
+  paginas: 20
+  midia: nt-1-04
+  imagens:
+  - caminho: media/nt-1-04/pagina-05.png
+    pagina: 5
+    estado: presente
+    sha256: 7d043ce82adb988c5c6bea43e8925f1cd34d149cfc1163ba5e3ec5d769f5af38
+  - caminho: media/nt-1-04/pagina-06.png
+    pagina: 6
+    estado: presente
+    sha256: ee055c39cd5b88e4d71e9a7e9f62e7c4d7bf6bc076ed9f4b8f1dde0de4c22dd9
+  - caminho: media/nt-1-04/pagina-07.png
+    pagina: 7
+    estado: presente
+    sha256: 7c4f3337b7a7f55c74e83b1ab48a7e73288cc15acf9a351ba723f2bc01afd019
+  - caminho: media/nt-1-04/pagina-08.png
+    pagina: 8
+    estado: presente
+    sha256: 53b8b50f80c43683d46a8769662c9cbe0c3ecda34f3b2888baf91e6bd30c2590
+  - caminho: media/nt-1-04/pagina-09.png
+    pagina: 9
+    estado: presente
+    sha256: bec946608272be845c1e4cc8a938a2f8d9003d002bc73622ccf6e4805b84bcbf
+  - caminho: media/nt-1-04/pagina-10.png
+    pagina: 10
+    estado: presente
+    sha256: a33cdf7a3eaeecdbcdaa4b8fbc7cb05b4d46a429d51be541887ea5bda3c484cf
+  - caminho: media/nt-1-04/pagina-11.png
+    pagina: 11
+    estado: presente
+    sha256: 2e73546fa69d33cfe07df30b1eefaaf158bab02ab10c0006879be389e0dd03a2
+  - caminho: media/nt-1-04/pagina-12.png
+    pagina: 12
+    estado: presente
+    sha256: b02e50b551b7bc7244a9e22bbd0f4ebf8fa72410a549202355bc40e6f9c9916b
+  - caminho: media/nt-1-04/pagina-13.png
+    pagina: 13
+    estado: presente
+    sha256: 9dfcb93499d86122076c1f4322f3cd695cefa21480cff552199f838226e59e0e
+  - caminho: media/nt-1-04/pagina-14.png
+    pagina: 14
+    estado: presente
+    sha256: 49d9c8e6d4f2242989df7f39ea1386f705e372a322fdbec8820ee03ac90b1ea7
+  - caminho: media/nt-1-04/pagina-15.png
+    pagina: 15
+    estado: presente
+    sha256: ce25785eccfa08d9ee1baa1190430f1b4f787d07dab5eacba14598ab2d3a5ec0
+  - caminho: media/nt-1-04/pagina-16.png
+    pagina: 16
+    estado: presente
+    sha256: 4acecc50b4c76eecad10c70ba047922f3f2b50fa78855197d076165b94b000d7
+  - caminho: media/nt-1-04/pagina-17.png
+    pagina: 17
+    estado: presente
+    sha256: e20c5e6f1b888af05704d92430f647a6a97a8faf4376ea48392499213649df35
+  - caminho: media/nt-1-04/pagina-18.png
+    pagina: 18
+    estado: presente
+    sha256: ac505b94486827cfa6ec1fc80ec2cc96463520cc0260c2591ce56382e97764a1
+  - caminho: media/nt-1-04/pagina-19.jpg
+    pagina: 19
+    estado: presente
+    sha256: db01b307c7862e6d02de4f8409829db5ade6c3665773c62497598ca00576f9ab
+  - caminho: media/nt-1-04/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: 84edd38853cad171226f056b14734f8e69795d57ae8fd6f763288c7be66015b8
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 5
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-1-04/anexo-a-p5.yaml
+    estado: verificada
+  - pagina: 6
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-1-04/anexo-a-p6.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-1-04/anexo-a-p7.yaml
+    estado: verificada
+  - pagina: 8
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-1-04/anexo-a-p8.yaml
+    estado: verificada
+  - pagina: 9
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-1-04/anexo-a-p9.yaml
+    estado: verificada
+  - pagina: 10
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-1-04/anexo-a-p10.yaml
+    estado: verificada
+  - pagina: 11
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-1-04/anexo-b-p11.yaml
+    estado: verificada
+  - pagina: 12
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-1-04/anexo-b-p12.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-1-04/anexo-b-p13.yaml
+    estado: verificada
+  - pagina: 14
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-1-04/anexo-b-p14.yaml
+    estado: verificada
+  - pagina: 15
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-1-04/anexo-b-p15.yaml
+    estado: verificada
+  - pagina: 16
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-1-04/anexo-b-p16.yaml
+    estado: verificada
+  - pagina: 17
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-1-04/anexo-c-tabela-1-p17.yaml
+    estado: verificada
+  - pagina: 18
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-1-04/anexo-c-tabela-1-p18.yaml
+    estado: verificada
+  - pagina: 18
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-1-04/anexo-c-tabela-2-p18.yaml
+    estado: verificada
+  - pagina: 19
+    tabela: Tabela do Anexo D (1/3)
+    arquivo: normative/tabelas/nt-1-04/anexo-d-hi-parte-1.yaml
+    estado: verificada
+  - pagina: 19
+    tabela: Tabela do Anexo D (2/3)
+    arquivo: normative/tabelas/nt-1-04/anexo-d-hi-parte-2.yaml
+    estado: verificada
+  - pagina: 19
+    tabela: Tabela do Anexo D (3/3)
+    arquivo: normative/tabelas/nt-1-04/anexo-d-hi-parte-3.yaml
+    estado: verificada
+  - pagina: 20
+    tabela: Tabela do Anexo E (materiais)
+    arquivo: normative/tabelas/nt-1-04/anexo-e-planilha-materiais.yaml
+    estado: verificada
+  - pagina: 20
+    tabela: Tabela do Anexo E (totais)
+    arquivo: normative/tabelas/nt-1-04/anexo-e-planilha-totais.yaml
+    estado: verificada
+- arquivo: nt-1-05-edificacoes-anteriores.md
+  documento: NT 1-05
+  titulo: NT 1-05 - Edificações anteriores - Adequação ao COSCIP
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-05-Edificacoes-anteriores-Adequacao-ao-COSCIP.pdf
+  sha256_pdf: b06f6b5aadc8afd9d76f319d165383991c26dad7b603062e3d34ebd3720df877
+  sha256_md: 3f34a5165b74a913f97a4eee5789b7aaca7be8c425569ba8909aa5138282bcdd
+  data_captura: '2026-07-23'
+  paginas: 9
+  midia: nt-1-05
+  imagens:
+  - caminho: media/nt-1-05/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: b5d840ae27ef53363d347c28fd34f3eda568f6cfbd9865352d49232d7bb3ff5f
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 2
+    estado: nao_tabela
+    motivo: item 2.2 e a lista de exemplos da alínea c) (A-2 e A-5, A-6, B-1 e B-2, H-2 e H-3, H-1 e H-4,
+      grupos F, G, L e M, grupos C, D, E, I, J e F-8) em texto corrido; a lista não é tabela
+- arquivo: nt-1-06-adequacao-normativa.md
+  documento: NT 1-06
+  titulo: NT 1-06 - Processo administrativo em tramitação por adequação normativa
+  edicao: 2ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT1-06_2Edio_2023.pdf
+  sha256_pdf: 43fc14ce1f3a1046323e2aa3871622aa924b18c3843dd410bb76615377f3c928
+  sha256_md: 28876151e491fc7acdd3ee2d15184d31fe0c2bdcece4ee2f6410acc44952f871
+  data_captura: '2026-07-23'
+  paginas: 10
+  midia: nt-1-06
+  imagens: []
+  tabelas: []
+- arquivo: nt-1-07-atividades-de-baixo-risco.md
+  documento: NT 1-07
+  titulo: NT 1-07 - Atividades econômicas de baixo risco
+  edicao: 1ª edição - 2020
+  ato: Portaria CBMERJ nº 1109, de 20 de maio de 2020
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-07-Atividades-economicas-de-baixo-risco-2020.pdf
+  sha256_pdf: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+  sha256_md: d5e8d13582a79569c97b5fe46f2957cbcd9ca4770876dfc05cc8d921781a3ae4
+  data_captura: '2026-07-23'
+  paginas: 29
+  midia: nt-1-07
+  imagens:
+  - caminho: media/nt-1-07/pagina-13.png
+    pagina: 13
+    estado: presente
+    sha256: cf958de2e16281d278f618257cb4f969f018319e577807bb0ef13d15cf45fac3
+  - caminho: media/nt-1-07/pagina-14.png
+    pagina: 14
+    estado: presente
+    sha256: 8b762401878c61ec5e543025278b1825c1f8db23837dbcabeb4dfa58c575308b
+  - caminho: media/nt-1-07/pagina-15.png
+    pagina: 15
+    estado: presente
+    sha256: 9a5ced6ec59d520cbc3be4e0592bc215dca94caa709bd89a9d92482a7f4a36c1
+  - caminho: media/nt-1-07/pagina-16.png
+    pagina: 16
+    estado: presente
+    sha256: 064a257c0af53c4be1e711a2601c9bc86eb09f10f53495d9ce9f5236c894262f
+  - caminho: media/nt-1-07/pagina-17.png
+    pagina: 17
+    estado: presente
+    sha256: dc57cd310e735ce9403f0ee1695af1038b66f167cb792da23c5669ecb67adbcc
+  - caminho: media/nt-1-07/pagina-18.png
+    pagina: 18
+    estado: presente
+    sha256: 5711196f78584fc12ac3bc648f15b73ae0f2b11042d943451d6b789f02ed493e
+  - caminho: media/nt-1-07/pagina-19.png
+    pagina: 19
+    estado: presente
+    sha256: a62e67bf4b59a9f69933c1b6d20eb0ba7964a7877c3d1036e8f710d1153dcc37
+  - caminho: media/nt-1-07/pagina-20.png
+    pagina: 20
+    estado: presente
+    sha256: d8f7cc9a34689131034ccc8a6f63f74e5760b4ac9e7e9fd64b1a50914e0e635e
+  - caminho: media/nt-1-07/pagina-21.png
+    pagina: 21
+    estado: presente
+    sha256: 4ab71371a0bbcee2f2999a525a02f877e7745f0812b1dd7a33b8c72d565f4f7c
+  - caminho: media/nt-1-07/pagina-22.png
+    pagina: 22
+    estado: presente
+    sha256: ed3a837c6149640fa957ba784a617c60fe36acbba3a7c3256e7dffcd922caae9
+  - caminho: media/nt-1-07/pagina-23.png
+    pagina: 23
+    estado: presente
+    sha256: 189a84a904fc638bde80e5f5883a9716bdf5c31ee4d52e637de5f31c9bf5a472
+  - caminho: media/nt-1-07/pagina-24.png
+    pagina: 24
+    estado: presente
+    sha256: 4479944787dca1a2ef8a68c5d032ecea3f9d25920b9a50310de3d28da434d2ab
+  - caminho: media/nt-1-07/pagina-25.png
+    pagina: 25
+    estado: presente
+    sha256: 4a0c5425091aa6d68fa7fb6244d12aa8f37c5ff1df672f6468ae5f3ee721e61f
+  - caminho: media/nt-1-07/pagina-26.png
+    pagina: 26
+    estado: presente
+    sha256: 59c32662f1925fe2fe2b1b26436fbba85edc3fc1b6f17f76bf09b6f3d57eb94b
+  - caminho: media/nt-1-07/pagina-27.png
+    pagina: 27
+    estado: presente
+    sha256: 4615b493da5d4acc0a7544189d7defa6693a00ee02a3dc54c20554387e6ed2bf
+  - caminho: media/nt-1-07/pagina-28.png
+    pagina: 28
+    estado: presente
+    sha256: b144aedb3f748ceb76c27e40dc72223627a7195458ebf92ef35d9a5fa59ab00b
+  - caminho: media/nt-1-07/pagina-29.png
+    pagina: 29
+    estado: presente
+    sha256: 65f71fc852a8109a7683cf413a585f4862a47e9a34eb4ecae0a8ce17f6f40471
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 13
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p13.yaml
+    estado: verificada
+  - pagina: 14
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p14.yaml
+    estado: verificada
+  - pagina: 15
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p15.yaml
+    estado: verificada
+  - pagina: 16
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p16.yaml
+    estado: verificada
+  - pagina: 17
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p17.yaml
+    estado: verificada
+  - pagina: 18
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p18.yaml
+    estado: verificada
+  - pagina: 19
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p19.yaml
+    estado: verificada
+  - pagina: 20
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p20.yaml
+    estado: verificada
+  - pagina: 21
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p21.yaml
+    estado: verificada
+  - pagina: 22
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p22.yaml
+    estado: verificada
+  - pagina: 23
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p23.yaml
+    estado: verificada
+  - pagina: 24
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p24.yaml
+    estado: verificada
+  - pagina: 25
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p25.yaml
+    estado: verificada
+  - pagina: 26
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p26.yaml
+    estado: verificada
+  - pagina: 27
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p27.yaml
+    estado: verificada
+  - pagina: 28
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p28.yaml
+    estado: verificada
+  - pagina: 29
+    tabela: Anexo A
+    arquivo: normative/tabelas/nt-1-07/anexo-a-cnaes-p29.yaml
+    estado: verificada
+- arquivo: nt-2-01-extintores.md
+  documento: NT 2-01
+  titulo: NT 2-01 - Sistema de proteção por extintores de incêndio
+  edicao: 2ª edição - 2020
+  ato: Portaria CBMERJ nº 1120, de 22 de setembro de 2020
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-01-Sistema-de-protecao-por-extintores-de-incendio-versao-02-Aprovada-pela-Portaria-CBMERJ-1120_2020_1601400175.pdf
+  sha256_pdf: f2e6db5a1fbc6fd43919d45461214c0d839e69d7a07c669a43b71ffa895381e3
+  sha256_md: e9e984cc7e777f6f2c22533205ea43ae9e35de290a6c3c3e09c94fce4f5deeb8
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-2-01
+  imagens:
+  - caminho: media/nt-2-01/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 18cacc1ed17e17b5317de1e8b5bd34a5b88f85d51818d47f25008f2d0ff59066
+  - caminho: media/nt-2-01/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 90441f09545d8252e3e1b8e2e0a6a852cf5b92f6bc6662938c9adeb6e38f3ef4
+  - caminho: media/nt-2-01/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 81e0b3e19cca95e6a70952474d85cd847ea3b748b14ccec1fc62666626e14592
+  - caminho: media/nt-2-01/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: d2a12a90a745ecc087a14127ae6cba3b298663224174b544e0dff6f99dcb3577
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 3
+    estado: nao_tabela
+    motivo: item 4.18 (definição de extintor sobre rodas) em duas colunas de texto. Na mesma página a
+      fonte define duas vezes os extintores, com limites diferentes (4.7 portátil até 20 kg × 4.17 até
+      24 kg; 4.8 sobre rodas até 250 kg × 4.18 acima de 24 kg)
+  - pagina: 4
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-2-01/tabela-1-capacidade-portateis.yaml
+    estado: verificada
+  - pagina: 4
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-2-01/tabela-2-capacidade-sobre-rodas.yaml
+    estado: verificada
+  - pagina: 5
+    tabela: Tabela 3
+    arquivo: normative/tabelas/nt-2-01/tabela-3-unidade-area-distancia.yaml
+    estado: verificada
+  - pagina: 5
+    tabela: Tabela 4
+    arquivo: normative/tabelas/nt-2-01/tabela-4-classe-d.yaml
+    estado: verificada
+  - pagina: 5
+    tabela: Tabela 5
+    arquivo: normative/tabelas/nt-2-01/tabela-5-classe-k.yaml
+    estado: verificada
+  - pagina: 6
+    tabela: Tabela A1
+    arquivo: normative/tabelas/nt-2-01/tabela-a1-capacidade-equivalente.yaml
+    estado: verificada
+  - pagina: 6
+    tabela: Tabela A2
+    arquivo: normative/tabelas/nt-2-01/tabela-a2-classe-k.yaml
+    estado: verificada
+- arquivo: nt-2-02-hidrantes-e-mangotinhos.md
+  documento: NT 2-02
+  titulo: NT 2-02 - Sistemas de hidrantes e de mangotinhos para combate a incêndio
+  edicao: 1ª edição - 2019; consolidada com a Portaria CBMERJ nº 1.317/2025
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_2-02_alterada-pela-Portaria-1317_2025.pdf
+  sha256_pdf: 175c79afcac17335da3d68aef49e4ec9cc88706ddd012ed49e0b2748bf8524e9
+  sha256_md: fc5d2acf547e0d8d1ba635a18ffec9f7cfb13ad747c54cfd55400eb8fec2797e
+  data_captura: '2026-07-23'
+  paginas: 21
+  midia: nt-2-02
+  imagens:
+  - caminho: media/nt-2-02/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 8935b6f748c6aabe4757e37cd9947f14594c8e8d5c8e226bbe489fbe1fb27346
+  - caminho: media/nt-2-02/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: df2d7cdb45136f4b3f4eb3776f975b224f816713c6acb65484d55c89218cb417
+  - caminho: media/nt-2-02/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 25ee2e0fc1e564c9b5a9fce7a5946070c4b4b9ebbb3a7444f18f71bfa4f95fd1
+  - caminho: media/nt-2-02/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 19834e49603f04dad3a25f535f7c207749e9e851474c001aa600dc019ea46aa9
+  - caminho: media/nt-2-02/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: df4728a95f30c2277aaa6b90755cbcebc3a122d6fcaa742a0872ce8f92c2cca5
+  - caminho: media/nt-2-02/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: e163669b4701db6ec541de66dd1e7bc2afd00a74d13d810ec7813e0041e60fcc
+  - caminho: media/nt-2-02/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: ff24376248cf1ebab8e2ce550c798052bf0ccda667a92722e38f22404261feec
+  - caminho: media/nt-2-02/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: 4fe0334c3250764cf05b76897234919ea182093ee612ee5b40c689341fbc123c
+  - caminho: media/nt-2-02/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: 1f62d92a34cc6b96bfdfb068f7a368f9ecb6f09f094ceac65a4c41c397558e02
+  - caminho: media/nt-2-02/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 86fe3bcaf59d39273104c8b1c2d65bbc9e6af95a2fbcfc698549cadc62137bfa
+  - caminho: media/nt-2-02/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: 816adc9edd13e41b5aa146a1f84bc6355e519edc57b2c15ec27ad071f4287c06
+  - caminho: media/nt-2-02/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: 44ae3825409ce2317d41e2f5f8fc684fb50aac4430569a5f22c2c26aac7d1fa7
+  - caminho: media/nt-2-02/pagina-17.jpg
+    pagina: 17
+    estado: presente
+    sha256: d61805b1b92692ca6247eee17139ba6d56afd8501489675c6a425765c1a5d2dc
+  - caminho: media/nt-2-02/pagina-18.jpg
+    pagina: 18
+    estado: presente
+    sha256: 22ef7717902a0ca73e736eb6e4fdb168bd929d4794a55cc0209016d9a35d434f
+  - caminho: media/nt-2-02/pagina-19.jpg
+    pagina: 19
+    estado: presente
+    sha256: 16c63b370a2c0dceed67ff5045b8dd4986c28bc0b85b5bfaa727e8647e72ea96
+  - caminho: media/nt-2-02/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: 03e77181c2fb76aa14c40a2f9ffc7dd2607dc7cb508596b5ede1d01200da1983
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 5
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-2-02/tabela-1-classificacao-riscos.yaml
+    estado: verificada
+  - pagina: 6
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-2-02/tabela-2-composicao-abrigos.yaml
+    estado: verificada
+  - pagina: 8
+    tabela: Tabela 3
+    arquivo: normative/tabelas/nt-2-02/tabela-3-fator-c-hazen-williams.yaml
+    estado: verificada
+  - pagina: 12
+    tabela: Tabela 4
+    arquivo: normative/tabelas/nt-2-02/tabela-4-cobertura-mangueiras.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela 5
+    arquivo: normative/tabelas/nt-2-02/tabela-5-drenos-colares.yaml
+    estado: verificada
+- arquivo: nt-2-03-parte-1-sprinklers-requisitos-gerais.md
+  documento: NT 2-03 P1
+  titulo: NT 2-03 - Parte 1 - Sistemas de chuveiros automáticos / sprinklers - Requisitos gerais
+  edicao: 1ª edição - 2019; atualizada pela Portaria CBMERJ nº 1.120/2020
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-03-Sistemas-de-chuveiros-automticos-sprinklers-Parte-1-Requisitos-gerais-2019-atualizada_1647374313.pdf
+  sha256_pdf: 008f8743d8520eca54955e3aaaed82cf5cd49cefce1e8b095040fe2755536e9f
+  sha256_md: 4a5eb40219b2a5adcaf4b0c9bcd41370e3728d3f2cc3448f88bb1201bdbc0c5c
+  data_captura: '2026-07-23'
+  paginas: 10
+  midia: nt-2-03-parte-1
+  imagens:
+  - caminho: media/nt-2-03-parte-1/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 0db8a7870fa4f6caabf7d67ea33b883faa2d14c929b0115c9830d1da3c98d7fd
+  - caminho: media/nt-2-03-parte-1/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 4d60d7c28f3aeb3fbb7fde3470ba4d39f4ed5afd0117c4e9c608a040e35ae002
+  - caminho: media/nt-2-03-parte-1/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 3f53af00c6409795bff2a6c7f49ea5320891f2eab6241f492bc88662e63fc0e1
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 4
+    estado: nao_tabela
+    motivo: item 5.2.7 (sistemas fixos de gases como alternativa) em duas colunas de texto
+  - pagina: 5
+    estado: nao_tabela
+    motivo: continuação do item 5.2.7 em duas colunas de texto
+  - pagina: 9
+    tabela: Tabela 1 do Anexo B
+    arquivo: normative/tabelas/nt-2-03-parte-1/anexo-b-tabela-1-rti.yaml
+    estado: verificada
+- arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+  documento: NT 2-03 P2
+  titulo: NT 2-03 - Parte 2 - Sistemas de chuveiros automáticos / sprinklers - Áreas de armazenamento
+  edicao: 1ª edição - 2019; atualizada pela Portaria CBMERJ nº 1.120/2020
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-03-sprinklers-Parte-2-Minuta-das-alteracoes_1604941555.pdf
+  sha256_pdf: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+  sha256_md: e110370fcfcde1421ba2571f0e003da0096a3991559e9c09c99557847152f577
+  data_captura: '2026-07-23'
+  paginas: 22
+  midia: nt-2-03-parte-2
+  imagens:
+  - caminho: media/nt-2-03-parte-2/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: fd26c1dfdd2553ccee37c156f02d2eaad22346a9b45a5fc564353a04d2ebfa0c
+  - caminho: media/nt-2-03-parte-2/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: c312c3e24ad07f4c6f59a083748386e8fc14457b32c74a1b806a1ad399e794bc
+  - caminho: media/nt-2-03-parte-2/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 7d8bb535a1be05f04a3fcb5787400511899a6a10f7501a73ac1cacf7d72c9a85
+  - caminho: media/nt-2-03-parte-2/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 2333428ca4f0690d2b2495c0a9038453e255ffcc0fbba92415e60ee91d7858db
+  - caminho: media/nt-2-03-parte-2/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 292b69c86e61908a194497e8e52c7af0368aa402c4eeab8909fd1723ca08e2ab
+  - caminho: media/nt-2-03-parte-2/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 52dc70dbac6aca150168c227d51d021407ff447e4a18f07d1a555af007d6d906
+  - caminho: media/nt-2-03-parte-2/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 7871340bcf6b77fd07112db86d4486c0a83d944c9eaeb8097ed781aa817f1860
+  - caminho: media/nt-2-03-parte-2/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 7c56f09f15b3072d051a9ee1553fe756109a09f81726813fbbe35cbd61f0f76d
+  - caminho: media/nt-2-03-parte-2/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 764be2c837624162d6c196a8f6437227f4bdc2a2b657bf4914119f69da4eba8e
+  - caminho: media/nt-2-03-parte-2/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: f931d54e4f469fec1dc406fc98680ff7f79965aa462c5e108501f10438422571
+  - caminho: media/nt-2-03-parte-2/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: 9b345144a78acce2e0233b93453812b6657c0bc7c20b1919bc2fcdc76ea5423c
+  - caminho: media/nt-2-03-parte-2/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: 16843df3f963708b859355c4604d78e04354237c817fd0ce709ac0a069eedcec
+  - caminho: media/nt-2-03-parte-2/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: 805d2cfa82a1ba1083c4fcce1e353598ced4b2320f05e011856f2142a8b0fbda
+  - caminho: media/nt-2-03-parte-2/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 3e2c8652ee1ceb65ddbc95b35bf77066e9f7acae1b7158cf9eebf79d41e66927
+  - caminho: media/nt-2-03-parte-2/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: 7eac320b2abf7d934483a846c54dbbe2b865872b8ab0090ce1528984405cc96d
+  - caminho: media/nt-2-03-parte-2/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: 10d3f63cf47e9acb5e24faccf4bfaa893ab8aff6f5b207fe34da16e5dd77fb0d
+  - caminho: media/nt-2-03-parte-2/pagina-17.jpg
+    pagina: 17
+    estado: presente
+    sha256: b8cca844c79ca804417a17087d7ea898e9d1f1b057e73511b22dba34a77d1cda
+  - caminho: media/nt-2-03-parte-2/pagina-18.jpg
+    pagina: 18
+    estado: presente
+    sha256: ac302be7a6b1f307fc911957dc2ff8e2921ecd419cede3a88b6bcbb0770a20a6
+  - caminho: media/nt-2-03-parte-2/pagina-19.jpg
+    pagina: 19
+    estado: presente
+    sha256: 3e9dc4cbd710110c5c011fd339ec2f1a989d4f26024db42b48828330acaec374
+  - caminho: media/nt-2-03-parte-2/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: 40199c659ecdf7e616e421dee31ad06f6f50cd2a7230a32b9de3c0b58715e709
+  - caminho: media/nt-2-03-parte-2/pagina-21.jpg
+    pagina: 21
+    estado: presente
+    sha256: 01551a71f46d7e43bc55f9e5cadbfcef9b205ee465322f8ba0bd472dd2036e97
+  - caminho: media/nt-2-03-parte-2/pagina-22.jpg
+    pagina: 22
+    estado: presente
+    sha256: 89f979bd1373e0b1021c0fa11f84d91d2ee639f828c8e6ab0d9b411e5c6b1942
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 9
+    tabela: Anexo B
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-b-mercadorias-p09.yaml
+    estado: verificada
+  - pagina: 10
+    tabela: Anexo B
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-b-mercadorias-p10.yaml
+    estado: verificada
+  - pagina: 11
+    tabela: Anexo B
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-b-mercadorias-p11.yaml
+    estado: verificada
+  - pagina: 12
+    tabela: Anexo B
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-b-mercadorias-p12.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Anexo B
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-b-mercadorias-p13.yaml
+    estado: verificada
+  - pagina: 14
+    tabela: Anexo B
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-b-mercadorias-p14.yaml
+    estado: verificada
+  - pagina: 15
+    tabela: Anexo C (Classe I)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-1-p15.yaml
+    estado: verificada
+  - pagina: 16
+    tabela: Anexo C (Classe I)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-1-p16.yaml
+    estado: verificada
+  - pagina: 16
+    tabela: Anexo C (Classe II)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-2-p16.yaml
+    estado: verificada
+  - pagina: 17
+    tabela: Anexo C (Classe II)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-2-p17.yaml
+    estado: verificada
+  - pagina: 17
+    tabela: Anexo C (Classe III)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-3-p17.yaml
+    estado: verificada
+  - pagina: 18
+    tabela: Anexo C (Classe III)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-3-p18.yaml
+    estado: verificada
+  - pagina: 19
+    tabela: Anexo C (Classe III)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-3-p19.yaml
+    estado: verificada
+  - pagina: 19
+    tabela: Anexo C (Classe IV)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-4-p19.yaml
+    estado: verificada
+  - pagina: 20
+    tabela: Anexo C (Classe IV)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-classe-4-p20.yaml
+    estado: verificada
+  - pagina: 21
+    tabela: Anexo C (Plásticos Grupo A)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-plasticos-grupo-a-p21.yaml
+    estado: verificada
+  - pagina: 22
+    tabela: Anexo C (Plásticos Grupo A)
+    arquivo: normative/tabelas/nt-2-03-parte-2/anexo-c-plasticos-grupo-a-p22.yaml
+    estado: verificada
+- arquivo: nt-2-04-conjunto-de-pressurizacao.md
+  documento: NT 2-04
+  titulo: NT 2-04 - Conjunto de pressurização para sistemas de combate a incêndio
+  edicao: 2ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT2-04_2Edio_2023.pdf
+  sha256_pdf: 37837bf154bc5c517e2732e206e6d72e3e441591364182531614acad69fa5ed1
+  sha256_md: 1af13d170a0c27872dee1c584aa22d408aced8a6856a0396aedee7abaf304284
+  data_captura: '2026-07-23'
+  paginas: 10
+  midia: nt-2-04
+  imagens:
+  - caminho: media/nt-2-04/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 6e52c1a3d3d2529a7815a3771f1ec022eba8ffed7b55e09ed783a5183b7f7858
+  - caminho: media/nt-2-04/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 3d83d55435aa1e80d084cea455a245668fbe2641d7147ecdeb00aa31000be0ec
+  - caminho: media/nt-2-04/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 496415bc906e42380426c592c91e9d9afe521f21918b73fa754bc02accd7a9f7
+  - caminho: media/nt-2-04/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 95919cc5cc1ac499be4832cecb96c9ecebc1fdda09742e8fc09f5a4044d4651d
+  - caminho: media/nt-2-04/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 28705de74477d4c51d6aa552a1d3bc8ba2c9b7d10fcff576c64bde2d6a857a86
+  - caminho: media/nt-2-04/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: f5d41b32a021d423b732d876a2c39189205c7d5bdfa048ea803b0c4b3b5c12ec
+  tabelas:
+  - pagina: 3
+    estado: nao_tabela
+    motivo: definições 4.2, 4.8 e 4.12 (bomba afogada, cavitação, NPSH) em duas colunas de texto
+  - pagina: 4
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-2-04/tabela-1-drenos.yaml
+    estado: verificada
+  - pagina: 5
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-2-04/tabela-2-colares.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Tabela 3
+    arquivo: normative/tabelas/nt-2-04/tabela-3-dispositivos-eletricos.yaml
+    estado: verificada
+- arquivo: nt-2-05-sinalizacao.md
+  documento: NT 2-05
+  titulo: NT 2-05 - Sinalização de segurança contra incêndio e pânico
+  edicao: 3ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT2-05_3Edio_2023.pdf
+  sha256_pdf: 71211fb6569402c0cb44b901121098c33dc2a38fae3ab39cebb3d0facfd6b2f9
+  sha256_md: 8e5dc6568603d954f5f5627f02df5566e9cebd7ac99d632542c90b92c9e63e6a
+  data_captura: '2026-07-23'
+  paginas: 18
+  midia: nt-2-05
+  imagens:
+  - caminho: media/nt-2-05/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 447ac94d4f37158bd97a6658ee43b3bb2b9264820e06e3c6a32dd98d4f5ba327
+  - caminho: media/nt-2-05/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: e6e74ba464863e1e23b1d0e6a1b4797009552f5ff8654175f33c32df992817e6
+  - caminho: media/nt-2-05/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: d8f473105f43788dc055ca0d2bd00f87dcb3b54576702e641747ace8ecd70138
+  - caminho: media/nt-2-05/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: b2d19bddabe46446b7c683497332e009b07d03db7448b1d68c37fcf7cb794b27
+  - caminho: media/nt-2-05/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 46e03130a3acf271181932577a1de81bc4c10eb69bd8b64ff879c63b19eef65f
+  - caminho: media/nt-2-05/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 9540485b09f8551c540422d7c206d1aa3b0c24d367ec977f3b663dea5018e1da
+  - caminho: media/nt-2-05/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 1c46aaacc97d092a09307161dda1c0801b34461fbbf8f6c1f76db8f540668f21
+  - caminho: media/nt-2-05/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: f6de40100d530f9bb9420ce1e9eae37345e2fea205f2156b5bd2bd8a4b72521b
+  - caminho: media/nt-2-05/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: d0bee873f5b318ba7bb450f427d76e556a5fb4eb9c42f0f555c360ed50c5e5e7
+  - caminho: media/nt-2-05/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: dea3f16c25123bd05c4ee4342e0abcfa324e7645fbb43a08c56b0dc9bddb4e8f
+  - caminho: media/nt-2-05/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: 43e5d203ab44eee6abf946613b2d5c4a7da23d013b137e0b256bd6140179f471
+  - caminho: media/nt-2-05/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: 62453abe28ce06212fcf5070c1d43301509b03bc04ed6b582a91668d5cb6de21
+  - caminho: media/nt-2-05/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: 0c88ee69677ffb25de5b122096293a69f94d993facb530f9ed4667517725148a
+  - caminho: media/nt-2-05/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: d3b2e9073398b3cff1b36ff2602750cabe1fc3ab207305805b7199ff14294217
+  - caminho: media/nt-2-05/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: 3025ff253b7a492e28e1e6c82cf48d26e92e50aff4861b21a53a8ffaa38dee86
+  - caminho: media/nt-2-05/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: fed1d21df60216415a4775daf7c4f96aa76de3191c9325c4735c98524ce02a1c
+  - caminho: media/nt-2-05/pagina-17.jpg
+    pagina: 17
+    estado: presente
+    sha256: b2b76a313334941be845a0f89a04a0b82743e54a7e449f92689366d0a5815394
+  - caminho: media/nt-2-05/pagina-18.jpg
+    pagina: 18
+    estado: presente
+    sha256: c99ba88b4cbec026fce4aab116994eeee14a6bf6df8dc91dd73cd2ce3ba0400e
+  tabelas:
+  - pagina: 3
+    tabela: Quadro 1
+    arquivo: normative/tabelas/nt-2-05/quadro-1-exigencias.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Tabela 1 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-1-simbolos-planta.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Tabela 2 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-2-cores.yaml
+    estado: verificada
+  - pagina: 8
+    tabela: Tabela 3 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-3-proibicao.yaml
+    estado: verificada
+  - pagina: 9
+    tabela: Tabela 4 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-4-alerta.yaml
+    estado: verificada
+  - pagina: 10
+    tabela: Tabela 5 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-5-orientacao-p10.yaml
+    estado: verificada
+  - pagina: 11
+    tabela: Tabela 5 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-5-orientacao-p11.yaml
+    estado: verificada
+  - pagina: 12
+    tabela: Tabela 5 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-5-orientacao-p12.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela 5 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-5-orientacao-p13.yaml
+    estado: verificada
+  - pagina: 14
+    tabela: Tabela 6 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-6-equipamentos-p14.yaml
+    estado: verificada
+  - pagina: 15
+    tabela: Tabela 6 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-6-equipamentos-p15.yaml
+    estado: verificada
+  - pagina: 16
+    tabela: Tabela 6 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-6-equipamentos-p16.yaml
+    estado: verificada
+  - pagina: 17
+    tabela: Tabela 7 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-7-dimensoes.yaml
+    estado: verificada
+  - pagina: 18
+    tabela: Tabela 8 do Anexo B
+    arquivo: normative/tabelas/nt-2-05/anexo-b-tabela-8-altura-letras.yaml
+    estado: verificada
+- arquivo: nt-2-06-iluminacao-de-emergencia.md
+  documento: NT 2-06
+  titulo: NT 2-06 - Iluminação de emergência
+  edicao: 1ª edição - 2019; atualizada pela Portaria CBMERJ nº 1.125/2020
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-06-Iluminacao-de-emergencia-Minuta-das-alteracoes_1605536471.pdf
+  sha256_pdf: c17684555a36149c6856426926c85867be3922638e0588ed815b12e4fcff30ec
+  sha256_md: 3efe4c81c14dbb944c4ded5c891b2d760362996f64e1266c294853c6ae08bdef
+  data_captura: '2026-07-23'
+  paginas: 4
+  midia: nt-2-06
+  imagens: []
+  tabelas:
+  - pagina: 1
+    estado: capa
+- arquivo: nt-2-07-deteccao-e-alarme.md
+  documento: NT 2-07
+  titulo: NT 2-07 - Sistema de detecção e alarme de incêndio
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-07-Sistema-de-deteccao-e-alarme-de-incendio.pdf
+  sha256_pdf: 3c50d59558803a1063f4bc07bec5e56116d034fb4e2d2538d24943a807f4736b
+  sha256_md: 0d0ffce9df35bf024cddce12b5f148b1bdfde882dbbba04d3a05c2e037cdf7af
+  data_captura: '2026-07-23'
+  paginas: 7
+  midia: nt-2-07
+  imagens: []
+  tabelas:
+  - pagina: 1
+    estado: capa
+- arquivo: nt-2-08-saidas-de-emergencia.md
+  documento: NT 2-08
+  titulo: NT 2-08 - Saídas de emergência em edificações
+  edicao: 1ª edição - 2019; consolidada com a Portaria CBMERJ nº 1.317/2025
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019. Alterada pela Portaria CBMERJ nº 1317, de 10
+    de dezembro de 2025
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_2-08_1Ed_2019_alterada_Portaria_1317_2025.pdf
+  sha256_pdf: c204bd957038c3c8dd18a62a89472161ae6e2cc5602dcb9075bef8bca3b34c5e
+  sha256_md: 564e231a3e622000226c5930d1f3c4050d6044f05d77f2aedfa736fcc181f687
+  data_captura: '2026-07-23'
+  paginas: 22
+  midia: nt-2-08
+  imagens:
+  - caminho: media/nt-2-08/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: f66df58d3320b5189683ab139d53b6d57a4c9436342a656b3ed5892ef10060c4
+  - caminho: media/nt-2-08/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: a1b9762a50ab570e69e737aa695796e0df336eecedb69c9147498cec19da4828
+  - caminho: media/nt-2-08/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 53ec3e37309e0c2b10daf5ace3fdef256fa68dd35cef6630b1d71c32fe816563
+  - caminho: media/nt-2-08/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: c779d5880a4480294befc6e6426e924fdca94f70f7bc85834b424e0af007e48c
+  - caminho: media/nt-2-08/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 22a65ba2d10aecfbf45dfe586f91d152c81536bd6b7a26cb9df9d2966e486c65
+  - caminho: media/nt-2-08/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 1e4060004d9f66dfa88f86df73a8a7f1e932c2c8fbf145e69879a26788767ba9
+  - caminho: media/nt-2-08/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: aa5a7cab38f751d7b2ad7aa9c6aaa7a4605bd226ad3dfb526b379a4bfd10bdf3
+  - caminho: media/nt-2-08/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: ed3bf1f0e51e17bfe0cb6d5f85cb37243cf1644f49f1c38b504c16cdba5f8bc2
+  - caminho: media/nt-2-08/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 864e10c03c761f2e15de12c1927311d070cd5c653cf8dab160c41b897e34d4f7
+  - caminho: media/nt-2-08/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: d8e3b409e874f4790da45b0dc0e5a87769e5b77c26fc3da641d937e810152501
+  - caminho: media/nt-2-08/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: f06074c30d7917dccc19b10a0095f957463d4ad2ad19a8251b317f0b49b783b9
+  - caminho: media/nt-2-08/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: 23c591d25faee59d4644096f70d937f36a40f5881dfcf5066df62be3eb73aabc
+  - caminho: media/nt-2-08/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: b9268d43a4cb31c1ff81fb439a340aae315cdaf9492921b99ffb06205c8a7ffd
+  - caminho: media/nt-2-08/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 9166ba1cdabb954e77fcb75e57f508ab6c0c0205a9d2639c6bdd49eacbcbcc2e
+  - caminho: media/nt-2-08/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: 0a531c5a91ac49150eff1991c9d3931ae6e0f110c633206faa9001a4922e4f3a
+  - caminho: media/nt-2-08/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: 4131f1b73fa8df9a7202b270e416b992a8b0bf48d38a4ea31874b6cefc92c1d9
+  - caminho: media/nt-2-08/pagina-17.jpg
+    pagina: 17
+    estado: presente
+    sha256: b0db4673f9e9871392204263af46399ce9315940cd403599c79ba477817d4c62
+  - caminho: media/nt-2-08/pagina-18.jpg
+    pagina: 18
+    estado: presente
+    sha256: fa0e4156162a37c10ca00f74bc56212644e4b50314d4d296b6907478dae8dde7
+  - caminho: media/nt-2-08/pagina-19.jpg
+    pagina: 19
+    estado: presente
+    sha256: 693093af17e755520efebc9db206f5e04ca9a23908c664d425a96477ddf1ae32
+  - caminho: media/nt-2-08/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: 81e813e19b865b93681f4ec51e588844226280571e3145f7bda4f89a48ff9753
+  - caminho: media/nt-2-08/pagina-21.jpg
+    pagina: 21
+    estado: presente
+    sha256: 92cacd24d128e0aebc832d5da5581c92ef163fb17b54c57fdf0906210448835c
+  - caminho: media/nt-2-08/pagina-22.jpg
+    pagina: 22
+    estado: presente
+    sha256: 021c628d9a92ff5bb3fa4b9f62d8b8422eb8e2eb0b554d7cc32f6171b6364751
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 7
+    estado: nao_tabela
+    motivo: trecho do item 5.3.4.7 ("disponham de dispositivo de fechamento automático das portas corta-fogo
+      com eletroímãs") em duas colunas de texto
+  - pagina: 12
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-2-08/tabela-1-inclinacao-rampas.yaml
+    estado: verificada
+  - pagina: 18
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-2-08/anexo-a-dimensionamento-saidas.yaml
+    estado: verificada
+  - pagina: 20
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-2-08/anexo-b-tipos-de-escadas.yaml
+    estado: verificada
+  - pagina: 22
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-08/anexo-c-distancias-maximas.yaml
+    estado: verificada
+- arquivo: nt-2-09-pressurizacao-de-escada.md
+  documento: NT 2-09
+  titulo: NT 2-09 - Pressurização de escada de emergência, elevador de emergência, antecâmaras e áreas
+    de refúgio
+  edicao: 2ª edição - 2025
+  ato: Portaria CBMERJ nº 1280, de 20 de dezembro de 2025
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/12/NT_2_09_2Ed_2025.pdf
+  sha256_pdf: 4298bc2245a5f83e8db9d1dc5065fe356f70a3762ba0b1797ea6c6a8fc92c23e
+  sha256_md: 6e4fa65db3805e1b191b5eae3d859815cf40273997a0ca61dbcb289e27ff2de3
+  data_captura: '2026-07-23'
+  paginas: 11
+  midia: nt-2-09
+  imagens:
+  - caminho: media/nt-2-09/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 5c868c8ecc82a64846c4c6c0a5404b1197a7848e51b9ba6698f49e9974db2c3d
+  - caminho: media/nt-2-09/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: c55458e9e8a1a182f7a3504551e26f03fadb65d2444b8a064a2ab798c01f075d
+  - caminho: media/nt-2-09/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 7319460b9f88fd4ba874f052589609fc0c98b14a331fbc00951fc6de4d8958e6
+  - caminho: media/nt-2-09/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 2e3f1e7a7482ccec9a665bf962dc815994d01cf2609d76cfc8b1b08610fc8924
+  - caminho: media/nt-2-09/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 65d7d25b282c601f3110d149caf0478f9945e43dbf82aca8a99eb756b66225c8
+  - caminho: media/nt-2-09/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 9b4fd5c9258add52ca321bb7b5e8aee81f9b7347239e6a092555986fc96326f5
+  - caminho: media/nt-2-09/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 40e8d1a0a4ccbb5de7af9467ed4dd475f43e9d0320f9597db47e751e6412bf1d
+  - caminho: media/nt-2-09/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 7caa89d0cc6a0e544057832d98d030fd14c6b31c7583dbfac1e87ba6876152d6
+  - caminho: media/nt-2-09/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 2b0432ac716e2eaac2372856c100fee32f952ad73f8ba2814947ff3c8605c46c
+  - caminho: media/nt-2-09/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: 97be0644f69f879bd55d2b958cc854af628b808ac12763b2ee7e5c2c1923b4f6
+  - caminho: media/nt-2-09/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: a93b160f59121aee6b101d2f7ff00ea79e171db4c25e283db9d0af1bc0e864dd
+  tabelas:
+  - pagina: 4
+    estado: nao_tabela
+    motivo: alíneas e) e f) do item 5.1.2.1 (contrapeso e fechamento eletromagnético das portas corta-fogo)
+      em duas colunas de texto
+  - pagina: 6
+    estado: nao_tabela
+    motivo: item 5.3.2.7.3 (acionadores manuais a no máximo 2 m da porta corta-fogo) em duas colunas de
+      texto
+  - pagina: 7
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-2-09/tabela-1-areas-de-escape.yaml
+    estado: verificada
+  - pagina: 10
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-2-09/anexo-a-criterios-p10.yaml
+    estado: verificada
+  - pagina: 11
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-2-09/anexo-a-criterios-p11.yaml
+    estado: verificada
+- arquivo: nt-2-10-pecip.md
+  documento: NT 2-10
+  titulo: NT 2-10 - Plano de emergência contra incêndio e pânico - PECIP
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-10-Plano-de-emergencia-contra-incendio-e-panico-PECIP.pdf
+  sha256_pdf: 4406f8268fbb577e70b4ba3367f3bcc0ab1d961da201005b855a34989290b84b
+  sha256_md: 7a913d633e1212bc4f0918b2208c6c57dfe07ae7769bcc58e466f8aab74135eb
+  data_captura: '2026-07-23'
+  paginas: 20
+  midia: nt-2-10
+  imagens:
+  - caminho: media/nt-2-10/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 83f1ca8c2ccf5baf1d012ff34579a7c4f5f1c871d7f354082c1dcff048bea6a3
+  - caminho: media/nt-2-10/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: a4a811fb87c4979f259d7d7a324dc69b549b7b3eec91d8769c499cb420f85986
+  - caminho: media/nt-2-10/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 5a573c4741f07e4b18680faaab6f4ef522922a17c21c684d18bb637fec17823a
+  - caminho: media/nt-2-10/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: 62d5e1f9e33b39908a9c8b90a2b81a88476f8488764f0145cf151a5a0ce5bde1
+  - caminho: media/nt-2-10/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: e50ef7eaefe8f493af2994c945f2e5ad8a61226bb5370ad31a5a24c1ec19643f
+  - caminho: media/nt-2-10/pagina-17.jpg
+    pagina: 17
+    estado: presente
+    sha256: 083093f1c4a8008f40da95580d5cd9d8ac3efb1b7b4b16032bcc4785e47e01c6
+  - caminho: media/nt-2-10/pagina-18.jpg
+    pagina: 18
+    estado: presente
+    sha256: 0df4ec5ba1c44f67f70cb205941efca1f448306f2bcc2890f84e8fbf9cef271b
+  - caminho: media/nt-2-10/pagina-19.jpg
+    pagina: 19
+    estado: presente
+    sha256: c4e71d4d367d6b57c8b27331a88a301fb164b2fa60db60f219e6378045db6a33
+  - caminho: media/nt-2-10/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: 8e2803e03c6785debd51a3db2fafc165c098c2bca012e393371ceceb1e434b91
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 6
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-2-10/tabela-1-exercicios-simulados.yaml
+    estado: verificada
+  - pagina: 14
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-10/anexo-c-simbologia-p14.yaml
+    estado: verificada
+  - pagina: 15
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-10/anexo-c-simbologia-p15.yaml
+    estado: verificada
+  - pagina: 19
+    tabela: Tabela 1 do Anexo E
+    arquivo: normative/tabelas/nt-2-10/anexo-e-ficha-tabela-1.yaml
+    estado: verificada
+  - pagina: 20
+    tabela: Tabela 2 do Anexo E
+    arquivo: normative/tabelas/nt-2-10/anexo-e-ficha-tabela-2.yaml
+    estado: verificada
+  - pagina: 20
+    tabela: Tabela 3 do Anexo E
+    arquivo: normative/tabelas/nt-2-10/anexo-e-ficha-tabela-3.yaml
+    estado: verificada
+- arquivo: nt-2-11-brigadas-de-incendio.md
+  documento: NT 2-11
+  titulo: NT 2-11 - Brigadas de incêndio
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-11-Brigadas-de-incendio.pdf
+  sha256_pdf: b4db83dbed4f463c6f7a94531e355c666e544ecc91fc7a373f1d95f7d52a0d2b
+  sha256_md: f9aa8b03863355a4c429224f0e200cf9693ad008f4abc616d430dfeaf2422fd0
+  data_captura: '2026-07-23'
+  paginas: 26
+  midia: nt-2-11
+  imagens:
+  - caminho: media/nt-2-11/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: 7eb229e3d9bf2e99912ec6db6e1eba6894d3fc7183a70acd7f838015893f04ed
+  - caminho: media/nt-2-11/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: e91e68c9ad4824e155dcbef1dedbcabc2fc34544254e39ca2521186993314009
+  - caminho: media/nt-2-11/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: b2a8a5123a504b5cf8e4602a66402108628ac9f95310a9d326192601b3874216
+  - caminho: media/nt-2-11/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 85ad12cad2c6817de8c30c03ec3c3a9b53b5da25fab196bbf049a32e1a5a7186
+  - caminho: media/nt-2-11/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: 4cadcf01f9e18c4d8a97a9f93f95dc46c69e814c7a24bdffa84a98e02986c23d
+  - caminho: media/nt-2-11/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: 6fcb92f8bfa0c94220645fd3a426f32c51fad6eeb8e83d9ee56a0d3f29cdf9e9
+  - caminho: media/nt-2-11/pagina-17.jpg
+    pagina: 17
+    estado: presente
+    sha256: f22f2d939070a32c74d15c416370364c028a46288afd420b1904a62f968c4fab
+  - caminho: media/nt-2-11/pagina-18.jpg
+    pagina: 18
+    estado: presente
+    sha256: 4ebd23cff96c5508c857b7b87d4ccc3a28db6b7c7a825b858b1318716d62ca14
+  - caminho: media/nt-2-11/pagina-19.jpg
+    pagina: 19
+    estado: presente
+    sha256: 7c28471cf903216d4348de9d2c0e0886336757a21ac0f8bbf9371884d6a4e850
+  - caminho: media/nt-2-11/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: a9fbc169cda333ec02843ea545236c03067d6c596a07a57cef56644ac247da56
+  - caminho: media/nt-2-11/pagina-21.jpg
+    pagina: 21
+    estado: presente
+    sha256: 3baea33a909e7e44c23fe4c4f70604082b3c413a6a1a3dbdbdf979cf9508bf23
+  - caminho: media/nt-2-11/pagina-22.jpg
+    pagina: 22
+    estado: presente
+    sha256: 562027a4b40c7b2e931166f2898fccee07bed7ec2c71a20f99b6d8740bb3cdab
+  - caminho: media/nt-2-11/pagina-23.jpg
+    pagina: 23
+    estado: presente
+    sha256: e6c1f1531478d3d3aa0a6f31639fd0c4eb7941ac10b9524405aae79aed9eb777
+  - caminho: media/nt-2-11/pagina-24.jpg
+    pagina: 24
+    estado: presente
+    sha256: 03026093360a727e836aa7e3cda69adb77170b4acc19e95280c673ed44f152de
+  - caminho: media/nt-2-11/pagina-25.jpg
+    pagina: 25
+    estado: presente
+    sha256: 115e8b74d1f74cc313c85b0dd9e889a2eb71f78d3503244353c1382d3ed3cab9
+  - caminho: media/nt-2-11/pagina-26.jpg
+    pagina: 26
+    estado: presente
+    sha256: c945ab7a227e68affca759fbbace9d6e21a12af860b789ad33ffc0376366b2ac
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 11
+    tabela: Tabela 1 (A.1)
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a1.yaml
+    estado: verificada
+  - pagina: 12
+    tabela: Tabela 1 (A.2)
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a2.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela 1 (A.3)
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a3.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela 1 (A.4)
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a4.yaml
+    estado: verificada
+  - pagina: 14
+    tabela: Tabela 1 (A.5)
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a5.yaml
+    estado: verificada
+  - pagina: 14
+    tabela: Tabela 1 (A.6, página 14)
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a6-p14.yaml
+    estado: verificada
+  - pagina: 15
+    tabela: Tabela 1 (A.6, página 15)
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-1-a6-p15.yaml
+    estado: verificada
+  - pagina: 15
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-2-11/anexo-a-tabela-2-atualizacao.yaml
+    estado: verificada
+  - pagina: 16
+    tabela: Tabela 1 (Anexo B)
+    arquivo: normative/tabelas/nt-2-11/anexo-b-tabela-1-bvi.yaml
+    estado: verificada
+  - pagina: 16
+    tabela: Tabela 1 (Anexo B, primeiros socorros)
+    arquivo: normative/tabelas/nt-2-11/anexo-b-tabela-1-primeiros-socorros.yaml
+    estado: verificada
+  - pagina: 17
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-11/anexo-c-p17.yaml
+    estado: verificada
+  - pagina: 18
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-11/anexo-c-p18.yaml
+    estado: verificada
+  - pagina: 19
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-11/anexo-c-p19.yaml
+    estado: verificada
+  - pagina: 20
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-11/anexo-c-p20.yaml
+    estado: verificada
+  - pagina: 21
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-2-11/anexo-c-p21.yaml
+    estado: verificada
+  - pagina: 22
+    tabela: Tabela do Anexo D
+    arquivo: normative/tabelas/nt-2-11/anexo-d-p22.yaml
+    estado: verificada
+  - pagina: 23
+    tabela: Tabela do Anexo D
+    arquivo: normative/tabelas/nt-2-11/anexo-d-p23.yaml
+    estado: verificada
+  - pagina: 24
+    tabela: Tabela do Anexo D
+    arquivo: normative/tabelas/nt-2-11/anexo-d-p24.yaml
+    estado: verificada
+  - pagina: 25
+    tabela: Tabela do Anexo D
+    arquivo: normative/tabelas/nt-2-11/anexo-d-p25.yaml
+    estado: verificada
+  - pagina: 26
+    tabela: Tabela do Anexo D
+    arquivo: normative/tabelas/nt-2-11/anexo-d-p26.yaml
+    estado: verificada
+- arquivo: nt-2-12-spda.md
+  documento: NT 2-12
+  titulo: NT 2-12 - Sistema de proteção contra descargas atmosféricas - SPDA
+  edicao: 1ª edição - 2019; atualizada pela Portaria CBMERJ nº 1.179/2022
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT-2-12-SPDA-2019-Atualizada-Portaria_1179_2022.pdf
+  sha256_pdf: 36393d39d931ecb2d8a8937384d0fd11bf950824408a4df60aed99dc4605ffeb
+  sha256_md: dcb00eb9fa3a55d2525e05aae420ab6f07e99ada50fe6c64664be18a7464a57a
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-2-12
+  imagens: []
+  tabelas:
+  - pagina: 1
+    estado: capa
+- arquivo: nt-2-13-sistemas-fixos-de-gases.md
+  documento: NT 2-13
+  titulo: NT 2-13 - Sistemas fixos de gases para combate a incêndio
+  edicao: 2ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT2-13_2Edio_2023.pdf
+  sha256_pdf: 7041b4808a1f7252223cc0386ba0188df7bbbfa20e45ff6dff3d84cbe7a2e3ae
+  sha256_md: 04b5ccad641c34a10d11effd304eca1bc8b271baaaa92e2ede8a834ca2265edc
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-2-13
+  imagens:
+  - caminho: media/nt-2-13/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: bd6eda6a495dee5d7c3193c2bc39f7a57ace463802b7120fd82b603c84b6d7aa
+  - caminho: media/nt-2-13/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: e8f757d5c57baaaa3deff088babf2a0df298352b75fbb6d3a0af30cf9c4af2af
+  tabelas:
+  - pagina: 4
+    estado: nao_tabela
+    motivo: definição 4.16 (Protocolo de Montreal) em duas colunas de texto
+- arquivo: nt-2-14-controle-de-fumaca.md
+  documento: NT 2-14
+  titulo: NT 2-14 - Controle de fumaça
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-14-Controle-de-fumaca.pdf
+  sha256_pdf: 638248ce4348b3275bbb285538d4c4c6e31603356600de98e4c597529073424b
+  sha256_md: d662e6dac6a5b9513afe1b34f1c8f82e7bde77829e0062ea2ee16a0dfe48f861
+  data_captura: '2026-07-23'
+  paginas: 46
+  midia: nt-2-14
+  imagens:
+  - caminho: media/nt-2-14/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 4dd31534ebaf5bc02b2f5d30b00dec6c1ca1bda5854e02c4f4a2e7d06ed4c102
+  - caminho: media/nt-2-14/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: ebbb12571b4cdc2e1fd1ea79679f9a1778d2514b4b156feeb508368b80f1a79e
+  - caminho: media/nt-2-14/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 7b9c55618698a0dc079ff2a4c575d610f9ef67f405d819f4c8bdaf96e1a07bd4
+  - caminho: media/nt-2-14/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 5226fd099eb2ba4d17abe947cb15f07a436c87cf84606bef9ced83967618ae74
+  - caminho: media/nt-2-14/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: e15f005da77d84d54872ad9d539cade08603303e989b658d2d4eae2508f1c804
+  - caminho: media/nt-2-14/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: da73a4e3e2abe6eafbcd144de7dd9447de3e4105063d902de96a26811f5cd639
+  - caminho: media/nt-2-14/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: edb9d65d2e48f246f3c3d0ea87d3b2b9bde8f623aacc3b3e2bc15271faf8af29
+  - caminho: media/nt-2-14/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 8e7ce07185941755f5b10a57f2ec2c20a0c8dd70e16f87f72ac855f69d20bfbf
+  - caminho: media/nt-2-14/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 9aacd53b6b40e30f0e7e8269325b475573cea115af04d1c6555489d44c93c23b
+  - caminho: media/nt-2-14/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: 5222357f7b6c1c4a293ad7c4bceb0ba35b5675dfd722b72c2201c73653ab483a
+  - caminho: media/nt-2-14/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: b6fbf6b8f5504103999ea3b8b0d4a1604e6233729c917b7e53a8d7af5a2597b9
+  - caminho: media/nt-2-14/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: 969110d04f0ac0176982c2069ba3676f382f6cba0b0bc4725f3cb95bb9c0b37a
+  - caminho: media/nt-2-14/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: 598a528bb72f031e1fa9821dbfbf3105ef924f0cbcb65628a21c07645690889e
+  - caminho: media/nt-2-14/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 65ea8010200b77b9ff666d2c67325e7aa86b4205629c7ba06fc0d0ccb6de5d86
+  - caminho: media/nt-2-14/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: 723782ecb0ace9ca5041dd14b0836320b4284e246196010ed75a70be3b24fee6
+  - caminho: media/nt-2-14/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: bcfd1f961e770c20b0f3ec722f13eed747fd690b3e1897134d1b6d886dca9fce
+  - caminho: media/nt-2-14/pagina-17.jpg
+    pagina: 17
+    estado: presente
+    sha256: 8d8542758ec2065762f1aca3028c734725330d5096d33f5d7c196d169a2a2ac6
+  - caminho: media/nt-2-14/pagina-18.jpg
+    pagina: 18
+    estado: presente
+    sha256: 7aafe9c9773d5fed63c071aab8406139278470db3c6c0cf86d8c5bb8985d1006
+  - caminho: media/nt-2-14/pagina-19.jpg
+    pagina: 19
+    estado: presente
+    sha256: 371cca779f996483d938a9fed3a04e1988cc87f96c791f3da4a20ba2fb8b8dfb
+  - caminho: media/nt-2-14/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: dd6cedba70e3b69dee354ac7b4624feb6741b70131cfc2fad9189a729dfca52f
+  - caminho: media/nt-2-14/pagina-21.jpg
+    pagina: 21
+    estado: presente
+    sha256: a99f9568b04efa03fd723e386ed19241863678b89bf1d0bd209f574f9b9d35b2
+  - caminho: media/nt-2-14/pagina-22.jpg
+    pagina: 22
+    estado: presente
+    sha256: 56504e9ff1b4158eeab0fb18a71ef936d4967d4271f19c206e0ffcad2b884391
+  - caminho: media/nt-2-14/pagina-23.jpg
+    pagina: 23
+    estado: presente
+    sha256: 62fe1b51c5cd48f5de7ad2eab38b902a41c6e76cb3e9ea0ecd30d1b095df94d1
+  - caminho: media/nt-2-14/pagina-24.jpg
+    pagina: 24
+    estado: presente
+    sha256: 70668c56cabd623805e342e21d116a1743893997f33f072739dfd588d098af26
+  - caminho: media/nt-2-14/pagina-25.jpg
+    pagina: 25
+    estado: presente
+    sha256: 58615c6a15a9c4f10ce735e0384e664ade4454e709cd56389937dad0b049c29e
+  - caminho: media/nt-2-14/pagina-26.jpg
+    pagina: 26
+    estado: presente
+    sha256: 7e7d019d6eb7325e7f27ace287c15f72c75c1caac6baef0aa499786332c22965
+  - caminho: media/nt-2-14/pagina-27.jpg
+    pagina: 27
+    estado: presente
+    sha256: 6a4de348a71e2bbcb922b1c5d65aa7bd75bc27590604fb8770658f88058acac2
+  - caminho: media/nt-2-14/pagina-28.jpg
+    pagina: 28
+    estado: presente
+    sha256: fdd28a6b66294c1ea3188c16a798949d79249a3810d827aa7ffc7954540b0f6b
+  - caminho: media/nt-2-14/pagina-29.jpg
+    pagina: 29
+    estado: presente
+    sha256: 3ae76edae35228bc6df23d0dfc6d1d3c3441ee9bd39aac8f88e971058556a141
+  - caminho: media/nt-2-14/pagina-30.jpg
+    pagina: 30
+    estado: presente
+    sha256: 202b293d7129a4964d0eb9288f92986de244a558c25ce8a9e0bb2e19b9d9ac12
+  - caminho: media/nt-2-14/pagina-31.jpg
+    pagina: 31
+    estado: presente
+    sha256: 4f7282c5c33a12026de5940d24861701c92430bcb348635200e3132da787c011
+  - caminho: media/nt-2-14/pagina-32.jpg
+    pagina: 32
+    estado: presente
+    sha256: e20897e2d719b74222e3cc520f74d7da277054a5aa41533ebf2034cac991b44e
+  - caminho: media/nt-2-14/pagina-33.jpg
+    pagina: 33
+    estado: presente
+    sha256: 7360488a79e3a6def6e71bfe1879cf78ab86cf1c5182497c3c6e0c99cc5d5027
+  - caminho: media/nt-2-14/pagina-34.jpg
+    pagina: 34
+    estado: presente
+    sha256: 326650f95b6f4180f97505637cc98b2eaeaaf0ec37dcc26af39b8a90e5762ea5
+  - caminho: media/nt-2-14/pagina-35.jpg
+    pagina: 35
+    estado: presente
+    sha256: a9ede31a78722b93e694bed78609d06d9c645e34f94dc8fdd7dbc3c79a36ded8
+  - caminho: media/nt-2-14/pagina-36.jpg
+    pagina: 36
+    estado: presente
+    sha256: f17e4562977e4a93530cfb81e89265c88eb5b20d90406019a662eb1d6cc5f82d
+  - caminho: media/nt-2-14/pagina-37.jpg
+    pagina: 37
+    estado: presente
+    sha256: 46c61dbaee3ae96f10a5b29359ef69ff59d6c87f9da82656fe70ff90c066f9c5
+  - caminho: media/nt-2-14/pagina-38.jpg
+    pagina: 38
+    estado: presente
+    sha256: 7cc57ae3608e59b2c498553d38e2de83d7e309634ac8c07b39b1384bd73052c4
+  - caminho: media/nt-2-14/pagina-39.jpg
+    pagina: 39
+    estado: presente
+    sha256: a86e45358645f99687191c2e181be6bed8d5bd8cab0100135204cfa01a286653
+  - caminho: media/nt-2-14/pagina-40.jpg
+    pagina: 40
+    estado: presente
+    sha256: 6239403cb45c12d81f72ab9267e65cf3fbd8c0f6b638dbb5bed8fddf2f51a563
+  - caminho: media/nt-2-14/pagina-41.jpg
+    pagina: 41
+    estado: presente
+    sha256: 11201f637a57e01cd7069ebd67b817df594bebe5ff538f10b61611cbd699d3c0
+  - caminho: media/nt-2-14/pagina-42.jpg
+    pagina: 42
+    estado: presente
+    sha256: 2cf6b0f9a209481a1f18d1c80cc88af8b421034ac0c82cb6a0d4ea67704065ba
+  - caminho: media/nt-2-14/pagina-43.jpg
+    pagina: 43
+    estado: presente
+    sha256: 5be99ca037f869021475760aaf4bf10da8c8eed6069147748de311b4458cf914
+  - caminho: media/nt-2-14/pagina-44.jpg
+    pagina: 44
+    estado: presente
+    sha256: b6616b7479a5b91fcedf2059c2b868066407264792658ef9e844cea79af66aad
+  - caminho: media/nt-2-14/pagina-45.jpg
+    pagina: 45
+    estado: presente
+    sha256: 5a6bcab59e9f5c15592a41e86d323828318030067e6adf152809be341a6687ff
+  - caminho: media/nt-2-14/pagina-46.jpg
+    pagina: 46
+    estado: presente
+    sha256: 05e30b79f8c36744f6e3124313c070e2b962e19d10e4fe7b81d94cdd3c729c04
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 6
+    tabela: Quadro 1
+    arquivo: normative/tabelas/nt-2-14/quadro-1-sistemas-de-controle.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Quadro 2
+    arquivo: normative/tabelas/nt-2-14/quadro-2-caracteristicas-dos-dutos.yaml
+    estado: verificada
+- arquivo: nt-2-15-hidrante-urbano.md
+  documento: NT 2-15
+  titulo: NT 2-15 - Hidrante urbano
+  edicao: 2ª edição - 2025
+  ato: Portaria CBMERJ nº 1280, de 20 de dezembro de 2024
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/12/NT_2_15_2Ed_2025.pdf
+  sha256_pdf: 9bf5c0a472cde68a362e14c4d6ff48d90edee26d6c5af77022953040af4d5d13
+  sha256_md: f296aae1e6da6ae782ecb0554065af8e470998c83a1cb61f5ad8d3000d5af13f
+  data_captura: '2026-07-23'
+  paginas: 8
+  midia: nt-2-15
+  imagens:
+  - caminho: media/nt-2-15/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: b6cba9423e936d09bbb09b6c47134dffcff059cafdd4476408f7d51c1ce0e0ba
+  - caminho: media/nt-2-15/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: e4a05bf826bde89417138dcc32a0bacb0f67c8e9303832051c8a1cab091dfbfd
+  - caminho: media/nt-2-15/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 851f65758ed4ad1e9877aa7d1f61e99fc885b7c0c4462ea7638408aed34eccde
+  - caminho: media/nt-2-15/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: fc9db022b4a410f4acb90843f4575f128ecd6bd1e5aae8168ee36ff1278aad2d
+  - caminho: media/nt-2-15/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: aa76ff1d8f05e3dce3fe0f00def82ad50b43860219a4232470f982a8d36b545d
+  - caminho: media/nt-2-15/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 8bf7753f2c1bc512dd752eec5461ca7ee4ef28f4d02a9dc9e9dd39a530560044
+  - caminho: media/nt-2-15/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 4c24c466317e242d4e1a46f51b128cdbe04261a23b014842a3e769dc4cc76750
+  - caminho: media/nt-2-15/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 552a3a5c975d0e4dfc7954ef2ee9127fe5d083197153026313e849d42b4c739c
+  tabelas: []
+- arquivo: nt-2-16-acesso-de-viaturas.md
+  documento: NT 2-16
+  titulo: NT 2-16 - Acesso de viaturas em edificações
+  edicao: 2ª edição - 2020
+  ato: Portaria CBMERJ nº 1125, de 21 de outubro de 2020
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-16-Acesso-de-viaturas-em-edificacoes-2020-versao-02.pdf
+  sha256_pdf: e6bd6d005b860c38bbdea97ad5e59969ed14c4fb55b6794157f5b903f3974585
+  sha256_md: 1a1a3b4abf5d948be4599a1f278c0482d3e9d25a7700f430b0879a1b8f4590a2
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-2-16
+  imagens:
+  - caminho: media/nt-2-16/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: ed302a14d4e9718f446187069447eae293628353f8172ba8fa60a09c989a8bcd
+  - caminho: media/nt-2-16/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 455ee323ecd004f8ec8c0557637105d267f5782bed1c6fe4a958dab4ed2780c2
+  - caminho: media/nt-2-16/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: e1b132881f2e584035679e760b7089b249ee596e3d32a55783579085418a5ec7
+  - caminho: media/nt-2-16/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 04e08bdfac14614e571cffed974ed475e8aa4d999f562b705df223efbc45dcbb
+  - caminho: media/nt-2-16/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 0b4af51d7896d0279b52eade8010e84f7e5977458ac2bf563bfea47a27af442b
+  - caminho: media/nt-2-16/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 4e0a99c6754ad6ff917eb1bc949c71965725ddb3ef3007419928a47be1471393
+  tabelas:
+  - pagina: 1
+    estado: capa
+- arquivo: nt-2-17-separacao-entre-edificacoes.md
+  documento: NT 2-17
+  titulo: NT 2-17 - Separação entre edificações
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-17-Separacao-entre-edificacoes.pdf
+  sha256_pdf: 83120c1cd247417d8c543db5db69752e45da5911f26f40205cba174e71d62db7
+  sha256_md: a50660060505746d108ad3931255a68b0400b0be5fa0237e4f6732e38079f063
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-2-17
+  imagens:
+  - caminho: media/nt-2-17/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: ca5a8fff64e1cbd6f4d5a19525da1b53a095856a23cd8622967bb84c231451fb
+  - caminho: media/nt-2-17/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: cd067edc85ea5686e326087d384ac1f85cb01316a9ce37574e45e8a27ac8bd7c
+  - caminho: media/nt-2-17/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: fff8f6ffea0609c27329725b170dee1c60280bc32d5bf3ee200cd8b74fb46cdb
+  - caminho: media/nt-2-17/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 22fb9ba21dbdf177f392d4cfa9d26e3841821863c92ebc4e1234c77dc4f697ee
+  - caminho: media/nt-2-17/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 09ee7ae6d3e875cc438d0c1a0e6dbb0acbfe37d5fc031c569a274f7d507aba39
+  - caminho: media/nt-2-17/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 49116fcca29ffbe1ad4b9226742d6b0e07cf9b089151a3173523986eac31d097
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 4
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-2-17/tabela-1-classificacao-risco.yaml
+    estado: verificada
+  - pagina: 5
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-2-17/anexo-a-indice-distancias.yaml
+    estado: verificada
+- arquivo: nt-2-18-compartimentacao.md
+  documento: NT 2-18
+  titulo: NT 2-18 - Compartimentação horizontal e vertical
+  edicao: 2ª edição - 2022
+  ato: Portaria CBMERJ nº 1179, de 11 de abril de 2022
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT-2-18-Compartimentao-horizontal-e-vertical-2022_1649879739.pdf
+  sha256_pdf: f3cc3993e2a919c4ee77f5b7e06782dfd8d168476807c40ccf8f63939e7a9f88
+  sha256_md: 3a8300cd003bedb20d8e705ac115e904475667568ac452fd171043671a46c0ae
+  data_captura: '2026-07-23'
+  paginas: 20
+  midia: nt-2-18
+  imagens:
+  - caminho: media/nt-2-18/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: fb61de37347a1947e38e9eab9e6504015ad329cd0c8c5f0923abd7fe55d7eef8
+  - caminho: media/nt-2-18/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 36fa9de6422e38ded9b6212c333d1aa7d9f921f11b5d8ff9522ee07bcd50f3d0
+  - caminho: media/nt-2-18/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 689064771c8b1e2f822191bcbadc9a4f0a33051e7c8135e65a7eb5419b87d3d5
+  - caminho: media/nt-2-18/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: dcb8d5f0dee4500f2e3a763d1ed361ba495888107e502ffdf8025c894212bcf8
+  - caminho: media/nt-2-18/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: a713306f61c4fc78f1894126c3b3e7a7124f52158817d9a14d1a0edc140d5fd1
+  - caminho: media/nt-2-18/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 0a505ebb585ce02111c4fa79366dfacc73c501f61d88a60571dab64cb9852fd6
+  - caminho: media/nt-2-18/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: a596a8a255fd85fab790f0318f8e41270f3bfa7bd245fbb2e42de4ab12ea61c9
+  - caminho: media/nt-2-18/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: e1d479495fadc8de0507fdddd38092550265539a79095e73633f3cfb90c4886a
+  - caminho: media/nt-2-18/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 33814ca0982a101d15e628aa18eec11115029d8944f246daa3a4b4c4b876e4d2
+  - caminho: media/nt-2-18/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: 237af68c3bddda202dfcc5a087d9e8314f4b5df6557b90e7b4b1f811c48edffc
+  - caminho: media/nt-2-18/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: c8481c3de79c2ebcc6f1c585a0407700156cba05457e3b02c3beabf3557ea520
+  - caminho: media/nt-2-18/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: cb9d1db8023a16d46616b6c5516231f42b59e9cd84420b0c498a01af2ca4ce3c
+  - caminho: media/nt-2-18/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: 5c951519e88a386e176685cdfdf1bcaee60a543f5e0d418cdc72cb1ddf2ffcdb
+  - caminho: media/nt-2-18/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 910f4dd1ab3ca5848bbdce53f02749babf2de2eda9ec04d0c90ed63649ee0f4c
+  - caminho: media/nt-2-18/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: 263445ef3a161b89c10c8c46d9daef6e50d562b1ffc5b9ff18dd8ba3ce9e3881
+  - caminho: media/nt-2-18/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: 4f1365f47d18428d7900bf826963b2021ab1c080966ad2e5a6bb2f8590567856
+  - caminho: media/nt-2-18/pagina-17.jpg
+    pagina: 17
+    estado: presente
+    sha256: 342d1cf883c3f2f2686c942f1b2aea214e0a3d62be3a6d9078a2fe0da511b7f1
+  - caminho: media/nt-2-18/pagina-18.jpg
+    pagina: 18
+    estado: presente
+    sha256: ec823e2b33c2f0658a2b5947b233a191b7c250aaec08d76eb5662269fa685f9f
+  - caminho: media/nt-2-18/pagina-19.jpg
+    pagina: 19
+    estado: presente
+    sha256: ea0f2b3e29ee6785f83514613c68dcc1b2cd9a4d54f6df0777f346943b148a96
+  - caminho: media/nt-2-18/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: 9900ca1b479b4011e6911b7237fc1956c84d3e112ea688c6af1f744e06c290f6
+  tabelas:
+  - pagina: 1
+    estado: capa
+- arquivo: nt-2-19-seguranca-estrutural.md
+  documento: NT 2-19
+  titulo: NT 2-19 - Segurança estrutural contra incêndio - Resistência ao fogo dos elementos de construção
+  edicao: 2ª edição - 2025; consolidada com a Portaria CBMERJ nº 1.317/2025
+  ato: Portaria CBMERJ nº 1280, de 20 de dezembro de 2024
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2025/12/NT2_19_2Ed_2025_alterada_Portaria_1317_2025.pdf
+  sha256_pdf: 29a57e10630596f21a7e914197a2ae021c3e78b9a399b2d16799ac9bba1390fe
+  sha256_md: 40622b60136ececdba22cdf0db6d4bde80d618e4713e380d6a3c0d58ef8f76c3
+  data_captura: '2026-07-23'
+  paginas: 12
+  midia: nt-2-19
+  imagens:
+  - caminho: media/nt-2-19/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 32295658b6363f2e5904485b57d4ac68d9950e21f427b0888e872d6bb663d614
+  - caminho: media/nt-2-19/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: c7cde7000596be3953eeb11b69ad967b99052fd970a8796ba971fd8290a1de53
+  - caminho: media/nt-2-19/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 700f6ebd7396d0734558c5d3a5130a19e750d5faf8966d8274165f2d7ef794b1
+  - caminho: media/nt-2-19/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 02fb374379c6b7eb232cd944096ce8d19968d2c59b5d820faa534f6b0c23e985
+  - caminho: media/nt-2-19/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: dbd630cba7dab3f9f613482b1ba15a58328f3cf749b7068b1d738a97d1fd1e0f
+  - caminho: media/nt-2-19/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: e52a9358506860d38d30ae18ac54c6499cf1659a719cd430feb4dc1774edd073
+  - caminho: media/nt-2-19/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: d2bbaaa48eb876a91c5fdd1ee852b17c64d53ddf43e29db3720ea5cf6940b269
+  - caminho: media/nt-2-19/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 291c50bca4102c67bb8e2ea8c522124ec3434140c048fe56598f7545e0850e36
+  - caminho: media/nt-2-19/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: f110538d3d5847e037995eed42020492adaa05c5b1e34c3a71ef7ff717c5e9ae
+  - caminho: media/nt-2-19/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: 1226e2ed0275d6f28bf9bf7b469e4c80aeb1405a9047a74831c8ab9e53973e88
+  - caminho: media/nt-2-19/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: 6be5c8cff32e39f2ca3955a9a9dc0179aa73a29baa0641ab287ee735f88ea59c
+  - caminho: media/nt-2-19/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: 39bd7e771ec4ca85db6e4baa65bdb5cbfeb1bc870f1c11fabab9fcb9e7f428ec
+  tabelas:
+  - pagina: 9
+    tabela: Tabela A
+    arquivo: normative/tabelas/nt-2-19/anexo-a-tabela-a-trrf.yaml
+    estado: verificada
+  - pagina: 10
+    tabela: Tabela B
+    arquivo: normative/tabelas/nt-2-19/anexo-b-tabela-b-alvenarias.yaml
+    estado: verificada
+  - pagina: 11
+    tabela: Tabela C
+    arquivo: normative/tabelas/nt-2-19/anexo-c-tabela-c-drywall.yaml
+    estado: verificada
+  - pagina: 12
+    tabela: Tabela D1
+    arquivo: normative/tabelas/nt-2-19/anexo-d-tabela-d1.yaml
+    estado: verificada
+  - pagina: 12
+    tabela: Tabela D2
+    arquivo: normative/tabelas/nt-2-19/anexo-d-tabela-d2.yaml
+    estado: verificada
+- arquivo: nt-2-20-controle-de-materiais-de-acabamento.md
+  documento: NT 2-20
+  titulo: NT 2-20 - Controle de materiais de acabamento e de revestimento
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-2-20-Controle-de-materiais-de-acabamento-e-de-revestimento.pdf
+  sha256_pdf: 6fa8dffe9aa7d10fb27c845b40da733db84862ac9fc144ec3948e8db24e90d4d
+  sha256_md: b14529fded15eab68dbf1a82b8a5769ea6f13e51bfae64decb5fc932d94ee9d4
+  data_captura: '2026-07-23'
+  paginas: 9
+  midia: nt-2-20
+  imagens:
+  - caminho: media/nt-2-20/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: a05da75785665bbcb47a2783881704fbeb005ec4e4d2db99d1068c2feeac87a3
+  - caminho: media/nt-2-20/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: cd067edc85ea5686e326087d384ac1f85cb01316a9ce37574e45e8a27ac8bd7c
+  - caminho: media/nt-2-20/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: e5547ce94eef79e8383c3858ddb61b019f332c66bc25eb36ede22ce3c9d730d0
+  - caminho: media/nt-2-20/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 25e9a2792aa4a6a52d47bdc43b65889519415e46f709bd55da156dfd63d661cb
+  - caminho: media/nt-2-20/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: fb1ac069f1dd79371f62a95af888d739721b0563cd52efc757f99bbbabf9a864
+  - caminho: media/nt-2-20/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 18ac4a2b0ce142ea0b1ce1ff026513705217b609589fce40f1aa2967f67cfcf1
+  - caminho: media/nt-2-20/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 3446a2d853829a19e8dac708dbe206a540e5184cc646043a687bac6c40b12805
+  - caminho: media/nt-2-20/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 80d075c9a23f5c9c0f46bbca17c329dc00b1808fbd6287f25da01d4d6c71f03f
+  - caminho: media/nt-2-20/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 5dc11302b6e88e8f4966d8c6343e04b265fc377ee01c7e749092f475606edc94
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 6
+    tabela: Tabela 1 do Anexo A
+    arquivo: normative/tabelas/nt-2-20/anexo-a-tabela-1-piso.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Tabela 2 do Anexo A
+    arquivo: normative/tabelas/nt-2-20/anexo-a-tabela-2-exceto-piso.yaml
+    estado: verificada
+  - pagina: 8
+    tabela: Tabela 3 do Anexo A
+    arquivo: normative/tabelas/nt-2-20/anexo-a-tabela-3-sem-nbr-9442.yaml
+    estado: verificada
+  - pagina: 9
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-2-20/anexo-b-utilizacao.yaml
+    estado: verificada
+- arquivo: nt-3-01-cozinha-profissional.md
+  documento: NT 3-01
+  titulo: NT 3-01 - Cozinha profissional
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-01-Cozinha-profissional.pdf
+  sha256_pdf: 39376c0411829f52c7e1c06a9dcde0f09528d2e5db87b4e3915d796783b2ebca
+  sha256_md: 3fb087600e2aaa00941c02a37edf35d2c37c41e75831272af6f794cf280a7a6f
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-3-01
+  imagens:
+  - caminho: media/nt-3-01/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 2e7641cfbd98433ab677cfa8e812983e107f8a89b9ee214a79c2da28aad89842
+  - caminho: media/nt-3-01/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-3-01/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: aee369fb6b10b6c97c49b74f26d1260baeecb3983c38c43a0b7ab8aeb0390034
+  - caminho: media/nt-3-01/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: d3299eb14009f75fa9f97aca3f76cd0c9bcd2a5938571ed381e27b6e2bce5465
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 4
+    estado: nao_tabela
+    motivo: definição 4.11 (efluentes) em duas colunas de texto
+  - pagina: 5
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-3-01/tabela-1-equipamentos-coccao.yaml
+    estado: verificada
+  - pagina: 5
+    tabela: Tabela 2 (continuação)
+    arquivo: normative/tabelas/nt-3-01/tabela-2-exaustao-continuacao.yaml
+    estado: verificada
+  - pagina: 5
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-3-01/tabela-2-exaustao.yaml
+    estado: verificada
+- arquivo: nt-3-02-gas-glp-gn-uso-em-edificacoes.md
+  documento: NT 3-02
+  titulo: NT 3-02 - Gás (GLP-GN) - Uso em edificações e áreas de risco
+  edicao: 2ª edição - 2023; atualizada em 2025
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2025/02/NT3-02_2Ed_2023_alterada_2025.pdf
+  sha256_pdf: 8a44a1be179fd3e5c38d06b32f637226230702d48b6c3f8c0f8ae37add147950
+  sha256_md: 16a5e48f498dec815c2d5edacbbe4ab1dd68ffe1c825b0d9314207ec485e9a66
+  data_captura: '2026-07-23'
+  paginas: 15
+  midia: nt-3-02
+  imagens:
+  - caminho: media/nt-3-02/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 7c9f42fd231597f822368cb1976dd4491fbecd1349754bc7c33080f6984250de
+  - caminho: media/nt-3-02/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 60c99f9c8a7a3d65a119085d8fc2a2dc7906b3f241d6b8622731cf9e6e38d75e
+  - caminho: media/nt-3-02/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 41119039db4318eac1e8c6c74068a4681258c5f2b09e24c4e4da4f4f63486e4a
+  - caminho: media/nt-3-02/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: df00faf3933790f1274bb5de79bd787abf34d310398bddb5c134831a61563bb2
+  - caminho: media/nt-3-02/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 91f6fba5b2f018cacda139d594083e7f4876e1f8aef0e1f34e35cec9e23e4f01
+  - caminho: media/nt-3-02/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 8221a5e6e8bb64b60d0f2c9070c09f86558a5cb1f7784a309032933867d31cd7
+  - caminho: media/nt-3-02/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 761b5e1f6af44aa0b28d00da26cdbc5dccf79a2e275fd76fa6de86d44d2318a8
+  - caminho: media/nt-3-02/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: e9a4351a0befe4a0cc5a16d418582de31e6d484b354dd8113ad0c7dc94dceeec
+  - caminho: media/nt-3-02/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 85b8086a962ccf7434a5da3282d9ffcefa7d8aa2137d5430be765ec36c4d38f8
+  - caminho: media/nt-3-02/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: aada374b68de4976601fb008a175c41d10daddb51e19d1ad3fec0aff5e69c558
+  - caminho: media/nt-3-02/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: 371632334c5bf5bf7ab0639afe5ce2b1601cb5a48ef5da6c2ea8ce537f3f0df9
+  - caminho: media/nt-3-02/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: f614e2dea867e91196553e2f142bc9a2501986737a15336c26fa14b44d615ad6
+  - caminho: media/nt-3-02/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: e8983c63b44cbf0ee20c30304b7b30c6774b127cabed18a78d9e23658bc22659
+  - caminho: media/nt-3-02/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 5944e8ac4755b867162c8f6e364c2656c5eb9539504f8c59aee3b6371b1756f1
+  - caminho: media/nt-3-02/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: d2c39a204c701ea3669d5a053fd0897f8206be5e585c802fee075f829cfae7ec
+  tabelas:
+  - pagina: 5
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-3-02/tabela-1-identificacao-da-tubulacao.yaml
+    estado: verificada
+  - pagina: 6
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-3-02/tabela-2-afastamentos-da-cerca.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Tabela 3
+    arquivo: normative/tabelas/nt-3-02/tabela-3-extintores-central-glp.yaml
+    estado: verificada
+  - pagina: 8
+    tabela: Tabela 5
+    arquivo: normative/tabelas/nt-3-02/tabela-5-afastamentos-da-tomada.yaml
+    estado: verificada
+  - pagina: 12
+    tabela: Tabela 1 do Anexo A
+    arquivo: normative/tabelas/nt-3-02/anexo-a-tabela-1-recipientes.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela 2 do Anexo A
+    arquivo: normative/tabelas/nt-3-02/anexo-a-tabela-2-agrupamento.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela 3 do Anexo A
+    arquivo: normative/tabelas/nt-3-02/anexo-a-tabela-3-oxigenio.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela 4 do Anexo A
+    arquivo: normative/tabelas/nt-3-02/anexo-a-tabela-4-hidrogenio.yaml
+    estado: verificada
+- arquivo: nt-3-03-motogeradores.md
+  documento: NT 3-03
+  titulo: NT 3-03 - Motogeradores de energia em edificações e áreas de risco
+  edicao: 1ª edição - 2019; consolidada com a Portaria CBMERJ nº 1.317/2025
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_3-03_1Ed_2019_alterada_Portaria_1317_2025.pdf
+  sha256_pdf: 181e7aa6c1341d3032421dde20512ea3e9c55b5588fbd188a1ab3eaa31b958de
+  sha256_md: 6593ab36d08c97bb91906cf3360947ee0a0d26e20e88ea065c9c22f039f35bb1
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-3-03
+  imagens:
+  - caminho: media/nt-3-03/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: abb21f464115d007e18d63b29e5be8817f8d9ef89f69a6267bd19c8040fe3604
+  - caminho: media/nt-3-03/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 3d8143acc90042a928bc4baf0da5a0a05be4c13b6ab0f10830fda4f2aab7237d
+  - caminho: media/nt-3-03/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 6d1442bcb0c980dee8289304d78697dd013fe6a60be40e92ffc28ec29c9e45ea
+  - caminho: media/nt-3-03/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 673775b47c4d465918cb77a77327c716e1036fd490f26341e813456cf27db066
+  - caminho: media/nt-3-03/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 41eccd843347df0545100a67b3a803a49116fbbf6e0526f0b2b9f43ab50ce743
+  - caminho: media/nt-3-03/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 662af1dec428c88d9ca5e385a63d8290ec00036604cf42213540c1c4f45552e2
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 5
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-3-03/tabela-1-volume-por-pavimento.yaml
+    estado: verificada
+  - pagina: 6
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-3-03/tabela-2-periodo-lge.yaml
+    estado: verificada
+- arquivo: nt-3-04-subestacoes-eletricas.md
+  documento: NT 3-04
+  titulo: NT 3-04 - Subestações elétricas
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-04-Subestacoes-eletricas.pdf
+  sha256_pdf: 3ed344a5d2862df5b5e61d7ae7a439dd61e1e8a580830cfbd4cd1fd0186eb825
+  sha256_md: 40ecd90f027b7538fa0618f048d7f5aa3af622237f298c8468fc83f2b86a86a5
+  data_captura: '2026-07-23'
+  paginas: 11
+  midia: nt-3-04
+  imagens:
+  - caminho: media/nt-3-04/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-3-04/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: 76ae55bcf2bf54426ffa3865e1a7c17c56eb845d17162ae894699fd64c34ad64
+  tabelas:
+  - pagina: 1
+    estado: capa
+- arquivo: nt-3-05-caldeiras-e-vasos-de-pressao.md
+  documento: NT 3-05
+  titulo: NT 3-05 - Caldeiras e vasos de pressão
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-05-Caldeiras-e-vasos-de-pressao.pdf
+  sha256_pdf: 73174c3094cb82924f6c6d99f81887cd5e6ce4c1b2b63bf80d974cd9b8d14178
+  sha256_md: 7be5ce80c0a84a12457f02cf86411b46d4ab0ed5f6eb5742515435adba330990
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-3-05
+  imagens:
+  - caminho: media/nt-3-05/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  tabelas:
+  - pagina: 1
+    estado: capa
+- arquivo: nt-3-06-liquidos-inflamaveis-e-combustiveis.md
+  documento: NT 3-06
+  titulo: NT 3-06 - Armazenagem de líquidos inflamáveis e combustíveis
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-3-06-Armazenagem-de-liquidos-inflamaveis-e-combustiveis.pdf
+  sha256_pdf: d58dadc24ac58d20b29c5b0b3a1271bd5c096911ca0e7149efaddd0a9faccf92
+  sha256_md: 511a5040a8c1daf79e06fca14cc9ec9fa5ab2806c89abd5158ba9cdcb7456bd1
+  data_captura: '2026-07-23'
+  paginas: 16
+  midia: nt-3-06
+  imagens:
+  - caminho: media/nt-3-06/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 5820b2a562ef757838dcb43b25e2914f6f7ae8c1a46ca8e406cc69536310ba92
+  - caminho: media/nt-3-06/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-3-06/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 17f2aac9467c2dc70e335d1273c320bc89b86cf2792f100fcdd67f2b3343854e
+  - caminho: media/nt-3-06/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 01a51c92b91fd8a96a04f2ec497cb70ae549e19f75571db88e58ae75766c74a6
+  - caminho: media/nt-3-06/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 7b0b728cbe25e16c27b64e963d2dd7c0c2d827c83096533337d77194cd855849
+  - caminho: media/nt-3-06/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 546dcc234933e457ad542865262e6038509e3ad0662ca7bbf66ba6c5ce86c891
+  - caminho: media/nt-3-06/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 92409814c0fe1494773cb937961f8da01bab50e93481d840a44c4126c00bcc52
+  - caminho: media/nt-3-06/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: ac4daa600f8d0c7291680d812f55ad67fa1cae3c5dc56d7e845b7bf7c24e626d
+  - caminho: media/nt-3-06/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 6dccaed643f2b124ab92b4e08f7e0b727f98945b92b4f329f44b3a49216b50cf
+  - caminho: media/nt-3-06/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: 8d720884baa5782de57c8bff5246e9e49e29d5f9b75e65d6eef4964935dd6592
+  - caminho: media/nt-3-06/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: d163625ce5e135572e4c3f64e8195e715f61950ae0f9b1fa2180c768eeee2f25
+  - caminho: media/nt-3-06/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: a3f81ccd47a4530551b077862eaf32c6a60d4031e64d30786156544908679e1d
+  - caminho: media/nt-3-06/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: 2ffad39fbe2179ea7f23931db0cb48f64713e923a105bfd1475fb3a6f276993c
+  - caminho: media/nt-3-06/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 07c27ace04fce0cbc8e403853bb1b39e3c7be28809d2c77cbd260e54d0d76cde
+  - caminho: media/nt-3-06/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: 864bef45ce9746e08e7a7993b56088906dee52d9fb7f37431620b1b80dadb691
+  - caminho: media/nt-3-06/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: c8ca885d2053a9291c7410b026f2252ac1a16a12c1156c114a9b872de1d24b92
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 4
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-3-06/tabela-1-classificacao-liquidos.yaml
+    estado: verificada
+  - pagina: 5
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-3-06/tabela-2-espacamento-tanques.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Tabela 3
+    arquivo: normative/tabelas/nt-3-06/tabela-3-espuma-tanques-verticais.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Tabela 4
+    arquivo: normative/tabelas/nt-3-06/tabela-4-espuma-solventes-polares.yaml
+    estado: divergente
+  - pagina: 7
+    tabela: Tabela 5
+    arquivo: normative/tabelas/nt-3-06/tabela-5-camaras-espuma.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Tabela 6
+    arquivo: normative/tabelas/nt-3-06/tabela-6-aplicadores-manuais.yaml
+    estado: verificada
+  - pagina: 7
+    tabela: Tabela 7
+    arquivo: normative/tabelas/nt-3-06/tabela-7-tempo-aplicacao.yaml
+    estado: verificada
+  - pagina: 8
+    tabela: Tabela 8
+    arquivo: normative/tabelas/nt-3-06/tabela-8-resfriamento.yaml
+    estado: verificada
+  - pagina: 8
+    tabela: Tabela 9
+    arquivo: normative/tabelas/nt-3-06/tabela-9-area-resfriada.yaml
+    estado: verificada
+  - pagina: 9
+    tabela: Tabela 10
+    arquivo: normative/tabelas/nt-3-06/tabela-10-taxa-resfriamento.yaml
+    estado: verificada
+  - pagina: 10
+    tabela: Tabela 11
+    arquivo: normative/tabelas/nt-3-06/tabela-11-espuma-plataformas.yaml
+    estado: verificada
+  - pagina: 10
+    tabela: Tabela 12
+    arquivo: normative/tabelas/nt-3-06/tabela-12-quantidade-area-controlavel.yaml
+    estado: verificada
+  - pagina: 10
+    tabela: Tabela 13
+    arquivo: normative/tabelas/nt-3-06/tabela-13-ocupacoes-especiais.yaml
+    estado: verificada
+  - pagina: 11
+    tabela: Tabela 14
+    arquivo: normative/tabelas/nt-3-06/tabela-14-areas-controlaveis-por-andar.yaml
+    estado: verificada
+  - pagina: 11
+    tabela: Tabela 15
+    arquivo: normative/tabelas/nt-3-06/tabela-15-resistencia-areas.yaml
+    estado: verificada
+  - pagina: 11
+    tabela: Tabela 16
+    arquivo: normative/tabelas/nt-3-06/tabela-16-resistencia-portas.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela 1 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-1-estaveis.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela 2 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-2-ebulicao-turbilhonar.yaml
+    estado: verificada
+  - pagina: 14
+    tabela: Tabela 3 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-3-instaveis.yaml
+    estado: verificada
+  - pagina: 14
+    tabela: Tabela 4 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-4-classe-iiib.yaml
+    estado: verificada
+  - pagina: 14
+    tabela: Tabela 5 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-5-referencia.yaml
+    estado: verificada
+  - pagina: 15
+    tabela: Tabela 6 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-6-edificacoes.yaml
+    estado: verificada
+  - pagina: 15
+    tabela: Tabela 7 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-7-extintores.yaml
+    estado: verificada
+  - pagina: 16
+    tabela: Tabela 8 do Anexo A
+    arquivo: normative/tabelas/nt-3-06/anexo-a-tabela-8-ocupacoes-comerciais.yaml
+    estado: verificada
+- arquivo: nt-3-07-heliponto-e-heliporto.md
+  documento: NT 3-07
+  titulo: NT 3-07 - Heliponto e heliporto
+  edicao: 2ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT3-07_2Edio_2023.pdf
+  sha256_pdf: 85f786298c328a4f770b2788c4e7b07966b65cbd9374f1a8276bec1c98153fd9
+  sha256_md: 24b75ba56ec2f06d579d87b4bca69e8a735182170f6258a0f856dba16bd4ef65
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-3-07
+  imagens:
+  - caminho: media/nt-3-07/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 5c9552771017059ab4954f6f2a90786a9533c42b8077faa38b72ea02e9884ced
+  - caminho: media/nt-3-07/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 3070ce2fe84b56ae6e76c58fda4d4a9cf745666382d076b36ebdbe259b3bcda4
+  - caminho: media/nt-3-07/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 769a9f5479efbc2685d6a3226fe755193a1b8d1f0b9b7cf64c404ff679dd9c7a
+  - caminho: media/nt-3-07/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 3b7e02e2d2f5aad02b1d4f69efeb82706ecf7a18cc4356f6d0452419c3a97ece
+  - caminho: media/nt-3-07/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: cc3fab986e613311966942aa78164e23c4c0695e5e494c71015661610f5cdb87
+  - caminho: media/nt-3-07/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: c43b54ee778f2b3fd192e5b58a60825d43f10c2a6ade0ed8b3782f8c11d7b428
+  tabelas:
+  - pagina: 6
+    tabela: Tabela do Anexo A
+    arquivo: normative/tabelas/nt-3-07/anexo-a-extintores-helipontos.yaml
+    estado: verificada
+- arquivo: nt-4-01-quiosques-e-areas-de-exposicao-ou-venda.md
+  documento: NT 4-01
+  titulo: NT 4-01 - Quiosques e áreas para exposição ou venda de produtos e serviços
+  edicao: 2ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT4-01_2Edio_2023.pdf
+  sha256_pdf: 1cb4c036d0b4ac64945dd66b209843d0ac14bc61fd66c065219ba7f1830938d6
+  sha256_md: ee12875f25561f717886eb17fb58d862eff811680e8992aac04046bd444baeab
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-4-01
+  imagens:
+  - caminho: media/nt-4-01/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: cf3c9ebffd89c88a5366746a88222c30ed114b9b9c98cfea708d1d656683ebfd
+  - caminho: media/nt-4-01/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 9a7313131243e12b67cfe4acbb9087e21e4a1c40a58b24bb4eea205ff9f88ae7
+  - caminho: media/nt-4-01/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: ed905e3e442af2cedb4b776aa044ab57a12f5c44d858e50e6dd5f6237012396b
+  - caminho: media/nt-4-01/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 4057f4553a65d9f9cf6626187e9dc4b9eafb2636968dc22b6fb7934b17fb34f6
+  - caminho: media/nt-4-01/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: f24e7eb08531e32a0cbdb15c59c46b19c13319791ce350567a9502798a4ec902
+  tabelas:
+  - pagina: 4
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-4-01/tabela-1-vao-livre.yaml
+    estado: verificada
+- arquivo: nt-4-02-restricao-de-liberdade.md
+  documento: NT 4-02
+  titulo: NT 4-02 - Edificações destinadas à restrição de liberdade
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-02-Edificacoes-destinadas-a-restricao-de-liberdade.pdf
+  sha256_pdf: f7b383579f1219bb29d135b29948f68ec18fa580511a90a0e74b2dba796b2ab2
+  sha256_md: 6acaaafd2855c021d594a2cd40f22db73a1792d15724fa22ea3909aceb383381
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-4-02
+  imagens:
+  - caminho: media/nt-4-02/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 28fe3d0e700f8b23f6fc84b01bb32f8e771f96e7614e17a1f8a7af8fe2558d8a
+  - caminho: media/nt-4-02/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  tabelas:
+  - pagina: 1
+    estado: capa
+- arquivo: nt-4-03-edificacoes-tombadas.md
+  documento: NT 4-03
+  titulo: NT 4-03 - Edificações tombadas
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-03-Edificacoes-tombadas.pdf
+  sha256_pdf: d254b42c3f3b8a389674582f2592e98eeba694412ff25f2f80d3c2a076570c78
+  sha256_md: c4930be1973cb327ca4557836ed56bcb7d451512aeeb225c92c5f2922c6c4786
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-4-03
+  imagens:
+  - caminho: media/nt-4-03/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  tabelas:
+  - pagina: 1
+    estado: capa
+- arquivo: nt-4-04-municoes-explosivos-e-artefatos-pirotecnicos.md
+  documento: NT 4-04
+  titulo: NT 4-04 - Munições, explosivos e artefatos pirotécnicos - Fabricação, armazenagem e comércio
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-04-Municoes-explosivos-e-artefatos-pirotecnicos-Fabricacao-armazenagem-e-comercio.pdf
+  sha256_pdf: 4a60b8e260a3765210bab4f348c2b40ae4cfe7fd14c683d83875f2d68e9be3af
+  sha256_md: 76542902538a1bfb42503ecb626d4ec86ffd1cae45c6548e3dc14f92a462deb1
+  data_captura: '2026-07-23'
+  paginas: 11
+  midia: nt-4-04
+  imagens:
+  - caminho: media/nt-4-04/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: e6674fbdcaeb52d6eaebb3db2b084a4399dd77451fe2c92821023da893c4a2d6
+  - caminho: media/nt-4-04/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-4-04/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: b6e5d19c9116750a5a963b051d46eabee915aad0d153c0e8e07f77b37c53ff94
+  - caminho: media/nt-4-04/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 39b80bf6be90696d7880be6755b2466fa675052f1aaa6ab67a9680555b6187b1
+  - caminho: media/nt-4-04/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 4df7514927df280af8d6d4e2c6cc5530c1e58b5f4a19d8c61c541d174a7850d4
+  - caminho: media/nt-4-04/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 65f2062edc7ac07219818462e14acc692616aea6619944971348e3c46054576b
+  - caminho: media/nt-4-04/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 3240de3d8527dfc32313e55617d60fe663e7fbfb09c6b8d52eb5f250d4afdc90
+  - caminho: media/nt-4-04/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 246877a10722eb901d4c6dfeaba9e5cf04e050e6512963acb64d51b038d76e8e
+  - caminho: media/nt-4-04/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: f222eff88ddca61de6fa0d847fea1a6e08d366936eb179f7d8ea52328325fb09
+  - caminho: media/nt-4-04/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: 0feec8a3cc840182ee48ea6a0633f2b1f4560eb5a3ffc0921328e0c915a40dec
+  - caminho: media/nt-4-04/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: c21edd5a438c4c52d37ec3098858c64bd3d2cb87d423ed320d19209d14b63e5d
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 3
+    estado: nao_tabela
+    motivo: definição 4.1 (aceiro) em duas colunas de texto
+  - pagina: 8
+    tabela: Tabela 1 do Anexo A
+    arquivo: normative/tabelas/nt-4-04/anexo-a-tabela-1-polvora.yaml
+    estado: verificada
+  - pagina: 8
+    tabela: Tabela 2 do Anexo A
+    arquivo: normative/tabelas/nt-4-04/anexo-a-tabela-2-iniciadores.yaml
+    estado: verificada
+  - pagina: 9
+    tabela: Tabela 3 do Anexo A
+    arquivo: normative/tabelas/nt-4-04/anexo-a-tabela-3-explosivos.yaml
+    estado: verificada
+  - pagina: 10
+    tabela: Tabela 4 do Anexo A
+    arquivo: normative/tabelas/nt-4-04/anexo-a-tabela-4-pirotecnicos.yaml
+    estado: verificada
+  - pagina: 11
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-4-04/anexo-b-nomenclatura-fogos.yaml
+    estado: verificada
+- arquivo: nt-4-05-gas-manipulacao-armazenamento-e-comercializacao.md
+  documento: NT 4-05
+  titulo: NT 4-05 - Gás (GLP-GN) - Manipulação, armazenamento e comercialização
+  edicao: 2ª edição - 2022
+  ato: Portaria CBMERJ n° 1179, de 11 de abril de 2022
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT-4-05-Gas-GLPGN-Manipulacao-armazenamento-e-comercializacao-2022.pdf
+  sha256_pdf: aa17172506e541141bd5c672564297f167c1530c2ab8a8386133aceeba642b93
+  sha256_md: f0c7745462695281ac0e70ef502bea78e34805de4b2877d35da1dc2a00427e7a
+  data_captura: '2026-07-23'
+  paginas: 23
+  midia: nt-4-05
+  imagens:
+  - caminho: media/nt-4-05/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 5369394364b0fd6dce26afc45293b4f4282d2c0a679bcfc8ce2de899080ebdcb
+  - caminho: media/nt-4-05/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 73dee108e1e95b5eceb2006767e15936bfc2a74eceb1e4aee5c284634328cbfb
+  - caminho: media/nt-4-05/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 949e492c27791a5b39a81f18b7dfc0cb107aaa194b5ddd86bd515c7531cecebb
+  - caminho: media/nt-4-05/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 17b8b802ed7c1570de90c44848ec5e69b5dbbe2f27357b09610f601d9781f16e
+  - caminho: media/nt-4-05/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 5d17ebac2d074b4f28d568df26a3bf68c9f3bcac2785ba8f54297433899bb5d2
+  - caminho: media/nt-4-05/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 0bf4a56125cf38da2eb006e1e3fdfb60105975c67dbee7921a89b55b3d8a5bd1
+  - caminho: media/nt-4-05/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: f5b2c4080f5a7245e488de3f6eb9e2bdd49b2094eb1b45fa2927269d7f036802
+  - caminho: media/nt-4-05/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 9c803f8f8e8d71e0d0b52639a83725975d242fb3d4209c1b81b15eb72886184c
+  - caminho: media/nt-4-05/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 7c027c32efb8de6ce08c71ee940b3c7ac85197a839f0b8479ff0c7562ed660db
+  - caminho: media/nt-4-05/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: 2c7aa86b1c332991d985be93cfa8cabfac0cb6975f0803bf7047d86734dd2377
+  - caminho: media/nt-4-05/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: 0c08c91ac028c58c48be731a0a9bee0bea48f7e359c4a59cb956f7f42b40696f
+  - caminho: media/nt-4-05/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: b3c702d8e7936ffaa9a6e8243d031a4167a38c30a499d64a63d61ceafedd686e
+  - caminho: media/nt-4-05/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: 3471e0e962149e6ed06707c5facf2d8e278f0f7702bcb1a5a6753aec543ba575
+  - caminho: media/nt-4-05/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 6b7ce537548ef84b5c6e785455d7beac2a80068cc9dcebd14d82dc33be81b829
+  - caminho: media/nt-4-05/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: e8d9e1a1414faded45049844f30f8a11c36a018007c6c7e8b5bf79143cd3a26d
+  - caminho: media/nt-4-05/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: 2939bc21c249f90e0db47c72fd12855090c343e9c1dbc32b90b72a51f1fa4901
+  - caminho: media/nt-4-05/pagina-17.jpg
+    pagina: 17
+    estado: presente
+    sha256: 7166389d111cdaf2ea65c6843d0a7a0a1bcb42abefbb2888ff5c818c929fcd9b
+  - caminho: media/nt-4-05/pagina-18.jpg
+    pagina: 18
+    estado: presente
+    sha256: ac90f39f6102029d3df0ccd57324716a9db581e20857c95879d5904cb64bd8aa
+  - caminho: media/nt-4-05/pagina-19.jpg
+    pagina: 19
+    estado: presente
+    sha256: 56a0cf66fcfe175fe7fe6676b01399b76d13dd7e45bb36eea2de4f5b1b833a1a
+  - caminho: media/nt-4-05/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: 53a190ae7be32d1be89f439b58e2c271d7155b4c1efe700d910a5cf476a89e05
+  - caminho: media/nt-4-05/pagina-21.jpg
+    pagina: 21
+    estado: presente
+    sha256: 414bf881492d4e782c289aa0276e58fe8ee0803b9c3437a2365d1ddd0dfc88b0
+  - caminho: media/nt-4-05/pagina-22.jpg
+    pagina: 22
+    estado: presente
+    sha256: 33cff48a8326f7a7a54e7b3f50edb3e10decec6505f0d7da7c33d9215e094034
+  - caminho: media/nt-4-05/pagina-23.jpg
+    pagina: 23
+    estado: presente
+    sha256: 87f09ad38cc9576d5f274e6b9a02e637f4390748951b077c85e1a62cd69ad9aa
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 4
+    estado: nao_tabela
+    motivo: fim da alínea c) do item 5.1.6 ("válvulas de retenção instaladas na entrada de enchimento
+      do recipiente") em duas colunas de texto
+  - pagina: 5
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-4-05/tabela-1-afastamento-recipientes-estacionarios.yaml
+    estado: verificada
+  - pagina: 6
+    tabela: Tabela 2
+    arquivo: normative/tabelas/nt-4-05/tabela-2-extintores-bases-glp.yaml
+    estado: verificada
+  - pagina: 6
+    tabela: Tabela 3
+    arquivo: normative/tabelas/nt-4-05/tabela-3-classificacao-areas-armazenamento.yaml
+    estado: verificada
+  - pagina: 6
+    tabela: Tabela 4
+    arquivo: normative/tabelas/nt-4-05/tabela-4-extintores-armazenamento-recipientes.yaml
+    estado: verificada
+  - pagina: 8
+    tabela: Tabela 5
+    arquivo: normative/tabelas/nt-4-05/tabela-5-empilhamento.yaml
+    estado: verificada
+  - pagina: 10
+    tabela: Tabela 6
+    arquivo: normative/tabelas/nt-4-05/tabela-6-extintores-gnc.yaml
+    estado: verificada
+  - pagina: 13
+    tabela: Tabela 1 do Anexo A
+    arquivo: normative/tabelas/nt-4-05/anexo-a-tabela-1-distancias.yaml
+    estado: verificada
+  - pagina: 14
+    tabela: Tabela 2 do Anexo A
+    arquivo: normative/tabelas/nt-4-05/anexo-a-tabela-2-limite-da-propriedade.yaml
+    estado: verificada
+  - pagina: 15
+    tabela: Tabela 1 do Anexo B
+    arquivo: normative/tabelas/nt-4-05/anexo-b-tabela-1-transportaveis.yaml
+    estado: verificada
+  - pagina: 16
+    tabela: Tabela 2 do Anexo B
+    arquivo: normative/tabelas/nt-4-05/anexo-b-tabela-2-estacionarios.yaml
+    estado: verificada
+  - pagina: 17
+    tabela: Tabela 1 do Anexo C
+    arquivo: normative/tabelas/nt-4-05/anexo-c-tabela-1-transportaveis-glp.yaml
+    estado: verificada
+  - pagina: 18
+    tabela: Tabela 2 do Anexo C
+    arquivo: normative/tabelas/nt-4-05/anexo-c-tabela-2-gnc.yaml
+    estado: verificada
+  - pagina: 23
+    tabela: Tabela 1 do Anexo E
+    arquivo: normative/tabelas/nt-4-05/anexo-e-tabela-1-empilhadeiras.yaml
+    estado: verificada
+- arquivo: nt-4-06-postos-de-servicos-e-abastecimento.md
+  documento: NT 4-06
+  titulo: NT 4-06 - Postos de serviços e abastecimento de veículos
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-06-Postos-de-servicos-e-abastecimento-de-veiculos.pdf
+  sha256_pdf: da02569719cdc9a437cf642d2a36368e08e7b8c988e88a1c2ff85bf4253ee29b
+  sha256_md: 07d22298fe01a133193155db74e9517a1c84abb5ff60cac1fea6178a734e7165
+  data_captura: '2026-07-23'
+  paginas: 7
+  midia: nt-4-06
+  imagens:
+  - caminho: media/nt-4-06/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 233bf04dc5d676dbc4f558c9385666655b7e7c701ab7a0a3da7896810f2798fa
+  - caminho: media/nt-4-06/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-4-06/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 4afe5edf78d36fe2b8317c2c5474826909c6d540bce604a9362efb2acd1e8b43
+  - caminho: media/nt-4-06/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 4b424cd34391ddd1c7293b8a7967893222a9136b2e9defdec53544ffb71977ab
+  - caminho: media/nt-4-06/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 0a4a7d51b596536937ff7907c59dbcb30a25d42482e493c4b9959dac8208e6b4
+  - caminho: media/nt-4-06/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 873178d9c05a47425623587931dbd5cb003f19268832a25a039ec54c80867e7c
+  - caminho: media/nt-4-06/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: dec81f199aa8c6adad117aaf84b11851cf1400e7a1840585c0dd869e39e7a62e
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 3
+    estado: nao_tabela
+    motivo: definição 4.3 (dique de contenção) em duas colunas de texto
+  - pagina: 5
+    estado: nao_tabela
+    motivo: item 5.1.14.5 (isolamento acústico do compressor) em duas colunas de texto
+  - pagina: 7
+    tabela: Tabela do Anexo B
+    arquivo: normative/tabelas/nt-4-06/anexo-b-sinalizacao.yaml
+    estado: verificada
+- arquivo: nt-4-07-garagens.md
+  documento: NT 4-07
+  titulo: NT 4-07 - Edificações e estruturas para garagens
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-07-Edificacoes-e-estruturas-para-garagens.pdf
+  sha256_pdf: c6e9454a1a93d18e2926b05b9eb513cd00b9462eb778b7d397a00213d2442dae
+  sha256_md: 5d93c910702e1f7d0ae0a1820ab3d8c4dd5466088648f2a8c4df7a2fd9c1d889
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-4-07
+  imagens:
+  - caminho: media/nt-4-07/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: cbcaf7a0559a9df952e5409b2717ce8c114b4c17ec9cc15a833e04133242635a
+  - caminho: media/nt-4-07/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-4-07/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 57d29385594448a516ee98d7e0e3cebb600dfc6cb7c63d3360cd2b73b05f69b4
+  - caminho: media/nt-4-07/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: ea6f1018c74422f885c5ee7034182db90207641877100016b9e3a79caf0e192b
+  - caminho: media/nt-4-07/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: f45c3a1eddfdb5c919c9ed6242bf0313c26825f4106f243614c150fbe720055d
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 3
+    estado: nao_tabela
+    motivo: definição 4.3 (estruturas verticais automatizadas) em duas colunas de texto
+- arquivo: nt-4-08-patios-para-armazenagens.md
+  documento: NT 4-08
+  titulo: NT 4-08 - Pátios para armazenagens diversas
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-08-Patios-para-armazenagens-diversas.pdf
+  sha256_pdf: abd8e600d8d434885b63f1a8a651065a017c0c0c6f1280a2f483f8f0e4f5476a
+  sha256_md: 9b7f6dda54f52744a67606f5049d8cf05f280ad846d676a17a4d9d8d3b9d3ee1
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-4-08
+  imagens:
+  - caminho: media/nt-4-08/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: cd81c7e7a3def131424a9e72dfc2af0eb5852e85e8760f39ace521a437cf8de3
+  - caminho: media/nt-4-08/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-4-08/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 88f16618322701bcea3131a024709f437ca7b948a2619851ccc9104258b565a4
+  - caminho: media/nt-4-08/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: f69cd402174e3559a4bba3fe917dac015f1fca679a7014fc62b01c714c9000d7
+  - caminho: media/nt-4-08/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 795f4ac1cd6f91e6de4908a7a88e631e1b62ebfc05bf0ee662dd3d7b347d1815
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 3
+    estado: nao_tabela
+    motivo: definição 4.3 (carga a granel) em duas colunas de texto
+- arquivo: nt-4-09-tuneis.md
+  documento: NT 4-09
+  titulo: NT 4-09 - Túneis
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-09-Tuneis.pdf
+  sha256_pdf: bea8f7902227b297338f0e78c459935df3a79f505eb1b02d54814a4997351fd2
+  sha256_md: c0b65ce19e79a78484bdb3f226f19777e20d61d54363f5fc574ac85d412f266d
+  data_captura: '2026-07-23'
+  paginas: 9
+  midia: nt-4-09
+  imagens:
+  - caminho: media/nt-4-09/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: cfbc3d34517c2c241717e4d4784a91129b6459ea86b80dbcf4301c69623ebd26
+  - caminho: media/nt-4-09/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-4-09/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: b90b4dc510f4515d2520c35ba18596a62d0b5aaee339db75501c7c099000cfc4
+  - caminho: media/nt-4-09/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: f6babe936c0ca940d24a16076c5f80187e2db57cd5f93ecd4e193033406abdd4
+  - caminho: media/nt-4-09/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 9a70dafcedff24be15505d7188efe631f7b6fe12d69c26fd14f9ccd9ae68d732
+  - caminho: media/nt-4-09/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 35609c3978e72b18bb2ffb888222f357becc881b2183aa2bbb3f6d1534fbc40b
+  - caminho: media/nt-4-09/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 88a3df9fc0e6d0ec01aec5035495a018a4355b58c24e378e7e641b9f08b0d1da
+  - caminho: media/nt-4-09/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 2f986f970ab38bbb18c4c3c764ce150f9a967015c4d43cc9f79745d4461cfbcb
+  - caminho: media/nt-4-09/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 5471adf5ffd42b17d6429afb6db2a218c5eb5dd186b6a1e5e7891eea6982ac4e
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 8
+    tabela: Tabela 1 do Anexo A
+    arquivo: normative/tabelas/nt-4-09/anexo-a-tabela-1-rodoviarios.yaml
+    estado: verificada
+  - pagina: 8
+    tabela: Tabela 2 do Anexo A
+    arquivo: normative/tabelas/nt-4-09/anexo-a-tabela-2-ferroviarios.yaml
+    estado: verificada
+  - pagina: 9
+    tabela: Tabela 3 do Anexo B
+    arquivo: normative/tabelas/nt-4-09/anexo-b-tabela-3-gases.yaml
+    estado: verificada
+- arquivo: nt-4-10-canteiro-de-obras.md
+  documento: NT 4-10
+  titulo: NT 4-10 - Canteiro de obras
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-4-10-Canteiro-de-obras.pdf
+  sha256_pdf: f928f7de4b06facda68fcdf110baef5fd3b915c377b9d888f37cbf5a51dc14c1
+  sha256_md: a4c9fa0b86934c5db4d3c1105429e6357593f241d790487d18a3cf672cd3d1cb
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-4-10
+  imagens:
+  - caminho: media/nt-4-10/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-4-10/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 880d73fec9d35b2a2d0342e8722dc870f1ab3e3130794f9cf0020bc406c4a9d4
+  - caminho: media/nt-4-10/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: d25eb1453c9abe4348a70795c1826df0cb12858aca93bc7f0e7e3b8b3fcd5e96
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 3
+    estado: nao_tabela
+    motivo: definições 4.2, 4.6, 4.7 e 4.8 em duas colunas de texto
+  - pagina: 4
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-4-10/tabela-1-extintores-canteiro.yaml
+    estado: verificada
+- arquivo: nt-4-11-estruturas-temporarias-atendimento-medico-covid-19.md
+  documento: NT 4-11
+  titulo: NT 4-11 - Estruturas temporárias de atendimento médico para enfrentamento da Covid-19
+  edicao: 2ª edição - 2023
+  ato: Portaria CBMERJ nº 1239, de 22 de novembro de 2023
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/NT4-11_2Edio_2023.pdf
+  sha256_pdf: 0961d030e6f7b06ffe7e3d9be7d09d3bc09389c83332c050208696e99b643495
+  sha256_md: 5a41bac5dbdef6c6cdd7368658ed9c51865632ef7b07fd9bdaa11ac6c88ea253
+  data_captura: '2026-07-23'
+  paginas: 5
+  midia: nt-4-11
+  imagens:
+  - caminho: media/nt-4-11/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: db3d03ee898871942b2218de6cdee64c3370e0dfd14e996e4703b644b4773518
+  tabelas:
+  - pagina: 3
+    estado: nao_tabela
+    motivo: referências normativas a) a n) do item 3 em duas colunas de texto
+- arquivo: nt-5-01-centros-esportivos-eventos-e-exibicao.md
+  documento: NT 5-01
+  titulo: NT 5-01 - Centros esportivos, de eventos e de exibição
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-5-01-Centros-esportivos-de-eventos-e-de-exibicao.pdf
+  sha256_pdf: 174fb1ef25a2b58358aebd35185e24ebff393c5ddd471b5161115fd6d2056a1d
+  sha256_md: a775bfea33e2f22d3f987504c030f3c9a4794e52977d259c209e3e91ae498ca0
+  data_captura: '2026-07-23'
+  paginas: 26
+  midia: nt-5-01
+  imagens:
+  - caminho: media/nt-5-01/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 5c2766b76cb06548b56d3781c39c231f7e74c51f0c05b552e2211b372d59f44c
+  - caminho: media/nt-5-01/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-5-01/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 5b82310650b274ac97e92dfd1bf91d73d4ebff4524aa9bcd13bc1b89349e9d9f
+  - caminho: media/nt-5-01/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 70c5ff75b6627ee9062b679a32d8fd3816a50ab1f9bfdcaa45dc44164debb98b
+  - caminho: media/nt-5-01/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 24f8054934fa1b6fd143a1a507ceae6aaf4b2f87aac5c458b593170988aae6fb
+  - caminho: media/nt-5-01/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: f3bafa0faf6fefdc36456b9db1c8cb98903a9aa5c6890e9cdb2c2ef1d6816e41
+  - caminho: media/nt-5-01/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 57ae24f6a3bd9ae4cdddebc7573b6af3cfffe482f4789e78c1952ef7af1927bd
+  - caminho: media/nt-5-01/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 107bfe71fc1740897dfb9c0b8dd8c1a417f5b1a52186c431b187e6b4f42ee724
+  - caminho: media/nt-5-01/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: f249febcf4e9d95b4820e22d0feb88b8356455965b0ec80b9ce9cf418a83bb34
+  - caminho: media/nt-5-01/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: eb5ccd5d818efa5af071aaecca665e0140948fc3fe05dc74b5f1f6efed7605b8
+  - caminho: media/nt-5-01/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: 94d8caa7c21312d5a9fbe714eed35b8c89975aeecb8ead75c9a2fdaab92169c1
+  - caminho: media/nt-5-01/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: 4bdf82f1963a5e179aa7ae868f3f3ad37c2efcd0714bcebab6d239f1018bbe94
+  - caminho: media/nt-5-01/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: 38ca48ef586c2b0654d2f9517fa22bd3429552d3e0fddba1ee1f7ac6d4797ff5
+  - caminho: media/nt-5-01/pagina-14.jpg
+    pagina: 14
+    estado: presente
+    sha256: 9f7b5f2b55aaa3804941e6f991929b0772993822f6df1eeab3b16f118180a560
+  - caminho: media/nt-5-01/pagina-15.jpg
+    pagina: 15
+    estado: presente
+    sha256: e9afbe37afeffcd44b9aa851852a1e067c9f51cce1487ee756b14a58afe959db
+  - caminho: media/nt-5-01/pagina-16.jpg
+    pagina: 16
+    estado: presente
+    sha256: e4ac68e84bacd75ab9b290a3956679a8a1da75c9e91c7fe6fa921abb975c924f
+  - caminho: media/nt-5-01/pagina-17.jpg
+    pagina: 17
+    estado: presente
+    sha256: 312ad3b45d2005eba35593ef5ad83971e9beec8196512094d58312a271ffadae
+  - caminho: media/nt-5-01/pagina-18.jpg
+    pagina: 18
+    estado: presente
+    sha256: 78cb1aaf682d5bbc30cc3949a671b0a55231dab2396bf386ea4f0bca63542509
+  - caminho: media/nt-5-01/pagina-19.jpg
+    pagina: 19
+    estado: presente
+    sha256: 0aa9970df457ebebd67ba3b9cceffd26351ae27e42974b2a13b7293fd36802ee
+  - caminho: media/nt-5-01/pagina-20.jpg
+    pagina: 20
+    estado: presente
+    sha256: 575f778b9ec1e5277e490429070726e7f13114b787c680847db71e046564d926
+  - caminho: media/nt-5-01/pagina-21.jpg
+    pagina: 21
+    estado: presente
+    sha256: bb563f022688254f18cb05d86f699d3ffa0454d22036cdfb3739450c2c1cdaac
+  - caminho: media/nt-5-01/pagina-22.jpg
+    pagina: 22
+    estado: presente
+    sha256: bf6f7dcc6129a1e271f061cf1f29324299015b7d1b398bdcdd4eb59657c15f3b
+  - caminho: media/nt-5-01/pagina-23.jpg
+    pagina: 23
+    estado: presente
+    sha256: 7a1856e98680f2ed69d65d2f7ec46983923ed4a608c72999bd1b2ac49362b39f
+  - caminho: media/nt-5-01/pagina-24.jpg
+    pagina: 24
+    estado: presente
+    sha256: 8b6f36a7ba35bfa0d3eb5e312719a144d79091d04a2753c85ed0070cd4e84ca8
+  - caminho: media/nt-5-01/pagina-25.jpg
+    pagina: 25
+    estado: presente
+    sha256: 7c1421527140d64d99700b6dd1dcda2a76a3d3c9ce0466ba45d8f087c4f1e160
+  - caminho: media/nt-5-01/pagina-26.jpg
+    pagina: 26
+    estado: presente
+    sha256: 2c6e3422001da6d06ea44e54aaf2554de818bbe932e437a3eef0affb03b40cc9
+  tabelas:
+  - pagina: 1
+    estado: capa
+- arquivo: nt-5-02-eventos-pirotecnicos.md
+  documento: NT 5-02
+  titulo: NT 5-02 - Eventos pirotécnicos
+  edicao: 3ª edição - 2025
+  ato: Portaria CBMERJ nº 1317, de 10 de dezembro de 2025
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2025/12/NT_5-02_3Ed_2025.pdf
+  sha256_pdf: eeff91b4e54b032a0e477c61d88747424a2bdcd1e01824f3503e69c63e97f346
+  sha256_md: 0c3843ea4babb3edbd91450079870a1eef9145a21793ab7793339e8163ba1b38
+  data_captura: '2026-07-23'
+  paginas: 8
+  midia: nt-5-02
+  imagens:
+  - caminho: media/nt-5-02/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: c7c745376b86c90a68fb40532c1ca81069863258a1ed39a81cd248ffd486b7ab
+  - caminho: media/nt-5-02/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 47f7135eb23f632932e00a20ba4f96b09bf555357f628b6924dc517fa10784fa
+  - caminho: media/nt-5-02/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 44b20d292d0dab4520b1797421ad11efc95b4a5f3cfc3e4b2f53f605270efeb9
+  - caminho: media/nt-5-02/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 3d97052f7ffce533d76dffa41474677b1921bb70055799631b9a4a0778edfaa5
+  - caminho: media/nt-5-02/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: d187f22b70736339c3ce616c81e0226425959c86519e875ebd4a64f05e59b734
+  - caminho: media/nt-5-02/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 3f88c83e7266b2fad154a139c83548e0c8fce7abeaa0d5b32e23e4e303f50761
+  - caminho: media/nt-5-02/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 207b64e7a5260898ad93e80af83d5f474a96177981d48a8e2572823d5fb9789b
+  - caminho: media/nt-5-02/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 70911565d9e15bcc9d8d113c85d071703c37337429c7033d33856b1cfaf76bdf
+  tabelas:
+  - pagina: 1
+    estado: nao_tabela
+    motivo: capa da NT (título e brasão), sem tabela
+  - pagina: 4
+    estado: nao_tabela
+    motivo: definição 4.16 (fire machine) e alínea a) do item 7.1.2 em duas colunas de texto. Na mesma
+      página, a classificação dos fogos (5.1.3 Classe C "acima de 25 cg até 2,49 g"; 5.1.4 Classe D "mais
+      de 2,50 g") deixa de fora o intervalo entre 2,49 g e 2,50 g
+  - pagina: 8
+    tabela: Tabela 1 do Anexo A
+    arquivo: normative/tabelas/nt-5-02/anexo-a-tabela-1-distancias.yaml
+    estado: verificada
+- arquivo: nt-5-03-carros-alegoricos-trios-eletricos-e-carros-de-som.md
+  documento: NT 5-03
+  titulo: NT 5-03 - Carros alegóricos, trios elétricos e carros de som
+  edicao: 2ª edição - 2025
+  ato: Portaria CBMERJ nº 1317, de 10 de dezembro de 2025
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2025/12/NT_5-03_2Ed_2025.pdf
+  sha256_pdf: 349f47ca450a6737b72cac42d6c502a341b3f308d1b9b851bd6a2edc7b206e56
+  sha256_md: cde4ecd3d63ce38091bcae554776e6d64d7ffbb1f0367b1d91fd9c92ccbc3302
+  data_captura: '2026-07-23'
+  paginas: 6
+  midia: nt-5-03
+  imagens:
+  - caminho: media/nt-5-03/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 3ec6eeb5b94b8843f408f2e3ea824d9f1f315a6db4040572cd39f7ac49a98aa5
+  - caminho: media/nt-5-03/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 57185183e07919f4812bd4cfd9cb3920c3252ceb27c18907e30aa38a4f4db59e
+  - caminho: media/nt-5-03/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: e325881b2ab20b15724ab44b3af657de96977d911963239b19922493938b075e
+  - caminho: media/nt-5-03/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 535ce9bb42e3dbdcc9070df345381473548f49673fba5e7e951edde6e5e9910f
+  - caminho: media/nt-5-03/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: ac466b4df56ca6fe437d111ac0ed5ab1a0bc563cd101e3ea72bdf1c0a5c89f55
+  - caminho: media/nt-5-03/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: c342798fd88858bd759dbc8492ab8e8c086f6a66fd678ffc94ec55bfc47fb6f4
+  tabelas:
+  - pagina: 6
+    estado: nao_tabela
+    motivo: itens 7.7.4 e 7.7.5 (guarda-corpos) em duas colunas de texto
+- arquivo: nt-5-04-eventos-temporarios-de-reuniao-de-publico.md
+  documento: NT 5-04
+  titulo: NT 5-04 - Eventos temporários de reunião de público
+  edicao: 1ª edição - 2019; atualizada pela Portaria CBMERJ nº 1.167/2022
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT_5-04_alterada_pela_Portaria_1167_2022_1644255940_2022-02-07-1.pdf
+  sha256_pdf: d243a23b3425827d77def2bef613397066a89dc48dc5a3c9cc8e8b46f3328b9d
+  sha256_md: 8358e480263a52a603191addf26d150153b0cffc5081369f29e4d7b3a28e4270
+  data_captura: '2026-07-23'
+  paginas: 8
+  midia: nt-5-04
+  imagens:
+  - caminho: media/nt-5-04/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: 01d05558f3e798654d65a9d93a140f3ecd86ec4da0e82d7d03f4a4ebbe68e0b2
+  - caminho: media/nt-5-04/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 1b460eedfff9887752b76f40914863539776cb0fc0aa0630827c1e6bde203b58
+  - caminho: media/nt-5-04/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: e897e833dad5aafab261afc67fe50322d4369e4517eefd3f1b8a00866c2c1c17
+  - caminho: media/nt-5-04/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: d4cf5b5f9e63740eac4491bbd3de68d2782f514dabcdfc043ef5f3c1104a99d2
+  - caminho: media/nt-5-04/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: f31b75afcd04ce87adc397d7f96921ee95b08c27cfdd4424303187fc7277e74b
+  - caminho: media/nt-5-04/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 08acfe4a28b4e46808c1547c2550a0187dfbfa995bf6092cd83455fe4918af04
+  - caminho: media/nt-5-04/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: 016e026ff6f90a8ce888fbe3623441ba67cf4738befdd11bb7059fc0cfc884b6
+  - caminho: media/nt-5-04/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: 67024429f79a59a8c2aef0dd7a6f2e700e2f49677b1a3cfd655dd5cc5fc6b89a
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 6
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-5-04/tabela-1-brigada-eventos.yaml
+    estado: verificada
+- arquivo: nt-5-05-atendimento-medico-para-eventos.md
+  documento: NT 5-05
+  titulo: NT 5-05 - Atendimento médico para eventos de reunião de público
+  edicao: 1ª edição - 2019
+  ato: Portaria CBMERJ nº 1071, de 27 de agosto de 2019
+  url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-5-05-Atendimento-medico-para-eventos-de-reuniao-de-publico.pdf
+  sha256_pdf: 54345183121ed1b645442a50f3b7a2ae982a0144cf1a3b6ce4498fe460aa0da6
+  sha256_md: 341f73dc3a94b4abe42de2d63ed4890e7dc84dd263c3780c75f3014c544c6c40
+  data_captura: '2026-07-23'
+  paginas: 13
+  midia: nt-5-05
+  imagens:
+  - caminho: media/nt-5-05/pagina-01.jpg
+    pagina: 1
+    estado: presente
+    sha256: e0496e6569c434f87b5137f3ac23a6c23c65112eb31c1511340185585d25026f
+  - caminho: media/nt-5-05/pagina-02.jpg
+    pagina: 2
+    estado: presente
+    sha256: 289362baf2c5ff041a0c78ef28e29194129c3678d3a0829e107f5342856d3a22
+  - caminho: media/nt-5-05/pagina-03.jpg
+    pagina: 3
+    estado: presente
+    sha256: 3e6acdc293c9cb180a86ddbd85f34cbdb756bdfcb957ad79ac22b7bb84b3c6a4
+  - caminho: media/nt-5-05/pagina-04.jpg
+    pagina: 4
+    estado: presente
+    sha256: 9716b5f03f8f176bfcf37e2951f4d61b5bf3bf3783617af3b71a024d1c6f5d7c
+  - caminho: media/nt-5-05/pagina-05.jpg
+    pagina: 5
+    estado: presente
+    sha256: 1c8c9301f90bb38d0c411c918adcb1e9bb2803bcda70c46ca1dbc53f9ebc5d87
+  - caminho: media/nt-5-05/pagina-06.jpg
+    pagina: 6
+    estado: presente
+    sha256: 3613bce4485218437b617363ef341e629e769d2e8d35a8a1443df800d921cde9
+  - caminho: media/nt-5-05/pagina-07.jpg
+    pagina: 7
+    estado: presente
+    sha256: de4be2f3c3d8146e1d29b2850c688d7764abf69d6dcdd89ceb86476b6748c4b0
+  - caminho: media/nt-5-05/pagina-08.jpg
+    pagina: 8
+    estado: presente
+    sha256: f5ff7ef76a79806b1e26682b9b85b9cad10766c575e7d68ea216d60d9004586f
+  - caminho: media/nt-5-05/pagina-09.jpg
+    pagina: 9
+    estado: presente
+    sha256: 7c8c6126178e7a78378bc35e4f49c5c1b0819a0a786b04e7993e117296af3e1f
+  - caminho: media/nt-5-05/pagina-10.jpg
+    pagina: 10
+    estado: presente
+    sha256: daf9232c53d8033a15848b95f2a82b60377790e898c0739825905796b2eeb21c
+  - caminho: media/nt-5-05/pagina-11.jpg
+    pagina: 11
+    estado: presente
+    sha256: 755b93cbd6f71a3084aca7a8cd036815e9c1ce86e99516667b7440b60dfcbe49
+  - caminho: media/nt-5-05/pagina-12.jpg
+    pagina: 12
+    estado: presente
+    sha256: e820caac550bc8ca09740b22b73d1458a181665f0529d54435fcb9ecc7d2445a
+  - caminho: media/nt-5-05/pagina-13.jpg
+    pagina: 13
+    estado: presente
+    sha256: b995ec50af0ed4cae19e73b4c178ae788e84c7b60285693c3e71d0626d4e38c1
+  tabelas:
+  - pagina: 1
+    estado: capa
+  - pagina: 3
+    estado: nao_tabela
+    motivo: item 3 (referências normativas, alíneas a a i) e item 4.2 (tipos de ambulância) em duas colunas
+      de texto
+  - pagina: 4
+    estado: nao_tabela
+    motivo: definições 4.6 a 4.21 e itens 5.1 e 5.2 em duas colunas de texto
+  - pagina: 5
+    tabela: Tabela 1
+    arquivo: normative/tabelas/nt-5-05/tabela-1-codigo-emolumento.yaml
+    estado: verificada
+  - pagina: 10
+    tabela: Tabela do Anexo C
+    arquivo: normative/tabelas/nt-5-05/anexo-c-recursos-postos-medicos.yaml
+    estado: verificada

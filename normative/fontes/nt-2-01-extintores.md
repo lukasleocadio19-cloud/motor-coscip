@@ -50,8 +50,7 @@ Aprovada pela Portaria CBMERJ nº 1120, de 22 de setembro de 2020 (DOERJ nº 179
 
 A - Capacidade extintora
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -69,6 +68,8 @@ Corpo de Bombeiros Militar do Estado do Rio de Janeiro CBMERJ Praça da Repúbli
 ---
 
 ## Página 3
+
+![Representação visual da página 3](media/nt-2-01/pagina-03.jpg)
 
 ### 1 OBJETIVO
 
@@ -146,8 +147,7 @@ considerados todos os obstáculos arquitetônicos, mobiliários e etc.
 
 5.2 Extintores portáteis
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 4.18 | Extintor sobre rodas: extintor que possui massa |  |
@@ -157,6 +157,8 @@ considerados todos os obstáculos arquitetônicos, mobiliários e etc.
 ---
 
 ## Página 4
+
+![Representação visual da página 4](media/nt-2-01/pagina-04.jpg)
 
 5.2.1 Para a instalação dos extintores portáteis, devem ser observadas as seguintes exigências:
 
@@ -232,8 +234,7 @@ f) a proteção por extintores sobre rodas deve ser obrigatória nas edificaçõ
 
 a) fogo classe A: conforme Tabela 3 e para melhor entendimento, vide Anexo A;
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tipo de Agente Extintor |  | Capacidade Extintora |  |
@@ -267,9 +268,42 @@ a) fogo classe A: conforme Tabela 3 e para melhor entendimento, vide Anexo A;
 | d) fogo Classe D: conforme 6.2; e |  |
 | e) fogo Classe K: conforme 6.2 e para melhor |  |
 
+<!-- tabela-conferida: Tabela 1 p4 -->
+### Tabela 1 — Capacidades extintoras mínimas de extintores portáteis (conferida)
+
+| Tipo de Agente Extintor | Capacidade Extintora Mínima |
+| --- | --- |
+| Água | 2-A |
+| Espuma mecânica | 2-A : 10-B |
+| Dióxido de carbono | 5-B : C |
+| Pó BC | 20-B : C |
+| Pó ABC | 2-A : 20-B : C |
+| Compostos halogenados | 5-B : C |
+
+Fonte: NT 2-01, página 4, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
+Fonte: ABNT NBR 12693.
+<!-- /tabela-conferida: Tabela 1 p4 -->
+
+<!-- tabela-conferida: Tabela 2 p4 -->
+### Tabela 2 — Capacidades extintoras mínimas de extintores sobre rodas (conferida)
+
+| Tipo de Agente Extintor | Capacidade Extintora Mínima |
+| --- | --- |
+| Água | 10-A |
+| Espuma mecânica | 6-A : 40-B |
+| Dióxido de carbono | 10-B : C |
+| Pó BC | 80-B : C |
+| Pó ABC | 6-A : 80-B : C |
+
+Fonte: NT 2-01, página 4, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
+Fonte: ABNT NBR 12693.
+<!-- /tabela-conferida: Tabela 2 p4 -->
+
 ---
 
 ## Página 5
+
+![Representação visual da página 5](media/nt-2-01/pagina-05.jpg)
 
 6.2 Classes de Incêndio Especiais - D e K
 
@@ -305,8 +339,7 @@ b) bordas amarelas: 0,15 m de largura.
 
 7.3 Extintores de incêndio halogenados (gases limpos) devem estar de acordo com as resoluções 267/2000 e 340/2003 do Conselho Nacional do Meio Ambiente (Conama).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | entendimento, vide Anexo A. |  |  |  |  |  |  |  |  |  |
@@ -371,6 +404,41 @@ b) bordas amarelas: 0,15 m de largura.
 | fabricante e/ou da empresa de manutenção certificada |  |  |
 | pelo Sistema Brasileiro de Certificação. |  |  |
 
+<!-- tabela-conferida: Tabela 3 p5 -->
+### Tabela 3 — Determinação da unidade extintora mínima, área e distância a serem percorridas para o dimensionamento de extintores de incêndio para classes A, B e C (conferida)
+
+| Extintor / risco | Risco pequeno | Risco médio 1 e 2 | Risco grande |
+| --- | --- | --- | --- |
+| Área máxima protegida por 01 (uma) unidade extintora | 250 m² | 150 m² | 100 m² |
+| Distância máxima percorrida | 20 m | 15 m | 10 m |
+
+Fonte: NT 2-01, página 5, Tabela 3; conferida em 2026-09-29 (visual + geometrica).
+Fonte: CBMERJ.
+"Risco" é célula mesclada sobre Pequeno, Médio 1 e 2 e Grande; "Extintor / risco" ocupa as duas linhas do cabeçalho.
+<!-- /tabela-conferida: Tabela 3 p5 -->
+
+<!-- tabela-conferida: Tabela 4 p5 -->
+### Tabela 4 — Classes do fogo e distâncias máximas a serem percorridas (conferida)
+
+| Classe do Fogo | Distância Máxima a ser Percorrida (metros) |
+| --- | --- |
+| D | 23 |
+
+Fonte: NT 2-01, página 5, Tabela 4; conferida em 2026-09-29 (visual + geometrica).
+Fonte: NFPA 10.
+<!-- /tabela-conferida: Tabela 4 p5 -->
+
+<!-- tabela-conferida: Tabela 5 p5 -->
+### Tabela 5 — Classes do fogo e distâncias máximas a serem percorridas (conferida)
+
+| Classe do Fogo | Distância Máxima a ser Percorrida (metros) |
+| --- | --- |
+| K | 10 |
+
+Fonte: NT 2-01, página 5, Tabela 5; conferida em 2026-09-29 (visual + geometrica).
+Fonte: CBMERJ.
+<!-- /tabela-conferida: Tabela 5 p5 -->
+
 ---
 
 ## Página 6
@@ -381,8 +449,7 @@ Tabela A2 - Extintores Classe K
 
 Fonte: NFPA 10.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | ANEXO A - CAPACIDADE EXTINTORA |  |  |  |  |  |
@@ -438,3 +505,49 @@ Fonte: NFPA 10.
 |  | Portátil | 3 l | K |
 | Agente Classe K |  | 6 l | K |
 |  |  | 10 l | K |
+<!-- tabela-conferida: Tabela A1 p6 -->
+### Tabela A1 — Classificação dos extintores segundo o agente extintor, carga nominal e capacidade extintora equivalente – Classes A, B e C (conferida)
+
+| Agente Extintor | Classificação | Modelo | Classe A | Classe B | Classe C |
+| --- | --- | --- | --- | --- | --- |
+| Água Pressurizada | Portátil | 10 l | 2-A | - | - |
+| Água Pressurizada | Sobre Rodas | 75 l | 10-A | - | - |
+| Água Pressurizada | Sobre Rodas | 150 l | 20-A | - | - |
+| Espuma Mecânica | Portátil | 9 l | 2-A | 10-B | - |
+| Gás Carbônico (CO₂) | Portátil | 4 Kg | - | 2-B | C |
+| Gás Carbônico (CO₂) | Portátil | 6 kg | - | 2-B | C |
+| Gás Carbônico (CO₂) | Sobre Rodas | 10 kg | - | 5-B | C |
+| Gás Carbônico (CO₂) | Sobre Rodas | 25 kg | - | 10-B | C |
+| Gás Carbônico (CO₂) | Sobre Rodas | 30 kg | - | 10-B | C |
+| Gás Carbônico (CO₂) | Sobre Rodas | 50 kg | - | 10-B | C |
+| PQS (Bicarbonato de Sódio) | Portátil | 4 kg | - | 10-B | C |
+| PQS (Bicarbonato de Sódio) | Portátil | 6 kg | - | 10-B | C |
+| PQS (Bicarbonato de Sódio) | Portátil | 8 kg | - | 10-B | C |
+| PQS (Bicarbonato de Sódio) | Portátil | 12 kg |  | 20-B | C |
+| PQS (Bicarbonato de Sódio) | Sobre Rodas | 20 kg | - | 20-B | C |
+| PQS (Bicarbonato de Sódio) | Sobre Rodas | 50 kg | - | 30-B | C |
+| PQS (Bicarbonato de Sódio) | Sobre Rodas | 100 kg |  | 40-B | C |
+| ABC (Fosfato Monoamônico) | Portátil | 4 kg | 2-A | 20-B | C |
+| ABC (Fosfato Monoamônico) | Portátil | 6 kg | 3-A | 20-B | C |
+| ABC (Fosfato Monoamônico) | Portátil | 8 kg | 4-A | 30-B | C |
+| ABC (Fosfato Monoamônico) | Portátil | 12 kg | 6-A | 30-B | C |
+| Halogenado | Portátil | 3 kg | - | 5-B | C |
+| Halogenado | Portátil | 6 kg | 1-A | 10-B | C |
+
+Fonte: NT 2-01, página 6, Tabela A1; conferida em 2026-09-29 (visual + geometrica).
+"^" = mesclada com a de cima (agente e classificação). Observação da tabela: pode ser usada para estimar a capacidade extintora equivalente de extintores antigos, sem capacidade declarada pelo fabricante. Fonte indicada: CBMERJ e NBR 12693.
+<!-- /tabela-conferida: Tabela A1 p6 -->
+
+<!-- tabela-conferida: Tabela A2 p6 -->
+### Tabela A2 — Extintores Classe K (conferida)
+
+| Agente Extintor | Classificação | Modelo | Classe K |
+| --- | --- | --- | --- |
+| Agente Classe K | Portátil | 3 l | K |
+| Agente Classe K | Portátil | 6 l | K |
+| Agente Classe K | Portátil | 10 l | K |
+
+Fonte: NT 2-01, página 6, Tabela A2; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada: NFPA 10.
+<!-- /tabela-conferida: Tabela A2 p6 -->
+

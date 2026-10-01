@@ -1,0 +1,189 @@
+# Blocos que a conversão marcou como "Tabelas extraídas", mas que na imagem da página são
+# texto corrido (parágrafo quebrado em colunas). Só entra aqui o que foi conferido na
+# imagem; o manifesto passa a mostrar o estado "nao_tabela" (plano de correção, F2).
+schema_version: nao-tabelas/1.0
+paginas:
+  - arquivo: nt-2-08-saidas-de-emergencia.md
+    pagina: 7
+    imagem: media/nt-2-08/pagina-07.jpg
+    motivo: trecho do item 5.3.4.7 ("disponham de dispositivo de fechamento automático das portas corta-fogo com eletroímãs") em duas colunas de texto
+    conferido_em: '2026-09-29'
+  - arquivo: nt-5-05-atendimento-medico-para-eventos.md
+    pagina: 3
+    imagem: media/nt-5-05/pagina-03.jpg
+    motivo: item 3 (referências normativas, alíneas a a i) e item 4.2 (tipos de ambulância) em duas colunas de texto
+    conferido_em: '2026-09-29'
+  - arquivo: nt-5-05-atendimento-medico-para-eventos.md
+    pagina: 4
+    imagem: media/nt-5-05/pagina-04.jpg
+    motivo: definições 4.6 a 4.21 e itens 5.1 e 5.2 em duas colunas de texto
+    conferido_em: '2026-09-29'
+  - arquivo: nt-4-05-gas-manipulacao-armazenamento-e-comercializacao.md
+    pagina: 4
+    imagem: media/nt-4-05/pagina-04.jpg
+    motivo: fim da alínea c) do item 5.1.6 ("válvulas de retenção instaladas na entrada de enchimento do recipiente") em duas colunas de texto
+    conferido_em: '2026-09-29'
+  - arquivo: nt-2-01-extintores.md
+    pagina: 3
+    imagem: media/nt-2-01/pagina-03.jpg
+    motivo: item 4.18 (definição de extintor sobre rodas) em duas colunas de texto. Na mesma página a fonte define duas vezes os extintores, com limites diferentes (4.7 portátil até 20 kg × 4.17 até 24 kg; 4.8 sobre rodas até 250 kg × 4.18 acima de 24 kg)
+    conferido_em: '2026-09-30'
+  - arquivo: nt-2-09-pressurizacao-de-escada.md
+    pagina: 4
+    imagem: media/nt-2-09/pagina-04.jpg
+    motivo: alíneas e) e f) do item 5.1.2.1 (contrapeso e fechamento eletromagnético das portas corta-fogo)
+      em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-2-09-pressurizacao-de-escada.md
+    pagina: 6
+    imagem: media/nt-2-09/pagina-06.jpg
+    motivo: item 5.3.2.7.3 (acionadores manuais a no máximo 2 m da porta corta-fogo) em duas colunas de
+      texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-4-04-municoes-explosivos-e-artefatos-pirotecnicos.md
+    pagina: 3
+    imagem: media/nt-4-04/pagina-03.jpg
+    motivo: definição 4.1 (aceiro) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-4-06-postos-de-servicos-e-abastecimento.md
+    pagina: 3
+    imagem: media/nt-4-06/pagina-03.jpg
+    motivo: definição 4.3 (dique de contenção) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-4-06-postos-de-servicos-e-abastecimento.md
+    pagina: 5
+    imagem: media/nt-4-06/pagina-05.jpg
+    motivo: item 5.1.14.5 (isolamento acústico do compressor) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-4-07-garagens.md
+    pagina: 3
+    imagem: media/nt-4-07/pagina-03.jpg
+    motivo: definição 4.3 (estruturas verticais automatizadas) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-4-08-patios-para-armazenagens.md
+    pagina: 3
+    imagem: media/nt-4-08/pagina-03.jpg
+    motivo: definição 4.3 (carga a granel) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-5-02-eventos-pirotecnicos.md
+    pagina: 1
+    imagem: media/nt-5-02/pagina-01.jpg
+    motivo: capa da NT (título e brasão), sem tabela
+    conferido_em: '2026-09-30'
+  - arquivo: nt-5-02-eventos-pirotecnicos.md
+    pagina: 4
+    imagem: media/nt-5-02/pagina-04.jpg
+    motivo: definição 4.16 (fire machine) e alínea a) do item 7.1.2 em duas colunas de texto. Na mesma página,
+      a classificação dos fogos (5.1.3 Classe C "acima de 25 cg até 2,49 g"; 5.1.4 Classe D "mais de 2,50
+      g") deixa de fora o intervalo entre 2,49 g e 2,50 g
+    conferido_em: '2026-09-30'
+  - arquivo: nt-5-03-carros-alegoricos-trios-eletricos-e-carros-de-som.md
+    pagina: 6
+    imagem: media/nt-5-03/pagina-06.jpg
+    motivo: itens 7.7.4 e 7.7.5 (guarda-corpos) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: decreto-42-2018-coscip-compilado.md
+    pagina: 1
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-01.jpg
+    motivo: preâmbulo do Decreto (CONSIDERANDO) e artigos 1º a 3º em texto corrido
+    conferido_em: '2026-09-30'
+  - arquivo: nt-2-04-conjunto-de-pressurizacao.md
+    pagina: 3
+    imagem: media/nt-2-04/pagina-03.jpg
+    motivo: definições 4.2, 4.8 e 4.12 (bomba afogada, cavitação, NPSH) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-2-13-sistemas-fixos-de-gases.md
+    pagina: 4
+    imagem: media/nt-2-13/pagina-04.jpg
+    motivo: definição 4.16 (Protocolo de Montreal) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-3-01-cozinha-profissional.md
+    pagina: 4
+    imagem: media/nt-3-01/pagina-04.jpg
+    motivo: definição 4.11 (efluentes) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-4-10-canteiro-de-obras.md
+    pagina: 3
+    imagem: media/nt-4-10/pagina-03.jpg
+    motivo: definições 4.2, 4.6, 4.7 e 4.8 em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-4-11-estruturas-temporarias-atendimento-medico-covid-19.md
+    pagina: 3
+    imagem: media/nt-4-11/pagina-03.jpg
+    motivo: referências normativas a) a n) do item 3 em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-1-02-terminologia.md
+    pagina: 3
+    imagem: media/nt-1-02/pagina-03.jpg
+    motivo: glossário do item 4 (definição de Aceiro) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-1-02-terminologia.md
+    pagina: 8
+    imagem: media/nt-1-02/pagina-08.jpg
+    motivo: glossário do item 4 (definição de Carga a granel) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-1-02-terminologia.md
+    pagina: 13
+    imagem: media/nt-1-02/pagina-13.jpg
+    motivo: glossário do item 4 (definição de Efluentes) em duas colunas de texto. Na mesma página a fonte define duas vezes "Edificação térrea" com critérios diferentes (mezaninos com soma menor que a metade da área do piso × jirau ou mezanino conforme o artigo 11 do Decreto 42/2018)
+    conferido_em: '2026-09-30'
+  - arquivo: nt-1-02-terminologia.md
+    pagina: 15
+    imagem: media/nt-1-02/pagina-15.jpg
+    motivo: glossário do item 4 (definição de Estruturas verticais automatizadas de estacionamento) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-1-02-terminologia.md
+    pagina: 20
+    imagem: media/nt-1-02/pagina-20.jpg
+    motivo: glossário do item 4 (definição de Motogerador cabinado) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-1-05-edificacoes-anteriores.md
+    pagina: 2
+    imagem: media/nt-1-05/pagina-02.jpg
+    motivo: item 2.2 e a lista de exemplos da alínea c) (A-2 e A-5, A-6, B-1 e B-2, H-2 e H-3, H-1 e H-4, grupos F, G, L e M, grupos C, D, E, I, J e F-8) em texto corrido; a lista não é tabela
+    conferido_em: '2026-09-30'
+  - arquivo: nt-2-03-parte-1-sprinklers-requisitos-gerais.md
+    pagina: 4
+    imagem: media/nt-2-03-parte-1/pagina-04.jpg
+    motivo: item 5.2.7 (sistemas fixos de gases como alternativa) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-2-03-parte-1-sprinklers-requisitos-gerais.md
+    pagina: 5
+    imagem: media/nt-2-03-parte-1/pagina-05.jpg
+    motivo: continuação do item 5.2.7 em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-1-01-parte-2-fiscalizacao.md
+    pagina: 4
+    imagem: media/nt-1-01-parte-2/pagina-04.jpg
+    motivo: fim da seção 3 (referências), definições 4.1 a 4.16 e início da seção 5 em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-1-01-parte-2-fiscalizacao.md
+    pagina: 16
+    imagem: media/nt-1-01-parte-2/pagina-16.jpg
+    motivo: itens 5.6.3 a 5.7.3 (desinterdição e cassação de certificados) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-1-01-parte-2-fiscalizacao.md
+    pagina: 17
+    imagem: media/nt-1-01-parte-2/pagina-17.jpg
+    motivo: itens 5.7.4 a 5.9.2 (cassação, transição e fiscalização de edificações públicas) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-1-01-parte-2-fiscalizacao.md
+    pagina: 18
+    imagem: media/nt-1-01-parte-2/pagina-18.jpg
+    motivo: itens 5.9.1.3 a 6.1.2.2 (interdição e início do compromisso de ajustamento de conduta) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-1-01-parte-2-fiscalizacao.md
+    pagina: 19
+    imagem: media/nt-1-01-parte-2/pagina-19.jpg
+    motivo: itens 6.1.2.2 a 6.1.8 (compromisso de ajustamento de conduta) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-1-01-parte-2-fiscalizacao.md
+    pagina: 20
+    imagem: media/nt-1-01-parte-2/pagina-20.jpg
+    motivo: itens 6.1.8 a 6.4.1 (aplicação e abertura do processo de compromisso) em duas colunas de texto
+    conferido_em: '2026-09-30'
+  - arquivo: nt-1-01-parte-2-fiscalizacao.md
+    pagina: 21
+    imagem: media/nt-1-01-parte-2/pagina-21.jpg
+    motivo: itens 6.4.1 a 6.6.5 (cronograma, minuta e análise do TAC) em duas colunas de texto
+    conferido_em: '2026-09-30'

@@ -1,9 +1,12 @@
-# RASCUNHO. Mínimo de duas unidades extintoras por pavimento (exceção 5.2.4 não modelada aqui).
-# v2 (fase 3): pavimento confirmado como porta de qualidade.
+# RASCUNHO. Mínimo de duas unidades extintoras POR PAVIMENTO — critério adotado pelo analista
+# (decisão do usuário, 29/09/2026; plano de correção 0.4 e F4.1). A NT 2-01 5.2.5 fala em
+# "área de risco a ser protegida", não em pavimento: o alcance é interpretação registrada.
+# v3: interpretação explícita; exceção 5.2.4 no nível da EDIFICAÇÃO (risco pequeno e ATC do
+# formulário < 50 m²) tratada fora deste check (EXT-CAD-002-EXC), não pela área do pavimento.
 schema_version: checks/1.0
 id: EXT-CAD-002
-version: 2
-title: Mínimo de duas unidades extintoras por pavimento
+version: 4
+title: Mínimo de duas unidades extintoras por pavimento (critério adotado)
 system: EXTINTORES
 type: CAD_COUNT
 scope: FLOOR
@@ -15,29 +18,50 @@ depends_on: [EXT-CAD-001]
 applies_when:
   all:
     - {fact: context.unifamiliar, operator: equals, value: false}
+  # Fora da exceção 5.2.4 (edificação de risco pequeno com área inferior a 50 m²). Risco
+  # pequeno sem ATC informada fica com aplicabilidade desconhecida: o analista informa.
+  any:
+    - {fact: context.risk_class, operator: not_equals, value: PEQUENO}
+    - {fact: context.building_area_m2, operator: gte, value: 50}
 question:
   kind: minimum_count
   field: extinguisher
   required_value: 2
   unit: un
-  accepted_evidence: [CAD, HUMANO]
+  accepted_evidence: [CAD, HUMAN]
   quality_gate: quality.extinguisher.not_presumed
-  quality_gates: [quality.region_confirmed]
+  quality_gates: [quality.region_confirmed, quality.recognition.complete]
 normative_basis:
   - document: NT 2-01
     edition: 2ª edição - 2020
     item: "5.2.5"
     quote: ["no mínimo, 02 (dois) extintores"]
-  - document: NT 2-01
-    edition: 2ª edição - 2020
-    item: "5.2.4"
-    quote: ["50 m"]
+interpretation:
+  scope: POR_PAVIMENTO
+  basis:
+    - document: NT 2-01
+      edition: 2ª edição - 2020
+      item: "5.2.5"
+      quote: ["dentro da área de risco a ser protegida", "no mínimo, 02 (dois) extintores"]
+    - document: NT 2-01
+      edition: 2ª edição - 2020
+      item: "6.7"
+      quote: ["circulações dos pavimentos"]
+    - document: NT 2-01
+      edition: 2ª edição - 2020
+      item: "5.3"
+      quote: ["não se admite a possibilidade de um extintor sobre rodas proteger locais situados em pavimentos diferentes"]
+  decision: >-
+    mínimo de 2 unidades extintoras em cada pavimento (cada pavimento é tratado como área de
+    risco a ser protegida).
+  decided_by: analista
+  decided_on: "2026-09-29"
 wording:
   title: Pavimento com menos de duas unidades extintoras
   explanation: >-
-    A NT 2-01 exige no mínimo duas unidades extintoras por pavimento. A exceção do item
-    5.2.4 vale apenas abaixo do limite de área ali previsto e precisa ser confirmada
-    pelo analista.
+    Critério adotado: no mínimo duas unidades extintoras por pavimento, a partir do mínimo de
+    dois extintores na área de risco a ser protegida (NT 2-01, item 5.2.5). A exceção do item
+    5.2.4 (uma única unidade de pó ABC) vale para a edificação de risco pequeno com área
+    inferior a 50 m² e é verificada à parte.
   required_action: >-
-    Prever a segunda unidade extintora no pavimento ou justificar o enquadramento na
-    exceção, com a área do pavimento.
+    Prever a segunda unidade extintora no pavimento.

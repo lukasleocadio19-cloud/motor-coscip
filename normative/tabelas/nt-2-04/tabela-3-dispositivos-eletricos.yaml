@@ -1,0 +1,141 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-04
+arquivo: nt-2-04-conjunto-de-pressurizacao.md
+tabela: Tabela 3
+titulo: Dispositivos elétricos do conjunto de pressurização
+pagina: 7
+fonte_pdf_sha256: 37837bf154bc5c517e2732e206e6d72e3e441591364182531614acad69fa5ed1
+conferida_em: '2026-09-29'
+forma:
+  mesclar_linhas:
+  - - 0
+    - 1
+    - - 0
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-04/pagina-07.jpg
+    imagem_sha256: 28705de74477d4c51d6aa552a1d3bc8ba2c9b7d10fcff576c64bde2d6a857a86
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Dispositivos elétricos
+    - Risco pequeno
+    - Risco médio
+    - Risco grande
+    linhas:
+    - - Dispositivos elétricos
+      - Riscos
+      - <
+      - <
+    - - ^
+      - Pequeno
+      - Médio
+      - Grande
+    - - Disjuntor
+      - X
+      - X
+      - X
+    - - Chave magnética e/ou soft-starter
+      - X
+      - X
+      - X
+    - - Chave reversora
+      - '-'
+      - X
+      - '-'
+    - - Pressostato
+      - X
+      - X
+      - X
+    - - Carregador flutuador
+      - '-'
+      - '-'
+      - X
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 7
+      tabela_na_pagina: 1
+    linhas:
+    - - Dispositivos elétricos
+      - Riscos
+    - - Pequeno
+      - Médio
+      - Grande
+    - - Disjuntor
+      - X
+      - X
+      - X
+    - - Chave magnética e/ou soft-starter
+      - X
+      - X
+      - X
+    - - Chave reversora
+      - '-'
+      - X
+      - '-'
+    - - Pressostato
+      - X
+      - X
+      - X
+    - - Carregador flutuador
+      - '-'
+      - '-'
+      - X
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 62.01
+      - 579.68
+      - 277.34
+      - 706.42
+      linhas:
+      - - Dispositivos
+        - Riscos
+        - null
+        - null
+      - - elétricos
+        - Pequeno
+        - Médio
+        - Grande
+      - - Disjuntor
+        - X
+        - X
+        - X
+      - - Chave magnética e/ou soft-starter
+        - X
+        - X
+        - X
+      - - Chave reversora
+        - '-'
+        - X
+        - '-'
+      - - Pressostato
+        - X
+        - X
+        - X
+      - - Carregador flutuador
+        - '-'
+        - '-'
+        - X
+notas:
+- 'Fonte indicada na página: CBMERJ.'
+inconsistencias_da_fonte:
+- O item 5.4.3.1 diz que os conjuntos de pressurização "deverão dispor" de todos os dispositivos a) a
+  e) (disjuntor, chave magnética, chave reversora, pressostato, carregador flutuador); a Tabela 3 exige
+  a chave reversora só no risco médio e o carregador flutuador só no grande.
+- A Tabela 3 usa um único risco "Médio"; as Tabelas 1 e 2 distinguem "Médio - 1" e "Médio - 2".
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

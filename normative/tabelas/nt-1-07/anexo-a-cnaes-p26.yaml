@@ -1,0 +1,418 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 26
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+  mesclar_linhas:
+  - - 26
+    - 27
+  descartar_linhas:
+  - 25
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-26.png
+    imagem_sha256: 59c32662f1925fe2fe2b1b26436fbba85edc3fc1b6f17f76bf09b6f3d57eb94b
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - CNAE
+    - Descrição
+    linhas:
+    - - 7420-0/03
+      - Laboratórios fotográficos
+    - - 7420-0/04
+      - Filmagem de festas e eventos
+    - - 7420-0/05
+      - Serviços de microfilmagem
+    - - 7490-1/01
+      - Serviços de tradução, interpretação e similares
+    - - 7490-1/02
+      - Escafandria e mergulho
+    - - 7490-1/03
+      - Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias
+    - - 7490-1/04
+      - Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários
+    - - 7490-1/05
+      - Agenciamento de profissionais para atividades esportivas, culturais e artísticas
+    - - 7490-1/99
+      - Outras atividades profissionais, científicas e técnicas não especificadas anteriormente
+    - - 7500-1/00
+      - Atividades veterinárias
+    - - 7711-0/00
+      - Locação de automóveis sem condutor
+    - - 7721-7/00
+      - Aluguel de equipamentos recreativos e esportivos
+    - - 7722-5/00
+      - Aluguel de fitas de vídeo, DVDs e similares
+    - - 7723-3/00
+      - Aluguel de objetos do vestuário, jóias e acessórios
+    - - 7729-2/01
+      - Aluguel de aparelhos de jogos eletrônicos
+    - - 7729-2/02
+      - Aluguel de móveis, utensílios e aparelhos de uso doméstico e pessoal; instrumentos musicais
+    - - 7729-2/03
+      - Aluguel de material médico
+    - - 7729-2/99
+      - Aluguel de outros objetos pessoais e domésticos não especificados anteriormente
+    - - 7731-4/00
+      - Aluguel de máquinas e equipamentos agrícolas sem operador
+    - - 7732-2/01
+      - Aluguel de máquinas e equipamentos para construção sem operador, exceto andaimes
+    - - 7732-2/02
+      - Aluguel de andaimes
+    - - 7733-1/00
+      - Aluguel de máquinas e equipamentos para escritório
+    - - 7739-0/01
+      - Aluguel de máquinas e equipamentos para extração de minérios e petróleo, sem operador
+    - - 7739-0/02
+      - Aluguel de equipamentos científicos, médicos e hospitalares, sem operador
+    - - 7739-0/03
+      - Aluguel de palcos, coberturas e outras estruturas de uso temporário, exceto andaimes
+    - - 7739-0/99
+      - Aluguel de outras máquinas e equipamentos comerciais e industriais não especificados anteriormente,
+        sem operador
+    - - 7740-3/00
+      - Gestão de ativos intangíveis não financeiros
+    - - 7810-8/00
+      - Seleção e agenciamento de mão de obra
+    - - 7820-5/00
+      - Locação de mão de obra temporária
+    - - 7830-2/00
+      - Fornecimento e gestão de recursos humanos para terceiros
+    - - 7911-2/00
+      - Agências de viagens
+    - - 7912-1/00
+      - Operadores turísticos
+    - - 7990-2/00
+      - Serviços de reservas e outros serviços de turismo não especificados anteriormente
+    - - 8011-1/01
+      - Atividades de vigilância e segurança privada
+    - - 8011-1/02
+      - Serviços de adestramento de cães de guarda
+    - - 8012-9/00
+      - Atividades de transporte de valores
+    - - 8020-0/01
+      - Atividades de monitoramento de sistemas de segurança eletrônico
+    - - 8020-0/02
+      - Outras atividades de serviços de segurança
+    - - 8030-7/00
+      - Atividades de investigação particular
+    - - 8111-7/00
+      - Serviços combinados para apoio a edifícios, exceto condomínios prediais
+    - - 8121-4/00
+      - Limpeza em prédios e em domicílios
+    - - 8129-0/00
+      - Atividades de limpeza não especificadas anteriormente
+    - - 8130-3/00
+      - Atividades paisagísticas
+    - - 8211-3/00
+      - Serviços combinados de escritório e apoio administrativo
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 26
+      tabela_na_pagina: 1
+    linhas:
+    - - 7420-0/03
+      - Laboratórios fotográficos
+    - - 7420-0/04
+      - Filmagem de festas e eventos
+    - - 7420-0/05
+      - Serviços de microfilmagem
+    - - 7490-1/01
+      - Serviços de tradução, interpretação e similares
+    - - 7490-1/02
+      - Escafandria e mergulho
+    - - 7490-1/03
+      - Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias
+    - - 7490-1/04
+      - Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários
+    - - 7490-1/05
+      - Agenciamento de profissionais para atividades esportivas, culturais e artísticas
+    - - 7490-1/99
+      - Outras atividades profissionais, científicas e técnicas não especificadas anteriormente
+    - - 7500-1/00
+      - Atividades veterinárias
+    - - 7711-0/00
+      - Locação de automóveis sem condutor
+    - - 7721-7/00
+      - Aluguel de equipamentos recreativos e esportivos
+    - - 7722-5/00
+      - Aluguel de fitas de vídeo, DVDs e similares
+    - - 7723-3/00
+      - Aluguel de objetos do vestuário, jóias e acessórios
+    - - 7729-2/01
+      - Aluguel de aparelhos de jogos eletrônicos
+    - - 7729-2/02
+      - Aluguel de móveis, utensílios e aparelhos de uso doméstico e pessoal; instrumentos musicais
+    - - 7729-2/03
+      - Aluguel de material médico
+    - - 7729-2/99
+      - Aluguel de outros objetos pessoais e domésticos não especificados anteriormente
+    - - 7731-4/00
+      - Aluguel de máquinas e equipamentos agrícolas sem operador
+    - - 7732-2/01
+      - Aluguel de máquinas e equipamentos para construção sem operador, exceto andaimes
+    - - 7732-2/02
+      - Aluguel de andaimes
+    - - 7733-1/00
+      - Aluguel de máquinas e equipamentos para escritório
+    - - 7739-0/01
+      - Aluguel de máquinas e equipamentos para extração de minérios e petróleo, sem operador
+    - - 7739-0/02
+      - Aluguel de equipamentos científicos, médicos e hospitalares, sem operador
+    - - 7739-0/03
+      - Aluguel de palcos, coberturas e outras estruturas de uso temporário, exceto andaimes
+    - - 7739-0/99
+      - Aluguel de outras máquinas e equipamentos comerciais e industriais não especificados anteriormente,
+        sem operador
+    - - 7740-3/00
+      - Gestão de ativos intangíveis não financeiros
+    - - 7810-8/00
+      - Seleção e agenciamento de mão de obra
+    - - 7820-5/00
+      - Locação de mão de obra temporária
+    - - 7830-2/00
+      - Fornecimento e gestão de recursos humanos para terceiros
+    - - 7911-2/00
+      - Agências de viagens
+    - - 7912-1/00
+      - Operadores turísticos
+    - - 7990-2/00
+      - Serviços de reservas e outros serviços de turismo não especificados anteriormente
+    - - 8011-1/01
+      - Atividades de vigilância e segurança privada
+    - - 8011-1/02
+      - Serviços de adestramento de cães de guarda
+    - - 8012-9/00
+      - Atividades de transporte de valores
+    - - 8020-0/01
+      - Atividades de monitoramento de sistemas de segurança eletrônico
+    - - 8020-0/02
+      - Outras atividades de serviços de segurança
+    - - 8030-7/00
+      - Atividades de investigação particular
+    - - 8111-7/00
+      - Serviços combinados para apoio a edifícios, exceto condomínios prediais
+    - - 8121-4/00
+      - Limpeza em prédios e em domicílios
+    - - 8129-0/00
+      - Atividades de limpeza não especificadas anteriormente
+    - - 8130-3/00
+      - Atividades paisagísticas
+    - - 8211-3/00
+      - Serviços combinados de escritório e apoio administrativo
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 46.76
+      - 57.0
+      - 541.66
+      - 776.88
+      linhas:
+      - - 7420-0/03
+        - Laboratórios fotográficos
+        - null
+        - null
+      - - 7420-0/04
+        - Filmagem de festas e eventos
+        - null
+        - null
+      - - 7420-0/05
+        - Serviços de microfilmagem
+        - null
+        - null
+      - - 7490-1/01
+        - Serviços de tradução, interpretação e similares
+        - null
+        - null
+      - - 7490-1/02
+        - Escafandria e mergulho
+        - null
+        - null
+      - - 7490-1/03
+        - Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias
+        - null
+        - null
+      - - 7490-1/04
+        - Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários
+        - null
+        - null
+      - - 7490-1/05
+        - Agenciamento de profissionais para atividades esportivas, culturais e artísticas
+        - null
+        - null
+      - - 7490-1/99
+        - Outras atividades profissionais, científicas e técnicas não especificadas anteriormente
+        - null
+        - null
+      - - 7500-1/00
+        - Atividades veterinárias
+        - null
+        - null
+      - - 7711-0/00
+        - Locação de automóveis sem condutor
+        - null
+        - null
+      - - 7721-7/00
+        - Aluguel de equipamentos recreativos e esportivos
+        - null
+        - null
+      - - 7722-5/00
+        - Aluguel de fitas de vídeo, DVDs e similares
+        - null
+        - null
+      - - 7723-3/00
+        - Aluguel de objetos do vestuário, jóias e acessórios
+        - null
+        - null
+      - - 7729-2/01
+        - Aluguel de aparelhos de jogos eletrônicos
+        - null
+        - null
+      - - 7729-2/02
+        - Aluguel de móveis, utensílios e aparelhos de uso doméstico e pessoal; instrumentos musicais
+        - null
+        - null
+      - - 7729-2/03
+        - Aluguel de material médico
+        - null
+        - null
+      - - 7729-2/99
+        - Aluguel de outros objetos pessoais e domésticos não especificados anteriormente
+        - null
+        - null
+      - - 7731-4/00
+        - Aluguel de máquinas e equipamentos agrícolas sem operador
+        - null
+        - null
+      - - 7732-2/01
+        - Aluguel de máquinas e equipamentos para construção sem operador, exceto andaimes
+        - null
+        - null
+      - - 7732-2/02
+        - Aluguel de andaimes
+        - null
+        - null
+      - - 7733-1/00
+        - Aluguel de máquinas e equipamentos para escritório
+        - null
+        - null
+      - - 7739-0/01
+        - Aluguel de máquinas e equipamentos para extração de minérios e petróleo, sem operador
+        - null
+        - null
+      - - 7739-0/02
+        - Aluguel de equipamentos científicos, médicos e hospitalares, sem operador
+        - null
+        - null
+      - - 7739-0/03
+        - Aluguel de palcos, coberturas e outras estruturas de uso temporário, exceto andaimes
+        - null
+        - null
+      - - null
+        - null
+        - Aluguel de palcos, coberturas e outras estruturas de uso temporário, exceto andaimes
+        - null
+      - - 7739-0/99
+        - ''
+        - Aluguel de outras máquinas e equipamentos comerciais e industriais não especificados
+        - ''
+      - - null
+        - null
+        - anteriormente, sem operador
+        - null
+      - - 7740-3/00
+        - Gestão de ativos intangíveis não financeiros
+        - null
+        - null
+      - - 7810-8/00
+        - Seleção e agenciamento de mão de obra
+        - null
+        - null
+      - - 7820-5/00
+        - Locação de mão de obra temporária
+        - null
+        - null
+      - - 7830-2/00
+        - Fornecimento e gestão de recursos humanos para terceiros
+        - null
+        - null
+      - - 7911-2/00
+        - Agências de viagens
+        - null
+        - null
+      - - 7912-1/00
+        - Operadores turísticos
+        - null
+        - null
+      - - 7990-2/00
+        - Serviços de reservas e outros serviços de turismo não especificados anteriormente
+        - null
+        - null
+      - - 8011-1/01
+        - Atividades de vigilância e segurança privada
+        - null
+        - null
+      - - 8011-1/02
+        - Serviços de adestramento de cães de guarda
+        - null
+        - null
+      - - 8012-9/00
+        - Atividades de transporte de valores
+        - null
+        - null
+      - - 8020-0/01
+        - Atividades de monitoramento de sistemas de segurança eletrônico
+        - null
+        - null
+      - - 8020-0/02
+        - Outras atividades de serviços de segurança
+        - null
+        - null
+      - - 8030-7/00
+        - Atividades de investigação particular
+        - null
+        - null
+      - - 8111-7/00
+        - Serviços combinados para apoio a edifícios, exceto condomínios prediais
+        - null
+        - null
+      - - 8121-4/00
+        - Limpeza em prédios e em domicílios
+        - null
+        - null
+      - - 8129-0/00
+        - Atividades de limpeza não especificadas anteriormente
+        - null
+        - null
+      - - 8130-3/00
+        - Atividades paisagísticas
+        - null
+        - null
+      - - 8211-3/00
+        - Serviços combinados de escritório e apoio administrativo
+        - null
+        - null
+notas:
+- Continuação da tabela da página 25.
+- A tabela continua na página 27.
+- A camada de texto parte as descrições de duas linhas e repete 1 descrição(ões) numa linha vazia; a comparação
+  junta as partes e descarta as repetições.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

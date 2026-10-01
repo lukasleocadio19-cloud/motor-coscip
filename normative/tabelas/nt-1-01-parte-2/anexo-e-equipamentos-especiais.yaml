@@ -1,0 +1,150 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-01 Parte 2
+arquivo: nt-1-01-parte-2-fiscalizacao.md
+tabela: Anexo E, item 3
+titulo: Equipamentos, instalações e sistemas especiais (modelo de relatório das condições de segurança)
+pagina: 35
+fonte_pdf_sha256: 01ffb41a7be61d731fd9997546980a430f6d49f9698fade87917101dedd9bef3
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-01-parte-2/pagina-35.jpg
+    imagem_sha256: 4ccd48c733d7eb5b3b7d8f90fa7b56005a4051e9087309cb88e6359a813a84ac
+    linhas_cabecalho: 1
+    linhas:
+    - - EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS
+      - AUTORIZADO
+      - EXISTENTE
+      - ESTADO DE FUNCIONAMENTO
+    - - 3.1 SISTEMA DE CONDICIONAMENTO DE AR
+      - ''
+      - ''
+      - ''
+    - - 3.2 SISTEMA DE EXAUSTÃO MECÂNICA
+      - ''
+      - ''
+      - ''
+    - - 3.3 INSTALAÇÕES DE GÁS CANALIZADO DE RUA
+      - ''
+      - ''
+      - ''
+    - - 3.4 CENTRAL DE RECIPIENTE(S) DE GÁS LIQUEFEITO DE PETRÓLEO
+      - ''
+      - ''
+      - ''
+    - - 3.5 LÍQUIDOS INFLAMÁVEIS
+      - ''
+      - ''
+      - ''
+    - - 3.6 GERADOR(ES)
+      - ''
+      - ''
+      - ''
+    - - 3.7 MONTA-CARGA
+      - ''
+      - ''
+      - ''
+    - - 3.8 ESTRUTURA(S) METÁLICA(S)
+      - ''
+      - ''
+      - ''
+    - - 3.9 CALDEIRA(S) OU VASOS DE PRESSÃO
+      - ''
+      - ''
+      - ''
+    - - '3.10 OUTROS:'
+      - ''
+      - ''
+      - ''
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 35
+      tabela_na_pagina: 1
+    linhas:
+    - - EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS
+      - AUTORIZADO
+      - EXISTENTE
+      - ESTADO DE FUNCIONAMENTO
+    - - 3.1 SISTEMA DE CONDICIONAMENTO DE AR
+    - - 3.2 SISTEMA DE EXAUSTÃO MECÂNICA
+    - - 3.3 INSTALAÇÕES DE GÁS CANALIZADO DE RUA
+    - - 3.4 CENTRAL DE RECIPIENTE(S) DE GÁS LIQUEFEITO DE PETRÓLEO
+    - - 3.5 LÍQUIDOS INFLAMÁVEIS
+    - - 3.6 GERADOR(ES)
+    - - 3.7 MONTA-CARGA
+    - - 3.8 ESTRUTURA(S) METÁLICA(S)
+    - - 3.9 CALDEIRA(S) OU VASOS DE PRESSÃO
+    - - '3.10 OUTROS:'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.4
+      - 91.58
+      - 549.24
+      - 487.63
+      linhas:
+      - - EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS
+        - AUTORIZADO
+        - EXISTENTE
+        - ESTADO DE FUNCIONAMENTO
+      - - 3.1 SISTEMA DE CONDICIONAMENTO DE AR
+        - ''
+        - ''
+        - ''
+      - - 3.2 SISTEMA DE EXAUSTÃO MECÂNICA
+        - ''
+        - ''
+        - ''
+      - - 3.3 INSTALAÇÕES DE GÁS CANALIZADO DE RUA
+        - ''
+        - ''
+        - ''
+      - - 3.4 CENTRAL DE RECIPIENTE(S) DE GÁS LIQUEFEITO DE PETRÓLEO
+        - ''
+        - ''
+        - ''
+      - - 3.5 LÍQUIDOS INFLAMÁVEIS
+        - ''
+        - ''
+        - ''
+      - - 3.6 GERADOR(ES)
+        - ''
+        - ''
+        - ''
+      - - 3.7 MONTA-CARGA
+        - ''
+        - ''
+        - ''
+      - - 3.8 ESTRUTURA(S) METÁLICA(S)
+        - ''
+        - ''
+        - ''
+      - - 3.9 CALDEIRA(S) OU VASOS DE PRESSÃO
+        - ''
+        - ''
+        - ''
+      - - '3.10 OUTROS:'
+        - ''
+        - ''
+        - ''
+notas:
+- 'Título do quadro na página: "3 – EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS (ASSINALAR COM “X”
+  OS AUTORIZADOS EM LAUDO DE EXIGÊNCIAS E OS EXISTENTES E DESCREVER OBRIGATORIAMENTE O ESTADO DE FUNCIONAMENTO
+  DELES)".'
+- As colunas AUTORIZADO, EXISTENTE e ESTADO DE FUNCIONAMENTO são para preenchimento.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

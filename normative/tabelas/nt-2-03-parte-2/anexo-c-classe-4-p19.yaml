@@ -1,0 +1,127 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 Parte 2
+arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+tabela: Anexo C (Classe IV)
+titulo: Exemplos das mercadorias – Classe IV
+pagina: 19
+fonte_pdf_sha256: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-2/pagina-19.jpg
+    imagem_sha256: 3e9dc4cbd710110c5c011fd339ec2f1a989d4f26024db42b48828330acaec374
+    linhas_cabecalho: 1
+    linhas:
+    - - Exemplos de mercadorias Classe IV
+    - - Munições Armas leves, armas de caça - Embaladas, em caixas de papelão
+    - - Garrafas e frascos Vazias, em caixas de papelão - PET (polietileno tereftalato) Cheio com pós
+        incombustíveis - Plástico, em caixas de papelão [menos que 1 gal (3,8 L)]
+    - - Caixas de papelão Corrugadas - Parcialmente montadas
+    - - Tecido Com ou sem caixas de papelão - Sintéticos¹
+    - - Fraldas - Descartáveis, com plástico e material não-tecido (em caixas de papelão)
+    - - Isolamento de fibra de vidro - Rolos de mantas laminadas com papel em um dos lados, em sacos ou
+        não
+    - - Móveis Madeira - Com cobertura plástica
+    - - Bebidas alcoólicas (destiladas) Teor alcoólico de 50% ou menos, 1 gal (3,8 L) ou menos, em caixas
+        de papelão - Vidro (paletizado)² - Garrafas plásticas
+    - - Fósforos Embalados, em caixas de papelão - Papel
+    - - Esmalte para unhas
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 19
+      tabela_na_pagina: 1
+    linhas:
+    - - Exemplos de mercadorias Classe IV
+    - - Munições Armas leves, armas de caça - Embaladas, em caixas de papelão
+    - - Garrafas e frascos Vazias, em caixas de papelão - PET (polietileno tereftalato) Cheio com pós
+        incombustíveis - Plástico, em caixas de papelão [menos que 1 gal (3,8 L)]
+    - - Caixas de papelão Corrugadas - Parcialmente montadas
+    - - Tecido Com ou sem caixas de papelão - Sintéticos1
+    - - Fraldas - Descartáveis, com plástico e material não-tecido (em caixas de papelão)
+    - - Isolamento de fibra de vidro - Rolos de mantas laminadas com papel em um dos lados, em sacos ou
+        não
+    - - Móveis Madeira - Com cobertura plástica
+    - - Bebidas alcoólicas (destiladas) Teor alcoólico de 50% ou menos, 1 gal (3,8 L) ou menos, em caixas
+        de papelão - Vidro (paletizado)2 - Garrafas plásticas
+    - - Fósforos Embalados, em caixas de papelão - Papel
+    - - Esmalte para unhas
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox:
+      - 67.56
+      - 56.88
+      - 534.49
+      - 361.01
+      linhas:
+      - - PVC (cloreto de polivinila) - Flexível (por exemplo, coberturas de cabos, folhas plastificadas)
+          - Rígido (por exemplo, tubos e conexões) - Resinas em sacos
+      - - Trapos Em fardos - Fibras naturais
+      - - Telhas tipo shingles Fibra de vidro revestida com asfalto
+      - - Amortecedores Cobertura plástica
+      - - Esquis Madeira
+      - - Têxteis Vestimentas ou produtos têxteis de fibras naturais Sintéticos (exceto raiom e náilon)
+          mistura 50/50 ou menos - Linha, em carretéis de madeira ou papel - Tecidos
+      - - Produtos de tabaco Em caixas de cartão
+      - - Produtos de madeira - Carretéis (vazios) - Palitos, pegadores, cabides, em caixas de papelão
+          - Portas, janelas, armários e móveis
+    - bbox: &id001
+      - 67.56
+      - 385.85
+      - 534.49
+      - 727.3
+      linhas:
+      - - ''
+        - Exemplos de mercadorias Classe IV
+        - ''
+      - - Munições Armas leves, armas de caça - Embaladas, em caixas de papelão
+        - null
+        - null
+      - - Garrafas e frascos Vazias, em caixas de papelão - PET (polietileno tereftalato) Cheio com pós
+          incombustíveis - Plástico, em caixas de papelão [menos que 1 gal (3,8 L)]
+        - null
+        - null
+      - - Caixas de papelão Corrugadas - Parcialmente montadas
+        - null
+        - null
+      - - Tecido Com ou sem caixas de papelão - Sintéticos1
+        - null
+        - null
+      - - Fraldas - Descartáveis, com plástico e material não-tecido (em caixas de papelão)
+        - null
+        - null
+      - - Isolamento de fibra de vidro - Rolos de mantas laminadas com papel em um dos lados, em sacos
+          ou não
+        - null
+        - null
+      - - Móveis Madeira - Com cobertura plástica
+        - null
+        - null
+      - - Bebidas alcoólicas (destiladas) Teor alcoólico de 50% ou menos, 1 gal (3,8 L) ou menos, em caixas
+          de papelão - Vidro (paletizado)2 - Garrafas plásticas
+        - null
+        - null
+      - - Fósforos Embalados, em caixas de papelão - Papel
+        - null
+        - null
+      - - Esmalte para unhas
+        - null
+        - null
+notas:
+- Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
+- A tabela da Classe IV continua na página 20, onde estão as notas 1 e 2.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 1
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

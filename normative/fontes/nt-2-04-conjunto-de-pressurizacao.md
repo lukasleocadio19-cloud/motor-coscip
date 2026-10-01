@@ -88,6 +88,8 @@ A - Esquemas elétricos e hidráulicos
 
 ## Página 3
 
+![Representação visual da página 3](media/nt-2-04/pagina-03.jpg)
+
 ### 1 OBJETIVO
 
 Esta Nota Técnica (NT) estabelece princípios gerais para a elaboração de procedimentos para Segurança Contra Incêndio e Pânico no tocante a bombas de incêndio definindo os requisitos mínimos necessários para o dimensionamento, seleção e instalação de conjuntos de bombas centrífugas (bomba com motor elétrico ou à explosão) para sistemas hidráulicos de combate a incêndio conforme previsto no Decreto Estadual nº 42/2018 - Código de Segurança Contra Incêndio e Pânico do Estado do Rio de Janeiro (COSCIP).
@@ -150,8 +152,7 @@ específicas desta seção.
 
 4.17 Válvula de alívio: válvula próxima à descarga da bomba de incêndio utilizada para limitar a pressão do sistema de proteção contra incêndio, em condições anormais.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | bomba na qual a pressão de |
@@ -176,6 +177,8 @@ específicas desta seção.
 ---
 
 ## Página 4
+
+![Representação visual da página 4](media/nt-2-04/pagina-04.jpg)
 
 4.18 Vazão da bomba (Q): volume de líquido impulsionado pela bomba, numa unidade de tempo, que atravessa seu bocal de saída.
 
@@ -229,8 +232,7 @@ Fonte: CBMERJ.
 
 5.1.10.2 O diferencial de pressão entre os acionamentos sequenciais da bomba principal ou reserva e da bomba jockey deve ser de 100 KPa,
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Risco | Diâmetro |
@@ -240,9 +242,26 @@ Fonte: CBMERJ.
 | Médio - 2 | 3/4" |
 | Grande | 1” |
 
+<!-- tabela-conferida: Tabela 1 p4 -->
+### Tabela 1 — Diâmetro mínimo dos drenos (conferida)
+
+| Risco | Diâmetro |
+| --- | --- |
+| Pequeno | 1/2" |
+| Médio - 1 | 1/2" |
+| Médio - 2 | 3/4" |
+| Grande | 1” |
+
+Fonte: NT 2-04, página 4, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: CBMERJ.
+Pelo item 5.1.6, a válvula de alívio (obrigatória no risco grande) tem o mesmo diâmetro mínimo do dreno; confere com a Tabela 2 (alívio 1" no risco grande).
+<!-- /tabela-conferida: Tabela 1 p4 -->
+
 ---
 
 ## Página 5
+
+![Representação visual da página 5](media/nt-2-04/pagina-05.jpg)
 
 enquanto a vazão de projeto da bomba jockey deverá ser de, no máximo, 20 l/min.
 
@@ -314,8 +333,7 @@ h) potência, em CV.
 
 5.2.5 As baterias do motor a explosão, localizadas na casa de máquinas de incêndio, devem ser mantidas carregadas por sistema de flutuação automática, por meio de carregador duplo de baterias. O sistema de flutuação deve ser capaz de atender, independentemente, aos dois jogos de baterias (principal
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Risco | Sucção | Recalque | Alívio |
@@ -324,6 +342,20 @@ h) potência, em CV.
 | Médio - 1 | 3" | 2 1/2" | 1/2" (opcional) |
 | Médio - 2 | 3" | 3" | 3/4" (opcional) |
 | Grande | 4" | 3" | 1"(obrigatório) |
+
+<!-- tabela-conferida: Tabela 2 p5 -->
+### Tabela 2 — Diâmetros dos colares hidráulicos (conferida)
+
+| Risco | Sucção | Recalque | Alívio |
+| --- | --- | --- | --- |
+| Pequeno | 1 1/2" | 1 1/4" | 1/2" (opcional) |
+| Médio - 1 | 3" | 2 1/2" | 1/2" (opcional) |
+| Médio - 2 | 3" | 3" | 3/4" (opcional) |
+| Grande | 4" | 3" | 1"(obrigatório) |
+
+Fonte: NT 2-04, página 5, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 2 p5 -->
 
 ---
 
@@ -400,6 +432,8 @@ h) dispositivo tipo união ou flange na entrada e saída do fluxo d'água da bom
 ---
 
 ## Página 7
+
+![Representação visual da página 7](media/nt-2-04/pagina-07.jpg)
 
 5.4.2.2 Os conjuntos de pressurização para sistemas de combate a incêndio com sucção negativa deverão dispor dos seguintes dispositivos hidráulicos:
 
@@ -503,8 +537,7 @@ U - União ou Flange (dispositivos mecânicos para facilitar a retirada das bomb
 
 A - Válvula de Alívio (dispositivo hidráulico de abertura por pressão).
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Dispositivos | Riscos |  |  |
@@ -515,6 +548,21 @@ A - Válvula de Alívio (dispositivo hidráulico de abertura por pressão).
 | Chave reversora | - | X | - |
 | Pressostato | X | X | X |
 | Carregador flutuador | - | - | X |
+
+<!-- tabela-conferida: Tabela 3 p7 -->
+### Tabela 3 — Dispositivos elétricos do conjunto de pressurização (conferida)
+
+| Dispositivos elétricos | Risco pequeno | Risco médio | Risco grande |
+| --- | --- | --- | --- |
+| Disjuntor | X | X | X |
+| Chave magnética e/ou soft-starter | X | X | X |
+| Chave reversora | - | X | - |
+| Pressostato | X | X | X |
+| Carregador flutuador | - | - | X |
+
+Fonte: NT 2-04, página 7, Tabela 3; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada na página: CBMERJ.
+<!-- /tabela-conferida: Tabela 3 p7 -->
 
 ---
 

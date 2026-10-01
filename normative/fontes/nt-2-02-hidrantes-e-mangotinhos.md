@@ -65,8 +65,7 @@ B - Modelo de planilha de cálculo
 
 C - Modelo de Termo de compromisso
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -225,6 +224,8 @@ para lançamento de espuma.
 
 ## Página 5
 
+![Representação visual da página 5](media/nt-2-02/pagina-05.jpg)
+
 Fonte: CBMERJ (Redação dada pela Portaria CBMERJ nº 1317, de 10/12/2025)
 
 distância mínima de 8 m lineares, medidos da saída do esguicho até o ponto de queda do jato (alcance linear), de acordo com a alínea A, do item 5.12.3
@@ -253,8 +254,7 @@ Fonte: CBMERJ
 
 5.2.6 Complementarmente ao item anterior, seu acesso deverá estar voltado para cima em ângulo de 45º e posicionada, no máximo, a 0,15 m de profundidade em relação ao piso do passeio, conforme Figura 2.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Classificação | Esguicho |  | Mangueira |  |  | Hidrantes | Pressão de | Vazão |
@@ -268,9 +268,26 @@ Fonte: CBMERJ
 | Risco Médio 2 | Regulável | 38 | 38 | 30 | Flexível | 2 | 35 | 400 |
 | Risco Grande | Regulável | 63 | 63 | 30 | Flexível | 2 | 40 | 1000 |
 
+<!-- tabela-conferida: Tabela 1 p5 -->
+### Tabela 1 — Classificação dos riscos (conferida)
+
+| Classificação de risco | Esguicho — tipo | Esguicho — diâmetro (mm) | Mangueira — diâmetro (mm) | Mangueira — comprimento máx. (m) | Mangueira — tipo | Hidrantes | Pressão de trabalho (mca) | Vazão (L/min) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Risco Pequeno - Mangotinho | Regulável | 25 | 25 | 30 | Semi-rígida | 1 | 58 | 100 |
+| Risco Pequeno | Regulável | 38 | 38 | 30 | Flexível | 1 | 10 | 100 |
+| Risco Médio 1 | Regulável | 38 | 38 | 30 | Flexível | 1 | 35 | 200 |
+| Risco Médio 2 | Regulável | 38 | 38 | 30 | Flexível | 2 | 35 | 400 |
+| Risco Grande | Regulável | 63 | 63 | 30 | Flexível | 2 | 40 | 1000 |
+
+Fonte: NT 2-02, página 5, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
+Na imagem: "Fonte: CBMERJ (Redação dada pela Portaria CBMERJ nº 1317, de 10/12/2025)". O cabeçalho em dois níveis (Esguicho: tipo e diâmetro; Mangueira: diâmetro, comprimento e tipo) foi achatado por coluna.
+<!-- /tabela-conferida: Tabela 1 p5 -->
+
 ---
 
 ## Página 6
+
+![Representação visual da página 6](media/nt-2-02/pagina-06.jpg)
 
 Figura 2: Dispositivo de recalque no passeio público
 
@@ -308,8 +325,7 @@ Fonte: COSCIP.
 
 5.3.2 As mangueiras de incêndio deverão estar acondicionadas dentro dos abrigos, conforme NBR 12779 e as mangueiras de incêndio semirrígidas deverão ser enroladas com o uso de carretéis axiais.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Materiais | Alvenaria de Tijolo | Alumínio Anodizado | Chapa Tratada | Fibra de Vdiro | Madeira |
@@ -317,9 +333,23 @@ Fonte: COSCIP.
 | Abrigos | X | X | X | X |  |
 | Portas Com moldura |  | X | X | X | X |
 
+<!-- tabela-conferida: Tabela 2 p6 -->
+### Tabela 2 — Composição dos abrigos (conferida)
+
+| Materiais | Alvenaria de Tijolo | Alumínio Anodizado | Chapa Tratada | Fibra de Vdiro | Madeira |
+| --- | --- | --- | --- | --- | --- |
+| Abrigos | X | X | X | X |  |
+| Portas Com moldura |  | X | X | X | X |
+
+Fonte: NT 2-02, página 6, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
+Células em branco = fundo cinza na imagem (material não previsto para aquele elemento). Fonte indicada: COSCIP.
+<!-- /tabela-conferida: Tabela 2 p6 -->
+
 ---
 
 ## Página 7
+
+![Representação visual da página 7](media/nt-2-02/pagina-07.jpg)
 
 5.3.3 Os abrigos de mangueiras deverão possuir destinação exclusiva para os equipamentos de combate a incêndio.
 
@@ -389,6 +419,8 @@ d) carretel axial.
 
 ## Página 8
 
+![Representação visual da página 8](media/nt-2-02/pagina-08.jpg)
+
 a) a altura do registro do hidrante será, no mínimo, de 1 m e no máximo de 1,5 m do piso;
 
 b) o número de hidrantes será determinado segundo a extensão da área a proteger de modo que qualquer ponto do risco seja alcançado por uma linha de mangueira. O comprimento das linhas de mangueiras não poderá ultrapassar 30 m, o que será calculado medindo-se a distância de percurso compreendida entre o hidrante e o ponto mais distante a proteger. Exceto nos casos previstos nas Notas Técnicas NT 4- 05 - Gás (GLP/GN) - Manipulação, armazenamento e comercialização e NT 4-02 - Edificações destinadas à restrição de liberdade, bem como as demais previstas na seção 5.20 desta NT;
@@ -457,8 +489,7 @@ Fonte: NBR 13714.
 
 5.7.8 A velocidade máxima da água na tubulação não deve ser superior a 5 m/s (considerando sucção e recalque) a qual deverá ser calculada pela seguinte
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tipo de Tubo | Fator "C" |
@@ -469,9 +500,25 @@ Fonte: NBR 13714.
 | Cobre | 150 |
 | NOTA - Os valores do fator "C" de Hazen Willians são válidos para tubos novos |  |
 
+<!-- tabela-conferida: Tabela 3 p8 -->
+### Tabela 3 — Fator "C" de Hazen-Williams (conferida)
+
+| Tipo de Tubo | Fator "C" |
+| --- | --- |
+| Ferro fundido ou dúctil sem revestimento interno | 100 |
+| Aço Preto (Sistema de tubo molhado) | 120 |
+| Galvanizado | 120 |
+| Cobre | 150 |
+
+Fonte: NT 2-02, página 8, Tabela 3; conferida em 2026-09-29 (visual + geometrica).
+Nota da tabela (fora da comparação): "Os valores do fator \"C\" de Hazen Willians são válidos para tubos novos". Fonte indicada: NBR 13714.
+<!-- /tabela-conferida: Tabela 3 p8 -->
+
 ---
 
 ## Página 9
+
+![Representação visual da página 9](media/nt-2-02/pagina-09.jpg)
 
 fórmula:
 
@@ -542,6 +589,8 @@ c) 01 unidade extintora de no mínimo 6 Kg de CO2 e 01 unidade extintora de no m
 ---
 
 ## Página 10
+
+![Representação visual da página 10](media/nt-2-02/pagina-10.jpg)
 
 5.9 Dos reservatórios e da reserva técnica de incêndio (RTI)
 
@@ -615,6 +664,8 @@ c) 02 eletrobombas, para os sistemas de risco médio 2 e grande, devendo uma das
 
 ## Página 11
 
+![Representação visual da página 11](media/nt-2-02/pagina-11.jpg)
+
 (sucção negativa) ou de fluxo (sucção positiva) para acionamento automático.
 
 5.10.10 Se o abastecimento da canalização ou rede preventiva for feito por reservatório subterrâneo ou baixo, estes deverão apresentar conjunto de bombas de acionamento independente e automático, de modo a manter a pressão constante e permanente na rede.
@@ -670,6 +721,8 @@ d) assegurando-se a reserva técnica para incêndio, o mesmo reservatório desti
 ---
 
 ## Página 12
+
+![Representação visual da página 12](media/nt-2-02/pagina-12.jpg)
 
 poderá ser utilizado, observando o disposto em 5.10.15;
 
@@ -743,8 +796,7 @@ Fonte: CBMERJ.
 
 5.13.5 As mangueiras serão de 38 mm (1 ½”) ou de 63 mm (2 ½”) de diâmetro interno, flexíveis, de fibra
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | LINHAS DE MANGUEIRA |  |
@@ -755,9 +807,23 @@ Fonte: CBMERJ.
 |  |  |
 | 30 m | 63 mm (2 1/2”) |
 
+<!-- tabela-conferida: Tabela 4 p12 -->
+### Tabela 4 — Cobertura de mangueiras (conferida)
+
+| Linhas de mangueira — comprimento máximo | Linhas de mangueira — diâmetro |
+| --- | --- |
+| 30 m | 38 mm (1 1/2”) |
+| 30 m | 63 mm (2 1/2”) |
+
+Fonte: NT 2-02, página 12, Tabela 4; conferida em 2026-09-29 (visual + geometrica).
+Fonte indicada: CBMERJ. Seções de 15 m (5.13.2).
+<!-- /tabela-conferida: Tabela 4 p12 -->
+
 ---
 
 ## Página 13
+
+![Representação visual da página 13](media/nt-2-02/pagina-13.jpg)
 
 resistente à umidade, revestida internamente de borracha, capazes de suportar a pressão mínima de teste de 21 kg/cm² para mangueiras do tipo I, de 28 kg/cm² para mangueiras do tipo II, IV e V e de 30 kg/cm² para mangueiras do tipo III, dotados de junta storz e com seção de 15 m de comprimento.
 
@@ -811,8 +877,7 @@ Fonte: CBMERJ.
 
 5.15.11 Serão aceitas as instalações de incêndio em polietileno de alta densidade (PEAD), desde que enterrados a 0,90 m do piso acabado, quando não houver trânsito de veículos e a 1,20 m do piso acabado, quando houver trânsito de veículos no local. Estes, quando aparentes e externos a edificação, deverão promover a transição para FG, FF ou AC a no
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Classificação de Risco | Sucção | Recalque | Alívio |
@@ -821,9 +886,27 @@ Fonte: CBMERJ.
 | 1.B - Risco Pequeno CP 2.A - Risco Médio CP | 1 1/2" 3" | 1 1/4" 2 1/2" | 1/2" (opcional) 1/2" (opcional) |
 | 2.B - Risco Médio RP 3. - Risco Grande RP | 3" 4" | 3" 3" | 3/4" (opcional) 1"(obrigatório) |
 
+<!-- tabela-conferida: Tabela 5 p13 -->
+### Tabela 5 — Drenos e colares hidráulicos (conferida)
+
+| Classificação de Risco | Sucção | Recalque | Alívio |
+| --- | --- | --- | --- |
+| 1.A - Risco Pequeno - Mangotinho | 1 1/2" | 1 1/4" | 1/2" (opcional) |
+| 1.B - Risco Pequeno CP | 1 1/2" | 1 1/4" | 1/2" (opcional) |
+| 2.A - Risco Médio CP | 3" | 2 1/2" | 1/2" (opcional) |
+| 2.B - Risco Médio RP | 3" | 3" | 3/4" (opcional) |
+| 3. - Risco Grande RP | 4" | 3" | 1"(obrigatório) |
+
+Fonte: NT 2-02, página 13, Tabela 5; conferida em 2026-09-29 (visual + geometrica).
+Na imagem o título é "Tabela 05"; o texto (5.15.8 f) a chama de Tabela 5. CP = canalização preventiva; RP = rede preventiva. Fonte indicada: CBMERJ.
+A camada de texto funde as linhas duas a duas e a grade do PDF lê cada coluna numa célula só, com espaço entre as letras: a comparação é por coluna (texto e ordem de cada coluna), e na grade sem os espaços; quais linhas cada valor ocupa vem da leitura visual.
+<!-- /tabela-conferida: Tabela 5 p13 -->
+
 ---
 
 ## Página 14
+
+![Representação visual da página 14](media/nt-2-02/pagina-14.jpg)
 
 máximo 0,60 m do piso acabado e, quando internos à edificação, deverão promover a transição para FG, FF ou AC no trecho enterrado, sendo vedada a referida tubulação aparente no interior da edificação devendo cumprir, entretanto, todos os parâmetros técnicos previstos nas NBRs 15561 e 10897.
 
@@ -881,6 +964,8 @@ Fonte: ABNT NBR 13.714.
 
 ## Página 15
 
+![Representação visual da página 15](media/nt-2-02/pagina-15.jpg)
+
 5.17.6 As mangueiras de incêndio semirrígidas deverão atender aos parâmetros técnicos previstos na Norma EN 694/2014 de acordo com o seu risco.
 
 5.17.7 A canalização preventiva de incêndio para uso do sistema de mangotinhos será dimensionada apenas para edificações do risco pequeno, conforme NT 1-04 - Classificação das edificações quanto ao risco de incêndio e para edificações com as seguintes ocupações: residenciais coletivas (asilos, clínicas psiquiátricas, reformatórios e congêneres) e públicas (tendo como ocupação principal a restrição da liberdade).
@@ -935,6 +1020,8 @@ Fonte: ABNT NBR 13.714.
 
 ## Página 16
 
+![Representação visual da página 16](media/nt-2-02/pagina-16.jpg)
+
 pressão de trabalho no mínimo de 40 mca e vazão mínima do sistema de 500 l/min, atentando, no entanto, para o que preceitua a NT 1-04, para fins de enquadramento da edificação, quanto ao seu risco de incêndio.
 
 5.20.4 Os parâmetros de pressão mínima nos hidrantes, bem como de vazão do sistema de incêndio para os depósitos de GLP/GN deverão seguir o que preceitua o Anexo B da NT 4-05 - Gás (GLP/GN) - Manipulação, armazenamento e comercialização.
@@ -953,6 +1040,8 @@ pressão de trabalho no mínimo de 40 mca e vazão mínima do sistema de 500 l/m
 
 ## Página 17
 
+![Representação visual da página 17](media/nt-2-02/pagina-17.jpg)
+
 ### ANEXO A - DOS MANANCIAIS E RESERVATÓRIOS DE ABASTECIMENTO
 
 Tabela 1 - Dimensões de poços de sucção
@@ -968,6 +1057,8 @@ Fonte: ABNT NBR 13.714.
 ---
 
 ## Página 18
+
+![Representação visual da página 18](media/nt-2-02/pagina-18.jpg)
 
 Figura 2 - Tomada inferior de sucção para bomba principal
 

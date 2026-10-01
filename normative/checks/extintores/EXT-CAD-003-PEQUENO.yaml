@@ -3,7 +3,7 @@
 # v2 (fase 3): pavimento confirmado e área toda alcançada pelo percurso como portas de qualidade.
 schema_version: checks/1.0
 id: EXT-CAD-003-PEQUENO
-version: 2
+version: 4
 title: Distância a percorrer até o extintor (risco Pequeno)
 system: EXTINTORES
 type: CAD_DISTANCE
@@ -22,9 +22,10 @@ question:
   field: extinguisher_walk_distance_m
   required_value: 20
   unit: m
-  accepted_evidence: [CAD]
+  accepted_evidence: [CAD, CALCULATION]  # medida calculada sobre a geometria do CAD
   quality_gate: quality.walls_detected
-  quality_gates: [quality.region_confirmed, quality.extinguisher.complete]
+  quality_gates: [quality.region_confirmed, quality.extinguisher.complete, quality.recognition.complete,
+                  quality.geometry.consistent]  # F7.2: vetorial × FMM
 normative_basis:
   - document: NT 2-01
     edition: 2ª edição - 2020

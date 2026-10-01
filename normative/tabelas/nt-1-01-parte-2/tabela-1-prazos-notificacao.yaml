@@ -1,0 +1,100 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-01 Parte 2
+arquivo: nt-1-01-parte-2-fiscalizacao.md
+tabela: Tabela 1
+titulo: Prazos para cumprimento de exigências constantes nas notificações descritas nesta alínea
+pagina: 7
+fonte_pdf_sha256: 01ffb41a7be61d731fd9997546980a430f6d49f9698fade87917101dedd9bef3
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+  mesclar_linhas:
+  - - 0
+    - 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-01-parte-2/pagina-07.jpg
+    imagem_sha256: b55914c27686cdc81c6f8e7056c6b0e62a7e60510d8e0ddd24b14d8b2c7f7de8
+    linhas_cabecalho: 1
+    linhas:
+    - - Tipo de Edificação ou Área de Risco
+      - Prazo em dias corridos
+    - - Da Tabela 02 do Anexo III do Decreto Estadual nº 42/2018 – COSCIP
+      - '60'
+    - - Da Tabela 03 à 32 do Anexo III do Decreto Estadual nº 42/2018 – COSCIP, que possui isenção de
+        Chuveiros Automáticos tipo Sprinklers
+      - '90'
+    - - Da Tabela 03 à 32 do Anexo III do Decreto Estadual nº 42/2018 – COSCIP, que não possui isenção
+        de Chuveiros Automáticos tipo Sprinklers
+      - '120'
+    - - Sob administração pública
+      - '180'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 7
+      tabela_na_pagina: 1
+    linhas:
+    - - Tipo de Edificação ou Área de Risco
+      - Prazo em dias corridos
+    - - Da Tabela 02 do Anexo III do Decreto Estadual nº 42/2018 - COSCIP
+      - '60'
+    - - Da Tabela 03 à 32 do Anexo III do Decreto Estadual nº 42/2018 - COSCIP, que possui isenção de
+        Chuveiros Automáticos tipo Sprinklers
+      - '90'
+    - - Da Tabela 03 à 32 do Anexo III do Decreto Estadual nº 42/2018 - COSCIP, que não possui isenção
+        de Chuveiros Automáticos tipo Sprinklers
+      - '120'
+    - - Sob administração pública
+      - '180'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 50.06
+      - 637.16
+      - 289.35
+      - 768.96
+      linhas:
+      - - Tipo de Edificação ou Área de Risco
+        - ''
+        - Prazo em
+        - ''
+      - - null
+        - null
+        - dias corridos
+        - null
+      - - Da Tabela 02 do Anexo III do Decreto Estadual nº 42/2018 – COSCIP
+        - '60'
+        - null
+        - null
+      - - Da Tabela 03 à 32 do Anexo III do Decreto Estadual nº 42/2018 – COSCIP, que possui isenção de
+          Chuveiros Automáticos tipo Sprinklers
+        - '90'
+        - null
+        - null
+      - - Da Tabela 03 à 32 do Anexo III do Decreto Estadual nº 42/2018 – COSCIP, que não possui isenção
+          de Chuveiros Automáticos tipo Sprinklers
+        - '120'
+        - null
+        - null
+      - - Sob administração pública
+        - '180'
+        - null
+        - null
+notas:
+- Tabela da alínea a) do item 5.2.3.1 (notificação para edificação ou área de risco que não esteja isenta
+  ou dispensada de regularização e não possua Certificado de Aprovação válido).
+- 'Fonte: CBMERJ.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

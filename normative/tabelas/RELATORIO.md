@@ -1,0 +1,270 @@
+# Tabelas conferidas — relatório (gerado; não editar)
+
+Gerado por `python -m tools.normas.tabelas relatorio`. Estado de cada tabela conferida em dois caminhos independentes (plano de correção, F2.2). As demais tabelas da base seguem **brutas** (ver `normative/manifests/base.yaml`).
+
+| Estado | Tabelas |
+| --- | --- |
+| divergente | 1 |
+| verificada | 256 |
+
+Caminho `texto` = camada de texto do PDF (seção "Tabelas extraídas"): vale como segundo caminho só até a extração geométrica (`pdfplumber`, workflow `normas-midia.yml`) rodar sobre o PDF oficial conferido por hash.
+
+| Documento | Tabela | Pág. | Estado | Caminhos | Células a decidir | Inconsistências da fonte |
+| --- | --- | --- | --- | --- | --- | --- |
+| Decreto 42/2018 | Tabela 1 do Anexo II | 20 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 1 do Anexo II | 21 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 1 do Anexo II | 22 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 1 do Anexo II | 23 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 1 do Anexo II | 24 | verificada | visual + geometrica | 0 | 1 |
+| Decreto 42/2018 | Tabela 1 do Anexo II | 25 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 2 | 26 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 3 | 27 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 4 | 28 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 5 | 29 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 6 | 30 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 7 | 31 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 8 | 32 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 9 | 33 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 10 | 34 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 11 | 35 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 12 | 36 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 13 | 37 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 14 | 38 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 15 | 39 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 16 | 40 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 17 | 41 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 18 | 42 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 19 | 43 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 20 | 44 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 21 | 45 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 22 | 46 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 23 | 47 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 24 | 48 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 25 | 49 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 26 | 50 | verificada | visual + geometrica | 0 | 1 |
+| Decreto 42/2018 | Tabela 27 | 51 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 28 | 52 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 29 | 53 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 30 | 54 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 31 | 55 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 32 | 56 | verificada | visual + geometrica | 0 | 0 |
+| Decreto 42/2018 | Tabela 33 | 57 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-01 Parte 1 | Anexo A | 23 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-01 Parte 1 | Anexo A | 24 | verificada | visual + geometrica | 0 | 3 |
+| NT 1-01 Parte 1 | Tabela 1 do Anexo B | 26 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-01 Parte 1 | Tabela 2 do Anexo B | 26 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-01 Parte 1 | Tabela 3 do Anexo B | 26 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-01 Parte 1 | Tabela 4 do Anexo B | 26 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-01 Parte 1 | Tabela 5 do Anexo B | 26 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-01 Parte 1 | Tabela 6 do Anexo B | 26 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-01 Parte 2 | Tabela 1 | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-01 Parte 2 | Anexo E, item 2 | 34 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-01 Parte 2 | Anexo E, item 3 | 35 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-01 Parte 2 | Anexo F | 36 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-01 Parte 2 | Cronograma da cláusula sexta do Anexo G | 39 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-01 Parte 2 | Anexo H | 42 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-03 | Anexo A | 4 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-03 | Anexo A | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-03 | Anexo A | 6 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-03 | Anexo A | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-03 | Anexo A | 8 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-03 | Anexo A | 9 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-03 | Anexo A | 10 | verificada | visual + texto | 0 | 2 |
+| NT 1-03 | Anexo A | 11 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-03 | Anexo A | 12 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-04 | Tabela do Anexo A | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-04 | Tabela do Anexo A | 6 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-04 | Tabela do Anexo A | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-04 | Tabela do Anexo A | 8 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-04 | Tabela do Anexo A | 9 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-04 | Tabela do Anexo A | 10 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-04 | Tabela do Anexo B | 11 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-04 | Tabela do Anexo B | 12 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-04 | Tabela do Anexo B | 13 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-04 | Tabela do Anexo B | 14 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-04 | Tabela do Anexo B | 15 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-04 | Tabela do Anexo B | 16 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-04 | Tabela 1 | 17 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-04 | Tabela 1 | 18 | verificada | visual + geometrica | 0 | 3 |
+| NT 1-04 | Tabela 2 | 18 | verificada | visual + geometrica | 0 | 2 |
+| NT 1-04 | Tabela do Anexo D (1/3) | 19 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-04 | Tabela do Anexo D (2/3) | 19 | verificada | visual + geometrica | 0 | 2 |
+| NT 1-04 | Tabela do Anexo D (3/3) | 19 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-04 | Tabela do Anexo E (materiais) | 20 | verificada | visual + geometrica | 0 | 1 |
+| NT 1-04 | Tabela do Anexo E (totais) | 20 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 13 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 14 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 15 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 16 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 17 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 18 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 19 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 20 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 21 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 22 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 23 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 24 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 25 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 26 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 27 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 28 | verificada | visual + geometrica | 0 | 0 |
+| NT 1-07 | Anexo A | 29 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-01 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-01 | Tabela 2 | 4 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-01 | Tabela 3 | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-01 | Tabela 4 | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-01 | Tabela 5 | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-01 | Tabela A1 | 6 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-01 | Tabela A2 | 6 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-02 | Tabela 1 | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-02 | Tabela 2 | 6 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-02 | Tabela 3 | 8 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-02 | Tabela 4 | 12 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-02 | Tabela 5 | 13 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 P1 | Tabela 1 do Anexo B | 9 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo B | 9 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo B | 10 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo B | 11 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo B | 12 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo B | 13 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo B | 14 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe I) | 15 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe I) | 16 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe II) | 16 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-03 Parte 2 | Anexo C (Classe II) | 17 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe III) | 17 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe III) | 18 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe III) | 19 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe IV) | 19 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Classe IV) | 20 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Plásticos Grupo A) | 21 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-03 Parte 2 | Anexo C (Plásticos Grupo A) | 22 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-04 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-04 | Tabela 2 | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-04 | Tabela 3 | 7 | verificada | visual + geometrica | 0 | 2 |
+| NT 2-05 | Quadro 1 | 3 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-05 | Tabela 1 do Anexo B | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-05 | Tabela 2 do Anexo B | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-05 | Tabela 3 do Anexo B | 8 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-05 | Tabela 4 do Anexo B | 9 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-05 | Tabela 5 do Anexo B | 10 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-05 | Tabela 5 do Anexo B | 11 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-05 | Tabela 5 do Anexo B | 12 | verificada | visual + geometrica | 0 | 2 |
+| NT 2-05 | Tabela 5 do Anexo B | 13 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-05 | Tabela 6 do Anexo B | 14 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-05 | Tabela 6 do Anexo B | 15 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-05 | Tabela 6 do Anexo B | 16 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-05 | Tabela 7 do Anexo B | 17 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-05 | Tabela 8 do Anexo B | 18 | verificada | visual + geometrica | 0 | 2 |
+| NT 2-08 | Tabela 1 | 12 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-08 | Tabela do Anexo A | 18 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-08 | Tabela do Anexo B | 20 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-08 | Tabela do Anexo C | 22 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-09 | Tabela 1 | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-09 | Tabela do Anexo A | 10 | verificada | visual + geometrica | 0 | 2 |
+| NT 2-09 | Tabela do Anexo A | 11 | verificada | visual + geometrica | 0 | 2 |
+| NT 2-10 | Tabela 1 | 6 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-10 | Tabela do Anexo C | 14 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-10 | Tabela do Anexo C | 15 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-10 | Tabela 1 do Anexo E | 19 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-10 | Tabela 2 do Anexo E | 20 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-10 | Tabela 3 do Anexo E | 20 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-11 | Tabela 1 (A.1) | 11 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-11 | Tabela 1 (A.2) | 12 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-11 | Tabela 1 (A.3) | 13 | verificada | visual + geometrica | 0 | 3 |
+| NT 2-11 | Tabela 1 (A.4) | 13 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-11 | Tabela 1 (A.5) | 14 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-11 | Tabela 1 (A.6, página 14) | 14 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-11 | Tabela 1 (A.6, página 15) | 15 | verificada | visual + geometrica | 0 | 2 |
+| NT 2-11 | Tabela 2 | 15 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-11 | Tabela 1 (Anexo B) | 16 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-11 | Tabela 1 (Anexo B, primeiros socorros) | 16 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-11 | Tabela do Anexo C | 17 | verificada | visual + geometrica | 0 | 2 |
+| NT 2-11 | Tabela do Anexo C | 18 | verificada | visual + geometrica | 0 | 2 |
+| NT 2-11 | Tabela do Anexo C | 19 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-11 | Tabela do Anexo C | 20 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-11 | Tabela do Anexo C | 21 | verificada | visual + geometrica | 0 | 2 |
+| NT 2-11 | Tabela do Anexo D | 22 | verificada | visual + geometrica | 0 | 2 |
+| NT 2-11 | Tabela do Anexo D | 23 | verificada | visual + geometrica | 0 | 4 |
+| NT 2-11 | Tabela do Anexo D | 24 | verificada | visual + geometrica | 0 | 2 |
+| NT 2-11 | Tabela do Anexo D | 25 | verificada | visual + geometrica | 0 | 3 |
+| NT 2-11 | Tabela do Anexo D | 26 | verificada | visual + geometrica | 0 | 4 |
+| NT 2-14 | Quadro 1 | 6 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-14 | Quadro 2 | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-17 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-17 | Tabela do Anexo A | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-19 | Tabela A | 9 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-19 | Tabela B | 10 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-19 | Tabela C | 11 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-19 | Tabela D1 | 12 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-19 | Tabela D2 | 12 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-20 | Tabela 1 do Anexo A | 6 | verificada | visual + geometrica | 0 | 1 |
+| NT 2-20 | Tabela 2 do Anexo A | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 2-20 | Tabela 3 do Anexo A | 8 | verificada | visual + geometrica | 0 | 3 |
+| NT 2-20 | Tabela do Anexo B | 9 | verificada | visual + geometrica | 0 | 2 |
+| NT 3-01 | Tabela 1 | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-01 | Tabela 2 | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-01 | Tabela 2 (continuação) | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-02 | Tabela 1 | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-02 | Tabela 2 | 6 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-02 | Tabela 3 | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-02 | Tabela 5 | 8 | verificada | visual + geometrica | 0 | 1 |
+| NT 3-02 | Tabela 1 do Anexo A | 12 | verificada | visual + geometrica | 0 | 1 |
+| NT 3-02 | Tabela 2 do Anexo A | 13 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-02 | Tabela 3 do Anexo A | 13 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-02 | Tabela 4 do Anexo A | 13 | verificada | visual + geometrica | 0 | 1 |
+| NT 3-03 | Tabela 1 | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-03 | Tabela 2 | 6 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 1 |
+| NT 3-06 | Tabela 2 | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 3 | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 4 | 7 | divergente | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 5 | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 6 | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 7 | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 8 | 8 | verificada | visual + geometrica | 0 | 1 |
+| NT 3-06 | Tabela 9 | 8 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 10 | 9 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 11 | 10 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 12 | 10 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 13 | 10 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 14 | 11 | verificada | visual + geometrica | 0 | 2 |
+| NT 3-06 | Tabela 15 | 11 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 16 | 11 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 1 do Anexo A | 13 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 2 do Anexo A | 13 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 3 do Anexo A | 14 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 4 do Anexo A | 14 | verificada | visual + geometrica | 0 | 1 |
+| NT 3-06 | Tabela 5 do Anexo A | 14 | verificada | visual + geometrica | 0 | 1 |
+| NT 3-06 | Tabela 6 do Anexo A | 15 | verificada | visual + geometrica | 0 | 1 |
+| NT 3-06 | Tabela 7 do Anexo A | 15 | verificada | visual + geometrica | 0 | 0 |
+| NT 3-06 | Tabela 8 do Anexo A | 16 | verificada | visual + geometrica | 0 | 1 |
+| NT 3-07 | Tabela do Anexo A | 6 | verificada | visual + geometrica | 0 | 2 |
+| NT 4-01 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-04 | Tabela 1 do Anexo A | 8 | verificada | visual + geometrica | 0 | 2 |
+| NT 4-04 | Tabela 2 do Anexo A | 8 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-04 | Tabela 3 do Anexo A | 9 | verificada | visual + geometrica | 0 | 1 |
+| NT 4-04 | Tabela 4 do Anexo A | 10 | verificada | visual + geometrica | 0 | 2 |
+| NT 4-04 | Tabela do Anexo B | 11 | verificada | visual + geometrica | 0 | 1 |
+| NT 4-05 | Tabela 1 | 5 | verificada | visual + geometrica | 0 | 1 |
+| NT 4-05 | Tabela 2 | 6 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-05 | Tabela 3 | 6 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-05 | Tabela 4 | 6 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-05 | Tabela 5 | 8 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-05 | Tabela 6 | 10 | verificada | visual + geometrica | 0 | 1 |
+| NT 4-05 | Tabela 1 do Anexo A | 13 | verificada | visual + geometrica | 0 | 2 |
+| NT 4-05 | Tabela 2 do Anexo A | 14 | verificada | visual + geometrica | 0 | 1 |
+| NT 4-05 | Tabela 1 do Anexo B | 15 | verificada | visual + geometrica | 0 | 3 |
+| NT 4-05 | Tabela 2 do Anexo B | 16 | verificada | visual + geometrica | 0 | 3 |
+| NT 4-05 | Tabela 1 do Anexo C | 17 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-05 | Tabela 2 do Anexo C | 18 | verificada | visual + geometrica | 0 | 1 |
+| NT 4-05 | Tabela 1 do Anexo E | 23 | verificada | visual + geometrica | 0 | 1 |
+| NT 4-06 | Tabela do Anexo B | 7 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-09 | Tabela 1 do Anexo A | 8 | verificada | visual + geometrica | 0 | 1 |
+| NT 4-09 | Tabela 2 do Anexo A | 8 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-09 | Tabela 3 do Anexo B | 9 | verificada | visual + geometrica | 0 | 0 |
+| NT 4-10 | Tabela 1 | 4 | verificada | visual + geometrica | 0 | 0 |
+| NT 5-02 | Tabela 1 do Anexo A | 8 | verificada | visual + geometrica | 0 | 0 |
+| NT 5-04 | Tabela 1 | 6 | verificada | visual + geometrica | 0 | 0 |
+| NT 5-05 | Tabela 1 | 5 | verificada | visual + geometrica | 0 | 0 |
+| NT 5-05 | Tabela do Anexo C | 10 | verificada | visual + geometrica | 0 | 1 |

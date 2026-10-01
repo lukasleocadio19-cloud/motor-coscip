@@ -1,0 +1,303 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-07
+arquivo: nt-1-07-atividades-de-baixo-risco.md
+tabela: Anexo A
+titulo: Relação de CNAEs passíveis de dispensa de regularização
+pagina: 13
+fonte_pdf_sha256: 892e0bdfbcddc366dbec915a0c8b8e60b420bbf3ede4a369c80bebf76811ac91
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-07/pagina-13.png
+    imagem_sha256: cf958de2e16281d278f618257cb4f969f018319e577807bb0ef13d15cf45fac3
+    linhas_cabecalho: 1
+    linhas:
+    - - CNAE
+      - Descrição
+    - - 0111-3/01
+      - Cultivo de arroz
+    - - 0111-3/02
+      - Cultivo de milho
+    - - 0111-3/03
+      - Cultivo de trigo
+    - - 0111-3/99
+      - Cultivo de outros cereais não especificados anteriormente
+    - - 0112-1/01
+      - Cultivo de algodão herbáceo
+    - - 0112-1/02
+      - Cultivo de juta
+    - - 0112-1/99
+      - Cultivo de outras fibras de lavoura temporária não especificadas anteriormente
+    - - 0113-0/00
+      - Cultivo de cana-de-açúcar
+    - - 0114-8/00
+      - Cultivo de fumo
+    - - 0115-6/00
+      - Cultivo de soja
+    - - 0116-4/01
+      - Cultivo de amendoim
+    - - 0116-4/02
+      - Cultivo de girassol
+    - - 0116-4/03
+      - Cultivo de mamona
+    - - 0116-4/99
+      - Cultivo de outras oleaginosas de lavoura temporária não especificadas anteriormente
+    - - 0119-9/01
+      - Cultivo de abacaxi
+    - - 0119-9/02
+      - Cultivo de alho
+    - - 0119-9/03
+      - Cultivo de batata-inglesa
+    - - 0119-9/04
+      - Cultivo de cebola
+    - - 0119-9/05
+      - Cultivo de feijão
+    - - 0119-9/06
+      - Cultivo de mandioca
+    - - 0119-9/07
+      - Cultivo de melão
+    - - 0119-9/08
+      - Cultivo de melancia
+    - - 0119-9/09
+      - Cultivo de tomate rasteiro
+    - - 0119-9/99
+      - Cultivo de outras plantas de lavoura temporária não especificadas anteriormente
+    - - 0121-1/01
+      - Horticultura, exceto morango
+    - - 0121-1/02
+      - Cultivo de morango
+    - - 0122-9/00
+      - Cultivo de flores e plantas ornamentais
+    - - 0131-8/00
+      - Cultivo de laranja
+    - - 0132-6/00
+      - Cultivo de uva
+    - - 0133-4/01
+      - Cultivo de açaí
+    - - 0133-4/02
+      - Cultivo de banana
+    - - 0133-4/03
+      - Cultivo de caju
+    - - 0133-4/04
+      - Cultivo de cítricos, exceto laranja
+    - - 0133-4/05
+      - Cultivo de coco-da-baía
+    - - 0133-4/06
+      - Cultivo de guaraná
+    - - 0133-4/07
+      - Cultivo de maçã
+    - - 0133-4/08
+      - Cultivo de mamão
+    - - 0133-4/09
+      - Cultivo de maracujá
+    - - 0133-4/10
+      - Cultivo de manga
+    - - 0133-4/11
+      - Cultivo de pêssego
+    - - 0133-4/99
+      - Cultivo de frutas de lavoura permanente não especificadas anteriormente
+    - - 0134-2/00
+      - Cultivo de café
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 13
+      tabela_na_pagina: 1
+    linhas:
+    - - CNAE
+      - Descrição
+    - - 0111-3/01
+      - Cultivo de arroz
+    - - 0111-3/02
+      - Cultivo de milho
+    - - 0111-3/03
+      - Cultivo de trigo
+    - - 0111-3/99
+      - Cultivo de outros cereais não especificados anteriormente
+    - - 0112-1/01
+      - Cultivo de algodão herbáceo
+    - - 0112-1/02
+      - Cultivo de juta
+    - - 0112-1/99
+      - Cultivo de outras fibras de lavoura temporária não especificadas anteriormente
+    - - 0113-0/00
+      - Cultivo de cana-de-açúcar
+    - - 0114-8/00
+      - Cultivo de fumo
+    - - 0115-6/00
+      - Cultivo de soja
+    - - 0116-4/01
+      - Cultivo de amendoim
+    - - 0116-4/02
+      - Cultivo de girassol
+    - - 0116-4/03
+      - Cultivo de mamona
+    - - 0116-4/99
+      - Cultivo de outras oleaginosas de lavoura temporária não especificadas anteriormente
+    - - 0119-9/01
+      - Cultivo de abacaxi
+    - - 0119-9/02
+      - Cultivo de alho
+    - - 0119-9/03
+      - Cultivo de batata-inglesa
+    - - 0119-9/04
+      - Cultivo de cebola
+    - - 0119-9/05
+      - Cultivo de feijão
+    - - 0119-9/06
+      - Cultivo de mandioca
+    - - 0119-9/07
+      - Cultivo de melão
+    - - 0119-9/08
+      - Cultivo de melancia
+    - - 0119-9/09
+      - Cultivo de tomate rasteiro
+    - - 0119-9/99
+      - Cultivo de outras plantas de lavoura temporária não especificadas anteriormente
+    - - 0121-1/01
+      - Horticultura, exceto morango
+    - - 0121-1/02
+      - Cultivo de morango
+    - - 0122-9/00
+      - Cultivo de flores e plantas ornamentais
+    - - 0131-8/00
+      - Cultivo de laranja
+    - - 0132-6/00
+      - Cultivo de uva
+    - - 0133-4/01
+      - Cultivo de açaí
+    - - 0133-4/02
+      - Cultivo de banana
+    - - 0133-4/03
+      - Cultivo de caju
+    - - 0133-4/04
+      - Cultivo de cítricos, exceto laranja
+    - - 0133-4/05
+      - Cultivo de coco-da-baía
+    - - 0133-4/06
+      - Cultivo de guaraná
+    - - 0133-4/07
+      - Cultivo de maçã
+    - - 0133-4/08
+      - Cultivo de mamão
+    - - 0133-4/09
+      - Cultivo de maracujá
+    - - 0133-4/10
+      - Cultivo de manga
+    - - 0133-4/11
+      - Cultivo de pêssego
+    - - 0133-4/99
+      - Cultivo de frutas de lavoura permanente não especificadas anteriormente
+    - - 0134-2/00
+      - Cultivo de café
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.76
+      - 83.66
+      - 548.66
+      - 782.4
+      linhas:
+      - - CNAE
+        - Descrição
+      - - 0111-3/01
+        - Cultivo de arroz
+      - - 0111-3/02
+        - Cultivo de milho
+      - - 0111-3/03
+        - Cultivo de trigo
+      - - 0111-3/99
+        - Cultivo de outros cereais não especificados anteriormente
+      - - 0112-1/01
+        - Cultivo de algodão herbáceo
+      - - 0112-1/02
+        - Cultivo de juta
+      - - 0112-1/99
+        - Cultivo de outras fibras de lavoura temporária não especificadas anteriormente
+      - - 0113-0/00
+        - Cultivo de cana-de-açúcar
+      - - 0114-8/00
+        - Cultivo de fumo
+      - - 0115-6/00
+        - Cultivo de soja
+      - - 0116-4/01
+        - Cultivo de amendoim
+      - - 0116-4/02
+        - Cultivo de girassol
+      - - 0116-4/03
+        - Cultivo de mamona
+      - - 0116-4/99
+        - Cultivo de outras oleaginosas de lavoura temporária não especificadas anteriormente
+      - - 0119-9/01
+        - Cultivo de abacaxi
+      - - 0119-9/02
+        - Cultivo de alho
+      - - 0119-9/03
+        - Cultivo de batata-inglesa
+      - - 0119-9/04
+        - Cultivo de cebola
+      - - 0119-9/05
+        - Cultivo de feijão
+      - - 0119-9/06
+        - Cultivo de mandioca
+      - - 0119-9/07
+        - Cultivo de melão
+      - - 0119-9/08
+        - Cultivo de melancia
+      - - 0119-9/09
+        - Cultivo de tomate rasteiro
+      - - 0119-9/99
+        - Cultivo de outras plantas de lavoura temporária não especificadas anteriormente
+      - - 0121-1/01
+        - Horticultura, exceto morango
+      - - 0121-1/02
+        - Cultivo de morango
+      - - 0122-9/00
+        - Cultivo de flores e plantas ornamentais
+      - - 0131-8/00
+        - Cultivo de laranja
+      - - 0132-6/00
+        - Cultivo de uva
+      - - 0133-4/01
+        - Cultivo de açaí
+      - - 0133-4/02
+        - Cultivo de banana
+      - - 0133-4/03
+        - Cultivo de caju
+      - - 0133-4/04
+        - Cultivo de cítricos, exceto laranja
+      - - 0133-4/05
+        - Cultivo de coco-da-baía
+      - - 0133-4/06
+        - Cultivo de guaraná
+      - - 0133-4/07
+        - Cultivo de maçã
+      - - 0133-4/08
+        - Cultivo de mamão
+      - - 0133-4/09
+        - Cultivo de maracujá
+      - - 0133-4/10
+        - Cultivo de manga
+      - - 0133-4/11
+        - Cultivo de pêssego
+      - - 0133-4/99
+        - Cultivo de frutas de lavoura permanente não especificadas anteriormente
+      - - 0134-2/00
+        - Cultivo de café
+notas:
+- A tabela continua na página 14.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

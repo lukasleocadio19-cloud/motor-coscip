@@ -1,0 +1,204 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-04
+arquivo: nt-1-04-classificacao-de-risco.md
+tabela: Tabela do Anexo A
+titulo: Classificação quanto à ocupação (página 10)
+pagina: 10
+fonte_pdf_sha256: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-04/pagina-10.png
+    imagem_sha256: a33cdf7a3eaeecdbcdaa4b8fbc7cb05b4d46a429d51be541887ea5bda3c484cf
+    linhas_cabecalho: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Definição e exemplos
+    - - M
+      - Especial
+      - M-1
+      - Túnel
+      - Túnel rodoferroviário destinados a transporte de passageiros ou cargas diversas
+    - - ^
+      - ^
+      - M-2
+      - Líquidos ou gases inflamáveis ou combustíveis
+      - 'Edificação destinada a manipulação, armazenamento e distribuição de líquidos ou gases inflamáveis
+        ou combustíveis, tais como: ponto de venda ou depósito de GLP, etc.'
+    - - ^
+      - ^
+      - M-3
+      - Central de comunicação
+      - Central telefônica, centros de comunicação, antenas de telefonia e assemelhados.
+    - - ^
+      - ^
+      - M-4
+      - Estrutura temporária
+      - Canteiro de obras e assemelhados, (não possuem atividade de reunião de público)
+    - - ^
+      - ^
+      - M-5
+      - Silos
+      - Armazéns de grãos e assemelhados
+    - - ^
+      - ^
+      - M-6
+      - Energia
+      - Geração, transmissão e distribuição de energia e assemelhados.
+    - - ^
+      - ^
+      - M-7
+      - Pátios de armazenagem
+      - Pátios – área não coberta que tem como destinação de uso a estocagem de produtos.
+    - - ^
+      - ^
+      - M-8
+      - Loteamento
+      - Loteamento - é a divisão de glebas em lotes destinados à edificação, com aberturas de novas vias
+        de circulação ou de logradouros públicos ou privados
+    - - ^
+      - ^
+      - M-9
+      - Local onde a liberdade das pessoas sofre restrição
+      - Manicômios, reformatórios, prisões em geral (casa de detenção, penitenciárias, presídios) e instituições
+        assemelhadas, todos com celas
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 10
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Definição e exemplos
+    - - M
+      - Especial
+      - M-1
+      - Túnel
+      - Túnel rodoferroviário destinados a transporte de passageiros ou cargas diversas
+    - - M-2
+      - Líquidos ou gases inflamáveis ou combustíveis
+      - 'Edificação destinada a manipulação, armazenamento e distribuição de líquidos ou gases inflamáveis
+        ou combustíveis, tais como: ponto de venda ou depósito de GLP, etc.'
+    - - M-3
+      - Central de comunicação
+      - Central telefônica, centros de comunicação, antenas de telefonia e assemelhados.
+    - - M-4
+      - Estrutura temporária
+      - Canteiro de obras e assemelhados, (não possuem atividade de reunião de público)
+    - - M-5
+      - Silos
+      - Armazéns de grãos e assemelhados
+    - - M-6
+      - Energia
+      - Geração, transmissão e distribuição de energia e assemelhados.
+    - - M-7
+      - Pátios de armazenagem
+      - Pátios - área não coberta que tem como destinação de uso a estocagem de produtos.
+    - - M-8
+      - Loteamento
+      - Loteamento - é a divisão de glebas em lotes destinados à edificação, com aberturas de novas vias
+        de circulação ou de logradouros públicos ou privados
+    - - M-9
+      - Local onde a liberdade das pessoas sofre restrição
+      - Manicômios, reformatórios, prisões em geral (casa de detenção, penitenciárias, presídios) e instituições
+        assemelhadas, todos com celas
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 46.3
+      - 79.0
+      - 542.3
+      - 555.72
+      linhas:
+      - - Grupo
+        - Ocupação/Uso
+        - Divisão
+        - Descrição
+        - Definição e exemplos
+      - - M
+        - Especial
+        - M-1
+        - Túnel
+        - Túnel rodoferroviário destinados a transporte de passageiros ou cargas diversas
+      - - null
+        - null
+        - M-2
+        - Líquidos ou gases infla- máveis ou combustíveis
+        - 'Edificação destinada a manipulação, armazenamento e distribuição de líquidos ou gases inflamáveis
+          ou combustíveis, tais como: ponto de venda ou depósito de GLP, etc.'
+      - - null
+        - null
+        - M-3
+        - Central de comunicação
+        - Central telefônica, centros de comunicação, antenas de telefonia e assemelhados.
+      - - null
+        - null
+        - M-4
+        - Estrutura temporária
+        - Canteiro de obras e assemelhados, (não possuem atividade de reunião de público)
+      - - null
+        - null
+        - M-5
+        - Silos
+        - Armazéns de grãos e assemelhados
+      - - null
+        - null
+        - M-6
+        - Energia
+        - Geração, transmissão e distribuição de energia e assemelhados.
+      - - null
+        - null
+        - M-7
+        - Pátios de armazenagem
+        - Pátios – área não coberta que tem como destinação de uso a estocagem de produtos.
+      - - null
+        - null
+        - M-8
+        - Loteamento
+        - Loteamento - é a divisão de glebas em lotes destinados à edificação, com aberturas de novas
+          vias de circulação ou de logradouros públicos ou privados
+      - - null
+        - null
+        - M-9
+        - Local onde a liberdade das pessoas sofre res- trição
+        - Manicômios, reformatórios, prisões em geral (casa de detenção, penitenciárias, presídios) e
+          instituições assemelhadas, todos com celas
+notas:
+- Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula
+  mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por")
+  desfeita.
+- 'Fonte indicada: Decreto nº 42/2018 – COSCIP.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 2
+    coluna: 1
+    a: Líquidos ou gases inflamáveis ou combustíveis
+    b: Líquidos ou gases infla- máveis ou combustíveis
+    estado: verificada
+    score: 97.8
+  - linha: 9
+    coluna: 1
+    a: Local onde a liberdade das pessoas sofre restrição
+    b: Local onde a liberdade das pessoas sofre res- trição
+    estado: verificada
+    score: 98.0

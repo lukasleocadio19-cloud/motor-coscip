@@ -66,8 +66,7 @@ metodo: "extração textual por blocos; tabelas convertidas para Markdown; marca
 
 Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -87,6 +86,8 @@ Aprovada pela Portaria CBMERJ nº 1071, de 27 de agosto de 2019.
 ---
 
 ## Página 3
+
+![Representação visual da página 3](media/nt-1-02/pagina-03.jpg)
 
 ### 1 OBJETIVO
 
@@ -158,8 +159,7 @@ Andar: piso acima do piso térreo, piso elevado.
 
 Aparelhos a gás: aparelhos destinados à utilização de gás combustível.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | abertura na vegetação que atua como barreira |
@@ -399,6 +399,8 @@ Camada de fumaça “smoke layer”: espessura acumulada de fumaça por uma barr
 
 ## Página 8
 
+![Representação visual da página 8](media/nt-1-02/pagina-08.jpg)
+
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Caminhão-tanque: caminhão equipado com um reservatório acoplado para transporte de óleo diesel até a edificação para o abastecimento dos reservatórios de diesel.
@@ -451,8 +453,7 @@ Cela individual: menor célula possível de um estabelecimento penal. Neste côm
 
 Central de espuma: local onde situam-se as bombas, aparelhos dosadores e/ou geradores de
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | toda carga homogênea, sem |
@@ -678,6 +679,8 @@ Duto de entrada de ar (DE): espaço vertical no interior da edificação, que co
 
 ## Página 13
 
+![Representação visual da página 13](media/nt-1-02/pagina-13.jpg)
+
 Duto de exaustão: utilizados como condutores de gases, vapores e demais efluentes oriundos da cocção, sendo construído em formato de prisma ou em formato cilíndrico, constituídos por materiais incombustíveis, tais como: chapa de aço carbono, aço inoxidável, ou qualquer outro material que venha a garantir os mesmos critérios de resistência mecânica ao fogo e à corrosão, estanqueidade e rugosidade interna equivalente aos dutos de aço.
 
 Duto de saída de ar (DS): espaço vertical no interior da edificação, que permite a saída, em qualquer pavimento, de gases e fumaça da antecâmara da escada para o ar livre, acima da cobertura da edificação.
@@ -734,8 +737,7 @@ Eletrobomba: bomba centrífuga de pressurização com acionamento elétrico.
 
 Eletrobomba Jockey: bomba centrífuga com acio-
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | que são arrastados |
@@ -805,6 +807,8 @@ Esguicho regulável básico: esguicho de jato regulável em que a vazão de lan�
 
 ## Página 15
 
+![Representação visual da página 15](media/nt-1-02/pagina-15.jpg)
+
 pressão determinada pelo ajuste da forma do jato.
 
 Espaços adjacentes: áreas dentro de uma edificação com comunicação com corredores, malls e átrios (ex. lojas em um shopping center).
@@ -861,8 +865,7 @@ Explosivos tipo lama: misturas de nitratos diluídos em água e agentes sensibil
 
 Extintor de incêndio: aparelho de acionamento manual, constituído de recipiente e acessórios contendo o agente extintor destinado a combater princípios de incêndio.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | em que o |
@@ -1116,6 +1119,8 @@ Medidas de proteção ativa: aquelas acionadas somente por ocasião do incêndio
 
 ## Página 20
 
+![Representação visual da página 20](media/nt-1-02/pagina-20.jpg)
+
 Código de Segurança Contra Incêndio e Pânico - Estado do Rio de Janeiro
 
 Medidas de proteção contra incêndio: aquelas destinadas a minimizar os danos decorrentes do incêndio, impedindo sua propagação para outros ambientes e propiciando a possibilidade de sua extinção ou auto extinção.
@@ -1170,8 +1175,7 @@ Ocupação: tipo de atividade econômica, uso residencial ou outro, com ou sem f
 
 Ocupação múltipla: para que a ocupação múltipla se caracterize, é necessário que a área destinada às ocupações secundárias seja superior a 10% da área total da edificação ou superior a 1.500m². Caracterizam-se também como ocupação múltipla as edificações que possuam em qualquer pavimento
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | gerador com um invólucro, |

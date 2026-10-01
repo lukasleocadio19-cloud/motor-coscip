@@ -1,0 +1,875 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-19
+arquivo: nt-2-19-seguranca-estrutural.md
+tabela: Tabela B
+titulo: Resistência ao fogo para alvenarias
+pagina: 10
+fonte_pdf_sha256: 29a57e10630596f21a7e914197a2ae021c3e78b9a399b2d16799ac9bba1390fe
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 4
+  juntar_cabecalho: false
+  descartar_linhas:
+  - 16
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-19/pagina-10.jpg
+    imagem_sha256: 1226e2ed0275d6f28bf9bf7b469e4c80aeb1405a9047a74831c8ab9e53973e88
+    linhas_cabecalho: 4
+    cabecalho_publicado:
+    - Paredes ensaiadas (*)
+    - Tipo
+    - Assentamento — cimento
+    - Assentamento — cal
+    - Assentamento — areia
+    - Espessura média da argamassa de assentamento (cm)
+    - Chapisco — cimento
+    - Chapisco — areia
+    - Emboço — cimento
+    - Emboço — cal
+    - Emboço — areia
+    - Espessura de argamassa de revestimento (cada face) (cm)
+    - Espessura total da parede (cm)
+    - Duração do ensaio (min)
+    - Integridade (min)
+    - Estanqueidade (min)
+    - Isolação térmica (min)
+    - Resistência ao fogo (minutos)
+    linhas:
+    - - Paredes ensaiadas (*)
+      - Características das paredes
+      - Resultado dos ensaios
+    - - Traço em volume da argamassa do assentamento
+      - Espessura média da argamassa de assentamento (cm)
+      - Traço em volume de argamassa de revestimento
+      - Espessura de argamassa de revestimento (cada face) (cm)
+      - Espessura total da parede (cm)
+      - Duração do ensaio (min)
+      - Tempo de atendimento aos critérios de avaliação (minutos)
+      - Resistência ao fogo (minutos)
+    - - Chapisco
+      - Emboço
+    - - Cimento
+      - Cal
+      - Areia
+      - Cimento
+      - Areia
+      - Cimento
+      - Cal
+      - Areia
+      - Integridade
+      - Estanqueidade
+      - Isolação térmica
+    - - 'Parede de tijolos de barro cozido (dimensões nominais dos tijolos) 5 cm x 10 cm x 20 cm: Massa:
+        1,5 kg'
+      - Meio tijolo sem revestimento
+      - '-'
+      - '1'
+      - '5'
+      - '1'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '10'
+      - '120'
+      - ≥ 120
+      - ≥ 120
+      - '90'
+      - '90'
+    - - ^
+      - Um tijolo sem revestimento
+      - '-'
+      - '1'
+      - '5'
+      - '1'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '20'
+      - 395 (**)
+      - ≥ 360
+      - ≥ 360
+      - ≥ 360
+      - ≥ 360
+    - - ^
+      - Meio tijolo com revestimento
+      - '-'
+      - '1'
+      - '5'
+      - '1'
+      - '1'
+      - '3'
+      - '1'
+      - '2'
+      - '9'
+      - 2,5
+      - '15'
+      - '300'
+      - ≥ 240
+      - ≥ 240
+      - '240'
+      - '240'
+    - - ^
+      - Um tijolo com revestimento
+      - '-'
+      - '1'
+      - '5'
+      - '1'
+      - '1'
+      - '3'
+      - '1'
+      - '2'
+      - '9'
+      - 2,5
+      - '25'
+      - 300 (**)
+      - ≥ 240
+      - ≥ 360
+      - ≥ 300
+      - '> 360'
+    - - 'Parede de blocos vazados de concreto (2 furos) (blocos com dimensões nominais: 14 cm x 19 cm
+        x 39 cm e 19 cm x 19 cm x 39 cm; e massas de 13 kg e 17 kg respectivamente'
+      - Bloco de 14 cm sem revestimento
+      - '1'
+      - '1'
+      - '8'
+      - '1'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '14'
+      - '100'
+      - ≥ 90
+      - ≥ 90
+      - '90'
+      - '90'
+    - - ^
+      - Bloco de 19 cm sem revestimento
+      - '1'
+      - '1'
+      - '8'
+      - '1'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '19'
+      - '120'
+      - ≥ 120
+      - ≥ 120
+      - '90'
+      - '90'
+    - - ^
+      - Bloco de 14 cm com revestimento
+      - '1'
+      - '1'
+      - '8'
+      - '1'
+      - '1'
+      - '3'
+      - '1'
+      - '2'
+      - '9'
+      - 1,5
+      - '17'
+      - '150'
+      - ≥ 120
+      - ≥ 120
+      - '120'
+      - '120'
+    - - ^
+      - Bloco de 19 cm com revestimento
+      - '1'
+      - '1'
+      - '8'
+      - '1'
+      - '1'
+      - '3'
+      - '1'
+      - '2'
+      - '9'
+      - 1,5
+      - '22'
+      - '185'
+      - ≥ 180
+      - ≥ 180
+      - '180'
+      - '180'
+    - - Paredes de tijolos cerâmicos de oito furos (dimensões nominais dos tijolos 10 cm x 20 cm x 20
+        cm (massa 2,9 Kg)
+      - Meio - tijolo com revestimento
+      - '-'
+      - '1'
+      - '4'
+      - '1'
+      - '1'
+      - '3'
+      - '1'
+      - '2'
+      - '9'
+      - 1,5
+      - '13'
+      - '150'
+      - ≥ 120
+      - ≥ 120
+      - '120'
+      - '120'
+    - - ^
+      - Um tijolo com revestimento
+      - '-'
+      - '1'
+      - '4'
+      - '1'
+      - '1'
+      - '3'
+      - '1'
+      - '2'
+      - '9'
+      - 1,5
+      - '23'
+      - 300 (**)
+      - ≥ 240
+      - ≥ 240
+      - ≥ 240
+      - '> 240'
+    - - Paredes de concreto armado monolítico sem revestimento
+      - 'Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº
+        3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm,
+        de aço CA- 50A diâmetro ¼ polegada.'
+      - <
+      - <
+      - <
+      - <
+      - <
+      - <
+      - <
+      - <
+      - <
+      - <
+      - 11,5
+      - '150'
+      - '120'
+      - '120'
+      - '60'
+      - '90'
+    - - ^
+      - ^
+      - ^
+      - ^
+      - ^
+      - ^
+      - ^
+      - ^
+      - ^
+      - ^
+      - ^
+      - ^
+      - '16'
+      - '210'
+      - '180'
+      - '180'
+      - '180'
+      - '180'
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 10
+      tabela_na_pagina: 1
+    linhas:
+    - - Paredes ensaiadas (*)
+      - Características das paredes
+      - Resultado dos ensaios
+    - - Traço em volume da argamassa do assentamento
+      - Espessura média da argamassa de assentamento (cm)
+      - Traço em volume de argamassa de revestimento
+      - Espessura de argamassa de revestimento (cada face) (cm)
+      - Espessura total da parede (cm)
+      - Duração do ensaio (min)
+      - Tempo de atendimento aos critérios de avaliação (minutos)
+      - Resistência ao fogo (minutos)
+    - - Chapisco
+      - Emboço
+    - - Cimento
+      - Cal
+      - Areia
+      - Cimento
+      - Areia
+      - Cimento
+      - Cal
+      - Areia
+      - Integridade
+      - Estanqueidade
+      - Isolação térmica
+    - - 'Parede de tijolos de barro cozido (dimensões nominais dos tijolos) 5 cm x 10 cm x 20 cm: Massa:
+        1,5 kg'
+      - Meio tijolo sem revestimento
+      - '-'
+      - '1'
+      - '5'
+      - '1'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '10'
+      - '120'
+      - ≥ 120
+      - ≥ 120
+      - '90'
+      - '90'
+    - - Um tijolo sem revestimento
+      - '-'
+      - '1'
+      - '5'
+      - '1'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '20'
+      - 395 (**)
+      - ≥ 360
+      - ≥ 360
+      - ≥ 360
+      - ≥ 360
+    - - Meio tijolo com revestimento
+      - '-'
+      - '1'
+      - '5'
+      - '1'
+      - '1'
+      - '3'
+      - '1'
+      - '2'
+      - '9'
+      - 2,5
+      - '15'
+      - '300'
+      - ≥ 240
+      - ≥ 240
+      - '240'
+      - '240'
+    - - Um tijolo com revestimento
+      - '-'
+      - '1'
+      - '5'
+      - '1'
+      - '1'
+      - '3'
+      - '1'
+      - '2'
+      - '9'
+      - 2,5
+      - '25'
+      - 300 (**)
+      - ≥ 240
+      - ≥ 360
+      - ≥ 300
+      - '> 360'
+    - - 'Parede de blocos vazados de concreto (2 furos) (blocos com dimensões nominais: 14 cm x 19 cm
+        x 39 cm e 19 cm x 19 cm x 39 cm; e massas de 13 kg e 17 kg respectivamente'
+      - Bloco de 14 cm sem revestimento
+      - '1'
+      - '1'
+      - '8'
+      - '1'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '14'
+      - '100'
+      - ≥ 90
+      - ≥ 90
+      - '90'
+      - '90'
+    - - Bloco de 19 cm sem revestimento
+      - '1'
+      - '1'
+      - '8'
+      - '1'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '-'
+      - '19'
+      - '120'
+      - ≥ 120
+      - ≥ 120
+      - '90'
+      - '90'
+    - - Bloco de 14 cm com revestimento
+      - '1'
+      - '1'
+      - '8'
+      - '1'
+      - '1'
+      - '3'
+      - '1'
+      - '2'
+      - '9'
+      - 1,5
+      - '17'
+      - '150'
+      - ≥ 120
+      - ≥ 120
+      - '120'
+      - '120'
+    - - Bloco de 19 cm com revestimento
+      - '1'
+      - '1'
+      - '8'
+      - '1'
+      - '1'
+      - '3'
+      - '1'
+      - '2'
+      - '9'
+      - 1,5
+      - '22'
+      - '185'
+      - ≥ 180
+      - ≥ 180
+      - '180'
+      - '180'
+    - - Paredes de tijolos cerâmicos de oito furos (dimensões nominais dos tijolos 10 cm x 20 cm x 20
+        cm (massa 2,9 Kg)
+      - Meio - tijolo com revestimento
+      - '-'
+      - '1'
+      - '4'
+      - '1'
+      - '1'
+      - '3'
+      - '1'
+      - '2'
+      - '9'
+      - 1,5
+      - '13'
+      - '150'
+      - ≥ 120
+      - ≥ 120
+      - '120'
+      - '120'
+    - - Um tijolo com revestimento
+      - '-'
+      - '1'
+      - '4'
+      - '1'
+      - '1'
+      - '3'
+      - '1'
+      - '2'
+      - '9'
+      - 1,5
+      - '23'
+      - 300 (**)
+      - ≥ 240
+      - ≥ 240
+      - ≥ 240
+      - '> 240'
+    - - Paredes de concreto armado monolítico sem revestimento
+      - 'Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº
+        3): arma dura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm,
+        de aço CA- 50A diâmetro ¼ polegada.'
+      - 11,5
+      - '150'
+      - '120'
+      - '120'
+      - '60'
+      - '90'
+    - - '16'
+      - '210'
+      - '180'
+      - '180'
+      - '180'
+      - '180'
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 25.33
+      - 74.98
+      - 816.57
+      - 450.55
+      linhas:
+      - - Paredes ensaiadas (*)
+        - null
+        - Características das paredes
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - Resultado dos ensaios
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - Traço em volume da argamassa do assentamento
+        - null
+        - null
+        - Espessura média da argamassa de assen- tamento (cm)
+        - Traço em volume de argamassa de revestimento
+        - null
+        - null
+        - null
+        - null
+        - Espessura de argamassa de revestimento (cada face) (cm)
+        - Espessura total da parede (cm)
+        - Duração do ensaio (min)
+        - Tempo de atendimento aos critérios de avaliação (minutos)
+        - null
+        - null
+        - Resistência ao fogo (minutos)
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - Chapisco
+        - null
+        - Emboço
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      - - null
+        - null
+        - Cimento
+        - Cal
+        - Areia
+        - null
+        - Cimento
+        - Areia
+        - Cimento
+        - Cal
+        - Areia
+        - ''
+        - ''
+        - ''
+        - Integridade
+        - Estanqueidade
+        - Isolação térmica
+        - ''
+      - - 'Parede de tijolos de barro cozido (dimensões nominais dos tijolos) 5 cm x 10 cm x 20 cm: Massa:
+          1,5 kg'
+        - Meio tijolo sem revestimento
+        - '-'
+        - '1'
+        - '5'
+        - '1'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '10'
+        - '120'
+        - ≥ 120
+        - ≥ 120
+        - '90'
+        - '90'
+      - - null
+        - Um tijolo sem revestimento
+        - '-'
+        - '1'
+        - '5'
+        - '1'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '20'
+        - 395 (**)
+        - ≥ 360
+        - ≥ 360
+        - ≥ 360
+        - ≥ 360
+      - - null
+        - Meio tijolo com revestimento
+        - '-'
+        - '1'
+        - '5'
+        - '1'
+        - '1'
+        - '3'
+        - '1'
+        - '2'
+        - '9'
+        - 2,5
+        - '15'
+        - '300'
+        - ≥ 240
+        - ≥ 240
+        - '240'
+        - '240'
+      - - null
+        - Um tijolo com revestimento
+        - '-'
+        - '1'
+        - '5'
+        - '1'
+        - '1'
+        - '3'
+        - '1'
+        - '2'
+        - '9'
+        - 2,5
+        - '25'
+        - 300 (**)
+        - ≥ 240
+        - ≥ 360
+        - ≥ 300
+        - '> 360'
+      - - 'Parede de blocos vazados de concreto (2 furos) (blocos com dimensões nominais: 14 cm x 19 cm
+          x 39 cm e 19 cm x 19 cm x 39 cm; e massas de 13 kg e 17 kg respectivamente'
+        - Bloco de 14 cm sem revestimento
+        - '1'
+        - '1'
+        - '8'
+        - '1'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '14'
+        - '100'
+        - ≥ 90
+        - ≥ 90
+        - '90'
+        - '90'
+      - - null
+        - Bloco de 19 cm sem revestimento
+        - '1'
+        - '1'
+        - '8'
+        - '1'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '-'
+        - '19'
+        - '120'
+        - ≥ 120
+        - ≥ 120
+        - '90'
+        - '90'
+      - - null
+        - Bloco de 14 cm com revestimento
+        - '1'
+        - '1'
+        - '8'
+        - '1'
+        - '1'
+        - '3'
+        - '1'
+        - '2'
+        - '9'
+        - 1,5
+        - '17'
+        - '150'
+        - ≥ 120
+        - ≥ 120
+        - '120'
+        - '120'
+      - - null
+        - Bloco de 19 cm com revestimento
+        - '1'
+        - '1'
+        - '8'
+        - '1'
+        - '1'
+        - '3'
+        - '1'
+        - '2'
+        - '9'
+        - 1,5
+        - '22'
+        - '185'
+        - ≥ 180
+        - ≥ 180
+        - '180'
+        - '180'
+      - - Paredes de tijolos cerâmicos de oito furos (dimensões nominais dos tijolos 10 cm x 20 cm x 20
+          cm (massa 2,9 Kg)
+        - Meio - tijolo com revestimento
+        - '-'
+        - '1'
+        - '4'
+        - '1'
+        - '1'
+        - '3'
+        - '1'
+        - '2'
+        - '9'
+        - 1,5
+        - '13'
+        - '150'
+        - ≥ 120
+        - ≥ 120
+        - '120'
+        - '120'
+      - - null
+        - Um tijolo com revestimento
+        - '-'
+        - '1'
+        - '4'
+        - '1'
+        - '1'
+        - '3'
+        - '1'
+        - '2'
+        - '9'
+        - 1,5
+        - '23'
+        - 300 (**)
+        - ≥ 240
+        - ≥ 240
+        - ≥ 240
+        - '> 240'
+      - - Paredes de concreto armado monolítico sem revestimento
+        - 'Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra
+          nº 3): armadura sim- ples posicionada à meia espessura das paredes, possuindo malha de lados
+          15 cm, de aço CA- 50A diâmetro ¼ pole- gada.'
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 11,5
+        - '150'
+        - '120'
+        - '120'
+        - '60'
+        - '90'
+      - - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - '16'
+        - '210'
+        - '180'
+        - '180'
+        - '180'
+        - '180'
+      - - (*) Paredes sem função estrutural ensaiadas totalmente vinculadas dentro da estrutura de concreto
+          armado, com dimensões 2,8m x 2,8m totalmente expostas ao fogo (em uma face) (**) Ensaio encerrado
+          sem ocorrência de falência em nenhum dos três critérios de avaliação.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    - bbox:
+      - 28.8
+      - 108.74
+      - 175.34
+      - 136.34
+      linhas:
+      - - ''
+      - - ''
+      - - Paredes ensaiadas (*)
+notas:
+- 'Anexo B da NT 2-19. "^" = mesclada com a de cima; "<" = mesclada com a da esquerda (o traço do concreto
+  armado ocupa as colunas de características). Fonte indicada: ABNT NBR 15758:2009.'
+- 'Notas da tabela (fora da comparação): (*) paredes sem função estrutural ensaiadas totalmente vinculadas
+  dentro da estrutura de concreto armado, 2,8 m x 2,8 m, expostas ao fogo em uma face; (**) ensaio encerrado
+  sem falência em nenhum dos três critérios.'
+inconsistencias_da_fonte:
+- 'Em duas linhas a resistência ao fogo supera o menor dos três critérios de avaliação: "Um tijolo com
+  revestimento" de barro cozido (integridade ≥ 240, resistência > 360) e concreto armado de 11,5 cm (isolação
+  60, resistência 90). Nas demais linhas a resistência é o menor critério.'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 1
+    coluna: 1
+    a: Espessura média da argamassa de assentamento (cm)
+    b: Espessura média da argamassa de assen- tamento (cm)
+    estado: verificada
+    score: 98.0
+  - linha: 14
+    coluna: 1
+    a: 'Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº
+      3): armadura simples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm, de
+      aço CA- 50A diâmetro ¼ polegada.'
+    b: 'Traço do concreto em volume, 1 cimento: 2,5 areia média: 3,5 agregado gaúcho (granizo pedra nº
+      3): armadura sim- ples posicionada à meia espessura das paredes, possuindo malha de lados 15 cm,
+      de aço CA- 50A diâmetro ¼ pole- gada.'
+    estado: verificada
+    score: 99.1

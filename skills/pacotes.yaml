@@ -1,0 +1,36 @@
+# Quais textos de normative/fontes cada skill recebe em references/ ao ser empacotada
+# (plano de correção, F1.1). Os nt-*.md e o Decreto NÃO ficam dentro de skills/: a cópia
+# única é normative/fontes. Imagens de página citadas pelos textos vão junto
+# (references/media/<nt>/...). "comuns": arquivos de skills/_comum/ copiados para
+# references/ (uma cópia no repositório, várias nos zips). Gerar: python -m tools.skills.pack
+schema_version: skills-pack/1.0
+vigentes:
+  orquestrar-analise-cbmerj:
+    fontes: [decreto-42-2018-coscip-compilado.md]
+    comuns: [uso-do-mcp-coscip-plantas.md, achado.schema.json]
+  analisar-processo-cbmerj:
+    fontes: []
+    comuns: [uso-do-mcp-coscip-plantas.md, achado.schema.json]
+  cbmerj-atos-administrativos: {fontes: []}
+  cbmerj-grupo-1-generalidades: {fontes: ["nt-1-*.md"]}
+  cbmerj-grupo-2-medidas-seguranca:
+    fontes: ["nt-2-*.md"]
+    comuns: [uso-do-mcp-coscip-plantas.md]
+  cbmerj-grupo-3-riscos-especificos: {fontes: ["nt-3-*.md"]}
+  cbmerj-grupo-4-estruturas-especiais: {fontes: ["nt-4-*.md"]}
+  cbmerj-grupo-5-eventos: {fontes: ["nt-5-*.md"]}
+  emitir-bilhete-cbmerj:
+    fontes: []
+    comuns: [achado.schema.json]
+# Skills da geração antiga, mantidas só durante a transição (F3.2): remover da conta
+# depois de enviar os zips vigentes. Não são empacotadas por padrão.
+aposentar:
+  - analise-le-completa-pdf
+  - analise-eventos-completa-pdf
+  - analise-ca-completa-pdf
+  - consulta-nt-grupo1
+  - consulta-nt-grupo2
+  - consulta-nt-grupo3
+  - consulta-nt-grupo4
+  - consulta-nt-grupo5
+  - cbmerj-grupo-5-legado-nao-usar

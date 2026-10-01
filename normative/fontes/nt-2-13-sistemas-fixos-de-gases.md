@@ -166,6 +166,8 @@ Para efeito desta Nota Técnica, além das definições constantes da NT 1-02 - 
 
 ## Página 4
 
+![Representação visual da página 4](media/nt-2-13/pagina-04.jpg)
+
 classe B.
 
 4.10 Famílias de Substâncias Destruidoras da Camada de Ozônio (SDOs): clorofluorcarbonos (CFCs), hidroclorofluorcarbonos (HCFCs), Halons, brometo de metila, tetracloreto de carbono (CTC), Metilclorofórmio e hidrobromofluorcarbonos (HBFCs).
@@ -236,8 +238,7 @@ c) quando for adotado um gás ativo em concentrações acima do NOAEL.
 
 5.6.1 Os alarmes pré-descarga devem possuir intensidade sonora 15 dB acima da intensidade sonora em condições normais do ambiente, não podendo ser
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 4.16 Protocolo de Montreal: |  | tratado internacional que |

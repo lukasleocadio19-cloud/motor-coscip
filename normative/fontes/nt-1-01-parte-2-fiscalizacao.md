@@ -100,8 +100,7 @@ G - Modelo do Termo de Ajustamento de Conduta
 
 H - Tabela das Multas Previstas no Termo De Ajustamento De Conduta (TAC)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -174,6 +173,8 @@ p) Nota DGST 333/2003, publicada no Boletim da SEDEC/CBMERJ nº 145 de 06/08/200
 
 ## Página 4
 
+![Representação visual da página 4](media/nt-1-01-parte-2/pagina-04.jpg)
+
 q) Ofício SEDEC/ASSEJUR nº 0029, de 26 de janeiro de 2015 - Registro ASSEJUR 2097/2014;
 
 r) Despacho SEDEC/ASSEJUR nº 089, de 21 de março de 2019 - Processo Administrativo E-27/039/15/2019;
@@ -226,8 +227,7 @@ Para efeito desta Nota Técnica aplicam-se, além das definições constantes da
 
 5.1.1 Os procedimentos administrativos referentes à fiscalização são aqueles relacionados às notificações,
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | por objetivo promover a adequação da edificação ou |  |
@@ -344,6 +344,8 @@ obrigatoriamente ter prioridade imediata em sua análise pelo Corpo de Bombeiros
 
 ## Página 7
 
+![Representação visual da página 7](media/nt-1-01-parte-2/pagina-07.jpg)
+
 consequente emissão de Laudo de Exigências, as Seções de Serviços Técnicos poderão lavrar a notificação prevista na alínea “a” do item 5.2.3.1 desta Nota Técnica, caso tal procedimento não tenha sido levado a termo.
 
 5.2 Da Notificação
@@ -376,8 +378,7 @@ f) para regularização de eventos temporários de reunião de público, deverá
 
 7
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tipo de Edificação ou Área de Risco |  | Prazo em |  |
@@ -387,6 +388,21 @@ f) para regularização de eventos temporários de reunião de público, deverá
 | Da Tabela 03 à 32 do Anexo III do Decreto Estadual nº 42/2018 - COSCIP, que possui isenção de Chuveiros Automáticos tipo Sprinklers | 90 |  |  |
 | Da Tabela 03 à 32 do Anexo III do Decreto Estadual nº 42/2018 - COSCIP, que não possui isenção de Chuveiros Automáticos tipo Sprinklers | 120 |  |  |
 | Sob administração pública | 180 |  |  |
+
+<!-- tabela-conferida: Tabela 1 p7 -->
+### Tabela 1 — Prazos para cumprimento de exigências constantes nas notificações descritas nesta alínea (conferida)
+
+| Tipo de Edificação ou Área de Risco | Prazo em dias corridos |
+| --- | --- |
+| Da Tabela 02 do Anexo III do Decreto Estadual nº 42/2018 – COSCIP | 60 |
+| Da Tabela 03 à 32 do Anexo III do Decreto Estadual nº 42/2018 – COSCIP, que possui isenção de Chuveiros Automáticos tipo Sprinklers | 90 |
+| Da Tabela 03 à 32 do Anexo III do Decreto Estadual nº 42/2018 – COSCIP, que não possui isenção de Chuveiros Automáticos tipo Sprinklers | 120 |
+| Sob administração pública | 180 |
+
+Fonte: NT 1-01 Parte 2, página 7, Tabela 1; conferida em 2026-09-29 (visual + geometrica).
+Tabela da alínea a) do item 5.2.3.1 (notificação para edificação ou área de risco que não esteja isenta ou dispensada de regularização e não possua Certificado de Aprovação válido).
+Fonte: CBMERJ.
+<!-- /tabela-conferida: Tabela 1 p7 -->
 
 ---
 
@@ -862,6 +878,8 @@ Outrossim, informamos que o presente Certificado de Despacho não é Documento h
 
 ## Página 16
 
+![Representação visual da página 16](media/nt-1-01-parte-2/pagina-16.jpg)
+
 De acordo com o parágrafo único do Art. 53 do Decreto Estadual nº 42/2018 (COSCIP), a cessação da interdição só será efetivada após a emissão do AUTO DE DESINTERDIÇÃO”.
 
 5.6.3.5 Sempre que for lavrado o auto de desinterdição, a Organização de Bombeiro Militar (OBM) deverá oficiar, anexando cópia do referido auto, o Batalhão de Polícia Militar, à Delegacia de Polícia Civil, o Ministério Público e o setor de licenciamento da Prefeitura Municipal da área de circunscrição de onde a edificação ou área de risco estiver localizada no âmbito do Estado do Rio de Janeiro para providências julgadas cabíveis.
@@ -898,8 +916,7 @@ g) anexar qualquer documento que seja julgado necessário.
 
 5.7.3 Tão logo seja(m) verificada(s) irregularidade(s) na emissão do Certificado de Aprovação Simplificado (CAS), o mesmo poderá ser automaticamente cancelado pelo CBMERJ, em sistema próprio, sem a necessidade de abertura de processo administrativo e nem publicação em boletim ostensivo, ficando a Organização de Bombeiro Militar (OBM) responsável por aplicar a notificação prevista na alínea “g” do item 5.2.3.1 e informar sobre a nulidade do Certificado de Aprovação Simplificado (CAS) ao setor de licenciamento e fiscalização da Prefeitura Municipal da área de circunscrição de onde a edificação ou área de
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 5.6.3.3 Antes do deferimento do processo de análise |  |  |  |
@@ -950,6 +967,8 @@ g) anexar qualquer documento que seja julgado necessário.
 
 ## Página 17
 
+![Representação visual da página 17](media/nt-1-01-parte-2/pagina-17.jpg)
+
 risco estiver localizada.
 
 5.7.4 Após enviar o processo para a Diretoria-Geral de Serviços Técnicos (DGST) ou Diretoria de Diversões Públicas (DDP) a Organização de Bombeiro Militar (OBM) deverá aguardar o retorno do processo administrativo com o despacho da respectiva Diretoria.
@@ -988,8 +1007,7 @@ c) edificações ou áreas de risco que tenham sofrido alterações de layout, a
 
 17
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | de fiscalização | na modalidade consagrada pelo |  |  |
@@ -1053,6 +1071,8 @@ c) edificações ou áreas de risco que tenham sofrido alterações de layout, a
 
 ## Página 18
 
+![Representação visual da página 18](media/nt-1-01-parte-2/pagina-18.jpg)
+
 5.9.2 Das edificações ou áreas de risco sob administração pública Federal ou Municipal, bem como as de propriedade privada de interesse público/social.
 
 18
@@ -1067,8 +1087,7 @@ c) edificações ou áreas de risco que tenham sofrido alterações de layout, a
 
 6.1.2 A celebração do compromisso de ajustamento de conduta dependerá de requerimento do proprietário ou responsável legal pela edificação ou área de risco, em que declare expressamente os motivos que o impossibilitem de cumprir dentro do prazo, as exigências legais formuladas mediante notificação regular e da aceitação, por meio de parecer favorável da Comissão de Controle e Fiscalização (CCF) prevista no inciso II do parágrafo único do Art. 68 do Decreto Estadual nº 42/2018 - COSCIP.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | c) findo o prazo previsto na notificação e |  |  |  |  |
@@ -1186,6 +1205,8 @@ c) edificações ou áreas de risco que tenham sofrido alterações de layout, a
 
 ## Página 19
 
+![Representação visual da página 19](media/nt-1-01-parte-2/pagina-19.jpg)
+
 6.1.3 A celebração do compromisso de ajustamento de conduta não anula a multa já aplicada, mas suspende o curso do procedimento regular de fiscalização que a originou, o qual somente poderá ser arquivado após o atendimento de todas as condições estabelecidas no respectivo processo.
 
 6.1.3.2 A recusa do compromitente em firmar o compromisso de ajustamento de conduta, após o requerimento, acarretará no indeferimento do processo e na continuação do procedimento regular de fiscalização.
@@ -1212,8 +1233,7 @@ ser designado um militar da Diretoria de Diversões Públicas (DDP) para fazer p
 
 19
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | irá manifestar-se por meio de parecer favorável ou |  |  |  |  |
@@ -1288,6 +1308,8 @@ ser designado um militar da Diretoria de Diversões Públicas (DDP) para fazer p
 
 ## Página 20
 
+![Representação visual da página 20](media/nt-1-01-parte-2/pagina-20.jpg)
+
 medidas de segurança contra incêndio e pânico previstas.
 
 6.1.9 O compromitente não poderá outorgar poderes para a assinatura do Termo de Ajustamento de Conduta (TAC), podendo efetuar a outorga apenas para requerimento de abertura de processo, com a devida autuação da procuração original ou cópia autenticada, com o devido reconhecimento de firma do outorgante.
@@ -1336,8 +1358,7 @@ h) cópia do Laudo de Exigências e demais documentações expedidas pelo CBMERJ
 
 6.4.1 O objetivo principal do cronograma é discriminar ações com data de início e término de maneira que ao final do processo, obrigatoriamente, a edificação ou
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | 6.3.1.1 Quando for autorizado o previsto no item |  |
@@ -1405,6 +1426,8 @@ h) cópia do Laudo de Exigências e demais documentações expedidas pelo CBMERJ
 
 ## Página 21
 
+![Representação visual da página 21](media/nt-1-01-parte-2/pagina-21.jpg)
+
 área de risco tenha condições de receber a certificação final junto ao CBMERJ (Certificado de Aprovação e/ou Certificado de Vistoria Anual).
 
 6.4.4 O cronograma deverá priorizar a execução das obrigações e medidas de segurança contra incêndio e pânico em ordem de complexidade.
@@ -1439,8 +1462,7 @@ c) abrir processo relacionado solicitando à Organização de Bombeiro Militar (
 
 21
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | termo no Diário Oficial do Estado do Rio de Janeiro e |  |
@@ -2337,8 +2359,7 @@ regularização, sob pena de aplicação de novo Auto de Interdição.
 
 34
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | DISPOSITIVOS PREVENTIVOS | EXIGIDO | EXISTENTE | ESTADO DE FUNCIONAMENTO |
@@ -2366,9 +2387,44 @@ regularização, sob pena de aplicação de novo Auto de Interdição.
 | 2.21 CONTROLE DE FUMAÇA |  |  |  |
 | 2.22 OUTROS: |  |  |  |
 
+<!-- tabela-conferida: Anexo E, item 2 p34 -->
+### Anexo E, item 2 — Dispositivos preventivos e meios complementares (modelo de relatório das condições de segurança) (conferida)
+
+| DISPOSITIVOS PREVENTIVOS | EXIGIDO | EXISTENTE | ESTADO DE FUNCIONAMENTO |
+| --- | --- | --- | --- |
+| 2.1 HIDRANTE(S) DE RECALQUE |  |  |  |
+| 2.2 HIDRANTE(S) URBANO(S) DO TIPO COLUNA |  |  |  |
+| 2.3 CANALIZAÇÃO OU REDE PREVENTIVA |  |  |  |
+| 2.4 HIDRANTES OU MANGOTINHOS |  |  |  |
+| 2.5 CHUVEIROS AUTOMÁTICOS |  |  |  |
+| 2.6 PCF NOS VÃOS DAS ESCADAS OU DAS RAMPAS |  |  |  |
+| 2.7 EXTINTORES |  |  |  |
+| 2.8 BOMBAS DE INCÊNDIO |  |  |  |
+| 2.9 SPDA |  |  |  |
+| 2.10 SISTEMA DE DETECÇÃO |  |  |  |
+| 2.11 SINALIZAÇÃO DE SEGURANÇA |  |  |  |
+| 2.12 SAÍDA DE EMERGÊNCIA |  |  |  |
+| 2.13 ILUMINAÇÃO DE EMERGÊNCIA |  |  |  |
+| 2.14 ALARME DE INCÊNDIO |  |  |  |
+| 2.15 PLANO DE EMERGÊNCIA |  |  |  |
+| 2.16 BRIGADA DE INCÊNDIO |  |  |  |
+| 2.17 CONTROLE DE MATERIAIS DE ACABAMENTO |  |  |  |
+| 2.18 SEGURANÇA ESTRUTURAL CONTRA INCÊNDIO |  |  |  |
+| 2.19 COMPARTIMENTAÇÃO VERTICAL |  |  |  |
+| 22.20 ACESSO DE VIATURA EM EDIFICAÇÕES |  |  |  |
+| 2.21 CONTROLE DE FUMAÇA |  |  |  |
+| 2.22 OUTROS: |  |  |  |
+
+Fonte: NT 1-01 Parte 2, página 34, Anexo E, item 2; conferida em 2026-09-29 (visual + geometrica).
+Título do quadro na página: "2 – DISPOSITIVOS PREVENTIVOS E MEIOS COMPLEMENTARES (ASSINALAR COM “X” OS EXIGIDOS E OS EXISTENTES E DESCREVER OBRIGATORIAMENTE O ESTADO DE FUNCIONAMENTO DELES)".
+As colunas EXIGIDO, EXISTENTE e ESTADO DE FUNCIONAMENTO são para preenchimento.
+<!-- /tabela-conferida: Anexo E, item 2 p34 -->
+
 ---
 
 ## Página 35
+
+![Representação visual da página 35](media/nt-1-01-parte-2/pagina-35.jpg)
 
 3 - EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS (ASSINALAR COM “X” OS AUTORIZADOS EM LAUDO DE EXIGÊNCIAS E OS EXISTENTES E DESCREVER OBRIGATORIAMENTE O ESTADO DE FUNCIONAMENTO DELES):
 
@@ -2382,8 +2438,7 @@ __________________________________________________
 
 35
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS | AUTORIZADO | EXISTENTE | ESTADO DE FUNCIONAMENTO |
@@ -2399,9 +2454,32 @@ __________________________________________________
 | 3.9 CALDEIRA(S) OU VASOS DE PRESSÃO |  |  |  |
 | 3.10 OUTROS: |  |  |  |
 
+<!-- tabela-conferida: Anexo E, item 3 p35 -->
+### Anexo E, item 3 — Equipamentos, instalações e sistemas especiais (modelo de relatório das condições de segurança) (conferida)
+
+| EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS | AUTORIZADO | EXISTENTE | ESTADO DE FUNCIONAMENTO |
+| --- | --- | --- | --- |
+| 3.1 SISTEMA DE CONDICIONAMENTO DE AR |  |  |  |
+| 3.2 SISTEMA DE EXAUSTÃO MECÂNICA |  |  |  |
+| 3.3 INSTALAÇÕES DE GÁS CANALIZADO DE RUA |  |  |  |
+| 3.4 CENTRAL DE RECIPIENTE(S) DE GÁS LIQUEFEITO DE PETRÓLEO |  |  |  |
+| 3.5 LÍQUIDOS INFLAMÁVEIS |  |  |  |
+| 3.6 GERADOR(ES) |  |  |  |
+| 3.7 MONTA-CARGA |  |  |  |
+| 3.8 ESTRUTURA(S) METÁLICA(S) |  |  |  |
+| 3.9 CALDEIRA(S) OU VASOS DE PRESSÃO |  |  |  |
+| 3.10 OUTROS: |  |  |  |
+
+Fonte: NT 1-01 Parte 2, página 35, Anexo E, item 3; conferida em 2026-09-29 (visual + geometrica).
+Título do quadro na página: "3 – EQUIPAMENTOS, INSTALAÇÕES E SISTEMAS ESPECIAIS (ASSINALAR COM “X” OS AUTORIZADOS EM LAUDO DE EXIGÊNCIAS E OS EXISTENTES E DESCREVER OBRIGATORIAMENTE O ESTADO DE FUNCIONAMENTO DELES)".
+As colunas AUTORIZADO, EXISTENTE e ESTADO DE FUNCIONAMENTO são para preenchimento.
+<!-- /tabela-conferida: Anexo E, item 3 p35 -->
+
 ---
 
 ## Página 36
+
+![Representação visual da página 36](media/nt-1-01-parte-2/pagina-36.jpg)
 
 ### ANEXO F - MODELO DO CRONOGRAMA DE EXECUÇÃO - COMPROMISSO DE AJUSTAMENTO DE CONDUTA
 
@@ -2427,8 +2505,7 @@ __________________________________________________
 
 ### CADASTRO NO CBMERJ
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | CRONOGRAMA PARA A EFETIVA REGULARIZAÇÃO |  |  |  |
@@ -2441,6 +2518,24 @@ __________________________________________________
 | (...) |  | / / | / / |  |
 | (...) |  | / / | / / |  |
 | Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA) |  | / / | / / |  |
+
+<!-- tabela-conferida: Anexo F p36 -->
+### Anexo F — Modelo do cronograma de execução – Compromisso de Ajustamento de Conduta (cronograma para a efetiva regularização) (conferida)
+
+| Exigências / medidas de segurança | Início | Conclusão |
+| --- | --- | --- |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA) | / / | / / |
+
+Fonte: NT 1-01 Parte 2, página 36, Anexo F; conferida em 2026-09-29 (visual + geometrica).
+Modelo: "(...)" e "/ /" são campos para preenchimento.
+OBS: Deverão ser descritas todas as etapas do processo com data de início e término, onde ao final OBRIGATORIAMENTE deverá estar prevista a legalização plena da edificação ou área de risco.
+<!-- /tabela-conferida: Anexo F p36 -->
 
 ---
 
@@ -2578,6 +2673,8 @@ ter cumprido a exigência formulada pela Notificação nº (...).
 
 ## Página 39
 
+![Representação visual da página 39](media/nt-1-01-parte-2/pagina-39.jpg)
+
 O COMPROMITENTE recebeu o segundo Auto de Infração nº (...), expedido pelo CBMERJ em (...), por não
 
 ter cumprido a exigência formulada pela Notificação nº (...).
@@ -2614,8 +2711,7 @@ e que já possuam o Certificado de Aprovação.
 
 39
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  |  |
@@ -2643,6 +2739,24 @@ e que já possuam o Certificado de Aprovação.
 |  | Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA) |  |  |  |
 |  |  |  |  |  |
 | 6.3 Para obtenção da Certificação Final, devem ser cumpridas além das obrigações previstas nesta cláusula, as exigências determinadas pelo CBMERJ. 6.4 Quando houver necessidade de emissão de Laudo de Exigências que contemple exigências não previstas na tabela acima ou até isenção de exigências inseridas nesta tabela, o COMPROMITENTE deverá solicitar aditamento do TAC, prevendo as devidas atualizações. CLÁUSULA SÉTIMA - DA FISCALIZAÇÃO |  |  |  |  |
+
+<!-- tabela-conferida: Cronograma da cláusula sexta do Anexo G p39 -->
+### Cronograma da cláusula sexta do Anexo G — Cronograma para a efetiva regularização (modelo do Termo de Ajustamento de Conduta) (conferida)
+
+| Exigências / medidas de segurança | Início | Conclusão |
+| --- | --- | --- |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| (...) | / / | / / |
+| Recebimento do Certificado de Aprovação (CA ou CAA) ou Certificado de Vistoria Anual (CVA) | / / | / / |
+
+Fonte: NT 1-01 Parte 2, página 39, Cronograma da cláusula sexta do Anexo G; conferida em 2026-09-29 (visual + geometrica).
+Modelo: "(...)" e "/ /" são campos para preenchimento.
+A extração lê a moldura da página inteira como tabela; só as linhas do cronograma entram na comparação.
+<!-- /tabela-conferida: Cronograma da cláusula sexta do Anexo G p39 -->
 
 ---
 
@@ -2764,8 +2878,7 @@ campos previstos como Diretoria-Geral de Serviços Técnicos (DGST) deverão ser
 
 42
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Classificação quanto ao risco de incêndio | Prazo de vigência do TAC (anos) | Área total construída (m²) |  |  |  |  |
@@ -2780,3 +2893,22 @@ campos previstos como Diretoria-Geral de Serviços Técnicos (DGST) deverão ser
 | Risco Grande | Até 1 ano | 6.400 UFIRRJ | 9.600 UFIRRJ | 64.000 UFIRRJ | 320.000 UFIR-RJ | 800.000 UFIR-RJ |
 |  | Até 3 anos | 9.600 UFIR-RJ | 14.400 UFIR-RJ | 96.000 UFIRRJ | 480.000 UFIR-RJ | 1.200.000 UFIRRJ |
 |  | Até 5 anos | 12.800 UFIR-RJ | 19.200 UFIR-RJ | 128.000 UFIRRJ | 640.000 UFIR-RJ | 1.600.000 UFIRRJ |
+<!-- tabela-conferida: Anexo H p42 -->
+### Anexo H — Tabela das multas previstas no Termo de Ajustamento de Conduta (TAC) (conferida)
+
+| Classificação quanto ao risco de incêndio | Prazo de vigência do TAC (anos) | Área total construída: até 900m² | Até 1.500m² | Até 5.000m² | Até 10.000m² | Mais de 10.000m² |
+| --- | --- | --- | --- | --- | --- | --- |
+| Risco Leve | Até 1 ano | 1.600 UFIR-RJ | 2.400 UFIR-RJ | 16.000 UFIR-RJ | 80.000 UFIR-RJ | 200.000 UFIR-RJ |
+| Risco Leve | Até 3 anos | 2.400 UFIR-RJ | 3.600 UFIR-RJ | 24.000 UFIR-RJ | 120.000 UFIR-RJ | 300.000 UFIR-RJ |
+| Risco Leve | Até 5 anos | 3.200 UFIR-RJ | 4.800 UFIR-RJ | 32.000 UFIR-RJ | 160.000 UFIR-RJ | 400.000 UFIR-RJ |
+| Risco Médio | Até 1 ano | 3.200 UFIR-RJ | 4.800 UFIR-RJ | 32.000 UFIR-RJ | 160.000 UFIR-RJ | 400.000 UFIR-RJ |
+| Risco Médio | Até 3 anos | 4.800 UFIR-RJ | 7.200 UFIR-RJ | 48.000 UFIR-RJ | 240.000 UFIR-RJ | 600.000 UFIR-RJ |
+| Risco Médio | Até 5 anos | 6.400 UFIR-RJ | 9.600 UFIR-RJ | 64.000 UFIR-RJ | 320.000 UFIR-RJ | 800.000 UFIR-RJ |
+| Risco Grande | Até 1 ano | 6.400 UFIR-RJ | 9.600 UFIR-RJ | 64.000 UFIR-RJ | 320.000 UFIR-RJ | 800.000 UFIR-RJ |
+| Risco Grande | Até 3 anos | 9.600 UFIR-RJ | 14.400 UFIR-RJ | 96.000 UFIR-RJ | 480.000 UFIR-RJ | 1.200.000 UFIR-RJ |
+| Risco Grande | Até 5 anos | 12.800 UFIR-RJ | 19.200 UFIR-RJ | 128.000 UFIR-RJ | 640.000 UFIR-RJ | 1.600.000 UFIR-RJ |
+
+Fonte: NT 1-01 Parte 2, página 42, Anexo H; conferida em 2026-09-29 (visual + geometrica).
+"UFIR-RJ" aparece quebrado em duas linhas em várias células ("UFIR-" / "RJ").
+<!-- /tabela-conferida: Anexo H p42 -->
+

@@ -1,0 +1,239 @@
+schema_version: tabela-conferida/1.0
+documento: NT 1-04
+arquivo: nt-1-04-classificacao-de-risco.md
+tabela: Tabela do Anexo A
+titulo: Classificação quanto à ocupação (página 7)
+pagina: 7
+fonte_pdf_sha256: 7dad5d695ed5112f96b8f367cfc6c25a1585eef302811467cbd547f3751e7543
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-1-04/pagina-07.png
+    imagem_sha256: 7c4f3337b7a7f55c74e83b1ab48a7e73288cc15acf9a351ba723f2bc01afd019
+    linhas_cabecalho: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Definição e exemplos
+    - - F
+      - Local de Reunião de Público
+      - F-1
+      - Local onde há objeto de valor inestimável
+      - Museus, centro de documentos históricos, galerias de arte, arquivos, bibliotecas e assemelhados
+    - - ^
+      - ^
+      - F-2
+      - Local religioso e velório
+      - Igrejas, capelas, sinagogas, mesquitas, templos, cemitérios, crematórios, necrotérios, salas de
+        funerais e assemelhados
+    - - ^
+      - ^
+      - F-3
+      - Centro esportivo e de exibições
+      - Arenas em geral, estádios, ginásios, piscinas, rodeios, autódromos, sambódromo, jóquei clube,
+        pista de patinação e assemelhados. Todos com arquibancadas.
+    - - ^
+      - ^
+      - F-4
+      - Estação e terminal de passageiro
+      - Estações rodoferroviárias e marítimas, portos, marina, metrô, aeroportos, helipontos, teleféricos,
+        estações de transbordo em geral e assemelhados
+    - - ^
+      - ^
+      - F-5
+      - Arte cênica e auditório
+      - Teatros em geral, cinemas, óperas, auditórios de estúdios de rádio e televisão, auditórios em
+        geral e assemelhados
+    - - ^
+      - ^
+      - F-6
+      - Boates e casas de show
+      - Boates, danceterias, discotecas, centro de convenções, e assemelhados
+    - - ^
+      - ^
+      - F-7
+      - Instalações temporárias
+      - Circos, parques temático, parque de diversões, feiras, eventos de foodtruck e assemelhados
+    - - ^
+      - ^
+      - F-8
+      - Local para refeição
+      - Restaurantes, lanchonetes, bares, cafés, refeitórios, cantinas e assemelhados
+    - - ^
+      - ^
+      - F-9
+      - Recreação pública
+      - Parques recreativos (sem atividade de diversões públicas) e assemelhados
+    - - ^
+      - ^
+      - F-10
+      - Exposição de animais
+      - Locais para exposição agropecuária e assemelhados. Edificações permanentes
+    - - ^
+      - ^
+      - F-11
+      - Clubes sociais e diversão
+      - Clubes sociais, bilhares, boliche, salões de baile, restaurantes com atividades de diversões públicas,
+        zoológicos, aquários, parque de diversões (edificação permanente), e assemelhados.
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 7
+      tabela_na_pagina: 1
+    linhas:
+    - - Grupo
+      - Ocupação/Uso
+      - Divisão
+      - Descrição
+      - Definição e exemplos
+    - - F
+      - Local de Reunião de Público
+      - F-1
+      - Local onde há objeto de valor inestimável
+      - Museus, centro de documentos históricos, galerias de arte, arquivos, bibliotecas e assemelhados
+    - - F-2
+      - Local religioso e velório
+      - Igrejas, capelas, sinagogas, mesquitas, templos, cemitérios, crematórios, necrotérios, salas de
+        funerais e assemelhados
+    - - F-3
+      - Centro esportivo e de exibições
+      - Arenas em geral, estádios, ginásios, piscinas, rodeios, autódromos, sambódromo, jóquei clube,
+        pista de patinação e assemelhados. Todos com arquibancadas.
+    - - F-4
+      - Estação e terminal de passageiro
+      - Estações rodoferroviárias e marítimas, portos, marina, metrô, aeroportos, helipontos, teleféricos,
+        estações de transbordo em geral e assemelhados
+    - - F-5
+      - Arte cênica e auditório
+      - Teatros em geral, cinemas, óperas, auditórios de estúdios de rádio e televisão, auditórios em
+        geral e assemelhados
+    - - F-6
+      - Boates e casas de show
+      - Boates, danceterias, discotecas, centro de convenções, e assemelhados
+    - - F-7
+      - Instalações temporárias
+      - Circos, parques temático, parque de diversões, feiras, eventos de foodtruck e assemelhados
+    - - F-8
+      - Local para refeição
+      - Restaurantes, lanchonetes, bares, cafés, refeitórios, cantinas e assemelhados
+    - - F-9
+      - Recreação pública
+      - Parques recreativos (sem atividade de diversões públicas) e assemelhados
+    - - F-10
+      - Exposição de animais
+      - Locais para exposição agropecuária e assemelhados. Edificações permanentes
+    - - F-11
+      - Clubes sociais e diversão
+      - Clubes sociais, bilhares, boliche, salões de baile, restaurantes com atividades de diversões públicas,
+        zoológicos, aquários, parque de diversões (edificação permanente), e assemelhados.
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 53.29
+      - 78.39
+      - 549.31
+      - 704.35
+      linhas:
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - Grupo
+        - Ocupação/Uso
+        - Divisão
+        - Descrição
+        - Definição e exemplos
+      - - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      - - F
+        - Local de Reunião de Público
+        - F-1
+        - Local onde há objeto de valor inestimável
+        - Museus, centro de documentos históricos, galerias de arte, arquivos, bibliotecas e asse- melhados
+      - - null
+        - null
+        - F-2
+        - Local religioso e velório
+        - Igrejas, capelas, sinagogas, mesquitas, templos, cemitérios, crematórios, necrotérios, salas
+          de funerais e assemelhados
+      - - null
+        - null
+        - F-3
+        - Centro esportivo e de exibições
+        - Arenas em geral, estádios, ginásios, piscinas, rodeios, autódromos, sambódromo, jóquei clube,
+          pista de patinação e assemelhados. Todos com arquibancadas.
+      - - null
+        - null
+        - F-4
+        - Estação e terminal de passageiro
+        - Estações rodoferroviárias e marítimas, portos, marina, metrô, aeroportos, helipontos, teleféricos,
+          estações de transbordo em geral e assemelhados
+      - - null
+        - null
+        - F-5
+        - Arte cênica e auditório
+        - Teatros em geral, cinemas, óperas, auditórios de estúdios de rádio e televisão, auditórios em
+          geral e assemelhados
+      - - null
+        - null
+        - F-6
+        - Boates e casas de show
+        - Boates, danceterias, discotecas, centro de convenções, e assemelhados
+      - - null
+        - null
+        - F-7
+        - Instalações temporárias
+        - Circos, parques temático, parque de diversões, feiras, eventos de foodtruck e assemelhados
+      - - null
+        - null
+        - F-8
+        - Local para refeição
+        - Restaurantes, lanchonetes, bares, cafés, refeitórios, cantinas e assemelhados
+      - - null
+        - null
+        - F-9
+        - Recreação pública
+        - Parques recreativos (sem atividade de diversões públicas) e assemelhados
+      - - null
+        - null
+        - F-10
+        - Exposição de animais
+        - Locais para exposição agropecuária e assemelhados. Edificações permanentes
+      - - null
+        - null
+        - F-11
+        - Clubes sociais e diversão
+        - Clubes sociais, bilhares, boliche, salões de baile, restaurantes com atividades de diversões
+          públicas, zoológicos, aquários, parque de diversões (edificação permanente), e assemelhados.
+notas:
+- Classificação quanto à ocupação (NT 1-04, Anexo A), páginas 5 a 10; um arquivo por página. "^" = célula
+  mesclada com a de cima (grupo e ocupação). Hifenização de fim de linha da imagem ("alo-jamentos", "iso-por")
+  desfeita.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+  celulas:
+  - linha: 1
+    coluna: 4
+    a: Museus, centro de documentos históricos, galerias de arte, arquivos, bibliotecas e assemelhados
+    b: Museus, centro de documentos históricos, galerias de arte, arquivos, bibliotecas e asse- melhados
+    estado: verificada
+    score: 98.9

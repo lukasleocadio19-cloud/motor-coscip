@@ -79,6 +79,8 @@ metodo: "extração textual por blocos; tabelas convertidas para Markdown; marca
 
 ## Página 1
 
+![Representação visual da página 1](media/decreto-42-2018-coscip-compilado/pagina-01.jpg)
+
 DECRETO Nº 42, DE 17 DE DEZEMBRO DE 2018
 
 REGULAMENTA O DECRETO-LEI Nº 247, DE 21 DE JULHO DE 1975, DISPONDO SOBRE O CÓDIGO DE SEGURANÇA CONTRA INCÊNDIO E PÂNICO - COSCIP, NO ÂMBITO DO ESTADO DO RIO DE JANEIRO. O INTERVENTOR NA ÁREA DE SEGURANÇA PÚBLICA DO ESTADO DO RIO DE JANEIRO, no uso de suas atribuições constitucionais e legais, que lhe conferem o art. 34, inciso III, da Constituição da República Federativa do Brasil, o art. 3º do Decreto Presidencial nº 9.288, de 16 de fevereiro de 2018, e o art. 145 da Constituição do Estado do Rio de Janeiro, e tendo em vista o que consta no Processo Administrativo nº E-27/033/002/2018, e
@@ -111,8 +113,7 @@ Seção II Da Aplicação Art. 3º - A regularização das edificações e área
 
 II - a mudança na ocupação ou outra qualquer nos registros da atividade;
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | CONSIDERANDO: |  |
@@ -808,13 +809,14 @@ LXXV- via interna: via privada para acesso às unidades de agrupamentos; LXXVI- 
 
 ## Página 20
 
+![Representação visual da página 20](media/decreto-42-2018-coscip-compilado/pagina-20.jpg)
+
 
 ### ANEXO II CLASSIFICAÇÃO DAS EDIFICAÇÕES
 
 Tabela 1: Classificação das edificações e áreas de risco quanto à ocupação
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
@@ -832,15 +834,38 @@ Tabela 1: Classificação das edificações e áreas de risco quanto à ocupaç�
 |  |  | C-3 | Shopping centers | Centro de compras em geral (shopping centers) |
 |  |  | C-4 | Quiosque | Ponto de venda localizado no mall de centro comercial e de centro de compras em geral (shopping centers) |
 
+<!-- tabela-conferida: Tabela 1 do Anexo II p20 -->
+### Tabela 1 do Anexo II — Classificação das edificações e áreas de risco quanto à ocupação (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| A | Residencial | A-1 | Residencial privativa unifamiliar | Casas térreas ou assobradadas (isoladas e não isoladas) |
+| A | Residencial | A-2 | Residencial privativa multifamiliar | Edifícios de apartamento em geral |
+| A | Residencial | A-3 | Residencial coletiva | Pensionatos, internatos, orfanatos, alojamentos, mosteiros, conventos. |
+| A | Residencial | A-4 | Agrupamento residencial privativo unifamiliar | Conjunto de duas ou mais edificações residenciais privativas unifamiliares dentro de um lote. |
+| A | Residencial | A-5 | Agrupamento residencial privativo multifamiliar | Conjunto de duas ou mais edificações residenciais privativas multifamiliares dentro de um lote. |
+| A | Residencial | A-6 | Mista | Edificação composta de unidades residenciais privativas (apartamentos) e unidades autônomas destinadas a espaços comerciais (lojas ou salas). |
+| B | Serviço de hospedagem | B-1 | Hotel e assemelhados | Hotéis, motéis, pensões, hospedarias, pousadas, albergues, casas de cômodos, camping. |
+| B | Serviço de hospedagem | B-2 | Hotel residencial | Hotéis e assemelhados com cozinha própria nos apartamentos (incluem-se, flats, apart-hotel, hotel residência, e similares destinados a ocupação transitória) |
+| C | Comercial | C-1 | Comercial 1 | Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio 1 conforme Nota Técnica específica, tais como: artigos de metal, louças, artigos hospitalares, edifícios de lojas de departamentos, magazines, armarinhos, galerias comerciais, supermercados em geral, mercados e outros. |
+| C | Comercial | C-2 | Comercial 2 | Edificações comerciais, que em função da atividade desenvolvida, ficam enquadradas no Risco Médio 2 conforme Nota Técnica específica, tais como: comércio atacadista de produtos químicos e petroquímicos, de resíduos de papel e papelão, espuma e isopor, etc. |
+| C | Comercial | C-3 | Shopping centers | Centro de compras em geral (shopping centers) |
+| C | Comercial | C-4 | Quiosque | Ponto de venda localizado no mall de centro comercial e de centro de compras em geral (shopping centers) |
+
+Fonte: Decreto 42/2018, página 20, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + geometrica).
+Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+<!-- /tabela-conferida: Tabela 1 do Anexo II p20 -->
+
 ---
 
 ## Página 21
 
+![Representação visual da página 21](media/decreto-42-2018-coscip-compilado/pagina-21.jpg)
+
 
 Tabela 1 - Continuação
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
@@ -854,15 +879,34 @@ Tabela 1 - Continuação
 |  |  | E-2 | Escolar especial | Escolas de artes e artesanato, de línguas, de cultura geral, de cultura estrangeira, escolas religiosas e assemelhados |
 |  |  | E-3 | Espaço para cultura física | Locais de ensino e/ou práticas de artes marciais, natação, ginástica (artística, dança, musculação e outros) esportes coletivos (tênis, futebol e outros que não estejam incluídos em F-3), sauna, casas de fisioterapia e assemelhados. Sem arquibancadas. |
 
+<!-- tabela-conferida: Tabela 1 do Anexo II p21 -->
+### Tabela 1 do Anexo II — Classificação das edificações e áreas de risco quanto à ocupação (continuação, p. 21) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| D | Serviço profissional e institucional | D-1 | Local para prestação de serviço profissional ou condução de negócios | Escritórios administrativos ou técnicos, instituições financeiras (exceto as classificadas em D-2), cabeleireiros, centros profissionais e assemelhados, repartições públicas (exceto as classificadas em D-5). |
+| D | Serviço profissional e institucional | D-2 | Agências bancárias | Agências bancárias e assemelhados |
+| D | Serviço profissional e institucional | D-3 | Serviços de manutenção e reparação (exceto os classificados em G-4) | Lavanderias, assistência técnica, reparação e manutenção de aparelhos eletrodomésticos, chaveiros, serviços de pintura, pintura de letreiros, serviços de limpeza e outros. |
+| D | Serviço profissional e institucional | D-4 | Laboratórios de análises clínicas e assemelhados | Laboratórios de análises clínicas sem internação e assemelhados. Laboratórios ambientais, fotográficos e assemelhados. |
+| D | Serviço profissional e institucional | D-5 | Edificação pública das forças armadas, policiais e militares estaduais | Quartéis, delegacias, postos policiais, grupamentos e assemelhados |
+| E | Escolar e cultura física | E-1 | Escolar em geral | Pré-escola (creches, escolas maternais, jardins de infância). Escolas de educação básica, ensino fundamental e médio, educação de jovens e adultos, ensino superior, ensino técnico e assemelhados. Escolas profissionais em geral. |
+| E | Escolar e cultura física | E-2 | Escolar especial | Escolas de artes e artesanato, de línguas, de cultura geral, de cultura estrangeira, escolas religiosas e assemelhados |
+| E | Escolar e cultura física | E-3 | Espaço para cultura física | Locais de ensino e/ou práticas de artes marciais, natação, ginástica (artística, dança, musculação e outros) esportes coletivos (tênis, futebol e outros que não estejam incluídos em F-3), sauna, casas de fisioterapia e assemelhados. Sem arquibancadas. |
+
+Fonte: Decreto 42/2018, página 21, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + geometrica).
+Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+<!-- /tabela-conferida: Tabela 1 do Anexo II p21 -->
+
 ---
 
 ## Página 22
 
+![Representação visual da página 22](media/decreto-42-2018-coscip-compilado/pagina-22.jpg)
+
 
 Tabela 1 - Continuação
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Ocupação/Uso |  |  |  |
@@ -881,15 +925,37 @@ Tabela 1 - Continuação
 |  |  | F-10 | Exposição de animais | Locais para exposição agropecuária e assemelhados. Edificações permanentes |
 |  |  | F-11 | Clubes sociais e diversão | Clubes sociais, bilhares, boliche, salões de baile, restaurantes com atividades de diversões públicas, zoológicos, aquários, parque de diversões (edificação permanente), e assemelhados. |
 
+<!-- tabela-conferida: Tabela 1 do Anexo II p22 -->
+### Tabela 1 do Anexo II — Classificação das edificações e áreas de risco quanto à ocupação (continuação, p. 22) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| F | Local de Reunião de Público | F-1 | Local onde há objeto de valor inestimável | Museus, centro de documentos históricos, galerias de arte, arquivos, bibliotecas e assemelhados |
+| F | Local de Reunião de Público | F-2 | Local religioso e velório | Igrejas, capelas, sinagogas, mesquitas, templos, cemitérios, crematórios, necrotérios, salas de funerais e assemelhados |
+| F | Local de Reunião de Público | F-3 | Centro esportivo e de exibições | Arenas em geral, estádios, ginásios, piscinas, rodeios, autódromos, sambódromo, jóquei clube, pista de patinação e assemelhados. Todos com arquibancadas. |
+| F | Local de Reunião de Público | F-4 | Estação e terminal de passageiro | Estações rodoferroviárias e marítimas, portos, marina, metrô, aeroportos, helipontos, teleféricos, estações de transbordo em geral e assemelhados |
+| F | Local de Reunião de Público | F-5 | Arte cênica e auditório | Teatros em geral, cinemas, óperas, auditórios de estúdios de rádio e televisão, auditórios em geral e assemelhados |
+| F | Local de Reunião de Público | F-6 | Boates e casas de show | Boates, danceterias, discotecas, centro de convenções, e assemelhados |
+| F | Local de Reunião de Público | F-7 | Instalações temporárias | Circos, parques temático, parque de diversões, feiras, eventos de foodtruck e assemelhados |
+| F | Local de Reunião de Público | F-8 | Local para refeição | Restaurantes, lanchonetes, bares, cafés, refeitórios, cantinas e assemelhados |
+| F | Local de Reunião de Público | F-9 | Recreação pública | Parques recreativos (sem atividade de diversões públicas) e assemelhados |
+| F | Local de Reunião de Público | F-10 | Exposição de animais | Locais para exposição agropecuária e assemelhados. Edificações permanentes |
+| F | Local de Reunião de Público | F-11 | Clubes sociais e diversão | Clubes sociais, bilhares, boliche, salões de baile, restaurantes com atividades de diversões públicas, zoológicos, aquários, parque de diversões (edificação permanente), e assemelhados. |
+
+Fonte: Decreto 42/2018, página 22, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + geometrica).
+Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+<!-- /tabela-conferida: Tabela 1 do Anexo II p22 -->
+
 ---
 
 ## Página 23
 
+![Representação visual da página 23](media/decreto-42-2018-coscip-compilado/pagina-23.jpg)
+
 
 Tabela 1 - Continuação
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  |  |  |
@@ -907,15 +973,36 @@ Tabela 1 - Continuação
 |  |  | H-3 | Hospital e assemelhados | Hospitais, casa de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos de atendimento de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital psiquiátrico. |
 |  |  | H-4 | Clínica e consultório médico, odontológico e assemelhados | Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados. Todos sem internação. |
 
+<!-- tabela-conferida: Tabela 1 do Anexo II p23 -->
+### Tabela 1 do Anexo II — Classificação das edificações e áreas de risco quanto à ocupação (continuação, p. 23) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| G | Serviço automotivo e assemelhado | G-1 | Garagem sem acesso de público e sem abastecimento | Garagens automáticas e garagens com manobristas. |
+| G | Serviço automotivo e assemelhado | G-2 | Garagem com acesso de público e sem abastecimento | Garagens coletivas sem automação, em geral e sem abastecimento (exceto veículos de carga e coletivos) |
+| G | Serviço automotivo e assemelhado | G-3 | Local dotado de abastecimento de combustível | Postos de abastecimento de combustíveis e serviço, garagens com abastecimento de combustível (exceto veículos de carga e coletivos) |
+| G | Serviço automotivo e assemelhado | G-4 | Serviço de conservação, manutenção e reparos | Oficinas de conserto de veículos. Borracharia (sem recauchutagem). Oficinas e garagens de veículos de carga e coletivos (tais como: empresas de ônibus, transportadoras, etc). Garagens de máquinas agrícolas e rodoviárias. Retificadoras de motores. |
+| G | Serviço automotivo e assemelhado | G-5 | Hangar | Abrigos para aeronaves com ou sem abastecimento |
+| G | Serviço automotivo e assemelhado | G-6 | Galpão ou garagem náutica | Abrigos para embarcações com ou sem abastecimento. Estrutura náutica que combina áreas para guarda de embarcações em terra ou sobre a água, cobertas ou não, e acessórios de acesso à água, podendo incluir oficina para manutenção e reparo de embarcações e seus equipamentos. |
+| H | Serviço de saúde | H-1 | Hospital veterinário e assemelhados | Hospitais, clínicas e consultórios veterinários e assemelhados (inclui-se alojamento com ou sem adestramento) |
+| H | Serviço de saúde | H-2 | Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais | Tratamento de dependentes de drogas, álcool e assemelhados, todos sem celas, asilos, residências geriátricas. |
+| H | Serviço de saúde | H-3 | Hospital e assemelhados | Hospitais, casa de saúde, prontos-socorros, clínicas com internação, ambulatórios e postos de atendimento de urgência, postos de saúde e puericultura e assemelhados com internação. Hospital psiquiátrico. |
+| H | Serviço de saúde | H-4 | Clínica e consultório médico, odontológico e assemelhados | Clínicas médicas, consultórios em geral, unidades de hemodiálise, ambulatórios e assemelhados. Todos sem internação. |
+
+Fonte: Decreto 42/2018, página 23, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + geometrica).
+Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+<!-- /tabela-conferida: Tabela 1 do Anexo II p23 -->
+
 ---
 
 ## Página 24
 
+![Representação visual da página 24](media/decreto-42-2018-coscip-compilado/pagina-24.jpg)
+
 
 Tabela 1 - Continuação
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso |  | Descrição |  |
@@ -966,15 +1053,36 @@ Tabela 1 - Continuação
 |  |  | L-3 |  | Depósito de material explosivo ou munições |
 |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 1 do Anexo II p24 -->
+### Tabela 1 do Anexo II — Classificação das edificações e áreas de risco quanto à ocupação (continuação, p. 24) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| I | Industrial | I-1 | Industrial 1 | Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são classificadas como Risco Médio 1 conforme Nota Técnica específica. |
+| I | Industrial | I-2 | Industrial 2 | Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são classificadas como Risco Médio 2 conforme Nota Técnica específica. |
+| I | Industrial | I-3 | Industrial 3 | Edificações industriais que, em função das atividades exercidas e dos materiais utilizados, são classificadas como Risco Grande conforme Nota Técnica específica. |
+| J | Depósito | J-1 | Depósitos de material incombustível | Edificações sem processo industrial que armazenam tijolos, pedras, areias, cimentos, metais e outros materiais incombustíveis, todos sem embalagem. |
+| J | Depósito | J-2 | Todo tipo de Depósito | Depósitos com carga de incêndio até 1.000 MJ/m², conforme Nota Técnica específica. |
+| J | Depósito | J-3 | Todo tipo de Depósito | Depósitos com carga de incêndio entre 1.000 e 1.200 MJ/m², conforme Nota Técnica específica. |
+| J | Depósito | J-4 | Todo tipo de Depósito | Depósitos onde a carga de incêndio ultrapassa a 1.200 MJ/m², conforme Nota Técnica específica. |
+| L | Explosivos ou munições | L-1 | Comércio | Comércio em geral de fogos de artifício, munições e assemelhados |
+| L | Explosivos ou munições | L-2 | Indústria | Indústria de material explosivo ou munições |
+| L | Explosivos ou munições | L-3 | Depósito | Depósito de material explosivo ou munições |
+
+Fonte: Decreto 42/2018, página 24, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + geometrica).
+Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+<!-- /tabela-conferida: Tabela 1 do Anexo II p24 -->
+
 ---
 
 ## Página 25
 
+![Representação visual da página 25](media/decreto-42-2018-coscip-compilado/pagina-25.jpg)
+
 
 Tabela 1 - Continuação
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
@@ -989,17 +1097,37 @@ Tabela 1 - Continuação
 |  |  | M-8 | Loteamento | Loteamento - é a divisão de glebas em lotes destinados à edificação, com aberturas de novas vias de circulação ou de logradouros públicos ou privados |
 |  |  | M-9 | Local onde a liberdade das pessoas sofre restrição | Manicômios, reformatórios, prisões em geral (casa de detenção, penitenciárias, presídios) e instituições assemelhadas, todos com celas |
 
+<!-- tabela-conferida: Tabela 1 do Anexo II p25 -->
+### Tabela 1 do Anexo II — Classificação das edificações e áreas de risco quanto à ocupação (continuação, p. 25) (conferida)
+
+| Grupo | Ocupação/Uso | Divisão | Descrição | Definição e exemplos |
+| --- | --- | --- | --- | --- |
+| M | Especial | M-1 | Túnel | Túnel rodoferroviário destinados a transporte de passageiros ou cargas diversas |
+| M | Especial | M-2 | Líquidos ou gases inflamáveis ou combustíveis | Edificação destinada a manipulação, armazenamento e distribuição de líquidos ou gases inflamáveis ou combustíveis, tais como: ponto de venda ou depósito de GLP, etc. |
+| M | Especial | M-3 | Central de comunicação | Central telefônica, centros de comunicação, antenas de telefonia e assemelhados. |
+| M | Especial | M-4 | Estrutura temporária | Canteiro de obras e assemelhados, (não possuem atividade de reunião de público) |
+| M | Especial | M-5 | Silos | Armazéns de grãos e assemelhados |
+| M | Especial | M-6 | Energia | Geração, transmissão e distribuição de energia e assemelhados. |
+| M | Especial | M-7 | Pátios de armazenagem | Pátios – área não coberta que tem como destinação de uso a estocagem de produtos. |
+| M | Especial | M-8 | Loteamento | Loteamento - é a divisão de glebas em lotes destinados à edificação, com aberturas de novas vias de circulação ou de logradouros públicos ou privados |
+| M | Especial | M-9 | Local onde a liberdade das pessoas sofre restrição | Manicômios, reformatórios, prisões em geral (casa de detenção, penitenciárias, presídios) e instituições assemelhadas, todos com celas |
+
+Fonte: Decreto 42/2018, página 25, Tabela 1 do Anexo II; conferida em 2026-09-29 (visual + geometrica).
+Grupo e ocupação/uso mesclados verticalmente na página; na publicação repetem-se em cada linha.
+<!-- /tabela-conferida: Tabela 1 do Anexo II p25 -->
+
 ---
 
 ## Página 26
+
+![Representação visual da página 26](media/decreto-42-2018-coscip-compilado/pagina-26.jpg)
 
 
 ### ANEXO III EXIGÊNCIAS PARA EDIFICAÇÕES E ÁREAS DE RISCO
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 2 - Exigências para edificações com área menor ou igual a 900m² e até 02 pavimentos. |  |  |  |  |  |  |  |  |  |  |  |
@@ -1029,15 +1157,46 @@ Tabela 1 - Continuação
 | Controle de fumaça | - | - | - | - | - | X3, 4 | - | - | - | - | - |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Não serão exigidas as medidas de segurança contra incêndio e pânico para as torres de comunicação (M-3) onde não haja edificação. 2- Exigido somente para lotação superior a 200 pessoas. 3- Exigido sistema de exaustão de fumaça em conformidade com a Nota Técnica específica para lotação até 500 pessoas. 4- Obrigatório para lotação superior a 500 pessoas, podendo ser substituído por chuveiros automáticos de resposta rápida com reserva de incêndio para 30 minutos. Obrigatório para lotação superior a 3.000 pessoas. Obrigatório para edificações sem janelas independentemente da lotação. OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Para o Grupo M (especiais), ver tabelas específicas, ressalvadas as medidas de segurança estabelecidas para a classificação M3; d) Para a divisão G-5 (Hangares), prever sistema de drenagem de líquidos nos pisos para bacias de contenção à distância. Não é permitido o armazenamento de líquidos combustíveis ou inflamáveis dentro dos hangares, exceto aqueles destinados exclusivamente a grupos motogeradores ou conjuntos de pressurização para sistemas de combate a incêndio; e) Para a divisão L-1 (comércio de fogos de artifício e munições) atender a Nota Técnica específica. As divisões L-2 e L-3 somente serão avaliadas pelo CBMERJ através de Comissão de Análise Técnica; f) Observar ainda as exigências para os riscos específicos nas respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 2 p26 -->
+### Tabela 2 — Exigências para edificações com área menor ou igual a 900m² e até 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | A, D, E, G | B | C | F1, F2, F3, F4, F7, F8, F10 | F5, F11 | F6 | F9 | H1, H4 | H2, H3 | I, J, M3 | L1 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X | X | X | X | X1 | X |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X1 | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X | X | X | X1 | - |
+| Saídas de Emergência | X | X | X | X | X | X | X | X | X | X1 | X |
+| Plano de emergência | - | - | - | - | - | X2 | - | - | X | - | - |
+| Controle de Materiais de Acabamento | - | X | - | X | X | X | - | - | X | - | X |
+| Controle de fumaça | - | - | - | - | - | X3, 4 | - | - | - | - | - |
+
+Fonte: Decreto 42/2018, página 26, Tabela 2; conferida em 2026-09-29 (visual + geometrica).
+Cabeçalho: Grupo / Divisão de ocupação e uso (grupos A, D, E, G; B; C; F; H; I, J, M3; L1). Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Observações específicas da tabela:
+1- Não serão exigidas as medidas de segurança contra incêndio e pânico para as torres de comunicação (M-3) onde não haja edificação.
+2- Exigido somente para lotação superior a 200 pessoas.
+3- Exigido sistema de exaustão de fumaça em conformidade com a Nota Técnica específica para lotação até 500 pessoas.
+4- Obrigatório para lotação superior a 500 pessoas, podendo ser substituído por chuveiros automáticos de resposta rápida com reserva de incêndio para 30 minutos. Obrigatório para lotação superior a 3.000 pessoas. Obrigatório para edificações sem janelas independentemente da lotação.
+Observações gerais da tabela:
+a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código;
+b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+c) Para o Grupo M (especiais), ver tabelas específicas, ressalvadas as medidas de segurança estabelecidas para a classificação M3;
+d) Para a divisão G-5 (Hangares), prever sistema de drenagem de líquidos nos pisos para bacias de contenção à distância. Não é permitido o armazenamento de líquidos combustíveis ou inflamáveis dentro dos hangares, exceto aqueles destinados exclusivamente a grupos motogeradores ou conjuntos de pressurização para sistemas de combate a incêndio;
+e) Para a divisão L-1 (comércio de fogos de artifício e munições) atender a Nota Técnica específica. As divisões L-2 e L-3 somente serão avaliadas pelo CBMERJ através de Comissão de Análise Técnica;
+f) Observar ainda as exigências para os riscos específicos nas respectivas Notas Técnicas.
+Redação dada pelo Decreto nº 46.925, de 05.2.2020 (indicação na página).
+<!-- /tabela-conferida: Tabela 2 p26 -->
+
 ---
 
 ## Página 27
 
+![Representação visual da página 27](media/decreto-42-2018-coscip-compilado/pagina-27.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 3 - Exigências para edificações do grupo A (divisões A-2 e A-3) com área superior a 900m² |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1074,15 +1233,55 @@ Tabela 1 - Continuação
 | Controle de Materiais de Acabamento | - | - | - | X8 | X8 | X8 | - | - | - | X8 | X8 | X8 |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com ATC superior a 600m². 2- Exigido apenas para as edificações com ATC superior a 900m². 3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 5- Deve haver, no mínimo, 02 escadas de emergência para edificações com 25 ou mais pavimentos. 6- Deve haver Elevador de Emergência para altura maior que 80m. 7- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 8- Aplica-se somente às áreas comuns da edificação. 9- As edificações da Divisão A-3 com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 10- Deve haver Elevador de Emergência para altura maior que 60m. OBSERVAÇÕES GERAIS: a) As edificações da Divisão A-1 ficam isentas de exigência de medidas preventiva nos termos do artigo 4º deste Código; b) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; c) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 3 p27 -->
+### Tabela 3 — Exigências para edificações do grupo A (divisões A-2 e A-3) com área superior a 900m² ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | A-2: Térrea | A-2: 2pav | A-2: 3pav | A-2: 4 e 5pav | A-2: Acima de 5pav com H ≤ 30m | A-2: H > 30m | A-3: Térrea | A-3: 2pav | A-3: 3pav | A-3: 4, 5 e 6pav | A-3: Acima de 6pav com H ≤ 30m | A-3: H > 30m |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X2 | X | X | X | X | X | X1 | X | X | X |
+| Chuveiros automáticos | - | - | - | - | - | X | - | - | - | - | - | X |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X2 | X | X | X | X | X | X1 | X | X | X |
+| Detecção de Incêndio | - | - | - | - | - | - | - | - | - | X | X | X |
+| Saídas de Emergência | X | X3 | X3 | X3 | X4 | X4, 5, 6 | X | X3 | X3 | X4, 9 | X4, 9 | X4, 9, 10 |
+| Hidrante urbano | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 |
+| Acesso de viatura em edificações | X | X | X | X | X | X | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X | X | X | - | - | - | X | X | X |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | - | - | - | X8 | X8 | X8 | - | - | - | X8 | X8 | X8 |
+
+Fonte: Decreto 42/2018, página 27, Tabela 3; conferida em 2026-09-29 (visual + geometrica).
+Grupo A – Residencial; divisões A-2 e A-3, cada uma com a classificação quanto ao nº de pavimentos e à altura (em metros). Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Observações específicas da tabela:
+1- Exigido apenas para as edificações com ATC superior a 600m².
+2- Exigido apenas para as edificações com ATC superior a 900m².
+3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica.
+4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.
+5- Deve haver, no mínimo, 02 escadas de emergência para edificações com 25 ou mais pavimentos.
+6- Deve haver Elevador de Emergência para altura maior que 80m.
+7- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+8- Aplica-se somente às áreas comuns da edificação.
+9- As edificações da Divisão A-3 com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência.
+10- Deve haver Elevador de Emergência para altura maior que 60m.
+Observações gerais da tabela:
+a) As edificações da Divisão A-1 ficam isentas de exigência de medidas preventiva nos termos do artigo 4º deste Código;
+b) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código;
+c) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+<!-- /tabela-conferida: Tabela 3 p27 -->
+
 ---
 
 ## Página 28
 
+![Representação visual da página 28](media/decreto-42-2018-coscip-compilado/pagina-28.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 4 - Exigências para agrupamento de edificações do grupo A |  |  |  |
@@ -1108,15 +1307,31 @@ Tabela 1 - Continuação
 | 2- As edificações residenciais privativas multifamiliares (A-2) que compõem o agrupamento da Divisão A-5, devem atender |  |  |  |
 | individualmente as medidas de segurança contra incêndio e pânico estabelecidas na Tabela 3 para a divisão A-2. |  |  |  |
 
+<!-- tabela-conferida: Tabela 4 p28 -->
+### Tabela 4 — Exigências para agrupamento de edificações do grupo A (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | A-4: até 06 casas ou lotes | A-4: mais de 06 casas ou lotes | A-5: independente do número de edificações |
+| --- | --- | --- | --- |
+| Hidrante urbano | - | X | X |
+| Acesso de viatura em edificações | X | X | X |
+
+Fonte: Decreto 42/2018, página 28, Tabela 4; conferida em 2026-09-29 (visual + geometrica).
+Grupo A – Residencial; A-4 classificada quanto ao nº de edificações ou lotes, A-5 quanto ao nº de edificações.
+Observações específicas da tabela:
+1- As edificações residenciais privativas unifamiliares (A-1) que compõem o agrupamento da divisão A-4, quando analisadas individualmente, ficam isentas da exigência de medidas de segurança contra incêndio e pânico nos termos do artigo 4º deste Código.
+2- As edificações residenciais privativas multifamiliares (A-2) que compõem o agrupamento da Divisão A-5, devem atender individualmente as medidas de segurança contra incêndio e pânico estabelecidas na Tabela 3 para a divisão A-2.
+<!-- /tabela-conferida: Tabela 4 p28 -->
+
 ---
 
 ## Página 29
 
+![Representação visual da página 29](media/decreto-42-2018-coscip-compilado/pagina-29.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 5 - Exigências para edificações do grupo A (divisão A-6) com área superior a 900m² |  |  |  |  |  |  |
@@ -1159,15 +1374,41 @@ Tabela 1 - Continuação
 | Controle de Materiais de Acabamento | X10 | X10 | X10 | X11 | X11 | X11 |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com ATC superior a 600m². 2- Exigido para loja com mais de 1.500m² por pavimento ou mais de 3.000m² de área total, que desenvolva a atividade de supermercado (C-1) ou loja de departamento (C-1). Nestes casos, a rede de chuveiros automáticos deverá ser instalada em toda a área comercial da edificação mista (A-6). 3- Exigido somente para as áreas de depósito superiores a 900m². 4- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 5- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. As edificações com 04 pavimentos e comércio somente no térreo poderão adotar escada de emergência do tipo Não Enclausurada, conforme NT específica. 6- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. As edificações com 25 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 7- Deve haver Elevador de Emergência para altura maior que 80m. 8- Exigido acima de 60m de altura. 9- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 10- Aplica-se somente às áreas comerciais da edificação. 11- Aplica-se somente às áreas comerciais e todas as áreas comuns da edificação. OBSERVAÇÕES GERAIS: a) As edificações da Divisão A-1 ficam isentas de exigência de medidas preventiva nos termos do artigo 4º deste Código; b) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; c) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 5 p29 -->
+### Tabela 5 — Exigências para edificações do grupo A (divisão A-6) com área superior a 900m² ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | Térrea | 2pav | 3pav | 4, 5 e 6pav | Acima de 6pav com H ≤ 30m | H > 30m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X1 | X | X | X |
+| Chuveiros automáticos | X2 | X2 | X2 | X2 | X2 | X |
+| Sinalização de segurança | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X1 | X | X | X |
+| Detecção de Incêndio | X3 | X3 | X3 | X3 | X3 | X3 |
+| Saídas de Emergência | X | X4 | X4 | X5 | X6 | X6, 7 |
+| Plano de emergência | - | - | - | - | - | X |
+| Controle de fumaça | - | - | - | - | - | X8 |
+| Hidrante urbano | X9 | X9 | X9 | X9 | X9 | X9 |
+| Acesso de viatura em edificações | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X | X | X |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X10 | X10 | X10 | X11 | X11 | X11 |
+
+Fonte: Decreto 42/2018, página 29, Tabela 5; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 5 p29 -->
+
 ---
 
 ## Página 30
 
+![Representação visual da página 30](media/decreto-42-2018-coscip-compilado/pagina-30.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 6 - Exigências para edificações do grupo B com área superior a 900 m² ou superior a 02 pavimentos |  |  |  |  |  |  |
@@ -1209,15 +1450,41 @@ Tabela 1 - Continuação
 | Controle de Materiais de Acabamento | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com ATC superior a 600m². 2- Exigido apenas para as edificações com 06 pavimentos. 3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 5- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 6- Deve haver Elevador de Emergência para altura maior que 60m. 7- Exigido acima de 60m de altura. 8- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 9- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 10- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos,até 90 metros de altura, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 6 p30 -->
+### Tabela 6 — Exigências para edificações do grupo B com área superior a 900 m² ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | Térrea | 2pav | 3pav | 4, 5 e 6pav | Acima de 6pav com H ≤ 30m | H > 30m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X1 | X | X | X |
+| Chuveiros automáticos | - | - | - | X2 | X | X |
+| Sinalização de segurança | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X | X | X | X |
+| Detecção de Incêndio | - | X | X | X | X | X |
+| Saídas de Emergência | X | X3 | X3 | X4 | X4, 5 | X4, 5, 6 |
+| Plano de emergência | - | - | - | - | X | X |
+| Controle de fumaça | - | - | - | - | - | X7 |
+| Hidrante urbano | X8 | X8 | X8 | X8 | X8 | X8 |
+| Acesso de viatura em edificações | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X9 | X9 | X10 |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 30, Tabela 6; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 6 p30 -->
+
 ---
 
 ## Página 31
 
+![Representação visual da página 31](media/decreto-42-2018-coscip-compilado/pagina-31.jpg)
+
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 7 - Exigências para edificações do grupo C com área superior a 900 m² ou superior a 02 pavimentos |  |  |  |  |  |  |
@@ -1259,15 +1526,41 @@ Tabela 1 - Continuação
 | Controle de Materiais de Acabamento | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Para C-1 e C-4 será exigido apenas para as edificações com ATC superior a 600m². Para C-2 e C-3 será exigido com qualquer ATC. 2- Exigido apenas para o estabelecimento comercial com mais de 1.500m² por pavimento ou mais de 3.000m² de área total, que desenvolva a atividade de supermercado (C-1), loja de departamento (C-1) ou shopping center (C-3). Nestes casos, a rede de chuveiros automáticos deverá ser instalada em toda a edificação comercial. A rede de chuveiros automáticos poderá ser substituída por compartimentação horizontal em células com área máxima de 1.500m², exceto quando a ATC for superior a 3.000m². 3- Para C-1 e C-2 e C-4 será exigido somente para as áreas de depósito superiores a 900m². Para C-3 será exigido para toda a edificação, sempre que a ATC da edificação for superior a 900m². 4- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 5- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 6- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 7- Deve haver Elevador de Emergência para altura maior que 60m. 8- Exigido apenas para edificações da divisão C-3 (shopping centers). 9- Exigido acima de 60m de altura. 10- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 11- Pode ser substituída por sistema de detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 12- Deve haver controle de fumaça nos átrios. 13- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 14- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, até 90 metros de altura, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. OBSERVAÇÕES GERAIS: a) As edificações da Divisão C-4 devem atender as exigências estabelecidas em Nota Técnica específica; b) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; c) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 7 p31 -->
+### Tabela 7 — Exigências para edificações do grupo C com área superior a 900 m² ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | Térrea | 2pav | 3pav | 4, 5 e 6pav | Acima de 6pav com H ≤ 30m | H > 30m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X1 | X | X | X |
+| Chuveiros automáticos | X2 | X2 | X2 | X2 | X2 | X |
+| Sinalização de segurança | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X1 | X | X | X |
+| Detecção de Incêndio | X3 | X3 | X3 | X3 | X | X |
+| Saídas de Emergência | X | X4 | X4 | X5 | X5, 6 | X5, 6, 7 |
+| Plano de emergência | X8 | X8 | X8 | X8 | X | X |
+| Controle de fumaça | - | - | - | - | - | X9 |
+| Hidrante urbano | X10 | X10 | X10 | X10 | X10 | X10 |
+| Acesso de viatura em edificações | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X11, 12 | X13 | X14 |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 31, Tabela 7; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 7 p31 -->
+
 ---
 
 ## Página 32
 
+![Representação visual da página 32](media/decreto-42-2018-coscip-compilado/pagina-32.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 8 - Exigências para edificações do grupo D com área superior a 900 m² ou superior a 02 pavimentos. |  |  |  |  |  |  |
@@ -1309,15 +1602,41 @@ Tabela 1 - Continuação
 | Controle de Materiais de Acabamento | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com ATC superior a 600m². 2- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 3- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 4- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 5- Deve haver Elevador de Emergência para altura maior que 60m. 6- Exigido apenas para edificações acima de 60m de altura. 7- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 8- Pode ser substituída por sistema de detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 9- Deve haver controle de fumaça nos átrios. 10- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 11- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, até 90 metros de altura, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 8 p32 -->
+### Tabela 8 — Exigências para edificações do grupo D com área superior a 900 m² ou superior a 02 pavimentos. (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | Térrea | 2pav | 3pav | 4, 5 e 6pav | Acima de 6pav com H ≤ 30m | H > 30m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X1 | X | X | X |
+| Chuveiros automáticos | - | - | - | - | - | X |
+| Sinalização de segurança | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X1 | X | X | X |
+| Detecção de Incêndio | - | - | - | - | X | X |
+| Saídas de Emergência | X | X2 | X2 | X3 | X3, 4 | X3, 4, 5 |
+| Plano de emergência | - | - | - | - | - | X6 |
+| Controle de fumaça | - | - | - | - | - | X6 |
+| Hidrante urbano | X7 | X7 | X7 | X7 | X7 | X7 |
+| Acesso de viatura em edificações | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X8, 9 | X10 | X11 |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 32, Tabela 8; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 8 p32 -->
+
 ---
 
 ## Página 33
 
+![Representação visual da página 33](media/decreto-42-2018-coscip-compilado/pagina-33.jpg)
+
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 9 - Exigências para edificações do grupo E com área superior a 900 m² ou superior a 02 pavimentos |  |  |  |  |  |  |
@@ -1359,15 +1678,41 @@ Tabela 1 - Continuação
 | Controle de Materiais de Acabamento | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para edificações com ATC superior a 600m². 2- Exigido apenas para edificações com 06 pavimentos. 3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 5- As edificações do Grupo E consideradas de interesse social, ficam dispensadas da exigência de Escada Enclausurada, desde que possuam até 04 pavimentos e atendam os requisitos de Saídas de Emergência definidos em Nota Técnica do CBMERJ. 6- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 7- Deve haver Elevador de Emergência para altura maior que 60m. 8- Somente para a divisão E-1. 9- Exigido apenas para edificações acima de 90m de altura. 10- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 11- A compartimentação vertical será considerada para as fachadas e selagens dos shafts e dutos de instalações. 12- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, até 90 metros de altura, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Os locais destinados a laboratórios devem ter proteção em função dos produtos utilizados; d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 9 p33 -->
+### Tabela 9 — Exigências para edificações do grupo E com área superior a 900 m² ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | Térrea | 2pav | 3pav | 4, 5 e 6pav | Acima de 6pav com H ≤ 30m | H > 30m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X1 | X | X | X |
+| Chuveiros automáticos | - | - | - | - | - | X |
+| Sinalização de segurança | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X1 | X | X | X |
+| Detecção de Incêndio | - | - | - | X2 | X | X |
+| Saídas de Emergência | X | X3 | X3 | X4, 5 | X4, 6 | X4, 6, 7 |
+| Plano de emergência | - | - | - | X8 | X | X |
+| Controle de fumaça | - | - | - | - | - | X9 |
+| Hidrante urbano | X10 | X10 | X10 | X10 | X10 | X10 |
+| Acesso de viatura em edificações | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X11 | X11 | X12 |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 33, Tabela 9; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 9 p33 -->
+
 ---
 
 ## Página 34
 
+![Representação visual da página 34](media/decreto-42-2018-coscip-compilado/pagina-34.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 10 - Exigências para edificações do grupo F (divisões F-1 e F-2) com área superior a 900 m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1418,15 +1763,41 @@ Tabela 1 - Continuação
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com ATC superior a 600m². 2- Nos ambientes em que houver guarda ou exposição de objetos de valor inestimável poderá ser substituído por sistema fixo de gases para combate a incêndio, dimensionado conforme requisitos estabelecidos em NT do CBMERJ. 3- Exigido apenas para edificações com 06 pavimentos. 4- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 5- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 6- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 7- Exigido apenas para edificações com previsão de público superior a 1.000 pessoas. 8- Exigido para edificações com altura superior a 90m. 9- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 10- Pode ser substituída por chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 11- Pode ser substituída por sistema de detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 12- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, até 60 metros de altura, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 13- Deve haver Elevador de Emergência para altura maior que 60 m. 14- A compartimentação vertical será considerada para as fachadas e selagens dos shafts e dutos de instalações. OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 10 p34 -->
+### Tabela 10 — Exigências para edificações do grupo F (divisões F-1 e F-2) com área superior a 900 m2 ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | F-1 — Térrea | F-1 — 2pav | F-1 — 3pav | F-1 — 4, 5 e 6pav | F-1 — Acima de 6pav com H ≤ 30m | F-1 — H > 30m | F-2 — Térrea | F-2 — 2pav | F-2 — 3pav | F-2 — 4, 5 e 6pav | F-2 — Acima de 6pav com H ≤ 30m | F-2 — H > 30m |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X1 | X | X | X | X | X | X1 | X | X | X |
+| Chuveiros automáticos | - | - | - | - | - | X2 | - | - | - | - | - | X |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Detecção de Incêndio | X | X | X | X | X | X | - | - | - | X3 | X | X |
+| Saídas de Emergência | X | X4 | X4 | X5 | X5, 6 | X5, 6,13 | X | X4 | X4 | X5 | X5, 6 | X5, 6, 13 |
+| Plano de emergência | - | - | - | - | X | X | X7 | X7 | X7 | X7 | X | X |
+| Controle de fumaça | - | - | - | - | - | X8 | - | - | - | - | - | X8 |
+| Hidrante urbano | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 |
+| Acesso de viatura em edificações | X | X | X | X | X | X | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X10 | X11 | X12 | - | - | - | X14 | X11 | X12 |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 34, Tabela 10; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 10 p34 -->
+
 ---
 
 ## Página 35
 
+![Representação visual da página 35](media/decreto-42-2018-coscip-compilado/pagina-35.jpg)
+
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 11 - Exigências para edificações do grupo F (divisões F-3, F-4 e F-9) com área superior a 900m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1507,15 +1878,42 @@ Tabela 1 - Continuação
 | b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; |  |  |  |  |  |  |  |  |  |  |  |  |
 | c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 11 p35 -->
+### Tabela 11 — Exigências para edificações do grupo F (divisões F-3, F-4 e F-9) com área superior a 900m2 ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | F-3/F-9 — Térrea | F-3/F-9 — 2pav | F-3/F-9 — 3pav | F-3/F-9 — 4, 5 e 6pav | F-3/F-9 — Acima de 6pav com H ≤ 30m | F-3/F-9 — H > 30m | F-4 — Térrea | F-4 — 2pav | F-4 — 3pav | F-4 — 4, 5 e 6pav | F-4 — Acima de 6pav com H ≤ 30m | F-4 — H > 30m |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X1 | X | X | X | X | X | X1 | X | X | X |
+| Chuveiros automáticos | - | - | - | - | - | X2 | X13 | X13 | X13 | X13 | X13 | X |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Detecção de Incêndio | - | - | - | X3 | X3 | X3 | X3 | X3 | X3 | X | X | X |
+| Saídas de Emergência | X | X4 | X4 | X5 | X5, 6 | X 5 ,6 ,7 | X | X4 | X4 | X5 | X5, 6 | X 5, 6, 7 |
+| Plano de emergência | X8 | X8 | X8 | X | X | X | X14 | X14 | X14 | X | X | X |
+| SPDA | X9 | X9 | X9 | X9 | X9 | X9 | - | - | - | - | - | - |
+| Controle de fumaça | - | - | - | - | - | X10 | - | X15 | X15 | X15 | X15 | X10, 15 |
+| Hidrante urbano | X11 | X11 | X11 | X11 | X11 | X11 | X11 | X11 | X11 | X11 | X11 | X11 |
+| Acesso de viatura em edificações | X | X | X | X | X | X | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X12 | X12 | X12 | - | - | - | X12 | X12 | X12 |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 35, Tabela 11; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 11 p35 -->
+
 ---
 
 ## Página 36
 
+![Representação visual da página 36](media/decreto-42-2018-coscip-compilado/pagina-36.jpg)
+
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 12 - Exigências para edificações do grupo F (divisões F-5, F-8 e F-11) com área superior a 900 m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1569,15 +1967,41 @@ Tabela 1 - Continuação
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com ATC superior a 600m². 2- Será exigido somente para as áreas de depósitos, almoxarifados e assemelhados superiores a 250m². 3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 5- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 6- Deve haver Elevador de Emergência para altura maior que 60m. 7- Somente para locais com público acima de 500 pessoas. 8- Exigido para edificações com altura superior a 60m. 9- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 10- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos; exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Nos locais de concentração de público, antes do início de cada evento, é obrigatória a explanação ao público da localização das saídas de emergência, bem como das medidas de segurança contra incêndio existentes no local; d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 12 p36 -->
+### Tabela 12 — Exigências para edificações do grupo F (divisões F-5, F-8 e F-11) com área superior a 900 m2 ou superior a 02 pavimentos. (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | F-5/F-11 — Térrea | F-5/F-11 — 2pav | F-5/F-11 — 3pav | F-5/F-11 — 4, 5 e 6pav | F-5/F-11 — Acima de 6pav com H ≤ 30m | F-5/F-11 — H > 30m | F-8 — Térrea | F-8 — 2pav | F-8 — 3pav | F-8 — 4, 5 e 6pav | F-8 — Acima de 6pav com H ≤ 30m | F-8 — H > 30m |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X1 | X | X | X | X | X | X1 | X | X | X |
+| Chuveiros automáticos | - | - | - | - | - | X | - | - | - | - | - | X |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Detecção de Incêndio | X2 | X2 | X2 | X | X | X | - | - | - | X | X | X |
+| Saídas de Emergência | X | X3 | X3 | X4 | X4, 5 | X4, 5, 6 | X | X3 | X3 | X4 | X4, 5 | X4, 5, 6 |
+| Plano de emergência | X7 | X7 | X7 | X7 | X7 | X7 | - | - | - | - | X | X |
+| Controle de fumaça | - | - | - | - | - | X8 | - | - | - | - | - | X8 |
+| Hidrante urbano | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 |
+| Acesso de viatura em edificações | X | X | X | X | X | X | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X10 | X10 | X | - | - | - | X10 | X10 | X |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 36, Tabela 12; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 12 p36 -->
+
 ---
 
 ## Página 37
 
+![Representação visual da página 37](media/decreto-42-2018-coscip-compilado/pagina-37.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 13 - Exigências para edificações do grupo F (divisões F-7 e F-10) com área superior a 900m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1627,15 +2051,41 @@ Tabela 1 - Continuação
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X2 | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Somente para locais com público acima de 1.000 pessoas. 2- As áreas cobertas e sem fechamento lateral, destinadas exclusivamente à proteção dos animais contra intempéries, não serão computadas no cálculo da ATC para definição das medidas preventivas, desde que atendidos os requisitos de isolamento de risco estabelecidos em Nota Técnica do CBMERJ. 3- Exigido apenas para as edificações com ATC superior a 600m². 4- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 5- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 6- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 7- Deve haver Elevador de Emergência para altura maior que 60m. 8- Exigido para edificações com altura superior a 60m. 9- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 10- Pode ser substituída por sistema de detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 13 p37 -->
+### Tabela 13 — Exigências para edificações do grupo F (divisões F-7 e F-10) com área superior a 900m2 ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | F-7 — Térrea | F-7 — 2pav | F-7 — 3pav | F-7 — 4, 5 e 6pav | F-7 — Acima de 6pav com H ≤ 30m | F-7 — H > 30m | F-10 — Térrea | F-10 — 2pav | F-10 — 3pav | F-10 — 4, 5 e 6pav | F-10 — Acima de 6pav com H ≤ 30m | F-10 — H > 30m |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | - | - | - | - | - | - | X2 | X | X3 | X | X | X |
+| Chuveiros automáticos | - | - | - | - | - | - | - | - | - | - | - | X |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X2 | X | X | X | X | X |
+| Alarme de Incêndio | - | - | - | - | - | - | X2 | X | X3 | X | X | X |
+| Detecção de Incêndio | - | - | - | - | - | - | - | - | - | X | X | X |
+| Saídas de Emergência | X | X | X | X | X | X | X | X4 | X4 | X5 | X5, 6 | X5, 6, 7 |
+| Plano de emergência | X1 | X1 | X1 | X1 | X1 | X1 | X1 | X1 | X1 | X1 | X1 | X1 |
+| Controle de fumaça | - | - | - | - | - | - | - | - | - | - | - | X8 |
+| Hidrante urbano | - | - | - | - | - | - | X9 | X9 | X9 | X9 | X9 | X9 |
+| Acesso de viatura em edificações | X | X | X | X | X | X | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | - | - | - | - | - | - | X10 | X10 | X |
+| Segurança Estrutural contra Incêndio | - | - | - | - | - | - | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X | X2 | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 37, Tabela 13; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 13 p37 -->
+
 ---
 
 ## Página 38
 
+![Representação visual da página 38](media/decreto-42-2018-coscip-compilado/pagina-38.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 14 - Exigências para edificações do grupo F (divisão F-6) com área superior a 900m2 |  |  |  |  |  |  |
@@ -1678,15 +2128,41 @@ Tabela 1 - Continuação
 | Controle de Materiais de Acabamento | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para edificações que possuam mais de 1.500m² em qualquer de seus pavimentos ou mais de 3.000m² de ATC. 2- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 3- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 4- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 5- Deve haver Elevador de Emergência para altura maior que 60m. 6- Exigido para edificações com público acima de 200 pessoas. 7- Exigido sistema de exaustão de fumaça em conformidade com a Nota Técnica específica para lotação até 500 pessoas. 8- Obrigatório para lotação superior a 500 pessoas, podendo ser substituído por chuveiros automáticos de resposta rápida com reserva de incêndio para 30 minutos. Obrigatório para lotação superior a 3.000 pessoas. Obrigatório para edificações sem janelas independentemente da lotação. 9- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 10- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos; exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Nos locais de concentração de público, antes do início de cada evento, é obrigatória a explanação ao público da localização das saídas de emergência, bem como dos sistemas de segurança contra incêndio e pânico existentes no local; d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 14 p38 -->
+### Tabela 14 — Exigências para edificações do grupo F (divisão F-6) com área superior a 900m2 ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | Térrea | 2pav | 3pav | 4, 5 e 6pav | Acima de 6pav com H ≤ 30m | H > 30m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X | X | X | X |
+| Chuveiros automáticos | X1 | X1 | X1 | X1 | X1 | X |
+| Sinalização de segurança | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X | X | X | X |
+| Detecção de Incêndio | X | X | X | X | X | X |
+| Saídas de Emergência | X | X2 | X2 | X3 | X3, 4 | X3, 4, 5 |
+| Plano de emergência | X6 | X6 | X6 | X | X | X |
+| Controle de fumaça | X7, 8 | X7, 8 | X7, 8 | X7, 8 | X7, 8 | X |
+| Hidrante urbano | X9 | X9 | X9 | X9 | X9 | X9 |
+| Acesso de viatura em edificações | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X10 | X10 | X |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 38, Tabela 14; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 14 p38 -->
+
 ---
 
 ## Página 39
 
+![Representação visual da página 39](media/decreto-42-2018-coscip-compilado/pagina-39.jpg)
+
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 15 - Exigências para edificações do grupo G (divisões G-1 e G-2) com área superior a 900m2 |  |  |  |  |  |  |
@@ -1750,15 +2226,40 @@ Tabela 1 - Continuação
 | b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; |  |  |  |  |  |  |
 | c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 15 p39 -->
+### Tabela 15 — Exigências para edificações do grupo G (divisões G-1 e G-2) com área superior a 900m2 ou superior a 02 pavimentos. (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | Térrea | 2pav | 3pav | 4, 5 e 6pav | Acima de 6pav com H ≤ 30m | H > 30m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Extintores11 | X | X | X | X | X | X |
+| Hidrantes e mangotinhos11 | X | X | X | X | X | X |
+| Chuveiros automáticos 11 | - | - | - | - | X1 | X |
+| Sinalização de segurança 11 | X | X | X | X | X | X |
+| Iluminação de Emergência 11 | X | X | X | X | X | X |
+| Alarme de Incêndio 11 | X2 | X2 | X2 | X2 | X2 | X2 |
+| Detecção de Incêndio 11 | - | - | - | X3 | X3 | X |
+| Saídas de Emergência 11 | X | X4 | X4 | X5 | X5 | X 5, 6, 7 |
+| Controle de fumaça 11 | - | - | - | - | - | X8 |
+| Hidrante urbano | X9 | X9 | X9 | X9 | X9 | X9 |
+| Acesso de viatura em edificações | X | X | X | X | X | X |
+| Compartimentação Vertical 11 | - | - | - | X10 | X10 | X10 |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 39, Tabela 15; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 15 p39 -->
+
 ---
 
 ## Página 40
 
+![Representação visual da página 40](media/decreto-42-2018-coscip-compilado/pagina-40.jpg)
+
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 16 - Exigências para edificações do grupo G (divisões G-3 e G-4) com área superior a 900 m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1811,15 +2312,41 @@ Tabela 1 - Continuação
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com mais de 10 pavimentos. 2- Deve haver pelo menos um acionador manual, por pavimento, a no máximo 5 m da saída de emergência. 3- Este sistema poderá ser substituído por chuveiros automáticos nas edificações com até 10 pavimentos. 4- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 5- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 6- Deve haver, no mínimo, 02 escadas de emergência para edificações com 15 ou mais pavimentos. 7- Deve haver Elevador de Emergência para altura maior que 60m. 8- Acima de 60 m de altura, conforme regulamentação do CBMERJ. 9- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 10- Exigido para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 11- Será exigido somente para as áreas de depósito superiores a 900m². OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar as exigências para postos de abastecimento de uso público e privado e quanto ao armazenamento de líquidos combustíveis e inflamáveis estabelecidos na Nota Técnica específica; d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 16 p40 -->
+### Tabela 16 — Exigências para edificações do grupo G (divisões G-3 e G-4) com área superior a 900 m2 ou superior a 02 pavimentos. (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | G-3 — Térrea | G-3 — 2pav | G-3 — 3pav | G-3 — 4, 5 e 6pav | G-3 — Acima de 6pav com H ≤ 30m | G-3 — H > 30m | G-4 — Térrea | G-4 — 2pav | G-4 — 3pav | G-4 — 4, 5 e 6pav | G-4 — Acima de 6pav com H ≤ 30m | G-4 — H > 30m |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X | X | X | X | X | X | X | X | X | X |
+| Chuveiros automáticos | - | - | - | - | X1 | X | - | - | - | - | - | X |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X | X | X | X | X | X |
+| Alarme de Incêndio | X2 | X2 | X2 | X2 | X2 | X2 | X | X | X | X | X | X |
+| Detecção de Incêndio | - | - | - | X3 | X3 | X | X11 | X11 | X11 | X11 | X | X |
+| Saídas de Emergência | X | X4 | X4 | X5 | X5, 6 | X 5, 6, 7 | X | X4 | X4 | X5 | X5, 6 | X 5, 6, 7 |
+| SPDA | X | X | X | X | X | X | - | - | - | - | - | - |
+| Controle de fumaça | - | - | - | - | - | X8 | - | - | - | - | - | X8 |
+| Hidrante urbano | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 |
+| Acesso de viatura em edificações | X | X | X | X | X | X | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X10 | X10 | X10 | - | - | - | X10 | X10 | X10 |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 40, Tabela 16; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 16 p40 -->
+
 ---
 
 ## Página 41
 
+![Representação visual da página 41](media/decreto-42-2018-coscip-compilado/pagina-41.jpg)
+
 
 .
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 17 - Exigências para edificações do grupo G (divisões G-5 e G-6) com área superior a 900 m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1892,15 +2419,42 @@ Tabela 1 - Continuação
 | d) Não é permitido o armazenamento de líquidos combustíveis ou inflamáveis dentro dos hangares; |  |  |  |  |  |  |  |  |  |  |  |  |
 | e) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 17 p41 -->
+### Tabela 17 — Exigências para edificações do grupo G (divisões G-5 e G-6) com área superior a 900 m2 ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | G-5 — Térrea | G-5 — 2pav | G-5 — 3pav | G-5 — 4, 5 e 6pav | G-5 — Acima de 6pav com H ≤ 30m | G-5 — H > 30m | G-6 — Térrea | G-6 — 2pav | G-6 — 3pav | G-6 — 4, 5 e 6pav | G-6 — Acima de 6pav com H ≤ 30m | G-6 — H > 30m |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X1 | X1 | X1 | X1 | X1 | X1 | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X | X | X | X | X | X | X | X | X | X |
+| Chuveiros automáticos | - | - | - | - | X2 | X2 | - | - | - | - | X2,9 | X2, 9 |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X9 | X9 | X9 | X9 | X9 | X9 |
+| Alarme de Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Detecção de Incêndio | X3 | X | X | X | X | X | X3, 9 | X9 | X9 | X9 | X9 | X9 |
+| Saídas de Emergência | X | X4 | X4 | X5 | X5 | X5 | X | X4, 9 | X4, 9 | X5, 9 | X5, 9 | X5, 9 |
+| Plano de emergência | X3 | X3 | X3 | X3 | X | X | X3 | X3 | X3 | X3 | X3 | X3 |
+| Controle de fumaça | - | - | - | - | - | X6 | - | - | - | - | - | - |
+| Hidrante urbano | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 |
+| Acesso de viatura em edificações | X | X | X | X | X | X | X | X | X | X | X | X |
+| Compartimentação Vertical | - | X | X | X | X | X | - | X9 | X9 | X9 | X9 | X9 |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
+| Sistema de espuma | X8 | X8 | X8 | X8 | X8 | X8 | - | - | - | - | - | - |
+
+Fonte: Decreto 42/2018, página 41, Tabela 17; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 17 p41 -->
+
 ---
 
 ## Página 42
 
+![Representação visual da página 42](media/decreto-42-2018-coscip-compilado/pagina-42.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 18 - Exigências para edificações do grupo H (divisões H-1 e H-2) com área superior a 900 m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1949,15 +2503,41 @@ Tabela 1 - Continuação
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com ATC superior a 600m². 2- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 3- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 4- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 5- Deve haver Elevador de Emergência para altura maior que 60m. 6- Exigido para edificações com altura maior que 60m. 7- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 8- Pode ser substituída por sistema de detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 9- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 10- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos,até 90 metros de altura, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 11- Exigido apenas para as edificações acima de 60m de altura. OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 18 p42 -->
+### Tabela 18 — Exigências para edificações do grupo H (divisões H-1 e H-2) com área superior a 900 m2 ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | H-1 — Térrea | H-1 — 2pav | H-1 — 3pav | H-1 — 4, 5 e 6pav | H-1 — Acima de 6pav com H ≤ 30m | H-1 — H > 30m | H-2 — Térrea | H-2 — 2pav | H-2 — 3pav | H-2 — 4, 5 e 6pav | H-2 — Acima de 6pav com H ≤ 30m | H-2 — H > 30m |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X1 | X | X | X | X | X | X | X | X | X |
+| Chuveiros automáticos | - | - | - | - | - | X | - | - | - | - | X | X |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X1 | X | X | X | X | X | X | X | X | X |
+| Detecção de Incêndio | - | - | - | - | X | X | X | X | X | X | X | X |
+| Saídas de Emergência | X | X2 | X2 | X3 | X3, 4 | X3, 4, 5 | X | X2 | X3 | X3 | X3, 4 | X3, 4, 5 |
+| Plano de emergência | - | - | - | - | - | X11 | X | X | X | X | X | X |
+| Controle de fumaça | - | - | - | - | - | X6 | - | - | - | - | - | X6 |
+| Hidrante urbano | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 | X7 |
+| Acesso de viatura em edificações | X | X | X | X | X | X | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X8 | X9 | X10 | - | - | - | X8 | X9 | X10 |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 42, Tabela 18; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 18 p42 -->
+
 ---
 
 ## Página 43
 
+![Representação visual da página 43](media/decreto-42-2018-coscip-compilado/pagina-43.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 19 - Exigências para edificações do grupo H (divisões H-3 e H-4) com área superior a 900 m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -2010,14 +2590,42 @@ Tabela 1 - Continuação
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Acionadores manuais serão obrigatórios nos corredores. 2- Dispensado nos corredores de circulação. 3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.As rampas poderão substituir as escadas, desde que atendam a inclinação máxima, característica do piso, largura e altura mínima e demais requisitos de saídas de emergência estabelecidos na Nota Técnica específica. 5- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 6- Deve haver Elevador de Emergência para edificação com altura superior a 15 m, aferida do piso do pavimento de escape ao piso do último pavimento. 7- Exigido para edificações com altura maior que 60m. 8- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 9- Exigido para selagens dos shafts e dutos de instalações. 10- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 11- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, até 60m de altura, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 12- Exigido apenas para as edificações com ATC superior a 600m². 13- Somente nas áreas de depósito superiores a 900m² e nos quartos. 14- Deve haver Elevador de Emergência para altura maior que 60m. 15- Pode ser substituída por sistema de detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 16- Deve haver controle de fumaça nos átrios. OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 19 p43 -->
+### Tabela 19 — Exigências para edificações do grupo H (divisões H-3 e H-4) com área superior a 900 m2 ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | H-3 — Térrea | H-3 — 2pav | H-3 — 3pav | H-3 — 4, 5 e 6pav | H-3 — Acima de 6pav com H ≤ 30m | H-3 — H > 30m | H-4 — Térrea | H-4 — 2pav | H-4 — 3pav | H-4 — 4, 5 e 6pav | H-4 — Acima de 6pav com H ≤ 30m | H-4 — H > 30m |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X | X | X | X | X | X | X12 | X | X | X |
+| Chuveiros automáticos | - | - | - | X | X | X | - | - | - | - | - | X |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X | X | X | X | X | X |
+| Alarme de Incêndio | X1 | X1 | X1 | X1 | X1 | X1 | X | X | X12 | X | X | X |
+| Detecção de Incêndio | X2 | X2 | X2 | X | X | X | X13 | X13 | X13 | X13 | X | X |
+| Saídas de Emergência | X | X3 | X4 | X4, 6 | X 4, 5, 6 | X 4, 5, 6 | X | X3 | X3 | X4 | X 4, 5 | X 4, 5, 14 |
+| Pressurização de escada de emergência, elevador de emergência, antecâmaras e áreas de refúgio | - | - | X | X | X | X | - | - | - | - | - | - |
+| Plano de emergência | X | X | X | X | X | X | - | - | - | - | X | X |
+| SPDA | X | X | X | X | X | X | - | - | - | - | - | - |
+| Controle de fumaça | - | - | - | - | - | X7 | - | - | - | - | - | X7 |
+| Hidrante urbano | X8 | X8 | X8 | X8 | X8 | X8 | X8 | X8 | X8 | X8 | X8 | X8 |
+| Acesso de viatura em edificações | X | X | X | X | X | X | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | X9 | X10 | X10 | X11 | - | - | - | X15, 16 | X10 | X11 |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 43, Tabela 19; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 19 p43 -->
+
 ---
 
 ## Página 44
 
+![Representação visual da página 44](media/decreto-42-2018-coscip-compilado/pagina-44.jpg)
+
 do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 20 - Exigências para edificações do grupo I (divisões I-1 e I-2) com área superior a 900m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -2066,15 +2674,41 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com ATC superior a 600m². 2- Exigido para I-1 e I-2, que possuam somatório de áreas destinadas a estoque ou industrialização superior a 1.500m². Para divisão I-1 que, comprovadamente, possuam carga incêndio até 300MJ/m², a exigência de chuveiros automáticos poderá ser substituída por compartimentação horizontal em células com área máxima de 3.000m². Para I-1 com carga incêndio superior a 300MJ/m² e I-2, a exigência de chuveiros automáticos poderá ser substituída por compartimentação horizontal em células com área máxima de 1.500m². 3- Não exigido para as edificações da divisão I-1 que, comprovadamente, industrializem ou estoquem apenas materiais incombustíveis. 4- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 5- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 6- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 7- Deve haver Elevador de Emergência para altura maior que 60m. 8- Exigido acima de 60m de altura. 9- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 20 p44 -->
+### Tabela 20 — Exigências para edificações do grupo I (divisões I-1 e I-2) com área superior a 900m2 ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | I-1 — Térrea | I-1 — 2pav | I-1 — 3pav | I-1 — 4, 5 e 6pav | I-1 — Acima de 6pav com H ≤ 30m | I-1 — H > 30m | I-2 — Térrea | I-2 — 2pav | I-2 — 3pav | I-2 — 4, 5 e 6pav | I-2 — Acima de 6pav com H ≤ 30m | I-2 — H > 30m |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X1 | X | X | X | X | X | X | X | X | X |
+| Chuveiros automáticos | X2, 3 | X2, 3 | X2, 3 | X2, 3 | X2, 3 | X2, 3 | X2 | X2 | X2 | X2 | X | X |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X1 | X | X | X | X | X | X | X | X | X |
+| Detecção de Incêndio | - | - | - | X | X | X | - | - | - | X | X | X |
+| Saídas de Emergência | X | X4 | X4 | X5 | X5, 6 | X5, 6, 7 | X | X4 | X4 | X5 | X5, 6 | X5, 6, 7 |
+| Plano de emergência | - | - | - | - | X | X | - | - | - | X | X | X |
+| Controle de fumaça | - | - | - | - | - | X8 | - | - | - | - | - | X8 |
+| Hidrante urbano | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 | X9 |
+| Acesso de viatura em edificações | X | X | X | X | X | X | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X | X | X | - | - | - | X | X | X |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 44, Tabela 20; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 20 p44 -->
+
 ---
 
 ## Página 45
 
+![Representação visual da página 45](media/decreto-42-2018-coscip-compilado/pagina-45.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 21 - Exigências para edificações do grupo I (divisão I-3) com área superior a 900m2 |  |  |  |  |  |  |
@@ -2119,15 +2753,41 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 | Controle de Materiais de Acabamento | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido para os galpões industriais com somatório de áreas destinadas a estoque ou industrialização superior a 1.500m². A exigência de chuveiros automáticos poderá ser substituída por compartimentação horizontal em células com área máxima de 1.500m², conforme regulamentação do CBMERJ. 2- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 3- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 4- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 5- Deve haver Elevador de Emergência para altura maior que 60m. 6- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 21 p45 -->
+### Tabela 21 — Exigências para edificações do grupo I (divisão I-3) com área superior a 900m2 ou superior a 02 pavimentos. (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | Térrea | 2pav | 3pav | 4, 5 e 6pav | Acima de 6pav com H ≤ 30m | H > 30m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X | X | X | X |
+| Chuveiros automáticos | X1 | X1 | X1 | X | X | X |
+| Sinalização de segurança | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X | X | X | X |
+| Detecção de Incêndio | - | - | - | X | X | X |
+| Saídas de Emergência | X | X2 | X2 | X3 | X3, 4 | X3, 4, 5 |
+| Plano de emergência | X | X | X | X | X | X |
+| Controle de fumaça | - | - | - | - | - | X |
+| Hidrante urbano | X6 | X6 | X6 | X6 | X6 | X6 |
+| Acesso de viatura em edificações | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X | X | X |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 45, Tabela 21; conferida em 2026-09-29 (visual + geometrica).
+As observações específicas e gerais da tabela estão no texto da página (e na imagem); valem para as células com a nota correspondente.
+<!-- /tabela-conferida: Tabela 21 p45 -->
+
 ---
 
 ## Página 46
 
+![Representação visual da página 46](media/decreto-42-2018-coscip-compilado/pagina-46.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 22 - Exigências para edificações do grupo J (divisões J-1 e J-2) com área superior a 900m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -2177,15 +2837,57 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 | Controle de Materiais de Acabamento | - | X | X | X | X | X | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido apenas para as edificações com ATC superior a 600m². 2- Exigido para os galpões com somatório de áreas destinadas a estoque ou industrialização superior a 1.500m². Para divisão J-2 que, comprovadamente, possuam carga incêndio até 300MJ/m², a exigência de chuveiros automáticos poderá ser substituída por compartimentação horizontal em células com área máxima de 3.000m². Para J-2 com carga incêndio superior a 300MJ/m², a exigência de chuveiros automáticos poderá ser substituída por compartimentação horizontal em células com área máxima de 1.500m². 3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 5- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 6- Deve haver Elevador de Emergência para altura maior que 60m. 7- Exigido acima de 60m de altura. 8- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 9- Exigido para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. 10- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 22 p46 -->
+### Tabela 22 — Exigências para edificações do grupo J (divisões J-1 e J-2) com área superior a 900m² ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | J-1 (material incombustível): Térrea | J-1 (material incombustível): 2pav | J-1 (material incombustível): 3pav | J-1 (material incombustível): 4, 5 e 6pav | J-1 (material incombustível): Acima de 6pav com H ≤ 30m | J-1 (material incombustível): H > 30m | J-2 (risco médio 1): Térrea | J-2 (risco médio 1): 2pav | J-2 (risco médio 1): 3pav | J-2 (risco médio 1): 4, 5 e 6pav | J-2 (risco médio 1): Acima de 6pav com H ≤ 30m | J-2 (risco médio 1): H > 30m |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X1 | X | X | X | X | X | X | X | X | X |
+| Chuveiros automáticos | - | - | - | - | - | X | X2 | X2 | X2 | X2 | X2 | X |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X1 | X | X | X | X | X | X | X | X | X |
+| Detecção de Incêndio | - | - | - | - | - | X | - | - | - | - | X | X |
+| Saídas de Emergência | X | X3 | X3 | X4 | X4, 5 | X4, 5, 6 | X | X3 | X3 | X4 | X4, 5 | X4, 5, 6 |
+| Plano de emergência | - | - | - | - | - | - | - | - | - | - | X | X |
+| Controle de fumaça | - | - | - | - | - | X7 | - | - | - | - | - | X7 |
+| Hidrante urbano | X8 | X8 | X8 | X8 | X8 | X8 | X8 | X8 | X8 | X8 | X8 | X8 |
+| Acesso de viatura em edificações | X | X | X | X | X | X | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X9 | X9 | X | - | - | - | X10 | X10 | X |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | - | X | X | X | X | X | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 46, Tabela 22; conferida em 2026-09-29 (visual + geometrica).
+Divisões e colunas: J-1 (material incombustível) — Térrea, 2pav, 3pav, 4, 5 e 6pav, Acima de 6pav com H ≤ 30m, H > 30m; J-2 (risco médio 1) — Térrea, 2pav, 3pav, 4, 5 e 6pav, Acima de 6pav com H ≤ 30m, H > 30m.
+Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Observações específicas da tabela:
+1- Exigido apenas para as edificações com ATC superior a 600m².
+2- Exigido para os galpões com somatório de áreas destinadas a estoque ou industrialização superior a 1.500m². Para divisão J-2 que, comprovadamente, possuam carga incêndio até 300MJ/m², a exigência de chuveiros automáticos poderá ser substituída por compartimentação horizontal em células com área máxima de 3.000m². Para J-2 com carga incêndio superior a 300MJ/m², a exigência de chuveiros automáticos poderá ser substituída por compartimentação horizontal em células com área máxima de 1.500m².
+3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica.
+4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.
+5- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência.
+6- Deve haver Elevador de Emergência para altura maior que 60m.
+7- Exigido acima de 60m de altura.
+8- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+9- Exigido para as compartimentações das fachadas e selagens dos shafts e dutos de instalações.
+10- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações.
+Observações gerais da tabela:
+a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código;
+b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+<!-- /tabela-conferida: Tabela 22 p46 -->
+
 ---
 
 ## Página 47
 
+![Representação visual da página 47](media/decreto-42-2018-coscip-compilado/pagina-47.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 23 - Exigências para edificações do grupo J (divisões J-3 e J-4) com área superior a 900m2 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -2234,15 +2936,54 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 | Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido para os galpões com somatório de áreas destinadas a estoque ou industrialização superior a 1.500m². A exigência de chuveiros automáticos poderá ser substituída por compartimentação horizontal em células com área máxima de 1.500m², conforme regulamentação do CBMERJ. 2- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 3- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 4- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência. 5- Deve haver Elevador de Emergência para altura maior que 60m. 6- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². 7- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações. OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 23 p47 -->
+### Tabela 23 — Exigências para edificações do grupo J (divisões J-3 e J-4) com área superior a 900m² ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | J-3 (risco médio 2): Térrea | J-3 (risco médio 2): 2pav | J-3 (risco médio 2): 3pav | J-3 (risco médio 2): 4, 5 e 6pav | J-3 (risco médio 2): Acima de 6pav com H ≤ 30m | J-3 (risco médio 2): H > 30m | J-4 (risco grande): Térrea | J-4 (risco grande): 2pav | J-4 (risco grande): 3pav | J-4 (risco grande): 4, 5 e 6pav | J-4 (risco grande): Acima de 6pav com H ≤ 30m | J-4 (risco grande): H > 30m |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X | X | X | X | X | X | X | X | X | X |
+| Chuveiros automáticos | X1 | X1 | X1 | X1 | X | X | X1 | X1 | X1 | X | X | X |
+| Sinalização de segurança | X | X | X | X | X | X | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Detecção de Incêndio | - | - | - | X | X | X | X | X | X | X | X | X |
+| Saídas de Emergência | X | X2 | X2 | X3 | X3, 4 | X3, 4, 5 | X | X2 | X2 | X3 | X3, 4 | X3, 4, 5 |
+| Plano de emergência | X | X | X | X | X | X | X | X | X | X | X | X |
+| Controle de fumaça | - | - | - | - | - | X | - | - | - | - | - | X |
+| Hidrante urbano | X6 | X6 | X6 | X6 | X6 | X6 | X6 | X6 | X6 | X6 | X6 | X6 |
+| Acesso de viatura em edificações | X | X | X | X | X | X | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X7 | X7 | X | - | - | - | X7 | X7 | X |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 47, Tabela 23; conferida em 2026-09-29 (visual + geometrica).
+Divisões e colunas: J-3 (risco médio 2) — Térrea, 2pav, 3pav, 4, 5 e 6pav, Acima de 6pav com H ≤ 30m, H > 30m; J-4 (risco grande) — Térrea, 2pav, 3pav, 4, 5 e 6pav, Acima de 6pav com H ≤ 30m, H > 30m.
+Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Observações específicas da tabela:
+1- Exigido para os galpões com somatório de áreas destinadas a estoque ou industrialização superior a 1.500m². A exigência de chuveiros automáticos poderá ser substituída por compartimentação horizontal em células com área máxima de 1.500m², conforme regulamentação do CBMERJ.
+2- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica.
+3- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.
+4- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência.
+5- Deve haver Elevador de Emergência para altura maior que 60m.
+6- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+7- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações.
+Observações gerais da tabela:
+a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código;
+b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+<!-- /tabela-conferida: Tabela 23 p47 -->
+
 ---
 
 ## Página 48
 
+![Representação visual da página 48](media/decreto-42-2018-coscip-compilado/pagina-48.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 24 - Exigências para edificações do grupo L (divisão L-1) com área superior a 900m2 |  |  |  |  |  |  |
@@ -2319,15 +3060,61 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 | Nota Técnica específica; |  |  |  |  |  |  |
 | e) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 24 p48 -->
+### Tabela 24 — Exigências para edificações do grupo L (divisão L-1) com área superior a 900m² ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | L-1 (comércio de fogos de artifício,..): Térrea | L-1 (comércio de fogos de artifício,..): 2pav | L-1 (comércio de fogos de artifício,..): 3pav | L-1 (comércio de fogos de artifício,..): 4, 5 e 6pav | L-1 (comércio de fogos de artifício,..): Acima de 6pav com H ≤ 30m | L-1 (comércio de fogos de artifício,..): H > 30m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X | X | X | X |
+| Chuveiros automáticos | X1 | X1 | X1 | X1 | X1 | X |
+| Sinalização de segurança | X | X | X | X | X | X |
+| Iluminação de Emergência | X2 | X2 | X2 | X2 | X2 | X2 |
+| Alarme de Incêndio | X | X | X | X | X | X |
+| Detecção de Incêndio | X | X | X | X | X | X |
+| Saídas de Emergência | X | X3 | X3 | X4 | X4, 5 | X4, 5, 6 |
+| Plano de emergência | X | X | X | X | X | X |
+| SPDA | X | X | X | X | X | X |
+| Controle de fumaça | - | - | - | - | - | X7 |
+| Hidrante urbano | X8 | X8 | X8 | X8 | X8 | X8 |
+| Acesso de viatura em edificações | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X9 | X10 | X11 |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 48, Tabela 24; conferida em 2026-09-29 (visual + geometrica).
+Divisões e colunas: L-1 (comércio de fogos de artifício,..) — Térrea, 2pav, 3pav, 4, 5 e 6pav, Acima de 6pav com H ≤ 30m, H > 30m.
+Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Observações específicas da tabela:
+1- Exigido para as edificações que possuam mais de 1.500m² em qualquer de seus pavimentos ou mais de 3.000m² de ATC.
+2- Somente para as áreas acessíveis ao público (área de vendas) e rotas de escape. Não deve ser instalada no interior das áreas de depósito e armazenamento de fogos de artifício e artefatos pirotécnicos.
+3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica.
+4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.
+5- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência.
+6- Deve haver Elevador de Emergência para altura maior que 60m.
+7- Exigido acima de 60m de altura.
+8- Exigido apenas para edificações com mais de 1.500m² de ATC.
+9- Pode ser substituída por sistema de detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações.
+10- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações.
+11- Pode ser substituída por sistema de controle de fumaça, detecção de incêndio e chuveiros automáticos, até 90 metros de altura, exceto para as compartimentações das fachadas e selagens dos shafts e dutos de instalações.
+Observações gerais da tabela:
+a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código;
+b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+c) As atividades de fabricação, utilização, armazenagem, depósito e comércio de explosivos e munições devem obedecer ao disposto na legislação específica e regulamentações do Exército Brasileiro;
+d) Atender às exigências e condições particulares das medidas de segurança contra incêndio para as edificações destinadas a fabricação, armazenagem e comércio de munições, explosivos e artefatos pirotécnicos, estabelecidas na Nota Técnica específica;
+e) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+<!-- /tabela-conferida: Tabela 24 p48 -->
+
 ---
 
 ## Página 49
 
+![Representação visual da página 49](media/decreto-42-2018-coscip-compilado/pagina-49.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 25 - Exigências para edificações e áreas de risco do grupo M (divisão M-1) com qualquer área |  |  |  |  |  |
@@ -2366,15 +3153,46 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 | Sistema de comunicação | X2 | X2 | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Exigido somente para túneis rodoviários. 2- Exigido somente para túneis metroviários e ferroviários. OBSERVAÇÕES GERAIS: a) As estações e terminais de passageiros devem atender as medidas de segurança contra incêndio e pânico estabelecidas na Tabela 11 para F-4; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Atender às exigências e condições particulares das medidas de segurança contra incêndio para Túneis, de acordo com a Nota Técnica específica; d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 25 p49 -->
+### Tabela 25 — Exigências para edificações e áreas de risco do grupo M (divisão M-1) com qualquer área ou número de pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | M-1 (Túneis rodoviários, metroviários e ferroviários), extensão em metros: Até 90 | M-1 (Túneis rodoviários, metroviários e ferroviários), extensão em metros: Acima de 90 até 500 | M-1 (Túneis rodoviários, metroviários e ferroviários), extensão em metros: Acima de 500 até 1000 | M-1 (Túneis rodoviários, metroviários e ferroviários), extensão em metros: Acima de 1000 até 3000 | M-1 (Túneis rodoviários, metroviários e ferroviários), extensão em metros: Acima de 3000 |
+| --- | --- | --- | --- | --- | --- |
+| Extintores | - | X1 | X1 | X1 | X |
+| Hidrantes e mangotinhos | - | X1 | X1 | X1 | X |
+| Sinalização de segurança | X | X | X | X | X |
+| Iluminação de Emergência | X2 | X2 | X | X | X |
+| Detecção de Incêndio | X2 | X2 | X | X | X |
+| Saídas de Emergência | X | X | X | X | X |
+| Plano de emergência | - | X | X | X | X |
+| Ventilação e controle de gases e fumaça | X2 | X | X | X | X |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X |
+| Sistema de comunicação | X2 | X2 | X | X | X |
+
+Fonte: Decreto 42/2018, página 49, Tabela 25; conferida em 2026-09-29 (visual + geometrica).
+Divisões e colunas: M-1 (Túneis rodoviários, metroviários e ferroviários), extensão em metros — Até 90, Acima de 90 até 500, Acima de 500 até 1000, Acima de 1000 até 3000, Acima de 3000.
+Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Observações específicas da tabela:
+1- Exigido somente para túneis rodoviários.
+2- Exigido somente para túneis metroviários e ferroviários.
+Observações gerais da tabela:
+a) As estações e terminais de passageiros devem atender as medidas de segurança contra incêndio e pânico estabelecidas na Tabela 11 para F-4;
+b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+c) Atender às exigências e condições particulares das medidas de segurança contra incêndio para Túneis, de acordo com a Nota Técnica específica;
+d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+<!-- /tabela-conferida: Tabela 25 p49 -->
+
 ---
 
 ## Página 50
 
+![Representação visual da página 50](media/decreto-42-2018-coscip-compilado/pagina-50.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 26 - Exigências para edificações e áreas de risco do grupo M (divisão M-2) com qualquer área |  |  |  |  |  |
@@ -2444,15 +3262,55 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 | expressa em m³ (metros cúbicos); |  |  |  |  |  |
 | e) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 26 p50 -->
+### Tabela 26 — Exigências para edificações e áreas de risco do grupo M (divisão M-2) com qualquer área ou número de pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | M-2 (Líquidos ou gases inflamáveis ou combustíveis): Tanques ou cilindros e processos: líquidos até 20 m³ ou gases até 10 m³ (b) | M-2 (Líquidos ou gases inflamáveis ou combustíveis): Tanques ou cilindros e processos: líquidos acima de 20 m³ ou gases acima de 10 m³ (b) | M-2 (Líquidos ou gases inflamáveis ou combustíveis): Plataforma de carregamento e descarregamento | M-2 (Líquidos ou gases inflamáveis ou combustíveis): Produtos acondicionados: líquidos até 20 m³ ou gases até 12.480 kg | M-2 (Líquidos ou gases inflamáveis ou combustíveis): Produtos acondicionados: líquidos acima de 20 m³ ou gases acima de 12.480 kg |
+| --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X |
+| Hidrantes e mangotinhos | - | X | X2 | X1 | X |
+| Sinalização de segurança | X | X | X | X | X |
+| Iluminação de Emergência | - | - | - | X3 | X3 |
+| Alarme de Incêndio | - | X | X | - | X |
+| Detecção de Incêndio | - | - | - | - | X |
+| Saídas de Emergência | - | - | X | X | X |
+| Plano de emergência | - | X | - | - | X |
+| SPDA | X | X | X | X | X |
+| Hidrante urbano | - | - | - | X4 | X4 |
+| Acesso de viatura em edificações | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X5 | X5 |
+| Segurança Estrutural contra Incêndio | - | - | - | X | X |
+| Controle de Materiais de Acabamento | - | - | - | X | X |
+| Sistema de Resfriamento | - | X | X2 | - | X |
+| Sistema de Espuma | - | X2 | X2 | - | X2 |
+
+Fonte: Decreto 42/2018, página 50, Tabela 26; conferida em 2026-09-29 (visual + geometrica).
+Divisões e colunas: M-2 (Líquidos ou gases inflamáveis ou combustíveis) — Tanques ou cilindros e processos: líquidos até 20 m³ ou gases até 10 m³ (b), Tanques ou cilindros e processos: líquidos acima de 20 m³ ou gases acima de 10 m³ (b), Plataforma de carregamento e descarregamento, Produtos acondicionados: líquidos até 20 m³ ou gases até 12.480 kg, Produtos acondicionados: líquidos acima de 20 m³ ou gases acima de 12.480 kg.
+Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Observações específicas da tabela:
+1- Não exigido para edificações com área menor ou igual a 900m² e até 02 pavimentos.
+2- Somente para líquidos inflamáveis e combustíveis, conforme exigências da Nota Técnica específica.
+3- Luminárias à prova de explosão, nas áreas de risco.
+4- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+5- Para edificações com 04 ou mais pavimentos.
+Observações gerais da tabela:
+a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código;
+b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+c) Devem ser verificadas as exigências quanto ao armazenamento e processamento (produção, manipulação etc.) de líquidos inflamáveis e combustíveis; e manipulação, armazenamento, comercialização e utilização de gás liquefeito de petróleo (GLP) e gás natural (GN), constante nas Notas Técnicas específicas;
+d) Considera-se para efeito de gases inflamáveis a capacidade total do volume em água que o recipiente pode comportar, expressa em m³ (metros cúbicos);
+e) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+<!-- /tabela-conferida: Tabela 26 p50 -->
+
 ---
 
 ## Página 51
 
+![Representação visual da página 51](media/decreto-42-2018-coscip-compilado/pagina-51.jpg)
+
 
 (Redação dada pelo Decreto nº 46.925, de 05.2.2020)
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 27 - Exigências para edificações do grupo M (divisão M-3) com área superior a 900m2 |  |  |  |  |  |  |
@@ -2508,15 +3366,52 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 | b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; |  |  |  |  |  |  |
 | c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 27 p51 -->
+### Tabela 27 — Exigências para edificações do grupo M (divisão M-3) com área superior a 900m² ou superior a 02 pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | M-3 (Central de comunicação): Térrea | M-3 (Central de comunicação): 2pav | M-3 (Central de comunicação): 3pav | M-3 (Central de comunicação): 4, 5 e 6pav | M-3 (Central de comunicação): Acima de 6pav com H ≤ 30m | M-3 (Central de comunicação): H > 30m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X | X | X | X | X | X |
+| Chuveiros automáticos | - | - | - | X1 | X1 | X |
+| Sinalização de segurança | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X | X | X | X |
+| Detecção de Incêndio | - | - | X | X | X | X |
+| Saídas de Emergência | X | X2 | X2 | X3 | X3, 4 | X3, 4 |
+| Plano de emergência | - | - | - | X | X | X |
+| Hidrante urbano | X5 | X5 | X5 | X5 | X5 | X5 |
+| Acesso de viatura em edificações | X | X | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X | X | X |
+| Segurança Estrutural contra Incêndio | X | X | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 51, Tabela 27; conferida em 2026-09-29 (visual + geometrica).
+Divisões e colunas: M-3 (Central de comunicação) — Térrea, 2pav, 3pav, 4, 5 e 6pav, Acima de 6pav com H ≤ 30m, H > 30m.
+Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Redação dada pelo Decreto nº 46.925, de 05.2.2020 (indicação na página).
+Observações específicas da tabela:
+1- O sistema de chuveiros automáticos para a divisão M-3 pode ser substituído por sistema fixo de gases para combate a incêndio, através de supressão total do ambiente, dimensionado conforme requisitos estabelecidos em NT do CBMERJ.
+2- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica.
+3- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.
+4- As edificações com 15 ou mais pavimentos, qualquer que seja a área construída, devem possuir no mínimo duas escadas de emergência.
+5- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+Observações gerais da tabela:
+a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código;
+b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+<!-- /tabela-conferida: Tabela 27 p51 -->
+
 ---
 
 ## Página 52
 
+![Representação visual da página 52](media/decreto-42-2018-coscip-compilado/pagina-52.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 28- Exigências para edificações e áreas de risco do grupo M (divisões M-4 e M-7) com qualquer área |  |  |  |  |
@@ -2571,15 +3466,48 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 | particulares para cada ocupação; |  |  |  |  |
 | f) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 28 p52 -->
+### Tabela 28 — Exigências para edificações e áreas de risco do grupo M (divisões M-4 e M-7) com qualquer área ou número de pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | M-4 (Canteiro de obras,..): ATC ≤ 900 m² | M-4 (Canteiro de obras,..): 900 m² < ATC ≤ 1.500 m² | M-4 (Canteiro de obras,..): ATC > 1.500 m² | M-7 (Pátio de armazenagem): Qualquer área (não coberta) 5 |
+| --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X |
+| Sinalização de segurança | X | X | X | X |
+| Alarme de Incêndio | - | - | X1 | - |
+| Saídas de Emergência | X2 | X2 | X2 | X2 |
+| Plano de emergência | - | X | X | X |
+| Hidrante urbano | - | - | - | X3 |
+| Acesso de viatura em edificações | X | X | X | X |
+| Sistema de Espuma | - | - | - | X4 |
+
+Fonte: Decreto 42/2018, página 52, Tabela 28; conferida em 2026-09-29 (visual + geometrica).
+Divisões e colunas: M-4 (Canteiro de obras,..) — ATC ≤ 900 m², 900 m² < ATC ≤ 1.500 m², ATC > 1.500 m²; M-7 (Pátio de armazenagem) — Qualquer área (não coberta) 5.
+Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Observações específicas da tabela:
+1- Somente para áreas de depósito com materiais combustíveis com mais de 900m².
+2- Para M-4 aceitam-se as próprias saídas da edificação, podendo as escadas ser do tipo NE. Para M-7 aceitam-se os arruamentos entre as quadras de armazenamento, conforme Nota Técnica específica.
+3- Os pátios de armazenagem (M-7) devem possuir hidrante urbano ou fonte de água para captação e utilização pelo CBMERJ em caso de incêndio, conforme os requisitos estabelecidos em Nota Técnica específica.
+4- Quando houver armazenamento de tanque portátil (isotanque) contendo líquidos combustíveis ou inflamáveis com capacidade total acima de 20m³ (metros cúbicos).
+5- Para ocupações subsidiárias, verificar a proteção específica nos termos deste Código.
+Observações gerais da tabela:
+a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código;
+b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+c) Observar também as exigências previstas em normas técnicas específicas;
+d) As áreas a serem consideradas para M-7 são as áreas dos terrenos abertos (lotes) onde há estocagem de materiais ou depósito de contêineres;
+e) Quando houver edificação (construção) dentro do terreno das áreas de riscos, deve-se também verificar as exigências particulares para cada ocupação;
+f) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+<!-- /tabela-conferida: Tabela 28 p52 -->
+
 ---
 
 ## Página 53
 
+![Representação visual da página 53](media/decreto-42-2018-coscip-compilado/pagina-53.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 29 - Exigências para edificações e áreas de risco do grupo M (divisão M-5) qualquer área ou altura |  |
@@ -2628,15 +3556,50 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 | b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; |  |
 | c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |
 
+<!-- tabela-conferida: Tabela 29 p53 -->
+### Tabela 29 — Exigências para edificações e áreas de risco do grupo M (divisão M-5) qualquer área ou altura (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | M-5 (Silos): Independente da área ou altura |
+| --- | --- |
+| Extintores | X |
+| Hidrantes e mangotinhos | X1 |
+| Chuveiros automáticos | X1 |
+| Sinalização de segurança | X |
+| Iluminação de Emergência | X2 |
+| Alarme de Incêndio | X |
+| Saídas de Emergência | X |
+| Plano de emergência | X3 |
+| SPDA | X |
+| Hidrante urbano | X4 |
+| Acesso de viatura em edificações | X |
+| Controle de Temperatura | X |
+| Controle de Fontes de Ignição | X |
+| Controle de Pós | X |
+
+Fonte: Decreto 42/2018, página 53, Tabela 29; conferida em 2026-09-29 (visual + geometrica).
+Divisões e colunas: M-5 (Silos) — Independente da área ou altura.
+Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Observações específicas da tabela:
+1- Observar regras e condições particulares para essa medida nas Notas Técnicas específicas.
+2- Somente para as áreas de circulação.
+3- Áreas de risco que possuam mais de um depósito de silagem.
+4- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+Observações gerais da tabela:
+a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código;
+b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+<!-- /tabela-conferida: Tabela 29 p53 -->
+
 ---
 
 ## Página 54
 
+![Representação visual da página 54](media/decreto-42-2018-coscip-compilado/pagina-54.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 30 - Exigências para edificações e áreas de risco do grupo M (divisão M-6) com qualquer área |  |  |  |  |  |  |
@@ -2695,15 +3658,52 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 | c) Para as subestações elétricas deve-se observar também os requisitos da Nota Técnica específica; |  |  |  |  |  |  |
 | d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 30 p54 -->
+### Tabela 30 — Exigências para edificações e áreas de risco do grupo M (divisão M-6) com qualquer área ou número de pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | M-6 (geração, transmissão e distribuição de energia, ...): Térrea | M-6 (geração, transmissão e distribuição de energia, ...): 2pav | M-6 (geração, transmissão e distribuição de energia, ...): 3pav | M-6 (geração, transmissão e distribuição de energia, ...): 4, 5 e 6pav | M-6 (geração, transmissão e distribuição de energia, ...): Acima de 6pav com H ≤ 30m | M-6 (geração, transmissão e distribuição de energia, ...): H > 30m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X1 | X1 | X | X | X | X |
+| Chuveiros automáticos | - | - | - | X2 | X2 | X2 |
+| Sinalização de segurança | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X |
+| Alarme de Incêndio | X | X | X | X | X | X |
+| Detecção de Incêndio | X | X | X | X | X | X |
+| Saídas de Emergência | X | X3 | X3 | X4 | X4 | X4 |
+| Plano de emergência | X1 | X1 | X1 | X | X | X |
+| Hidrante urbano | X5 | X5 | X5 | X5 | X5 | X5 |
+| Acesso de viatura em edificações | X1 | X1 | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X | X | X |
+| Segurança Estrutural contra Incêndio | X1 | X1 | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 54, Tabela 30; conferida em 2026-09-29 (visual + geometrica).
+Divisões e colunas: M-6 (geração, transmissão e distribuição de energia, ...) — Térrea, 2pav, 3pav, 4, 5 e 6pav, Acima de 6pav com H ≤ 30m, H > 30m.
+Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Observações específicas da tabela:
+1- Exigido apenas quando a ATC for superior a 900m².
+2- O sistema de chuveiros automáticos pode ser substituído por sistema fixo de gases para combate a incêndio, através de supressão total do ambiente, dimensionado conforme requisitos estabelecidos em NT do CBMERJ. Poderá, ainda, ser substituído por outros sistemas fixos de supressão de incêndio, compatíveis ao risco específico do ambiente e em conformidade com normas técnicas reconhecidas, desde que submetidos à análise do CBMERJ através de Comissão de Análise Técnica (CAT).
+3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica.
+4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.
+5- Exigido apenas quando a ATC for igual ou superior a 1.500m².
+Observações gerais da tabela:
+a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código;
+b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+c) Para as subestações elétricas deve-se observar também os requisitos da Nota Técnica específica;
+d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+<!-- /tabela-conferida: Tabela 30 p54 -->
+
 ---
 
 ## Página 55
 
+![Representação visual da página 55](media/decreto-42-2018-coscip-compilado/pagina-55.jpg)
+
 
 > Página sem texto extraível suficiente; consultar a representação visual ou o PDF oficial.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 31 - Exigências para áreas de risco do grupo M (divisão M-8) |  |
@@ -2727,15 +3727,34 @@ do Capítulo IV deste Código; b) As instalações elétricas devem estar em con
 | a) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |
 | b) Caso haja lotes edificados, o loteamento deve ser classificado como agrupamento de edificações. |  |
 
+<!-- tabela-conferida: Tabela 31 p55 -->
+### Tabela 31 — Exigências para áreas de risco do grupo M (divisão M-8) (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | M-8 (loteamentos): Qualquer loteamento |
+| --- | --- |
+| Hidrante urbano | X1 |
+| Acesso de viatura em edificações | X |
+
+Fonte: Decreto 42/2018, página 55, Tabela 31; conferida em 2026-09-29 (visual + geometrica).
+Divisões e colunas: M-8 (loteamentos) — Qualquer loteamento.
+Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Observações específicas da tabela:
+1- Será exigida a instalação de hidrantes urbanos em todos os loteamentos, em quantidade e localização de forma atender a distância máxima para cada lote e requisitos estabelecidos em Nota Técnica específica.
+Observações gerais da tabela:
+a) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+b) Caso haja lotes edificados, o loteamento deve ser classificado como agrupamento de edificações.
+<!-- /tabela-conferida: Tabela 31 p55 -->
+
 ---
 
 ## Página 56
 
+![Representação visual da página 56](media/decreto-42-2018-coscip-compilado/pagina-56.jpg)
+
 
 as medidas alternativas estabelecidos em Nota Técnica específica; d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 32 - Exigências para edificações do grupo M (divisão M-9) com qualquer área ou número de pavimentos |  |  |  |  |  |  |
@@ -2777,16 +3796,56 @@ as medidas alternativas estabelecidos em Nota Técnica específica; d) Observar 
 | Controle de Materiais de Acabamento | X | X | X | X | X | X |
 | OBSERVAÇÕES ESPECÍFICAS: 1- Não exigido para edificações com área menor ou igual a 900 m² e até 02 pavimentos. 2- Para as prisões em geral (Casas de Detenção, Penitenciárias, Presídios etc.) não é exigido detecção automática de incêndio. Para os hospitais psiquiátricos e assemelhados, prever detecção em todos os quartos. 3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica. 4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica. 5- Deve haver Elevador de Emergência para altura maior que 60m. 6- Exigido apenas para edificações acima de 60m de altura. 7- Exigido apenas para as edificações com ATC igual ou superior a 1.500m². OBSERVAÇÕES GERAIS: a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código; b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais; c) Para as edificações destinadas à restrição de liberdade, observar os requisitos de segurança contra incêndio e pânico e as medidas alternativas estabelecidos em Nota Técnica específica; d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas. |  |  |  |  |  |  |
 
+<!-- tabela-conferida: Tabela 32 p56 -->
+### Tabela 32 — Exigências para edificações do grupo M (divisão M-9) com qualquer área ou número de pavimentos (conferida)
+
+| Medidas de Segurança contra Incêndio e Pânico | M-9 (manicômios, reformatórios, prisões,..): Térrea | M-9 (manicômios, reformatórios, prisões,..): 2pav | M-9 (manicômios, reformatórios, prisões,..): 3pav | M-9 (manicômios, reformatórios, prisões,..): 4, 5 e 6pav | M-9 (manicômios, reformatórios, prisões,..): Acima de 6pav com H ≤ 30m | M-9 (manicômios, reformatórios, prisões,..): H > 30m |
+| --- | --- | --- | --- | --- | --- | --- |
+| Extintores | X | X | X | X | X | X |
+| Hidrantes e mangotinhos | X1 | X1 | X | X | X | X |
+| Chuveiros automáticos | - | - | - | - | - | X |
+| Sinalização de segurança | X | X | X | X | X | X |
+| Iluminação de Emergência | X | X | X | X | X | X |
+| Alarme de Incêndio | X1 | X1 | X | X | X | X |
+| Detecção de Incêndio | - | X1, 2 | X2 | X2 | X | X |
+| Saídas de Emergência | X | X3 | X3 | X4 | X4 | X4, 5 |
+| Plano de emergência | X1 | X1 | X | X | X | X |
+| Controle de fumaça | - | - | - | - | - | X6 |
+| Hidrante urbano | X7 | X7 | X7 | X7 | X7 | X7 |
+| Acesso de viatura em edificações | X1 | X1 | X | X | X | X |
+| Compartimentação Vertical | - | - | - | X | X | X |
+| Segurança Estrutural contra Incêndio | X1 | X1 | X | X | X | X |
+| Controle de Materiais de Acabamento | X | X | X | X | X | X |
+
+Fonte: Decreto 42/2018, página 56, Tabela 32; conferida em 2026-09-29 (visual + geometrica).
+Divisões e colunas: M-9 (manicômios, reformatórios, prisões,..) — Térrea, 2pav, 3pav, 4, 5 e 6pav, Acima de 6pav com H ≤ 30m, H > 30m.
+Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+Observações específicas da tabela:
+1- Não exigido para edificações com área menor ou igual a 900 m² e até 02 pavimentos.
+2- Para as prisões em geral (Casas de Detenção, Penitenciárias, Presídios etc.) não é exigido detecção automática de incêndio. Para os hospitais psiquiátricos e assemelhados, prever detecção em todos os quartos.
+3- A escada de emergência da edificação deve ser do tipo Não Enclausurada, conforme NT específica.
+4- A escada de emergência da edificação deve ser do tipo Enclausurada, conforme NT específica.
+5- Deve haver Elevador de Emergência para altura maior que 60m.
+6- Exigido apenas para edificações acima de 60m de altura.
+7- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+Observações gerais da tabela:
+a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições da Seção II do Capítulo IV deste Código;
+b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+c) Para as edificações destinadas à restrição de liberdade, observar os requisitos de segurança contra incêndio e pânico e as medidas alternativas estabelecidos em Nota Técnica específica;
+d) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+<!-- /tabela-conferida: Tabela 32 p56 -->
+
 ---
 
 ## Página 57
+
+![Representação visual da página 57](media/decreto-42-2018-coscip-compilado/pagina-57.jpg)
 
 ### ANEXO IV VALORES DAS MULTAS PREVISTAS NO TERMO DE AJUSTAMENTO DE CONDUTA (TAC)
 
 Tabela 33 - Valores de multas previstas no TAC em função da área total construída (ATC) e risco de incêndio
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Tabela 33 - Valores de multas previstas no TAC em função da área total construída (ATC) e risco de incêndio dos imóveis, estabelecimentos e áreas de risco |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -2797,3 +3856,17 @@ Tabela 33 - Valores de multas previstas no TAC em função da área total constr
 | Risco Médio |  | 3.200 a 6.400 |  |  | 4.800 a 9.600 |  |  | 32.000 a 64.000 |  |  | 160.000 a 320.000 |  |  | 400.000 a 800.000 |  |
 |  |  | UFIR-RJ |  |  | UFIR-RJ |  |  | UFIR-RJ |  |  | UFIR-RJ |  |  | UFIR-RJ |  |
 | Risco Grande | 6.400 a 12.800 UFIR-RJ |  |  | 9.600 a 19.200 UFIR-RJ |  |  | 64.000 a 128.000 UFIR-RJ |  |  | 320.000 a 640.000 UFIR-RJ |  |  | 800.000 a 1.600.000 UFIR-RJ |  |  |
+<!-- tabela-conferida: Tabela 33 p57 -->
+### Tabela 33 — Valores de multas previstas no TAC em função da área total construída (ATC) e risco de incêndio dos imóveis, estabelecimentos e áreas de risco (conferida)
+
+| Risco | ATC Até 900m² | ATC Até 1.500m² | ATC Até 5.000m² | ATC Até 10.000m² | ATC Mais de 10.000m² |
+| --- | --- | --- | --- | --- | --- |
+| Risco Leve | 1.600 a 3.200 UFIR-RJ | 2.400 a 4.800 UFIR-RJ | 16.000 a 32.000 UFIR-RJ | 80.000 a 160.000 UFIR-RJ | 200.000 a 400.000 UFIR-RJ |
+| Risco Médio | 3.200 a 6.400 UFIR-RJ | 4.800 a 9.600 UFIR-RJ | 32.000 a 64.000 UFIR-RJ | 160.000 a 320.000 UFIR-RJ | 400.000 a 800.000 UFIR-RJ |
+| Risco Grande | 6.400 a 12.800 UFIR-RJ | 9.600 a 19.200 UFIR-RJ | 64.000 a 128.000 UFIR-RJ | 320.000 a 640.000 UFIR-RJ | 800.000 a 1.600.000 UFIR-RJ |
+
+Fonte: Decreto 42/2018, página 57, Tabela 33; conferida em 2026-09-29 (visual + geometrica).
+Anexo IV do Decreto (valores das multas previstas no Termo de Ajustamento de Conduta).
+Conferência aritmética: em cada faixa de ATC o risco médio é o dobro do leve e o grande o dobro do médio, e o máximo de cada intervalo é o dobro do mínimo.
+<!-- /tabela-conferida: Tabela 33 p57 -->
+

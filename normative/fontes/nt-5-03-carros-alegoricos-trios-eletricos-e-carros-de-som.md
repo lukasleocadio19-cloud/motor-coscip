@@ -378,8 +378,7 @@ b) qualquer tipo de motorização, mesmo que elétrica para a manutenção dos e
 
 8.7 São objetos das exigências acima citadas, além de obrigados a obter autorização do CBMERJ, apenas os carros de som participantes de eventos.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | de |

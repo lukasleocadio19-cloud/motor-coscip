@@ -1,0 +1,75 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-02
+arquivo: nt-2-02-hidrantes-e-mangotinhos.md
+tabela: Tabela 4
+titulo: Cobertura de mangueiras
+pagina: 12
+fonte_pdf_sha256: 175c79afcac17335da3d68aef49e4ec9cc88706ddd012ed49e0b2748bf8524e9
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-02/pagina-12.jpg
+    imagem_sha256: 4fe0334c3250764cf05b76897234919ea182093ee612ee5b40c689341fbc123c
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Linhas de mangueira — comprimento máximo
+    - Linhas de mangueira — diâmetro
+    linhas:
+    - - LINHAS DE MANGUEIRA
+    - - Comprimento máximo
+      - Diâmetro
+    - - 30 m
+      - 38 mm (1 1/2”)
+    - - 30 m
+      - 63 mm (2 1/2”)
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 12
+      tabela_na_pagina: 1
+    linhas:
+    - - LINHAS DE MANGUEIRA
+    - - Comprimento máximo
+      - Diâmetro
+    - - 30 m
+      - 38 mm (1 1/2”)
+    - - 30 m
+      - 63 mm (2 1/2”)
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 306.77
+      - 470.35
+      - 544.78
+      - 569.89
+      linhas:
+      - - LINHAS DE MANGUEIRA
+        - null
+      - - Comprimento máximo
+        - Diâmetro
+      - - ''
+        - ''
+      - - 30 m
+        - 38 mm (1 1/2”)
+      - - ''
+        - ''
+      - - 30 m
+        - 63 mm (2 1/2”)
+notas:
+- 'Fonte indicada: CBMERJ. Seções de 15 m (5.13.2).'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada

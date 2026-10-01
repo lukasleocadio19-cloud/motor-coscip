@@ -1,0 +1,219 @@
+schema_version: tabela-conferida/1.0
+documento: Decreto 42/2018
+arquivo: decreto-42-2018-coscip-compilado.md
+tabela: Tabela 29
+titulo: Exigências para edificações e áreas de risco do grupo M (divisão M-5) qualquer área ou altura
+pagina: 53
+fonte_pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+conferida_em: '2026-09-29'
+forma:
+  faixa:
+  - 4
+  - 18
+  rotulos_quebrados: true
+  linhas_cabecalho: 0
+forma_geometrica:
+  faixa:
+  - 4
+  - 33
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/decreto-42-2018-coscip-compilado/pagina-53.jpg
+    imagem_sha256: f3d3c3deee3d81d303cda99e11b2c64fbb7b8c23eaac4db41a312b536a767cd3
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Medidas de Segurança contra Incêndio e Pânico
+    - 'M-5 (Silos): Independente da área ou altura'
+    linhas:
+    - - Extintores
+      - X
+    - - Hidrantes e mangotinhos
+      - X1
+    - - Chuveiros automáticos
+      - X1
+    - - Sinalização de segurança
+      - X
+    - - Iluminação de Emergência
+      - X2
+    - - Alarme de Incêndio
+      - X
+    - - Saídas de Emergência
+      - X
+    - - Plano de emergência
+      - X3
+    - - SPDA
+      - X
+    - - Hidrante urbano
+      - X4
+    - - Acesso de viatura em edificações
+      - X
+    - - Controle de Temperatura
+      - X
+    - - Controle de Fontes de Ignição
+      - X
+    - - Controle de Pós
+      - X
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 53
+      tabela_na_pagina: 1
+    linhas:
+    - - Extintores
+      - X
+    - - Hidrantes e mangotinhos
+      - X1
+    - - Chuveiros automáticos
+      - X1
+    - - Sinalização de segurança
+      - X
+    - - Iluminação de Emergência
+      - X2
+    - - Alarme de Incêndio
+      - X
+    - - Saídas de Emergência
+      - X
+    - - Plano de emergência
+      - X3
+    - - SPDA
+      - X
+    - - Hidrante urbano
+      - X4
+    - - Acesso de viatura em edificações
+      - X
+    - - Controle de Temperatura
+      - X
+    - - Controle de Fontes de Ignição
+      - X
+    - - Controle de Pós
+      - X
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.87
+      - 53.53
+      - 552.57
+      - 485.01
+      linhas:
+      - - Tabela 29 – Exigências para edificações e áreas de risco do grupo M (divisão M-5) qualquer área
+          ou altura
+        - null
+      - - Grupo de ocupação e uso
+        - GRUPO M – ESPECIAIS
+      - - Divisão
+        - M-5 (Silos)
+      - - Medidas de Segurança contra Incêndio e Pânico
+        - Independente da área ou altura
+      - - Extintores
+        - X
+      - - ''
+        - ''
+      - - Hidrantes e mangotinhos
+        - X1
+      - - ''
+        - ''
+      - - Chuveiros automáticos
+        - X1
+      - - ''
+        - ''
+      - - Sinalização de segurança
+        - X
+      - - ''
+        - ''
+      - - Iluminação de Emergência
+        - X2
+      - - ''
+        - ''
+      - - Alarme de Incêndio
+        - X
+      - - ''
+        - ''
+      - - Saídas de Emergência
+        - X
+      - - ''
+        - ''
+      - - Plano de emergência
+        - X3
+      - - ''
+        - ''
+      - - SPDA
+        - X
+      - - ''
+        - ''
+      - - Hidrante urbano
+        - X4
+      - - ''
+        - ''
+      - - Acesso de viatura em edificações
+        - X
+      - - ''
+        - ''
+      - - Controle de Temperatura
+        - X
+      - - ''
+        - ''
+      - - Controle de Fontes de Ignição
+        - X
+      - - ''
+        - ''
+      - - Controle de Pós
+        - X
+      - - ''
+        - ''
+      - - ''
+        - null
+      - - 'OBSERVAÇÕES ESPECÍFICAS:'
+        - null
+      - - 1- Observar regras e condições particulares para essa medida nas Notas Técnicas específicas.
+        - null
+      - - 2- Somente para as áreas de circulação.
+        - null
+      - - 3- Áreas de risco que possuam mais de um depósito de silagem.
+        - null
+      - - 4- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+        - null
+      - - ''
+        - null
+      - - 'OBSERVAÇÕES GERAIS:'
+        - null
+      - - a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar
+          as prescrições da Seção II
+        - null
+      - - do Capítulo IV deste Código;
+        - null
+      - - b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+        - null
+      - - c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+        - null
+notas:
+- 'Divisões e colunas: M-5 (Silos) — Independente da área ou altura.'
+- Nota sobrescrita escrita como algarismo após o X ("X¹" → "X1").
+- 'Observações específicas da tabela:'
+- 1- Observar regras e condições particulares para essa medida nas Notas Técnicas específicas.
+- 2- Somente para as áreas de circulação.
+- 3- Áreas de risco que possuam mais de um depósito de silagem.
+- 4- Exigido apenas para as edificações com ATC igual ou superior a 1.500m².
+- 'Observações gerais da tabela:'
+- a) No cômputo do número de pavimentos e definição da altura e área das edificações, observar as prescrições
+  da Seção II do Capítulo IV deste Código;
+- b) As instalações elétricas devem estar em conformidade com as normas técnicas oficiais;
+- c) Observar ainda as exigências para os riscos específicos das respectivas Notas Técnicas.
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001
+  texto: verificada
+anexo3:
+  tabela: 29
+  referencia:
+    divisoes:
+    - M-5
+    criterio: independente da área ou altura

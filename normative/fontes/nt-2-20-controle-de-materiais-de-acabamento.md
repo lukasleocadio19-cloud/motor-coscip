@@ -63,8 +63,7 @@ A - Tabelas de classificação dos materiais
 
 B - Utilização dos materiais conforme a classificação da edificação
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  | NOTA |  |  | CBMERJ |  |
@@ -303,8 +302,7 @@ Legenda: Dm - Densidade óptica específica máxima corrigida. Fluxo crítico - 
 
 Fonte: ABNT NBR 15575:2013 - Edificações habitacionais - Desempenho.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Método de Ensaio |  |  |  | ISO 1182 | NBR 8660 | EN ISO 11925-2 (exposição de 15 s) | ASTM E 662 |
@@ -321,6 +319,33 @@ Fonte: ABNT NBR 15575:2013 - Edificações habitacionais - Desempenho.
 |  |  | B |  | Combustível | Fluxo crítico ≥ 3,0 kW/m² | FS ≤ 150 mm em 20s | Dm > 450 |
 | VI |  |  |  | Combustível | - | FS ≥ 150 mm em 20s | - |
 
+<!-- tabela-conferida: Tabela 1 do Anexo A p6 -->
+### Tabela 1 do Anexo A — Classificação dos materiais de revestimento de piso (conferida)
+
+| Classe | Subclasse | ISO 1182 | NBR 8660 | EN ISO 11925-2 (exposição de 15 s) | ASTM E 662 |
+| --- | --- | --- | --- | --- | --- |
+| I | I | Incombustível ΔT≤ 30° C Δm ≤ 50% tf≤ 10s | - | - | - |
+| II | A | Combustível | Fluxo crítico ≥ 8,0 kW/m² | FS ≤ 150 mm em 20s | Dm ≤ 450 |
+| II | B | Combustível | Fluxo crítico ≥ 8,0 kW/m² | FS ≤ 150 mm em 20s | Dm > 450 |
+| III | A | Combustível | Fluxo crítico ≥ 4,5 kW/m² | FS ≤ 150 mm em 20s | Dm ≤ 450 |
+| III | B | Combustível | Fluxo crítico ≥ 4,5 kW/m² | FS ≤ 150 mm em 20s | Dm > 450 |
+| IV | A | Combustível | Fluxo crítico ≥ 3,0 kW/m² | FS ≤ 150 mm em 20s | Dm ≤ 450 |
+| IV | B | Combustível | Fluxo crítico ≥ 3,0 kW/m² | FS ≤ 150 mm em 20s | Dm > 450 |
+| V | A | Combustível | Fluxo crítico ≥ 3,0 kW/m² | FS ≤ 150 mm em 20s | Dm ≤ 450 |
+| V | B | Combustível | Fluxo crítico ≥ 3,0 kW/m² | FS ≤ 150 mm em 20s | Dm > 450 |
+| VI | VI | Combustível | - | FS ≥ 150 mm em 20s | - |
+
+Fonte: NT 2-20, página 6, Tabela 1 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Legenda da tabela:
+Dm – Densidade óptica específica máxima corrigida.
+Fluxo crítico – Fluxo de energia radiante necessário à manutenção da frente de chama no corpo de prova.
+FS – Tempo em que a frente da chama leva para atingir a marca de 150 mm indicada na face do material ensaiado.
+tf – Tempo de flamejamento do corpo de prova.
+ΔT – Variação de temperatura no interior do forno.
+Δm – Variação de massa do corpo de prova.
+Fonte indicada na página: ABNT NBR 15575:2013 - Edificações habitacionais – Desempenho.
+<!-- /tabela-conferida: Tabela 1 do Anexo A p6 -->
+
 ---
 
 ## Página 7
@@ -333,8 +358,7 @@ Legenda: Dm - Densidade óptica específica máxima corrigida. Ip - Índice de p
 
 Fonte: ABNT NBR 15575:2013 - Edificações habitacionais - Desempenho.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  | Método de Ensaio |  |  | ISO 1182 | NBR 9442 | ASTM E 662 |
@@ -350,6 +374,32 @@ Fonte: ABNT NBR 15575:2013 - Edificações habitacionais - Desempenho.
 | V |  | A |  | Combustível | 150 <Ip ≤ 400 | Dm ≤ 450 |
 |  |  | B |  | Combustível | 150 <Ip ≤ 400 | Dm > 450 |
 | VI |  |  |  | Combustível | Ip> 400 | - |
+
+<!-- tabela-conferida: Tabela 2 do Anexo A p7 -->
+### Tabela 2 do Anexo A — Classificação dos materiais (exceto revestimentos de piso) (conferida)
+
+| Classe | Subclasse | ISO 1182 | NBR 9442 | ASTM E 662 |
+| --- | --- | --- | --- | --- |
+| I | I | Incombustível ΔT≤ 30° C Δm ≤ 50% tf≤ 10 s | - | - |
+| II | A | Combustível | Ip ≤ 25 | Dm ≤ 450 |
+| II | B | Combustível | Ip ≤ 25 | Dm > 450 |
+| III | A | Combustível | 25 <Ip ≤ 75 | Dm ≤ 450 |
+| III | B | Combustível | 25 <Ip ≤ 75 | Dm > 450 |
+| IV | A | Combustível | 75 <Ip ≤ 150 | Dm ≤ 450 |
+| IV | B | Combustível | 75 <Ip ≤ 150 | Dm > 450 |
+| V | A | Combustível | 150 <Ip ≤ 400 | Dm ≤ 450 |
+| V | B | Combustível | 150 <Ip ≤ 400 | Dm > 450 |
+| VI | VI | Combustível | Ip> 400 | - |
+
+Fonte: NT 2-20, página 7, Tabela 2 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Legenda da tabela:
+Dm – Densidade óptica específica máxima corrigida.
+Ip – Índice de propagação superficial da chama.
+tf – Tempo de flamejamento do corpo de prova.
+ΔT – Variação de temperatura no interior do forno.
+Δm – Variação de massa do corpo de prova.
+Fonte indicada na página: ABNT NBR 15575:2013 - Edificações habitacionais – Desempenho.
+<!-- /tabela-conferida: Tabela 2 do Anexo A p7 -->
 
 ---
 
@@ -383,8 +433,7 @@ FS - Tempo em que a frente da chama leva para atingir a marca de 150 mm indicada
 
 Fonte: ABNT NBR 15575:2013 - Edificações habitacionais - Desempenho.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 | Método de Ensaio |  |  |  | ISO 1182 | EN 13823 (SBI) | EM ISO 11925-2 (exposição = 30 s) |
@@ -400,6 +449,36 @@ Fonte: ABNT NBR 15575:2013 - Edificações habitacionais - Desempenho.
 | V |  | A |  | Combustível | FIGRA > 750 W/s SMOGRA ≤ 180 m²/s² e TSP600s ≤ 200m² | FS ≤ 150 mm em 20 s |
 |  |  | B |  | Combustível | FIGRA > 750 W/s SMOGRA > 180 m²/s² ouTSP600s > 200m² | FS ≤ 150 mm em 20 s |
 | VI |  |  |  | - | - | FS >150 mm em 20 s |
+
+<!-- tabela-conferida: Tabela 3 do Anexo A p8 -->
+### Tabela 3 do Anexo A — Classificação dos materiais que não podem ser caracterizados através da NBR 9442 (exceto revestimento de piso) (conferida)
+
+| Classe | Subclasse | ISO 1182 | EN 13823 (SBI) | EM ISO 11925-2 (exposição = 30 s) |
+| --- | --- | --- | --- | --- |
+| I | I | Incombustível ΔT≤ 30° C Δm ≤ 50% tf≤ 10 s | - | - |
+| II | A | Combustível | FIGRA ≤ 120 W/s LSF < canto do corpo de prova THR600S ≤ 7,5 MJ SMOGRA ≤ 180 m²/s² e TSP600s ≤ 200m² | FS ≤ 150 mm em 60 s |
+| II | B | Combustível | FIGRA ≤ 120 W/s LSF < canto do corpo de prova THR600S ≤ 7,5 MJ SMOGRA > 180 m²/s² ou TSP600s > 200m² | FS ≤ 150 mm em 60 s |
+| III | A | Combustível | FIGRA ≤ 250 W/s LSF < canto do corpo de prova THR600S ≤ 15 MJ SMOGRA ≤ 180 m²/s² ou TSP600s ≤ 200m² | FS ≤ 150 mm em 60 s |
+| III | B | Combustível | FIGRA ≤ 250 W/s LSF < canto do corpo de prova THR600S ≤ 15 MJ SMOGRA > 180 m²/s² ou TSP600s > 200m² | FS ≤ 150 mm em 60 s |
+| IV | A | Combustível | FIGRA ≤ 750 W/s SMOGRA ≤ 180 m²/s² e TSP600s ≤ 200m² | FS ≤ 150 mm em 60 s |
+| IV | B | Combustível | FIGRA ≤ 750 W/s SMOGRA > 180 m²/s² ou TSP600s > 200m² | FS ≤ 150 mm em 60 s |
+| V | A | Combustível | FIGRA > 750 W/s SMOGRA ≤ 180 m²/s² e TSP600s ≤ 200m² | FS ≤ 150 mm em 20 s |
+| V | B | Combustível | FIGRA > 750 W/s SMOGRA > 180 m²/s² ouTSP600s > 200m² | FS ≤ 150 mm em 20 s |
+| VI | VI | - | - | FS >150 mm em 20 s |
+
+Fonte: NT 2-20, página 8, Tabela 3 do Anexo A; conferida em 2026-09-29 (visual + geometrica).
+Legenda da tabela:
+FIGRA - Índice de taxa de desenvolvimento de calor.
+LFS - Propagação lateral da chama.
+SMOGRA - Taxa de desenvolvimento de fumaça, correspondendo ao máximo do quociente de produção de fumaça do corpo de prova e o tempo de sua ocorrência.
+tf - Tempo de flamejamento do corpo de prova.
+THR600s - Liberação total de calor do corpo de prova nos primeiros 600 s de exposição às chamas.
+TSP600s - Produção total da fumaça do corpo de prova nos primeiros 600 s de exposição às chamas.
+FS - Tempo em que a frente da chama leva para atingir a marca de 150 mm indicada na face do material ensaiado.
+Δm - Variação de massa do corpo de prova.
+ΔT - Variação de temperatura no interior do forno.
+Fonte indicada na página: ABNT NBR 15575:2013 - Edificações habitacionais – Desempenho.
+<!-- /tabela-conferida: Tabela 3 do Anexo A p8 -->
 
 ---
 
@@ -429,8 +508,7 @@ estão aplicados;
 
 Fonte: ABNT NBR 15575:2013.
 
-### Tabelas extraídas
-
+### Tabelas extraídas (bruto, não usar para citação)
 #### Tabela 1 da página
 
 |  |  |  | Finalidade do material |  |  |  |  |
@@ -442,3 +520,24 @@ Fonte: ABNT NBR 15575:2013.
 | Grupo/ Divisão | A-13, A-23, A-43, A-53, A-63 | Classe I, II-A, III-A, IV-A ou V-A5 |  |  | Classe I, II-A, III-A, ou IV-A6 | Classe I, II-A, ou III-A4 |  |
 |  | B, D, E G, H, I-1, J-1, J-2 e M-9 | Classe I, II-A, III-A, ou IV-A |  |  | Classe I, II-A, ou IIIA7 | Classe I, II-A |  |
 |  | C, F, I-2, I-3, J-3, J-4, L, M-1, M-2, M-3 e M-6 | Classe I, II-A, III-A, ou IV-A |  |  | Classe I, II-A | Classe I, II-A |  |
+<!-- tabela-conferida: Tabela do Anexo B p9 -->
+### Tabela do Anexo B — Utilização dos materiais conforme a classificação da edificação (conferida)
+
+| Grupo/ Divisão | Divisões | Piso (acabamento/revestimento) | Parede e divisória (acabamento/revestimento) | Teto, forro e cobertura (acabamento/revestimento) |
+| --- | --- | --- | --- | --- |
+| Grupo/ Divisão | A-1³, A-2³, A-4³, A-5³, A-6³ | Classe I, II-A, III-A, IV-A ou V-A⁵ | Classe I, II-A, III-A, ou IV-A⁶ | Classe I, II-A, ou III-A⁴ |
+| Grupo/ Divisão | B, D, E G, H, I-1, J-1, J-2 e M-9 | Classe I, II-A, III-A, ou IV-A | Classe I, II-A, ou III-A⁷ | Classe I, II-A |
+| Grupo/ Divisão | C, F, I-2, I-3, J-3, J-4, L, M-1, M-2, M-3 e M-6 | Classe I, II-A, III-A, ou IV-A | Classe I, II-A | Classe I, II-A |
+
+Fonte: NT 2-20, página 9, Tabela do Anexo B; conferida em 2026-09-29 (visual + geometrica).
+Legenda das citações:
+1 - Como exemplo podem-se citar os cordões, rodapés e arremates;
+2 - Excluem-se as portas, janelas, cordões e outros acabamentos decorativos com área inferior a 20% da parede onde estão aplicados;
+3 - Aplica-se somente às áreas comuns das edificações;
+4 - Exceto para cozinhas que deverão se enquadrar na Classe I ou II-A;
+5 - Exceto para revestimentos que deverão se enquadrar na Classe I, II-A, III-A ou IV-A;
+6 - Exceto para revestimentos que deverão se enquadrar na Classe I, II-A ou III-A;
+7 - Exceto para revestimentos que deverão se enquadrar na Classe I ou II-A.
+Fonte indicada na página: ABNT NBR 15575:2013.
+<!-- /tabela-conferida: Tabela do Anexo B p9 -->
+

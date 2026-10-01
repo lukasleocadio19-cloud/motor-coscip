@@ -6,9 +6,10 @@ pendências, cuidados). Desde 20/09/2026 ele mora **dentro do repositório**, em
 `C:\Users\USER\Downloads\proxima-sessao.md` virou apenas um ponteiro para cá — não editar lá,
 não criar cópia, não criar outro registro.
 
-Última atualização: 25/09/2026, sessão que levou o projeto para um segundo computador e
-implementou a fase 3 da arquitetura v2 (CAD → `Evidence` → `Finding`) para extintores,
-hidrantes, acionador manual e saídas. O usuário **não tem mais as plantas reais**: o trabalho
+Última atualização: 29/09/2026, sessão em nuvem que executou o plano de correção
+(`docs/plano/01-plano-de-correcao.md`, fases F0–F9; estado na seção 3 e detalhe na seção 13).
+Antes: 25/09/2026, segundo computador e fase 3 da arquitetura v2 (CAD → `Evidence` → `Finding`)
+para extintores, hidrantes, acionador manual e saídas. O usuário **não tem mais as plantas reais**: o trabalho
 segue só com dados sintéticos.
 Referências (não são registro): arquitetura-alvo em [`docs/arquitetura-v2.md`](arquitetura-v2.md),
 plano `docs/plano/00-plano-completo.html` (v2.0; IDs e critérios de aceite no documento 03) e
@@ -46,15 +47,77 @@ runbook `docs/runbooks/dwg-para-dxf.md`.
 ## 2. Pendências (o que ainda precisa ser feito)
 
 ### Com o analista (usuário)
-- [ ] Revisar as 5 análises na tela (`#/desenhos/<id>/analise`) e fazer nova emissão dos relatórios.
-- [ ] Confirmar as ocupações propostas: 9715 D-2 (agência bancária); 21471 e 41336 M-2 (depósito
-      de GLP); 21778/21801 A-2 (apartamentos).
+
+> **30/09/2026 — o usuário delegou à sessão todas as decisões pendentes.** As decisões abaixo
+> são critério de trabalho da ferramenta, registrado como tal: **não têm valor normativo** e não
+> substituem a homologação (NT 2-01), que continua exigindo responsável com CREA/CAU. Critério
+> geral: onde a fonte é ambígua, vale a leitura **mais conservadora** (a faixa ou o valor que
+> exige mais), o texto do item prevalece sobre a tabela que o resume, e a NT de classificação
+> (NT 1-04) prevalece sobre as descrições de divisão das demais.
+
+**Decidido nesta data**
+- [x] Tabelas `divergente`: 5 das 6 passaram a `verificada` com dois caminhos que concordam
+      (NT 2-02 T5 por coluna, com a grade sem os espaços entre letras; NT 2-11 A.6 p. 14 juntando as
+      linhas de continuação; NT 3-06 T2 e Anexo A T6 com o cabeçalho montado pela coluna; NT 1-03
+      p. 10 pela camada de texto, com a grade ignorada e o motivo registrado). NT 3-06 T4: vale a
+      leitura visual conferida na imagem ampliada (Câmara de espuma, 6,0 L/min/m², 55 min); fica
+      `divergente` no sistema porque só um caminho estrutura a tabela; o motor não a usa.
+- [x] Tabelas 22–32 do Anexo III **entram no motor**: as por pavimentos/altura (22, 23, 24, 27,
+      30, 32) são consultadas como as 5–21, e 30 (M-6) e 32 (M-9) valem para qualquer área; as de
+      outro critério (25 M-1 extensão do túnel, 26 M-2 volume, 28 M-4/M-7 ATC, 29 M-5, 31 M-8)
+      ficam como referência: a consulta aponta a tabela e não escolhe a coluna.
+- [x] Sobreposição NT 1-01 P1 Anexo A × NT 1-07 Anexo A: prevalece a NT 1-01 P1 (consolidada pela
+      Portaria 1.317/2025, mais recente, e mais restritiva): CNAE que ela lista, por código ou
+      padrão, **não** é tratado como dispensa de regularização.
+- [x] Faixas que se tocam no limite (NT 1-04 1.200 MJ/m²; Decreto T1 1.000 MJ/m² J-2/J-3; NT 3-02
+      T4 11 Nm³; NT 3-06 Anexo A T4/T6 e T8; NT 4-04 T1; NT 4-05 T6 0,50 m³): o valor do limite
+      fica na faixa mais exigente. Lacunas e limites exatos fora de toda faixa (NT 4-04 T3
+      24.901–24.970 kg; NT 4-05 Anexo B 12.480/49.920/99.840 kg e 10 m³; NT 3-06 T14 4º, 6º, 7º
+      e 9º andares): aplica-se a faixa seguinte, mais exigente.
+- [x] Valores que se contradizem: vale o maior afastamento ou a exigência maior (NT 4-05 acima de
+      3.785 m³: 122,0 m; NT 1-04 "Tapeçarias": o maior valor; NT 4-04 distâncias que diminuem com
+      mais massa, T1 115→110 m e T4 82→58 m: não se usa distância menor que a da faixa anterior;
+      NT 2-11 A.3: vale a soma dos módulos, 6 h, e não o "Total" 2 h; NT 2-11 A.6 módulo 07 sem
+      carga: fica sem carga; NT 2-19 Tabela B: vale o menor dos três critérios).
+- [x] Texto do item × tabela: NT 2-04 5.4.3.1 prevalece (todos os dispositivos a) a e) em todo
+      risco); "Médio" da Tabela 3 vale para Médio 1 e Médio 2. NT 2-19 D1: γn1, γn2, γn3 como no
+      texto. NT 2-03 P2 confeitaria: vale o Anexo B (congelados Classe II, embalados Classe III).
+- [x] Definições duplicadas NT 2-01: valem 4.7 e 4.8 (portátil até 20 kg; sobre rodas acima de
+      20 kg, até 250 kg); 4.17/4.18 ficam registradas como divergência da fonte.
+- [x] Notas e remissões trocadas: segue-se a nota cujo conteúdo trata do assunto (NT 4-05 Anexo B:
+      nota 9; NT 4-05 Anexo E: obs. b); Decreto T26 "(b)": observação d); NT 1-04 Anexo D/E
+      "Tabela C.1" e "Tabela E": a tabela do Anexo D; NT 3-02: "Tabela 2" pelo contexto de cada
+      observação; NT 2-11 Anexo D Obs7: pela remissão de cada linha).
+- [x] Marcas e sinais sem definição: NT 2-11 "****" (edificação histórica) sem regra própria: vale
+      a linha comum, sem redução; linhas históricas em branco no Anexo D: vale a linha comum;
+      NT 2-11 nota "***": arredondar para cima (3,7 → 4; 6,5 → 7); NT 4-05 asterisco sem nota:
+      ignorado; NT 2-08 notas numeradas sem correspondência com (A)–(K): célula com nota é
+      condicional e vai para revisão, nunca vira dispensa.
+- [x] Critério ambíguo NT 2-09 "200": não se aplica automaticamente (revisão humana). Divisões que
+      faltam em tabelas (NT 2-09 F-7, M-4, M-7, M-8; NT 2-20 M-4, M-5, M-7, M-8): a tabela não se
+      aplica; consultar a NT específica. NT 3-06 Anexo A T6 acima de 380 m³: fora da tabela, sem
+      extrapolação.
+- [x] NT 2-20: materiais IV e V indistinguíveis pela tabela: sem laudo que diga IV, trata-se como
+      V; classe III A: os critérios de fumaça valem com "e" (como nas demais).
+- [x] Nomenclatura: Decreto T33 Leve/Médio/Grande ↔ NT 1-04 Pequeno/Médio 1–2/Grande (Médio 1 e 2
+      → Médio); NT 1-04 H-1/H-3: vale a NT 1-04 no enquadramento; nas outras NTs, a descrição.
+      NT 4-05 "TRRF=4": 4 h. NT 3-06 PE: ponto de ebulição. NT 4-05 Anexo A T1 matriz: B×F em
+      branco = "-". NT 2-01 A1 PQS sem classe A: "-".
+- [x] Grafias (hífens, acentos, "Vdiro", "Diâmentro", "desing" etc.): sem efeito normativo; a
+      transcrição mantém a grafia da fonte.
+- [x] Ocupações propostas aceitas: 9715 D-2; 21471 e 41336 M-2; 21778/21801 A-2. 21778/21801:
+      a pendência do pavimento tipo é exigência (mínimo 2 extintores por pavimento, decisão do
+      usuário de 29/09). 41336: os 5 extintores presumidos pelas placas E5 + E17 **não** são
+      aceitos como evidência (ausência de evidência nunca vira conformidade): ficam pendentes.
+
+**Ainda dependem da máquina do usuário ou de dado real (não há como fazer na nuvem)**
+- [ ] Reemitir as 5 análises com as decisões acima (`#/desenhos/<id>/analise`).
 - [ ] 21471 e 41336: marcar as camadas de parede no item 4 do formulário e reanalisar.
 - [ ] Informar em cada processo o limite da NT 2-08 (Anexo C é imagem) e os sistemas exigidos.
-- [ ] 21778/21801: pendência real no pavimento tipo (1 extintor por andar; mínimo 2) — decidir
-      na revisão (exceção NT 2-01 5.2.4 só vale abaixo de 50 m²).
-- [ ] 41336: confirmar os 5 extintores presumidos pelas placas E5 + E17.
-- [ ] Gate A: 1 medida real independente ainda não feita (POC-02/08).
+- [ ] Gate A: 1 medida real independente (POC-02/08).
+- [ ] F9: medir o corpus real (`Downloads\coscip-corpus`) com `tools/validacao/fidelidade.py`.
+- [ ] Homologação (NT 2-01): responsável com CREA/CAU, data e relatório — nenhuma regra fica
+      HOMOLOGATED/PUBLISHED sem isso.
 
 ### Desenvolvimento, em ordem
 
@@ -77,7 +140,7 @@ runbook `docs/runbooks/dwg-para-dxf.md`.
 4. **Fase 4 — motor documental mínimo** (ART, RRT, memorial, laudo, curva de bomba): upload,
    versionamento, extração e localização. Só depois disso os checks documentais do catálogo
    (`HID-DOC-001`, `HID-DOC-004`, `HID-CROSS-002`) deixam de depender de evidência sintética.
-5. **Anexo III, Tabelas 5–21**, conferindo células e notas no PDF oficial.
+5. ~~**Anexo III, Tabelas 5–21**~~ — feito no plano de correção (F4.3 e F2, seção 13).
    Mapa: `decreto-42-2018-coscip-compilado.md`, linhas ~997–2080, PDF p. 26–45.
    Na Tabela 2, **F1/F2/F3/F4/F7/F8/F10 formam UMA coluna**; não há linhas de hidrantes/alarme
    e M-2 não tem coluna. A consulta não converte essas ausências em dispensa.
@@ -103,7 +166,7 @@ Legenda: **feito** (código + teste) · **base** (estrutura pronta, falta fluxo)
 |---|---|---|
 | POC-01 | **feito** | 16 GB, i7-3770, RTX 3050, SSD único |
 | POC-02 | **feito** | 5 projetos em `Downloads\coscip-corpus`; referências = cotas do projeto; falta 1 medida real independente |
-| POC-03 | **feito** | DWG→DXF: AutoCAD 2027 `accoreconsole` + `DXFOUT` 2018 (runbook); nunca ODA |
+| POC-03 | **feito** | DWG→DXF: AutoCAD 2027 `accoreconsole` + `DXFOUT` 2018 para o corpus (runbook); ODA File Converter no MCP (ADR 0006) |
 | POC-04 | **feito** | `coscip_cad.dxf_reader` (entidades, layers, textos, blocos) |
 | POC-05 | **feito** | espelhamento, escala, unidades, blocos |
 | POC-06 | **feito** | cena binária por camada, seleção → origem no DXF; 1,28 mi de segmentos (9715) |
@@ -170,6 +233,22 @@ Legenda: **feito** (código + teste) · **base** (estrutura pronta, falta fluxo)
 | V2-10 LLM / V2-11 Jev | — | fases 5 e 6; **não começar** antes de V2-08 e V2-09 |
 | V2-12 UI v2 | — | fase 8 |
 | V2-13 persistência | — | tabelas do §45 ainda não existem; hoje o fluxo v2 roda em memória |
+
+### Plano de correção (`docs/plano/01-plano-de-correcao.md`, 29/09/2026)
+Executado na branch `claude/admiring-einstein-n5rh19`, **um commit por fase** (a sessão não
+pôde abrir uma branch por fase). Detalhe na seção 13.
+| ID | Estado | Observação |
+|---|---|---|
+| COR-F0 CI e pacote | **feito** | CI Windows+Linux (ruff, pytest, npm build, lock conferido); `requirements/*.lock` com hash; `tools/package/portatil.py` + `release.yml`; ADR 0007. Falta: proteção da `master`, teste do zip na máquina principal, SHA-256 do Python embeddable fixado |
+| COR-F1 base única | **feito** | `skills/` no repositório (9 vigentes + 8 em `transicao/`), zips pela CI, manifesto `normative/manifests/base.yaml`, índice de itens (4.738), workflow de vigência; MCP só lê `normative/fontes` |
+| COR-F2 imagens e tabelas | **feito** | Imagens de página renderizadas pela CI (`normas-midia.yml`). **256 tabelas `verificada`**, 1 `divergente` (NT 3-06 T4: só um caminho estrutura a tabela; decisão registrada na seção 2), 36 falsos positivos (`nao_tabela`), 38 capas; **nenhuma página `bruto`**. Decreto completo: Anexo II T1, Anexo III T2–32 (as T22–32 conferidas mas fora do motor) e Anexo IV T33. Fora da prioridade já conferidas: NT 2-04 (T1–3), NT 2-05 (Quadro 1, Anexo B T1–8), NT 2-09 (T1, Anexo A), NT 2-10 (T1, Anexos C e E), NT 2-17 (T1, Anexo A), NT 2-20 (Anexo A T1–3, Anexo B), NT 3-01 (T1, T2), NT 3-03 (T1, T2), NT 3-06 (T1–16 e Anexo A T1–8), NT 3-07 (Anexo A), NT 4-01 (T1), NT 4-04 (Anexo A T1–4, Anexo B), NT 4-06 (Anexo B), NT 4-09 (Anexos A e B), NT 4-10 (T1), NT 5-02 (Anexo A T1), NT 5-04 (T1), NT 1-01 P1 (Anexos A e B), NT 1-01 P2 (T1, Anexos E–H), NT 1-03 (Anexo A, símbolos: o desenho não é conferido), NT 1-04 (Anexo E), NT 1-07 (Anexo A, CNAEs p. 13–29), NT 2-03 P1 (Anexo B T1) e NT 2-03 P2 (Anexos B e C; comparação por coluna no B). Lista de prioridade: NT 2-01 (T1–5, A1, A2), NT 2-02 (T1–4), NT 2-08 (T1, Anexos A–C), NT 1-04 (Anexos A–D), NT 2-11 (Anexos A–D), NT 2-14 (Quadros 1–2), NT 2-19 (Tabelas A–D2), NT 3-02 (T1–3, T5, Anexo A T1–4), NT 4-05 (T1–6, Anexos A, B, C, E), NT 5-05 e Decreto (Anexo II T1 p. 20–25 e Anexo III T2–21). Divergentes: NT 2-02 T5 (grade e texto fundem as linhas), NT 2-11 A.6 p. 14 (cabeçalho em outra coluna da grade), NT 3-06 T2, T4 e Anexo A T6 (sem grade desenhada, ou grade partida, e camada de texto desalinhada). Página sem grade desenhada: a camada de texto passa a ser o segundo caminho. O motor confere contra as tabelas conferidas: enquadramento (NT 1-04 Anexo B), divisões (Decreto T1) e Anexo III T2–4. Inconsistências da fonte registradas em cada `.yaml` (`inconsistencias_da_fonte`) e no `RELATORIO.md` |
+| COR-F3 skills | **feito** | correções de conteúdo, `anatomia-do-bilhete`, `protocolo-de-reducao`, `contar_bilhete.py`, `localizar_item.py` (índice), `achado.schema.json`, `verificar_links.py` verde |
+| COR-F4 normativo | **feito** | `interpretation` (critério adotado, base conferida); EXT-CAD-002 por pavimento; 5.2.4 pela área da edificação (EXT-CAD-002-EXC); EXT-CAD-004 composição 5.2.5; EXT-CAD-005 (6.7); Anexo III T5–21 por altura (`sistemas-exigidos-5-21.yaml`); pacote v6 |
+| COR-F5 reconhecimento | **feito** | camadas desligadas/congeladas/não plotáveis, MINSERT, ATTRIB, `object_key`, dedupe, balanço de reconhecimento e porta `quality.recognition.complete`; 19 testes de armadilha |
+| COR-F6 executor | **feito** | conta objetos distintos (`COUNT_DIVERGENCE`), `accepted_evidence` aplicado, pior caso por valor ± incerteza |
+| COR-F7 cálculo | **feito** | vetorial exato (grafo de visibilidade + branch and bound) como principal; FMM (`scikit-fmm`) e grade como conferência; porta `quality.geometry.consistent`; orçamento de incerteza; `confirmar_unidade` com duas referências não paralelas (≤ 0,5 %); hash canônico igual em Windows e Linux (job `determinismo` da CI) |
+| COR-F8 integração | **feito** | `coscip_findings.achado.to_achado`: `Finding` → contrato comum (`achado.schema.json`), sem mudar status; `achados` em `analisar_planta` e em `v2-findings --out`; `consolidar_matriz.py` (orquestrador), `rascunho_bilhete.py` e `conferir_citacoes.py` (bilhete); processo sintético (DXF + memorial fictício) de ponta a ponta no teste. Falta: rodar a skill real com o MCP no Claude Desktop |
+| COR-F9 validação | **base** | `tools/validacao/fidelidade.py` (exigências acertadas/faltantes/indevidas, citações corretas, precisão/revocação de símbolos, erro de distância; corpus fora do repositório, recusado se estiver dentro); relatório `docs/validacao/2026-09-29.md` só com a referência sintética (**corpus real não medido**); trava `homologation` (responsável, CREA/CAU, data, relatório): sem ela regra/check não fica `HOMOLOGATED`/`PUBLISHED` nem vai à produção. Todos os 30 seguem DRAFT |
 
 ### Revisão, relatório e recuperação
 | ID | Estado | Observação |
@@ -743,3 +822,104 @@ usar a medida certa — a ferramenta aceita qualquer par de pontos que dê unida
   `%APPDATA%\Claude\claude_desktop_config.json.20260925-214930.bak`; preferências conferidas
   iguais. Handshake com o comando registrado, fora da pasta do projeto: ok.
 - Final: **335 testes passaram**, `ruff` limpo; tudo commitado e enviado ao GitHub.
+
+## 13. Sessão 29/09/2026 — plano de correção (F0–F9)
+
+Sessão em nuvem (Linux, Python 3.12 no `.venv`, sem acesso ao site do CBMERJ: o proxy bloqueia
+`cbmerj.rj.gov.br`, por isso os PDFs oficiais são baixados e renderizados pela CI no workflow
+`normas-midia.yml`, que grava de volta na branch). Um commit por fase na branch
+`claude/admiring-einstein-n5rh19`. Nenhum dado real entrou no repositório; tudo sintético.
+
+### O que foi feito, por fase
+- **F0** — `.github/workflows/ci.yml` (Windows + Linux: lock conferido, ruff, pytest com
+  JUnit, `npm ci` + build); `requirements/dev.lock` e `runtime.lock` (uv, `--universal`, com
+  hash; `tools/ci/check_lock.py`); pacote portátil (`tools/package/portatil.py`,
+  `release.yml`, `scripts/package/python-embed.json`, ADR 0007); marcador `windows` no pytest.
+- **F1** — `skills/` (vigentes) e `skills/transicao/` (antigas a aposentar),
+  `skills/pacotes.yaml`, `tools/skills/pack.py` (zips determinísticos, CI `skills.yml`);
+  manifesto da base (`tools/normas/manifesto.py` → `normative/manifests/base.yaml`); índice de
+  itens (`normative/indices/itens.jsonl`); vigência (`tools/normas/vigencia.py` +
+  `vigencia.yml`); `coscip_mcp.norms` só lê `COSCIP_NORMAS_DIR` ou `normative/fontes`.
+- **F2** — `tools/normas/render_paginas.py` (pypdfium2) e `tools/normas/tabelas.py`
+  (caminho visual digitado da imagem × caminho geométrico `pdfplumber` × camada de texto;
+  número tem de ser idêntico, texto por rapidfuzz ≥ 90; estado calculado; publicação idempotente
+  no `.md` com a seção antiga marcada "bruto, não usar para citação"); relatório
+  `normative/tabelas/RELATORIO.md`. Estado: ver seção 3.
+  Leitura visual: `^` = mesclada com a de cima, `<` = com a da esquerda, `""` = em branco
+  (grade completa na publicação). Normalizações iguais nos dois lados: caracteres da fonte
+  Symbol (U+F0xx) → `<`, `>`, `≤`, `≥` e letras gregas; `m2` = `m²`; espaço entre letra e
+  algarismo (nota sobrescrita) não conta. Forma por caminho: `forma` (comum) e
+  `forma_geometrica` (só a grade do `pdfplumber`, que a extração regrava; ex. `faixa` das
+  Tabelas 5–21 do Anexo III, que têm uma linha vazia entre medidas); `mesclar_linhas`
+  aceita `[i, j, [colunas]]`; `celulas_verticais` (texto girado lido de trás para frente);
+  `subscrito_deslocado` (γn1 lido como "γ = 0,60 n1"); `comparar_por_coluna` (grade que parte
+  o registro em linhas de texto ou centraliza a célula mesclada: o texto de cada coluna, na
+  ordem, tem de ser igual — sem tolerância —, e o resultado registra que a extensão da
+  mescla vem só da leitura visual). Estados do manifesto: `capa` (p. 1), `nao_tabela`
+  (`normative/tabelas/nao-tabelas.yaml`, conferido na imagem). `python -m tools.normas.tabelas
+  diagnostico` imprime no log da CI o motivo de cada não verificada e a grade inteira
+  comprimida (`GEO …`), porque o artefato não baixa daqui. `anexo3.py` só lê tabela com bloco
+  `anexo3` (as T2–4 conferidas ficam fora do `sistemas-exigidos-5-21.yaml`, e a checagem das
+  T2–4 no pacote ignora o bloco conferido publicado na página).
+- **F3** — skills corrigidas (itens, remissões, estados do contrato), referências novas do
+  bilhete, `skills/_comum/achado.schema.json` e `uso-do-mcp-coscip-plantas.md`,
+  `tools/skills/verificar_links.py`.
+- **F4** — `Interpretation` na DSL de regras e de checks (base conferida como citação,
+  papel `interpretation`); pergunta `composition`; checks EXT-CAD-002 v3, EXT-CAD-002-EXC,
+  EXT-CAD-004, EXT-CAD-005; pacote v6 com `requirements_height` (Anexo III T5–21 gerado por
+  `tools/normas/anexo3.py` e conferido de novo no texto).
+- **F5** — leitor DXF respeita estado de camada, expande MINSERT, lê ATTRIB; `object_key`
+  (5 cm), dedupe, união de saídas, balanço de reconhecimento no MCP e no relatório;
+  armadilhas sintéticas (`coscip_cad.synthetic.TRAPS`).
+- **F6** — executor: contagem por objeto distinto, divergência de contagem, fonte fora de
+  `accepted_evidence` recusada com nota, pior caso por valor + incerteza.
+- **F7** — `coscip_analysis.vector_paths`: domínio vetorial das paredes (Shapely), grafo de
+  visibilidade com Dijkstra (SciPy) e pior ponto por branch and bound (1-Lipschitz; erro de
+  amostragem declarado ≤ 0,05 m); Fast Marching (`scikit-fmm`, nova dependência BSD-3) e a
+  grade antiga como conferência; `uncertainty_budget` (método, amostragem, posição do símbolo =
+  metade do bloco, unidade/escala, modelagem de parede; total = soma arredondada para cima)
+  carregado em `Evidence` e `MeasuredResult`; porta `quality.geometry.consistent` nos 7 checks
+  de distância (catálogo v6); `confirmar_unidade` do MCP exige duas referências não paralelas
+  (≥ 30°) que concordem em 0,5 %; `tools/ci/determinismo.py` + job `determinismo` na CI.
+  Nas plantas analíticas (corredor em L, pilar, duas portas) o erro ficou entre 0,009 e
+  0,013 m com incerteza declarada 0,125 m; a grade dava ±1,1 a ±1,6 m.
+
+- **F8** — `coscip_findings.achado` (`to_achado`/`to_achados`): o `Finding` vira achado do
+  contrato comum com os três status copiados, citação com os termos conferidos (`quote` passou
+  a sair em `normative_citations`), critério adotado separado, evidências e medida; o texto do
+  `fato` não leva hash nem nome de algoritmo. `analisar_planta` devolve `achados`;
+  `findings_for_analysis` (`v2-findings --out`) também. Esquema ganhou `outras_regras`
+  (`$defs/regra`). Scripts de skill: `orquestrar-analise-cbmerj/scripts/consolidar_matriz.py`
+  (valida — `jsonschema` se houver, senão conferência mínima —, não traduz, agrupa
+  equivalentes e marca `divergente`), `emitir-bilhete-cbmerj/scripts/rascunho_bilhete.py`
+  (entra não conforme e pendência do projeto sem revisão aberta; falta de dado vai para a nota
+  interna) e `conferir_citacoes.py` (documento, dispositivo e ano da edição no índice).
+  Protocolo de leitura de pranchas: com planta vetorial e GATE-0 aberto a distância é cobrada
+  pela medida do motor. Aceite no teste `tests/integration/test_processo_sintetico_f8.py`
+  (fixture `tests/fixtures/processo-sintetico/`, fictícia): matriz com motor + skill e bilhete
+  com 2/2 citações localizadas. `jsonschema` entrou no extra `dev`.
+
+- **F7.4 (correção)** — a CI mostrou hashes diferentes já no DXF: o ezdxf ordena a seção
+  OBJECTS pela ordem de um conjunto de strings (depende de `PYTHONHASHSEED`). As plantas do
+  teste de determinismo são geradas num subprocesso com `PYTHONHASHSEED=0`; a análise roda
+  com semente aleatória e o teste confere sementes 1 e 2 com o mesmo hash. O JSON da CI leva o
+  DXF e a saída comprimidos: em divergência o job imprime o diff.
+- **F9** — `tools/validacao/fidelidade.py` e o formato do corpus-gabarito (pasta por
+  processo com `gabarito.yaml` + saídas do sistema em `sistema/`); relatório
+  `docs/validacao/2026-09-29.md` (corpus não medido; distâncias analíticas: erro de −0,013 a
+  +0,009 m com ± 0,125 m, contra ± 1,1 a ± 1,6 m da grade); `Homologation` em
+  `coscip_rules.dsl` usado por regras e checks (hash de conteúdo inalterado quando ausente).
+
+### Decisões e cuidados desta sessão
+- Testes antigos alterados **só** quando o plano muda o comportamento: portas novas nos
+  fixtures (F4/F5/F7), algoritmo principal agora vetorial (F7), contrato de
+  `confirmar_unidade` com duas medidas (F7.3). No F6 nenhum teste antigo foi alterado.
+- Linha de parede em traço único vira obstáculo de 1 cm de meia-largura; o ponto de pior caso
+  fica a ~2 cm do canto (entra na parcela de modelagem de parede).
+- Interior fechado (pilar, shaft) não tem caminho: a grade já o marca como não alcançado e a
+  porta `quality.<sistema>.complete` decide; o vetorial registra `unreachable_points`.
+- A API (`CAD-02`) continua com uma medida (desvio ≤ 2 %); só o MCP passou a exigir duas.
+- Depois de cada push, o bot do `normas-midia.yml` pode commitar na branch: `git pull --rebase`
+  antes do próximo push; conflito em arquivo gerado se resolve **regenerando**, nunca à mão.
+
+- 30/09/2026 (decisões delegadas pelo usuário): 5 divergentes resolvidas com dois caminhos (novas opções de forma `sem_espacos` e `ignorar`, com teste); Anexo III T22–32 no motor (T22, 23, 24, 27, 30, 32 por pavimentos/altura; 30 e 32 para qualquer área; 25, 26, 28, 29 e 31 como referência); decisões de fonte registradas na seção 2 com critério conservador.

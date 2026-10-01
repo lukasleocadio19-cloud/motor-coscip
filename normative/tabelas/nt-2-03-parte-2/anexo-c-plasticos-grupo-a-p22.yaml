@@ -1,0 +1,64 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-03 Parte 2
+arquivo: nt-2-03-parte-2-sprinklers-armazenamento.md
+tabela: Anexo C (Plásticos Grupo A)
+titulo: Exemplos das mercadorias – Plásticos Grupo A (continuação)
+pagina: 22
+fonte_pdf_sha256: 62063c69620978eace6b0e091ac538c9d63d43f20932fb97b02eb0d183a4f8d1
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 0
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-03-parte-2/pagina-22.jpg
+    imagem_sha256: 89f979bd1373e0b1021c0fa11f84d91d2ee639f828c8e6ab0d9b411e5c6b1942
+    linhas_cabecalho: 0
+    cabecalho_publicado:
+    - Exemplos – Plásticos Grupo A
+    linhas:
+    - - Raiom e náilon - Linha, em carretéis plásticos
+    - - Tecidos resistidos com resinas vinílicas Em caixas de papelão
+    - - Pisos vinílicos Em rolos
+    - - Papel revestido com cera Copos, pratos - A granel em caixas de papelão grandes
+    - - Cera Parafina, blocos, em caixas de papelão
+    - - Arame Armazenagem em grandes quantidades de carretéis de plástico vazios
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 60.12
+      - 56.88
+      - 527.98
+      - 216.02
+      linhas:
+      - - Raiom e náilon - Linha, em carretéis plásticos
+      - - Tecidos resistidos com resinas vinílicas Em caixas de papelão
+      - - Pisos vinílicos Em rolos
+      - - Papel revestido com cera Copos, pratos - A granel em caixas de papelão grandes
+      - - Cera Parafina, blocos, em caixas de papelão
+      - - Arame Armazenagem em grandes quantidades de carretéis de plástico vazios
+notas:
+- Cada célula é um bloco de linhas na página; aqui as linhas do bloco vão juntas, separadas por espaço.
+- Continuação da tabela de plásticos Grupo A da página 21.
+- 'A camada de texto não reconhece esta tabela: o segundo caminho é a grade do PDF (extração geométrica).'
+- 'FONTE: IT-24/2018 - CBPMESP.'
+- 1 A maioria das baterias tem gabinete de polipropileno. Se armazenadas vazias devem ser tratadas como
+  plástico Grupo A. Baterias para caminhões, mesmo quando cheias, devem ser consideradas plástico Grupo
+  A por causa das paredes mais espessas.
+- 2 À medida que as aberturas em engradados plásticos aumentam, o produto comporta-se mais como Classe
+  III. Da mesma maneira, à medida que as aberturas tornam-se menores, o produto comporta-se mais como
+  plástico.
+inconsistencias_da_fonte:
+- '"Tecidos resistidos com resinas vinílicas"; o Anexo B (p. 14) grafa "Tecidos revestidos com resinas
+  vinílicas".'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 1
+  bbox: *id001

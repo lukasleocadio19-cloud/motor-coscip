@@ -1,0 +1,108 @@
+# Pacote portátil do Windows (plano de correção, F0.3; ADR 0007).
+# Disparado por tag v*: testa, monta MotorCoscip-<versão>-win64.zip + SHA256SUMS e anexa à
+# Release do GitHub. O zip roda de uma pasta descompactada, sem instalar Python e sem admin.
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      versao:
+        description: "Versão (sem o v) para um pacote de teste, sem Release"
+        required: true
+        default: "0.0.0-teste"
+
+permissions:
+  contents: write
+
+jobs:
+  pacote:
+    runs-on: windows-latest
+    env:
+      PYTHONIOENCODING: utf-8
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+
+      - name: Versão
+        id: v
+        shell: pwsh
+        run: |
+          if ("${{ github.ref_type }}" -eq "tag") { $v = "${{ github.ref_name }}".TrimStart("v") }
+          else { $v = "${{ inputs.versao }}" }
+          "versao=$v" >> $env:GITHUB_OUTPUT
+
+      - name: Testes antes de empacotar
+        shell: pwsh
+        run: |
+          python -m pip install --require-hashes -r requirements/dev.lock
+          python -m pip install -e . --no-deps
+          $env:COSCIP_NORMAS_DIR = "$PWD\normative\fontes"
+          python -m pytest -p no:cacheprovider -q --basetemp "$env:RUNNER_TEMP\pytest"
+
+      - name: Interface
+        run: |
+          npm ci
+          npm run build
+
+      - name: Python embeddable (baixa e confere)
+        shell: pwsh
+        run: |
+          $cfg = Get-Content scripts/package/python-embed.json -Raw | ConvertFrom-Json
+          $zip = Join-Path $env:RUNNER_TEMP (Split-Path $cfg.url -Leaf)
+          Invoke-WebRequest $cfg.url -OutFile $zip
+          $hash = (Get-FileHash $zip -Algorithm SHA256).Hash.ToLower()
+          "Python embeddable $($cfg.versao): sha256 $hash" | Tee-Object -Append $env:GITHUB_STEP_SUMMARY
+          if ($cfg.sha256) {
+            if ($hash -ne $cfg.sha256.ToLower()) { throw "SHA-256 do Python embeddable não confere ($hash)" }
+          } else {
+            # Ainda não fixado: confere a assinatura Sigstore publicada pelo python.org e para.
+            Invoke-WebRequest "$($cfg.url).sigstore" -OutFile "$zip.sigstore"
+            python -m pip install sigstore
+            python -m sigstore verify identity --bundle "$zip.sigstore" `
+              --cert-identity $cfg.sigstore_identidade --cert-oidc-issuer $cfg.sigstore_emissor $zip
+            if ($LASTEXITCODE -ne 0) { throw "assinatura Sigstore do Python embeddable não confere" }
+            throw "Assinatura ok. Fixe sha256=$hash em scripts/package/python-embed.json e rode de novo."
+          }
+          "EMBED_ZIP=$zip" >> $env:GITHUB_ENV
+
+      - name: Montar o pacote
+        run: python tools/package/portatil.py --versao ${{ steps.v.outputs.versao }} --python-embed "${{ env.EMBED_ZIP }}" --saida dist
+
+      - name: Autoteste do pacote (Python embeddable, fora do repositório)
+        shell: pwsh
+        run: |
+          $dest = Join-Path $env:RUNNER_TEMP "portatil"
+          Expand-Archive dist/MotorCoscip-*-win64.zip -DestinationPath $dest
+          $pasta = (Get-ChildItem $dest -Directory)[0].FullName
+          Push-Location $env:RUNNER_TEMP
+          & "$pasta\python\python.exe" -m coscip_mcp --verificar
+          if ($LASTEXITCODE -ne 0) { throw "autoteste do pacote falhou" }
+          Pop-Location
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MotorCoscip-${{ steps.v.outputs.versao }}-win64
+          path: |
+            dist/*.zip
+            dist/SHA256SUMS
+
+      - name: Release
+        if: github.ref_type == 'tag'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          gh release create "${{ github.ref_name }}" dist/*.zip dist/SHA256SUMS `
+            --title "Motor COSCIP ${{ github.ref_name }}" `
+            --notes "Pacote portátil do Windows (ADR 0007). Descompacte e rode verificar.cmd. Nenhum resultado tem valor normativo até a homologação."

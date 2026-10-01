@@ -19,6 +19,8 @@ dependencies = [
   "numpy>=1.26",
   "scipy>=1.13",
   "networkx>=3.3",
+  # segundo método de distância (Fast Marching, eikonal) para conferir o vetorial (F7.2)
+  "scikit-fmm>=2024.5",
   "pyyaml>=6.0",
   "python-multipart>=0.0.9",
   "jinja2>=3.1",
@@ -27,7 +29,11 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "httpx>=0.27", "hypothesis>=6.100", "ruff>=0.6", "mypy>=1.11"]
+dev = ["pytest>=8", "httpx>=0.27", "hypothesis>=6.100", "ruff>=0.6", "mypy>=1.11",
+       # valida os achados do motor contra skills/_comum/achado.schema.json (F8)
+       "jsonschema>=4.23"]
+# ferramentas da base normativa (F2): renderizar páginas e extrair tabelas dos PDFs oficiais
+normas = ["pypdfium2>=4.30", "pdfplumber>=0.11", "rapidfuzz>=3.9", "pillow>=10.4"]
 
 [project.scripts]
 coscip-launcher = "coscip_api.launcher:main"
@@ -55,7 +61,10 @@ include = ["coscip_*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-markers = ["timeout: limite de tempo (informativo)"]
+markers = [
+  "timeout: limite de tempo (informativo)",
+  "windows: depende do Windows (os.kill, keyring, PowerShell); pulado nos outros sistemas",
+]
 pythonpath = [
   ".", "apps/api", "apps/mcp", "workers/local", "packages/cbm_schema", "packages/cad",
   "packages/geometry", "packages/topology", "packages/semantics",
@@ -75,7 +84,7 @@ select = ["E", "F", "I", "B", "UP"]
 known-first-party = [
   "coscip_api", "coscip_worker", "coscip_cbm", "coscip_cad", "coscip_geometry",
   "coscip_topology", "coscip_semantics", "coscip_rules", "coscip_storage", "coscip_jobs",
-  "coscip_ai", "coscip_normative", "coscip_analysis", "coscip_mcp", "tests",
+  "coscip_ai", "coscip_normative", "coscip_analysis", "coscip_mcp", "tests", "tools",
 ]
 
 [tool.ruff.lint.flake8-bugbear]

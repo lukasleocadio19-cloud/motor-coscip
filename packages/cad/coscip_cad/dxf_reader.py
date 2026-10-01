@@ -95,6 +95,28 @@ class ExtractedEntity:
     source_layer: str | None = None  # layer original quando herdado ("0" em bloco)
     # Ponto de inserção no mundo (INSERT, TEXT, MTEXT, ATTRIB, CIRCLE, POINT).
     anchor: tuple[float, float] | None = None
+    # ATTRIB: etiqueta do atributo (ex.: "AGENTE"); o valor fica em ``text``.
+    tag: str | None = None
+    # INSERT: rotação em graus (identidade física do objeto, deduplicação).
+    rotation: float = 0.0
+
+
+# Por que uma entidade do desenho não foi entregue (plano de correção, F5.1): o que o CAD não
+# mostra ou não imprime não é desenho do projeto.
+SKIP_LAYER_OFF = "LAYER_OFF"
+SKIP_LAYER_FROZEN = "LAYER_FROZEN"
+SKIP_LAYER_NO_PLOT = "LAYER_NO_PLOT"
+
+
+@dataclass(frozen=True)
+class SkippedEntity:
+    handle: str
+    entity_type: str
+    layer: str
+    reason: str
+    instance_path: tuple[str, ...]
+    block_name: str | None = None
+    text: str | None = None
 
 
 class DxfReader:
@@ -103,6 +125,10 @@ class DxfReader:
     def __init__(self, max_expanded: int = DEFAULT_MAX_EXPANDED) -> None:
         self.max_expanded = max_expanded
         self.invisible_skipped = 0
+        # Entidades não entregues por estado de camada (desligada, congelada, não plotável),
+        # com motivo: nada some do balanço de reconhecimento sem registro.
+        self.skipped: list[SkippedEntity] = []
+        self._layer_state: dict[str, str | None] = {}
 
     def open(self, path: Path) -> Drawing:
         try:
@@ -161,6 +187,18 @@ class DxfReader:
         space = doc.modelspace() if layout == "Model" else doc.paperspace(layout)
         budget = [self.max_expanded]
         self.invisible_skipped = 0
+        self.skipped = []
+        self._layer_state = {}
+        for layer in doc.layers:
+            name = layer.dxf.name
+            state = None
+            if layer.is_frozen():
+                state = SKIP_LAYER_FROZEN
+            elif layer.is_off():
+                state = SKIP_LAYER_OFF
+            elif not layer.dxf.get("plot", 1):
+                state = SKIP_LAYER_NO_PLOT
+            self._layer_state[name.upper()] = state
         for e in space:
             yield from self._walk(e, layout, (), Matrix44(), None, 0, budget, None)
 
@@ -188,29 +226,57 @@ class DxfReader:
         handle = e.dxf.handle or "?"
         here = (*path, f"entity:{handle}")
         quality = SUPPORT.get(etype, ExtractionQuality.UNSUPPORTED)
+        layer = self._layer(e, parent_layer)
+        if reason := self._layer_state.get(layer.upper()):
+            text = None
+            if etype in {"TEXT", "ATTRIB"}:
+                text = e.dxf.get("text")
+            elif etype == "MTEXT":
+                text = e.plain_text()
+            self.skipped.append(SkippedEntity(
+                handle, etype, layer, reason, here,
+                e.dxf.get("name") if isinstance(e, Insert) else block_name, text))
+            return
 
         if isinstance(e, Insert):
             if depth >= MAX_BLOCK_DEPTH:
                 raise DxfReadError(f"profundidade de blocos excedida em {handle}")
-            ins_m = e.matrix44() @ m
-            name = e.dxf.name
-            ins_layer = self._layer(e, parent_layer)
-            yield self._make(e, layout, here, ins_m, name, quality, parent_layer)
-            for attrib in e.attribs:
-                yield self._make(attrib, layout, (*here, f"attrib:{attrib.dxf.handle}"),
-                                 m, name, ExtractionQuality.SUPPORTED, parent_layer)
-            block = e.block()
-            if block is None:
-                return
-            child_path = (*path, f"block:{name}@{handle}")
-            for child in block:
-                if child.dxftype() == "ATTDEF":
-                    continue
-                yield from self._walk(child, layout, child_path, ins_m, name, depth + 1,
-                                      budget, ins_layer)
+            copies = [e]
+            if e.mcount > 1:
+                # MINSERT (inserção em matriz): cada célula é um objeto físico distinto.
+                copies = list(e.multi_insert())
+            cols = max(1, int(e.dxf.get("column_count", 1)))
+            for idx, ins in enumerate(copies):
+                ident = handle if len(copies) == 1 else f"{handle}#{idx // cols},{idx % cols}"
+                yield from self._insert(ins, ident, layout, path, m, depth, budget,
+                                        parent_layer)
             return
 
         yield self._make(e, layout, here, m, block_name, quality, parent_layer)
+
+    def _insert(self, e: Insert, handle: str, layout: str, path: tuple[str, ...], m: Matrix44,
+                depth: int, budget: list[int], parent_layer: str | None
+                ) -> Iterator[ExtractedEntity]:
+        here = (*path, f"entity:{handle}")
+        ins_m = e.matrix44() @ m
+        name = e.dxf.name
+        ins_layer = self._layer(e, parent_layer)
+        yield self._make(e, layout, here, ins_m, name, ExtractionQuality.SUPPORTED,
+                         parent_layer, handle=handle)
+        for attrib in e.attribs:
+            if attrib.dxf.get("invisible", 0) or attrib.is_invisible:
+                continue
+            yield self._make(attrib, layout, (*here, f"attrib:{attrib.dxf.handle}"),
+                             m, name, ExtractionQuality.SUPPORTED, parent_layer)
+        block = e.block()
+        if block is None:
+            return
+        child_path = (*path, f"block:{name}@{handle}")
+        for child in block:
+            if child.dxftype() == "ATTDEF":
+                continue
+            yield from self._walk(child, layout, child_path, ins_m, name, depth + 1,
+                                  budget, ins_layer)
 
     @staticmethod
     def _layer(e: DXFGraphic, parent_layer: str | None) -> str:
@@ -246,12 +312,15 @@ class DxfReader:
         block_name: str | None,
         quality: ExtractionQuality,
         parent_layer: str | None = None,
+        handle: str | None = None,
     ) -> ExtractedEntity:
         pts: tuple[tuple[float, float], ...] = ()
         text = None
         polylines: tuple = ()
         sagitta = 0.0
         anchor = None
+        tag = None
+        rotation = float(e.dxf.get("rotation", 0.0)) if e.dxftype() == "INSERT" else 0.0
         etype = e.dxftype()
         try:
             if etype == "INSERT":
@@ -271,13 +340,14 @@ class DxfReader:
                 pts = tuple((v.x, v.y) for v in m.transform_vertices(raw))
             elif etype in {"TEXT", "ATTRIB"}:
                 text = e.dxf.text
+                tag = e.dxf.get("tag") if etype == "ATTRIB" else None
             elif etype == "MTEXT":
                 text = e.plain_text()
             polylines, sagitta = self._polylines(e, m)
         except (AttributeError, ValueError, TypeError, ZeroDivisionError):
             quality = ExtractionQuality.INVENTORY_ONLY
         return ExtractedEntity(
-            handle=e.dxf.handle or "?",
+            handle=handle or e.dxf.handle or "?",
             entity_type=etype,
             layer=self._layer(e, parent_layer),
             layout=layout,
@@ -291,4 +361,6 @@ class DxfReader:
             max_sagitta=sagitta,
             source_layer=e.dxf.get("layer", "0"),
             anchor=anchor,
+            tag=tag,
+            rotation=rotation,
         )

@@ -1,0 +1,111 @@
+schema_version: tabela-conferida/1.0
+documento: NT 2-19
+arquivo: nt-2-19-seguranca-estrutural.md
+tabela: Tabela D1
+titulo: Fatores de ponderação das medidas de segurança contra incêndio
+pagina: 12
+fonte_pdf_sha256: 29a57e10630596f21a7e914197a2ae021c3e78b9a399b2d16799ac9bba1390fe
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 2
+  juntar_cabecalho: false
+  subscrito_deslocado:
+  - n1
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-2-19/pagina-12.jpg
+    imagem_sha256: 39bd7e771ec4ca85db6e4baa65bdb5cbfeb1bc870f1c11fabab9fcb9e7f428ec
+    linhas_cabecalho: 2
+    cabecalho_publicado:
+    - Existência de chuveiros automáticos
+    - Brigada contra incêndio
+    - Existência de detecção automática
+    linhas:
+    - - Valores de γn
+    - - Existência de chuveiros automáticos
+      - Brigada contra incêndio
+      - Existência de detecção automática
+    - - γn1 =0,60
+      - γn1 = 0,90
+      - γn1 =0,90
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 12
+      tabela_na_pagina: 1
+    linhas:
+    - - Valores de  n
+    - - Existência de chuveiros automáticos
+      - Brigada contra incêndio
+      - Existência de detecção automática
+    - - n1 =0,60
+      - n1 = 0,90
+      - n1 =0,90
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 62.85
+      - 346.97
+      - 512.09
+      - 395.21
+      linhas:
+      - - ''
+        - Valores de  n
+        - null
+        - null
+        - ''
+      - - Existência de chuveiros automáticos
+        - null
+        - Brigada contra incêndio
+        - Existência de detecção automática
+        - null
+      - -  =0,60 n1
+        - null
+        -  = 0,90 n1
+        -  =0,90 n1
+        - null
+    - bbox:
+      - 54.88
+      - 469.27
+      - 534.19
+      - 572.35
+      linhas:
+      - - Valores de  s2
+        - Risco de ativação do incêndio
+        - Exemplos de ocupação
+      - - 0,85
+        - Pequena
+        - Escolas, galerias de arte, parques aquáticos, igrejas e museus
+      - - 1,0
+        - Normal
+        - Bibliotecas, cinemas, correios, consultórios médicos, escritórios, farmácias, frigoríficos,
+          hotéis, livrarias, hospitais, laboratórios fotográficos, indústrias de papel, oficinas elétricas
+          ou mecânicas, residências, restaurantes, teatros, depósitos em geral
+      - - 1,2
+        - Média
+        - Montagens de automóveis, hangares, indústrias mecânicas
+      - - 1,5
+        - Alta
+        - Laboratórios químicos, oficinas de pintura de automóveis
+notas:
+- Anexo D da NT 2-19 (redução do TRRF, equação D1). Na ausência do meio de proteção, o respectivo γn =
+  1.
+- 'Divergência técnica nas células de valor: a camada de texto perde o γ (fonte Symbol) e desloca o índice
+  "n1" para depois do número ("γ =0,60 n1"); a ordem dos números muda e a comparação não aceita. Valores
+  lidos na imagem: 0,60 (chuveiros), 0,90 (brigada), 0,90 (detecção). Aguarda o caminho geométrico.'
+inconsistencias_da_fonte:
+- Os três fatores estão rotulados "γn1" na tabela, mas o texto define γn = γn1 × γn2 × γn3 (chuveiros,
+  brigada e detecção seriam γn1, γn2 e γn3).
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada

@@ -1,0 +1,111 @@
+schema_version: tabela-conferida/1.0
+documento: NT 4-01
+arquivo: nt-4-01-quiosques-e-areas-de-exposicao-ou-venda.md
+tabela: Tabela 1
+titulo: Dimensionamento de vão livre de passagem
+pagina: 4
+fonte_pdf_sha256: 1cb4c036d0b4ac64945dd66b209843d0ac14bc61fd66c065219ba7f1830938d6
+conferida_em: '2026-09-29'
+forma:
+  linhas_cabecalho: 3
+caminhos:
+  visual:
+    metodo: leitura visual célula a célula da imagem da página (sessão Claude Code, 29/09/2026)
+    imagem: media/nt-4-01/pagina-04.jpg
+    imagem_sha256: 4057f4553a65d9f9cf6626187e9dc4b9eafb2636968dc22b6fb7934b17fb34f6
+    linhas_cabecalho: 1
+    linhas:
+    - - Distância entre o ponto de quiosque e a saída ou escada mais próxima (m)
+      - Largura mínima do vão livre de passagem (m)
+    - - Até 15,00
+      - 3,00
+    - - Até 20,00
+      - 3,30
+    - - Até 25,00
+      - 3,63
+    - - Até 30,00
+      - 3,99
+    - - A cada 5,0 m ou fração adicionada a última distância.
+      - Acréscimo de 10% da última largura.
+  texto:
+    metodo: seção "Tabelas extraídas" do .md (camada de texto do PDF)
+    origem:
+      pagina: 4
+      tabela_na_pagina: 1
+    linhas:
+    - - Distância entre o ponto de quiosque e a saída ou escada mais próxima (m)
+      - Largura mínima do vão livre de passagem (m)
+    - - Até 15,00
+      - 3,00
+    - - Até 20,00
+      - 3,30
+    - - Até 25,00
+      - 3,63
+    - - Até 30,00
+      - 3,99
+    - - A cada 5,0 m ou fração adicionada a última distância.
+      - Acréscimo de 10% da última largura.
+  geometrica:
+    metodo: pdfplumber 0.11.10, estratégia por linhas
+    todas_da_pagina: true
+    candidatos:
+    - bbox: &id001
+      - 42.74
+      - 258.08
+      - 283.59
+      - 495.19
+      linhas:
+      - - ''
+        - Distância entre o ponto de
+        - ''
+        - Largura mínima do vão livre de passagem (m)
+      - - null
+        - quiosque e a saída ou escada
+        - null
+        - null
+      - - null
+        - mais próxima (m)
+        - null
+        - null
+      - - Até 15,00
+        - null
+        - null
+        - 3,00
+      - - Até 20,00
+        - null
+        - null
+        - 3,30
+      - - Até 25,00
+        - null
+        - null
+        - 3,63
+      - - Até 30,00
+        - null
+        - null
+        - 3,99
+      - - A cada 5,0 m ou fração adicionada a última distância.
+        - null
+        - null
+        - Acréscimo de 10% da última largura.
+    - bbox:
+      - 182.66
+      - 264.29
+      - 278.2
+      - 294.29
+      linhas:
+      - - Largura mínima do vão
+      - - livre de passagem (m)
+notas:
+- 'Fonte indicada na página: CBMERJ.'
+- 'Conferência aritmética: cada largura é 10 % maior que a anterior, arredondada para baixo no centímetro
+  (3,00 → 3,30 → 3,63 → 3,993 ≈ 3,99).'
+estado: verificada
+resultado:
+  estado: verificada
+  caminhos_comparados:
+  - visual
+  - geometrica
+  candidato_geometrico: 0
+  candidatos_na_pagina: 2
+  bbox: *id001
+  texto: verificada
