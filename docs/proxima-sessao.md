@@ -468,6 +468,23 @@ Análises mais recentes: 9715 `f2c44ad2…`, 21471 `4722e788…`, 41336 `629e6ba
   do pacote v4. Só o enquadramento do modo projeto as consulta.
 - Conferido ao final: suíte completa, `ruff` e `npm run build` (ver a mensagem da sessão). Nada commitado.
 
+### 09/11/2026 — merge do PR #2 sobre o PR #1 e correção
+
+- O clone desta máquina era anterior ao **PR #1** (plano F0–F9, juntado em 01/10, 1.019
+  arquivos). O PR #2 (modo projeto) foi juntado no `master` que já o continha; o GitHub não
+  apontou conflito, mas o CI do `master` (`a41e4b2`) falhou em 2 testes: o PR #1 mudou
+  `confirmar_unidade` para **duas medidas não paralelas** (`referencias`) e passou a responder
+  o Anexo III (Tabelas 5 a 32) pela tabela do pacote normativo.
+- Correção: `_cross_check` no enquadramento usa a tabela do pacote (PR #1) como principal e a
+  leitura de `coscip_design.anexo_iii` (conferida no PDF) como segunda leitura: concordando
+  célula a célula, acrescenta as observações e a nota de dupla conferência; divergindo, lista
+  as divergências; quando a principal pede dado ou revisão, o pedido vale; quando ela não
+  escolhe a coluna (grupo M) ou não tem a tabela, vale a segunda leitura. Nos casos testados
+  (D-2 com 8 pav., C-2 com 33 m) as duas leituras concordam.
+- Textos da skill e do servidor ajustados para duas medidas na confirmação da unidade.
+- `.venv` reinstalado com `.[dev,normas]` (o PR #1 acrescentou `scikit-fmm`, `jsonschema`,
+  `rapidfuzz`, `pdfplumber`, `pypdfium2`, `pillow`). Suíte no `master` corrigido: 674 testes.
+
 ### 09/11/2026 — instalação do MCP nesta máquina e commit
 
 - O Claude Desktop desta máquina é a versão da loja: a configuração fica em

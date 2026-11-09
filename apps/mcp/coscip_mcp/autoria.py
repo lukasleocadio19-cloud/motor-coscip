@@ -16,7 +16,8 @@ Convenções do desenho gerado (as mesmas que o leitor do motor reconhece):
   dicionário (``simbolos.yaml``) reconhece, e legenda gerada a partir deles (NT 1-03, 5.4).
 
 Mesmo assim a unidade segue a regra do projeto: a análise só roda depois de
-``confirmar_unidade`` (a medida pode ser uma parede cujo comprimento o usuário informou).
+``confirmar_unidade`` (duas medidas em direções diferentes, ex. duas paredes cujo
+comprimento o usuário informou).
 """
 
 from __future__ import annotations

@@ -69,7 +69,7 @@ def test_edificacao_grande_usa_as_tabelas_5_a_32_com_o_roteiro(real):
     assert not erro, texts
     anexo = enq["anexo_iii"]
     assert anexo["status"] == "INDICATIVE" and anexo["tabela"] == "Anexo III, Tabela 8 (p. 32)"
-    assert anexo["conferencia"].startswith("conferida no PDF oficial")
+    assert anexo["conferencia"].startswith("duas leituras independentes concordam")
     assert {"Extintores", "Hidrantes e mangotinhos", "Alarme de Incêndio"} <= set(
         enq["medidas_exigidas"])
     por_nome = {m["medida"]: m for m in enq["medidas"]}
@@ -87,8 +87,10 @@ def test_edificacao_grande_usa_as_tabelas_5_a_32_com_o_roteiro(real):
     assert pequeno["anexo_iii"]["tabela"].startswith("Anexo III, Tabela 2")
     assert "conferencia" not in pequeno["anexo_iii"]
 
-    # grupo M por outro critério: devolve as colunas para escolher
-    _, m2, _, _ = call(real, "enquadrar_edificacao", occupancy="M-2")
+    # grupo M por outro critério: a tabela do motor não escolhe a coluna; vale a leitura que
+    # devolve as colunas para escolher
+    _, m2, _, _ = call(real, "enquadrar_edificacao", occupancy="M-2", building_area_m2=500,
+                       building_floors=1, building_height_m=4, single_occupancy=True)
     assert m2["anexo_iii"]["status"] == "CHOOSE_COLUMN" and len(m2["colunas_da_tabela"]) == 5
     erro, _, texts, _ = call(real, "enquadrar_edificacao", building_area_m2=100)
     assert erro and "occupancy" in texts[0]
