@@ -13,6 +13,7 @@ data/
 *.db
 *.db-wal
 *.db-shm
+plantas-criadas/
 *.dxf
 *.dwg
 !normative/fixtures/**/*.dxf

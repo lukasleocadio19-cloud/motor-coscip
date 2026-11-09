@@ -55,9 +55,28 @@ class DwgConversion:
         return asdict(self)
 
 
-def find_oda() -> Path | None:
-    """Conversor configurado em ``COSCIP_ODA_PATH`` ou o mais novo instalado."""
-    configured = os.environ.get(ODA_ENV)
+def user_env_var(name: str) -> str | None:
+    """Variável de ambiente do USUÁRIO no Windows (registro ``HKCU\\Environment``).
+
+    O Claude Desktop inicia o servidor MCP sem herdar as variáveis definidas para a conta e
+    regrava a própria configuração (descartando um ``env`` acrescentado com o aplicativo
+    aberto). Ler o registro faz a variável valer sem depender disso.
+    """
+    if os.name != "nt":
+        return None
+    try:
+        import winreg
+
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Environment") as key:
+            value, _ = winreg.QueryValueEx(key, name)
+    except OSError:
+        return None
+    return str(value) if value else None
+
+
+def find_oda(user_env: Callable[[str], str | None] = user_env_var) -> Path | None:
+    """Conversor de ``COSCIP_ODA_PATH`` (processo ou conta do usuário) ou o mais novo instalado."""
+    configured = os.environ.get(ODA_ENV) or user_env(ODA_ENV)
     if configured:
         path = Path(configured.strip('"'))
         return path if path.is_file() else None

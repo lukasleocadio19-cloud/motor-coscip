@@ -74,7 +74,10 @@ def test_initialize_negocia_versao_e_lista_ferramentas(srv):
     assert {t["name"] for t in tools} == {
         "abrir_planta", "ver_planta", "listar_textos", "listar_simbolos", "classificar_blocos",
         "medir", "confirmar_unidade", "definir_pavimentos", "analisar_planta",
-        "consultar_norma"}
+        "consultar_norma", "criar_planta", "desenhar_planta", "listar_elementos",
+        "remover_elementos", "listar_simbologia", "enquadrar_edificacao",
+        "dimensionar_extintores", "dimensionar_saidas", "dimensionar_hidrantes",
+        "requisitos_iluminacao_alarme", "salvar_memorial"}
     assert all(t["inputSchema"]["type"] == "object" and t["description"] for t in tools)
 
 
@@ -97,7 +100,7 @@ def test_processo_real_por_stdio(normas):
     env = {**os.environ, "PYTHONPATH": os.pathsep.join(
         str(ROOT / p) for p in ("apps/mcp", "apps/api", "packages/analysis",
                                 "packages/normative", "packages/cad", "packages/geometry",
-                                "packages/cbm_schema", "packages/rules"))}
+                                "packages/cbm_schema", "packages/rules", "packages/design"))}
     entrada = "\n".join(json.dumps(m) for m in (
         {"jsonrpc": "2.0", "id": 1, "method": "initialize",
          "params": {"protocolVersion": "2025-06-18"}},
@@ -109,7 +112,7 @@ def test_processo_real_por_stdio(normas):
     linhas = [json.loads(x) for x in proc.stdout.decode("utf-8").splitlines()]
     assert [x["id"] for x in linhas] == [1, 2]  # stdout só tem protocolo
     assert linhas[0]["result"]["serverInfo"]["name"] == "coscip-plantas"
-    assert len(linhas[1]["result"]["tools"]) == 10
+    assert len(linhas[1]["result"]["tools"]) == 21
     assert b"pronto" in proc.stderr
 
 
@@ -265,6 +268,37 @@ def test_registro_nao_sobrescreve_json_invalido(tmp_path):
     with pytest.raises(json.JSONDecodeError):
         register(cfg, "C:/py.exe")
     assert cfg.read_text(encoding="utf-8") == "{ quebrado"
+
+
+def test_registro_acha_o_arquivo_conforme_a_instalacao_do_aplicativo(tmp_path):
+    """Instalado pela loja, o Claude Desktop guarda a configuração fora de %APPDATA%\\Claude."""
+    from coscip_mcp.registro import default_config
+
+    local, roaming = tmp_path / "Local", tmp_path / "Roaming"
+    env = {"LOCALAPPDATA": str(local), "APPDATA": str(roaming)}
+    classico = roaming / "Claude" / "claude_desktop_config.json"
+    assert default_config(env) == classico  # nada existe: vale a instalação clássica
+    classico.parent.mkdir(parents=True)
+    classico.write_text("{}", encoding="utf-8")
+    assert default_config(env) == classico
+    loja = local / "Claude-Data" / "claude_abc123" / "claude_desktop_config.json"
+    loja.parent.mkdir(parents=True)
+    loja.write_text("{}", encoding="utf-8")
+    assert default_config(env) == loja  # o que o aplicativo da loja realmente lê
+    with pytest.raises(FileNotFoundError):
+        default_config({})
+
+
+def test_registrar_de_novo_mantem_as_variaveis_ja_gravadas(tmp_path):
+    from coscip_mcp.registro import register
+
+    cfg = tmp_path / "claude_desktop_config.json"
+    register(cfg, "C:/py.exe", {"COSCIP_ODA_PATH": "C:/oda.exe"})
+    out = register(cfg, "C:/novo/py.exe", {"COSCIP_NORMAS_DIR": "D:/normas"})  # atualização
+    assert out["entrada"] == {"command": "C:/novo/py.exe", "args": ["-m", "coscip_mcp"],
+                              "env": {"COSCIP_ODA_PATH": "C:/oda.exe",
+                                      "COSCIP_NORMAS_DIR": "D:/normas"}}
+    assert register(cfg, "C:/py.exe")["entrada"]["env"]["COSCIP_ODA_PATH"] == "C:/oda.exe"
 
 
 def test_normas_do_repositorio_sao_encontradas(monkeypatch):

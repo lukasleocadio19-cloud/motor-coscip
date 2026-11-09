@@ -1,0 +1,310 @@
+# Parâmetros de DIMENSIONAMENTO do projeto de segurança contra incêndio e pânico (design-params/1.0).
+#
+# RASCUNHO redigido pelo assistente a partir do texto ingerido das NTs (normative/fontes). Sem
+# homologação: nenhum resultado tem valor normativo. Cada parâmetro traz a citação (documento,
+# item, termos) que é CONFERIDA no texto ao carregar; parâmetro cuja citação não confere não é
+# usado (o cálculo que depende dele é recusado). "linha" confere os termos na MESMA linha de tabela.
+# "texto_em" diz em que item do texto ingerido o trecho caiu quando a extração do PDF deslocou a
+# tabela ou o parágrafo (a citação continua sendo a do "item"; a página é a do trecho encontrado).
+# "imagem" registra conferência visual na página (células mescladas que o texto não reproduz).
+schema_version: design-params/1.0
+parametros:
+
+  # --- NT 2-01 — extintores ---------------------------------------------------------------------
+  ext.area_max_m2:
+    titulo: Área máxima protegida por uma unidade extintora
+    valor: {PEQUENO: 250, MEDIO: 150, GRANDE: 100}
+    unidade: m²
+    fonte: {document: NT 2-01, item: Tabela 3,
+            quote: ["Área máxima protegida por 01 (uma) unidade extintora", "250 m²", "150 m²", "100 m²"]}
+  ext.distancia_max_m:
+    titulo: Distância máxima a percorrer até o extintor
+    valor: {PEQUENO: 20, MEDIO: 15, GRANDE: 10}
+    unidade: m
+    fonte: {document: NT 2-01, item: Tabela 3,
+            quote: ["Distância máxima percorrida", "20 m", "15 m", "10 m"]}
+  ext.minimo_por_edificacao:
+    titulo: Mínimo de extintores (um classe A e um classes B e C, ou dois ABC)
+    valor: 2
+    unidade: un
+    fonte: {document: NT 2-01, item: "5.2.5",
+            quote: ["no mínimo, 02 (dois) extintores de incêndio", "02 (dois) extintores iguais de pó ABC"]}
+  ext.unico_abc_area_m2:
+    titulo: Área abaixo da qual se admite uma única unidade de pó ABC (risco pequeno)
+    valor: 50
+    unidade: m²
+    fonte: {document: NT 2-01, item: "5.2.4",
+            quote: ["uma única unidade extintora de pó ABC", "risco pequeno", "inferior a 50 m²"]}
+  ext.capacidade_minima_portatil:
+    titulo: Capacidade extintora mínima — extintores portáteis
+    valor: {AGUA: "2-A", ESPUMA: "2-A: 10-B", CO2: "5-B: C", PQS_BC: "20-B: C", PQS_ABC: "2-A: 20-B: C"}
+    fonte: {document: NT 2-01, item: Tabela 1,
+            quote: ["2-A: 10-B", "5-B: C", "20-B: C", "2-A: 20-B: C"]}
+  ext.capacidade_minima_sobre_rodas:
+    titulo: Capacidade extintora mínima — extintores sobre rodas
+    valor: {AGUA: "10-A", ESPUMA: "6-A: 40-B", CO2: "10-B: C", PQS_BC: "80-B: C", PQS_ABC: "6-A: 80-B: C"}
+    fonte: {document: NT 2-01, item: Tabela 2,
+            quote: ["10-A", "6-A: 40-B", "10-B: C", "80-B: C", "6-A: 80-B: C"]}
+  ext.risco_grande_classe_a:
+    titulo: Capacidade mínima classe A no risco grande
+    valor: "4-A"
+    fonte: {document: NT 2-01, item: "6.1.1.2", texto_em: Tabela 3,
+            quote: ["Para o risco grande, a unidade extintora para", "capacidade extintora mínima", "4A"]}
+  ext.sobre_rodas_risco_grande:
+    titulo: Extintor sobre rodas obrigatório no risco grande (protege até metade da área)
+    valor: {obrigatorio_em: GRANDE, fracao_maxima_da_area: 0.5}
+    fonte: {document: NT 2-01, item: "5.3",
+            quote: ["obrigatória nas edificações de risco grande", "metade da área total"]}
+  ext.instalacao_especial_distancia_m:
+    titulo: Distância máxima do extintor à instalação especial (casa de máquinas, bombas, força…)
+    valor: 5
+    unidade: m
+    fonte: {document: NT 2-01, item: "6.4", quote: ["não distar mais do que 5 m"]}
+  ext.altura_alca_max_m:
+    titulo: Altura máxima da alça de manuseio
+    valor: 1.6
+    unidade: m
+    fonte: {document: NT 2-01, item: "5.2.1", quote: ["não deve exceder 1,60 m do piso acabado"]}
+
+  # --- NT 2-02 — hidrantes e mangotinhos ----------------------------------------------------------
+  hid.sistema.PEQUENO_MANGOTINHO:
+    titulo: Sistema — risco pequeno (mangotinho)
+    valor: {esguicho_mm: 25, mangueira_mm: 25, mangueira_max_m: 30, mangueira_tipo: Semi-rígida,
+            hidrantes_simultaneos: 1, pressao_mca: 58, vazao_lpm: 100}
+    fonte: {document: NT 2-02, item: Tabela 1, texto_em: "5.2.6",
+            linha: ["Risco Pequeno - Mangotinho", "Regulável", "25", "30", "Semi-rígida", "1", "58", "100"]}
+  hid.sistema.PEQUENO:
+    titulo: Sistema — risco pequeno (canalização preventiva)
+    valor: {esguicho_mm: 38, mangueira_mm: 38, mangueira_max_m: 30, mangueira_tipo: Flexível,
+            hidrantes_simultaneos: 1, pressao_mca: 10, vazao_lpm: 100}
+    fonte: {document: NT 2-02, item: Tabela 1, texto_em: "5.2.6",
+            linha: ["Risco Pequeno", "Regulável", "38", "30", "Flexível", "1", "10", "100"]}
+  hid.sistema.MEDIO_1:
+    titulo: Sistema — risco médio 1 (canalização preventiva)
+    valor: {esguicho_mm: 38, mangueira_mm: 38, mangueira_max_m: 30, mangueira_tipo: Flexível,
+            hidrantes_simultaneos: 1, pressao_mca: 35, vazao_lpm: 200}
+    fonte: {document: NT 2-02, item: Tabela 1, texto_em: "5.2.6",
+            linha: ["Risco Médio 1", "Regulável", "38", "30", "Flexível", "1", "35", "200"]}
+  hid.sistema.MEDIO_2:
+    titulo: Sistema — risco médio 2 (rede preventiva)
+    valor: {esguicho_mm: 38, mangueira_mm: 38, mangueira_max_m: 30, mangueira_tipo: Flexível,
+            hidrantes_simultaneos: 2, pressao_mca: 35, vazao_lpm: 400}
+    fonte: {document: NT 2-02, item: Tabela 1, texto_em: "5.2.6",
+            linha: ["Risco Médio 2", "Regulável", "38", "30", "Flexível", "2", "35", "400"]}
+  hid.sistema.GRANDE:
+    titulo: Sistema — risco grande (rede preventiva)
+    valor: {esguicho_mm: 63, mangueira_mm: 63, mangueira_max_m: 30, mangueira_tipo: Flexível,
+            hidrantes_simultaneos: 2, pressao_mca: 40, vazao_lpm: 1000}
+    fonte: {document: NT 2-02, item: Tabela 1, texto_em: "5.2.6",
+            linha: ["Risco Grande", "Regulável", "63", "30", "Flexível", "2", "40", "1000"]}
+  hid.rti_base_l:
+    titulo: Reserva técnica de incêndio — até 4 hidrantes
+    valor: {PEQUENO_MANGOTINHO: 6000, PEQUENO: 6000, MEDIO_1: 6000, MEDIO_2: 12000, GRANDE: 30000}
+    unidade: L
+    fonte: {document: NT 2-02, item: "5.9.1",
+            quote: ["até 04 (quatro) hidrantes", "Risco Pequeno e Risco Médio I: 6.000 L",
+                    "Risco Médio II: 12.000 L", "Risco Grande: 30.000 L", "Portaria CBMERJ nº 1120"]}
+  hid.rti_acrescimo_l:
+    titulo: Reserva técnica de incêndio — acréscimo por hidrante acima de 4 e limites máximos
+    valor: {por_hidrante_excedente: 500, a_partir_de: 4,
+            maximo: {PEQUENO_MANGOTINHO: 24000, PEQUENO: 24000, MEDIO_1: 30000, MEDIO_2: 36000,
+                     GRANDE: 60000}}
+    unidade: L
+    fonte: {document: NT 2-02, item: "5.9.1",
+            quote: ["acrescentar 500 L (quinhentos litros) por hidrante excedente a 04",
+                    "Risco Pequeno: 24.000 L", "Risco Médio I: 30.000 L", "Risco Médio II: 36.000 L",
+                    "Risco Grande: 60.000 L"]}
+  hid.pressao_max_mca:
+    titulo: Pressão máxima do sistema preventivo
+    valor: 100
+    unidade: mca
+    fonte: {document: NT 2-02, item: "5.7.4", quote: ["não", "exceder 100 mca"]}
+  hid.velocidade_max_ms:
+    titulo: Velocidades máximas no colar hidráulico — sucção e recalque das bombas
+    valor: {succao: 2, recalque_colar: 3}
+    unidade: m/s
+    fonte: {document: NT 2-02, item: "5.7.7", quote: ["velocidades máximas de 2 m/s e 3 m/s"]}
+  hid.velocidade_geral_ms:
+    titulo: Velocidade máxima da água na tubulação
+    valor: 5
+    unidade: m/s
+    fonte: {document: NT 2-02, item: "5.7.8", quote: ["não deve ser superior a 5 m/s"]}
+  hid.hazen_williams_c:
+    titulo: Fator C de Hazen-Williams (tubos novos)
+    valor: {FERRO_FUNDIDO: 100, ACO_PRETO: 120, GALVANIZADO: 120, COBRE: 150}
+    fonte: {document: NT 2-02, item: "5.7.6",
+            quote: ["Hazen-Williams", "J é a perda de carga por atrito, em metros por metros",
+                    "Q é a vazão, em litros por minuto", "D é o diâmetro interno do tubo, em milímetros"]}
+    imagem: "Tabela 3 (p. 8): Ferro fundido 100; Aço preto 120; Galvanizado 120; Cobre 150 — conferida no texto extraído da página"
+  hid.mangueira_alcance:
+    titulo: Comprimento máximo da linha de mangueiras e alcance do hidrante
+    valor: {linha_max_m: 30, secoes_max: 2}
+    fonte: {document: NT 2-02, item: "5.6.1",
+            quote: ["O comprimento das linhas de mangueiras não poderá ultrapassar 30 m",
+                    "máximo de duas seções"]}
+  hid.registro_altura_m:
+    titulo: Altura do registro do hidrante
+    valor: {min: 1.0, max: 1.5}
+    unidade: m
+    fonte: {document: NT 2-02, item: "5.6.1", quote: ["no mínimo, de 1 m e no máximo de 1,5 m do piso"]}
+  hid.recalque_duplo_lpm:
+    titulo: Vazão a partir da qual o hidrante de recalque é duplo (tubulação ≥ 75 mm)
+    valor: 400
+    unidade: L/min
+    fonte: {document: NT 2-02, item: "5.2.7",
+            quote: ["iguais ou superiores a 400 l/min", "deverão ser duplos", "75 mm"]}
+  hid.cmi_dimensoes:
+    titulo: Dimensões mínimas da casa de máquinas de incêndio (canalização preventiva)
+    valor: "1,5 m x 1,5 m x 2 m, PCF P-90 de 0,60 m x 1,80 m"
+    fonte: {document: NT 2-02, item: "5.8.2", quote: ["1,5 m x 1,5 m x 2 m", "P-90", "0,60 m x 1,80 m"]}
+  hid.cmi_dimensoes_rede:
+    titulo: Dimensões mínimas da casa de máquinas de incêndio (rede preventiva)
+    valor: "2,5 m x 2,5 m x 2,3 m, PCF P-90 de 0,90 m x 2,1 m"
+    fonte: {document: NT 2-02, item: "5.8.3", quote: ["2,5 m x 2,5 m x 2,3 m", "0,90 m x 2,1 m"]}
+  hid.abrigo_dimensoes:
+    titulo: Dimensões mínimas dos abrigos de mangueiras (canalização preventiva)
+    valor: "75 cm x 45 cm x 17 cm"
+    fonte: {document: NT 2-02, item: "5.3.4", quote: ["75 cm de altura, 45 cm de largura e 17 cm de profundidade"]}
+  hid.abrigo_dimensoes_rede:
+    titulo: Dimensões mínimas dos abrigos de mangueiras (rede preventiva)
+    valor: "80 cm x 60 cm x 17 cm"
+    fonte: {document: NT 2-02, item: "5.3.5", quote: ["80 cm de altura, 60 cm de largura e 17 cm de profundidade"]}
+
+  # --- NT 2-08 — saídas de emergência -------------------------------------------------------------
+  sai.unidade_passagem_m:
+    titulo: Largura da unidade de passagem
+    valor: 0.55
+    unidade: m
+    fonte: {document: NT 2-08, item: "4.39", quote: ["fila de pessoas", "0,55 m"]}
+  sai.formula:
+    titulo: Número de unidades de passagem N = P/C (arredondado para cima)
+    valor: "N = P / C"
+    fonte: {document: NT 2-08, item: "5.3.1.2",
+            quote: ["Número de unidades de passagem, arredondado para o número inteiro imediatamente superior",
+                    "Capacidade da unidade de passagem conforme Anexo A"]}
+  sai.largura_minima_m:
+    titulo: Larguras mínimas de acessos, escadas e rampas
+    valor: {geral: 1.2, H-2: 1.5, H-3: 1.5, rampa_H-3: 2.2}
+    unidade: m
+    fonte: {document: NT 2-08, item: "5.3.1.3",
+            quote: ["devem ser de 1,20 m, para as ocupações em geral", "1,50 m", "H-2 e H-3", "2,20 m"]}
+  sai.porta_vao_m:
+    titulo: Vão mínimo das portas por unidades de passagem
+    valor: {1: 0.8, 2: 1.1, 3: 1.5, 4: 2.0}
+    unidade: m
+    fonte: {document: NT 2-08, item: "5.3.4.4",
+            quote: ["0,80 m para uma unidade de passagem", "1,10 m para duas unidades de passagem",
+                    "1,50 m, em duas folhas, para 3 unidades", "2,00 m, em duas folhas para 4 unidades"]}
+  sai.porta_corta_fogo_m:
+    titulo: Largura mínima das portas corta-fogo por unidades de passagem
+    valor: {1: 0.9, 2: 1.4, 3: 1.8}
+    unidade: m
+    fonte: {document: NT 2-08, item: "5.3.4.6",
+            quote: ["0,90 m para uma unidade de passagem", "1,40 m, com duas folhas de 0,70 m",
+                    "1,80 m, com duas folhas de 0,90 m"]}
+  sai.barra_antipanico_pessoas:
+    titulo: Lotação acima da qual a divisão F exige barra antipânico
+    valor: 200
+    unidade: pessoas
+    fonte: {document: NT 2-08, item: "5.3.4.9",
+            quote: ["divisão F com capacidade acima de 200 pessoas", "barra anti-pânico"]}
+  sai.grupo_f_saidas:
+    titulo: Mínimo de saídas no grupo F
+    valor: 2
+    fonte: {document: NT 2-08, item: "5.3.2.7", quote: ["Para o grupo F, serão adotadas duas saídas no mínimo"]}
+  sai.duas_escadas_pavimentos:
+    titulo: Número de pavimentos a partir do qual se exigem duas escadas (exceto A-2, A-6, G-2)
+    valor: {pavimentos: 15, excecoes: [A-2, A-6, G-2]}
+    fonte: {document: NT 2-08, item: "5.3.2.2",
+            quote: ["15 ou mais pavimentos", "no mínimo, duas escadas de emergência", "A-2, A-6, G- 2"]}
+  sai.sem_leiaute_reducao:
+    titulo: Redução da distância máxima quando não há leiaute definido
+    valor: 0.30
+    fonte: {document: NT 2-08, item: "5.3.3.3", quote: ["distâncias diretas", "reduzidas em 30%"]}
+
+  # --- NT 2-06 e NT 2-07 — iluminação de emergência e alarme ----------------------------------------
+  ilu.autonomia_min:
+    titulo: Autonomia mínima da iluminação de emergência
+    valor: {geral: 60, H-2: 120, H-3: 120}
+    unidade: min
+    fonte: {document: NT 2-06, item: "5.2",
+            quote: ["autonomia mínima de 60 min", "H-2 e H-3", "120 min"]}
+  ilu.locais:
+    titulo: Locais de instalação da iluminação de emergência
+    valor:
+      A_D_E_G_I_J_L_M: escadas, halls de acesso às escadas e ao longo das rotas de saída
+      B_C_F_H: escadas, halls de acesso às escadas, áreas de refúgio, demais áreas comuns e ao longo das rotas de saída
+    fonte: {document: NT 2-06, item: "5.1.2",
+            quote: ["Nos grupos A, D, E G, I, J, L e M", "Nos grupos B, C, F, H", "áreas de refúgio, demais áreas comuns"]}
+  ilu.escadas:
+    titulo: Pontos de iluminação nas escadas
+    valor: no nível do pavimento e no nível do patamar intermediário, sem ponto de sombra
+    fonte: {document: NT 2-06, item: "5.3.2",
+            quote: ["no nível do pavimento", "patamar intermediário", "ponto de sombra"]}
+  ala.acionador_distancia_m:
+    titulo: Distância máxima a percorrer até o acionador manual
+    valor: 30
+    unidade: m
+    fonte: {document: NT 2-07, item: "5.5.2",
+            quote: ["distância máxima de 30 m", "acionador manual mais próximo"]}
+  ala.autonomia:
+    titulo: Autonomia mínima da fonte secundária do sistema de detecção e alarme
+    valor: {supervisao_h: 24, alarme_min: 15}
+    fonte: {document: NT 2-07, item: "6.6",
+            quote: ["autonomia mínima", "24 h, em regime de supervisão", "15 min"]}
+
+# NT 2-08, Anexo A (p. 18): população e capacidade da unidade de passagem [acesso/descarga, escadas/rampas,
+# portas]. A população de cada linha é conferida no texto (mesma linha da tabela); as capacidades ficam em
+# células mescladas e foram conferidas na imagem da página 18 em 09/11/2026.
+populacao:
+  fonte: {document: NT 2-08, item: Anexo A}
+  imagem: "p. 18 conferida em 09/11/2026 (capacidades em células mescladas)"
+  linhas:
+  - {divisoes: [A-1, A-2, A-4, A-5], por: dormitorio, pessoas: 2, c: [60, 45, 100],
+     linha: ["A-1, A-2, A-4 e A-5", "Duas pessoas por dormitório"]}
+  - {divisoes: [A-3], por: dormitorio_e_alojamento, pessoas: 2, m2_por_pessoa: 4, c: [60, 45, 100],
+     linha: ["A-3", "Duas pessoas por dormitório e uma pessoa por 4 m² de área de alojamento"]}
+  - {grupo: B, por: area, m2_por_pessoa: 15, c: [60, 45, 100],
+     linha: ["Serviços de hospedagem", "Uma pessoa por 15,00 m² de área"]}
+  - {grupo: C, por: area, m2_por_pessoa: 3, c: [100, 60, 100],
+     linha: ["Comercial", "Uma pessoa por 3,00 m² de área"]}
+  - {divisoes: [D-1, D-2, D-3], por: area, m2_por_pessoa: 7, c: [100, 60, 100],
+     linha: ["D-1, D-2 e D-3", "Uma pessoa por 7,00 m² de área"]}
+  - {divisoes: [D-4, D-5], por: area, m2_por_pessoa: 7, c: [100, 60, 100], consultar_norma_especifica: true,
+     linha: ["D-4 e D-5", "Uma pessoa por 7,00 m² de área"]}
+  - {divisoes: [E-1, E-2, E-3], por: area_sala_de_aula, m2_por_pessoa: 1.5, c: [100, 60, 100],
+     linha: ["E-1, E-2 e E-3", "Uma pessoa por 1,50 m² de área de sala de aula"]}
+  - {divisoes: [E-4], por: area_sala_de_aula, m2_por_pessoa: 1.5, c: [30, 22, 30],
+     linha: ["E-4", "Uma pessoa por 1,50 m² de área de sala de aula", "30", "22"]}
+  - {divisoes: [F-1, F-9, F-10], por: area, m2_por_pessoa: 3, c: [100, 75, 100],
+     linha: ["F-1, F-9 e F-10", "Uma pessoa por 3,00 m² de área", "100", "75"]}
+  - {divisoes: [F-2, F-5, F-8], por: area, m2_por_pessoa: 1, c: [100, 75, 100],
+     linha: ["F-2, F-5, F-8", "Uma pessoa por m² de área"]}
+  - {divisoes: [F-3, F-6, F-7, F-11], por: area, m2_por_pessoa: 0.5, c: [100, 75, 100],
+     linha: ["F-3, F-6, F-7 e F-11", "Duas pessoas por m² de área"]}
+  - {divisoes: [F-4], por: area, m2_por_pessoa: 3, c: [100, 75, 100],
+     linha: ["F-4", "Uma pessoa por 3,00 m² de área"]}
+  - {divisoes: [G-1, G-2, G-3], por: vagas, vagas_por_pessoa: 40, c: [100, 60, 100],
+     linha: ["G-1, G-2 e G-3", "Uma pessoa por 40 vagas de veículo", "100", "60"]}
+  - {divisoes: [G-4, G-5], por: area, m2_por_pessoa: 20, c: [100, 60, 100],
+     linha: ["G-4, G-5", "Uma pessoa por 20,00 m² de área"]}
+  - {divisoes: [G-6], por: area, m2_por_pessoa: 40, c: [100, 60, 100],
+     linha: ["G-6", "Uma pessoa por 40 m² de área"]}
+  - {divisoes: [H-3], por: area, m2_por_pessoa: 7, c: [60, 45, 100],
+     linha: ["H-3", "Uma pessoa por 7,00 m² de área", "60", "45"]}
+  - {divisoes: [H-2], por: dormitorio_e_alojamento, pessoas: 2, m2_por_pessoa: 4, c: [30, 22, 30],
+     linha: ["H-2", "uma pessoa por 4 m² de área de alojamento", "30", "22"]}
+  - {divisoes: [H-1], por: leitos_e_ambulatorio, pessoas_por_leito: 1.5, m2_por_pessoa: 7, c: [30, 22, 30],
+     linha: ["H-1", "Uma pessoa e meia por leito + uma pessoa por 7,00 m² de área de ambulatório"]}
+  - {grupo: I, por: area, m2_por_pessoa: 10, c: [100, 60, 100],
+     linha: ["Industrial", "Uma pessoa por 10,00 m² de área", "100", "60"]}
+  - {grupo: J, por: area, m2_por_pessoa: 30, c: [100, 60, 100],
+     linha: ["Depósito", "Uma pessoa por 30,00 m² de área"]}
+  - {divisoes: [L-1], por: area, m2_por_pessoa: 3, c: [100, 60, 100],
+     linha: ["L-1", "Uma pessoa por 3,00 m² de área", "100", "60"]}
+  - {divisoes: [L-2, L-3], por: area, m2_por_pessoa: 10, c: [100, 60, 100],
+     linha: ["L-2, L-3", "Uma pessoa por 10,00 m² de área"]}
+  - {divisoes: [M-2, M-3, M-4, M-5, M-6], por: area, m2_por_pessoa: 10, c: [100, 60, 100],
+     linha: ["M-2, M-3, M-4, M-5, M-6", "Uma pessoa por 10,00 m² de área", "100", "60"]}
+  - {divisoes: [M-8], por: area, m2_por_pessoa: 4, c: [60, 45, 100],
+     linha: ["M-8", "Uma pessoa por 4,00 m² de área", "60", "45"]}

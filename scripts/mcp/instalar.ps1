@@ -19,7 +19,7 @@ param(
     [string]$Oda = "",             # ODAFileConverter.exe, se não estiver no local padrão
     [switch]$RegistrarClaudeDesktop,
     [switch]$RegistrarClaudeCode,
-    [string]$ConfigDesktop = "$env:APPDATA\Claude\claude_desktop_config.json"
+    [string]$ConfigDesktop = ""    # vazio: o registro procura o arquivo do aplicativo instalado
 )
 $ErrorActionPreference = "Stop"
 $root = (Resolve-Path "$PSScriptRoot\..\..").Path
@@ -77,9 +77,11 @@ if ($Normas) { $ambiente["COSCIP_NORMAS_DIR"] = $Normas }
 if ($Oda) { $ambiente["COSCIP_ODA_PATH"] = $Oda }
 
 if ($RegistrarClaudeDesktop) {
-    Passo "Registrando no Claude Desktop: $ConfigDesktop"
+    Passo "Registrando no Claude Desktop"
     # Mescla em Python: preserva as preferências do aplicativo, faz cópia .bak e grava sem BOM.
-    $argsReg = @("-m", "coscip_mcp.registro", "--config", $ConfigDesktop, "--python", $venvPy)
+    # Sem -ConfigDesktop o registro acha o arquivo (o lugar muda com a forma de instalação).
+    $argsReg = @("-m", "coscip_mcp.registro", "--python", $venvPy)
+    if ($ConfigDesktop) { $argsReg += @("--config", $ConfigDesktop) }
     foreach ($k in $ambiente.Keys) { $argsReg += @("--env", "$k=$($ambiente[$k])") }
     & $venvPy @argsReg
     if ($LASTEXITCODE -ne 0) { throw "falha ao registrar no Claude Desktop" }

@@ -30,9 +30,22 @@ O instalador:
 1. acha o Python 3.12 e cria `.venv` na pasta do repositório;
 2. instala o motor e as dependências (`pip install -e .`);
 3. roda o autoteste (`python -m coscip_mcp --verificar`);
-4. com `-RegistrarClaudeDesktop`, acrescenta `coscip-plantas` em
-   `%APPDATA%\Claude\claude_desktop_config.json` **preservando** o que já existe e guardando
-   uma cópia `.bak`; com `-RegistrarClaudeCode`, registra no Claude Code (escopo do usuário).
+4. com `-RegistrarClaudeDesktop`, acrescenta `coscip-plantas` no `claude_desktop_config.json`
+   **preservando** o que já existe e guardando uma cópia `.bak`; com `-RegistrarClaudeCode`,
+   registra no Claude Code (escopo do usuário).
+
+O arquivo do Claude Desktop muda de lugar conforme a instalação, e o instalador o procura
+sozinho (ou informe `-ConfigDesktop <arquivo>`):
+
+| Instalação do Claude Desktop | Arquivo |
+|---|---|
+| pela loja / instalador novo | `%LOCALAPPDATA%\Claude-Data\<id>\claude_desktop_config.json` |
+| pacote da loja (antigo) | `%LOCALAPPDATA%\Packages\Claude_<id>\LocalCache\Roaming\Claude\…` |
+| clássica | `%APPDATA%\Claude\claude_desktop_config.json` |
+
+**Feche o Claude Desktop antes de registrar.** Com o aplicativo aberto, ele regrava o arquivo
+com a cópia que tem na memória e descarta o que foi acrescentado (aconteceu em 09/11/2026 com
+o `env`).
 
 Depois, **reinicie o Claude Desktop**. No Claude Code, abrindo a pasta do repositório, o
 `.mcp.json` já registra o servidor (aprovar quando o Claude Code perguntar).
@@ -47,9 +60,11 @@ no repositório, em `normative/fontes`; o MCP os encontra sozinho. Para usar out
 ## DWG
 
 Com o ODA File Converter instalado no local padrão (`C:\Program Files\ODA\…`), `abrir_planta`
-aceita `.dwg`: converte uma **cópia** para DXF e registra os hashes (ADR 0006). Em outro local:
-`instalar.ps1 -Oda "<caminho>\ODAFileConverter.exe"`. **Licença:** o conversor gratuito é para
-uso não comercial de não membros da ODA.
+aceita `.dwg`: converte uma **cópia** para DXF e registra os hashes (ADR 0006). Em outro local,
+defina a variável de **usuário** `COSCIP_ODA_PATH` com o caminho do `ODAFileConverter.exe`: o
+servidor a lê no registro do Windows mesmo quando o Claude Desktop o inicia sem as variáveis da
+conta (ou use `instalar.ps1 -Oda "<caminho>"`, que a grava no `env` da configuração).
+**Licença:** o conversor gratuito é para uso não comercial de não membros da ODA.
 
 ## Conferir e usar
 
