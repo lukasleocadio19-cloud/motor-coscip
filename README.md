@@ -41,7 +41,7 @@ DXFs sintéticos para testar: `.venv\Scripts\python -m coscip_api.cli make-fixtu
 
 Desenvolvimento (Vite com recarga + API na porta 8765): `scripts\start\dev.ps1`.
 
-## MCP: a IA lendo a planta
+## MCP: a IA lendo e criando a planta
 
 `apps/mcp/coscip_mcp` expõe o motor como servidor MCP local (stdio, sem dependência nova),
 para o Claude ler plantas DXF com precisão em vez de "olhar" a imagem:
@@ -57,6 +57,19 @@ para o Claude ler plantas DXF com precisão em vez de "olhar" a imagem:
 | `definir_pavimentos` | recortes por janela ou polígono |
 | `analisar_planta` | enquadramento (NT 1-04, Anexo III, Anexo C) + Plano de Verificação por pavimento |
 | `consultar_norma` | texto de item ou busca nas NTs e no Decreto |
+| `listar_simbologia` | catálogo da simbologia: os 104 símbolos da NT 1-03 (Anexo A) e as 56 placas da NT 2-05, com id, nome oficial, grupo, página e a classe que o motor reconhece |
+| `criar_planta` | cria uma planta DXF **sintética** (metros) e a abre; `retomar` continua uma criada antes |
+| `desenhar_planta` | salas, paredes (comum, corta-fogo, compartimentação, divisória), portas (inclusive P-60/90/120), símbolos do catálogo, textos, cotas e legenda automática; o DXF é regenerado e relido, com alerta se algum símbolo não for reconhecido |
+| `listar_elementos` / `remover_elementos` | conferir e corrigir o que foi desenhado |
+
+**Modo projeto** ([arquitetura](docs/arquitetura-projeto.md)): `enquadrar_edificacao`, `dimensionar_extintores`, `dimensionar_saidas`, `dimensionar_hidrantes`, `requisitos_iluminacao_alarme` e `salvar_memorial` calculam pelas NTs e devolvem memorial com a citação conferida de cada passo; `desenhar_planta` aceita `corte` (esquemático). O enquadramento cobre o Anexo III inteiro (Tabelas 2 a 32; as 5 a 32 são lidas do texto do Decreto e foram conferidas no PDF oficial em 09/11/2026) e devolve, por medida, como tratá-la. A skill [`skills/projetar-pscip-cbmerj`](skills/projetar-pscip-cbmerj/SKILL.md) conduz o Claude pelo projeto completo. Rascunho para o responsável técnico, sem valor normativo.
+
+Os símbolos são redesenhos em vetor das tabelas da NT 1-03 (nomes oficiais; sem a proporção do arquivo original do CBMERJ). As placas da NT 2-05 são **esquemáticas** (forma, cor e código; sem o pictograma). `apps/mcp/coscip_mcp/simbologia.py`; um teste confere que o motor lê de volta cada símbolo como a classe declarada.
+
+Plantas criadas ficam em `plantas-criadas/` (ou `COSCIP_PLANTAS_DIR`) com um `.coscip.json` ao
+lado do DXF (as operações que o geram). Não são projetos reais, e a análise delas também
+exige `confirmar_unidade`. Só plantas criadas pelo motor podem ser editadas; arquivo aberto
+com `abrir_planta` nunca é alterado.
 
 **Instalar em outro computador:** [`docs/runbooks/instalar-mcp.md`](docs/runbooks/instalar-mcp.md)
 (`scripts\mcp\instalar.ps1 -RegistrarClaudeDesktop`; autoteste `python -m coscip_mcp --verificar`).

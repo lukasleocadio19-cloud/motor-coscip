@@ -125,6 +125,17 @@ runbook `docs/runbooks/dwg-para-dxf.md`.
 > vencer a dificuldade de LER a planta (MCP local, seção 12, sexta parte); depois construir o
 > software em servidor. O MCP existe e está testado; o próximo passo nele é usar com plantas
 > reais (o usuário não tem as antigas) e ajustar pelo que a IA errar.
+>
+> **Lacunas do MCP vistas na 1ª planta real (processo 54323, 28/09/2026):**
+> (a) ~~o servidor MCP não herda `COSCIP_ODA_PATH` da conta~~ — **resolvido em 09/11/2026**:
+> `find_oda` lê a variável do registro do usuário (`HKCU\Environment`) quando o processo não a
+> traz; (b) o **Quadro Resumo estava em
+> OLE2FRAME (planilha Excel embutida) no layout da prancha 01** — o motor não lê layouts nem OLE;
+> extrair com `olefile` + `xlrd` resolveu (CFB começa no byte 128 do `binary_data`); (c) textos,
+> carimbos e legendas do Paper Space ficam fora de `listar_textos`; (d) paredes vindas de PDF
+> importado (camadas `PDF*`/`0`) não foram detectadas (`LOOSE_LINES`), então percursos ficaram
+> indicativos; (e) luminárias desenhadas como CIRCLE+HATCH na camada `INC-LUMINÁRIA-EMERGÊNCIA`
+> não viraram símbolo; (f) a extensão global é inflada por entidades soltas a quilômetros.
 
 1. **Importar o pacote v4 na base real.** É o que ainda falta da entrega anterior: a permissão de
    gravação em `%LOCALAPPDATA%\MotorCoscip` não foi concedida, então a base real continua em v3.
@@ -351,6 +362,124 @@ Análises mais recentes: 9715 `f2c44ad2…`, 21471 `4722e788…`, 41336 `629e6ba
   Python 3.12.10 e Node 24 LTS instalados via `winget`; `.venv` recriado. **243 testes passaram
   antes de qualquer mudança**, `ruff` limpo e `npm run build` padrão funcionou.
 - Fase 3 para extintores, detalhes na seção 12.
+
+### 28/09/2026 — primeiro uso do MCP em processo real (LE 54323)
+
+- Análise de LE (F-8, 2 pavimentos) feita conversando com o Claude: DWG convertido pelo ODA de
+  teste, unidade confirmada pelo usuário (cota de 35,524 m; `$INSUNITS` dizia mm — 6º caso de
+  cabeçalho errado), pavimentos recortados, `analisar_planta` rodado. O motor acertou o risco
+  (NT 1-04 → Médio 1) e a pendência de 1 extintor no 2º pavimento; o percurso de extintor > 15 m
+  foi confirmado por medida em linha reta (16,04 m, limite inferior do percurso).
+- Lacunas registradas na seção 2 (Desenvolvimento). Nenhum código alterado; nenhum dado real
+  entrou no repositório.
+
+### 09/11/2026 — Claude cria plantas pelo MCP
+
+- Novo `apps/mcp/coscip_mcp/autoria.py` + 4 ferramentas: `criar_planta`, `desenhar_planta`,
+  `listar_elementos`, `remover_elementos` (agora 15 no total, com a simbologia). A IA descreve a planta em
+  operações (`sala`, `parede`, `porta`, `simbolo`, `texto`, `cota`; metros, Y para cima) e o
+  motor gera o DXF inteiro a cada alteração (grava em `.tmp` e troca), guardando as operações em
+  `<nome>.coscip.json` para retomar. Só plantas criadas assim são editáveis.
+- Cada `desenhar_planta` relê o DXF com o leitor do motor e devolve os símbolos reconhecidos,
+  com `ALERTA_simbolos_nao_reconhecidos` se algum pedido não foi lido. Os nomes de bloco saem
+  do `simbolos.yaml`; um teste confere que cada classe desenhável é reconhecida pela própria
+  classe (se o dicionário mudar, o teste acusa).
+- Armadilha achada: o motor só reconhece paredes com **≥ 20 segmentos** na camada; sala
+  pequena com linhas inteiras caía em "sem obstáculos" (área = recorte). Por isso as paredes
+  são cortadas em trechos de 0,5 m (geometria idêntica) e há `ALERTA_paredes` se faltar.
+- Decisão: a planta criada continua exigindo `confirmar_unidade` (regra do projeto; serve uma
+  parede de comprimento informado pelo usuário). Não relaxei isso.
+- **Simbologia do COSCIP no MCP (09/11/2026):** novo `simbologia.py` com o catálogo inteiro da
+  NT 1-03, Anexo A (**104 símbolos**, p. 4–12, nomes oficiais, redesenhados em vetor a partir das
+  imagens das páginas) e as **56 placas** da NT 2-05 (P, A, S, E; só forma, cor e código, **sem
+  pictograma**; E-17 com as medidas da norma). Ferramenta `listar_simbologia` (15 ferramentas no
+  total); `desenhar_planta` ganhou `simbolo` por `id`, estilos de parede (`comum`, `corta_fogo`,
+  `compartimentacao`, `divisoria`), `porta` com `corta_fogo_min` 60/90/120 e `legenda` automática
+  (NT 1-03, 5.4). Os glifos anteriores (círculo com cruz) foram trocados pelos oficiais.
+- Teste de ouro: para cada um dos 160 itens o motor lê de volta o bloco como a classe declarada
+  (`tests/unit/test_simbologia.py`). Itens sem classe no dicionário (tanques, elevadores, dampers,
+  quadro elétrico…) são só desenho. A NT 1-03 não traz mangotinho nem "classe K": saíram.
+- Armadilhas: nomes de bloco evitam padrões do dicionário (ex.: "CO2" viraria extintor; bomba de
+  sprinklers sem "SPRINKLER"; central/baterias de iluminação sem "ILUMINA"); a capacidade do
+  extintor vai por último no nome ("…_6KG"). Legenda com < 3 símbolos reconhecíveis é contada como
+  equipamento: a ferramenta devolve `ALERTA_legenda`. O visualizador do motor não desenha HATCH
+  (por isso todo preenchimento também tem contorno).
+- Pendente: o servidor MCP já em execução precisa ser reiniciado para listar as ferramentas
+  novas; o visualizador não desenha texto/cotas (pontos), só a geometria.
+
+### 09/11/2026 — modo PROJETO (dimensionamento, memorial e corte)
+
+- Arquitetura em [`docs/arquitetura-projeto.md`](arquitetura-projeto.md) (fases P1 a P4 e limites).
+- Novo pacote `packages/design/coscip_design` (entrou no `pyproject.toml`; **rodar
+  `pip install -e . --no-deps` no `.venv`** em outras máquinas) e `normative/projeto/parametros.yaml`:
+  42 parâmetros das NT 2-01, 2-02, 2-06, 2-07 e 2-08 + 24 linhas do Anexo A da NT 2-08, todos com
+  citação conferida no texto ao carregar (não confere → cálculo recusado).
+- Cálculos: extintores (NT 2-01), saídas (NT 2-08: população, N = P/C, larguras, portas, escadas),
+  hidrantes (NT 2-02: Tabela 1, RTI, Hazen-Williams por trecho, velocidades, Hmt no modelo do
+  Anexo B, potência), iluminação e alarme (só o que as NTs fixam). Cada um devolve memorial com
+  base normativa, premissas do projetista e pendências.
+- MCP com 21 ferramentas: `enquadrar_edificacao`, `dimensionar_extintores`, `dimensionar_saidas`,
+  `dimensionar_hidrantes`, `requisitos_iluminacao_alarme`, `salvar_memorial`; `desenhar_planta`
+  ganhou a operação `corte` (corte ESQUEMÁTICO / esquema vertical; blocos `ESQV_*` não contam
+  como equipamento).
+- Armadilhas: tabela extraída do PDF cai em outro item do texto (Tabela 1 da NT 2-02 está no
+  item 5.2.6): o YAML usa `texto_em`. Capacidades do Anexo A ficam em células mescladas:
+  conferidas na imagem da p. 18. A fórmula de Hazen-Williams é imagem no texto: forma SI como
+  premissa. Vazão da Tabela 1 tomada como do SISTEMA (dividida entre hidrantes simultâneos).
+- **Não feito:** Anexo III Tabelas 5–21 (acima de 900 m² ou 2 pavimentos o enquadramento responde
+  OUT_OF_SCOPE), tipo de escada (Anexo B), NT 2-04 (bombas), sprinklers, sinalização, SPDA,
+  brigada, pranchas/PDF, posicionamento automático. Conferido ao final: suíte completa com
+  524 testes passando, `ruff` limpo e `npm run build` ok. Nada commitado.
+
+### 09/11/2026 — Anexo III completo (Tabelas 5 a 32) e skill de projeto
+
+- `packages/design/coscip_design/anexo_iii.py` **lê as Tabelas 5 a 32 direto do texto ingerido
+  do Decreto** a cada carga (sem transcrição). Cada tabela passa por conferência estrutural: uma
+  célula por coluna, só `-` ou `X` com números, toda observação citada existe, divisões do título
+  = linha "Divisão", seis classes de altura conferem. As 28 passam; tabela com problema não é
+  usada (`UNVERIFIED`).
+- **Conferência visual feita em 09/11/2026:** com autorização do usuário, o PDF oficial foi
+  baixado do site do CBMERJ (1.858.309 bytes; SHA-256 `358fcbbd…842f`, **igual** ao registrado
+  nas fontes), as páginas 29 a 56 foram renderizadas e as 28 tabelas comparadas com a leitura
+  do motor: todas as células, o agrupamento das colunas por divisão e a contagem de
+  observações conferem; nenhuma divergência. Os textos das observações não foram comparados
+  palavra a palavra. Registro em `normative/projeto/anexo-iii.yaml` com o resumo (digest) de
+  cada leitura: se o texto ou o leitor mudarem, a tabela volta a "SEM conferência visual".
+  Quem conferiu foi o assistente (IA), não um responsável técnico: a nota do registro diz isso.
+- Dois ajustes saídos da conferência, guardados no registro: cabeçalhos mesclados das
+  Tabelas 25, 26 e 28 ("Tanques ou cilindros e processos", "Produtos acondicionados", M-4/M-7)
+  e a observação 5 presa ao cabeçalho da coluna M-7 da Tabela 28, que agora acompanha as
+  medidas marcadas nessa coluna.
+- O PDF e o PyMuPDF usado para renderizar ficaram só na pasta temporária da sessão (nada no
+  repositório nem no `.venv`). Para refazer: `scripts/projeto/registrar_conferencia_anexo_iii.py`.
+- `enquadrar_edificacao` passou a usar essas tabelas quando as Tabelas 2 a 4 não se aplicam
+  (acima de 900 m² ou de 2 pavimentos, A-6, grupo M). Acima de 6 pavimentos exige
+  `building_height_m`. Tabelas do grupo M por outro critério (25, 26, 28) devolvem as colunas
+  para escolher. As observações das células trazem o tipo de escada, condições por ATC etc.
+- `normative/projeto/medidas.yaml`: roteiro medida → ferramenta, NTs a ler, símbolos e entrega;
+  volta em `como_tratar` para cada medida.
+- Skill `skills/projetar-pscip-cbmerj` (SKILL.md + `references/`: perguntas, medidas (gerada por
+  `scripts/projeto/gerar_referencia_medidas.py`), modelo de controle do projeto, entregáveis).
+  Zip para instalar no Claude em `Downloads\Analise\projetar-pscip-cbmerj.zip`.
+- Armadilhas da extração: Tabela 28 colada ao fim da 27 e com título sem espaço; rótulos quebrados
+  em linhas acima e abaixo das células; número de observação colado ao rótulo ("Extintores11");
+  divisão em três linhas (Tabela 11); observações ora numa célula só, ora uma por linha.
+- **O fluxo de análise (`analisar_planta`) NÃO usa as Tabelas 5 a 32**: continua nas Tabelas 2 a 4
+  do pacote v4. Só o enquadramento do modo projeto as consulta.
+- Conferido ao final: suíte completa, `ruff` e `npm run build` (ver a mensagem da sessão). Nada commitado.
+
+### 09/11/2026 — instalação do MCP nesta máquina e commit
+
+- O Claude Desktop desta máquina é a versão da loja: a configuração fica em
+  `%LOCALAPPDATA%\Claude-Data\claude_pzs8sxrjxfjjc\claude_desktop_config.json`, não em
+  `%APPDATA%\Claude` (lá não há arquivo). `coscip_mcp.registro` agora procura o arquivo
+  (`default_config`) e o `instalar.ps1` só passa `--config` se `-ConfigDesktop` for informado.
+- Instalador rodado (`-RegistrarClaudeDesktop -Oda …`): autoteste ok, `coscip-plantas` registrado.
+  O Claude Desktop, aberto, regravou o arquivo dois minutos depois e **descartou o `env`**. Por
+  isso `find_oda` passou a ler `COSCIP_ODA_PATH` no registro do usuário: o `.dwg` abre pelo MCP
+  sem depender do `env` (lacuna (a) de 28/09 resolvida). Registrar de novo mantém o `env` antigo.
+- As ferramentas novas (`enquadrar_edificacao`, `listar_simbologia`…) responderam pelo servidor
+  instalado nesta sessão.
 
 ---
 

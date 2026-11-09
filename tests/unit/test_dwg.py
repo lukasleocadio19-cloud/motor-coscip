@@ -95,6 +95,15 @@ def test_find_oda_pela_variavel_de_ambiente(ferramenta, monkeypatch, tmp_path):
     assert find_oda() is None
 
 
+def test_find_oda_pela_variavel_da_conta_quando_o_processo_nao_herda(ferramenta, monkeypatch):
+    """O Claude Desktop inicia o MCP sem as variáveis da conta: vale a do registro do usuário."""
+    monkeypatch.delenv("COSCIP_ODA_PATH", raising=False)
+    conta = {"COSCIP_ODA_PATH": str(ferramenta)}
+    assert find_oda(user_env=conta.get) == ferramenta
+    monkeypatch.setenv("COSCIP_ODA_PATH", str(ferramenta.parent / "outro.exe"))
+    assert find_oda(user_env=conta.get) is None  # a do processo prevalece sobre a da conta
+
+
 def test_mcp_abre_dwg_convertido(original, ferramenta, conversor, tmp_path, monkeypatch):
     from coscip_mcp.server import Server
     from tests.integration.test_mcp_server import call

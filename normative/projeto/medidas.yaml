@@ -1,0 +1,123 @@
+# Medidas de segurança do Anexo III do Decreto 42/2018 → como o motor trata cada uma no modo projeto.
+#
+# "rotulo" casa pelo início do nome da medida na tabela (sem acento nem caixa). "nt" são as notas
+# técnicas a ler com consultar_norma; "ferramenta" existe quando o motor calcula; "simbolos" são
+# ids do catálogo (listar_simbologia) para desenhar. "situacao":
+#   CALCULA   o motor dimensiona e gera memorial;
+#   REQUISITOS o motor só devolve o que a NT fixa (o resto é pendência);
+#   LER_NT    não há cálculo: o Claude lê a NT e registra o que ela exige, citando o item.
+# Nada aqui tem valor normativo; é o roteiro de trabalho.
+schema_version: design-measures/1.0
+medidas:
+  - rotulo: Extintores
+    situacao: CALCULA
+    ferramenta: dimensionar_extintores
+    nt: [NT 2-01]
+    simbolos: [EXTINTOR_PQS_ABC, EXTINTOR_CO2, EXTINTOR_AP, EXTINTOR_PQS_ABC_SOBRERODAS, E-5]
+    entrega: quadro de extintores por pavimento, posição em planta, percurso conferido
+  - rotulo: Hidrantes e mangotinhos
+    situacao: CALCULA
+    ferramenta: dimensionar_hidrantes
+    nt: [NT 2-02, NT 2-04]
+    simbolos: [HIDRANTE_SIMPLES, HIDRANTE_DUPLO, REGISTRO_RECALQUE, BOMBA_INCENDIO, RESERVA_TECNICA_INCENDIO, ACIONADOR_BOMBA_INCENDIO]
+    entrega: memorial hidráulico, RTI, esquema vertical (operação corte), casa de máquinas, recalque
+    falta: conjunto de pressurização (NT 2-04) e zonas de pressão são lidos na NT, não calculados
+  - rotulo: Chuveiros automáticos
+    situacao: LER_NT
+    nt: [NT 2-03 P1, NT 2-03 P2]
+    simbolos: [BICO_SPRINKLER_PENDENTE, BICO_SPRINKLER_CIMA, VALVULA_GOVERNO_ALARME_VGA, REGISTRO_RECALQUE_SPRINKLER]
+    entrega: classificação da ocupação, área de operação, densidade, reserva e bombas pela NT e pela norma adotada
+    falta: sem cálculo hidráulico de sprinklers no motor
+  - rotulo: Sinalização de segurança
+    situacao: LER_NT
+    nt: [NT 2-05]
+    simbolos: [S-12, S-1, S-2, S-3, E-5, E-7, E-2, P-4]
+    entrega: placas de orientação e salvamento nas rotas, de equipamentos e de proibição/alerta, com dimensão pela distância de visualização (Tabela 7)
+    falta: placas esquemáticas no desenho (sem pictograma); quantidade e posição pelo Claude lendo a NT
+  - rotulo: Iluminação de Emergência
+    situacao: REQUISITOS
+    ferramenta: requisitos_iluminacao_alarme
+    nt: [NT 2-06]
+    simbolos: [PONTO_ILUMINACAO_EMERGENCIA, PONTO_ILUMINACAO_EMERGENCIA_BALIZAMENTO]
+    entrega: pontos nas rotas, escadas e áreas comuns; autonomia; tipo de sistema
+    falta: espaçamento e iluminamento pela ABNT NBR 10898 (fora da base)
+  - rotulo: Alarme de Incêndio
+    situacao: REQUISITOS
+    ferramenta: requisitos_iluminacao_alarme
+    nt: [NT 2-07]
+    simbolos: [ACIONADOR_MANUAL, AVISADOR_SONORO_ELETRONICO, AVISADOR_AUDIOVISUAL, CENTRAL_ALARME_DETECCAO]
+    entrega: acionadores a no máximo 30 m de percurso, avisadores, central, fonte secundária
+  - rotulo: Detecção de Incêndio
+    situacao: LER_NT
+    nt: [NT 2-07]
+    simbolos: [DETECTOR_FUMACA, DETECTOR_TERMICO, DETECTOR_TERMOVELOCIMETRICO, CENTRAL_ALARME_DETECCAO]
+    entrega: tipo de detector por ambiente e área de cobertura pela NT e pela ABNT NBR 17240
+    falta: NBR 17240 fora da base
+  - rotulo: Saídas de Emergência
+    situacao: CALCULA
+    ferramenta: dimensionar_saidas
+    nt: [NT 2-08, NT 2-09]
+    simbolos: [ROTA_DE_FUGA_DIRECAO_FLUXO, ROTA_DE_FUGA_FINAL, BARRA_ANTIPANICO, S-12]
+    entrega: população, larguras, portas, escadas; tipo de escada pela observação da tabela e pelo Anexo B da NT 2-08; distância máxima conferida na planta
+    falta: detalhamento da escada (degraus, antecâmara, dutos) e pressurização (NT 2-09) lidos na NT
+  - rotulo: Pressurização de escada
+    situacao: LER_NT
+    nt: [NT 2-09]
+    entrega: sistema de pressurização da escada e elevador de emergência conforme a NT
+  - rotulo: Plano de emergência
+    situacao: LER_NT
+    nt: [NT 2-10, NT 2-11]
+    entrega: PECIP e, quando exigida, brigada de incêndio dimensionada pela NT 2-11
+  - rotulo: SPDA
+    situacao: LER_NT
+    nt: [NT 2-12]
+    entrega: sistema de proteção contra descargas atmosféricas conforme a NT e a ABNT NBR 5419
+  - rotulo: Controle de fumaça
+    situacao: LER_NT
+    nt: [NT 2-14]
+    simbolos: [VENTILADOR_EXAUSTOR_FUMACA, DAMPER_CORTA_FUMACA, ACIONADOR_EXAUSTAO_VENTILACAO]
+    entrega: sistema de controle de fumaça conforme a NT
+  - rotulo: Ventilação e controle de gases e fumaça
+    situacao: LER_NT
+    nt: [NT 2-14, NT 4-09]
+    entrega: ventilação de túneis conforme as NTs
+  - rotulo: Hidrante urbano
+    situacao: LER_NT
+    nt: [NT 2-15]
+    simbolos: [HIDRANTE_URBANO, HIDRANTE_URBANO_SUBTERRANEO]
+    entrega: posição do hidrante urbano e distância à edificação conforme a NT
+  - rotulo: Acesso de viatura em edificações
+    situacao: LER_NT
+    nt: [NT 2-16]
+    entrega: via de acesso, portão, faixa de estacionamento e resistência do piso conforme a NT
+  - rotulo: Compartimentação
+    situacao: LER_NT
+    nt: [NT 2-18, NT 2-17]
+    simbolos: [PORTA_CORTA_FOGO_P90, DAMPER_CORTA_FOGO, SHAFT_PROTEGIDO]
+    entrega: paredes e portas corta-fogo (operações parede/porta com estilo corta_fogo e corta_fogo_min), selagens de shafts, afastamentos de fachada
+  - rotulo: Segurança Estrutural contra Incêndio
+    situacao: LER_NT
+    nt: [NT 2-19]
+    entrega: TRRF dos elementos estruturais conforme a NT
+  - rotulo: Controle de Materiais de Acabamento
+    situacao: LER_NT
+    nt: [NT 2-20]
+    entrega: classes dos materiais de piso, parede e teto por ambiente conforme a NT
+  - rotulo: Sistema de espuma
+    situacao: LER_NT
+    nt: [NT 3-06]
+    simbolos: [ESTACAO_FIXA_EMULSIONAMENTO, CANHAO_MONITOR_PORTATIL_ESPUMA, LIQUIDO_GERADOR_ESPUMA]
+    entrega: sistema de espuma conforme a NT de líquidos inflamáveis e combustíveis
+  - rotulo: Sistema de Resfriamento
+    situacao: LER_NT
+    nt: [NT 3-06]
+    simbolos: [CANHAO_MONITOR_RESFRIAMENTO]
+    entrega: sistema de resfriamento de tanques conforme a NT
+  - rotulo: Sistema de comunicação
+    situacao: LER_NT
+    nt: [NT 4-09]
+    entrega: comunicação de emergência em túneis conforme a NT
+  - rotulo: Controle de
+    situacao: LER_NT
+    nt: []
+    entrega: controle de temperatura, de fontes de ignição e de pós em silos — ver as observações da Tabela 29 e a nota técnica específica

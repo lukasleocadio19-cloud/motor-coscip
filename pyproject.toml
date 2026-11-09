@@ -56,6 +56,7 @@ where = [
   "packages/ai_gateway",
   "packages/normative",
   "packages/analysis",
+  "packages/design",
 ]
 include = ["coscip_*"]
 
@@ -69,7 +70,7 @@ pythonpath = [
   ".", "apps/api", "apps/mcp", "workers/local", "packages/cbm_schema", "packages/cad",
   "packages/geometry", "packages/topology", "packages/semantics",
   "packages/rules", "packages/storage", "packages/jobs", "packages/ai_gateway",
-  "packages/normative", "packages/analysis",
+  "packages/normative", "packages/analysis", "packages/design",
 ]
 
 [tool.ruff]

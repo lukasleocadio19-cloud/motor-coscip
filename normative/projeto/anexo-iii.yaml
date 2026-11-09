@@ -1,0 +1,176 @@
+# Registro de conferência VISUAL das Tabelas 5 a 32 do Anexo III (Decreto 42/2018).
+#
+# As tabelas são lidas direto do texto ingerido e passam por conferência estrutural a cada carga
+# (packages/design/coscip_design/anexo_iii.py). Isso não pega célula deslocada de coluna na
+# extração do PDF; por isso cada tabela também é conferida no PDF oficial, célula a célula, e
+# registrada aqui com o resumo ("digest") da leitura conferida.
+#
+# O registro só vale enquanto (a) o texto em uso vier do PDF de mesmo SHA-256 e (b) a leitura
+# der o mesmo digest. Mudou o texto ou o leitor: a tabela volta a "sem conferência visual" até
+# alguém conferir de novo e rodar scripts/projeto/registrar_conferencia_anexo_iii.py.
+#
+# "colunas" traz os cabeçalhos das tabelas do grupo M que têm células mescladas no PDF (a
+# leitura do texto não os reconstrói) e a observação presa ao cabeçalho da coluna (Tabela 28).
+schema_version: annex-iii-check/1.1
+pdf_sha256: 358fcbbd46df635344c6cc0497bfa4117563c07213d93d9b4db0ba0bc53b842f
+url: https://www.cbmerj.rj.gov.br/wp-content/uploads/2024/05/COSCIP_DEC_42-2018_COMPILADO.pdf
+conferidas:
+  5:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 29
+    digest: beb66c0678a32669
+  6:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 30
+    digest: d52cf855dffd8fc7
+  7:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 31
+    digest: a220ee18035eebad
+  8:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 32
+    digest: 4dc8694bf269a501
+  9:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 33
+    digest: a5b561ea1191c3ca
+  10:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 34
+    digest: 210b11e80897e876
+  11:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 35
+    digest: 46044a6c5fdf650d
+  12:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 36
+    digest: ad5c9a4434db5d3a
+  13:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 37
+    digest: a9c6ab9e512f4c80
+  14:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 38
+    digest: cf8225b718c0edb9
+  15:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 39
+    digest: a6090ea49d716b06
+  16:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 40
+    digest: 160d8982f1639466
+  17:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 41
+    digest: d8443df2218995ce
+  18:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 42
+    digest: ecb733e1056f5d88
+  19:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 43
+    digest: 7ab12b4ea923af4f
+  20:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 44
+    digest: faebf7489175fb5f
+  21:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 45
+    digest: 6f2eb23fbecce0e0
+  22:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 46
+    digest: 682d46d86db2b274
+  23:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 47
+    digest: d2f5082b772a1dad
+  24:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 48
+    digest: 6d318ee254a2f451
+  25:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 49
+    digest: 306e96d2dd33e0e7
+    colunas:
+    - rotulo: Extensão até 90 m
+    - rotulo: Extensão acima de 90 até 500 m
+    - rotulo: Extensão acima de 500 até 1000 m
+    - rotulo: Extensão acima de 1000 até 3000 m
+    - rotulo: Extensão acima de 3000 m
+  26:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 50
+    digest: cb43ac9bed394ec4
+    colunas:
+    - rotulo: Tanques ou cilindros e processos — líquidos até 20 m³ ou gases até 10 m³ (b)
+    - rotulo: Tanques ou cilindros e processos — líquidos acima de 20 m³ ou gases acima de 10 m³ (b)
+    - rotulo: Plataforma de carregamento e descarregamento
+    - rotulo: Produtos acondicionados — líquidos até 20 m³ ou gases até 12.480 kg
+    - rotulo: Produtos acondicionados — líquidos acima de 20 m³ ou gases acima de 12.480 kg
+  27:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 51
+    digest: 134120d8b72185c1
+  28:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 52
+    digest: 164dc15eab1c01f7
+    colunas:
+    - rotulo: M-4 (canteiro de obras) — ATC ≤ 900 m²
+    - rotulo: M-4 (canteiro de obras) — 900 m² < ATC ≤ 1.500 m²
+    - rotulo: M-4 (canteiro de obras) — ATC > 1.500 m²
+    - rotulo: M-7 (pátio de armazenagem) — qualquer área (não coberta)
+      observacoes:
+      - 5
+  29:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 53
+    digest: 0b16075b06e073eb
+  30:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 54
+    digest: 1440c2aa1bc869bb
+  31:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 55
+    digest: bd6e521a8d6f8faf
+  32:
+    nota: '09/11/2026: células, colunas por divisão e número de observações conferidos pelo assistente
+      (IA) nas páginas renderizadas do PDF oficial; falta a conferência do responsável técnico'
+    pagina: 56
+    digest: 93f5f0f5be528cbf

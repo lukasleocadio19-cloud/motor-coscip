@@ -22,6 +22,12 @@ from pathlib import Path
 from typing import Any, Literal
 
 import numpy as np
+from coscip_design import Memorial, Parametros, anexo_iii, load_params
+from coscip_design import extintores as calc_extintores
+from coscip_design import hidrantes as calc_hidrantes
+from coscip_design import saidas as calc_saidas
+from coscip_design import sistemas as calc_sistemas
+from coscip_design.memorial import AVISO
 from coscip_findings import consolidate
 from coscip_findings.achado import to_achados
 from pydantic import BaseModel, ConfigDict, Field
@@ -36,7 +42,14 @@ from coscip_cad.dwg import DwgConversionError, dwg_to_dxf
 from coscip_cad.unit_evidence import suggest_unit
 from coscip_cbm import FINDING_KIND_LABELS, FindingKind
 from coscip_geometry.units import INSUNITS_TO_METERS
-from coscip_mcp import norms
+from coscip_mcp import norms, simbologia
+from coscip_mcp.autoria import (
+    Authoring,
+    AuthoringError,
+    Simbolo,
+    classes_desenhaveis,
+    resolve_symbol,
+)
 from coscip_normative.exit_distances import consult_exit_distance
 from coscip_normative.package import load_package
 from coscip_normative.requirements import consult_requirements
@@ -80,6 +93,8 @@ class OpenDrawing:
     last_analysis: dict[str, Any] | None = None
     # Quando o arquivo aberto era DWG: origem da conversão (ADR 0002/0006).
     conversion: dict[str, Any] | None = None
+    # Quando a planta foi criada pelo MCP (autoria.py): as operações que geram o DXF.
+    authoring: Authoring | None = None
 
     @property
     def confirmed(self) -> bool:
@@ -95,6 +110,8 @@ class OpenDrawing:
 class Workspace:
     def __init__(self) -> None:
         self.drawings: dict[str, OpenDrawing] = {}
+        # Memoriais de cálculo feitos nesta sessão (modo projeto), na ordem em que saíram.
+        self.memorials: list[Memorial] = []
 
     def get(self, drawing_id: str) -> OpenDrawing:
         try:
@@ -143,6 +160,149 @@ class Workspace:
         self._load(d)
         self.drawings[d.id] = d
         return self.overview(d)
+
+    # --- criar e editar (planta sintética desenhada pela IA) ---------------------------------
+
+    def create(self, path: str, title: str, resume: bool) -> dict[str, Any]:
+        p = Path(path).expanduser()
+        if not p.is_absolute():
+            p = plants_dir() / p
+        if p.suffix.lower() != ".dxf":
+            raise ToolError("o arquivo da planta criada precisa terminar em .dxf")
+        exists = p.exists()
+        if resume:
+            try:
+                auth = Authoring.load(p)
+            except AuthoringError as exc:
+                raise ToolError(str(exc)) from exc
+        else:
+            if exists:
+                raise ToolError(f"{p} já existe; use retomar=true para continuar uma planta "
+                                "criada pelo motor, ou escolha outro nome")
+            auth = Authoring(p, title=title)
+        try:
+            summary = auth.build()
+        except AuthoringError as exc:
+            raise ToolError(str(exc)) from exc
+        out = self.open(str(p))
+        d = self.drawings[out["planta_id"]]
+        d.authoring = auth
+        d.warnings.append("PLANTA SINTÉTICA criada pelo MCP a partir de operações; não é um "
+                          "projeto real. Coordenadas em metros ($INSUNITS = 6).")
+        return {**self.overview(d), "criada": summary, "elementos": len(auth.ops),
+                "proximo_passo": ("desenhar_planta com as operações (sala, parede, porta, "
+                                  "simbolo, texto, cota); ver_planta para conferir; "
+                                  "confirmar_unidade antes de analisar_planta.")}
+
+    def _authored(self, drawing_id: str) -> OpenDrawing:
+        d = self.get(drawing_id)
+        if d.authoring is None:
+            raise ToolError("esta planta foi aberta de um arquivo, não criada pelo motor; só "
+                            "plantas de criar_planta podem ser editadas (o arquivo original "
+                            "nunca é alterado)")
+        return d
+
+    def _rebuild(self, d: OpenDrawing) -> dict[str, Any]:
+        assert d.authoring is not None  # noqa: S101
+        try:
+            summary = d.authoring.build()
+        except AuthoringError as exc:
+            raise ToolError(str(exc)) from exc
+        d.sha256 = sha256_file(d.path)
+        self._load(d)  # relê o DXF, reconhece os símbolos; zera a última análise
+        return summary
+
+    def draw(self, drawing_id: str, ops: list[dict[str, Any]]) -> dict[str, Any]:
+        d = self._authored(drawing_id)
+        auth = d.authoring
+        assert auth is not None  # noqa: S101
+        before = list(auth.ops)
+        try:
+            indices = auth.add(ops)
+        except AuthoringError as exc:
+            auth.ops = before
+            raise ToolError(str(exc)) from exc
+        except ValueError as exc:  # pydantic: operação malformada
+            auth.ops = before
+            raise ToolError(f"operação inválida: {exc}") from exc
+        try:
+            summary = self._rebuild(d)
+        except Exception:
+            auth.ops = before  # nada fica pela metade: volta ao estado anterior
+            self._rebuild(d)
+            raise
+        return {"adicionados": indices, "total_de_elementos": len(auth.ops), **summary,
+                **self._check_symbols(d), "escala": d.scale_note(),
+                "dica": "ver_planta para conferir o desenho"}
+
+    def _check_symbols(self, d: OpenDrawing) -> dict[str, Any]:
+        """Confere que cada símbolo pedido foi reconhecido pelo leitor do motor."""
+        assert d.authoring is not None  # noqa: S101
+        wanted: dict[str, int] = {}
+        for op in d.authoring.ops:
+            if isinstance(op, Simbolo) and op.estado != "DEMOLIR":  # demolir sai da contagem
+                cls = resolve_symbol(op).classe
+                if cls:
+                    wanted[cls] = wanted.get(cls, 0) + 1
+        found: dict[str, int] = {}
+        for s in d.symbols:
+            if not s.excluded:
+                found[s.cls] = found.get(s.cls, 0) + 1
+        missing = {c: {"pedidos": n, "reconhecidos": found.get(c, 0)}
+                   for c, n in wanted.items() if found.get(c, 0) < n}
+        out: dict[str, Any] = {"simbolos_reconhecidos": found}
+        if missing:
+            out["ALERTA_simbolos_nao_reconhecidos"] = missing
+        # Legenda que o motor não reconheceu como legenda seria contada como equipamento.
+        leaked = []
+        for x, y, cls in d.authoring.legend_marks:
+            hit = next((s for s in d.symbols if s.cls == cls and abs(s.x - x) < 0.2
+                        and abs(s.y - y) < 0.2), None)
+            if hit is not None and not hit.excluded:
+                leaked.append(cls)
+        if leaked:
+            out["ALERTA_legenda"] = (
+                f"o motor não reconheceu a legenda como legenda e contaria {sorted(set(leaked))} "
+                "como equipamento. Ele só reconhece colunas com ≥ 3 símbolos diferentes e "
+                "reconhecíveis e o título 'LEGENDA'; ponha a legenda fora da planta com mais "
+                "símbolos ou use ids com 3 ou mais classes.")
+        return out
+
+    def symbology(self, group: str | None, search: str | None,
+                  plaques: bool) -> dict[str, Any]:
+        rows = [e.resumo() for e in simbologia.listar(group, search, plaques)]
+        return {"total": len(rows), "grupos": simbologia.grupos(),
+                "fonte": "NT 1-03, Anexo A (símbolos de projeto) e NT 2-05, Anexo B (placas, "
+                         "esquemáticas: forma, cor e código, sem o pictograma)",
+                "como_usar": "desenhar_planta com {tipo:'simbolo', id:<id>, x, y}; "
+                             "paredes e portas corta-fogo pelas operações parede/sala/porta",
+                "simbolos": rows}
+
+    def list_elements(self, drawing_id: str) -> dict[str, Any]:
+        d = self._authored(drawing_id)
+        assert d.authoring is not None  # noqa: S101
+        return {"arquivo": str(d.path), "titulo": d.authoring.title,
+                "classes_desenhaveis": classes_desenhaveis(),
+                "total": len(d.authoring.ops), "elementos": d.authoring.describe()}
+
+    def remove_elements(self, drawing_id: str, indices: list[int]) -> dict[str, Any]:
+        d = self._authored(drawing_id)
+        auth = d.authoring
+        assert auth is not None  # noqa: S101
+        before = list(auth.ops)
+        try:
+            gone = auth.remove(indices)
+        except AuthoringError as exc:
+            raise ToolError(str(exc)) from exc
+        try:
+            summary = self._rebuild(d)
+        except Exception:
+            auth.ops = before
+            self._rebuild(d)
+            raise
+        return {"removidos": [o.model_dump(exclude_none=True) for o in gone],
+                "total_de_elementos": len(auth.ops), **summary, **self._check_symbols(d),
+                "aviso": "os índices dos elementos seguintes mudaram: use listar_elementos"}
 
     def _load(self, d: OpenDrawing) -> None:
         d.plan = load_plan(d.path, d.scale_to_m)
@@ -383,11 +543,145 @@ class Workspace:
         result = consolidate(findings)
         return _report(d, out, ctx, pe, result, base)
 
+    # --- modo projeto: enquadramento, dimensionamento e memorial ----------------------------
+
+    def frame(self, context: dict[str, Any]) -> dict[str, Any]:
+        """Enquadramento sem planta: risco (NT 1-04), medidas exigidas (Anexo III) e Anexo C."""
+        base = norms.load_base()
+        ctx = {k: v for k, v in AnalysisContext.model_validate(context).model_dump().items()
+               if v is not None}
+        if not ctx.get("occupancy"):
+            raise ToolError("informe occupancy (divisão da NT 1-04, ex. D-2)")
+        table = base.table("classification")
+        row = next((r for r in (table or {}).get("divisions", [])
+                    if r["id"] == ctx["occupancy"] and r.get("verified")), None)
+        _derive_risk(ctx, table)
+        req = consult_requirements(base.table("requirements"), ctx)
+        # Fora das Tabelas 2 a 4 (acima de 900 m² ou de 2 pavimentos, A-6, grupo M): Tabelas 5 a 32.
+        big = ((ctx.get("building_area_m2") or 0) > 900 or (ctx.get("building_floors") or 0) > 2)
+        if req.get("status") in ("OUT_OF_SCOPE", "MISSING_DATA") or (
+                ctx["occupancy"] == "A-6" and big and ctx.get("single_occupancy") is True):
+            ext = anexo_iii.consult(_annex(tuple(base.files)), ctx)
+            if ext is not None:
+                req = ext
+        dist = consult_exit_distance(base.table("exit_distances"), ctx)
+        raw = row["risk"] if row else None
+        hid = {"PEQUENO": "PEQUENO", "MÉDIO 1": "MEDIO_1", "MÉDIO 2": "MEDIO_2",
+               "GRANDE": "GRANDE"}.get(raw or "")
+        measures = req.get("measures", [])
+        src = req.get("source") or {}
+        out = {
+            "aviso": AVISO, "ocupacao": ctx["occupancy"],
+            "descricao": row.get("description") if row else None,
+            "risco_nt_1_04": raw, "base_do_risco": ctx.get("risk_basis"),
+            "risco_para_extintores": ctx.get("risk_class"),
+            "risco_para_hidrantes": hid,
+            "anexo_iii": {**_brief(req, ("status", "column", "criterio", "message", "conflicts",
+                                         "missing", "conferencia")),
+                          **({"tabela": f"{src.get('item')} (p. {src.get('page')})"}
+                             if src.get("item") else {})},
+            "medidas_exigidas": [m["label"] for m in measures if m.get("status") == "REQUIRED"],
+            "medidas_exigidas_com_observacao": [m["label"] for m in measures
+                                                if m.get("status") == "CONDITIONAL"],
+            "medidas_sem_marcacao": [m["label"] for m in measures
+                                     if m.get("status") == "NOT_MARKED"],
+            "medidas": [_measure_row(m) for m in measures if m.get("status") != "NOT_MARKED"],
+            "notas_da_tabela": req.get("notes", []),
+            "distancia_maxima_ate_a_saida": _brief(dist, ("status", "limit_m", "by_floor_m",
+                                                          "measure", "missing", "message")),
+            "excecoes_que_o_motor_nao_aplica": (table or {}).get("notes", []),
+            "proximo_passo": ("Para cada item de 'medidas': usar a ferramenta indicada em "
+                              "como_tratar ou ler as NTs com consultar_norma; ler as "
+                              "observações; desenhar com criar_planta/desenhar_planta; conferir "
+                              "com analisar_planta; salvar_memorial."),
+        }
+        if req.get("columns"):
+            out["colunas_da_tabela"] = [
+                {"coluna": c["column"],
+                 "medidas": [_measure_row(m) for m in c["measures"]
+                             if m.get("status") != "NOT_MARKED"]}
+                for c in req["columns"]]
+        return out
+
+    def params(self) -> Parametros:
+        return _params(tuple(norms.load_base().files))
+
+    def design(self, system: str, entrada: dict[str, Any]) -> dict[str, Any]:
+        params = self.params()
+        if system == "extintores":
+            memo = calc_extintores.dimensionar(params, entrada)
+        elif system == "saidas":
+            memo = calc_saidas.dimensionar(params, entrada)
+        elif system == "hidrantes":
+            memo = calc_hidrantes.dimensionar(params, entrada)
+        elif system == "iluminacao":
+            memo = calc_sistemas.iluminacao(params, str(entrada.get("ocupacao") or ""))
+        elif system == "alarme":
+            memo = calc_sistemas.alarme(params)
+        else:
+            raise ToolError(f"sistema desconhecido: {system}")
+        # Um memorial por sistema: recalcular substitui o anterior.
+        self.memorials = [m for m in self.memorials if m.sistema != memo.sistema] + [memo]
+        return memo.as_dict()
+
+    def save_memorial(self, path: str, title: str, building: dict[str, Any]) -> dict[str, Any]:
+        if not self.memorials:
+            raise ToolError("nenhum cálculo feito nesta sessão; use dimensionar_* antes")
+        p = Path(path).expanduser()
+        if not p.is_absolute():
+            p = plants_dir() / p
+        if p.suffix.lower() != ".md":
+            raise ToolError("o memorial é salvo em Markdown: o arquivo precisa terminar em .md")
+        if p.exists():
+            raise ToolError(f"{p} já existe; escolha outro nome (o motor não sobrescreve)")
+        lines = [f"# {title or 'Memorial de cálculo'}", "", f"> {AVISO}", ""]
+        if building:
+            lines += ["## Dados da edificação", ""]
+            lines += [f"- {k}: {v}" for k, v in building.items()] + [""]
+        for memo in self.memorials:
+            lines += [memo.markdown(), ""]
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text("\n".join(lines), encoding="utf-8")
+        return {"arquivo": str(p), "sistemas": [m.sistema for m in self.memorials],
+                "pendencias": sum(len(m.pendencias) for m in self.memorials),
+                "premissas": sum(len(m.premissas) for m in self.memorials), "aviso": AVISO}
+
+
+def _measure_row(m: dict[str, Any]) -> dict[str, Any]:
+    """Medida da tabela com a célula, as observações e o roteiro de como tratá-la no projeto."""
+    status = {"REQUIRED": "EXIGIDA", "CONDITIONAL": "EXIGIDA COM OBSERVAÇÃO",
+              "NOT_MARKED": "SEM MARCAÇÃO"}.get(m.get("status"), m.get("status"))
+    row = {"medida": m["label"], "celula": m.get("cell"), "situacao": status}
+    if m.get("observacoes"):
+        row["observacoes"] = m["observacoes"]
+    how = anexo_iii.como_tratar(m["label"])
+    row["como_tratar"] = how or {"situacao": "LER_NT",
+                                 "entrega": "sem roteiro no motor: buscar a NT com "
+                                            "consultar_norma(busca=...)"}
+    return row
+
+
+@lru_cache(maxsize=4)
+def _annex(files: tuple[str, ...]) -> dict[int, anexo_iii.Tabela]:
+    """Tabelas 5 a 32 do Anexo III lidas das fontes em uso (cache por conjunto de arquivos)."""
+    return anexo_iii.load(norms.load_base().sources)
+
+
+@lru_cache(maxsize=4)
+def _params(files: tuple[str, ...]) -> Parametros:
+    """Parâmetros de dimensionamento conferidos contra as fontes em uso (cache por conjunto)."""
+    return load_params(norms.load_base().sources)
+
 
 def cache_dir() -> Path:
     """Onde ficam os DXF derivados de DWG (fora do repositório; apagável)."""
     return Path(os.environ.get("COSCIP_MCP_CACHE")
                 or Path(tempfile.gettempdir()) / "coscip-mcp") / "dwg"
+
+
+def plants_dir() -> Path:
+    """Onde ficam as plantas criadas pelo MCP quando o caminho é relativo."""
+    return Path(os.environ.get("COSCIP_PLANTAS_DIR") or Path.cwd() / "plantas-criadas")
 
 
 class AnalysisContext(BaseModel):
