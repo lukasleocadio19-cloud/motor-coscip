@@ -149,9 +149,10 @@ def test_analise_continua_exigindo_confirmar_unidade(srv):
     erro, _, texts, _ = call(srv, "analisar_planta", planta_id=pid)
     assert erro and "confirmar_unidade" in texts[0]
     # Parede de 20 m informada pelo usuário ao pedir a planta.
-    erro, conf, texts, _ = call(srv, "confirmar_unidade", planta_id=pid, ponto_a=[0, 0],
-                                ponto_b=[20, 0], medida_real_m=20.0,
-                                justificativa="largura da sala informada pelo usuário no pedido")
+    erro, conf, texts, _ = call(srv, "confirmar_unidade", planta_id=pid, referencias=[
+        {"ponto_a": [0, 0], "ponto_b": [20, 0], "medida_real_m": 20.0},
+        {"ponto_a": [0, 0], "ponto_b": [0, 10], "medida_real_m": 10.0}],
+        justificativa="largura e profundidade da sala informadas pelo usuário no pedido")
     assert not erro, texts
     assert conf["confirmado"]["unidade"] == "m" and not conf["escala_mudou"]
     call(srv, "definir_pavimentos", planta_id=pid,

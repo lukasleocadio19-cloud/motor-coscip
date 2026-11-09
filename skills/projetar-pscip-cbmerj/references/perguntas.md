@@ -13,7 +13,8 @@ preencha com valor provável.
 - Número de pavimentos e altura (do piso de descarga ao piso do último pavimento), contados pela
   Seção II do Capítulo IV do Decreto.
 - Edificação nova, existente ou anterior ao Decreto 42/2018? (NT 1-05 e 1-06)
-- Há planta em DXF/DWG? Qual medida conhecida serve para confirmar a unidade?
+- Há planta em DXF/DWG? Quais duas medidas conhecidas, em direções diferentes (ex. uma cota
+  horizontal e uma vertical), servem para confirmar a unidade?
 
 ## 2. Riscos específicos (sempre perguntar se existem)
 - GLP ou gás natural (central, botijões), líquidos inflamáveis ou combustíveis.

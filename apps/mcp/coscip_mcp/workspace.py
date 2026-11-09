@@ -556,14 +556,8 @@ class Workspace:
         row = next((r for r in (table or {}).get("divisions", [])
                     if r["id"] == ctx["occupancy"] and r.get("verified")), None)
         _derive_risk(ctx, table)
-        req = consult_requirements(base.table("requirements"), ctx)
-        # Fora das Tabelas 2 a 4 (acima de 900 m² ou de 2 pavimentos, A-6, grupo M): Tabelas 5 a 32.
-        big = ((ctx.get("building_area_m2") or 0) > 900 or (ctx.get("building_floors") or 0) > 2)
-        if req.get("status") in ("OUT_OF_SCOPE", "MISSING_DATA") or (
-                ctx["occupancy"] == "A-6" and big and ctx.get("single_occupancy") is True):
-            ext = anexo_iii.consult(_annex(tuple(base.files)), ctx)
-            if ext is not None:
-                req = ext
+        req = _cross_check(consult_requirements(base.table("requirements"), ctx),
+                           anexo_iii.consult(_annex(tuple(base.files)), ctx))
         dist = consult_exit_distance(base.table("exit_distances"), ctx)
         raw = row["risk"] if row else None
         hid = {"PEQUENO": "PEQUENO", "MÉDIO 1": "MEDIO_1", "MÉDIO 2": "MEDIO_2",
@@ -645,6 +639,82 @@ class Workspace:
         return {"arquivo": str(p), "sistemas": [m.sistema for m in self.memorials],
                 "pendencias": sum(len(m.pendencias) for m in self.memorials),
                 "premissas": sum(len(m.premissas) for m in self.memorials), "aviso": AVISO}
+
+
+def _cross_check(main: dict[str, Any], mine: dict[str, Any] | None) -> dict[str, Any]:
+    """Anexo III: a tabela do pacote normativo é a principal; a leitura do ``anexo_iii`` confere.
+
+    - ambas respondem: valem as células da principal; se as duas leituras concordam célula a
+      célula, a resposta ganha o texto das observações e a nota de dupla conferência; se
+      divergem, a resposta lista as divergências e manda conferir no PDF;
+    - a principal pede dado ou revisão (MISSING_DATA, REVIEW_REQUIRED): o pedido é mantido;
+    - a principal não escolhe a coluna ou não tem a tabela (OUT_OF_SCOPE, UNAVAILABLE): vale a
+      leitura do ``anexo_iii`` (colunas do grupo M para escolher, observações).
+    """
+    if mine is None or mine.get("status") == "UNVERIFIED":
+        return main
+    status = main.get("status")
+    if status in ("OUT_OF_SCOPE", "UNAVAILABLE"):
+        return mine
+    if status != "INDICATIVE" or mine.get("status") != "INDICATIVE":
+        return main
+
+    def key(cell: str | None) -> str:
+        return (cell or "").replace(" ", "")
+
+    theirs = {m["label"]: m for m in mine.get("measures", [])}
+    diverge = [{"medida": m["label"], "tabela_do_motor": m.get("cell"),
+                "leitura_conferida_no_pdf": (theirs.get(m["label"]) or {}).get("cell")}
+               for m in main.get("measures", [])
+               if key(m.get("cell")) != key((theirs.get(m["label"]) or {}).get("cell"))]
+    if diverge:
+        return {**main, "divergencias_entre_leituras": diverge,
+                "conferencia": "DIVERGÊNCIA entre as duas leituras da tabela: conferir no PDF "
+                               "oficial antes de usar as medidas listadas"}
+    measures = [{**m, "observacoes": theirs[m["label"]].get("observacoes", [])}
+                for m in main.get("measures", [])]
+    return {**main, "measures": measures,
+            "conferencia": ("duas leituras independentes concordam célula a célula (tabela do "
+                            "pacote normativo e leitura do texto do Decreto); "
+                            f"{mine.get('conferencia', '')}")}
+
+
+def _cross_check(main: dict[str, Any], mine: dict[str, Any] | None) -> dict[str, Any]:
+    """Anexo III: a tabela do pacote normativo é a principal; a leitura do ``anexo_iii`` confere.
+
+    - ambas respondem: valem as células da principal; se as duas leituras concordam célula a
+      célula, a resposta ganha o texto das observações e a nota de dupla conferência; se
+      divergem, a resposta lista as divergências e manda conferir no PDF;
+    - a principal pede dado ou revisão (MISSING_DATA, REVIEW_REQUIRED): o pedido é mantido;
+    - a principal não escolhe a coluna ou não tem a tabela (OUT_OF_SCOPE, UNAVAILABLE): vale a
+      leitura do ``anexo_iii`` (colunas do grupo M para escolher, observações).
+    """
+    if mine is None or mine.get("status") == "UNVERIFIED":
+        return main
+    status = main.get("status")
+    if status in ("OUT_OF_SCOPE", "UNAVAILABLE"):
+        return mine
+    if status != "INDICATIVE" or mine.get("status") != "INDICATIVE":
+        return main
+
+    def key(cell: str | None) -> str:
+        return (cell or "").replace(" ", "")
+
+    theirs = {m["label"]: m for m in mine.get("measures", [])}
+    diverge = [{"medida": m["label"], "tabela_do_motor": m.get("cell"),
+                "leitura_conferida_no_pdf": (theirs.get(m["label"]) or {}).get("cell")}
+               for m in main.get("measures", [])
+               if key(m.get("cell")) != key((theirs.get(m["label"]) or {}).get("cell"))]
+    if diverge:
+        return {**main, "divergencias_entre_leituras": diverge,
+                "conferencia": "DIVERGÊNCIA entre as duas leituras da tabela: conferir no PDF "
+                               "oficial antes de usar as medidas listadas"}
+    measures = [{**m, "observacoes": theirs[m["label"]].get("observacoes", [])}
+                for m in main.get("measures", [])]
+    return {**main, "measures": measures,
+            "conferencia": ("duas leituras independentes concordam célula a célula (tabela do "
+                            "pacote normativo e leitura do texto do Decreto); "
+                            f"{mine.get('conferencia', '')}")}
 
 
 def _measure_row(m: dict[str, Any]) -> dict[str, Any]:

@@ -20,7 +20,8 @@ assinar**: diga isso ao usuário no início e no fim.
    dito ao usuário e confirmado por ele.
 4. **Traço na tabela não é dispensa.** Medida "sem marcação" não é "não exigida": leia as
    observações e as notas gerais antes de afirmar qualquer coisa.
-5. **A unidade do desenho precisa de medida confirmada pelo usuário** antes de `analisar_planta`.
+5. **A unidade do desenho precisa de duas medidas confirmadas pelo usuário** (em direções
+   diferentes) antes de `analisar_planta`.
 6. **Distância só vale depois de conferida na planta.** Quantidade pelo cálculo não garante
    percurso: rode `analisar_planta` e ajuste até não haver pendência de percurso.
 7. **Leia o campo `conferencia` do enquadramento.** As Tabelas 5 a 32 foram conferidas no PDF
@@ -81,7 +82,8 @@ Observações típicas das células e o que fazer com elas:
 4. `ver_planta` a cada etapa para conferir o que saiu.
 
 ### 6. Conferir
-`confirmar_unidade` (com medida confirmada pelo usuário) → `definir_pavimentos` →
+`confirmar_unidade` (com duas medidas confirmadas pelo usuário, em direções diferentes) →
+`definir_pavimentos` →
 `analisar_planta` com o mesmo contexto do enquadramento. Para cada pendência: ajuste o desenho
 (`remover_elementos` / `desenhar_planta`) e analise de novo. `ver_planta` com `percurso` mostra
 o pior caminho.

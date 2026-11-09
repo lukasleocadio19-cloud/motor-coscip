@@ -35,8 +35,8 @@ Fluxo recomendado:
 5. analisar_planta com o enquadramento que o usuário informar.
 Para CRIAR uma planta sintética (exemplos, testes, estudos): criar_planta → listar_simbologia
 (escolher os símbolos oficiais) → desenhar_planta (salas, portas, símbolos, textos,
-legenda) → ver_planta para conferir → confirmar_unidade (uma parede de comprimento
-informado pelo usuário serve) → analisar_planta. listar_elementos e
+legenda) → ver_planta para conferir → confirmar_unidade (duas paredes não paralelas, de
+comprimento informado pelo usuário, servem) → analisar_planta. listar_elementos e
 remover_elementos corrigem o que foi desenhado. Planta criada não é projeto real.
 Para PROJETAR (modo projeto): enquadrar_edificacao (risco e medidas exigidas) →
 dimensionar_extintores / dimensionar_saidas / dimensionar_hidrantes /
