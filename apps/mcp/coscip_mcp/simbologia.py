@@ -2,12 +2,15 @@
 
 Fontes (textos em ``normative/fontes``):
 
-- **NT 1-03, Anexo A** (2ª ed., 2023): os 104 símbolos de projeto, páginas 4 a 12, desenhados aqui
-  em vetor a partir das páginas do anexo. Os nomes são os oficiais; a forma é um redesenho
-  fiel ao desenho da tabela, não o arquivo original do CBMERJ (sem proporção oficial).
-- **NT 2-05, Anexo B**: as placas de sinalização (P, A, S, E). São **esquemáticas**: forma e cor
-  da tabela (circular vermelha, triangular, retangular verde, quadrada vermelha) e o código;
-  o pictograma interno NÃO é reproduzido. E-17 (sinalização de solo) segue as medidas da norma.
+- **NT 1-03, Anexo A** (2ª ed., 2023): os 104 símbolos de projeto, páginas 4 a 12. O desenho de
+  cada um é o **da própria tabela**, vetorizado do PDF oficial por
+  ``tools/normas/extrair_simbolos.py`` e guardado em ``simbolos_nt.json`` (todos, menos a PAREDE
+  CORTA-FOGO, que o motor desenha pela operação ``parede`` e ficou com o desenho antigo).
+- **NT 2-05, Anexo B**: as placas de sinalização (P, A, S, E) com o desenho **oficial**
+  (pictograma, forma e cores da tabela), vetorizado do PDF oficial, no mesmo
+  ``simbolos_nt.json``. Só E-17 (sinalização de solo) segue as medidas da norma, desenhado à mão.
+- Sem o ``simbolos_nt.json`` o catálogo volta aos desenhos feitos à mão (aproximados), que
+  continuam no código só como reserva; ``Entrada.oficial`` diz de onde vem cada desenho.
 
 Cada entrada guarda o nome do bloco que o dicionário do motor (``normative/base/simbolos.yaml``)
 reconhece e a classe que ele reconhece; um teste confere que bloco e classe batem para todas.
@@ -20,9 +23,11 @@ em que o corpo do símbolo mede ~1: a inserção multiplica por ``tamanho_m``.
 
 from __future__ import annotations
 
+import json
 import math
 from collections.abc import Callable
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Any
 
 Pt = tuple[float, float]
@@ -72,6 +77,13 @@ class Glyph:
         self.ops.append(("text", (s, x, y, h), c))
         return self
 
+    def region(self, polys: list[tuple[list[Pt], list[list[Pt]]]],
+               rgb: tuple[int, int, int] | None = None) -> Glyph:
+        """Região preenchida (polígonos com furos). ``rgb`` é a cor da região; sem ela, a tinta
+        herda a cor da camada da inserção (o desenho preto e branco das tabelas da NT)."""
+        self.ops.append(("region", tuple(polys), rgb))  # type: ignore[arg-type]
+        return self
+
 
 def emit(block: Any, g: Glyph) -> None:
     """Escreve o desenho num bloco do ezdxf (camada 0, herdando a da inserção)."""
@@ -90,8 +102,9 @@ def emit(block: Any, g: Glyph) -> None:
         elif kind in ("fill", "disk"):
             # Preenchimento sólido + contorno: visualizadores sem suporte a HATCH ainda mostram
             # a forma (o contorno de um símbolo cheio é invisível a olho nu no CAD).
-            h = block.add_hatch(color=color if color is not None else 7, dxfattribs={"layer": "0"})
-            h.set_solid_fill()
+            hc = color if color is not None else 7
+            h = block.add_hatch(color=hc, dxfattribs={"layer": "0"})
+            h.set_solid_fill(color=hc)  # sem o argumento o ezdxf força a cor 7 (preto/branco)
             if kind == "fill":
                 h.paths.add_polyline_path(list(a), is_closed=True)
                 block.add_lwpolyline(list(a), close=True, dxfattribs=attrs)
@@ -99,14 +112,63 @@ def emit(block: Any, g: Glyph) -> None:
                 h.paths.add_edge_path().add_arc((a[0], a[1]), a[2], 0, 360)
                 block.add_circle((a[0], a[1]), a[2], dxfattribs=attrs)
         elif kind == "hatch":
-            h = block.add_hatch(color=color if color is not None else 7, dxfattribs={"layer": "0"})
-            h.set_pattern_fill("ANSI31", scale=0.04)
+            hc = color if color is not None else 7
+            h = block.add_hatch(color=hc, dxfattribs={"layer": "0"})
+            h.set_pattern_fill("ANSI31", color=hc, scale=0.04)
             h.paths.add_polyline_path(list(a), is_closed=True)
+        elif kind == "region":
+            from ezdxf import colors, const
+
+            if color is None:  # tinta: cor da camada da inserção
+                h = block.add_hatch(color=256, dxfattribs={"layer": "0"})
+                h.set_solid_fill(color=256)
+            else:  # cor chapada da placa (cor verdadeira)
+                h = block.add_hatch(color=7, dxfattribs={"layer": "0"})
+                h.set_solid_fill(color=7, rgb=colors.RGB(*color))
+            for ext, furos in a:
+                h.paths.add_polyline_path(ext, is_closed=True, flags=const.BOUNDARY_PATH_EXTERNAL)
+                for furo in furos:
+                    h.paths.add_polyline_path(furo, is_closed=True,
+                                              flags=const.BOUNDARY_PATH_OUTERMOST)
         elif kind == "text":
             t = block.add_text(a[0], dxfattribs={**attrs, "height": a[3]})
             from ezdxf.enums import TextEntityAlignment
 
             t.set_placement((a[1], a[2]), align=TextEntityAlignment.MIDDLE_CENTER)
+
+
+# --- desenhos oficiais das NTs (vetorizados dos PDFs) ---------------------------------------------
+
+_ARQ_NT = Path(__file__).with_name("simbolos_nt.json")
+
+
+def _carregar_nt() -> dict[str, Any]:
+    try:
+        return json.loads(_ARQ_NT.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {"placas": {}, "simbolos": {}, "fontes": {}}
+
+
+_NT = _carregar_nt()
+
+
+def _pares(flat: list[float]) -> list[Pt]:
+    return [(flat[i], flat[i + 1]) for i in range(0, len(flat), 2)]
+
+
+def glyph_nt(item: dict[str, Any]) -> Glyph:
+    """Glifo a partir de um item de ``simbolos_nt.json`` (maior dimensão = 1, centro na origem)."""
+    g = Glyph()
+    px, py = item["proporcao"]
+    for r in item["regioes"]:
+        cor = tuple(r["cor"]) if r["cor"] is not None else None
+        if r.get("base"):  # fundo da placa: o retângulo inteiro
+            g.region([([(-px / 2, -py / 2), (px / 2, -py / 2), (px / 2, py / 2),
+                        (-px / 2, py / 2)], [])], cor)  # type: ignore[arg-type]
+            continue
+        g.region([(_pares(p["ext"]), [_pares(f) for f in p["furos"]]) for p in r["poligonos"]],
+                 cor)  # type: ignore[arg-type]
+    return g
 
 
 def ngon(cx: float, cy: float, r: float, n: int, rot: float = 90.0) -> list[Pt]:
@@ -220,13 +282,18 @@ class Entrada:
     esquematico: bool = False
     extra_classes: tuple[str, ...] = ()  # classes adicionais que o motor deriva (ex.: S-12 → SAIDA)
     uso: str = "bloco"  # bloco | parede | porta (como o motor desenha ao usar a operação)
+    pictograma: bool = False  # placa com pictograma SIMPLIFICADO (não é o desenho oficial)
+    oficial: bool = False  # desenho vetorizado do PDF oficial da NT (simbolos_nt.json)
 
     def resumo(self) -> dict[str, Any]:
         return {"id": self.id, "nome": self.nome, "grupo": self.grupo,
                 "subgrupo": self.subgrupo, "fonte": self.fonte, "pagina": self.pagina,
                 "classe_no_motor": self.classe, "camada": self.camada,
                 "tamanho_padrao_m": self.tamanho_m, "esquematico": self.esquematico,
-                **({"uso": self.uso} if self.uso != "bloco" else {})}
+                **({"uso": self.uso} if self.uso != "bloco" else {}),
+                "desenho": ("oficial da NT (vetorizado do PDF)" if self.oficial
+                            else "esquemático" if self.esquematico else "redesenhado à mão"),
+                **({"pictograma": "simplificado"} if self.pictograma else {})}
 
 
 CATALOGO: dict[str, Entrada] = {}
@@ -234,13 +301,17 @@ CATALOGO: dict[str, Entrada] = {}
 
 def _add(id_: str, nome: str, grupo: str, sub: str, page: int, layer: str, cls: str | None,
          glyph: Callable[[Glyph], None], size: float = 0.5, uso: str = "bloco") -> None:
+    oficial = _NT["simbolos"].get(id_)
+
     def build() -> Glyph:
+        if oficial:
+            return glyph_nt(oficial)
         g = Glyph()
         glyph(g)
         return g
 
     CATALOGO[id_] = Entrada(id_, nome, grupo, sub, P1_03, page, layer, cls, build, size,
-                            uso=uso)
+                            uso=uso, oficial=oficial is not None)
 
 
 # 1. Extintores (p. 4) -----------------------------------------------------------------------
@@ -1035,6 +1106,117 @@ _PLACAS: tuple[tuple[str, str], ...] = (
 _PLACA_PAG = {"P": 8, "A": 9, "S": 10, "E": 14}
 
 
+def _corredor(g: Glyph, cx: float, cy: float, s: float, c: int = 7) -> None:
+    """Figura humana em movimento (cabeça, tronco, braços e pernas), altura ~0,6·s."""
+    g.circle(cx + 0.03 * s, cy + 0.30 * s, 0.07 * s, c=c)
+    g.line((cx + 0.02 * s, cy + 0.21 * s), (cx - 0.05 * s, cy - 0.02 * s), c=c)
+    g.line((cx - 0.15 * s, cy + 0.04 * s), (cx + 0.01 * s, cy + 0.15 * s),
+           (cx + 0.18 * s, cy + 0.07 * s), c=c)
+    g.line((cx - 0.05 * s, cy - 0.02 * s), (cx + 0.12 * s, cy - 0.14 * s),
+           (cx + 0.07 * s, cy - 0.30 * s), c=c)
+    g.line((cx - 0.05 * s, cy - 0.02 * s), (cx - 0.16 * s, cy - 0.12 * s),
+           (cx - 0.28 * s, cy - 0.27 * s), c=c)
+
+
+def _chama(g: Glyph, cx: float, cy: float, s: float, c: int = 7) -> None:
+    g.poly((cx, cy + 0.30 * s), (cx + 0.12 * s, cy + 0.10 * s), (cx + 0.17 * s, cy - 0.06 * s),
+           (cx + 0.10 * s, cy - 0.21 * s), (cx, cy - 0.27 * s), (cx - 0.10 * s, cy - 0.21 * s),
+           (cx - 0.17 * s, cy - 0.06 * s), (cx - 0.08 * s, cy + 0.10 * s), c=c)
+    g.poly((cx, cy - 0.02 * s), (cx + 0.06 * s, cy - 0.12 * s), (cx, cy - 0.21 * s),
+           (cx - 0.06 * s, cy - 0.12 * s), c=c)
+
+
+def _estrela(g: Glyph, cx: float, cy: float, s: float, c: int = 7) -> None:
+    pts = []
+    for i in range(16):
+        r = (0.26 if i % 2 == 0 else 0.11) * s
+        a = math.radians(90 + 22.5 * i)
+        pts.append((cx + r * math.cos(a), cy + r * math.sin(a)))
+    g.poly(*pts, c=c)
+
+
+def _extintor(g: Glyph, cx: float, cy: float, s: float, c: int = 7, rodas: bool = False) -> None:
+    g.poly(*rect(cx - 0.10 * s, cy - 0.26 * s, cx + 0.10 * s, cy + 0.10 * s), c=c)
+    g.poly(*rect(cx - 0.04 * s, cy + 0.10 * s, cx + 0.04 * s, cy + 0.16 * s), c=c)
+    g.line((cx - 0.10 * s, cy + 0.20 * s), (cx + 0.02 * s, cy + 0.20 * s),
+           (cx + 0.02 * s, cy + 0.16 * s), c=c)
+    g.line((cx + 0.10 * s, cy + 0.04 * s), (cx + 0.20 * s, cy - 0.02 * s),
+           (cx + 0.22 * s, cy - 0.20 * s), c=c)
+    if rodas:
+        g.circle(cx - 0.12 * s, cy - 0.31 * s, 0.045 * s, c=c)
+        g.circle(cx + 0.12 * s, cy - 0.31 * s, 0.045 * s, c=c)
+
+
+def _bobina(g: Glyph, cx: float, cy: float, s: float, c: int = 7) -> None:
+    g.circle(cx, cy, 0.22 * s, c=c)
+    g.circle(cx, cy, 0.12 * s, c=c)
+    g.line((cx + 0.22 * s, cy), (cx + 0.34 * s, cy - 0.10 * s), c=c)
+
+
+def _picto(code: str, g: Glyph, cx: float, cy: float, s: float) -> bool:
+    """Desenha, em (cx, cy) e na escala ``s``, o pictograma SIMPLIFICADO da placa (traço na cor 7,
+    preto no papel); falso se o código não tem pictograma. Não é o desenho oficial da NT 2-05: é
+    só um identificador visual do significado (a norma é a referência da forma exata)."""
+    first = len(g.ops)
+    drawn = _picto_ops(code, g, cx, cy, s)
+    for i in range(first, len(g.ops)):
+        kind, a, c = g.ops[i]
+        if c is None:
+            g.ops[i] = (kind, a, 7)
+    return drawn
+
+
+def _picto_ops(code: str, g: Glyph, cx: float, cy: float, s: float) -> bool:
+    if code in ("S-12", "S-14"):  # figura em direção à porta
+        _corredor(g, cx - 0.16 * s, cy, s)
+        g.line((cx + 0.14 * s, cy - 0.30 * s), (cx + 0.14 * s, cy + 0.30 * s),
+               (cx + 0.34 * s, cy + 0.30 * s), (cx + 0.34 * s, cy - 0.30 * s))
+        arrow(g, (cx + 0.02 * s, cy), (cx + 0.12 * s, cy), head=0.06 * s, c=7)
+    elif code == "E-5":
+        _extintor(g, cx, cy, s)
+    elif code == "E-11":
+        _extintor(g, cx, cy, s, rodas=True)
+    elif code == "E-8":
+        _bobina(g, cx - 0.04 * s, cy, s)
+    elif code == "E-7":
+        g.poly(*rect(cx - 0.30 * s, cy - 0.28 * s, cx + 0.30 * s, cy + 0.28 * s))
+        _bobina(g, cx - 0.05 * s, cy, 0.8 * s)
+    elif code == "E-1":  # sino
+        g.arc(cx, cy - 0.02 * s, 0.2 * s, 0, 180)
+        g.line((cx - 0.2 * s, cy - 0.02 * s), (cx - 0.26 * s, cy - 0.14 * s),
+               (cx + 0.26 * s, cy - 0.14 * s), (cx + 0.2 * s, cy - 0.02 * s))
+        g.circle(cx, cy - 0.20 * s, 0.04 * s)
+    elif code == "E-2":  # botoeira
+        g.poly(*rect(cx - 0.2 * s, cy - 0.2 * s, cx + 0.2 * s, cy + 0.2 * s))
+        g.circle(cx, cy, 0.1 * s)
+    elif code == "E-4":  # fone
+        g.poly((cx - 0.26 * s, cy + 0.10 * s), (cx - 0.12 * s, cy + 0.20 * s),
+               (cx + 0.12 * s, cy + 0.20 * s), (cx + 0.26 * s, cy + 0.10 * s),
+               (cx + 0.20 * s, cy + 0.02 * s), (cx + 0.10 * s, cy + 0.09 * s),
+               (cx - 0.10 * s, cy + 0.09 * s), (cx - 0.20 * s, cy + 0.02 * s))
+    elif code in ("P-2", "A-2"):
+        _chama(g, cx, cy, s)
+    elif code == "P-1":  # cigarro com fumaça
+        g.poly(*rect(cx - 0.28 * s, cy - 0.07 * s, cx + 0.10 * s, cy), )
+        g.poly(*rect(cx + 0.10 * s, cy - 0.07 * s, cx + 0.18 * s, cy))
+        g.line((cx + 0.04 * s, cy + 0.05 * s), (cx + 0.07 * s, cy + 0.12 * s),
+               (cx + 0.02 * s, cy + 0.19 * s))
+    elif code == "P-3":  # gota
+        g.circle(cx, cy - 0.08 * s, 0.14 * s)
+        g.line((cx - 0.13 * s, cy - 0.02 * s), (cx, cy + 0.27 * s), (cx + 0.13 * s, cy - 0.02 * s))
+    elif code == "A-3":
+        _estrela(g, cx, cy, s)
+    elif code == "A-5":
+        bolt(g, cx, cy, 0.6 * s)
+    else:
+        return False
+    return True
+
+
+PICTOGRAMAS = ("S-12", "S-14", "E-1", "E-2", "E-4", "E-5", "E-7", "E-8", "E-11", "P-1", "P-2",
+               "P-3", "A-2", "A-3", "A-5")
+
+
 def _placa(code: str) -> Callable[[Glyph], None]:
     kind = code[0]
     n = int(code.split("-")[1])
@@ -1044,22 +1226,34 @@ def _placa(code: str) -> Callable[[Glyph], None]:
         if kind == "P":  # circular: faixa e barra diametral vermelhas
             g.circle(0.0, 0.0, 0.5, c=red)
             g.circle(0.0, 0.0, 0.4, c=red)
+            if _picto(code, g, 0.0, 0.03, 0.9):
+                g.text(code, 0.0, -0.31, 0.09)
             d = 0.5 * math.cos(math.radians(45))
             g.line((-d, d), (d, -d), c=red)
-            g.text(code, 0.0, 0.0, 0.2)
+            if code not in PICTOGRAMAS:
+                g.text(code, 0.0, 0.0, 0.2)
         elif kind == "A":  # triangular, faixa preta
-            g.poly((-0.55, -0.4), (0.55, -0.4), (0.0, 0.55))
-            g.poly((-0.45, -0.34), (0.45, -0.34), (0.0, 0.43))
-            g.text(code, 0.0, -0.12, 0.2)
+            g.poly((-0.55, -0.4), (0.55, -0.4), (0.0, 0.55), c=7)
+            g.poly((-0.45, -0.34), (0.45, -0.34), (0.0, 0.43), c=7)
+            if _picto(code, g, 0.0, -0.02, 0.7):
+                g.text(code, 0.0, -0.28, 0.09)
+            else:
+                g.text(code, 0.0, -0.12, 0.2)
         elif kind == "S":  # retangular verde
             g.fill(*rect(-0.5, -0.3, 0.5, 0.3), c=green)
-            g.text(code, 0.0, 0.0, 0.22)
+            if _picto(code, g, 0.0, 0.02, 0.9):
+                g.text(code, 0.4, -0.23, 0.08)
+            else:
+                g.text(code, 0.0, 0.0, 0.22)
         elif code == "E-17":  # solo: 1,00 m com 0,70 m vermelho e borda amarela de 0,15 m
             g.fill(*rect(-0.5, -0.5, 0.5, 0.5), c=yellow)
             g.fill(*rect(-0.35, -0.35, 0.35, 0.35), c=red)
         else:  # equipamentos: quadrada vermelha
             g.fill(*rect(-0.4, -0.4, 0.4, 0.4), c=red)
-            g.text(code, 0.0, 0.0, 0.22 if n < 10 else 0.2)
+            if _picto(code, g, 0.0, 0.04, 0.9):
+                g.text(code, 0.0, -0.33, 0.09)
+            else:
+                g.text(code, 0.0, 0.0, 0.22 if n < 10 else 0.2)
             if code in ("E-13", "E-14", "E-15", "E-16"):
                 ang = {"E-13": 180, "E-14": 0, "E-15": 135, "E-16": 45}[code]
                 dx, dy = math.cos(math.radians(ang)), math.sin(math.radians(ang))
@@ -1068,7 +1262,11 @@ def _placa(code: str) -> Callable[[Glyph], None]:
 
 
 def _placa_glyph(code: str) -> Callable[[], Glyph]:
+    oficial = _NT["placas"].get(code)
+
     def build() -> Glyph:
+        if oficial:
+            return glyph_nt(oficial)
         g = Glyph()
         _placa(code)(g)
         return g
@@ -1083,7 +1281,9 @@ for _code, _nome in _PLACAS:
     CATALOGO[_id] = Entrada(
         _id, f"{_code} - {_nome}", f"PLACAS NT 2-05: {_grupo}", "", P2_05, _PLACA_PAG[_code[0]],
         "SINALIZACAO", "SINALIZACAO", _placa_glyph(_code), 1.0 if _code == "E-17" else 0.4,
-        esquematico=True, extra_classes=("SAIDA",) if _code in ("S-12", "S-14") else ())
+        esquematico=True, extra_classes=("SAIDA",) if _code in ("S-12", "S-14") else (),
+        pictograma=_code in PICTOGRAMAS and _code not in _NT["placas"],
+        oficial=_code in _NT["placas"])
 
 
 # --- consulta -----------------------------------------------------------------------------------

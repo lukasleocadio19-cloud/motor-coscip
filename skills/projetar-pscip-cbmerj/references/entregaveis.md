@@ -12,8 +12,18 @@
    normativa conferida, premissas e pendências.
 4. **Controle do projeto** (`projeto.md`, do modelo): dados, enquadramento, quadro de medidas,
    premissas, pendências.
+5. **Pranchas** (`folha`, `exportar_pdf`, `exportar_dwg`) no arranjo das pranchas aprovadas
+   (ver `references/desenho-de-pranchas.md`): prancha 01 com Quadro Resumo e planta de situação;
+   prancha 02 com planta baixa, cortes (telhado, forro, figura humana, rótulos de classe),
+   cobertura e fachada; prancha de detalhes de instalação (`detalhe`: extintor, abrigo,
+   recalque, bloco autônomo, sinalização) e, na coluna, legendas, notas por sistema, quadro de
+   áreas e o quadro do cálculo das saídas.
+6. **Memorial descritivo** pelo `references/modelo-memorial-descritivo.md`, com os mesmos
+   números do memorial de cálculo, do Quadro Resumo e da planta
+   (`references/memorial-descritivo.md` traz a estrutura e os erros a evitar).
 
-O motor não gera prancha com carimbo, Quadro Resumo, nem PDF. Diga isso.
+O motor não escreve o memorial descritivo sozinho: você o redige pelo modelo, com os números das
+ferramentas. Diga isso.
 
 ## Relato final ao usuário
 

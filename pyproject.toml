@@ -34,6 +34,8 @@ dev = ["pytest>=8", "httpx>=0.27", "hypothesis>=6.100", "ruff>=0.6", "mypy>=1.11
        "jsonschema>=4.23"]
 # ferramentas da base normativa (F2): renderizar páginas e extrair tabelas dos PDFs oficiais
 normas = ["pypdfium2>=4.30", "pdfplumber>=0.11", "rapidfuzz>=3.9", "pillow>=10.4"]
+# PDF das folhas (exportar_pdf do MCP, frente D3): renderiza cada vista na sua escala
+pdf = ["pymupdf>=1.24"]
 
 [project.scripts]
 coscip-launcher = "coscip_api.launcher:main"
@@ -60,6 +62,10 @@ where = [
 ]
 include = ["coscip_*"]
 
+[tool.setuptools.package-data]
+# desenhos oficiais das NTs, vetorizados dos PDFs (tools/normas/extrair_simbolos.py)
+coscip_mcp = ["simbolos_nt.json"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 markers = [
@@ -76,7 +82,9 @@ pythonpath = [
 [tool.ruff]
 line-length = 100
 target-version = "py312"
-extend-exclude = ["apps/api/coscip_api/migrations/versions", "node_modules"]
+# .claude/skills*: skills de terceiros (docs/skills-externas.md), não são código do projeto
+extend-exclude = ["apps/api/coscip_api/migrations/versions", "node_modules",
+                  ".claude/skills", ".claude/skills-inativas"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]

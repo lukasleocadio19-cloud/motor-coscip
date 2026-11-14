@@ -20,6 +20,11 @@ decisão vale para o uso local e para testes. O produto vendido exige assinatura
 SDK ou licença comercial do conversor) ou o serviço da Autodesk (Design Automation). A
 instalação e o aceite da licença são feitos pelo usuário.
 
+**Complemento (10/11/2026, frente D7).** O mesmo conversor grava o DWG do projeto:
+`coscip_cad.dwg_export.exportar_dwg` converte uma cópia do DXF do motor para DWG 2018 e confere
+a ida e volta (DWG → DXF → comparação com o original). O arquivo original nunca é alterado e a
+mesma licença vale.
+
 **Consequências.**
 - O app (upload `ANALYTIC_DXF`) continua recusando DWG como na ADR 0002; só o MCP converte.
 - Os testes simulam o conversor; a conversão real depende do ODA instalado e de um DWG real.

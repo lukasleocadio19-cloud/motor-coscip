@@ -256,6 +256,318 @@ parametros:
 # NT 2-08, Anexo A (p. 18): população e capacidade da unidade de passagem [acesso/descarga, escadas/rampas,
 # portas]. A população de cada linha é conferida no texto (mesma linha da tabela); as capacidades ficam em
 # células mescladas e foram conferidas na imagem da página 18 em 09/11/2026.
+  # --- NT 2-03 parte 1 — chuveiros automáticos (sprinklers) ----------------------------------------
+  # Densidade, área de operação, área por bico e espaçamento NÃO estão na NT: ela manda seguir a
+  # ABNT NBR 10897 ou a NFPA 13 (5.1.1). Esses valores entram no cálculo como premissa do projetista.
+  spk.rti_duracao_min:
+    titulo: Duração da reserva técnica de incêndio dos sprinklers, por categoria de risco
+    valor: {LEVE: 30, ORDINARIO: 30, EXTRAORDINARIO: 60}
+    unidade: min
+    fonte: {document: NT 2-03 P1, item: Anexo B - Tabela 1, pagina: 9,
+            quote: ["Duração da reserva de água", "Leve", "Ordinário Grupo 1 e 2", "Extraordinário Grupo 1 e 2", "RTI = Q x t"]}
+  spk.rti_maior_risco:
+    titulo: RTI com mais de uma classificação de risco — vale a vazão e o tempo do maior risco
+    valor: true
+    fonte: {document: NT 2-03 P1, item: "5.4.2", pagina: 5,
+            quote: ["mais de um tipo de classificação de risco", "vazão e do tempo de funcionamento do maior risco"]}
+  spk.rti_soma_hidrantes:
+    titulo: Hidrantes ou mangotinhos junto com sprinklers — somam-se as reservas
+    valor: true
+    fonte: {document: NT 2-03 P1, item: "5.4.3", pagina: 5,
+            quote: ["hidrantes e mangotinhos sejam instalados em conjunto", "sendo somadas as reservas efetivas de água"]}
+  spk.rti_reservatorio_unico:
+    titulo: RTI acima de 70 % do reservatório único — exige o cálculo do abastecimento predial
+    valor: 70
+    unidade: "%"
+    fonte: {document: NT 2-03 P1, item: "5.4.4", pagina: 5,
+            quote: ["RTI for superior a 70% do volume deste reservatório"]}
+  spk.abrangencia:
+    titulo: O sistema abrange toda a área da edificação (exceções à parte)
+    valor: true
+    fonte: {document: NT 2-03 P1, item: "5.2.1", pagina: 4,
+            quote: ["este sistema deverá abranger toda a área da edificação"]}
+  spk.dispensa_sanitarios:
+    titulo: Dispensa em banheiros, lavatórios e lavabos (vestiários não são dispensados); subestações, salas de medidores e de PC de energia até 20 m²
+    valor: {area_max_eletrica_m2: 20}
+    unidade: m²
+    fonte: {document: NT 2-03 P1, item: "5.2.3", pagina: 4,
+            quote: ["dispensada em banheiros, lavatórios e lavabos", "vestiários", "subestações, salas de medidores e de PC de energia elétrica", "área interna máxima de 20 m²"]}
+  spk.dispensa_camara_fria:
+    titulo: Dispensa em câmaras frigoríficas abaixo de 5 °C com até 12 m²
+    valor: {temperatura_max_c: 5, area_max_m2: 12}
+    fonte: {document: NT 2-03 P1, item: "5.2.3.1", pagina: 4,
+            quote: ["câmaras frigoríficas que operem com temperaturas inferiores a 5º C", "área interna máxima de 12 m²"]}
+  spk.dispensa_varanda:
+    titulo: Varandas permanentemente abertas são isentas (acabamento incombustível e Termo de Compromisso)
+    valor: true
+    fonte: {document: NT 2-03 P1, item: "5.2.4", pagina: 4,
+            quote: ["isentos do sistema de chuveiros automáticos as varandas permanentemente abertas"]}
+  spk.detector_alternativa:
+    titulo: Detectores no lugar dos sprinklers (a critério do projetista) em ambientes especiais, com compartimentação de 30 min de TRRF
+    valor: {subestacao_area_max_m2: 40, cpd_area_max_m2: 20, trrf_min: 30}
+    fonte: {document: NT 2-03 P1, item: "5.2.5", pagina: 4,
+            quote: ["poderá ser substituída pela instalação de detectores de incêndio", "centros de processamento de dados (CPD) com área máxima de 20 m²", "30 min de TRRF"]}
+  spk.entreforro:
+    titulo: Entreforro sujeito aos sprinklers; sem eles, Termo de Compromisso (forro e materiais incombustíveis ou propagação de chama ≤ 25)
+    valor: {propagacao_chama_max: 25}
+    fonte: {document: NT 2-03 P1, item: "5.2.6", pagina: 4,
+            quote: ["áreas de entreforro estarão sujeitas à instalação de chuveiros automáticos"]}
+  spk.tubos_acima_do_solo:
+    titulo: Tubos não enterrados - aço, cobre e CPVC (CPVC só em Risco Leve e só com bicos de resposta rápida)
+    valor: {materiais: [ACO, COBRE, CPVC], cpvc_somente: "LEVE+FR"}
+    fonte: {document: NT 2-03 P1, item: "5.3.1", pagina: 5,
+            quote: ["aço, cobre e CPVC", "somente para ocupações enquadradas no Risco Leve", "resposta rápida (FR)"]}
+  spk.mangote_diametro_min_mm:
+    titulo: Diâmetro interno mínimo do mangote flexível de ligação do bico
+    valor: 25
+    unidade: mm
+    fonte: {document: NT 2-03 P1, item: "5.3.3", pagina: 5,
+            quote: ["mangotes flexíveis", "diâmetro interno mínimo de 25 mm"]}
+  spk.vga:
+    titulo: Válvula de governo e alarme por coluna de alimentação; comando secundário por pavimento só onde a NT admite
+    valor: {controle_secundario_excecoes: [C, F, I, J, L, G-1, G-4, G-5, G-6, M-1, M-2, M-6]}
+    fonte: {document: NT 2-03 P1, item: "5.5.1", pagina: 5,
+            quote: ["comandos secundários", "floor control valve", "Grupos C, F, I, J, L"]}
+  spk.shaft:
+    titulo: Prisma vertical (shaft) das prumadas de incêndio quando atravessam mais de um pavimento
+    valor: {largura_min_cm: 50, profundidade_min_cm: 25, trrf_min_h: 1, porta_min_cm: [50, 40], inscricao: CAIXA DE INSPEÇÃO DO SHAFT}
+    fonte: {document: NT 2-03 P1, item: "5.6.6", pagina: 6,
+            quote: ["50 cm de largura e 25 cm de profundidade", "igual ou superior ao exigido pela NT 2-19", "mínimo de 1 h"]}
+  spk.recalque:
+    titulo: Hidrante de recalque dos sprinklers — duas saídas Storz de 2½" (63 mm), sinalizado como "SPRINKLER"
+    valor: {saidas: 2, storz_mm: 63}
+    fonte: {document: NT 2-03 P1, item: "5.7.3",
+            quote: ["duas saídas tipo", "storz", "2½” (63 mm)"]}
+
+  # --- detalhes de instalação (frente G): medidas que os detalhes construtivos cotam ---------
+  # NT 2-01 (extintor), NT 2-02 (recalque e abrigo), NT 2-05 (nível das placas), NT 2-06 (autonomia).
+  # Altura de bloco autônomo, nível de iluminamento e alcance (NBR 10898) não estão na base: vêm do
+  # usuário e saem no detalhe como dado informado.
+  det.ext.alca_max_m:
+    titulo: Altura máxima da alça de manuseio do extintor fixado em parede
+    valor: 1.60
+    unidade: m
+    fonte: {document: NT 2-01, item: "5.2.1",
+            quote: ["a posição da alça de manuseio não deve exceder 1,60 m do piso acabado"]}
+  det.ext.base_min_m:
+    titulo: Distância mínima da parte inferior do extintor ao piso
+    valor: 0.10
+    unidade: m
+    fonte: {document: NT 2-01, item: "5.2.1",
+            quote: ["a parte inferior deve guardar distância de, no mínimo, 10 cm do piso acabado"]}
+  det.ext.piso_demarcado:
+    titulo: Área de piso pintada sob o extintor (indústrias, depósitos, galpões, oficinas)
+    valor: {lado_m: 0.70, borda_m: 0.15}
+    unidade: m
+    fonte: {document: NT 2-01, item: "6.12",
+            quote: ["área pintada de vermelho: 0,70 m x 0,70 m", "bordas amarelas: 0,15 m de largura"]}
+  det.placa.nivel_superior_min_m:
+    titulo: Sinalização de nível superior — altura mínima do pavimento acabado
+    valor: 1.80
+    unidade: m
+    fonte: {document: NT 2-05, item: "4.7",
+            quote: ["a uma altura não inferior a 1,80 m do pavimento acabado"]}
+  det.placa.nivel_inferior_max_m:
+    titulo: Sinalização de nível inferior — altura máxima
+    valor: 0.50
+    unidade: m
+    fonte: {document: NT 2-05, item: "4.5",
+            quote: ["a uma altura não superior a 0,50 m"]}
+  det.placa.e5_nivel:
+    titulo: Placa E-5 (extintor) — nível de instalação
+    valor: superior
+    fonte: {document: NT 2-05, item: "Tabela 6", linha: ["E-5", "Extintor de incêndio", "Nível: superior"]}
+  det.placa.e7_nivel:
+    titulo: Placa E-7 (abrigo de mangueira e hidrante) — nível de instalação
+    valor: superior
+    fonte: {document: NT 2-05, item: "Tabela 6", pagina: 15,
+            quote: ["E-7", "Indicação do abrigo da mangueira de incêndio com ou sem hidrante no seu interior. Nível: superior"]}
+  det.placa.s12_nivel:
+    titulo: Placa S-12 (saída de emergência) — nível de instalação
+    valor: superior
+    fonte: {document: NT 2-05, item: "Tabela 5", pagina: 11,
+            quote: ["S-12", "Indicação de portas de saída de emergência, utilizadas de acordo com 6.4.4 Nível: superior"]}
+  det.rec.fachada_altura_m:
+    titulo: Hidrante de recalque na fachada — altura e ângulo
+    valor: {min: 1.0, max: 1.2, angulo_graus: 45}
+    unidade: m
+    fonte: {document: NT 2-02, item: "5.2.2", quote: ["a um ângulo de 45º e altura de 1 m a 1,2 m"]}
+  det.rec.fachada_abrigo_m:
+    titulo: Hidrante de recalque na fachada — abrigo mínimo e distância ao alinhamento
+    valor: {PEQUENO: [0.30, 0.40], MEDIO_1: [0.30, 0.40], MEDIO_2: [0.60, 0.40], GRANDE: [0.60, 0.40], distancia_max_alinhamento_m: 15}
+    unidade: m
+    fonte: {document: NT 2-02, item: "5.2.3",
+            quote: ["0,30 m x 0,40 m para os riscos pequeno e médio 1", "0,60 m x 0,40 m para o risco médio 2 e risco grande", "inscrição INCÊNDIO", "no máximo 15 m do alinhamento da via pública"]}
+  det.rec.passeio_caixa_m:
+    titulo: Hidrante de recalque no passeio — caixa, profundidade e rebordo
+    valor: {PEQUENO: [0.30, 0.40], MEDIO_1: [0.30, 0.40], MEDIO_2: [0.60, 0.40], GRANDE: [0.60, 0.40], profundidade_max_m: 0.40, rebordo_max_m: 0.15, registro_mm: 63}
+    unidade: m
+    fonte: {document: NT 2-02, item: "5.2.5",
+            quote: ["registro tipo gaveta, com 63 mm", "junta storz, à qual se adaptará um tampão", "0,30 m x 0,40 m", "0,60 m x 0,40 m", "profundidade máxima da caixa será de 0,40 m", "abaixo de 0,15 m da borda da caixa"]}
+  det.rec.passeio_saida:
+    titulo: Hidrante de recalque no passeio — saída a 45° e profundidade em relação ao passeio
+    valor: {angulo_graus: 45, profundidade_max_m: 0.15}
+    unidade: m
+    fonte: {document: NT 2-02, item: "5.2.6",
+            quote: ["voltado para cima em ângulo de 45º", "no máximo, a 0,15 m de profundidade em relação ao piso do passeio"]}
+  det.rec.duplo:
+    titulo: Hidrante de recalque duplo a partir de 400 L/min, tubulação mínima de 75 mm
+    valor: {vazao_lpm: 400, tubo_mm: 75}
+    fonte: {document: NT 2-02, item: "5.2.7",
+            quote: ["vazões iguais ou superiores a 400 l/min", "hidrantes de recalque deverão ser duplos", "no mínimo, 75 mm"]}
+  det.abrigo.canalizacao_cm:
+    titulo: Abrigo de mangueiras — risco pequeno e médio 1 (altura, largura, profundidade mínimas)
+    valor: [75, 45, 17]
+    unidade: cm
+    fonte: {document: NT 2-02, item: "5.3.4",
+            quote: ["75 cm de altura, 45 cm de largura e 17 cm de profundidade"]}
+  det.abrigo.rede_cm:
+    titulo: Abrigo de mangueiras — risco médio 2 e grande (altura, largura, profundidade mínimas)
+    valor: [80, 60, 17]
+    unidade: cm
+    fonte: {document: NT 2-02, item: "5.3.5",
+            quote: ["80 cm de altura, 60 cm de largura e 17 cm de profundidade"]}
+  det.abrigo.porta:
+    titulo: Porta de vidro do abrigo — espessura e inscrição INCÊNDIO
+    valor: {vidro_mm: 3, traco_cm: 1, moldura_cm: 7}
+    fonte: {document: NT 2-02, item: "5.3.6",
+            quote: ["espessura mínima de 3 mm", "INCÊNDIO", "traço de 1 cm", "moldura de 7 cm de largura"]}
+  det.abrigo.registro_canalizacao:
+    titulo: Abrigo (risco pequeno e médio 1) — registro, junta e redução
+    valor: {registro_mm: 63, storz_mm: 63, reducao_mm: 38}
+    fonte: {document: NT 2-02, item: "5.3.7",
+            quote: ["registro globo angular de 63 mm", "junta storz de 63 mm", "redução para 38 mm"]}
+  det.abrigo.registro_rede:
+    titulo: Abrigo (risco médio 2 e grande) — registro, junta e redução
+    valor: {registro_mm: 75, storz_mm: 75, reducao_mm: 63}
+    fonte: {document: NT 2-02, item: "5.3.8",
+            quote: ["registro globo angular de 75 mm", "junta storz de 75 mm", "redução para 63 mm"]}
+  det.abrigo.piso_vermelho_m:
+    titulo: Área de piso pintada de vermelho sob o abrigo (rede preventiva)
+    valor: 1.0
+    unidade: m
+    fonte: {document: NT 2-02, item: "5.3.13", quote: ["área de 1 m x 1 m do piso localizado abaixo do abrigo pintado em vermelho"]}
+  det.ilum.autonomia_min:
+    titulo: Autonomia mínima da iluminação de emergência (H-2 e H-3 à parte)
+    valor: {geral: 60, H-2: 120, H-3: 120}
+    unidade: min
+    fonte: {document: NT 2-06, item: "5.2",
+            quote: ["autonomia mínima de 60 min", "divisões H-2 e H-3", "autonomia mínima de 120 min"]}
+  det.ilum.escadas:
+    titulo: Iluminação nas escadas — no nível do pavimento e no patamar intermediário
+    valor: true
+    fonte: {document: NT 2-06, item: "5.3.2",
+            quote: ["no nível do pavimento", "nível do patamar intermediário", "não poderá existir ponto de sombra"]}
+  det.ext.suporte:
+    titulo: Suporte do extintor fixado em parede ou coluna — resistência
+    valor: 3
+    unidade: vezes a massa total
+    fonte: {document: NT 2-01, item: "5.2.1",
+            quote: ["os suportes devem resistir a três vezes a massa total do extintor", "não devem ficar em contato direto com o piso"]}
+  det.rec.valvula:
+    titulo: Hidrante de recalque — válvula gaveta ou esfera, fluxo nos dois sentidos
+    valor: true
+    fonte: {document: NT 2-02, item: "5.2.8", quote: ["válvula do tipo gaveta ou esfera", "fluxo de água nos dois sentidos"]}
+  det.rec.local_proibido:
+    titulo: Hidrante de recalque — proibido em local de passagem ou estacionamento de veículos
+    valor: true
+    fonte: {document: NT 2-02, item: "5.2.11", quote: ["proibida a instalação dos hidrantes de recalque em local de passagem ou parqueamento"]}
+  det.rec.sem_retencao:
+    titulo: Hidrante de recalque — proibida válvula de retenção (salvo 5.2.10)
+    valor: true
+    fonte: {document: NT 2-02, item: "5.2.12", quote: ["terminantemente proibida a instalação de válvula de retenção nos hidrantes de recalque"]}
+  det.abrigo.pintura:
+    titulo: Abrigo — vermelho, ventilação permanente, trinco ou fechadura com chave junto
+    valor: true
+    fonte: {document: NT 2-02, item: "5.3.9", quote: ["pintados, preferencialmente na cor vermelha", "ventilação permanente", "trinco ou fechadura"]}
+  det.ilum.nbr:
+    titulo: Iluminação de emergência — adota a NBR 10898 no que não contrariar a NT
+    valor: NBR 10898:2013
+    fonte: {document: NT 2-06, item: "5.1.1", quote: ["Adota-se a ABNT NBR 10898:2013"]}
+  det.placa.e5_forma:
+    titulo: Placa E-5 — forma, fundo e pictograma
+    valor: {forma: QUADRADA, fundo: VERMELHA, pictograma: FOTOLUMINESCENTE}
+    fonte: {document: NT 2-05, item: "Tabela 6", linha: ["E-5", "Extintor de incêndio", "Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente"]}
+  det.placa.e7_forma:
+    titulo: Placa E-7 — forma, fundo e pictograma
+    valor: {forma: QUADRADA, fundo: VERMELHA, pictograma: FOTOLUMINESCENTE}
+    fonte: {document: NT 2-05, item: "Tabela 6", pagina: 15,
+            quote: ["Abrigo de mangueira e hidrante | Forma: quadrada Fundo: vermelha Pictograma: fotoluminescente"]}
+  det.placa.s12_forma:
+    titulo: Placa S-12 — forma, fundo, pictograma e letra
+    valor: {forma: RETANGULAR, fundo: VERDE, pictograma: FOTOLUMINESCENTE, letra_min_mm: 50}
+    fonte: {document: NT 2-05, item: "Tabela 5", pagina: 11,
+            quote: ["Saída de emergência | Forma: retangular Fundo: verde Pictograma e texto: fotoluminescente Mensagem “SAÍDA” com altura de letra superior a 50 mm."]}
+  # --- detalhes de GLP (NT 3-02) ------------------------------------------------------------
+  det.glp.local:
+    titulo: Central de GLP — térreo, fora da projeção da edificação, local ventilado
+    valor: true
+    fonte: {document: NT 3-02, item: "5.2.1", quote: ["obrigatoriamente no térreo, fora da projeção da edificação e em local ventilado"]}
+  det.glp.ralos_m:
+    titulo: Recipientes transportáveis — distância mínima de ralos, poços, canaletas e caixas
+    valor: 1.0
+    unidade: m
+    fonte: {document: NT 3-02, item: "5.2.5", quote: ["no mínimo 1,0 m de ralos, poços, canaletas, caixas de gordura e esgoto"]}
+  det.glp.abrigo:
+    titulo: Abrigo de recipientes transportáveis — construção, piso e altura útil
+    valor: {limite_alvenaria_kg: 90, trrf_min: 120, piso_m: 0.05, altura_util_m: 1.80}
+    fonte: {document: NT 3-02, item: "5.3.2",
+            quote: ["capacidade total máxima de 90 Kg de GLP devem ter abrigo de paredes e cobertura construídas em alvenaria ou concreto",
+                    "capacidade total superior a 90 Kg de GLP devem ter abrigo de paredes e cobertura com tempo requerido de resistência ao fogo (TRRF) de, no mínimo, 120 min",
+                    "piso em concreto com 0,05 m de espessura mínima", "altura interna útil de 1,80 m, no mínimo",
+]}
+  det.glp.abrigo_ventilacao:
+    titulo: Abrigo — lado maior aberto com portas abrindo para fora e ventilação permanente
+    valor: {fracao_planta: 0.10, inferior_m2: 0.32, superior_m2: 0.32}
+    fonte: {document: NT 3-02, item: "5.3.2", pagina: 6,
+            quote: ["abertura deve ser protegida com portas, abrindo para fora, constituídas de material incombustível",
+                    "ventilação natural permanente de, no mínimo 10% da área de sua planta baixa",
+                    "0,32 m² inferior e 0,32 m² superior", "condição que levar à maior área de ventilação"]}
+  det.glp.linha_unica:
+    titulo: Recipientes transportáveis acima de 45 kg — em linha única
+    valor: 45
+    unidade: kg
+    fonte: {document: NT 3-02, item: "5.3.4", quote: ["capacidade volumétrica superior a 45 kg (0,108 m³)", "em linha única"]}
+  det.glp.duas_linhas:
+    titulo: Recipientes transportáveis até 45 kg — até duas linhas
+    valor: 45
+    unidade: kg
+    fonte: {document: NT 3-02, item: "5.3.5", quote: ["capacidade volumétrica até 45 kg (0,108 m³)", "em até duas linhas"]}
+  det.glp.placa:
+    titulo: Placa da central de GLP — dimensões mínimas, letra e dizeres
+    valor: {altura_mm: 95, largura_mm: 190, letra_mm: 50, dizeres: ["PERIGO", "GÁS INFLAMÁVEL", "PROIBIDO FUMAR"]}
+    fonte: {document: NT 3-02, item: "5.4.5",
+            quote: ["altura = 95 mm e largura= 190 mm", "altura mínima de 50 mm", "PERIGO / GÁS INFLAMÁVEL / PROIBIDO FUMAR", "efeito fotoluminescente"]}
+  det.glp.extintor_distancia_m:
+    titulo: Extintores da central de GLP — distância máxima
+    valor: 10
+    unidade: m
+    fonte: {document: NT 3-02, item: "5.4.2", quote: ["distância máxima de 10 m da central"]}
+  det.glp.extintores_ate_270:
+    titulo: Extintores da central até 270 kg
+    valor: {portateis: 1, sobre_rodas: 0}
+    fonte: {document: NT 3-02, item: "Tabela 3", linha: ["≤ 270", "01 (um) 20-B:C ou 01 (um) PQS-6 Kg", "Não exigido"]}
+  det.glp.extintores_ate_1800:
+    titulo: Extintores da central acima de 270 até 1800 kg
+    valor: {portateis: 2, sobre_rodas: 0}
+    fonte: {document: NT 3-02, item: "Tabela 3", linha: ["> 270 a 1800", "02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg", "Não exigido"]}
+  det.glp.extintores_acima_1800:
+    titulo: Extintores da central acima de 1800 kg
+    valor: {portateis: 2, sobre_rodas: 1}
+    fonte: {document: NT 3-02, item: "Tabela 3", linha: ["> 1800", "02 (dois) 20-B:C ou 02 (dois) PQS-6 Kg", "01 (um) 80-B:C ou 01 (um) PQS-50 Kg"]}
+  det.glp.cor_tubo:
+    titulo: Cor da tubulação aparente de GLP (recipiente transportável)
+    valor: {liquida: LARANJA, vapor: AMARELA}
+    fonte: {document: NT 3-02, item: "Tabela 1", linha: ["Recipiente Transportável", "Laranja", "Amarela"]}
+  det.glp.registro_geral:
+    titulo: Registro geral de corte da rede de distribuição interna
+    valor: true
+    fonte: {document: NT 3-02, item: "6.2", quote: ["Registro geral de corte", "o mais próximo possível do limite de propriedade", "fora da projeção da edificação"]}
+  det.glp.rede_nbr:
+    titulo: Rede de distribuição interna — NBR 15526 (residencial) e NBR 15358 (não residencial)
+    valor: {residencial: "NBR 15526:2016", nao_residencial: "NBR 15358:2021"}
+    fonte: {document: NT 3-02, item: "6.1", quote: ["ABNT NBR 15526:2016, em instalações residenciais", "ABNT NBR 15358:2021, em instalações de uso não residencial"]}
+
 populacao:
   fonte: {document: NT 2-08, item: Anexo A}
   imagem: "p. 18 conferida em 09/11/2026 (capacidades em células mescladas)"

@@ -1,0 +1,33 @@
+﻿# Padrão de camadas do motor COSCIP (customização do padrão de exemplo do dxf-civil).
+# Uso: python scripts/validate.py <arquivo.dxf> --standards standards/layers.coscip.yml
+# As camadas do DXF gerado pelo motor (criar_planta/desenhar_planta) não usam cor por camada:
+# todas são ACI 7. Por isso só as camadas VISTA_* (cortes e fachadas desenhados por script)
+# e CORTES têm cor/linetype esperados. O arquivo original layers.yml (padrão americano NCS) foi
+# mantido sem alteração.
+
+# Camadas do motor, do script de vistas e do próprio CAD ("0", "Defpoints").
+name_pattern: '^(0|Defpoints|AMBIENTES|COTAS|DIVISORIA|ILUMINACAO|INC_EXT|LEGENDA|PAREDE|PAREDE_CORTA_FOGO|PASSIVOS|PORTAS|ROTAS|SINALIZACAO|TEXTOS|TUBULACAO|VASOS_TANQUES|CORTES|VISTA_[A-Z]+|[A-Z_]*(HIDRANTE|ALARME|DETECCAO|SPRINKLER|ACIONADOR|BOMBA|RESERVA)[A-Z_]*)$'
+
+required_layers:
+  - "0"
+  - "Defpoints"
+  - PAREDE
+
+forbidden_layers:
+  - Layer1
+  - Layer2
+  - MyLayer
+
+layer_specs:
+  - pattern: '^CORTES$'
+    color: 6            # magenta
+  - pattern: '^VISTA_INCENDIO$'
+    color: 1            # vermelho
+  - pattern: '^VISTA_SINAL$'
+    color: 3            # verde
+  - pattern: '^VISTA_VIDRO$'
+    color: 5            # azul
+  - pattern: '^VISTA_COTA$'
+    color: 2            # amarelo
+  - pattern: '^VISTA_AUX$'
+    color: 8            # cinza

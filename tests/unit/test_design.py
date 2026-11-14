@@ -19,7 +19,8 @@ FONTES = Path(__file__).resolve().parents[2] / "normative" / "fontes"
 @pytest.fixture(scope="module")
 def params():
     sources = {}
-    for f in FONTES.glob("nt-2-0*.md"):
+    # grupo 2 (sistemas) e NT 3-02 (GLP, usada pelos detalhes de instalação)
+    for f in [*FONTES.glob("nt-2-*.md"), *FONTES.glob("nt-3-02-*.md")]:
         text = parse_markdown(f.read_bytes(), f.name)
         sources[text.document] = text
     return load_params(sources)

@@ -77,7 +77,8 @@ def test_initialize_negocia_versao_e_lista_ferramentas(srv):
         "consultar_norma", "criar_planta", "desenhar_planta", "listar_elementos",
         "remover_elementos", "listar_simbologia", "enquadrar_edificacao",
         "dimensionar_extintores", "dimensionar_saidas", "dimensionar_hidrantes",
-        "requisitos_iluminacao_alarme", "salvar_memorial"}
+        "requisitos_iluminacao_alarme", "salvar_memorial", "listar_blocos", "exportar_pdf",
+        "exportar_dwg", "dimensionar_sprinklers"}
     assert all(t["inputSchema"]["type"] == "object" and t["description"] for t in tools)
 
 
@@ -112,7 +113,7 @@ def test_processo_real_por_stdio(normas):
     linhas = [json.loads(x) for x in proc.stdout.decode("utf-8").splitlines()]
     assert [x["id"] for x in linhas] == [1, 2]  # stdout só tem protocolo
     assert linhas[0]["result"]["serverInfo"]["name"] == "coscip-plantas"
-    assert len(linhas[1]["result"]["tools"]) == 21
+    assert len(linhas[1]["result"]["tools"]) == 25
     assert b"pronto" in proc.stderr
 
 

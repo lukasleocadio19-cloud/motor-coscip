@@ -104,19 +104,22 @@ def test_legenda_lista_os_usados_com_o_nome_oficial(srv):
     assert not erro, texts
     _, textos, _, _ = call(srv, "listar_textos", planta_id=pid, janela=[19, -5, 40, 11])
     nomes = {t["texto"] for t in textos["textos"]}
-    assert {"LEGENDA", "EXTINTOR DE PÓ ABC", "HIDRANTE SIMPLES", "DETECTOR DE FUMAÇA",
-            "MANÔMETRO", "PAREDE CORTA-FOGO"} <= nomes
-    # a legenda não vira equipamento: o motor a marca como legenda (≥ 3 símbolos + título)
+    assert {"LEGENDA SISTEMA DE INCÊNDIO", "SÍMBOLO", "DESCRIÇÃO", "EXTINTOR DE PÓ ABC",
+            "HIDRANTE SIMPLES", "DETECTOR DE FUMAÇA", "MANÔMETRO", "PAREDE CORTA-FOGO"} <= nomes
+    # a legenda não vira equipamento: o motor marca a região da tabela como legenda
     assert out["simbolos_reconhecidos"] == {"EXTINTOR": 1, "HIDRANTE": 1, "DETECTOR": 1}
     assert "ALERTA_legenda" not in out
 
 
-def test_legenda_com_poucos_simbolos_avisa_que_conta_como_equipamento(srv):
+def test_legenda_com_poucos_simbolos_nao_conta_como_equipamento(srv):
+    """A tabela que o motor desenha é marcada como legenda pela região, mesmo com 2 símbolos
+    (o reconhecimento geométrico exige 3)."""
     pid = criar(srv)["planta_id"]
     erro, out, _, _ = call(srv, "desenhar_planta", planta_id=pid, operacoes=[
         SALA, {"tipo": "legenda", "x": 20, "y": 10,
-               "ids": ["EXTINTOR_CO2", "HIDRANTE_SIMPLES"]}])
-    assert not erro and "ALERTA_legenda" in out
+               "ids": ["EXTINTOR_CO2", "HIDRANTE_SIMPLES", "E-5", "S-12"]}])
+    assert not erro and "ALERTA_legenda" not in out
+    assert out["simbolos_reconhecidos"] == {}
     erro, _, texts, _ = call(srv, "desenhar_planta", planta_id=pid, operacoes=[
         {"tipo": "legenda", "x": 0, "y": 0, "ids": ["NAO_EXISTE"]}])
     assert erro and "não existe no catálogo" in texts[0]
