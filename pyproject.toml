@@ -84,7 +84,9 @@ line-length = 100
 target-version = "py312"
 # .claude/skills*: skills de terceiros (docs/skills-externas.md), não são código do projeto
 extend-exclude = ["apps/api/coscip_api/migrations/versions", "node_modules",
-                  ".claude/skills", ".claude/skills-inativas"]
+                  ".claude/skills", ".claude/skills-inativas",
+                  # scripts dos exemplos: registro de como cada exemplo foi gerado
+                  "exemplos"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]
