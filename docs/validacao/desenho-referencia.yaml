@@ -1,0 +1,92 @@
+# só números e presença de recursos; nenhum texto do projeto
+unidade:
+  insunits_declarado: 4
+modelo:
+  entidades: 8595
+  tipos:
+    HATCH: 83
+    MTEXT: 434
+    LINE: 4083
+    TEXT: 115
+    LWPOLYLINE: 3495
+    ARC: 81
+    DIMENSION: 35
+    INSERT: 179
+    CIRCLE: 54
+    MULTILEADER: 9
+    SPLINE: 4
+    SOLID: 14
+    OLE2FRAME: 5
+    LEADER: 4
+camadas:
+  total: 117
+  usadas: 38
+  com_cor: 29
+  com_espessura: 17
+  tipos_de_linha: 4
+blocos:
+  definicoes: 125
+  insercoes: 179
+  distintos_em_uso: 27
+  chamadas_de_placa: 9
+  placas_ou_pictogramas: 2
+estilos:
+  texto: 58
+  cota: 22
+  cota_por_escala: 17
+hachuras:
+  total: 83
+  padroes: 9
+layouts:
+  papel: 3
+  com_viewports: 3
+  viewports: 28
+  escalas:
+  - 50
+  - 75
+  - 100
+  - 125
+  - 250
+textos:
+  modelo: 549
+  folha: 61
+  etiquetas_de_vao: 33
+presencas:
+  janelas: 106
+  marcas_de_corte: 4
+  cortes: 6
+  fachadas: 4
+  quadro_resumo: 1
+  quadro_de_areas: 3
+  notas: 5
+  legenda: 2
+  detalhes: 3
+  isometrico: 3
+  situacao: 1
+  selo_campos: 6
+  norte: 1
+recursos:
+  folha_em_paper_space: true
+  varias_escalas_na_folha: true
+  camadas_com_espessura: true
+  camadas_coloridas: true
+  estilos_de_cota_por_escala: true
+  cotas_nativas: true
+  janelas_em_planta: true
+  etiquetas_de_vao: true
+  blocos_distintos_em_uso: true
+  chamadas_de_placa: true
+  hachuras: true
+  marca_de_corte: true
+  cortes: true
+  fachadas: true
+  quadro_resumo: true
+  quadro_de_areas: true
+  selo_na_folha: true
+  notas_de_projeto: true
+  legenda: true
+  detalhes_construtivos: true
+  isometrico: true
+  planta_de_situacao: true
+  indicacao_de_norte: true
+  multileaders_ou_leaders: true

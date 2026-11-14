@@ -15,6 +15,7 @@ from __future__ import annotations
 import math
 import os
 import tempfile
+import unicodedata
 import uuid
 from dataclasses import dataclass, field
 from functools import lru_cache
@@ -27,6 +28,7 @@ from coscip_design import extintores as calc_extintores
 from coscip_design import hidrantes as calc_hidrantes
 from coscip_design import saidas as calc_saidas
 from coscip_design import sistemas as calc_sistemas
+from coscip_design import sprinklers as calc_sprinklers
 from coscip_design.memorial import AVISO
 from coscip_findings import consolidate
 from coscip_findings.achado import to_achados
@@ -39,16 +41,19 @@ from coscip_analysis.plan import Plan, load_plan, sha256_file
 from coscip_analysis.symbols import Symbol, mark_legends, recognition_ledger, recognize
 from coscip_cad import DxfReader
 from coscip_cad.dwg import DwgConversionError, dwg_to_dxf
+from coscip_cad.dwg_export import exportar_dwg
 from coscip_cad.unit_evidence import suggest_unit
 from coscip_cbm import FINDING_KIND_LABELS, FindingKind
 from coscip_geometry.units import INSUNITS_TO_METERS
-from coscip_mcp import norms, simbologia
+from coscip_mcp import biblioteca, folhas, norms, simbologia
 from coscip_mcp.autoria import (
     Authoring,
     AuthoringError,
+    Chamada,
     Simbolo,
     classes_desenhaveis,
     resolve_symbol,
+    validar_escala,
 )
 from coscip_normative.exit_distances import consult_exit_distance
 from coscip_normative.package import load_package
@@ -163,7 +168,8 @@ class Workspace:
 
     # --- criar e editar (planta sintética desenhada pela IA) ---------------------------------
 
-    def create(self, path: str, title: str, resume: bool) -> dict[str, Any]:
+    def create(self, path: str, title: str, resume: bool,
+               escala: int | None = None) -> dict[str, Any]:
         p = Path(path).expanduser()
         if not p.is_absolute():
             p = plants_dir() / p
@@ -180,6 +186,11 @@ class Workspace:
                 raise ToolError(f"{p} já existe; use retomar=true para continuar uma planta "
                                 "criada pelo motor, ou escolha outro nome")
             auth = Authoring(p, title=title)
+        if escala is not None:
+            try:
+                auth.escala = validar_escala(escala)
+            except AuthoringError as exc:
+                raise ToolError(str(exc)) from exc
         try:
             summary = auth.build()
         except AuthoringError as exc:
@@ -244,6 +255,8 @@ class Workspace:
                 cls = resolve_symbol(op).classe
                 if cls:
                     wanted[cls] = wanted.get(cls, 0) + 1
+            elif isinstance(op, Chamada):  # a chamada conta como a placa do código
+                wanted["SINALIZACAO"] = wanted.get("SINALIZACAO", 0) + 1
         found: dict[str, int] = {}
         for s in d.symbols:
             if not s.excluded:
@@ -272,11 +285,74 @@ class Workspace:
                   plaques: bool) -> dict[str, Any]:
         rows = [e.resumo() for e in simbologia.listar(group, search, plaques)]
         return {"total": len(rows), "grupos": simbologia.grupos(),
-                "fonte": "NT 1-03, Anexo A (símbolos de projeto) e NT 2-05, Anexo B (placas, "
-                         "esquemáticas: forma, cor e código, sem o pictograma)",
+                "fonte": "NT 1-03, Anexo A (símbolos de projeto) e NT 2-05, Anexo B (placas), "
+                         "com o desenho oficial vetorizado dos PDFs (campo 'desenho'); só "
+                         "E-17 e a parede corta-fogo seguem desenhados à mão",
                 "como_usar": "desenhar_planta com {tipo:'simbolo', id:<id>, x, y}; "
-                             "paredes e portas corta-fogo pelas operações parede/sala/porta",
+                             "paredes e portas corta-fogo pelas operações parede/sala/porta; "
+                             "placa em planta de projeto: {tipo:'chamada', codigo, x, y, "
+                             "dimensao}",
                 "simbolos": rows}
+
+    def blocks(self, group: str | None, search: str | None) -> dict[str, Any]:
+        def norm(s: str) -> str:  # sem acento e sem caixa: "fogão" acha "FOGAO"
+            return unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().casefold()
+
+        rows = []
+        for b in biblioteca.BIBLIOTECA.values():
+            if group and norm(group) not in norm(b.grupo):
+                continue
+            if search and norm(search) not in norm(f"{b.id} {b.nome}"):
+                continue
+            rows.append({"id": b.id, "nome": b.nome, "grupo": b.grupo, "camada": b.camada,
+                         "largura_padrao_m": b.largura_m,
+                         **({} if b.so_diametro else {"profundidade_padrao_m": b.profundidade_m}),
+                         **({"observacao": "redondo: só largura_m (diâmetro)"}
+                            if b.so_diametro else {})})
+        return {"total": len(rows), "origem": "biblioteca própria do motor (não vem de arquivos "
+                                              "de terceiros); o motor não conta estes blocos como "
+                                              "equipamento de segurança",
+                "como_usar": "desenhar_planta com {tipo:'mobiliario', id, x, y, rotacao_graus, "
+                             "largura_m, profundidade_m}",
+                "blocos": rows}
+
+    def export_pdf(self, drawing_id: str, path: str | None, overwrite: bool) -> dict[str, Any]:
+        d = self._authored(drawing_id)
+        p = Path(path).expanduser() if path else d.path.with_suffix(".pdf")
+        if not p.is_absolute():
+            p = d.path.parent / p
+        if p.suffix.lower() != ".pdf":
+            raise ToolError("o arquivo precisa terminar em .pdf")
+        if p.exists() and not overwrite:
+            raise ToolError(f"{p} já existe; use sobrescrever=true ou escolha outro nome")
+        try:
+            out = folhas.exportar_pdf(d.path, p)
+        except folhas.FolhaError as exc:
+            raise ToolError(str(exc)) from exc
+        return {**out, "aviso": "rascunho sem valor normativo; vistas renderizadas do DXF na "
+                                "escala de cada janela"}
+
+    def export_dwg(self, drawing_id: str, path: str | None, overwrite: bool) -> dict[str, Any]:
+        """DXF do motor → DWG (ODA File Converter) com a conferência de ida e volta."""
+        d = self._authored(drawing_id)
+        p = Path(path).expanduser() if path else d.path.with_suffix(".dwg")
+        if not p.is_absolute():
+            p = d.path.parent / p
+        if p.suffix.lower() != ".dwg":
+            raise ToolError("o arquivo precisa terminar em .dwg")
+        try:
+            out = exportar_dwg(d.path, p, sobrescrever=overwrite)
+        except DwgConversionError as exc:
+            raise ToolError(str(exc)) from exc
+        conf = out.conferencia
+        return {**out.as_dict(),
+                "resumo": ("DWG gravado; a ida e volta (DWG reaberto) confere com o DXF"
+                           if conf.get("confere") else
+                           f"DWG gravado, mas a ida e volta diverge em "
+                           f"{len(conf.get('diferencas', []))} ponto(s): veja conferencia"),
+                "aviso": "rascunho sem valor normativo; a conferência diz o que o DWG preservou "
+                         "do DXF, não que o desenho está certo nem que o AutoCAD o abrirá sem "
+                         "aviso (só o AutoCAD confirma)"}
 
     def list_elements(self, drawing_id: str) -> dict[str, Any]:
         d = self._authored(drawing_id)
@@ -312,8 +388,22 @@ class Workspace:
     def _recognize(self, d: OpenDrawing) -> None:
         book: dict[str, Any] = {}
         d.symbols, d.unrecognized = recognize(d.plan, dictionary(), d.overrides, ledger=book)
+        for x0, y0, x1, y1 in self._legend_regions(d):
+            for s in d.symbols:
+                if s.excluded is None and x0 <= s.x <= x1 and y0 <= s.y <= y1:
+                    s.excluded = "LEGEND"
+                    s.attrs["legend_source"] = "tabela de legenda desenhada pelo motor"
         mark_legends(d.symbols, d.plan, dictionary())
         d.ledger = recognition_ledger(d.plan, d.symbols, dictionary(), book)
+
+    @staticmethod
+    def _legend_regions(d: OpenDrawing) -> list[list[float]]:
+        """Tabelas de legenda que o próprio motor desenhou (em metros, unidade confirmada)."""
+        auth = getattr(d, "authoring", None)
+        if auth is None or not getattr(auth, "legend_boxes", None):
+            return []
+        k = d.scale_to_m or 1.0
+        return [[v * k for v in b] for b in auth.legend_boxes]
 
     def overview(self, d: OpenDrawing) -> dict[str, Any]:
         plan = d.plan
@@ -534,7 +624,7 @@ class Workspace:
         out = run(AnalysisInput(
             dxf=d.path, scale_to_m=d.scale_to_m, dictionary=dictionary(), rules=[],
             context=ctx, floors=[dict(f) for f in d.floors], symbol_overrides=d.overrides,
-            obstacle_layers=wall_layers))
+            obstacle_layers=wall_layers, legend_regions=self._legend_regions(d)))
         d.last_analysis = out
         pe = plant_evidence(out, process_id=f"mcp:{d.id}", source_id=d.id)
         plan = compile_verification_plan(base.catalog, pe.context)
@@ -608,6 +698,8 @@ class Workspace:
             memo = calc_saidas.dimensionar(params, entrada)
         elif system == "hidrantes":
             memo = calc_hidrantes.dimensionar(params, entrada)
+        elif system == "sprinklers":
+            memo = calc_sprinklers.dimensionar(params, entrada)
         elif system == "iluminacao":
             memo = calc_sistemas.iluminacao(params, str(entrada.get("ocupacao") or ""))
         elif system == "alarme":

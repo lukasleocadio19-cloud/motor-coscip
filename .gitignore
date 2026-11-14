@@ -17,6 +17,9 @@ plantas-criadas/
 *.dxf
 *.dwg
 !normative/fixtures/**/*.dxf
+# exemplos fictícios gerados pelo motor (desenho, DWG e PDF entram no repositório)
+!exemplos/**/*.dxf
+!exemplos/**/*.dwg
 .env
 *.key
 

@@ -1,0 +1,215 @@
+{
+ "schema": "coscip-autoria/1",
+ "titulo": "detalhes de exemplo",
+ "escala": 100,
+ "aviso": "planta sintética criada pelo MCP do motor COSCIP; não é projeto real",
+ "operacoes": [
+  {
+   "tipo": "sala",
+   "nome": "Área de exemplo",
+   "retangulo": [
+    0.0,
+    0.0,
+    4.0,
+    3.0
+   ],
+   "estilo_parede": "comum",
+   "sem_paredes": false,
+   "area_no_desenho": true
+  },
+  {
+   "tipo": "detalhe",
+   "modelo": "extintor",
+   "x": 0.0,
+   "y": 10.0,
+   "titulo": "",
+   "agente": "PQS ABC 6 kg",
+   "placa_mm": "",
+   "montagem": "ambos",
+   "recipiente": "P-13",
+   "bitola_rede": "",
+   "bitola_regulador": "",
+   "piso_demarcado": true,
+   "divisao": ""
+  },
+  {
+   "tipo": "detalhe",
+   "modelo": "abrigo_mangueira",
+   "x": 0.0,
+   "y": 18.0,
+   "titulo": "",
+   "risco": "MEDIO_2",
+   "agente": "PQS ABC 6 kg",
+   "placa_mm": "",
+   "montagem": "ambos",
+   "recipiente": "P-13",
+   "bitola_rede": "",
+   "bitola_regulador": "",
+   "piso_demarcado": false,
+   "base_m": 0.9,
+   "divisao": ""
+  },
+  {
+   "tipo": "detalhe",
+   "modelo": "recalque_passeio",
+   "x": 0.0,
+   "y": 26.0,
+   "titulo": "",
+   "risco": "MEDIO_2",
+   "vazao_lpm": 400.0,
+   "agente": "PQS ABC 6 kg",
+   "placa_mm": "",
+   "montagem": "ambos",
+   "recipiente": "P-13",
+   "bitola_rede": "",
+   "bitola_regulador": "",
+   "piso_demarcado": false,
+   "divisao": ""
+  },
+  {
+   "tipo": "detalhe",
+   "modelo": "recalque_fachada",
+   "x": 14.0,
+   "y": 10.0,
+   "titulo": "",
+   "risco": "MEDIO_2",
+   "vazao_lpm": 400.0,
+   "agente": "PQS ABC 6 kg",
+   "placa_mm": "",
+   "montagem": "ambos",
+   "recipiente": "P-13",
+   "bitola_rede": "",
+   "bitola_regulador": "",
+   "piso_demarcado": false,
+   "altura_m": 1.1,
+   "divisao": ""
+  },
+  {
+   "tipo": "detalhe",
+   "modelo": "bloco_autonomo",
+   "x": 14.0,
+   "y": 18.0,
+   "titulo": "",
+   "agente": "PQS ABC 6 kg",
+   "placa_mm": "",
+   "montagem": "ambos",
+   "recipiente": "P-13",
+   "bitola_rede": "",
+   "bitola_regulador": "",
+   "piso_demarcado": false,
+   "altura_m": 2.2,
+   "pe_direito_m": 3.0,
+   "fluxo_lm": 300,
+   "divisao": "H-2"
+  },
+  {
+   "tipo": "detalhe",
+   "modelo": "sinalizacao_saida",
+   "x": 14.0,
+   "y": 26.0,
+   "titulo": "",
+   "agente": "PQS ABC 6 kg",
+   "placa_mm": "",
+   "montagem": "ambos",
+   "recipiente": "P-13",
+   "bitola_rede": "",
+   "bitola_regulador": "",
+   "piso_demarcado": false,
+   "divisao": ""
+  },
+  {
+   "tipo": "folha",
+   "nome": "DETALHES",
+   "formato": "A0",
+   "prancha": "1/1",
+   "titulo": "DETALHES DE INSTALAÇÃO - EXEMPLO",
+   "selo": {
+    "destinacao": "",
+    "obra": "Exemplo fictício",
+    "conteudo": [],
+    "endereco": "",
+    "proprietario": "Fictício",
+    "autor_projeto": "Motor COSCIP",
+    "responsavel_tecnico": "",
+    "registro_profissional": "",
+    "cadastro_cbmerj": "",
+    "empresa": "",
+    "registro_empresa": "",
+    "autor_levantamento": "",
+    "registro_levantamento": "",
+    "area": "",
+    "escala": "",
+    "data": "13/11/2026",
+    "revisao": "00"
+   },
+   "vistas": [
+    {
+     "titulo": "Extintor",
+     "janela": [
+      -0.2,
+      9.020000000000001,
+      7.2700000000000005,
+      12.975
+     ],
+     "escala": 15
+    },
+    {
+     "titulo": "Abrigo de mangueiras",
+     "janela": [
+      -0.2,
+      16.678,
+      6.077,
+      20.95
+     ],
+     "escala": 20
+    },
+    {
+     "titulo": "Recalque no passeio",
+     "janela": [
+      -0.2,
+      24.713,
+      4.029,
+      27.0
+     ],
+     "escala": 10
+    },
+    {
+     "titulo": "Recalque na fachada",
+     "janela": [
+      13.8,
+      9.043000000000001,
+      20.095,
+      12.7
+     ],
+     "escala": 20
+    },
+    {
+     "titulo": "Bloco autônomo",
+     "janela": [
+      13.8,
+      17.043,
+      20.663,
+      21.9
+     ],
+     "escala": 20
+    },
+    {
+     "titulo": "Sinalização",
+     "janela": [
+      13.8,
+      24.652,
+      25.7,
+      30.075
+     ],
+     "escala": 25
+    }
+   ],
+   "notas": [
+    "Exemplo fictício: risco, vazão e alturas informadas são premissas."
+   ],
+   "quadros": [],
+   "quadro_de_areas": false,
+   "revisoes": []
+  }
+ ]
+}

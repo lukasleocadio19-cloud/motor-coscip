@@ -53,3 +53,18 @@ preencha com valor provável.
 ## 7. Desenho
 - Dimensões dos ambientes e posição de portas (ou a planta).
 - Pé-direito de cada pavimento e espessura de laje, para o corte esquemático.
+- Cobertura: laje ou telhado; se telhado, uma ou duas águas, para que lado cai, inclinação,
+  beiral e telha (ex. fibrocimento ondulada, trapezoidal metálica); forro (gesso, drywall,
+  mineral) — tudo vai nos cortes e fachadas.
+- Classe dos materiais de piso, parede, teto e fachada (NT 2-20) por ambiente, para os rótulos
+  PISO/PAREDE CLASSE e o quadro de materiais. Não suponha a classe pelo material.
+- Planta de situação: medidas do lote, nomes e larguras das ruas, distância até a esquina mais
+  próxima, recuos e direção do norte.
+- Fachada principal: lado da rua e o nome que vai na testeira (letreiro), se o usuário quiser.
+- Mobiliário que define a lotação (mesas, bancos, leitos), quando houver leiaute.
+- Para os detalhes de instalação: altura da base do abrigo de mangueiras e do bloco autônomo,
+  fluxo luminoso do bloco, pé-direito do local, tipo de hidrante de recalque (passeio ou
+  fachada) e altura da saída na fachada, vazão do sistema (recalque duplo), dimensão das placas
+  e se é indústria, depósito, galpão ou oficina (piso pintado sob o extintor).
+- GLP: tipo e quantidade de recipientes da central (P-13, P-20, P-45, P-90, P-190), medidas
+  internas do abrigo se já existir, bitolas da rede e do regulador.

@@ -500,6 +500,174 @@ Análises mais recentes: 9715 `f2c44ad2…`, 21471 `4722e788…`, 41336 `629e6ba
 
 ---
 
+### 09/11/2026 — o que falta para desenhos profissionais (frente D)
+
+Pedido do usuário: melhorar o motor para fazer desenhos como um projeto digital real de
+restaurante (DWG de retorno, local, fora do Git), usando a simbologia. Foi **medido**, não
+copiado: layouts A0/A1 com 14 a 15 *viewports* em 1:100/1:50/1:75/1:250, camadas com espessura e
+cor, estilos de texto e cota por escala, janelas e etiquetas de vão, chamadas de sinalização com
+dimensão, ~100 blocos, Quadro Resumo completo e selo. Lacunas e ordem D1–D7 em
+`docs/arquitetura-projeto.md` §9. **D1 implementada no mesmo dia** (branch
+`frente-d-d1-apresentacao`, sem commit): `apresentacao.py` (camadas com cor e espessura, estilos
+de texto e cota por escala), operações `janela`, `cota_cadeia` e `marca_corte`, etiqueta de porta
+e `escala` em `criar_planta`; `ruff` ignora `.claude/skills*`. **D2 e D3 também feitas** (10/11/2026,
+mesma branch, sem commit): `chamada`, `mobiliario` + `listar_blocos` (biblioteca própria),
+pictogramas simplificados, `folha` em paper space + `exportar_pdf` (PyMuPDF, extra `pdf`);
+exemplo em `Downloads\Analise\restaurante-400m2-d2d3.dxf/.pdf` (script
+`restaurante-scripts\restaurante_d2d3.py`). Detalhes e pendências em
+`docs/arquitetura-projeto.md` §9. **D4 feita** (`quadro_resumo`: tabela com contagem do desenho
+por pavimento e conferência `confere/diverge/sem dado declarado`; exemplo em
+`Downloads\Analise\restaurante-400m2-d4.dxf/.pdf`, 2 pranchas, script `restaurante_d4.py`).
+**D5 e D6 feitas** (10/11/2026): `vistas.py` com `edificacao`, `secao` e `fachada` derivados da
+planta (camadas `VISTA_*`), e `tools/validacao/desenho_referencia.py` + gabarito numérico
+`docs/validacao/desenho-referencia.yaml` com teste das lacunas conhecidas. **D7 feita**
+(10/11/2026): `exportar_dwg` (`coscip_cad/dwg_export.py`) grava o DWG pelo ODA e confere a ida e
+volta (camadas, blocos, estilos, entidades, textos, viewports, extensão); medido no restaurante
+(3 pranchas, 1.616 entidades): confere. Não prova que o AutoCAD abra sem aviso. Frente D concluída;
+resta ligar `declarado` aos memoriais de `dimensionar_*`. Também no dia: restaurante de 400 m²
+de exemplo (`Downloads\Analise\restaurante-400m2*`), skills externas de CAD em `.claude/skills`
+(só `dxf-civil` ativa; ver `docs/skills-externas.md`). Servidor MCP carregado estava
+desatualizado (`confirmar_unidade` exige duas medidas): reiniciar o Claude Desktop.
+
+### 11/11/2026 — frente E: símbolos oficiais, sprinklers e isométrico
+
+Pedido do usuário: símbolos e placas iguais aos das NTs; indicar sprinklers; fazer o isométrico e
+os cálculos baseados na NT. **Feito** (branch `frente-d-d1-apresentacao`, sem commit):
+`tools/normas/extrair_simbolos.py` + `vetorizar.py` e `apps/mcp/coscip_mcp/simbolos_nt.json`
+(59 placas em cor verdadeira e 103 símbolos de projeto do PDF oficial, hash conferido; só E-17 e a
+parede corta-fogo à mão); `dimensionar_sprinklers` (NT 2-03 P1: dispensas, RTI, VGA, shaft,
+recalque; 14 parâmetros novos conferidos por página); operações `sprinklers` e `isometrico`
+(malha, rede, hidráulica da área remota e quadro de cálculo). **Atenção:** a NT 2-03 não traz
+densidade, área de operação, área por bico nem espaçamento (remete à NBR 10897 / NFPA 13, fora da
+base): o motor usa a referência da NFPA 13 como premissa marcada para conferência. Exemplo:
+`Downloads\Analise
+estaurante-400m2-e.dxf/.pdf/.dwg` (prancha 04) e
+`restaurante-400m2-sprinklers-memorial.md` (script `restaurante_e.py`). Detalhes em
+`docs/arquitetura-projeto.md` §10. Pendências: conferir os critérios na NBR 10897; bomba (NT 2-04);
+armazenamento (NT 2-03 P2); várias zonas numa prumada; reiniciar o Claude Desktop para listar as
+ferramentas novas.
+
+### 12/11/2026 — padrão CBMERJ: carimbo, cores do AAST, legendas e Quadro Resumo
+
+Pedido do usuário (com uma prancha aprovada de residencial multifamiliar, PDF + DWG, dados de
+terceiros: nada copiado para o repo): padronizar o carimbo naquele formato, placas de extintor em
+vermelho, seguir os aditamentos administrativos, representar as medidas como na prancha e
+padronizar o Quadro Resumo pela norma. Fontes abertas (PDFs oficiais do CBMERJ, lidos com
+autorização do pedido): **AAST 01/2025 consolidado** (1.3 Quadro Resumo no DWG; **3.2** campos
+obrigatórios do carimbo; **3.5** cores; 3.9–3.14 model/paper space), Nota DGST 001/2026 (DWG/DWF)
+e AAST 01/2024 (RT do levantamento arquitetônico). O modelo do Quadro Resumo do Portal do
+Requerente exige login: a estrutura veio da planilha do CBMERJ embutida (OLE, "Principal") na
+prancha do usuário. **Feito** (mesma branch, sem commit):
+- `apresentacao.py`: cores do AAST 3.5 (`CORES_AAST`), camadas `SINAL_EQUIPAMENTOS` (placas E,
+  vermelho), `SINALIZACAO` (S, verde) e `SINAL_DEMAIS` (P e A, laranja); arquitetura em preto
+  (portas e janelas deixaram de ser verde/azul); alarme em roxo (ACI 190); tubulação e isométrico
+  em vermelho. `camada_placa`/`cor_placa` usados por placas e chamadas.
+- `folhas.py`: moldura NBR 10068 (25 mm à esquerda), marcas de dobra (185 x 297), **carimbo do
+  CBMERJ** medido no DWG (175 x 283 mm em A0–A2; compacto em A3/A4) com os campos do AAST 3.2
+  (`Selo` ganhou destinacao, conteudo, cadastro_cbmerj, empresa, registro_empresa,
+  autor_levantamento, registro_levantamento, area, escala); retorno
+  `carimbo.campos_aast_01_2025_em_branco`; `folha.legenda` põe as tabelas de legenda no alto da
+  coluna; o aviso de rascunho foi para a faixa de baixo do carimbo.
+- `autoria.py`: `legenda` virou duas tabelas ("LEGENDA SISTEMA DE INCÊNDIO"; "LEGENDA -
+  SINALIZAÇÃO DE EMERGÊNCIA" com placa, círculo com código e tamanho e descrição, ordem P, A, S,
+  E); `legend_boxes` vão para o leitor como regiões de legenda (`workspace._legend_regions`), o
+  que acaba com a legenda contada como equipamento quando tem menos de 3 símbolos.
+- `quadro_resumo.py`: reescrito no modelo do CBMERJ (18 seções na ordem, grade de 8 colunas nas
+  proporções da planilha); campos novos (altura, tabela do Anexo III, RTI, bombas, hidrantes,
+  gás, saídas com/sem chuveiros); contagens novas de hidrantes e alarme/detecção.
+- Dimensão da chamada documentada em **mm** (a descrição dizia cm por engano).
+- Testes: `tests/integration/test_padrao_cbmerj.py` (novo) e ajustes nos de folha, legenda e
+  quadro (comportamento mudou de propósito).
+Decisão do usuário (12/11/2026): placas P e A ficam em **laranja**, como manda o AAST 3.5 (não
+vermelho/amarelo como na prancha de referência). Pendências: conferir o modelo oficial do Quadro Resumo quando houver acesso
+ao Portal do Requerente; legenda de iluminação/alarme separada por sistema, se o usuário quiser.
+
+### 13/11/2026 — frente F: técnica das pranchas e dos memoriais de projetos protocolados
+
+Pedido do usuário: analisar os 4 projetos (DWG + memorial descritivo em PDF) de
+`Downloads\Analise\restaurante-scripts` (restaurante com mezanino, restaurante F-8, abrigo de
+idosos H-2 com 5 blocos, igreja F-2; dados de terceiros, **nada copiado para o repo**) e levar ao
+motor e à skill o que for pertinente: técnica de desenho, cortes, situação, fachadas, elementos
+de composição e a escrita dos memoriais. Leitura numa cópia convertida pelo ODA; vistas
+renderizadas por viewport; alturas de texto, escalas, camadas, hachuras e estrutura dos
+memoriais medidas. **Feito** (mesma branch, sem commit):
+- `vistas.py`: `edificacao.cobertura` (uma ou duas águas, caimento/cumeeira, inclinação, beiral,
+  espessura, telha) e `edificacao.forro`; o corte desenha o telhado cortado com a chamada da
+  telha, o forro com nome, paredes externas até a face do telhado, nível da cumeeira; figura
+  humana de 1,70 m num vão livre (`secao.figura_humana`, padrão sim); rótulo PAREDE CLASSE nos
+  vãos (`secao.classe_parede`); a fachada desenha a silhueta do telhado, o beiral e as nervuras
+  da telha, os traços de vidro nas janelas e o letreiro (`fachada.letreiro`) abaixo do beiral.
+- `situacao.py` (novo) e operação `situacao`: lote cotado (cota de frente vai para dentro quando
+  cai na rua; texto nunca de cabeça para baixo), edificações hachuradas com setas de caimento,
+  ruas por meios-fios com esquinas arredondadas, interrupções e nomes, distâncias, textos e o
+  bloco NORTE; escala própria (1:500 padrão); retorna área do lote, projeção e taxa de ocupação.
+- Operação `rotulo_classe` (PISO/PAREDE/TETO CLASSE, NT 2-20) na planta.
+- `folhas.py`: título de vista com círculo numerado, título sublinhado e escala em cinza (o das
+  pranchas de referência); `folha.quadros` (quadros de texto na coluna, ex. cálculo das saídas).
+- Camadas novas no padrão: VISTA_COBERTURA, VISTA_ESCALA, ROTULO_CLASSE, SITUACAO_*, NORTE.
+- Medidor D6: o exemplo ganhou a situação; lacunas agora são só detalhes, isométrico (no
+  exemplo) e multileaders.
+- Skill: `references/desenho-de-pranchas.md` (composição, alturas de texto medidas, planta,
+  situação, cortes, fachadas, detalhes, quadros, camadas, erros vistos),
+  `references/memorial-descritivo.md` (os três formatos de memorial, a estrutura e o estilo a
+  usar, erros encontrados, conferência) e `references/modelo-memorial-descritivo.md`; SKILL.md,
+  `perguntas.md` e `entregaveis.md` atualizados.
+- Testes: `tests/integration/test_frente_f.py` (11); suíte inteira 845 passou; ruff e build ok.
+- Exemplo: `Downloads\Analise\restaurante-400m2-f.dxf/.pdf` (4 pranchas; script
+  `restaurante-scripts\restaurante_f.py`); verificador de sobreposição: 0 nas pranchas 03 e 04 e
+  nenhuma nova no model space.
+Erros achados nos projetos reais e registrados na skill para não repetir: quadro de cálculo de
+saídas copiado de outro projeto (grupo e população errados), população incoerente entre ambiente
+e cálculo, autonomia e altura de placas divergentes entre legenda e memorial, base normativa
+anterior ao Decreto 42/2018. Limites: telhado só sobre pegada retangular (um plano por água);
+memorial descritivo é redigido pela IA com o modelo (o motor não o gera).
+
+### 13/11/2026 — frente G: detalhes de instalação das medidas de segurança
+
+Pedido do usuário: melhorar o detalhamento de blocos de iluminação, hidrante de recalque,
+extintores e outros. **Feito** (mesma branch, sem commit):
+- `parametros.yaml`: 27 parâmetros `det.*` com citação conferida no texto (NT 2-01 5.2.1 e 6.12;
+  NT 2-02 5.2.2–5.2.12, 5.3.4–5.3.13; NT 2-05 4.5, 4.7, Tabela 6 linha E-5 e páginas 11/15 para
+  S-12 e E-7; NT 2-06 5.1.1, 5.2, 5.3.2). A NT 2-05 3ª ed. não traz mais as alturas por placa
+  (só os níveis) e a NT 2-06 remete à NBR 10898 (fora da base): altura do bloco, do abrigo,
+  fluxo e dimensão da placa vêm do usuário.
+- `detalhes.py` (novo) e operação `detalhe`: extintor, abrigo_mangueira, recalque_passeio,
+  recalque_fachada, bloco_autonomo, sinalizacao_saida — vistas e cortes cotados, chamadas,
+  notas com NT e item; citação que não confere recusa o detalhe; retorno com medidas
+  normativas, dados informados e a região para a vista da folha. Camadas DETALHE_* no padrão do
+  AAST 3.5. Detalhe não entra na contagem do Quadro Resumo (são entidades, não blocos).
+- Carimbo: valor de ESCALA/DATA/ÁREA/REVISÃO limitado para não encostar no rótulo.
+- Medidor D6: o exemplo ganhou um detalhe; lacunas agora só isométrico (no exemplo) e
+  multileaders.
+- Skill: SKILL.md, desenho-de-pranchas.md §7, perguntas.md e entregaveis.md.
+- Testes: `tests/integration/test_detalhes.py` (10). Exemplos: `restaurante-400m2-g.*` (prancha 05
+  com extintor, bloco e sinalização) e `detalhes-exemplo.*` (A0 com os seis), script
+  `restaurante-scripts\detalhes_g.py`; verificador de sobreposição: 0.
+Pendências: acionador manual e avisador (NBR 17240 fora da base), mangotinho, central de GLP e
+detalhe de escada; abrigo de recalque tipo coluna (Figura 1 da NT 2-02).
+
+**G2 (13/11/2026, mesmo dia):** o usuário mostrou uma prancha protocolada
+(DWG de terceiros na pasta Downloads, dados fora do repositório, nada copiado) e pediu
+"esse nível de detalhamento". `equipamentos.py` (novo) desenha o equipamento real (extintor com
+cúpula, válvula, manômetro, alavanca, mangueira e frisos; suportes de parede e de piso; alvenaria
+em corte; porta com batente e dobradiças; laje e forro; placa com o pictograma oficial em bloco
+`DETV_PICT_*`, que o leitor não conta; placa suspensa; bloco autônomo; registro globo angular e
+de gaveta; junta storz; mangueira aduchada; esguicho). `detalhes.py` ganhou balões numerados com
+tabela Nº | DESCRIÇÃO, chamadas com texto sobre a linha, placa ampliada com chave de
+especificação (3 citações novas: forma e cor de E-5, E-7, S-12), vistas NA PAREDE / NO PISO do
+extintor (`montagem`, `extintor_m`), sinalização suspensa no teto, largura de texto medida pela
+fonte e escalas padrão maiores (1:10 a 1:25). Exemplos `detalhes-exemplo.*` (A0, 0 sobreposição) e
+`restaurante-400m2-g.*` (prancha 05 em A0). Testes: `test_detalhes.py` com 14.
+
+**G3 (13/11/2026):** detalhes de GLP pedidos pelo usuário, no nível da mesma prancha.
+`equipamentos_glp.py` (recipientes, pigtail, coletor, válvula de retenção, tampão, niple, união,
+luva de redução, tê, registro de esfera, manômetro, reguladores de 1º e 2º estágio) e
+`detalhes_glp.py` com os modelos `central_glp` (corte, planta com portas, placa PERIGO ampliada,
+balões e tabela), `regulador_1_estagio` e `regulador_2_estagio`. 14 parâmetros `det.glp.*`
+conferidos na NT 3-02 (5.2.1, 5.2.5, 5.3.2 em duas citações por quebra de página, 5.3.4, 5.3.5,
+5.4.2, 5.4.5, Tabelas 1 e 3, 6.1, 6.2). Textura de concreto desenhada em linhas (a hachura
+AR-CONC some no PDF). Exemplo: prancha 06 do `restaurante-400m2-g` (4 x P-45). Testes: +3.
+
 ## 6. O que existe no sistema (referência rápida)
 
 ### Telas (rotas com `#`)

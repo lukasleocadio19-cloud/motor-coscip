@@ -15,7 +15,8 @@ def test_skill_tem_frontmatter_e_referencias():
     for ref in re.findall(r"`(references/[a-z\-]+\.md)`", texto):
         assert (SKILL / ref).exists(), ref
     assert {p.name for p in (SKILL / "references").glob("*.md")} == {
-        "perguntas.md", "medidas.md", "modelo-projeto.md", "entregaveis.md"}
+        "perguntas.md", "medidas.md", "modelo-projeto.md", "entregaveis.md",
+        "desenho-de-pranchas.md", "memorial-descritivo.md", "modelo-memorial-descritivo.md"}
 
 
 def test_ferramentas_citadas_na_skill_existem_no_servidor():
@@ -29,6 +30,10 @@ def test_ferramentas_citadas_na_skill_existem_no_servidor():
                                                                "single_occupancy",
                                                                "dados_da_edificacao",
                                                                "corta_fogo", "corta_fogo_min",
+                                                               # operações de desenhar_planta
+                                                               "cota_cadeia", "marca_corte",
+                                                               "quadro_resumo",
+                                                               "rotulo_classe",
                                                                "excecoes_que_o_motor_nao_aplica"}
     assert citadas <= tools, citadas - tools
 

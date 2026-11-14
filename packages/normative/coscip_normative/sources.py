@@ -222,6 +222,38 @@ def _page_before(text: str, pos: int) -> int | None:
     return found
 
 
+def verify_page_citation(sources: dict[str, NormativeText], document: str, item: str,
+                         page: int, quote: tuple[str, ...]) -> CitationCheck:
+    """Confere que todos os termos de ``quote`` estão na PÁGINA indicada.
+
+    Para NTs em que o item não abre uma linha do texto convertido (o PDF junta os itens no mesmo
+    parágrafo, como na NT 2-03 parte 1) e por isso não entra no índice: a citação continua sendo
+    a do item, mas a conferência é pela página, que é mais fraca que a conferência pelo item.
+    """
+    item = str(item)
+    try:
+        doc_id = normalize_document_id(document)
+    except SourceError as exc:
+        return CitationCheck(document, item, False, problem=str(exc))
+    src = sources.get(doc_id)
+    if src is None:
+        return CitationCheck(doc_id, item, False, problem="documento ausente da base")
+    marcas = list(_PAGE.finditer(src.text))
+    for i, m in enumerate(marcas):
+        if int(m.group(1)) == int(page):
+            fim = marcas[i + 1].start() if i + 1 < len(marcas) else len(src.text)
+            trecho = src.text[m.end():fim]
+            break
+    else:
+        return CitationCheck(doc_id, item, False, problem=f"página {page} não encontrada no texto",
+                             text_sha256=src.text_sha256)
+    folded = fold(trecho)
+    missing = tuple(t for t in quote if fold(t) not in folded)
+    return CitationCheck(doc_id, item, not missing, int(page), _excerpt(trecho, quote), missing,
+                         "termos não encontrados na página" if missing else None,
+                         src.text_sha256)
+
+
 def verify_table_row(sources: dict[str, NormativeText], document: str, item: str,
                      cells: tuple[str, ...]) -> CitationCheck:
     """Confere que todos os ``cells`` estão na MESMA linha de uma tabela dentro do item.

@@ -23,11 +23,12 @@ nome.
 
 ## Chuveiros automáticos
 
-- **Situação:** LER_NT — sem cálculo: ler a NT e registrar as exigências
+- **Situação:** CALCULA — o motor dimensiona e gera memorial
+- **Ferramenta:** `dimensionar_sprinklers`
 - **Ler:** `consultar_norma("NT 2-03 P1")`, `consultar_norma("NT 2-03 P2")`
 - **Símbolos:** `BICO_SPRINKLER_PENDENTE`, `BICO_SPRINKLER_CIMA`, `VALVULA_GOVERNO_ALARME_VGA`, `REGISTRO_RECALQUE_SPRINKLER`
-- **Entrega:** classificação da ocupação, área de operação, densidade, reserva e bombas pela NT e pela norma adotada
-- **O motor não cobre:** sem cálculo hidráulico de sprinklers no motor
+- **Entrega:** dispensas por ambiente, RTI (Q x t do Anexo B), VGA, shaft e recalque pela NT 2-03; malha de bicos, rede, hidráulica da área remota e isométrico (operações sprinklers e isometrico)
+- **O motor não cobre:** a classe de risco, a densidade, a área de operação, a área por bico e o espaçamento vêm da ABNT NBR 10897 ou NFPA 13 (fora da base) e saem como premissa a conferir; armazenamento (NT 2-03 P2) é lido na NT; a hidráulica é simplificada (uma zona, uma subgeral)
 
 ## Sinalização de segurança
 
@@ -35,7 +36,7 @@ nome.
 - **Ler:** `consultar_norma("NT 2-05")`
 - **Símbolos:** `S-12`, `S-1`, `S-2`, `S-3`, `E-5`, `E-7`, `E-2`, `P-4`
 - **Entrega:** placas de orientação e salvamento nas rotas, de equipamentos e de proibição/alerta, com dimensão pela distância de visualização (Tabela 7)
-- **O motor não cobre:** placas esquemáticas no desenho (sem pictograma); quantidade e posição pelo Claude lendo a NT
+- **O motor não cobre:** quantidade e posição das placas, que o Claude define lendo a NT (o desenho de cada placa é o oficial da NT 2-05)
 
 ## Iluminação de Emergência
 

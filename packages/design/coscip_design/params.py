@@ -9,7 +9,7 @@ from typing import Any
 import yaml
 
 from coscip_normative import NormativeText
-from coscip_normative.sources import verify_citation, verify_table_row
+from coscip_normative.sources import verify_citation, verify_page_citation, verify_table_row
 
 SCHEMA = "design-params/1.0"
 DEFAULT_PATH = Path(__file__).resolve().parents[3] / "normative" / "projeto" / "parametros.yaml"
@@ -40,6 +40,9 @@ class Param:
 
 def _check(sources: dict[str, NormativeText], fonte: dict[str, Any]):  # noqa: ANN202
     doc, item = fonte["document"], str(fonte.get("texto_em") or fonte["item"])
+    if fonte.get("pagina"):  # item que o índice não alcança: conferência pela página
+        return verify_page_citation(sources, doc, str(fonte["item"]), int(fonte["pagina"]),
+                                    tuple(fonte.get("quote") or ()))
     if fonte.get("linha"):
         return verify_table_row(sources, doc, item, tuple(str(c) for c in fonte["linha"]))
     return verify_citation(sources, doc, item, tuple(fonte.get("quote") or ()))

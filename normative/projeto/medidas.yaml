@@ -23,17 +23,18 @@ medidas:
     entrega: memorial hidráulico, RTI, esquema vertical (operação corte), casa de máquinas, recalque
     falta: conjunto de pressurização (NT 2-04) e zonas de pressão são lidos na NT, não calculados
   - rotulo: Chuveiros automáticos
-    situacao: LER_NT
+    situacao: CALCULA
+    ferramenta: dimensionar_sprinklers
     nt: [NT 2-03 P1, NT 2-03 P2]
     simbolos: [BICO_SPRINKLER_PENDENTE, BICO_SPRINKLER_CIMA, VALVULA_GOVERNO_ALARME_VGA, REGISTRO_RECALQUE_SPRINKLER]
-    entrega: classificação da ocupação, área de operação, densidade, reserva e bombas pela NT e pela norma adotada
-    falta: sem cálculo hidráulico de sprinklers no motor
+    entrega: dispensas por ambiente, RTI (Q x t do Anexo B), VGA, shaft e recalque pela NT 2-03; malha de bicos, rede, hidráulica da área remota e isométrico (operações sprinklers e isometrico)
+    falta: a classe de risco, a densidade, a área de operação, a área por bico e o espaçamento vêm da ABNT NBR 10897 ou NFPA 13 (fora da base) e saem como premissa a conferir; armazenamento (NT 2-03 P2) é lido na NT; a hidráulica é simplificada (uma zona, uma subgeral)
   - rotulo: Sinalização de segurança
     situacao: LER_NT
     nt: [NT 2-05]
     simbolos: [S-12, S-1, S-2, S-3, E-5, E-7, E-2, P-4]
     entrega: placas de orientação e salvamento nas rotas, de equipamentos e de proibição/alerta, com dimensão pela distância de visualização (Tabela 7)
-    falta: placas esquemáticas no desenho (sem pictograma); quantidade e posição pelo Claude lendo a NT
+    falta: quantidade e posição das placas, que o Claude define lendo a NT (o desenho de cada placa é o oficial da NT 2-05)
   - rotulo: Iluminação de Emergência
     situacao: REQUISITOS
     ferramenta: requisitos_iluminacao_alarme

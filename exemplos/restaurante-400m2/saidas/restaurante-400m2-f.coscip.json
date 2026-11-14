@@ -1,0 +1,1796 @@
+{
+ "schema": "coscip-autoria/1",
+ "titulo": "Restaurante 400 m² - Projeto de incêndio (rascunho)",
+ "escala": 100,
+ "aviso": "planta sintética criada pelo MCP do motor COSCIP; não é projeto real",
+ "operacoes": [
+  {
+   "tipo": "edificacao",
+   "pe_direito_m": 3.2,
+   "laje_m": 0.2,
+   "platibanda_m": 0.0,
+   "volumes": [
+    {
+     "nome": "Duto de exaustão",
+     "retangulo": [
+      8.6,
+      14.899999999999999,
+      9.200000000000001,
+      15.5
+     ],
+     "base_m": 2.6,
+     "topo_m": 5.0,
+     "tracejado": false
+    }
+   ],
+   "cobertura": {
+    "tipo": "duas_aguas",
+    "inclinacao_pct": 15.0,
+    "caimento": "sul",
+    "cumeeira": "x",
+    "beiral_m": 0.6,
+    "espessura_m": 0.06,
+    "telha": "TELHA ONDULADA DE FIBROCIMENTO"
+   },
+   "forro": "FORRO DE GESSO"
+  },
+  {
+   "tipo": "sala",
+   "nome": "SALÃO DE REFEIÇÕES",
+   "retangulo": [
+    0.2,
+    0.2,
+    16.8,
+    11.0
+   ],
+   "espessura_m": 0.2,
+   "estilo_parede": "comum",
+   "sem_paredes": false,
+   "area_no_desenho": true
+  },
+  {
+   "tipo": "sala",
+   "nome": "CIRCULAÇÃO",
+   "retangulo": [
+    17.0,
+    0.2,
+    18.8,
+    11.0
+   ],
+   "espessura_m": 0.2,
+   "estilo_parede": "comum",
+   "sem_paredes": false,
+   "area_no_desenho": true
+  },
+  {
+   "tipo": "sala",
+   "nome": "WC MASCULINO",
+   "retangulo": [
+    19.0,
+    0.2,
+    24.8,
+    3.6
+   ],
+   "espessura_m": 0.2,
+   "estilo_parede": "comum",
+   "sem_paredes": false,
+   "area_no_desenho": true
+  },
+  {
+   "tipo": "sala",
+   "nome": "WC FEMININO",
+   "retangulo": [
+    19.0,
+    3.8,
+    24.8,
+    7.2
+   ],
+   "espessura_m": 0.2,
+   "estilo_parede": "comum",
+   "sem_paredes": false,
+   "area_no_desenho": true
+  },
+  {
+   "tipo": "sala",
+   "nome": "WC PCD",
+   "retangulo": [
+    19.0,
+    7.4,
+    21.8,
+    11.0
+   ],
+   "espessura_m": 0.2,
+   "estilo_parede": "comum",
+   "sem_paredes": false,
+   "area_no_desenho": true
+  },
+  {
+   "tipo": "sala",
+   "nome": "DML",
+   "retangulo": [
+    22.0,
+    7.4,
+    24.8,
+    11.0
+   ],
+   "espessura_m": 0.2,
+   "estilo_parede": "comum",
+   "sem_paredes": false,
+   "area_no_desenho": true
+  },
+  {
+   "tipo": "sala",
+   "nome": "COZINHA",
+   "retangulo": [
+    0.2,
+    11.2,
+    12.6,
+    15.8
+   ],
+   "espessura_m": 0.2,
+   "estilo_parede": "comum",
+   "sem_paredes": false,
+   "area_no_desenho": true
+  },
+  {
+   "tipo": "sala",
+   "nome": "ESTOQUE SECO",
+   "retangulo": [
+    12.8,
+    11.2,
+    16.8,
+    15.8
+   ],
+   "espessura_m": 0.2,
+   "estilo_parede": "comum",
+   "sem_paredes": false,
+   "area_no_desenho": true
+  },
+  {
+   "tipo": "sala",
+   "nome": "RECEBIMENTO / CÂMARA FRIA",
+   "retangulo": [
+    17.0,
+    11.2,
+    24.8,
+    15.8
+   ],
+   "espessura_m": 0.2,
+   "estilo_parede": "comum",
+   "sem_paredes": false,
+   "area_no_desenho": true
+  },
+  {
+   "tipo": "porta",
+   "x": 0.1,
+   "y": 5.6,
+   "largura_m": 1.2,
+   "angulo_graus": 90.0,
+   "abre_para": "esquerda",
+   "corte_m": 0.4,
+   "altura_m": 2.1,
+   "etiqueta": true
+  },
+  {
+   "tipo": "porta",
+   "x": 6.0,
+   "y": 11.1,
+   "largura_m": 1.4,
+   "angulo_graus": 0.0,
+   "abre_para": "esquerda",
+   "corte_m": 0.4,
+   "altura_m": 2.1,
+   "etiqueta": true
+  },
+  {
+   "tipo": "porta",
+   "x": 18.9,
+   "y": 1.9,
+   "largura_m": 0.9,
+   "angulo_graus": 90.0,
+   "abre_para": "esquerda",
+   "corte_m": 0.4,
+   "altura_m": 2.1,
+   "etiqueta": true
+  },
+  {
+   "tipo": "porta",
+   "x": 18.9,
+   "y": 9.2,
+   "largura_m": 0.9,
+   "angulo_graus": 90.0,
+   "abre_para": "esquerda",
+   "corte_m": 0.4,
+   "altura_m": 2.1,
+   "etiqueta": true
+  },
+  {
+   "tipo": "porta",
+   "x": 23.4,
+   "y": 11.1,
+   "largura_m": 0.9,
+   "angulo_graus": 0.0,
+   "abre_para": "esquerda",
+   "corte_m": 0.4,
+   "altura_m": 2.1,
+   "etiqueta": true
+  },
+  {
+   "tipo": "porta",
+   "x": 12.7,
+   "y": 13.5,
+   "largura_m": 1.0,
+   "angulo_graus": 90.0,
+   "abre_para": "esquerda",
+   "corte_m": 0.4,
+   "altura_m": 2.1,
+   "etiqueta": true
+  },
+  {
+   "tipo": "porta",
+   "x": 16.9,
+   "y": 13.5,
+   "largura_m": 1.0,
+   "angulo_graus": 90.0,
+   "abre_para": "esquerda",
+   "corte_m": 0.4,
+   "altura_m": 2.1,
+   "etiqueta": true
+  },
+  {
+   "tipo": "porta",
+   "x": 3.0,
+   "y": 15.9,
+   "largura_m": 1.0,
+   "angulo_graus": 0.0,
+   "abre_para": "esquerda",
+   "corte_m": 0.4,
+   "altura_m": 2.1,
+   "etiqueta": true
+  },
+  {
+   "tipo": "porta",
+   "x": 4.0,
+   "y": 0.1,
+   "largura_m": 2.0,
+   "angulo_graus": 0.0,
+   "abre_para": "direita",
+   "corte_m": 0.4,
+   "altura_m": 2.1,
+   "etiqueta": true
+  },
+  {
+   "tipo": "porta",
+   "x": 10.0,
+   "y": 0.1,
+   "largura_m": 2.0,
+   "angulo_graus": 0.0,
+   "abre_para": "direita",
+   "corte_m": 0.4,
+   "altura_m": 2.1,
+   "etiqueta": true
+  },
+  {
+   "tipo": "porta",
+   "x": 24.9,
+   "y": 13.5,
+   "largura_m": 1.2,
+   "angulo_graus": 90.0,
+   "abre_para": "direita",
+   "corte_m": 0.4,
+   "altura_m": 2.1,
+   "etiqueta": true
+  },
+  {
+   "tipo": "porta",
+   "x": 16.9,
+   "y": 4.0,
+   "largura_m": 1.2,
+   "angulo_graus": 90.0,
+   "abre_para": "direita",
+   "corte_m": 0.4,
+   "altura_m": 2.1,
+   "etiqueta": true
+  },
+  {
+   "tipo": "porta",
+   "x": 18.9,
+   "y": 6.6,
+   "largura_m": 0.9,
+   "angulo_graus": 90.0,
+   "abre_para": "esquerda",
+   "corte_m": 0.4,
+   "altura_m": 2.1,
+   "etiqueta": true
+  },
+  {
+   "tipo": "texto",
+   "texto": "PLANTA BAIXA - TÉRREO",
+   "x": 0.5,
+   "y": -3.6,
+   "altura_m": 0.5,
+   "camada": "TEXTOS",
+   "centralizado": false
+  },
+  {
+   "tipo": "texto",
+   "texto": "RESTAURANTE (F-8) - ATC 400,00 m² - RASCUNHO PARA O RESPONSÁVEL TÉCNICO",
+   "x": 0.5,
+   "y": -4.6,
+   "altura_m": 0.3,
+   "camada": "TEXTOS",
+   "centralizado": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "EXTINTOR_PQS_ABC",
+   "x": 7.0,
+   "y": 0.6,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "EXTINTOR_PQS_ABC",
+   "x": 0.6,
+   "y": 9.8,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "EXTINTOR_PQS_ABC",
+   "x": 16.4,
+   "y": 8.0,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "EXTINTOR_PQS_ABC",
+   "x": 8.0,
+   "y": 11.5,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "EXTINTOR_PQS_ABC",
+   "x": 24.4,
+   "y": 12.6,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "texto",
+   "texto": "QGBT",
+   "x": 22.6,
+   "y": 12.0,
+   "altura_m": 0.25,
+   "camada": "TEXTOS",
+   "centralizado": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "BARRA_ANTIPANICO",
+   "x": 4.0,
+   "y": 0.6,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "BARRA_ANTIPANICO",
+   "x": 10.0,
+   "y": 0.6,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "BARRA_ANTIPANICO",
+   "x": 0.6,
+   "y": 5.6,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "ROTA_DE_FUGA_FINAL",
+   "x": 4.0,
+   "y": 0.1,
+   "rotacao_graus": 0.0,
+   "tamanho_m": 0.6,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "ROTA_DE_FUGA_FINAL",
+   "x": 10.0,
+   "y": 0.1,
+   "rotacao_graus": 0.0,
+   "tamanho_m": 0.6,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "ROTA_DE_FUGA_FINAL",
+   "x": 0.1,
+   "y": 5.6,
+   "rotacao_graus": 0.0,
+   "tamanho_m": 0.6,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "ROTA_DE_FUGA_FINAL",
+   "x": 3.0,
+   "y": 15.9,
+   "rotacao_graus": 0.0,
+   "tamanho_m": 0.6,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "ROTA_DE_FUGA_FINAL",
+   "x": 24.9,
+   "y": 13.5,
+   "rotacao_graus": 0.0,
+   "tamanho_m": 0.6,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 2.5,
+   "y": 2.5,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 7.0,
+   "y": 2.5,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 11.5,
+   "y": 2.5,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 15.0,
+   "y": 2.5,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 2.5,
+   "y": 8.5,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 7.0,
+   "y": 8.5,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 11.5,
+   "y": 8.5,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 15.0,
+   "y": 8.5,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 1.4,
+   "y": 7.0,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 17.9,
+   "y": 1.9,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 17.9,
+   "y": 6.0,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 17.9,
+   "y": 9.2,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 21.9,
+   "y": 1.9,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 21.9,
+   "y": 5.5,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 20.4,
+   "y": 9.2,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 3.0,
+   "y": 13.5,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 7.5,
+   "y": 13.8,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 11.0,
+   "y": 13.5,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 14.8,
+   "y": 13.5,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 20.0,
+   "y": 13.5,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "PONTO_ILUMINACAO_EMERGENCIA",
+   "x": 23.0,
+   "y": 14.8,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "legenda",
+   "x": 34.0,
+   "y": 15.5,
+   "titulo": "LEGENDA",
+   "escala": 1.0,
+   "altura_linha_m": 1.0
+  },
+  {
+   "tipo": "simbolo",
+   "id": "EXTINTOR_AP",
+   "x": 6.1,
+   "y": 14.55,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "parede",
+   "pontos": [
+    [
+     9.1,
+     16.0
+    ],
+    [
+     9.1,
+     17.6
+    ]
+   ],
+   "espessura_m": 0.2,
+   "fechar": false,
+   "estilo": "corta_fogo"
+  },
+  {
+   "tipo": "parede",
+   "pontos": [
+    [
+     11.3,
+     16.0
+    ],
+    [
+     11.3,
+     17.6
+    ]
+   ],
+   "espessura_m": 0.2,
+   "fechar": false,
+   "estilo": "corta_fogo"
+  },
+  {
+   "tipo": "simbolo",
+   "id": "CENTRAL_GLP",
+   "x": 10.2,
+   "y": 17.15,
+   "rotacao_graus": 0.0,
+   "tamanho_m": 0.4,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "REGISTRO_VALVULA",
+   "x": 8.5,
+   "y": 16.4,
+   "rotacao_graus": 0.0,
+   "tamanho_m": 0.4,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "EXTINTOR_PQS_ABC",
+   "x": 8.4,
+   "y": 17.2,
+   "rotacao_graus": 0.0,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "texto",
+   "texto": "PERIGO / GAS INFLAMAVEL / PROIBIDO FUMAR",
+   "x": 7.6,
+   "y": 18.8,
+   "altura_m": 0.2,
+   "camada": "TEXTOS",
+   "centralizado": false
+  },
+  {
+   "tipo": "texto",
+   "texto": "CENTRAL DE GLP: 4 x P-45 (180 kg), TROCAVEL, ABRIGO TRRF 120 min, LADO NORTE ABERTO",
+   "x": 5.0,
+   "y": 19.3,
+   "altura_m": 0.2,
+   "camada": "TEXTOS",
+   "centralizado": false
+  },
+  {
+   "tipo": "texto",
+   "texto": "CX. DE GORDURA (EXT.)",
+   "x": 0.6,
+   "y": 17.0,
+   "altura_m": 0.2,
+   "camada": "TEXTOS",
+   "centralizado": false
+  },
+  {
+   "tipo": "simbolo",
+   "id": "TUBO_SOBE",
+   "x": 9.8,
+   "y": 14.45,
+   "rotacao_graus": 0.0,
+   "tamanho_m": 0.4,
+   "sobre_rodas": false
+  },
+  {
+   "tipo": "texto",
+   "texto": "COIFA + DUTO (SOBE A COBERTURA)",
+   "x": 0.5,
+   "y": 15.4,
+   "altura_m": 0.16,
+   "camada": "TEXTOS",
+   "centralizado": false
+  },
+  {
+   "tipo": "janela",
+   "x": 0.1,
+   "y": 2.9,
+   "largura_m": 3.0,
+   "altura_m": 1.2,
+   "peitoril_m": 0.9,
+   "angulo_graus": 90.0,
+   "espessura_m": 0.2,
+   "etiqueta": true,
+   "lado_etiqueta": "esquerda"
+  },
+  {
+   "tipo": "janela",
+   "x": 0.1,
+   "y": 7.6,
+   "largura_m": 2.0,
+   "altura_m": 1.2,
+   "peitoril_m": 0.9,
+   "angulo_graus": 90.0,
+   "espessura_m": 0.2,
+   "etiqueta": true,
+   "lado_etiqueta": "esquerda"
+  },
+  {
+   "tipo": "janela",
+   "x": 13.75,
+   "y": 0.1,
+   "largura_m": 3.5,
+   "altura_m": 1.2,
+   "peitoril_m": 0.9,
+   "angulo_graus": 0.0,
+   "espessura_m": 0.2,
+   "etiqueta": true,
+   "lado_etiqueta": "direita"
+  },
+  {
+   "tipo": "cota_cadeia",
+   "pontos": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     3.0,
+     0.0
+    ],
+    [
+     5.0,
+     0.0
+    ],
+    [
+     9.0,
+     0.0
+    ],
+    [
+     11.0,
+     0.0
+    ],
+    [
+     12.0,
+     0.0
+    ],
+    [
+     15.5,
+     0.0
+    ],
+    [
+     25.0,
+     0.0
+    ]
+   ],
+   "afastamento_m": -1.2,
+   "total": true,
+   "separacao_total_m": 0.6
+  },
+  {
+   "tipo": "cota_cadeia",
+   "pontos": [
+    [
+     25.0,
+     0.0
+    ],
+    [
+     25.0,
+     11.1
+    ],
+    [
+     25.0,
+     16.0
+    ]
+   ],
+   "afastamento_m": -1.0,
+   "total": true,
+   "separacao_total_m": 0.6
+  },
+  {
+   "tipo": "marca_corte",
+   "nome": "A",
+   "a": [
+    -1.5,
+    7.6
+   ],
+   "b": [
+    29.0,
+    7.6
+   ],
+   "sentido": "esquerda"
+  },
+  {
+   "tipo": "marca_corte",
+   "nome": "B",
+   "a": [
+    9.8,
+    -2.6
+   ],
+   "b": [
+    9.8,
+    20.0
+   ],
+   "sentido": "direita"
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "FOGAO",
+   "x": 7.3,
+   "y": 15.25,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "CHAPA",
+   "x": 8.7,
+   "y": 15.25,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "FRITADEIRA",
+   "x": 9.85,
+   "y": 15.25,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "FORNO",
+   "x": 10.95,
+   "y": 15.25,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "COIFA",
+   "x": 8.9,
+   "y": 15.2,
+   "rotacao_graus": 0.0,
+   "largura_m": 5.0,
+   "profundidade_m": 1.15
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "BALCAO",
+   "x": 8.8,
+   "y": 13.15,
+   "rotacao_graus": 0.0,
+   "largura_m": 3.2,
+   "profundidade_m": 0.7
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "REFRIGERADOR",
+   "x": 12.05,
+   "y": 12.15,
+   "rotacao_graus": 0.0,
+   "largura_m": 0.9,
+   "profundidade_m": 1.3
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "BALCAO",
+   "x": 0.8,
+   "y": 12.9,
+   "rotacao_graus": 90.0,
+   "largura_m": 2.6,
+   "profundidade_m": 0.8
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "PIA",
+   "x": 2.0,
+   "y": 11.9,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "BOTIJAO_P45",
+   "x": 9.5,
+   "y": 16.4,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "BOTIJAO_P45",
+   "x": 9.95,
+   "y": 16.4,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "BOTIJAO_P45",
+   "x": 10.4,
+   "y": 16.4,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "BOTIJAO_P45",
+   "x": 10.85,
+   "y": 16.4,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "MESA_4_LUGARES",
+   "x": 3.5,
+   "y": 4.0,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "MESA_4_LUGARES",
+   "x": 7.0,
+   "y": 4.0,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "MESA_4_LUGARES",
+   "x": 10.5,
+   "y": 4.0,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "MESA_4_LUGARES",
+   "x": 14.0,
+   "y": 4.0,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "MESA_4_LUGARES",
+   "x": 3.5,
+   "y": 6.8,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "MESA_4_LUGARES",
+   "x": 7.0,
+   "y": 6.8,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "MESA_4_LUGARES",
+   "x": 10.5,
+   "y": 6.8,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "MESA_4_LUGARES",
+   "x": 14.0,
+   "y": 6.8,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "MESA_4_LUGARES",
+   "x": 3.5,
+   "y": 9.4,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "MESA_4_LUGARES",
+   "x": 7.0,
+   "y": 9.4,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "MESA_4_LUGARES",
+   "x": 10.5,
+   "y": 9.4,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "MESA_4_LUGARES",
+   "x": 14.0,
+   "y": 9.4,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "VASO_SANITARIO",
+   "x": 20.2,
+   "y": 3.2,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "VASO_SANITARIO",
+   "x": 21.6,
+   "y": 3.2,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "VASO_SANITARIO",
+   "x": 23.0,
+   "y": 3.2,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "LAVATORIO",
+   "x": 20.2,
+   "y": 0.6,
+   "rotacao_graus": 180.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "LAVATORIO",
+   "x": 21.6,
+   "y": 0.6,
+   "rotacao_graus": 180.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "LAVATORIO",
+   "x": 23.0,
+   "y": 0.6,
+   "rotacao_graus": 180.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "VASO_SANITARIO",
+   "x": 20.2,
+   "y": 6.8,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "VASO_SANITARIO",
+   "x": 21.6,
+   "y": 6.8,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "VASO_SANITARIO",
+   "x": 23.0,
+   "y": 6.8,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "LAVATORIO",
+   "x": 20.2,
+   "y": 4.2,
+   "rotacao_graus": 180.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "LAVATORIO",
+   "x": 21.6,
+   "y": 4.2,
+   "rotacao_graus": 180.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "LAVATORIO",
+   "x": 23.0,
+   "y": 4.2,
+   "rotacao_graus": 180.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "VASO_SANITARIO",
+   "x": 20.4,
+   "y": 10.6,
+   "rotacao_graus": 0.0
+  },
+  {
+   "tipo": "mobiliario",
+   "id": "LAVATORIO",
+   "x": 19.6,
+   "y": 8.3,
+   "rotacao_graus": 90.0
+  },
+  {
+   "tipo": "texto",
+   "texto": "EXT. CLASSE K",
+   "x": 4.4,
+   "y": 14.35,
+   "altura_m": 0.15,
+   "camada": "TEXTOS",
+   "centralizado": false
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "S-12",
+   "x": 4.0,
+   "y": 1.9,
+   "dimensao": "600x300"
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "S-12",
+   "x": 10.0,
+   "y": 1.9,
+   "dimensao": "600x300"
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "S-12",
+   "x": 1.9,
+   "y": 5.6,
+   "dimensao": "600x300"
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "S-12",
+   "x": 3.0,
+   "y": 14.2,
+   "dimensao": "300x150"
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "S-12",
+   "x": 24.0,
+   "y": 14.8,
+   "dimensao": "300x150"
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "E-5",
+   "x": 7.0,
+   "y": 1.9,
+   "dimensao": "150x150",
+   "alvo": [
+    7.0,
+    0.6
+   ]
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "E-5",
+   "x": 1.5,
+   "y": 9.1,
+   "dimensao": "150x150",
+   "alvo": [
+    0.6,
+    9.8
+   ]
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "E-5",
+   "x": 15.3,
+   "y": 7.0,
+   "dimensao": "150x150",
+   "alvo": [
+    16.4,
+    8.0
+   ]
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "E-5",
+   "x": 8.0,
+   "y": 12.6,
+   "dimensao": "150x150",
+   "alvo": [
+    8.0,
+    11.5
+   ]
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "E-5",
+   "x": 24.0,
+   "y": 11.3,
+   "dimensao": "150x150",
+   "alvo": [
+    24.4,
+    12.6
+   ]
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "E-5",
+   "x": 6.1,
+   "y": 13.4,
+   "dimensao": "150x150",
+   "alvo": [
+    6.1,
+    14.55
+   ]
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "E-5",
+   "x": 8.4,
+   "y": 17.9,
+   "dimensao": "150x150",
+   "alvo": [
+    8.4,
+    17.2
+   ]
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "P-1",
+   "x": 9.6,
+   "y": 18.4,
+   "dimensao": "150x150"
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "A-2",
+   "x": 10.4,
+   "y": 18.4,
+   "dimensao": "150x150"
+  },
+  {
+   "tipo": "chamada",
+   "codigo": "A-3",
+   "x": 11.2,
+   "y": 18.4,
+   "dimensao": "150x150"
+  },
+  {
+   "tipo": "quadro_resumo",
+   "x": 50.0,
+   "y": 45.0,
+   "pavimentos": [
+    {
+     "nome": "Térreo",
+     "atc_m2": 400.0
+    }
+   ],
+   "identificacao": {
+    "endereco": "Endereço fictício",
+    "proprietario": "Proprietário fictício",
+    "responsavel_tecnico": "",
+    "conselho_tecnico": "",
+    "numero_matricula": "",
+    "decreto_adotado": "Decreto nº 42/2018",
+    "altura_m": "",
+    "numero_de_pavimentos": "1",
+    "ocupacao_do_subsolo": "Não há",
+    "ano_de_construcao": "",
+    "lotacao_prevista": "351 pessoas (NT 2-08, Anexo A)",
+    "condicionamento_de_ar": ""
+   },
+   "classificacao": {
+    "grupo": "F",
+    "ocupacao": "Local de reunião de público",
+    "divisao": "F-8",
+    "descricao": "Local para refeição",
+    "risco": "MÉDIO 1 (NT 1-04)",
+    "carga_de_incendio_mj_m2": ""
+   },
+   "estruturais": {
+    "estrutura_portante": "",
+    "estrutura_da_cobertura": "",
+    "profundidade_do_subsolo_m": "",
+    "trrf": "",
+    "material_de_protecao": ""
+   },
+   "tabela_anexo_iii": "",
+   "medidas_de_seguranca": [
+    "Tabela 2 do Anexo III",
+    "Extintores",
+    "Saídas de emergência",
+    "Iluminação de emergência",
+    "Sinalização de segurança",
+    "Controle de materiais de acabamento"
+   ],
+   "riscos_especiais": [
+    "Gás liquefeito de petróleo (central externa, NT 3-02)",
+    "Cozinha profissional (NT 3-01), a confirmar"
+   ],
+   "reservatorio": {
+    "localizacao": "",
+    "tipo_de_succao": "",
+    "volume_do_reservatorio_l": "",
+    "rti": [],
+    "rti_total_l": ""
+   },
+   "bombas": [],
+   "hidrantes": {
+    "classificacao_de_risco": "",
+    "diametro_succao_mm": "",
+    "diametro_recalque_mm": "",
+    "diametro_mangueira_mm": "",
+    "tipo_mangueira": "",
+    "tipo_esguicho": "",
+    "hidrante_de_recalque": ""
+   },
+   "gas": {
+    "abastecimento": "",
+    "estacionario_capacidade_kg": "",
+    "estacionario_quantidade": "",
+    "transportavel_capacidade_kg": "",
+    "transportavel_quantidade": ""
+   },
+   "acabamentos": [],
+   "saidas": {
+    "lotacao": "351",
+    "tipo_de_edificacao": "",
+    "grupo_e_divisao": "F-8",
+    "pavimento": "Térreo",
+    "saida_unica": false,
+    "tipo_de_escada": "Sem escada",
+    "capacidade_da_unidade_de_passagem": "100",
+    "unidades_de_passagem_projetadas": "8 (portas do salão: 3 + 3 + 2)"
+   },
+   "declarado": {
+    "extintores": 5,
+    "saidas": 2,
+    "glp_kg": 180.0,
+    "atc_m2": 400.0
+   }
+  },
+  {
+   "tipo": "folha",
+   "nome": "PRANCHA 01",
+   "formato": "A1",
+   "prancha": "1/4",
+   "titulo": "PLANTA BAIXA - TÉRREO E DETALHES",
+   "selo": {
+    "destinacao": "",
+    "obra": "RESTAURANTE (F-8) - ATC 400,00 m² - EXEMPLO FICTÍCIO",
+    "conteudo": [],
+    "endereco": "Endereço fictício",
+    "proprietario": "Proprietário fictício",
+    "autor_projeto": "Projeto fictício gerado pelo motor COSCIP",
+    "responsavel_tecnico": "",
+    "registro_profissional": "",
+    "cadastro_cbmerj": "",
+    "empresa": "",
+    "registro_empresa": "",
+    "autor_levantamento": "",
+    "registro_levantamento": "",
+    "area": "",
+    "escala": "",
+    "data": "10/11/2026",
+    "revisao": "00"
+   },
+   "vistas": [
+    {
+     "titulo": "Planta baixa - térreo",
+     "janela": [
+      -3.5,
+      -3.0,
+      29.5,
+      21.0
+     ],
+     "escala": 100
+    },
+    {
+     "titulo": "Detalhe - cozinha",
+     "janela": [
+      0.0,
+      10.5,
+      13.0,
+      16.5
+     ],
+     "escala": 50
+    },
+    {
+     "titulo": "Detalhe - central de GLP",
+     "janela": [
+      8.2,
+      15.5,
+      12.4,
+      19.5
+     ],
+     "escala": 25
+    }
+   ],
+   "notas": [
+    "Cotas em metros; etiquetas de porta e janela em centímetros (largura x altura / peitoril).",
+    "Projeto fictício de exemplo: premissas de ocupação, alturas e tipo de construção não foram confirmadas.",
+    "Placas de sinalização (NT 2-05): dimensões das chamadas tiradas dos exemplos da Tabela 7; conferir pela distância de visualização.",
+    "Cozinha: duto de exaustão único e aparente, sem travessia de outros ambientes (NT 3-01, itens 2.1 e 2.2) - a confirmar com o projeto de exaustão.",
+    "Central de GLP: 4 recipientes P-45 em abrigo com paredes e cobertura TRRF 120 min, lado norte aberto (NT 3-02)."
+   ],
+   "quadros": [],
+   "quadro_de_areas": true,
+   "atc_m2": 400.0,
+   "revisoes": [
+    {
+     "rev": "00",
+     "data": "10/11/2026",
+     "descricao": "Emissão inicial (exemplo)"
+    }
+   ]
+  },
+  {
+   "tipo": "folha",
+   "nome": "PRANCHA 02",
+   "formato": "A1",
+   "prancha": "2/4",
+   "titulo": "QUADRO RESUMO",
+   "selo": {
+    "destinacao": "",
+    "obra": "RESTAURANTE (F-8) - ATC 400,00 m² - EXEMPLO FICTÍCIO",
+    "conteudo": [],
+    "endereco": "Endereço fictício",
+    "proprietario": "Proprietário fictício",
+    "autor_projeto": "Projeto fictício gerado pelo motor COSCIP",
+    "responsavel_tecnico": "",
+    "registro_profissional": "",
+    "cadastro_cbmerj": "",
+    "empresa": "",
+    "registro_empresa": "",
+    "autor_levantamento": "",
+    "registro_levantamento": "",
+    "area": "",
+    "escala": "",
+    "data": "10/11/2026",
+    "revisao": "00"
+   },
+   "vistas": [
+    {
+     "titulo": "Quadro resumo",
+     "janela": [
+      49.5,
+      6.125,
+      62.5,
+      46.0
+     ],
+     "escala": 100
+    }
+   ],
+   "notas": [
+    "Dados de identificação, classificação, medidas e saídas informados no projeto de exemplo; quantidades de extintores, placas, iluminação, GLP e áreas contadas do desenho.",
+    "A conferência entre o desenho e os valores declarados está no retorno do motor (quadro_resumo.conferencia)."
+   ],
+   "quadros": [],
+   "quadro_de_areas": false,
+   "revisoes": []
+  },
+  {
+   "tipo": "secao",
+   "nome": "A",
+   "a": [
+    -1.5,
+    7.6
+   ],
+   "b": [
+    29.0,
+    7.6
+   ],
+   "sentido": "esquerda",
+   "x": 75.0,
+   "y": 0.0,
+   "profundidade_m": 4.0,
+   "marca_na_planta": false,
+   "figura_humana": true,
+   "classe_parede": "I"
+  },
+  {
+   "tipo": "secao",
+   "nome": "B",
+   "a": [
+    9.8,
+    -2.6
+   ],
+   "b": [
+    9.8,
+    20.0
+   ],
+   "sentido": "direita",
+   "x": 75.0,
+   "y": 10.0,
+   "profundidade_m": 4.0,
+   "marca_na_planta": false,
+   "figura_humana": true,
+   "classe_parede": "I"
+  },
+  {
+   "tipo": "fachada",
+   "lado": "sul",
+   "x": 75.0,
+   "y": 20.0,
+   "letreiro": "RESTAURANTE"
+  },
+  {
+   "tipo": "fachada",
+   "lado": "norte",
+   "x": 75.0,
+   "y": 30.0,
+   "letreiro": ""
+  },
+  {
+   "tipo": "folha",
+   "nome": "PRANCHA 03",
+   "formato": "A1",
+   "prancha": "3/4",
+   "titulo": "CORTES E FACHADAS",
+   "selo": {
+    "destinacao": "",
+    "obra": "RESTAURANTE (F-8) - ATC 400,00 m² - EXEMPLO FICTÍCIO",
+    "conteudo": [],
+    "endereco": "Endereço fictício",
+    "proprietario": "Proprietário fictício",
+    "autor_projeto": "Projeto fictício gerado pelo motor COSCIP",
+    "responsavel_tecnico": "",
+    "registro_profissional": "",
+    "cadastro_cbmerj": "",
+    "empresa": "",
+    "registro_empresa": "",
+    "autor_levantamento": "",
+    "registro_levantamento": "",
+    "area": "",
+    "escala": "",
+    "data": "10/11/2026",
+    "revisao": "00"
+   },
+   "vistas": [
+    {
+     "titulo": "Cortes e fachadas",
+     "janela": [
+      72.0,
+      -4.0,
+      106.0,
+      38.0
+     ],
+     "escala": 100
+    }
+   ],
+   "notas": [
+    "Cortes e fachadas gerados da mesma geometria da planta; alturas, telhado e classes dos materiais são premissas do exemplo (projeto fictício)."
+   ],
+   "quadros": [
+    {
+     "titulo": "Cálculo da largura das saídas (NT 2-08)",
+     "linhas": [
+      "Ocupação F-8 (local para refeição): 1 pessoa por m² de área (Anexo A).",
+      "Área atendida pela descarga: 350,48 m² -> P = 351 pessoas.",
+      "C = 100 pessoas por unidade de passagem (acessos e descarga).",
+      "N = 351 / 100 = 3,51 -> 4 unidades de passagem.",
+      "Largura mínima = 4 x 0,55 = 2,20 m.",
+      "Largura projetada: portas de 1,20 + 1,20 m = 2,40 m (>= 2,20 m)."
+     ]
+    }
+   ],
+   "quadro_de_areas": false,
+   "revisoes": []
+  },
+  {
+   "tipo": "rotulo_classe",
+   "elemento": "piso",
+   "classe": "I",
+   "x": 1.31,
+   "y": 0.95
+  },
+  {
+   "tipo": "rotulo_classe",
+   "elemento": "piso",
+   "classe": "I",
+   "x": 1.31,
+   "y": 14.95
+  },
+  {
+   "tipo": "rotulo_classe",
+   "elemento": "piso",
+   "classe": "I",
+   "x": 13.91,
+   "y": 11.95
+  },
+  {
+   "tipo": "situacao",
+   "escala": 500,
+   "lote": [
+    [
+     120.0,
+     0.0
+    ],
+    [
+     150.0,
+     0.0
+    ],
+    [
+     150.0,
+     40.0
+    ],
+    [
+     120.0,
+     40.0
+    ]
+   ],
+   "edificacoes": [
+    {
+     "poligono": [
+      [
+       122.5,
+       8.0
+      ],
+      [
+       147.5,
+       8.0
+      ],
+      [
+       147.5,
+       24.0
+      ],
+      [
+       122.5,
+       24.0
+      ]
+     ],
+     "rotulo": "",
+     "caimentos": [
+      [
+       128.0,
+       12.0,
+       -90.0
+      ],
+      [
+       128.0,
+       20.0,
+       90.0
+      ],
+      [
+       142.0,
+       12.0,
+       -90.0
+      ],
+      [
+       142.0,
+       20.0,
+       90.0
+      ]
+     ]
+    }
+   ],
+   "ruas": [
+    {
+     "nome": "Rua das Flores",
+     "eixo": [
+      [
+       112.0,
+       -6.0
+      ],
+      [
+       182.0,
+       -6.0
+      ]
+     ],
+     "largura_m": 10.0,
+     "calcada_m": 0.0
+    },
+    {
+     "nome": "Avenida Central",
+     "eixo": [
+      [
+       166.0,
+       -40.0
+      ],
+      [
+       166.0,
+       60.0
+      ]
+     ],
+     "largura_m": 14.0,
+     "calcada_m": 0.0
+    }
+   ],
+   "raio_esquina_m": 5.0,
+   "distancias": [
+    {
+     "a": [
+      150.0,
+      -2.5
+     ],
+     "b": [
+      159.0,
+      -2.5
+     ],
+     "deslocamento_m": -1.5
+    }
+   ],
+   "textos": [
+    {
+     "texto": "Alinhamento",
+     "x": 135.0,
+     "y": 1.6,
+     "graus": 0.0
+    },
+    {
+     "texto": "Restaurante (projeção)",
+     "x": 135.0,
+     "y": 27.5,
+     "graus": 0.0
+    }
+   ],
+   "cotar_lote": true,
+   "norte_graus": 20.0,
+   "norte_xy": [
+    135.0,
+    62.0
+   ],
+   "titulo": ""
+  },
+  {
+   "tipo": "folha",
+   "nome": "PRANCHA 04",
+   "formato": "A2",
+   "prancha": "4/4",
+   "titulo": "PLANTA DE SITUAÇÃO",
+   "selo": {
+    "destinacao": "",
+    "obra": "RESTAURANTE (F-8) - ATC 400,00 m² - EXEMPLO FICTÍCIO",
+    "conteudo": [],
+    "endereco": "Endereço fictício",
+    "proprietario": "Proprietário fictício",
+    "autor_projeto": "Projeto fictício gerado pelo motor COSCIP",
+    "responsavel_tecnico": "",
+    "registro_profissional": "",
+    "cadastro_cbmerj": "",
+    "empresa": "",
+    "registro_empresa": "",
+    "autor_levantamento": "",
+    "registro_levantamento": "",
+    "area": "",
+    "escala": "",
+    "data": "10/11/2026",
+    "revisao": "00"
+   },
+   "vistas": [
+    {
+     "titulo": "Planta de situação",
+     "janela": [
+      106.0,
+      -44.0,
+      186.0,
+      76.0
+     ],
+     "escala": 500
+    }
+   ],
+   "notas": [
+    "Lote, ruas, distância à esquina e norte são premissas do exemplo (projeto fictício)."
+   ],
+   "quadros": [],
+   "quadro_de_areas": false,
+   "revisoes": []
+  }
+ ]
+}
